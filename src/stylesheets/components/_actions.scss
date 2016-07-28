@@ -1,0 +1,32 @@
+.usa-action-container {
+  float: left;
+  text-align: center;
+
+  a:visited {
+    color: $color-action-visited;
+  }
+
+  a:hover {
+    color: $color-action-hover;
+    text-decoration: none;
+  }
+
+  &.delete a {
+    color: $color-action-delete;
+  }
+
+  &.delete a:hover {
+    color: $color-action-delete-hover;
+  }
+
+  span {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  i {
+    display: block;
+    font-size: 2.5rem;
+  }
+}

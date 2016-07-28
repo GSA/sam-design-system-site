@@ -1,0 +1,42 @@
+.iae-secondary-navigation {
+  @include bgcolor($iae-color-white-translucent, $color-black);
+  @include box-shadow(1px, 1px, 5px, 0, 0, 0, 0, 0.2);
+  width: 100%;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  ul {
+    @include unstyled-list;
+    margin: 0 auto;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  li:nth-of-type(1) a {
+    margin-left: 60px;
+    font-weight: $font-bold;
+  }
+
+  li:nth-of-type(1) a::after {
+    content: ':';
+  }
+
+  a,
+  a:visited {
+    display: inline-block;
+    padding: 5px;
+    color: $color-black;
+  }
+}
+

@@ -1,0 +1,110 @@
+.iae-primary-navigation {
+  position: relative;
+  background: $iae-color-primary;
+  height: 44px;
+
+  @include media($medium-screen) {
+    height: 65px;
+  }
+
+  ul {
+    @include unstyled-list;
+
+  }
+}
+
+.iae-click-nav {
+  width: 50px;
+
+  > a {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    margin: 12px 5px 5px 0;
+    width: 44px;
+    height: 44px;
+    @include background-image(url('../img/grid-white.svg'), url('../img/grid-white.png'));
+    background-color: $iae-color-primary;
+    background-size: 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include media($medium-screen) {
+      top: -5px;
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.iae-primary-navigation-dropdown {
+  position: absolute;
+  z-index: 1000;
+  left: -1000px;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  @include box-shadow(3px, 3px, 10px, 0, 0, 0, 0, 0.6);
+
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.iae-click-nav:hover .iae-primary-navigation-dropdown {
+  background-color: $color-white;
+  left: 10px;
+  top: 40px;
+
+  @include media($medium-screen) {
+    top: 55px;
+  }
+}
+
+.iae-home {
+  display: inline-block;
+  font-size: $h4-font-size;
+  position: absolute;
+  left: 51px;
+  top: 9px;
+  font-weight: 200;
+
+  strong {
+    font-weight: 500;
+  }
+
+  a,
+  a:visited {
+    color: $color-white;
+  }
+
+  @include media($medium-screen) {
+    font-size: $h2-font-size;
+    left: 63px;
+  }
+}
+
+.iae-right-nav {
+  display: inline-block;
+  position: absolute;
+  float: right;
+  top: -2px;
+  right: 5px;
+
+  .usa-button,
+  .usa-button:visited {
+    font-size: $small-font-size;
+    padding: 1rem;
+
+    @include media($medium-screen) {
+      padding: 1rem 2rem;
+    }
+  }
+
+  @include media($medium-screen) {
+    top: 8px;
+  }
+}
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+
+  	{% include navbar.html %}
+	
+
+    <section id="main" class="main-content" role="main">
+      {{ content }}
+    </section>
+
+    {% include analytics.html %}
+    {% include scripts.html %}
+
+  </body>
+
+</html>

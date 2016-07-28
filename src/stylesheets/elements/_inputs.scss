@@ -1,0 +1,36 @@
+fieldset {
+  display: block;
+  margin-top: 3rem;
+  max-width: 46rem;
+
+  ul,
+  .usa-unstyled-list {
+    margin-top: 1rem;
+  }
+
+  &.usa-fieldset-inputs legend {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+
+.usa-input-error {
+  select {
+    width: calc(100% + 1.9rem);
+  }
+
+  fieldset {
+    margin-top: 0;
+  }
+
+  legend {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+}
+
+.usa-date-of-birth input,
+.usa-memorable-date input {
+  width: 100%;
+}
+

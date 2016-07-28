@@ -1,0 +1,27 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<nav class="iae-primary-navigation" aria-label="Primary navigation">
+  <ul class="no-js">
+    <li class="iae-home">
+      <a href="{{ site.baseurl }}/" accesskey="1" title="Home" aria-label="Home"><strong>SAM</strong> Web Design Standards</a>  
+    </li>
+    <li class="iae-click-nav">
+      <a href="#"><span class="usa-sr-only">menu</span></a>
+      <ul class="iae-primary-navigation-dropdown">
+      {% for item in site.data.menu %}
+      {% assign itemlowercase = item.url | downcase %}
+        <li>
+        {% if item.target == "_blank" %}
+          <a href="{{item.url}}" class="{{item.class}} {% if current[2] == itemlowercase %} usa-current{% endif %}" target="{% if item.target %}{{item.target}}{% else %}_self{% endif %}">{{item.text}}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/{{item.url}}/" class="{{item.class}} {% if current[1] == itemlowercase %} usa-current{% endif %}" target="{% if item.target %}{{item.target}}{% else %}_self{% endif %}">{{item.text}}</a>
+        {% endif %}
+        </li>  
+      {% endfor %}
+      </ul>
+    </li>
+    <li class="iae-right-nav">
+      <a class="usa-button iae-button-gray" href="{{ site.repos[0].url }}" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">View on GitHub</a>
+    </li>
+  </ul>
+</nav>

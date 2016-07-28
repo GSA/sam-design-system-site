@@ -1,0 +1,29 @@
+---
+permalink: /components/other/contextual_help/
+layout: styleguide
+type: component
+title: Contextual Help
+lead: See <a href="https://standards.usa.gov/alerts/">US Web Design Standards</a> for design description.
+---
+
+
+<div class="contextual">
+
+  <div class="usa-contextual usa-contextual">
+    <div class="usa-contextual-body">
+      <h3 class="usa-contextual-heading">Contextual Help Content</h3>
+      <h2 class="">192 Word Character Count</h2>
+      <p class="usa-contextual-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices purus sit amet eleifend hendrerit. Ut sed erat nunc. Ut vestibulum nunc lacus, sollicitudin pulvinar est sagittis in. Donec nec mollis ligula, in auctedr. </p>
+    </div>
+  </div>
+
+  <div class="contextual">
+
+  <div class="usa-contextual usa-contextual">
+    <div class="usa-contextual-body">
+      <h3 class="usa-contextual-heading">Contextual Help Content</h3>
+      <h2 class="">Link to user help/support</h2>
+      <p class="usa-contextual-text">Read More</p>
+    </div>
+  </div>
+

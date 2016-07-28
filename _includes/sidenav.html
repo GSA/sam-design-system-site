@@ -1,0 +1,32 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+{% for item in site.data.menu %}
+{% assign itemlowercase = item.url | downcase %}
+  {% if current[1] == itemlowercase and item.submenu %}
+    {% for secondaryitem in item.submenu %}
+    {% assign secondaryitemlowercase = secondaryitem.url | downcase %}
+      {% if current[2] == secondaryitemlowercase and secondaryitem.submenu %}
+<aside id="menu-content" class="sidenav">
+  <nav>
+    <ul class="usa-sidenav-list">
+        {% for tertiaryitem in secondaryitem.submenu %}
+        {% assign tertiarylowercase = tertiaryitem.url | downcase %}
+        <li>
+            {% if tertiaryitem.target == "_blank" %}
+              <a href="{{ site.baseurl }}/{{item.url}}/{{secondaryitem.url}}/{{tertiaryitem.url}}" class="{{tertiaryitem.class}} {% if current[2] == tertiaryitemlowercase %} usa-current{% endif %}" target="{% if tertiaryitem.target %}{{tertiaryitem.target}}{% else %}_self{% endif %}">{{tertiaryitem.text}}</a>
+
+            {% elsif secondaryitemlowercase == "assistance-listing" %}
+              <a href="{{ site.baseurl }}/{{item.url}}/{{secondaryitem.url}}/{{tertiaryitem.url}}" class="{{tertiaryitem.class}} {% if current[1] == tertiaryitemlowercase %} usa-current{% endif %}" target="{% if tertiaryitem.target %}{{tertiaryitem.target}}{% else %}_self{% endif %}">{{tertiaryitem.text}}</a>
+
+            {% else %}
+              <a href="{{ site.baseurl }}/{{item.url}}/{{secondaryitem.url}}/{{tertiaryitem.url}}/" class="{{tertiaryitem.class}} {% if current[1] == tertiaryitemlowercase %} usa-current{% endif %}" target="{% if tertiaryitem.target %}{{tertiaryitem.target}}{% else %}_self{% endif %}">{{tertiaryitem.text}}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+  </nav>
+</aside>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}

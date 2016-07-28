@@ -1,0 +1,93 @@
+---
+permalink: /components/other/accordions/
+layout: styleguide
+type: component
+title: Accordions
+lead: See <a href="https://standards.usa.gov/accordions/">US Web Design Standards</a> for design description.
+---
+
+<p>Note: If the accordion content contains a list, at present, the list can only be one level deep for proper styling.</p>
+
+<div class="preview">
+
+  <h6>Borderless</h6>
+  <div class="usa-accordion">
+    <ul class="usa-unstyled-list">
+      <li>
+        <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">Collapsed Accordion 1</button>
+        <div id="collapsible-1" aria-hidden="true" class="usa-accordion-content">
+          <ol>
+            <li>This</li>
+            <li>accordion</li>
+            <li>was</li>
+            <li>collapsed</li>
+            <li>initially.</li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-0">Expanded Accordion 1</button>
+        <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+          <p>This accordion started expanded.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <h6>Bordered</h6>
+  <div class="usa-accordion-bordered">
+    <ul class="usa-unstyled-list">
+      <li>
+        <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">Collapsed Accordion 1</button>
+        <div id="collapsible-1" aria-hidden="true" class="usa-accordion-content">
+          <ul>
+            <li>This</li>
+            <li>accordion</li>
+            <li>was</li>
+            <li>collapsed</li>
+            <li>initially.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-0">Expanded Accordion 1</button>
+        <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+          <p>This accordion started expanded.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="false" aria-controls="collapsible-0">
+    PHP Usage
+  </button>
+  <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
+<pre><code class="language-php">// render unescaped HTML string
+echo SAMUIKit\Other::accordion($config);
+
+// render multiple accordions
+echo SAMUIKit\Other::multipleAccordions($accordionConfigurations);</code></pre>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+    aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accordion</h4>
+    <h5>Required keys</h5>
+    <ul>
+      <li><strong>title:</strong> A non-HTML string used for the accordion button title.</li>
+      <li><strong>content:</strong> An HTML string representing the body text of the accordion.</li>
+    </ul>
+    <h5>Optional keys</h5>
+    <ul>
+      <li><strong>bordered:</strong> true|false (default is false).</li>
+      <li><strong>expanded:</strong> true|false (default is false). Whether to display the accordion as expanded or collapsed initially.</li>
+    </ul>
+  </div>
+</div>

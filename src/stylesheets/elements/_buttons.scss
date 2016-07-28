@@ -1,0 +1,56 @@
+.usa-button-dismiss {
+  // hit area
+  height: 44px;
+  width: 44px;
+  display: inline-block;
+
+  // background
+  @include background-image(url('../img/times_circle.svg'), url('../img/times_circle.png'));
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center center;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.usa-cancel {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.iae-button-primary,
+.iae-button-primary:visited {
+  background-color: $iae-color-primary;
+  color: $color-white;
+}
+
+.iae-button-primary:hover {
+  background-color: $iae-color-primary-hover;
+}
+
+.iae-button-primary-alt,
+.iae-button-primary-alt:visited {
+  background-color: $iae-color-primary-alt;
+}
+
+.iae-button-primary-alt:hover {
+  background-color: $iae-color-primary-alt-hover;
+}
+
+.iae-button-gray,
+.iae-button-gray:visited {
+  background-color: $iae-color-gray;
+  color: $color-black;
+}
+
+.usa-button.iae-button-gray:hover {
+  background-color: $iae-color-gray-hover;
+  color: $color-black;
+}

@@ -1,0 +1,17 @@
+# Jekyll files and directories
+#
+/_*
+/assets/
+/config/
+
+# Configuration and scripts
+#
+.editorconfig
+.eslintrc
+.scss-lint.yml
+.travis.yml
+Gemfile
+Gemfile.lock
+gulpfile.js
+.sass-cache/
+.bundle/

@@ -5,4 +5,4 @@ type: component
 title: Actions
 ---
 
-todo
+{% include elements/actions.html %}

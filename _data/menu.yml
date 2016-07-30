@@ -66,8 +66,8 @@
     submenu:
     - text: 'Header'
       url: 'header'
-    - text: 'Section navigation'
-      url: 'section-navigation'
+    - text: 'Primary navigation'
+      url: 'primarynav'
     - text: 'Side navigation'
       url: 'sidenav'
     - text: 'Footers'

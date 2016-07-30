@@ -5,4 +5,4 @@ type: component
 title: Icons
 ---
 
-todo
+{% include elements/icons.html %}

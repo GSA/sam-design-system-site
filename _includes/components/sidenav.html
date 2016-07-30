@@ -1,0 +1,151 @@
+<p class="usa-font-lead">See <a href="https://standards.usa.gov/sidenav/">US Web Design Standards</a> for details regarding when to use this element.</p>
+
+<div class="preview">
+
+  <h6 class="usa-heading-alt">Single level</h6>
+
+  <div class="usa-grid">
+    <aside class="usa-width-one-fourth">
+      <ul class="usa-sidenav-list">
+        <li>
+          <a class="usa-current" href="#">Current page</a>
+        </li>
+        <li>
+          <a href="#">Parent link</a>
+        </li>
+        <li>
+          <a href="#">Parent link</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+  <h6 class="usa-heading-alt">Two levels</h6>
+
+  <div class="usa-grid">
+    <aside class="usa-width-one-fourth">
+      <ul class="usa-sidenav-list">
+        <li>
+          <a href="#">Parent link</a>
+        </li>
+        <li>
+          <a class="usa-current" href="#">Current page</a>
+          <ul class="usa-sidenav-sub_list">
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a class="usa-current" href="#">Child Link</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Parent link</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+  <h6 class="usa-heading-alt">Three levels</h6>
+
+  <div class="usa-grid">
+    <aside class="usa-width-one-fourth">
+      <ul class="usa-sidenav-list">
+        <li>
+          <a href="#">Parent link</a>
+        </li>
+        <li>
+          <a class="usa-current" href="#">Current page</a>
+          <ul class="usa-sidenav-sub_list">
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+              <ul class="usa-sidenav-sub_list">
+                <li>
+                  <a href="#">Grandchild link</a>
+                </li>
+                <li>
+                  <a href="#">Grandchild link</a>
+                </li>
+                <li>
+                  <a class="usa-current" href="#">Grandchild link</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+            <li>
+              <a href="#">Child link</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Parent link</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <ul class="usa-unstyled-list">
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">
+        PHP UI kit usage
+      </button>
+      <div id="collapsible-0" class="usa-accordion-content" aria-hidden="true">
+        <pre><code class="language-php">
+// render unescaped HTML string
+echo SAMUIKit\Navigation::sideNavigation($config)
+        </code></pre>
+      </div>
+    </li>
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">
+        JavaScript UI kit usage
+      </button>
+      <div id="collapsible-1" class="usa-accordion-content" aria-hidden="true">
+        <pre><code class="language-js">
+        </code></pre>
+      </div>
+    </li>
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-2">
+        UI kit documentation
+      </button>
+      <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
+        <h4 class="usa-heading">Side navigation</h4>
+        <h5>Required keys</h5>
+        <ul class="usa-content-list">
+          <li><strong>menu:</strong> See Menu required and optional keys below.</li>
+          <li><strong>current:</strong> The path to compare against. Note: Do not include domain or relative paths. Ex. /path/to/check</li>
+        </ul>    
+        <h5>Menu required keys</h5>
+        <ul class="usa-content-list">
+          <li><strong>title:</strong> The text to display in the link.</li>
+          <li><strong>path:</strong> The destination path for the link. Note: Can be an anchor, should not be complete path. Ex. destination or #destination</li>
+        </ul>
+        <h5>Menu optional keys</h5>
+        <ul class="usa-content-list">
+          <li><strong>submenu:</strong> An array of menu items. See Menu required keys. Note: Any submenus beyond the third level will be ignored.</li>
+        </ul>
+      </div>
+    </li>    
+  </ul>
+</div>

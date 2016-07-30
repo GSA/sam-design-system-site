@@ -1,6 +1,6 @@
 <h4 class="usa-heading">All form controls</h4>
 
-{{ 'Note: All form controls are wrapped in a <code>div</code> for a consistent HTML output no matter the state of the form control.
+{{ 'Note: All form controls are wrapped in a <code>div</code> for a consistent HTML output no matter the state of the form control. Further, all form controls have the following required and optional keys.
 
 ##### Required keys
 

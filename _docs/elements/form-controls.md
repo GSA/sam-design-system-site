@@ -1,5 +1,5 @@
 ---
-permalink: /components/form-controls/
+permalink: /elements/form-controls/
 layout: styleguide
 type: component
 title: Form controls

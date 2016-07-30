@@ -2,10 +2,11 @@
 permalink: /components/
 layout: styleguide
 type: component
-title: UI Components
-lead: See <a href="https://standards.usa.gov/alerts/">US Web Design Standards</a> for design description.
+title: Components
+lead: Components could be a combination of <a href="../elements/">elements (a form, for example), an element with a specific purpose (state select), or a component as designated by the <a href="https://standards.usa.gov">US Web Design Standards</a>.
 ---
-  
+
+
 <h1>Contextual Help and Support</h1>
 
 <h2>Make it Simple</h2>

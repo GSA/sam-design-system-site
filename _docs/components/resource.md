@@ -1,5 +1,5 @@
 ---
-permalink: /components/other/resource/
+permalink: /components/resource/
 layout: styleguide
 type: component
 title: Resource

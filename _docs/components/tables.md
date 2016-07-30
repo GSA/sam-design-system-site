@@ -1,5 +1,5 @@
 ---
-permalink: /components/other/tables/
+permalink: /components/tables/
 layout: styleguide
 type: element
 title: Tables

@@ -1,7 +1,7 @@
 ---
 permalink: /elements/typography/
 layout: styleguide
-type: component
+type: element
 title: Links, lists, & labels
 ---
 

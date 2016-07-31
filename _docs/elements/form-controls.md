@@ -1,7 +1,7 @@
 ---
 permalink: /elements/form-controls/
 layout: styleguide
-type: component
+type: element
 title: Form controls
 ---
 

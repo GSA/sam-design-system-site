@@ -1,7 +1,7 @@
 ---
 permalink: /elements/actions-icons/
 layout: styleguide
-type: component
+type: element
 title: Actions & icons
 ---
 

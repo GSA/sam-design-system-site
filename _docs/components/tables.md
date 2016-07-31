@@ -1,7 +1,7 @@
 ---
 permalink: /components/tables/
 layout: styleguide
-type: element
+type: component
 title: Tables
 ---
 

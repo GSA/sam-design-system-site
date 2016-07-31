@@ -16,6 +16,10 @@ The Standards use the Source Sans Pro [pairing and style](https://standards.usa.
 
 {% include getting-started/typography.html %}
 
+<h2 id="iconography" class="usa-heading">Iconography</h2>
+
+The Standards include [Font Awesome](https://fortawesome.github.io/Font-Awesome/) for the majority of icon decisions. If you cannot locate a desirable icon from Font Awesome, either [create an issue]({{ site.repos[0].url }}/issues) or modify the [Icon component]({{ site.baseurl }}/elements/action-icons/) and submit a pull request.
+
 <h2 class="usa-heading" id="imagery">Imagery</h2>
 
 You have the ability to surf the Internet on multiple devices, with multiple resolutions (low, medium, high, extra high, and so on), and the ability to make the browser almost any size you want. It is disappointing when a site dictates how you should use it or when the graphics are fuzzy because they are not accounting for the resolution capabilities of your display.
@@ -43,3 +47,5 @@ See the [US Web Design Standards - Colors](https://standards.usa.gov/colors/)
 See the [US Web Design Standards - Text accessibility](https://standards.usa.gov/colors/)
 
 {% include partials/grid_system.html %}
+
+{% include partials/mobile_first.html %}

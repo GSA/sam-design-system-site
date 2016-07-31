@@ -3,7 +3,15 @@
 <nav>
   <ul class="usa-sidenav-list">
     <li>
-      <a {% if page.url == '/getting-started/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/">Overview</a>
+      <a {% if page.url == '/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Overview</a>
+      {% if page.url == '/' %}
+      <ul class="usa-sidenav-sub_list">
+        <li><a href="#sam-web-design-standards">SAM Web Design Standards</a></li>
+        <li><a href="#us-web-design-standards">US Web Design Standards</a></li>
+        <li><a href="#giving-back">Giving back</a></li>
+        <li><a href="#contribute">Contribute to</a></li>
+      </ul>
+      {% endif %}
     </li>
     <li>
       <a {% if page.url == '/getting-started/user-experience/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/user-experience/">User experience</a>
@@ -32,6 +40,9 @@
             <a href="#typography">Typography</a>
           </li>
           <li>
+            <a href="#iconography">Iconography</a>
+          </li>
+          <li>
             <a href="#imagery">Imagery</a>
           </li>
           <li>
@@ -46,6 +57,9 @@
           <li>
             <a href="#grids">Grids</a>
           </li>
+          <li>
+            <a href="#mobile-first">Mobile first</a>
+          </li>
         </ul>
       {% endif %}
     </li>
@@ -55,6 +69,12 @@
         <ul class="usa-sidenav-sub_list">
           <li>
             <a href="#progressive-enhancement">Progressive enhancement</a>
+          </li>
+          <li>
+            <a href="#css-architecture">CSS architecture</a>
+          </li>
+          <li>
+            <a href="#mobile-first">Mobile first</a>
           </li>
           <li>
             <a href="#bandwidth">Bandwidth &amp; processors</a>

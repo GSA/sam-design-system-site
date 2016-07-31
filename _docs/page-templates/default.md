@@ -1,7 +1,8 @@
 ---
 permalink: /page-templates/default/
 layout: styleguide
-type: templates
+category: Page template
+type: template
 title: Default page template
 ---
 

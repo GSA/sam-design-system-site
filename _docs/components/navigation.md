@@ -1,6 +1,7 @@
 ---
 permalink: /components/navigation/
 layout: styleguide
+category: Component
 type: component
 title: Navigation
 lead: Allows users to orient themselves within the site and move between pages.

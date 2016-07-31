@@ -1,7 +1,8 @@
 ---
 permalink: /getting-started/developers/
-title: For developers
 layout: styleguide
+category: Getting started
+title: For developers
 ---
 
 ## Progressive enhancement

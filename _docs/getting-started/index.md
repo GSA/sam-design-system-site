@@ -1,6 +1,7 @@
 ---
 permalink: /getting-started/
 layout: styleguide
+category: Getting started
 title: Getting started
 lead: The SAM Web Design Standards extend the <a href="https://18f.gsa.gov/2015/09/28/web-design-standards/">US Web Design Standards</a>.
 ---

@@ -3,6 +3,7 @@ permalink: /getting-started/developers/
 layout: styleguide
 category: Getting started
 title: For developers
+lead: See also the <a href="https://standards.usa.gov/getting-started/developers/">US Web Design Standards - For developers</a>. 
 ---
 
 ## Progressive enhancement
@@ -28,12 +29,14 @@ Client-side languages, which are executed on the user’s device. Client-side sc
 
 The *SAM Web Standards* recommends a [mobile first]({{ site.baseurl }}/sam_web_standards/visual_style/#mobile-first) approach to design and development. As part of this recommendation it is important to consider bandwidth constraints, caps of data plans, and processor speeds. Therefore, it is recommended that the majority of processes be performed server-side while delivering the minimum data required to the client-side to update a user. Further, mobile and tablet devices typically have less processing power and hardware resources available, which should also be taken into consideration when creating client-side scripts.
 
-## Secure by Default
+## URLs
+
+### Secure by Default
 
 There are two transfer protocols used to serve Web content: Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS). By default all uniform resource locators (URLs) should use HTTPS; an HTTP URL should redirect to the HTTPS equivalent.
 
 
-## No WWW
+### No WWW
 
 URLs should not require the use of “www”, as this represents a sub-domain and could lead to confusion if subdomains are implemented on the site. In other words, there is a question of whether the following are different sites or the same:
 
@@ -41,7 +44,7 @@ URLs should not require the use of “www”, as this represents a sub-domain an
 * https://my.www.domainname.com
 * https://my.domainname.com
 
-## Human-Friendly and Readable
+### Human-Friendly and Readable
 
 URLs should be case-*insensitive*; therefore, the following URL pairs should result in the display of the same content:
 
@@ -55,6 +58,8 @@ Further, when developing page addresses and URLs a user should be able to gain a
 
 * https://domainname.com/mainpage/posts/descriptive-post-title
 * not https://domainname.com/?page=1&post=5
+
+{% include partials/grid_system.html %}
 
 [^Section508]: [Quick Reference Guide to Section 508 Requirements and Standards 1194.22 (l)](http://www.section508.gov/content/learn/standards/quick-reference-guide#1194.22l)
 [^w3cProgressiveEnhancement]: [World Wide Web Consortium - Graceful degradation versus progressive enhancement](https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement)

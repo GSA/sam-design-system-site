@@ -12,9 +12,15 @@
           <li>
             <a href="#information-architecture">Information architecture</a>
           </li>
+          <li>
+            <a href="#keep-it-simple">Keep it simple</a>
+          </li>
         </ul>
       {% endif %}
     </li>
+    <li>
+      <a {% if page.url == '/getting-started/authorship/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/authorship/">Writers</a>
+    </li>    
     <li>
       <a {% if page.url == '/getting-started/visual-style/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/visual-style/">Visual designers</a>
       {% if page.url == '/getting-started/visual-style/' %}
@@ -31,14 +37,36 @@
           <li>
             <a href="#animation">Animation</a>
           </li>
+          <li>
+            <a href="#colors">Colors</a>
+          </li>
+          <li>
+            <a href="#text-accessibility">Text accessibility</a>
+          </li>
+          <li>
+            <a href="#grids">Grids</a>
+          </li>
         </ul>
       {% endif %}
     </li>
     <li>
-      <a {% if page.url == '/getting-started/authorship/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/authorship/">Writers</a>
-    </li>
-    <li>
       <a {% if page.url == '/getting-started/developers/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/developers/">Developers</a>
+      {% if page.url == '/getting-started/developers/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#progressive-enhancement">Progressive enhancement</a>
+          </li>
+          <li>
+            <a href="#bandwidth">Bandwidth &amp; processors</a>
+          </li>
+          <li>
+            <a href="#URLs">URLs</a>
+          </li>
+          <li>
+            <a href="#grids">Grids</a>
+          </li>
+        </ul>
+      {% endif %}
     </li>
   </ul>
 </nav>

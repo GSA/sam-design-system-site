@@ -1,8 +1,11 @@
 ---
-permalink: /information-architecture/
-title: Information Architecture
+permalink: /getting-started/user-experience/
 layout: styleguide
+title: For user experience designers
+lead: User experience design is the enchances user satisifaction by improving the usability, accessibility, and pleasure provided in the the interaction of a user with the product and includes human-computer interaction, extending it by addressing all aspects of a product or service incorporating cognitive psychology and feedback.
 ---
+
+## Information architecture
 
 There are two primary ways for a front-end user to find information. The first is through links from one page to another. The second is by searching for content and following links within those results. 
 
@@ -10,7 +13,7 @@ When a front-end user is looking for high-level or general information, the fron
 
 When a front-end user knows the information (s)he is looking for, search becomes the better option; therefore, front-end users should be allowed to search using text with additional filtering capabilities within a given category.
 
-## Content
+### Content
 
 Information Architecture, in terms of content, refers to how content is displayed. This could be the ordering of information within a block of content (chapters within a book, paragraphs within a chapter, sentences within a paragraph, and so on) or how sections of content are arranged within a page.
 
@@ -18,7 +21,7 @@ For the purposes of the *SAM Web Standards* we recognize two primary types of co
 
 Grouping content and metadata separately allows you to quickly discern the *content* of a page from the information *about* the content of a page. Further, content and metadata should be ordered, as much as possible, in a way that gives you what you are most likely concerned about first, with the details later. For reference, see the Inverted Pyramid[^InvertedPyramid] from journalism.
 
-## Content-focused and printable
+### Content-focused and printable
 
 For content pages (as opposed to those designed as portals or navigation), the text-based content should not be overpowered by the surrounding navigation or branding (chrome). Normal operating distance from the screen should be considered (mobile versus tablet, versus lap- or desk-top). 
 
@@ -27,7 +30,3 @@ To allow users the ability to adjust font sizes using their browser, front-end d
 On any given page, you should be able to print (or print to file) the content of that page and receive a well-formed (readable) document, without chrome elements. Print stylesheets can be used to facilitate this outcome by hiding the navigation elements, sidebars, footers (except copyright information if applicable), and so on. Further, the size of the printed page is usually unknown; therefore, it is important to remove (or override) any fixed width information and replace it with a percentage (usually 100%).
 
 Note: Printing a page should only include content considered public unless you add proper document handling, marking and labeling in accordance with Federal regulations.
-
-[^InvertedPyramid]: [Wikipedia - Inverted Pyramid](https://en.wikipedia.org/wiki/Inverted_pyramid)
-
-{% include acronyms.md %}

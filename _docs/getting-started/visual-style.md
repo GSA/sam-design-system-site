@@ -1,6 +1,6 @@
 ---
-permalink: /visual-style/
-title: Visual Style
+permalink: /getting-started/visual-style/
+title: For visual designers
 layout: styleguide
 lead: See <a href="https://standards.usa.gov/visual-style">US Web Design Standards</a> for design considerations.
 ---

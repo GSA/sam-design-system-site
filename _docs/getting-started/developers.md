@@ -1,8 +1,10 @@
 ---
-permalink: /technology/
-title: Technology Considerations
+permalink: /getting-started/developers/
+title: For developers
 layout: styleguide
 ---
+
+## Progressive enhancement
 
 The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement, [^ProgressiveEnhancement1]<sup>,</sup> [^ProgressiveEnhancement2] whereby content (the data being consumed, transferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary.[^Section508]<sup>,</sup>[^w3cProgressiveEnhancement]
 

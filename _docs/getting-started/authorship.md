@@ -1,10 +1,12 @@
 ---
-permalink: /content-style/
-title: Content Style
+permalink: /getting-started/authorship/
+title: For writers
 layout: styleguide
 ---
 
-The *SAM Web Standards* follows the [*18F Content Guidance*](https://pages.18f.gov/content-guide/) when writing content for the web:
+## Writing for the web
+
+The SAM Web Design Standards follows the <a href="https://pages.18f.gov/content-guide/">18F Content Guidance</a> when writing content for the web:
 
 * [active voice](https://pages.18f.gov/content-guide/active-voice/),
 * [acronyms and abbreviations](https://pages.18f.gov/content-guide/acronyms-and-abbreviations/),
@@ -27,7 +29,7 @@ The *SAM Web Standards* follows the [*18F Content Guidance*](https://pages.18f.g
 
 ## Reading-Level
 
-The *SAM Web Standards* attempts to use a fifth grade reading level.
+The SAM Web Design Standards attempts to use a fifth grade reading level.
 
 [link to site for determining reading level]
 

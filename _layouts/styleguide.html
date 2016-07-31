@@ -4,9 +4,20 @@
     {% include head.html %}
   </head>
   <body id="styleguide" class="{{ page.title | slugify }}">
+
   	{% include site-navigation/navprimary.html %}
 
-  	{% include sidenav.html %}
+    <aside class="sidenav">
+      {% if page.category == 'Getting started' %}
+        {% include site-navigation/navside-getting_started.html %}
+      {% elsif page.category == 'Component' %}
+        {% include site-navigation/navside-components.html %}
+      {% elsif page.category == 'Element' %}
+        {% include site-navigation/navside-elements.html %}
+      {% elsif page.category == 'Page template' %}
+        {% include site-navigation/navside-page_templates.html %}
+      {% endif %}
+    </aside>
 
     <div id="main-content" class="usa-grid main-content">
       <div class="styleguide-content usa-content">

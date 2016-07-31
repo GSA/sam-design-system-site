@@ -1,7 +1,8 @@
 ---
 permalink: /components/search/
 layout: styleguide
-type: compoonent
+category: Component
+type: component
 title: Search
 ---
 

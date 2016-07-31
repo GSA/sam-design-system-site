@@ -1,0 +1,44 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<nav>
+  <ul class="usa-sidenav-list">
+    <li>
+      <a {% if page.url == '/getting-started/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/">Overview</a>
+    </li>
+    <li>
+      <a {% if page.url == '/getting-started/user-experience/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/user-experience/">User experience</a>
+      {% if page.url == '/getting-started/user-experience/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#information-architecture">Information architecture</a>
+          </li>
+        </ul>
+      {% endif %}
+    </li>
+    <li>
+      <a {% if page.url == '/getting-started/visual-style/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/visual-style/">Visual designers</a>
+      {% if page.url == '/getting-started/visual-style/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#logo-and-usage">Logo and usage</a>
+          </li>
+          <li>
+            <a href="#typography">Typography</a>
+          </li>
+          <li>
+            <a href="#imagery">Imagery</a>
+          </li>
+          <li>
+            <a href="#animation">Animation</a>
+          </li>
+        </ul>
+      {% endif %}
+    </li>
+    <li>
+      <a {% if page.url == '/getting-started/authorship/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/authorship/">Writers</a>
+    </li>
+    <li>
+      <a {% if page.url == '/getting-started/developers/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/developers/">Developers</a>
+    </li>
+  </ul>
+</nav>

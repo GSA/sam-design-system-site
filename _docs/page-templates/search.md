@@ -1,7 +1,8 @@
 ---
 permalink: /page-templates/search/
 layout: styleguide
-type: templates
+category: Page template
+type: template
 title: Search page template
 ---
 

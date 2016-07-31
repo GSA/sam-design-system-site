@@ -1,6 +1,6 @@
 ---
 permalink: /
-layout: homepage
+layout: styleguide
 title: Draft SAM Web Design Standards
 ---
 
@@ -161,4 +161,4 @@ title: Draft SAM Web Design Standards
   </div>
 </section>
 
-{% include footer.html %}
+{% include partials/footer.html %}

@@ -59,6 +59,10 @@ Further, when developing page addresses and URLs a user should be able to gain a
 * https://domainname.com/mainpage/posts/descriptive-post-title
 * not https://domainname.com/?page=1&post=5
 
+## Feature switches
+
+A feature switch allows you to begin development of a feature, but only have it available in certain environments. Therefore, new features can be merged into the master codebase without negatively impacting continuous integration or deployment.
+
 {% include partials/grid_system.html %}
 
 [^Section508]: [Quick Reference Guide to Section 508 Requirements and Standards 1194.22 (l)](http://www.section508.gov/content/learn/standards/quick-reference-guide#1194.22l)

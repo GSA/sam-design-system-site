@@ -13,7 +13,7 @@ title: Form controls
         UI kit documentation
       </button>
       <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
-        {% include formcontroloverview.md %}
+        {% include partials/formcontroloverview.html %}
       </div>
     </li>    
   </ul>

@@ -4,7 +4,7 @@
     {% include head.html %}
   </head>
   <body id="styleguide" class="{{ page.title | slugify }}">
-  	{% include navbar.html %}
+  	{% include site-navigation/navprimary.html %}
 
   	{% include sidenav.html %}
 

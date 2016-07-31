@@ -20,7 +20,7 @@ lead: See <a href="https://standards.usa.gov/visual-style">US Web Design Standar
 
 The Standards use the Source Sans Pro [pairing and style](https://playbook.cio.gov/designstandards/visual-style/#pairings) defined by the U.S. Web Design Standards.
 
-{% include typography.md %}
+{% include getting-started/typography.html %}
 
 <h2 class="usa-heading" id="imagery">Imagery</h2>
 

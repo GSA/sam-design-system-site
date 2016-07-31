@@ -1,6 +1,7 @@
 ---
 permalink: /getting-started/user-experience/
 layout: styleguide
+category: Getting started
 title: For user experience designers
 lead: User experience design is the enchances user satisifaction by improving the usability, accessibility, and pleasure provided in the the interaction of a user with the product and includes human-computer interaction, extending it by addressing all aspects of a product or service incorporating cognitive psychology and feedback.
 ---
@@ -30,3 +31,19 @@ To allow users the ability to adjust font sizes using their browser, front-end d
 On any given page, you should be able to print (or print to file) the content of that page and receive a well-formed (readable) document, without chrome elements. Print stylesheets can be used to facilitate this outcome by hiding the navigation elements, sidebars, footers (except copyright information if applicable), and so on. Further, the size of the printed page is usually unknown; therefore, it is important to remove (or override) any fixed width information and replace it with a percentage (usually 100%).
 
 Note: Printing a page should only include content considered public unless you add proper document handling, marking and labeling in accordance with Federal regulations.
+
+## Keep it simple
+
+As the joke goes:
+
+<blockquote>
+  <p>A user interface is like a joke. If you have to explain it, it&rsquo;s not that good.</p>
+  <p><cite><a href="https://www.startupvitamins.com/products/startup-poster-a-user-interface-is-like-a-joke-if-you-have-to-explain-it-its-not-that-good">Poster from Startup Vitamins</a></cite></p>
+</blockquote>
+
+<ul>
+  <li>Keep the user interface and navigation as simple as possible based on user feedback.</li>
+  <li>Use workflows for complex actions to break the work down.</li>
+</ul>
+
+

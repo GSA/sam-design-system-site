@@ -1,7 +1,8 @@
 ---
 permalink: /getting-started/authorship/
-title: For writers
 layout: styleguide
+category: Getting started
+title: For writers
 ---
 
 ## Writing for the web

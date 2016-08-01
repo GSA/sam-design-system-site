@@ -1,16 +1,21 @@
 {
   "name": "samwds",
-  "version": "0.1.30",
+  "version": "0.2.0",
   "description": "Open source UI components and visual style guide for the System for Award Management environment.",
   "main": "src/js/start.js",
   "scripts": {
+    "prepublish": "bundle && gulp copy-vendor-sass && gulp build",
+    "prestart": "gulp copy-vendor-sass",
     "start": "gulp website:serve",
-    "test": "gulp eslint scss-lint",
-    "preversion": "npm test"
+    "build:package": "gulp copy-vendor-sass && gulp release",
+    "test": "gulp eslint scss-lint scss-lint-docs test",
+    "preversion": "npm test",
+    "version": "npm run prepublish",
+    "build:website": "gulp copy-vendor-sass && gulp website:build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbrucegsa/sam-web-design-standards"
+    "url": "git+https://github.com/gsa/sam-web-design-standards"
   },
   "author": "SAM",
   "contributors": [
@@ -18,12 +23,14 @@
   ],
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
-    "url": "https://github.com/jbrucegsa/sam-web-design-standards/issues"
+    "url": "https://github.com/gsa/sam-web-design-standards/issues"
   },
-  "homepage": "https://github.com/jbrucegsa/sam-web-design-standards#readme",
+  "homepage": "https://github.com/gsa/sam-web-design-standards#readme",
   "dependencies": {
     "cross-spawn": "^2.1.5",
     "jquery": "^2.2.0",
+    "politespace": "^0.1.4",
+    "prismjs": "^1.5.1",
     "font-awesome": "*",
     "uswds": "*"
   },
@@ -31,13 +38,16 @@
     "browserify": "^13.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-cached": "^1.1.0",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^1.1.1",
     "gulp-filter": "^3.0.1",
     "gulp-if": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
     "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.1.1",
     "gulp-scss-lint": "^0.3.9",
     "gulp-sourcemaps": "^1.6.0",
@@ -45,10 +55,14 @@
     "gulp-util": "^3.0.7",
     "gulp-zip": "^3.1.0",
     "inquirer": "^0.11.4",
+    "jsdom": "^9.0.0",
     "merge-stream": "^1.0.0",
     "minimist": "^1.2.0",
+    "mocha": "^2.4.5",
+    "node-notifier": "^4.6.0",
     "node-sass": "^3.4.2",
     "run-sequence": "^1.1.5",
+    "should": "^8.3.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"

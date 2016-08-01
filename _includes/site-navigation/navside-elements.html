@@ -1,0 +1,48 @@
+<nav>
+  <ul class="usa-sidenav-list">
+    <li>
+      <a {% if page.url == '/elements/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/">Overview</a>
+    </li>
+    <li>
+      <a {% if page.url == '/elements/actions-icons/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/actions-icons/">Actions &amp; icons</a>
+    </li>
+    <li>
+      <a {% if page.url == '/elements/buttons/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/buttons/">Buttons</a>
+    </li>
+    <li>
+      <a {% if page.url == '/elements/form-controls/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/form-controls/">Form controls</a>
+      {% if page.url == '/elements/form-controls/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#text-input">Text input and areas</a>
+          </li>
+          <li>
+            <a href="#select">Select</a>
+          </li>
+          <li>
+            <a href="#date-input">Date input</a>
+          </li>
+        </ul>
+      {% endif %}
+    </li>
+    <li>
+      <a {% if page.url == '/elements/typography/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/typography/">Typography</a>
+      {% if page.url == '/elements/typography/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#links">Links</a>
+          </li>
+          <li>
+            <a href="#lists">Lists</a>
+          </li>
+          <li>
+            <a href="#labels">Labels</a>
+          </li>
+        </ul>
+      {% endif %}
+    </li>
+    <li>
+      <a {% if page.url == '/elements/tables/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/tables/">Tables</a>
+    </li>
+  </ul>
+</nav>

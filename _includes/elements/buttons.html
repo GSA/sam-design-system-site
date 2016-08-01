@@ -1,0 +1,108 @@
+<p class="usa-font-lead">See <a href="https://standards.usa.gov/buttons/">US Web Design Standards</a> for details regarding when to use this element.</p>
+
+<div class="usa-alert usa-alert-info">
+  <div class="usa-alert-body">
+    <h3 class="usa-alert-heading">Deviation from the US Web Design Standards</h3>
+    <p class="usa-alert-text">The SAM Web Design Standards limits the number of buttons to be used when compared to the US Web Design Standards.</p>
+  </div>
+</div>
+
+<div class="usa-alert usa-alert-info">
+  <div class="usa-alert-body">
+    <h3 class="usa-alert-heading">Extenstion of the US Web Design Standards</h3>
+    <p class="usa-alert-text">The US Web Design Standards does not define a button with a cancel link nor a dismiss button.</p>
+  </div>
+</div>
+
+<div class="preview">
+  <h6>Primary Button</h6>
+  <div class="button_wrapper">
+    <button>Default</button>
+    <button class="usa-button-active">Active</button>
+    <button class="usa-button-hover">Hover</button>
+  </div>
+
+  <h6>Secondary Buttons</h6>
+  <div class="button_wrapper">
+    <button class="usa-button-secondary">Default</button>
+    <button class="usa-button-secondary usa-button-active">Active</button>
+    <button class="usa-button-secondary usa-button-hover">Hover</button>
+  </div>
+
+  <div class="button_wrapper">
+    <button class="usa-button-outline" type="button">Default</button>
+    <button class="usa-button-outline usa-button-active">Active</button>
+    <button class="usa-button-outline usa-button-hover">Hover</button>
+  </div>
+
+  <div class="button_wrapper button_wrapper-dark">
+    <button class="usa-button-outline-inverse" type="button">Default</button>
+    <button class="usa-button-outline-inverse usa-button-active">Active</button>
+    <button class="usa-button-outline-inverse usa-button-hover">Hover</button>
+  </div>
+
+  <h6>Disabled Button</h6>
+  <div class="button_wrapper">
+    <button class="usa-button-disabled">Default</button>
+  </div>
+
+  <h6>Button with cancel</h6>
+  <div class="button_wrapper">
+    <a class="usa-cancel" href="#">cancel</a> <button>Cancel</button>
+  </div>
+
+  <h6>Dismiss Button</h6>
+  <div class="button_wrapper">
+    <button class="usa-button-dismiss"><span class="usa-sr-only">Dismiss</span></button>
+  </div>
+
+  <h6>Button Focus</h6>
+  <div class="button_wrapper">
+    <button class="usa-button-focus">Default</button>
+    <button class="usa-button-primary-alt usa-button-focus">Default</button>
+    <button class="usa-button-secondary usa-button-focus">Default</button>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <ul class="usa-unstyled-list">
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">
+        PHP UI kit usage
+      </button>
+      <div id="collapsible-0" class="usa-accordion-content" aria-hidden="true">
+        <pre><code class="language-php">
+// render unescaped HTML string
+echo SAMUIKit\Other::button($config);
+        </code></pre>
+      </div>
+    </li>
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">
+        JavaScript UI kit usage
+      </button>
+      <div id="collapsible-1" class="usa-accordion-content" aria-hidden="true">
+        <pre><code class="language-js">
+        </code></pre>
+      </div>
+    </li>
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-2">
+        UI kit documentation
+      </button>
+      <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
+        <h4 class="usa-heading">Buttons</h4>
+        <h5>Required keys</h5>
+        <ul>
+          <li><strong>title:</strong> The text to display within the button.</li>
+        </ul>
+        
+        <h5>Optional keys</h5>
+        <ul>
+          <li><strong>type:</strong> primary|alt|secondary|gray|outline|outline-inverse|big|disabled (default is primary).</li>
+          <li><strong>cancel:</strong> Anchor href target for the cancel link. Usually not necessary.</li>
+        </ul>
+      </div>
+    </li>    
+  </ul>
+</div>

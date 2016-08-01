@@ -1,5 +1,11 @@
 # Jekyll files and directories
 #
+# Note: We want the node package to be as small as possible. Therefore, we ignore all
+#       files and folders related to building the Jekyll site itself.
+#
+#       Is it possible, and should we, ignore the node_modules directory? Essentially
+#       making the Node package only deliver the src directory.
+#
 /_*
 /assets/
 /config/
@@ -8,10 +14,18 @@
 #
 .editorconfig
 .eslintrc
+.ruby-version
 .scss-lint.yml
 .travis.yml
+_config.yml
+circle.yml
 Gemfile
 Gemfile.lock
 gulpfile.js
 .sass-cache/
 .bundle/
+
+# Ensure that src and dist are published
+#
+!dist/
+!src/

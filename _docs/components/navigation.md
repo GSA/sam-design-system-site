@@ -1,0 +1,18 @@
+---
+permalink: /components/navigation/
+layout: styleguide
+category: Component
+type: component
+title: Navigation
+lead: Allows users to orient themselves within the site and move between pages.
+---
+
+{% include components/header.html %}
+
+{% include components/primarynav.html %}
+
+{% include components/sidenav.html %}
+
+{% include components/footers.html %}
+
+{% include components/pagination.html %}

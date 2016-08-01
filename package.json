@@ -29,6 +29,8 @@
   "dependencies": {
     "cross-spawn": "^2.1.5",
     "jquery": "^2.2.0",
+    "politespace": "^0.1.4",
+    "prismjs": "^1.5.1",
     "font-awesome": "*",
     "uswds": "*"
   },

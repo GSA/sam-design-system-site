@@ -8,10 +8,26 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var merge = require('merge-stream');
 var rename = require('gulp-rename');
+var runSequence = require('run-sequence');
 var assert = require('gulp-if');
 var linter = require('gulp-eslint');
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 var doc_task = 'docs_' + task;
+
+gulp.task('copy-vendor-javascript', function (done) {
+
+  dutil.logMessage('copy-vendor-javascript', 'Compiling vendor JavaScript');
+
+  var stream = gulp.src([ // TODO: Should we copy the USWDS Sass, as it is a vendor?
+      './node_modules/uswds/dist/js/uswds.min.js'
+    ])
+    .on('error', function (error) {
+      dutil.logError('copy-vendor-javascript', error);
+    })
+    .pipe(gulp.dest('src/js/')).pipe(gulp.dest('_site-assets/js/'));
+
+  return stream;
+});
 
 gulp.task('doc_eslint', function (done) {
 
@@ -45,10 +61,16 @@ gulp.task('eslint', function (done) {
 
 });
 
-gulp.task(task, [ 'eslint' ], function (done) {
-
+gulp.task(task, function () {
   dutil.logMessage(task, 'Compiling JavaScript');
+  
+  runSequence('eslint', 'copy-vendor-javascript', 'actually-compile');
 
+
+
+});
+
+gulp.task('actually-compile', function(done){
   var defaultStream = browserify({
     entries: 'src/js/start.js',
     debug: true,
@@ -79,7 +101,6 @@ gulp.task(task, [ 'eslint' ], function (done) {
     .pipe(gulp.dest('dist/js'));
 
   return merge(defaultStream, minifiedStream);
-
 });
 
 gulp.task(doc_task, [ 'doc_eslint' ], function (done) {

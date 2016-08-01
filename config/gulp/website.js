@@ -10,26 +10,89 @@ var clean = require('gulp-clean');
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 var taskBuild = task + ':build';
 var taskServe = task + ':serve';
+var taskDev = task + ':development';
 
-gulp.task('bundle-clean-build', function(done) {
+gulp.task('clean-fonts', function () {
+  return del('assets/fonts/');
+});
+
+gulp.task('clean-bundled-javascript', function () {
+  return del('assets/js/vendor/' + dutil.pkg.name + '.min.js');
+});
+
+gulp.task('clean-generated-assets', function (done) {
   runSequence(
-    'clean-assets',
-    'bundle-gems',
-    'build',
+    [
+      'clean-fonts',
+      'clean-bundled-javascript',
+    ],
     done
   );
 });
 
-gulp.task('clean-assets', function(done) {
+
+gulp.task('copy-docs-assets:images', function (done) {
+
+  dutil.logMessage('copy-docs-assets:images', 'Copying _site-assets/img to assets/img');
+
+  return gulp.src('_site-assets/img/**/*')
+    .on('error', function (data) { dutil.logError('copy-docs-assets:images', data); })
+    .pipe(gulp.dest('assets/img'));
+
+});
+
+gulp.task('copy-docs-assets:stylesheets', function (done) {
+
+  dutil.logMessage('copy-docs-assets:stylesheets', 'Copying _site-assets/css to assets/css');
+
+  return gulp.src('_site-assets/css/**/*')
+    .on('error', function (data) { dutil.logError('copy-docs-assets:stylesheets', data); })
+    .pipe(gulp.dest('assets/css'));
+
+});
+
+gulp.task('copy-bundled-javascript', function (done) {
+
+  dutil.logMessage('copy-bundled-javascript', 'Copying ' + dutil.dirName + ' release JavaScript');
+
+  return gulp.src('dist/js/' + dutil.pkg.name + '.min.js')
+    .on('error', function (data) { dutil.logError('copy-bundled-javascript', data); })
+    .pipe(gulp.dest('assets/js/vendor'));
+
+});
+
+gulp.task('copy-fonts', function (done) {
+
+  dutil.logMessage('copy-fonts', 'Copying ' + dutil.dirName + ' release fonts');
+
+  return gulp.src('dist/fonts/**/*')
+    .on('error', function (data) { dutil.logError('copy-fonts', data); })
+    .pipe(gulp.dest('assets/fonts'));
+
+});
+
+gulp.task('copy-images', function (done) {
+
+  dutil.logMessage('copy-images', 'Copying ' + dutil.dirName + ' release images');
+
+  return gulp.src('dist/img/**/*')
+    .on('error', function (data) { dutil.logError('copy-images', data); })
+    .pipe(gulp.dest('assets/img'));
+});
+
+gulp.task('copy-assets', [ 'build' ], function (done) {
   runSequence(
+    'clean-generated-assets',
+    'docs_javascript',
     [
-      'clean-assets-css',
-      'clean-assets-js',
-      'clean-assets-img',
-      'clean-assets-fonts'
+      'copy-bundled-javascript',
+      'copy-fonts',
+      'copy-images',
+      'copy-docs-assets:images',
+      'copy-docs-assets:stylesheets',
     ],
     done
-  )
+  );
 });
 
 // Wrapper task for `bundle install` which installs gems for the Jekyll site.
@@ -37,7 +100,7 @@ gulp.task('clean-assets', function(done) {
 gulp.task('bundle-gems', function (done) {
 
   var bundle = spawn('bundle');
-  
+
   bundle.stdout.on('data', function (data) {
 
     if (/[\w\d]+/.test(data)) {
@@ -45,6 +108,12 @@ gulp.task('bundle-gems', function (done) {
       dutil.logData('bundle-gems', data);
 
     }
+
+  });
+
+  bundle.stderr.on('data', function (data) {
+
+    dutil.logError('bundle-gems', data);
 
   });
 
@@ -82,49 +151,54 @@ gulp.task(task, function (done) {
 // Wrapper task for `jekyll serve --watch` which runs after `gulp bundle-gems` to make sure
 // the gems are properly bundled.
 //
-gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
+gulp.task(taskServe, [ 'copy-assets', 'bundle-gems' ], function (done) {
 
   gulp.watch([
-    'assets/css/styleguide.scss',
+    '_site-assets/css/**/*.scss',
     'src/stylesheets/components/**/*.scss',
     'src/stylesheets/elements/**/*.scss',
     'src/stylesheets/core/**/*.scss',
     'src/stylesheets/all.scss',
+    '!docs/doc_assets/css/lib/**/*',
     '!src/stylesheets/lib/**/*',
-    '_styleguide_assets/css/**/*'
   ], function (event) {
     runSequence(
-      'clean-assets-css',
-      'sass'
+      'sass',
+      'copy-docs-assets:stylesheets'
     );
   });
-
   gulp.watch([
-    'assets/js/start.js',
     'src/js/**/*.js',
     '!src/js/vendor/**/*',
-    '_styleguide_assets/js/**/*'
   ], function (event) {
     runSequence(
-      'clean-assets-js',
-      'javascript'
+      'javascript',
+      'clean-bundled-javascript',
+      [
+        'copy-bundled-javascript',
+      ]
     );
   });
-
   gulp.watch([
-    'src/img/**/*',
-    '_styleguide_assets/img/**/*'
+    '_site-assets/js/**/*.js',
+    '!docs/doc_assets/js/vendor/**/*',
   ], function (event) {
+    runSequence('docs_javascript');
+  });
+  gulp.watch('src/img/**/*', function (event) {
     runSequence(
-      'clean-assets-img',
-      'images'
+      'images',
+      [
+        'copy-images',
+        'copy-docs-assets:images',
+      ]
     );
   });
-
   gulp.watch('src/fonts/**/*', function (event) {
     runSequence(
-      'clean-assets-fonts',
-      'fonts'
+      'fonts',
+      'clean-fonts',
+      'copy-fonts'
     );
   });
 
@@ -137,7 +211,7 @@ gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
       data += '';
       data = data.replace(/[\s]+/g, ' ');
 
-      if (/done|regen/i.test(data)) {
+      if (/done|[^-]regen/i.test(data)) {
 
         dutil.logMessage(taskServe, data);
 
@@ -151,6 +225,10 @@ gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
 
   });
 
+  jekyll.stderr.on('data', function (data) {
+    dutil.logError(taskServe, data);
+  });
+
   jekyll.on('error', function (error) { done(error); });
 
   jekyll.on('close', function (code) { if (0 === code) { done(); } });
@@ -161,7 +239,7 @@ gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
 // Wrapper task for `jekyll build` which runs after `gulp bundle-gems` to make sure
 // the gems are properly bundled.
 //
-gulp.task(taskBuild, [ 'bundle-gems' ], function (done) {
+gulp.task(taskBuild, [ 'copy-assets', 'bundle-gems' ], function (done) {
 
   var jekyll = spawn('jekyll', [ 'build' ]);
 
@@ -175,6 +253,10 @@ gulp.task(taskBuild, [ 'bundle-gems' ], function (done) {
 
     }
 
+  });
+
+  jekyll.stderr.on('data', function (data) {
+    dutil.logError(taskBuild, data);
   });
 
   jekyll.on('error', function (error) { done(error); });

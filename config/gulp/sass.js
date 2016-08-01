@@ -13,7 +13,7 @@ var del = require('del');
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 
 var entryFileFilter = filter('all.scss', { restore: true });
-var normalizeCssFilter = filter('normalize.css', { restore: true });
+var fontAwesomeCssFilter = filter('font-awesome.css', { restore: true });
 var supportedBrowsers = [
   '> 1%',
   'Last 2 versions',
@@ -60,7 +60,7 @@ gulp.task('scss-lint-docs', function (done) {
     return done();
   }
 
-  dutil.logMessage('scss-lint-docs', 'Linting files found by `docs/doc_assets/**/*.scss`');
+  dutil.logMessage('scss-lint-docs', 'Linting files found by `_site-assets/**/*.scss`');
 
   runSequence(
     // README: The SCSS files have Jekyll dashes at the top. You'd think the best way
@@ -80,13 +80,12 @@ gulp.task('copy-vendor-sass', function (done) {
   dutil.logMessage('copy-vendor-sass', 'Compiling vendor CSS');
 
   var stream = gulp.src([ // TODO: Should we copy the USWDS Sass, as it is a vendor?
-    './node_modules/normalize.css/normalize.css',
-    './node_modules/bourbon/app/assets/stylesheets/**/*.scss',
-    './node_modules/bourbon-neat/app/assets/stylesheets/**/*.scss',
-  ])
-    .pipe(normalizeCssFilter)
-      .pipe(rename('_normalize.scss'))
-    .pipe(normalizeCssFilter.restore)
+      './node_modules/font-awesome/css/font-awesome.css',
+      './node_modules/uswds/src/stylesheets/**/*.scss'
+    ])
+    .pipe(fontAwesomeCssFilter)
+      .pipe(rename('_font-awesome.css'))
+    .pipe(fontAwesomeCssFilter.restore)
     .on('error', function (error) {
       dutil.logError('copy-vendor-sass', error);
     })

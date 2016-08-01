@@ -15,7 +15,6 @@ name: Draft SAM Web Design Standards
 version: 0.1.1
 
 exclude:
-- go
 - Gemfile
 - Gemfile.lock
 - README.md
@@ -31,7 +30,7 @@ permalink: pretty
 repos:
 - name: Draft SAM Web Design Standards
   description: Main repository for the Draft U.S. Web Design Standards
-  url: https://github.com/joshbruce/sam-web-design-standards
+  url: https://github.com/gsa/sam-web-design-standards
 # - name: Draft SAM Web Design Standards Assets
 #   description: Draft SAM Web Design Standards visual design assets
 #   url: https://github.com/jbrucegsa/sam-web-design-standards-assets
@@ -43,7 +42,7 @@ repos:
 #  style: :compressed
 
 # All pages are within the _docs folder
-# this makes jekyll understand that.
+# this makes Jekyll through gh-pages understand that.
 collections:
   docs:
     output: true

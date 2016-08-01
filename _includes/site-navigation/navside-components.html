@@ -1,0 +1,63 @@
+<nav>
+  <ul class="usa-sidenav-list">
+    <li>
+      <a {% if page.url == '/components/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/">Overview</a>
+    </li>
+    <li>
+      <a {% if page.url == '/components/accordions/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/accordions/">Accordions</a>
+    </li>
+    <li>
+      <a {% if page.url == '/components/alerts/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/alerts/">Alerts</a>
+    </li>
+    <li>
+      <a {% if page.url == '/components/navigation/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/navigation/">Navigation</a>
+      {% if page.url == '/components/navigation/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#header">Header</a>
+          </li>
+          <li>
+            <a href="#primary-navigation">Primary navigation</a>
+          </li>
+          <li>
+            <a href="#side-navigation">Side navigation</a>
+          </li>
+          <li>
+            <a href="#footers">Footers</a>
+          </li>
+          <li>
+            <a href="#pagination">Pagination</a>
+          </li>
+        </ul>
+      {% endif %}
+    </li>
+    <li>
+      <a {% if page.url == '/components/form-templates/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/form-templates/">Form templates</a>
+      {% if page.url == '/components/form-templates/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#name-form">Name form</a>
+          </li>
+          <li>
+            <a href="#address-form">Address form</a>
+          </li>
+          <li>
+            <a href="#sign-in-form">Sign-in form</a>
+          </li>
+          <li>
+            <a href="#registration-form">Registration form</a>
+          </li>
+          <li>
+            <a href="#inline-feedback-form-quick">Inline feedback form (quick)</a>
+          </li>
+          <li>
+            <a href="#support-form">Support form</a>
+          </li>
+        </ul>
+      {% endif %}
+    </li>
+    <li>
+      <a {% if page.url == '/components/resource/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/resource/">Resource</a>
+    </li>
+  </ul>
+</nav>

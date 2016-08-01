@@ -1,5 +1,6 @@
 var pkg = require('../../package.json');
 var gutil = require('gulp-util');
+var notifier = require('node-notifier');
 
 var shellPrefix = '$';
 
@@ -56,6 +57,15 @@ function drawFlag () {
 
 }
 
+function notify (title, message, wait) {
+  notifier.notify({
+    title: title,
+    message: message,
+    icon: 'src/img/favicons/favicon-192.png',
+    wait: wait,
+  });
+}
+
 module.exports = {
 
   pkg: {
@@ -65,13 +75,11 @@ module.exports = {
 
   },
 
-  serveDestName: 'styleguide',
-
   dirName: pkg.name + '-' + pkg.version,
 
   logIntroduction: function (message) {
 
-    message = message || 'Draft SAM Web Design Standards';
+    message = message || 'SAM Web Design Standards';
 
     gutil.log(
       gutil.colors.yellow('v' + pkg.version),
@@ -114,12 +122,23 @@ module.exports = {
 
   },
 
+  logError: function (name, message) {
+
+    gutil.log(
+      gutil.colors.red(name),
+      gutil.colors.yellow(message)
+    );
+    notify(this.dirName + ' gulp ' + name, message, true);
+
+  },
+
   logMessage: function (name, message) {
 
     gutil.log(
       gutil.colors.cyan(name),
       gutil.colors.green(message)
     );
+    notify(this.dirName + ' gulp ' + name, message, false);
 
   },
 

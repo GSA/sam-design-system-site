@@ -7,7 +7,7 @@ lead: The <a href="https://18f.gsa.gov/2015/09/28/web-design-standards/">US Web 
 ---
 
 <h2 id="sam-web-design-standards">The SAM Web Design Standards</h2>
-<p>Built and maintained by IAE designers and dvelopers, this resource extends The U.S. Web Design Standards to aid IAE designers and developers in creating an integrated award environment for the American people.</p>
+<p>Built and maintained by IAE designers and developers, this resource extends The U.S. Web Design Standards to aid IAE designers and developers in creating an integrated award environment for the American people.</p>
 
 <p>As the Standards do not replace the US Web Design Standards, it is important to visit and become familiar with them.</p>
 

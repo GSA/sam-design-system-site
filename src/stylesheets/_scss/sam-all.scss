@@ -1,0 +1,14 @@
+// this is iae-all.css
+
+// IAE Globals
+// 
+// Variables and generic class for the site.
+// 
+// Styleguide globals.
+@import 'sam/globals/samVariables';
+@import 'sam/globals/samGlobal';
+@import 'sam/globals/samMarginAndPadding';
+
+// Page Elements
+@import 'sam/page_elements/samHeader';
+@import 'sam/page_elements/samFooter';

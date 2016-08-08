@@ -1,0 +1,14 @@
+// this is sam all.css
+
+// SAM Globals
+// 
+// Variables and generic class for the site.
+// 
+// Styleguide globals.
+@import 'sam/samVariables';
+@import 'sam/samGlobal';
+@import 'sam/samMarginAndPadding';
+
+// Page Elements
+@import 'sam/samHeader';
+@import 'sam/samFooter';

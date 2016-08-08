@@ -1,0 +1,134 @@
+// Globals
+//
+// Global declarative helper classes.
+//
+// Styleguide globals.global
+
+a:visited{ 
+    color: $color-primary !important;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+    
+.disable {
+    color: $color-gray-warm-dark;
+    cursor: default;
+    &:hover {
+        background-color: transparent !important;
+        color: $color-gray-warm-dark !important;
+    }
+    &:visited{
+        color: $color-gray-warm-dark !important;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display:none;
+}
+
+.inline {
+    display: inline;
+}
+
+.relative {
+    position: relative
+}
+
+.width100 {
+    width: 100%;
+}
+
+.middle-align {
+    display: table-cell;
+    vertical-align: middle
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin panel($bgcolor, $padding) {
+    display: block;
+    padding: $padding;
+    background: $bgcolor;
+    border: 1px solid darken($bgcolor, 5%);
+}
+
+hr {
+    color: #888888;
+    background-color: #888888;
+    height: .5px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.bold {
+    font-weight: $font-bold;
+}
+
+.serif {
+    font-family: $font-serif;
+}
+
+.blankSpacer {
+    text-indent: -9999em;
+}
+
+.line-divider {
+    display: block;
+    height: 1px;
+    margin: .5em 0 .5em 0;
+    &:before {
+        border-top: 1px solid #000000;
+    }
+    &:after {
+        border-bottom: 1px solid #FFFFFF;
+    }
+}
+
+.marginCenter {
+    position: relative;
+    margin: 0px 16%;
+}
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}

@@ -19,6 +19,7 @@
 
 // SAMWDS Core additions and overrides -------------- //
 @import 'core/utilities';
+@import 'core/margin-padding';
 
 
 // USWDS Elements -------------- //
@@ -52,6 +53,8 @@
 @import 'components/accordions';
 @import 'components/actions';
 @import 'components/alerts';
+@import 'components/header';
+@import 'components/footer';
 @import 'components/search-result';
 @import 'components/navprimary';
 @import 'components/navsecondary';

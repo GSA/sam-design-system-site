@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 
-#sam-header {
+#iae-header {
 	position: relative;
 	overflow: visible;
 	z-index: 9999;
@@ -15,7 +15,7 @@ body {
 	color: $color-white;
 }
 
-.sam-header {
+.iae-header {
 	//-moz-box-shadow: 0 0 1em rgba(#000, .4);
 	//-webkit-box-shadow: 0 0 1em rgba(#000, .4);
 	//box-shadow: 0 0 1em rgba(#000, .4);
@@ -29,17 +29,17 @@ body {
 		height: auto !important;
 		margin-top: 4px !important;
 	}
-	
-	.sam-header-menu {
+
+	.iae-header-menu {
 		float: left;
 	}
-	
-	.sam-header-logo {
+
+	.iae-header-logo {
 		padding-top: 25px;
 		float: left;
 	}
-	
-	.sam-header-nav {
+
+	.iae-header-nav {
 		text-align: center;
 		background-color: #18385e;
 		padding-top: 20px;
@@ -52,8 +52,8 @@ body {
 			font-size: 14px;
 		}
 	}
-	
-	.sam-sign-in {
+
+	.iae-sign-in {
 		text-align: right;
 		padding-top: 35px;
 		font-weight: 300;
@@ -67,7 +67,7 @@ body {
 		}
 	}
 
-	.sam-header-search {
+	.iae-header-search {
 		float: right;
 		width: 50%;
 		margin-top: 2em;

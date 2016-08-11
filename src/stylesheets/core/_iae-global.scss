@@ -4,7 +4,7 @@
 //
 // Styleguide globals.global
 
-a:visited{ 
+a:visited{
     color: $color-primary !important;
 }
 
@@ -16,7 +16,7 @@ a:visited{
      clear: both;
      height: 0;
      }
-    
+
 .disable {
     color: $color-gray-warm-dark;
     cursor: default;
@@ -63,27 +63,6 @@ a:visited{
 .middle-align {
     display: table-cell;
     vertical-align: middle
-}
-
-@mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
-}
-
-@mixin opacity($opacity) {
-    opacity: $opacity;
-    $opacity-ie: $opacity * 100;
-    filter: alpha(opacity=$opacity-ie); //IE8
-}
-
-@mixin panel($bgcolor, $padding) {
-    display: block;
-    padding: $padding;
-    background: $bgcolor;
-    border: 1px solid darken($bgcolor, 5%);
 }
 
 hr {

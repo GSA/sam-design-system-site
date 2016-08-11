@@ -128,3 +128,26 @@
 @mixin usa-bgcolor-secondary-lightest() {
   @include bgcolor($color-secondary-lightest, $color-black);
 }
+
+// additional mixins
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin panel($bgcolor, $padding) {
+    display: block;
+    padding: $padding;
+    background: $bgcolor;
+    border: 1px solid darken($bgcolor, 5%);
+}

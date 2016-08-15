@@ -29,7 +29,10 @@ gulp.task('scss-lint', function (done) {
     return done();
   }
 
-  return gulp.src(['src/stylesheets/**/*.scss', '!src/stylesheets/lib/**/*.scss'])
+  return gulp.src([
+      'src/stylesheets/**/*.scss', 
+      '!src/stylesheets/lib/**/*.scss' // Do not lint vendor Sass
+    ])
     .pipe(linter({
       config: '.scss-lint.yml',
     }));

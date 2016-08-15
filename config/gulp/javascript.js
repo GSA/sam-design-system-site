@@ -11,12 +11,13 @@ var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 var assert = require('gulp-if');
 var linter = require('gulp-eslint');
+var del = require('del');
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 var doc_task = 'docs_' + task;
 
 gulp.task('copy-vendor-javascript', function (done) {
 
-  dutil.logMessage('copy-vendor-javascript', 'Copy vendor JavaScript');
+  dutil.logMessage('copy-vendor-javascript', 'Copying vendor JavaScript');
 
   var stream = gulp.src([
       './node_modules/uswds/src/js/**/*.js',

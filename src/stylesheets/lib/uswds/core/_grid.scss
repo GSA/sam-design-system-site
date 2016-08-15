@@ -124,11 +124,7 @@
 }
 
 .usa-grid {
-  @include padding(null $site-margins-mobile);
-
-  @include media($medium-screen) {
-    @include padding(null $site-margins);
-  }
+  padding: 0 $grid-margins;
 }
 
 .usa-grid-full {

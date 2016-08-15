@@ -15,9 +15,8 @@
     color: $color-base;
     display: block;
     font-family: $font-sans;
-    line-height: 1.3;
-    padding: 0.85rem 1rem 0.85rem 1.8rem;
-    text-decoration: none;
+    line-height: 1;
+    padding: 1rem 1rem 1rem 1.8rem;
 
     &:hover {
       background-color: $color-gray-lightest;
@@ -31,9 +30,12 @@
     }
 
     &.usa-current {
-      border-left: 4px solid $color-primary;
       color: $color-primary;
       font-weight: $font-bold;
+    }
+
+    &.usa-current {
+      border-left: 4px solid $color-primary;
       padding-left: 1.4rem;
     }
   }
@@ -51,21 +53,21 @@
   a {
     padding-left: 2.8rem;
     line-height: $heading-line-height;
+  }
 
-    &:hover,
-    &.usa-current {
-      border: none;
-      padding-left: 2.8rem;
-    }
+  a:hover,
+  a.usa-current {
+    border: none;
+    padding-left: 2.8rem;
   }
 
   .usa-sidenav-sub_list {
     a {
       padding-left: 3.8rem;
+    }
 
-      &:hover {
-        padding-left: 3.8rem;
-      }
+    a:hover {
+      padding-left: 3.8rem;
     }
   }
 }

@@ -12,6 +12,10 @@ var taskBuild = task + ':build';
 var taskServe = task + ':serve';
 var taskDev = task + ':development';
 
+// CSS compile /src and /prism - move to /assets
+// Fonts we can get from the /src
+// Images are a combination from /src and /_site-assets/img
+// JS should be a straight compile
 gulp.task('clean-fonts', function () {
   return del('assets/fonts/');
 });

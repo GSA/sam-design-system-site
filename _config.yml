@@ -40,6 +40,9 @@ repos:
 # sass:
 #   sass_dir: _scss
 #  style: :compressed
+sass:
+  load_paths:
+    - src/stylesheets
 
 # All pages are within the _docs folder
 # this makes Jekyll through gh-pages understand that.

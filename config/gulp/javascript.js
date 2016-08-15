@@ -16,15 +16,16 @@ var doc_task = 'docs_' + task;
 
 gulp.task('copy-vendor-javascript', function (done) {
 
-  dutil.logMessage('copy-vendor-javascript', 'Compiling vendor JavaScript');
+  dutil.logMessage('copy-vendor-javascript', 'Copy vendor JavaScript');
 
-  var stream = gulp.src([ // TODO: Should we copy the USWDS Sass, as it is a vendor?
-      './node_modules/uswds/dist/js/uswds.min.js'
+  var stream = gulp.src([
+      './node_modules/uswds/src/js/**/*.js',
+      '!./node_modules/uswds/src/js/start.js'
     ])
     .on('error', function (error) {
       dutil.logError('copy-vendor-javascript', error);
     })
-    .pipe(gulp.dest('src/js/')).pipe(gulp.dest('_site-assets/js/'));
+    .pipe(gulp.dest('src/js/vendor/uswds/')).pipe(gulp.dest('_site-assets/js/vendor/uswds/'));
 
   return stream;
 });
@@ -37,8 +38,8 @@ gulp.task('doc_eslint', function (done) {
   }
 
   return gulp.src([
-      'docs/doc_assets/js/**/*.js', // TODO: This is not the correct location
-      '!docs/doc_assets/js/vendor/**/*.js' // TODO: This is not the correct location
+      '_site-assets/js/**/*.js', // Lint the JS for the website
+      '!_site-assets/js/vendor/**/*.js' // Do not lint JS provided by vendors
     ])
     .pipe(linter('.eslintrc'))
     .pipe(linter.format());

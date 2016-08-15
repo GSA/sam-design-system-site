@@ -30,7 +30,6 @@ gulp.task('clean-generated-assets', function (done) {
   );
 });
 
-
 gulp.task('copy-docs-assets:images', function (done) {
 
   dutil.logMessage('copy-docs-assets:images', 'Copying _site-assets/img to assets/img');
@@ -154,13 +153,11 @@ gulp.task(task, function (done) {
 gulp.task(taskServe, [ 'copy-assets', 'bundle-gems' ], function (done) {
 
   gulp.watch([
-    '_site-assets/css/**/*.scss',
-    'src/stylesheets/components/**/*.scss',
-    'src/stylesheets/elements/**/*.scss',
-    'src/stylesheets/core/**/*.scss',
+    '_site-assets/css/**/*.scss', // Assets specific to website
+    'src/stylesheets/**/*.scss', // Assets specific to package
     'src/stylesheets/all.scss',
-    '!docs/doc_assets/css/lib/**/*',
-    '!src/stylesheets/lib/**/*',
+    '!_site-assets/css/**/*',
+    '!src/stylesheets/lib/**/*', // Not sure I agree with this ignore
   ], function (event) {
     runSequence(
       'sass',

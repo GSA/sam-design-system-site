@@ -6,6 +6,7 @@ var execSync = require('child_process').execSync;
 var runSequence = require('run-sequence');
 var del = require('del');
 var clean = require('gulp-clean');
+var sass = require('gulp-sass');
 
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 var taskBuild = task + ':build';
@@ -44,7 +45,7 @@ gulp.task('copy-docs-assets:images', function (done) {
 
 });
 
-gulp.task('copy-docs-assets:stylesheets', function (done) {
+gulp.task('copy-docs-assets:stylesheets', ['compile-site-stylesheet'], function (done) {
 
   dutil.logMessage('copy-docs-assets:stylesheets', 'Copying _site-assets/css to assets/css');
 
@@ -52,6 +53,24 @@ gulp.task('copy-docs-assets:stylesheets', function (done) {
     .on('error', function (data) { dutil.logError('copy-docs-assets:stylesheets', data); })
     .pipe(gulp.dest('assets/css'));
 
+});
+
+gulp.task('compile-site-stylesheet', function(done) {
+  var entryFile = '_site-assets/css/styleguide.scss';
+
+  var defaultStream = gulp.src(entryFile)
+    .pipe(
+      sass({ outputStyle: 'expanded' })
+        .on('error', sass.logError)
+    )
+    .pipe(
+      autoprefixer({
+        browsers: supportedBrowsers,
+        cascade: false,
+      })
+    )
+    // .pipe(rename({ basename: dutil.pkg.name }))
+    .pipe(gulp.dest('assets/css'));  
 });
 
 gulp.task('copy-bundled-javascript', function (done) {

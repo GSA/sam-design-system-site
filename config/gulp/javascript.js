@@ -19,7 +19,7 @@ gulp.task('copy-vendor-javascript', function (done) {
 
   dutil.logMessage('copy-vendor-javascript', 'Copying vendor JavaScript');
 
-  var stream = gulp.src([
+  var update_src = gulp.src([
       './node_modules/uswds/src/js/**/*.js',
       '!./node_modules/uswds/src/js/start.js'
     ])
@@ -28,7 +28,12 @@ gulp.task('copy-vendor-javascript', function (done) {
     })
     .pipe(gulp.dest('src/js/vendor/uswds/')).pipe(gulp.dest('_site-assets/js/vendor/uswds/'));
 
-  return stream;
+  var update_site_assets = gulp.src('./node_modules/prismjs/prism.js')
+    .pipe(gulp.dest('_site-assets/js/vendor/prismjs/'));
+  
+  var streams = merge(update_src, update_site_assets);
+
+  return streams;
 });
 
 gulp.task('doc_eslint', function (done) {

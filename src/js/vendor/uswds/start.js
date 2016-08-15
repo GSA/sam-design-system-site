@@ -8,6 +8,8 @@ var toggleFormInput = require('./components/toggle-form-input');
 // README: This is necessary because politespace doesn't properly export anything
 // in its package.json. TODO: Let's open a PR related to this so we can fix it in Politespace.js
 //
+// SAM: To get around this problem, we have to modify this line. Therefore,
+//      do not replace start.js during builds.
 var Politespace = require('../../../../node_modules/politespace/src/politespace').Politespace;
 
 $(function () {

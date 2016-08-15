@@ -55,7 +55,7 @@ gulp.task('eslint', function (done) {
 
   return gulp.src([ 
       'src/js/**/*.js', // TODO: This is not the correct location
-      '!src/js/vendor/**/*.js' // TODO: This is not the correct location
+      '!src/js/vendor/**/*.js' // Do not lint vendor JS
     ])
     .pipe(linter('.eslintrc'))
     .pipe(linter.format());
@@ -65,13 +65,13 @@ gulp.task('eslint', function (done) {
 gulp.task(task, function () {
   dutil.logMessage(task, 'Compiling JavaScript');
   
-  runSequence('eslint', 'copy-vendor-javascript', 'actually-compile');
-
-
+  // Be sure to run synchronously
+  runSequence(['eslint'], ['copy-vendor-javascript'], ['compile-javascript']);
 
 });
 
-gulp.task('actually-compile', function(done){
+gulp.task('compile-javascript', function(done){
+  dutil.logMessage('compile-javascript', 'Compile JavaScript');
   var defaultStream = browserify({
     entries: 'src/js/start.js',
     debug: true,

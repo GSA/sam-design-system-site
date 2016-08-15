@@ -1,21 +1,19 @@
-// @import '../../node_modules/font-awesome/scss/font-awesome';
-
 // Vendor main -------------- //
 
-@import 'lib/font-awesome';
-@import 'lib/lib/bourbon';
-@import 'lib/lib/neat';
-@import 'lib/lib/normalize';
+@import 'lib/font-awesome/font-awesome';
+@import 'lib/uswds/lib/bourbon';
+@import 'lib/uswds/lib/neat';
+@import 'lib/uswds/lib/normalize';
 
 // USWDS Core -------------- //
 
-@import 'lib/core/defaults';
+@import 'lib/uswds/core/defaults';
 @import 'core/variables'; // override U.S. Web Design Standards defaults
-@import 'lib/core/fonts';
-@import 'lib/core/base';
-@import 'lib/core/grid-settings';
-@import 'lib/core/grid';
-@import 'lib/core/utilities';
+@import 'lib/uswds/core/fonts';
+@import 'lib/uswds/core/base';
+@import 'lib/uswds/core/grid-settings';
+@import 'lib/uswds/core/grid';
+@import 'lib/uswds/core/utilities';
 
 // SAMWDS Core additions and overrides -------------- //
 @import 'core/utilities';
@@ -25,13 +23,13 @@
 
 // USWDS Elements -------------- //
 
-@import 'lib/elements/buttons';
-@import 'lib/elements/figure';
-@import 'lib/elements/inputs';
-@import 'lib/elements/labels';
-@import 'lib/elements/list';
-@import 'lib/elements/table';
-@import 'lib/elements/typography';
+@import 'lib/uswds/elements/buttons';
+@import 'lib/uswds/elements/figure';
+@import 'lib/uswds/elements/inputs';
+@import 'lib/uswds/elements/labels';
+@import 'lib/uswds/elements/list';
+@import 'lib/uswds/elements/table';
+@import 'lib/uswds/elements/typography';
 
 // SAMWDS Elements additions and overrides -------------- //
 @import 'elements/inputs';
@@ -40,14 +38,14 @@
 
 // USWDS Components -------------- //
 
-@import 'lib/components/accordions';
-@import 'lib/components/alerts';
-@import 'lib/components/disclaimer';
-@import 'lib/components/footer';
-@import 'lib/components/forms';
-@import 'lib/components/search';
-@import 'lib/components/sidenav';
-@import 'lib/components/skipnav';
+@import 'lib/uswds/components/accordions';
+@import 'lib/uswds/components/alerts';
+@import 'lib/uswds/components/disclaimer';
+@import 'lib/uswds/components/footer';
+@import 'lib/uswds/components/forms';
+@import 'lib/uswds/components/search';
+@import 'lib/uswds/components/sidenav';
+@import 'lib/uswds/components/skipnav';
 
 // SAMWDS Components additions and overrides -------- //
 

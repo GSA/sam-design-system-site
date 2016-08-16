@@ -1,9 +1,7 @@
 {% assign current = page.url | downcase | split: '/' %}
 
 <aside class="sidenav-mobile">
-  <a class="sliding-panel-close" href="#">
-    <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
-  </a>
+  <button class="usa-button-dismiss sliding-panel-close"> <span class="usa-sr-only">Dismiss</span></button>
   <nav>
     <ul class="usa-sidenav-list usa-accordion">
       <li>  

@@ -1,6 +1,6 @@
 'use strict';
 
-require('uswds');
+require('./vendor/uswds/start.js');
 
 var $ = require('jquery');
 var calculateAnchorPosition = require('./components/calculate-anchor-position');

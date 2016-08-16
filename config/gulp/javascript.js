@@ -11,22 +11,29 @@ var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 var assert = require('gulp-if');
 var linter = require('gulp-eslint');
+var del = require('del');
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 var doc_task = 'docs_' + task;
 
 gulp.task('copy-vendor-javascript', function (done) {
 
-  dutil.logMessage('copy-vendor-javascript', 'Compiling vendor JavaScript');
+  dutil.logMessage('copy-vendor-javascript', 'Copying vendor JavaScript');
 
-  var stream = gulp.src([ // TODO: Should we copy the USWDS Sass, as it is a vendor?
-      './node_modules/uswds/dist/js/uswds.min.js'
+  var update_src = gulp.src([
+      './node_modules/uswds/src/js/**/*.js',
+      '!./node_modules/uswds/src/js/start.js'
     ])
     .on('error', function (error) {
       dutil.logError('copy-vendor-javascript', error);
     })
-    .pipe(gulp.dest('src/js/')).pipe(gulp.dest('_site-assets/js/'));
+    .pipe(gulp.dest('src/js/vendor/uswds/')).pipe(gulp.dest('_site-assets/js/vendor/uswds/'));
 
-  return stream;
+  var update_site_assets = gulp.src('./node_modules/prismjs/prism.js')
+    .pipe(gulp.dest('_site-assets/js/vendor/prismjs/'));
+  
+  var streams = merge(update_src, update_site_assets);
+
+  return streams;
 });
 
 gulp.task('doc_eslint', function (done) {
@@ -37,8 +44,8 @@ gulp.task('doc_eslint', function (done) {
   }
 
   return gulp.src([
-      'docs/doc_assets/js/**/*.js', // TODO: This is not the correct location
-      '!docs/doc_assets/js/vendor/**/*.js' // TODO: This is not the correct location
+      '_site-assets/js/**/*.js', // Lint the JS for the website
+      '!_site-assets/js/vendor/**/*.js' // Do not lint JS provided by vendors
     ])
     .pipe(linter('.eslintrc'))
     .pipe(linter.format());
@@ -54,7 +61,7 @@ gulp.task('eslint', function (done) {
 
   return gulp.src([ 
       'src/js/**/*.js', // TODO: This is not the correct location
-      '!src/js/vendor/**/*.js' // TODO: This is not the correct location
+      '!src/js/vendor/**/*.js' // Do not lint vendor JS
     ])
     .pipe(linter('.eslintrc'))
     .pipe(linter.format());
@@ -64,13 +71,13 @@ gulp.task('eslint', function (done) {
 gulp.task(task, function () {
   dutil.logMessage(task, 'Compiling JavaScript');
   
-  runSequence('eslint', 'copy-vendor-javascript', 'actually-compile');
-
-
+  // Be sure to run synchronously
+  runSequence(['eslint'], ['copy-vendor-javascript'], ['compile-javascript']);
 
 });
 
-gulp.task('actually-compile', function(done){
+gulp.task('compile-javascript', function(done){
+  dutil.logMessage('compile-javascript', 'Compile JavaScript');
   var defaultStream = browserify({
     entries: 'src/js/start.js',
     debug: true,

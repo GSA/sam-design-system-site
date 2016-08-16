@@ -100,12 +100,18 @@ $large-screen:      1201px;
 
 
 // Magic Numbers
-$text-max-width:    53rem;
-$site-max-width:    1040px;
-$site-margins:      3rem;
-$article-max-width: 600px;
-$input-max-width:   46rem;
-$border-radius:     rem(3px);
-$box-shadow:        0 0 2px $color-box-shadow;
-$focus-shadow:      0 0 3px $color-focus, 0 0 7px $color-focus;
-$grid-margins:      3rem;
+$text-max-width:      53rem;
+$lead-max-width:      77rem;
+$site-max-width:      1040px;
+$site-margins:        3rem;
+$site-margins-mobile: 1.5rem; // Part of USWDS - though not part of 0.11.0 relaease
+$article-max-width:   600px;
+$input-max-width:     46rem;
+$border-radius:       rem(3px);
+$box-shadow:          0 0 2px $color-box-shadow;
+$focus-shadow:        0 0 3px $color-focus, 0 0 7px $color-focus;
+$grid-margins:        3rem;
+
+// 44 x 44 pixels hit target following Apple iOS Human Interface Guidelines
+// In USWDS - though not part of 0.11.0 release
+$hit-area:          4.4rem;

@@ -212,8 +212,6 @@ gulp.task(taskServe, [ 'copy-assets', 'bundle-gems' ], function (done) {
   gulp.watch([
     '_site-assets/css/**/*.scss', // Assets specific to website
     'src/stylesheets/**/*.scss', // Assets specific to package
-    'src/stylesheets/all.scss',
-    '!_site-assets/css/**/*',
     '!src/stylesheets/lib/**/*', // Not sure I agree with this ignore
   ], function (event) {
     runSequence(

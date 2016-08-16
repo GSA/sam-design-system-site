@@ -38,7 +38,7 @@ As the joke goes:
 
 <blockquote>
   <p>A user interface is like a joke. If you have to explain it, it&rsquo;s not that good.</p>
-  <p><cite><a href="https://www.startupvitamins.com/products/startup-poster-a-user-interface-is-like-a-joke-if-you-have-to-explain-it-its-not-that-good">Poster from Startup Vitamins</a></cite></p>
+  <p><cite><a class="usa-external_link" href="https://www.startupvitamins.com/products/startup-poster-a-user-interface-is-like-a-joke-if-you-have-to-explain-it-its-not-that-good">Poster from Startup Vitamins</a></cite></p>
 </blockquote>
 
 <ul>

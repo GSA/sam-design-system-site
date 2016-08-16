@@ -1,7 +1,6 @@
 // Imports -------------- //
 
 @import '../../src/stylesheets/all';
-@import 'prism';
 
 // Variables -------------- //
 
@@ -1307,17 +1306,17 @@ $font-light: 300;
 
 // External link styles
 
-[href^="http:"]:not([href*="standards.com"]),
-[href^="https:"]:not([href*="standards.com"]) {
-  @include external-link(external-link, external-link-hover);
-}
+// [href^="http:"]:not([href*="standards.com"]),
+// [href^="https:"]:not([href*="standards.com"]) {
+//   @include external-link(external-link, external-link-hover);
+// }
 
-.usa-styleguide-footer {
-  [href^="http:"]:not([href*="standards.com"]),
-  [href^="https:"]:not([href*="standards.com"]) {
-    @include external-link(external-link-alt, external-link-alt-hover);
-  }
-}
+// .usa-styleguide-footer {
+//   [href^="http:"]:not([href*="standards.com"]),
+//   [href^="https:"]:not([href*="standards.com"]) {
+//     @include external-link(external-link-alt, external-link-alt-hover);
+//   }
+// }
 
 .usa-button,
 .link-download,

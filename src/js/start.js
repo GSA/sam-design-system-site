@@ -1,3 +1,3 @@
 'use strict';
 
-require('./vendor/js/uswds/start.js');
+require('./vendor/uswds/start.js');

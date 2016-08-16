@@ -1,6 +1,6 @@
 {
   "name": "samwds",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Open source UI components and visual style guide for the System for Award Management environment.",
   "main": "src/js/start.js",
   "scripts": {

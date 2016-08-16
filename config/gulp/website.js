@@ -7,6 +7,19 @@ var runSequence = require('run-sequence');
 var del = require('del');
 var clean = require('gulp-clean');
 
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var rename = require('gulp-rename');
+var sourcemaps = require('gulp-sourcemaps');
+var merge = require('merge-stream');
+var supportedBrowsers = [
+  '> 1%',
+  'Last 2 versions',
+  'IE 11',
+  'IE 10',
+  'IE 9',
+];
+
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 var taskBuild = task + ':build';
 var taskServe = task + ':serve';
@@ -30,6 +43,7 @@ gulp.task('clean-generated-assets', function (done) {
   );
 });
 
+
 gulp.task('copy-docs-assets:images', function (done) {
 
   dutil.logMessage('copy-docs-assets:images', 'Copying _site-assets/img to assets/img');
@@ -40,14 +54,57 @@ gulp.task('copy-docs-assets:images', function (done) {
 
 });
 
-gulp.task('copy-docs-assets:stylesheets', function (done) {
+gulp.task('copy-docs-assets:stylesheets', ['compile-docs-sass'], function (done) {
 
   dutil.logMessage('copy-docs-assets:stylesheets', 'Copying _site-assets/css to assets/css');
 
-  return gulp.src('_site-assets/css/**/*')
+  return gulp.src('_site-assets/css/**/*.css')
     .on('error', function (data) { dutil.logError('copy-docs-assets:stylesheets', data); })
     .pipe(gulp.dest('assets/css'));
 
+});
+
+gulp.task('compile-docs-sass', function(done) {
+  dutil.logMessage(task, 'Compiling site Sass');
+
+  var entryFile = '_site-assets/css/styleguide.scss';
+
+  var defaultStream = gulp.src(entryFile)
+    .pipe(
+      sass({ outputStyle: 'expanded' })
+        .on('error', sass.logError)
+    )
+    .pipe(
+      autoprefixer({
+        browsers: supportedBrowsers,
+        cascade: false,
+      })
+    )
+    // .pipe(rename({ basename: dutil.pkg.name }))
+    .pipe(gulp.dest('assets/css'));
+
+  var minifiedStream = gulp.src(entryFile)
+    .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe(
+        sass({ outputStyle: 'compressed' })
+          .on('error', sass.logError)
+      )
+      .pipe(
+        autoprefixer({
+          browsers: supportedBrowsers,
+          cascade: false,
+        })
+      )
+      .pipe(rename({
+        // basename: dutil.pkg.name,
+        suffix: '.min',
+      }))
+    .pipe(sourcemaps.write('.', { addComment: false }))
+    .pipe(gulp.dest('assets/css'));
+
+  var streams = merge(defaultStream, minifiedStream);
+
+  return streams;
 });
 
 gulp.task('copy-bundled-javascript', function (done) {

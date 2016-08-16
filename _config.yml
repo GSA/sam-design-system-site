@@ -39,6 +39,8 @@ repos:
 
 # GitHub pages seems to have problems here.
 # Should be able to use if moved to another hosting platform.
+#
+# sass:
 #  load_paths:
 #    - src/stylesheets
 

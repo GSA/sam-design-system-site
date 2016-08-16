@@ -7325,7 +7325,8 @@ body {
   text-align: left;
   -webkit-font-smoothing: auto;
   font-weight: 400;
-  padding: 1rem 1rem 1rem 1.8rem;
+  padding: 1rem 2rem 1rem 1.8rem;
+  width: auto !important;
 }
 
 .sidenav-mobile button:focus, .sidenav-mobile button:hover {
@@ -7342,16 +7343,16 @@ body {
 }
 
 .sidenav-mobile button[aria-expanded=false] {
-  background-image: url("../img/plus-alt.png");
-  background-image: url("../img/plus-alt.svg");
+  background-image: url("../img/plus.png");
+  background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: right 0 center;
   background-size: 1rem;
 }
 
 .sidenav-mobile button[aria-expanded=true] {
-  background-image: url("../img/minus-alt.png");
-  background-image: url("../img/minus-alt.svg");
+  background-image: url("../img/minus.png");
+  background-image: url("../img/minus.svg");
   background-repeat: no-repeat;
   background-position: right 0 center;
   background-size: 1rem;

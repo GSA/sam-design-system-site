@@ -281,7 +281,8 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
   button {
     @include button-unstyled;
     font-weight: $font-normal;
-    padding: 1rem 1rem 1rem 1.8rem;
+    padding: 1rem 2rem 1rem 1.8rem;
+    width:auto!important;
 
     &:focus,
     &:active {
@@ -294,16 +295,16 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
     }
 
     &[aria-expanded=false] {
-      background-image: url('../img/plus-alt.png');
-      background-image: url('../img/plus-alt.svg');
+      background-image: url('../img/plus.png');
+      background-image: url('../img/plus.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
     }
 
     &[aria-expanded=true] {
-      background-image: url('../img/minus-alt.png');
-      background-image: url('../img/minus-alt.svg');
+      background-image: url('../img/minus.png');
+      background-image: url('../img/minus.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;

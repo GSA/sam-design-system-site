@@ -82,18 +82,19 @@ gulp.task('copy-vendor-sass', function (done) {
 
   dutil.logMessage('copy-vendor-sass', 'Compiling vendor CSS');
 
-  del('src/stylesheets/lib');
-  
-  var fontawesome = gulp.src('./node_modules/font-awesome/scss/**/*.scss')
-    .pipe(gulp.dest('src/stylesheets/lib/font-awesome'));
-  
-  // TODO: Should we copy the USWDS Sass, as it is a vendor?
-  var uswds = gulp.src('./node_modules/uswds/src/stylesheets/**/*.scss')
-    .pipe(gulp.dest('src/stylesheets/lib/uswds'));
+  var stream = gulp.src([ // TODO: Should we copy the USWDS Sass, as it is a vendor?
+      './node_modules/font-awesome/css/font-awesome.css',
+      './node_modules/uswds/src/stylesheets/**/*.scss'
+    ])
+    .pipe(fontAwesomeCssFilter)
+      .pipe(rename('_font-awesome.css'))
+    .pipe(fontAwesomeCssFilter.restore)
+    .on('error', function (error) {
+      dutil.logError('copy-vendor-sass', error);
+    })
+    .pipe(gulp.dest('src/stylesheets/lib'));
 
-  var streams = merge(fontawesome, uswds);    
-
-  return streams;
+  return stream;
 });
 
 gulp.task(task, [ 'scss-lint' ], function (done) {

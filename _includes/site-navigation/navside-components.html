@@ -57,7 +57,17 @@
       {% endif %}
     </li>
     <li>
-      <a {% if page.url == '/components/resource/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/resource/">Resource</a>
+      <a {% if page.url == '/components/search/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/search/">Search</a>
+      {% if page.url == '/components/search/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#search-bar">Search bar</a>
+          </li>
+          <li>
+            <a href="#search-result">Search result</a>
+          </li>
+        </ul>
+      {% endif %}
     </li>
   </ul>
 </nav>

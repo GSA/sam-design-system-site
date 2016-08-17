@@ -1,0 +1,21 @@
+<div class="preview">
+{% include code-previews/{{ page.type }}s/{{ page.preview-name }}.md %}
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample">
+  <ul class="usa-unstyled-list">
+    <li>
+      <button class="usa-button-unstyled" aria-controls="code">Code</button>
+      <div id="code" class="usa-accordion-content">
+{% capture code_sample %}
+  {% include code-previews/{{ page.type }}s/{{ page.preview-name }}.md %}
+{% endcapture %}
+        <pre class="language-markup">
+        <code class="language-markup">
+{{ code_sample | xml_escape }}
+        </code>
+        </pre>
+      </div>
+    </li>
+  </ul>
+</div>

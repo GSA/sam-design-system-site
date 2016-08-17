@@ -9,42 +9,8 @@
   </div>
 </div>
 
-<div class="preview">
-</div>
-
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <ul class="usa-unstyled-list">
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">
-        PHP UI kit usage
-      </button>
-      <div id="collapsible-0" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-php">
-        </code></pre>
-      </div>
-    </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">
-        JavaScript UI kit usage
-      </button>
-      <div id="collapsible-1" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-js">
-        </code></pre>
-      </div>
-    </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-2">
-        UI kit documentation
-      </button>
-      <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
-        <h4 class="usa-heading">Actions</h4>
-        <h5>Required keys</h5>
-        
-        <h5>Optional keys</h5>
-      </div>
-    </li>    
-  </ul>
-</div>
+{% include code-previews/components/header.code %}
+{% include code-previews/main.html %}
 
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"

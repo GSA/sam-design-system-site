@@ -1,107 +1,11 @@
-<h2>Side navigation</h2>
+<h2 id="side-navigation">Side navigation</h2>
 
-<p class="usa-font-lead">See <a href="https://standards.usa.gov/sidenav/">US Web Design Standards</a> for details regarding when to use this element.</p>
+{% include code-previews/components/sidenav.code %}
+{% include code-previews/main.html %}
 
 <div class="preview">
 
-  <h6 class="usa-heading-alt">Single level</h6>
 
-  <div class="usa-grid">
-    <aside class="usa-width-one-fourth">
-      <ul class="usa-sidenav-list">
-        <li>
-          <a class="usa-current" href="#">Current page</a>
-        </li>
-        <li>
-          <a href="#">Parent link</a>
-        </li>
-        <li>
-          <a href="#">Parent link</a>
-        </li>
-      </ul>
-    </aside>
-  </div>
-
-  <h6 class="usa-heading-alt">Two levels</h6>
-
-  <div class="usa-grid">
-    <aside class="usa-width-one-fourth">
-      <ul class="usa-sidenav-list">
-        <li>
-          <a href="#">Parent link</a>
-        </li>
-        <li>
-          <a class="usa-current" href="#">Current page</a>
-          <ul class="usa-sidenav-sub_list">
-            <li>
-              <a href="#">Child link</a>
-            </li>
-            <li>
-              <a href="#">Child link</a>
-            </li>
-            <li>
-              <a href="#">Child link</a>
-            </li>
-            <li>
-              <a href="#">Child link</a>
-            </li>
-            <li>
-              <a class="usa-current" href="#">Child Link</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Parent link</a>
-        </li>
-      </ul>
-    </aside>
-  </div>
-
-  <h6 class="usa-heading-alt">Three levels</h6>
-
-  <div class="usa-grid">
-    <aside class="usa-width-one-fourth">
-      <ul class="usa-sidenav-list">
-        <li>
-          <a href="#">Parent link</a>
-        </li>
-        <li>
-          <a class="usa-current" href="#">Current page</a>
-          <ul class="usa-sidenav-sub_list">
-            <li>
-              <a href="#">Child link</a>
-            </li>
-            <li>
-              <a href="#">Child link</a>
-              <ul class="usa-sidenav-sub_list">
-                <li>
-                  <a href="#">Grandchild link</a>
-                </li>
-                <li>
-                  <a href="#">Grandchild link</a>
-                </li>
-                <li>
-                  <a class="usa-current" href="#">Grandchild link</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Child link</a>
-            </li>
-            <li>
-              <a href="#">Child link</a>
-            </li>
-            <li>
-              <a href="#">Child link</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Parent link</a>
-        </li>
-      </ul>
-    </aside>
-  </div>
 
 </div>
 
@@ -147,6 +51,19 @@ echo SAMUIKit\Navigation::sideNavigation($config)
         <ul class="usa-content-list">
           <li><strong>submenu:</strong> An array of menu items. See Menu required keys. Note: Any submenus beyond the third level will be ignored.</li>
         </ul>
+      </div>
+    </li>    
+  </ul>
+</div>
+
+<div class="usa-accordion-bordered">
+  <ul class="usa-unstyled-list">
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="element-documentation">
+        Element documentation
+      </button>
+      <div id="element-documentation" class="usa-accordion-content" aria-hidden="false">
+        <p>See <a href="https://standards.usa.gov/sidenav/">US Web Design Standards</a> for details regarding when to use this element.</p>
       </div>
     </li>    
   </ul>

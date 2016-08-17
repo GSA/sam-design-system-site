@@ -2,15 +2,19 @@
   <ul class="usa-sidenav-list">
     <li>
       <a {% if page.url == '/page-templates/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/">Overview</a>
-    </li>
-    <li>
-      <a {% if page.url == '/page-templates/default/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/#default">Default</a>
-    </li>
-    <li>
-      <a {% if page.url == '/page-templates/search/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/#search">Search</a>
-    </li>
-    <li>
-      <a {% if page.url == '/page-templates/support/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/#support">Support</a>
+      {% if page.url == '/page-templates/' %}
+      <ul class="usa-sidenav-sub_list">
+        <li>
+          <a href="#default">Default</a>
+        </li>
+        <li>
+          <a href="#search">Search</a>
+        </li>
+        <li>
+          <a href="#support">Support</a>
+        </li>
+      </ul>
+      {% endif %}
     </li>
   </ul>
 </nav>

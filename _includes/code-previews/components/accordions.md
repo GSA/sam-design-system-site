@@ -1,3 +1,4 @@
+{% capture code_preview %}
 <h6>Borderless</h6>
 <div class="usa-accordion">
   <ul class="usa-unstyled-list">
@@ -45,3 +46,4 @@
     </li>
   </ul>
 </div>
+{% endcapture %}

@@ -43,3 +43,7 @@ dist/
 # !assets/css/prism.css
 # !assets/css/styleguide.scss
 # !assets/js/styleguide.js
+
+#Ignore IntelliJ IDE .idea file
+
+.idea/

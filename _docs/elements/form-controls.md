@@ -25,7 +25,7 @@ title: Form controls
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
-    <p class="usa-font-lead">See <a href="https://playbook.cio.gov/designstandards/form-controls/">US Web Design Standards</a> for details regarding when to use these elements.</p>
+    <p class="usa-font-lead">See <a class="usa-external_link" href="https://playbook.cio.gov/designstandards/form-controls/">US Web Design Standards</a> for details regarding when to use these elements.</p>
 
     <h4 class="usa-heading">Inline help (hint)</h4>
     <p>Eeach form control element is able to incorporate inline help text.</p>

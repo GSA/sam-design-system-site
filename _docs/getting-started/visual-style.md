@@ -3,7 +3,7 @@ permalink: /getting-started/visual-style/
 title: For visual designers
 layout: styleguide
 category: Getting started
-lead: See <a href="https://standards.usa.gov/visual-style">US Web Design Standards</a> for design considerations.
+lead: See <a class="usa-external_link" href="https://standards.usa.gov/visual-style">US Web Design Standards</a> for design considerations.
 ---
 
 <h2 class="usa-heading" id="logo-and-usage">Logo and Usage</h2>
@@ -12,13 +12,13 @@ lead: See <a href="https://standards.usa.gov/visual-style">US Web Design Standar
 
 <h2 class="usa-heading" id="typography">Typography</h2>
 
-The Standards use the Source Sans Pro [pairing and style](https://standards.usa.gov/typography/#pairings-and-styles) and [typesetting](https://standards.usa.gov/typography/#typesetting) defined by the US Web Design Standards.
+The Standards use the Source Sans Pro <a class="usa-external_link" href="https://standards.usa.gov/typography/#pairings-and-styles">pairing and style</a> and <a class="usa-external_link" href="https://standards.usa.gov/typography/#typesetting">typesetting</a> defined by the US Web Design Standards.
 
 {% include getting-started/typography.html %}
 
 <h2 id="iconography" class="usa-heading">Iconography</h2>
 
-The Standards include [Font Awesome](https://fortawesome.github.io/Font-Awesome/) for the majority of icon decisions. If you cannot locate a desirable icon from Font Awesome, either [create an issue]({{ site.repos[0].url }}/issues) or modify the [Icon component]({{ site.baseurl }}/elements/action-icons/) and submit a pull request.
+The Standards include <a class="usa-external_link" href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> for the majority of icon decisions. If you cannot locate a desirable icon from Font Awesome, either [create an issue]({{ site.repos[0].url }}/issues) or modify the [Icon component]({{ site.baseurl }}/elements/action-icons/) and submit a pull request.
 
 <h2 class="usa-heading" id="imagery">Imagery</h2>
 
@@ -40,11 +40,11 @@ Gratuitous animations that do not contribute to user feedback and goals become a
 
 <h2 id="colors" class="usa-heading">Colors</h2>
 
-See the [US Web Design Standards - Colors](https://standards.usa.gov/colors/)
+See the <a class="usa-external_link" href="https://standards.usa.gov/colors/">US Web Design Standards - Colors</a>
 
 <h2 id="text-accessibility" class="usa-heading">Text accessibility</h2>
 
-See the [US Web Design Standards - Text accessibility](https://standards.usa.gov/colors/)
+See the <a class="usa-external_link" href="https://standards.usa.gov/colors/">US Web Design Standards - Text accessibility</a>
 
 {% include partials/grid_system.html %}
 

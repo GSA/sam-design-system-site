@@ -1,0 +1,69 @@
+{% capture code_preview %}
+<h6>Without metadata</h6>
+<div class="usa-grid usa-search-result">
+  <div class="usa-width-one-whole">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut ligula pulvinar elit.</p>
+  </div>
+</div>
+<h6>With metadata</h6>
+<div class="usa-grid usa-search-result">
+  <div class="usa-width-two-thirds">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut ligula pulvinar elit.</p>
+  </div>
+  <div class="usa-width-one-third">
+    <p><strong>Metadata 1:</strong> This is a piece of metadata.</p>
+  </div>
+</div>
+
+<h6>With metadata and action</h6>
+<div class="usa-grid usa-search-result">
+  <div class="usa-width-two-thirds">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut ligula pulvinar elit.</p>
+  </div>
+  <div class="usa-width-one-third">
+    <p><span class="usa-label">New</span></p>
+    <p><strong>Metadata 1:</strong> This is a piece of metadata.</p>
+    <div class="usa-width-one-whole">
+      <div class="usa-action-container">
+        <span><a href="#"><i class="fa fa-archive"></i>Archive</a></span>
+      </div>
+      <div class="usa-action-container">
+        <span><a href="#"><i class="fa fa-pencil-square"></i>Edit</a></span>
+      </div>
+      <div class="usa-action-container delete">
+        <span><a href="#"><i class="fa fa-trash"></i>Delete</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture uikit-php %}
+// render unescaped HTML string
+echo SAMUIKit\Search::result($config);
+{% endcapture %}
+
+{% capture uikit-js %}
+...
+{% endcapture %}
+
+{% capture uikit-docs %}
+<h4 class="usa-heading">Search result</h4>
+<p>Note: The <code>div</code> with the class of "usa-grid" is not returned by the component and is used for previewing only.</p>
+<h5>Required keys</h5>
+<ul>
+  <li><strong>content:</strong> An array of HTML strings to display in the content area of the search result.</li>
+</ul>
+
+<h5>Optional keys</h5>
+<ul>
+  <li><strong>metadata:</strong> An array of HTML strings, or components to display in the meta data area of the resource.</li>
+  <li><strong>actions:</strong> An array of Action configurations. See Action.</li>
+</ul>
+
+<h5>Metadata component required keys</h5>
+<ul>
+  <li><strong>template:</strong> UI kit builder class name|function name. ex. "Other|label", is equivalent to SAMUIKit\Other::label() in PHP.</li>
+  <li><strong>config:</strong> The configuration of the component. See the component details for required and optional keys.</li>
+</ul>
+{% endcapture %}

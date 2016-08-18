@@ -1,87 +1,17 @@
 <h2 id="search-bar">Search bar</h2>
 
-<p class="usa-font-lead">See <a class="usa-external_link" href="https://standards.usa.gov/search-bar/">US Web Design Standards</a> for details regarding when to use this component.</p>
+{% include code/components/searchbar-code.html %}
+{% include code/main.html %}
 
-<div class="preview preview-search-bar">
-
-  <h6>Search big</h6>
-
-  <div class="usa-grid">
-    <div class="usa-width-one-half">
-      <form class="usa-search usa-search-big">
-        <div role="search">
-          <label class="usa-sr-only" for="search-field-big">Search big</label>
-          <input id="search-field-big" type="search" name="search">
-          <button type="submit">
-            <span class="usa-search-submit-text">Search</span>
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <h6>Search medium</h6>
-
-  <div class="usa-grid">
-    <div class="usa-width-one-half">
-      <form class="usa-search">
-        <div role="search">
-          <label class="usa-sr-only" for="search-field">Search medium</label>
-          <input id="search-field" type="search" name="search">
-          <button type="submit">
-            <span class="usa-search-submit-text">Search</span>
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <h6>Search small</h6>
-
-  <div class="usa-grid">
-    <div class="usa-width-one-half">
-      <form class="usa-search usa-search-small">
-        <div role="search">
-          <label class="usa-sr-only" for="search-field-small">Search small</label>
-          <input id="search-field-small" type="search" name="search">
-          <button type="submit">
-            <span class="usa-sr-only">Search</span>
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="usa-accordion-bordered usa-accordion-docs">
+<div class="usa-accordion-bordered">
   <ul class="usa-unstyled-list">
     <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">
-        PHP UI kit usage
+      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="element-documentation">
+        Element documentation
       </button>
-      <div id="collapsible-0" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-php">
-        </code></pre>
-      </div>
-    </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">
-        JavaScript UI kit usage
-      </button>
-      <div id="collapsible-1" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-js">
-        </code></pre>
-      </div>
-    </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-2">
-        UI kit documentation
-      </button>
-      <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
-        <h4 class="usa-heading">Actions</h4>
-        <h5>Required keys</h5>
-        
-        <h5>Optional keys</h5>
+      <div id="element-documentation" class="usa-accordion-content" aria-hidden="false">
+        <p>See <a class="usa-external_link" href="https://standards.usa.gov/search-bar/">US Web Design Standards</a> for details regarding when to use this component.</p>
+
       </div>
     </li>    
   </ul>

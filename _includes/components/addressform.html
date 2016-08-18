@@ -1,124 +1,17 @@
-<h2>Address form</h2>
+<h2 class="usa-heading" id="address-form">Address form</h2>
 
-<p class="usa-font-lead">See <a href="https://standards.usa.gov/form-templates/#address-form">US Web Design Standards</a> for details regarding when to use this component.</p>
+{% include code/components/addressform-code.html %}
+{% include code/main.html %}
 
-<div class="preview">
-    <form class="usa-form-large">
-        <div>
-            <fieldset>
-                <legend>Mailing address</legend>
-
-                <label for="mailing-address-1">Street address 1</label>
-                <input id="mailing-address-1" name="mailing-address-1" type="text">
-
-                <label for="mailing-address-2">Street address 2 <span class="usa-additional_text">Optional</span></label>
-                <input id="mailing-address-2" name="mailing-address-2" type="text">
-
-                <div>
-                    <div class="usa-input-grid usa-input-grid-medium">
-                        <label for="city">City</label>
-                        <input id="city" name="city" type="text">
-                    </div>
-                    <div class="usa-input-grid usa-input-grid-small">
-                        <label for="state">State</label>
-                        <select id="state" name="state">
-                            <option value=""></option>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
-                            <option value="AZ">Arizona</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="CA">California</option>
-                            <option value="CO">Colorado</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="DC">District Of Columbia</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IN">Indiana</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="ME">Maine</option>
-                            <option value="MD">Maryland</option>
-                            <option value="MA">Massachusetts</option>
-                            <option value="MI">Michigan</option>
-                            <option value="MN">Minnesota</option>
-                            <option value="MS">Mississippi</option>
-                            <option value="MO">Missouri</option>
-                            <option value="MT">Montana</option>
-                            <option value="NE">Nebraska</option>
-                            <option value="NV">Nevada</option>
-                            <option value="NH">New Hampshire</option>
-                            <option value="NJ">New Jersey</option>
-                            <option value="NM">New Mexico</option>
-                            <option value="NY">New York</option>
-                            <option value="NC">North Carolina</option>
-                            <option value="ND">North Dakota</option>
-                            <option value="OH">Ohio</option>
-                            <option value="OK">Oklahoma</option>
-                            <option value="OR">Oregon</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="RI">Rhode Island</option>
-                            <option value="SC">South Carolina</option>
-                            <option value="SD">South Dakota</option>
-                            <option value="TN">Tennessee</option>
-                            <option value="TX">Texas</option>
-                            <option value="UT">Utah</option>
-                            <option value="VT">Vermont</option>
-                            <option value="VA">Virginia</option>
-                            <option value="WA">Washington</option>
-                            <option value="WV">West Virginia</option>
-                            <option value="WI">Wisconsin</option>
-                            <option value="WY">Wyoming</option>
-                        </select>
-                    </div>
-                </div>
-
-                <label for="zip">ZIP</label>
-                <input id="zip" class="usa-input-medium" name="zip" type="text" pattern="[\d]{5}(-[\d]{4})?" data-grouplength="5,4" data-delimiter="-" data-politespace="">
-            </fieldset>
-        </div>
-    </form>
-</div>
-
-<div class="usa-accordion-bordered usa-accordion-docs">
+<div class="usa-accordion-bordered">
   <ul class="usa-unstyled-list">
     <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">
-        PHP UI kit usage
+      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="element-documentation">
+        Element documentation
       </button>
-      <div id="collapsible-0" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-php">
-// render unescaped HTML string
-echo SAMUIKit\FormTemplate::addressForm($config);
-        </code></pre>
+      <div id="element-documentation" class="usa-accordion-content" aria-hidden="false">
+        <p>See <a class="usa-external_link" href="https://standards.usa.gov/form-templates/#address-form">US Web Design Standards</a> for details regarding when to use this component.</p>
       </div>
     </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">
-        JavaScript UI kit usage
-      </button>
-      <div id="collapsible-1" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-js">
-        </code></pre>
-      </div>
-    </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-2">
-        UI kit documentation
-      </button>
-      <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
-        <h4 class="usa-heading">Address form</h4>
-        <h5>Required keys</h5>
-        <ul>
-          <li><strong>label:</strong> The label for the form.</li>
-          <li><strong>name:</strong> The name value for each form input.</li>
-        </ul>
-      </div>
-    </li>    
   </ul>
 </div>

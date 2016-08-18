@@ -276,37 +276,38 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
   nav {
     margin-top: 6rem;
     min-height: 100%;
-  }
 
-  button {
-    @include button-unstyled;
-    font-weight: $font-normal;
-    padding: 1rem 1rem 1rem 1.8rem;
+    button {
+      @include button-unstyled;
+      font-weight: $font-normal;
+      padding: 1rem 2rem 1rem 1.8rem;
+      width:auto!important;
 
-    &:focus,
-    &:active {
-      box-shadow: $focus-shadow;
-    }
+      &:focus,
+      &:active {
+        box-shadow: $focus-shadow;
+      }
 
-    &:hover {
-      background-color: $color-gray-lightest;
-      color: $color-primary;
-    }
+      &:hover {
+        background-color: $color-gray-lightest;
+        color: $color-primary;
+      }
 
-    &[aria-expanded=false] {
-      background-image: url('../img/plus-alt.png');
-      background-image: url('../img/plus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
+      &[aria-expanded=false] {
+        background-image: url('../img/plus.png');
+        background-image: url('../img/plus.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 center;
+        background-size: 1rem;
+      }
 
-    &[aria-expanded=true] {
-      background-image: url('../img/minus-alt.png');
-      background-image: url('../img/minus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
+      &[aria-expanded=true] {
+        background-image: url('../img/minus.png');
+        background-image: url('../img/minus.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 center;
+        background-size: 1rem;
+      }
     }
   }
 

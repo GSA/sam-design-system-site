@@ -44,6 +44,3 @@ dist/
 # !assets/css/styleguide.scss
 # !assets/js/styleguide.js
 
-#Ignore IntelliJ IDE .idea file
-
-.idea/

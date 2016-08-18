@@ -1,0 +1,46 @@
+<div class="preview">
+{{ code_preview }}
+</div>
+
+<div class="usa-accordion-bordered">
+  <ul class="usa-unstyled-list">
+    <li>
+      <button class="usa-button-unstyled" aria-controls="code">Code</button>
+      <div id="code" class="usa-accordion-content">
+        <pre class="language-markup">
+        <code class="language-markup">
+{{ code_preview | xml_escape }}
+        </code>
+        </pre>
+      </div>
+    </li>
+    <li>
+      <button class="usa-button-unstyled" aria-controls="uikit-php">UI kit - PHP</button>
+      <div id="uikit-php" class="usa-accordion-content">
+        <pre class="language-php">
+        <code class="language-php">
+{{ uikit-php }}
+        </code>
+        </pre>
+      </div>
+    </li>
+    <li>
+      <button class="usa-button-unstyled" aria-controls="uikit-js">UI kit - JavaScript</button>
+      <div id="uikit-js" class="usa-accordion-content">
+          <pre class="language-js">
+{{ uikit-js }}
+          <code class="language-js">
+          </code>
+          </pre>
+      </div>
+    </li>
+    <li>
+      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="element-uikit-documentation">
+        UI kit documentation
+      </button>
+      <div id="element-uikit-documentation" class="usa-accordion-content" aria-hidden="false">
+{{ uikit-docs }}
+      </div>
+    </li> 
+  </ul>
+</div>

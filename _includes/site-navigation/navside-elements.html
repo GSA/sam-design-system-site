@@ -5,6 +5,16 @@
     </li>
     <li>
       <a {% if page.url == '/elements/actions-icons/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/actions-icons/">Actions &amp; icons</a>
+      {% if page.url == '/elements/actions-icons/' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#actions">Actions</a>
+          </li>
+          <li>
+            <a href="#icons">Icons</a>
+          </li>
+        </ul>
+      {% endif %}
     </li>
     <li>
       <a {% if page.url == '/elements/buttons/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/buttons/">Buttons</a>

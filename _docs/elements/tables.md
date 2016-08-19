@@ -6,4 +6,4 @@ type: element
 title: Tables
 ---
 
-{% include elements/tables.html %}
+{% include documentation/elements/tables.html %}

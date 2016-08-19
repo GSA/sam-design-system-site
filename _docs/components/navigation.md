@@ -7,10 +7,10 @@ title: Navigation
 lead: Allows users to orient themselves within the site and move between pages.
 ---
 
-{% include components/header.html %}
+{% include documentation/components/header.html %}
 
-{% include components/sidenav.html %}
+{% include documentation/components/sidenav.html %}
 
-{% include components/footers.html %}
+{% include documentation/components/footers.html %}
 
-{% include components/pagination.html %}
+{% include documentation/components/pagination.html %}

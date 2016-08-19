@@ -1085,6 +1085,24 @@ code {
 code[class*="language-"],
 pre[class*="language-"] {
   color: $color-base;
+  background-color: transparent;
+}
+
+.usa-accordion-content {
+  &.usa-code-sample {
+    padding: 1em;
+  }
+  pre, code
+  {
+    background: none;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  pre {
+    [class*="language-"] {
+      margin-top: 0;
+         }
+       }
 }
 // scss-lint:enable QualifyingElement
 

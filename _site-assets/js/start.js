@@ -1,5 +1,6 @@
 'use strict';
 
+require('./vendor/prismjs/prism.js');
 require('./vendor/uswds/start.js');
 
 var $ = require('jquery');

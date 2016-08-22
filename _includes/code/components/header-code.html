@@ -1,5 +1,4 @@
-{% capture code_preview %}
-<h6>Unauthenticated</h6>
+{% capture microsite_header_unauthenticated %}
 <section id="iae-header">
   <header>
     <div class="iae-header">
@@ -32,6 +31,10 @@
     </div>
   </header>
 </section>
+{% endcapture %}
+{% capture code_preview %}
+<h6>Unauthenticated</h6>
+{{ microsite_header_unauthenticated }}
 
 <h6>Authenticated</h6>
 <section id="iae-header">

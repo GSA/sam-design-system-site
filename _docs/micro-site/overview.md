@@ -1,8 +1,9 @@
 ---
-permalink: /micro-sites/
-layout: styleguide
-category: Micro-sites
-type: micro-sites
-title: Micro-sites
-lead: Overview content
+permalink: /micro-site/
+layout: microsite-default
+category: Micro-site
+type: micro-site
+title: Micro-site
 ---
+
+{% include micro-site/home.html %}

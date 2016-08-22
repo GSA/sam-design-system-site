@@ -1,5 +1,5 @@
 ---
-permalink: /micro-sites/search-results
+permalink: /micro-site/search-results
 layout: base
 category: Micro-sites
 type: micro-sites

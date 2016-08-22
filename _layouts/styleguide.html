@@ -19,6 +19,8 @@
         {% include site-navigation/navside-elements.html %}
       {% elsif page.category == 'Page template' %}
         {% include site-navigation/navside-page_templates.html %}
+      {% elsif page.category == 'Page examples' %}
+        {% include page-templates/examples/search-results-nav.html %}
       {% endif %}
     </aside>
     {% include site-navigation/sidenav-mobile.html %}

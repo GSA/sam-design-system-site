@@ -8,7 +8,13 @@
 {% include code/components/header-code.html %}
 {{ microsite_header_unauthenticated }}
 
+{{ page.content }}
+
 {% include code/components/footers-code.html %}
 {{ microsite_footer }}
+
+    {% include partials/ie-polyfill-scripts.html %}
+    {% include partials/analytics.html %}
+    {% include partials/docs_scripts.html %}
 </body>
 </html>

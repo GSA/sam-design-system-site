@@ -133,19 +133,19 @@
       </li>
       <li>
         <button
-          {% if page.category == 'Micro-site' %}
+          {% if page.category == 'Microsite' %}
             class="usa-current usa-accordion-button"
           {% else if %}
             class="usa-accordion-button"
           {% endif %}
-          {% if page.category == 'Micro-site' %}
+          {% if page.category == 'Microsite' %}
             aria-expanded="true"
           {% else %}
             aria-expanded="false"
           {% endif %}
-          aria-controls="sidenav-5" {% if current[1] == 'micro-site' %}class="usa-current"{% endif %}>Microsite</button>
+          aria-controls="sidenav-5" {% if current[1] == 'microsite' %}class="usa-current"{% endif %}>Microsite</button>
         <ul id="sidenav-5" class="usa-sidenav-sub_list">
-          <li><a href="{{ site.baseurl }}/micro-site">Home</a></li>
+          <li><a href="{{ site.baseurl }}/microsite">Home</a></li>
         </ul>
     </ul>
     {% include partials/download_buttons.html %}

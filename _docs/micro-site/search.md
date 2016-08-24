@@ -1,9 +1,9 @@
 ---
-permalink: /micro-site/search
+permalink: /microsite/search
 layout: microsite-default
-category: Micro-sites
-type: micro-sites
+category: Microsite
+type: microsite
 title: Search Results
 ---
 
-{% include micro-site/search.html %}
+{% include microsite/search.html %}

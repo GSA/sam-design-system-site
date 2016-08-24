@@ -6655,6 +6655,10 @@ body {
   color: #ffffff;
 }
 
+#iae-header a {
+  color: #ffffff;
+}
+
 .iae-header {
   background-color: #112e51;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);

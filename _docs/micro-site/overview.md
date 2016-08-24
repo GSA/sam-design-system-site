@@ -1,9 +1,9 @@
 ---
-permalink: /micro-site/
+permalink: /microsite/
 layout: microsite-default
-category: Micro-site
-type: micro-site
-title: Micro-site
+category: Microsite
+type: microsite
+title: Microsite
 ---
 
-{% include micro-site/home.html %}
+{% include microsite/home.html %}

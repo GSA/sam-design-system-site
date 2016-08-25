@@ -6,6 +6,7 @@ require('./vendor/uswds/start.js');
 var $ = require('jquery');
 var calculateAnchorPosition = require('./components/calculate-anchor-position');
 var stickyNav = require('./components/sticky-nav');
+require('./components/text-character-count');
 
 $(function (){
   $('.menu-btn, .overlay, .sliding-panel-close').on('click touchstart', function (e) {

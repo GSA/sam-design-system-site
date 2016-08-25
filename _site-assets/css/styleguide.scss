@@ -565,6 +565,11 @@ h2 + .tooltip {
   > *:first-child {
     margin-top: 0;
   }
+
+  .countdown {
+    position: absolute;
+    right: 50%;
+  }
 }
 
 .preview-no_border {

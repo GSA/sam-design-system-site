@@ -1,5 +1,4 @@
-{% capture code_preview %}
-  <h6 class="usa-heading-alt" id="big-footer">SAM footer</h6>
+{% capture microsite_footer %}
   <section id="iae-footer">
     <footer>
       <div class="usa-grid usa-footer-return-to-top">
@@ -35,6 +34,11 @@
       </div>
     </footer>
   </section>'
+{% endcapture %}
+
+{% capture code_preview %}
+<h6 class="usa-heading-alt" id="big-footer">SAM footer</h6>
+{{ microsite_footer }}
 {% endcapture %}
 
 {% capture uikit-php %}

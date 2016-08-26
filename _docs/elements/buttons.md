@@ -6,5 +6,5 @@ type: element
 title: Buttons
 ---
 
-{% include elements/buttons.html %}
+{% include documentation/elements/buttons.html %}
 

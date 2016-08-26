@@ -4,7 +4,7 @@ baseurl: /sam-web-design-standards
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+# syntax_highlighter: rouge
 # highlighter: rouge
 
 name: Draft SAM Web Design Standards
@@ -37,9 +37,12 @@ repos:
 
 # google_analytics_ua: UA-48605964-33
 
+# GitHub pages seems to have problems here.
+# Should be able to use if moved to another hosting platform.
+#
 # sass:
-#   sass_dir: _scss
-#  style: :compressed
+#  load_paths:
+#    - src/stylesheets
 
 # All pages are within the _docs folder
 # this makes Jekyll through gh-pages understand that.

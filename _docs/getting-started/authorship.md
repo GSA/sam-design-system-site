@@ -7,7 +7,7 @@ title: For writers
 
 ## Writing for the web
 
-The SAM Web Design Standards follows the <a href="https://pages.18f.gov/content-guide/">18F Content Guidance</a> when writing content for the web:
+The SAM Web Design Standards follows the <a class="usa-external_link" href="https://pages.18f.gov/content-guide/">18F Content Guidance</a> when writing content for the web:
 
 * [active voice](https://pages.18f.gov/content-guide/active-voice/),
 * [acronyms and abbreviations](https://pages.18f.gov/content-guide/acronyms-and-abbreviations/),

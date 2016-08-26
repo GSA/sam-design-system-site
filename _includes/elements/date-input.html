@@ -1,6 +1,4 @@
-<h2>Date input</h2>
-
-<p class="usa-font-lead">See <a href="https://playbook.cio.gov/designstandards/form-controls/#date-input">US Web Design Standards</a> for details regarding when to use this element.</p>
+<h2 class="usa-heading" id="date-input">Date input</h2>
 
 <div class="usa-alert usa-alert-info">
   <div class="usa-alert-body">
@@ -9,89 +7,17 @@
   </div>
 </div>
 
-<div class="preview">
-  <fieldset class="usa-fieldset-inputs">
-    <legend>Date of birth</legend>
-    <span class="usa-form-hint usa-datefield-hint" id="dobHint">For example: 04 28 1986</span>
+{% include code/elements/date-input-code.html %}
+{% include code/main.html %}
 
-    <div class="usa-date-of-birth">
-      <div class="usa-datefield usa-form-group usa-form-group-month">
-        <label for="date_of_birth_1">Month</label>
-        <input aria-describedby="dobHint" class="usa-form-control" id="date_of_birth_1" name="date_of_birth_1" pattern="0?[1-9]|1[012]" type="number" min="1" max="12" value="">
-      </div>
-      <div class="usa-datefield usa-form-group usa-form-group-day">
-        <label for="date_of_birth_2">Day</label>
-        <input aria-describedby="dobHint" class="usa-form-control" id="date_of_birth_2" name="date_of_birth_2" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" type="number" min="1" max="31" value="">
-      </div>
-      <div class="usa-datefield usa-form-group usa-form-group-year">
-        <label for="date_of_birth_3">Year</label>
-        <input aria-describedby="dobHint" class="usa-form-control" id="date_of_birth_3" name="date_of_birth_3" pattern="[0-9]{4}" type="number" min="1900" max="2000" value="">
-      </div>
-    </div>
-  </fieldset>
-
-  <div class="usa-input-error">
-    <fieldset class="usa-fieldset-inputs">
-      <legend class="usa-input-error-label">Date of birth</legend>
-      <span id="date_of_birth-input-error" class="usa-input-error-message" role="alert">Helpful error message</span>
-      <span class="usa-form-hint usa-datefield-hint" id="dobHint">For example: 04 28 1986</span>
-
-      <div class="usa-date-of-birth">
-        <div class="usa-datefield usa-form-group usa-form-group-month">
-          <label for="date_of_birth_1">Month</label>
-          <input aria-describedby="date_of_birth-input-error" class="usa-form-control" id="date_of_birth_1" name="date_of_birth_1" pattern="0?[1-9]|1[012]" type="number" min="1" max="12" value="">
-        </div>
-        <div class="usa-datefield usa-form-group usa-form-group-day">
-          <label for="date_of_birth_2">Day</label>
-          <input aria-describedby="date_of_birth-input-error" class="usa-form-control" id="date_of_birth_2" name="date_of_birth_2" pattern="0?[1-9]|1[0-9]|2[0-9]|3[01]" type="number" min="1" max="31" value="">
-        </div>
-        <div class="usa-datefield usa-form-group usa-form-group-year">
-          <label for="date_of_birth_3">Year</label>
-          <input aria-describedby="date_of_birth-input-error" class="usa-form-control" id="date_of_birth_3" name="date_of_birth_3" pattern="[0-9]{4}" type="number" min="1900" max="2000" value="">
-        </div>
-      </div>
-    </fieldset>
-  </div> 
-</div>
-
-<div class="usa-accordion-bordered usa-accordion-docs">
+<div class="usa-accordion-bordered">
   <ul class="usa-unstyled-list">
     <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">
-        PHP UI kit usage
+      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="element-documentation">
+        Element documentation
       </button>
-      <div id="collapsible-0" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-php">
-// render unescaped HTML string
-echo SAMUIKit\FormControls::dateInput($config);
-        </code></pre>
-      </div>
-    </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">
-        JavaScript UI kit usage
-      </button>
-      <div id="collapsible-1" class="usa-accordion-content" aria-hidden="true">
-        <pre><code class="language-js">
-        </code></pre>
-      </div>
-    </li>
-    <li>
-      <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-2">
-        UI kit documentation
-      </button>
-      <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
-        {% include partials/formcontroloverview.html %}
-          
-        <p><strong>Note:</strong> The name will be appended with 1, 2, 3, for month, day, and year, respectively.</p>
-
-        <h4 class="usa-heading">Date input</h4>
-        <h5>Optional keys</h5>
-        <ul>
-          <li><strong>month:</strong> The value of the month field.</li>
-          <li><strong>day:</strong> The value of the day field.</li>
-          <li><strong>year:</strong> The value of the year field.</li>
-        </ul>
+      <div id="element-documentation" class="usa-accordion-content" aria-hidden="false">
+        <p>See <a class="usa-external_link" href="https://playbook.cio.gov/designstandards/form-controls/#date-input">US Web Design Standards</a> for details regarding when to use this element.</p>
       </div>
     </li>    
   </ul>

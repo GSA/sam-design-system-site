@@ -1,6 +1,7 @@
 'use strict';
 
-require('uswds');
+require('./vendor/prismjs/prism.js');
+require('./vendor/uswds/start.js');
 
 var $ = require('jquery');
 var calculateAnchorPosition = require('./components/calculate-anchor-position');
@@ -12,7 +13,6 @@ $(function (){
     $('body').toggleClass('mobile-sidenav-active');
     e.preventDefault();
   });
-  require('./components/generate-code-snippets');
   require('./components/handle-disabled-lints');
   setTimeout(function () {
     require('./components/scroll-to-top-for-hash');

@@ -1,6 +1,6 @@
 // Imports -------------- //
 
-// @import '../../src/all';
+@import '../../src/stylesheets/all';
 
 // Variables -------------- //
 
@@ -276,37 +276,38 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
   nav {
     margin-top: 6rem;
     min-height: 100%;
-  }
 
-  button {
-    @include button-unstyled;
-    font-weight: $font-normal;
-    padding: 1rem 1rem 1rem 1.8rem;
+    button {
+      @include button-unstyled;
+      font-weight: $font-normal;
+      padding: 1rem 2rem 1rem 1.8rem;
+      width:auto!important;
 
-    &:focus,
-    &:active {
-      box-shadow: $focus-shadow;
-    }
+      &:focus,
+      &:active {
+        box-shadow: $focus-shadow;
+      }
 
-    &:hover {
-      background-color: $color-gray-lightest;
-      color: $color-primary;
-    }
+      &:hover {
+        background-color: $color-gray-lightest;
+        color: $color-primary;
+      }
 
-    &[aria-expanded=false] {
-      background-image: url('../img/plus-alt.png');
-      background-image: url('../img/plus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
+      &[aria-expanded=false] {
+        background-image: url('../img/plus.png');
+        background-image: url('../img/plus.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 center;
+        background-size: 1rem;
+      }
 
-    &[aria-expanded=true] {
-      background-image: url('../img/minus-alt.png');
-      background-image: url('../img/minus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
+      &[aria-expanded=true] {
+        background-image: url('../img/minus.png');
+        background-image: url('../img/minus.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 center;
+        background-size: 1rem;
+      }
     }
   }
 
@@ -1084,6 +1085,24 @@ code {
 code[class*="language-"],
 pre[class*="language-"] {
   color: $color-base;
+  background-color: transparent;
+}
+
+.usa-accordion-content {
+  &.usa-code-sample {
+    padding: 1em;
+  }
+  pre, code
+  {
+    background: none;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  pre {
+    [class*="language-"] {
+      margin-top: 0;
+         }
+       }
 }
 // scss-lint:enable QualifyingElement
 
@@ -1306,17 +1325,17 @@ $font-light: 300;
 
 // External link styles
 
-[href^="http:"]:not([href*="standards.com"]),
-[href^="https:"]:not([href*="standards.com"]) {
-  @include external-link(external-link, external-link-hover);
-}
+// [href^="http:"]:not([href*="standards.com"]),
+// [href^="https:"]:not([href*="standards.com"]) {
+//   @include external-link(external-link, external-link-hover);
+// }
 
-.usa-styleguide-footer {
-  [href^="http:"]:not([href*="standards.com"]),
-  [href^="https:"]:not([href*="standards.com"]) {
-    @include external-link(external-link-alt, external-link-alt-hover);
-  }
-}
+// .usa-styleguide-footer {
+//   [href^="http:"]:not([href*="standards.com"]),
+//   [href^="https:"]:not([href*="standards.com"]) {
+//     @include external-link(external-link-alt, external-link-alt-hover);
+//   }
+// }
 
 .usa-button,
 .link-download,

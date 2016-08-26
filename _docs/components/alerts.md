@@ -6,4 +6,4 @@ type: component
 title: Alerts
 ---
 
-{% include components/alerts.html %}
+{% include documentation/components/alerts.html %}

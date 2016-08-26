@@ -6,8 +6,8 @@ type: element
 title: Links, lists, & labels
 ---
 
-{% include elements/links.html %}
+{% include documentation/elements/links.html %}
 
-{% include elements/lists.html %}
+{% include documentation/elements/lists.html %}
 
-{% include elements/labels.html %}
+{% include documentation/elements/labels.html %}

@@ -6655,6 +6655,10 @@ body {
   color: #ffffff;
 }
 
+#iae-header a {
+  color: #ffffff;
+}
+
 .iae-header {
   background-color: #112e51;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -8158,6 +8162,21 @@ code::before, code::after {
 code[class*="language-"],
 pre[class*="language-"] {
   color: #212121;
+  background-color: transparent;
+}
+
+.usa-accordion-content.usa-code-sample {
+  padding: 1em;
+}
+
+.usa-accordion-content pre, .usa-accordion-content code {
+  background: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.usa-accordion-content pre [class*="language-"] {
+  margin-top: 0;
 }
 
 .token.property,

@@ -11,6 +11,6 @@ lead: Allows users to orient themselves within the site and move between pages.
 
 {% include components/sidenav.html %}
 
-{% include components/footers.html %}
+{% include components/footer.html %}
 
 {% include components/pagination.html %}

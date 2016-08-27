@@ -1,0 +1,70 @@
+<p class="usa-font-lead">When you take on the user experience mindset you get to embody <a class="usa-external_link" href="https://youtu.be/2QFg9CvgIYI">Tron</a> with his immortal words, &ldquo;I fight for the users!&rdquo;</p>
+
+<p>Beyond becoming an embodiement of Tron, you can think of this mindset as an exercise in empathy wherein the target of the empathy is any end-user of the system (be it software, hardware, or social).</p>
+
+<ul>
+  <li>What if I couldn&rsquo;t see?</li>
+  <li>What if I couldn&rsquo;t use my hands?</li>
+  <li>What if I still had a dial-up connection?</li>
+  <li>What if&hellip;</li>
+</ul>
+
+<p>This mindset will sometimes require setting aside your own comfort, aesthetic, and beliefs in favor of those held by people who interact with the system more often and directly than yourself.</p>
+
+<h2 id="first-priorities">First priorities</h2>
+
+<p>Generally speaking, users have three main priorities when it comes to any system they interact with:</p>
+
+<ol>
+  <li>Does it work?</li>
+  <li>Is it responsive?</li>
+  <li>Is it aesthetically pleasing?</li>
+</ol>
+
+<p>Each proceeding question is dependent upon the preceding one. If the system does not work, it does not matter how fast or pretty it is. Users will not care how pretty it is, if it takes 10 minutes every time they click a button.</p>
+
+<h2 id="keep-it-simple">Keep it simple</h2>
+
+<p>Similar to the <a href="{{ site.baseurl }}/getting-started/developers/">developer mindset</a>, we are always looking to create simple experiences that are easy to change, and enhance, in the future.</p>
+
+<p>When it comes to user interface design and development the following sums it up pretty well:</p>
+
+<blockquote>
+  <p>A user interface is like a joke. If you have to explain it, it&rsquo;s not that good.</p>
+  <p><cite><a class="usa-external_link" href="https://www.startupvitamins.com/products/startup-poster-a-user-interface-is-like-a-joke-if-you-have-to-explain-it-its-not-that-good">Poster from Startup Vitamins</a></cite></p>
+</blockquote>
+
+<ul>
+  <li>Keep the user interface and navigation as simple as possible based on user feedback.</li>
+  <li>Use workflows for complex actions to break the work down into smaller pieces.</li>
+</ul>
+
+<h2 id="information-architecture">Information architecture</h2>
+
+<p>There are two primary ways for a front-end user to find information. The first is through links from one page to another. The second is by searching for content and following links within those results.</p> 
+
+<p>When a front-end user is looking for high-level or general information, the front-end user should be able to navigate the site quickly via static menus. The front-end user may not know exactly where to go or what (s)he is looking for; the architecture can help guide the front-end user by starting broad (categories) and becoming more detailed (a specific notice, wage determination, program, and so on).</p>
+
+<p>When a front-end user knows the information (s)he is looking for, search becomes the better option; therefore, front-end users should be allowed to search using text with additional filtering capabilities within a given category.</p>
+
+<h3>Content</h3>
+
+<p>Information Architecture, in terms of content, refers to how content is displayed. This could be the ordering of information within a block of content (chapters within a book, paragraphs within a chapter, sentences within a paragraph, and so on) or how sections of content are arranged within a page.</p>
+
+<p>For the purposes of the Standards recognize two primary types of content from a front-end user perspective: content and metadata. Content refers to titles of pages, body copy, attachments, and so on. Metadata refers to details related to *that* content; posting date, related category, and so on.</p>
+
+<p>Grouping content and metadata separately allows you to quickly discern the <em>content</em> of a page from the information *about* the content of a page. Further, content and metadata should be ordered, as much as possible, in a way that gives you what you are most likely concerned about first, with the details later. For reference, see the Inverted Pyramid from journalism.</p>
+
+<h3>Content-focused and printable</h3>
+
+<p>For content pages (as opposed to those designed as portals or navigation), the text-based content should not be overpowered by the surrounding navigation or branding (chrome). Normal operating distance from the screen should be considered (mobile versus tablet, versus lap- or desk-top).</p>
+
+<p>To allow users the ability to adjust font sizes using their browser, front-end developers and designers should use relative font sizing. Increased leading (the space between lines) makes it easier for readers to discern one line of text from the next.</p>
+
+<p>On any given page, you should be able to print (or print to file) the content of that page and receive a well-formed (readable) document, without chrome elements. Print stylesheets can be used to facilitate this outcome by hiding the navigation elements, sidebars, footers (except copyright information if applicable), and so on. Further, the size of the printed page is usually unknown; therefore, it is important to remove (or override) any fixed width information and replace it with a percentage (usually 100%).</p>
+
+<p><small>Note: Printing a page should only include content considered public unless you add proper document handling, marking and labeling in accordance with Federal regulations.</small></p>
+
+
+
+

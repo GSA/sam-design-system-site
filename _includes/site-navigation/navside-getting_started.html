@@ -64,29 +64,26 @@
       {% endif %}
     </li>
     <li>
-      <a {% if page.url == '/getting-started/developers/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/developers/">Developers</a>
+      <a {% if page.url == '/getting-started/developers/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/developers/">Developer mindset</a>
       {% if page.url == '/getting-started/developers/' %}
         <ul class="usa-sidenav-sub_list">
           <li>
             <a href="#progressive-enhancement">Progressive enhancement</a>
           </li>
           <li>
-            <a href="#css-architecture">CSS architecture</a>
+            <a href="#modular-design">Modular design</a>
+          </li>
+          <li>
+            <a href="#bdd">Behavior driven development</a>
           </li>
           <li>
             <a href="#mobile-first">Mobile first</a>
           </li>
           <li>
-            <a href="#bandwidth">Bandwidth &amp; processors</a>
-          </li>
-          <li>
             <a href="#URLs">URLs</a>
           </li>
           <li>
-            <a href="#grids">Grids</a>
-          </li>
-          <li>
-            <a href="#feature-switches">Feature switches</a>
+            <a href="#feature-toggle">Feature toggles</a>
           </li>
         </ul>
       {% endif %}

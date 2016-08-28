@@ -49,8 +49,8 @@ title: Form controls
   </div>
 </div>
 
-{% include documentation/elements/text-input.html %}
+{% include standards/elements/text-input.html %}
 
-{% include documentation/elements/select.html %}
+{% include standards/elements/select.html %}
 
-{% include documentation/elements/date-input.html %}
+{% include standards/elements/date-input.html %}

@@ -31,7 +31,7 @@ Client-side languages, which are executed on the user’s device. Client-side sc
 
 <p>For more details see the <a class="usa-external_link" href="{{ site.repos[0].url }}">GitHub repository</a>.</p>
 
-{% include documentation/partials/mobile_first.html %}
+{% include standards/partials/mobile_first.html %}
 
 <h2 class="usa-heading" id="bandwidth"> Bandwidth and Processor Speeds</h2>
 
@@ -71,7 +71,7 @@ Further, when developing page addresses and URLs a user should be able to gain a
 
 A feature switch allows you to begin development of a feature, but only have it available in certain environments. Therefore, new features can be merged into the master codebase without negatively impacting continuous integration or deployment.
 
-{% include partials/grid_system.html %}
+{% include standards/partials/grid_system.html %}
 
 [^Section508]: [Quick Reference Guide to Section 508 Requirements and Standards 1194.22 (l)](http://www.section508.gov/content/learn/standards/quick-reference-guide#1194.22l)
 [^w3cProgressiveEnhancement]: [World Wide Web Consortium - Graceful degradation versus progressive enhancement](https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement)

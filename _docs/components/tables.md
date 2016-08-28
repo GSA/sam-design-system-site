@@ -6,4 +6,4 @@ type: component
 title: Tables
 ---
 
-{% include documentation/elements/tables.html %}
+{% include standards/elements/tables.html %}

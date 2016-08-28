@@ -6,4 +6,4 @@ type: component
 title: Accordions
 ---
 
-{% include documentation/components/accordions.html %}
+{% include standards/components/accordions.html %}

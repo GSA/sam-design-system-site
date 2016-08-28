@@ -30,7 +30,7 @@ gulp.task('clean-fonts', function () {
 });
 
 gulp.task('clean-bundled-javascript', function () {
-  return del('assets/js/vendor/' + dutil.pkg.name + '.min.js');
+  return del('assets/js/' + dutil.pkg.name + '.min.js');
 });
 
 gulp.task('clean-generated-assets', function (done) {

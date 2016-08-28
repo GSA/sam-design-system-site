@@ -5250,7 +5250,7 @@ fieldset.usa-fieldset-inputs legend {
   margin-top: 0;
 }
 
-.usa-input-error legend {
+.usa-input-error .usa-input-error-label {
   font-size: 1.7rem;
   font-weight: 700;
 }

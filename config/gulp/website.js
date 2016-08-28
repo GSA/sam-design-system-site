@@ -58,9 +58,25 @@ gulp.task('copy-docs-assets:stylesheets', ['compile-docs-sass'], function (done)
 
   dutil.logMessage('copy-docs-assets:stylesheets', 'Copying _site-assets/css to assets/css');
 
-  return gulp.src('_site-assets/css/**/*.css')
-    .on('error', function (data) { dutil.logError('copy-docs-assets:stylesheets', data); })
+  var siteStream = gulp.src([
+      '_site-assets/css/**/*.css'
+    ])
+    .on('error', function (data) { 
+      dutil.logError('copy-docs-assets:stylesheets', data); 
+    })
     .pipe(gulp.dest('assets/css'));
+
+  var vendorStream = gulp.src([
+      'dist/css/samwds.min.css'
+    ])
+    .on('error', function (data) {
+      dutil.logError('copy-src-assets:stylesheets', data);
+    })
+    .pipe(gulp.dest('assets/css'));
+
+  var streams = merge(siteStream, vendorStream);
+
+  return streams;
 
 });
 
@@ -113,7 +129,7 @@ gulp.task('copy-bundled-javascript', function (done) {
 
   return gulp.src('dist/js/' + dutil.pkg.name + '.min.js')
     .on('error', function (data) { dutil.logError('copy-bundled-javascript', data); })
-    .pipe(gulp.dest('assets/js/vendor'));
+    .pipe(gulp.dest('assets/js'));
 
 });
 

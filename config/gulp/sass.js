@@ -77,7 +77,6 @@ gulp.task('scss-lint-docs', function (done) {
   );
 });
 
-
 gulp.task('copy-vendor-sass', function (done) {
 
   dutil.logMessage('copy-vendor-sass', 'Compiling vendor CSS');

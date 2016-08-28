@@ -37,6 +37,7 @@ dist/
 #       we should see if it is possible to do so by using web hooks or an integration
 #       provider to perform the Jekyll build and Gulp commands.
 #
+/src/stylesheets/lib
 # /assets/
 # !assets/img
 # !assets/css/homepage.scss

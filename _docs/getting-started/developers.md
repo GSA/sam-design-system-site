@@ -31,7 +31,7 @@ Client-side languages, which are executed on the user’s device. Client-side sc
 
 <p>For more details see the <a class="usa-external_link" href="{{ site.repos[0].url }}">GitHub repository</a>.</p>
 
-{% include partials/mobile_first.html %}
+{% include documentation/partials/mobile_first.html %}
 
 <h2 class="usa-heading" id="bandwidth"> Bandwidth and Processor Speeds</h2>
 

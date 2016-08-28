@@ -48,4 +48,4 @@ See the <a class="usa-external_link" href="https://standards.usa.gov/colors/">US
 
 {% include partials/grid_system.html %}
 
-{% include partials/mobile_first.html %}
+{% include documentation/partials/mobile_first.html %}

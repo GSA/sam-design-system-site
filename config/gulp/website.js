@@ -80,6 +80,20 @@ gulp.task('copy-docs-assets:stylesheets', ['compile-docs-sass'], function (done)
 
 });
 
+gulp.task('copy-docs-assets:javascript', function (done) {
+  dutil.logMessage('copy-docs-assets:javascript', 'Copying _site-assets/js to assets/js');
+
+  var prismStream = gulp.src([
+      '_site-assets/js/vendor/prismjs/prism.js'
+    ])
+    .on('error', function (data) { 
+      dutil.logError('copy-docs-assets:javascript', data); 
+    })
+    .pipe(gulp.dest('assets/js'));
+
+  return prismStream;
+});
+
 gulp.task('compile-docs-sass', function(done) {
   dutil.logMessage(task, 'Compiling site Sass');
 
@@ -158,6 +172,7 @@ gulp.task('copy-assets', [ 'build' ], function (done) {
     'docs_javascript',
     [
       'copy-bundled-javascript',
+      'copy-docs-assets:javascript',
       'copy-fonts',
       'copy-images',
       'copy-docs-assets:images',

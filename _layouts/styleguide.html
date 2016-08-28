@@ -8,7 +8,7 @@
 
   <body class="page-{{ page.title | slugify }}">
 
-  	{% include partials/navbar.html %}
+  	{% include partials/styleguide-navbar.html %}
 
     <aside class="sidenav">
       {% if page.category == 'Getting started' %}
@@ -66,12 +66,12 @@
           {% endif %}
         </div>
         <div class="site-footer-info">
-          {% include partials/footer.html %}
+          {% include partials/styleguide-footer.html %}
         </div>
       </footer>
     </div>
     
-    {% include partials/ie-polyfill-scripts.html %}
+    {% include partials/styleguide-polyfills.html %}
     {% include partials/analytics.html %}
     {% include partials/styleguide-scripts.html %}
 

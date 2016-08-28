@@ -16,8 +16,8 @@ lead: Page templates define the overall layout of a full page of content made up
 
 <p>Page templates go beyond the scope of the user interface kit(s). These examples do not represent recommended HTML patterns and are for reference only regarding which elements and components to use and their general position on the page.</p>
 
-{% include standards/page-templates/default.html %}
+{% include styleguide/page-templates/default.html %}
 
-{% include standards/page-templates/search.html %}
+{% include styleguide/page-templates/search.html %}
 
-{% include standards/page-templates/support.html %}
+{% include styleguide/page-templates/support.html %}

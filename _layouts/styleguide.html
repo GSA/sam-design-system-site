@@ -3,12 +3,12 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 
   <head>
-    {% include standards/partials/styleguide-head.html %}
+    {% include styleguide/partials/styleguide-head.html %}
   </head>
 
   <body class="page-{{ page.title | slugify }}">
 
-  	{% include partials/styleguide-navbar.html %}
+  	{% include styleguide/partials/styleguide-navbar.html %}
 
     <aside class="sidenav">
       {% if page.category == 'Getting started' %}
@@ -50,7 +50,7 @@
       <footer class="site-footer" role="contentinfo">
         <div class="site-footer-nav usa-grid">
           {% if page.url == '/' %}
-            {% include partials/styleguide-download_buttons.html %}
+            {% include styleguide/partials/styleguide-download_buttons.html %}
           {% endif %}
           {% if page.category != null %}
             <h6>{{ page.category }}</h6>
@@ -66,14 +66,14 @@
           {% endif %}
         </div>
         <div class="site-footer-info">
-          {% include partials/styleguide-footer.html %}
+          {% include styleguide/partials/styleguide-footer.html %}
         </div>
       </footer>
     </div>
     
-    {% include standards/partials/styleguide-polyfills.html %}
-    {% include standards/partials/styleguide-analytics.html %}
-    {% include standards/partials/styleguide-scripts.html %}
+    {% include styleguide/partials/styleguide-polyfills.html %}
+    {% include styleguide/partials/styleguide-analytics.html %}
+    {% include styleguide/partials/styleguide-scripts.html %}
 
   </body>
 </html>

@@ -6,5 +6,5 @@ type: element
 title: Buttons
 ---
 
-{% include standards/elements/buttons.html %}
+{% include styleguide/elements/buttons.html %}
 

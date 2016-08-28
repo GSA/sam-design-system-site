@@ -6,8 +6,8 @@ type: element
 title: Links, lists, & labels
 ---
 
-{% include standards/elements/links.html %}
+{% include styleguide/elements/links.html %}
 
-{% include standards/elements/lists.html %}
+{% include styleguide/elements/lists.html %}
 
-{% include standards/elements/labels.html %}
+{% include styleguide/elements/labels.html %}

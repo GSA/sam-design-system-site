@@ -1,4 +1,7 @@
-<a href="#welcome">Welcome</a>
+<ul>
+  <li><a href="#welcome">Welcome</a></li>
+  <li><a href="#guidelines">Guidelines</a></li>
+</ul>
 
 <h1 id="welcome">Welcome!</h1>
 
@@ -10,7 +13,7 @@ We encourage you to read this project's CONTRIBUTING policy (you are here), its 
 
 If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository]( https://github.com/18f/open-source-policy), or just [shoot us an email](#).
 
-## Guidelines
+<h2 id="guidelines">Guidelines</h2>
 
 ### Submitting an issue or recommendation
 

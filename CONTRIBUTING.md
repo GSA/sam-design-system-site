@@ -7,6 +7,7 @@
       <li><a href="submitting-prs">Submitting pull requests</a></li>
       <li><a href="building-gulp">Building the site locally with gulp</a></li>
       <li><a href="what-to-change">What do I change?</a></li>
+    </ul>
   </li>
   <li>
     <a href="#licenses">Licenses and attribution</a>

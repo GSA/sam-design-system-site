@@ -3,18 +3,18 @@
   <li>
     <a href="#guidelines">Guidelines</a>
     <ul>
-      <li><a href="submitting-issues">Submitting issues and recommendations</a></li>
-      <li><a href="submitting-prs">Submitting pull requests</a></li>
-      <li><a href="building-gulp">Building the site locally with gulp</a></li>
-      <li><a href="what-to-change">What do I change?</a></li>
+      <li><a href="#submitting-issues">Submitting issues and recommendations</a></li>
+      <li><a href="#submitting-prs">Submitting pull requests</a></li>
+      <li><a href="#building-gulp">Building the site locally with gulp</a></li>
+      <li><a href="#what-to-change">What do I change?</a></li>
     </ul>
   </li>
-  <li><a href="prioritization">Prioritization</a></li>
+  <li><a href="#prioritization">Prioritization</a></li>
   <li>
     <a href="#licenses">Licenses and attribution</a>
     <ul>
-      <li><a href="not-public-domain">A few parts of this project are not in the public domain</a></li>
-      <li><a href="public-domain">The rest of this project is in the public domain</a></li>
+      <li><a href="#not-public-domain">A few parts of this project are not in the public domain</a></li>
+      <li><a href="#public-domain">The rest of this project is in the public domain</a></li>
     </ul>
   </li>
 </ul>

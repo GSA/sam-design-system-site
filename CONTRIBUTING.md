@@ -149,7 +149,7 @@ Go. Play!
 
 <h2 id="prioritization">Prioritization of Issues</h2>
 
-We would like to avoid accumulating technical, we would like to build technical credit. Therefore, we have established an overarching prioritization strategy.
+We would like to avoid accumulating technical debt; instead, we would like to build technical credit. Therefore, we have established an overarching prioritization strategy.
 
 When you consider taking on an issue, consider the following, in turn:
 

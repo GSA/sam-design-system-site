@@ -1,6 +1,20 @@
 <ul>
   <li><a href="#welcome">Welcome</a></li>
-  <li><a href="#guidelines">Guidelines</a></li>
+  <li>
+    <a href="#guidelines">Guidelines</a>
+    <ul>
+      <li><a href="submitting-issues">Submitting issues and recommendations</a></li>
+      <li><a href="submitting-prs">Submitting pull requests</a></li>
+      <li><a href="building-gulp">Building the site locally with gulp</a></li>
+      <li><a href="what-to-change">What do I change?</a></li>
+  </li>
+  <li>
+    <a href="#licenses">Licenses and attribution</a>
+    <ul>
+      <li><a href="not-public-domain">A few parts of this project are not in the public domain</a></li>
+      <li><a href="public-domain">The rest of this project is in the public domain</a></li>
+    </ul>
+  </li>
 </ul>
 
 <h1 id="welcome">Welcome!</h1>
@@ -15,7 +29,7 @@ If you have any questions or want to read more, check out the [18F Open Source P
 
 <h2 id="guidelines">Guidelines</h2>
 
-### Submitting an issue or recommendation
+<h3 id="submitting-issues">Submitting an issue or recommendation</h3>
 
 While it is not necessary to use this format, it would be helpful if, when submitting an issue, it contained the following:
 
@@ -31,7 +45,7 @@ While it is not necessary to use this format, it would be helpful if, when submi
 
 *Include any images, steps to recreate, notes, emojis, or whatever.*
 
-### Submitting a pull request
+<h3 id="submitting-prs">Submitting a pull request</h3>
 
 Here are a few guidelines to follow when submitting a pull request:
 
@@ -45,7 +59,7 @@ Here are a few guidelines to follow when submitting a pull request:
 
 Have questions or need help with setup? Open an issue here [https://github.com/joshbruce/sam-design-standards/issues](https://github.com/joshbruce/sam-design-standards/issues).
 
-### Building the project locally with gulp
+<h3 id="building-gulp">Building the site locally with gulp</h3>
 
 You've cloned the repository. Now, we just have to make sure your environment can do what it needs to in order to serve the site locally. 
 
@@ -115,7 +129,7 @@ Note: For a list of available gulp commands use:
 `$ gulp`
 
 
-### What do I change?
+<h3 id="what-to-change">What do I change?</h3>
 
 Anything. It will be up to the core team for the SAM Web Design Standards to determine whether to integrate the changes. 
 
@@ -131,15 +145,15 @@ Don't worry about breaking anything in the approved version. Until it is committ
 
 Go. Play!
 
-## Licenses and attribution
+<h2 id="licenses">Licenses and attribution</h2>
 
-### A few parts of this project are not in the public domain
+<h3 id="not-public-domain">A few parts of this project are not in the public domain</h3>
 
 The Standards inherit from the [U.S. Web Design Standards](https://standards.usa.gov) distributed by 18f. Thereby, inheriting the licenses and attributions of that project.
 
 Some files in ```/dist/fonts``` and ```/dist``` Standards incorporate [Font Awesome](http://fontawesome.io/) by Dave Gandy under the [SIL Open Font License 1.1](http://scripts.sil.org/OFL).
 
-### The rest of this project is in the public domain
+<h3 id="public-domain">The rest of this project is in the public domain</h3>
 
 The rest of this project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
 

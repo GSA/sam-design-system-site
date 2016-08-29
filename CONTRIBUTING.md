@@ -1,4 +1,6 @@
-# Welcome!
+<a href="#welcome">Welcome</a>
+
+<h1 id="welcome">Welcome!</h1>
 
 We're so glad you're thinking about contributing! If you're unsure about anything, just ask — or submit the issue or pull request anyway. The worst that can happen is you'll be politely asked to change something. We appreciate all friendly contributions.
 

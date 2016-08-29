@@ -9,6 +9,7 @@
       <li><a href="what-to-change">What do I change?</a></li>
     </ul>
   </li>
+  <li><a href="prioritization">Prioritization</a></li>
   <li>
     <a href="#licenses">Licenses and attribution</a>
     <ul>
@@ -145,6 +146,19 @@ Having said that:
 Don't worry about breaking anything in the approved version. Until it is committed, merged, and released you can do whatever you want! Try different styles, HTML structures, and so on. 
 
 Go. Play!
+
+<h2 id="prioritization">Prioritization of Issues</h2>
+
+We would like to avoid accumulating technical, we would like to build technical credit. Therefore, we have established an overarching prioritization strategy.
+
+When you consider taking on an issue, consider the following, in turn:
+
+1. Level 1 defect: We want to fix what is broken as soon as possible.
+2. Level 2 defect: We want to improve the experience for users before creating new experiences or features.
+3. Refactor and re-engineer: We want to improve the maintainability and increase reuse of the code.
+4. New features: We add new features based on requests from users and the community, and preferably *after* all known Level 1 and 2 defects are solved, refactored and re-engineered.
+
+Our goal is to only ship if there are no known Level 1 defects. The other three issue types are not fundamental to the functionality of the system or package.
 
 <h2 id="licenses">Licenses and attribution</h2>
 

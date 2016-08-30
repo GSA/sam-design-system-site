@@ -26,6 +26,12 @@ title: Form controls
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <p class="usa-font-lead">See <a class="usa-external_link" href="https://playbook.cio.gov/designstandards/form-controls/">US Web Design Standards</a> for details regarding when to use these elements.</p>
+    <h4 class="usa-heading">Additions to the US Web Design Standards</h4>
+    <h5>Implementation</h5>
+    <ul>
+      <li>All form controls are required to have a label to aid assistive technology users.</li>
+      <li>All labels should identify the form control being referenced (using <code>for</code> and <code>id</code> attributes).</li>
+    </ul>
 
     <h4 class="usa-heading">Inline help (hint)</h4>
     <p>Eeach form control element is able to incorporate inline help text.</p>
@@ -44,7 +50,7 @@ title: Form controls
 
     <h5>Guidance</h5>
     <ul>
-      <li>Please set Instructional Text at a 132 Character Count.</li>
+      <li>Set Instructional Text at a 132 Character Count.</li>
     </ul>
   </div>
 </div>

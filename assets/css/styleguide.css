@@ -7636,6 +7636,12 @@ h2 + .tooltip a {
   margin-top: 0;
 }
 
+.preview .countdown {
+  position: absolute;
+  right: 50%;
+  color: #757575;
+}
+
 .preview-no_border {
   margin-top: 0;
   margin-bottom: 2em;

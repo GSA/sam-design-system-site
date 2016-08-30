@@ -1,10 +1,17 @@
 // Header CSS ------- //
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: $font-sans;
 }
 
-#iae-header, #iae-header-login, #iae-login-otp {
+#iae-header,
+#iae-header-login,
+#iae-login-otp {
 	position: relative;
 	overflow: visible;
 	z-index: 9999;
@@ -19,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 	float: right;
 	width: 30%;
 	display: none;
-	
+
 	.fa-chevron-right {
 		position: absolute;
 		top: 50%;
@@ -27,15 +34,19 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-.iae-header {
+#iae-header {
 	background-color: $color-primary-darkest;
 	border-bottom:1px solid rgba(#000000, .2);
 	box-shadow: 0 2px 4px rgba(1,2,2,0.1);
-	
+
 	nav {
 		width: 100%;
 		height: auto !important;
 		margin-top: 4px !important;
+	}
+
+	li {
+		list-style: none;
 	}
 
 	.iae-header-menu {
@@ -50,15 +61,26 @@ h1, h2, h3, h4, h5, h6 {
 	.iae-header-nav {
 		text-align: center;
 		background-color: #18385e;
+		cursor: pointer;
 		padding-top: 20px;
 		margin-right: 20px;
 		float: left;
 		width: 80px;
 		height: 80px;
-		
+
 		div {
 			font-weight: 700;
 			font-size: 14px;
+		}
+
+		a {
+			i {
+				color: $color-white;
+			}
+		}
+
+		span {
+			display: block;
 		}
 	}
 
@@ -67,17 +89,20 @@ h1, h2, h3, h4, h5, h6 {
 		padding-top: 35px;
 		font-weight: 300;
 		cursor: pointer;
-		
-		i {
-			margin-right: 20px;
+
+		a {
+			i {
+				color: $color-white;
+				margin-right: 20px;
+			}
 		}
-		
+
 		@media only screen and (max-width: 768px) {
 			clear: left;
 			float: left;
 			padding-top: 15px !important;
 		}
-		
+
 		#iae-user-off {
 			display: block;
 		}
@@ -90,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 			float: right;
 		}
 	}
-	
+
 	.iae-header-search {
 		float: right;
 		width: 50%;
@@ -110,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 			padding: .5em .75em;
 			border: 1px solid $color-gray-lighter;
 		}
-		
+
 		button {
 			display: inline;
 			float: right;
@@ -140,11 +165,11 @@ h1, h2, h3, h4, h5, h6 {
 	#iae-pswd-login {
 		display: block;
 	}
-	
+
 	#iae-otp-login {
 		display: none;
 	}
-	
+
 	input[type=submit] {
 		margin-top: 40px;
 		color: $color-primary-darker;
@@ -190,8 +215,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 120px;
 	position: absolute;
 	margin-top: 40px;
+	margin-left: -15px;
 	display: none;
-	
+
 	&:after, &:before {
 		bottom: 100%;
 		left: 50%;
@@ -202,40 +228,42 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 		pointer-events: none;
 	}
-	
+
 	&:after{
 		border-color: rgba(136, 183, 213, 0);
 		border-bottom-color: $color-white;
 		border-width: 10px;
 		margin-left: -10px;
 	}
-	
+
 	&:before{
 		border-color: rgba(194, 225, 245, 0);
 		border-bottom-color: $color-gray-lighter;
 		border-width: 12px;
 		margin-left: -12px;
 	}
-	
-	li {
-		list-style-type: none;
-		text-align: left;
-		&:after {
-			content: "";
-			display: block;
-			height: 1px;
-			background: $color-gray-light;
-			margin-top: 5px;
-		}
-		&:last-child {
+	ul {
+		width: 100%;
+		li {
+			list-style-type: none;
+			text-align: left;
 			&:after {
-				background-color: none;
-				height: 0;	
+				content: "";
+				display: block;
+				height: 1px;
+				background: $color-gray-light;
+				margin-top: 5px;
 			}
-		}
-		a {
-			color: $color-gray;
-			text-decoration: none;
+			&:last-child {
+				&:after {
+					background-color: none;
+					height: 0;
+				}
+			}
+			a {
+				color: $color-gray;
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -263,9 +291,9 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 		z-index: 1;
 		top: 150%;
-		left: 25%; 
+		left: 25%;
 		margin-left: -35px; /* Use half of the width to center the tooltip */
-		
+
 		&::after {
 			content: " ";
 			position: absolute;

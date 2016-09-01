@@ -4843,7 +4843,7 @@ input[type=range]:focus::-ms-thumb {
   width: 7rem;
 }
 
-.usa-label, .usa-label-big {
+.usa-label, .usa-label-big, .usa-label-small {
   background-color: #003264;
   border-radius: 0.3rem;
   color: #ffffff;
@@ -4853,7 +4853,7 @@ input[type=range]:focus::-ms-thumb {
   text-transform: uppercase;
 }
 
-.usa-label:only-of-type, .usa-label-big:only-of-type {
+.usa-label:only-of-type, .usa-label-big:only-of-type, .usa-label-small:only-of-type {
   margin-right: 0;
 }
 
@@ -5299,6 +5299,19 @@ fieldset.usa-fieldset-inputs legend {
 .usa-date-of-birth input,
 .usa-memorable-date input {
   width: 100%;
+}
+
+.usa-label, .usa-label-big, .usa-label-small {
+  background-color: #5b616b;
+  font-size: 1.4rem;
+}
+
+.usa-label-small {
+  font-size: 1.1rem;
+}
+
+.usa-label-big {
+  font-size: 1.7rem;
 }
 
 .usa-content ol,
@@ -7636,6 +7649,12 @@ h2 + .tooltip a {
   margin-top: 0;
 }
 
+.preview .countdown {
+  position: absolute;
+  right: 50%;
+  color: #757575;
+}
+
 .preview-no_border {
   margin-top: 0;
   margin-bottom: 2em;
@@ -8486,7 +8505,7 @@ pre[class*="language-"] {
   color: #205493;
 }
 
-.page-product-roadmap .usa-label, .page-product-roadmap .usa-label-big {
+.page-product-roadmap .usa-label, .page-product-roadmap .usa-label-big, .page-product-roadmap .usa-label-small {
   display: inline-block;
   position: relative;
 }

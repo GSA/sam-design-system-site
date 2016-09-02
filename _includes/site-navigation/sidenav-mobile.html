@@ -4,7 +4,7 @@
   <a class="sliding-panel-close usa-button-dismiss" href="#"><span class="usa-sr-only">Close</span></a>
   <nav>
     <ul class="usa-sidenav-list usa-accordion">
-      <li>  
+      <li>
         <button
           {% if page.url == '/' %}
             class="usa-current usa-accordion-button"
@@ -94,6 +94,9 @@
           </li>
           <li>
             <a {% if page.url contains '/components/navigation/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/navigation/">Navigation</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/components/footer/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/footer/">Footer</a>
           </li>
           <li>
             <a {% if page.url contains '/components/form-templates/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/form-templates/">Form Templates</a>

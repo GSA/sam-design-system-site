@@ -1,5 +1,4 @@
-{% capture code_preview %}
-<h6>Unauthenticated</h6>
+{% capture microsite_header_unauthenticated %}
 <section id="iae-header">
 	<header class="usa-grid">
 		<div class="iae-header-menu">
@@ -27,6 +26,11 @@
 		<!--nav> This will hold the dropdown nav menu once a UI is finalized </nav-->
 	</header>
 </section>
+{% endcapture %}
+
+{% capture code_preview %}
+<h6>Unauthenticated</h6>
+{{ microsite_header_unauthenticated }}
 
 <h6>Unauthenticated Sign In Screen</h6>
 <section id="iae-header-login" class="iae-login">

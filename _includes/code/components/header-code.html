@@ -1,67 +1,51 @@
 {% capture microsite_header_unauthenticated %}
 <section id="iae-header">
-  <header>
-    <div class="iae-header">
-      <div class="usa-grid">
-        <div class="iae-header-menu">
-          <div class="iae-header-nav">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <div class="m_T-1x">
-              MENU
-            </div>
-          </div>
-          <div class="iae-header-logo">
-            <a class="image-wrap" href="{{ site.baseurl }}/microsite/">
-              <img width="250" alt="Transtion SAM.gov Logo" src="{{ site.baseurl }}/assets/img/logos/tsg-reverse.png">
-            </a>
-          </div>
-        </div>
-        <div class="iae-sign-in">
-          <a href="{{ site.baseurl }}/microsite/search/"><i class="fa fa-search" aria-hidden="true"></i> <span class="usa-sr-only">Search</span></a>
-          <div class="pull-right m_L-3x">
-            Create Account
-          </div>
-          <div class="pull-right">|</div>
-          <div class="pull-right m_R-3x">
-            Sign in
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+	<header class="usa-grid">
+		<div class="iae-header-menu">
+			<div class="iae-header-nav">
+				<a href=""><i class="fa fa-bars"><span class="usa-sr-only">Menu</span></i></a>
+				<span class="m_T-1x">MENU</span>
+			</div>
+			<div class="iae-header-logo">
+				<a class="image-wrap" href="#">
+					<img alt="Transtion SAM.gov Logo" width="250" src="{{ site.baseurl }}/assets/img/logos/tsg-reverse.png">
+				</a>
+			</div>
+		</div>
+		<div class="iae-sign-in">
+			<a href=""><i class="fa fa-search"><span class="usa-sr-only">Search</span></i></a>
+			<a href=""><i class="fa fa-bell"><span class="usa-sr-only">Notifications</span></i></a>
+			<div id="iae-user-off">
+				<ul class="usa-unstyled-list">
+					<li class="pull-right m_L-3x">Create Account</li>
+					<li class="pull-right">|</li>
+					<li class="pull-right m_R-3x" id="iae-login" onclick="showLogin('iae-header-login')">Sign in</li>
+				</ul>
+			</div>
+		</div>
+		<!--nav> This will hold the dropdown nav menu once a UI is finalized </nav-->
+	</header>
 </section>
 {% endcapture %}
+
 {% capture code_preview %}
 <h6>Unauthenticated</h6>
 {{ microsite_header_unauthenticated }}
+{% endcapture %}
+
+{% capture ui_images %}
+<h6>Unauthenticated Sign In Screen</h6>
+<div>
+	<img alt="Screenshot of Sign In" width="400" src="{{ site.baseurl }}/assets/img/sam-signin-screen.png">
+</div>
+
+<h6>Authenticated OTP Screen</h6>
+<div>
+	<img alt="Screenshot of OTP" width="400" src="{{ site.baseurl }}/assets/img/sam-otp-screen.png">
+</div>
 
 <h6>Authenticated</h6>
-<section id="iae-header">
-  <header>
-    <div class="iae-header">
-      <div class="usa-grid">
-        <div class="iae-header-menu">
-          <div class="iae-header-nav">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <div class="m_T-1x">
-              MENU
-            </div>
-          </div>
-          <div class="iae-header-logo">
-            <a class="image-wrap" href="#">
-              <img width="250" alt="Transtion SAM.gov Logo" src="{{ site.baseurl }}/assets/img/logos/tsg-reverse.png">
-            </a>
-          </div>
-        </div>
-        <div class="iae-sign-in">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <i class="fa fa-bell" aria-hidden="true"></i>
-          <div class="pull-right m_L-3x">
-            sam@gsa.gov
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-</section>
+<div>
+	<img alt="Screenshot of Authenticated Header" width="900" src="{{ site.baseurl }}/assets/img/sam-authenticated-header.png">
+</div>
 {% endcapture %}

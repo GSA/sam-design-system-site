@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-sans;
 	font-size: $base-font-size;
 	color: $color-white;
+
+  a {
+    color: $color-white;
+  }
 }
 
 #iae-header-login {

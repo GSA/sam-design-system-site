@@ -1,5 +1,4 @@
-{% capture code_preview %}
-<h6>Unauthenticated</h6>
+{% capture microsite_header_unauthenticated %}
 <section id="iae-header">
   <header>
     <div class="iae-header">
@@ -12,14 +11,13 @@
             </div>
           </div>
           <div class="iae-header-logo">
-            <a class="image-wrap" href="#">
+            <a class="image-wrap" href="{{ site.baseurl }}/microsite/">
               <img width="250" alt="Transtion SAM.gov Logo" src="{{ site.baseurl }}/assets/img/logos/tsg-reverse.png">
             </a>
           </div>
         </div>
         <div class="iae-sign-in">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <a href="{{ site.baseurl }}/microsite/search/"><i class="fa fa-search" aria-hidden="true"></i> <span class="usa-sr-only">Search</span></a>
           <div class="pull-right m_L-3x">
             Create Account
           </div>
@@ -32,6 +30,10 @@
     </div>
   </header>
 </section>
+{% endcapture %}
+{% capture code_preview %}
+<h6>Unauthenticated</h6>
+{{ microsite_header_unauthenticated }}
 
 <h6>Authenticated</h6>
 <section id="iae-header">

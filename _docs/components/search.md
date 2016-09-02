@@ -6,6 +6,6 @@ type: component
 title: Search
 ---
 
-{% include components/searchbar.html %}
+{% include documentation/components/searchbar.html %}
 
-{% include components/searchresult.html %}
+{% include documentation/components/searchresult.html %}

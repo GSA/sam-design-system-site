@@ -13,7 +13,7 @@ title: Form controls
         UI kit documentation
       </button>
       <div id="collapsible-2" class="usa-accordion-content" aria-hidden="true">
-        {% include partials/formcontroloverview.html %}
+        {% include code/partials/form-controls-overview.html %}
       </div>
     </li>    
   </ul>
@@ -64,8 +64,8 @@ title: Form controls
   </div>
 </div>
 
-{% include documentation/elements/text-input.html %}
+{% include styleguide/elements/text-input.html %}
 
-{% include documentation/elements/select.html %}
+{% include styleguide/elements/select.html %}
 
-{% include documentation/elements/date-input.html %}
+{% include styleguide/elements/date-input.html %}

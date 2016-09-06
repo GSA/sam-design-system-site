@@ -6,6 +6,6 @@ type: element
 title: Actions & icons
 ---
 
-{% include documentation/elements/actions.html %}
+{% include styleguide/elements/actions.html %}
 
-{% include documentation/elements/icons.html %}
+{% include styleguide/elements/icons.html %}

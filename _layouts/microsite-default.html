@@ -2,7 +2,7 @@
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 <head>
-  {% include partials/head.html %}
+  {% include microsite/partials/microsite-head.html %}
 </head>
 <body>
 <div class="usa-alert usa-alert-warning" style="margin-top: 0rem;">
@@ -22,8 +22,6 @@
 {% include code/components/footers-code.html %}
 {{ microsite_footer }}
 
-    {% include partials/ie-polyfill-scripts.html %}
-    {% include partials/analytics.html %}
-    {% include partials/docs_scripts.html %}
+{% include microsite/partials/microsite-scripts.html %}
 </body>
 </html>

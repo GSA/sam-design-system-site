@@ -27,6 +27,15 @@ title: Form controls
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <p class="usa-font-lead">See <a class="usa-external_link" href="https://playbook.cio.gov/designstandards/form-controls/">US Web Design Standards</a> for details regarding when to use these elements.</p>
 
+    <h4 class="usa-heading">Required and optional markings</h4>
+    <p>It may be necessary to mark form controls within a form as &ldquo;required&rdquo; or &ldquo;optional&rdquo; using the <code>usa-additional_text</code> class. See the <a href="{{ site.baseurl }}/components/form-templates/#name-form">Name form</a> and <a href="{{ site.baseurl }}/components/form-templates/#address-form">Address form</a> for examles.</p>
+    <h5>When to use</h5>
+    <ul>
+      <li>If your form consists of all required fields, it is not necessary to mark fields as required or optional.</li>
+      <li>If your form consists of more required fields than optional fields, mark the optional fields, but not the required fields.</li>
+      <li>If your form consists of more optional fields than required, mark the required fields, but not the optional fields.</li>
+    </ul>
+
     <h4 class="usa-heading">Inline help (hint)</h4>
     <p>Eeach form control element is able to incorporate inline help text.</p>
     <h5>When to use</h5>

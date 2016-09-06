@@ -59,7 +59,7 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Once you're ready to submit a pull request, push your branch up to the repo.
 1. Submit your pull request against the `gh-pages-staging` branch.
 
-Have questions or need help with setup? Open an issue here [https://github.com/joshbruce/sam-design-standards/issues](https://github.com/joshbruce/sam-design-standards/issues).
+Have questions or need help with setup? Open an issue here [https://github.com/gsa/sam-design-standards/issues](https://github.com/joshbruce/sam-design-standards/issues).
 
 <h3 id="building-gulp">Building the site locally with gulp</h3>
 

@@ -1,7 +1,8 @@
 {% capture code_preview %}
 <div>
   <label for="input-type-text">Text input label</label>
-  <input id="input-type-text" name="input-type-text" type="text">
+  <input id="input-type-text" name="input-type-text" type="text" maxlength="150">
+  <span class="countdown">Maximum characters: 150</span>
 </div>
 
 <div>
@@ -24,7 +25,8 @@
 
 <div>
   <label for="input-type-textarea">Text area label</label>
-  <textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+  <textarea id="input-type-textarea" name="input-type-textarea" maxlength="1000"></textarea>
+  <span class="countdown">Maximum characters: 1000</span>
 </div>
 {% endcapture %}
 
@@ -65,7 +67,7 @@ echo $input->setErrorMessage('Helpful error message')
 {% endcapture %}
 
 {% capture uikit-docs %}
-{% include partials/formcontroloverview.html %}
+{% include code/partials/form-controls-overview.html %}
     
 <h4 class="usa-heading">Text input</h4>
 <h5>Required key</h5>
@@ -77,5 +79,6 @@ echo $input->setErrorMessage('Helpful error message')
 <ul>
   <li><strong>value:</strong> Pre-fill the text input.</li>
   <li><strong>size:</strong> medium|tiny (default is normal).</li>
+  <li><strong>maxlength:</strong> Int - Whether the text input field has a maximum allowable character count, and what that limit is.</li>
 </ul>
 {% endcapture %}

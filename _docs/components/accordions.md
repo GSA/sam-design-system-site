@@ -6,4 +6,4 @@ type: component
 title: Accordions
 ---
 
-{% include components/accordions.html %}
+{% include styleguide/components/accordions.html %}

@@ -1,0 +1,153 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<aside class="sidenav-mobile">
+  <a class="sliding-panel-close usa-button-dismiss" href="#"><span class="usa-sr-only">Close</span></a>
+  <nav>
+    <ul class="usa-sidenav-list usa-accordion">
+      <li>  
+        <button
+          {% if page.url == '/' %}
+            class="usa-current usa-accordion-button"
+          {% else if %}
+            class="usa-accordion-button"
+          {% endif %}
+          {% if page.url == '/' %}
+              aria-expanded="true"
+          {% else %}
+            aria-expanded="false"
+          {% endif %}
+          aria-controls="side-nav-1">Getting Started</button>
+        <ul id="side-nav-1" class="usa-sidenav-sub_list">
+          <li>
+            <a {% if page.url == '/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Overview</a>
+          </li>
+          <li>
+            <a {% if page.url == '/#sam-web-design-standards' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/?a=1#sam-web-design-standards">SAM Web Design Standards</a>
+          </li>
+          <li>
+            <a {% if page.url == '/#us-web-design-standards' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/?a=2#us-web-design-standards">US Web Design Standards</a>
+          </li>
+          <li>
+            <a {% if page.url == '/#giving-back' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/?a=3#giving-back">Giving back</a>
+          </li>
+          <li>
+            <a {% if page.url == '/#contribute' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/?a=4#contribute">Contribute to</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button
+          {% if page.category == 'Element' %}
+            class="usa-current usa-accordion-button"
+          {% else if %}
+            class="usa-accordion-button"
+          {% endif %}
+          {% if page.category == 'Element' %}
+              aria-expanded="true"
+          {% else %}
+            aria-expanded="false"
+          {% endif %}
+          aria-controls="sidenav-2">Elements</button>
+        <ul id="sidenav-2" class="usa-sidenav-sub_list">
+          <li>
+            <a {% if page.url == '/elements/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/">Overview</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/elements/actions-icons/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/actions-icons/">Actions &amp; Icons</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/elements/buttons/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/buttons/">Buttons</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/elements/form-controls/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/form-controls/">Form Controls</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/elements/typography/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/typography/">Typography</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/elements/tables/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/elements/tables/">Tables</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button
+          {% if page.category == 'Component' %}
+            class="usa-current usa-accordion-button"
+          {% else if %}
+            class="usa-accordion-button"
+          {% endif %}
+          {% if page.category == 'Component' %}
+            aria-expanded="true"
+          {% else %}
+            aria-expanded="false"
+          {% endif %}
+          aria-controls="sidenav-3">Components</button>
+        <ul id="sidenav-3" class="usa-sidenav-sub_list">
+          <li>
+            <a {% if page.url == '/components/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/">Overview</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/components/accordions/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/accordions/">Accordions</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/components/alerts/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/alerts/">Alerts</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/components/navigation/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/navigation/">Navigation</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/components/form-templates/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/form-templates/">Form Templates</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/components/resource/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/components/resource/">Resource</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button
+          {% if page.category == 'Page template' %}
+            class="usa-current usa-accordion-button"
+          {% else if %}
+            class="usa-accordion-button"
+          {% endif %}
+          {% if page.category == 'Page template' %}
+            aria-expanded="true"
+          {% else %}
+            aria-expanded="false"
+          {% endif %}
+         aria-controls="sidenav-4" {% if current[1] == 'page-templates' %}class="usa-current"{% endif %}>Page templates</button>
+        <ul id="sidenav-4" class="usa-sidenav-sub_list">
+          <li>
+            <a {% if page.url == '/page-templates/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/">Overview</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/page-templates/#default' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/?a=1#default">Default</a>
+          </li>
+          <li>
+            <a {% if page.url contains '/page-templates/#search' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/?a=2#search">Search</a>
+          <li>
+            <a {% if page.url contains '/page-templates/#support' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-templates/?a=3#support">Support</a>
+          </li>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button
+          {% if page.category == 'Microsite' %}
+            class="usa-current usa-accordion-button"
+          {% else if %}
+            class="usa-accordion-button"
+          {% endif %}
+          {% if page.category == 'Microsite' %}
+            aria-expanded="true"
+          {% else %}
+            aria-expanded="false"
+          {% endif %}
+          aria-controls="sidenav-5" {% if current[1] == 'microsite' %}class="usa-current"{% endif %}>Microsite</button>
+        <ul id="sidenav-5" class="usa-sidenav-sub_list">
+          <li><a href="{{ site.baseurl }}/microsite">Home</a></li>
+        </ul>
+    </ul>
+    {% include styleguide/partials/styleguide-download_buttons.html %}
+  </nav>
+</aside>

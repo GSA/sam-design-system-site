@@ -7,14 +7,14 @@ title: Form templates
 lead: See <a class="usa-external_link" href="https://standards.usa.gov/form-templates/">US Web Design Standards</a> for details regarding when to use these components.
 ---
 
-{% include components/nameform.html %}
+{% include styleguide/components/nameform.html %}
 
-{% include components/addressform.html %}
+{% include styleguide/components/addressform.html %}
 
-{% include components/signinform.html %}
+{% include styleguide/components/signinform.html %}
 
-{% include components/registrationform.html %}
+{% include styleguide/components/registrationform.html %}
 
-{% include components/inlinefeedbackform_quick.html %}
+{% include styleguide/components/inlinefeedbackform_quick.html %}
 
-{% include components/supportform.html %}
+{% include styleguide/components/supportform.html %}

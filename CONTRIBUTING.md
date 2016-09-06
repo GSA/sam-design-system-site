@@ -1,4 +1,25 @@
-# Welcome!
+<ul>
+  <li><a href="#welcome">Welcome</a></li>
+  <li>
+    <a href="#guidelines">Guidelines</a>
+    <ul>
+      <li><a href="#submitting-issues">Submitting issues and recommendations</a></li>
+      <li><a href="#submitting-prs">Submitting pull requests</a></li>
+      <li><a href="#building-gulp">Building the site locally with gulp</a></li>
+      <li><a href="#what-to-change">What do I change?</a></li>
+    </ul>
+  </li>
+  <li><a href="#prioritization">Prioritization</a></li>
+  <li>
+    <a href="#licenses">Licenses and attribution</a>
+    <ul>
+      <li><a href="#not-public-domain">A few parts of this project are not in the public domain</a></li>
+      <li><a href="#public-domain">The rest of this project is in the public domain</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="welcome">Welcome!</h1>
 
 We're so glad you're thinking about contributing! If you're unsure about anything, just ask — or submit the issue or pull request anyway. The worst that can happen is you'll be politely asked to change something. We appreciate all friendly contributions.
 
@@ -8,9 +29,9 @@ We encourage you to read this project's CONTRIBUTING policy (you are here), its 
 
 If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository]( https://github.com/18f/open-source-policy), or just [shoot us an email](#).
 
-## Guidelines
+<h2 id="guidelines">Guidelines</h2>
 
-### Submitting an issue or recommendation
+<h3 id="submitting-issues">Submitting an issue or recommendation</h3>
 
 While it is not necessary to use this format, it would be helpful if, when submitting an issue, it contained the following:
 
@@ -26,7 +47,7 @@ While it is not necessary to use this format, it would be helpful if, when submi
 
 *Include any images, steps to recreate, notes, emojis, or whatever.*
 
-### Submitting a pull request
+<h3 id="submitting-prs">Submitting a pull request</h3>
 
 Here are a few guidelines to follow when submitting a pull request:
 
@@ -38,9 +59,9 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Once you're ready to submit a pull request, push your branch up to the repo.
 1. Submit your pull request against the `gh-pages-staging` branch.
 
-Have questions or need help with setup? Open an issue here [https://github.com/joshbruce/sam-design-standards/issues](https://github.com/joshbruce/sam-design-standards/issues).
+Have questions or need help with setup? Open an issue here [https://github.com/gsa/sam-design-standards/issues](https://github.com/joshbruce/sam-design-standards/issues).
 
-### Building the project locally with gulp
+<h3 id="building-gulp">Building the site locally with gulp</h3>
 
 You've cloned the repository. Now, we just have to make sure your environment can do what it needs to in order to serve the site locally. 
 
@@ -110,7 +131,7 @@ Note: For a list of available gulp commands use:
 `$ gulp`
 
 
-### What do I change?
+<h3 id="what-to-change">What do I change?</h3>
 
 Anything. It will be up to the core team for the SAM Web Design Standards to determine whether to integrate the changes. 
 
@@ -126,15 +147,28 @@ Don't worry about breaking anything in the approved version. Until it is committ
 
 Go. Play!
 
-## Licenses and attribution
+<h2 id="prioritization">Prioritization of Issues</h2>
 
-### A few parts of this project are not in the public domain
+We would like to avoid accumulating technical debt; instead, we would like to build technical credit. Therefore, we have established an overarching prioritization strategy.
+
+When you consider taking on an issue, consider the following, in turn:
+
+1. Level 1 defect: We want to fix what is broken as soon as possible.
+2. Level 2 defect: We want to improve the experience for users before creating new experiences or features.
+3. Refactor and re-engineer: We want to improve the maintainability and increase reuse of the code.
+4. New features: We add new features based on requests from users and the community, and preferably *after* all known Level 1 and 2 defects are solved, refactored and re-engineered.
+
+Our goal is to only ship if there are no known Level 1 defects. The other three issue types are not fundamental to the functionality of the system or package.
+
+<h2 id="licenses">Licenses and attribution</h2>
+
+<h3 id="not-public-domain">A few parts of this project are not in the public domain</h3>
 
 The Standards inherit from the [U.S. Web Design Standards](https://standards.usa.gov) distributed by 18f. Thereby, inheriting the licenses and attributions of that project.
 
 Some files in ```/dist/fonts``` and ```/dist``` Standards incorporate [Font Awesome](http://fontawesome.io/) by Dave Gandy under the [SIL Open Font License 1.1](http://scripts.sil.org/OFL).
 
-### The rest of this project is in the public domain
+<h3 id="public-domain">The rest of this project is in the public domain</h3>
 
 The rest of this project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
 

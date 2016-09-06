@@ -6,4 +6,4 @@ type: element
 title: Tables
 ---
 
-{% include elements/tables.html %}
+{% include styleguide/elements/tables.html %}

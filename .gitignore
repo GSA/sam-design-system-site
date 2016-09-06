@@ -37,6 +37,12 @@ dist/
 #       we should see if it is possible to do so by using web hooks or an integration
 #       provider to perform the Jekyll build and Gulp commands.
 #
+#       See /src/js/vendor/uswds/start.js for notes on why it is being kept. Do not
+#       delete this file or its parent folder.
+#
+/src/stylesheets/lib
+/src/js/vendor/
+!/src/js/vendor/uswds/start.js
 # /assets/
 # !assets/img
 # !assets/css/homepage.scss

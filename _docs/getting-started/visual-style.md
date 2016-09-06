@@ -14,7 +14,7 @@ lead: See <a class="usa-external_link" href="https://standards.usa.gov/visual-st
 
 The Standards use the Source Sans Pro <a class="usa-external_link" href="https://standards.usa.gov/typography/#pairings-and-styles">pairing and style</a> and <a class="usa-external_link" href="https://standards.usa.gov/typography/#typesetting">typesetting</a> defined by the US Web Design Standards.
 
-{% include getting-started/typography.html %}
+{% include styleguide/partials/typography.html %}
 
 <h2 id="iconography" class="usa-heading">Iconography</h2>
 
@@ -46,6 +46,6 @@ See the <a class="usa-external_link" href="https://standards.usa.gov/colors/">US
 
 See the <a class="usa-external_link" href="https://standards.usa.gov/colors/">US Web Design Standards - Text accessibility</a>
 
-{% include partials/grid_system.html %}
+{% include styleguide/partials/grid_system.html %}
 
-{% include partials/mobile_first.html %}
+{% include styleguide/partials/mobile_first.html %}

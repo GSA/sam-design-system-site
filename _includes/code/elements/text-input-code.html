@@ -67,7 +67,7 @@ echo $input->setErrorMessage('Helpful error message')
 {% endcapture %}
 
 {% capture uikit-docs %}
-{% include partials/formcontroloverview.html %}
+{% include code/partials/form-controls-overview.html %}
     
 <h4 class="usa-heading">Text input</h4>
 <h5>Required key</h5>
@@ -79,5 +79,6 @@ echo $input->setErrorMessage('Helpful error message')
 <ul>
   <li><strong>value:</strong> Pre-fill the text input.</li>
   <li><strong>size:</strong> medium|tiny (default is normal).</li>
+  <li><strong>maxlength:</strong> Int - Whether the text input field has a maximum allowable character count, and what that limit is.</li>
 </ul>
 {% endcapture %}

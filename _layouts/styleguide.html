@@ -3,25 +3,25 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 
   <head>
-    {% include partials/head.html %}
+    {% include styleguide/partials/styleguide-head.html %}
   </head>
 
   <body class="page-{{ page.title | slugify }}">
 
-  	{% include partials/navbar.html %}
+  	{% include styleguide/partials/styleguide-navbar.html %}
 
     <aside class="sidenav">
       {% if page.category == 'Getting started' %}
-        {% include site-navigation/navside-getting_started.html %}
+        {% include styleguide/site-navigation/navside-getting_started.html %}
       {% elsif page.category == 'Component' %}
-        {% include site-navigation/navside-components.html %}
+        {% include styleguide/site-navigation/navside-components.html %}
       {% elsif page.category == 'Element' %}
-        {% include site-navigation/navside-elements.html %}
+        {% include styleguide/site-navigation/navside-elements.html %}
       {% elsif page.category == 'Page template' %}
-        {% include site-navigation/navside-page_templates.html %}
+        {% include styleguide/site-navigation/navside-page_templates.html %}
       {% endif %}
     </aside>
-    {% include site-navigation/sidenav-mobile.html %}
+    {% include styleguide/site-navigation/sidenav-mobile.html %}
 
     <div id="main-content" class="main-content">
       <div class="styleguide-content usa-content">
@@ -50,31 +50,30 @@
       <footer class="site-footer" role="contentinfo">
         <div class="site-footer-nav usa-grid">
           {% if page.url == '/' %}
-            {% include partials/download_buttons.html %}
+            {% include styleguide/partials/styleguide-download_buttons.html %}
           {% endif %}
           {% if page.category != null %}
             <h6>{{ page.category }}</h6>
           {% endif %}
           {% if page.category == 'Getting started' %}
-            {% include site-navigation/navside-getting_started.html %}
+            {% include styleguide/site-navigation/navside-getting_started.html %}
           {% elsif page.category == 'Component' %}
-            {% include site-navigation/navside-components.html %}
+            {% include styleguide/site-navigation/navside-components.html %}
           {% elsif page.category == 'Element' %}
-            {% include site-navigation/navside-elements.html %}
+            {% include styleguide/site-navigation/navside-elements.html %}
           {% elsif page.category == 'Page template' %}
-            {% include site-navigation/navside-page_templates.html %}
+            {% include styleguide/site-navigation/navside-page_templates.html %}
           {% endif %}
         </div>
         <div class="site-footer-info">
-          {% include partials/footer.html %}
+          {% include styleguide/partials/styleguide-footer.html %}
         </div>
       </footer>
     </div>
     
-    {% include partials/ie-polyfill-scripts.html %}
-    {% include partials/analytics.html %}
-    {% include partials/docs_scripts.html %}
+    {% include styleguide/partials/styleguide-polyfills.html %}
+    {% include styleguide/partials/styleguide-analytics.html %}
+    {% include styleguide/partials/styleguide-scripts.html %}
 
   </body>
-
 </html>

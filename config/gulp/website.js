@@ -30,7 +30,7 @@ gulp.task('clean-fonts', function () {
 });
 
 gulp.task('clean-bundled-javascript', function () {
-  return del('assets/js/vendor/' + dutil.pkg.name + '.min.js');
+  return del('assets/js/' + dutil.pkg.name + '.min.js');
 });
 
 gulp.task('clean-generated-assets', function (done) {
@@ -58,10 +58,40 @@ gulp.task('copy-docs-assets:stylesheets', ['compile-docs-sass'], function (done)
 
   dutil.logMessage('copy-docs-assets:stylesheets', 'Copying _site-assets/css to assets/css');
 
-  return gulp.src('_site-assets/css/**/*.css')
-    .on('error', function (data) { dutil.logError('copy-docs-assets:stylesheets', data); })
+  var siteStream = gulp.src([
+      '_site-assets/css/**/*.css'
+    ])
+    .on('error', function (data) { 
+      dutil.logError('copy-docs-assets:stylesheets', data); 
+    })
     .pipe(gulp.dest('assets/css'));
 
+  var vendorStream = gulp.src([
+      'dist/css/samwds.min.css'
+    ])
+    .on('error', function (data) {
+      dutil.logError('copy-src-assets:stylesheets', data);
+    })
+    .pipe(gulp.dest('assets/css'));
+
+  var streams = merge(siteStream, vendorStream);
+
+  return streams;
+
+});
+
+gulp.task('copy-docs-assets:javascript', function (done) {
+  dutil.logMessage('copy-docs-assets:javascript', 'Copying _site-assets/js to assets/js');
+
+  var prismStream = gulp.src([
+      '_site-assets/js/vendor/prismjs/prism.js'
+    ])
+    .on('error', function (data) { 
+      dutil.logError('copy-docs-assets:javascript', data); 
+    })
+    .pipe(gulp.dest('assets/js'));
+
+  return prismStream;
 });
 
 gulp.task('compile-docs-sass', function(done) {
@@ -113,7 +143,7 @@ gulp.task('copy-bundled-javascript', function (done) {
 
   return gulp.src('dist/js/' + dutil.pkg.name + '.min.js')
     .on('error', function (data) { dutil.logError('copy-bundled-javascript', data); })
-    .pipe(gulp.dest('assets/js/vendor'));
+    .pipe(gulp.dest('assets/js'));
 
 });
 
@@ -142,6 +172,7 @@ gulp.task('copy-assets', [ 'build' ], function (done) {
     'docs_javascript',
     [
       'copy-bundled-javascript',
+      'copy-docs-assets:javascript',
       'copy-fonts',
       'copy-images',
       'copy-docs-assets:images',

@@ -1,4 +1,4 @@
 'use strict';
 
-require('./components/text-character-count.js');
 require('./vendor/uswds/start.js');
+require('./components/text-character-count.js');

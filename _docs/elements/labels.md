@@ -6,5 +6,5 @@ type: element
 title: Labels
 ---
 
-{% include documentation/elements/labels.html %}
+{% include styleguide/elements/labels.html %}
 

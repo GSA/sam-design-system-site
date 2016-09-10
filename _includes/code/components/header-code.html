@@ -1,35 +1,12 @@
 {% capture microsite_header_unauthenticated %}
-<section id="iae-header">
-  <header>
-    <div class="iae-header">
-      <div class="usa-grid">
-        <div class="iae-header-menu">
-          <div class="iae-header-nav">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <div class="m_T-1x">
-              MENU
-            </div>
-          </div>
-          <div class="iae-header-logo">
-            <a class="image-wrap" href="{{ site.baseurl }}/microsite/">
-              <img width="250" alt="Transtion SAM.gov Logo" src="{{ site.baseurl }}/assets/img/logos/tsg-reverse.png">
-            </a>
-          </div>
-        </div>
-        <div class="iae-sign-in">
-          <a href="{{ site.baseurl }}/microsite/search/"><i class="fa fa-search" aria-hidden="true"></i> <span class="usa-sr-only">Search</span></a>
-          <div class="pull-right m_L-3x">
-            Create Account
-          </div>
-          <div class="pull-right">|</div>
-          <div class="pull-right m_R-3x">
-            Sign in
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-</section>
+<header>
+  <nav class="usa-grid" aria-label="Main navigation">
+    <ul>
+      <li><a class="sam-home" href="{{ site.baseurl }}/microsite/">The future SAM.gov</a></li>
+      <li><a href="{{ site.baseurl }}/microsite/search/"><i class="fa fa-search" aria-hidden="true"></i> <span class="usa-sr-only">Search</span></a></li>
+    </ul>
+  </nav>
+</header>
 {% endcapture %}
 {% capture code_preview %}
 <h6>Unauthenticated</h6>

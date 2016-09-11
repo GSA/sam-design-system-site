@@ -42,10 +42,37 @@
 	background-color: $color-primary-darkest;
   box-shadow: 0 2px 4px rgba(1,2,2,0.1);
 
-  
-  ul {
-    margin-top: 0em;
+  a {
+    display: inline-block;
+    min-height: 44px;
+    min-width: 44px;
   }
+
+  li {
+    float: left;
+  }
+
+  .sam-home {
+    padding: 3.5rem 0rem;
+    width: 25rem;
+    height: 4rem;
+    @include background-image(url('../img/transition-sam-logo.svg'), url('../img/transition-sam-logo.png'));
+    background-size: 25rem auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .sam-home span {
+    @include sr-only();
+  }
+
+  .sam-search {
+
+  }
+
+  // ul {
+  //   margin-top: 0em;
+  // }
 	// border-bottom:1px solid rgba(#000000, .2);
 	
 

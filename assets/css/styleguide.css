@@ -6610,8 +6610,30 @@ fieldset {
   box-shadow: 0 2px 4px rgba(1, 2, 2, 0.1);
 }
 
-#sam-header ul {
-  margin-top: 0em;
+#sam-header a {
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#sam-header li {
+  float: left;
+}
+
+#sam-header .sam-home {
+  padding: 3.5rem 0rem;
+  width: 25rem;
+  height: 4rem;
+  background-image: url("../img/transition-sam-logo.svg"), url("../img/transition-sam-logo.png");
+  background-image: url("../img/transition-sam-logo.svg"), url("../img/transition-sam-logo.png");
+  background-size: 25rem auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#sam-header .sam-home span {
+  position: absolute;
+  left: -999em;
 }
 
 /* Tooltip  */

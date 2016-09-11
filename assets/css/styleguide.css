@@ -6612,8 +6612,11 @@ fieldset {
 
 #sam-header a {
   display: inline-block;
-  min-height: 44px;
-  min-width: 44px;
+  min-height: 4.4rem;
+  min-width: 4.4rem;
+  background-size: 2.5rem auto;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #sam-header li {
@@ -6627,11 +6630,17 @@ fieldset {
   background-image: url("../img/transition-sam-logo.svg"), url("../img/transition-sam-logo.png");
   background-image: url("../img/transition-sam-logo.svg"), url("../img/transition-sam-logo.png");
   background-size: 25rem auto;
+}
+
+#sam-header .sam-search {
+  padding: 3.5rem 0rem;
+  background-image: url("../img/search.svg"), url("../img/search.png");
+  background-image: url("../img/search.svg"), url("../img/search.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-#sam-header .sam-home span {
+#sam-header .sam-home span, #sam-header .sam-search span {
   position: absolute;
   left: -999em;
 }

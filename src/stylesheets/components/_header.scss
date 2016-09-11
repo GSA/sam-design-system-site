@@ -44,8 +44,11 @@
 
   a {
     display: inline-block;
-    min-height: 44px;
-    min-width: 44px;
+    min-height: 4.4rem;
+    min-width: 4.4rem;
+    background-size: 2.5rem auto;
+    background-repeat: no-repeat;
+    background-position: center center;    
   }
 
   li {
@@ -58,16 +61,17 @@
     height: 4rem;
     @include background-image(url('../img/transition-sam-logo.svg'), url('../img/transition-sam-logo.png'));
     background-size: 25rem auto;
+  }
+
+  .sam-search {
+    padding: 3.5rem 0rem;
+    @include background-image(url('../img/search.svg'), url('../img/search.png'));
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  .sam-home span {
+  .sam-home span, .sam-search span {
     @include sr-only();
-  }
-
-  .sam-search {
-
   }
 
   // ul {

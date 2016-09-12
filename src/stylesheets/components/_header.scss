@@ -36,7 +36,8 @@
     background-position: center center;
   }
 
-  .sam-home span, .sam-search span {
+  .sam-home span, 
+  .sam-search span {
     @include sr-only();
   }
 }

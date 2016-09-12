@@ -6646,59 +6646,54 @@ fieldset {
   background-position: center center;
 }
 
-#sam-header .sam-home span, #sam-header .sam-search span {
+#sam-header .sam-home span,
+#sam-header .sam-search span {
   position: absolute;
   left: -999em;
 }
 
-.iae-footer {
+.sam-footer-wrapper {
   width: 100%;
-  padding-bottom: 3em;
+  padding-bottom: 3rem;
   background-color: #112e51;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1.7rem;
-  z-index: 10010;
 }
 
-.iae-footer a, .iae-footer a:focus, .iae-footer a:visited, .iae-footer a:hover, .iae-footer a:active {
-  color: #ffffff !important;
-  box-shadow: none;
+.sam-footer-body {
+  padding: 0;
+  padding-top: 3rem;
+}
+
+.sam-footer-body a {
   text-decoration: none;
 }
 
-.iae-footer a:hover {
-  text-decoration: underline;
-}
-
-.iae-footer-body {
-  padding-top: 3em;
-}
-
-.iae-footer-body .image-wrap {
-  display: inline-block;
-}
-
-.iae-footer-body img {
-  width: 100px;
-  height: 100px;
-}
-
-.iae-footer-body .iae-footer-logo a img {
-  border: none;
-}
-
-.iae-footer-body .iae-footer-head {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+.sam-footer-body a,
+.sam-footer-body a:focus,
+.sam-footer-body a:visited,
+.sam-footer-body a:hover,
+.sam-footer-body a:active {
   color: #ffffff;
 }
 
-.iae-footer-body .iae-footer-links {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 15px;
+.sam-footer-body a:hover {
+  text-decoration: underline;
 }
 
-.iae-footer-body .iae-footer-links span {
-  font-weight: 700;
+.sam-footer-logo a {
+  display: inline-block;
+  min-height: 10rem;
+  min-width: 10rem;
+  background-image: url("../img/logos/gsa-reverse.svg"), url("../img/logos/gsa-reverse.png");
+  background-image: url("../img/logos/gsa-reverse.svg"), url("../img/logos/gsa-reverse.png");
+  background-size: 10rem auto;
+  background-repeat: no-repeat;
+}
+
+.sam-footer-logo a span {
+  position: absolute;
+  left: -999em;
 }
 
 .usa-grid.usa-search-result {

@@ -1,0 +1,13 @@
+.usa-label{
+  background-color: $color-gray;
+  font-size: rem(14px);
+}
+
+.usa-label-small {
+  @extend .usa-label;
+  font-size: rem(11px);
+}
+
+.usa-label-big {
+  font-size: $base-font-size;
+}

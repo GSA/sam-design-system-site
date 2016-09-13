@@ -22,13 +22,13 @@ $spacing: 5px;
 .m_All-3x { @extend %margin-3x; }
 .m_All-4x { @extend %margin-4x; }
 
-.m_V-1x	{  @extend %margin-vertical-1x; }
-.m_V-2x {  @extend %margin-vertical-2x; }
-.m_V-3x {  @extend %margin-vertical-3x; }
-.m_V-4x {  @extend %margin-vertical-4x; }
-.m_V-5x {  @extend %margin-vertical-5x; }
+.m_V-1x { @extend %margin-vertical-1x; }
+.m_V-2x { @extend %margin-vertical-2x; }
+.m_V-3x { @extend %margin-vertical-3x; }
+.m_V-4x { @extend %margin-vertical-4x; }
+.m_V-5x { @extend %margin-vertical-5x; }
 
-.m_H-3x {  @extend %margin-horizontal-3x; }
+.m_H-3x { @extend %margin-horizontal-3x; }
 
 .m_T-1x { @extend %margin-top-1x; }
 .m_T-2x { @extend %margin-top-2x; }
@@ -60,14 +60,14 @@ $spacing: 5px;
 .m_R-5x { @extend %margin-right-5x; }
 .m_R-6x { @extend %margin-right-6x; }
 
-.m_0 {margin: 0px !important}
-.m_R-0 {margin-right: 0px !important}
-.m_T-0 {margin-top: 0px !important}
-.m_B-0 {margin-bottom: 0px !important}
+.m_0 { margin: 0 !important; }
+.m_R-0 { margin-right: 0 !important; }
+.m_T-0 { margin-top: 0 !important; }
+.m_B-0 { margin-bottom: 0 !important; }
 
-.m_auto{
-     margin-left: auto;
-     margin-right: auto;
+.m_auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .p_All-3x { @extend %padding-3x; }

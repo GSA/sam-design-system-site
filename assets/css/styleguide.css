@@ -6621,6 +6621,13 @@ fieldset {
 
 #sam-header ul {
   position: relative;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  #sam-header ul {
+    padding-left: 3rem;
+  }
 }
 
 #sam-header li {
@@ -6661,8 +6668,14 @@ fieldset {
 }
 
 .sam-footer-body {
-  padding: 0;
   padding-top: 3rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .sam-footer-body {
+    padding-left: 3rem;
+  }
 }
 
 .sam-footer-body a {

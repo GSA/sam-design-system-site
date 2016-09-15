@@ -1,6 +1,10 @@
-#sam-header {
-	background-color: $color-primary-darkest;
-  box-shadow: 0 2px 4px rgba(1,2,2,0.1);
+// Header CSS ------- //
+
+$header-box-shadow: rgba(1, 2, 2, 0.1);
+
+.sam-header {
+  background-color: $color-primary-darkest;
+  box-shadow: 0 2px 4px $header-box-shadow;
 
   a {
     display: inline-block;
@@ -8,12 +12,13 @@
     min-width: 4.4rem;
     background-size: 2rem auto;
     background-repeat: no-repeat;
-    background-position: center center;    
+    background-position: center center;
   }
 
   ul {
     position: relative;
     padding-left: 1.5rem;
+
     @include media($medium-screen) {
       padding-left: 3rem;
     }
@@ -40,8 +45,7 @@
     background-position: center center;
   }
 
-  .sam-home span, 
-  .sam-search span {
+  span {
     @include sr-only();
   }
 }

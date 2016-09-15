@@ -83,7 +83,7 @@ public-root/
 
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
 
-[https://github.com/BrianGilmanGSA/sam-web-design-standards/issues](https://github.com/BrianGilmanGSA/sam-web-design-standards/issues).
+[https://github.com/GSA/sam-web-design-standards/issues](https://github.com/GSA/sam-web-design-standards/issues).
 
 You can also email us directly at uswebdesignstandards@gsa.gov.
 

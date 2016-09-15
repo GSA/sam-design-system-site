@@ -3892,19 +3892,19 @@ body {
 }
 
 .m_0 {
-  margin: 0px !important;
+  margin: 0 !important;
 }
 
 .m_R-0 {
-  margin-right: 0px !important;
+  margin-right: 0 !important;
 }
 
 .m_T-0 {
-  margin-top: 0px !important;
+  margin-top: 0 !important;
 }
 
 .m_B-0 {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 .m_auto {
@@ -4009,7 +4009,7 @@ hr {
 
 .marginCenter {
   position: relative;
-  margin: 0px 16%;
+  margin: 0 16%;
 }
 
 .pull-left {
@@ -6605,12 +6605,12 @@ fieldset {
   float: right;
 }
 
-#sam-header {
+.sam-header {
   background-color: #112e51;
   box-shadow: 0 2px 4px rgba(1, 2, 2, 0.1);
 }
 
-#sam-header a {
+.sam-header a {
   display: inline-block;
   min-height: 4.4rem;
   min-width: 4.4rem;
@@ -6619,22 +6619,22 @@ fieldset {
   background-position: center center;
 }
 
-#sam-header ul {
+.sam-header ul {
   position: relative;
   padding-left: 1.5rem;
 }
 
 @media screen and (min-width: 600px) {
-  #sam-header ul {
+  .sam-header ul {
     padding-left: 3rem;
   }
 }
 
-#sam-header li {
+.sam-header li {
   float: left;
 }
 
-#sam-header .sam-home {
+.sam-header .sam-home {
   margin-top: 1.25rem;
   width: 25rem;
   height: 4rem;
@@ -6643,7 +6643,7 @@ fieldset {
   background-size: 25rem auto;
 }
 
-#sam-header .sam-search {
+.sam-header .sam-search {
   position: absolute;
   right: 0;
   margin-top: 0.9rem;
@@ -6653,8 +6653,7 @@ fieldset {
   background-position: center center;
 }
 
-#sam-header .sam-home span,
-#sam-header .sam-search span {
+.sam-header span {
   position: absolute;
   left: -999em;
 }
@@ -6704,7 +6703,7 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.sam-footer-logo a span {
+.sam-footer-logo span {
   position: absolute;
   left: -999em;
 }

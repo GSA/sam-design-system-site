@@ -12,8 +12,6 @@ var runSequence = require('run-sequence');
 var del = require('del');
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 
-var entryFileFilter = filter('all.scss', { restore: true });
-var fontAwesomeCssFilter = filter('font-awesome.css', { restore: true });
 var supportedBrowsers = [
   '> 1%',
   'Last 2 versions',
@@ -82,6 +80,11 @@ gulp.task('copy-vendor-sass', function (done) {
   dutil.logMessage('copy-vendor-sass', 'Compiling vendor CSS');
 
   // copy font-awesome
+  // For some reason, when this filter is placed outside the task (global scope),
+  // the gulp watch inside website.js throws an error. However, when placed locally
+  // the watch task does not throw the error. Further, the error is not thrown when
+  // this task is run directly or as prerequesite for other tasks.
+  var fontAwesomeCssFilter = filter('font-awesome.css', { restore: true });
   var faStream = gulp.src([
       './node_modules/font-awesome/css/font-awesome.css'
     ])
@@ -89,7 +92,7 @@ gulp.task('copy-vendor-sass', function (done) {
       .pipe(rename('_font-awesome.css'))
     .pipe(fontAwesomeCssFilter.restore)
     .on('error', function (error) {
-      dutil.logError('copy-vendor-sass', error);
+      dutil.logError('copy-vendor-sass-fa', error);
     })
     .pipe(gulp.dest('src/stylesheets/lib/font-awesome'));
 
@@ -98,7 +101,7 @@ gulp.task('copy-vendor-sass', function (done) {
       './node_modules/uswds/src/stylesheets/**/*.scss'
     ])
     .on('error', function (error) {
-      dutil.logError('copy-vendor-sass', error);
+      dutil.logError('copy-vendor-sass-uswds', error);
     })
     .pipe(gulp.dest('src/stylesheets/lib/uswds'));
 

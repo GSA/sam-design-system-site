@@ -6710,6 +6710,7 @@ fieldset {
 
 .usa-grid.usa-search-result {
   border-bottom: 1px solid #000000;
+  padding-bottom: 1em;
 }
 
 .iae-primary-navigation {

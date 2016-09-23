@@ -31,6 +31,16 @@ If you have any questions or want to read more, check out the [18F Open Source P
 
 <h2 id="guidelines">Guidelines</h2>
 
+1. Pull requests should contain small changes to the codebase to minimize merge conflicts and large integrations.
+1. Discovered merge conflicts within a pull request should be corrected by the submitter of the pull request.
+1. No code freezes will be instituted; if a pull request cannot be merged or the functionality cannot be demonstrated at the Sprint review, the work will rollover to the next release (or Sprint).
+1. Pull requests are reviewed and approved using the [GitHub review process](https://help.github.com/articles/about-pull-request-reviews/). Note: Reviewers should only use the "comment" or "request changes" options.
+
+Gitflow Workflow branch names:
+
+`gh-pages-staging` is equivalent to `develop`.
+`gh-pages` is equivalent to `master`. 
+
 <h3 id="submitting-issues">Submitting an issue or recommendation</h3>
 
 While it is not necessary to use this format, it would be helpful if, when submitting an issue, it contained the following:

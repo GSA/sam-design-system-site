@@ -1,4 +1,9 @@
-.usa-grid.usa-search-result {
+.usa-search-result {
   border-bottom: 1px solid $color-black;
   padding-bottom: 1em;
+
+  .usa-label {
+    margin-right: 1rem;
+  }
 }
+

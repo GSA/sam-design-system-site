@@ -142,17 +142,17 @@ Note: For a list of available gulp commands use:
 
 #### Trouble shooting(For Mac)
 
-If you have problem serve the site locally after all these steps, please try the following steps:
+If you have a problem serving the site locally, please try the following:
 
-Launch Terminal (OS X) and [install RVM](https://rvm.io/rvm/install)
+Launch Terminal (MacOS) and [install RVM](https://rvm.io/rvm/install)
 
 Find a stable version of ruby and install it:
 
-`$ rvm install ruby-VersionNumber`
+`$ rvm install ruby-[version-number]`
 
 Use a stable version of ruby for rvm:
 
-`$ rvm use VersionNumber`
+`$ rvm use [version-number]`
 
 Install the ruby bundler:
 

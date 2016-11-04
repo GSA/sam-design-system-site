@@ -140,6 +140,26 @@ Note: For a list of available gulp commands use:
 
 `$ gulp`
 
+#### Trouble shooting(For Mac)
+
+If you have a problem serving the site locally, please try the following:
+
+Launch Terminal (MacOS) and [install RVM](https://rvm.io/rvm/install)
+
+Find a stable version of ruby and install it:
+
+`$ rvm install ruby-[version-number]`
+
+Use a stable version of ruby for rvm:
+
+`$ rvm use [version-number]`
+
+Install the ruby bundler:
+
+`$ gem install bundler`
+
+Redo the steps in **Serve the site locally** section
+
 
 <h3 id="what-to-change">What do I change?</h3>
 

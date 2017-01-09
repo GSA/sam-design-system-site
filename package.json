@@ -1,0 +1,18 @@
+{
+  "name": "web-standards-site",
+  "version": "0.0.1",
+  "description": "SAM Web Standards Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://csp-github.sam.gov/GSA-IAE/web-standards-site-pipeline1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "local-web-server": "^1.2.6"
+  }
+}

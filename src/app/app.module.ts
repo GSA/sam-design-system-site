@@ -24,6 +24,7 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
 
+
 //import '../styles/styles.scss';
 //import '../styles/headings.css';
 
@@ -39,7 +40,7 @@ const APP_PROVIDERS = [
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

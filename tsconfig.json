@@ -26,8 +26,9 @@
   },
   "exclude": [
     "node_modules",
-    "sam-ui-elements",
-    "dist"
+    "sam-ui-elements/node_modules",
+    "dist",
+    "sam-ui-elements/dist"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,

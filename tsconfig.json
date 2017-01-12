@@ -26,6 +26,7 @@
   },
   "exclude": [
     "node_modules",
+    "sam-ui-elements",
     "sam-ui-elements/node_modules",
     "dist",
     "sam-ui-elements/dist"

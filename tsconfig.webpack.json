@@ -21,10 +21,14 @@
   },
   "exclude": [
     "node_modules",
-    "dist",
     "sam-ui-elements",
+    "sam-ui-elements/node_modules",
+    "dist",
+    "sam-ui-elements/dist",
     "src/**/*.spec.ts",
-    "src/**/*.e2e.ts"
+    "src/**/*.e2e.ts",
+    "sam-ui-elements/**/*.spec.ts",
+    "sam-ui-elements/src/**/*.e2e.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,

@@ -114,7 +114,7 @@ module.exports = function (options) {
               }
             }
           ],
-          exclude: [/sam-ui-elements/,/\.(spec|e2e)\.ts$/]
+          exclude: [/sam\-ui\-elements\/node_modules/,/\.(spec|e2e)\.ts$/]
         },
 
         /*

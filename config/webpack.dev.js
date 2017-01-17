@@ -12,6 +12,8 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
+const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-plugin-modified.js');
+
 /*var recursiveReadSync = require('recursive-readdir-sync');
 var files = recursiveReadSync('./src/_docs');
 files = files.filter(function(val){
@@ -124,6 +126,20 @@ module.exports = function (options) {
     },
 
     plugins: [
+      /**
+       * Plugin: Typedoc Webpack Plugin
+       * Description: Adds Typedoc documentation generator to webpack build
+       * 
+       * See: https://github.com/Microsoft/Typedoc-Webpack-Plugin
+       */
+      new TypedocWebpackPlugin({
+        json: 'docs.json',
+        target: 'es6',
+        exclude: 'node_modules',
+        externalPattern: "**/*(*.spec|index).ts",
+        excludeExternals: true,
+        ignoreCompilerErrors: true,
+      }, ['./sam-ui-elements/src/ui-kit']),
 
       /**
        * Plugin: DefinePlugin
@@ -177,6 +193,7 @@ module.exports = function (options) {
      * See: https://webpack.github.io/docs/webpack-dev-server.html
      */
     devServer: {
+      contentBase: "dist",
       port: METADATA.port,
       host: METADATA.host,
       historyApiFallback: true,

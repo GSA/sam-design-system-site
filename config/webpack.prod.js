@@ -18,6 +18,8 @@ const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const V8LazyParseWebpackPlugin = require('v8-lazy-parse-webpack-plugin');
+const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-plugin-modified.js');
+
 /**
  * Webpack Constants
  */
@@ -120,6 +122,20 @@ module.exports = function (env) {
      * See: http://webpack.github.io/docs/configuration.html#plugins
      */
     plugins: [
+      /**
+       * Plugin: Typedoc Webpack Plugin
+       * Description: Adds Typedoc documentation generator to webpack build
+       * 
+       * See: https://github.com/Microsoft/Typedoc-Webpack-Plugin
+       */
+      new TypedocWebpackPlugin({
+        json: 'docs.json',
+        target: 'es6',
+        exclude: 'node_modules',
+        externalPattern: "**/*(*.spec|index).ts",
+        excludeExternals: true,
+        ignoreCompilerErrors: true,
+      }, ['./sam-ui-elements/src/ui-kit']),
 
       /**
        * Plugin: ExtractTextPlugin

@@ -78,6 +78,8 @@
     "karma-remap-coverage": "^0.1.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "1.8.1",
+    "lodash.clone": "^4.5.0",
+    "lodash.merge": "^4.6.0",
     "ng-router-loader": "^1.0.2",
     "ngc-webpack": "1.1.0",
     "node-sass": "^4.1.1",

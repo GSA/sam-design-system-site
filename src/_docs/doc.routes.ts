@@ -5,6 +5,15 @@ import { ButtonExampleComponent } from "./form-controls/button/component-example
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/datetime/component-example";
+import { MultiSelectExampleComponent } from "./form-controls/multiselect/component-example";
+import { NameEntryExampleComponent } from "./form-controls/name-entry/component-example";
+import { PhoneEntryExampleComponent } from "./form-controls/phone-entry/component-example";
+import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
+import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
+import { SelectExampleComponent } from "./form-controls/select/component-example";
+import { TextExampleComponent } from "./form-controls/text/component-example";
+import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
+import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { FooterExampleComponent } from "./footer/component-example";
 import { HeaderExampleComponent } from "./header/component-example";
 import { HeaderLinksExampleComponent } from "./header-links/component-example";
@@ -27,6 +36,15 @@ export const ROUTES: Routes = [
   { path: 'form-controls/checkbox',      component: CheckboxExampleComponent },
   { path: 'form-controls/date',      component: DateExampleComponent },
   { path: 'form-controls/date-time',      component: DateTimeExampleComponent },
+  { path: 'form-controls/multiselect',      component: MultiSelectExampleComponent },
+  { path: 'form-controls/name-entry',      component: NameEntryExampleComponent },
+  { path: 'form-controls/phone-entry',      component: PhoneEntryExampleComponent },
+  { path: 'form-controls/radiobutton',      component: RadioExampleComponent },
+  { path: 'form-controls/searchbar',      component: SearchbarExampleComponent },
+  { path: 'form-controls/select',      component: SelectExampleComponent },
+  { path: 'form-controls/text',      component: TextExampleComponent },
+  { path: 'form-controls/textarea',      component: TextareaExampleComponent },
+  { path: 'form-controls/time',      component: TimeExampleComponent },
   { path: 'footer',      component: FooterExampleComponent },
   { path: 'header',      component: HeaderExampleComponent },
   { path: 'header-links',      component: HeaderLinksExampleComponent },

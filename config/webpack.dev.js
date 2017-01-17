@@ -12,6 +12,15 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
+var recursiveReadSync = require('recursive-readdir-sync');
+var files = recursiveReadSync('./src/_docs');
+files = files.filter(function(val){
+  return val.match(/\.md$/);
+});
+files = files.map(function(val){
+  return val.substring(0, val.lastIndexOf("/")).replace('src/_docs/','');
+});
+console.log('Files array:', files);
 
 /**
  * Webpack Constants
@@ -20,6 +29,7 @@ const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 const HMR = helpers.hasProcessFlag('hot');
+const DOCS = files;
 const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
   host: HOST,
   port: PORT,
@@ -129,6 +139,7 @@ module.exports = function (options) {
       new DefinePlugin({
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
+        'DOCS': JSON.stringify(DOCS),
         'process.env': {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),

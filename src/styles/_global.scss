@@ -1,0 +1,143 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.disable {
+  color: $color-gray-warm-dark;
+  cursor: default;
+
+  &:hover {
+    background-color: transparent !important;
+    color: $color-gray-warm-dark !important;
+  }
+
+  &:visited {
+    color: $color-gray-warm-dark !important;
+  }
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.relative {
+  position: relative;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.middle-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+hr {
+  color: #888888;
+  background-color: #888888;
+  height: .5px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.bold {
+  font-weight: $font-bold;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.serif {
+  font-family: $font-serif;
+}
+
+.blankSpacer {
+  text-indent: -9999em;
+}
+
+.line-divider {
+  display: block;
+  height: 1px;
+  margin: .5em 0 .5em 0;
+
+  &:before {
+    border-top: 1px solid #000000;
+  }
+
+  &:after {
+    border-bottom: 1px solid #FFFFFF;
+  }
+}
+
+.marginCenter {
+  position: relative;
+  margin: 0 16% !important;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+
+
+// ensure button has a big enough hit box
+.usa-button-icon {
+  height: 44px;
+  width: 44px;
+  display: inline-block;
+  background-color: transparent;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .6;
+  }
+}
+
+.usa-color-info {
+  background-color: $color-primary-alt-lightest;
+}
+
+.usa-color-warning {
+  background-color: $color-gold-lightest;
+}
+
+.usa-color-error {
+  background-color: $color-secondary-lightest;
+}

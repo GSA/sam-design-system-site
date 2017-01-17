@@ -23,6 +23,11 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
+import { DummyComponent } from './home/dummy.component';
+import { DocumentComponent } from './home/document.component';
+
+
+import { DocModule } from '../_docs/doc.module';
 
 
 //import '../styles/styles.scss';
@@ -40,13 +45,16 @@ const APP_PROVIDERS = [
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DummyComponent,
+    DocumentComponent
   ],
   imports: [ // import Angular's modules
+    DocModule,
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

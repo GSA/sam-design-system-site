@@ -45,12 +45,11 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
                   <li><a routerLink="/form-controls/name-entry">NameEntry</a></li>
                   <li><a routerLink="/form-controls/phone-entry">PhoneEntry</a></li>
                   <li><a routerLink="/form-controls/radiobutton">Radio Button</a></li>
-                  <li><a routerLink="/form-controls/search">Searchbar</a></li>
+                  <li><a routerLink="/form-controls/searchbar">Searchbar</a></li>
                   <li><a routerLink="/form-controls/select">Select</a></li>
                   <li><a routerLink="/form-controls/text">Text</a></li>
                   <li><a routerLink="/form-controls/textarea">Textarea</a></li>
                   <li><a routerLink="/form-controls/time">Time</a></li>
-                  <li><a routerLink="/form-controls/wrapper">Wrapper</a></li>
                 </ul>
               </li>
               <li><a routerLink="/footer">Footer</a></li>

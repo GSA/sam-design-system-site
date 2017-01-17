@@ -8,11 +8,20 @@ import { RouterModule } from '@angular/router';
 import { AccordionExampleComponent,AccordionExampleDummyComponent } from "./accordion/component-example";
 import { AlertExampleComponent } from "./alerts/component-example";
 import { BannerExampleComponent } from "./banner/component-example";
+import { FooterExampleComponent } from "./footer/component-example";
 import { ButtonExampleComponent } from "./form-controls/button/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/datetime/component-example";
-import { FooterExampleComponent } from "./footer/component-example";
+import { MultiSelectExampleComponent } from "./form-controls/multiselect/component-example";
+import { NameEntryExampleComponent } from "./form-controls/name-entry/component-example";
+import { PhoneEntryExampleComponent } from "./form-controls/phone-entry/component-example";
+import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
+import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
+import { SelectExampleComponent } from "./form-controls/select/component-example";
+import { TextExampleComponent } from "./form-controls/text/component-example";
+import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
+import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { HeaderExampleComponent } from "./header/component-example";
 import { HeaderLinksExampleComponent } from "./header-links/component-example";
 import { LabelExampleComponent } from "./label/component-example";
@@ -40,6 +49,15 @@ import { routing } from "./doc.routes";
     CheckboxExampleComponent,
     DateExampleComponent,
     DateTimeExampleComponent,
+    MultiSelectExampleComponent,
+    NameEntryExampleComponent,
+    PhoneEntryExampleComponent,
+    RadioExampleComponent,
+    SearchbarExampleComponent,
+    SelectExampleComponent,
+    TextExampleComponent,
+    TextareaExampleComponent,
+    TimeExampleComponent,
     FooterExampleComponent,
     HeaderExampleComponent,
     HeaderLinksExampleComponent,

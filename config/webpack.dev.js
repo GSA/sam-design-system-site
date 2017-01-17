@@ -12,6 +12,15 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
+/*var recursiveReadSync = require('recursive-readdir-sync');
+var files = recursiveReadSync('./src/_docs');
+files = files.filter(function(val){
+  return val.match(/\.md$/);
+});
+files = files.map(function(val){
+  return val.substring(0, val.lastIndexOf("/")).replace('src/_docs/','');
+});
+console.log('Files array:', files);*/
 
 /**
  * Webpack Constants
@@ -129,6 +138,7 @@ module.exports = function (options) {
       new DefinePlugin({
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
+        //'DOCS': JSON.stringify(DOCS),
         'process.env': {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),

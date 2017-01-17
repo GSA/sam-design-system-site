@@ -1,0 +1,240 @@
+@mixin box-shadow($horizontal-offset, $vertical-offset, $blur-radius, $spread-radius, $red, $green, $blue, $alpha) {
+  box-shadow: $horizontal-offset $vertical-offset $blur-radius $spread-radius rgba($red, $green, $blue, $alpha);
+}
+
+// Background and text color combinations
+
+@mixin bgcolor($background, $color) {
+  background-color: $background;
+  color: $color;
+}
+
+@mixin usa-bgcolor-base() {
+  @include bgcolor($color-base, $color-white);
+}
+
+@mixin usa-bgcolor-gray-warm-dark() {
+  @include bgcolor($color-gray-warm-dark, $color-white);
+}
+
+@mixin usa-bgcolor-gray-dark() {
+  @include bgcolor($color-gray-dark, $color-white);
+}
+
+@mixin usa-bgcolor-gray() {
+  @include bgcolor($color-gray, $color-white);
+}
+
+@mixin usa-bgcolor-primary-darkest() {
+  @include bgcolor($color-primary-darkest, $color-white);
+}
+
+@mixin usa-bgcolor-primary-darker() {
+  @include bgcolor($color-primary-darker, $color-white);
+}
+
+@mixin usa-bgcolor-primary() {
+  @include bgcolor($color-primary, $color-white);
+}
+
+@mixin usa-bgcolor-cool-blue-light() {
+  @include bgcolor($color-cool-blue-light, $color-white);
+}
+
+@mixin usa-bgcolor-primary-alt-darkest() {
+  @include bgcolor($color-primary-alt-darkest, $color-white);
+}
+
+@mixin usa-bgcolor-primary-alt-dark() {
+  @include bgcolor($color-primary-alt-dark, $color-black);
+}
+
+@mixin usa-bgcolor-primary-alt() {
+  @include bgcolor($color-primary-alt, $color-black);
+}
+
+@mixin usa-bgcolor-green() {
+  @include bgcolor($color-green, $color-white);
+}
+
+@mixin usa-bgcolor-green-light() {
+  @include bgcolor($color-green-light, $color-black);
+}
+
+@mixin usa-bgcolor-gold() {
+  @include bgcolor($color-gold, $color-black);
+}
+
+@mixin usa-bgcolor-gold-light() {
+  @include bgcolor($color-gold-light, $color-black);
+}
+
+@mixin usa-bgcolor-secondary-darkest() {
+  @include bgcolor($color-secondary-darkest, $color-white);
+}
+
+@mixin usa-bgcolor-secondary-dark() {
+  @include bgcolor($color-secondary-dark, $color-white);
+}
+
+@mixin usa-bgcolor-secondary() {
+  @include bgcolor($color-secondary, $color-white);
+}
+
+@mixin usa-bgcolor-gray-light() {
+  @include bgcolor($color-gray-light, $color-black);
+}
+
+@mixin usa-bgcolor-gray-lighter() {
+  @include bgcolor($color-gray-lighter, $color-black);
+}
+
+@mixin usa-bgcolor-gray-lightest() {
+  @include bgcolor($color-gray-lightest, $color-black);
+}
+
+@mixin usa-bgcolor-gray-warm-light() {
+  @include bgcolor($color-gray-warm-light, $color-black);
+}
+
+@mixin usa-bgcolor-cool-blue-lighter() {
+  @include bgcolor($color-cool-blue-lighter, $color-black);
+}
+
+@mixin usa-bgcolor-cool-blue-lightest() {
+  @include bgcolor($color-cool-blue-lightest, $color-black);
+}
+
+@mixin usa-bgcolor-primary-alt-lightest() {
+  @include bgcolor($color-primary-alt-lightest, $color-black);
+}
+
+@mixin usa-bgcolor-green-lighter() {
+  @include bgcolor($color-green-lighter, $color-black);
+}
+
+@mixin usa-bgcolor-green-lightest() {
+  @include bgcolor($color-green-lightest, $color-black);
+}
+
+@mixin usa-bgcolor-gold-lighter() {
+  @include bgcolor($color-gold-lighter, $color-black);
+}
+
+@mixin usa-bgcolor-gold-lightest() {
+  @include bgcolor($color-gold-lightest, $color-black);
+}
+
+@mixin usa-bgcolor-secondary-lightest() {
+  @include bgcolor($color-secondary-lightest, $color-black);
+}
+
+// Background and text color helpers
+//
+// Note: Uses background and text color combinations
+//       identified in the USWDS standards.
+@mixin background-color($background-color: transparent) {
+  background-color: $background-color;
+
+  // Use reverse-text for the following background values
+  @if $background-color  == $color-primary
+    or $background-color == $color-primary-darker
+    or $background-color == $color-primary-darkest
+    or $background-color == $color-base
+    or $background-color == $color-primary-alt-darkest
+    or $background-color == $color-secondary
+    or $background-color == $color-secondary-darkest
+    or $background-color == $color-secondary-dark
+    or $background-color == $color-gray-warm-dark
+    or $background-color == $color-gray-dark
+    or $background-color == $color-gray
+    or $background-color == $color-green
+    or $background-color == $color-cool-blue-light {
+    color: $color-white;
+
+    a {
+      color: $color-gray-lighter;
+      text-decoration: underline;
+
+      &:hover,
+      &:visited {
+        color: $color-white;
+      }
+    }
+
+  // Use dark text color for all other background colors,
+  // except transparent or white; results in background-color
+  // only include - probably should not be used for these instances.
+  } @else if $background-color not transparent
+    or $background-color not $color-white {
+    color: $color-black;
+
+    a {
+      color: $color-gray-dark;
+      text-decoration: underline;
+
+      &:hover,
+      &:visited {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+// additional mixins
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie); //IE8
+}
+
+@mixin panel($bgcolor, $padding) {
+  display: block;
+  padding: $padding;
+  background: $bgcolor;
+  border: 1px solid darken($bgcolor, 5%);
+}
+
+
+@mixin margin-and-padding-spacing($spacing) {
+  @for $i from 1 to 11 {
+    // Margin
+    %margin-#{$i}x { margin: $spacing * $i !important; }
+
+    %margin-top-#{$i}x,
+    %margin-vertical-#{$i}x { margin-top: $spacing * $i !important; }
+
+    %margin-bottom-#{$i}x,
+    %margin-vertical-#{$i}x { margin-bottom: $spacing * $i !important; }
+
+    %margin-left-#{$i}x,
+    %margin-horizontal-#{$i}x { margin-left: $spacing * $i !important; }
+
+    %margin-right-#{$i}x,
+    %margin-horizontal-#{$i}x { margin-right: $spacing * $i !important; }
+
+    // Padding
+    %padding-#{$i}x { padding: $spacing * $i !important; }
+
+    %padding-top-#{$i}x,
+    %padding-vertical-#{$i}x { padding-top: $spacing * $i !important; }
+
+    %padding-bottom-#{$i}x,
+    %padding-vertical-#{$i}x { padding-bottom: $spacing * $i !important; }
+
+    %padding-left-#{$i}x,
+    %padding-horizontal-#{$i}x { padding-left: $spacing * $i !important; }
+
+    %padding-right-#{$i}x,
+    %padding-horizontal-#{$i}x { padding-right: $spacing * $i !important; }
+    }
+}

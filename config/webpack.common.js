@@ -60,7 +60,9 @@ module.exports = function (options) {
 
       'polyfills': './src/polyfills.browser.ts',
       'main':      AOT ? './src/main.browser.aot.ts' :
-                  './src/main.browser.ts'
+                  './src/main.browser.ts',
+
+      'styles':    './src/styles.ts',
 
     },
 
@@ -117,6 +119,12 @@ module.exports = function (options) {
           exclude: [/sam\-ui\-elements\/node_modules/,/\.(spec|e2e)\.ts$/]
         },
 
+        
+        {
+          test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url-loader?limit=10000&mimetype=image/svg+xml"
+        },
+
         /*
          * Json loader support for *.json files.
          *
@@ -157,7 +165,7 @@ module.exports = function (options) {
         {
           test: /\.html$/,
           use: 'raw-loader',
-          exclude: [helpers.root('src/index.html')]
+          exclude: [helpers.root('src/index.html'),/src\/_docs/]
         },
 
         /* File loader for supporting images, for example, in CSS files.

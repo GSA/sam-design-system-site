@@ -1,0 +1,28 @@
+samHeader {
+  header {
+    background-color: #112e51;
+    box-shadow: 0 2px 4px rgba(1, 2, 2, 0.1);
+    padding: 3px 0;
+    text-align: center;
+    height: 65px;
+  }
+
+  .align-top {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  img {
+    margin-top: 1.25rem;
+    width: 30rem;
+    height: 3rem;
+  }
+
+  .logo-link{
+    margin-top:0.5rem !important;
+    height: auto;
+    display: inline-block;
+  }
+}
+
+

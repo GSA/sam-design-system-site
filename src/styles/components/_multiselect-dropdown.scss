@@ -1,0 +1,59 @@
+samMultiSelectDropdown {
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 0.7rem;
+
+    .dropdown-title {
+      display: inline-block;
+      box-sizing: border-box;
+      min-height: rem(44px);
+      line-height: rem(44px);
+
+      &.disabled {
+        pointer-events: none;
+        color: #666;
+      }
+    }
+
+    .dropdown-list {
+      display: inline-block;
+      visibility: hidden;
+
+      position: absolute;
+      top: rem(58px);
+      left: 0;
+
+      background-color: white;
+
+      min-width: rem(200px);
+      margin: 0;
+      padding: 1rem 2rem 1rem 0.7rem;
+      border: 1px solid black;
+      box-shadow: $box-shadow;
+
+      list-style-type: none;
+
+      .dropdown-list-item {
+        width: 100%;
+
+        .dropdown-list-item-input {
+          width: 100%;
+          height: initial;
+        }
+
+        label {
+          margin: 0;
+        }
+      }
+
+      .dropdown-list-item-clear {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+}

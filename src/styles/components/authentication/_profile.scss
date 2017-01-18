@@ -1,0 +1,13 @@
+@import './profile/details';
+
+.usa-profile {
+  position: relative;
+
+  h2 {
+    margin-top: 2.2em;
+  }
+
+  h3:nth-child(1) {
+    margin-top: 0em;
+  }
+}

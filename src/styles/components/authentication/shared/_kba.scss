@@ -1,0 +1,71 @@
+.usa-kba {
+  .usa-grid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  legend + span {
+    display: inline-block;
+    max-width: 80%;
+  }
+
+  .question,
+  .answer {
+    display: inline-block;
+  }
+
+  .usa-input-error {
+    position: inherit;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .usa-additional_text {
+    line-height: 3rem;
+  }
+
+  .question {
+    width: 60%;
+
+    div {
+      padding-right: 2rem;
+    }
+
+    select {
+      position: relative;
+      max-width: none;
+      top: -3px;
+    }
+
+    .usa-input-error {
+      select {
+        // To equalize decrease in padding from border size increase which affects line-height
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  .question {
+    margin-top: 0rem;
+
+    label {
+      line-height: 3rem;
+    }
+  }
+
+  .answer {
+    position: relative;
+    width: 38%;
+    top: -2px;
+
+    .usa-input-error {
+      border-left-width: 0px;
+
+      input {
+
+      }
+    }
+  }
+}

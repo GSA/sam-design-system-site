@@ -1,0 +1,15 @@
+@import './alert/_header';
+@import './alert/_item';
+@import './alert/_footer';
+
+.usa-alert {
+  display: inline-block;
+}
+
+.usa-alert-body {
+  display: block;
+}
+
+.usa-alert-close {
+  cursor: pointer;
+}

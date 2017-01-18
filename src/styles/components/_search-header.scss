@@ -1,0 +1,41 @@
+#search-div {
+  margin-bottom: 0 !important;
+}
+
+.search-header {
+  background-color:#112e51;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  .logo-img {
+    margin-top:12px;
+    width:20rem;
+    height:37px;
+    float: left;
+  }
+
+  samSearchbar {
+    width: 500px;
+    margin-top: 8px;
+    float: left;
+    margin-left: 30px;
+  }
+
+  .search-btn {
+    background-color: #02bfe7;
+  }
+
+  .search-inputbar {
+    border: none;
+  }
+
+  select {
+    background-color: #e4e2e0;
+  }
+
+  .align-top{
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+

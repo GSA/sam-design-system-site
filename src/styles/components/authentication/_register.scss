@@ -1,0 +1,165 @@
+.usa-register {
+  &.usa-register {
+    margin-bottom: 94px;
+  }
+
+  .usa-register-init {
+    width: 460px;
+    margin: 0 auto;
+
+    fieldset {
+      margin-top: 2rem;
+    }
+
+    button[type="submit"] {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  h2 {
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  legend {
+    margin-top: 4.5rem;
+    font-size: 2.25rem;
+  }
+
+  .usa-legend {
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  fieldset {
+    margin-top: 6rem;
+    &.phone,
+    &.office {
+      label:nth-child(1) {
+        margin-top: 0rem;
+      }
+    }
+
+    &.name {
+      margin-top: 0rem;
+      fieldset {
+        label:nth-child(1) {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+
+  //.usa-accent {
+  //  padding-bottom: 10px;
+  //  border-bottom: 1px solid #000000;
+  //}
+
+  .usa-button-controls {
+    margin-top: 1rem;
+    text-align: center;
+
+    button[type="submit"] {
+      display: inline-block;
+    }
+  }
+
+  .usa-register {
+    &.usa-register-initial {
+      display: block;
+      width: 440px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .usa-form-register {
+    max-width: 100%;
+
+    .usa-button-controls {
+      margin-top: 4rem;
+      text-align: center;
+    }
+  }
+
+  section {
+    width: 380px;
+    margin: 0 auto;
+  }
+
+  .steps,
+  .links {
+    margin-bottom: 0em;
+    padding-left: 0em;
+    list-style: none;
+
+    li {
+      margin-left: 2.5rem;
+      font-size: 2rem;
+      text-align: left;
+
+      &:before {
+        margin-left: -1.5rem;
+        margin-right: 1rem;
+        font-family: 'FontAwesome';
+        float: left;
+      }
+    }
+  }
+
+  .steps {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+    li {
+      font-size: 1.1em;
+      font-weight: 500;
+
+      &:before {
+        content: "\f00c";
+      }
+    }
+  }
+
+  .links {
+    margin-top: 4rem;
+
+    li {
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      &:before,
+      a {
+        line-height: 3rem;
+      }
+    }
+
+    .home:before,
+    .email:before {
+      font-size: 1.333em;
+    }
+
+    .home:before {
+      content: "\f015";
+    }
+
+    .email:before {
+      content: "\f0e0";
+    }
+  }
+
+  .usa-alert {
+    margin-top: 0em;
+    float: right;
+  }
+
+  .ng-untouched {
+    box-shadow: none;
+  }
+}

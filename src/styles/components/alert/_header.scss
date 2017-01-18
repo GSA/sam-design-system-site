@@ -1,0 +1,34 @@
+alertHeader {
+  .usa-alert {
+    display: block;
+    margin-top: 0;
+    padding: 8px;
+    background-position: 0 12px;
+  }
+
+  .usa-alert-body {
+    display: block;
+  }
+
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .usa-alert-text {
+    margin-right: 60px;
+  }
+
+  .title-and-description:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  .alert-link {
+    margin-top: 12px;
+  }
+
+  .usa-button-dismiss {
+    margin-top: -15px;
+  }
+}

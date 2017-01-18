@@ -23,7 +23,7 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
       <div class="usa-navbar site-header-navbar">
         <div class="usa-logo site-logo" id="logo">
           <em class="usa-logo-text">
-            <a href="/" accesskey="1" title="Home" aria-label="Home">
+            <a routerLink="/" accesskey="1" title="Home" aria-label="Home">
             SAM Web Standards</a></em>
         </div>
       </div>

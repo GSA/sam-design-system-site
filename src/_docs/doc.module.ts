@@ -36,6 +36,8 @@ import { TabsExampleComponent } from "./tabs/component-example";
 import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes";
 
+import { SamUiKitModule } from '../../sam-ui-elements/src/ui-kit/ui-kit.module';
+
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
@@ -74,6 +76,7 @@ import { routing } from "./doc.routes";
   imports: [ 
     BrowserModule,
     FormsModule,
+    SamUiKitModule,
     routing
   ],
   exports: [

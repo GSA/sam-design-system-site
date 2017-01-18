@@ -5,14 +5,14 @@ import {
 } from '@angular/core';
 
 @Component({
-	selector: 'doc-modal',
+	selector: 'doc-click-outside',
   template: `
 <doc-template [markdown]="markdown" [example]="example">
 <doc-accordion-dummy [sampleInput]="'456'"></doc-accordion-dummy>
 </doc-template>
 `
 })
-export class ModalExampleComponent implements OnInit {
+export class ClickOutsideExampleComponent implements OnInit {
 	markdown = "";
 	example = `<doc-accordion-dummy [sampleInput]="'456'"></doc-accordion-dummy>`;
 	constructor(){

@@ -9,9 +9,7 @@ import {
   ComponentFactoryResolver,
   ViewContainerRef
 } from '@angular/core';
-import { Http, Response, Headers } from '@angular/http';
-import 'rxjs/add/operator/map';
-
+import { BaseExampleComponent } from '../../baseexample.component';
 
 /////DUMMY COMP
 @Component({
@@ -44,10 +42,10 @@ export class AccordionExampleDummyComponent{
 </doc-template>
 `
 })
-export class AccordionExampleComponent implements OnInit {
+export class AccordionExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "accordion.component";
   typedoc_content = "";
-	markdown = "";
+  markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = `<div class="usa-width-one-whole">
   <h3>Accordions without border</h3>
   <samAccordion>
@@ -59,33 +57,4 @@ export class AccordionExampleComponent implements OnInit {
     </samAccordionSection>
   </samAccordion>
 </div>`;
-	constructor(private _http: Http){
-	}
-	public ngOnInit() {
-		this.markdown =  require("html-loader!markdown-loader!./documentation.md");
-    var typedoc_target = this.typedoc_target;
-    this._http.get("./docs.json").map((res)=>res.json()).subscribe(res =>{
-      var component = res.children.filter(function(val){
-        if(val['name'].includes(typedoc_target)){
-          return true;
-        }
-      })[0];
-      console.log(component);
-      this.setupTypedocContent(component);
-    })
-	}
-  public setupTypedocContent(obj){
-    if(obj['children']){
-      console.log(obj['children'][0]['comment']['tags']);
-      var accordionWrapperDecorators = obj['children'][0]['comment']['tags'];
-      this.typedoc_content += `<h2>Component Reference</h2><table><tr><th>Tag</th><th>Comment</th></tr>`;
-      for(var idx in accordionWrapperDecorators){
-        var decorator = accordionWrapperDecorators[idx];
-        this.typedoc_content += `<tr><td>@`+ decorator.tag +`</td><td>` + decorator.text + `</td></tr>`;
-      }
-      this.typedoc_content += `</table>`;
-      //this.typedoc_content = ``;
-    }
-  }
-
 }

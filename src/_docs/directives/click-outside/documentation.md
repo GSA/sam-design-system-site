@@ -1,3 +1,3 @@
-# Sticky
+# ClickOutside
 
-Sticky info text here!!
+ClickOutside info text here!!

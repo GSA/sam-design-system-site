@@ -8,7 +8,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 @Component({
 	selector: 'doc-pagination',
   template: `
-<doc-template [markdown]="markdown" [example]="example">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 <samPagination [currentPage]="paginationConfig.currentPage" [totalPages]="paginationConfig.totalPages"></samPagination>
 </doc-template>
 `

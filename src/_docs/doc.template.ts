@@ -11,7 +11,7 @@ import {
 <h2>Example</h2>
 <div><ng-content></ng-content></div>
 <hr/>
-<samAccordion>
+<samAccordion [bordered]="true">
 <samAccordionSection headerText="Code Example" name="aria-friendly-section-name">
   <pre><code>{{example}}</code></pre>
 </samAccordionSection>

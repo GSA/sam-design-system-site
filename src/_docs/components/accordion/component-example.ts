@@ -28,17 +28,28 @@ export class AccordionExampleDummyComponent{
 	selector: 'doc-accordion',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-  <div class="usa-width-one-whole">
-    <h3>Accordions without border</h3>
-    <samAccordion>
-      <samAccordionSection headerText="Section title 1" name="aria-friendly-section-name">
-        <a href>A link</a>
-      </samAccordionSection>
-      <samAccordionSection headerText="Section title 2" name="aria-friendly-section-name-2">
-        <a href>A second link</a>
-      </samAccordionSection>
-    </samAccordion>
-  </div>
+<div class="usa-width-one-whole">
+  <h3>Accordions without border</h3>
+  <samAccordion>
+    <samAccordionSection headerText="Section title 1" name="aria-friendly-section-name">
+      <a href>A link</a>
+    </samAccordionSection>
+    <samAccordionSection headerText="Section title 2" name="aria-friendly-section-name-2">
+      <a href>A second link</a>
+    </samAccordionSection>
+  </samAccordion>
+</div>
+<div class="usa-width-one-whole">
+  <h3>Accordions with border, and initial selected tab</h3>
+  <samAccordion [expandIndex]="1" [bordered]="true">
+    <samAccordionSection headerText="Section title 1" name="aria-friendly-section-name">
+      <a href>A link</a>
+    </samAccordionSection>
+    <samAccordionSection headerText="Section title 2" name="aria-friendly-section-name-2">
+      <a href>A second link</a>
+    </samAccordionSection>
+  </samAccordion>
+</div>
 </doc-template>
 `
 })
@@ -49,6 +60,17 @@ export class AccordionExampleComponent extends BaseExampleComponent implements O
 	example = `<div class="usa-width-one-whole">
   <h3>Accordions without border</h3>
   <samAccordion>
+    <samAccordionSection headerText="Section title 1" name="aria-friendly-section-name">
+      <a href>A link</a>
+    </samAccordionSection>
+    <samAccordionSection headerText="Section title 2" name="aria-friendly-section-name-2">
+      <a href>A second link</a>
+    </samAccordionSection>
+  </samAccordion>
+</div>
+<div class="usa-width-one-whole">
+  <h3>Accordions with border, and initial selected tab</h3>
+  <samAccordion [expandIndex]="1" [bordered]="true">
     <samAccordionSection headerText="Section title 1" name="aria-friendly-section-name">
       <a href>A link</a>
     </samAccordionSection>

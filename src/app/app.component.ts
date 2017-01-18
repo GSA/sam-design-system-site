@@ -70,7 +70,7 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
                   <li><a routerLink="/form-controls/time">Time</a></li>
                 </ul>
               </li>
-              <li><a (click)="formControlClick(5)">Form controls</a><ul class="usa-sidenav-sub_list" *ngIf="displayFormTemplateSublist" >
+              <li><a (click)="formControlClick(5)">Form Templates</a><ul class="usa-sidenav-sub_list" *ngIf="displayFormTemplateSublist" >
                   <li><a routerLink="/form-templates/name-entry">NameEntry</a></li>
                   <li><a routerLink="/form-templates/phone-entry">PhoneEntry</a></li>
                 </ul>

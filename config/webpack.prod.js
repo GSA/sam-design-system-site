@@ -20,15 +20,38 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const V8LazyParseWebpackPlugin = require('v8-lazy-parse-webpack-plugin');
 const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-plugin-modified.js');
 
+
+var target = "sam-ui-elements/src/ui-kit";//"src/_docs";
+var recursiveReadSync = require('recursive-readdir-sync');
+var files = recursiveReadSync('./'+target);
+files = files.filter(function(val){
+  return val.match(/directive\.ts|component\.ts$/);
+});
+files = files.map(function(val){
+  var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
+  var section = link.split("/")[0];
+  var item = link.split("/")[1].replace("-"," ");
+  var itemUnformatted = link.split("/")[1];
+  return {
+    link: link,
+    section: section,
+    item: item,
+    itemUnformatted: itemUnformatted
+  };
+});
+
+
 /**
  * Webpack Constants
  */
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
+const DOCS = files;
 const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
   host: HOST,
   port: PORT,
+  DOCS: DOCS,
   ENV: ENV,
   HMR: false
 });
@@ -166,6 +189,7 @@ module.exports = function (env) {
       new DefinePlugin({
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
+        'DOCS': JSON.stringify(DOCS),
         'process.env': {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),

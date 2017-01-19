@@ -1,5 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 
+import { PlaceHolderExampleComponent } from "./placeholder.component";
+
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alerts/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
@@ -28,46 +30,49 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 
-
-//console.log(DOCS);
-
+//manual map, components that don't have documentation set up yet get pointed to the PlaceHolderExampleComponent
+const map = {
+  'doc-placeholder':PlaceHolderExampleComponent,
+  'components/accordion':AccordionExampleComponent,
+  'components/alert':AlertExampleComponent,
+  'components/banner':BannerExampleComponent,
+  'components/footer':FooterExampleComponent,
+  'components/header':HeaderExampleComponent,
+  'components/label':LabelExampleComponent,
+  'components/modal':ModalExampleComponent,
+  'components/multiselect-dropdown':MultiselectDropdownExampleComponent,
+  'components/pagination':PaginationExampleComponent,
+  'components/point-of-contact':POCExampleComponent,
+  'components/search-header':SearchHeaderExampleComponent,
+  'directives/click-outside':ClickOutsideExampleComponent,
+  'directives/sticky':StickyExampleComponent,
+  'elements/button':ButtonExampleComponent,
+  'form-controls/checkbox':CheckboxExampleComponent,
+  'form-controls/date':DateExampleComponent,
+  'form-controls/date-time':DateTimeExampleComponent,
+  'form-controls/multiselect':MultiSelectExampleComponent,
+  'form-controls/radiobutton':RadioExampleComponent,
+  'form-controls/searchbar':SearchbarExampleComponent,
+  'form-controls/select':SelectExampleComponent,
+  'form-controls/text':TextExampleComponent,
+  'form-controls/textarea':TextareaExampleComponent,
+  'form-controls/time':TimeExampleComponent,
+  'form-templates/name-entry':NameEntryExampleComponent,
+  'form-templates/phone-entry':PhoneEntryExampleComponent,
+};
 export const ROUTES: Routes = [
-  { path: 'components/accordion',      component: AccordionExampleComponent },
-  { path: 'components/alerts',      component: AlertExampleComponent },
-  { path: 'components/banner',      component: BannerExampleComponent },
-  { path: 'components/footer',      component: FooterExampleComponent },
-  { path: 'components/header',      component: HeaderExampleComponent },
-  { path: 'components/label',      component: LabelExampleComponent },
-  { path: 'components/modal',      component: ModalExampleComponent },
-  { path: 'components/multiselect-dropdown',      component: MultiselectDropdownExampleComponent },
-  { path: 'components/pagination',      component: PaginationExampleComponent },
-  { path: 'components/point-of-contact',      component: POCExampleComponent },
-  { path: 'components/search-header',      component: SearchHeaderExampleComponent },
-  { path: 'components/tabs',      component: TabsExampleComponent },
-  { path: 'directives/click-outside',      component: ClickOutsideExampleComponent },
-  { path: 'directives/sticky',      component: StickyExampleComponent },
-  { path: 'elements/button',      component: ButtonExampleComponent },
-  { path: 'form-controls/checkbox',      component: CheckboxExampleComponent },
-  { path: 'form-controls/date',      component: DateExampleComponent },
-  { path: 'form-controls/date-time',      component: DateTimeExampleComponent },
-  { path: 'form-controls/multiselect',      component: MultiSelectExampleComponent },
-  { path: 'form-controls/radiobutton',      component: RadioExampleComponent },
-  { path: 'form-controls/searchbar',      component: SearchbarExampleComponent },
-  { path: 'form-controls/select',      component: SelectExampleComponent },
-  { path: 'form-controls/text',      component: TextExampleComponent },
-  { path: 'form-controls/textarea',      component: TextareaExampleComponent },
-  { path: 'form-controls/time',      component: TimeExampleComponent },
-  { path: 'form-templates/name-entry',      component: NameEntryExampleComponent },
-  { path: 'form-templates/phone-entry',      component: PhoneEntryExampleComponent },
+  //{ path: 'form-templates/phone-entry',      component: PhoneEntryExampleComponent }
 ];
 export const routing = RouterModule.forChild(ROUTES);
-//add dynamic routes based on structure from src/_docs
-/*for(var idx in DOCS){
-	ROUTES.push({
-		path: DOCS[idx],
-		component: HomeComponent,
-		data: {
-			directory: DOCS[idx], 
-		}
-	});
-}*/
+//add dynamic routes based on structure from sam-ui-elements set in webpack config
+for(var idx in DOCS){
+  var obj = {};
+  obj['path'] = DOCS[idx]['link'];
+  if(!map[DOCS[idx]['link']]){
+    obj['component'] = map['doc-placeholder'];
+  } else {
+    obj['component'] = map[DOCS[idx]['link']];
+  }
+	ROUTES.push(obj);
+}
+//console.log(ROUTES);

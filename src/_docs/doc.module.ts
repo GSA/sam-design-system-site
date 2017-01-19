@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { BaseExampleComponent } from "./baseexample.component";
+import { PlaceHolderExampleComponent } from "./placeholder.component";
+
 
 import { AccordionExampleComponent,AccordionExampleDummyComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alerts/component-example";
@@ -34,10 +36,11 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 
+
 import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes";
 
-import { SamUiKitModule } from '../../sam-ui-elements/src/ui-kit/ui-kit.module';
+import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
@@ -45,6 +48,7 @@ import { SamUiKitModule } from '../../sam-ui-elements/src/ui-kit/ui-kit.module';
 @NgModule({
   declarations: [
     BaseExampleComponent,
+    PlaceHolderExampleComponent,
     AccordionExampleComponent,
     AccordionExampleDummyComponent,
     AlertExampleComponent,
@@ -54,8 +58,6 @@ import { SamUiKitModule } from '../../sam-ui-elements/src/ui-kit/ui-kit.module';
     DateExampleComponent,
     DateTimeExampleComponent,
     MultiSelectExampleComponent,
-    NameEntryExampleComponent,
-    PhoneEntryExampleComponent,
     RadioExampleComponent,
     SearchbarExampleComponent,
     SelectExampleComponent,
@@ -73,12 +75,14 @@ import { SamUiKitModule } from '../../sam-ui-elements/src/ui-kit/ui-kit.module';
     StickyExampleComponent,
     ClickOutsideExampleComponent,
     TabsExampleComponent,
+    NameEntryExampleComponent,
+    PhoneEntryExampleComponent,
     DocTemplateComponent
   ],
   imports: [ 
     BrowserModule,
     FormsModule,
-    SamUiKitModule,
+    SamUIKitModule,
     routing
   ],
   exports: [

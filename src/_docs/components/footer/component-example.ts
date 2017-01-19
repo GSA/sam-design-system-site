@@ -9,7 +9,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 	selector: 'doc-footer',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samFooter></samFooter>
+
 </doc-template>
 `
 })

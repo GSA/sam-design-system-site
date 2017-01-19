@@ -9,7 +9,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 	selector: 'doc-label',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<doc-accordion-dummy [sampleInput]="'456'"></doc-accordion-dummy>
+<samLabel [labelType]="'big'" [labelText]="'Big Label'"></samLabel>
 </doc-template>
 `
 })
@@ -17,5 +17,5 @@ export class LabelExampleComponent extends BaseExampleComponent implements OnIni
   typedoc_target = "label.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `hmm`;
+	example = `<samLabel [labelType]="'big'" [labelText]="'Big Label'"></samLabel>`;
 }

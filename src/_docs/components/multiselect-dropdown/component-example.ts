@@ -12,7 +12,8 @@ import { BaseExampleComponent } from '../../baseexample.component';
 <samMultiSelectDropdown [disabled]='alertBeingEdited' [(model)]="filterTypes" [label]="types.label" [options]="types.options" [name]="'types'"></samMultiSelectDropdown>
 </doc-template>
 `
-//samMultiSelectDropdown
+//<samMultiSelectDropdown [disabled]='alertBeingEdited' [(model)]="filterTypes" [label]="types.label" [options]="types.options" [name]="'types'"></samMultiSelectDropdown>
+
 })
 export class MultiselectDropdownExampleComponent extends BaseExampleComponent implements OnInit {
 	filterTypes = ['Error', 'Informational', 'Warning'];

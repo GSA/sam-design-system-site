@@ -8,16 +8,15 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
+
 /*
  * App Component
  * Top Level Component
  */
+
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: [
-    './app.component.css'
-  ],
   template: `
     <header class="usa-header site-header">
       <div class="usa-navbar site-header-navbar">
@@ -35,44 +34,23 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
             <ul class="usa-sidenav-list">
               <li><a routerLink="/">Overview</a></li>
               <li><a (click)="formControlClick(1)">Components</a><ul class="usa-sidenav-sub_list" *ngIf="displayComponentsSublist" >
-                  <li><a routerLink="/components/accordion">Accordions</a></li>
-                  <li><a routerLink="/components/alerts">Alerts</a></li>
-                  <li><a routerLink="/components/banner">Banner</a></li>
-                  <li><a routerLink="/components/footer">Footer</a></li>
-                  <li><a routerLink="/components/header">Header</a></li>
-                  <li><a routerLink="/components/label">Label</a></li>
-                  <li><a routerLink="/components/modal">Modal</a></li>
-                  <li><a routerLink="/components/multiselect-dropdown">Multiselect Dropdown</a></li>
-                  <li><a routerLink="/components/pagination">Pagination</a></li>
-                  <li><a routerLink="/components/point-of-contact">Point of Contact</a></li>
-                  <li><a routerLink="/components/search-header">Search Header</a></li>
+                  <li *ngFor="let uikitObj of uikitList.components"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
                 </ul>
               </li>
               <li><a (click)="formControlClick(2)">Directives</a><ul class="usa-sidenav-sub_list" *ngIf="displayDirectivesSublist" >
-                  <li><a routerLink="/directives/click-outside">Click Outside</a></li>
-                  <li><a routerLink="/directives/sticky">Sticky</a></li>
+                  <li *ngFor="let uikitObj of uikitList.directives"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
                 </ul>
               </li>
               <li><a (click)="formControlClick(3)">Elements</a><ul class="usa-sidenav-sub_list" *ngIf="displayElementsSublist" >
-                  <li><a routerLink="/elements/button">Button</a></li>
+                  <li *ngFor="let uikitObj of uikitList.elements"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
                 </ul>
               </li>
               <li><a (click)="formControlClick(4)">Form controls</a><ul class="usa-sidenav-sub_list" *ngIf="displayFormControlSublist" >
-                  <li><a routerLink="/form-controls/checkbox">Checkbox</a></li>
-                  <li><a routerLink="/form-controls/date">Date</a></li>
-                  <li><a routerLink="/form-controls/date-time">DateTime</a></li>
-                  <li><a routerLink="/form-controls/multiselect">Multiselect</a></li>
-                  <li><a routerLink="/form-controls/radiobutton">Radio Button</a></li>
-                  <li><a routerLink="/form-controls/searchbar">Searchbar</a></li>
-                  <li><a routerLink="/form-controls/select">Select</a></li>
-                  <li><a routerLink="/form-controls/text">Text</a></li>
-                  <li><a routerLink="/form-controls/textarea">Textarea</a></li>
-                  <li><a routerLink="/form-controls/time">Time</a></li>
+                  <li *ngFor="let uikitObj of uikitList['form-controls']"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
                 </ul>
               </li>
               <li><a (click)="formControlClick(5)">Form Templates</a><ul class="usa-sidenav-sub_list" *ngIf="displayFormTemplateSublist" >
-                  <li><a routerLink="/form-templates/name-entry">NameEntry</a></li>
-                  <li><a routerLink="/form-templates/phone-entry">PhoneEntry</a></li>
+                  <li *ngFor="let uikitObj of uikitList['form-templates']"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
                 </ul>
               </li>
             </ul>
@@ -86,6 +64,7 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
   `
 })
 export class AppComponent implements OnInit {
+  uikitList = {};
   public displayComponentsSublist = false;
   public displayDirectivesSublist = false;
   public displayElementsSublist = false;
@@ -94,6 +73,16 @@ export class AppComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   public ngOnInit() {
+    //DOCS is a global defined in webpack
+    for(var idx in DOCS){
+      //console.log(DOCS[idx]);
+      if(!this.uikitList[DOCS[idx]['section']]){
+        this.uikitList[DOCS[idx]['section']] = [DOCS[idx]];
+      } else {
+        this.uikitList[DOCS[idx]['section']].push(DOCS[idx]);
+      }
+    }
+    console.log(this.uikitList);
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
         //console.log(event.url);

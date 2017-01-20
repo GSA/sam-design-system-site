@@ -8,7 +8,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 @Component({
 	selector: 'doc-radio',
   template: `
-<doc-template [markdown]="markdown" [example]="example">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 <samRadioButton
   [(model)]="radioModel"
   [options]="radioConfig.options"

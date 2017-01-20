@@ -1,0 +1,110 @@
+.usa-profile-details {
+  h3 {
+    .usa-edit {
+      font-size: 1.5rem;
+      line-height: 1.75em;
+      float: right;
+    }
+  }
+
+  section {
+    margin-bottom: 4rem;
+
+    // Editable Inputs
+    .usa-form-editable {
+      display: none;
+      margin-left: 1em;
+
+      .label-wrapper:nth-child(1) {
+        label {
+          margin-top: 0em;
+        }
+      }
+    }
+
+    // Save Toggle`
+    .usa-save {
+      margin-top: 1.5em;
+      margin-left: 1em;
+      display: none;
+    }
+  }
+
+  // Read State
+  .usa-form-group {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+
+    label {
+      display: inline-block;
+      min-width: 60px;
+      margin-top: 0em;
+      font-weight: 700;
+    }
+
+    .usa-form-control {
+      display: inline-block;
+    }
+
+    &.kba {
+      label {
+        width: 70%;
+      }
+    }
+  }
+
+  .business {
+    label {
+      min-width: 180px;
+    }
+  }
+
+  // Write State
+  .usa-editable {
+    // Edit Toggle
+    .usa-edit {
+      display: none;
+    }
+
+    // Save Toggle
+    .usa-save {
+      display: block;
+    }
+
+    .usa-form-group {
+      display: none;
+    }
+
+    // Editable Inputs
+    .usa-form-editable {
+      display: block;
+    }
+  }
+
+  .usa-kba {
+    .question {
+      width: 70%;
+    }
+
+    .answer {
+      width: 30%;
+    }
+  }
+
+  .usa-button-secondary {
+    margin-top: 20px;
+  }
+
+  .usa-alert {
+    position: absolute;
+    width: 100%;
+    top: -80px
+  }
+
+  .modal-content {
+    .usa-alert {
+      position: static;
+    }
+  }
+}

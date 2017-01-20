@@ -1,0 +1,42 @@
+.usa-button-disabled {
+  cursor: not-allowed;
+}
+
+.usa-button-transparent {
+  display: inline-block;
+  background-color: transparent;
+  color: $color-primary-darkest;
+
+  &:hover {
+    background-color: transparent;
+    color: $color-primary-darker;
+  }
+}
+
+.usa-button-transparent-disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+
+.usa-button-dismiss {
+  // hit area
+  height: 44px;
+  width: 44px;
+  display: inline-block;
+
+  // background
+  background-image: url($assets-path + '/img/times_circle.svg'),url($assets-path + '/img/times_circle.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center center;
+
+  &:hover {
+    background-color: transparent;
+    opacity: .6;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}

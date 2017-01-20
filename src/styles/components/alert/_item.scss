@@ -1,0 +1,38 @@
+.alert-item.edit {
+  padding: 1em;
+  margin-bottom: 8px;
+
+  .alert-edit-title {
+    margin-top: 0;
+  }
+
+  .publish-date label {
+    margin-top: 0;
+  }
+}
+
+alert-item {
+  .alert-body {
+    margin-top: 8px;
+  }
+
+  .alert-title {
+    margin-top: 8px !important;
+  }
+
+  .alert-type-icon {
+    margin-right: 4px;
+  }
+
+  .alert-right-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .alert-type-indicator {
+    width: 8em;
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid black;
+  }
+
+}

@@ -1,0 +1,31 @@
+/* Tabs */
+/*============================*/
+.usa-tabs{
+  list-style-type: none;
+  padding-left: 0;
+  margin: 30px 0 -1px 0;
+  display: block;
+}
+
+.usa-tabs li{
+  cursor: pointer !important;
+  display: inline-block;
+  padding: 10px 15px 10px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  margin-bottom: 0px;
+}
+
+.usa-tabs li.active{
+  border-top-width: 1px;
+  border-color: #D4D4D5;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.usa-tabs-content{
+  border-top: 1px solid #D4D4D5;
+}

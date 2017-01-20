@@ -12,17 +12,30 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
+const SourceMapDevToolPlugin= require('webpack/lib/SourceMapDevToolPlugin');
 const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-plugin-modified.js');
 
-/*var recursiveReadSync = require('recursive-readdir-sync');
-var files = recursiveReadSync('./src/_docs');
+var target = "sam-ui-elements/src/ui-kit";//"src/_docs";
+var recursiveReadSync = require('recursive-readdir-sync');
+var files = recursiveReadSync('./'+target);
 files = files.filter(function(val){
-  return val.match(/\.md$/);
+  return val.match(/directive\.ts|component\.ts$/);
 });
 files = files.map(function(val){
-  return val.substring(0, val.lastIndexOf("/")).replace('src/_docs/','');
+  var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
+  var section = link.split("/")[0];
+  var item = link.split("/")[1].replace(/\-/g," ");
+  var itemUnformatted = link.split("/")[1];
+  return {
+    link: link,
+    section: section,
+    item: item,
+    itemUnformatted: itemUnformatted
+  };
 });
-console.log('Files array:', files);*/
+
+
+console.log('Files array:', files);
 
 /**
  * Webpack Constants
@@ -30,6 +43,7 @@ console.log('Files array:', files);*/
 const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
+const DOCS = files;
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
   host: HOST,
@@ -126,6 +140,7 @@ module.exports = function (options) {
     },
 
     plugins: [
+      new SourceMapDevToolPlugin(),
       /**
        * Plugin: Typedoc Webpack Plugin
        * Description: Adds Typedoc documentation generator to webpack build
@@ -154,7 +169,7 @@ module.exports = function (options) {
       new DefinePlugin({
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
-        //'DOCS': JSON.stringify(DOCS),
+        'DOCS': JSON.stringify(DOCS),
         'process.env': {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),

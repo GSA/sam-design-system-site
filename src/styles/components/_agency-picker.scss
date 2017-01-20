@@ -1,0 +1,159 @@
+$usa-btn-small-width:   4.5rem;
+$usa-btn-medium-width:  8.5rem;
+$usa-btn-big-width:     4.5rem;
+
+.usa-input-error{
+  input{
+    width:100%;
+  }
+}
+.usa-agency-picker-browse-area{
+  clear:both;
+}
+
+.usa-agency-picker-button-area{
+  float:right;
+  overflow:hidden;
+  position:relative;
+
+  button{
+    margin-right:0;
+    margin-left:8.5px;
+  }
+}
+
+.usa-agency-picker-selection-area{
+  position:relative;
+}
+
+.usa-agency-picker-autocomplete{
+  position:absolute;
+  top:44px;
+  background:#fff;
+  margin-top:0;
+  margin-left: 0;
+  margin-right: 0;
+  padding:0;
+  border:1px solid #5b616b;
+  border-top:none;
+  width: calc(100% - 120px);
+  z-index: 10;
+  max-height:300px;
+  overflow:auto;
+
+  li{
+    list-style:none;
+    padding: 0 10px;
+    margin: 0;
+    max-width:inherit;
+  }
+  li:hover{
+    cursor:pointer;
+    background:#e1f3f8;
+  }
+
+  /*IE9 bugfix*/
+  li:focus{
+    outline:none;
+  }
+
+  li.autocomplete-selected{
+    background:#e1f3f8;
+  }
+}
+
+.usa-agency-picker-readonly-area{
+  padding:15px 10px;
+  border:1px #5b616b solid;
+  position:relative;
+  width: 100%;
+  margin-left:0;
+  min-height:55px;
+
+  span:hover{
+    cursor:pointer;
+  }
+
+  ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  @include media($small-screen) {
+    width: 460px;
+  }
+}
+.usa-agency-picker-dropdown-area{
+  padding-top:15px;
+  padding-bottom:15px;
+  border:1px #5b616b solid;
+  position:relative;
+  width:100%;
+  margin-left:0;
+  background:#f1f1f1;
+  .usa-agency-picker-search-area{
+    height:52px;
+    position:relative;
+    clear: both;
+    overflow:visible;
+  }
+
+  @include media($small-screen) {
+    width: 460px;
+  }
+}
+
+.usa-agency-picker-icon-area{
+  float:left;
+  line-height: 52px;
+  margin: 0px 10px 0 4px;
+
+  .usa-agency-picker-icon{
+    font-size:1.5em;
+    &:hover{
+      cursor:pointer;
+    }
+  }
+}
+
+.usa-agency-picker-search-input-wrapper{
+  position:relative;
+  width: calc(100% - 120px);
+  float:left;
+  min-height:1px;
+  .usa-agency-picker-search-input{
+    position:absolute;
+    padding-right:28px;
+  }
+  .usa-agency-picker-search-reset{
+    position:absolute;
+    right:7px;
+    line-height:46px;
+
+    i{
+      color: #d9d9d9;
+    }
+  }
+  .usa-agency-picker-search-reset-active{
+    position:absolute;
+    right:7px;
+    line-height:46px;
+
+    &:hover{
+      cursor:pointer;
+    }
+
+    i{
+      color: #777;
+    }
+  }
+}
+
+.usa-agency-picker-browse-toggle-area{
+  float:left;
+  line-height:52px;
+
+  a:hover{
+    cursor:pointer;
+  }
+}

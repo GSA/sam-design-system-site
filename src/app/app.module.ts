@@ -23,11 +23,9 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
-import { DummyComponent } from './home/dummy.component';
-import { DocumentComponent } from './home/document.component';
-
 
 import { DocModule } from '../_docs/doc.module';
+import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 
 
 //import '../styles/styles.scss';
@@ -46,14 +44,13 @@ const APP_PROVIDERS = [
   declarations: [
     AppComponent,
     HomeComponent,
-    DummyComponent,
-    DocumentComponent
   ],
   imports: [ // import Angular's modules
     DocModule,
     BrowserModule,
     FormsModule,
     HttpModule,
+    SamUIKitModule,
     RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

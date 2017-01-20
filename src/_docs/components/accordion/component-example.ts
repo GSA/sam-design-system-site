@@ -11,18 +11,6 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-/////DUMMY COMP
-@Component({
-	selector: 'doc-accordion-dummy',
-  template: `
-<p>I'm a dummy component {{sampleInput}}</p>
-`
-})
-export class AccordionExampleDummyComponent{
-	@Input() sampleInput = "123";
-}
-
-
 /////COMP
 @Component({
 	selector: 'doc-accordion',

@@ -3,22 +3,19 @@ import {
   OnInit,
   Input
 } from '@angular/core';
+import { BaseExampleComponent } from '../../baseexample.component';
 
 @Component({
 	selector: 'doc-click-outside',
   template: `
-<doc-template [markdown]="markdown" [example]="example">
-<doc-accordion-dummy [sampleInput]="'456'"></doc-accordion-dummy>
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+
 </doc-template>
 `
 })
-export class ClickOutsideExampleComponent implements OnInit {
-	markdown = "";
-	example = `<doc-accordion-dummy [sampleInput]="'456'"></doc-accordion-dummy>`;
-	constructor(){
-	}
-	public ngOnInit() {
-		this.markdown =  require("html-loader!markdown-loader!./documentation.md");
-	}
-
+export class ClickOutsideExampleComponent extends BaseExampleComponent implements OnInit {
+	typedoc_target = "accordion.component";
+  typedoc_content = "";
+  markdown = require("html-loader!markdown-loader!./documentation.md");
+	example = ``;
 }

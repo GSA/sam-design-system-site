@@ -18,7 +18,8 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   template: `
-    <header class="usa-header site-header">
+    <samBanner *ngIf="showBanner"></samBanner>
+    <header *ngIf="showHeader" class="usa-header site-header">
       <div class="usa-navbar site-header-navbar">
         <div class="usa-logo site-logo" id="logo">
           <em class="usa-logo-text">
@@ -27,6 +28,8 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
         </div>
       </div>
     </header>
+    <samHeader *ngIf="showUIKitHeader"></samHeader>
+    <samSearchHeader *ngIf="showUIKitSearchHeader"></samSearchHeader>
     <main>
       <div class="usa-grid">
         <div class="usa-width-one-fourth">
@@ -70,6 +73,11 @@ export class AppComponent implements OnInit {
   public displayElementsSublist = false;
   public displayFormControlSublist = false;
   public displayFormTemplateSublist = false;
+
+  showBanner = false;
+  showHeader = true;
+  showUIKitHeader = false;
+  showUIKitSearchHeader = false;
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   public ngOnInit() {
@@ -82,7 +90,7 @@ export class AppComponent implements OnInit {
         this.uikitList[DOCS[idx]['section']].push(DOCS[idx]);
       }
     }
-    console.log(this.uikitList);
+    //console.log(this.uikitList);
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
         //console.log(event.url);
@@ -110,6 +118,24 @@ export class AppComponent implements OnInit {
           this.displayFormTemplateSublist = true;
         } else {
           this.displayFormTemplateSublist = false;
+        }
+
+        if(event.url.match(/^\/components\/banner/)){
+          this.showBanner = true;
+        } else {
+          this.showBanner = false;
+        }
+        if(event.url.match(/^\/components\/header/) || event.url.match(/^\/components\/search-header/)){
+          this.showHeader = false;
+          if(event.url.match(/^\/components\/header/)){
+            this.showUIKitHeader = true;
+          } else if(event.url.match(/^\/components\/search-header/)){
+            this.showUIKitSearchHeader = true;
+          }
+        } else {
+          this.showUIKitHeader = false;
+          this.showHeader = true;
+          this.showUIKitSearchHeader = false;
         }
       }
     });

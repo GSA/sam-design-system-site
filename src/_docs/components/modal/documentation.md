@@ -1,3 +1,3 @@
 # Modal
 
-Modal info text here!!
+Modals are streamlined, but flexible, dialog prompts with the minimum required functionality.

@@ -1,3 +1,3 @@
 # Label
 
-Label info text here!!
+Labels draw attention to new or important content.

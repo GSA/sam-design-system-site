@@ -9,7 +9,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 	selector: 'doc-banner',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samBanner></samBanner>
+View the banner at the top
 </doc-template>
 `
 })

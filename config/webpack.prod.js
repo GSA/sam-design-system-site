@@ -30,7 +30,7 @@ files = files.filter(function(val){
 files = files.map(function(val){
   var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
   var section = link.split("/")[0];
-  var item = link.split("/")[1].replace("-"," ");
+  var item = link.split("/")[1].replace(/\-/g," ");
   var itemUnformatted = link.split("/")[1];
   return {
     link: link,

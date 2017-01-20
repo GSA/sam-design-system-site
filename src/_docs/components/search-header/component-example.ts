@@ -9,7 +9,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 	selector: 'doc-search-header',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samSearchHeader></samSearchHeader>
+See header at the top
 </doc-template>
 `
 //<samSearchHeader (searchHeaderDropdownControl)="toggleOverlay($event)"></samSearchHeader>
@@ -18,7 +18,7 @@ export class SearchHeaderExampleComponent extends BaseExampleComponent implement
 	typedoc_target = "searchbar.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<doc-accordion-dummy [sampleInput]="'456'"></doc-accordion-dummy>`;
+	example = `<samSearchHeader></samSearchHeader>`;
 	toggleOverlay(evt){
 		//nothing
 	}

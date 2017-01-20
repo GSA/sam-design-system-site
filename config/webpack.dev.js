@@ -12,6 +12,7 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
+const SourceMapDevToolPlugin= require('webpack/lib/SourceMapDevToolPlugin');
 const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-plugin-modified.js');
 
 var target = "sam-ui-elements/src/ui-kit";//"src/_docs";
@@ -23,7 +24,7 @@ files = files.filter(function(val){
 files = files.map(function(val){
   var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
   var section = link.split("/")[0];
-  var item = link.split("/")[1].replace("-"," ");
+  var item = link.split("/")[1].replace(/\-/g," ");
   var itemUnformatted = link.split("/")[1];
   return {
     link: link,
@@ -139,6 +140,7 @@ module.exports = function (options) {
     },
 
     plugins: [
+      new SourceMapDevToolPlugin(),
       /**
        * Plugin: Typedoc Webpack Plugin
        * Description: Adds Typedoc documentation generator to webpack build

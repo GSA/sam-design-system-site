@@ -1,3 +1,3 @@
 # Header
 
-Header info text here!!
+The header contains links to main sections of the site

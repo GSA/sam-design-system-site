@@ -8,7 +8,7 @@ import { BaseExampleComponent } from "./baseexample.component";
 import { PlaceHolderExampleComponent } from "./placeholder.component";
 
 
-import { AccordionExampleComponent,AccordionExampleDummyComponent } from "./components/accordion/component-example";
+import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alerts/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { FooterExampleComponent } from "./components/footer/component-example";
@@ -50,7 +50,6 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     BaseExampleComponent,
     PlaceHolderExampleComponent,
     AccordionExampleComponent,
-    AccordionExampleDummyComponent,
     AlertExampleComponent,
     BannerExampleComponent,
     ButtonExampleComponent,

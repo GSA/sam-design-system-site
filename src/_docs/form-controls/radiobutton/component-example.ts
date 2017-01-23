@@ -5,18 +5,20 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-@Component({
-	selector: 'doc-radio',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samRadioButton
+var code_example = `<samRadioButton
   [(model)]="radioModel"
   [options]="radioConfig.options"
   [label]="radioConfig.label"
   [hint]="radioConfig.hint"
   [name]="radioConfig.name"
   [errorMessage]="radioConfig.errorMessage">
-</samRadioButton>
+</samRadioButton>`;
+
+@Component({
+	selector: 'doc-radio',
+  template: `
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+`+code_example+`
 </doc-template>
 `
 })
@@ -36,12 +38,5 @@ export class RadioExampleComponent extends BaseExampleComponent implements OnIni
   typedoc_target = "radiobutton.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samRadioButton
-  [(model)]="radioModel"
-  [options]="radioConfig.options"
-  [label]="radioConfig.label"
-  [hint]="radioConfig.hint"
-  [name]="radioConfig.name"
-  [errorMessage]="radioConfig.errorMessage">
-</samRadioButton>`;
+	example = code_example;
 }

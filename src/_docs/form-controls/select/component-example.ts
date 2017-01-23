@@ -5,16 +5,18 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-@Component({
-	selector: 'doc-select',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samSelect
+var code_example = `<samSelect
   [(model)]="selectModel"
   [name]="selectConfig.name"
   [options]="selectConfig.options"
   [label]="selectConfig.label">
-</samSelect>
+</samSelect>`;
+
+@Component({
+	selector: 'doc-select',
+  template: `
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+`+code_example+`
 </doc-template>
 `
 })
@@ -34,13 +36,5 @@ export class SelectExampleComponent extends BaseExampleComponent implements OnIn
   typedoc_target = "/select.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samSelect
-  [(model)]="selectModel"
-  [name]="selectConfig.name"
-  [options]="selectConfig.options"
-  [label]="selectConfig.label"
-  [hint]="selectConfig.hint"
-  [errorMessage]="selectConfig.errorMessage"
-  [disabled]="selectConfig.disabled">
-</samSelect>`;
+	example = code_example;
 }

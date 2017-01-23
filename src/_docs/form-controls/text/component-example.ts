@@ -5,18 +5,20 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-@Component({
-	selector: 'doc-text',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samText
+var code_example = `<samText
   [(ngModel)]="textModel"
   [name]="textConfig.name"
   [label]="textConfig.label"
   [hint]="textConfig.hint"
   [errorMessage]="textConfig.errorMessage"
   [disabled]="textConfig.disabled">
-</samText>
+</samText>`;
+
+@Component({
+	selector: 'doc-text',
+  template: `
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+`+code_example+`
 </doc-template>
 `
 })
@@ -32,12 +34,5 @@ export class TextExampleComponent extends BaseExampleComponent implements OnInit
   typedoc_target = "/text.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samText
-  [(ngModel)]="textModel"
-  [name]="textConfig.name"
-  [label]="textConfig.label"
-  [hint]="textConfig.hint"
-  [errorMessage]="textConfig.errorMessage"
-  [disabled]="textConfig.disabled">
-</samText>`;
+	example = code_example;
 }

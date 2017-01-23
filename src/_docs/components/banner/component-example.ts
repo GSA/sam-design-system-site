@@ -17,5 +17,5 @@ export class BannerExampleComponent extends BaseExampleComponent implements OnIn
   typedoc_target = "banner.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samBanner></samBanner>`;
+	example = `<samBanner></samBanner>`;//code example at app level
 }

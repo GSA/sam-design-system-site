@@ -5,11 +5,13 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+var code_example = `<samSearchbar></samSearchbar>`;
+
 @Component({
 	selector: 'doc-searchbar',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samSearchbar></samSearchbar>
+`+code_example+`
 <br/>
 </doc-template>
 `
@@ -18,5 +20,5 @@ export class SearchbarExampleComponent extends BaseExampleComponent implements O
 	typedoc_target = "searchbar.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samSearchbar></samSearchbar>`;
+	example = code_example;
 }

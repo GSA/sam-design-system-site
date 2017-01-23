@@ -5,15 +5,20 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+var code_example = `<samMultiSelectDropdown 
+  [disabled]='alertBeingEdited' 
+  [(model)]="filterTypes" 
+  [label]="types.label" 
+  [options]="types.options" 
+  [name]="'types'"></samMultiSelectDropdown>`;
+
 @Component({
 	selector: 'doc-multiselect-dropdown',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samMultiSelectDropdown [disabled]='alertBeingEdited' [(model)]="filterTypes" [label]="types.label" [options]="types.options" [name]="'types'"></samMultiSelectDropdown>
+`+code_example+`
 </doc-template>
 `
-//<samMultiSelectDropdown [disabled]='alertBeingEdited' [(model)]="filterTypes" [label]="types.label" [options]="types.options" [name]="'types'"></samMultiSelectDropdown>
-
 })
 export class MultiselectDropdownExampleComponent extends BaseExampleComponent implements OnInit {
 	filterTypes = ['Error', 'Informational', 'Warning'];
@@ -28,5 +33,5 @@ export class MultiselectDropdownExampleComponent extends BaseExampleComponent im
   typedoc_target = "multiselect-dropdown.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samMultiSelectDropdown [disabled]='alertBeingEdited' [(model)]="filterTypes" [label]="types.label" [options]="types.options" [name]="'types'"></samMultiSelectDropdown>`;
+	example = code_example;
 }

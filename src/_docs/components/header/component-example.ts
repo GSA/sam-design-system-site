@@ -17,5 +17,5 @@ export class HeaderExampleComponent extends BaseExampleComponent implements OnIn
   typedoc_target = "header.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samHeader (headerDropdownControl)="toggleOverlay($event)"></samHeader>`;
+	example = `<samHeader (headerDropdownControl)="toggleOverlay($event)"></samHeader>`;//code example in app
 }

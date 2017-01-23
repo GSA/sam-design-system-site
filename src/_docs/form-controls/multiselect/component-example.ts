@@ -5,11 +5,13 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+var code_example = `<samMultiSelect [options]="types.options"></samMultiSelect>`;
+
 @Component({
 	selector: 'doc-multiselect',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samMultiSelect [options]="types.options"></samMultiSelect>
+`+code_example+`
 </doc-template>
 `
 })
@@ -26,5 +28,5 @@ export class MultiSelectExampleComponent extends BaseExampleComponent implements
   typedoc_target = "/multiselect.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samMultiSelect [options]="types.options"></samMultiSelect>`;
+	example = code_example;
 }

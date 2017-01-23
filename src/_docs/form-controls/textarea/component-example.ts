@@ -5,18 +5,20 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-@Component({
-	selector: 'doc-textarea',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samTextArea
+var code_example = `<samTextArea
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"
   [label]="textareaConfig.label"
   [hint]="textareaConfig.hint"
   [errorMessage]="textareaConfig.errorMessage"
   [disabled]="textareaConfig.disabled">
-</samTextArea>
+</samTextArea>`;
+
+@Component({
+	selector: 'doc-textarea',
+  template: `
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+`+code_example+`
 </doc-template>
 `
 })

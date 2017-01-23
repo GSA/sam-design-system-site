@@ -5,11 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-@Component({
-	selector: 'doc-checkbox',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samCheckbox
+var code_example = `<samCheckbox
   [(model)]="checkboxModel"
   [name]="checkboxConfig.name"
   [options]="checkboxConfig.options"
@@ -17,7 +13,13 @@ import { BaseExampleComponent } from '../../baseexample.component';
   [hint]="checkboxConfig.hint"
   [errorMessage]="checkboxConfig.errorMessage"
   [hasSelectAll]="checkboxConfig.hasSelectAll">
-</samCheckbox>
+</samCheckbox>`;
+
+@Component({
+	selector: 'doc-checkbox',
+  template: `
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+`+code_example+`
 </doc-template>
 `
 })
@@ -35,13 +37,5 @@ export class CheckboxExampleComponent extends BaseExampleComponent implements On
 	typedoc_target = "checkbox.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samCheckbox
-  [(model)]="checkboxModel"
-  [name]="checkboxConfig.name"
-  [options]="checkboxConfig.options"
-  [label]="checkboxConfig.label"
-  [hint]="checkboxConfig.hint"
-  [errorMessage]="checkboxConfig.errorMessage"
-  [hasSelectAll]="checkboxConfig.hasSelectAll">
-</samCheckbox>`;
+	example = code_example;
 }

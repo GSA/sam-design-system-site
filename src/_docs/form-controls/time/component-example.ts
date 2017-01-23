@@ -5,11 +5,13 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+var code_example = `<samTime name="example-time" [(value)]="time"></samTime>`;
+
 @Component({
 	selector: 'doc-time',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samTime name="example-time" [(value)]="time"></samTime>
+`+code_example+`
 <div style="clear:both;"></div>
 </doc-template>
 `
@@ -19,5 +21,5 @@ export class TimeExampleComponent extends BaseExampleComponent implements OnInit
   typedoc_target = "time.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samTime name="example-time" [(value)]="time"></samTime>`;
+	example = code_example;
 }

@@ -36,5 +36,5 @@ export class SelectExampleComponent extends BaseExampleComponent implements OnIn
   typedoc_target = "/select.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = example;
+	example = code_example;
 }

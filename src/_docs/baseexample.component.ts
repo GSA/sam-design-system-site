@@ -31,12 +31,12 @@ export class BaseExampleComponent implements OnInit {
           return true;
         }
       })[0];
-      console.log(component);
+      //console.log(component);
       this.setupTypedocContent(component);
     })
   }
   public setupTypedocContent(obj){
-    if(obj['children'] 
+    if(obj && obj['children'] 
       && obj['children'][0]['comment'] 
       && obj['children'][0]['comment']['tags']
       && obj['children'][0]['comment']['tags'].length > 0){

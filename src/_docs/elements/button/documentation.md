@@ -1,3 +1,3 @@
 # Button
 
-Button info text here
+Use buttons to signal actions.

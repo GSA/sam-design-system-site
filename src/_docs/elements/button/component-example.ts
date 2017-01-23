@@ -23,7 +23,7 @@ var code_example = `<div class="usa-width-one-whole">
   <div class="usa-width-one-fourth">
     <samButton [buttonId]="'outlineBtn'" [buttonText]="'Outline'" [buttonType]="'outline'"></samButton>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="usa-width-one-fourth" style="background:#323a45;text-align:center;">
     <samButton [buttonId]="'invertedBtn'" [buttonText]="'Inverted'" [buttonType]="'inverted'"></samButton>
   </div>
   <div class="usa-width-one-fourth">

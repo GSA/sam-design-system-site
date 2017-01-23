@@ -5,11 +5,13 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+var code_example = `<samLabel [labelType]="'big'" [labelText]="'Big Label'"></samLabel>`;
+
 @Component({
 	selector: 'doc-label',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samLabel [labelType]="'big'" [labelText]="'Big Label'"></samLabel>
+`+code_example+`
 </doc-template>
 `
 })
@@ -17,5 +19,5 @@ export class LabelExampleComponent extends BaseExampleComponent implements OnIni
   typedoc_target = "label.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samLabel [labelType]="'big'" [labelText]="'Big Label'"></samLabel>`;
+	example = code_example;
 }

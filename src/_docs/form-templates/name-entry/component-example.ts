@@ -5,11 +5,13 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+var code_example = `<samNameEntry [model]="nameModel" [prefix]="'ui-kit'"></samNameEntry>`;
+
 @Component({
 	selector: 'doc-name-entry',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samNameEntry [model]="nameModel" [prefix]="'ui-kit'"></samNameEntry>
+`+code_example+`
 </doc-template>
 `
 })
@@ -24,5 +26,5 @@ export class NameEntryExampleComponent extends BaseExampleComponent implements O
   typedoc_target = "name-entry.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samNameEntry [model]="nameModel" [prefix]="'ui-kit'"></samNameEntry>`;
+	example = code_example;
 }

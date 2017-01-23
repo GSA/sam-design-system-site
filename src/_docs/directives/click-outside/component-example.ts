@@ -5,11 +5,13 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+var code_example = ``;
+
 @Component({
 	selector: 'doc-click-outside',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-
+`+code_example+`
 </doc-template>
 `
 })
@@ -17,5 +19,5 @@ export class ClickOutsideExampleComponent extends BaseExampleComponent implement
 	typedoc_target = "accordion.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = ``;
+	example = code_example;
 }

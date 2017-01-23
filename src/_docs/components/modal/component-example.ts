@@ -6,11 +6,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-@Component({
-	selector: 'doc-modal',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samModal [showClose]="true" #modal1 [title]="modalConfig.title" [type]="'success'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModalClose()">
+var code_example = `<samModal [showClose]="true" #modal1 [title]="modalConfig.title" [type]="'success'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModalClose()">
 </samModal>
 <samModal [showClose]="true" #modal2 [title]="modalConfig.title" [type]="'error'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal2Close()">
 </samModal>
@@ -21,7 +17,13 @@ import { BaseExampleComponent } from '../../baseexample.component';
 <button (click)="onModalInitClick()">Show Success Modal</button>
 <button (click)="onModalInit2Click()">Show Error Modal</button>
 <button (click)="onModalInit3Click()">Show Warning Modal</button>
-<button (click)="onModalInit4Click()">Show Info Modal</button>
+<button (click)="onModalInit4Click()">Show Info Modal</button>`;
+
+@Component({
+	selector: 'doc-modal',
+  template: `
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+`+code_example+`
 </doc-template>
 `
 })
@@ -37,18 +39,7 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
   typedoc_target = "modal.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samModal [showClose]="true" #modal1 [title]="modalConfig.title" [type]="'success'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModalClose()">
-</samModal>
-<samModal [showClose]="true" #modal2 [title]="modalConfig.title" [type]="'error'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal2Close()">
-</samModal>
-<samModal [showClose]="true" #modal3 [title]="modalConfig.title" [type]="'warning'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal3Close()">
-</samModal>
-<samModal [showClose]="true" #modal4 [title]="modalConfig.title" [type]="'info'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal4Close()">
-</samModal>
-<button (click)="onModalInitClick()">Show Success Modal</button>
-<button (click)="onModalInit2Click()">Show Error Modal</button>
-<button (click)="onModalInit3Click()">Show Warning Modal</button>
-<button (click)="onModalInit4Click()">Show Info Modal</button>`;
+	example = code_example;
 	onModalInitClick(){
 		this.vcModal1.openModal();
 	}

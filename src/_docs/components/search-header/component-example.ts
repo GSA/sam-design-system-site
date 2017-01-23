@@ -12,13 +12,12 @@ import { BaseExampleComponent } from '../../baseexample.component';
 See header at the top
 </doc-template>
 `
-//<samSearchHeader (searchHeaderDropdownControl)="toggleOverlay($event)"></samSearchHeader>
 })
 export class SearchHeaderExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "searchbar.component";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = `<samSearchHeader></samSearchHeader>`;
+	example = `<samSearchHeader></samSearchHeader>`;//example at app level
 	toggleOverlay(evt){
 		//nothing
 	}

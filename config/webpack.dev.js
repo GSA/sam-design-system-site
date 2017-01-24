@@ -15,26 +15,7 @@ const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 const SourceMapDevToolPlugin= require('webpack/lib/SourceMapDevToolPlugin');
 const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-plugin-modified.js');
 
-var target = "sam-ui-elements/src/ui-kit";//"src/_docs";
-var recursiveReadSync = require('recursive-readdir-sync');
-var files = recursiveReadSync('./'+target);
-files = files.filter(function(val){
-  return val.match(/directive\.ts|component\.ts$/);
-});
-files = files.map(function(val){
-  var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
-  var section = link.split("/")[0];
-  var item = link.split("/")[1].replace(/\-/g," ");
-  var itemUnformatted = link.split("/")[1];
-  return {
-    link: link,
-    section: section,
-    item: item,
-    itemUnformatted: itemUnformatted
-  };
-});
-
-
+var files = helpers.getUIKitStructure();
 console.log('Files array:', files);
 
 /**

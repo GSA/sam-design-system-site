@@ -22,7 +22,7 @@ import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home';
+import { HomeComponent,SafeHtmlPipe } from './home';
 
 import { DocModule } from '../_docs/doc.module';
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
@@ -44,6 +44,7 @@ const APP_PROVIDERS = [
   declarations: [
     AppComponent,
     HomeComponent,
+    SafeHtmlPipe,
   ],
   imports: [ // import Angular's modules
     DocModule,

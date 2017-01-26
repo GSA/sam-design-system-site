@@ -7,8 +7,8 @@ import {
   Inject,
   ViewEncapsulation
 } from '@angular/core';
-import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
-
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { DocumentationService } from './services/documentation.service';
 /*
  * App Component
  * Top Level Component
@@ -64,7 +64,8 @@ import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
         </div>
       </div>
     </main>
-  `
+  `,
+  providers: [DocumentationService]
 })
 export class AppComponent implements OnInit {
   uikitList = {};
@@ -78,7 +79,8 @@ export class AppComponent implements OnInit {
   showHeader = true;
   showUIKitHeader = false;
   showUIKitSearchHeader = false;
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(private route: ActivatedRoute, private router: Router,
+              private service: DocumentationService) {}
 
   public ngOnInit() {
     //DOCS is a global defined in webpack
@@ -139,6 +141,7 @@ export class AppComponent implements OnInit {
         }
       }
     });
+    let sampleComponent = null;
   }
 
   public formControlClick(val){

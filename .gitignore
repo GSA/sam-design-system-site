@@ -62,6 +62,7 @@ npm-debug.log
 # IDE #
 .idea/
 *.swp
+.vscode/
 
 
 # Angular #

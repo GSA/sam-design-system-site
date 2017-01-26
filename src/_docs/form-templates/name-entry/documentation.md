@@ -1,3 +1,3 @@
 # Name Entry
 
-Name Entry info text here
+Provides a template for name entry

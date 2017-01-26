@@ -1,3 +1,3 @@
 # Search Header
 
-Search Header info text here!!
+Provides an alternative version of the header with an embedded search bar.

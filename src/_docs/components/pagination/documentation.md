@@ -1,3 +1,3 @@
 # Pagination
 
-Pagination info text here!!
+Allows users to navigate through subsets of a larger list.

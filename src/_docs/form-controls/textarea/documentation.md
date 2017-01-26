@@ -1,3 +1,3 @@
 # Textarea
 
-Textarea info text here
+Provides a simple textarea entry form control

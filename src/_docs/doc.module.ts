@@ -9,7 +9,7 @@ import { PlaceHolderExampleComponent } from "./placeholder.component";
 
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
-import { AlertExampleComponent } from "./components/alerts/component-example";
+import { AlertExampleComponent } from "./components/alert/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { FooterExampleComponent } from "./components/footer/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
@@ -63,7 +63,6 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     TextExampleComponent,
     TextareaExampleComponent,
     TimeExampleComponent,
-    FooterExampleComponent,
     HeaderExampleComponent,
     LabelExampleComponent,
     ModalExampleComponent,

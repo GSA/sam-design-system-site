@@ -1,3 +1,3 @@
 # Multiselect Dropdown
 
-Multiselect Dropdown info text here!!
+Allows users to select multiple options from a dropdown list

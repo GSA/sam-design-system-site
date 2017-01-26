@@ -1,3 +1,3 @@
 # Date
 
-Date info text here
+Three text fields are the easiest way for users to enter most dates.

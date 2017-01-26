@@ -34,7 +34,7 @@ export class BaseExampleComponent implements OnInit {
         (error) => {
           throw new Error(error);
         }
-      )
+      );
   }
 
   public setupTypedocContent(obj: any): void {
@@ -51,7 +51,7 @@ export class BaseExampleComponent implements OnInit {
                                  <td>@${item.decorators[0].name}( ) ${item.name}</td>
                                  <td>${item.type.name}</td>
                                </tr>`;
-    })
+    });
     this.typedoc_content += '</tbody></table>';
   }
 }

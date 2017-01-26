@@ -7,8 +7,12 @@ import {
   Inject,
   ViewEncapsulation
 } from '@angular/core';
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+
+import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
+import * as marked from 'marked';
+import txt from 'raw-loader!./home/overview.md';
 import { DocumentationService } from './services/documentation.service';
+
 /*
  * App Component
  * Top Level Component
@@ -30,12 +34,15 @@ import { DocumentationService } from './services/documentation.service';
     </header>
     <samHeader *ngIf="showUIKitHeader"></samHeader>
     <samSearchHeader *ngIf="showUIKitSearchHeader"></samSearchHeader>
-    <main>
+    <main class="sticky-target-app">
       <div class="usa-grid">
         <div class="usa-width-one-fourth">
-          <nav>
+          <nav sam-sticky [container]="'sticky-target-app'">
             <ul class="usa-sidenav-list">
-              <li><a routerLink="/">Overview</a></li>
+              <li><a (click)="formControlClick(0)">Overview</a><ul class="usa-sidenav-sub_list" *ngIf="displayOverviewSublist">
+                  <li *ngFor="let item of dynamicOverviewNav"><a (click)="onAnchorClick()" routerLink="/" fragment="{{item.link}}">{{item.name}}</a></li>
+                </ul>
+              </li>
               <li><a (click)="formControlClick(1)">Components</a><ul class="usa-sidenav-sub_list" *ngIf="displayComponentsSublist" >
                   <li *ngFor="let uikitObj of uikitList.components"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
                 </ul>
@@ -57,7 +64,7 @@ import { DocumentationService } from './services/documentation.service';
                 </ul>
               </li>
             </ul>
-          </nav>
+          </nav>&nbsp;
         </div>
         <div class="usa-width-three-fourths">
           <router-outlet></router-outlet>
@@ -68,7 +75,18 @@ import { DocumentationService } from './services/documentation.service';
   providers: [DocumentationService]
 })
 export class AppComponent implements OnInit {
+
+  onAnchorClick ( ) {
+    /*this.route.fragment.subscribe ( f => {
+      const element = document.querySelector ( "#" + f )
+      if ( element ) element.scrollIntoView ( element )
+    });*/
+  }
+
   uikitList = {};
+  dynamicOverviewNav = [];
+
+  public displayOverviewSublist = false;
   public displayComponentsSublist = false;
   public displayDirectivesSublist = false;
   public displayElementsSublist = false;
@@ -83,6 +101,34 @@ export class AppComponent implements OnInit {
               private service: DocumentationService) {}
 
   public ngOnInit() {
+
+    var two = marked.setOptions({
+      renderer: new marked.Renderer(),
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false
+    });
+    this.dynamicOverviewNav = txt.split("\n").filter(function(val){
+      if(val.match(/^##/g)){
+        return true;
+      }
+      return false;
+    }).map(function(val){
+      val = val.replace(/^##/g,"");
+      var name = val.trim();
+      var link = name.toLowerCase().replace(/[^0-9^a-z^A-Z]/g,"-");
+      return {
+        name: name,
+        link: link
+      };
+    });
+    //console.log(this.dynamicOverviewNav);
+    
+
     //DOCS is a global defined in webpack
     for(var idx in DOCS){
       //console.log(DOCS[idx]);
@@ -95,7 +141,17 @@ export class AppComponent implements OnInit {
     //console.log(this.uikitList);
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
-        //console.log(event.url);
+        this.route.fragment.subscribe ( f => {
+          const element = document.querySelector ( "#" + f )
+          if ( element ) element.scrollIntoView ( element )
+        });
+
+        //console.log("url",event.url);
+        if(event.url == "/" || event.url.match(/^\/#/)){
+          this.displayOverviewSublist = true;
+        } else {
+          this.displayOverviewSublist = false;
+        }  
         if(event.url.match(/^\/components\//)){
           this.displayComponentsSublist = true;
         } else {
@@ -145,28 +201,33 @@ export class AppComponent implements OnInit {
   }
 
   public formControlClick(val){
+    if(val==0){
+      this.displayOverviewSublist = !this.displayOverviewSublist;
+    } else {
+      this.displayOverviewSublist = false;
+    }
     if(val==1){
-      this.displayComponentsSublist = true;
+      this.displayComponentsSublist = !this.displayComponentsSublist;
     } else {
       this.displayComponentsSublist = false;
     }
     if(val==2){
-      this.displayDirectivesSublist = true;
+      this.displayDirectivesSublist = !this.displayDirectivesSublist;
     } else {
       this.displayDirectivesSublist = false;
     }
     if(val==3){
-      this.displayElementsSublist = true;
+      this.displayElementsSublist = !this.displayElementsSublist;
     } else {
       this.displayElementsSublist = false;
     }
     if(val==4){
-      this.displayFormControlSublist = true;
+      this.displayFormControlSublist = !this.displayFormControlSublist;
     } else {
       this.displayFormControlSublist = false;
     }
     if(val==5){
-      this.displayFormTemplateSublist = true;
+      this.displayFormTemplateSublist = !this.displayFormTemplateSublist;
     } else {
       this.displayFormTemplateSublist = false;
     }

@@ -47,11 +47,10 @@ export class BaseExampleComponent implements OnInit {
                                 </tr>
                               </thead>`;
     obj.forEach((item) => {
-      this.typedoc_content += `<tbody>
-                                <tr>
-                                  <td>@${item.decorators[0].name}( ) ${item.name}</td>
-                                  <td>${item.type.name}</td>
-                                </tr>`;
+      this.typedoc_content += `<tr>
+                                 <td>@${item.decorators[0].name}( ) ${item.name}</td>
+                                 <td>${item.type.name}</td>
+                               </tr>`;
     })
     this.typedoc_content += '</tbody></table>';
   }

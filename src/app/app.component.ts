@@ -8,7 +8,7 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
-import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import * as marked from 'marked';
 import txt from 'raw-loader!./home/overview.md';
 import { DocumentationService } from './services/documentation.service';
@@ -39,28 +39,60 @@ import { DocumentationService } from './services/documentation.service';
         <div class="usa-width-one-fourth">
           <nav sam-sticky [container]="'sticky-target-app'">
             <ul class="usa-sidenav-list">
-              <li><a (click)="formControlClick(0)">Overview</a><ul class="usa-sidenav-sub_list" *ngIf="displayOverviewSublist">
-                  <li *ngFor="let item of dynamicOverviewNav"><a (click)="onAnchorClick()" routerLink="/" fragment="{{item.link}}">{{item.name}}</a></li>
+              <li>
+                <a (click)="formControlClick(0)">Overview</a>
+                <ul class="usa-sidenav-sub_list" *ngIf="displayOverviewSublist">
+                  <li *ngFor="let item of dynamicOverviewNav">
+                    <a routerLink="/" fragment="{{item.link}}">{{item.name}}</a>
+                  </li>
                 </ul>
               </li>
-              <li><a (click)="formControlClick(1)">Components</a><ul class="usa-sidenav-sub_list" *ngIf="displayComponentsSublist" >
-                  <li *ngFor="let uikitObj of uikitList.components"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
+              <li>
+                <a (click)="formControlClick(1)">Components</a>
+                <ul class="usa-sidenav-sub_list" *ngIf="displayComponentsSublist" >
+                  <li *ngFor="let uikitObj of uikitList.components">
+                    <a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a>
+                  </li>
                 </ul>
               </li>
-              <li><a (click)="formControlClick(2)">Directives</a><ul class="usa-sidenav-sub_list" *ngIf="displayDirectivesSublist" >
-                  <li *ngFor="let uikitObj of uikitList.directives"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
+              <li>
+                <a (click)="formControlClick(2)">Directives</a>
+                <ul class="usa-sidenav-sub_list" *ngIf="displayDirectivesSublist" >
+                  <li *ngFor="let uikitObj of uikitList.directives">
+                    <a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a>
+                  </li>
                 </ul>
               </li>
-              <li><a (click)="formControlClick(3)">Elements</a><ul class="usa-sidenav-sub_list" *ngIf="displayElementsSublist" >
-                  <li *ngFor="let uikitObj of uikitList.elements"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
+              <li>
+                <a (click)="formControlClick(3)">Elements</a>
+                <ul class="usa-sidenav-sub_list" *ngIf="displayElementsSublist" >
+                  <li *ngFor="let uikitObj of uikitList.elements">
+                    <a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a>
+                  </li>
                 </ul>
               </li>
-              <li><a (click)="formControlClick(4)">Form controls</a><ul class="usa-sidenav-sub_list" *ngIf="displayFormControlSublist" >
-                  <li *ngFor="let uikitObj of uikitList['form-controls']"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
+              <li>
+                <a (click)="formControlClick(4)">Form controls</a>
+                <ul class="usa-sidenav-sub_list" *ngIf="displayFormControlSublist" >
+                  <li *ngFor="let uikitObj of uikitList['form-controls']">
+                    <a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a>
+                  </li>
                 </ul>
               </li>
-              <li><a (click)="formControlClick(5)">Form Templates</a><ul class="usa-sidenav-sub_list" *ngIf="displayFormTemplateSublist" >
-                  <li *ngFor="let uikitObj of uikitList['form-templates']"><a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a></li>
+              <li>
+                <a (click)="formControlClick(5)">Form Templates</a>
+                <ul class="usa-sidenav-sub_list" *ngIf="displayFormTemplateSublist" >
+                  <li *ngFor="let uikitObj of uikitList['form-templates']">
+                    <a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a (click)="formControlClick(6)">Data Structures</a>
+                <ul class="usa-sidenav-sub_list" *ngIf="displayDataStructuresSublist" >
+                  <li *ngFor="let uikitObj of uikitList['data-structures']">
+                    <a routerLink="{{uikitObj.link}}">{{uikitObj.item}}</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -76,13 +108,6 @@ import { DocumentationService } from './services/documentation.service';
 })
 export class AppComponent implements OnInit {
 
-  onAnchorClick ( ) {
-    /*this.route.fragment.subscribe ( f => {
-      const element = document.querySelector ( "#" + f )
-      if ( element ) element.scrollIntoView ( element )
-    });*/
-  }
-
   uikitList = {};
   dynamicOverviewNav = [];
 
@@ -92,6 +117,7 @@ export class AppComponent implements OnInit {
   public displayElementsSublist = false;
   public displayFormControlSublist = false;
   public displayFormTemplateSublist = false;
+  public displayDataStructuresSublist = false;
 
   showBanner = false;
   showHeader = true;
@@ -126,19 +152,15 @@ export class AppComponent implements OnInit {
         link: link
       };
     });
-    //console.log(this.dynamicOverviewNav);
-    
 
     //DOCS is a global defined in webpack
     for(var idx in DOCS){
-      //console.log(DOCS[idx]);
       if(!this.uikitList[DOCS[idx]['section']]){
         this.uikitList[DOCS[idx]['section']] = [DOCS[idx]];
       } else {
         this.uikitList[DOCS[idx]['section']].push(DOCS[idx]);
       }
     }
-    //console.log(this.uikitList);
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
         this.route.fragment.subscribe ( f => {
@@ -146,7 +168,6 @@ export class AppComponent implements OnInit {
           if ( element ) element.scrollIntoView ( element )
         });
 
-        //console.log("url",event.url);
         if(event.url == "/" || event.url.match(/^\/#/)){
           this.displayOverviewSublist = true;
         } else {
@@ -176,6 +197,11 @@ export class AppComponent implements OnInit {
           this.displayFormTemplateSublist = true;
         } else {
           this.displayFormTemplateSublist = false;
+        }
+        if(event.url.match(/^\/data-structures\//)){
+          this.displayDataStructuresSublist = true;
+        } else {
+          this.displayDataStructuresSublist = false;
         }
 
         if(event.url.match(/^\/components\/banner/)){
@@ -230,6 +256,11 @@ export class AppComponent implements OnInit {
       this.displayFormTemplateSublist = !this.displayFormTemplateSublist;
     } else {
       this.displayFormTemplateSublist = false;
+    }
+    if(val==6){
+      this.displayDataStructuresSublist = !this.displayDataStructuresSublist;
+    } else {
+      this.displayDataStructuresSublist = false;
     }
   }
 

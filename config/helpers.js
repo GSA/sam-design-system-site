@@ -22,14 +22,19 @@ function isWebpackDevServer() {
 
 
 var target = "src/_docs";//"src/_docs";
+
 var recursiveReadSync = require('recursive-readdir-sync');
+
 function getUIKitStructure(){
 	var files = recursiveReadSync('./'+target);
+
 	files = files.filter(function(val){
 	  return val.match(/documentation\.md$/);// /directive\.ts|component\.ts$/
 	});
+	
 	files = files.map(function(val){
 	  var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
+		console.log(link);
 	  var section = link.split("/")[0];
 	  var item = link.split("/")[1].split("-").map(function(val){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())

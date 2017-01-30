@@ -4,17 +4,11 @@ import * as data from '../../../dist/docs.json';
 
 const regexComponent = new RegExp('([^/]*\.component)');
 const regexNotComponent = new RegExp('([^.component])');
+const regexTypes = new RegExp('types.ts');
+const regexInterfaces = new RegExp('interfaces.ts');
 
 @Injectable()
 export class DocumentationService {
-
-  public getNotComponents(): Promise<any> {
-    return Promise.resolve(
-      data.children.filter((child) => {
-        
-      })
-    );
-  }
   /**
    * Gets all components from docs.json
    */
@@ -141,5 +135,38 @@ export class DocumentationService {
     );
   }
 
-  
+  public getInterfaces(): Promise<any> {
+    return Promise.resolve(
+      data.children.reduce((accum, child) => {
+        // for (const kid of child.children) {
+        //   if (kid.kindString === 'Interface') {
+        //     accum.push(kid);
+        //   }
+        // }
+        if (child.children) {
+          child.children.forEach((kid) => {
+            if (kid.kindString === 'Interface') {
+              accum.push(kid);
+            }
+          });
+        }
+        return accum;
+      }, [])
+    );
+  }
+
+  public getTypes(): Promise<any> {
+    return Promise.resolve(
+      data.children.reduce((accum, child) => {
+        if (child.children) {
+          child.children.forEach((kid) => {
+            if (kid.kindString === 'Type alias') {
+              accum.push(kid);
+            }
+          });
+        }
+        return accum;
+      }, [])
+    );
+  }
 }

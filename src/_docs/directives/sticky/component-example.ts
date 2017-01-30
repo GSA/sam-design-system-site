@@ -17,7 +17,7 @@ Scroll down and see Sidenav
 `
 })
 export class StickyExampleComponent extends BaseExampleComponent implements OnInit {
-	typedoc_target = "sticky.directive";
+	typedoc_target = "SamStickyComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = `<div class="sticky-target usa-grid">

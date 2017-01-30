@@ -18,7 +18,7 @@ export class PaginationExampleComponent extends BaseExampleComponent implements 
     currentPage: 1,
     totalPages: 4
   };
-  typedoc_target = "pagination.component";
+  typedoc_target = "SamPaginationComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = `<samPagination [currentPage]="paginationConfig.currentPage" [totalPages]="paginationConfig.totalPages"></samPagination>`;

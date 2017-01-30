@@ -5,7 +5,6 @@ import { PlaceHolderExampleComponent } from "./placeholder.component";
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alerts/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
-import { FooterExampleComponent } from "./components/footer/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
 import { ModalExampleComponent } from "./components/modal/component-example";
@@ -38,7 +37,6 @@ const map = {
   'components/accordion':AccordionExampleComponent,
   'components/alert':AlertExampleComponent,
   'components/banner':BannerExampleComponent,
-  'components/footer':FooterExampleComponent,
   'components/header':HeaderExampleComponent,
   'components/label':LabelExampleComponent,
   'components/modal':ModalExampleComponent,

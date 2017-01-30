@@ -33,7 +33,7 @@ export class SelectExampleComponent extends BaseExampleComponent implements OnIn
     label: 'Region',
     name: 'region'
   };
-  typedoc_target = "/select.component";
+  typedoc_target = "SamSelectComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

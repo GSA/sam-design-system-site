@@ -34,7 +34,7 @@ export class CheckboxExampleComponent extends BaseExampleComponent implements On
     name: 'my-sr-name',
     label: 'Select a region',
   };
-	typedoc_target = "checkbox.component";
+	typedoc_target = "SamCheckboxComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

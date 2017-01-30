@@ -23,7 +23,7 @@ export class NameEntryExampleComponent extends BaseExampleComponent implements O
     lastName: "Doe",
     suffix: "Sr."
   };
-  typedoc_target = "name-entry.component";
+  typedoc_target = "SamNameEntryComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

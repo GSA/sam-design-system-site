@@ -35,7 +35,7 @@ export class RadioExampleComponent extends BaseExampleComponent implements OnIni
     errorMessage: '',
     hint: ''
   };
-  typedoc_target = "radiobutton.component";
+  typedoc_target = "SamRadioButtonComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

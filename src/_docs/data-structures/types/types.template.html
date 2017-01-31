@@ -1,0 +1,24 @@
+<h2>Types API Reference</h2>
+<section *ngFor="let type of types">
+  <h3>{{type.name}}</h3>
+  <p>{{type.comment?.shortText}}</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let property of type.typeArguments">
+        <td>
+          {{property.name}}
+          <span *ngIf="property.flags?.isOptional !== true"><em>(required)</em></span>
+        </td>
+        <td>
+          {{property.type.name}}<span *ngIf="property.type.isArray">[]</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>

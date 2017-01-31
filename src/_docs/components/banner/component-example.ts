@@ -14,7 +14,7 @@ View the banner at the top
 `
 })
 export class BannerExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "banner.component";
+  typedoc_target = "SamBannerComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = `<samBanner></samBanner>`;//code example at app level

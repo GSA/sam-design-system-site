@@ -26,7 +26,7 @@ export class POCExampleComponent extends BaseExampleComponent implements OnInit 
     phone: "222-222-2222",
     website: "www.testsite.gov"
   };
-  typedoc_target = "point-of-contact.component";
+  typedoc_target = "SamPointOfContactComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

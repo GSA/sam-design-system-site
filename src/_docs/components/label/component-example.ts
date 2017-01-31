@@ -16,7 +16,7 @@ var code_example = `<samLabel [labelType]="'big'" [labelText]="'Big Label'"></sa
 `
 })
 export class LabelExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "label.component";
+  typedoc_target = "SamLabelComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

@@ -18,7 +18,7 @@ var code_example = `<samTime name="example-time" [(value)]="time"></samTime>`;
 })
 export class TimeExampleComponent extends BaseExampleComponent implements OnInit {
 	time: string = "13:01";
-  typedoc_target = "time.component";
+  typedoc_target = "SamTimeComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

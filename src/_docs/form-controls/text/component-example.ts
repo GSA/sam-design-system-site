@@ -31,7 +31,7 @@ export class TextExampleComponent extends BaseExampleComponent implements OnInit
     name: 'aria-friendly-name',
     disabled: false,
   };
-  typedoc_target = "/text.component";
+  typedoc_target = "SamTextComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

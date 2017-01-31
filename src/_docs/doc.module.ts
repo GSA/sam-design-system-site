@@ -11,7 +11,6 @@ import { PlaceHolderExampleComponent } from "./placeholder.component";
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
-import { FooterExampleComponent } from "./components/footer/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
 import { ModalExampleComponent } from "./components/modal/component-example";
@@ -35,6 +34,8 @@ import { TextareaExampleComponent } from "./form-controls/textarea/component-exa
 import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
+import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
+import { TypesComponent } from './data-structures/types/types.component';
 
 
 import { DocTemplateComponent } from "./doc.template";
@@ -75,9 +76,11 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     TabsExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
-    DocTemplateComponent
+    DocTemplateComponent,
+    TypesComponent,
+    InterfacesComponent
   ],
-  imports: [ 
+  imports: [
     BrowserModule,
     FormsModule,
     SamUIKitModule,

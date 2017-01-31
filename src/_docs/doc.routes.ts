@@ -5,7 +5,6 @@ import { PlaceHolderExampleComponent } from "./placeholder.component";
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
-//import { FooterExampleComponent } from "./components/footer/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
 import { ModalExampleComponent } from "./components/modal/component-example";
@@ -29,6 +28,8 @@ import { TextareaExampleComponent } from "./form-controls/textarea/component-exa
 import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
+import { InterfacesComponent } from "./data-structures/interfaces/interfaces.component";
+import { TypesComponent } from "./data-structures/types/types.component";
 
 //manual map, components that don't have documentation set up yet get pointed to the PlaceHolderExampleComponent
 const map = {
@@ -36,7 +37,6 @@ const map = {
   'components/accordion':AccordionExampleComponent,
   'components/alert':AlertExampleComponent,
   'components/banner':BannerExampleComponent,
-  //'components/footer':FooterExampleComponent,
   'components/header':HeaderExampleComponent,
   'components/label':LabelExampleComponent,
   'components/modal':ModalExampleComponent,
@@ -60,6 +60,8 @@ const map = {
   'form-controls/time':TimeExampleComponent,
   'form-templates/name-entry':NameEntryExampleComponent,
   'form-templates/phone-entry':PhoneEntryExampleComponent,
+  'data-structures/interfaces': InterfacesComponent,
+  'data-structures/types': TypesComponent
 };
 export const ROUTES: Routes = [
   //{ path: 'form-templates/phone-entry',      component: PhoneEntryExampleComponent }
@@ -76,4 +78,4 @@ for(var idx in DOCS){
   }
 	ROUTES.push(obj);
 }
-//console.log(ROUTES);
+// console.log(ROUTES);

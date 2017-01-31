@@ -19,7 +19,7 @@ var code_example = `<samPhoneEntry [phoneNumberTemplate]="'___-___-____'" [(mode
 export class PhoneEntryExampleComponent extends BaseExampleComponent implements OnInit {
 	phoneModel = "123-456-3366";
   phoneModel2 = "1+(123)456-3366";
-  typedoc_target = "/phone-entry.component";
+  typedoc_target = "SamPhoneEntryComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

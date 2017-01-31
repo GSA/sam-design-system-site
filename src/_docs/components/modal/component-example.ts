@@ -36,7 +36,7 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
 	@ViewChild('modal2') vcModal2;
 	@ViewChild('modal3') vcModal3;
 	@ViewChild('modal4') vcModal4;
-  typedoc_target = "modal.component";
+  typedoc_target = "SamModalComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

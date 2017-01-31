@@ -14,7 +14,7 @@ See header at the top
 `
 })
 export class SearchHeaderExampleComponent extends BaseExampleComponent implements OnInit {
-	typedoc_target = "searchbar.component";
+	typedoc_target = "SamSearchbarComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = `<samSearchHeader></samSearchHeader>`;//example at app level

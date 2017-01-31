@@ -1,3 +1,3 @@
 # MultiSelect
 
-MultiSelect info text here
+Allows users to selection multiple options from a list

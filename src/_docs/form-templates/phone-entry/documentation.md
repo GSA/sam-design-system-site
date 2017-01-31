@@ -1,3 +1,3 @@
 # Phone Entry
 
-Phone Entry info text here
+Provides a text input specific for phone entry

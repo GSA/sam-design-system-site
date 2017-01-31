@@ -1,3 +1,3 @@
 # DateTime
 
-DateTime info text here
+Provides a way for users to enter both a date and time entry

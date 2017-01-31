@@ -1,3 +1,3 @@
 # Text
 
-Text info text here
+Provides a simple text entry form control

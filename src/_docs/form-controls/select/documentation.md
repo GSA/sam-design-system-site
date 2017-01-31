@@ -1,3 +1,3 @@
 # Select
 
-Select info text here
+Allows users to selection a single option from a list

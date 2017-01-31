@@ -1,3 +1,3 @@
 # Searchbar
 
-Searchbar info text here
+Alternative text input that allows a user to enter a search entry

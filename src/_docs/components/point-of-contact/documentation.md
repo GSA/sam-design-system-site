@@ -1,3 +1,3 @@
 # Point of Contact
 
-Point of Contact info text here!!
+Provides a general format for point of contact information

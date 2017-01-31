@@ -18,7 +18,7 @@ var code_example = `<button samClickOutside (click)="clickInsideHandler()" (clic
 })
 export class ClickOutsideExampleComponent extends BaseExampleComponent implements OnInit {
 	clickedValue = "None";
-	typedoc_target = "click-outside.directive";
+	typedoc_target = "SamClickOutsideDirective";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

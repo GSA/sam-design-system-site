@@ -17,7 +17,7 @@ var code_example = `<samDate name="example-date" [(value)]='dateModel'></samDate
 })
 export class DateExampleComponent extends BaseExampleComponent implements OnInit {
 	dateModel: string = "2016-02-03";
-  typedoc_target = "date.component";
+  typedoc_target = "SamDateComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

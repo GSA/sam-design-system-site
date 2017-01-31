@@ -30,7 +30,7 @@ export class MultiselectDropdownExampleComponent extends BaseExampleComponent im
       { label: 'Warning', value: 'Warning', name: 'warning' }
     ]
   };
-  typedoc_target = "multiselect-dropdown.component";
+  typedoc_target = "SamMultiSelectDropdownComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

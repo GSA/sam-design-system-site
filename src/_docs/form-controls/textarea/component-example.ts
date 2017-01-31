@@ -31,7 +31,7 @@ export class TextareaExampleComponent extends BaseExampleComponent implements On
     name: 'aria-friendly-name',
     disabled: false,
   };
-  typedoc_target = "textarea.component";
+  typedoc_target = "SamTextareaComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = `<samTextArea

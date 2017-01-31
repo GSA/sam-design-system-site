@@ -17,7 +17,7 @@ var code_example = `<samSearchbar></samSearchbar>`;
 `
 })
 export class SearchbarExampleComponent extends BaseExampleComponent implements OnInit {
-	typedoc_target = "searchbar.component";
+	typedoc_target = "SamSearchbarComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;

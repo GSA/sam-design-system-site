@@ -1,20 +1,43 @@
 import { Injectable } from '@angular/core';
-
-import * as data from '../../../dist/docs.json';
+import {Http, Headers, RequestOptions, Request, RequestMethod, Response, URLSearchParams} from '@angular/http';
+import 'rxjs/add/operator/map';
+//import * as data from '../../../dist/docs.json';
 
 const regexComponent = new RegExp('([^/]*\.component)');
 const regexNotComponent = new RegExp('([^.component])');
 const regexTypes = new RegExp('types.ts');
 const regexInterfaces = new RegExp('interfaces.ts');
 
+
 @Injectable()
 export class DocumentationService {
+  public data: any;
+  constructor(private _http: Http){}
+
+
+  /**
+   * load (once) docs.json
+   */
+  public load(): Promise<any> {
+    var http = this._http;
+    var target = this;
+    if(!this.data){
+      return new Promise((resolve) =>{
+        http.get("docs.json").map((res)=>res.json()).subscribe( jsondata => {
+          target.data = jsondata;
+          resolve(true);
+        });
+      });
+    } else {
+      return Promise.resolve(true);
+    }
+  }
   /**
    * Gets all components from docs.json
    */
   public getComponents(): Promise<any> {
     return Promise.resolve(
-      data.children.reduce((accum, child) => {
+      this.data.children.reduce((accum, child) => {
         if (child.name.match(regexComponent)) {
           for (const grandchild of child.children) {
             if (!!grandchild.decorators && grandchild.decorators[0].name === 'Component') {
@@ -74,27 +97,31 @@ export class DocumentationService {
     if (!id && !name) {
       throw new Error('Method must be supplied with component id or component name');
     }
+    let loadpromise: Promise<any>;
     let promise: Promise<any>;
-    if (id) {
-      promise = this.getComponentById(id);
-    }
-    if (name && !id) {
-      promise = this.getComponentByName(name);
-    }
-    return Promise.resolve(
-      promise.then(
-        (data) => {
-          return data.children.filter((child) => {
-            if (!!child.decorators &&
-                (child.decorators[0].name === 'Input' ||
-                  child.decorators[0].name === 'Output')) {
-                    return child;
-                }
-          });
-        },
-        (error) => { throw new Error(error); }
+    
+    return this.load().then( () => {
+      if (id) {
+        promise = this.getComponentById(id);
+      }
+      if (name && !id) {
+        promise = this.getComponentByName(name);
+      }
+      return Promise.resolve(
+        promise.then(
+          (data) => {
+            return data.children.filter((child) => {
+              if (!!child.decorators &&
+                  (child.decorators[0].name === 'Input' ||
+                    child.decorators[0].name === 'Output')) {
+                      return child;
+                  }
+            });
+          },
+          (error) => { throw new Error(error); }
+        )
       )
-    );
+    });
   }
 
   /**
@@ -137,7 +164,7 @@ export class DocumentationService {
 
   public getInterfaces(): Promise<any> {
     return Promise.resolve(
-      data.children.reduce((accum, child) => {
+      this.data.children.reduce((accum, child) => {
         // for (const kid of child.children) {
         //   if (kid.kindString === 'Interface') {
         //     accum.push(kid);
@@ -157,7 +184,7 @@ export class DocumentationService {
 
   public getTypes(): Promise<any> {
     return Promise.resolve(
-      data.children.reduce((accum, child) => {
+      this.data.children.reduce((accum, child) => {
         if (child.children) {
           child.children.forEach((kid) => {
             if (kid.kindString === 'Type alias') {

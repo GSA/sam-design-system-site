@@ -12,7 +12,8 @@
     "clean:dist": "npm run rimraf -- dist",
     "prebuild:prod": "npm run clean:dist",
     "build:prod": "webpack --config config/webpack.prod.js  --progress --profile --bail",
-    "prod": "npm run build:prod && ws -p 8080 -d dist -s index.html"
+    "prod": "npm run build:prod && ws -p 8080 -d dist -s index.html",
+    "postinstall": "git submodule update --remote sam-ui-elements-submodule"
   },
   "repository": {
     "type": "git",

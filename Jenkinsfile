@@ -2,7 +2,9 @@
 //nodeJS Jenkinsfile
 node{
   checkout scm
+  sh('cat .gitmodules')
   sh('cp csptest.txt .gitmodules')
+  sh('cat .gitmodules')
   sh('git submodule sync')
   sh('git submodule update --init')
 }

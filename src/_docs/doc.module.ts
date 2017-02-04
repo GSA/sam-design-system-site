@@ -27,7 +27,7 @@ import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/datetime/component-example";
 import { MultiSelectExampleComponent } from "./form-controls/multiselect/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
-import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
+//import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
 import { SelectExampleComponent } from "./form-controls/select/component-example";
 import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
@@ -59,7 +59,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     DateTimeExampleComponent,
     MultiSelectExampleComponent,
     RadioExampleComponent,
-    SearchbarExampleComponent,
+    //SearchbarExampleComponent,
     SelectExampleComponent,
     TextExampleComponent,
     TextareaExampleComponent,
@@ -70,7 +70,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     MultiselectDropdownExampleComponent,
     PaginationExampleComponent,
     POCExampleComponent,
-    SearchHeaderExampleComponent,
+    //SearchHeaderExampleComponent,
     StickyExampleComponent,
     ClickOutsideExampleComponent,
     TabsExampleComponent,

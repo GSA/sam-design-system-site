@@ -21,7 +21,7 @@ import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/datetime/component-example";
 import { MultiSelectExampleComponent } from "./form-controls/multiselect/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
-import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
+//import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
 import { SelectExampleComponent } from "./form-controls/select/component-example";
 import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
@@ -43,7 +43,7 @@ const map = {
   'components/multiselect-dropdown':MultiselectDropdownExampleComponent,
   'components/pagination':PaginationExampleComponent,
   'components/point-of-contact':POCExampleComponent,
-  'components/search-header':SearchHeaderExampleComponent,
+  //'components/search-header':SearchHeaderExampleComponent,
   'components/tabs':TabsExampleComponent,
   'directives/click-outside':ClickOutsideExampleComponent,
   'directives/sticky':StickyExampleComponent,
@@ -53,7 +53,7 @@ const map = {
   'form-controls/date-time':DateTimeExampleComponent,
   'form-controls/multiselect':MultiSelectExampleComponent,
   'form-controls/radiobutton':RadioExampleComponent,
-  'form-controls/searchbar':SearchbarExampleComponent,
+  //'form-controls/searchbar':SearchbarExampleComponent,
   'form-controls/select':SelectExampleComponent,
   'form-controls/text':TextExampleComponent,
   'form-controls/textarea':TextareaExampleComponent,

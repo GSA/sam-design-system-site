@@ -1,4 +1,4 @@
-[submodule "sam-ui-elements-submodule"]
-	path = sam-ui-elements-submodule
+[submodule "sam-ui-elements"]
+	path = sam-ui-elements
 	url = git@csp-github.sam.gov:GSA-IAE/web-standards-site.git
 	branch = develop

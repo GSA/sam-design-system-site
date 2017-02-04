@@ -33,7 +33,7 @@ import { DocumentationService } from './services/documentation.service';
       </div>
     </header>
     <samHeader *ngIf="showUIKitHeader"></samHeader>
-    <samSearchHeader *ngIf="showUIKitSearchHeader"></samSearchHeader>
+    <!--samSearchHeader *ngIf="showUIKitSearchHeader"></samSearchHeader-->
     <main class="sticky-target-app">
       <div class="usa-grid">
         <div class="usa-width-one-fourth">

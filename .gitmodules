@@ -1,3 +1,4 @@
 [submodule "sam-ui-elements"]
 	path = sam-ui-elements
 	url = https://csp-github.sam.gov/GSA-IAE/sam-ui-elements
+	branch = develop

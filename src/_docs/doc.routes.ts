@@ -29,7 +29,6 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { InterfacesComponent } from "./data-structures/interfaces/interfaces.component";
-import { TypesComponent } from "./data-structures/types/types.component";
 
 //manual map, components that don't have documentation set up yet get pointed to the PlaceHolderExampleComponent
 const map = {
@@ -60,8 +59,7 @@ const map = {
   'form-controls/time':TimeExampleComponent,
   'form-templates/name-entry':NameEntryExampleComponent,
   'form-templates/phone-entry':PhoneEntryExampleComponent,
-  'data-structures/interfaces': InterfacesComponent,
-  'data-structures/types': TypesComponent
+  'data-structures/interfaces': InterfacesComponent
 };
 export const ROUTES: Routes = [
   //{ path: 'form-templates/phone-entry',      component: PhoneEntryExampleComponent }

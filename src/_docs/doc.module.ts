@@ -35,7 +35,6 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
-import { TypesComponent } from './data-structures/types/types.component';
 
 
 import { DocTemplateComponent } from "./doc.template";
@@ -77,7 +76,6 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
     DocTemplateComponent,
-    TypesComponent,
     InterfacesComponent
   ],
   imports: [

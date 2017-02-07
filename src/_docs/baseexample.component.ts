@@ -26,15 +26,11 @@ export class BaseExampleComponent implements OnInit {
   constructor(private _http: Http, private service: DocumentationService){}
 
   public ngOnInit(): void {
-    this.service.getComponentProperties(null, this.typedoc_target)
-      .then(
-        (data) => {
-          this.setupTypedocContent(data);
-        },
-        (error) => {
-          throw new Error(error);
-        }
-      );
+    this.service.getComponentProperties(this.typedoc_target)
+    .subscribe(
+      (data) => { this.setupTypedocContent(data); },
+      (error) => { throw new Error(error); }
+    );
   }
 
   public setupTypedocContent(obj: any): void {

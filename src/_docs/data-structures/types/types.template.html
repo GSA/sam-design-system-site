@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let property of type.typeArguments">
+      <tr *ngFor="let property of type.type.typeArguments">
         <td>
           {{property.name}}
           <span *ngIf="property.flags?.isOptional !== true"><em>(required)</em></span>

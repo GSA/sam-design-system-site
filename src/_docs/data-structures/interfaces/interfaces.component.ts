@@ -19,12 +19,12 @@ import * as markdown from 'html-loader!markdown-loader!./documentation.md';
 })
 export class InterfacesComponent {
   public interfaces: any[];
-  
+
   constructor(public service: DocumentationService) {
     this.service.getInterfaces()
-      .then(
-        (data) => { this.interfaces = data; },
-        (error) => { throw new Error(error); }
-      );
+    .subscribe(
+      (data) => { this.interfaces = data; },
+      (error) => { throw new Error(error); }
+    );
   }
 }

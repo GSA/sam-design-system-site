@@ -22,9 +22,9 @@ export class TypesComponent {
 
   constructor(public service: DocumentationService) {
     this.service.getTypes()
-      .then(
-        (data) => { this.types = data; },
-        (error) => { throw new Error(error); }
-      );
+    .subscribe(
+      (data) => { this.types = data; },
+      (error) => { throw new Error(error); }
+    );
   }
 }

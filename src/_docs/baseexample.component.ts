@@ -34,7 +34,7 @@ export class BaseExampleComponent implements OnInit {
   }
 
   public setupTypedocContent(obj: any): void {
-    console.log(obj);
+    //console.log(obj);
     this.typedoc_content += `<h2>Component API Reference</h2>
                              <table>
                               <thead>

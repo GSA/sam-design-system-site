@@ -19,7 +19,7 @@ import * as marked from 'marked';
   selector: 'doc-placeholder-example',
   template: `<div [innerHtml]="content"></div>`
 })
-export class PlaceHolderExampleComponent {
+export class StaticPageComponent {
   content = `<h1>No Documentation Yet</h1><p>Coming soon</p>`;
   constructor(private route: ActivatedRoute,private router: Router,private _http: Http){}
   ngOnInit(){

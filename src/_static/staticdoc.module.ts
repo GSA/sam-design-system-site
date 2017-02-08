@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { PlaceHolderExampleComponent } from "./placeholder.component";
+import { StaticPageComponent } from "./staticpage.component";
 
 import { routing } from "./staticdoc.routes";
 
@@ -15,7 +15,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
  */
 @NgModule({
   declarations: [
-    PlaceHolderExampleComponent
+    StaticPageComponent
   ],
   imports: [
     BrowserModule,

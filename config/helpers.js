@@ -30,7 +30,7 @@ function getUIKitStructure(){
   var files = recursiveReadSync('./'+target);
 
 	files = files.filter(function(val){
-	  return val.match(regex);// /directive\.ts|component\.ts$/
+	  return val.match(regex);
 	});
 	
 	files = files.map(function(val){
@@ -43,13 +43,11 @@ function getUIKitStructure(){
 	  var item = link.split("/")[1].split("-").map(function(val){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())
 	    return val;
-	  }).join(" ");//.replace(/\-/g," ");
-	  var itemUnformatted = link.split("/")[1];
+	  }).join(" ");
 	  return {
 	    link: link,
 	    section: section,
-	    item: item,
-	    itemUnformatted: itemUnformatted
+	    item: item
 	  };
   });
   return files;
@@ -60,13 +58,11 @@ function getStaticDirStructure(){
   var files = recursiveReadSync('./'+target);
 
 	files = files.filter(function(val){
-	  return val.match(regex);// /directive\.ts|component\.ts$/
+	  return val.match(regex);
 	});
-	console.log(files);
 	files = files.map(function(val){
     var filename = val.replace(target,"");
 	  var link = filename.substring(1).replace(/\.md$/,"").toLowerCase().replace(/\s/g,"-");
-		console.log(val);
 	  var section = link.substring(0,link.indexOf("/")).split("-").map(function(val){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())
 	    return val;
@@ -74,18 +70,15 @@ function getStaticDirStructure(){
 	  var item = link.substring(link.lastIndexOf("/")+1).split("-").map(function(val){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())
 	    return val;
-	  }).join(" ");//.replace(/\-/g," ");
-	  var itemUnformatted = link;
+	  }).join(" ");
 	  return {
       file: val,
-      filename: filename,
-	    link: link,
+      link: link,
 	    section: section,
-	    item: item,
-	    itemUnformatted: itemUnformatted
+	    item: item
 	  };
   });
-  console.log(files);
+  //console.log(files);
   return files;
 }
 

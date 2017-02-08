@@ -36,11 +36,11 @@ import { DocumentationService } from './services/documentation.service';
     <!--samSearchHeader *ngIf="showUIKitSearchHeader"></samSearchHeader-->
     <main class="sticky-target-app">
       <div class="usa-grid">
-        <div class="usa-width-one-fourth">
-          <nav sam-sticky [container]="'sticky-target-app'">
+        <aside class="usa-width-one-fourth">
+          <nav sam-sticky [limit]="1200" [container]="'sticky-target-app'">
             <samSidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></samSidenav>
           </nav>&nbsp;
-        </div>
+        </aside>
         <div class="usa-width-three-fourths">
           <router-outlet></router-outlet>
         </div>

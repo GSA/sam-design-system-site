@@ -248,7 +248,8 @@ module.exports = function (options) {
       new CopyWebpackPlugin([
         { from: 'src/assets', to: 'src/assets' },
         { from: 'src/meta'},
-        { from: 'src/_docs', to: 'src/_docs' }
+        { from: 'src/_docs', to: 'src/_docs' },
+        { from: 'src/_static', to: 'src/_static' }
       ],{ ignore: ['*.ts']}),
 
 

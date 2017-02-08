@@ -34,18 +34,22 @@ export class BaseExampleComponent implements OnInit {
   }
 
   public setupTypedocContent(obj: any): void {
+    //console.log(obj);
     this.typedoc_content += `<h2>Component API Reference</h2>
                              <table>
                               <thead>
                                 <tr>
                                   <th>Tag</th>
                                   <th>Type</th>
+                                  <th>Comment</th>
                                 </tr>
                               </thead>`;
     obj.forEach((item) => {
+      var comment = item['comment'] && item['comment']['shortText'] ? item.comment.shortText : "";
       this.typedoc_content += `<tr>
                                  <td>@${item.decorators[0].name}( ) ${item.name}</td>
                                  <td>${item.type.name}</td>
+                                 <td>${comment}</td>
                                </tr>`;
     });
     this.typedoc_content += '</tbody></table>';

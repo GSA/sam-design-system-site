@@ -22,6 +22,7 @@ const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-
 
 
 var files = helpers.getUIKitStructure();
+var staticFiles = helpers.getStaticDirStructure();
 
 
 /**
@@ -31,6 +32,7 @@ const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 const DOCS = files;
+const STATICPAGES = staticFiles;
 const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
   host: HOST,
   port: PORT,
@@ -173,6 +175,7 @@ module.exports = function (env) {
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
         'DOCS': JSON.stringify(DOCS),
+        'STATICPAGES': JSON.stringify(STATICPAGES),
         'process.env': {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),

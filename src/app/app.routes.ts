@@ -4,7 +4,6 @@ import { HomeComponent } from './home';
 //console.log(DOCS);
 
 export const ROUTES: Routes = [
-  { path: '',      component: HomeComponent },
 ];
 
 //add dynamic routes based on structure from src/_docs

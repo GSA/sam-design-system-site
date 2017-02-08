@@ -21,34 +21,65 @@ function isWebpackDevServer() {
 }
 
 
-var target = "src/_docs";//"src/_docs";
 
 var recursiveReadSync = require('recursive-readdir-sync');
 
 function getUIKitStructure(){
-	var files = recursiveReadSync('./'+target);
+  var target = "src/_docs";
+  var regex = /documentation\.md$/;
+  var files = recursiveReadSync('./'+target);
 
 	files = files.filter(function(val){
-	  return val.match(/documentation\.md$/);// /directive\.ts|component\.ts$/
+	  return val.match(regex);
 	});
 	
 	files = files.map(function(val){
 	  var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
-		console.log(link);
-	  var section = link.split("/")[0];
+		//console.log(link);
+	  var section = link.split("/")[0].split("-").map(function(val){
+	    val = val.replace(/^\w/g, l => l.toUpperCase())
+	    return val;
+	  }).join(" ");
 	  var item = link.split("/")[1].split("-").map(function(val){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())
 	    return val;
-	  }).join(" ");//.replace(/\-/g," ");
-	  var itemUnformatted = link.split("/")[1];
+	  }).join(" ");
 	  return {
 	    link: link,
 	    section: section,
-	    item: item,
-	    itemUnformatted: itemUnformatted
+	    item: item
 	  };
+  });
+  return files;
+}
+function getStaticDirStructure(){
+  var target = "src/_static";
+  var regex = /\.md$/;
+  var files = recursiveReadSync('./'+target);
+
+	files = files.filter(function(val){
+	  return val.match(regex);
 	});
-	return files;
+	files = files.map(function(val){
+    var filename = val.replace(target,"");
+	  var link = filename.substring(1).replace(/\.md$/,"").toLowerCase().replace(/\s/g,"-");
+	  var section = link.substring(0,link.indexOf("/")).split("-").map(function(val){
+	    val = val.replace(/^\w/g, l => l.toUpperCase())
+	    return val;
+	  }).join(" ");
+	  var item = link.substring(link.lastIndexOf("/")+1).split("-").map(function(val){
+	    val = val.replace(/^\w/g, l => l.toUpperCase())
+	    return val;
+	  }).join(" ");
+	  return {
+      file: val,
+      link: link,
+	    section: section,
+	    item: item
+	  };
+  });
+  //console.log(files);
+  return files;
 }
 
 var root = path.join.bind(path, ROOT);
@@ -58,3 +89,4 @@ exports.hasNpmFlag = hasNpmFlag;
 exports.isWebpackDevServer = isWebpackDevServer;
 exports.root = root;
 exports.getUIKitStructure = getUIKitStructure;
+exports.getStaticDirStructure = getStaticDirStructure;

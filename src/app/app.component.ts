@@ -38,15 +38,8 @@ import { DocumentationService } from './services/documentation.service';
       <div class="usa-grid">
         <div class="usa-width-one-fourth">
           <nav sam-sticky [container]="'sticky-target-app'">
-            <ul class="usa-sidenav-list">
-              <li>
-                <a (click)="formControlClick(0)">Overview</a>
-                <ul class="usa-sidenav-sub_list" *ngIf="displayOverviewSublist">
-                  <li *ngFor="let item of dynamicOverviewNav">
-                    <a routerLink="/" fragment="{{item.link}}">{{item.name}}</a>
-                  </li>
-                </ul>
-              </li>
+            <samSidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></samSidenav>
+            <!--ul class="usa-sidenav-list">
               <li>
                 <a (click)="formControlClick(1)">Components</a>
                 <ul class="usa-sidenav-sub_list" *ngIf="displayComponentsSublist" >
@@ -95,7 +88,7 @@ import { DocumentationService } from './services/documentation.service';
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul-->
           </nav>&nbsp;
         </div>
         <div class="usa-width-three-fourths">
@@ -108,7 +101,12 @@ import { DocumentationService } from './services/documentation.service';
 })
 export class AppComponent implements OnInit {
 
+  sidenavConfig = {
+      label: "test",
+      children: [],
+  };
   uikitList = {};
+  staticpagelist = {};
   dynamicOverviewNav = [];
 
   public displayOverviewSublist = false;
@@ -125,7 +123,14 @@ export class AppComponent implements OnInit {
   showUIKitSearchHeader = false;
   constructor(private route: ActivatedRoute, private router: Router,
               private service: DocumentationService) {}
-
+  resolveRoute(path){
+    //console.log("click",path);
+    if(path == "/"){
+      
+    } else {
+      this.router.navigate([path]);
+    }
+  }
   public ngOnInit() {
 
     var two = marked.setOptions({
@@ -154,13 +159,59 @@ export class AppComponent implements OnInit {
     });
 
     //DOCS is a global defined in webpack
+    //console.log(STATICPAGES);
     for(var idx in DOCS){
       if(!this.uikitList[DOCS[idx]['section']]){
-        this.uikitList[DOCS[idx]['section']] = [DOCS[idx]];
+        //this.uikitList[DOCS[idx]['section']] = [DOCS[idx]];
+        this.uikitList[DOCS[idx]['section']] = [{
+          label: DOCS[idx]['item'],
+          route: DOCS[idx]['link']
+        }];
       } else {
-        this.uikitList[DOCS[idx]['section']].push(DOCS[idx]);
+        this.uikitList[DOCS[idx]['section']].push({
+          label: DOCS[idx]['item'],
+          route: DOCS[idx]['link']
+        });
+      }
+      
+    }
+    var x = this.uikitList;
+    var test = Object.keys(this.uikitList).map(function(key){
+      var list = x[key];
+      return {
+        label: key,
+        route: "/",
+        children: list
+      };
+    });
+    //console.log(test);
+    this.sidenavConfig['children'] = test;
+    //STATICPAGES is a global defined in webpack
+    for(var idx in STATICPAGES){
+      if(!this.staticpagelist[STATICPAGES[idx]['section']]){
+        this.staticpagelist[STATICPAGES[idx]['section']] = [{
+          label: STATICPAGES[idx]['item'],
+          route: STATICPAGES[idx]['link']
+        }];
+      } else {
+        this.staticpagelist[STATICPAGES[idx]['section']].push({
+          label: STATICPAGES[idx]['item'],
+          route: STATICPAGES[idx]['link']
+        });
       }
     }
+    var x = this.staticpagelist;
+    var test2 = Object.keys(this.staticpagelist).map(function(key){
+      var list = x[key];
+      return {
+        label: key,
+        route: "/",
+        children: list
+      };
+    });
+    this.sidenavConfig['children'] =  test2.concat(this.sidenavConfig['children']);
+    //console.log(this.sidenavConfig);
+    
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
         this.route.fragment.subscribe ( f => {

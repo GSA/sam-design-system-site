@@ -16,6 +16,7 @@ const SourceMapDevToolPlugin= require('webpack/lib/SourceMapDevToolPlugin');
 const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-plugin-modified.js');
 
 var files = helpers.getUIKitStructure();
+var staticFiles = helpers.getStaticDirStructure();
 console.log('Files array:', files);
 
 /**
@@ -25,6 +26,7 @@ const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 const DOCS = files;
+const STATICPAGES = staticFiles;
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
   host: HOST,
@@ -151,6 +153,7 @@ module.exports = function (options) {
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
         'DOCS': JSON.stringify(DOCS),
+        'STATICPAGES': JSON.stringify(STATICPAGES),
         'process.env': {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),

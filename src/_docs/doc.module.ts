@@ -24,7 +24,7 @@ import { ClickOutsideExampleComponent } from "./directives/click-outside/compone
 import { ButtonExampleComponent } from "./elements/button/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
-import { DateTimeExampleComponent } from "./form-controls/datetime/component-example";
+import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
 import { MultiSelectExampleComponent } from "./form-controls/multiselect/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
 //import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";

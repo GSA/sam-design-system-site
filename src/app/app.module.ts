@@ -25,6 +25,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent,SafeHtmlPipe } from './home';
 
 import { DocModule } from '../_docs/doc.module';
+import { StaticDocModule } from '../_static/staticdoc.module';
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 
 
@@ -48,6 +49,7 @@ const APP_PROVIDERS = [
   ],
   imports: [ // import Angular's modules
     DocModule,
+    StaticDocModule,
     BrowserModule,
     FormsModule,
     HttpModule,

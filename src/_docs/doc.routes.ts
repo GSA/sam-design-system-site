@@ -13,6 +13,7 @@ import { MultiselectDropdownExampleComponent } from "./components/multiselect-dr
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
 import { SearchHeaderExampleComponent } from "./components/search-header/component-example";
+import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
@@ -45,6 +46,7 @@ const map = {
   'components/pagination':PaginationExampleComponent,
   'components/point-of-contact':POCExampleComponent,
   //'components/search-header':SearchHeaderExampleComponent,
+  'components/spinner':SpinnerExampleComponent,
   'components/tabs':TabsExampleComponent,
   'directives/click-outside':ClickOutsideExampleComponent,
   'directives/sticky':StickyExampleComponent,

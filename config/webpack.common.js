@@ -93,7 +93,37 @@ module.exports = function (options) {
     module: {
 
       rules: [
-
+        /*
+         * Font loaders
+         */
+        {
+          test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url-loader?limit=10000&mimetype=application/font-woff"
+        },
+        {
+          test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url-loader?limit=10000&mimetype=application/font-woff"
+        },
+        {
+          test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url-loader?limit=10000&mimetype=application/octet-stream"
+        },
+        {
+          test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "file-loader"
+        },
+        {
+          test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url-loader?limit=10000&mimetype=image/svg+xml"
+        },
+        
+        /* File loader for supporting images
+         */
+        {
+          test: /\.(jpg|png|gif)$/,
+          loader: 'url-loader'
+        },
+        
         /*
          * Typescript loader support for .ts and Angular 2 async routes via .async.ts
          * Replace templateUrl and stylesUrl with require()
@@ -117,12 +147,6 @@ module.exports = function (options) {
             }
           ],
           exclude: [/sam\-ui\-elements\/node_modules/,/\.(spec|e2e)\.ts$/]
-        },
-
-        
-        {
-          test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-          loader: "url-loader?limit=10000&mimetype=image/svg+xml"
         },
 
         /*
@@ -166,13 +190,6 @@ module.exports = function (options) {
           test: /\.html$/,
           use: 'raw-loader',
           exclude: [helpers.root('src/index.html')]
-        },
-
-        /* File loader for supporting images, for example, in CSS files.
-         */
-        {
-          test: /\.(jpg|png|gif)$/,
-          use: 'file-loader'
         },
 
       ],

@@ -13,6 +13,7 @@ import { AlertExampleComponent } from "./components/alert/component-example";
 import { AlphabetSelectorExampleComponent,TestService } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
+import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
 import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
@@ -68,6 +69,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     TextareaExampleComponent,
     TimeExampleComponent,
     HeaderExampleComponent,
+    HeaderMenuExampleComponent,
     LabelExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,

@@ -141,3 +141,21 @@ hr {
 .usa-color-error {
   background-color: $color-secondary-lightest;
 }
+
+button.usa-button-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: $iae-color-primary;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+}
+
+button.usa-button-link:hover {
+  background: none;
+  color: $iae-color-primary;
+  text-decoration: underline;
+}

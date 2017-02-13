@@ -6,6 +6,8 @@ import { AccordionExampleComponent } from "./components/accordion/component-exam
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { AlphabetSelectorExampleComponent } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
+import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
+import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
@@ -40,6 +42,8 @@ const map = {
   'components/alert':AlertExampleComponent,
   'components/alphabet-selector':AlphabetSelectorExampleComponent,
   'components/banner':BannerExampleComponent,
+  'components/collapsible':CollapsibleExampleComponent,
+  'components/filters-container':FiltersContainerExampleComponent,
   'components/header':HeaderExampleComponent,
   'components/header-menu':HeaderMenuExampleComponent,
   'components/label':LabelExampleComponent,

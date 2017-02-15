@@ -1,3 +1,3 @@
 # Filters Container
 
-Hello 2
+Provides a container to add in multiple Collapsible components

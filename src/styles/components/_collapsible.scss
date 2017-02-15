@@ -1,0 +1,30 @@
+div.collapsible {
+  border: 1px solid;
+}
+
+div.collapsible div.collapsible-header {
+  clear: both;
+  margin: 0;
+  padding: 1.5rem;
+  width: 100%;
+}
+div.collapsible div.collapsible-header.bottomBorder {
+  border-bottom: 1px solid;
+}
+div.collapsible div.collapsible-header .label {
+  color: $color-base;
+  font-weight: 700;
+}
+div.collapsible div.collapsible-header .expand-hide {
+  float: right;
+}
+
+div.collapsible div.collapsible-content {
+  padding: 1.5rem;
+}
+div.collapsible div.collapsible-content.closed {
+  display: none;
+}
+div.collapsible div.collapsible-content.open {
+  display: block;
+}

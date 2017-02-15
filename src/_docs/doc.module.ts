@@ -12,6 +12,8 @@ import { AccordionExampleComponent } from "./components/accordion/component-exam
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { AlphabetSelectorExampleComponent,TestService } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
+import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
+import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
@@ -83,6 +85,8 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
     DocTemplateComponent,
+    CollapsibleExampleComponent,
+    FiltersContainerExampleComponent,
     InterfacesComponent
   ],
   imports: [

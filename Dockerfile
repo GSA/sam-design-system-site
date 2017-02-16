@@ -6,9 +6,8 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY . /usr/src/app/
-RUN ls
-RUN ls sam-ui-elements
-RUN ls sam-ui-elements/config
+RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/GS-IAE-Npm
+
 RUN npm install
 
 EXPOSE 8080

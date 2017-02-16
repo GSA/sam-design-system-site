@@ -1,4 +1,5 @@
 #!groovy
-//nodeJS Jenkinsfile 
+//nodeJS Jenkinsfile
 
-fileLoader.fromGit('nodejs-pipeline', 'git@github.helix.gsa.gov:GSA-IAE/pipeline.git', 'master', 'helix github', '')
+def pipeline = fileLoader.fromGit('java-pipeline', 'https://github.helix.gsa.gov/GSA-IAE/pipeline.git', 'master', 'ghiaeapps', '')
+pipeline.start()

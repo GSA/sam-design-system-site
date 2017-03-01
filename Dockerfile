@@ -1,4 +1,4 @@
-FROM FROM dtr-11111111.prod-iae.bsp.gsa.gov/docker-datacenter/node:latest
+FROM dtr-11111111.prod-iae.bsp.gsa.gov/docker-datacenter/node:latest
 
 # Create app directory
 RUN mkdir -p /usr/src/app

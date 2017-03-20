@@ -21,12 +21,13 @@ import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
-import { SearchHeaderExampleComponent } from "./components/search-header/component-example";
+//import { SearchHeaderExampleComponent } from "./components/search-header/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
+import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
@@ -87,6 +88,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     DocTemplateComponent,
     CollapsibleExampleComponent,
     FiltersContainerExampleComponent,
+    AutocompleteExampleComponent,
     InterfacesComponent
   ],
   imports: [

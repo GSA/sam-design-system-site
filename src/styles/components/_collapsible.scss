@@ -9,9 +9,18 @@ div.sam-collapsible div.collapsible-header {
 div.sam-collapsible div.collapsible-header .label {
   color: $color-base;
   font-weight: 700;
+  width: 90%;
+  line-height: 1;
+  margin-bottom: 0;
+  display: inline-block;
 }
 div.sam-collapsible div.collapsible-header .expand-hide {
   float: right;
+}
+
+div.sam-collapsible div.collapsible-content{
+  padding: .5rem 1.5rem;
+  position: relative;
 }
 
 div.sam-collapsible div.collapsible-content.closed {
@@ -19,4 +28,56 @@ div.sam-collapsible div.collapsible-content.closed {
 }
 div.sam-collapsible div.collapsible-content.open {
   display: block;
+}
+
+// Content inside collapsible
+div.sam-collapsible legend{
+  font-size: 1.9rem;
+  line-height: 2rem;
+  width: 100%
+}
+
+div.sam-collapsible .label-wrapper label{
+  margin-top: 0;
+}
+// Agency picker
+// Need to create another version of agency picker
+agencypicker .organization-container > label{
+  margin-top: 1rem;
+}
+div.sam-collapsible .usa-agency-picker-dropdown-area{
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  .usa-agency-picker-search-input-wrapper,
+  .usa-agency-picker-autocomplete{
+    width: calc(100% - 30px);
+  }
+  .usa-agency-picker-icon-area{
+    margin: 0px 0px 0 3px;
+  }
+  .usa-agency-picker-browse-toggle-area{
+    line-height: normal;
+  }
+  select{
+    padding-right: 3rem;
+  }
+  .usa-agency-picker-button-area{
+    float: none;
+    & > button:first-child {
+      margin-left: 0;
+    }
+  }
+}
+div.sam-collapsible .usa-agency-picker-readonly-area{
+  margin-top: 30px;
+  ul{
+    margin-top: 15px;
+  }
+}
+div.sam-collapsible .usa-agency-picker-readonly-area:before{
+  content: "Selected";
+  display: block;
+  margin-top: -40px;
+  margin-left: -10px;
 }

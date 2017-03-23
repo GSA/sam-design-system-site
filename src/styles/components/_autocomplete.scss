@@ -1,0 +1,33 @@
+.isSelected {
+  background-color: $iae-color-primary;
+  color: $color-white;
+}
+
+.sam-autocomplete {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+
+  #sam-autocomplete-results {
+    width: 100%;
+    max-height: 12rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1rem 0.7em;
+    margin: 0.2em 0;
+    border: 1px solid $color-black;
+    position: relative;
+    background: $color-white;
+
+    div {
+      position: relative;
+      max-height: 100%;
+      overflow: hidden;
+      
+      &:hover {
+        background-color: $iae-color-primary;
+        color: $color-white;
+      }
+    }
+  }
+}

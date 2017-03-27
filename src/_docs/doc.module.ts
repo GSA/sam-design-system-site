@@ -38,6 +38,7 @@ import { SelectExampleComponent } from "./form-controls/select/component-example
 import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
 import { TimeExampleComponent } from "./form-controls/time/component-example";
+import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
@@ -89,6 +90,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     CollapsibleExampleComponent,
     FiltersContainerExampleComponent,
     AutocompleteExampleComponent,
+    ToggleSwitchExampleComponent,
     InterfacesComponent
   ],
   imports: [

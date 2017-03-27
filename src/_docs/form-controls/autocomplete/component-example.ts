@@ -11,7 +11,16 @@ var code_example = `<div class="usa-grid-full">
       [(ngModel)]="value"
       name="inputname"
       [options]="options"
-      labelText="sample label text">
+      labelText="simple autocomplete">
+    </sam-autocomplete>
+  </div>
+  <div class="usa-width-one-third">
+    <sam-autocomplete
+      [(ngModel)]="value"
+      name="inputname"
+      [config]="kv_config"
+      [options]="kv_options"
+      labelText="key/value autocomplete">
     </sam-autocomplete>
   </div>
   <div class="usa-width-one-third">
@@ -43,6 +52,28 @@ var code_example = `<div class="usa-grid-full">
 export class AutocompleteExampleComponent extends BaseExampleComponent implements OnInit {
 	value = "apple";
   options = ["apple","orange","grape","banana","pineapple"];
+  kv_config = {
+    keyValueConfig: {
+      keyProperty: 'code',
+      valueProperty: 'value'
+    }
+  };
+  kv_options = [{
+    code:"code01",
+    value:"apple"
+  },{
+    code:"code02",
+    value:"orange"
+  },{
+    code:"code03",
+    value:"grape"
+  },{
+    code:"code04",
+    value:"banana"
+  },{
+    code:"code05",
+    value:"pineapple"
+  }];
   stateValue = "";
   countryValue = "";
 	typedoc_target = "SamAutocompleteComponent";

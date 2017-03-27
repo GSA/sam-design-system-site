@@ -1,0 +1,58 @@
+.sam-toggle-switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+
+
+  .switch-input {display:none;}
+
+  .switch-label {
+    position: absolute;
+    cursor: pointer;
+    top: 4px;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    background-color: $color-white;
+    border: 2px solid rgb(17, 46, 81);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .switch-label:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -2px;
+    bottom: -2px;
+    background-color: white;
+    border: 2px solid rgb(17, 46, 81);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .switch-input:checked + .switch-label {
+    background-color: rgb(17, 46, 81);
+  }
+
+  .switch-input:focus + .switch-label {
+    box-shadow: 0 0 1px rgb(17, 46, 81);
+  }
+
+  .switch-input:checked + .switch-label:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  /* Rounded sliders */
+  .switch-label{
+    border-radius: 24px;
+  }
+
+  .switch-label:before {
+    border-radius: 50%;
+  }
+}

@@ -14,10 +14,26 @@ var code_example = `<div class="usa-grid-full">
       labelText="sample label text">
     </sam-autocomplete>
   </div>
+  <div class="usa-width-one-third">
+    <sam-autocomplete
+      [(ngModel)]="stateValue"
+      name="inputname"
+      state
+      labelText="State">
+    </sam-autocomplete>
+  </div>
+  <div class="usa-width-one-third">
+    <sam-autocomplete
+      [(ngModel)]="countryValue"
+      name="inputname"
+      country
+      labelText="Country">
+    </sam-autocomplete>
+  </div>
 </div>`;
 
 @Component({
-	selector: 'doc-checkbox',
+	selector: 'doc-autocomplete',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 `+code_example+`
@@ -27,6 +43,8 @@ var code_example = `<div class="usa-grid-full">
 export class AutocompleteExampleComponent extends BaseExampleComponent implements OnInit {
 	value = "apple";
   options = ["apple","orange","grape","banana","pineapple"];
+  stateValue = "";
+  countryValue = "";
 	typedoc_target = "SamAutocompleteComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");

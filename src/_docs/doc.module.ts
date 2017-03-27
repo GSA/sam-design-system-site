@@ -13,9 +13,11 @@ import { AlertExampleComponent } from "./components/alert/component-example";
 import { AlphabetSelectorExampleComponent,TestService } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
+import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
+import { HistoryExampleComponent } from "./components/history/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
 import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
@@ -38,6 +40,7 @@ import { SelectExampleComponent } from "./form-controls/select/component-example
 import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
 import { TimeExampleComponent } from "./form-controls/time/component-example";
+import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
@@ -89,6 +92,9 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     CollapsibleExampleComponent,
     FiltersContainerExampleComponent,
     AutocompleteExampleComponent,
+    ToggleSwitchExampleComponent,
+    DownloadExampleComponent,
+    HistoryExampleComponent,
     InterfacesComponent
   ],
   imports: [

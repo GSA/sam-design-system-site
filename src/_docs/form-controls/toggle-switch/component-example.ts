@@ -12,7 +12,7 @@ var code_example = `<div class="usa-grid-full">
 </div>`;
 
 @Component({
-	selector: 'doc-checkbox',
+	selector: 'doc-toggle-switch',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 `+code_example+`

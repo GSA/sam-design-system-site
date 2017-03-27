@@ -1,0 +1,97 @@
+sam-download{
+  .usa-button-small{
+    @extend .usa-button;
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+
+  .download-container{
+    position: relative;
+    .card-header{
+      padding-right: 140px;
+    }
+  }
+
+  .download-container-header{
+    position: relative;
+    .download-button{
+      top: 0px;
+      right: -8px;
+    }
+  }
+
+  .download-button{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+  /* Zebra List */
+  /*============================*/
+  .usa-zebra-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .usa-zebra-list > li{
+    margin-bottom: 0;
+    border-top: 1px solid rgba(204, 204, 204, 0.30);
+  }
+
+  .usa-zebra-list > li:nth-child(even) {
+    background-color: rgba(241, 241, 241, 0.35);
+  }
+
+  .usa-zebra-list > li:hover{
+    background-color: rgba(241, 241, 241, 1);
+    -webkit-transition: background-color 300ms ease-out;
+    -moz-transition: background-color 300ms ease-out;
+    -o-transition: background-color 300ms ease-out;
+    -ms-transition: background-color 300ms ease-out;
+    transition: background-color 300ms ease-out;
+  }
+
+  .usa-zebra-list li a{
+    padding: 8px 14px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .usa-zebra-list li a:hover{
+    text-decoration: underline;
+  }
+
+  /* Download info */
+  /*============================*/
+  .download-info-icon,
+  .download-info-link,
+  .download-info-type{
+    display: inline-block;
+  }
+
+  .download-info-icon{
+    width: 28px;
+    vertical-align: top;
+    padding-top: 8px;
+    padding-left: 15px;
+  }
+  .download-info-link{
+    width: 75%;
+    a{
+      padding-left: 0;
+    }
+    sup{
+      font-weight: 700;
+    }
+  }
+  .download-info-type{
+    width: 18%;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5b616b;
+  }
+}

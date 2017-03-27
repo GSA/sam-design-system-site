@@ -33,7 +33,7 @@ var code_example = `<div class="usa-grid-full">
 </div>`;
 
 @Component({
-	selector: 'doc-checkbox',
+	selector: 'doc-autocomplete',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 `+code_example+`

@@ -7,9 +7,11 @@ import { AlertExampleComponent } from "./components/alert/component-example";
 import { AlphabetSelectorExampleComponent } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
+import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
+import { HistoryExampleComponent } from "./components/history/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
 import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
@@ -45,9 +47,11 @@ const map = {
   'components/alphabet-selector':AlphabetSelectorExampleComponent,
   'components/banner':BannerExampleComponent,
   'components/collapsible':CollapsibleExampleComponent,
+  'components/download':DownloadExampleComponent,
   'components/filters-container':FiltersContainerExampleComponent,
   'components/header':HeaderExampleComponent,
   'components/header-menu':HeaderMenuExampleComponent,
+  'components/history':HistoryExampleComponent,
   'components/label':LabelExampleComponent,
   'components/modal':ModalExampleComponent,
   'components/multiselect-dropdown':MultiselectDropdownExampleComponent,

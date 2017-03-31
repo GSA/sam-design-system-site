@@ -16,7 +16,7 @@ var code_example = `<div class="usa-grid-full">
   </div>
   <div class="usa-width-one-third">
     <sam-autocomplete
-      [(ngModel)]="value"
+      [(ngModel)]="value2"
       name="inputname"
       [config]="kv_config"
       [options]="kv_options"
@@ -51,6 +51,7 @@ var code_example = `<div class="usa-grid-full">
 })
 export class AutocompleteExampleComponent extends BaseExampleComponent implements OnInit {
 	value = "apple";
+  value2 = { "code": "code05", "value": "pineapple" };
   options = ["apple","orange","grape","banana","pineapple"];
   kv_config = {
     keyValueConfig: {

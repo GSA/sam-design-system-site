@@ -34,6 +34,8 @@ function getUIKitStructure(){
 	});
 	
 	files = files.map(function(val){
+		val = val.replace(/\\\\/g,"/");
+		val = val.replace(/\\/g,"/");
 	  var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');
 		//console.log(link);
 	  var section = link.split("/")[0].split("-").map(function(val){
@@ -61,6 +63,8 @@ function getStaticDirStructure(){
 	  return val.match(regex);
 	});
 	files = files.map(function(val){
+		val = val.replace(/\\\\/g,"/");
+		val = val.replace(/\\/g,"/");
     var filename = val.replace(target,"");
 	  var link = filename.substring(1).replace(/\.md$/,"").toLowerCase().replace(/\s/g,"-");
 	  var section = link.substring(0,link.indexOf("/")).split("-").map(function(val){

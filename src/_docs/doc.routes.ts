@@ -38,6 +38,7 @@ import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/comp
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { InterfacesComponent } from "./data-structures/interfaces/interfaces.component";
+import { ListDisplayExampleComponent } from './form-controls/list-display/component-example';
 
 //manual map, components that don't have documentation set up yet get pointed to the PlaceHolderExampleComponent
 const map = {
@@ -69,6 +70,7 @@ const map = {
   'form-controls/date-time':DateTimeExampleComponent,
   'form-controls/multiselect':MultiSelectExampleComponent,
   'form-controls/radiobutton':RadioExampleComponent,
+  'form-controls/list-display': ListDisplayExampleComponent,
   //'form-controls/searchbar':SearchbarExampleComponent,
   'form-controls/select':SelectExampleComponent,
   'form-controls/text':TextExampleComponent,

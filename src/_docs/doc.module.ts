@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from "./baseexample.component";
 import { PlaceHolderExampleComponent } from "./placeholder.component";
@@ -44,6 +45,7 @@ import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/comp
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
+import { ListDisplayExampleComponent } from './form-controls/list-display/component-example';
 
 
 import { DocTemplateComponent } from "./doc.template";
@@ -95,10 +97,12 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     ToggleSwitchExampleComponent,
     DownloadExampleComponent,
     HistoryExampleComponent,
-    InterfacesComponent
+    InterfacesComponent,
+    ListDisplayExampleComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     FormsModule,
     SamUIKitModule,
     routing

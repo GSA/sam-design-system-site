@@ -6,23 +6,23 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `
-  <div class="usa-grid'>
-    <div class="usa-width-one-whole">String</div>
+  <div class="usa-grid">
+    <h2 class="usa-width-one-whole">String</h2>
     <div class="usa-width-one-whole">
-      <sam-list-display [newValue]="newValue" [(ngModel)="list">
+      <sam-list-display [newValue]="newValue" [(ngModel)]="list">
         <input (change)="addToList($event.target.value)">
       </sam-list-display>
       <br />
       Output: {{list}}
     </div>
-    <div class="usa-width-one-whole">Key/Value Pair</div>
+    <h2 class="usa-width-one-whole">Key/Value Pair</h2>
     <div class="usa-width-one-whole">
       <sam-list-display [newValue]="newValueKV" [(ngModel)]="listKV" [config]="config">
         <input (change)="addToListKV($event.target.value)" >
       </sam-list-display>
       <br />
       Output: {{listKV | json}}
-    
+    </div>
   </div>
 `;
 

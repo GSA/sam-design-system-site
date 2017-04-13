@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from "./baseexample.component";
 import { PlaceHolderExampleComponent } from "./placeholder.component";
@@ -101,6 +102,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     FormsModule,
     SamUIKitModule,
     routing

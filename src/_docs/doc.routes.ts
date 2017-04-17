@@ -12,6 +12,7 @@ import { FiltersContainerExampleComponent } from "./components/filters-container
 import { HeaderExampleComponent } from "./components/header/component-example";
 import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
+import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
 import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
@@ -53,6 +54,7 @@ const map = {
   'components/header':HeaderExampleComponent,
   'components/header-menu':HeaderMenuExampleComponent,
   'components/history':HistoryExampleComponent,
+  'components/info-accordion':InfoAccordionExampleComponent,
   'components/label':LabelExampleComponent,
   'components/modal':ModalExampleComponent,
   'components/multiselect-dropdown':MultiselectDropdownExampleComponent,

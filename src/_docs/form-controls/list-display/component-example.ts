@@ -10,7 +10,7 @@ var code_example = `
     <h2 class="usa-width-one-whole">String</h2>
     <div class="usa-width-one-whole">
       <sam-list-display [newValue]="newValue" [(ngModel)]="list">
-        <input (change)="addToList($event.target.value)">
+        <input [ngModel]="yo" (ngModelChange)="addToList($event)" (keydown)="listenForEnter($event)">
       </sam-list-display>
       <br />
       Output: {{list}}
@@ -62,6 +62,16 @@ export class ListDisplayExampleComponent extends BaseExampleComponent implements
   }
   addToListKV(value) {
     this.newValueKV = { key: Date.now() + value, value: value }
+  }
+
+  // Check for enter on input
+  listenForEnter(event) {
+    console.log(event);
+    if (event.code === 'Enter' || event.keyIdentifier === 'Enter') {
+      this.newValue = event.target.value;
+      console.log(this.newValue);
+      console.log(event.target.value);
+    }
   }
 
   // Documentation config

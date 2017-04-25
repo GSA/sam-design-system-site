@@ -7,6 +7,7 @@
       <tr>
         <th>Property</th>
         <th>Type</th>
+        <th>Comment</th>
       </tr>
     </thead>
     <tbody>
@@ -16,7 +17,11 @@
           <span *ngIf="property.flags?.isOptional !== true"><em>(required)</em></span>
         </td>
         <td>
-          {{property.type.name}}<span *ngIf="property.type.isArray">[]</span>
+          <ng-container *ngIf="!property.type.types">{{property.type.name}}<span *ngIf="property.type.isArray">[]</span></ng-container>
+          <ng-container *ngIf="property.type.types">{{property.type.types}}</ng-container>
+        </td>
+        <td>
+          <ng-container *ngIf="property.comment && property.comment.shortText">{{property.comment.shortText}}</ng-container>
         </td>
       </tr>
     </tbody>

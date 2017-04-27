@@ -23,7 +23,23 @@ export class InterfacesComponent {
   constructor(public service: DocumentationService) {
     this.service.getInterfaces()
     .subscribe(
-      (data) => { this.interfaces = data; },
+      (data) => { 
+        for(let idx in data){
+          data[idx]['children'] = data[idx]['children'].map(function(obj){
+            if(obj.type.types){
+              obj.type.types = obj.type.types.map(function(el){ 
+                if(el.name){
+                  return el.name;
+                } else if (el.value){
+                  return '"'+el.value+'"';
+                }
+              }).join(",");
+            }
+            return obj;
+          });
+        }
+        this.interfaces = data; 
+      },
       (error) => { throw new Error(error); }
     );
   }

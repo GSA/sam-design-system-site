@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samNameEntry [model]="nameModel" [prefix]="'ui-kit'"></samNameEntry>`;
+var code_example = `<sam-name-entry [model]="nameModel" [prefix]="'ui-kit'"></sam-name-entry>`;
 
 @Component({
 	selector: 'doc-name-entry',

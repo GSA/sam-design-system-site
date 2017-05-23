@@ -5,10 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samNumber 
+var code_example = `<sam-number 
   name="sample"
   [(ngModel)]="numValue">
-</samNumber>`;
+</sam-number>`;
 
 @Component({
 	selector: 'doc-number',

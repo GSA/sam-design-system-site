@@ -7,30 +7,30 @@ import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `<div class="usa-width-one-whole">
   <div class="usa-width-one-fourth">
-    <samButton [buttonId]="'defaultBtn'" [buttonText]="'Default'" [buttonType]="btnType"></samButton>
+    <sam-button [buttonId]="'defaultBtn'" [buttonText]="'Default'" [buttonType]="btnType"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <samButton [buttonId]="'altBtn'" [buttonText]="'Alt'" [buttonType]="'alt'"></samButton>
+    <sam-button [buttonId]="'altBtn'" [buttonText]="'Alt'" [buttonType]="'alt'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <samButton [buttonId]="'secondaryBtn'" [buttonText]="'Secondary'" [buttonType]="'secondary'"></samButton>
+    <sam-button [buttonId]="'secondaryBtn'" [buttonText]="'Secondary'" [buttonType]="'secondary'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <samButton [buttonId]="'grayBtn'" [buttonText]="'Gray'" [buttonType]="'gray'"></samButton>
+    <sam-button [buttonId]="'grayBtn'" [buttonText]="'Gray'" [buttonType]="'gray'"></sam-button>
   </div>
 </div>
 <div class="usa-width-one-whole">
   <div class="usa-width-one-fourth">
-    <samButton [buttonId]="'outlineBtn'" [buttonText]="'Outline'" [buttonType]="'outline'"></samButton>
+    <sam-button [buttonId]="'outlineBtn'" [buttonText]="'Outline'" [buttonType]="'outline'"></sam-button>
   </div>
   <div class="usa-width-one-fourth" style="background:#323a45;text-align:center;">
-    <samButton [buttonId]="'invertedBtn'" [buttonText]="'Inverted'" [buttonType]="'inverted'"></samButton>
+    <sam-button [buttonId]="'invertedBtn'" [buttonText]="'Inverted'" [buttonType]="'inverted'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <samButton [buttonId]="'disabledBtn'" [buttonText]="'Disabled'" [buttonType]="'disabled'"></samButton>
+    <sam-button [buttonId]="'disabledBtn'" [buttonText]="'Disabled'" [buttonType]="'disabled'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <samButton [buttonId]="'bigBtn'" [buttonText]="'Big'" [buttonType]="'big'"></samButton>
+    <sam-button [buttonId]="'bigBtn'" [buttonText]="'Big'" [buttonType]="'big'"></sam-button>
   </div>
 </div>`;
 

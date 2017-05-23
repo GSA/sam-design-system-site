@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samCheckbox
+var code_example = `<sam-checkbox
   [(model)]="checkboxModel"
   [name]="checkboxConfig.name"
   [options]="checkboxConfig.options"
@@ -13,7 +13,7 @@ var code_example = `<samCheckbox
   [hint]="checkboxConfig.hint"
   [errorMessage]="checkboxConfig.errorMessage"
   [hasSelectAll]="checkboxConfig.hasSelectAll">
-</samCheckbox>`;
+</sam-checkbox>`;
 
 @Component({
 	selector: 'doc-checkbox',

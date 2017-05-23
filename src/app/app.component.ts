@@ -22,7 +22,7 @@ import { DocumentationService } from './services/documentation.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   template: `
-    <samBanner *ngIf="showBanner"></samBanner>
+    <sam-banner *ngIf="showBanner"></sam-banner>
     <header *ngIf="showHeader" class="usa-header site-header">
       <div class="usa-navbar site-header-navbar">
         <div class="usa-logo site-logo" id="logo">
@@ -32,13 +32,13 @@ import { DocumentationService } from './services/documentation.service';
         </div>
       </div>
     </header>
-    <samHeader *ngIf="showUIKitHeader"></samHeader>
+    <sam-header></sam-header>
     <!--samSearchHeader *ngIf="showUIKitSearchHeader"></samSearchHeader-->
     <main class="sticky-target-app">
       <div class="usa-grid">
         <aside class="usa-width-one-fourth">
           <nav sam-sticky [limit]="1200" [container]="'sticky-target-app'">
-            <samSidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></samSidenav>
+            <sam-sidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></sam-sidenav>
           </nav>&nbsp;
         </aside>
         <div class="usa-width-three-fourths">

@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samLabel [labelType]="'big'" [labelText]="'Big Label'"></samLabel>`;
+var code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></sam-label>`;
 
 @Component({
 	selector: 'doc-label',

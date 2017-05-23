@@ -5,14 +5,14 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samText
+var code_example = `<sam-text
   [(ngModel)]="textModel"
   [name]="textConfig.name"
   [label]="textConfig.label"
   [hint]="textConfig.hint"
   [errorMessage]="textConfig.errorMessage"
   [disabled]="textConfig.disabled">
-</samText>`;
+</sam-text>`;
 
 @Component({
 	selector: 'doc-text',

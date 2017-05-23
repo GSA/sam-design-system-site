@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<input samTabOutside (tabOutside)="tabHandler($event)" /> 
+var code_example = `<input sam-tab-outside (tabOutside)="tabHandler($event)" /> 
 <p>{{ tabAway }}</p>
 <button (click)="reset()">reset</button>`;
 

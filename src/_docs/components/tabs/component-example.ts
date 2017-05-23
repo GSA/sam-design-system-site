@@ -6,12 +6,12 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `<samTabs (currentSelectedTab)="currentTabSelected($event)">
-  <samTab tabTitle="Opportunity" (tabSelected)="tabSelected($event)">
+  <sam-tab tabTitle="Opportunity" (tabSelected)="tabSelected($event)">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa rerum nemo officia nam atque nulla tempore explicabo, at voluptatem omnis ad, possimus. Odio, ex, nostrum. Pariatur tempore, accusamus deleniti magnam!
-  </samTab>
-  <samTab tabTitle="Assistance" (tabSelected)="tabSelected($event)">
+  </sam-tab>
+  <sam-tab tabTitle="Assistance" (tabSelected)="tabSelected($event)">
     Lorem ipsum dolor sit amet. Doloribus similique ea quam laudantium, cum ducimus labore natus dicta excepturi nam voluptas ut placeat eum esse, beatae rem. Tempore expedita, nostrum.
-  </samTab>
+  </sam-tab>
 </samTabs>`;
 
 @Component({

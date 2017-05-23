@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samMultiSelect [options]="types.options"></samMultiSelect>`;
+var code_example = `<sam-multiselect [options]="types.options"></sam-multiselect>`;
 
 @Component({
 	selector: 'doc-multiselect',

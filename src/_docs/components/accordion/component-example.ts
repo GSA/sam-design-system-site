@@ -15,23 +15,23 @@ import { BaseExampleComponent } from '../../baseexample.component';
 var code_example = `<div class="usa-width-one-whole">
   <h3>Accordions without border</h3>
   <samAccordion>
-    <samAccordionSection headerText="Section title 1" name="aria-friendly-section-name">
+    <sam-accordion-section headerText="Section title 1" name="aria-friendly-section-name">
       <a href>A link</a>
-    </samAccordionSection>
-    <samAccordionSection headerText="Section title 2" name="aria-friendly-section-name-2">
+    </sam-accordion-section>
+    <sam-accordion-section headerText="Section title 2" name="aria-friendly-section-name-2">
       <a href>A second link</a>
-    </samAccordionSection>
+    </sam-accordion-section>
   </samAccordion>
 </div>
 <div class="usa-width-one-whole">
   <h3>Accordions with border, and initial selected tab</h3>
   <samAccordion [expandIndex]="1" [bordered]="true">
-    <samAccordionSection headerText="Section title 1" name="aria-friendly-section-name">
+    <sam-accordion-section headerText="Section title 1" name="aria-friendly-section-name">
       <a href>A link</a>
-    </samAccordionSection>
-    <samAccordionSection headerText="Section title 2" name="aria-friendly-section-name-2">
+    </sam-accordion-section>
+    <sam-accordion-section headerText="Section title 2" name="aria-friendly-section-name-2">
       <a href>A second link</a>
-    </samAccordionSection>
+    </sam-accordion-section>
   </samAccordion>
 </div>`;
 

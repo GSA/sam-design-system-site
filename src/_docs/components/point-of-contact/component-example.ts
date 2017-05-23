@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samPOC [data]="pointOfContact"></samPOC>`;
+var code_example = `<sam-poc [data]="pointOfContact"></sam-poc>`;
 
 @Component({
 	selector: 'doc-poc',

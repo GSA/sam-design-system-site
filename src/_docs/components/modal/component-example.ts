@@ -6,14 +6,14 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samModal [showClose]="true" #modal1 [title]="modalConfig.title" [type]="'success'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModalClose()">
-</samModal>
-<samModal [showClose]="true" #modal2 [title]="modalConfig.title" [type]="'error'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal2Close()">
-</samModal>
-<samModal [showClose]="true" #modal3 [title]="modalConfig.title" [type]="'warning'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal3Close()">
-</samModal>
-<samModal [showClose]="true" #modal4 [title]="modalConfig.title" [type]="'info'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal4Close()">
-</samModal>
+var code_example = `<sam-modal [showClose]="true" #modal1 [title]="modalConfig.title" [type]="'success'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModalClose()">
+</sam-modal>
+<sam-modal [showClose]="true" #modal2 [title]="modalConfig.title" [type]="'error'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal2Close()">
+</sam-modal>
+<sam-modal [showClose]="true" #modal3 [title]="modalConfig.title" [type]="'warning'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal3Close()">
+</sam-modal>
+<sam-modal [showClose]="true" #modal4 [title]="modalConfig.title" [type]="'info'" [description]="modalConfig.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal4Close()">
+</sam-modal>
 <button (click)="onModalInitClick()">Show Success Modal</button>
 <button (click)="onModalInit2Click()">Show Error Modal</button>
 <button (click)="onModalInit3Click()">Show Warning Modal</button>

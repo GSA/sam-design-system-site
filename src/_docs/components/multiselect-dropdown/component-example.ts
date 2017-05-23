@@ -5,12 +5,12 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samMultiSelectDropdown 
+var code_example = `<sam-multiselect-dropdown 
   [disabled]='alertBeingEdited' 
   [(model)]="filterTypes" 
   [label]="types.label" 
   [options]="types.options" 
-  [name]="'types'"></samMultiSelectDropdown>`;
+  [name]="'types'"></sam-multiselect-dropdown>`;
 
 @Component({
 	selector: 'doc-multiselect-dropdown',

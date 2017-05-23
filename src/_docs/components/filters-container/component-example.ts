@@ -10,7 +10,7 @@ var code_example = `<sam-filters-container>
     <h4>Filter 1</h4>
   </sam-collapsible>
   <sam-collapsible [label]="'Test 2'">
-    <samDate name="example-date" [(value)]='dateModel'></samDate>
+    <sam-date name="example-date" [(value)]='dateModel'></sam-date>
   </sam-collapsible>
   <sam-collapsible label="'Test 3'">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ex aliquam, molestiae tempora. Nihil alias blanditiis excepturi architecto rerum repellendus adipisci ducimus minus, modi porro nostrum repudiandae perferendis placeat et.</p>

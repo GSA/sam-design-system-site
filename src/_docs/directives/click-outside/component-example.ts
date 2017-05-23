@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<button samClickOutside (click)="clickInsideHandler()" (clickOutside)="clickOutsideHandler()">Sample Target</button>`;
+var code_example = `<button sam-click-outside (click)="clickInsideHandler()" (clickOutside)="clickOutsideHandler()">Sample Target</button>`;
 
 @Component({
 	selector: 'doc-click-outside',

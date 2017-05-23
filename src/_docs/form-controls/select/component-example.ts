@@ -5,12 +5,12 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samSelect
+var code_example = `<sam-select
   [(model)]="selectModel"
   [name]="selectConfig.name"
   [options]="selectConfig.options"
   [label]="selectConfig.label">
-</samSelect>`;
+</sam-select>`;
 
 @Component({
 	selector: 'doc-select',

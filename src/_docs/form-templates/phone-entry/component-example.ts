@@ -5,8 +5,8 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samPhoneEntry [phoneNumberTemplate]="'___-___-____'" [(model)]="phoneModel" (emitter)="phoneModelChange($event)"></samPhoneEntry>
-<samPhoneEntry [(model)]="phoneModel2" (emitter)="phoneModel2Change($event)"></samPhoneEntry>`;
+var code_example = `<sam-phone-entry [phoneNumberTemplate]="'___-___-____'" [(model)]="phoneModel" (emitter)="phoneModelChange($event)"></sam-phone-entry>
+<sam-phone-entry [(model)]="phoneModel2" (emitter)="phoneModel2Change($event)"></sam-phone-entry>`;
 
 @Component({
 	selector: 'doc-phone-entry',

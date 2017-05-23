@@ -9,7 +9,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 	selector: 'doc-pagination',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-<samPagination [currentPage]="paginationConfig.currentPage" [totalPages]="paginationConfig.totalPages"></samPagination>
+<sam-pagination [currentPage]="paginationConfig.currentPage" [totalPages]="paginationConfig.totalPages"></sam-pagination>
 </doc-template>
 `
 })

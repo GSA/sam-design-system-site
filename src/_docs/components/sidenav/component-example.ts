@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samSidenav [model]="config"></samSidenav>`;
+var code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
 
 @Component({
 	selector: 'doc-sidenav',

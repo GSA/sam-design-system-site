@@ -27,6 +27,7 @@ import { ClickOutsideExampleComponent } from "./directives/click-outside/compone
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
 import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
+import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocomplete-multiselect/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
@@ -72,6 +73,7 @@ const map = {
   'directives/tab-outside':TabOutsideExampleComponent,
   'elements/button':ButtonExampleComponent,
   'form-controls/autocomplete':AutocompleteExampleComponent,
+  'form-controls/autocomplete-multiselect':AutocompleteMultiselectExampleComponent,
   'form-controls/checkbox':CheckboxExampleComponent,
   'form-controls/date':DateExampleComponent,
   'form-controls/date-time':DateTimeExampleComponent,

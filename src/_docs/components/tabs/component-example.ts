@@ -5,14 +5,14 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<samTabs (currentSelectedTab)="currentTabSelected($event)">
+var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
   <sam-tab tabTitle="Opportunity" (tabSelected)="tabSelected($event)">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa rerum nemo officia nam atque nulla tempore explicabo, at voluptatem omnis ad, possimus. Odio, ex, nostrum. Pariatur tempore, accusamus deleniti magnam!
   </sam-tab>
   <sam-tab tabTitle="Assistance" (tabSelected)="tabSelected($event)">
     Lorem ipsum dolor sit amet. Doloribus similique ea quam laudantium, cum ducimus labore natus dicta excepturi nam voluptas ut placeat eum esse, beatae rem. Tempore expedita, nostrum.
   </sam-tab>
-</samTabs>`;
+</sam-tabs>`;
 
 @Component({
 	selector: 'doc-tabs',

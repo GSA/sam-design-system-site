@@ -11,11 +11,11 @@ import {
 <h2>Example</h2>
 <div><ng-content></ng-content></div>
 <hr/>
-<samAccordion [bordered]="true">
+<sam-accordion [bordered]="true">
 <sam-accordion-section headerText="Code Example" name="aria-friendly-section-name">
   <pre><code>{{example}}</code></pre>
 </sam-accordion-section>
-</samAccordion>
+</sam-accordion>
 <div [innerHTML]="typedoc"></div>
 `
 })

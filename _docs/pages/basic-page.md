@@ -1,3 +1,11 @@
+---
+permalink: /pages/basic-page/
+layout: styleguide
+category: Pages
+type: page
+title: Basic Page
+---
+
 #Basic Page
 
 ##Page Header

@@ -6,24 +6,24 @@ type: page
 title: Basic Page
 ---
 
-#Basic Page
+# Basic Page
 
-##Page Header
+## Page Header
 
-###SAM.gov Logo
+### SAM.gov Logo
 
-###Award Data Search
+### Award Data Search
 
-###Main Menu
+### Main Menu
 
-###Sign-Up
+### Sign-Up
 
-###Sign-In
+### Sign-In
 
-##Page Footer
+## Page Footer
 
-##Section Title
+## Section Title
 
-##Page Title
+## Page Title
 
-##Breadcrumbs
+## Breadcrumbs

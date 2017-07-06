@@ -14,27 +14,47 @@
       z-index: 1;
     }
 
-    ul {
-      box-shadow: 1px 1px 5px black;
+    ul.multiselect-parent-list{
+      box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
+      border:1px solid #96c8da;
+      border-width: 0px 1px 1px 1px;
+      border-radius: 0 0 .28571429rem .28571429rem;
       background-color: white;
       z-index: 999;
-
+      overflow: hidden;
       position: absolute;
       width: 100%;
+      margin-bottom: 1rem;
+      max-height: 30rem;
+      overflow-y: scroll;
     }
 
     li {
       position: relative;
-      
+      border-top: 1px solid #eaeaea;
+      font-size: 1.7rem;
+      transition: background-color 0.1s ease;
+      cursor: pointer;
       p {
         margin-bottom: 0;
         padding: 0.7rem 0.7em;
       }
+
+      ul {
+        box-shadow: initial;
+        position: relative;
+      }
     }
 
-    li:hover, li.selected {
+    li.category-item:hover, li.category-item.selected, 
+    li.category-name.selectable:hover, li.category-name.selectable.selected {
      background-color: #0071bc;
      color: white;
+    }
+
+    li.category-name {
+      font-weight: 600;
+      padding: 0.7rem 0.7em;
     }
 
     label { 
@@ -46,41 +66,46 @@
 
     .sam-autocomplete-multiselect-input {
       width: 100%;
-      padding: 0.7rem 0.7em;
+      padding: 0.7rem 0.7rem;
       border: 1px solid black;
       vertical-align: middle;
-
+      transition: all 0.4s ease;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
 
-      * {
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
+      .sam-ui.label{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        padding-right: 25px;
+        .label{
+          span{
+            font-weight: 400;
+          }
+        }
+        .icon{
+          position: absolute;
+          top: 8px;
+          right: 8px;
+        }
       }
-
-      span.selected {
-        background-color: #d6d7d9;
-        margin-right: .7em;
-        padding: 0 .5em;
-        cursor: pointer;
+      
+      &.active{
+        border:1px solid #96c8da;
+        border-bottom:1px solid #fff;
       }
 
       textarea {
         width: initial;
-        flex-grow: 1;
-
+        align-self: center;
         height: 100%;
-
         padding: 0;
-        margin: 0.3rem;
-
         vertical-align: middle;
-
         resize: none;
         border: 0;
         outline: none;
-        box-shadow: none;
+        box-shadow: none;  
       }
     }
   }

@@ -1,0 +1,132 @@
+.assistance-listing-operations{
+
+  .usa-alert{
+    width: 100%;
+  }
+
+  .usa-form-hint{
+    max-width: 46rem;
+    display: block;
+  }
+
+  .sam-list-input .label-wrapper, .usa-form-hint-showmore-toggler{
+    max-width: 460px;
+  }
+
+  sam-agency-picker .organization-container {
+    max-width: 480px;
+  }
+
+  .sticky-label{
+    color: #a6a6a6;
+    letter-spacing: -0.3px;
+    font-size: 1.6rem;
+  }
+
+  .disabled{
+    color: #aeb0b5
+  }
+
+  legend{
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+    .usa-additional_text{
+      //padding-left: 315px;
+      padding-left: 214px;
+    }
+  }
+
+  .code-box{
+    float: left;
+  }
+
+  .code-separator{
+    float: left;
+    padding: 12px 5px;
+  }
+  .fal-obligations-label {
+    font-weight: bold;
+    color: black;
+    font-size:30px;
+    margin-top: 10px;
+    margin-bottom: 1em;
+  }
+
+  .fal-label {
+    font-weight: bold;
+    color: black;
+    font-size:18px;
+    margin-top: 2em;
+    margin-bottom: 0em;
+  }
+
+  .text-radio-padding {
+    padding-left: 20px;
+  }
+  .sam-autocomplete-width > .sam-autocomplete {
+    max-width: 46rem;
+  }
+
+  label[for=use-restrictions-textarea0]
+  {
+    margin-top: 0;
+  }
+  label[for=use-Discretionary-Funds-textarea0]
+  {
+    margin-top: 0;
+  }
+  label[for=use-Loan-Terms-textarea0]
+  {
+    margin-top: 0;
+  }
+  .sam-ui.celled.table .amend-table-col{
+    padding-left:40px;
+  }
+
+  .start-date {
+    width: 35%;
+    float: left;
+  }
+
+  .end-date {
+    width: 65%;
+    float: right;
+  }
+  .assistance-listing-change-request {
+    display: block;
+    margin: auto;
+    width: 50%;
+    .program-details{
+      background-color: #E8E8E8;
+    }
+    .program-details .content{
+      padding: 2px 15px 2px 15px;
+    }
+    .program-details .content > span {
+      font-weight: bold;
+    }
+    .cb-request .usa-fieldset-inputs{
+      display: inline;
+    }
+
+  }
+
+}
+.requestLink{
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+.section-pristine {
+  color: gray;
+}
+
+.section-updated {
+  color: green;
+}
+
+.section-invalid {
+  color: red;
+}

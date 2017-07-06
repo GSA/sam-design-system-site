@@ -32,7 +32,6 @@ import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocom
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
-import { MultiSelectExampleComponent } from "./form-controls/multiselect/component-example";
 import { NumberExampleComponent } from "./form-controls/number/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
 //import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
@@ -79,7 +78,6 @@ const map = {
   'form-controls/checkbox':CheckboxExampleComponent,
   'form-controls/date':DateExampleComponent,
   'form-controls/date-time':DateTimeExampleComponent,
-  'form-controls/multiselect':MultiSelectExampleComponent,
   'form-controls/number':NumberExampleComponent,
   'form-controls/radiobutton':RadioExampleComponent,
   'form-controls/list-display': ListDisplayExampleComponent,

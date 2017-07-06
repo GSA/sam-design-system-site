@@ -1,0 +1,48 @@
+.organization-detail{
+
+  .org-logo-container{
+    display: inline-block;
+    width: auto;
+  }
+
+  .org-logo-image{
+    padding: 5px;
+    border: 2px black solid;
+    opacity: 0.6;
+  }
+
+  .org-logo-insert-icon{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 180%;
+  }
+
+  .org-edit-input{
+    height: 36px;
+  }
+
+  .org-type-select{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  .org-detail-expand-link{
+    text-decoration: underline;
+  }
+
+  .org-detail-expand-link:hover{
+    cursor: pointer;
+  }
+
+  .org-detail-alert-message{
+    position: absolute;
+    width: 450px;
+    right: 0;
+    bottom: 0;
+  }
+}

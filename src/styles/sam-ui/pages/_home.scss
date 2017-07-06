@@ -1,0 +1,112 @@
+/*styles for home content only*/
+home {
+  select {
+    margin: 0;
+  }
+
+  /*Topic image style in browse topic div*/
+  .topic-image-link:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+  }
+
+  .topic-detail {
+    border: 1px #aeb0b5 solid;
+    padding: 6px;
+  }
+
+  .topic-div-marginCenter {
+    margin: 0 25%;
+  }
+
+  .tri-div {
+    position: absolute;
+    top: 20px;
+  }
+
+  .tri-down {
+    position: relative;
+
+    border-bottom: 1px solid #aeb0b5;
+    background: #fff;
+  }
+
+  /* Required for Down Triangle */
+  .tri-down:before, .tri-down:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+  }
+
+  /* Stroke */
+  .tri-down:before {
+    bottom: -16px;
+    left: 105px;
+
+    /* If 1px darken stroke slightly */
+    border-top-color: #aeb0b5;
+    border-width: 16px;
+  }
+
+  /* Fill */
+  .tri-down:after {
+    bottom: -15px;
+    left: 106px;
+    border-top-color: #fff;
+    border-width: 15px;
+  }
+
+  .no-tri-down {
+    position: relative;
+    border-bottom: 1px solid #aeb0b5;
+    background: #fff;
+  }
+
+  /*vertical line style between the brose topic div and get started div*/
+  .vertical-line {
+    position: relative;
+  }
+  .vertical-line:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    border-right: 1px solid #000000;
+    top: 3%;
+    bottom: 3%;
+  }
+
+  .topic-title{
+    font-size: 14px;
+  }
+
+  .topic-title:hover,.dismiss-detail:hover{
+    cursor: pointer;
+  }
+
+  .topic-img-link{
+    margin-left: 33.33%;
+  }
+
+  .register-div{
+    position: absolute;
+    top: 30%;
+    width: 80%;
+  }
+
+  .wrap-content-div{
+    width: auto;
+  }
+
+  .row{
+    display: flex;
+  }
+
+}
+

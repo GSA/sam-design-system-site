@@ -61,11 +61,11 @@
   vertical-align: middle;
 }
 
-hr {
-  color: #888888;
-  background-color: #888888;
-  height: .5px;
-}
+// hr {
+//   color: #888888;
+//   background-color: #888888;
+//   height: .5px;
+// }
 
 .centered {
   text-align: center;
@@ -114,8 +114,6 @@ hr {
   float: right;
 }
 
-
-
 // ensure button has a big enough hit box
 .usa-button-icon {
   height: 44px;
@@ -158,4 +156,8 @@ button.usa-button-link:hover {
   background: none;
   color: $iae-color-primary;
   text-decoration: underline;
+}
+
+.pointer-hover:hover {
+  cursor: pointer;
 }

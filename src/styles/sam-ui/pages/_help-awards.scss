@@ -1,0 +1,81 @@
+.awards-data{
+  .awards-black-border{
+    border: 2px solid black;
+  }
+
+  .awards-data-label{
+    border: 2px solid $color-primary;
+    padding: 0 10px;
+    color: $color-primary;
+    display: inline-block;
+  }
+
+  sam-accordion-section li:first-child{
+    margin: 0 ;
+    border-top: 2px solid black;
+  }
+
+  samAccordion ul{
+    margin-top: 0;
+  }
+
+  sam-multiselect-dropdown{
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    z-index: 100;
+  }
+
+  sam-multiselect-dropdown .dropdown-title{
+    opacity: 0;
+    width: 200px;
+  }
+
+  .edit-image-icon{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+  }
+
+  .edit-image-icon:hover, .fa-times:hover{
+    cursor: pointer;
+  }
+
+  .awards-terms-input{
+    height: 30px;
+  }
+
+  .awards-content-input{
+    width: 100%;
+    max-width: 800px;
+
+  }
+
+  .awards-splash-input{
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .awards-large-icon{
+    font-size: 140%;
+  }
+
+  .awards-mid-icon{
+    font-size: 110%;
+  }
+
+  .awards-terms-div{
+    min-height: 250px;
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  .awards-terms-content{
+    font-size: 90%;
+  }
+
+  .awards-data-feature-tag{
+    padding: 0 5px;
+    display: inline-block;
+  }
+}

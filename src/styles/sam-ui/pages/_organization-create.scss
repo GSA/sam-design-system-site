@@ -1,0 +1,54 @@
+.org-create-page{
+
+
+  .create-org-form-section{
+    border-top: 1px $color-black solid;
+  }
+
+  .usa-input-error{
+    margin-top: 0;
+  }
+
+  .org-create-label label{
+    font-weight: 400;
+  }
+
+  .create-org-address-section label{
+    margin-top: 10px;
+  }
+
+  .create-org-code-section label{
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .create-org-basic-section label{
+    font-weight: bold;
+  }
+
+  .create-org-basic-section .sam-fieldset-wrapper fieldset ul li label{
+    font-weight: 400;
+  }
+
+  .org-confirm-header{
+    border-bottom: 1px $color-black solid;
+  }
+
+  .org-confirm-body{
+    border-top: 1px $color-black solid;
+    border-bottom: 1px $color-black solid;
+    margin-top: 2px;
+  }
+
+  .fa-plus-circle:hover{
+    cursor: pointer;
+  }
+
+  .org-create-expand-link{
+    text-decoration: underline;
+  }
+
+  .org-create-expand-link:hover{
+    cursor: pointer;
+  }
+}

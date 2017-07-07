@@ -39,7 +39,6 @@ import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocom
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
-import { MultiSelectExampleComponent } from "./form-controls/multiselect/component-example";
 import { NumberExampleComponent } from "./form-controls/number/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
 //import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
@@ -76,7 +75,6 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
     CheckboxExampleComponent,
     DateExampleComponent,
     DateTimeExampleComponent,
-    MultiSelectExampleComponent,
     NumberExampleComponent,
     RadioExampleComponent,
     //SearchbarExampleComponent,

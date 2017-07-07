@@ -1,0 +1,79 @@
+.grid-name {
+  float: left;
+  width: 75%;
+}
+
+.grid-name1 {
+  float: left;
+  width: 60%;
+}
+
+.grid-date {
+  float: left;
+  width: 25%;
+}
+
+.grid-date1 {
+  float: left;
+  width: 40%;
+}
+
+
+.grid-desc {
+  float: left;
+  width: 100%;
+}
+
+.grid-overview1 {
+  color: red;
+}
+
+.grid-overview2 {
+  position: absolute;
+  right: 0;
+}
+
+.p_L-0x {
+  padding-left: 0;
+}
+
+.p_R-0x {
+  padding-right: 0;
+  text-align: right;
+}
+
+.ul-css {
+  list-style-type: none;
+}
+
+.grid-name-static {
+  float: left;
+  width: 70%;
+}
+
+.grid-date-static {
+  width: 25%;
+  float: right;
+  text-align: right;
+}
+
+.grid-overview-star {
+  width: 5%;
+  float: right;
+  text-align: right;
+}
+
+.report-li {
+  line-height: 1.5;
+  margin-bottom: 2.5em;
+}
+
+.report-padding-top-50 {
+  padding-top: 50px;
+}
+
+.full-width{
+  .usa-alert{
+    display:block;
+  }
+}

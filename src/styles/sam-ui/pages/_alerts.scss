@@ -1,0 +1,107 @@
+$alert-primary-color: #0071bc;
+
+.alerts-primary-bg {
+  background-color: $alert-primary-color;
+}
+
+.alerts-page {
+  // this should be changed globally, but i don't want to break anything
+  // the problem is that the hitbox is not center around the inputs
+  input[type=checkbox] {
+    margin-top: -.8em;
+  }
+
+
+  .alerts-toolbar {
+    display: table;
+    margin-bottom: 12px;
+  }
+
+  .alert-count {
+    margin-bottom: 20px;
+  }
+
+  .sort-by-text {
+    display: inline;
+  }
+
+  .sort-column {
+    width: 100%;
+    text-align: right;
+  }
+
+  .toolbar-item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .toolbar-item:not(.sort-column) {
+    padding-right: 12px;
+  }
+
+  .sort-column select {
+    display: inline;
+    width: 200px;
+  }
+
+  .alert-block {
+    padding-bottom: 12px;
+  }
+
+  .alert-block {
+    padding-top: .67em;
+    margin-bottom: .67px;
+    border-top: 1px solid grey;
+
+    &:last-child {
+      border-bottom: 1px solid grey;
+    }
+  }
+
+  .alert-page-title {
+    margin-top: .67em;
+  }
+
+  input {
+    display: inline;
+  }
+
+  #datesPublished {
+    width: 150px;
+  }
+
+  .usa-pagination {
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .dropdown-title {
+    white-space: nowrap;
+  }
+
+  sam-select label {
+    display: inline;
+  }
+
+  sam-select select {
+    display: inline;
+  }
+
+  sam-select.publish-select select {
+    &:disabled {
+      background-color: transparent;
+      color: #666;
+    }
+    border: none;
+  }
+
+  sam-select.sort-select select {
+    width: initial;
+    margin-left: 8px;
+    padding-right: 24px;
+  }
+}
+

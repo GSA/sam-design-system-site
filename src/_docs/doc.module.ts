@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from "./baseexample.component";
 import { PlaceHolderExampleComponent } from "./placeholder.component";
+import { SimpleExampleComponent } from "./simple.component";
 
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
@@ -66,6 +67,7 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
   declarations: [
     BaseExampleComponent,
     PlaceHolderExampleComponent,
+    SimpleExampleComponent,
     AccordionExampleComponent,
     AlertExampleComponent,
     AlphabetSelectorExampleComponent,

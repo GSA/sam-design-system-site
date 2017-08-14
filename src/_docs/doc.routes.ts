@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { PlaceHolderExampleComponent } from "./placeholder.component";
+import { SimpleExampleComponent } from "./simple.component";
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
@@ -87,6 +88,7 @@ const map = {
   'form-controls/textarea':TextareaExampleComponent,
   'form-controls/time':TimeExampleComponent,
   'form-controls/toggle-switch':ToggleSwitchExampleComponent,
+  'form-service/Overview':SimpleExampleComponent,
   'form-templates/name-entry':NameEntryExampleComponent,
   'form-templates/phone-entry':PhoneEntryExampleComponent,
   'data-structures/interfaces': InterfacesComponent

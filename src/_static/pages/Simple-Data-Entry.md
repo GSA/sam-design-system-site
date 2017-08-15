@@ -8,20 +8,20 @@ A simple data entry page has the following characteristics.
 - The form has no need to be broken into distinct sections due to its length or complexity
 - The form has few or no fields that require a complex editor
 
-![Data Entry Page Layout](../Images/DataEntry.png)
+![Data Entry Page Layout](/src/assets/imgImages/DataEntry.png)
 
 ## Global Elements from the Basic Page
 
-- [Page Header](../elements/GlobalElements.md#PageHeader)
-- [Page Footer](../elements/GlobalElements.md#PageFooter)
+- [Page Header](/pages/global-elements#PageHeader)
+- [Page Footer](/pages/global-elements#PageFooter)
 
 ## Elements from the Basic Page
 
-- [Breadcrumbs](../pages/BasicPage.md#BreadCrumbs)
-- [Side Navigation](../pages/BasicPage.md#SideNavigation)
-- [Site Subheading](../pages/BasicPage.md#SiteSubheading)
-- [Page Title](../pages/BasicPage.md#PageTitle)
-- [Section Title](../pages/BasicPage.md#SectionTitle)
+- [Breadcrumbs](/pages/basic-page#BreadCrumbs)
+- [Side Navigation](/pages/basic-page#SideNavigation)
+- [Site Subheading](/pages/basic-page#SiteSubheading)
+- [Page Title](/pages/basic-page#PageTitle)
+- [Section Title](/pages/basic-page#SectionTitle)
 
 ## Toolbar
 

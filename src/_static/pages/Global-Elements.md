@@ -15,7 +15,7 @@ The "Official website of the US government" statement expands to present additio
 
 ### SAM.gov Logo
 
-![beta SAM.gov logo](../images/sam-r9-logo-color.png)
+![beta SAM.gov logo](/src/assets/img/sam-r9-logo-color.png)
 
 A fresh, modern redesigned logo for SAM.gov appears at the top left of the page header. The image is a persistent link to the Landing page.
 

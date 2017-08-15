@@ -7,8 +7,8 @@ The workspace landing page (Tier 1 "My Workspace") is available to an authentica
 
 ## Global Elements
 
-- [Page Header](../elements/GlobalElements.md#PageHeader)
-- [Page Footer](../elements/GlobalElements.md#PageFooter)
+- [Page Header](/pages/global-elements#PageHeader)
+- [Page Footer](/pages/global-elements#PageFooter)
 
 ## Widgets
 On the workspace, widgets are relatively small blocks of content for each functional area associated with the authenticated user.

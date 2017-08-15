@@ -25,8 +25,11 @@ formSubmitHandler(){
 }
 ```
 
+### Working with multiple forms
+
 If you have multiple forms active on the page, you can also pass in your "root" Abstract Control to fire the event against a single form instance
 
+In template code:
 ```
 <form formGroupName="exampleFormGroup">
     <sam-text required="true" 
@@ -44,10 +47,11 @@ If you have multiple forms active on the page, you can also pass in your "root" 
 </form>
 ```
 
-
+In component code:
 ```
 formEmailSubmitHandler(){
-    this.samFormService.fireSubmit(this.exampleFormGroup2); //this will only update the error messages on exampleFormGroup2
+    //this will only update the error messages on exampleFormGroup2
+    this.samFormService.fireSubmit(this.exampleFormGroup2);
     if(this.exampleFormGroup2.valid){
         //handle rest of submission
     }

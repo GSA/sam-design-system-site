@@ -10,8 +10,8 @@ A basic page has the following characteristics:
 
 ## Global Elements on the Basic Page
 
-- [Page Header](../elements/GlobalElements.md#PageHeader)
-- [Page Footer](../elements/GlobalElements.md#PageFooter)
+- [Page Header](/pages/global-elements#PageHeader)
+- [Page Footer](/pages/global-elements#PageFooter)
 
 ## Page Body
 

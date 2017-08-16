@@ -11,8 +11,6 @@ import { BreadcrumbExampleComponent } from "./components/breadcrumb/component-ex
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
-import { HeaderExampleComponent } from "./components/header/component-example";
-import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
 import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
 import { LabelExampleComponent } from "./components/label/component-example";
@@ -20,7 +18,6 @@ import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
-//import { SearchHeaderExampleComponent } from "./components/search-header/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
@@ -35,7 +32,6 @@ import { DateExampleComponent } from "./form-controls/date/component-example";
 import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
 import { NumberExampleComponent } from "./form-controls/number/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
-//import { SearchbarExampleComponent } from "./form-controls/searchbar/component-example";
 import { SelectExampleComponent } from "./form-controls/select/component-example";
 import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
@@ -44,7 +40,6 @@ import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/comp
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { InterfacesComponent } from "./data-structures/interfaces/interfaces.component";
-import { ListDisplayExampleComponent } from './form-controls/list-display/component-example';
 
 //manual map, components that don't have documentation set up yet get pointed to the PlaceHolderExampleComponent
 const map = {
@@ -57,8 +52,6 @@ const map = {
   'components/collapsible':CollapsibleExampleComponent,
   'components/download':DownloadExampleComponent,
   'components/filters-container':FiltersContainerExampleComponent,
-  'components/header':HeaderExampleComponent,
-  'components/header-menu':HeaderMenuExampleComponent,
   'components/history':HistoryExampleComponent,
   'components/info-accordion':InfoAccordionExampleComponent,
   'components/label':LabelExampleComponent,
@@ -66,7 +59,6 @@ const map = {
   'components/multiselect-dropdown':MultiselectDropdownExampleComponent,
   'components/pagination':PaginationExampleComponent,
   'components/point-of-contact':POCExampleComponent,
-  //'components/search-header':SearchHeaderExampleComponent,
   'components/sidenav':SidenavExampleComponent,
   'components/spinner':SpinnerExampleComponent,
   'components/tabs':TabsExampleComponent,
@@ -81,8 +73,6 @@ const map = {
   'form-controls/date-time':DateTimeExampleComponent,
   'form-controls/number':NumberExampleComponent,
   'form-controls/radiobutton':RadioExampleComponent,
-  'form-controls/list-display': ListDisplayExampleComponent,
-  //'form-controls/searchbar':SearchbarExampleComponent,
   'form-controls/select':SelectExampleComponent,
   'form-controls/text':TextExampleComponent,
   'form-controls/textarea':TextareaExampleComponent,

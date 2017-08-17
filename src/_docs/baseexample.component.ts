@@ -22,6 +22,7 @@ export class BaseExampleComponent implements OnInit {
   typedoc_target: string = '';
   typedoc_content: string = '';
   markdown: string = '';
+  guidance: string = '';
   example: string = '';
   constructor(private _http: Http, private service: DocumentationService){}
 

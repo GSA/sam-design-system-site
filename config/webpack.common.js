@@ -4,6 +4,8 @@
 
 const webpack = require('webpack');
 const helpers = require('./helpers');
+helpers.writeModuleFile();
+helpers.writeRoutesFile();
 
 /*
  * Webpack Plugins

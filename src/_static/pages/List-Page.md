@@ -9,16 +9,16 @@ The List/Result page is used when the user is presented with a listing of relate
 
 ## Global Elements
 
-- [Page Header](../elements/GlobalElements.md#PageHeader)
-- [Page Footer](../elements/GlobalElements.md#PageFooter)
+- [Page Header](/pages/global-elements#PageHeader)
+- [Page Footer](/pages/global-elements#PageFooter)
 
 ## Elements from the Basic Page
 
-- [Breadcrumbs](../pages/BasicPage.md#BreadCrumbs)
-- [Side Navigation](../pages/BasicPage.md#SideNavigation)
-- [Site Subheading](../pages/BasicPage.md#SiteSubheading)
-- [Page Title](../pages/BasicPage.md#PageTitle)
-- [Section Title](../pages/BasicPage.md#SectionTitle)
+- [Breadcrumbs](/pages/basic-page#BreadCrumbs)
+- [Side Navigation](/pages/basic-page#SideNavigation)
+- [Site Subheading](/pages/basic-page#SiteSubheading)
+- [Page Title](/pages/basic-page#PageTitle)
+- [Section Title](/pages/basic-page#SectionTitle)
 
 ## List Page Elements
 

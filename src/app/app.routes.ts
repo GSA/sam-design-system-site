@@ -5,15 +5,3 @@ import { HomeComponent } from './home';
 
 export const ROUTES: Routes = [
 ];
-
-//add dynamic routes based on structure from src/_docs
-/*
-for(var idx in DOCS){
-	ROUTES.push({
-		path: DOCS[idx],
-		component: HomeComponent,
-		data: {
-			directory: DOCS[idx], 
-		}
-	});
-}*/

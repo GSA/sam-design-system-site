@@ -6,7 +6,6 @@ import {
   ViewChild,
   ViewRef,
   TemplateRef,
-  ComponentFactoryResolver,
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';

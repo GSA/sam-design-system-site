@@ -1,4 +1,7 @@
 
+/******************************************************/
+/* File generated in ../config/helpers.js             */
+/******************************************************/
 // Angular Dependencies
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,7 +25,6 @@ import { SamCommentsComponentExampleComponent } from "./components/comments/comp
 import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
-import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
 import { SamImageComponentExampleComponent } from "./components/image/component-example";
 import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
@@ -48,7 +50,6 @@ import { CheckboxExampleComponent } from "./form-controls/checkbox/component-exa
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { SamDateRangeComponentExampleComponent } from "./form-controls/date-range/component-example";
 import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
-import { ListDisplayExampleComponent } from "./form-controls/list-display/component-example";
 import { NumberExampleComponent } from "./form-controls/number/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
 import { SelectExampleComponent } from "./form-controls/select/component-example";
@@ -68,7 +69,7 @@ import { LabelWrapperExampleComponent } from "./wrappers/label-wrapper/component
 
 
 import { DocTemplateComponent } from "./doc.template";
-import { routing } from "./doc.routes";
+import { routing } from "./doc.routes.dynamic";
 
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 import { TestService } from "./components/alphabet-selector/component-example";
@@ -93,7 +94,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		DownloadExampleComponent,
 		FiltersContainerExampleComponent,
 		HeaderExampleComponent,
-		HeaderMenuExampleComponent,
 		HistoryExampleComponent,
 		SamImageComponentExampleComponent,
 		InfoAccordionExampleComponent,
@@ -119,7 +119,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		DateExampleComponent,
 		SamDateRangeComponentExampleComponent,
 		DateTimeExampleComponent,
-		ListDisplayExampleComponent,
 		NumberExampleComponent,
 		RadioExampleComponent,
 		SelectExampleComponent,
@@ -150,7 +149,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		DownloadExampleComponent,
 		FiltersContainerExampleComponent,
 		HeaderExampleComponent,
-		HeaderMenuExampleComponent,
 		HistoryExampleComponent,
 		SamImageComponentExampleComponent,
 		InfoAccordionExampleComponent,
@@ -176,7 +174,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		DateExampleComponent,
 		SamDateRangeComponentExampleComponent,
 		DateTimeExampleComponent,
-		ListDisplayExampleComponent,
 		NumberExampleComponent,
 		RadioExampleComponent,
 		SelectExampleComponent,
@@ -201,6 +198,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamUIKitModule,
 		routing
 	],
-	exports: []
+	exports: [BaseExampleComponent]
 })
 export class DocModule { }

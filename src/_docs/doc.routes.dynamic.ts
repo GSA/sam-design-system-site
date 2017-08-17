@@ -1,4 +1,7 @@
 
+/******************************************************/
+/* File generated in ../config/helpers.js             */
+/******************************************************/
 import { Routes, RouterModule } from '@angular/router';
 
 import { PlaceHolderExampleComponent } from "./placeholder.component";
@@ -16,7 +19,6 @@ import { SamCommentsComponentExampleComponent } from "./components/comments/comp
 import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { HeaderExampleComponent } from "./components/header/component-example";
-import { HeaderMenuExampleComponent } from "./components/header-menu/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
 import { SamImageComponentExampleComponent } from "./components/image/component-example";
 import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
@@ -42,7 +44,6 @@ import { CheckboxExampleComponent } from "./form-controls/checkbox/component-exa
 import { DateExampleComponent } from "./form-controls/date/component-example";
 import { SamDateRangeComponentExampleComponent } from "./form-controls/date-range/component-example";
 import { DateTimeExampleComponent } from "./form-controls/date-time/component-example";
-import { ListDisplayExampleComponent } from "./form-controls/list-display/component-example";
 import { NumberExampleComponent } from "./form-controls/number/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
 import { SelectExampleComponent } from "./form-controls/select/component-example";
@@ -61,66 +62,61 @@ import { FieldsetWrapperExampleComponent } from "./wrappers/fieldset-wrapper/com
 import { LabelWrapperExampleComponent } from "./wrappers/label-wrapper/component-example";
 
 
-//manual map, components that don't have documentation set up yet get pointed to the PlaceHolderExampleComponent
-const map = {
-  'doc-placeholder':PlaceHolderExampleComponent,
-  'components/accordion':AccordionExampleComponent,
-  'components/alert':AlertExampleComponent,
-  'components/alphabet-selector':AlphabetSelectorExampleComponent,
-  'components/banner':BannerExampleComponent,
-  'components/breadcrumb':BreadcrumbExampleComponent,
-  'components/collapsible':CollapsibleExampleComponent,
-  'components/download':DownloadExampleComponent,
-  'components/filters-container':FiltersContainerExampleComponent,
-  'components/header':HeaderExampleComponent,
-  'components/header-menu':HeaderMenuExampleComponent,
-  'components/history':HistoryExampleComponent,
-  'components/info-accordion':InfoAccordionExampleComponent,
-  'components/label':LabelExampleComponent,
-  'components/modal':ModalExampleComponent,
-  'components/multiselect-dropdown':MultiselectDropdownExampleComponent,
-  'components/pagination':PaginationExampleComponent,
-  'components/point-of-contact':POCExampleComponent,
-  //'components/search-header':SearchHeaderExampleComponent,
-  'components/sidenav':SidenavExampleComponent,
-  'components/spinner':SpinnerExampleComponent,
-  'components/tabs':TabsExampleComponent,
-  'directives/click-outside':ClickOutsideExampleComponent,
-  'directives/sticky':StickyExampleComponent,
-  'directives/tab-outside':TabOutsideExampleComponent,
-  'elements/button':ButtonExampleComponent,
-  'form-controls/autocomplete':AutocompleteExampleComponent,
-  'form-controls/autocomplete-multiselect':AutocompleteMultiselectExampleComponent,
-  'form-controls/checkbox':CheckboxExampleComponent,
-  'form-controls/date':DateExampleComponent,
-  'form-controls/date-time':DateTimeExampleComponent,
-  'form-controls/number':NumberExampleComponent,
-  'form-controls/radiobutton':RadioExampleComponent,
-  'form-controls/list-display': ListDisplayExampleComponent,
-  //'form-controls/searchbar':SearchbarExampleComponent,
-  'form-controls/select':SelectExampleComponent,
-  'form-controls/text':TextExampleComponent,
-  'form-controls/textarea':TextareaExampleComponent,
-  'form-controls/time':TimeExampleComponent,
-  'form-controls/toggle-switch':ToggleSwitchExampleComponent,
-  'form-service/Overview':SimpleExampleComponent,
-  'form-templates/name-entry':NameEntryExampleComponent,
-  'form-templates/phone-entry':PhoneEntryExampleComponent,
-  'data-structures/interfaces': InterfacesComponent
-};
 export const ROUTES: Routes = [
-  //{ path: 'form-templates/phone-entry',      component: PhoneEntryExampleComponent }
+	
+	{ path: 'components/accordion', component: AccordionExampleComponent },
+	{ path: 'components/alert', component: AlertExampleComponent },
+	{ path: 'components/alphabet-selector', component: AlphabetSelectorExampleComponent },
+	{ path: 'components/banner', component: BannerExampleComponent },
+	{ path: 'components/breadcrumb', component: BreadcrumbExampleComponent },
+	{ path: 'components/breadcrumbs', component: SamBreadcrumbsComponentExampleComponent },
+	{ path: 'components/collapsible', component: CollapsibleExampleComponent },
+	{ path: 'components/comments/comment', component: SamCommentComponentExampleComponent },
+	{ path: 'components/comments', component: SamCommentsComponentExampleComponent },
+	{ path: 'components/download', component: DownloadExampleComponent },
+	{ path: 'components/filters-container', component: FiltersContainerExampleComponent },
+	{ path: 'components/header', component: HeaderExampleComponent },
+	{ path: 'components/history', component: HistoryExampleComponent },
+	{ path: 'components/image', component: SamImageComponentExampleComponent },
+	{ path: 'components/info-accordion', component: InfoAccordionExampleComponent },
+	{ path: 'components/label', component: LabelExampleComponent },
+	{ path: 'components/modal', component: ModalExampleComponent },
+	{ path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
+	{ path: 'components/pagination', component: PaginationExampleComponent },
+	{ path: 'components/point-of-contact', component: POCExampleComponent },
+	{ path: 'components/sidenav', component: SidenavExampleComponent },
+	{ path: 'components/sidenav/menu-item', component: SamMenuItemComponentExampleComponent },
+	{ path: 'components/sidenav/sidenav', component: SamSidenavModuleExampleComponent },
+	{ path: 'components/spinner', component: SpinnerExampleComponent },
+	{ path: 'components/tabs', component: TabsExampleComponent },
+	{ path: 'directives/click-outside', component: ClickOutsideExampleComponent },
+	{ path: 'directives/focus', component: SamFocusDirectiveExampleComponent },
+	{ path: 'directives/sticky', component: StickyExampleComponent },
+	{ path: 'directives/tab-outside', component: TabOutsideExampleComponent },
+	{ path: 'elements/button', component: ButtonExampleComponent },
+	{ path: 'form-controls/autocomplete', component: AutocompleteExampleComponent },
+	{ path: 'form-controls/autocomplete-dropdown', component: SamAutocompleteDropdownComponentExampleComponent },
+	{ path: 'form-controls/autocomplete-multiselect', component: AutocompleteMultiselectExampleComponent },
+	{ path: 'form-controls/checkbox', component: CheckboxExampleComponent },
+	{ path: 'form-controls/date', component: DateExampleComponent },
+	{ path: 'form-controls/date-range', component: SamDateRangeComponentExampleComponent },
+	{ path: 'form-controls/date-time', component: DateTimeExampleComponent },
+	{ path: 'form-controls/number', component: NumberExampleComponent },
+	{ path: 'form-controls/radiobutton', component: RadioExampleComponent },
+	{ path: 'form-controls/select', component: SelectExampleComponent },
+	{ path: 'form-controls/select-resizable', component: SamSelectResizableComponentExampleComponent },
+	{ path: 'form-controls/text', component: TextExampleComponent },
+	{ path: 'form-controls/textarea', component: TextareaExampleComponent },
+	{ path: 'form-controls/time', component: TimeExampleComponent },
+	{ path: 'form-controls/toggle-switch', component: ToggleSwitchExampleComponent },
+	{ path: 'form-templates/name-entry', component: NameEntryExampleComponent },
+	{ path: 'form-templates/phone-entry', component: PhoneEntryExampleComponent },
+	{ path: 'pipes/date-time-display', component: DateTimePipeExampleComponent },
+	{ path: 'pipes/time-ago', component: TimeAgoPipeExampleComponent },
+	{ path: 'service-directives/autocomplete/country', component: CountryServiceDirectiveExampleComponent },
+	{ path: 'service-directives/autocomplete/state', component: StateServiceDirectiveExampleComponent },
+	{ path: 'wrappers/fieldset-wrapper', component: FieldsetWrapperExampleComponent },
+	{ path: 'wrappers/label-wrapper', component: LabelWrapperExampleComponent },
 ];
 export const routing = RouterModule.forChild(ROUTES);
-//add dynamic routes based on structure from sam-ui-elements set in webpack config
-for(var idx in DOCS){
-  var obj = {};
-  obj['path'] = DOCS[idx]['link'];
-  obj['component'] = DOCS[idx]['component'];
-  // if(!map[DOCS[idx]['link']]){
-  //   obj['component'] = map['doc-placeholder'];
-  // } else {
-  //   obj['component'] = map[DOCS[idx]['link']];
-  // }
-	ROUTES.push(obj);
-}
+

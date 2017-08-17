@@ -55,7 +55,7 @@ import { ListDisplayExampleComponent } from './form-controls/list-display/compon
 
 
 import { DocTemplateComponent } from "./doc.template";
-import { routing } from "./doc.routes";
+import { routing } from "./doc.routes.dynamic";
 
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 

@@ -19,7 +19,7 @@ var code_example = 'TODO';
   selector: 'doc-',
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content"> + code_example + </doc-template>'
 })
-export class ExampleComponent extends BaseExampleComponent implements OnInit {
+export class TimeAgoPipeExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");

@@ -38,7 +38,7 @@ var code_example = `<div class="usa-width-one-whole">
 @Component({
 	selector: 'doc-accordion',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+<doc-template [markdown]="markdown" [example]="example" [guidance]="guidance" [design]="design" [typedoc]="typedoc_content">
 `+ code_example +`
 </doc-template>
 `
@@ -47,5 +47,7 @@ export class AccordionExampleComponent extends BaseExampleComponent implements O
   typedoc_target = "SamAccordionComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
+  guidance = require("html-loader!markdown-loader!./guidance.md");
+  design = require("html-loader!markdown-loader!./design.md");
 	example = code_example;
 }

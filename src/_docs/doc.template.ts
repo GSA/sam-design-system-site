@@ -8,11 +8,19 @@ import {
 	selector: 'doc-template',
   template: `
 <div [innerHTML]="markdown"></div>
+<sam-accordion [bordered]="true">
+	<sam-accordion-section headerText="Guidance" name="guidance">
+		<div [innerHTML]="guidance"></div>
+	</sam-accordion-section>
+	<sam-accordion-section headerText="Design" name="design">
+		<div [innerHTML]="design"></div>
+	</sam-accordion-section>	
+</sam-accordion>
 <h2>Example</h2>
 <div><ng-content></ng-content></div>
 <hr/>
 <sam-accordion [bordered]="true">
-<sam-accordion-section headerText="Code Example" name="aria-friendly-section-name">
+<sam-accordion-section headerText="Code Example" name="example">
   <pre><code>{{example}}</code></pre>
 </sam-accordion-section>
 </sam-accordion>
@@ -23,7 +31,9 @@ export class DocTemplateComponent implements OnInit {
 	@Input() markdown;
 	@Input() example;
 	@Input() typedoc;
-	constructor(){}
+	@Input() guidance;
+	@Input() design;
+ 	constructor(){}
 	public ngOnInit() {}
 
 }

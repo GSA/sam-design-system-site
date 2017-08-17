@@ -23,7 +23,7 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 
-import { DocModule } from '../_docs/doc.module';
+import { DocModule } from '../_docs/doc.dynamic.module';
 import { StaticDocModule } from '../_static/staticdoc.module';
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 

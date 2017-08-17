@@ -10,7 +10,7 @@ import {
   ComponentFactoryResolver,
   ViewContainerRef
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
+import { BaseExampleComponent } from '../../../baseexample.component';
 
 //tabs/spacing matters for code example block
 var code_example = 'TODO';

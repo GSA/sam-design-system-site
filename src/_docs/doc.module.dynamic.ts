@@ -26,7 +26,6 @@ import { SamCommentComponentExampleComponent } from "./components/comments/comme
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
-import { HeaderExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
 import { SamImageComponentExampleComponent } from "./components/image/component-example";
 import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
@@ -62,8 +61,6 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
-import { DateTimePipeExampleComponent } from "./pipes/date-time-display/component-example";
-import { TimeAgoPipeExampleComponent } from "./pipes/time-ago/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
 import { StateServiceDirectiveExampleComponent } from "./service-directives/autocomplete/state/component-example";
 import { FieldsetWrapperExampleComponent } from "./wrappers/fieldset-wrapper/component-example";
@@ -97,7 +94,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
 		FiltersContainerExampleComponent,
-		HeaderExampleComponent,
 		HistoryExampleComponent,
 		SamImageComponentExampleComponent,
 		InfoAccordionExampleComponent,
@@ -133,8 +129,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		ToggleSwitchExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
-		DateTimePipeExampleComponent,
-		TimeAgoPipeExampleComponent,
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
@@ -154,7 +148,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
 		FiltersContainerExampleComponent,
-		HeaderExampleComponent,
 		HistoryExampleComponent,
 		SamImageComponentExampleComponent,
 		InfoAccordionExampleComponent,
@@ -190,8 +183,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		ToggleSwitchExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
-		DateTimePipeExampleComponent,
-		TimeAgoPipeExampleComponent,
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,

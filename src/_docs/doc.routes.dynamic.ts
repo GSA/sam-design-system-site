@@ -20,7 +20,6 @@ import { SamCommentComponentExampleComponent } from "./components/comments/comme
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
-import { HeaderExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
 import { SamImageComponentExampleComponent } from "./components/image/component-example";
 import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
@@ -56,8 +55,6 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
-import { DateTimePipeExampleComponent } from "./pipes/date-time-display/component-example";
-import { TimeAgoPipeExampleComponent } from "./pipes/time-ago/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
 import { StateServiceDirectiveExampleComponent } from "./service-directives/autocomplete/state/component-example";
 import { FieldsetWrapperExampleComponent } from "./wrappers/fieldset-wrapper/component-example";
@@ -79,7 +76,6 @@ export const ROUTES: Routes = [
 	{ path: 'components/comments', component: SamCommentsComponentExampleComponent },
 	{ path: 'components/download', component: DownloadExampleComponent },
 	{ path: 'components/filters-container', component: FiltersContainerExampleComponent },
-	{ path: 'components/header', component: HeaderExampleComponent },
 	{ path: 'components/history', component: HistoryExampleComponent },
 	{ path: 'components/image', component: SamImageComponentExampleComponent },
 	{ path: 'components/info-accordion', component: InfoAccordionExampleComponent },
@@ -115,8 +111,6 @@ export const ROUTES: Routes = [
 	{ path: 'form-controls/toggle-switch', component: ToggleSwitchExampleComponent },
 	{ path: 'form-templates/name-entry', component: NameEntryExampleComponent },
 	{ path: 'form-templates/phone-entry', component: PhoneEntryExampleComponent },
-	{ path: 'pipes/date-time-display', component: DateTimePipeExampleComponent },
-	{ path: 'pipes/time-ago', component: TimeAgoPipeExampleComponent },
 	{ path: 'service-directives/autocomplete/country', component: CountryServiceDirectiveExampleComponent },
 	{ path: 'service-directives/autocomplete/state', component: StateServiceDirectiveExampleComponent },
 	{ path: 'wrappers/fieldset-wrapper', component: FieldsetWrapperExampleComponent },

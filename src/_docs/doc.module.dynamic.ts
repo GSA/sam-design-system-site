@@ -14,6 +14,8 @@ import { PlaceHolderExampleComponent } from "./placeholder.component";
 import { SimpleExampleComponent } from "./simple.component";
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
+import { SamActionButtonExampleComponent } from "./components/actions/action-button/component-example";
+import { SamActionsDropdownComponentExampleComponent } from "./components/actions/actions-dropdown/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { AlphabetSelectorExampleComponent } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
@@ -83,6 +85,8 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 	providers: [TestService],
 	declarations: [
 		AccordionExampleComponent,
+		SamActionButtonExampleComponent,
+		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
 		AlphabetSelectorExampleComponent,
 		BannerExampleComponent,
@@ -138,6 +142,8 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 	],
 	entryComponents: [
 		AccordionExampleComponent,
+		SamActionButtonExampleComponent,
+		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
 		AlphabetSelectorExampleComponent,
 		BannerExampleComponent,

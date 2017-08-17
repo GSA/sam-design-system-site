@@ -8,6 +8,8 @@ import { PlaceHolderExampleComponent } from "./placeholder.component";
 import { SimpleExampleComponent } from "./simple.component";
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
+import { SamActionButtonExampleComponent } from "./components/actions/action-button/component-example";
+import { SamActionsDropdownComponentExampleComponent } from "./components/actions/actions-dropdown/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { AlphabetSelectorExampleComponent } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
@@ -65,6 +67,8 @@ import { LabelWrapperExampleComponent } from "./wrappers/label-wrapper/component
 export const ROUTES: Routes = [
 	
 	{ path: 'components/accordion', component: AccordionExampleComponent },
+	{ path: 'components/actions/action-button', component: SamActionButtonExampleComponent },
+	{ path: 'components/actions/actions-dropdown', component: SamActionsDropdownComponentExampleComponent },
 	{ path: 'components/alert', component: AlertExampleComponent },
 	{ path: 'components/alphabet-selector', component: AlphabetSelectorExampleComponent },
 	{ path: 'components/banner', component: BannerExampleComponent },

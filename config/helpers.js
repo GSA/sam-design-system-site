@@ -184,7 +184,8 @@ function writeModuleFile() {
 		if (err) console.log(err);
 	})
 }
-writeModuleFile();
+
+exports.writeModuleFile = writeModuleFile;
 
 function generateRoutesString() {
 	let files = getUIKitStructure();
@@ -221,4 +222,5 @@ function writeRoutesFile() {
 	})
 }
 
-writeRoutesFile();
+exports.writeRoutesFile = writeRoutesFile;
+

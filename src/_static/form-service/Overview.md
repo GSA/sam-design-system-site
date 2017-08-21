@@ -4,7 +4,8 @@ The SAM Form Service provides a way to emit form events to SAM form controls and
 
 ```
 <form formGroupName="exampleFormGroup">
-    <sam-text required="true" 
+    <sam-text required="true"
+        useFormService="true" 
         [control]="exampleFormGroup.get("textControl")"
         formControlName="textControl"></sam-text>
     
@@ -33,6 +34,7 @@ In template code:
 ```
 <form formGroupName="exampleFormGroup">
     <sam-text required="true" 
+        useFormService="true" 
         [control]="exampleFormGroup.get("nameControl")"
         formControlName="nameControl"></sam-text>
     
@@ -40,6 +42,7 @@ In template code:
 </form>
 <form formGroupName="exampleFormGroup2">
     <sam-text required="true" 
+        useFormService="true" 
         [control]="exampleFormGroup2.get("emailControl")"
         formControlName="emailControl"></sam-text>
     

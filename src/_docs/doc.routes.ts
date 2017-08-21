@@ -78,7 +78,6 @@ const map = {
   'form-controls/textarea':TextareaExampleComponent,
   'form-controls/time':TimeExampleComponent,
   'form-controls/toggle-switch':ToggleSwitchExampleComponent,
-  'form-service/Overview':SimpleExampleComponent,
   'form-templates/name-entry':NameEntryExampleComponent,
   'form-templates/phone-entry':PhoneEntryExampleComponent,
   'data-structures/interfaces': InterfacesComponent

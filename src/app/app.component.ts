@@ -134,6 +134,18 @@ export class AppComponent implements OnInit {
         route: "/",
         children: list
       };
+    }).sort(function(a,b){
+      if(a.label=="Overview"){
+        return -1;
+      } else if (b.label=="Overview"){
+        return 1;
+      }
+      if(a.label.charAt(0).toLowerCase()<b.label.charAt(0).toLowerCase()){
+        return -1;
+      } else if (a.label.charAt(0).toLowerCase()>b.label.charAt(0).toLowerCase()) {
+        return 1;
+      }
+      return 0;
     });
     this.sidenavConfig['children'] =  test2.concat(this.sidenavConfig['children']);
     

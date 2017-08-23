@@ -45,7 +45,6 @@ import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
 import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
-import { SamAutocompleteDropdownComponentExampleComponent } from "./form-controls/autocomplete-dropdown/component-example";
 import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocomplete-multiselect/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
@@ -113,7 +112,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		TabOutsideExampleComponent,
 		ButtonExampleComponent,
 		AutocompleteExampleComponent,
-		SamAutocompleteDropdownComponentExampleComponent,
 		AutocompleteMultiselectExampleComponent,
 		CheckboxExampleComponent,
 		DateExampleComponent,
@@ -167,7 +165,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		TabOutsideExampleComponent,
 		ButtonExampleComponent,
 		AutocompleteExampleComponent,
-		SamAutocompleteDropdownComponentExampleComponent,
 		AutocompleteMultiselectExampleComponent,
 		CheckboxExampleComponent,
 		DateExampleComponent,

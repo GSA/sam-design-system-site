@@ -39,7 +39,6 @@ import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
 import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
-import { SamAutocompleteDropdownComponentExampleComponent } from "./form-controls/autocomplete-dropdown/component-example";
 import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocomplete-multiselect/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
 import { DateExampleComponent } from "./form-controls/date/component-example";
@@ -95,7 +94,6 @@ export const ROUTES: Routes = [
 	{ path: 'directives/tab-outside', component: TabOutsideExampleComponent },
 	{ path: 'elements/button', component: ButtonExampleComponent },
 	{ path: 'form-controls/autocomplete', component: AutocompleteExampleComponent },
-	{ path: 'form-controls/autocomplete-dropdown', component: SamAutocompleteDropdownComponentExampleComponent },
 	{ path: 'form-controls/autocomplete-multiselect', component: AutocompleteMultiselectExampleComponent },
 	{ path: 'form-controls/checkbox', component: CheckboxExampleComponent },
 	{ path: 'form-controls/date', component: DateExampleComponent },

@@ -1,0 +1,54 @@
+.grant-access-page {
+  .organization-container {
+    label {
+      max-width: 46rem;
+    }
+
+    max-width: 46rem;
+    margin-top: 2.5rem;
+  }
+
+  .background-light {
+    background-color: $color-gray-lightest;
+  }
+
+  .permission-label {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    height: $hit-area;
+  }
+
+  .permission-control-group {
+    display:inline-block;
+    height: $hit-area;
+    line-height: $hit-area;
+  }
+
+  .permission-input {
+    display: inline-block;
+    width: initial;
+    margin: 0 1em 0 0;
+    height: $hit-area;
+  }
+
+  .usa-form-hint {
+    display: inline-block;
+    max-width: 46rem;
+  }
+
+  sam-text-area {
+    textarea {
+      max-width: initial;
+    }
+  }
+
+  [type="checkbox"]:disabled:checked + label::before {
+    background-image: url('#{$image-path}/correct8.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  #grant-button {
+    margin-right: 0;
+  }
+}

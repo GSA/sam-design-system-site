@@ -14,9 +14,13 @@
     left:auto;
   }
 
-  .usa-alert{
-    .fa-times-circle:hover{
-      cursor: pointer;
+  sam-alert{
+    position:relative;
+    display:block;
+    .usa-alert{
+      .fa-times-circle:hover{
+        cursor: pointer;
+      }
     }
   }
 }

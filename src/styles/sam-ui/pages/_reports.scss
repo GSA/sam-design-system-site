@@ -77,3 +77,44 @@
     display:block;
   }
 }
+
+.report__prompts {
+  div.usa-accordion-content {
+    position: relative;
+  }
+
+  .report__additionalprompts {
+    margin-top: .5em;
+    padding-bottom: 5em;
+  }
+
+  .report__promptBtns {
+    position: absolute;
+    bottom: 1.25em;
+    right: 1.25em;
+  }
+
+  .includesBases label {
+    margin-top: 0;
+  }
+
+  label[for=contractingRegion],
+  label[for=orgCode],
+  label[for=includesBases],
+  label[for=agencyName] {
+    font-weight: 600;
+  }
+  label[for=includesBases] {
+    margin-top: 25px;
+  }
+  label[for=agencyName] {
+   margin-top: 3.9rem;
+  }
+  .usa-additional_text {
+    padding-left: .5rem;
+  }
+}
+
+.reportCount {
+  padding-bottom: 2em;
+}

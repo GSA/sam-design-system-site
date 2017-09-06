@@ -1,0 +1,81 @@
+.usa-workspace-system-directory {
+  h2 {
+    margin-top: 0em;
+    margin-bottom: 2.5rem;
+
+    .usa-button-controls {
+      position: relative;
+      top: 1em;
+      letter-spacing: normal;
+      float: right;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+
+    th,
+    td {
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+
+      &:nth-child(2) {
+        width: 290px;
+      }
+    }
+
+    thead {
+      font-size: 0.9em;
+    }
+
+    tbody {
+      td {
+        height: 190px;
+        margin-top: 1.4em;
+        border-bottom: 1px solid $color-gray;
+
+        h1,
+        h2 {
+          margin-top: 0em;
+        }
+
+        h1 {
+          margin-bottom: 0.6em;
+          font-size: 2.4rem;
+        }
+
+        h2 {
+          margin-top: 0em;
+          margin-bottom: 4px;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          color: $color-gray-medium;
+        }
+      }
+
+      div {
+        line-height: 1.4em;
+
+        span {
+          display: inline-block;
+          min-width: 90px;
+        }
+      }
+    }
+  }
+
+  sam-pagination {
+    nav {
+      text-align: center;
+    }
+
+    ul {
+      display: inline-block;
+      padding-left: 0em;
+    }
+  }
+}

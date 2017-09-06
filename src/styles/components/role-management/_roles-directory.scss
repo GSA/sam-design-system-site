@@ -1,0 +1,73 @@
+.roles-directory {
+  .user-role {
+    margin-top: 1em;
+  }
+
+  .sam-actions {
+    button {
+      margin: 0;
+    }
+    .usa-button-primary {
+      margin: 0;
+      height: 4.3rem;
+    }
+  }
+  .org-picker-section {
+    .usa-accordion-content {
+      padding: 0;
+    }
+  }
+
+  .usa-accordion-content {
+    overflow: visible;
+  }
+
+  .input-and-addon {
+    float: right;
+    input[type='text'] {
+      display: inline-block;
+      max-width: initial;
+      width: 21em;
+    }
+  }
+
+  .selected-org {
+    background-color: yellow;
+  }
+
+  label[for="users-toggles"] {
+    margin-top: 0;
+  }
+
+  .right-column {
+    margin-top: 1.5em;
+  }
+
+  .edit-multiple-button {
+    margin-right: 0;
+  }
+
+  .usa-accordion-content {
+    padding: 1.5rem;
+  }
+
+  .user-row {
+    border-top: 1px solid black;
+    padding-top: 1.0em;
+    margin-top: 1.5rem;
+  }
+
+  .fa.fa-user {
+    border: 2px solid black;
+    width: 1em;
+    border-radius: .1em;
+  }
+
+  .pagination-row {
+    margin-top: 3rem;
+  }
+
+  .page-title {
+    margin-bottom: .2em;
+  }
+}

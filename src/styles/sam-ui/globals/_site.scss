@@ -120,6 +120,7 @@ b, bold, strong{
 
 a {
   color: $linkColor;
+  cursor: pointer;
   font-weight: $linkFontWeight;
   text-decoration: $linkUnderline;
 }

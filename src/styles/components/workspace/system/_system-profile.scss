@@ -1,0 +1,127 @@
+.usa-workspace-system-profile {
+  section {
+    margin-top: 1.5em;
+
+    .content {
+      margin-left: 1rem;
+    }
+
+    .content-editable {
+      display: none;
+    }
+
+    &.editable {
+      .usa-edit,
+      .content-readonly {
+        display: none;
+      }
+
+      .content-editable {
+        display: block;
+      }
+    }
+
+    > h3 {
+      margin-top: 2em !important;
+      margin-bottom: 1em;
+    }
+
+    .usa-edit {
+      font-size: 1.5rem;
+      line-height: 1.75em;
+      float: right;
+    }
+  }
+
+  .usa-form-large {
+    max-width: none;
+  }
+
+  // Read State
+  .usa-form-group {
+    margin-top: 0.5em;
+    margin-bottom: 1.25em;
+
+    label {
+      display: inline-block;
+      min-width: 220px;
+      margin-top: 0em;
+      font-weight: 700;
+    }
+
+    .usa-form-control {
+      display: inline-block;
+
+      &.comments {
+        white-space: pre;
+      }
+    }
+  }
+
+  .point-of-contact {
+    .label-wrapper {
+      label {
+        margin-top: 0.5em;
+      }
+    }
+  }
+
+  .usa-system-pocs {
+    margin-top: 1.5em;
+
+    h4 {
+      font-size: 1.8rem;
+    }
+
+    .usa-system-poc {
+      padding-bottom: 1rem;
+
+      &:last-child {
+        padding-bottom: 0rem;
+      }
+    }
+
+    .usa-form-group {
+      margin-bottom: 1em;
+    }
+  }
+
+  hr {
+    max-width: 46rem;
+    margin-top: 2.5em !important;
+    margin-bottom: 2em !important;
+    margin-left: 0em;
+  }
+
+  .deactivate-account {
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  .usa-button-controls {
+    max-width: 32rem;
+    margin-top: 1.5em;
+    text-align: center;
+
+    button {
+      width: 36%;
+      &:nth-child(2) {
+        float: right;
+      }
+    }
+
+    &.submit {
+      button {
+        float:none;
+      }
+    }
+
+    sam-alert {
+      top: 0px;
+      right: 0px;
+      margin-top: 0.5rem;
+      transform: translateX(100%);
+    }
+  }
+}

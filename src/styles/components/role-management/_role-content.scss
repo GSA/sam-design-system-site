@@ -1,0 +1,44 @@
+.role-content{
+  &.usa-grid-full{
+    max-width: initial;
+  }
+  .content-label{
+    padding-bottom: 1.5em;
+  }
+  .label-ht{
+    padding:0.5em;
+    background-color: #0071bc;
+  }
+  .collapsible-header{
+    clear: both;
+    margin: 0;
+    padding: 1.5rem;    
+  }
+  .header-bg-color{
+    background-color: $color-gray-lightest;
+  }
+  .icons-color{
+    text-decoration: underline;
+    color: #0071bc;
+    padding-right: 0.5em;
+    cursor: pointer;
+  }
+  .content-row{
+    border-style: solid;
+    padding-left: .5em;
+    border-width: .1em;
+  }
+  .usa-grid-full{
+    max-width: initial;
+  }
+  .section-spc{
+    padding-bottom: 2em;
+  }
+  .line-spacing{
+    padding-top : 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .p_T-1em{
+    padding-top: 1em;
+  }
+}

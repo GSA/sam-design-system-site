@@ -1,0 +1,34 @@
+.fh-sidenav{
+
+  .fh-sidenav-head{
+    color: $color-cool-blue-light;
+
+    .header-text{
+      font-weight: 600;
+      font-size: 125%;
+    }
+  }
+
+  .fh-sidenav-cbx{
+    width: 40px;
+  }
+
+  .fh-sidenav-my-org-div{
+    background-color: #f1f1f1;
+    padding-left: 15px;
+
+    span{
+      font-weight: 700;
+    }
+  }
+
+  sam-checkbox{
+    li{
+      margin-bottom: 0px !important;
+    }
+
+    input{
+      height: 25px;
+    }
+  }
+}

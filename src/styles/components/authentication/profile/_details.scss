@@ -28,6 +28,10 @@
       margin-left: 1em;
       display: none;
     }
+
+    > button {
+      width: 184px;
+    }
   }
 
   // Read State
@@ -38,9 +42,10 @@
 
     label {
       display: inline-block;
-      min-width: 60px;
+      min-width: 110px;
       margin-top: 0em;
       font-weight: 700;
+      float: left;
     }
 
     .usa-form-control {
@@ -49,7 +54,7 @@
 
     &.kba {
       label {
-        width: 70%;
+        width: 48%;
       }
     }
   }
@@ -84,7 +89,7 @@
 
   .usa-kba {
     .question {
-      width: 70%;
+      width: 69%;
     }
 
     .answer {
@@ -96,15 +101,23 @@
     margin-top: 20px;
   }
 
-  .usa-alert {
-    position: absolute;
-    width: 100%;
-    top: -80px
-  }
-
   .modal-content {
     .usa-alert {
       position: static;
+    }
+  }
+
+  .usa-button-controls {
+    sam-alert {
+      top: 50%;
+      left: 100px;
+      transform: translateY(-50%);
+    }
+  }
+
+  sam-label-wrapper{
+    label{
+      font-weight:bold;
     }
   }
 }

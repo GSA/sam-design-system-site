@@ -7,30 +7,30 @@ import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `<div class="usa-width-one-whole">
   <div class="usa-width-one-fourth">
-    <sam-button [buttonId]="'defaultBtn'" [buttonText]="'Default'" [buttonType]="btnType"></sam-button>
+    <sam-button [buttonId]="'primaryBtn'" [buttonText]="'primary'" [buttonType]="'primary'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <sam-button [buttonId]="'altBtn'" [buttonText]="'Alt'" [buttonType]="'alt'"></sam-button>
+    <sam-button [buttonId]="'secondaryBtn'" [buttonText]="'secondary'" [buttonType]="'secondary'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <sam-button [buttonId]="'secondaryBtn'" [buttonText]="'Secondary'" [buttonType]="'secondary'"></sam-button>
+    <sam-button [buttonId]="'tertiaryBtn'" [buttonText]="'tertiary'" [buttonType]="'tertiary'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <sam-button [buttonId]="'grayBtn'" [buttonText]="'Gray'" [buttonType]="'gray'"></sam-button>
+    <sam-button [buttonId]="'negativeBtn'" [buttonText]="'negative'" [buttonType]="'negative'"></sam-button>
   </div>
 </div>
 <div class="usa-width-one-whole">
   <div class="usa-width-one-fourth">
-    <sam-button [buttonId]="'outlineBtn'" [buttonText]="'Outline'" [buttonType]="'outline'"></sam-button>
-  </div>
-  <div class="usa-width-one-fourth" style="background:#323a45;text-align:center;">
-    <sam-button [buttonId]="'invertedBtn'" [buttonText]="'Inverted'" [buttonType]="'inverted'"></sam-button>
+    <sam-button buttonDisabled="true" [buttonId]="'primaryBtn'" [buttonText]="'primary'" [buttonType]="'primary'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <sam-button [buttonId]="'disabledBtn'" [buttonText]="'Disabled'" [buttonType]="'disabled'"></sam-button>
+    <sam-button buttonDisabled="true" [buttonId]="'secondaryBtn'" [buttonText]="'secondary'" [buttonType]="'secondary'"></sam-button>
   </div>
   <div class="usa-width-one-fourth">
-    <sam-button [buttonId]="'bigBtn'" [buttonText]="'Big'" [buttonType]="'big'"></sam-button>
+    <sam-button buttonDisabled="true" [buttonId]="'tertiaryBtn'" [buttonText]="'tertiary'" [buttonType]="'tertiary'"></sam-button>
+  </div>
+  <div class="usa-width-one-fourth">
+    <sam-button buttonDisabled="true" [buttonId]="'negativeBtn'" [buttonText]="'negative'" [buttonType]="'negative'"></sam-button>
   </div>
 </div>`;
 

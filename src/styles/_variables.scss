@@ -84,6 +84,7 @@ $invertedSelectedTextColor   : rgba(255, 255, 255, 1);
 /*--- Colors ---*/
 $blue             : #0071bc;
 $red              : #DB2828;
+$orange           : #F2711C;
 $green            : #21BA45;
 $grey             : #767676;
 $black            : #1B1C1D;
@@ -108,11 +109,53 @@ $lightestBlue     : #dce4ef;
 $darkBlue: #112e51;
 $darkGrey: #323a45;
 
+/*--- Colored Text ---*/
+$redTextColor    : $red;
+$orangeTextColor : $orange;
+$yellowTextColor : #B58105;
+$oliveTextColor  : #8ABC1E;
+$greenTextColor  : #1EBC30;
+$tealTextColor   : #10A3A3;
+$blueTextColor   : $blue;
+
+
+/*--- Colored Border ---*/
+$redBorderColor    : $redTextColor;
+$orangeBorderColor : $orangeTextColor;
+$yellowBorderColor : $yellowTextColor;
+$oliveBorderColor  : $oliveTextColor;
+$greenBorderColor  : $greenTextColor;
+$tealBorderColor   : $tealTextColor;
+$blueBorderColor   : $blueTextColor;
+
+
 /*--- Neutrals ---*/
 $white            : #FFFFFF;
 $offWhite         : #F9FAFB;
 $darkWhite        : #F3F4F5;
 $midWhite         : #DCDDDE;
+
+/*--- Colored Backgrounds ---*/
+$redBackground    : #FFE8E6;
+$orangeBackground : #FFEDDE;
+$yellowBackground : #FFF8DB;
+$oliveBackground  : #FBFDEF;
+$greenBackground  : #E5F9E7;
+$tealBackground   : #E1F7F7;
+$blueBackground   : #DFF0FF;
+$violetBackground : #EAE7FF;
+$purpleBackground : #F6E7FF;
+$pinkBackground   : #FFE3FB;
+$brownBackground  : #F1E2D3;
+
+/*--- Colored Headers ---*/
+$redHeaderColor    : darken($redTextColor, 5);
+$oliveHeaderColor  : darken($oliveTextColor, 5);
+$greenHeaderColor  : darken($greenTextColor, 5);
+$yellowHeaderColor : darken($yellowTextColor, 5);
+$blueHeaderColor   : darken($blueTextColor, 5);
+$tealHeaderColor   : darken($tealTextColor, 5);
+$orangeHeaderColor : darken($orangeTextColor, 5);
 
 /*--- Alpha ---*/
 $subtleTransparentBlack     : rgba(0, 0, 0, 0.03);
@@ -137,11 +180,21 @@ $floatingShadow:
 $positiveColor           : $green;
 $positiveBackgroundColor : #FCFFF5;
 $positiveBorderColor     : #A3C293;
+$positiveHeaderColor     : #1A531B;
+$positiveTextColor       : #2C662D;
+
+/* Success */
+$successBackgroundColor : $positiveBackgroundColor;
+$successColor           : $positiveColor;
+$successBorderColor     : $positiveBorderColor;
+$successHeaderColor     : $positiveHeaderColor;
+$successTextColor       : $positiveTextColor;
 
 /* Negative */
 $negativeColor           : $red;
 $negativeBackgroundColor : #FFF6F6;
 $negativeBorderColor     : #E0B4B4;
+$negativeHeaderColor     : #912D2B;
 $negativeTextColor       : #9F3A38;
 
 /* Warning */
@@ -151,16 +204,24 @@ $warningBackgroundColor : #FFFAF3;
 $warningHeaderColor     : #794B02;
 $warningTextColor       : #573A08;
 
+/* Info */
+$infoColor              : #31CCEC;
+$infoBackgroundColor    : #F8FFFF;
+$infoBorderColor        : #A9D5DE;
+$infoHeaderColor        : #0E566C;
+$infoTextColor          : #276F86;
+
 /* Error */
 $errorBackgroundColor   : $negativeBackgroundColor;
 $errorBorderColor       : $negativeBorderColor;
+$errorHeaderColor       : $negativeHeaderColor;
 $errorTextColor         : $negativeTextColor;
 
 /*-------------------
     Brand Colors
 --------------------*/
 $primaryColor        : $blue;
-$secondaryColor      : $black;
+$secondaryColor      : #9bdaf1;
 
 /*-------------------
         Page

@@ -1,0 +1,19 @@
+.bulk-update-page {
+  label, textarea, input, select {
+    max-width: inherit;
+  }
+
+  sam-label-wrapper label {
+    margin-top: 0;
+  }
+
+  [type="checkbox"]:disabled:checked + label::before {
+    background-image: url('#{$image-path}/correct8.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .usa-sidenav-list {
+    pointer-events: none;
+  }
+}

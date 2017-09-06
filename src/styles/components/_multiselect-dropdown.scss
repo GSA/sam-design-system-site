@@ -1,4 +1,8 @@
-samMultiSelectDropdown {
+sam-multiselect-dropdown {
+  .checkbox-item {
+    white-space: nowrap;
+  }
+
   .dropdown {
     display: inline-block;
     position: relative;

@@ -1,0 +1,66 @@
+sam-notifications{
+  position:relative;
+  .notifications-list{
+    z-index:9999;
+    position:absolute!important;
+    display:block;
+    border:1px solid rgba(100, 100, 100, .4);
+    box-shadow:0 3px 8px rgba(0, 0, 0, .25);
+    background: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 68px;
+    right: 0px;
+    width:500px;
+    li{
+      border-bottom: 1px solid rgba(100, 100, 100, .4);
+      padding: 15px 10px;
+      &:last-child{
+        border-bottom: none;
+      }
+      a{
+        display:flex;
+      }
+      &.show-more{
+        text-align:right;
+        a{
+          display:inline;
+        }
+      }
+    }
+    .name-block{
+      display:block;
+      min-width:140px;
+    }
+    .text-block{
+      display:block;
+      margin-left:10px;    
+      span.text{
+        color:#000;
+        font-weight:normal;
+      }
+    }
+  }
+}
+
+.notification-container{
+  position:relative;
+}
+.notification-num{
+  color:white;
+  position:absolute;
+  z-index: 20;
+  top: 35px;
+  right: 12px;
+  font-weight: bold;
+  &:before{
+    color:red;
+    content: ' \25CF';
+    font-size: 40px;
+    position:absolute;
+    z-index: -1;
+    top: -12px;
+    right: -8px;
+  }
+}

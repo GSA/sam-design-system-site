@@ -4,6 +4,20 @@
 
 .usa-alert {
   display: inline-block;
+  padding-right: 2.5em;
+  position: relative;
+}
+
+
+.usa-alert-warning {
+  background-position-y: 1.2rem;
+}
+
+.usa-alert-heading {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  line-height: 2em;
+  white-space: nowrap;
 }
 
 .usa-alert-body {
@@ -11,5 +25,10 @@
 }
 
 .usa-alert-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.3em;
+  line-height: 1;
   cursor: pointer;
 }

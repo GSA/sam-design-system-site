@@ -51,6 +51,7 @@
     margin-top: 0rem;
 
     label {
+      margin-top: 1rem;
       line-height: 3rem;
     }
   }
@@ -62,10 +63,6 @@
 
     .usa-input-error {
       border-left-width: 0px;
-
-      input {
-
-      }
     }
   }
 }

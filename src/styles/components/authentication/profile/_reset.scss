@@ -1,0 +1,16 @@
+.usa-profile-password {
+  .usa-button-controls {
+    position: relative;
+
+    button[type="submit"] {
+      margin-top: 0px;
+    }
+
+    sam-alert {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: (160px / 2);
+    }
+  }
+}

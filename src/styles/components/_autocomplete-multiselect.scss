@@ -1,5 +1,4 @@
   .sam-autocomplete-multiselect {
-    max-width: 46rem;
     width: 100%;
     clear: both;
     position: relative;
@@ -15,18 +14,22 @@
     }
 
     ul.multiselect-parent-list{
+      position: absolute;
+
       box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
       border:1px solid #96c8da;
       border-width: 0px 1px 1px 1px;
       border-radius: 0 0 .28571429rem .28571429rem;
+
+      width: 100%;
+      max-height: 30rem;
+
+      overflow-y: scroll;
+
       background-color: white;
       z-index: 999;
-      overflow: hidden;
-      position: absolute;
-      width: 100%;
+
       margin-bottom: 1rem;
-      max-height: 30rem;
-      overflow-y: scroll;
     }
 
     li {
@@ -50,6 +53,14 @@
     li.category-name.selectable:hover, li.category-name.selectable.selected {
      background-color: #0071bc;
      color: white;
+     &.marked{
+      background-color: $darkBlue;
+      color: #cccccc;
+     }
+    }
+    
+    li.category-item.marked{
+      color: #AAA;
     }
 
     li.category-name {
@@ -80,6 +91,7 @@
         margin-bottom: 4px;
         padding-right: 25px;
         .label{
+          color: rgba(0, 0, 0, 0.8);
           span{
             font-weight: 400;
           }

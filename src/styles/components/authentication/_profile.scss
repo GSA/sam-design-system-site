@@ -1,4 +1,6 @@
 @import './profile/details';
+@import './profile/reset';
+@import './profile/migrations';
 
 .usa-profile {
   position: relative;
@@ -9,5 +11,25 @@
 
   h3:nth-child(1) {
     margin-top: 0em;
+  }
+
+  /*
+   * Responsive
+   */
+  @media screen and (max-width: $large-screen - 1) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    sam-alert {
+      &.usa-alert-main {
+        position: relative !important;
+        top: 0px;
+        margin-top: 2rem;
+      }
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
   }
 }

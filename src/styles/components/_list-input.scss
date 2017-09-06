@@ -1,0 +1,70 @@
+.sam-list-input{
+  ul.usa-unstyled-list{
+    margin-top:5px;
+    border: 1px solid #000;
+    padding:15px 10px;
+    min-height: 55px;
+  }
+  .input-area{
+    clear:both;
+    position:relative;
+    overflow:visible;
+    height: 52px;
+
+    .input-wrapper{
+      position:relative;
+      float:left;
+      width: calc(100% - 30px);
+      label {
+        margin:0;
+      }
+      .sam-autocomplete #sam-autocomplete-results{
+        position: absolute;
+        margin-top:0;
+      }
+      .sam-autocomplete{
+        display:block;
+
+        input{
+          margin-bottom:0;
+        }
+      }
+
+      /*input{
+        position:absolute;
+      }*/
+      /*
+      .usa-agency-picker-search-reset{
+        position:absolute;
+        right:7px;
+        line-height:46px;
+
+        i{
+          color: #d9d9d9;
+        }
+      }
+      .usa-agency-picker-search-reset-active{
+        position:absolute;
+        right:7px;
+        line-height:46px;
+
+        &:hover{
+          cursor:pointer;
+        }
+
+        i{
+          color: #777;
+        }
+      }*/
+    }
+    .usa-list-input-submit{
+      float:left;
+      position:relative;
+      //height: 52px;
+      //line-height: 48px;
+      margin-top: 13px;
+      margin-left: 5px;
+    }
+  }
+
+}

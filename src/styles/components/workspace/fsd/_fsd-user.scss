@@ -1,0 +1,89 @@
+.usa-fsd-user {
+  h2 {
+    margin-bottom: 2rem;
+    small {
+      font-size: 0.65em;
+      font-weight: 500;
+      line-height: 1em;
+      text-transform: uppercase;
+      color: $color-gray-medium;
+    }
+  }
+
+  section {
+    margin-bottom: 4rem;
+
+    > button {
+      width: 184px;
+    }
+  }
+
+  // Read State
+  .usa-form-group {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+
+    label {
+      display: inline-block;
+      min-width: 110px;
+      margin-top: 0em;
+      font-weight: 700;
+    }
+
+    .usa-form-control {
+      display: inline-block;
+    }
+
+    &.kba {
+      label {
+        width: 70%;
+      }
+    }
+  }
+
+  .business {
+    label {
+      min-width: 180px;
+    }
+  }
+
+  .usa-kba {
+    .question {
+      width: 69%;
+    }
+
+    .answer {
+      width: 30%;
+    }
+  }
+
+  .fsd-kba-toggle {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  .usa-button-secondary {
+    margin-top: 20px;
+  }
+
+  .modal-content {
+    .usa-alert {
+      position: static;
+    }
+  }
+
+  .usa-button-controls {
+    text-align: left !important;
+
+    button {
+      width: 184px;
+    }
+
+    sam-alert {
+      top: 8px;
+      left: 190px;
+    }
+  }
+}

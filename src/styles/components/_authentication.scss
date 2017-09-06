@@ -2,12 +2,13 @@
 @import 'authentication/shared/password';
 
 @import 'authentication/login';
-@import 'authentication/register';
+@import 'authentication/forgot';
 @import 'authentication/profile';
+@import 'authentication/register';
 
 .usa-authentication {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   > .usa-grid {
     margin-top: 30px;
@@ -18,21 +19,137 @@
   }
 
   hr {
+    height: 1px;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    background-color: $grey;
+    border: 0px none;
   }
 
   .usa-title {
     color: #0071BC;
+    font-weight: 700;
+    font-size: 3rem;
   }
 
   .usa-subtitle {
     font-size: 2.5rem;
   }
 
-  a {
-    &:focus {
-      box-shadow: none;
+  .usa-button-controls {
+    position: relative;
+    text-align: center;
+  }
+
+  button[type="submit"] {
+    display: inline-block;
+  }
+
+  sam-alert {
+    position: absolute;
+    text-align: left;
+
+    &.usa-alert-main {
+      width: 100%;
+      top: -70px;
     }
+
+    .usa-alert {
+      margin-top: 0px;
+    }
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  .organization-container {
+    max-width: 46rem;
+  }
+
+  .steps,
+  .links {
+    margin-bottom: 0em;
+    padding-left: 0em;
+    list-style: none;
+
+    li {
+      margin-left: 1.4rem;
+      font-size: 2rem;
+      text-align: left;
+
+      &:before {
+        margin-left: -1.5rem;
+        margin-right: 1rem;
+        font-family: 'FontAwesome';
+        float: left;
+      }
+    }
+  }
+
+  .steps-container {
+    text-align: center;
+  }
+
+  .steps {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    li {
+      &:not(.header) {
+        font-size: 1.1em;
+        font-weight: 500;
+
+        &:before {
+          content: "\f00c";
+        }
+      }
+
+      &.header {
+        margin-left: 0rem;
+        margin-bottom: 0.25rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .links {
+    margin-top: 50px;
+
+    li {
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      &:before,
+      a {
+        line-height: 3rem;
+      }
+    }
+
+    .home:before,
+    .email:before {
+      font-size: 1.333em;
+    }
+
+    .home:before {
+      content: "\f015";
+    }
+
+    .email:before {
+      content: "\f0e0";
+    }
+  }
+
+  .modal-dialog {
+    .modal-content {
+      min-width: 700px;
+    }
+  }
+
+  .usa-button-outline-alt {
+    color: $color-primary-alt-dark;
+    box-shadow: inset 0 0 0 2px $color-primary-alt-dark;
   }
 }

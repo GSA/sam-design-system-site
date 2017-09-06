@@ -99,7 +99,7 @@ $arrowVerticalSubMenuColor: $white;
 $buttonSize: $relativeMedium;
 $buttonOffset: 0em;
 $buttonMargin: -0.5em 0em;
-$buttonVerticalPadding: $relativeMini;
+$buttonVerticalPadding: .7em;
 
 /* Input */
 $inputSize: $relativeMedium;
@@ -169,7 +169,7 @@ $pressedItemTextColor: $hoverItemTextColor;
 /* Active Item */
 $activeItemBackground: $transparentBlack;
 $activeItemTextColor: $selectedTextColor;
-$activeItemFontWeight: normal;
+$activeItemFontWeight: 600;
 $activeIconOpacity: 1;
 $activeItemBoxShadow: none;
 
@@ -326,7 +326,7 @@ $tabularFluidWidth: calc(100% + #{$tabularFluidOffset} * 2 );
 $tabularActiveBackground: none $white;
 $tabularActiveColor: $selectedTextColor;
 $tabularActiveBoxShadow: none;
-$tabularActiveWeight: bold;
+$tabularActiveWeight: 600;
 
 
 
@@ -439,13 +439,13 @@ $attachedBottomBoxShadow:
 ;
 
 /* Resize large sizes */
-$mini: 11px;
-$tiny: 12px;
-$small: 13px;
-$large: 15px;
-$huge: 16px;
-$big: 17px;
-$massive: 18px;
+$mini: 12px;
+$tiny: 13px;
+$small: 15px;
+$large: 18px;
+$huge: 19px;
+$big: 20px;
+$massive: 21px;
 
 /* Sizes */
 $miniWidth: 9rem;
@@ -885,7 +885,7 @@ $massiveWidth: 25rem;
 .#{$prefix}.menu .item.disabled:hover {
   cursor: default;
   background-color: transparent !important;
-  color: $disabledTextColor;
+  color: $disabledTextColor !important;
 }
 
 
@@ -1728,6 +1728,20 @@ Floated Menu / Item
 
 
 /*--------------
+    Subtle
+---------------*/
+
+/* Border */
+.#{$prefix}.subtle.menu{
+  border: none;
+}
+
+/* Menu Item */
+.#{$prefix}.subtle.menu .item:before {
+  background: $white;
+}
+
+/*--------------
     Inverted
 ---------------*/
 
@@ -1880,6 +1894,10 @@ Floated Menu / Item
 .#{$prefix}.inverted.blue.menu .active.item {
   background-color: $invertedColoredActiveBackground !important;
 }
+.#{$prefix} .inverted.blue.active.item {
+  color: #fff !important;
+  background-color: $blue;
+}
 
 
 /* Grey */
@@ -1892,6 +1910,12 @@ Floated Menu / Item
 }
 .#{$prefix}.inverted.grey.menu .active.item {
   background-color: $invertedColoredActiveBackground !important;
+}
+
+/* Bluish Grey */
+.#{$prefix}.inverted.menu .bluish.grey.active.item,
+.#{$prefix}.inverted.bluish.grey.menu {
+  background-color: #838b96;
 }
 
 

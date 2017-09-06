@@ -165,8 +165,8 @@
   // Use dark text color for all other background colors,
   // except transparent or white; results in background-color
   // only include - probably should not be used for these instances.
-  } @else if $background-color not transparent
-    or $background-color not $color-white {
+  } @else if $background-color != transparent
+    or $background-color != $color-white {
     color: $color-black;
 
     a {
@@ -238,3 +238,4 @@
     %padding-horizontal-#{$i}x { padding-right: $spacing * $i !important; }
     }
 }
+

@@ -1,34 +1,69 @@
 .isSelected {
-  background-color: $iae-color-primary;
-  color: $color-white;
+  background-color: #0071bc;
+  color: white;
 }
 
 .sam-autocomplete {
   display: inline-block;
+  overflow: visible;
   width: 100%;
-  position:relative;
+  max-width: 46rem;
 
-  #sam-autocomplete-results,#sam-autocomplete-results-kv,.sam-autocomplete-no-results {
+  .input-container {
+    position: relative;
+
+    input {
+      margin: 0;
+    }
+  }
+
+  .add-on {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+
+  #sam-autocomplete-results, #sam-autocomplete-results-kv,.sam-autocomplete-no-results {
+    position: absolute;
+    box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
+    border:1px solid #96c8da;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0 0 .28571429rem .28571429rem;
     width: 100%;
-    max-height: 12rem;
+    max-height: 30rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 1rem 0.7em;
-    margin: 0.2em 0;
-    border: 1px solid $color-black;
-    position: absolute;
-    z-index:1000;
-    background: $color-white;
+    background-color: $color-white;
+    z-index: 999;
+    //overflow: hidden;
+    margin-bottom: 1rem;
 
     li {
       position: relative;
-      max-height: 100%;
-      overflow: hidden;
+      border-top: 1px solid #eaeaea;
+      font-size: 1.7rem;
+      transition: background-color 0.1s ease;
+
+      padding: 0.7rem 0.7em;
+
+      cursor: pointer;
 
       &:hover {
-        background-color: $iae-color-primary;
-        color: $color-white;
+        background-color: #0071bc;
+        color: white;
       }
+
+      &.multiple-values{
+        font-weight: bold;
+        .secondary-value{
+          font-weight: normal;
+        }
+      }
+    }
+
+    .category {
+      font-weight: 900;
+      margin-top: 1rem;
     }
   }
 }

@@ -1,0 +1,54 @@
+.fsd-widget {
+  .fsd-accounts,
+  .fsd-controls {
+    display: inline-block;
+    max-height: 80px;
+    float: left;
+  }
+
+  .fsd-accounts {
+    width: 50%;
+    min-height: 1px;
+  }
+
+  .fsd-controls {
+    width: 50%;
+    padding-right: 1em;
+
+    .sam-autocomplete {
+      margin: 0 auto;
+      transform: translateY(50%);
+
+      .sam-autocomplete-results {
+        ul {
+          margin-top: -1px !important;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .list-accounts {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-bottom: 0em;
+    padding-left: 0em;
+    list-style: none;
+
+    li {
+      margin-left: 1.4rem;
+      text-align: left;
+      line-height: 1.8em;
+
+      &:before {
+        margin-left: -1.5rem;
+        margin-right: 0.5rem;
+        font-family: 'FontAwesome';
+        font-size: 1.3em;
+        content: '\f058';
+        color: $green;
+        float: left;
+      }
+    }
+  }
+}

@@ -4,19 +4,6 @@
     width: 100%;
   }
 
-  .usa-form-hint{
-    max-width: 46rem;
-    display: block;
-  }
-
-  .sam-list-input .label-wrapper, .usa-form-hint-showmore-toggler{
-    max-width: 460px;
-  }
-
-  sam-agency-picker .organization-container {
-    max-width: 480px;
-  }
-
   .sticky-label{
     color: #a6a6a6;
     letter-spacing: -0.3px;
@@ -27,18 +14,10 @@
     color: #aeb0b5
   }
 
-  legend{
-    font-size: 1.7rem;
-    font-weight: 400;
-    margin-bottom: 1em;
-    .usa-additional_text{
-      //padding-left: 315px;
-      padding-left: 214px;
-    }
-  }
 
-  .code-box{
-    float: left;
+  .vertical-center{
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .code-separator{
@@ -113,6 +92,16 @@
   }
 
 }
+.header-history{
+  display: inline;
+}
+.checkbox-history{
+  float: right;
+}
+.cfda-number-input {
+  display: inline;
+  width: 43.5rem;
+}
 .requestLink{
   text-decoration: none;
   color: black;
@@ -129,4 +118,8 @@
 
 .section-invalid {
   color: red;
+}
+
+.float-right {
+  float: right;
 }

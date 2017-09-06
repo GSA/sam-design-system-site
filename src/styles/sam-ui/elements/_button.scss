@@ -164,7 +164,7 @@ $basicTextColor: $textColor;
 $basicColoredBorderSize: 1px;
 
 $basicBackground: transparent none;
-$basicFontWeight: normal;
+$basicFontWeight: 600;
 $basicBorder: 1px solid $borderColor;
 $basicBoxShadow: 0px 0px 0px $basicBorderSize $borderColor inset;
 $basicTextTransform: none;
@@ -246,7 +246,7 @@ $primaryTextShadow: $invertedTextShadow;
 $primaryBoxShadow: $coloredBoxShadow;
 
 $secondaryBackgroundImage: $coloredBackgroundImage;
-$secondaryTextColor: $invertedTextColor;
+$secondaryTextColor: $darkBlue;
 $secondaryTextShadow: $invertedTextShadow;
 $secondaryBoxShadow: $coloredBoxShadow;
 

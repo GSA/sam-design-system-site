@@ -1,0 +1,46 @@
+.object-details-page {
+  .dropdown-title.pointer {
+    border: 1px solid black;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .dropdown {
+    padding-left: 0;
+  }
+
+  .label-wrapper {
+    max-width: 32rem;
+  }
+
+  .dropdown-list {
+    z-index: 100;
+  }
+
+  .sam-autocomplete input, .sam-autocomplete, sam-autocomplete {
+    display: inline-block;
+  }
+
+  .add-permission-button {
+    margin: 0;
+    font-size: 1.8em;
+  }
+
+  .input-and-add {
+    position: relative;
+    width: 15em;
+    button {
+      position: absolute;
+      bottom: .2em;
+      right: 0;
+    }
+  }
+
+  button.usa-button-link {
+    text-decoration: none;
+
+    &.new {
+
+    }
+  }
+}

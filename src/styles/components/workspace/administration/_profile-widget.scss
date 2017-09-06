@@ -1,0 +1,84 @@
+.profile-widget {
+  .widget-section {
+    display: block;
+    padding-left: 0.8em;
+
+    h1 {
+      margin: 0em;
+      font-size: 1.2em;
+    }
+
+    h2 {
+      margin: 0em;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+  }
+
+  .usa-avatar {
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 0.25em;
+    background-size: 4rem; // Font-Awesome Fallback
+    background-position-x: 1.5rem;
+
+    &::before {
+      font-size: 3.5em;
+      float: left;
+    }
+
+    h1,
+    div {
+      margin-left: 54px;
+    }
+  }
+
+  .usa-width-two-thirds {
+    .widget-section {
+      position: relative;
+      height: 170px;
+
+      .shortcut {
+        width: 100%;
+        margin-top: 0.75em;
+        cursor: pointer;
+
+        &:nth-child(1) {
+          margin-top: 0.5em;
+        }
+      }
+
+      .widget-footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+      }
+    }
+  }
+
+  sam-checkbox {
+    .sam-fieldset-wrapper {
+      margin-top: 1rem;
+    }
+
+    li {
+      label {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+
+        &::before {
+          width: 1.6rem;
+          height: 1.6rem;
+          line-height: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .widget-shortcuts {
+    a {
+      display: block;
+    }
+  }
+}

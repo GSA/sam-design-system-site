@@ -1,14 +1,17 @@
 .organization-detail{
 
   .org-logo-container{
-    display: inline-block;
-    width: auto;
+    min-height: 200px;
   }
 
   .org-logo-image{
     padding: 5px;
-    border: 2px black solid;
     opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
   }
 
   .org-logo-insert-icon{
@@ -44,5 +47,10 @@
     width: 450px;
     right: 0;
     bottom: 0;
+  }
+
+  .current-hierarchy-link{
+    color: $color-black;
+    text-decoration: none;
   }
 }

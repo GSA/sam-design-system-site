@@ -1,6 +1,4 @@
 .alphabet-selector{
-  overflow:hidden;
-  
   .current-prefix{
     text-decoration: none;
     color: $color-white;
@@ -42,10 +40,6 @@
     position: absolute;
     border-left: 1.5px solid grey;
     left: 17.5%;
-    display:none;
-    @include media($large-screen) {
-      display:block;
-    }
   }
 
   .normal-vertical-line{

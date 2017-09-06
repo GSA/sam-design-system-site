@@ -1,0 +1,23 @@
+.sam-autocomplete-dropdown {
+  display: inline-block;
+  
+  div {
+    display: table;
+    
+    div {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+
+  .sam-autocomplete-dropdown-action {
+    height: 100%;
+
+    button {
+      margin: 0.2em 0;
+      height: 4.4rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

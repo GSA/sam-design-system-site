@@ -32,8 +32,6 @@ import { DocumentationService } from './services/documentation.service';
         </div>
       </div>
     </header>
-    <sam-header></sam-header>
-    <!--samSearchHeader *ngIf="showUIKitSearchHeader"></samSearchHeader-->
     <main class="sticky-target-app">
       <div class="usa-grid">
         <aside class="usa-width-one-fourth">

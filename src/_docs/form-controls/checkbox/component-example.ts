@@ -13,6 +13,17 @@ var code_example = `<sam-checkbox
   [hint]="checkboxConfig.hint"
   [errorMessage]="checkboxConfig.errorMessage"
   [hasSelectAll]="checkboxConfig.hasSelectAll">
+</sam-checkbox>
+
+<sam-checkbox
+[(model)]="checkboxModel"
+[name]="checkboxConfig.name"
+[options]="checkboxConfig.options"
+[label]="checkboxConfig.label"
+[hint]="checkboxConfig.hint"
+[errorMessage]="checkboxConfig.errorMessage"
+[hasSelectAll]="checkboxConfig.hasSelectAll"
+[disabled]="true">
 </sam-checkbox>`;
 
 @Component({

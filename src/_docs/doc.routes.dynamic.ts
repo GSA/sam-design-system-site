@@ -47,7 +47,6 @@ import { DateTimeExampleComponent } from "./form-controls/date-time/component-ex
 import { NumberExampleComponent } from "./form-controls/number/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
 import { SelectExampleComponent } from "./form-controls/select/component-example";
-import { SamSelectResizableComponentExampleComponent } from "./form-controls/select-resizable/component-example";
 import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
 import { TimeExampleComponent } from "./form-controls/time/component-example";
@@ -102,7 +101,6 @@ export const ROUTES: Routes = [
 	{ path: 'form-controls/number', component: NumberExampleComponent },
 	{ path: 'form-controls/radiobutton', component: RadioExampleComponent },
 	{ path: 'form-controls/select', component: SelectExampleComponent },
-	{ path: 'form-controls/select-resizable', component: SamSelectResizableComponentExampleComponent },
 	{ path: 'form-controls/text', component: TextExampleComponent },
 	{ path: 'form-controls/textarea', component: TextareaExampleComponent },
 	{ path: 'form-controls/time', component: TimeExampleComponent },

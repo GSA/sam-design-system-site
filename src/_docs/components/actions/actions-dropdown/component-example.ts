@@ -29,8 +29,8 @@ export class SamActionsDropdownComponentExampleComponent extends BaseExampleComp
   markdown = require("html-loader!markdown-loader!./documentation.md");
   example = code_example;
   actions: Array<any> = [
-    { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: this.callback},
-    { name: 'delete', label: 'Delete', icon: 'fa fa-trash', callback: this.callback },
-    { name: 'save', label: 'Save', icon: 'fa fa-floppy-o', callback: this.callback }
+    { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: ()=>{console.log("edit");}},
+    { name: 'delete', label: 'Delete', icon: 'fa fa-trash', callback: ()=>{console.log("delete");} },
+    { name: 'save', label: 'Save', icon: 'fa fa-floppy-o', callback: ()=>{console.log("save");} }
   ];
 }

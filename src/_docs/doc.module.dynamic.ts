@@ -53,7 +53,6 @@ import { DateTimeExampleComponent } from "./form-controls/date-time/component-ex
 import { NumberExampleComponent } from "./form-controls/number/component-example";
 import { RadioExampleComponent } from "./form-controls/radiobutton/component-example";
 import { SelectExampleComponent } from "./form-controls/select/component-example";
-import { SamSelectResizableComponentExampleComponent } from "./form-controls/select-resizable/component-example";
 import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
 import { TimeExampleComponent } from "./form-controls/time/component-example";
@@ -120,7 +119,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		NumberExampleComponent,
 		RadioExampleComponent,
 		SelectExampleComponent,
-		SamSelectResizableComponentExampleComponent,
 		TextExampleComponent,
 		TextareaExampleComponent,
 		TimeExampleComponent,
@@ -173,7 +171,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		NumberExampleComponent,
 		RadioExampleComponent,
 		SelectExampleComponent,
-		SamSelectResizableComponentExampleComponent,
 		TextExampleComponent,
 		TextareaExampleComponent,
 		TimeExampleComponent,

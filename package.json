@@ -9,10 +9,11 @@
     "webpack-dev-server": "webpack-dev-server",
     "server:dev": "webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
     "server": "npm run server:dev",
+    "server:prod": "nginx -g 'daemon off;'",
     "clean:dist": "npm run rimraf -- dist",
     "prebuild:prod": "npm run clean:dist",
     "build:prod": "webpack --config config/webpack.prod.js  --progress --profile --bail",
-    "prod": "npm run build:prod && ws -p 8080 -d dist -s index.html"
+    "prod": "npm run build:prod && npm run server:prod"
   },
   "repository": {
     "type": "git",

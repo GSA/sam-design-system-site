@@ -1,15 +1,19 @@
-# Search Breadcrumbs
+## Search Breadcrumbs
+_Use with award data and help searches_
 * The search results page does not have breadcrumbs. 
 * Display pages accessed via search have a single "Back to Search Results" breadcrumb.
 
-# Workspace Breadcrumbs
-In the workspace breadcrumbs follow the information architecture of the website.
-* The workspace landing page has no breadcrumbs
-* Level 2 workspace pages have breadcrumbs following the pattern: "Workspace / {Page Title}".   
+## "File System" Breadcrumbs
+_Use with the "file system" available for data services_
+* The breadcrumbs mirror the file system as the user is drilling down into it
 
-# Reports Breadcrumbs
-* The reports page
+## Other Breadcrumbs
+_Use with workspace, reports, profile, and help pages_
+Other breadcrumbs following the information architecture of the site, orienting users to where the page lies with the site
 
-# Profile Breadcrumbs
-All pages in the profile use the same left side navigation and follow the pattern: "Profile / {Page Title}".  For example, the Roles page would have the breadcrumbs "Profile / Roles".
+### Examples:
+* Workspace and Help Landing Pages: None
+* Role Management Workspace Page:  **_Workspace / Role Management_**
+* Role Management Grant Access Page: **_Workspace / Role Management / Grant Access_**
+
 

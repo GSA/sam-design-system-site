@@ -44,6 +44,7 @@ import { DocumentationService } from './services/documentation.service';
         </div>
       </div>
     </main>
+    <sam-alert-footer>
   `,
   providers: [DocumentationService]
 })

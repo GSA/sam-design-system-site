@@ -17,6 +17,7 @@ import { AccordionExampleComponent } from "./components/accordion/component-exam
 import { SamActionButtonExampleComponent } from "./components/actions/action-button/component-example";
 import { SamActionsDropdownComponentExampleComponent } from "./components/actions/actions-dropdown/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
+import { SamAlertFooterComponentExampleComponent } from "./components/alert-footer/component-example";
 import { AlphabetSelectorExampleComponent } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { BreadcrumbExampleComponent } from "./components/breadcrumb/component-example";
@@ -83,6 +84,7 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamActionButtonExampleComponent,
 		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
+		SamAlertFooterComponentExampleComponent,
 		AlphabetSelectorExampleComponent,
 		BannerExampleComponent,
 		BreadcrumbExampleComponent,
@@ -135,6 +137,7 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamActionButtonExampleComponent,
 		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
+		SamAlertFooterComponentExampleComponent,
 		AlphabetSelectorExampleComponent,
 		BannerExampleComponent,
 		BreadcrumbExampleComponent,

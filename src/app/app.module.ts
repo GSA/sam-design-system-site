@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-
+import { SamAlertFooterService } from '../../sam-ui-elements/src/ui-kit/components/alert-footer';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -42,13 +42,15 @@ const APP_PROVIDERS = [
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    SamAlertFooterService
   ]
 })
 export class AppModule {
 
   constructor(
-    public appRef: ApplicationRef
+    public appRef: ApplicationRef,
+    public samAlertFooterService: SamAlertFooterService
   ) {}
 
 }

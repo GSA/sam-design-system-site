@@ -48,6 +48,6 @@ export class DownloadExampleComponent extends BaseExampleComponent implements On
   downloadAllUrl = 'http://fakesite.com/download/1234';
   typedoc_target = "SamDownloadComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

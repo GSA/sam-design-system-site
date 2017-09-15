@@ -22,6 +22,6 @@ export class NumberExampleComponent extends BaseExampleComponent implements OnIn
 	numValue = 10;
 	typedoc_target = "SamNumberComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

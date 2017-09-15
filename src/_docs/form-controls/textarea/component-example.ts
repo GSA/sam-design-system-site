@@ -33,7 +33,7 @@ export class TextareaExampleComponent extends BaseExampleComponent implements On
   };
   typedoc_target = "SamTextareaComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = `<samTextArea
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"

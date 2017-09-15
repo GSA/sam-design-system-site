@@ -40,7 +40,7 @@ var code_example = `<sam-alphabet-selector
 export class AlphabetSelectorExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamAlphabetSelectorComponent";
   typedoc_content = "";
-	markdown = require("html-loader!markdown-loader!./documentation.md");
+	markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example; 
   constructor(_http: Http, service: DocumentationService, private testservice: TestService){
     super(_http, service);

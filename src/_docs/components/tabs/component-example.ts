@@ -25,7 +25,7 @@ var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
 export class TabsExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamTabsComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 	currentTabSelected(evt){
 

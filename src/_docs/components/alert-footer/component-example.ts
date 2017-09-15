@@ -49,7 +49,7 @@ var code_example = `
 export class SamAlertFooterComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamAlertFooterComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
   footerAlertModel = {
     title: "test title",

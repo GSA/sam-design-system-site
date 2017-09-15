@@ -20,6 +20,6 @@ var code_example = `<sam-collapsible [label]="'Test Label'">
 export class CollapsibleExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamCollapsibleComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

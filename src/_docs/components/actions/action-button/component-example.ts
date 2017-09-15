@@ -27,7 +27,7 @@ var code_example = `
 export class SamActionButtonExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamActionButton";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
   action = { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: ()=>{console.log("click");}}
 }

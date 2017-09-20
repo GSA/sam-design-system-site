@@ -44,7 +44,7 @@ var code_example = `<div class="usa-grid-full">
 @Component({
 	selector: 'doc-autocomplete',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" >
 `+code_example+`
 </doc-template>
 `
@@ -81,4 +81,6 @@ export class AutocompleteExampleComponent extends BaseExampleComponent implement
   typedoc_content = "";
   markdown = require("html-loader!markdown-loader!./documentation.md");
 	example = code_example;
+  design = require("html-loader!markdown-loader!./design.md");
+  guidance = require("html-loader!markdown-loader!./guidance.md");
 }

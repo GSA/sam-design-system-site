@@ -6,6 +6,66 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `<div class="usa-grid-full">
+  <div class="usa-width-one">
+    <h3>Autocomplete With Selectable Categories and Subheading</h3>
+    <sam-autocomplete
+      [(ngModel)]="expl"
+      [name]="'autocomplete test'"
+      [id]="'unique_and_meaningful_id_value_1'"
+      [labelText]="'LabelText goes here'"
+      [hint]="'Show a hint here...'"
+      [options]="[
+        { key: 'MD', value: 'Maryland', category: 'Places' },
+        { key: 'VA', value: 'Virginia', category: 'Places' },
+        { key: 'DC', value: 'Washington, DC', category: 'Places' },
+        { key: 'cc-carlos', value: 'Carlos', category: 'People', subhead: 'CSS Guru' },
+        { key: 'cc-colin', value: 'Colin', category: 'People', subhead: 'UI Developer' },
+        { key: 'cc-diego', value: 'Diego', category: 'People', subhead: 'UI Developer' }
+      ]"
+      [config]="{
+        categoryProperty: 'category',
+        categoryIsSelectable: true,
+        keyValueConfig: {
+          keyProperty: 'key',
+          valueProperty: 'value',
+          subheadProperty: 'subhead'
+        }
+      }"
+      [allowAny]="false"
+      [categories]="[{ key: 'People', value: 'People' }, { key: 'Places', value: 'Places' }]"
+      [required]="true">
+    </sam-autocomplete>
+  </div>
+  <div class="usa-width-one">
+    <h3>Autocomplete with Unselectable Categories and Subheadings</h3>
+    <sam-autocomplete
+      [(ngModel)]="expl2"
+      [name]="'autocomplete test'"
+      [id]="'unique_and_meaningful_id_value_1'"
+      [labelText]="'LabelText goes here'"
+      [hint]="'Show a hint here...'"
+      [options]="[
+        { key: 'MD', value: 'Maryland', category: 'Places' },
+        { key: 'VA', value: 'Virginia', category: 'Places' },
+        { key: 'DC', value: 'Washington, DC', category: 'Places' },
+        { key: 'cc-carlos', value: 'Carlos', category: 'People', subhead: 'CSS Guru' },
+        { key: 'cc-colin', value: 'Colin', category: 'People', subhead: 'UI Developer' },
+        { key: 'cc-diego', value: 'Diego', category: 'People', subhead: 'UI Developer' }
+      ]"
+      [config]="{
+        categoryProperty: 'category',
+        categoryIsSelectable: false,
+        keyValueConfig: {
+          keyProperty: 'key',
+          valueProperty: 'value',
+          subheadProperty: 'subhead'
+        }
+      }"
+      [allowAny]="false"
+      [categories]="[{ key: 'People', value: 'People' }, { key: 'Places', value: 'Places' }]"
+      [required]="true">
+    </sam-autocomplete>
+  </div>
   <div class="usa-width-one-third">
     <sam-autocomplete
       [(ngModel)]="value"
@@ -44,7 +104,7 @@ var code_example = `<div class="usa-grid-full">
 @Component({
 	selector: 'doc-autocomplete',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" >
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" [implementation]="implementation">
 `+code_example+`
 </doc-template>
 `
@@ -83,4 +143,5 @@ export class AutocompleteExampleComponent extends BaseExampleComponent implement
 	example = code_example;
   design = require("html-loader!markdown-loader!./design.md");
   guidance = require("html-loader!markdown-loader!./guidance.md");
+  implementation = require("html-loader!markdown-loader!./implementation.md");
 }

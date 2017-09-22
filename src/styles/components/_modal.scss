@@ -24,12 +24,8 @@ body.modal-open {
   z-index: 1050;
   outline: 0;
 
-  .usa-alert-body {
-    display: block;
-  }
-
-  .usa-alert-heading {
-    margin-top: .7rem;
+  .usa-alert{
+    background-position: 1rem 2rem !important;
   }
 
   .modal-content {

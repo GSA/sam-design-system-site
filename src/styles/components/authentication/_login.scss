@@ -68,4 +68,13 @@
       text-align: left;
     }
   }
+
+  &.standalone {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .form-otp {
+      width: auto;
+    }
+  }
 }

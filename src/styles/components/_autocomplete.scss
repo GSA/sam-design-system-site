@@ -9,6 +9,32 @@
   width: 100%;
   max-width: 46rem;
 
+  & > sam-label-wrapper > div{
+    position: relative;
+  }
+
+  .input-container {
+    position: relative;
+  }
+
+  .reset-icon,.reset-icon-active{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    z-index: 10;
+  }
+  .reset-icon {
+    color: #d9d9d9;
+  }
+
+  .reset-icon-active {
+    color: #777;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   .input-container {
     position: relative;
 

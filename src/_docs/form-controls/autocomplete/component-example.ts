@@ -7,7 +7,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `<div class="usa-grid-full">
   <div class="usa-width-one">
-    <h3>Autocomplete With Selectable Categories and Subheading</h3>
+    <h3>Example with Selectable Categories and Subheading</h3>
     <sam-autocomplete
       [(ngModel)]="expl"
       [name]="'autocomplete test'"
@@ -37,7 +37,7 @@ var code_example = `<div class="usa-grid-full">
     </sam-autocomplete>
   </div>
   <div class="usa-width-one">
-    <h3>Autocomplete with Unselectable Categories and Subheadings</h3>
+    <h3>Example with Unselectable Categories and Subheadings</h3>
     <sam-autocomplete
       [(ngModel)]="expl2"
       [name]="'autocomplete test'"
@@ -66,7 +66,8 @@ var code_example = `<div class="usa-grid-full">
       [required]="true">
     </sam-autocomplete>
   </div>
-  <div class="usa-width-one-third">
+  <div class="usa-width-one">
+    <h3>Example with Array of Strings</h3>
     <sam-autocomplete
       [(ngModel)]="value"
       name="inputname"
@@ -74,7 +75,8 @@ var code_example = `<div class="usa-grid-full">
       labelText="simple autocomplete">
     </sam-autocomplete>
   </div>
-  <div class="usa-width-one-third">
+  <div class="usa-width-one">
+    <h3>Example with Key Value Pairs</h3>
     <sam-autocomplete
       [(ngModel)]="value2"
       name="inputname"
@@ -83,7 +85,8 @@ var code_example = `<div class="usa-grid-full">
       labelText="key/value autocomplete">
     </sam-autocomplete>
   </div>
-  <div class="usa-width-one-third">
+  <div class="usa-width-one">
+    <h3>Example with Injected State Service Directive</h3>
     <sam-autocomplete
       [(ngModel)]="stateValue"
       name="inputname"
@@ -91,7 +94,8 @@ var code_example = `<div class="usa-grid-full">
       labelText="State">
     </sam-autocomplete>
   </div>
-  <div class="usa-width-one-third">
+  <div class="usa-width-one">
+    <h3>Example With Injected Country Service Directive</h3>
     <sam-autocomplete
       [(ngModel)]="countryValue"
       name="inputname"

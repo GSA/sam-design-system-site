@@ -1,0 +1,53 @@
+.opportunity-page, .featured-result {
+  /* View Changes */
+  /*============================*/
+  h2 button{
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    vertical-align: middle;
+  }
+
+  h2 + p.usa-font-lead{
+    margin-top: -1.7rem;
+  }
+
+  .fa.fa-square{
+    margin-left: -1.8rem;
+    color: #003264;
+    font-size: 1.7rem;
+  }
+  .usa-color-blue{
+    color: #003264;
+  }
+  .usa-changes{
+    del, .changed{
+      color: #003264;
+    }
+  }
+  strike, u{
+    color: #003264;
+  }
+
+  /* MISC */
+  /*============================*/
+  samsidenav{
+    display: block;
+  }
+}
+
+.opportunity-page{
+  sam-select{
+    sam-label-wrapper{
+      & > div{
+        display: flex;
+        label{
+          width: 40%;
+          margin-right: 10px;
+          align-self: center;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

@@ -1,41 +1,31 @@
-sam-header{
-  header > nav{
-    border-bottom: 2px solid #323a45;
+sam-header {
+  header > nav {
+    border-bottom: 2px solid #232A45;
+  }
+
+  .panel-login {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #232A45;
+    text-align: center;
+    z-index: 1039;
+
+    .sam-ui.container {
+      position: relative;
+
+      > div {
+        display: inline-block;
+        position: absolute;
+        width: 380px;
+        top: 12px;
+        right: 0px;
+        background-color: #FFFFFF;
+        border-right: 1px solid #232A45;
+        border-bottom: 1px solid #232A45;
+        border-left: 1px solid #232A45;
+        text-align: left;
+      }
+    }
   }
 }
-// sam-header {
-//   $header-height: 65px;
-// 
-//   header {
-//     background-color: $color-primary-darkest;
-//     box-shadow: 0 2px 4px rgba(1, 2, 2, 0.1);
-//     padding: 3px 0;
-//     text-align: center;
-//     height: $header-height;
-//   }
-// 
-//   .align-top {
-//     display: inline-block;
-//     vertical-align: top;
-//   }
-// 
-//   img {
-//     margin-top: 1.25rem;
-//     width: 30rem;
-//     height: 3rem;
-//   }
-// 
-//   .logo-link {
-//     margin-top: 0.5rem !important;
-//     height: auto;
-//     display: inline-block;
-//   }
-// 
-//   .header-links {
-//     .header-item,
-//     .header-link {
-//       //height: $header-height - 6;      // compensate for padding
-//       line-height: $header-height - 6; // compensate for padding
-//     }
-//   }
-// }

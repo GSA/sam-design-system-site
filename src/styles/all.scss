@@ -5,6 +5,10 @@
 /*-------------------
        Helpers
 --------------------*/
+/*
+  USWDS 0.13.3 Vendor scss files moved to the top
+  of this file to be used by all files
+*/
 @import '~uswds/src/stylesheets/lib/bourbon';
 @import '~uswds/src/stylesheets/lib/neat';
 
@@ -29,21 +33,10 @@
 /*******************************
         USWDS 0.13.3
 *******************************/
-/*
-  Vendor scss files moved to the top
-  of this file to be used by all files
-*/
-
-//@import '~uswds/src/stylesheets/lib/bourbon';
-//@import '~uswds/src/stylesheets/lib/neat';
-//@import '~uswds/src/stylesheets/lib/normalize';
-
 
 // Core -------------- //
 
 @import '~uswds/src/stylesheets/core/variables';
-//@import '~uswds/src/stylesheets/core/fonts';
-@import '~uswds/src/stylesheets/core/base';
 /*
   Variables moved here to avoid
   overriding USWDS grid variables
@@ -65,34 +58,20 @@ $large: $current-large;
 @import '~uswds/src/stylesheets/core/utilities';
 
 // Elements -------------- //
-// Styles basic HTML elements
 
 @import '~uswds/src/stylesheets/elements/buttons';
-@import '~uswds/src/stylesheets/elements/figure';
-//@import '~uswds/src/stylesheets/elements/inputs';
-@import 'sam-ui/vendor/uswds';
+@import 'sam-ui/vendor/uswds'; // modified USWDS Input file
 @import '~uswds/src/stylesheets/elements/labels';
-//@import '~uswds/src/stylesheets/elements/list';
-//@import '~uswds/src/stylesheets/elements/table';
-//@import '~uswds/src/stylesheets/elements/typography';
 
 
 // Components -------------- //
 
 @import '~uswds/src/stylesheets/components/accordions';
 @import '~uswds/src/stylesheets/components/alerts';
-//@import '~uswds/src/stylesheets/components/banner';
-//@import '~uswds/src/stylesheets/components/footer';
 @import '~uswds/src/stylesheets/components/forms';
-//import '~uswds/src/stylesheets/components/graphic-list';
-//@import '~uswds/src/stylesheets/components/hero';
-//@import '~uswds/src/stylesheets/components/layout';
-//@import '~uswds/src/stylesheets/components/media-block';
-//@import '~uswds/src/stylesheets/components/section';
 @import '~uswds/src/stylesheets/components/sidenav';
-//@import '~uswds/src/stylesheets/components/header';
 @import '~uswds/src/stylesheets/components/search';
-//@import '~uswds/src/stylesheets/components/skipnav';
+
 
 /*******************************
         SAM UI
@@ -130,15 +109,103 @@ $large: $current-large;
 /* Font Awesome Fallback when fonts are blocked */
 @import 'font-awesome-fallback';
 
-/*--------------
- Transition Fixes
----------------*/
+
+/*******************************
+        Legacy CSS
+*******************************/
+
+/*-------------------
+   Custom Utilities
+--------------------*/
+@import 'margin-padding';
+@import 'global';
+
+/*-------------------
+     Components
+--------------------*/
+@import 'components/actions';
+@import 'components/card';
+@import 'components/date-range-filter';
+@import 'components/date-range';
+@import 'components/download';
+@import 'components/accordion';
+@import 'components/alert';
+@import 'components/authentication';
+@import 'components/users/index';
+@import 'components/collapsible';
+@import 'components/comments';
+@import 'components/list-input';
+@import 'components/footer';
+@import 'components/button';
+@import 'components/pagination';
+@import 'components/header';
+@import 'components/info-accordion';
+@import 'components/image';
+@import 'components/agency-picker';
+@import 'components/input';
+@import 'components/multiselect';
+@import 'components/banner';
+@import 'components/searchbar';
+@import 'components/search-header';
+@import 'components/multiselect-dropdown';
+@import 'components/image-library';
+@import 'components/tabs';
+@import 'components/modal';
+@import 'components/alphabet-selector';
+@import 'components/history';
+@import 'components/toggle-switch';
+@import 'components/feedback-form';
+@import 'components/well';
+@import 'components/autocomplete';
+@import 'components/autocomplete-dropdown';
+@import 'components/autocomplete-multiselect';
+@import 'components/organization-profile';
+@import 'components/role-management/role-managment';
+@import 'components/workspace';
+@import 'components/bread-crumbs';
+@import 'components/data-service/data-service';
+@import 'components/sort';
+@import 'components/status_banner';
+@import 'components/fh/fh';
+@import 'components/title-subtitle';
+@import 'components/organization-move';
+@import 'components/user-directory';
+@import 'components/notifications';
+@import 'components/organization-hierarchy';
+@import 'components/list-builder';
+@import 'components/organization-detail';
+@import 'components/organization-create';
+@import 'components/aac-request';
+@import 'components/aac-confirm';
+@import 'components/help-awards';
+@import 'components/table-entry';
+
+/*-------------------
+     Templates
+--------------------*/
+@import 'templates/workspace';
+
+/*-------------------
+     Pages
+--------------------*/
+@import 'pages/entity-object-view';
+@import 'pages/opportunity';
+@import 'pages/organization';
+@import 'pages/search';
+@import 'pages/reports';
+@import 'pages/alerts';
+@import 'pages/users-directory';
+@import 'pages/wage-determination';
+@import 'pages/assistance-listing-operations';
+
+
+
+/*******************************
+     Temporary Fixes
+*******************************/
 /*
-  Temporary fixes
+  All of these styles will be removed
 */
-home samsearchbar{
-  color: $textColor;
-}
 
 .usa-unstyled-list {
   @include unstyled-list;
@@ -147,10 +214,6 @@ home samsearchbar{
 .usa-unstyled-list > li {
     padding-bottom: 2px;
 }
-
-// samsearchheader .search-header > .usa-width-one-whole{
-//   height: 40px;
-// }
 
 .usa-font-lead {
   font-family: $font-serif;
@@ -181,105 +244,10 @@ home samsearchbar{
   width: 100%;
 }
 
-/*******************************
-        Legacy
-*******************************/
-
-
-@import 'utilities';
-@import 'margin-padding';
-@import 'global';
-@import 'typography';
-@import 'grid-offsets';
-
-@import 'components/actions';
-@import 'components/parent-orgs.scss';
-@import 'components/card';
-@import 'components/complex-form-template';
-@import 'components/date-range-filter';
-@import 'components/date-entry';
-@import 'components/date-range';
-@import 'components/download';
-// @import 'components/label-wrapper';
-@import 'components/accordion';
-@import 'components/alert';
-@import 'components/authentication';
-@import 'components/users/index';
-@import 'components/collapsible';
-@import 'components/comments';
-@import 'components/list-input';
-@import 'components/footer';
-@import 'components/button';
-@import 'components/pagination';
-@import 'components/header';
-@import 'components/header-links';
-@import 'components/header-menu';
-@import 'components/info-accordion';
-@import 'components/image';
-@import 'components/agency-picker';
-@import 'components/input';
-@import 'components/multiselect';
-@import 'components/banner';
-@import 'components/searchbar';
-@import 'components/search-header';
-@import 'components/multiselect-dropdown';
-@import 'components/image-library';
-@import 'components/tabs';
-@import 'components/modal';
-@import 'components/alphabet-selector';
-@import 'components/history';
-@import 'components/toggle-switch';
-@import 'components/feedback-form';
-@import 'components/well';
-@import 'components/autocomplete';
-@import 'components/autocomplete-dropdown';
-@import 'components/autocomplete-multiselect';
-@import 'components/organization-profile';
-@import 'components/role-management/role-managment';
-@import 'components/fal-table';
-@import 'components/address-form';
-@import 'components/workspace';
-@import 'components/bread-crumbs';
-@import 'components/data-service/data-service';
-@import 'components/sort';
-@import 'components/status_banner';
-@import 'components/fh/fh';
-@import 'components/title-subtitle';
-@import 'components/organization-move';
-@import 'components/user-directory';
-@import 'components/notifications';
-@import 'components/organization-hierarchy';
-@import 'components/list-builder';
-
-@import 'templates/workspace';
-
-@import 'sam-ui/pages/awards';
-@import 'sam-ui/pages/entity-object-view';
-@import 'sam-ui/pages/exclusion';
-@import 'sam-ui/pages/assistance-listing';
-@import 'sam-ui/pages/help';
-//@import 'sam-ui/pages/home';
-@import 'sam-ui/pages/opportunity';
-@import 'sam-ui/pages/organization';
-@import 'sam-ui/pages/search';
-@import 'sam-ui/pages/reference-library';
-@import 'sam-ui/pages/reports';
-@import 'sam-ui/pages/alerts';
-@import 'sam-ui/pages/new-to-sam';
-@import 'sam-ui/pages/help-accounts';
-@import 'sam-ui/pages/help-roadmap';
-@import 'sam-ui/pages/help-awards';
-@import 'sam-ui/pages/users-directory';
-@import 'sam-ui/pages/ui-kit-demo';
-@import 'sam-ui/pages/wage-determination';
-@import 'sam-ui/pages/assistance-listing-operations';
-@import 'sam-ui/pages/organization-detail';
-@import 'sam-ui/pages/organization-create';
-@import 'sam-ui/pages/aac-request';
-@import 'sam-ui/pages/aac-confirm';
-
-
-/* Let content occupy most of the page and show footer when scroll down*/
+/*
+  Let content occupy most of the page
+  and show footer when scroll down
+*/
 .occupy-page{
   min-height: 77vh;
 }
@@ -292,11 +260,6 @@ home samsearchbar{
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.content-block span {
-  display: block;
-  margin: 3px 0px 3px 0px;
 }
 
 .usa-input-error{
@@ -330,20 +293,19 @@ home samsearchbar{
   .start-date{
     margin-right: 0rem;
   }
-
 }
 
 .crossed-out:after{
-        content: '|';
-        color: #0071bc;
-        display: block;        
-        text-align: center;
-        font-size: 0.8em;
-        font-weight: bold;
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
+  content: '|';
+  color: #0071bc;
+  display: block;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
 }
 
 // Make sidenav use all availabe horizontal space on medium screen
@@ -354,21 +316,11 @@ home samsearchbar{
   }
 }
 
-// .search-layout{
-//   .showing-results-meta{
-//     margin-top:3rem!important;
-//   }
-//   samselect{
-//     label{
-//       margin-top:0;
-//     }
-//   }
-// }
-
 select {
   background-position: right .65rem center;
   padding: 1rem 2.6rem 1rem 0.7em;
 }
+
 .sticky-element {
   position: fixed;
   z-index:20;
@@ -398,25 +350,25 @@ sam-solo-accordian li {
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
+// For some odd reason USWDS does not show checkmarks if the item is checked and disabled. This will show the checkmark
+[type="checkbox"]:disabled:checked + label::before {
+  background-image: url('#{$image-path}/correct8.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
 .site-header{
-    margin-bottom: 10px;
-    background: rgb(17, 46, 81);
-    .site-logo {
-      margin-top: 40px;
-      margin-left: 3rem;
-      a{
-        display: block;
-        font-size: 2.4rem;
-        font-style:normal;
-        line-height: 1.3;
-        color: #FFF;
-      }
+  margin-bottom: 10px;
+  background: rgb(17, 46, 81);
+  .site-logo {
+    margin-top: 40px;
+    margin-left: 3rem;
+    a{
+      display: block;
+      font-size: 2.4rem;
+      font-style:normal;
+      line-height: 1.3;
+      color: #FFF;
     }
+  }
 }
-
-.usa-navbar {
-    display: inline-block;
-    height: 10.3rem;
-    border-bottom: none;
-}
-

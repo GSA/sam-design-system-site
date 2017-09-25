@@ -14,7 +14,12 @@ import {
 	</sam-accordion-section>
 	<sam-accordion-section headerText="Design" name="design">
 		<div [innerHTML]="design"></div>
-	</sam-accordion-section>	
+	</sam-accordion-section>
+	<ng-container *ngIf="implementation">
+		<sam-accordion-section headerText="Implementation" name="implementation">
+			<div [innerHTML]="implementation"></div>
+		</sam-accordion-section>
+	</ng-container>
 </sam-accordion>
 <h2>Example</h2>
 <div><ng-content></ng-content></div>
@@ -33,6 +38,7 @@ export class DocTemplateComponent implements OnInit {
 	@Input() typedoc;
 	@Input() guidance;
 	@Input() design;
+	@Input() implementation;
  	constructor(){}
 	public ngOnInit() {}
 

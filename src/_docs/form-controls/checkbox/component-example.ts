@@ -14,15 +14,15 @@ var code_example = `<sam-checkbox
   [errorMessage]="checkboxConfig.errorMessage"
   [hasSelectAll]="checkboxConfig.hasSelectAll">
 </sam-checkbox>
-
+<br/>
 <sam-checkbox
 [(model)]="checkboxModel"
-[name]="checkboxConfig.name"
-[options]="checkboxConfig.options"
-[label]="checkboxConfig.label"
-[hint]="checkboxConfig.hint"
-[errorMessage]="checkboxConfig.errorMessage"
-[hasSelectAll]="checkboxConfig.hasSelectAll"
+[name]="disabledCheckboxConfig.name"
+[options]="disabledCheckboxConfig.options"
+[label]="disabledCheckboxConfig.label"
+[hint]="disabledCheckboxConfig.hint"
+[errorMessage]="disabledCheckboxConfig.errorMessage"
+[hasSelectAll]="disabledCheckboxConfig.hasSelectAll"
 [disabled]="true">
 </sam-checkbox>`;
 
@@ -43,7 +43,16 @@ export class CheckboxExampleComponent extends BaseExampleComponent implements On
       {value: 'va', label: 'Virginia', name: 'checkbox-virginia'},
     ],
     name: 'my-sr-name',
-    label: 'Select a region',
+    label: 'Select a region (normal)',
+  };
+  disabledCheckboxConfig = {
+    options: [
+      {value: 'dc', label: 'DC', name: 'checkbox-dc'},
+      {value: 'ma', label: 'Maryland', name: 'checkbox-maryland'},
+      {value: 'va', label: 'Virginia', name: 'checkbox-virginia'},
+    ],
+    name: 'my-sr-name',
+    label: 'Select a region (disabled)',
   };
 	typedoc_target = "SamCheckboxComponent";
   typedoc_content = "";

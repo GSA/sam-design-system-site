@@ -58,19 +58,19 @@
 
     display: block;
     height: $widget-footer-height;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
     line-height: $widget-footer-height;
-    font-weight: 600;
-    color: $black;
+    font-size: 1.5rem;
+    font-weight: 500;
     cursor: pointer;
 
     .fa-chevron-circle-right {
+      $widget-icon-color: #00BFE7;
+
       display: inline-block;
       height: $widget-footer-height;
       margin-left: 4px;
       line-height: $widget-footer-height;
-      color: $blue;
+      color: $widget-icon-color;
 
       &:before {
         position: relative;

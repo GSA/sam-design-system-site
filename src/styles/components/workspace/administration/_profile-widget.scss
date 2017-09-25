@@ -21,6 +21,8 @@
     margin-bottom: 0.25em;
     background-size: 4rem; // Font-Awesome Fallback
     background-position-x: 1.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $black;
 
     &::before {
       font-size: 3.5em;
@@ -45,6 +47,36 @@
 
         &:nth-child(1) {
           margin-top: 0.5em;
+        }
+
+        &.usa-button {
+          $button-color: #E1F3F8;
+          $button-border-color: #0071BC;
+          $button-text-color: $black;
+
+          $button-hover-color: #0071BC;
+          $button-hover-border-color: #0071BC;
+          $button-hover-text-color: $white;
+
+          display: block;
+          width: auto;
+          height: 2em;          // 28px [Base: 14px]
+          margin-top: 0.5em;
+          background-color: $button-color;
+          line-height: 1.857em; // 26px [Base: 14px]
+          border: 1px solid $button-border-color;
+          color: $button-text-color;
+          font-size: 1.4rem;    // 14px;
+          text-align: left;
+          float: left;
+          clear: both;
+
+          &:hover,
+          &:focus {
+            background-color: $button-hover-color;
+            border: 1px solid $button-hover-border-color;
+            color: $button-hover-text-color;
+          }
         }
       }
 

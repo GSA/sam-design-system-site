@@ -7,6 +7,7 @@
   height: 0;
 }
 
+// only used in sam-listbuilder-action component
 .disable {
   color: $color-gray-warm-dark;
   cursor: default;
@@ -44,28 +45,9 @@
   display: none;
 }
 
-.inline {
-  display: inline;
-}
-
 .relative {
   position: relative;
 }
-
-.width100 {
-  width: 100%;
-}
-
-.middle-align {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-// hr {
-//   color: #888888;
-//   background-color: #888888;
-//   height: .5px;
-// }
 
 .centered {
   text-align: center;
@@ -73,32 +55,6 @@
 
 .bold {
   font-weight: $font-bold;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-.serif {
-  font-family: $font-serif;
-}
-
-.blankSpacer {
-  text-indent: -9999em;
-}
-
-.line-divider {
-  display: block;
-  height: 1px;
-  margin: .5em 0 .5em 0;
-
-  &:before {
-    border-top: 1px solid #000000;
-  }
-
-  &:after {
-    border-bottom: 1px solid #FFFFFF;
-  }
 }
 
 .marginCenter {
@@ -112,20 +68,6 @@
 
 .pull-right {
   float: right;
-}
-
-// ensure button has a big enough hit box
-.usa-button-icon {
-  height: 44px;
-  width: 44px;
-  display: inline-block;
-  background-color: transparent;
-  text-align: center;
-
-  &:hover {
-    cursor: pointer;
-    opacity: .6;
-  }
 }
 
 .usa-color-info {
@@ -158,6 +100,22 @@ button.usa-button-link:hover {
   text-decoration: underline;
 }
 
-.pointer-hover:hover {
-  cursor: pointer;
+// Background and text color combinations
+.usa-bgcolor-gray-lighter {
+  background-color: $color-gray-lighter;
+  color: $color-black;
+}
+
+.usa-bgcolor-gray-lightest {
+  background-color: $color-gray-lightest;
+  color: $color-black;
+}
+
+// Grid Offsets
+.usa-offset-one-fourth {
+  @include shift(3 of 12);
+}
+
+.usa-offset-one-third {
+  @include shift(4 of 12);
 }

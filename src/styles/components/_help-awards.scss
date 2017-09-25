@@ -1,0 +1,58 @@
+.wdol-additional-list{
+  border: 2px solid black;
+  position: absolute !important;
+  right: 0px;
+  top: -20px;
+  padding: 0px !important;
+
+  .wdol-additional-list-title{
+    padding-left: 15px;
+    background-color: $color-gray-lighter;
+    width: 100%;
+  }
+
+  .wdol-additional-list-item{
+    padding-left: 15px;
+  }
+}
+
+.labor-agency-header{
+  background-color: $color-gray-lighter;
+  padding: 6px;
+}
+
+.labor-agency-item{
+  padding: 8px 0 8px 0;
+  margin: 5px 0 5px 0;
+
+  .labor-agency-contact-item{
+    margin: 10px 0 10px 0;
+  }
+
+  .labor-agency-dept-title{
+    font-weight: bold;
+  }
+
+  .labor-agency-contact-region{
+    color: $color-gray-light;
+  }
+
+  .labor-agency-contact-email{
+    color: $color-primary-alt-darkest;
+  }
+
+  .labor-agency-contact-input{
+    width: 35%;
+    height: 25px;
+    display: inline;
+  }
+
+  .labor-agency-contact-label{
+    width: 60px;
+    display: inline-block;
+  }
+
+  .labor-agency-contact-form{
+    margin: 15px 0 15px 0;
+  }
+}

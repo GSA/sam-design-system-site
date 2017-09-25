@@ -1,3 +1,38 @@
+@mixin margin-and-padding-spacing($spacing) {
+  @for $i from 1 to 11 {
+    // Margin
+    %margin-#{$i}x { margin: $spacing * $i !important; }
+
+    %margin-top-#{$i}x,
+    %margin-vertical-#{$i}x { margin-top: $spacing * $i !important; }
+
+    %margin-bottom-#{$i}x,
+    %margin-vertical-#{$i}x { margin-bottom: $spacing * $i !important; }
+
+    %margin-left-#{$i}x,
+    %margin-horizontal-#{$i}x { margin-left: $spacing * $i !important; }
+
+    %margin-right-#{$i}x,
+    %margin-horizontal-#{$i}x { margin-right: $spacing * $i !important; }
+
+    // Padding
+    %padding-#{$i}x { padding: $spacing * $i !important; }
+
+    %padding-top-#{$i}x,
+    %padding-vertical-#{$i}x { padding-top: $spacing * $i !important; }
+
+    %padding-bottom-#{$i}x,
+    %padding-vertical-#{$i}x { padding-bottom: $spacing * $i !important; }
+
+    %padding-left-#{$i}x,
+    %padding-horizontal-#{$i}x { padding-left: $spacing * $i !important; }
+
+    %padding-right-#{$i}x,
+    %padding-horizontal-#{$i}x { padding-right: $spacing * $i !important; }
+    }
+}
+
+
 $spacing: 5px;
 @include margin-and-padding-spacing($spacing);
 

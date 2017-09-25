@@ -5,31 +5,34 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<div class="usa-width-one-whole">
-  <div class="usa-width-one-fourth">
+var code_example = `<sam-fieldset-wrapper label="Normal"></sam-fieldset-wrapper>
+<div class="sam-ui grid">
+  <div class="three wide column">
     <sam-button [buttonId]="'primaryBtn'" [buttonText]="'primary'" [buttonType]="'primary'"></sam-button>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="three wide column">
     <sam-button [buttonId]="'secondaryBtn'" [buttonText]="'secondary'" [buttonType]="'secondary'"></sam-button>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="three wide column">
     <sam-button [buttonId]="'tertiaryBtn'" [buttonText]="'tertiary'" [buttonType]="'tertiary'"></sam-button>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="three wide column">
     <sam-button [buttonId]="'negativeBtn'" [buttonText]="'negative'" [buttonType]="'negative'"></sam-button>
   </div>
 </div>
-<div class="usa-width-one-whole">
-  <div class="usa-width-one-fourth">
+<br/>
+<sam-fieldset-wrapper label="Disabled"></sam-fieldset-wrapper>
+<div class="sam-ui grid">
+  <div class="three wide column">
     <sam-button buttonDisabled="true" [buttonId]="'primaryBtn'" [buttonText]="'primary'" [buttonType]="'primary'"></sam-button>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="three wide column">
     <sam-button buttonDisabled="true" [buttonId]="'secondaryBtn'" [buttonText]="'secondary'" [buttonType]="'secondary'"></sam-button>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="three wide column">
     <sam-button buttonDisabled="true" [buttonId]="'tertiaryBtn'" [buttonText]="'tertiary'" [buttonType]="'tertiary'"></sam-button>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="three wide column">
     <sam-button buttonDisabled="true" [buttonId]="'negativeBtn'" [buttonText]="'negative'" [buttonType]="'negative'"></sam-button>
   </div>
 </div>`;

@@ -1,11 +1,32 @@
-.msg-feed-sidenav{
+.help-content-management-sidenav{
 
-  .border-top-black{
-    border-top: 1px black solid;
+  .cm-tab{
+    border: 2px $color-gray-lightest solid !important;
+    border-bottom: none !important;
   }
 
-  .border-bottom-black{
-    border-bottom: 1px black solid;
+  .cm-current-tab{
+    background-color: $color-cool-blue;
+    color: $color-white;
+  }
+
+  .blue-border{
+    border: 2px $color-cool-blue solid !important;
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: -7px;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid $color-cool-blue;
+  }
+
+  .border-bottom-light-gray{
+    border-bottom: 2px $color-gray-lightest solid;
   }
 
   legend{
@@ -21,14 +42,6 @@
     border-left: 4px $color-gray-lightest solid;
   }
 
-  .sublist li .usa-current{
-    padding-left: 36px;
-  }
-
-  .sublist li a{
-    padding-left: 40px;
-  }
-
   .request-total-count{
     color: $color-white;
     background-color: $color-secondary;
@@ -40,7 +53,7 @@
     text-align: center;
   }
 
-  .request-count, .request-count-empty{
+  .request-count{
     display: inline-block;
     height: 26px;
     min-width: 30px;
@@ -50,13 +63,8 @@
     text-align: center;
   }
 
-  .request-count-empty{
-    border: none;
-    background-color: $color-white;
-  }
-
   label{
-    display: inline-block;;
+    display: inline-block;
     font-weight: 400;
     margin-bottom: 0.5em;
   }

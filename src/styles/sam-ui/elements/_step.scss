@@ -297,7 +297,6 @@ $disabledColor: $disabledTextColor;
   position: static;
   text-align: center;
   // content: counters(ordered, ".");
-  content: "\f1db";
   align-self: $iconAlign;
   margin-right: $iconDistance;
   font-size: $iconSize;
@@ -486,6 +485,14 @@ $disabledColor: $disabledTextColor;
   color: $negativeColor;
   font-family: FontAwesome;
   content: "\f06a";
+}
+
+/* Pending */
+.#{$prefix}.steps .step.pending > .icon:before,
+.#{$prefix}.ordered.steps .step.pending:before {
+  color: $textColor;
+  font-family: FontAwesome;
+  content: "\f1db";
 }
 
 /* Disabled */

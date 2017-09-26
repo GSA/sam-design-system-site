@@ -27,7 +27,7 @@ var code_example = `
 export class SamDateRangeComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamDateRangeComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
   dateRangeModel = {
     startDate: "2016-02-03",

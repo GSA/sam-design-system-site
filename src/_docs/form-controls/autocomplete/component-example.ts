@@ -143,9 +143,9 @@ export class AutocompleteExampleComponent extends BaseExampleComponent implement
   countryValue = "";
 	typedoc_target = "SamAutocompleteComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
-  design = require("html-loader!markdown-loader!./design.md");
-  guidance = require("html-loader!markdown-loader!./guidance.md");
-  implementation = require("html-loader!markdown-loader!./implementation.md");
+  design = require("html-loader!markdown-it-loader!./design.md");
+  guidance = require("html-loader!markdown-it-loader!./guidance.md");
+  implementation = require("html-loader!markdown-it-loader!./implementation.md");
 }

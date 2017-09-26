@@ -22,6 +22,6 @@ var code_example = 'TODO';
 export class SamSidenavModuleExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamSidenavModule";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
 }

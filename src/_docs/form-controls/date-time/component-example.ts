@@ -19,6 +19,6 @@ export class DateTimeExampleComponent extends BaseExampleComponent implements On
 	dateTime: string = "2016-12-12T13:01";
   typedoc_target = "SamDateTimeComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

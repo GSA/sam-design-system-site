@@ -20,7 +20,7 @@ export class ClickOutsideExampleComponent extends BaseExampleComponent implement
 	clickedValue = "None";
 	typedoc_target = "SamClickOutsideDirective";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 	clickOutsideHandler(){
 		this.clickedValue = "Clicked outside 'Sample Target'";

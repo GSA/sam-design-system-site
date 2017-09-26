@@ -19,6 +19,6 @@ export class DateExampleComponent extends BaseExampleComponent implements OnInit
 	dateModel: string = "2016-02-03";
   typedoc_target = "SamDateComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

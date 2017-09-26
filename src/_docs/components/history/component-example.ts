@@ -44,6 +44,6 @@ export class HistoryExampleComponent extends BaseExampleComponent implements OnI
   ];
   typedoc_target = "SamHistoryComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

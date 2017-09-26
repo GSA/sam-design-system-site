@@ -11,7 +11,6 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 import { DocumentationService } from '../../../app/services/documentation.service';
-import * as markdown from 'html-loader!markdown-loader!./documentation.md';
 
 @Component({
   selector: 'doc-interfaces',

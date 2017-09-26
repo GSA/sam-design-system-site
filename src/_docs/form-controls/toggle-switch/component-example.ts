@@ -23,6 +23,6 @@ export class ToggleSwitchExampleComponent extends BaseExampleComponent implement
 
 	typedoc_target = "SamToggleSwitchComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

@@ -21,7 +21,7 @@ export class PhoneEntryExampleComponent extends BaseExampleComponent implements 
   phoneModel2 = "1+(123)456-3366";
   typedoc_target = "SamPhoneEntryComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 	phoneModelChange(phoneNum){
     this.phoneModel = phoneNum;

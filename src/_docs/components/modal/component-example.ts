@@ -85,7 +85,7 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
 	@ViewChild('modal5') vcModal5;
   typedoc_target = "SamModalComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
   message = "";
   modalAlertTypes = [{

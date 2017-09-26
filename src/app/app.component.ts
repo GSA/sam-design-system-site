@@ -25,9 +25,9 @@ import { DocumentationService } from './services/documentation.service';
     <sam-banner *ngIf="showBanner"></sam-banner>
     <header *ngIf="showHeader" class="usa-header site-header">
       <div class="usa-navbar site-header-navbar">
-        <div class="usa-logo site-logo" id="logo">
+        <div class="usa-logo site-logo" id="logo" style="height:60px;margin-top:0;">
           <em class="usa-logo-text">
-            <a routerLink="/" accesskey="1" title="Home" aria-label="Home">
+            <a routerLink="/" accesskey="1" title="Home" aria-label="Home" style="line-height:60px;">
             SAM Web Standards</a></em>
         </div>
       </div>

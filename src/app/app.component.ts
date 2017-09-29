@@ -9,8 +9,6 @@ import {
 } from '@angular/core';
 
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import * as marked from 'marked';
-import txt from 'raw-loader!./home/overview.md';
 import { DocumentationService } from './services/documentation.service';
 
 /*
@@ -72,17 +70,6 @@ export class AppComponent implements OnInit {
     }
   }
   public ngOnInit() {
-
-    var two = marked.setOptions({
-      renderer: new marked.Renderer(),
-      gfm: true,
-      tables: true,
-      breaks: false,
-      pedantic: false,
-      sanitize: false,
-      smartLists: true,
-      smartypants: false
-    });
 
     //sidenav config setup
     //DOCS is a global defined in webpack

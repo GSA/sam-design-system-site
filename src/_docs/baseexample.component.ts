@@ -36,11 +36,11 @@ export class BaseExampleComponent implements OnInit {
 
   public setupTypedocContent(obj: any): void {
     //console.log(obj);
-    this.typedoc_content += `<h2>Component API Reference</h2>
-                             <table class="sam-ui table">
+    this.typedoc_content += `<h2 class="sam-ui header">API Reference</h2>
+                             <table class="sam-ui definition celled table">
                               <thead>
                                 <tr>
-                                  <th>Tag</th>
+                                  <th></th>
                                   <th>Type</th>
                                   <th>Comment</th>
                                 </tr>

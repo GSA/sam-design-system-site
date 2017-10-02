@@ -1,0 +1,20 @@
+/*******************************
+         Docs
+*******************************/
+/*---------------------------
+   Syntax Code Highlight
+-----------------------------*/
+@import '~prismjs/themes/prism';
+code[class*="language"] {
+	font-size: 14px;
+}
+
+/*******************************
+      SAM-FRON-END CSS
+*******************************/
+@import "all";
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}

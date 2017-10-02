@@ -47,7 +47,7 @@ var code_example = `<div class="usa-grid-full">
 @Component({
 	selector: 'doc-autocomplete-multiselect',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" [implementation]="implementation">
 `+code_example+`
 </doc-template>
 `
@@ -70,5 +70,8 @@ export class AutocompleteMultiselectExampleComponent extends BaseExampleComponen
 	typedoc_target = "SamAutocompleteMultiselectComponent";
   typedoc_content = "";
   markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+  example = code_example;
+  design = require("html-loader!markdown-it-loader!./design.md");
+  guidance = require("html-loader!markdown-it-loader!./guidance.md");
+  implementation = require("html-loader!markdown-it-loader!./implementation.md");
 }

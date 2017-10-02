@@ -1,3 +1,2 @@
 # Button
-
-Use buttons to signal actions.
+A button indicates a possible user action

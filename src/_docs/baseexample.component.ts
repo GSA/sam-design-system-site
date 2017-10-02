@@ -47,9 +47,10 @@ export class BaseExampleComponent implements OnInit {
                               </thead>`;
     obj.forEach((item) => {
       var comment = item['comment'] && item['comment']['shortText'] ? item.comment.shortText : "";
+      var type = item['type'] && item['type']['name'] ? item.type.name : "";
       this.typedoc_content += `<tr>
                                  <td>@${item.decorators[0].name}( ) ${item.name}</td>
-                                 <td>${item.type.name}</td>
+                                 <td>${type}</td>
                                  <td>${comment}</td>
                                </tr>`;
     });

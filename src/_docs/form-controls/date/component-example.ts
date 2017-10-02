@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<sam-date name="example-date" [(value)]='dateModel'></sam-date>`;
+var code_example = `<sam-date name="example-date" [(ngModel)]='dateModel'></sam-date>`;
 
 @Component({
 	selector: 'doc-date',

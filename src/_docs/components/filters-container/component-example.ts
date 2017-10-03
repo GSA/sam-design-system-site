@@ -28,7 +28,7 @@ var code_example = `<sam-filters-container>
 export class FiltersContainerExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamFiltersContainerComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
   dateModel: string = "2016-02-03";
 }

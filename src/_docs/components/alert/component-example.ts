@@ -22,6 +22,6 @@ var code_example = `<sam-alert [type]="'success'" [title]="'Sample Title 1'" [de
 export class AlertExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamAlertComponent";
   typedoc_content = "";
-	markdown = require("html-loader!markdown-loader!./documentation.md");
+	markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

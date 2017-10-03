@@ -18,6 +18,6 @@ var code_example = `<sam-spinner></sam-spinner>`;
 export class SpinnerExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamSpinnerComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

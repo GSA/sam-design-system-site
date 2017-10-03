@@ -45,8 +45,8 @@ var code_example = `<div class="usa-width-one-whole">
 export class AccordionExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamAccordionComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
-  guidance = require("html-loader!markdown-loader!./guidance.md");
-  design = require("html-loader!markdown-loader!./design.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  guidance = require("html-loader!markdown-it-loader!./guidance.md");
+  design = require("html-loader!markdown-it-loader!./design.md");
 	example = code_example;
 }

@@ -1,0 +1,82 @@
+@import "help-content-management/help-content-management-sidenav";
+
+.help-content-management{
+
+  .content-item{
+    border: 1.5px solid $color-gray-light;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .content-header-type-div{
+    text-align: center;
+    background-color: $color-gray-lighter;
+    padding: 7px;
+    font-weight: 600;
+  }
+
+  .content-item-header{
+    border-bottom: 1px solid $color-gray-light;
+  }
+
+  .content-item select{
+    border: none;
+    margin: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 35px;
+  }
+
+  .content-title-text{
+    padding: 10px 0 5px 0px;
+    margin-bottom: 0px;
+  }
+
+  .content-description-text{
+    padding-top: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+  }
+
+  sam-sort select{
+    min-width: 100px;
+  }
+
+  .question-button{
+    padding-top: 17.5px;
+    padding-bottom: 17.5px
+  }
+
+  .video-image{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    opacity: 0.3;
+  }
+
+  .video-play-icon:hover{
+    cursor: pointer;
+  }
+
+  .video-play-icon{
+    position: absolute;
+    top: 40%;
+    right: 43%;
+    color: $color-gray-warm-dark;
+    font-size: 250%;
+  }
+
+  .video-time{
+    padding: 0 5px 0 5px;
+    position: absolute;
+    bottom: 22px;
+    right: 15px;
+    color: $color-white;
+    background-color: $color-gray-medium;
+  }
+
+  sam-actions-dropdown .usa-button{
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+}

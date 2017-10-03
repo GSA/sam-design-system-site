@@ -25,6 +25,6 @@ export class NameEntryExampleComponent extends BaseExampleComponent implements O
   };
   typedoc_target = "SamNameEntryComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

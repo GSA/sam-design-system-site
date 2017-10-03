@@ -6,11 +6,40 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `<div class="usa-grid-full">
-  <div class="usa-width-one-third">
+  <div class="usa-width-one">
+    <h3>Simple Example</h3>
     <sam-autocomplete-multiselect
       label="Team Members" required="true"
       [keyValueConfig]="multiselectConfig" 
       [options]="multiselectOptions">
+    </sam-autocomplete-multiselect>
+  </div>
+  <div class="usa-width-one">
+    <h3>One With Everything</h3>
+    <sam-autocomplete-multiselect
+      [options]="[
+        { key: 'MD', value: 'Maryland', category: 'Places' },
+        { key: 'VA', value: 'Virginia', category: 'Places' },
+        { key: 'DC', value: 'Washington, DC', category: 'Places' },
+        { key: 'cc-carlos', value: 'Carlos', category: 'People', subhead: 'CSS Guru' },
+        { key: 'cc-colin', value: 'Colin', category: 'People', subhead: 'UI Developer' },
+        { key: 'cc-diego', value: 'Diego', category: 'People', subhead: 'UI Developer' }
+      ]"
+      [keyValueConfig]="{
+        keyProperty: 'key',
+        valueProperty: 'value',
+        subheadProperty: 'subhead'
+      }"
+      [serviceOptions]="{}"
+      [required]="true"
+      [label]="'Label goes here...'"
+      [hint]="'Hint goes here...'"
+      [name]="'name for input'"
+      [categories]="[{ key: 'People', value: 'People' }, { key: 'Places', value: 'Places' }]"
+      [categoryIsSelectable]="true"
+      [allowAny]="false"
+      [defaultSearchString]="''"
+      [errorMessage]="'Error message goes here'">
     </sam-autocomplete-multiselect>
   </div>
 </div>`;
@@ -18,7 +47,7 @@ var code_example = `<div class="usa-grid-full">
 @Component({
 	selector: 'doc-autocomplete-multiselect',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" [implementation]="implementation">
 `+code_example+`
 </doc-template>
 `
@@ -40,6 +69,9 @@ export class AutocompleteMultiselectExampleComponent extends BaseExampleComponen
    }
 	typedoc_target = "SamAutocompleteMultiselectComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
-	example = code_example;
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  example = code_example;
+  design = require("html-loader!markdown-it-loader!./design.md");
+  guidance = require("html-loader!markdown-it-loader!./guidance.md");
+  implementation = require("html-loader!markdown-it-loader!./implementation.md");
 }

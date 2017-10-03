@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<sam-time name="example-time" [(value)]="time"></sam-time>`;
+var code_example = `<sam-time name="example-time" [(ngModel)]="time"></sam-time>`;
 
 @Component({
 	selector: 'doc-time',
@@ -20,6 +20,6 @@ export class TimeExampleComponent extends BaseExampleComponent implements OnInit
 	time: string = "13:01";
   typedoc_target = "SamTimeComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-var code_example = `<sam-date name="example-date" [(value)]='dateModel'></sam-date>`;
+var code_example = `<sam-date name="example-date" [(ngModel)]='dateModel'></sam-date>`;
 
 @Component({
 	selector: 'doc-date',
@@ -19,6 +19,6 @@ export class DateExampleComponent extends BaseExampleComponent implements OnInit
 	dateModel: string = "2016-02-03";
   typedoc_target = "SamDateComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

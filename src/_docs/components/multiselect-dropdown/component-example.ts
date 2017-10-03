@@ -32,6 +32,6 @@ export class MultiselectDropdownExampleComponent extends BaseExampleComponent im
   };
   typedoc_target = "SamMultiSelectDropdownComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 }

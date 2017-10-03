@@ -25,6 +25,6 @@ var code_example = `<sam-label-wrapper label="Fieldset Label Example" hint="Hint
 export class LabelWrapperExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "LabelWrapper";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
 }

@@ -40,7 +40,7 @@
     text-align: center;
   }
 
-  .request-count{
+  .request-count, .request-count-empty{
     display: inline-block;
     height: 26px;
     min-width: 30px;
@@ -48,6 +48,11 @@
     background-color: $color-secondary;
     border-radius: 50%;
     text-align: center;
+  }
+
+  .request-count-empty{
+    border: none;
+    background-color: $color-white;
   }
 
   label{

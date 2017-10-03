@@ -26,7 +26,7 @@ var code_example = `
 export class SamActionsDropdownComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamActionsDropdownComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
   actions: Array<any> = [
     { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: ()=>{console.log("edit");}},

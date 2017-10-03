@@ -27,7 +27,7 @@ src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg"
 export class SamImageComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamImageComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
   fileChangeHandler(event)  {
     console.log(event);

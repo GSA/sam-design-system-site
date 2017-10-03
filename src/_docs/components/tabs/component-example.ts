@@ -6,7 +6,7 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 
 var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
-  <sam-tab tabTitle="Opportunity" (tabSelected)="tabSelected($event)">
+  <sam-tab tabTitle="Opportunity" active="true" (tabSelected)="tabSelected($event)">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa rerum nemo officia nam atque nulla tempore explicabo, at voluptatem omnis ad, possimus. Odio, ex, nostrum. Pariatur tempore, accusamus deleniti magnam!
   </sam-tab>
   <sam-tab tabTitle="Assistance" (tabSelected)="tabSelected($event)">
@@ -25,7 +25,7 @@ var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
 export class TabsExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamTabsComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = code_example;
 	currentTabSelected(evt){
 

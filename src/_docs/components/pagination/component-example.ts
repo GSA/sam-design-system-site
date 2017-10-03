@@ -20,6 +20,6 @@ export class PaginationExampleComponent extends BaseExampleComponent implements 
   };
   typedoc_target = "SamPaginationComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = `<samPagination [currentPage]="paginationConfig.currentPage" [totalPages]="paginationConfig.totalPages"></samPagination>`;
 }

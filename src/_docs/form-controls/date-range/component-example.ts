@@ -15,10 +15,19 @@ import { BaseExampleComponent } from '../../baseexample.component';
 //tabs/spacing matters for code example block
 var code_example = `
 <sam-date-range 
+  label="Default"
   name="example-date" 
   #dateRangeVar="ngModel" 
   [control]="dateRangeVar.control" 
-  [(ngModel)]='dateRangeModel'></sam-date-range>`;
+  [(ngModel)]='dateRangeModel'></sam-date-range>
+<hr />
+<sam-date-range 
+  label="Stacked"
+  name="example-date" 
+  #dateRangeVar2="ngModel" 
+  [control]="dateRangeVar2.control" 
+  stacked="true"
+  [(ngModel)]='dateRangeModel2'></sam-date-range>`;
 
 @Component({
   selector: 'doc-sam-date-range',
@@ -27,9 +36,13 @@ var code_example = `
 export class SamDateRangeComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamDateRangeComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
   dateRangeModel = {
+    startDate: "2016-02-03",
+    endDate: "2017-04-23"
+  };
+  dateRangeModel2 = {
     startDate: "2016-02-03",
     endDate: "2017-04-23"
   };

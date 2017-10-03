@@ -19,7 +19,7 @@ Scroll down and see Sidenav
 export class StickyExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamStickyComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
 	example = `<div class="sticky-target usa-grid">
   <div class="usa-width-one-fourth">
     <nav sam-sticky [container]="sticky-target">

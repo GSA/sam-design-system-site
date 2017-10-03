@@ -23,6 +23,11 @@
     vertical-align: top;
   }
 
+  tr:hover.clickable {
+    background-color: #ececec;
+    cursor: pointer;
+  }
+
   .results-text {
     line-height: 4.4rem;
   }

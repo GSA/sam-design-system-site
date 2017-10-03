@@ -1,0 +1,10 @@
+sam-table-entry{
+    .sub-row{
+        td:first-child{
+            padding-left:2em;
+        }
+    }
+    .actions-cell{
+        text-align:right!important;
+    }
+}

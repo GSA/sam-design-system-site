@@ -10,7 +10,7 @@ var code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
 @Component({
 	selector: 'doc-sidenav',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance">
 See sidenav on the left
 </doc-template>
 `
@@ -18,6 +18,8 @@ See sidenav on the left
 export class SidenavExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamSidenavComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+  markdown = require("html-loader!markdown-loader!./documentation.md");
+  example = code_example;
+  design = require("html-loader!markdown-loader!./design.md");
+  guidance = require("html-loader!markdown-loader!./guidance.md");
 }

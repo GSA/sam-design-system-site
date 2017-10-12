@@ -12,7 +12,6 @@ import { SimpleExampleComponent } from "./simple.component";
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
-import { AlphabetSelectorExampleComponent,TestService } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { BreadcrumbExampleComponent } from "./components/breadcrumb/component-example"; 
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
@@ -58,14 +57,12 @@ import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  providers: [TestService],
   declarations: [
     BaseExampleComponent,
     PlaceHolderExampleComponent,
     SimpleExampleComponent,
     AccordionExampleComponent,
     AlertExampleComponent,
-    AlphabetSelectorExampleComponent,
     BannerExampleComponent,
     BreadcrumbExampleComponent,
     ButtonExampleComponent,

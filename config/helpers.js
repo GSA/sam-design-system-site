@@ -154,7 +154,6 @@ import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes.dynamic";
 
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
-import { TestService } from "./components/alphabet-selector/component-example";
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 
 
@@ -162,7 +161,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
  * \AppModule\` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-	providers: [TestService],
 	declarations: [${declarations}\n\t],
 	entryComponents: [${declarations}\n\t],
 	imports: [

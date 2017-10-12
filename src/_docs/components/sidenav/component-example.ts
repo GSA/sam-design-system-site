@@ -18,8 +18,8 @@ See sidenav on the left
 export class SidenavExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamSidenavComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-loader!./documentation.md");
+  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
-  design = require("html-loader!markdown-loader!./design.md");
-  guidance = require("html-loader!markdown-loader!./guidance.md");
+  design = require("html-loader!markdown-it-loader!./design.md");
+  guidance = require("html-loader!markdown-it-loader!./guidance.md");
 }

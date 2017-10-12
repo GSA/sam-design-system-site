@@ -18,7 +18,6 @@ import { SamActionButtonExampleComponent } from "./components/actions/action-but
 import { SamActionsDropdownComponentExampleComponent } from "./components/actions/actions-dropdown/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { SamAlertFooterComponentExampleComponent } from "./components/alert-footer/component-example";
-import { AlphabetSelectorExampleComponent } from "./components/alphabet-selector/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { BreadcrumbExampleComponent } from "./components/breadcrumb/component-example";
 import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumbs/component-example";
@@ -70,7 +69,6 @@ import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes.dynamic";
 
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
-import { TestService } from "./components/alphabet-selector/component-example";
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 
 
@@ -78,14 +76,12 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
  * AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-	providers: [TestService],
 	declarations: [
 		AccordionExampleComponent,
 		SamActionButtonExampleComponent,
 		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
 		SamAlertFooterComponentExampleComponent,
-		AlphabetSelectorExampleComponent,
 		BannerExampleComponent,
 		BreadcrumbExampleComponent,
 		SamBreadcrumbsComponentExampleComponent,
@@ -138,7 +134,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
 		SamAlertFooterComponentExampleComponent,
-		AlphabetSelectorExampleComponent,
 		BannerExampleComponent,
 		BreadcrumbExampleComponent,
 		SamBreadcrumbsComponentExampleComponent,

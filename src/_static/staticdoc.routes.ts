@@ -16,4 +16,3 @@ for(var idx in STATICPAGES){
   };
 	ROUTES.push(obj);
 }
-// console.log(ROUTES);

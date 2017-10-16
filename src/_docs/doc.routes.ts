@@ -95,4 +95,3 @@ for(var idx in DOCS){
   }
 	ROUTES.push(obj);
 }
-// console.log(ROUTES);

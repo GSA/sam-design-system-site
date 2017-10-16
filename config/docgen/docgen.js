@@ -4,8 +4,21 @@ const root = require('../helpers').root();
 const rxjs = require('rxjs');
 const Observable = rxjs.Observable;
 
-var stream = require('stream');
-var util = require('util');
+const stream = require('stream');
+const util = require('util');
+
+/**
+ * Add componets that you don't want to be added to the site.
+ * Most of these are helper or child components that shouldn't
+ * be exposed to developers.
+ */
+const ignoredComponents = [
+  'SamAccordionSection',
+  'SamCommentComponent',
+  'SamMenuItemComponent',
+  'SidenavService',
+  'SamTabComponent'
+]
 
 function ObservableStream (observer, path) {
   this.path = path;
@@ -109,6 +122,23 @@ dirStream
   .merge(docStream)
   .subscribe(
     (fileObj) => {
+      if (!fileObj) return;
+
+      /**
+       * If ignored file, exit
+       */
+      if (ignoredComponents.indexOf(fileObj.component) !== -1) return;
+
+      /**
+       * If layout, exit (need more support to support layout examples)
+       */
+      if ( fileObj &&
+           fileObj.path &&
+           (fileObj.path.includes('layout') ||
+           fileObj.path.includes('pipes'))) { 
+             return;
+           }
+
       generateDirsInPath(fileObj.path, (err) => {
         if (err) return;
         let paths = fileObj.path.split('/');
@@ -121,7 +151,8 @@ dirStream
         // Create component file
         createFile(componentFileName, generateComponentStub(fileObj), (err) => console.error(err));
       });
-    }
+    },
+    err => console.error(err)
   );
 
 function createFile(path, content, callback) {

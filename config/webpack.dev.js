@@ -17,7 +17,6 @@ const TypedocWebpackPlugin = require('../sam-ui-elements/config/typedoc-webpack-
 
 var files = helpers.getUIKitStructure();
 var staticFiles = helpers.getStaticDirStructure();
-console.log('Files array:', files);
 
 /**
  * Webpack Constants

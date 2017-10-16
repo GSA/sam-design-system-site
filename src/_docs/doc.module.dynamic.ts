@@ -34,7 +34,6 @@ import { MultiselectDropdownExampleComponent } from "./components/multiselect-dr
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
-import { SamSidenavModuleExampleComponent } from "./components/sidenav/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
@@ -96,7 +95,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		PaginationExampleComponent,
 		POCExampleComponent,
 		SidenavExampleComponent,
-		SamSidenavModuleExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
 		ClickOutsideExampleComponent,
@@ -146,7 +144,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		PaginationExampleComponent,
 		POCExampleComponent,
 		SidenavExampleComponent,
-		SamSidenavModuleExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
 		ClickOutsideExampleComponent,

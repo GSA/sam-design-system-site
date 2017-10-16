@@ -16,6 +16,7 @@ const ignoredComponents = [
   'SamAccordionSection',
   'SamCommentComponent',
   'SamMenuItemComponent',
+  'SamSidenavModule',
   'SidenavService',
   'SamTabComponent'
 ]

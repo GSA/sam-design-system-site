@@ -28,7 +28,6 @@ import { MultiselectDropdownExampleComponent } from "./components/multiselect-dr
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
-import { SamSidenavModuleExampleComponent } from "./components/sidenav/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
@@ -80,7 +79,6 @@ export const ROUTES: Routes = [
 	{ path: 'components/pagination', component: PaginationExampleComponent },
 	{ path: 'components/point-of-contact', component: POCExampleComponent },
 	{ path: 'components/sidenav', component: SidenavExampleComponent },
-	{ path: 'components/sidenav/sidenav', component: SamSidenavModuleExampleComponent },
 	{ path: 'components/spinner', component: SpinnerExampleComponent },
 	{ path: 'components/tabs', component: TabsExampleComponent },
 	{ path: 'directives/click-outside', component: ClickOutsideExampleComponent },

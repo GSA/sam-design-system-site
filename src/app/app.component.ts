@@ -62,7 +62,6 @@ export class AppComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router,
               private service: DocumentationService) {}
   resolveRoute(path){
-    //console.log("click",path);
     if(path == "/"){
       
     } else {
@@ -73,7 +72,6 @@ export class AppComponent implements OnInit {
 
     //sidenav config setup
     //DOCS is a global defined in webpack
-    //console.log(STATICPAGES);
     for(var idx in DOCS){
       if(!this.uikitList[DOCS[idx]['section']]){
         this.uikitList[DOCS[idx]['section']] = [{

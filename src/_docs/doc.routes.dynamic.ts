@@ -13,13 +13,12 @@ import { SamActionsDropdownComponentExampleComponent } from "./components/action
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { SamAlertFooterComponentExampleComponent } from "./components/alert-footer/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
-import { BreadcrumbExampleComponent } from "./components/breadcrumb/component-example";
 import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumbs/component-example";
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
-import { SamCommentComponentExampleComponent } from "./components/comments/comment/component-example";
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
+import { SamHeaderComponentExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
 import { SamImageComponentExampleComponent } from "./components/image/component-example";
 import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
@@ -29,8 +28,6 @@ import { MultiselectDropdownExampleComponent } from "./components/multiselect-dr
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
-import { SamMenuItemComponentExampleComponent } from "./components/sidenav/menu-item/component-example";
-import { SamSidenavModuleExampleComponent } from "./components/sidenav/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
@@ -67,13 +64,12 @@ export const ROUTES: Routes = [
 	{ path: 'components/alert', component: AlertExampleComponent },
 	{ path: 'components/alert-footer', component: SamAlertFooterComponentExampleComponent },
 	{ path: 'components/banner', component: BannerExampleComponent },
-	{ path: 'components/breadcrumb', component: BreadcrumbExampleComponent },
 	{ path: 'components/breadcrumbs', component: SamBreadcrumbsComponentExampleComponent },
 	{ path: 'components/collapsible', component: CollapsibleExampleComponent },
-	{ path: 'components/comments/comment', component: SamCommentComponentExampleComponent },
 	{ path: 'components/comments', component: SamCommentsComponentExampleComponent },
 	{ path: 'components/download', component: DownloadExampleComponent },
 	{ path: 'components/filters-container', component: FiltersContainerExampleComponent },
+	{ path: 'components/header', component: SamHeaderComponentExampleComponent },
 	{ path: 'components/history', component: HistoryExampleComponent },
 	{ path: 'components/image', component: SamImageComponentExampleComponent },
 	{ path: 'components/info-accordion', component: InfoAccordionExampleComponent },
@@ -83,8 +79,6 @@ export const ROUTES: Routes = [
 	{ path: 'components/pagination', component: PaginationExampleComponent },
 	{ path: 'components/point-of-contact', component: POCExampleComponent },
 	{ path: 'components/sidenav', component: SidenavExampleComponent },
-	{ path: 'components/sidenav/menu-item', component: SamMenuItemComponentExampleComponent },
-	{ path: 'components/sidenav/sidenav', component: SamSidenavModuleExampleComponent },
 	{ path: 'components/spinner', component: SpinnerExampleComponent },
 	{ path: 'components/tabs', component: TabsExampleComponent },
 	{ path: 'directives/click-outside', component: ClickOutsideExampleComponent },

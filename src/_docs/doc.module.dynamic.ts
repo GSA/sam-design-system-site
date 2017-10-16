@@ -19,13 +19,12 @@ import { SamActionsDropdownComponentExampleComponent } from "./components/action
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { SamAlertFooterComponentExampleComponent } from "./components/alert-footer/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
-import { BreadcrumbExampleComponent } from "./components/breadcrumb/component-example";
 import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumbs/component-example";
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
-import { SamCommentComponentExampleComponent } from "./components/comments/comment/component-example";
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
+import { SamHeaderComponentExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
 import { SamImageComponentExampleComponent } from "./components/image/component-example";
 import { InfoAccordionExampleComponent } from "./components/info-accordion/component-example";
@@ -35,8 +34,6 @@ import { MultiselectDropdownExampleComponent } from "./components/multiselect-dr
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
-import { SamMenuItemComponentExampleComponent } from "./components/sidenav/menu-item/component-example";
-import { SamSidenavModuleExampleComponent } from "./components/sidenav/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
@@ -83,13 +80,12 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		AlertExampleComponent,
 		SamAlertFooterComponentExampleComponent,
 		BannerExampleComponent,
-		BreadcrumbExampleComponent,
 		SamBreadcrumbsComponentExampleComponent,
 		CollapsibleExampleComponent,
-		SamCommentComponentExampleComponent,
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
 		FiltersContainerExampleComponent,
+		SamHeaderComponentExampleComponent,
 		HistoryExampleComponent,
 		SamImageComponentExampleComponent,
 		InfoAccordionExampleComponent,
@@ -99,8 +95,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		PaginationExampleComponent,
 		POCExampleComponent,
 		SidenavExampleComponent,
-		SamMenuItemComponentExampleComponent,
-		SamSidenavModuleExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
 		ClickOutsideExampleComponent,
@@ -135,13 +129,12 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		AlertExampleComponent,
 		SamAlertFooterComponentExampleComponent,
 		BannerExampleComponent,
-		BreadcrumbExampleComponent,
 		SamBreadcrumbsComponentExampleComponent,
 		CollapsibleExampleComponent,
-		SamCommentComponentExampleComponent,
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
 		FiltersContainerExampleComponent,
+		SamHeaderComponentExampleComponent,
 		HistoryExampleComponent,
 		SamImageComponentExampleComponent,
 		InfoAccordionExampleComponent,
@@ -151,8 +144,6 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		PaginationExampleComponent,
 		POCExampleComponent,
 		SidenavExampleComponent,
-		SamMenuItemComponentExampleComponent,
-		SamSidenavModuleExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
 		ClickOutsideExampleComponent,

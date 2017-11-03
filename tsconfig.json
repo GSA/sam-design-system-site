@@ -33,7 +33,8 @@
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
-    "useWebpackText": true
+    "useWebpackText": true,
+    "transpileOnly": true
   },
   "compileOnSave": false,
   "buildOnSave": false,

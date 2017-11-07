@@ -1,4 +1,4 @@
-FROM dtr-1.prod-iae.bsp.gsa.gov/docker-datacenter/node-nginx:7
+FROM dtr-1.prod-iae.bsp.gsa.gov/docker-datacenter/node-nginx:8
 
 # Delete default nginx config file & index file
 RUN rm /etc/nginx/sites-enabled/default

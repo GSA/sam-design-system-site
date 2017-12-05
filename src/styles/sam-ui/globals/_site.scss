@@ -55,18 +55,17 @@ h5 a{
 h1 {
   min-height: 1rem;
   font-size: $h1;
-  letter-spacing: -1.2px;
-  font-weight: 700;
+  letter-spacing: -1px;
   line-height: 1em;
   margin-bottom: 3rem;
 }
 h2 {
   font-size: $h2;
-  letter-spacing: -1.2px;
+  letter-spacing: -.5px;
 }
 h3 {
   font-size: $h3;
-  letter-spacing: -.7px;
+  letter-spacing: -.3px;
 }
 h4 {
   font-size: $h4;

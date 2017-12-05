@@ -150,7 +150,7 @@ $floatedMargin: 0.5em;
 ---------------*/
 .#{$prefix}.header .sup.header {
   display: block;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 0;
   text-transform: uppercase;
   padding: 0em;
@@ -229,6 +229,23 @@ h4.#{$prefix}.header .sub.header {
   font-size: $h4SubHeaderFontSize;
 }
 h5.#{$prefix}.header .sub.header {
+  font-size: $h5SubHeaderFontSize;
+}
+
+/* Sup Header */
+h1.#{$prefix}.header .sup.header {
+  font-size: 2.5rem;
+}
+h2.#{$prefix}.header .sup.header {
+  font-size: $h2SubHeaderFontSize;
+}
+h3.#{$prefix}.header .sup.header {
+  font-size: $h3SubHeaderFontSize;
+}
+h4.#{$prefix}.header .sup.header {
+  font-size: $h4SubHeaderFontSize;
+}
+h5.#{$prefix}.header .sup.header {
   font-size: $h5SubHeaderFontSize;
 }
 

@@ -1,29 +1,35 @@
 sam-listbuilder{
-    .card{
-        padding:10px 0px;
-        border:1px solid #000;
-        border-radius:0;
-        margin-bottom:15px;
-        &>div{
-            padding:0 15px;
-            &:first-child{
-                text-align:right;
-            }
-        }
-        .editor-view{
-            padding: 0px 30px;
-        }
-    }
     .add-button{
         display:block!important;
     }
-    .button-row{
-        text-align:right;
-        & button:last-child{
-            margin-right:0;
-        }
-    }
 }
+
+sam-listbuilder-card{
+  display:block;
+  .card {
+    padding: 10px 0px;
+    border: 1px solid #000;
+    border-radius: 0;
+    margin-bottom: 15px;
+    & > div {
+      padding: 0 15px;
+      &:first-child {
+        text-align: right;
+      }
+    }
+    .editor-view {
+      padding: 0px 30px;
+    }
+  }
+
+  .button-row{
+    text-align:right;
+    & button:last-child{
+      margin-right:0;
+    }
+  }
+}
+
 sam-listbuilder-action{
     span{
         position:relative;
@@ -32,7 +38,7 @@ sam-listbuilder-action{
         margin-top: 0;
         margin-bottom: 0;
         list-style-type: none;
-        position:absolute;    
+        position:absolute;
         right: 0;
         background: #FFF;
         border: 1px solid #000;
@@ -42,5 +48,5 @@ sam-listbuilder-action{
     }
     .disabled{
         color:#ccc;
-    }    
+    }
 }

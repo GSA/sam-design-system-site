@@ -1053,6 +1053,15 @@ $stackableInvertedMobileBorder: 1px solid $whiteBorderColor;
   background-color: $blue !important;
   color: $white;
 }
+
+/* Dark Blue  */
+.#{$prefix}.grid > .dark.blue.row,
+.#{$prefix}.grid > .dark.blue.column,
+.#{$prefix}.grid > .row > .dark.blue.column {
+  background-color: $darkBlue !important;
+  color: $white;
+}
+
 /* Light Blue  */
 .#{$prefix}.grid > .light.blue.row,
 .#{$prefix}.grid > .light.blue.column,

@@ -1,21 +1,39 @@
   .sam-autocomplete-multiselect {
-    width: 100%;
+    max-width: 46rem;
     clear: both;
     position: relative;
-    
-    .clear-all-container {  
-      text-align: right;
+
+    .label-wrapper {
+      position: relative;
+
+      .content-container {
+        position: relative;
+
+        .clear-all-container, .icon-container {
+          text-align: right;
+          position: absolute;
+          z-index: 100;
+        }
+        .icon-container {
+          top: 8px;
+          right: 10px;
+        }
+        .clear-all-container {
+          top: 10px;          
+          right: 32px;
+        }
+      }
     }
+
+
 
     button.usa-button-link {
       text-decoration: none;
-      color: #0071bc;
       z-index: 1;
     }
 
     ul.multiselect-parent-list{
       position: absolute;
-      top: 70px;
       box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
       border:1px solid #96c8da;
       border-width: 0px 1px 1px 1px;
@@ -49,7 +67,7 @@
       }
     }
 
-    li.category-item:hover, li.category-item.selected, 
+    li.category-item:hover, li.category-item.selected,
     li.category-name.selectable:hover, li.category-name.selectable.selected {
      background-color: #0071bc;
      color: white;
@@ -58,7 +76,7 @@
       color: #cccccc;
      }
     }
-    
+
     li.category-item.marked{
       color: #AAA;
     }
@@ -68,7 +86,7 @@
       padding: 0.7rem 0.7em;
     }
 
-    label { 
+    label {
       .required {
         float: right;
         font-style: italic;
@@ -76,13 +94,15 @@
     }
 
     .sam-autocomplete-multiselect-input {
+      background-color: white;
       width: 100%;
-      padding: 0.7rem 0.7rem;
+      padding: 0.7rem 50px 0.7rem 0.7rem;
       border: 1px solid black;
       vertical-align: middle;
       transition: all 0.4s ease;
       display: flex;
       flex-flow: row wrap;
+      position: relative;
 
       .sam-ui.label{
         position: relative;
@@ -102,10 +122,14 @@
           right: 8px;
         }
       }
-      
+
       &.active{
         border:1px solid #96c8da;
         border-bottom:1px solid #fff;
+      }
+      &.chips.active{
+        border:1px solid #96c8da;
+        border-bottom:1px solid #96c8da;
       }
 
       textarea {
@@ -117,7 +141,8 @@
         resize: none;
         border: 0;
         outline: none;
-        box-shadow: none;  
+        box-shadow: none;
+        overflow: hidden;
       }
     }
   }
@@ -127,9 +152,4 @@
     line-height: 1.3;
     max-width: 43rem;
     padding: 0;
-  }
-  
-  
-  sam-agency-picker-v2 ul.multiselect-parent-list{
-    top: 44px !important;
   }

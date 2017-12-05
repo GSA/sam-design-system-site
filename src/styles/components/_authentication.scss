@@ -51,8 +51,12 @@
     text-align: left;
 
     &.usa-alert-main {
-      width: 100%;
-      top: -70px;
+      position: static;
+      margin-top: -20px;
+
+      .usa-alert {
+        margin-bottom: 1em;
+      }
     }
 
     .usa-alert {

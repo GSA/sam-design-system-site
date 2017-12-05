@@ -45,12 +45,15 @@
     margin-top: 30px;
   }
 
+  .form-delivery,
   .form-otp {
     display: block;
     width: 500px;
     max-width: 500px;
     margin: 0 auto;
+  }
 
+  .form-otp {
     h1 {
       padding-bottom: 14px;
       border-bottom: 1px solid #000000;
@@ -69,12 +72,42 @@
     }
   }
 
+  li {
+    label {
+      font-weight: normal;
+    }
+  }
+
+  sam-radio-button {
+    legend {
+      line-height: 1.25em;
+    }
+
+    .usa-unstyled-list {
+      margin-top: 1em;
+
+      li {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+  a + button {
+    margin-left: 1.5em;
+  }
+
   &.standalone {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    .form-otp {
+    .form-otp,
+    .form-delivery {
       width: auto;
+    }
+
+    .form-delivery {
+      margin-left: 1em;
+      margin-right: 1em;
     }
   }
 }

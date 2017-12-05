@@ -270,7 +270,7 @@ a.#{$prefix}.label {
        Coupling
 --------------------*/
 
-.#{$prefix}.header > .#{$prefix}.label {
+.#{$prefix}.header > .#{$prefix}.label:not(.attached) {
   margin-top: $lineHeightOffset;
 }
 

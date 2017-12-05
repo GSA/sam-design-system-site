@@ -12,22 +12,42 @@
     }
   }
 
+  sam-label-wrapper {
+    > div {
+      margin-top: 1em;
+    }
+  }
+
   fieldset {
+    &.name,
     &.phone,
     &.office {
-      label:nth-child(1) {
-        margin-top: 0rem;
+      width: 46rem;
+    }
+
+    &.phone,
+    &.office {
+      sam-label-wrapper:nth-child(1) {
+        > div {
+          margin-top: 0rem;
+        }
       }
     }
 
     &.name {
       margin-top: 0rem;
       fieldset {
-        label:nth-child(1) {
-          margin-top: 1.5rem;
+        sam-label-wrapper:nth-child(1) {
+          > div {
+            margin-top: 1.5rem;
+          }
         }
       }
     }
+  }
+
+  sam-autocomplete + .usa-unstyled-list {
+    margin-top: 1em;
   }
 
   .usa-button-wrapper {

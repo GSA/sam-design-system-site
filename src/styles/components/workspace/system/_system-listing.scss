@@ -1,0 +1,28 @@
+.system-listing {
+  .row {
+    &.segment {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border-width: 0px 0px 1px 0px;
+    }
+
+    &:not(.sam-ui) {
+      .column {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+  }
+
+  .label {
+    width: 28% !important;
+    left: 3px !important;
+    font-weight: bold;
+  }
+
+  .sam-ui.bottom.attached.label:first-child ~ :last-child:not(.attached) {
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 0rem;
+  }
+}

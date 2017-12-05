@@ -1,0 +1,199 @@
+.usa-workspace-system-new {
+  title-and-section {
+    display: block;
+    margin-top: 1.2em;
+  }
+
+  sam-alert {
+    .usa-alert {
+      min-height: 74px;
+      margin-top: 0px;
+    }
+
+    .usa-alert-text {
+      margin-top: 4px;
+    }
+  }
+
+  sam-label-wrapper {
+    > div {
+      margin-bottom: 1em;
+    }
+  }
+
+  sam-fieldset-wrapper {
+    fieldset {
+      margin-bottom: 1em;
+
+      legend + .usa-form-hint {
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  sam-tabs {
+    .sam-ui.menu.tabular {
+      button {
+        margin-left: 2px !important;
+      }
+
+      a + button {
+        margin-left: 1em !important;
+      }
+    }
+
+    .menu {
+      margin-top: 2.5rem !important;
+    }
+
+    .last {
+      button {
+        margin-left: 0em !important;
+      }
+    }
+
+    .row {
+      padding-top: 0.5rem !important;
+    }
+
+    .sam-ui.segment {
+      padding-top: 0.5rem;
+    }
+  }
+
+  form {
+    position: relative;
+  }
+
+  .usa-toolbar {
+    position: absolute;
+    top: (51px - 37px) / 2;
+    left: 180px;
+  }
+
+  .sam-actions {
+    position: absolute;
+    top: 0.7em;
+    right: 0px;
+
+    .usa-button {
+      background-color: transparent;
+    }
+
+    &:focus,
+    button:focus {
+      outline: 0px none;
+      box-shadow: none;
+    }
+  }
+
+  sam-checkbox {
+    fieldset {
+      margin-left: 0.2em;
+    }
+  }
+
+  .upload-wrapper {
+    .button-upload,
+    .sam-ui.label {
+      float: left;
+    }
+
+    .button-upload {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+
+      input[type=file] {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        font-size: 100px;
+      }
+    }
+
+    .sam-ui.label {
+      position: relative;
+      top: -8px;
+      margin-left: 1.4em;
+      padding-right: 25px;
+      line-height: 3.5em;
+
+      .label {
+        color: rgba(0, 0, 0, 0.8);
+        line-height: 1.5em;
+
+        div {
+          font-weight: 400;
+        }
+      }
+
+      .icon {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+      }
+    }
+  }
+
+  sam-agency-picker-v2 {
+    .usa-form-hint + div {
+      margin-top: 0em;
+    }
+
+    input[type="text"] {
+      max-width: none;
+    }
+  }
+
+  .sam-ui.segment {
+    sam-fieldset-wrapper {
+      fieldset {
+        margin-bottom: 0em;
+      }
+    }
+  }
+
+  legend {
+    font-size: 2rem;
+  }
+
+  sam-checkbox {
+    legend {
+      margin-bottom: 1rem;
+      font-size: 1.7rem;
+    }
+  }
+
+  .review {
+    legend {
+      margin-bottom: 0.5em;
+    }
+
+    .fa {
+      margin-top: 0.3em;
+      float: left;
+    }
+
+    .fa + div {
+      margin-left: 1.2em;
+    }
+
+    .edit {
+      margin-top: 4px;
+      font-size: 1.8rem;
+
+      .fa {
+        margin-top: 0.25em;
+        margin-right: 0.3em;
+      }
+    }
+  }
+
+  .usa-button-controls {
+    margin-top: 3em;
+    text-align: right;
+  }
+}

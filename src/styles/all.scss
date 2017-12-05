@@ -9,8 +9,8 @@
   USWDS 0.13.3 Vendor scss files moved to the top
   of this file to be used by all files
 */
-@import '~uswds/src/stylesheets/lib/bourbon';
-@import '~uswds/src/stylesheets/lib/neat';
+@import 'vendor/uswds/lib/bourbon';
+@import 'vendor/uswds/lib/neat';
 
 /*-------------------
      Variables
@@ -22,7 +22,7 @@
 /*-------------------
        Reset
 --------------------*/
-@import '~uswds/src/stylesheets/lib/normalize';
+@import 'vendor/uswds/lib/normalize';
 
 /*-------------------
        Icons
@@ -36,7 +36,7 @@
 
 // Core -------------- //
 
-@import '~uswds/src/stylesheets/core/variables';
+@import 'vendor/uswds/core/variables';
 /*
   Variables moved here to avoid
   overriding USWDS grid variables
@@ -49,28 +49,28 @@ $current-large: $large;
 $small: new-breakpoint(min-width $small-screen $grid-columns-small);
 $medium: new-breakpoint(min-width $medium-screen $grid-columns-medium);
 $large: new-breakpoint(min-width $large-screen $grid-columns-large);
-@import '~uswds/src/stylesheets/core/grid';
+@import 'vendor/uswds/core/grid';
 // Restore variables to values defined in variables.scss
 $small: $current-small;
 $medium: $current-medium;
 $large: $current-large;
 
-@import '~uswds/src/stylesheets/core/utilities';
+@import 'vendor/uswds/core/utilities';
 
 // Elements -------------- //
 
-@import '~uswds/src/stylesheets/elements/buttons';
+@import 'vendor/uswds/elements/buttons';
 @import 'sam-ui/vendor/uswds'; // modified USWDS Input file
-@import '~uswds/src/stylesheets/elements/labels';
+@import 'vendor/uswds/elements/labels';
 
 
 // Components -------------- //
 
-@import '~uswds/src/stylesheets/components/accordions';
-@import '~uswds/src/stylesheets/components/alerts';
-@import '~uswds/src/stylesheets/components/forms';
-@import '~uswds/src/stylesheets/components/sidenav';
-@import '~uswds/src/stylesheets/components/search';
+@import 'vendor/uswds/components/accordions';
+@import 'vendor/uswds/components/alerts';
+@import 'vendor/uswds/components/forms';
+@import 'vendor/uswds/components/sidenav';
+@import 'vendor/uswds/components/search';
 
 
 /*******************************
@@ -120,74 +120,62 @@ $large: $current-large;
 @import 'margin-padding';
 @import 'global';
 
-/*-------------------
-     Components
---------------------*/
-@import 'components/actions';
-@import 'components/card';
+/*--------------------------------------
+  Specific Components (App Components)
+----------------------------------------*/
+@import 'components/agency-picker';
+@import 'components/alert'; // REVIEW: Move to common components
+@import 'components/button'; // REVIEW: Move to common components
 @import 'components/date-range-filter';
-@import 'components/date-range';
-@import 'components/download';
+@import 'components/feedback-form';
+@import 'components/footer';
+@import 'components/image-library';
+@import 'components/list-builder';
+@import 'components/notifications'; // REVIEW: Move to common components
+//@import 'components/search-header';
+@import 'components/searchbar';
+@import 'components/sort'; // REVIEW: Move to common components
+@import 'components/status_banner';
+@import 'components/table-entry';
+@import 'components/title-subtitle'; // REVIEW: Move to common components
+
+/*--------------------------------------
+  Common Components (SAM UI Elements)
+----------------------------------------*/
 @import 'components/accordion';
-@import 'components/alert';
-@import 'components/authentication';
-@import 'components/users/index';
+@import 'components/actions';
+//@import 'components/alphabet-selector';
+//@import 'components/autocomplete-dropdown';
+@import 'components/autocomplete-multiselect';
+@import 'components/autocomplete';
+@import 'components/banner';
+@import 'components/bread-crumbs';
+@import 'components/card';
 @import 'components/collapsible';
 @import 'components/comments';
-@import 'components/list-input';
-@import 'components/footer';
-@import 'components/button';
-@import 'components/pagination';
+@import 'components/date-range';
+@import 'components/download';
 @import 'components/header';
-@import 'components/info-accordion';
-@import 'components/image';
-@import 'components/agency-picker';
-@import 'components/input';
-@import 'components/multiselect';
-@import 'components/banner';
-@import 'components/searchbar';
-@import 'components/search-header';
-@import 'components/multiselect-dropdown';
-@import 'components/image-library';
-@import 'components/tabs';
-@import 'components/modal';
-@import 'components/alphabet-selector';
 @import 'components/history';
+@import 'components/image';
+@import 'components/info-accordion';
+@import 'components/input';
+//@import 'components/label-wrapper';
+//@import 'components/list-input';
+@import 'components/modal';
+@import 'components/multiselect-dropdown';
+//@import 'components/multiselect';
+@import 'components/pagination';
+//@import 'components/tabs';
 @import 'components/toggle-switch';
-@import 'components/feedback-form';
-@import 'components/well';
-@import 'components/autocomplete';
-@import 'components/autocomplete-dropdown';
-@import 'components/autocomplete-multiselect';
-@import 'components/organization-profile';
-@import 'components/role-management/role-managment';
-@import 'components/workspace';
-@import 'components/bread-crumbs';
-@import 'components/data-service/data-service';
-@import 'components/sort';
-@import 'components/status_banner';
-@import 'components/fh/fh';
-@import 'components/title-subtitle';
-@import 'components/organization-move';
-@import 'components/user-directory';
-@import 'components/notifications';
-@import 'components/organization-hierarchy';
-@import 'components/list-builder';
-@import 'components/organization-detail';
-@import 'components/organization-create';
-@import 'components/aac-request';
-@import 'components/aac-confirm';
-@import 'components/help-awards';
-@import 'components/table-entry';
-
-/*-------------------
-     Templates
---------------------*/
-@import 'templates/workspace';
+//@import 'components/well';
 
 /*-------------------
      Pages
 --------------------*/
+// TODO: Move pages found in components
+// folder to the pages folder
+@import 'pages/_help-support.scss';
 @import 'pages/entity-object-view';
 @import 'pages/opportunity';
 @import 'pages/organization';
@@ -197,7 +185,27 @@ $large: $current-large;
 @import 'pages/users-directory';
 @import 'pages/wage-determination';
 @import 'pages/assistance-listing-operations';
+@import 'pages/opportunities-operations';
+@import 'components/aac-confirm';
+@import 'components/aac-request';
+@import 'components/authentication';
+@import 'components/help-awards';
+@import 'components/organization-create';
+@import 'components/organization-detail';
+@import 'components/organization-hierarchy';
+@import 'components/organization-move';
+@import 'components/organization-profile';
+@import 'components/user-directory';
+@import 'components/workspace';
+@import 'components/users/index';
+@import 'components/role-management/role-managment';
+@import 'components/data-service/data-service';
+@import 'components/fh/fh';
 
+/*-------------------
+     Templates
+--------------------*/
+@import 'templates/workspace';
 
 
 /*******************************
@@ -241,7 +249,9 @@ $large: $current-large;
 }
 
 .usa-alert{
-  width: 100%;
+  //width: 100%;
+  margin-top: 0;
+  margin-bottom: 1.5em;
 }
 
 /*
@@ -321,31 +331,31 @@ select {
   padding: 1rem 2.6rem 1rem 0.7em;
 }
 
-.sticky-element {
-  position: fixed;
-  z-index:20;
-  bottom: 0;
-  width: 48em;
-  background:white;
-  padding-left: 32em;
-}
+// .sticky-element {
+//   position: fixed;
+//   z-index:20;
+//   bottom: 0;
+//   width: 48em;
+//   background:white;
+//   padding-left: 32em;
+// }
 
 .overflow-ellipsis {
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
 
-sam-solo-accordian li {
-  position: relative;;
-}
+// sam-solo-accordian li {
+//   position: relative;;
+// }
 
 // https://stackoverflow.com/questions/7492062/css-overflow-scroll-always-show-vertical-scroll-bar
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
+  background-color: rgba(128,128,128,.2);
+  width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: rgba(0,0,0,.5);
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
@@ -357,18 +367,34 @@ sam-solo-accordian li {
   background-repeat: no-repeat;
 }
 
-.site-header{
-  margin-bottom: 10px;
-  background: rgb(17, 46, 81);
-  .site-logo {
-    margin-top: 40px;
-    margin-left: 3rem;
-    a{
-      display: block;
-      font-size: 2.4rem;
-      font-style:normal;
-      line-height: 1.3;
-      color: #FFF;
-    }
+// a method for creating a two column layout where the left and right column are approximately the same height (see grant-or-edit-access.template)
+.column-wrappable {
+  li {
+    list-style: none;
+    break-inside: avoid-column;
   }
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  padding-left: 0;
+}
+
+.link-hover:hover {
+  background-color: #f1f1f1;
+}
+
+.h4{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.h3{
+  font-size: 2.3rem;
+}
+
+.h1{
+  font-size: 4rem;
 }

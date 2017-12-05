@@ -29,6 +29,18 @@ $fa_fallback_md: 15px;
                     background: url('/src/assets/fonts/font-awesome/fallback/fa-search.png') no-repeat;
                     background-size: $fa_fallback_md $fa_fallback_md;
                 }
+                .fa-bell-o{
+                    background: url('/src/assets/fonts/font-awesome/fallback/fa-bell-o.png') no-repeat;
+                    background-size: $fa_fallback_md $fa_fallback_md;
+                }
+                .fa-user-circle{
+                    background: url('/src/assets/fonts/font-awesome/fallback/fa-user-circle.png') no-repeat;
+                    background-size: $fa_fallback_md $fa_fallback_md;
+                }
+                .fa-list-alt{
+                    background: url('/src/assets/fonts/font-awesome/fallback/fa-list-alt.png') no-repeat;
+                    background-size: $fa_fallback_md $fa_fallback_md;
+                }
             }
         }
     }
@@ -703,6 +715,429 @@ $fa_fallback_md: 15px;
             content: none;
         }
         background: url('/src/assets/fonts/font-awesome/fallback/fa-square.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-arrow-down{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-arrow-down.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-arrow-up{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-arrow-up.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-bell-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-bell-o-dark.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-bold{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-bold.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-building-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-building-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-caret-down{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-caret-down.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-check-circle{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-check-circle.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-check-square-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-check-square-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-chevron-circle-right{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-chevron-circle-right.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-chevron-left{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-chevron-left.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-chevron-right{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-chevron-right.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-cloud{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-cloud.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-commenting-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-commenting-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-copy{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-copy.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-ellipsis-h{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-ellipsis-h.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-exclamation-circle{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-exclamation-circle.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-eye{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-eye.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-file-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-file-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-flag{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-flag.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-floppy-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-floppy-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-folder{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-folder.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-id-badge{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-id-badge.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-indent{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-indent.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-italic{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-italic.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-list-alt{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-list-alt-dark.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-list-ol{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-list-ol.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-list{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-list.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-lock{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-lock.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-newspaper-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-newspaper-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-outdent{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-outdent.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-paper-plane{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-paper-plane.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-phone{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-phone.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-play-circle-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-play-circle-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-play-circle{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-play-circle.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-print{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-print.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-question-circle{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-question-circle.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-sort-amount-asc{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-sort-amount-asc.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-sort-amount-desc{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-sort-amount-desc.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-square-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-square-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-thumbs-down{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-thumbs-down.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-thumbs-o-down{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-thumbs-o-down.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-thumbs-o-up{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-thumbs-o-up.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-thumbs-up{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-thumbs-up.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-trash-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-trash-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-user-circle-o{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-user-circle-o.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-user-circle{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-user-circle-dark.png') no-repeat;
+        background-size: $fa_fallback_md $fa_fallback_md;
+        width: $fa_fallback_md;
+        height: $fa_fallback_md;
+    }
+    .fa-video-camera{ 
+        &:before{
+            content: none;
+        }
+        background: url('/src/assets/fonts/font-awesome/fallback/fa-video-camera.png') no-repeat;
         background-size: $fa_fallback_md $fa_fallback_md;
         width: $fa_fallback_md;
         height: $fa_fallback_md;

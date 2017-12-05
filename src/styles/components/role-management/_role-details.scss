@@ -26,4 +26,9 @@
   .object-block:not(:first-child) {
     margin-top: 20px;
   }
+
+  .field-label{
+    color: $color-black;
+    font-weight: 600;
+  }
 }

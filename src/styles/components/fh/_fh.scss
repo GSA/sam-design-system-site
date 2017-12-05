@@ -31,6 +31,15 @@
     width: 40px;
   }
 
+  .cbx-label{
+    position: absolute;
+    right: 10000px;
+  }
+
+  .my-org-cbx-block{
+    width: 200px;
+  }
+
   .federal-hierarchy-org-admin-section{
     margin-top: 20px;
     border: 2px solid $color-gray-medium;
@@ -40,7 +49,9 @@
       border-bottom: 2px solid $color-gray-medium;
     }
 
-    .org-logo-image{}
+    .org-logo-image{
+      max-width: 100%;
+    }
 
     .org-logo-container{
       padding: 15px 20px 10px 20px;

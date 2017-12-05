@@ -1,70 +1,38 @@
 .usa-workspace-system-directory {
-  h2 {
-    margin-top: 0em;
-    margin-bottom: 2.5rem;
+  position: relative;
 
-    .usa-button-controls {
-      position: relative;
-      top: 1em;
-      letter-spacing: normal;
-      float: right;
+  .breadcrumb-download {
+    position: absolute;
+    top: -60px;
+    right: 0px;
+
+    .fa-download {
+      margin-left: 0.5rem;
+    }
+
+    .fa-ellipsis-h {
+      margin-left: 1rem;
     }
   }
 
-  .title {
-    font-weight: bold;
+  .alert-primary {
+    .usa-alert {
+      margin-top: 10px;
+      margin-bottom: 24px;
+    }
   }
 
-  table {
-    width: 100%;
-
-    th,
-    td {
-      padding-top: 0.8em;
-      padding-bottom: 0.8em;
-
-      &:nth-child(2) {
-        width: 290px;
+  sidebar {
+    sam-checkbox {
+      sam-fieldset-wrapper > div {
+        margin-top: 1.5em;
       }
     }
+  }
 
-    thead {
-      font-size: 0.9em;
-    }
-
-    tbody {
-      td {
-        height: 190px;
-        margin-top: 1.4em;
-        border-bottom: 1px solid $color-gray;
-
-        h1,
-        h2 {
-          margin-top: 0em;
-        }
-
-        h1 {
-          margin-bottom: 0.6em;
-          font-size: 2.4rem;
-        }
-
-        h2 {
-          margin-top: 0em;
-          margin-bottom: 4px;
-          font-size: 1.8rem;
-          text-transform: uppercase;
-          color: $color-gray-medium;
-        }
-      }
-
-      div {
-        line-height: 1.4em;
-
-        span {
-          display: inline-block;
-          min-width: 90px;
-        }
-      }
+  sam-sort {
+    select {
+      width: 200px;
     }
   }
 
@@ -76,6 +44,12 @@
     ul {
       display: inline-block;
       padding-left: 0em;
+    }
+  }
+
+  .no-records {
+    sam-alert {
+      display: inline-block;
     }
   }
 }

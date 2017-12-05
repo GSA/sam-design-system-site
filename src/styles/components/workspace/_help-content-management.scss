@@ -5,7 +5,7 @@
   .content-item{
     border: 1.5px solid $color-gray-light;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
   }
 
   .content-header-type-div{
@@ -51,7 +51,7 @@
     width: 100%;
     height: 200px;
     padding: 10px;
-    opacity: 0.3;
+    opacity: 0.6;
   }
 
   .video-play-icon:hover{
@@ -80,3 +80,137 @@
     margin-top: 0px !important;
   }
 }
+
+.help-content-management-edit{
+  .section-border{
+    border: 1px solid $color-gray-lighter;
+    margin: 5px 0px;
+    padding: 15px;
+  }
+
+  sam-autocomplete-multiselect .sam-autocomplete-multiselect-input{
+    //max-width: 46rem;
+  }
+
+  .cms-btn{
+    text-align: center;
+    display: inline-block;
+    font-size: 130%;
+    width: 33px;
+    height: 28px;
+    border: 1px solid #0071bc;
+    background-color: #DEF2FE;
+  }
+
+  .cms-btn:hover{
+    cursor: pointer;
+    background-color: #C8E8F5;
+  }
+
+  .right-border-line{
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-right: 1px black solid;
+  }
+
+  .draft-btn-group{
+    position: absolute;
+    top: 8px;
+    left: 230px;
+  }
+
+  .optional-text{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $color-gray-medium
+  }
+
+  .public-view-tag, .status-tag{
+    position: absolute;
+    top: -1px;
+    right: 11px;
+    min-width: 80px;
+    padding: 0px 10px;
+    background-color: $color-gray-lightest;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .public-view-tag{
+    right: 0px;
+  }
+
+  .error-border{
+    border: 1px $color-secondary solid;
+  }
+
+  .sam-ui.header{
+    border: 1px solid $color-gray-lighter;
+    padding: 15px;
+  }
+
+  .file-input-div, .file-input-error-div{
+    display: inline-block;
+    width: 46rem;
+    padding: 15px;
+  }
+
+  .file-input-error-div{
+    border: 2px $color-secondary solid;
+  }
+
+  .file-input-div{
+    border: 1px $color-black solid;
+  }
+
+  .drag-cursor{
+    cursor:copy;
+  }
+
+  .sourceUrlDiv{
+    max-width: 46rem;
+    width: 100%;
+  }
+
+  .sourceUrl-span{
+    width: 88%;
+    word-break: break-all;
+    display: inline-block;
+  }
+
+  .edit-sourceUrl-span{
+    width: 8%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+
+}
+
+.help-content-management-detail{
+  .public-view-tag, .video-public-view-tag{
+    position: absolute;
+    top: 20px;
+    min-width: 80px;
+    padding: 0px 10px;
+    background-color: $color-gray-lightest;
+    display: inline-block;
+    text-align: center;
+    right: 0px;
+  }
+
+  .video-public-view-tag{
+    top: 0px;
+  }
+
+  .videoLibrary-border{
+    border: 1px solid $color-gray-lighter;
+    margin: 5px 0;
+    padding: 20px 15px;
+  }
+}
+

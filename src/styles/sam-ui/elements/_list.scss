@@ -127,7 +127,7 @@ $selectionListTransition:
 
 /* Selection List States */
 $selectionListBackground: transparent;
-$selectionListColor: $unselectedTextColor;
+$selectionListColor: $mutedTextColor ;
 $selectionListHoverBackground: $subtleTransparentBlack;
 $selectionListHoverColor: $hoveredTextColor;
 $selectionListDownBackground: $transparentBlack;
@@ -411,7 +411,7 @@ ol.#{$prefix}.list ol li,
 /* Linked Item Icons */
 .#{$prefix}.list .list > a.item i.icon,
 .#{$prefix}.list > a.item i.icon {
-  color: $itemLinkIconColor;
+  //color: $itemLinkIconColor;
 }
 
 /* Header Link */

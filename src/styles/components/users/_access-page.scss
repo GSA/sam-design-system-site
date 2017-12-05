@@ -1,3 +1,5 @@
+
+
 .background-white {
   background-color: white;
 }
@@ -23,7 +25,7 @@
     vertical-align: top;
   }
 
-  tr:hover.clickable {
+  tr.clickable:hover {
     background-color: #ececec;
     cursor: pointer;
   }

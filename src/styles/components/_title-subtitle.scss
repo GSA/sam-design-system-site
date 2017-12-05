@@ -11,3 +11,11 @@
     color: $color-gray-medium;
   }
 }
+
+title-and-section {
+  .header {
+    .label {
+      float: right;
+    }
+  }
+}

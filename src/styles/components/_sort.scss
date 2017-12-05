@@ -23,8 +23,12 @@ sam-sort{
       }
     }
     a{
-      margin-left: 5px !important;
+      margin-left: -1px !important;
       align-self: center;
+      border-radius: 0rem 0.3rem 0.3rem 0 !important;
+      i{
+        font-size: 15px !important;
+      } 
     }
   }
 }

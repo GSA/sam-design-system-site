@@ -13,6 +13,18 @@
     margin-top: 0em;
   }
 
+  sidebar {
+    .usa-sidenav-list {
+      margin-top: 3em;
+    }
+
+    side-nav-filter + * {
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
   /*
    * Responsive
    */

@@ -68,4 +68,8 @@
     font-weight: 400;
     margin-bottom: 0.5em;
   }
+
+  input::-webkit-input-placeholder{
+    font-style: italic;
+  }
 }

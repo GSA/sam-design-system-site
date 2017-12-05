@@ -19,18 +19,20 @@
   .msg-feed-item{
     border-bottom: 1.5px solid $color-gray-light;
     padding: 3px;
+    min-height: 80px;
+  }
+
+  .msg-feed-item:hover{
+    cursor: pointer;
   }
 
   .alert-image-div{
     text-align: center;
   }
 
-  .usa-alert-warning{
+  .usa-alert{
     width: 50px;
     height: 50px;
-  }
-
-  .usa-alert{
     background-position: 0.5rem;
   }
 
@@ -47,19 +49,28 @@
     padding-top: 10px;
   }
 
-  .msg-feed-description, .msg-feed-status{
-    font-size: 80%;
-    line-height: 17px;
+  .msg-feed-description{
+    font-size: 90%;
   }
 
   .msg-feed-status{
-    display: inline-block;
-    width: 75px;
+    font-style: italic;
+    font-size:80%;
   }
 
   .msg-feed-bold{
-    font-size: 80%;
+    font-size: 90%;
     font-weight: bold;
-    line-height: 17px;
   }
+
+  .msg-feed-name, .msg-feed-date{
+    color: $color-gray-light;
+    font-style: italic;
+    font-size:80%;
+  }
+
+  .msg-feed-name{
+    word-break: break-all;
+  }
+
 }

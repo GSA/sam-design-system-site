@@ -1,5 +1,8 @@
 
 section.sam-comments {
+  .preserve-newline {
+    white-space: pre-line;
+  }
 
   p.button-row {
     clear: both;
@@ -11,7 +14,7 @@ section.sam-comments {
 
   article.sam-comment {
     padding: 0.3em;
-    
+
     header {
       display: flex;
       width: 100%;
@@ -52,7 +55,7 @@ section.sam-comments {
     label, textarea {
       max-width: 100%;
     }
-    
+
     textarea {
       resize: none;
     }

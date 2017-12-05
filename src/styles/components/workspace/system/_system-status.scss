@@ -1,0 +1,123 @@
+.usa-workspace-system-status {
+  title-and-section {
+    .sam-ui.label {
+      margin-top: 0.5em !important;
+    }
+  }
+
+  legend {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+
+  label {
+    font-weight: 700;
+  }
+
+  .usa-progress-bar {
+    width: 62.5%;
+    margin: 2em auto;
+
+    .progress-header,
+    .progress-body {
+      min-height: 1.53em;
+
+      > span {
+        display: inline-block;
+        width: 32.7%;
+        float: left;
+
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .progress-header {
+      > span {
+        text-align: center;
+      }
+
+      &.step-1 > span:nth-child(1) {
+        font-weight: bold;
+      }
+
+      &.step-2 > span:nth-child(2) {
+        font-weight: bold;
+      }
+
+      &.step-3 > span:nth-child(3) {
+        font-weight: bold;
+      }
+    }
+
+    .progress-body {
+      $active: #00A6D2;
+      $completed: #4AA564;
+      $inactive: #D6D7D9;
+
+      padding: 2px;
+      border: 1px solid $black;
+      border-radius: 3px;
+
+      div {
+        display: flex;
+        height: 2em;
+        align-items: center;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        > span {
+          flex-basis: (100 / 3) * 1%;
+          height: 100%;
+          margin-left: 2px;
+          margin-right: 2px;
+          background-color: $inactive;
+          text-align: center;
+        }
+
+        &.step-1 {
+          > span:nth-child(1) {
+            background-color: $active;
+          }
+        }
+
+        &.step-2 {
+          > span:nth-child(1) {
+            background-color: $completed;
+          }
+
+          > span:nth-child(2) {
+            background-color: $active;
+          }
+        }
+
+        &.step-3 {
+          > span:nth-child(1) {
+            background-color: $completed;
+          }
+
+          > span:nth-child(2) {
+            background-color: $completed;
+          }
+
+          > span:nth-child(3) {
+            background-color: $active;
+          }
+        }
+
+        .fa {
+          display: inline-block;
+          margin: 0 auto;
+          line-height: 34px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .text-right {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+}

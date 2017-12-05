@@ -29,7 +29,7 @@ $itemTransition:
   box-shadow $defaultDuration $defaultEasing,
   color $defaultDuration $defaultEasing
 ;
-$itemFontWeight: normal;
+$itemFontWeight: 600;
 $itemTextColor: $textColor;
 
 /* Divider */
@@ -328,7 +328,10 @@ $tabularActiveColor: $selectedTextColor;
 $tabularActiveBoxShadow: none;
 $tabularActiveWeight: 600;
 
-
+/* Separate */
+$separateBackground: $subtleTransparentBlack;
+$separateActiveBackground: $white;
+$separateDisabledBackground: $subtleTransparentBlack;
 
 /* Pagination */
 $paginationMinWidth: 3em;
@@ -1160,7 +1163,36 @@ Floated Menu / Item
   border-bottom: none;
 }
 
+/*--------------
+   Separate
+---------------*/
+.#{$prefix}.tabular.separate.menu {
+  .item {
+    border-color: $tabularBorderColor;
+    border-width: 1px;
+    border-radius: 0px !important;
+    background: $separateBackground;
 
+    &.active {
+      border-width: 1px;
+      background: $separateActiveBackground;
+    }
+
+    &.disabled {
+      background: $separateDisabledBackground !important;
+    }
+  }
+
+  .item + .item {
+    border-left-width: 0px;
+  }
+
+  .button {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.7em;
+  }
+}
 
 /*--------------
    Pagination
@@ -1198,10 +1230,6 @@ Floated Menu / Item
   box-shadow: none;
 }
 
-/*--------------
-   Secondary
----------------*/
-
 .#{$prefix}.secondary.menu {
   background: $secondaryBackground;
   margin-left: -$secondaryItemSpacing;
@@ -1216,6 +1244,7 @@ Floated Menu / Item
   align-self: center;
   box-shadow: none;
   border: none;
+  color: $linkColor;
   padding: $secondaryItemPadding;
   margin: $secondaryItemMargin;
   background: $secondaryItemBackground;

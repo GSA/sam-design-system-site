@@ -64,10 +64,10 @@ import { LabelWrapperExampleComponent } from "./wrappers/label-wrapper/component
 
 import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes.dynamic";
-
+import { StaticPageComponent } from "./static.component";
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
-
+import { SiteComponentsModule } from "../app/site-components/sitecomponents.module";
 
 /**
  * AppModule` is the main entry point into Angular2's bootstraping process
@@ -120,7 +120,7 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
-		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
+		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
 	],
 	entryComponents: [
 		AccordionExampleComponent,
@@ -169,14 +169,15 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
-		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
+		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
 	],
 	imports: [
 		BrowserModule,
 		CommonModule,
 		FormsModule,
 		SamUIKitModule,
-		routing
+		routing,
+		SiteComponentsModule
 	],
 	exports: [BaseExampleComponent]
 })

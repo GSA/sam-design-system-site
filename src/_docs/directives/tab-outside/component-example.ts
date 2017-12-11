@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<input sam-tab-outside (tabOutside)="tabHandler($event)" /> 
 <p>{{ tabAway }}</p>
@@ -27,6 +28,7 @@ export class TabOutsideExampleComponent extends BaseExampleComponent {
   }
 	typedoc_target = "SamTabOutsideDirective";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 }

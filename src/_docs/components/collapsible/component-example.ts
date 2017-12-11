@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-collapsible [label]="'Test Label'">
   <h1>I got projected in here</h1>
@@ -20,6 +21,7 @@ var code_example = `<sam-collapsible [label]="'Test Label'">
 export class CollapsibleExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamCollapsibleComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 }

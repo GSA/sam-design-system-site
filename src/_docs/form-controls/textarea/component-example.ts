@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-text-area
   [(ngModel)]="textareaModel"
@@ -33,7 +34,8 @@ export class TextareaExampleComponent extends BaseExampleComponent implements On
   };
   typedoc_target = "SamTextareaComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = `<samTextArea
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"

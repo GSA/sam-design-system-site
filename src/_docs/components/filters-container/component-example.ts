@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-filters-container>
   <sam-collapsible [label]="'Test 1'" [startOpened]="true">
@@ -28,7 +29,8 @@ var code_example = `<sam-filters-container>
 export class FiltersContainerExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamFiltersContainerComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
   dateModel: string = "2016-02-03";
 }

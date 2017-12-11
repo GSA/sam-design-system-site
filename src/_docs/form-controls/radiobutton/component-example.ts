@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-radio-button
   [(model)]="radioModel"
@@ -37,6 +38,7 @@ export class RadioExampleComponent extends BaseExampleComponent implements OnIni
   };
   typedoc_target = "SamRadioButtonComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 }

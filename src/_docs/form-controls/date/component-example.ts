@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-date name="example-date" [(ngModel)]='dateModel'></sam-date>`;
 
@@ -19,6 +20,7 @@ export class DateExampleComponent extends BaseExampleComponent implements OnInit
 	dateModel: string = "2016-02-03";
   typedoc_target = "SamDateComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 }

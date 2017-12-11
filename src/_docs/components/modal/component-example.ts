@@ -5,6 +5,7 @@ import {
   ViewChild
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-modal 
   [showClose]="true" 
@@ -85,7 +86,8 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
 	@ViewChild('modal5') vcModal5;
   typedoc_target = "SamModalComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
   example = code_example;
   message = "";
   modalAlertTypes = [{

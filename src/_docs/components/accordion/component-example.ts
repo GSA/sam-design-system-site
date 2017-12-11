@@ -9,6 +9,7 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 //tabs/spacing matters for code example block
 var code_example = `<div class="usa-width-one-whole">
@@ -45,8 +46,15 @@ var code_example = `<div class="usa-width-one-whole">
 export class AccordionExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamAccordionComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-  guidance = require("html-loader!markdown-it-loader!./guidance.md");
-  design = require("html-loader!markdown-it-loader!./design.md");
+
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
+
+  design_raw = require('raw-loader!./design.md');
+  design = markdownLoader(this.design_raw);
+
+  guidance_raw = require('raw-loader!./guidance.md');
+  guidance = markdownLoader(this.guidance_raw);
+  
 	example = code_example;
 }

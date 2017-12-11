@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
   <sam-tab tabTitle="Opportunity" active="true" (tabSelected)="tabSelected($event)">
@@ -25,7 +26,8 @@ var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
 export class TabsExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamTabsComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 	currentTabSelected(evt){
 

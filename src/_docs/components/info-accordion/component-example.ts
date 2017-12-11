@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<div class="usa-grid-full">
   <div class="usa-width-one-whole">
@@ -52,6 +53,7 @@ export class InfoAccordionExampleComponent extends BaseExampleComponent implemen
     ];
     typedoc_target = "SamInfoAccordionComponent";
     typedoc_content = "";
-    markdown = require("html-loader!markdown-it-loader!./documentation.md");
+    documentation = require('raw-loader!./documentation.md');
+    markdown = markdownLoader(this.documentation);
     example = code_example;
 }

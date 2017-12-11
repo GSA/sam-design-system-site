@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
 
@@ -18,8 +19,14 @@ See sidenav on the left
 export class SidenavExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamSidenavComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
-  design = require("html-loader!markdown-it-loader!./design.md");
-  guidance = require("html-loader!markdown-it-loader!./guidance.md");
+
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
+
+  design_raw = require('raw-loader!./design.md');
+  design = markdownLoader(this.design_raw);
+
+  guidance_raw = require('raw-loader!./guidance.md');
+  guidance = markdownLoader(this.guidance_raw);
 }

@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-phone-entry [phoneNumberTemplate]="'___-___-____'" [(model)]="phoneModel" (emitter)="phoneModelChange($event)"></sam-phone-entry>
 <sam-phone-entry [(model)]="phoneModel2" (emitter)="phoneModel2Change($event)"></sam-phone-entry>`;
@@ -21,7 +22,8 @@ export class PhoneEntryExampleComponent extends BaseExampleComponent implements 
   phoneModel2 = "1+(123)456-3366";
   typedoc_target = "SamPhoneEntryComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 	phoneModelChange(phoneNum){
     this.phoneModel = phoneNum;

@@ -4,7 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-
+import { markdownLoader } from '../../markdown-loader';
 //var code_example = ``;
 
 @Component({
@@ -19,7 +19,8 @@ Scroll down and see Sidenav
 export class StickyExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamStickyComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = `<div class="sticky-target usa-grid">
   <div class="usa-width-one-fourth">
     <nav sam-sticky [container]="sticky-target">

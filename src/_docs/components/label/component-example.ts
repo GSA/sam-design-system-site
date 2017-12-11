@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></sam-label>`;
 
@@ -18,6 +19,7 @@ var code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></s
 export class LabelExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamLabelComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 }

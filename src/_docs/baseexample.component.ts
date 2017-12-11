@@ -13,6 +13,8 @@ import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { DocumentationService } from '../app/services/documentation.service';
 
+import { markdownLoader } from './markdown-loader';
+
 /////COMP
 @Component({
   selector: 'doc-base-example',

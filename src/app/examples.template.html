@@ -1,0 +1,89 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="container">
+      <a class="home" [routerLink]="['/']">
+        SAM Web Design Standards
+      </a>
+      <div class="mask-container">
+        <ul>
+          <li>
+            <a [routerLink]="['/examples']">Examples</a>
+          </li>
+          <li>
+            <a [routerLink]="['/overview/getting-started']">Documentation</a>
+          </li>
+        </ul>
+      </div>
+      <div class="separator"></div>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <!-- <header>
+    <section class="container">
+      <h1 class="sam-ui header">
+        Examples
+      </h1>
+      <p>
+				Components and layout examples to help you quickly get started with 
+				<strong><em>SAM-UI Elements</em></strong> and demonstrate best practices 
+				for implementing it in <strong><em>SAM.gov</em></strong>.
+      </p>
+    </section>
+  </header> -->
+  <footer class="container">
+    
+    <h2 class="sam-ui header">
+      Page Examples
+    </h2>
+    
+    <ul>
+      <li>
+        <a [routerLink]="['/starter-page']">
+          Basic Page
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/sidebar-breadcrumbs']">
+          Page with side navigation and breadcrumbs
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/title-options']">
+          Page with all available title options
+        </a>
+      </li>
+    </ul>
+    
+  </footer>
+</main>
+
+
+<footer class="site-footer">
+    <nav class="container">
+      <ul>
+        <li>
+          <a [routerLink]="['overview/getting-started']">
+            Documentation
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/examples']">
+            Examples
+          </a>
+        </li>
+        <li>
+          <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements">
+            SAM-UI Elements
+          </a>
+        </li>
+        <li>
+          <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site">
+            SAM Web Design Standards
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>

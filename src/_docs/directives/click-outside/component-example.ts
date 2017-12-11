@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<button sam-click-outside (click)="clickInsideHandler()" (clickOutside)="clickOutsideHandler()">Sample Target</button>`;
 
@@ -20,7 +21,8 @@ export class ClickOutsideExampleComponent extends BaseExampleComponent implement
 	clickedValue = "None";
 	typedoc_target = "SamClickOutsideDirective";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 	clickOutsideHandler(){
 		this.clickedValue = "Clicked outside 'Sample Target'";

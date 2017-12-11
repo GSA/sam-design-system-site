@@ -14,7 +14,7 @@ import { BaseExampleComponent } from '../../baseexample.component';
 import { SamAlertFooterService } from '../../../../sam-ui-elements/src/ui-kit/components/alert-footer/alert-footer.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 import { Http } from '@angular/http';
-
+import { markdownLoader } from '../../markdown-loader';
 //tabs/spacing matters for code example block
 var code_example = `
 <sam-text 
@@ -49,7 +49,8 @@ var code_example = `
 export class SamAlertFooterComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamAlertFooterComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
   example = code_example;
   footerAlertModel = {
     title: "test title",

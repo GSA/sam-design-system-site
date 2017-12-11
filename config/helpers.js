@@ -129,7 +129,7 @@ function generateModuleString() {
 		return prev.concat(`import { ${curr.component} } from "./${curr.link}/component-example";\n`);
 	}, '');
 	let declarations = files.map((file) => '\n\t\t' + file.component);
-	let otherDeclarations = ['InterfacesComponent', 'DocTemplateComponent', 'BaseExampleComponent', 'PlaceHolderExampleComponent', 'SimpleExampleComponent'];
+	let otherDeclarations = ['InterfacesComponent', 'DocTemplateComponent', 'StaticPageComponent', 'BaseExampleComponent', 'PlaceHolderExampleComponent', 'SimpleExampleComponent'];
 	otherDeclarations.forEach((declaration) => {
 		declarations.push(declaration);
 	});
@@ -152,10 +152,10 @@ ${imports}
 
 import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes.dynamic";
-
+import { StaticPageComponent } from "./static.component";
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
-
+import { SiteComponentsModule } from "../app/site-components/sitecomponents.module";
 
 /**
  * \AppModule\` is the main entry point into Angular2's bootstraping process
@@ -168,7 +168,8 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		CommonModule,
 		FormsModule,
 		SamUIKitModule,
-		routing
+		routing,
+		SiteComponentsModule
 	],
 	exports: [BaseExampleComponent]
 })
@@ -187,6 +188,7 @@ exports.writeModuleFile = writeModuleFile;
 
 function generateRoutesString() {
 	let files = getUIKitStructure();
+	let staticFiles = getStaticDirStructure();
 	let imports = files.reduce((prev, curr) => {
 		return prev.concat(`import { ${curr.component} } from "./${curr.link}/component-example";\n`);
 	}, '');
@@ -195,6 +197,12 @@ function generateRoutesString() {
 			`\n\t{ path: '${curr.link}', component: ${curr.component} },`
 		)
 	}, '');
+	let staticRoutes = staticFiles.reduce((prev, curr) => {
+		return prev.concat(
+			`\n\t{ path: '${curr.link}', component: StaticPageComponent, data: { markdownfile: '${curr.file}' } },`
+		)
+	}, '');
+
 	return `
 /******************************************************/
 /* File generated in ../config/helpers.js             */
@@ -206,8 +214,11 @@ import { SimpleExampleComponent } from "./simple.component";
 
 ${imports}
 
+import { StaticPageComponent } from "./static.component";
+
 export const ROUTES: Routes = [
 	${routes}
+	${staticRoutes}
 ];
 export const routing = RouterModule.forChild(ROUTES);
 \n`

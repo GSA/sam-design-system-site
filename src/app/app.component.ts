@@ -11,6 +11,7 @@ import {
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { DocumentationService } from './services/documentation.service';
 
+import { routerTransition } from './router.animations';
 /*
  * App Component
  * Top Level Component
@@ -18,35 +19,21 @@ import { DocumentationService } from './services/documentation.service';
 
 @Component({
   selector: 'app',
+  animations: [ routerTransition ],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <sam-banner *ngIf="showBanner"></sam-banner>
-    <header *ngIf="showHeader" class="usa-header site-header">
-      <div class="usa-navbar site-header-navbar">
-        <div class="usa-logo site-logo" id="logo" style="height:60px;margin-top:0;">
-          <em class="usa-logo-text">
-            <a routerLink="/" accesskey="1" title="Home" aria-label="Home" style="line-height:60px;">
-            SAM Web Standards</a></em>
-        </div>
-      </div>
-    </header>
-    <main class="sticky-target-app">
-      <div class="usa-grid">
-        <aside class="usa-width-one-fourth">
-          <nav sam-sticky [limit]="1200" [container]="'sticky-target-app'">
-            <sam-sidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></sam-sidenav>
-          </nav>&nbsp;
-        </aside>
-        <div class="usa-width-three-fourths">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
+    <main [@routerTransition]="getState(o)">
+      <router-outlet #o="outlet"></router-outlet>
+      <router-outlet name="codesection"></router-outlet>
     </main>
-    <sam-alert-footer>
   `,
   providers: [DocumentationService]
 })
 export class AppComponent implements OnInit {
+
+  getState(outlet) {
+    return outlet.activatedRouteData.state;
+  }
 
   sidenavConfig = {
       label: "test",

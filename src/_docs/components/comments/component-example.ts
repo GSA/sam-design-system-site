@@ -13,6 +13,7 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 import { Comment, CommentsService } from '../../../../sam-ui-elements/src/ui-kit/components/comments';
 import { Observable } from 'rxjs';
+import { markdownLoader } from '../../markdown-loader';
 
 export class CommentsDemoService implements CommentsService {
   
@@ -162,7 +163,8 @@ var code_example = `
 export class SamCommentsComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamCommentsComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
   example = code_example;
 }
 

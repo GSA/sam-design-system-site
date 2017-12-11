@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-spinner></sam-spinner>`;
 
@@ -18,6 +19,7 @@ var code_example = `<sam-spinner></sam-spinner>`;
 export class SpinnerExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamSpinnerComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 }

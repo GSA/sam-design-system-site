@@ -11,6 +11,7 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 //tabs/spacing matters for code example block
 var code_example = `
@@ -27,7 +28,8 @@ src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg"
 export class SamImageComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamImageComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
   example = code_example;
   fileChangeHandler(event)  {
     console.log(event);

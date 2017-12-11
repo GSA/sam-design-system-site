@@ -4,6 +4,7 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
+import { markdownLoader } from '../../markdown-loader';
 
 var code_example = `<sam-poc [data]="pointOfContact"></sam-poc>`;
 
@@ -28,6 +29,7 @@ export class POCExampleComponent extends BaseExampleComponent implements OnInit 
   };
   typedoc_target = "SamPointOfContactComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  documentation = require('raw-loader!./documentation.md');
+  markdown = markdownLoader(this.documentation);
 	example = code_example;
 }

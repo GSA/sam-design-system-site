@@ -1,0 +1,134 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="container">
+      <a class="home" [routerLink]="['/']">
+        SAM Web Design Standards
+      </a>
+      <div class="mask-container">
+        <ul>
+          <li>
+            <a [routerLink]="['/examples']">Examples</a>
+          </li>
+          <li>
+            <a [routerLink]="['overview/getting-started']">Documentation</a>
+          </li>
+        </ul>
+      </div>
+      <div class="separator"></div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <header>
+    <div class="stripes">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="intro-animation">
+      <span class="particle-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388 262"> 
+          <g>
+            <g class="particle-container">
+              <circle class="particle" r="7" cx="0" cy="230"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="8" cx="0" cy="205"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="9" cx="0" cy="180"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="8" cx="0" cy="155"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="6" cx="0" cy="130"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="7" cx="0" cy="105"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="6" cx="0" cy="80"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="9" cx="0" cy="55"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="9" cx="0" cy="30"></circle>
+            </g>
+            <g class="particle-container">
+              <circle class="particle" r="6" cx="0" cy="5"></circle>
+            </g>
+          </g>
+          
+        </svg>
+      </span>
+    </div>
+    <section id="intro" class="container">
+      <h1 class="sam-ui header">SAM UI Elements</h1>
+      <p>
+        This site showcases a set of design standards and angular-based frontend 
+        development components for building the upcoming <strong><em>SAM.gov</em>
+        </strong> website.
+      </p>
+      <a [routerLink]="['elements/button']" 
+        class="sam-ui primary button">
+        GET STARTED
+      </a>
+    </section>
+  </header>
+  <footer class="container">
+    <h2 class="sam-ui header" style="margin-top: 18.5px;">
+      Installation
+    </h2>
+    <code-example 
+      language="bash" 
+      [code]="'$ npm install --save sam-ui-elements'">
+    </code-example>
+    <a [routerLink]="['overview/getting-started']">
+      Read installation docs
+    </a>
+    <h2 class="sam-ui header">
+      Pattern Examples
+    </h2>
+    <p>
+      Components and layout examples to help you quickly get started with 
+      <strong><em>SAM-UI Elements</em></strong> and demonstrate best practices 
+      for implementing it in <strong><em>SAM.gov</em></strong>.
+    </p>
+    <a [routerLink]="['/examples']">
+      View examples
+    </a>
+  </footer>
+</main>
+
+
+<footer class="site-footer">
+  <nav class="container">
+    <ul>
+      <li>
+        <a [routerLink]="['overview/getting-started']">
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/examples']">
+          Examples
+        </a>
+      </li>
+      <li>
+        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements">
+          SAM-UI Elements
+        </a>
+      </li>
+      <li>
+        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site">
+          SAM Web Design Standards
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

@@ -1,13 +1,13 @@
-
-
 FROM dtr-1.prod-iae.bsp.gsa.gov/docker-datacenter/node-nginx:8-alpine
+ARG GIT_SHA
+ENV GIT_SHA $GIT_SHA
 
 # Delete default nginx config file & index file
-RUN rm /etc/nginx/sites-enabled/default
-RUN rm /var/www/html/index.nginx-debian.html
+RUN rm /etc/nginx/conf.d/default.conf
+#RUN rm /var/www/html/index.nginx-debian.html
 
 #copy configured nginx file
-COPY nginx/ /etc/nginx/sites-enabled
+COPY nginx/ /etc/nginx/conf.d
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -22,10 +22,10 @@ RUN npm rebuild node-sass
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
-      && ln -sf /dev/stderr /var/log/nginx/error.log
+     && ln -sf /dev/stderr /var/log/nginx/error.log
 
 EXPOSE 8080
-
+RUN mkdir /run/nginx
 # Set the default command to execute
 # when creating a new container
 CMD npm run prod

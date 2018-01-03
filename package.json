@@ -13,7 +13,8 @@
     "clean:dist": "npm run rimraf -- dist",
     "prebuild:prod": "npm run clean:dist",
     "build:prod": "webpack --config config/webpack.prod.js  --progress --profile --bail",
-    "prod": "npm run build:prod && npm run server:prod"
+    "prod": "npm run build:prod && npm run server:prod",
+    "generate-docs": "node ./config/docgen/docgen.js"
   },
   "repository": {
     "type": "git",

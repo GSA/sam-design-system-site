@@ -12,6 +12,7 @@ import { SamActionButtonExampleComponent } from "./components/actions/action-but
 import { SamActionsDropdownComponentExampleComponent } from "./components/actions/actions-dropdown/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { SamAlertFooterComponentExampleComponent } from "./components/alert-footer/component-example";
+import { SamBadgeComponentExampleComponent } from "./components/badge/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumbs/component-example";
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
@@ -65,6 +66,7 @@ export const ROUTES: Routes = [
 	{ path: 'components/actions/actions-dropdown', component: SamActionsDropdownComponentExampleComponent },
 	{ path: 'components/alert', component: AlertExampleComponent },
 	{ path: 'components/alert-footer', component: SamAlertFooterComponentExampleComponent },
+	{ path: 'components/badge', component: SamBadgeComponentExampleComponent },
 	{ path: 'components/banner', component: BannerExampleComponent },
 	{ path: 'components/breadcrumbs', component: SamBreadcrumbsComponentExampleComponent },
 	{ path: 'components/collapsible', component: CollapsibleExampleComponent },

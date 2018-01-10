@@ -26,6 +26,7 @@ import { routerTransition } from './router.animations';
       <router-outlet #o="outlet"></router-outlet>
       <router-outlet name="codesection"></router-outlet>
     </main>
+    <sam-alert-footer></sam-alert-footer>
   `,
   providers: [DocumentationService]
 })

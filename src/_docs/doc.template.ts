@@ -32,7 +32,7 @@ import Prism from 'prismjs';
     </nav>
   </header>
   <div class="usa-grid">
-    <aside class="usa-width-one-fourth">
+    <aside class="usa-width-one-fourth" style="padding-top: 16px;">
       <sam-sidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></sam-sidenav>
     </aside>
     <div class="usa-width-three-fourths">

@@ -17,7 +17,7 @@ var code_example = `<sam-checkbox
 </sam-checkbox>
 <br/>
 <sam-checkbox
-[(model)]="checkboxModel"
+[(model)]="checkboxModel2"
 [name]="disabledCheckboxConfig.name"
 [options]="disabledCheckboxConfig.options"
 [label]="disabledCheckboxConfig.label"
@@ -36,7 +36,8 @@ var code_example = `<sam-checkbox
 `
 })
 export class CheckboxExampleComponent extends BaseExampleComponent implements OnInit {
-	checkboxModel: any = ['ma'];
+  checkboxModel: any = ['ma'];
+  checkboxModel2: any = ['ma'];
   checkboxConfig = {
     options: [
       {value: 'dc', label: 'DC', name: 'checkbox-dc'},

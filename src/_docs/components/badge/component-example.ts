@@ -13,7 +13,10 @@ import { BaseExampleComponent } from '../../baseexample.component';
 import { markdownLoader } from '../../markdown-loader';
 
 //tabs/spacing matters for code example block
-var code_example = `TODO`;
+var code_example = `
+<div style='width:400px; height:400px; border:3px dotted black; position:relative;'>
+  <sam-badge [options]="{attached:'top-right'}">hello</sam-badge>
+</div>`;
 
 @Component({
 	selector: 'doc-sam-badge',

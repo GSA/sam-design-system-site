@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { ExampleComponent } from "./example/example.component";
 import { CodeExampleComponent } from "./example/code.component";
@@ -10,7 +9,6 @@ import { CodeExampleComponent } from "./example/code.component";
       CodeExampleComponent
   ],
   imports: [
-    BrowserModule
   ],
   exports: [
     ExampleComponent,

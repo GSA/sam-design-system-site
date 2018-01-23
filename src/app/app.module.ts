@@ -11,16 +11,16 @@ import { SamAlertFooterService } from '../../sam-ui-elements/src/ui-kit/componen
  */
 import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
+
 // App is our top level component
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
-import { ExampleComponent } from './examples.component';
 
 import { DocModule } from '../_docs/doc.module.dynamic';
 import { StaticDocModule } from '../_static/staticdoc.module';
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 import { SiteComponentsModule } from './site-components/sitecomponents.module';
-import { ExamplesModule } from '../examples/examples.module';
+
 // Application wide providers
 const APP_PROVIDERS = [
 ];
@@ -33,8 +33,7 @@ const APP_PROVIDERS = [
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    HomeComponent,
-    ExampleComponent
+    HomeComponent
   ],
   imports: [ // import Angular's modules
     DocModule,
@@ -45,8 +44,8 @@ const APP_PROVIDERS = [
     HttpModule,
     SamUIKitModule,
     SiteComponentsModule,
-    ExamplesModule,
-    RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules })
+    //RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

@@ -1,0 +1,95 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="container">
+      <a class="home" [routerLink]="['/']">
+        SAM Web Design System
+      </a>
+      <div class="mask-container">
+        <ul>
+          <li>
+            <a [routerLink]="['/patterns/latest/home']">Patterns</a>
+          </li>
+          <li>
+            <a [routerLink]="['/overview/getting-started']">Documentation</a>
+          </li>
+        </ul>
+      </div>
+      <div class="separator"></div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="patterns home">
+  <!-- <h2 class="sam-ui header">Basic Page Patterns</h2>
+  
+  <div>
+    <img src="/src/assets/examples/basic-page.jpg" 
+    width="300" style="border: 1px solid #ccc; border-radius: 4px;">
+    <a [routerLink]="['/patterns/v1/starter-page']">Basic Page</a>
+  </div>
+  
+  <div>
+    <img src="/src/assets/examples/sidebar-breadcrumbs.jpg" 
+    width="300" style="border: 1px solid #ccc; border-radius: 4px;">
+    <a [routerLink]="['/patterns/v1/sidebar-breadcrumbs']">
+      Page with sidenav and breadcrumbs
+    </a>
+  </div>
+  
+  <div>
+    <img src="/src/assets/examples/title-options.jpg" 
+    width="300" style="border: 1px solid #ccc; border-radius: 4px;">
+    <a [routerLink]="['/patterns/v1/title-options']">
+      Page with all available title options
+    </a>
+  </div> -->
+  
+  <h2 class="sam-ui header">Page Pattern: A</h2>
+  
+  <div>
+    <img src="/src/assets/examples/patterns-page-a-1.jpg" 
+    width="300" style="border: 1px solid #ccc; border-radius: 4px;">
+    <a [routerLink]="['/patterns/pages/page/a']">
+      Variation 1
+    </a>
+  </div>
+  
+  <h2 class="sam-ui header">Page Pattern: B</h2>
+  
+  <div>
+    <img src="/src/assets/examples/patterns-page-b-1.jpg"
+    width="300" style="border: 1px solid #ccc; border-radius: 4px;">
+    <a [routerLink]="['/patterns/pages/page/b']">
+      Variation 1
+    </a>
+  </div>
+</div>
+
+
+<footer class="site-footer">
+  <nav class="container">
+    <ul>
+      <li>
+        <a [routerLink]="['overview/getting-started']">
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/patterns/latest/home']">
+          Patterns
+        </a>
+      </li>
+      <li>
+        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements">
+          SAM-UI Elements
+        </a>
+      </li>
+      <li>
+        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site">
+          SAM Web Design Standards
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

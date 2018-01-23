@@ -24,7 +24,6 @@ import { routerTransition } from './router.animations';
   template: `
     <main [@routerTransition]="getState(o)">
       <router-outlet #o="outlet"></router-outlet>
-      <router-outlet name="codesection"></router-outlet>
     </main>
     <sam-alert-footer></sam-alert-footer>
   `,

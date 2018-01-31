@@ -4,7 +4,7 @@
   [breadcrumbs]="pagesservice.PageA.data.breadcrumbs">
   
   <sam-sidebar>
-    <a style="display:block; margin-bottom: 1em">
+    <a routerLink="">
       <sam-icon name="home"></sam-icon>
       {{ pagesservice.PageA.data.sidebarLink }}
     </a>
@@ -40,49 +40,40 @@
     <sam-box type="primary">
       <sam-heading importance="low" [text]="pagesservice.PageA.data.contentBoxTitle" icon="user">
       </sam-heading>
-      <p>{{ pagesservice.PageA.data.contentBoxDescription }}</p>
+      <p [innerHTML]="pagesservice.PageA.data.contentBoxDescription"></p>
       <sam-button [buttonText]="pagesservice.PageA.data.contentBoxButton"></sam-button>
     </sam-box>
+    
     <sam-box>
       <sam-list [items]="pagesservice.PageA.data.contentSecondaryBoxList"></sam-list>
     </sam-box>
-    <p>
-      {{ pagesservice.PageA.data.contentBelowBoxes }}
-    </p>
+    <p [innerHTML]="pagesservice.PageA.data.contentBelowBoxes"></p>
   </sam-container>
   
   <sam-container>
-    <sam-heading importance="high" [text]="pagesservice.PageA.data.contentFirstParagraphTitle"></sam-heading>
-    <p>
-      {{ pagesservice.PageA.data.contentFirstParagraph }}
-    </p>
-    <ul class="sam-ui bulleted list" data-emphasis="divided">
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-      <li>Etiam dignissim enim eget suscipit auctor.</li>
-      <li>Donec eget elit ullamcorper est malesuada feugiat.</li>
-      <li>Duis sit amet felis porta, dapibus lectus a, faucibus justo.</li>
-      <li>Maecenas quis ex vehicula, efficitur ipsum quis, laoreet nisl.</li>
-    </ul>
-    <ul class="sam-ui bulleted list">
-      <li>Cras vitae metus ultricies, congue sapien non, semper velit.</li>
-      <li>Donec gravida magna eu est facilisis interdum a eget arcu.</li>
-      <li>Nullam dapibus mauris id aliquam eleifend.</li>
-    </ul>
-    <br>
-    <sam-heading importance="high" [text]="pagesservice.PageA.data.contentSecondParagraphTitle"></sam-heading>
-    <p>
-      {{ pagesservice.PageA.data.contentSecondParagraph }}
-    </p>
-    <p>
-      {{ pagesservice.PageA.data.contentSecondParagraph2 }}
-    </p>
-  </sam-container>
+    <sam-heading importance="high" [text]="pagesservice.PageA.data.contentFirstParagraphTitle">
+    </sam-heading>
+    <p [innerHTML]="pagesservice.PageA.data.contentFirstParagraph"></p>
+    
+    <sam-list [items]="pagesservice.PageA.data.contentFirstParagraphList" data-emphasis="divided" bulleted>
+    </sam-list>
 
+    <sam-list [items]="pagesservice.PageA.data.contentFirstParagraphList2" bulleted>
+    </sam-list>
+  </sam-container>
+  
+  <sam-container>
+    <sam-heading importance="high" [text]="pagesservice.PageA.data.contentSecondParagraphTitle">
+    </sam-heading>
+    <p [innerHTML]="pagesservice.PageA.data.contentSecondParagraph"></p>
+    <p [innerHTML]="pagesservice.PageA.data.contentSecondParagraph2"></p>
+  </sam-container>
   
   <sam-box type="outline">
     <sam-heading [text]="pagesservice.PageA.data.contentHorizontalMenuTitle" alignment="center" detached>
     </sam-heading>
-    <sam-list [items]="pagesservice.PageA.data.contentHorizontalMenuItems" orientation="horizontal"></sam-list>
+    <sam-list [items]="pagesservice.PageA.data.contentHorizontalMenuItems" orientation="horizontal">
+    </sam-list>
   </sam-box>
   
 </sam-page>

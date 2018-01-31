@@ -27,7 +27,7 @@ export class DocumentationService {
     this.loadData()
     .subscribe(
       (data) => {
-          components.next(data.children.reduce((accum, child) => {
+        components.next(data.children.reduce((accum, child) => {
           if (child.name.match(regexComponent)) {
             for (const grandchild of child.children) {
               if (!!grandchild.decorators &&
@@ -43,6 +43,96 @@ export class DocumentationService {
       (error) => { throw new Error(error); }
     );
     return components;
+  }
+
+  public generateJSONReport(){
+    return this.loadData()
+    .subscribe(
+      (data) => {
+        let output = data.children.reduce((accum, child) => {
+          if (child.name.match(regexComponent)) {
+            for (const grandchild of child.children) {
+              if (!!grandchild.decorators &&
+                  (grandchild.decorators[0].name === 'Component' ||
+                  grandchild.decorators[0].name === 'Directive')) {
+                    accum.push(grandchild);
+              }
+            }
+          }
+          let arr = accum.slice(0);
+          let finalArr = [];
+          arr = arr.map(item=>{
+            let row = {};
+            row['component'] = item['name'];
+            delete item['id'];
+            delete item['kind'];
+            delete item['kindString'];
+            delete item['flags'];
+            delete item['groups'];
+            delete item['implementedTypes'];
+            delete item['sources'];
+            delete item['decorators'];
+            if(item['children']){
+              item['children'] = item['children'].filter(subitem=>{
+                if(subitem['kindString']=="Property" && subitem['decorators']){
+                  return true;
+                }
+              });
+              for(let i = 0; i < item['children'].length; i++){
+                let subItem = item['children'][i];
+                delete subItem['id'];
+                delete subItem['kind'];
+                let subrow = {};
+                subrow['component'] = row['component'];
+                // delete subItem['kindString'];
+                // delete subItem['flags'];
+                // delete subItem['sources'];
+                subrow['apiName'] = subItem['name'];
+                if(subItem['type'] && subItem['type']['name']){
+                  subrow['datatype'] = subItem['type']['name'];  
+                } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type']=="union"){ 
+                  let typearr = [];
+                  for(let i = 0; i < subItem['type']['types'].length; i++){
+                    if(subItem['type']['types'][i]['value']){
+                      typearr.push(subItem['type']['types'][i]['value']);
+                    } else if (subItem['type']['types'][i]['name']){
+                      typearr.push(subItem['type']['types'][i]['name']);
+                    }
+                  }
+                  subrow['datatype'] = typearr.join("|");
+                  
+                } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type']=="reflection")){
+                  subrow['datatype'] = "reflection";
+                }else {
+                  subrow['datatype'] = "";
+                }
+                subrow['type'] = subItem['decorators'][0]['name']; 
+                
+                subrow['comment'] = "";
+                if(subItem['comment'] && subItem['comment']["shortText"]){
+                  subrow['comment'] = (""+subItem['comment']["shortText"]).replace(/\"/g, "\"\"");
+                }
+                finalArr.push(subrow);
+              };
+            } else {
+              finalArr.push(row);
+            }
+
+            return item;
+          });
+          finalArr = finalArr.filter(row=>{
+            if(row['type']=="Input" || row['type']=="Output"){
+              return true;
+            }
+          });
+          console.log(finalArr);
+          return accum;
+        }, []);
+
+        console.log(output);
+      },
+      (error) => { throw new Error(error); }
+    );
   }
 
   /**

@@ -20,7 +20,6 @@ import {trigger, state, transition, query, style, stagger, animate} from "@angul
     ])
   ],
   template: `
-  <!-- <button (click)="toggle()">Toggle</button> -->
   <ul class="sam-ui list-next" [ngClass]="orientation">
     <li *ngFor="let item of items">
       <a *ngIf="item.link; else isNotLink">

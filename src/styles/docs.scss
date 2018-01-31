@@ -248,6 +248,14 @@ sam-container ul.bulleted.list{
 }
 
 /*---------------------------
+       Sidebar
+-----------------------------*/
+sam-sidebar{
+    display: grid;
+    grid-row-gap: 1em;
+}
+
+/*---------------------------
     Single Page typography
 -----------------------------*/
 .sam-ui.page p{
@@ -273,8 +281,15 @@ sam-container ul.bulleted.list{
 /**********************************************
               Listing
 ***********************************************/
+sam-list[bulleted]{
+    .sam-ui.list-next{
+        list-style: disc;
+        list-style-position: inside;
+    }
+}
 .sam-ui.list-next{
     list-style: none;
+    color: black;
     padding: 0;
     margin: 0;
 }

@@ -4,4 +4,4 @@ import { Component} from '@angular/core';
   selector: "sam-container",
   template: `<ng-content></ng-content>`
 })
-export class SAMContainerComponent{}
+export class SamContainerComponent{}

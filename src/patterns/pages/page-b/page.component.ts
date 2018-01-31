@@ -1,44 +1,21 @@
 import { Component} from '@angular/core';
+import { MenuItem } from '../../../sam-ui-elements/src/ui-kit/components/sidenav';
+import { SamMasterPageService } from '../../sam-ui-elements/sam-master-page.service';
 
 @Component({
   templateUrl: 'page.template.html'
 })
 export class PageBComponent{
 
-  listItems = [
-    {
-      "icon": "video",
-      "link": "#",
-      "text": "Orci varius natoque"
-    },
-    {
-      "icon": "video",
-      "link": "#",
-      "text": "Vivamus ac est eget ipsum"
-    }
-  ]
+  constructor(private masterpageservice: SamMasterPageService){
+    masterpageservice.docLink = "b-doc";
+    masterpageservice.settingsLink = "a-settings";
+  }
 
-  horizontalListItems = [
-    {
-      "icon": "video",
-      "link": "#",
-      "text": "Lorem"
-    },
-    {
-      "icon": "video",
-      "link": "#",
-      "text": "Suspendisse"
-    },
-    {
-      "icon": "video",
-      "link": "#",
-      "text": "Maecenas"
-    },
-    {
-      "icon": "video",
-      "link": "#",
-      "text": "Vivamus"
-    }
-  ]
+  breadcrumbs = [
+    { breadcrumb: 'Consectetur adipiscing', url: '/' },
+    { breadcrumb: 'Lorem ipsum dolor'}
+  ];
+
 
 }

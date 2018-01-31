@@ -63,18 +63,24 @@ body {
 /*---------------------------
         Pop Up
 -----------------------------*/
-router-outlet[name="settings"] + ng-component{
-    display: grid;
-    position: absolute;
-    top: 40px;
+body.modal-open{
+    overflow: hidden;
+}
+router-outlet[name="master-modal"] + ng-component{
+    display: block;
+    position: fixed;
+    top: 0;
     width: 100vw;
-    height: calc(100vh - 40px);
-    background-color: rgba(255, 255, 255, 0.329);
-    page-next{
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    sam-page{
+        display: block;
         border-radius: 2px;
-        box-shadow: 0 15px 40px 29px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        box-shadow: 1px 3px 10px 2px rgba(0,0,0,.2);
         background-color: white;
-        margin: 2% 4% 4% 4%;
+        margin: 4%;
+        overflow-y: auto;
+        max-height: calc(100vh - 10%);
     }
 }
 
@@ -118,14 +124,32 @@ router-outlet[name="settings"] + ng-component{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: min-content;
         grid-gap: 1em 1.5em;
+        grid-template-areas:
+            "breadcrumbs breadcrumbs breadcrumbs breadcrumbs"
+            "header      header      header      header"
+            "content     content     content     content";
+
+        &.sidebar{
+            grid-template-areas:
+            "breadcrumbs breadcrumbs breadcrumbs breadcrumbs"
+            "sidebar     header      header      header"
+            "sidebar     content     content     content";
+        }
+
         .header-area{
-            grid-column: 1 / -1;
+            grid-area: header;
         }
+
+        sam-breadcrumbs{
+            grid-area: breadcrumbs;
+        }
+
         .sidebar-area{
-            grid-column-end: span 1;
+            grid-area: sidebar;
         }
+
         .content-area{
-            grid-column-end: span 3;
+            grid-area: content;
             margin-bottom: 2em;
         }
     }
@@ -157,7 +181,7 @@ router-outlet[name="settings"] + ng-component{
 }
 
 /*---------------------------
-         Page 
+        Content Area 
 -----------------------------*/
 .sam-ui.page{
     .content-area{
@@ -171,8 +195,6 @@ router-outlet[name="settings"] + ng-component{
     .sam-ui.page{
         .content-area{
             grid-template-columns: repeat(6, 1fr);
-            //grid-template-rows: min-content auto;
-            grid-auto-rows: min-content;
         }
         .content-area > *{
             grid-column: 1 / -1;
@@ -229,13 +251,10 @@ sam-container ul.bulleted.list{
     Single Page typography
 -----------------------------*/
 .sam-ui.page p{
-    max-width: 66ch;
     line-height: 1.5;
     color: black;
     margin: 1em 0;
 }
-
-//p:first-letter { font-size: 2em; }
 
 /*---------------------------
       For Demo Purposes

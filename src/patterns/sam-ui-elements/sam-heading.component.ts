@@ -5,7 +5,7 @@ import { Component, Input, OnInit} from '@angular/core';
   template: `
   <ng-container [ngSwitch]="importance">
     <h1 class="sam-ui header" [ngClass]="css_classes" *ngSwitchCase="'highest'">
-      <div class="sup header">Vestibulum</div>
+      <div *ngIf="sup" class="sup header">{{ sup }}</div>
       <sam-icon *ngIf="icon" [name]="icon"></sam-icon>
       {{ text }}
     </h1>
@@ -25,12 +25,13 @@ import { Component, Input, OnInit} from '@angular/core';
       <sam-icon *ngIf="icon" [name]="icon"></sam-icon>
       {{ text }}
     </h3>
-  </ng-container>  
+  </ng-container>
   `
 })
-export class SAMHeadingComponent implements OnInit{
+export class SamHeadingComponent implements OnInit{
   
   @Input() public importance: string;
+  @Input() public sup: string;
   @Input() public text: string;
   @Input() public icon: string;
   @Input() public alignment: string;

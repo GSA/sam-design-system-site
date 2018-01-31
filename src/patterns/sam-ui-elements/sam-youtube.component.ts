@@ -2,7 +2,7 @@ import { Component, Input, OnInit} from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
-  selector: "youtube-video",
+  selector: "sam-youtube",
   template: `
   <div class="sam-ui embed video ratio16by9">
     <iframe [src]="videoUrl" allow="autoplay; encrypted-media" allowfullscreen>
@@ -10,7 +10,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   </div>
   `
 })
-export class VideoEmbedComponent implements OnInit{
+export class SamYoutubeComponent implements OnInit{
   
   @Input() public id: string;
 

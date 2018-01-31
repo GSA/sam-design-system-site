@@ -24,7 +24,7 @@ import { Component, Input, OnInit} from '@angular/core';
   </ng-container>  
   `
 })
-export class SAMIconComponent implements OnInit{
+export class SamIconComponent implements OnInit{
   
   @Input() public name: string;
 

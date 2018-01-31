@@ -7,33 +7,42 @@ import { PagesRoutingModule } from './pages.routes';
 
 import { PagesComponent } from './pages.component';
 import { PageAComponent } from './page-a/page.component';
-import { PageADocumentationComponent } from './documentation/page-a.component';
+import { PageADocComponent } from './page-a/page-doc.component';
+import { PageASettingsComponent } from './page-a/page-settings.component';
 import { PageBComponent } from './page-b/page.component';
+import { PageBDocComponent } from './page-b/page-doc.component';
 
 // SAM UI Elements
-import { MasterPageComponent } from '../sam-ui-elements/master-page.component'
-import { PageComponent } from '../sam-ui-elements/page.component'
-import { VideoEmbedComponent } from '../sam-ui-elements/video-embed.component'
-import { SAMUIBoxComponent } from '../sam-ui-elements/box.component'
-import { SAMHeadingComponent } from '../sam-ui-elements/sam-header.component'
-import { SAMIconComponent } from '../sam-ui-elements/sam-icon.component'
-import { SAMListComponent } from '../sam-ui-elements/sam-list.component'
-import { SAMContainerComponent } from '../sam-ui-elements/sam-container.component'
+import { SamMasterPageComponent } from '../sam-ui-elements/sam-master-page.component';
+import { SamPageComponent } from '../sam-ui-elements/sam-page.component';
+import { SamYoutubeComponent } from '../sam-ui-elements/sam-youtube.component';
+import { SamBoxComponent } from '../sam-ui-elements/sam-box.component';
+import { SamHeadingComponent } from '../sam-ui-elements/sam-heading.component';
+import { SamIconComponent } from '../sam-ui-elements/sam-icon.component';
+import { SamListComponent } from '../sam-ui-elements/sam-list.component';
+import { SamContainerComponent } from '../sam-ui-elements/sam-container.component';
+import { SamSidebarComponent } from '../sam-ui-elements/sam-sidebar.component';
 
 @NgModule({
   declarations: [
     PagesComponent,
+
     PageAComponent,
-    PageADocumentationComponent,
+    PageADocComponent,
+    PageASettingsComponent,
+    
     PageBComponent,
-    MasterPageComponent,
-    PageComponent,
-    VideoEmbedComponent,
-    SAMUIBoxComponent,
-    SAMHeadingComponent,
-    SAMIconComponent,
-    SAMListComponent,
-    SAMContainerComponent
+    PageBDocComponent,
+
+    SamMasterPageComponent,
+    SamPageComponent,
+    SamYoutubeComponent,
+    SamBoxComponent,
+    SamHeadingComponent,
+    SamIconComponent,
+    SamListComponent,
+    SamContainerComponent,
+    SamSidebarComponent
   ],
   imports: [
     CommonModule,

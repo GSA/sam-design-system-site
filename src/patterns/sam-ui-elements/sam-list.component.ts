@@ -1,4 +1,4 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges} from '@angular/core';
 import {trigger, state, transition, query, style, stagger, animate} from "@angular/animations";
 
 @Component({
@@ -21,8 +21,8 @@ import {trigger, state, transition, query, style, stagger, animate} from "@angul
   ],
   template: `
   <!-- <button (click)="toggle()">Toggle</button> -->
-  <ul class="sam-ui list-next" [ngClass]="orientation" [@listAnimation]="listItems.length">
-    <li *ngFor="let item of listItems">
+  <ul class="sam-ui list-next" [ngClass]="orientation">
+    <li *ngFor="let item of items">
       <a *ngIf="item.link; else isNotLink">
         <sam-icon *ngIf="item.icon" [name]="item.icon"></sam-icon>
         {{ item.text }}
@@ -35,29 +35,11 @@ import {trigger, state, transition, query, style, stagger, animate} from "@angul
   </ul> 
   `
 })
-export class SAMListComponent implements OnInit{
+export class SamListComponent {
   
   @Input() public items: any;
   @Input() public orientation: string;
   
-  listItems = [];
-
   constructor(){}
-  
-  ngOnInit(){
-    this.toggle();
-  }
-
-  hideItems(){
-    this.listItems = [];
-  }
-
-  showItems(){
-    this.listItems = this.items;
-  }
-
-  toggle() { 
-    this.listItems.length ? this.hideItems() : this.showItems(); 
-  } 
   
 }

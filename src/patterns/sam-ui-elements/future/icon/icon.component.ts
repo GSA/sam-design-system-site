@@ -2,7 +2,7 @@ import { Component, Input} from '@angular/core';
 
 @Component({
   selector: "sam-icon",
-  templateUrl: 'sam-icon.template.html'
+  templateUrl: 'icon.template.html'
 })
 export class SamIconComponent{
   

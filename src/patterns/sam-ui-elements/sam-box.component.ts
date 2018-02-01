@@ -1,21 +1,15 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: "sam-box",
   template: `
-  <div class="sam-ui box" [ngClass]="type">
-    <ng-content></ng-content>
-  </div>
+    <div class="sam-ui box" [ngClass]="type">
+      <ng-content></ng-content>
+    </div>
   `
 })
-export class SamBoxComponent implements OnInit{
+export class SamBoxComponent{
   
   @Input() public type: string;
-
-  constructor(){}
-
-  ngOnInit(){
-    
-  }
 
 }

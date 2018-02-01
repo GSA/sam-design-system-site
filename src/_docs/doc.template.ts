@@ -1,95 +1,10 @@
-import {
-  Component,
-  OnInit,
-  Input
-} from '@angular/core';
-
+import { Component, OnInit, Input} from '@angular/core';
 import { Router } from '@angular/router';
-
 import Prism from 'prismjs';
 
 @Component({
 	selector: 'doc-template',
-  template: `
-  <header class="site-header">
-    <nav class="site-nav">
-      <div class="container">
-        <a class="home" [routerLink]="['/']">
-          SAM Web Design Standards
-        </a>
-        <div class="mask-container">
-          <ul>
-            <li>
-              <a [routerLink]="['/examples']">Examples</a>
-            </li>
-            <li>
-              <a [routerLink]="['/overview/getting-started']">Documentation</a>
-            </li>
-          </ul>
-        </div>
-        <div class="separator"></div>
-      </div>
-    </nav>
-  </header>
-  <div class="usa-grid">
-    <aside class="usa-width-one-fourth" style="padding-top: 16px;">
-      <sam-sidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></sam-sidenav>
-    </aside>
-    <div class="usa-width-three-fourths">
-      
-      
-      <sam-tabs *ngIf="typedoc">
-        <sam-tab tabTitle="Documentation" active="true">
-          <div class="doc-intro" [innerHTML]="markdown"></div>
-          <ng-content></ng-content>
-          <pre *ngIf="example" class="language-html"><code class="language-html" [innerHTML]="example"></code></pre>
-          
-          <div class="sam-ui hidden section divider"></div>
-          
-          <div *ngIf="typedoc !== 'static-page'" [innerHTML]="typedoc"></div>
-        </sam-tab>
-        <sam-tab tabTitle="Guidance" *ngIf="guidance">
-          <div [innerHTML]="guidance"></div>
-        </sam-tab>
-        <sam-tab tabTitle="Design" *ngIf="design">
-          <div [innerHTML]="design"></div>
-        </sam-tab>
-        <sam-tab tabTitle="Implementation" *ngIf="implementation">
-          <div [innerHTML]="implementation"></div>
-        </sam-tab>
-      </sam-tabs>
-    </div>
-  </div>
-  
-  <div class="sam-ui hidden section divider"></div>
-
-  <footer class="site-footer">
-    <nav class="container">
-      <ul>
-        <li>
-          <a [routerLink]="['overview/getting-started']">
-            Documentation
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/examples']">
-            Examples
-          </a>
-        </li>
-        <li>
-          <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements">
-            SAM-UI Elements
-          </a>
-        </li>
-        <li>
-          <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site">
-            SAM Web Design Standards
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-`
+  templateUrl: 'doc.template.html'
 })
 export class DocTemplateComponent implements OnInit {
   

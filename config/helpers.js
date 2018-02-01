@@ -129,7 +129,7 @@ function generateModuleString() {
 		return prev.concat(`import { ${curr.component} } from "./${curr.link}/component-example";\n`);
 	}, '');
 	let declarations = files.map((file) => '\n\t\t' + file.component);
-	let otherDeclarations = ['InterfacesComponent', 'DocTemplateComponent', 'StaticPageComponent', 'BaseExampleComponent', 'PlaceHolderExampleComponent', 'SimpleExampleComponent'];
+	let otherDeclarations = ['InterfacesComponent', 'DocTemplateComponent', 'StaticPageComponent', 'BaseExampleComponent'];
 	otherDeclarations.forEach((declaration) => {
 		declarations.push(declaration);
 	});
@@ -145,8 +145,6 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from "./baseexample.component";
-import { PlaceHolderExampleComponent } from "./placeholder.component";
-import { SimpleExampleComponent } from "./simple.component";
 
 ${imports}
 
@@ -208,9 +206,6 @@ function generateRoutesString() {
 /* File generated in ../config/helpers.js             */
 /******************************************************/
 import { Routes, RouterModule } from '@angular/router';
-
-import { PlaceHolderExampleComponent } from "./placeholder.component";
-import { SimpleExampleComponent } from "./simple.component";
 
 ${imports}
 

@@ -1,17 +1,11 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: "sam-icon",
   templateUrl: 'sam-icon.template.html'
 })
-export class SamIconComponent implements OnInit{
+export class SamIconComponent{
   
   @Input() public name: string;
-
-  constructor(){}
-
-  ngOnInit(){
-    
-  }
 
 }

@@ -4,9 +4,6 @@
 /******************************************************/
 import { Routes, RouterModule } from '@angular/router';
 
-import { PlaceHolderExampleComponent } from "./placeholder.component";
-import { SimpleExampleComponent } from "./simple.component";
-
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { SamActionButtonExampleComponent } from "./components/actions/action-button/component-example";
 import { SamActionsDropdownComponentExampleComponent } from "./components/actions/actions-dropdown/component-example";

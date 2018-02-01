@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit} from '@angular/core';
-import { SamPageService } from './sam-page.service';
+import { SamPageService } from '../page';
 
 @Component({
   selector: "sam-sidebar",

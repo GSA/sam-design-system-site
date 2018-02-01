@@ -10,8 +10,6 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from "./baseexample.component";
-import { PlaceHolderExampleComponent } from "./placeholder.component";
-import { SimpleExampleComponent } from "./simple.component";
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { SamActionButtonExampleComponent } from "./components/actions/action-button/component-example";
@@ -122,7 +120,7 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
-		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
+		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent
 	],
 	entryComponents: [
 		AccordionExampleComponent,
@@ -172,7 +170,7 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
-		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
+		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent
 	],
 	imports: [
 		BrowserModule,

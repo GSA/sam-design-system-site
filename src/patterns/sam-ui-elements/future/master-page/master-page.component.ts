@@ -1,10 +1,10 @@
 import { Component, EventEmitter, HostListener, Renderer2} from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
-import { SamMasterPageService } from './sam-master-page.service';
+import { SamMasterPageService } from './master-page.service';
 
 @Component({
   selector: "sam-master-page",
-  templateUrl: 'sam-master-page.template.html',
+  templateUrl: 'master-page.template.html',
   providers: [SamMasterPageService]
 })
 export class SamMasterPageComponent{

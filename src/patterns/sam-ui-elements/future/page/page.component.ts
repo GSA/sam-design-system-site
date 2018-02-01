@@ -1,9 +1,9 @@
 import { Component, Input, HostListener} from '@angular/core';
-import {SamPageService } from './sam-page.service';
+import {SamPageService } from './page.service';
 
 @Component({
   selector: "sam-page",
-  templateUrl: 'sam-page.template.html',
+  templateUrl: 'page.template.html',
   providers: [SamPageService]
 })
 export class SamPageComponent{

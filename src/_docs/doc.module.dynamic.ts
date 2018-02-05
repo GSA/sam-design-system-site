@@ -22,6 +22,7 @@ import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumb
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
+import { SamFilesComponentExampleComponent } from "./components/files/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { SamHeaderComponentExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
@@ -32,10 +33,13 @@ import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
+import { SamProgressExampleComponent } from "./components/progress-bar/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
+import { SamUploadComponentExampleComponent } from "./components/upload/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
+import { SamDragDropDirectiveExampleComponent } from "./directives/drag-drop/component-example";
 import { SamFocusDirectiveExampleComponent } from "./directives/focus/component-example";
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
@@ -55,6 +59,15 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
+import { SamBoxComponentExampleComponent } from "./future/box/component-example";
+import { SamContainerComponentExampleComponent } from "./future/container/component-example";
+import { SamHeadingComponentExampleComponent } from "./future/heading/component-example";
+import { SamIconComponentExampleComponent } from "./future/icon/component-example";
+import { SamListComponentExampleComponent } from "./future/list/component-example";
+import { SamMasterPageComponentExampleComponent } from "./future/master-page/component-example";
+import { SamPageComponentExampleComponent } from "./future/page/component-example";
+import { SamSidebarComponentExampleComponent } from "./future/sidebar/component-example";
+import { SamYoutubeComponentExampleComponent } from "./future/youtube/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
 import { StateServiceDirectiveExampleComponent } from "./service-directives/autocomplete/state/component-example";
 import { FieldsetWrapperExampleComponent } from "./wrappers/fieldset-wrapper/component-example";
@@ -84,6 +97,7 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		CollapsibleExampleComponent,
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
+		SamFilesComponentExampleComponent,
 		FiltersContainerExampleComponent,
 		SamHeaderComponentExampleComponent,
 		HistoryExampleComponent,
@@ -94,10 +108,13 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		MultiselectDropdownExampleComponent,
 		PaginationExampleComponent,
 		POCExampleComponent,
+		SamProgressExampleComponent,
 		SidenavExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
+		SamUploadComponentExampleComponent,
 		ClickOutsideExampleComponent,
+		SamDragDropDirectiveExampleComponent,
 		SamFocusDirectiveExampleComponent,
 		StickyExampleComponent,
 		TabOutsideExampleComponent,
@@ -117,6 +134,15 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		ToggleSwitchExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
+		SamBoxComponentExampleComponent,
+		SamContainerComponentExampleComponent,
+		SamHeadingComponentExampleComponent,
+		SamIconComponentExampleComponent,
+		SamListComponentExampleComponent,
+		SamMasterPageComponentExampleComponent,
+		SamPageComponentExampleComponent,
+		SamSidebarComponentExampleComponent,
+		SamYoutubeComponentExampleComponent,
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
@@ -134,6 +160,7 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		CollapsibleExampleComponent,
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
+		SamFilesComponentExampleComponent,
 		FiltersContainerExampleComponent,
 		SamHeaderComponentExampleComponent,
 		HistoryExampleComponent,
@@ -144,10 +171,13 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		MultiselectDropdownExampleComponent,
 		PaginationExampleComponent,
 		POCExampleComponent,
+		SamProgressExampleComponent,
 		SidenavExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
+		SamUploadComponentExampleComponent,
 		ClickOutsideExampleComponent,
+		SamDragDropDirectiveExampleComponent,
 		SamFocusDirectiveExampleComponent,
 		StickyExampleComponent,
 		TabOutsideExampleComponent,
@@ -167,6 +197,15 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		ToggleSwitchExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
+		SamBoxComponentExampleComponent,
+		SamContainerComponentExampleComponent,
+		SamHeadingComponentExampleComponent,
+		SamIconComponentExampleComponent,
+		SamListComponentExampleComponent,
+		SamMasterPageComponentExampleComponent,
+		SamPageComponentExampleComponent,
+		SamSidebarComponentExampleComponent,
+		SamYoutubeComponentExampleComponent,
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,

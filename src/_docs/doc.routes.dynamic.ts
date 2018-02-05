@@ -15,6 +15,7 @@ import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumb
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
+import { SamFilesComponentExampleComponent } from "./components/files/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { SamHeaderComponentExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
@@ -25,10 +26,13 @@ import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
+import { SamProgressExampleComponent } from "./components/progress-bar/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
+import { SamUploadComponentExampleComponent } from "./components/upload/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
+import { SamDragDropDirectiveExampleComponent } from "./directives/drag-drop/component-example";
 import { SamFocusDirectiveExampleComponent } from "./directives/focus/component-example";
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
@@ -48,6 +52,15 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
+import { SamBoxComponentExampleComponent } from "./future/box/component-example";
+import { SamContainerComponentExampleComponent } from "./future/container/component-example";
+import { SamHeadingComponentExampleComponent } from "./future/heading/component-example";
+import { SamIconComponentExampleComponent } from "./future/icon/component-example";
+import { SamListComponentExampleComponent } from "./future/list/component-example";
+import { SamMasterPageComponentExampleComponent } from "./future/master-page/component-example";
+import { SamPageComponentExampleComponent } from "./future/page/component-example";
+import { SamSidebarComponentExampleComponent } from "./future/sidebar/component-example";
+import { SamYoutubeComponentExampleComponent } from "./future/youtube/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
 import { StateServiceDirectiveExampleComponent } from "./service-directives/autocomplete/state/component-example";
 import { FieldsetWrapperExampleComponent } from "./wrappers/fieldset-wrapper/component-example";
@@ -69,6 +82,7 @@ export const ROUTES: Routes = [
 	{ path: 'components/collapsible', component: CollapsibleExampleComponent },
 	{ path: 'components/comments', component: SamCommentsComponentExampleComponent },
 	{ path: 'components/download', component: DownloadExampleComponent },
+	{ path: 'components/files', component: SamFilesComponentExampleComponent },
 	{ path: 'components/filters-container', component: FiltersContainerExampleComponent },
 	{ path: 'components/header', component: SamHeaderComponentExampleComponent },
 	{ path: 'components/history', component: HistoryExampleComponent },
@@ -79,10 +93,13 @@ export const ROUTES: Routes = [
 	{ path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
 	{ path: 'components/pagination', component: PaginationExampleComponent },
 	{ path: 'components/point-of-contact', component: POCExampleComponent },
+	{ path: 'components/progress-bar', component: SamProgressExampleComponent },
 	{ path: 'components/sidenav', component: SidenavExampleComponent },
 	{ path: 'components/spinner', component: SpinnerExampleComponent },
 	{ path: 'components/tabs', component: TabsExampleComponent },
+	{ path: 'components/upload', component: SamUploadComponentExampleComponent },
 	{ path: 'directives/click-outside', component: ClickOutsideExampleComponent },
+	{ path: 'directives/drag-drop', component: SamDragDropDirectiveExampleComponent },
 	{ path: 'directives/focus', component: SamFocusDirectiveExampleComponent },
 	{ path: 'directives/sticky', component: StickyExampleComponent },
 	{ path: 'directives/tab-outside', component: TabOutsideExampleComponent },
@@ -102,6 +119,15 @@ export const ROUTES: Routes = [
 	{ path: 'form-controls/toggle-switch', component: ToggleSwitchExampleComponent },
 	{ path: 'form-templates/name-entry', component: NameEntryExampleComponent },
 	{ path: 'form-templates/phone-entry', component: PhoneEntryExampleComponent },
+	{ path: 'future/box', component: SamBoxComponentExampleComponent },
+	{ path: 'future/container', component: SamContainerComponentExampleComponent },
+	{ path: 'future/heading', component: SamHeadingComponentExampleComponent },
+	{ path: 'future/icon', component: SamIconComponentExampleComponent },
+	{ path: 'future/list', component: SamListComponentExampleComponent },
+	{ path: 'future/master-page', component: SamMasterPageComponentExampleComponent },
+	{ path: 'future/page', component: SamPageComponentExampleComponent },
+	{ path: 'future/sidebar', component: SamSidebarComponentExampleComponent },
+	{ path: 'future/youtube', component: SamYoutubeComponentExampleComponent },
 	{ path: 'service-directives/autocomplete/country', component: CountryServiceDirectiveExampleComponent },
 	{ path: 'service-directives/autocomplete/state', component: StateServiceDirectiveExampleComponent },
 	{ path: 'wrappers/fieldset-wrapper', component: FieldsetWrapperExampleComponent },

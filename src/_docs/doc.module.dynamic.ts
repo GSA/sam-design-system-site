@@ -44,6 +44,15 @@ import { SamFocusDirectiveExampleComponent } from "./directives/focus/component-
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
+import { SamBoxComponentExampleComponent } from "./experimental/box/component-example";
+import { SamContainerComponentExampleComponent } from "./experimental/container/component-example";
+import { SamHeadingComponentExampleComponent } from "./experimental/heading/component-example";
+import { SamIconComponentExampleComponent } from "./experimental/icon/component-example";
+import { SamListComponentExampleComponent } from "./experimental/list/component-example";
+import { SamMasterPageComponentExampleComponent } from "./experimental/master-page/component-example";
+import { SamPageComponentExampleComponent } from "./experimental/page/component-example";
+import { SamSidebarComponentExampleComponent } from "./experimental/sidebar/component-example";
+import { SamYoutubeComponentExampleComponent } from "./experimental/youtube/component-example";
 import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
 import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocomplete-multiselect/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
@@ -59,15 +68,6 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
-import { SamBoxComponentExampleComponent } from "./future/box/component-example";
-import { SamContainerComponentExampleComponent } from "./future/container/component-example";
-import { SamHeadingComponentExampleComponent } from "./future/heading/component-example";
-import { SamIconComponentExampleComponent } from "./future/icon/component-example";
-import { SamListComponentExampleComponent } from "./future/list/component-example";
-import { SamMasterPageComponentExampleComponent } from "./future/master-page/component-example";
-import { SamPageComponentExampleComponent } from "./future/page/component-example";
-import { SamSidebarComponentExampleComponent } from "./future/sidebar/component-example";
-import { SamYoutubeComponentExampleComponent } from "./future/youtube/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
 import { StateServiceDirectiveExampleComponent } from "./service-directives/autocomplete/state/component-example";
 import { FieldsetWrapperExampleComponent } from "./wrappers/fieldset-wrapper/component-example";
@@ -119,6 +119,15 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		StickyExampleComponent,
 		TabOutsideExampleComponent,
 		ButtonExampleComponent,
+		SamBoxComponentExampleComponent,
+		SamContainerComponentExampleComponent,
+		SamHeadingComponentExampleComponent,
+		SamIconComponentExampleComponent,
+		SamListComponentExampleComponent,
+		SamMasterPageComponentExampleComponent,
+		SamPageComponentExampleComponent,
+		SamSidebarComponentExampleComponent,
+		SamYoutubeComponentExampleComponent,
 		AutocompleteExampleComponent,
 		AutocompleteMultiselectExampleComponent,
 		CheckboxExampleComponent,
@@ -134,15 +143,6 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		ToggleSwitchExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
-		SamBoxComponentExampleComponent,
-		SamContainerComponentExampleComponent,
-		SamHeadingComponentExampleComponent,
-		SamIconComponentExampleComponent,
-		SamListComponentExampleComponent,
-		SamMasterPageComponentExampleComponent,
-		SamPageComponentExampleComponent,
-		SamSidebarComponentExampleComponent,
-		SamYoutubeComponentExampleComponent,
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
@@ -182,6 +182,15 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		StickyExampleComponent,
 		TabOutsideExampleComponent,
 		ButtonExampleComponent,
+		SamBoxComponentExampleComponent,
+		SamContainerComponentExampleComponent,
+		SamHeadingComponentExampleComponent,
+		SamIconComponentExampleComponent,
+		SamListComponentExampleComponent,
+		SamMasterPageComponentExampleComponent,
+		SamPageComponentExampleComponent,
+		SamSidebarComponentExampleComponent,
+		SamYoutubeComponentExampleComponent,
 		AutocompleteExampleComponent,
 		AutocompleteMultiselectExampleComponent,
 		CheckboxExampleComponent,
@@ -197,15 +206,6 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		ToggleSwitchExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
-		SamBoxComponentExampleComponent,
-		SamContainerComponentExampleComponent,
-		SamHeadingComponentExampleComponent,
-		SamIconComponentExampleComponent,
-		SamListComponentExampleComponent,
-		SamMasterPageComponentExampleComponent,
-		SamPageComponentExampleComponent,
-		SamSidebarComponentExampleComponent,
-		SamYoutubeComponentExampleComponent,
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,

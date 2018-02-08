@@ -37,6 +37,15 @@ import { SamFocusDirectiveExampleComponent } from "./directives/focus/component-
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
+import { SamBoxComponentExampleComponent } from "./experimental/box/component-example";
+import { SamContainerComponentExampleComponent } from "./experimental/container/component-example";
+import { SamHeadingComponentExampleComponent } from "./experimental/heading/component-example";
+import { SamIconComponentExampleComponent } from "./experimental/icon/component-example";
+import { SamListComponentExampleComponent } from "./experimental/list/component-example";
+import { SamMasterPageComponentExampleComponent } from "./experimental/master-page/component-example";
+import { SamPageComponentExampleComponent } from "./experimental/page/component-example";
+import { SamSidebarComponentExampleComponent } from "./experimental/sidebar/component-example";
+import { SamYoutubeComponentExampleComponent } from "./experimental/youtube/component-example";
 import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
 import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocomplete-multiselect/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
@@ -52,15 +61,6 @@ import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
-import { SamBoxComponentExampleComponent } from "./future/box/component-example";
-import { SamContainerComponentExampleComponent } from "./future/container/component-example";
-import { SamHeadingComponentExampleComponent } from "./future/heading/component-example";
-import { SamIconComponentExampleComponent } from "./future/icon/component-example";
-import { SamListComponentExampleComponent } from "./future/list/component-example";
-import { SamMasterPageComponentExampleComponent } from "./future/master-page/component-example";
-import { SamPageComponentExampleComponent } from "./future/page/component-example";
-import { SamSidebarComponentExampleComponent } from "./future/sidebar/component-example";
-import { SamYoutubeComponentExampleComponent } from "./future/youtube/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
 import { StateServiceDirectiveExampleComponent } from "./service-directives/autocomplete/state/component-example";
 import { FieldsetWrapperExampleComponent } from "./wrappers/fieldset-wrapper/component-example";
@@ -104,6 +104,15 @@ export const ROUTES: Routes = [
 	{ path: 'directives/sticky', component: StickyExampleComponent },
 	{ path: 'directives/tab-outside', component: TabOutsideExampleComponent },
 	{ path: 'elements/button', component: ButtonExampleComponent },
+	{ path: 'experimental/box', component: SamBoxComponentExampleComponent },
+	{ path: 'experimental/container', component: SamContainerComponentExampleComponent },
+	{ path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
+	{ path: 'experimental/icon', component: SamIconComponentExampleComponent },
+	{ path: 'experimental/list', component: SamListComponentExampleComponent },
+	{ path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
+	{ path: 'experimental/page', component: SamPageComponentExampleComponent },
+	{ path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
+	{ path: 'experimental/youtube', component: SamYoutubeComponentExampleComponent },
 	{ path: 'form-controls/autocomplete', component: AutocompleteExampleComponent },
 	{ path: 'form-controls/autocomplete-multiselect', component: AutocompleteMultiselectExampleComponent },
 	{ path: 'form-controls/checkbox', component: CheckboxExampleComponent },
@@ -119,15 +128,6 @@ export const ROUTES: Routes = [
 	{ path: 'form-controls/toggle-switch', component: ToggleSwitchExampleComponent },
 	{ path: 'form-templates/name-entry', component: NameEntryExampleComponent },
 	{ path: 'form-templates/phone-entry', component: PhoneEntryExampleComponent },
-	{ path: 'future/box', component: SamBoxComponentExampleComponent },
-	{ path: 'future/container', component: SamContainerComponentExampleComponent },
-	{ path: 'future/heading', component: SamHeadingComponentExampleComponent },
-	{ path: 'future/icon', component: SamIconComponentExampleComponent },
-	{ path: 'future/list', component: SamListComponentExampleComponent },
-	{ path: 'future/master-page', component: SamMasterPageComponentExampleComponent },
-	{ path: 'future/page', component: SamPageComponentExampleComponent },
-	{ path: 'future/sidebar', component: SamSidebarComponentExampleComponent },
-	{ path: 'future/youtube', component: SamYoutubeComponentExampleComponent },
 	{ path: 'service-directives/autocomplete/country', component: CountryServiceDirectiveExampleComponent },
 	{ path: 'service-directives/autocomplete/state', component: StateServiceDirectiveExampleComponent },
 	{ path: 'wrappers/fieldset-wrapper', component: FieldsetWrapperExampleComponent },

@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 
-import { SamMasterPageService } from '../../../../sam-ui-elements/src/ui-kit/future/master-page';
+import { SamMasterPageService } from '../../../../sam-ui-elements/src/ui-kit/experimental/master-page';
 import { MenuItem } from '../../../../sam-ui-elements/src/ui-kit/components/sidenav';
 import { PagesService } from '../pages.service';
 

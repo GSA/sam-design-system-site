@@ -1,13 +1,17 @@
-<sam-page suptitle="consectetur" title="Lorem Ipsum" [breadcrumbs]="breadcrumbs">
-  
+<sam-page 
+  [suptitle]="pagesservice.PageB.data.suptitle"
+  [title]="pagesservice.PageB.data.title"
+  [breadcrumbs]="pagesservice.PageB.data.breadcrumbs">
+
   <sam-sidebar>
-    <a style="display:block; margin-bottom: 1em">
+    <a routerLink="">
       <sam-icon name="home"></sam-icon>
-      Ullamcorper nulla
+      {{ pagesservice.PageB.data.sidebarLink }}
     </a>
     
     <sam-box>
-      <sam-heading text="Luctus Velit" alignment="center"></sam-heading>
+      <sam-heading [text]="pagesservice.PageB.data.sidebarBoxTitle" alignment="center">
+      </sam-heading>
       <div class="sam-ui search">
         <input type="search" name="samsearch" placeholder="Search">
         <button>
@@ -16,77 +20,58 @@
       </div>
     </sam-box>
     
-    <ul class="sam-ui side navigation">
-      <li>
-        <a class="active">Lorem Ipsum Dolor</a>
-        <ul>
-          <li><a>Risus sed</a></li>
-          <li><a>Magna bibendum</a></li>
-        </ul>
-      </li>
-      <li><a>Suspendisse</a></li>
-      <li><a>Maecenas</a></li>
-      <li><a>Vivamus</a></li>
-    </ul>
+    <sam-sidenav labelLookup="Award Domains" [model]="sidenavModel">
+    </sam-sidenav>
   </sam-sidebar>
-  
+
   <sam-container>
-    <p style="margin-top:0">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis 
-      commodo bibendum. Praesent enim nunc, faucibus quis rhoncus eget, commodo 
-      nec lectus. Suspendisse a felis condimentum, sollicitudin nisi non, 
-      pretium nulla. Sed vestibulum ex rhoncus, feugiat risus laoreet, imperdiet 
-      quam.
-    </p>
-    <ul class="sam-ui bulleted list">
-      <li>Cras vitae metus ultricies, congue sapien non, semper velit.</li>
-      <li>Donec gravida magna eu est facilisis interdum a eget arcu.</li>
-      <li>Nullam dapibus mauris id aliquam eleifend.</li>
-    </ul>
+    <p [innerHTML]="pagesservice.PageB.data.contentFirstParagraph"></p>
+    <sam-list [items]="pagesservice.PageB.data.contentFirstParagraphList" bulleted>
+    </sam-list>
   </sam-container>
-  
-  <sam-box>
-    <sam-heading text="Pretium"></sam-heading>
-    <sam-container>
-      <sam-icon data-emphasis="lowest"></sam-icon>
-      <sam-container>
-        <sam-heading importance="low" text="Scelerisque pretium"></sam-heading>
+
+  <sam-container pattern="zebra results">
+    
+    <sam-box>
+      <sam-heading text="Assistance"></sam-heading>
+      <sam-container pattern="media">
+        <sam-icon></sam-icon>
+        <sam-heading importance="low" text="Assistance Listings"></sam-heading>
         <p>
-          Nam vel elementum est. Vestibulum nec urna at metus rutrum ultricies at 
-          eget odio. Phasellus suscipit risus nulla, eget ornare dui semper vitae. 
-          Quisque ut sem orci. 
+          Assistance listings provide a comprehensive description of all federal 
+          assistance including information on eligibility, how to apply, and 
+          matching requirements.
         </p>
       </sam-container>
-    </sam-container>
-  </sam-box>
-  
-  <sam-box>
-    <sam-heading text="Eleifend"></sam-heading>
-    <sam-container>
-      <sam-icon data-emphasis="lowest"></sam-icon>
-      <sam-container>
-        <sam-heading importance="low" text="Etiam Gravida"></sam-heading>
+    </sam-box>
+    
+    <sam-box>
+      <sam-heading text="Acquisition"></sam-heading>
+      <sam-container pattern="media">
+        <sam-icon></sam-icon>
+        <sam-heading importance="low" text="Contract Opportunities"></sam-heading>
         <p>
-          Sed euismod urna sed magna tincidunt ultrices. Etiam gravida quam ac 
-          mauris sodales, a lobortis tortor mattis. Phasellus vel elit aliquet, 
-          commodo ligula vitae, sodales ex.
+          Assistance listings provide a comprehensive description of all federal 
+          assistance including information on eligibility, how to apply, and 
+          matching requirements.
         </p>
       </sam-container>
-    </sam-container>
-  </sam-box>
-  
-  <sam-box>
-    <sam-heading text="Aliquam"></sam-heading>
-    <sam-container>
-      <sam-icon data-emphasis="lowest"></sam-icon>
-      <sam-container>
-        <sam-heading importance="low" text="Integer Sed"></sam-heading>
+    </sam-box>
+    
+    <sam-box>
+      <sam-heading text="Acquisition"></sam-heading>
+      <sam-container pattern="media">
+        <sam-icon></sam-icon>
+        <sam-heading importance="low" text="Contract Data"></sam-heading>
         <p>
-          Sed rhoncus tempor faucibus. Integer sed hendrerit arcu. Sed tempor purus 
-          dictum, scelerisque ligula consectetur
+          Contract actions that have an estimated value of $3,000 or more. Contract
+          actions include definitive contracts, indefinite delivery vehicles (IDVs),
+          delivery orders, purchase orders, contract modifications and other types 
+          of contract actions.
         </p>
       </sam-container>
-    </sam-container>
-  </sam-box>
-  
+    </sam-box>
+    
+  </sam-container>
+
 </sam-page>

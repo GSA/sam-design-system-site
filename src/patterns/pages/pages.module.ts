@@ -12,9 +12,6 @@ import { PageASettingsComponent } from './page-a/page-settings.component';
 import { PageBComponent } from './page-b/page.component';
 import { PageBDocComponent } from './page-b/page-doc.component';
 
-// SAM UI Elements (Future)
-import { SamFutureModule } from '../sam-ui-elements/future';
-
 
 @NgModule({
   declarations: [
@@ -29,8 +26,7 @@ import { SamFutureModule } from '../sam-ui-elements/future';
     CommonModule,
     PagesRoutingModule,
     SamUIKitModule,
-    SiteComponentsModule,
-    SamFutureModule
+    SiteComponentsModule
   ],
   exports: [
   ],

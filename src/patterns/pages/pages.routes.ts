@@ -9,7 +9,8 @@ import { PageASettingsComponent } from './page-a/page-settings.component';
 
 import { PageBComponent } from './page-b/page.component';
 import { PageBDocComponent } from './page-b/page-doc.component';
-
+import { SearchPageComponent } from './search/search.component';
+import { SearchPageHomeComponent } from './search/home.component';
 
 const pagesRoutes: Routes = [
   {
@@ -38,6 +39,14 @@ const pagesRoutes: Routes = [
         path: 'b-doc',
         component: PageBDocComponent,
         outlet: "master-modal"
+      },
+      {
+        path: 'search-home',
+        component: SearchPageHomeComponent
+      },
+      {
+        path: 'search',
+        component: SearchPageComponent
       }
     ]
   }

@@ -1,0 +1,55 @@
+.usa-workspace-system-directory {
+  position: relative;
+
+  .breadcrumb-download {
+    position: absolute;
+    top: -60px;
+    right: 0px;
+
+    .fa-download {
+      margin-left: 0.5rem;
+    }
+
+    .fa-ellipsis-h {
+      margin-left: 1rem;
+    }
+  }
+
+  .alert-primary {
+    .usa-alert {
+      margin-top: 10px;
+      margin-bottom: 24px;
+    }
+  }
+
+  sidebar {
+    sam-checkbox {
+      sam-fieldset-wrapper > div {
+        margin-top: 1.5em;
+      }
+    }
+  }
+
+  sam-sort {
+    select {
+      width: 200px;
+    }
+  }
+
+  sam-pagination {
+    nav {
+      text-align: center;
+    }
+
+    ul {
+      display: inline-block;
+      padding-left: 0em;
+    }
+  }
+
+  .no-records {
+    sam-alert {
+      display: inline-block;
+    }
+  }
+}

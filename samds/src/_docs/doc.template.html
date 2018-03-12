@@ -1,0 +1,92 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="container">
+      <a class="home" [routerLink]="['/']">
+        SAM Web Design System
+      </a>
+      <div class="mask-container">
+        <ul>
+          <li>
+            <a [routerLink]="['/patterns/v1/home']">Patterns</a>
+          </li>
+          <li>
+            <a [routerLink]="['/overview/getting-started']">Documentation</a>
+          </li>
+        </ul>
+      </div>
+      <div class="separator"></div>
+    </div>
+  </nav>
+</header>
+
+<div class="usa-grid">
+
+  <aside class="usa-width-one-fourth" style="padding-top: 16px;">
+    <sam-sidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></sam-sidenav>
+  </aside>
+
+  <div class="usa-width-three-fourths">
+
+    <sam-tabs *ngIf="typedoc">
+
+      <!-- Documentation -->
+      <sam-tab tabTitle="Documentation" active="true">
+        <div class="doc-intro" [innerHTML]="markdown"></div>
+        
+        <ng-content></ng-content>
+
+        <!-- Single Example -->
+        <pre *ngIf="example" class="language-html"><code class="language-html" [innerHTML]="example"></code></pre>
+        
+        <!-- API Reference -->
+        <div *ngIf="typedoc !== 'static-page'" [innerHTML]="typedoc"></div>
+      </sam-tab>
+
+      <!-- Guidance -->
+      <sam-tab tabTitle="Guidance" *ngIf="guidance">
+        <div [innerHTML]="guidance"></div>
+      </sam-tab>
+
+      <!-- Design -->
+      <sam-tab tabTitle="Design" *ngIf="design">
+        <div [innerHTML]="design"></div>
+      </sam-tab>
+
+      <!-- Implementation -->
+      <sam-tab tabTitle="Implementation" *ngIf="implementation">
+        <div [innerHTML]="implementation"></div>
+      </sam-tab>
+
+    </sam-tabs>
+
+  </div>
+
+</div>
+
+
+<footer class="site-footer">
+  <nav class="container">
+    <ul>
+      <li>
+        <a [routerLink]="['overview/getting-started']">
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/patterns/v1/home']">
+          Patterns
+        </a>
+      </li>
+      <li>
+        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements">
+          SAM-UI Elements
+        </a>
+      </li>
+      <li>
+        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site">
+          SAM Web Design System
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

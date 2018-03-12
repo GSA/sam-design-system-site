@@ -1,0 +1,85 @@
+/* Card */
+/*============================*/
+.card h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card h3 a{
+  text-decoration: none;
+}
+
+.card-simple{
+  border-bottom: 1px solid #D4D4D5;
+  padding-bottom: 30px;
+}
+
+.card{
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+  border-radius: 4px;
+  margin: 12px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+.card-header{
+  padding: 10px 15px 10px 44px;
+  position: relative;
+  background-color: #efefef;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  -o-transition: opacity 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+.card-header-secure{
+  padding: 10px 15px;
+}
+
+.card-header::before{
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  color: #848484;
+  font: normal normal normal 22px/1 FontAwesome;
+}
+
+.card-header.expanded > div{
+  opacity: 0.8;
+}
+
+.card-header.expanded::before{
+  content: "\f147";
+}
+
+.card-header.collapsed::before{
+  content: "\f196";
+}
+
+.card-secure-content{
+  padding: 10px 25px;
+  border-top: 1px solid rgba(34,36,38,.1);
+  color:#5f5f5f;
+}
+
+.card-secure-content p{
+  margin: 0;
+}
+
+.card-extra-content{
+  padding: 10px 15px 10px 10px;
+  color: rgba(0,0,0,.4);
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.card .label-container-inline{
+  display: inline-block;
+  margin-right: 15px;
+}

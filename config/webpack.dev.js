@@ -1,3 +1,5 @@
+import { ClassConverter } from 'typedoc/dist/lib/converter/nodes/class';
+
 /**
  * @author: @AngularClass
  */

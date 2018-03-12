@@ -1,0 +1,41 @@
+.sam-list-input{
+  ul.usa-unstyled-list{
+    margin-top:5px;
+    border: 1px solid #000;
+    padding:15px 10px;
+    min-height: 55px;
+  }
+  .input-area{
+    clear:both;
+    position:relative;
+    overflow:visible;
+    height: 52px;
+
+    .input-wrapper{
+      position:relative;
+      float:left;
+      width: calc(100% - 30px);
+      label {
+        margin:0;
+      }
+      .sam-autocomplete #sam-autocomplete-results{
+        position: absolute;
+        margin-top:0;
+      }
+      .sam-autocomplete{
+        display:block;
+
+        input{
+          margin-bottom:0;
+        }
+      }
+    }
+    .usa-list-input-submit{
+      float:left;
+      position:relative;
+      margin-top: 13px;
+      margin-left: 5px;
+    }
+  }
+
+}

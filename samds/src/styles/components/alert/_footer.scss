@@ -1,0 +1,26 @@
+.usa-alert-fixed-footer{
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  left: 10px;
+  z-index:30;
+
+  .usa-alert-body{
+    max-width:400px;
+    display:block;
+  }
+
+  @include media($small-screen) {
+    left:auto;
+  }
+
+  sam-alert{
+    position:relative;
+    display:block;
+    .usa-alert{
+      .fa-times-circle:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}

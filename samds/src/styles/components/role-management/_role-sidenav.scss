@@ -1,0 +1,32 @@
+.role-sidenav{
+  .m_T-5em {
+    margin-top: 5em;
+  }
+  .filter-icon{
+    padding-right: 0.5em;
+  }
+  .filter-title {
+    margin-top: .2em;
+  }
+  .filter-color{
+    color: #0071bc;
+  }
+  .tx-pad{
+    padding-left: 3em;
+    padding-right: 3em;
+    position: relative;
+    padding-bottom: 3em;
+  }
+  .tx-pad .btn-plus {
+    position: absolute;
+    top: 0.41em;
+    right: 2.4em;
+    font-size: 1.5em;
+  }
+  .tx-pad .btn-plus-error {
+    position: absolute;
+    top: 2.0em;
+    right: 3.5em;
+    font-size: 1.5em;
+  }
+}

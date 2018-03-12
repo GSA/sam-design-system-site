@@ -1,0 +1,28 @@
+.data-service-section{
+  .data-service-gray-header{
+    color: $color-gray-medium;
+    font-size: 100%;
+  }
+
+  .data-service-content-div{
+    border-top: 2px solid $color-gray-medium;
+  }
+
+  .data-service-tag-text{
+    font-weight: bold;
+  }
+
+  .data-service-file-link{
+    color: $color-primary-alt-darkest;
+  }
+
+  .data-service-file-icon{
+    color: $color-primary-alt-darkest;
+    font-size: 150%;
+  }
+
+  .data-service-file-link:hover, .data-service-file-hierarchy-link:hover{
+    cursor: pointer;
+  }
+
+}

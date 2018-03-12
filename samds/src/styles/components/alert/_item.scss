@@ -1,0 +1,95 @@
+.alert-item.edit {
+  padding: 1em;
+  margin-bottom: 8px;
+
+  .alert-edit-title {
+    margin-top: 0;
+  }
+
+  .publish-date label {
+    margin-top: 0;
+  }
+
+  // The next three group fixes the insanely large checkboxes in the USA design library
+  .input-group {
+    display: inline-block;
+
+    label {
+      display: inline-block;
+      line-height: 44px;
+      margin-top: 8px;
+    }
+
+    input[type=checkbox] {
+      pointer-events: none;
+    }
+  }
+
+  .abs-top-right{
+    position: absolute;
+    right: 20%;
+    top: -10px;
+  }
+
+
+  .expire-alert-note{
+    width: 47%;
+    border: 1px solid $color-black;
+    padding: 3px 5px;
+  }
+
+  .gray-label{
+    color: $color-gray-light;
+  }
+}
+
+alert-item {
+  .alert-body {
+    margin-top: 8px;
+  }
+
+  .alert-title {
+    margin-top: 8px !important;
+  }
+
+  .alert-type-icon {
+    margin-right: 4px;
+  }
+
+  .alert-right-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .alert-type-indicator {
+    width: 11em;
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid black;
+  }
+
+  .expire-alert-text {
+    display: inline-block;
+    color: rgb(17, 46, 81);
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .usa-color-wd{
+    background-color: #e8e8e8;
+    padding-top: 2px;
+  }
+
+  .fa-wage-determination:before{
+    content: 'WD';
+    font-size: 11px;
+    font-weight: bold;
+    color: #e8e8e8;
+    background-color: #000;
+    padding: 5px 1px 3px 1px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+    display: inline-block;
+  }
+
+}

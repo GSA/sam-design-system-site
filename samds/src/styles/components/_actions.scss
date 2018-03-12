@@ -1,0 +1,67 @@
+.sam-actions {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+
+  .usa-button {
+    &.usa-button-primary {
+      background-color: #0071bc;
+      color: white;
+    }
+
+    color: #112e51;
+    background-color: #fff;
+    font-weight: 400;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .usa-button:disabled,
+  .usa-button[disabled] {
+      background-color: #d6d7d9;
+      color: #323a45;
+  }
+
+  ul {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0 2px 4px rgba(0,0,0,.16);
+    min-width: 100%;
+
+    li {
+      white-space: nowrap;
+
+      .usa-button:hover {
+        color: #fff;
+        background-color: #112e51;
+      }
+
+      .usa-button {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 1.25rem;
+        padding-right: 4rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.sam-action-button:disabled {
+    background-color: #d6d7d9;
+    color: #323a45;
+}
+
+
+
+
+
+
+
+
+

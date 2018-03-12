@@ -1,0 +1,116 @@
+.assistance-listing-operations{
+
+  .usa-alert{
+    width: 100%;
+  }
+
+  .sticky-label{
+    color: #a6a6a6;
+    letter-spacing: -0.3px;
+    font-size: 1.6rem;
+  }
+
+  .disabled{
+    color: #aeb0b5
+  }
+
+
+  .vertical-center{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .code-separator{
+    float: left;
+    padding: 12px 5px;
+  }
+
+  .fal-label {
+    font-weight: bold;
+    color: black;
+    font-size:18px;
+    margin-top: 2em;
+    margin-bottom: 0em;
+  }
+
+  // .text-radio-padding {
+  //   padding-left: 20px;
+  // }
+  .sam-autocomplete-width > .sam-autocomplete {
+    max-width: 46rem;
+  }
+
+  label[for=use-restrictions-textarea0]
+  {
+    margin-top: 0;
+  }
+  label[for=use-Discretionary-Funds-textarea0]
+  {
+    margin-top: 0;
+  }
+  label[for=use-Loan-Terms-textarea0]
+  {
+    margin-top: 0;
+  }
+  .sam-ui.celled.table .amend-table-col{
+    padding-left:40px;
+  }
+
+  .assistance-listing-change-request {
+    display: block;
+    margin: auto;
+    width: 50%;
+    .program-details{
+      background-color: #E8E8E8;
+    }
+    .program-details .content{
+      padding: 2px 15px 2px 15px;
+    }
+    .program-details .content > span {
+      font-weight: bold;
+    }
+    .cb-request .usa-fieldset-inputs{
+      display: inline;
+    }
+
+  }
+
+}
+.header-history{
+  display: inline;
+}
+.checkbox-history{
+  float: right;
+}
+.cfda-number-input {
+  display: inline;
+  width: 43.5rem;
+}
+.requestLink{
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+.section-pristine {
+  color: gray;
+}
+
+.section-updated {
+  color: green;
+}
+
+.section-invalid {
+  color: red;
+}
+
+.float-right {
+  float: right;
+}
+
+.usa-input-error {
+  right: 0.9rem;
+}
+.text-align-right {
+  text-align: right;
+}

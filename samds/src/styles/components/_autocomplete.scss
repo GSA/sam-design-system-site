@@ -1,0 +1,107 @@
+.isSelected, .highlight {
+  background-color: #0071bc;
+  color: white;
+}
+
+.sam-autocomplete {
+  display: inline-block;
+  overflow: visible;
+  width: 100%;
+  
+
+  & > sam-label-wrapper > div{
+    position: relative;
+  }
+
+  .input-container,
+  .sam-autocomplete-results {
+    position: relative;
+    max-width: 46rem;
+  }
+
+  .icon-container {
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .reset-icon,.reset-icon-active{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .reset-icon {
+    color: #d9d9d9;
+  }
+
+  .reset-icon-active {
+    color: #777;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .input-container {
+    position: relative;
+
+    input {
+      padding-right: 1.6em;
+      margin: 0;
+      padding-right: 45px;
+    }
+  }
+
+  .add-on {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+
+  #sam-autocomplete-results, #sam-autocomplete-results-kv,.sam-autocomplete-no-results, .results-list {
+    position: absolute;
+    box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
+    border:1px solid #96c8da;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0 0 .28571429rem .28571429rem;
+    width: 100%;
+    max-height: 30rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: $color-white;
+    z-index: 999;
+    //overflow: hidden;
+    margin-bottom: 1rem;
+
+    li {
+      position: relative;
+      border-top: 1px solid #eaeaea;
+      font-size: 1.7rem;
+      transition: background-color 0.1s ease;
+
+      padding: 0.7rem 0.7em;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0071bc;
+        color: white;
+      }
+
+      &.multiple-values{
+        font-weight: bold;
+        .secondary-value{
+          font-weight: normal;
+        }
+      }
+    }
+
+    .category {
+      font-weight: 900;
+      margin-top: 1rem;
+    }
+  }
+}

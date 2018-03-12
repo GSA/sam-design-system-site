@@ -1,0 +1,31 @@
+sam-header {
+  header > nav {
+    border-bottom: 2px solid #232A45;
+  }
+
+  .panel-login {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #232A45;
+    text-align: center;
+    z-index: 1039;
+
+    .sam-ui.container {
+      position: relative;
+
+      > div {
+        display: inline-block;
+        position: absolute;
+        width: 380px;
+        top: 12px;
+        right: 0px;
+        background-color: #FFFFFF;
+        border-right: 1px solid #232A45;
+        border-bottom: 1px solid #232A45;
+        border-left: 1px solid #232A45;
+        text-align: left;
+      }
+    }
+  }
+}

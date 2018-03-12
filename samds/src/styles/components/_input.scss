@@ -1,0 +1,9 @@
+select,
+textarea,
+[type="text"],
+[type="number"] {
+  &:disabled {
+    background: $color-gray-lighter;
+    cursor: not-allowed;
+  }
+}

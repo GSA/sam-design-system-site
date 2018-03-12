@@ -1,0 +1,31 @@
+.org-move-page{
+  .org-move-div{
+    border-top: 1px solid $color-black;
+
+    .org-move-title{
+      padding-top: 15px;
+      color: $color-cool-blue-light;
+    }
+
+    sam-label-wrapper .label-wrapper label{
+      margin-top: 10px;
+      font-weight: 700;
+    }
+
+    sam-date .sam-fieldset-wrapper label{
+      font-weight: 400;
+      margin-top: 0px;
+    }
+
+    textarea{
+      max-width: none;
+    }
+  }
+
+  .hint-text{
+    color: $color-gray-medium;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    margin-bottom: 0;
+  }
+
+}

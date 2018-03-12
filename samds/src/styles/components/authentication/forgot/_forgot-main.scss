@@ -1,0 +1,33 @@
+.usa-forgot-main {
+  .usa-form-large {
+    width: 460px;
+    margin: 0 auto;
+  }
+
+  fieldset {
+    &.phone,
+    &.office {
+      label:nth-child(1) {
+        margin-top: 0rem;
+      }
+    }
+
+    &.name {
+      margin-top: 0rem;
+      fieldset {
+        label:nth-child(1) {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+
+    > div:nth-child(1) {
+       margin-top: 1em;
+    }
+  }
+
+  sam-alert {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

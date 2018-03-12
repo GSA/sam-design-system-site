@@ -1,0 +1,28 @@
+sam-date-range-filter {
+    sam-radio-button{
+        .usa-unstyled-list li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .usa-unstyled-list li:last-child{
+            margin-right: 0px;
+        }
+    }
+
+    .date-range-timezone{
+        .label-wrapper > div{
+            text-align: left;
+            margin-left: 218px;
+        }
+        select{
+            display: inline-block;
+            width: 200px;
+        }
+    }
+    .date-range-zone{
+        .sam-fieldset-wrapper{
+            display:inline-block;
+        }
+    }
+}

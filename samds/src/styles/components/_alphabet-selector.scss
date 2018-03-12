@@ -1,0 +1,63 @@
+.alphabet-selector{
+  .current-prefix{
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-cool-blue;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 2px;
+  }
+
+  .current-prefix:hover{
+    cursor: auto;
+  }
+
+  .normal-prefix:hover, .pre-selected-prefix:hover{
+    cursor: pointer;
+  }
+
+  .pre-selected-prefix{
+    border-radius: 5px;
+    border: 1px $color-cool-blue solid;
+    padding: 1px 2px;
+  }
+
+  .disabled-prefix{
+    color:$color-gray-cool-light;
+    pointer-events: none;
+    text-decoration: none;
+
+
+  }
+
+  .prefix-span{
+    font-size: 0.9em;
+    width: 35px;
+    display: inline-block;
+  }
+
+  .normal-vertical-line, .current-vertical-line, .edge-current-vertical-line{
+    position: absolute;
+    border-left: 1.5px solid grey;
+    left: 17.5%;
+  }
+
+  .normal-vertical-line{
+    height: 9px;
+    width: 0;
+    bottom: -20px;
+  }
+
+  .current-vertical-line{
+    height: 8px;
+    width: 0;
+    bottom: -12px;
+  }
+
+  .edge-current-vertical-line{
+    height: 17px;
+    width: 0;
+    bottom: -20px;
+  }
+
+}

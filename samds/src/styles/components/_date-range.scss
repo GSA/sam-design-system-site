@@ -1,0 +1,19 @@
+sam-date-range{
+    sam-date{
+        &.start-date{
+            margin-right:3em;
+        }
+        display: inline-block;
+        legend{
+            font-size: $fontSize;
+        }
+    }
+    .stacked{
+        sam-date{
+            display: block;
+            &.end-date{
+                margin-top:1em;
+            }
+        }
+    }
+}

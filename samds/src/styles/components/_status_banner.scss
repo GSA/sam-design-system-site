@@ -1,0 +1,13 @@
+sam-status-banner{
+    sam-alert{
+        .usa-alert{
+            display:block;
+        }
+    }
+    .show-hide-toggle{
+        text-align:right;
+        a:hover {
+            cursor: pointer;
+        }
+    }
+}

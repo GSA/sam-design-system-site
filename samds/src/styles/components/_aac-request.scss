@@ -1,0 +1,49 @@
+.aac-request-page{
+  .aac-request-div-underline{
+    border-bottom: 1px solid black;
+  }
+
+  .aac-information-section label{
+    margin-top: 10px;
+    font-weight: bold;
+    max-width: none;
+  }
+
+  .aac-information-section .sam-fieldset-wrapper fieldset ul li label{
+    font-weight: 400;
+  }
+
+  .aac-address-section label, .aac-contractor-section label, .aac-fpds-report-code-section label{
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+  .aac-address-duplicate-fill-cbx{
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+    z-index: 1050;
+    top: 15px;
+  }
+
+  .aac-request-confirm-div{
+    text-align: center;
+  }
+
+  .aac-request-alert-message{
+    position: absolute;
+    width: 450px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .aac-request-gray-title{
+    color: $color-gray-light;
+  }
+
+  .aac-request-section-border{
+    border: 1px solid $color-gray-lighter;
+    margin: 10px 0px;
+    padding: 15px;
+  }
+}

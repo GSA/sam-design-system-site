@@ -1,0 +1,66 @@
+<sam-page 
+  [suptitle]="pagesservice.PageA.data.suptitle"
+  [title]="pagesservice.PageA.data.title"
+  [breadcrumbs]="pagesservice.PageA.data.breadcrumbs">
+  
+  <sam-sidebar>
+    <a routerLink="">
+      <sam-icon name="home"></sam-icon>
+      {{ pagesservice.PageA.data.sidebarLink }}
+    </a>
+    
+    <sam-box>
+      <sam-heading [text]="pagesservice.PageA.data.sidebarBoxTitle" alignment="center">
+      </sam-heading>
+      <sam-search></sam-search>
+    </sam-box>
+
+    <sam-sidenav 
+      labelLookup="User Accounts" 
+      [model]="sidenavModel">
+    </sam-sidenav>
+  </sam-sidebar>
+
+  <sam-youtube id="5uciZ431AGo" data-emphasis="high"></sam-youtube>    
+  
+  <sam-container>
+    <sam-box type="primary">
+      <sam-heading importance="low" [text]="pagesservice.PageA.data.contentBoxTitle" icon="user">
+      </sam-heading>
+      <p [innerHTML]="pagesservice.PageA.data.contentBoxDescription"></p>
+      <sam-button [buttonText]="pagesservice.PageA.data.contentBoxButton"></sam-button>
+    </sam-box>
+    
+    <sam-box>
+      <sam-list [items]="pagesservice.PageA.data.contentSecondaryBoxList"></sam-list>
+    </sam-box>
+    <p [innerHTML]="pagesservice.PageA.data.contentBelowBoxes"></p>
+  </sam-container>
+  
+  <sam-container>
+    <sam-heading importance="high" [text]="pagesservice.PageA.data.contentFirstParagraphTitle">
+    </sam-heading>
+    <p [innerHTML]="pagesservice.PageA.data.contentFirstParagraph"></p>
+    
+    <sam-list [items]="pagesservice.PageA.data.contentFirstParagraphList" data-emphasis="divided" bulleted>
+    </sam-list>
+
+    <sam-list [items]="pagesservice.PageA.data.contentFirstParagraphList2" bulleted>
+    </sam-list>
+  </sam-container>
+  
+  <sam-container>
+    <sam-heading importance="high" [text]="pagesservice.PageA.data.contentSecondParagraphTitle">
+    </sam-heading>
+    <p [innerHTML]="pagesservice.PageA.data.contentSecondParagraph"></p>
+    <p [innerHTML]="pagesservice.PageA.data.contentSecondParagraph2"></p>
+  </sam-container>
+  
+  <sam-box type="outline">
+    <sam-heading [text]="pagesservice.PageA.data.contentHorizontalMenuTitle" alignment="center" detached>
+    </sam-heading>
+    <sam-list [items]="pagesservice.PageA.data.contentHorizontalMenuItems" orientation="horizontal">
+    </sam-list>
+  </sam-box>
+  
+</sam-page>

@@ -1,0 +1,14 @@
+.organization-profile{
+  a:hover, .fa-pencil:hover{
+    cursor: pointer;
+  }
+
+  .org-notification{
+    min-height: 100px;
+  }
+
+  .current-hierarchy-link{
+    color: $color-black;
+    text-decoration: none;
+  }
+}

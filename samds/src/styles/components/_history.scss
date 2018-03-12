@@ -1,0 +1,54 @@
+sam-history{
+  .fa.fa-minus{
+    color: #ccc;
+    padding-left: 4px;
+  }
+
+  ul{
+    list-style-type: none;
+    padding-left: 10px;
+    margin: -10px 0;
+
+    li{
+      margin: 0px;
+      padding: 15px 0;
+      border-left: 2px solid #ccc;
+
+      &:before{
+        content: "\F111" !important;
+        font: normal normal normal 17px/1 FontAwesome;
+        // display: inline-table;
+        margin-left: -8px;
+        color: #5b616b;
+      }
+
+      &.current:before{
+        color: #ccc;
+        content: "\f0a9" !important;
+        background-color: white;
+      }
+
+      span{
+        display: inline-table;
+        margin-left: 4px;
+        width: 90%;
+        em{
+          padding-left: 5px;
+          display: block;
+        }
+        strong{
+          display: block;
+        }
+      }
+
+      // Tagged icon
+      .fa{
+        font-size: 12px;
+        color: #fdb81e;
+        padding-left: 5px;
+      }
+
+    }
+  }
+
+}

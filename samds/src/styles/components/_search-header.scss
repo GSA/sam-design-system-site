@@ -1,0 +1,111 @@
+$search-header-height: 40px;
+$search-input-height: $search-header-height - 4;
+
+#search-div {
+  margin-bottom: 0 !important;
+}
+
+.search-header {
+  overflow: visible;
+  background-color: $color-primary-darkest;
+  min-height: $search-header-height;
+
+  .search-bar-container {
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+  }
+
+  .logo-img {
+    width: 140px;
+    height: $search-header-height;
+    margin-left: 15px;
+    margin-right: 15px;
+    font: 0/0 a;        /* Hide the characters like spaces */
+    text-align: center; /* Align center inline elements */
+    float: left;
+
+    &:before {
+      content: ' ';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  sam-searchbar {
+    min-width: 290px;
+    max-width: 550px;
+    width: 100%;
+    margin-top: 2px;
+    float: left;
+  }
+
+  .filter-select select,
+  .search-inputbar,
+  .search-btn,
+  .sam-autocomplete input{
+    height: $search-input-height;
+    line-height: $search-input-height;
+  }
+
+  .filter-select select,
+  .search-btn {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .search-btn {
+    background-color: $color-primary-alt;
+  }
+  .sam-autocomplete{
+    display: block;
+    label,input{
+      margin:0;
+    }
+    input{
+      max-width:100%;
+    }
+    #sam-autocomplete-results,.sam-autocomplete-no-results{
+      position: absolute;
+      z-index: 1000;
+    }
+  }
+  .search-inputbar,.sam-autocomplete input {
+    border: none;
+  }
+
+  select {
+    background-color: $color-gray-warm-light;
+  }
+
+  .align-top {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .usa-width-one-third {
+    > .pull-right {
+      height: $search-header-height;
+      font: 0/0 a;        /* Hide the characters like spaces */
+      text-align: center; /* Align center inline elements */
+
+      &:before {
+        content: ' ';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}

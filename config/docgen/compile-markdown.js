@@ -29,7 +29,7 @@ function removeExistingDocs (root) {
       createRoot(root)
 
       handleError(err)
-      
+
     }
 
     if (stats) {
@@ -281,7 +281,7 @@ function createFileName (file, root) {
 
   let rel = path.relative(root, parsed.dir);
 
-  let spl = rel.split('/').filter(str => str !== '..')
+  let spl = rel.split(path.sep).filter(str => str !== '..')
   let newFileName = parsed.name + EXT
   let newBaseName = spl.join('-') + '-' + newFileName
 

@@ -62,14 +62,6 @@ export class BaseExampleComponent implements OnInit {
     obj.forEach((item) => {
       var comment = item['comment'] && item['comment']['shortText'] ? item.comment.shortText : "";
       var type = item['type'] && item['type']['name'] ? item.type.name : "";
-<<<<<<< HEAD
-      this.typedoc_content += `
-        <tr>
-          <td>@${item.decorators[0].name}( ) ${item.name}</td>
-          <td>${type}</td>
-          <td>${comment}</td>
-        </tr>`;
-=======
       let deprecated;
       if (item.comment && item.comment.tags) {
         let depItems = item.comment.tags.filter(
@@ -89,7 +81,6 @@ export class BaseExampleComponent implements OnInit {
           <td>${comment}</td>
         </tr>
       `;
->>>>>>> develop
     });
     this.typedoc_content += '</tbody></table>';
   }

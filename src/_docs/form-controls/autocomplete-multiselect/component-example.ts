@@ -4,12 +4,15 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
 import {
   AutocompleteService
 } from '../../../../sam-ui-elements/src/ui-kit/form-controls/autocomplete/\
 autocomplete.service';
 import { ACTestService } from './autocomplete.service';
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 const code_example1 = 'export class ACTestService implements AutocompleteService {';
 
@@ -281,18 +284,6 @@ export class AutocompleteMultiselectExampleComponent extends BaseExampleComponen
 	typedoc_target = "SamAutocompleteMultiselectComponent";
   typedoc_content = "";
   example = code_example;
-  
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
-
-  design_raw = require('raw-loader!./design.md');
-  design = markdownLoader(this.design_raw);
-
-  guidance_raw = require('raw-loader!./guidance.md');
-  guidance = markdownLoader(this.guidance_raw);
-
-  implementation_raw = require('raw-loader!./implementation.md');
-  implementation = markdownLoader(this.implementation_raw);
 
   code = code_example1;
   code2 = code_example2;
@@ -302,4 +293,17 @@ export class AutocompleteMultiselectExampleComponent extends BaseExampleComponen
   code6 = code_example6;
   code7 = code_example7;
   code8 = finalCode;
+
+  public base = '_docs/form-controls/autocomplete-multiselect/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
+
 }

@@ -14,7 +14,8 @@ import { BaseExampleComponent } from '../../baseexample.component';
 import { SamAlertFooterService } from '../../../../sam-ui-elements/src/ui-kit/components/alert-footer/alert-footer.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 import { Http } from '@angular/http';
-import { markdownLoader } from '../../markdown-loader';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+
 //tabs/spacing matters for code example block
 var code_example = `
 <sam-text 
@@ -57,8 +58,7 @@ var code_example = `
 export class SamAlertFooterComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamAlertFooterComponent";
   typedoc_content = "";
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
+
   example = code_example;
   checkboxOptions = [{name:'Enabled',label:'Enabled',value:true}];
   checkboxVal = false;
@@ -86,11 +86,21 @@ export class SamAlertFooterComponentExampleComponent extends BaseExampleComponen
     name:'info',
     value:'info',
   }];
-  constructor(_http:Http, 
-    service:DocumentationService,
-    private alertFooterService:SamAlertFooterService){
-    super(_http,service);
+
+
+  public base = '_docs/components/alert-footer/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService,
+    private alertFooterService: SamAlertFooterService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
   }
+
   mustDimissHandler(item){
     if(item && item.length>0){
       this.footerAlertModel.mustDismiss = true;

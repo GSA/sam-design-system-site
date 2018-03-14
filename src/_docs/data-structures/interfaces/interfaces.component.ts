@@ -37,7 +37,7 @@ export class InterfacesComponent {
             return obj;
           });
         }
-        this.interfaces = data; 
+        this.interfaces = data;
       },
       (error) => { throw new Error(error); }
     );

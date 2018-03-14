@@ -11,7 +11,10 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
 var code_example = `
@@ -24,12 +27,23 @@ var code_example = `
 export class SamBreadcrumbsComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamBreadcrumbsComponent";
   typedoc_content = "";
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
+
   example = code_example;
 
   crumbs = [
     { breadcrumb: 'Back to my workspace', url: '/workspace' },
     { breadcrumb: '...'}
   ];
+
+  public base = '_docs/components/breadcrumbs/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

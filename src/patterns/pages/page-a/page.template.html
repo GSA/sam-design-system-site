@@ -12,28 +12,15 @@
     <sam-box>
       <sam-heading [text]="pagesservice.PageA.data.sidebarBoxTitle" alignment="center">
       </sam-heading>
-      <div class="sam-ui search">
-        <input type="search" name="samsearch" placeholder="Search">
-        <button>
-          <sam-icon name="search"></sam-icon>
-        </button>
-      </div>
+      <sam-search></sam-search>
     </sam-box>
-    
-    <ul class="sam-ui side navigation">
-      <li>
-        <a class="active">Lorem Ipsum Dolor</a>
-        <ul>
-          <li><a>Risus sed</a></li>
-          <li><a>Magna bibendum</a></li>
-        </ul>
-      </li>
-      <li><a>Suspendisse</a></li>
-      <li><a>Maecenas</a></li>
-      <li><a>Vivamus</a></li>
-    </ul>
+
+    <sam-sidenav 
+      labelLookup="User Accounts" 
+      [model]="sidenavModel">
+    </sam-sidenav>
   </sam-sidebar>
-  
+
   <sam-youtube id="5uciZ431AGo" data-emphasis="high"></sam-youtube>    
   
   <sam-container>

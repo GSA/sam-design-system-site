@@ -11,9 +11,8 @@ import { PageADocComponent } from './page-a/page-doc.component';
 import { PageASettingsComponent } from './page-a/page-settings.component';
 import { PageBComponent } from './page-b/page.component';
 import { PageBDocComponent } from './page-b/page-doc.component';
-
-// SAM UI Elements (Future)
-import { SamFutureModule } from '../sam-ui-elements/future';
+import { SearchPageComponent } from './search/search.component';
+import { SearchPageHomeComponent } from './search/home.component';
 
 
 @NgModule({
@@ -24,13 +23,14 @@ import { SamFutureModule } from '../sam-ui-elements/future';
     PageASettingsComponent,
     PageBComponent,
     PageBDocComponent,
+    SearchPageComponent,
+    SearchPageHomeComponent
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     SamUIKitModule,
-    SiteComponentsModule,
-    SamFutureModule
+    SiteComponentsModule
   ],
   exports: [
   ],

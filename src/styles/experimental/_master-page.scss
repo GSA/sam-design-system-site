@@ -1,0 +1,60 @@
+/*******************************
+          Master Page
+*******************************/
+
+.sam-ui.master-page{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content 1fr min-content;
+  min-height: 100vh;
+}
+
+/*--------------
+     Header
+---------------*/
+
+.master-page-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $hue-gray;
+  padding: .5em;
+  border-bottom: 1px solid #323a45;
+}
+
+.master-page-menu a{
+  padding: 0 .5em;
+}
+
+/*--------------
+     Drawer
+---------------*/
+.master-page-drawer{
+  background-color: #323a45;
+}
+
+.master-page-drawer .search-container{
+  width: 590px;
+  margin: 1.5em auto !important;
+  position: relative;
+  .search{
+    margin-bottom: 0;
+  }
+}
+
+/*--------------
+     Footer
+---------------*/
+.master-page-footer{
+  background-color: $hue-gray;
+  padding: .5em;
+}
+
+
+/*--------------
+     Hacks
+---------------*/
+/* Move router outlet to the bottom */
+.sam-ui.master-page router-outlet{
+  grid-row: -1;
+}

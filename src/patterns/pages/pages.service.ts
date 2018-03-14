@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class PagesService {
   
-  loremData = {
+  loremDataPageA = {
 
     suptitle: 'consectetur',
     title: 'Lorem Ipsum',
@@ -85,7 +85,7 @@ export class PagesService {
     ]
   }
 
-  helpData = {
+  helpDataPageA = {
 
     suptitle: 'Help Center',
     title: 'User Accounts',
@@ -169,8 +169,86 @@ export class PagesService {
     ]
   }
 
+  helpDataPageB = {
+
+    suptitle: 'Help Center',
+    title: 'Award Domains',
+
+    breadcrumbs: [
+      { breadcrumb: 'Help Center', url: '/' },
+      { breadcrumb: 'Award Domains'}
+    ],
+
+    sidebarLink: 'Help Home',
+    sidebarBoxTitle: 'Learning Center',
+
+    contentSecondaryBoxList: [
+      {
+        "icon": "video",
+        "link": "#",
+        "text": "Title of video that is small"
+      },
+      {
+        "icon": "video",
+        "link": "#",
+        "text": "Title of video that is a little bit longer"
+      }
+    ],
+
+    contentFirstParagraph: 'The beta.SAM.gov domains contain data has been \
+    migrated from out legacy systems. The domains support two distinct types \
+    of federal awards: acquisitions and assistance.',
+    contentFirstParagraphList: [
+      {"text": "Acquisition awards are contracts awarded under the Federal \
+      Acquisition Regulation (FAR)."},
+      {"text": "Assistance awards are grant, cooperative, loan, insurance, \
+      service, and other agreements covered by the Code of Federal Regulations, \
+      specifically 2 CFR 200."}
+    ],
+
+    contentSecondParagraphTitle: 'Sign Up Now',
+    contentSecondParagraph: "While you won't be able to access any additional \
+    capabilities yet, you can prepare by creating your account now. When the \
+    additional features become ready in the upcoming months, you'll be ready \
+    to sign in.",
+    contentSecondParagraph2: "<strong>Note:</strong> Even if you have an existing \
+    account in one of the legacy systems <em>(e.g., SAM.gov, FBO.gov, CFDA.gov)</em>\
+    you'll need to create a new account for beta.SAM.gov. In the future, after \
+    all of the individual systems are retired, this account will be your only \
+    account for all of our features",
+
+    contentHorizontalMenuTitle: 'Learning Center: User Accounts',
+    contentHorizontalMenuItems: [
+      {
+        "icon": "video",
+        "link": "#",
+        "text": "Video"
+      },
+      {
+        "icon": "comment",
+        "link": "#",
+        "text": "FAQs"
+      },
+      {
+        "icon": "newspaper",
+        "link": "#",
+        "text": "Articles"
+      },
+      {
+        "icon": "book",
+        "link": "#",
+        "text": "Definitions"
+      }
+    ]
+  }
+
   PageA = {
-    data: this.helpData,
+    data: this.helpDataPageA,
+    value: 'help'
+  }
+
+  PageB = {
+    data: this.helpDataPageB,
     value: 'help'
   }
 
@@ -178,9 +256,9 @@ export class PagesService {
     if(page == 'PageA'){
       this.PageA.value = value;
       if(value == 'lorem'){
-        this.PageA.data = this.loremData;
+        this.PageA.data = this.loremDataPageA;
       }else if(value == 'help'){
-        this.PageA.data = this.helpData;
+        this.PageA.data = this.helpDataPageA;
       }
     }
   }

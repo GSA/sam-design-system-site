@@ -43,7 +43,7 @@ export class BaseExampleComponent implements OnInit {
   public ngOnInit(): void {
     this.service.getComponentProperties(this.typedoc_target)
     .subscribe(
-      (data) => { console.log(data); this.setupTypedocContent(data); },
+      (data) => { this.setupTypedocContent(data); },
       (error) => { throw new Error(error); }
     );
   }

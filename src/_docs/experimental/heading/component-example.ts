@@ -10,7 +10,10 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 var code_example_1 = `
 <sam-heading importance="highest" text="Lorem Ipsum Dolor"></sam-heading>
@@ -95,9 +98,6 @@ var code_example_6 = `
 export class SamHeadingComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamHeadingComponent";
   typedoc_content = "";
-
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
   
   example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
@@ -105,4 +105,18 @@ export class SamHeadingComponentExampleComponent extends BaseExampleComponent im
   example_4 = code_example_4.trim();
   example_5 = code_example_5.trim();
   example_6 = code_example_6.trim();
+
+    
+        
+  public base = '_docs/experimental/heading/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

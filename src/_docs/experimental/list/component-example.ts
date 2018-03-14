@@ -10,7 +10,10 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 var code_example_1 = `
 <sam-list [items]="listData"></sam-list>
@@ -62,9 +65,6 @@ export class SamListComponentExampleComponent extends BaseExampleComponent imple
   typedoc_target = "SamListComponent";
   typedoc_content = "";
 
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
-
   listData = [
     {
       "text": "Orci varius natoque"
@@ -101,4 +101,17 @@ export class SamListComponentExampleComponent extends BaseExampleComponent imple
 	example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
+
+          
+  public base = '_docs/experimental/list/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

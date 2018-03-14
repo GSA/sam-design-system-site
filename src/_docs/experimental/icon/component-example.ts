@@ -10,7 +10,10 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 var code_example_1 = `
 <sam-icon name="home"></sam-icon>
@@ -56,11 +59,21 @@ var code_example_3 = `
 export class SamIconComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamIconComponent";
   typedoc_content = "";
-
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
   
 	example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
+
+          
+  public base = '_docs/experimental/icon/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

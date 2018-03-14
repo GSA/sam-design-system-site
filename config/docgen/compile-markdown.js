@@ -26,16 +26,10 @@ function removeExistingDocs (root) {
 
     if (err) {
 
-      if (err.errno === -2) {
+      createRoot(root)
 
-        createRoot(root)
-
-      } else {
-
-        handleError(err)
-
-      }
-
+      handleError(err)
+      
     }
 
     if (stats) {

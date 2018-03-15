@@ -11,18 +11,33 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
-//tabs/spacing matters for code example block
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
+// tabs/spacing matters for code example block
 var code_example = 'TODO';
 
 @Component({
   selector: 'doc-sam-focus',
-  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content"> + code_example + </doc-template>'
+  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content"> '+ code_example + '</doc-template>'
 })
 export class SamFocusDirectiveExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamFocusDirective";
-  typedoc_content = "";
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
+  typedoc_content = '';
+
   example = code_example;
+
+  public base = '_docs/directives/focus/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

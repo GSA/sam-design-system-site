@@ -55,6 +55,7 @@ npm-debug.log
 /.awcache
 .webpack.json
 /compiled/
+/src/assets/markdown/
 
 # Doc #
 /doc/

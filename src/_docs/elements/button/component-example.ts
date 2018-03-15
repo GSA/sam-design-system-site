@@ -2,7 +2,9 @@ import { Component, Input, OnInit} from '@angular/core';
 
 import { BaseExampleComponent } from '../../baseexample.component';
 
-import { markdownLoader } from '../../markdown-loader';
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 var code_example_1 = `<sam-button buttonText="Create" buttonType="primary"></sam-button>`;
 var code_example_1_2 = `<sam-button buttonText="Submit" buttonType="submit"></sam-button>`;
@@ -105,13 +107,8 @@ var code_example_disabled = `
   `
 })
 export class ButtonExampleComponent extends BaseExampleComponent implements OnInit{
-  typedoc_target = "SamButtonComponent";
-  typedoc_content = "";
-  
-  documentation = require('raw-loader!./documentation.md');
-  
-  markdown = markdownLoader(this.documentation);
-  outputHTML = this.markdown;
+  typedoc_target = 'SamButtonComponent';
+  typedoc_content = '';
   
   example_1 = code_example_1.trim();
   example_1_2 = code_example_1_2.trim();
@@ -121,9 +118,21 @@ export class ButtonExampleComponent extends BaseExampleComponent implements OnIn
   example_4 = code_example_4.trim();
   
   example = code_example_disabled.trim();
-  
+
+  public base = '_docs/elements/button/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
+
   ngOnInit(){
     super.ngOnInit();
   }
-  
+
 }

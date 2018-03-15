@@ -4,7 +4,10 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 var code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
 
@@ -21,12 +24,15 @@ export class SidenavExampleComponent extends BaseExampleComponent implements OnI
   typedoc_content = "";
   example = code_example;
 
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
+  public base = '_docs/components/sidenav/';
 
-  design_raw = require('raw-loader!./design.md');
-  design = markdownLoader(this.design_raw);
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
 
-  guidance_raw = require('raw-loader!./guidance.md');
-  guidance = markdownLoader(this.guidance_raw);
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

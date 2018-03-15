@@ -7,14 +7,15 @@
     "rimraf": "rimraf",
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
-    "server:dev": "webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
+    "server:dev": "npm run compile-markdown && webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
     "server": "npm run server:dev",
     "server:prod": "nginx -g 'daemon off;'",
     "clean:dist": "npm run rimraf -- dist",
     "prebuild:prod": "npm run clean:dist",
-    "build:prod": "webpack --config config/webpack.prod.js  --progress --profile --bail",
+    "build:prod": "npm run compile-markdown && webpack --config config/webpack.prod.js  --progress --profile --bail",
     "prod": "npm run build:prod && npm run server:prod",
-    "generate-docs": "node ./config/docgen/docgen.js"
+    "generate-docs": "node ./config/docgen/docgen.js",
+    "compile-markdown": "node ./config/docgen/compile-markdown.js"
   },
   "repository": {
     "type": "git",

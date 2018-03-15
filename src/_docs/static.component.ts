@@ -9,10 +9,12 @@ import {
   ComponentFactoryResolver,
   ViewContainerRef
 } from '@angular/core';
-import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
-import * as marked from 'markdown-it';
+import { Observable } from 'rxjs/observable';
+
+import { MarkdownService } from '../app/services/markdown/markdown.service';
 
 /////COMP
 @Component({
@@ -21,21 +23,39 @@ import * as marked from 'markdown-it';
     <doc-template [markdown]="content" [typedoc]="'static-page'"></doc-template>
   `
 })
-export class StaticPageComponent {
-  content = `<h1>No Documentation Yet</h1><p>Coming soon</p>`;
-  constructor(private route: ActivatedRoute,private router: Router,private _http: Http){}
-  ngOnInit(){
-    var mk = marked({
-      html: true
-    });
+export class StaticPageComponent implements OnInit {
+  public content;
+  public defaultContent = `<h1>No Documentation Yet</h1><p>Coming soon</p>`;
+  public base = '_docs/components/spinner/';
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    public mdService: MarkdownService) {
+
+  }
+  public ngOnInit() {
     this.route
       .data
-      .subscribe(v => {
-        this._http.get(v['markdownfile']).map((res)=>{
-          return res.text();
-        }).subscribe(res =>{
-          this.content = mk.render(res);
-        })
-    });
+      .subscribe(
+        (v: any) => {
+
+          let fileName = v.markdownfile
+            .split('/')
+            .filter((section: string) => section !== 'src')
+            .join('/');
+
+          this.mdService.get(fileName)
+            .catch((err) => {
+              this.content = this.defaultContent;
+              return Observable.of(err);
+            })
+            .map((res) => res.text())
+            .subscribe(
+              (res) => this.content = res,
+              (err) => this.content = this.defaultContent
+            );
+        }
+      );
   }
 }

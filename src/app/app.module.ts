@@ -20,6 +20,8 @@ import { DocModule } from '../_docs/doc.module.dynamic';
 import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
 import { SiteComponentsModule } from './site-components/sitecomponents.module';
 
+import { MarkdownService } from './services/markdown/markdown.service';
+
 // Application wide providers
 const APP_PROVIDERS = [
 ];
@@ -42,13 +44,13 @@ const APP_PROVIDERS = [
     HttpModule,
     SamUIKitModule,
     SiteComponentsModule,
-    //RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules })
     RouterModule.forRoot(ROUTES)
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
     APP_PROVIDERS,
-    SamAlertFooterService
+    SamAlertFooterService,
+    MarkdownService
   ]
 })
 export class AppModule {

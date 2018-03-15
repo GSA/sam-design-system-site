@@ -4,7 +4,10 @@ import {
   Input
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { markdownLoader } from '../../markdown-loader';
+
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
 
 var code_example = `<sam-filters-container>
   <sam-collapsible [label]="'Test 1'" [startOpened]="true">
@@ -29,8 +32,19 @@ var code_example = `<sam-filters-container>
 export class FiltersContainerExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamFiltersContainerComponent";
   typedoc_content = "";
-  documentation = require('raw-loader!./documentation.md');
-  markdown = markdownLoader(this.documentation);
+
 	example = code_example;
   dateModel: string = "2016-02-03";
+    
+  public base = '_docs/components/filters-container/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

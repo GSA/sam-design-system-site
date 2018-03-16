@@ -12,7 +12,7 @@ import {
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs/observable';
+import { Observable } from 'rxjs/Observable';
 
 import { MarkdownService } from '../app/services/markdown/markdown.service';
 

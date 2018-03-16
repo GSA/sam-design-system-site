@@ -1,4 +1,3 @@
-const yargs = require('yargs')
 const fs = require('fs')
 const helpers = require('./helpers')
 const path = require('path')

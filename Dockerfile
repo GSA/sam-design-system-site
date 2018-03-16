@@ -28,4 +28,5 @@ EXPOSE 8080
 RUN mkdir /run/nginx
 # Set the default command to execute
 # when creating a new container
+CMD node test.js
 CMD npm run build

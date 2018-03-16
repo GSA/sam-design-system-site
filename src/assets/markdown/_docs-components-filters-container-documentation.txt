@@ -1,0 +1,2 @@
+<h1>Filters Container</h1>
+<p>Provides a container to add in multiple Collapsible components</p>

@@ -6,7 +6,7 @@ A basic page has the following characteristics:
 - The page has few or limited interactive elements. Interactive elements on a basic page generally perform simple actions, such as sort/organize content, or minimize/maximize the visible content.
 - A basic page may scroll vertically; subnavigation can be used to jump to sections on a scrolling page.
 
-![Basic Page Layout](/src/assets/img/BasicLayout2.png)
+![Basic Page Layout](/assets/img/BasicLayout2.png)
 
 ## Global Elements on the Basic Page
 

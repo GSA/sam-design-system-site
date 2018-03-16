@@ -16,7 +16,7 @@ import { Observable } from 'rxjs/Observable';
 
 import { MarkdownService } from '../app/services/markdown/markdown.service';
 
-/////COMP
+///// COMP
 @Component({
   selector: 'doc-placeholder-example',
   template: `
@@ -40,7 +40,7 @@ export class StaticPageComponent implements OnInit {
       .subscribe(
         (v: any) => {
 
-          let fileName = v.markdownfile
+          const fileName = v.markdownfile
             .split('/')
             .filter((section: string) => section !== 'src')
             .join('/');

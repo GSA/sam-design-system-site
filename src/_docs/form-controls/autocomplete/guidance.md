@@ -15,19 +15,19 @@ Autocomplete lets a person select one value from a potentially long list of item
 
 * Provide default values that appear when autocomplete first gets focus. The default values should provide insight into the list by allowing people to scroll through valid selections.  People should not have to guess what to type. 
 
-![alt text](/src/assets/img/Autocomplete.png "Autocomplete with default values")
+![alt text](/assets/img/Autocomplete.png "Autocomplete with default values")
 
 * Categorize the values for autocomplete when logical groups exist.
 
-![alt text](/src/assets/img/Autocomplete.Categorized.png "Autocomplete with categorized values")
+![alt text](/assets/img/Autocomplete.Categorized.png "Autocomplete with categorized values")
 
 * Sort the values alphabetically, numerically, functionally, or by most popular.  Sort order is based on what is most intuitive for users of your field.  Make it as easy as possible for people to find their choice.
 * When values are hierarchical, such as in the agency picker or NAICS picker, the default values and sort order should follow the hierarchy and display an entire parent level before any children. 
 
-![alt text](/src/assets/img/NAICSPicker.png "Autocomplete with hierarchical values")
+![alt text](/assets/img/NAICSPicker.png "Autocomplete with hierarchical values")
 
 * Enhance the display of your values if a single value does provide enough clarity.  For example, the NAICS picker above uses two columns to display the NAICS code along with a simple description.  The agency picker below shows three fields, the organization name, the level, and the department.
 
-![alt text](/src/assets/img/Autocomplete.Enhanced.png "Autocomplete with enhanced display")
+![alt text](/assets/img/Autocomplete.Enhanced.png "Autocomplete with enhanced display")
 
 **Note:**  The same angular data model may be used to support both autocomplete and multi-select autocomplete, making it easy to support both single selection and multiple selection of a data field in different places or at different times.

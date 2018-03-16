@@ -15,7 +15,7 @@ export class DocumentationService {
   constructor(private _http: Http) { }
 
   public loadData(): Observable<any> {
-    return this._http.get('docs.json')
+    return this._http.get('/assets/docs.json')
             .map((res: Response) => res.json());
   }
 
@@ -28,7 +28,7 @@ export class DocumentationService {
     .subscribe(
       (data) => {
         components.next(data.children.reduce((accum, child) => {
-          if (child.name.match(regexComponent)) {
+          if (child.name.match(regexComponent) && child.children) {
             for (const grandchild of child.children) {
               if (!!grandchild.decorators &&
                   (grandchild.decorators[0].name === 'Component' ||

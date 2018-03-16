@@ -8,7 +8,7 @@ A simple data entry page has the following characteristics.
 - The form has no need to be broken into distinct sections due to its length or complexity
 - The form has few or no fields that require a complex editor
 
-![Data Entry Page Layout](/src/assets/imgImages/DataEntry.png)
+![Data Entry Page Layout](/assets/imgImages/DataEntry.png)
 
 ## Global Elements from the Basic Page
 

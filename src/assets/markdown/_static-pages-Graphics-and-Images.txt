@@ -1,0 +1,240 @@
+<h1>Graphics</h1>
+<h2>Photography</h2>
+<p>Photography is used on the Home Landing Page and Section-Level Landing Pages. When selecting photographs, choose images that embody the SAM.gov tagline &quot;SAM.gov is the official U.S. government website for people who make, receive, and manage federal awards.&quot;</p>
+<p>Photographs should include the following attributes:</p>
+<ul>
+<li>One or more people of diverse attributes with positive facial expressions</li>
+<li>Engaged in activities related to U.S. Government grants or contracts</li>
+</ul>
+<h2>Icons</h2>
+<p>FontAwesome is the icon set used for the majority of functional and illustrative icons, unless otherwise indicated.</p>
+<p>The following icons are used throughout the site as visual cues for functional buttons or links, as status indicators, or to categorize data.</p>
+<h3>Functional Icons</h3>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Class</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-search</td>
+<td>On the search button for secondary searches</td>
+</tr>
+<tr>
+<td>&lt;span class=&quot;action-link&quot;&gt;&lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Edit&lt;/span&gt;</td>
+<td>fa-pencil</td>
+<td>To edit information</td>
+</tr>
+<tr>
+<td>&lt;span class=&quot;action-link&quot;&gt;&lt;i class=&quot;fa fa-times&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Remove&lt;/span&gt;</td>
+<td>fa-times</td>
+<td>To remove or delete information (the label is optional)</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-plus&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-plus</td>
+<td>To expand a section of a page (support accordion behavior)</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-plus-square-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-plus-square-o</td>
+<td>To expand a small panel on a page (support accordion behavior)</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-minus&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-minus</td>
+<td>To collapse a section of a page (support accordion behavior)</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa  fa-minus-square-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-minus-square-o</td>
+<td>To collapse a small panel on a page (support accordion behavior)</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-cloud-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-cloud-upload</td>
+<td>Indicates ability to upload files</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-cloud-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-cloud-download</td>
+<td>Indicates ability to download files</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa  fa-star-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-star-o</td>
+<td>Favorite, unselected</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-star</td>
+<td>Favorite, selected</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-chevron-circle-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-chevron-circle-down</td>
+<td>Expands Federal Hierarchy</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-chevron-circle-up&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-chevron-circle-up</td>
+<td>Collapses Federal Hierarchy</td>
+</tr>
+</tbody>
+</table>
+<h3>Status Indicators</h3>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Class</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-exclamation-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-exclamation-circle</td>
+<td>Critical. Used on notifications, side navigation, and page-level alerts.</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-circle-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-circle-o</td>
+<td>Incomplete. Used on side navigation to indicate a section that is not yet completed.</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-info-circle</td>
+<td>Information. Used on notifications, side navigation, and page-level alerts.</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-check-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-check-circle</td>
+<td>Success. Used on notifications, side navigation, and page-level alerts.</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-warning&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-warning</td>
+<td>Warning. Used on notifications, side navigation, and page-level alerts.</td>
+</tr>
+</tbody>
+</table>
+<h3>Data Categorization</h3>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Class</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-phone&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-phone</td>
+<td>Indicates phone number in contact information</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-envelope-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-envelope-o</td>
+<td>Indicates email address in contact information</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-external-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-external-link</td>
+<td>Indicates link to external site</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-unlock&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-unlock</td>
+<td>To identify unclassified information or attachments</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-lock&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-lock</td>
+<td>To identify classified information or attachments</td>
+</tr>
+<tr>
+<td>&lt;span&gt;&lt;i class=&quot;fa fa-file-pdf-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+<td>fa-file-pdf-o</td>
+<td>PDF document type</td>
+</tr>
+</tbody>
+</table>
+<h3>Custom Icons</h3>
+<p>Custom icons were designed to brand the key features of the modernized SAM.gov site.</p>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Class</th>
+<th>Site Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/assets/img/admin-darkgray.png" alt="Admin icon"></td>
+<td>TBD</td>
+<td>Administration</td>
+</tr>
+<tr>
+<td><img src="/assets/img/api-darkgray.png" alt="APIs icon"></td>
+<td>TBD</td>
+<td>APIs</td>
+</tr>
+<tr>
+<td><img src="/assets/img/award-data-darkgray2.png" alt="Award Data icon"></td>
+<td>TBD</td>
+<td>Award Data</td>
+</tr>
+<tr>
+<td><img src="/assets/img/data-entry-darkgray.png" alt="Data Entry icon"></td>
+<td>TBD</td>
+<td>Data Entry</td>
+</tr>
+<tr>
+<td><img src="/assets/img/resources-gray2.png" alt="External Resources icon"></td>
+<td>TBD</td>
+<td>External Resources</td>
+</tr>
+<tr>
+<td><img src="/assets/img/new-darkgray-4a4a4a.png" alt="New to SAM icon"></td>
+<td>TBD</td>
+<td>New to SAM</td>
+</tr>
+<tr>
+<td><img src="/assets/img/help-darkgray.png" alt="Online Help icon"></td>
+<td>TBD</td>
+<td>Online Help</td>
+</tr>
+<tr>
+<td><img src="/assets/img/guide-darkgray.png" alt="Quick Start Guides icon"></td>
+<td>TBD</td>
+<td>Quick Start Guides</td>
+</tr>
+<tr>
+<td><img src="/assets/img/reporting-darkgray.png" alt="Reports icon"></td>
+<td>TBD</td>
+<td>Reports</td>
+</tr>
+<tr>
+<td><img src="/assets/img/search-darkgray1.png" alt="Search icon"></td>
+<td>TBD</td>
+<td>Search</td>
+</tr>
+<tr>
+<td><img src="/assets/img/user-gray.png" alt="User Accounts icon"></td>
+<td>TBD</td>
+<td>User Accounts</td>
+</tr>
+<tr>
+<td><img src="/assets/img/map-darkgray-4a4a4a.png" alt="What's Coming icon"></td>
+<td>TBD</td>
+<td>What's Coming</td>
+</tr>
+</tbody>
+</table>

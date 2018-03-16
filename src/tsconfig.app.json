@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": [],
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "paths": {
+      "api-kit/*": [ "api-kit/*"],
+      "sam-ui-elements/*": [ "../sam-ui-elements/*" ],
+      "app-components/*": [ "app/app-components/*"],
+      "environment": [ "./environments/environment" ]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

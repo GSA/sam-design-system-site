@@ -1,6 +1,4 @@
 import { Component, AfterViewInit, Input, Renderer2, ElementRef } from '@angular/core';
-import { read } from 'fs';
-
 import * as Prism from 'prismjs';
 
 @Component({

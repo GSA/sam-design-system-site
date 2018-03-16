@@ -57,15 +57,15 @@ Custom icons were designed to brand the key features of the modernized SAM.gov s
 
 | Icon       | Class           | Site Section    |
 | ------------- | -------------  | -----|
-| ![Admin icon](/src/assets/img/admin-darkgray.png) | TBD | Administration |
-| ![APIs icon](/src/assets/img/api-darkgray.png) | TBD | APIs |
-| ![Award Data icon](/src/assets/img/award-data-darkgray2.png) | TBD | Award Data |
-| ![Data Entry icon](/src/assets/img/data-entry-darkgray.png) | TBD | Data Entry |
-| ![External Resources icon](/src/assets/img/resources-gray2.png) | TBD | External Resources |
-| ![New to SAM icon](/src/assets/img/new-darkgray-4a4a4a.png) | TBD | New to SAM |
-| ![Online Help icon](/src/assets/img/help-darkgray.png) | TBD | Online Help |
-| ![Quick Start Guides icon](/src/assets/img/guide-darkgray.png) | TBD | Quick Start Guides |
-| ![Reports icon](/src/assets/img/reporting-darkgray.png) | TBD | Reports |
-| ![Search icon](/src/assets/img/search-darkgray1.png) | TBD | Search |
-| ![User Accounts icon](/src/assets/img/user-gray.png) | TBD | User Accounts |
-| ![What's Coming icon](/src/assets/img/map-darkgray-4a4a4a.png) | TBD | What's Coming |
+| ![Admin icon](/assets/img/admin-darkgray.png) | TBD | Administration |
+| ![APIs icon](/assets/img/api-darkgray.png) | TBD | APIs |
+| ![Award Data icon](/assets/img/award-data-darkgray2.png) | TBD | Award Data |
+| ![Data Entry icon](/assets/img/data-entry-darkgray.png) | TBD | Data Entry |
+| ![External Resources icon](/assets/img/resources-gray2.png) | TBD | External Resources |
+| ![New to SAM icon](/assets/img/new-darkgray-4a4a4a.png) | TBD | New to SAM |
+| ![Online Help icon](/assets/img/help-darkgray.png) | TBD | Online Help |
+| ![Quick Start Guides icon](/assets/img/guide-darkgray.png) | TBD | Quick Start Guides |
+| ![Reports icon](/assets/img/reporting-darkgray.png) | TBD | Reports |
+| ![Search icon](/assets/img/search-darkgray1.png) | TBD | Search |
+| ![User Accounts icon](/assets/img/user-gray.png) | TBD | User Accounts |
+| ![What's Coming icon](/assets/img/map-darkgray-4a4a4a.png) | TBD | What's Coming |

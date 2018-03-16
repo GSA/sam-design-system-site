@@ -1,0 +1,24 @@
+<h1>Basic Page</h1>
+<p>A basic page has the following characteristics:</p>
+<ul>
+<li>The page displays simple content. This is typically static text such as on a help page, or simple data display, such as an Opportunity or Federal Assistance Listing.</li>
+<li>The page has few or limited interactive elements. Interactive elements on a basic page generally perform simple actions, such as sort/organize content, or minimize/maximize the visible content.</li>
+<li>A basic page may scroll vertically; subnavigation can be used to jump to sections on a scrolling page.</li>
+</ul>
+<p><img src="/assets/img/BasicLayout2.png" alt="Basic Page Layout"></p>
+<h2>Global Elements on the Basic Page</h2>
+<ul>
+<li><a href="/pages/global-elements#PageHeader">Page Header</a></li>
+<li><a href="/pages/global-elements#PageFooter">Page Footer</a></li>
+</ul>
+<h2>Page Body</h2>
+<h3>Breadcrumbs</h3>
+<p>Breadcrumbs provide navigational context to where the user is currently in the site. (They are not intended to dynamically display the prior pages visited.) Breadcrumbs start at the Tier 1 list shown in the high-level site navigation under the Menu icon (Home, Workspace, Help, Hierarchy, Data Services) and display subsequent tiers as the user traverses child pages into a section. The current page is listed in black text, while higher-level pages are links.</p>
+<h3>Side Navigation</h3>
+<p>Side Navigation is used to either navigate a single page via jump links, or across multiple separate pages of closely related content. Side Navigation floats, which means it moves as the page is scrolled, so that it remains available to the user.</p>
+<h3>Site Subheading</h3>
+<p>The Tier 1 category (Home, Workspace, Help, Hierarchy, Data Services) or Domain (e.g., Federal Assistance Listing, Opportunity, Entity) is listed above the page title.</p>
+<h3>Page Title</h3>
+<p>Each page is titled with clear and concise text describing the content of the page.</p>
+<h3>Section Title</h3>
+<p>Use sections to organize and group page content. Section titles should be short and clear as titles will also appear on the Side Navigation when page length warrants.</p>

@@ -15,6 +15,7 @@ import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumb
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
+import { SamFilesComponentExampleComponent } from "./components/files/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { SamHeaderComponentExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
@@ -25,14 +26,26 @@ import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
+import { SamProgressExampleComponent } from "./components/progress-bar/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
+import { SamUploadComponentExampleComponent } from "./components/upload/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
+import { SamDragDropDirectiveExampleComponent } from "./directives/drag-drop/component-example";
 import { SamFocusDirectiveExampleComponent } from "./directives/focus/component-example";
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
+import { SamBoxComponentExampleComponent } from "./experimental/box/component-example";
+import { SamContainerComponentExampleComponent } from "./experimental/container/component-example";
+import { SamHeadingComponentExampleComponent } from "./experimental/heading/component-example";
+import { SamIconComponentExampleComponent } from "./experimental/icon/component-example";
+import { SamListComponentExampleComponent } from "./experimental/list/component-example";
+import { SamMasterPageComponentExampleComponent } from "./experimental/master-page/component-example";
+import { SamPageComponentExampleComponent } from "./experimental/page/component-example";
+import { SamSidebarComponentExampleComponent } from "./experimental/sidebar/component-example";
+import { SamYoutubeComponentExampleComponent } from "./experimental/youtube/component-example";
 import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
 import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocomplete-multiselect/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
@@ -69,6 +82,7 @@ export const ROUTES: Routes = [
 	{ path: 'components/collapsible', component: CollapsibleExampleComponent },
 	{ path: 'components/comments', component: SamCommentsComponentExampleComponent },
 	{ path: 'components/download', component: DownloadExampleComponent },
+	{ path: 'components/files', component: SamFilesComponentExampleComponent },
 	{ path: 'components/filters-container', component: FiltersContainerExampleComponent },
 	{ path: 'components/header', component: SamHeaderComponentExampleComponent },
 	{ path: 'components/history', component: HistoryExampleComponent },
@@ -79,14 +93,26 @@ export const ROUTES: Routes = [
 	{ path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
 	{ path: 'components/pagination', component: PaginationExampleComponent },
 	{ path: 'components/point-of-contact', component: POCExampleComponent },
+	{ path: 'components/progress-bar', component: SamProgressExampleComponent },
 	{ path: 'components/sidenav', component: SidenavExampleComponent },
 	{ path: 'components/spinner', component: SpinnerExampleComponent },
 	{ path: 'components/tabs', component: TabsExampleComponent },
+	{ path: 'components/upload', component: SamUploadComponentExampleComponent },
 	{ path: 'directives/click-outside', component: ClickOutsideExampleComponent },
+	{ path: 'directives/drag-drop', component: SamDragDropDirectiveExampleComponent },
 	{ path: 'directives/focus', component: SamFocusDirectiveExampleComponent },
 	{ path: 'directives/sticky', component: StickyExampleComponent },
 	{ path: 'directives/tab-outside', component: TabOutsideExampleComponent },
 	{ path: 'elements/button', component: ButtonExampleComponent },
+	{ path: 'experimental/box', component: SamBoxComponentExampleComponent },
+	{ path: 'experimental/container', component: SamContainerComponentExampleComponent },
+	{ path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
+	{ path: 'experimental/icon', component: SamIconComponentExampleComponent },
+	{ path: 'experimental/list', component: SamListComponentExampleComponent },
+	{ path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
+	{ path: 'experimental/page', component: SamPageComponentExampleComponent },
+	{ path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
+	{ path: 'experimental/youtube', component: SamYoutubeComponentExampleComponent },
 	{ path: 'form-controls/autocomplete', component: AutocompleteExampleComponent },
 	{ path: 'form-controls/autocomplete-multiselect', component: AutocompleteMultiselectExampleComponent },
 	{ path: 'form-controls/checkbox', component: CheckboxExampleComponent },

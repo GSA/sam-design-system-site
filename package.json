@@ -9,6 +9,8 @@
     "test": "npm run init && ng test",
     "lint": "ng lint",
     "e2e": "npm run init && ng e2e",
+    "server:prod": "nginx -g 'daemon off;'",
+    "prod": "npm run build && npm run server:prod",
     "generate-docs": "node ./config/docgen.js",
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./sam-ui-elements/src/ui-kit --json './src/assets/docs.json'",
     "typedoc": "./node_modules/typedoc/bin/typedoc",

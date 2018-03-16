@@ -32,6 +32,7 @@
     "markdown-it": "8.4.0",
     "moment": "2.20.1",
     "prismjs": "1.12.2",
+    "recursive-readdir-sync": "1.0.6",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -52,7 +53,6 @@
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
-    "recursive-readdir-sync": "1.0.6",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typedoc": "0.5.10",

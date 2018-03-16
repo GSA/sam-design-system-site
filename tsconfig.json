@@ -1,44 +1,22 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "noEmit": true,
-    "noEmitHelpers": true,
-    "strictNullChecks": false,
-    "lib": [
-      "dom",
-      "es6"
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
     ],
-    "types": [
-      "hammerjs",
-      "jasmine",
-      "node",
-      "selenium-webdriver",
-      "source-map",
-      "uglify-js",
-      "webpack"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "sam-ui-elements",
-    "sam-ui-elements/node_modules",
-    "dist",
-    "sam-ui-elements/dist"
-  ],
-  "awesomeTypescriptLoaderOptions": {
-    "forkChecker": true,
-    "useWebpackText": true,
-    "transpileOnly": true
-  },
-  "compileOnSave": false,
-  "buildOnSave": false,
-  "atom": {
-    "rewriteTsconfig": false
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "sam-ui-elements/*": ["sam-ui-elements/*"]
+    }
   }
 }

@@ -96,7 +96,7 @@ Shared modules represent collections of components, directives, pipes, and servi
 #### Combining Modules
 Below is a diagram showing how we should think about module’s and their contexts. In the case of shared modules, their contents are exported and are made globally available in the application context.
 
-![Diagram of module architecture](/src/assets/img/module-architecture.png "Diagram of Module Architecture")
+![Diagram of module architecture](/assets/img/module-architecture.png "Diagram of Module Architecture")
 
 
 ### Defining Routes

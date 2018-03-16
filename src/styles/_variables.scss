@@ -374,7 +374,7 @@ $sixteenColumn  : (1 / 16 * 100%);
       Paths
 --------------------*/
 $fa-font-path          : "../assets/fonts/font-awesome";
-$assets-path           : '/src/assets';
+$assets-path           : '/assets';
 
 /*******************************
              States
@@ -516,8 +516,8 @@ $h5-font-size:    $h5 ;
 $color-primary  : $iae-color-primary;
 
 // Relative font and image file paths
-$font-path      : '/src/assets/fonts';
-$image_path     : '/src/assets/img';
+$font-path      : '/assets/fonts';
+$image_path     : '/assets/img';
 
 // Magic Numbers
 $site-max-width : 1140px;

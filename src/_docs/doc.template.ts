@@ -2,6 +2,10 @@ import { Component, OnInit, Input} from '@angular/core';
 import { Router } from '@angular/router';
 import Prism from 'prismjs';
 
+import { environment } from 'environment';
+const DOCS = environment.DOCS;
+const STATICPAGES = environment.STATICPAGES;
+
 @Component({
 	selector: 'doc-template',
   templateUrl: 'doc.template.html'
@@ -41,11 +45,9 @@ export class DocTemplateComponent implements OnInit {
     // ---------------------------------------------------------- 
     // UI-Kit links
     // ----------------------------------------------------------
-    
-    //DOCS is a global defined in webpack
-    
+        
     var uikitList = {};
-    
+
     // Organize by section
     for(var idx in DOCS){
       if(!uikitList[DOCS[idx]['section']]){

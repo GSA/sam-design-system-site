@@ -5,7 +5,7 @@ The List/Result page is used when the user is presented with a listing of relate
 - The page has controls enabling the user to filter or sort items on the list
 - The page has no need to be broken into distinct sections due to its length or complexity
 
-![List Page Layout](/src/assets/img/ListPageLayout.png)
+![List Page Layout](/assets/img/ListPageLayout.png)
 
 ## Global Elements
 

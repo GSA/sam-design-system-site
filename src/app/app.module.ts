@@ -3,7 +3,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule, ApplicationRef } from '@angular/core';
-import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { SamAlertFooterService } from '../../sam-ui-elements/src/ui-kit/components/alert-footer';
 /*

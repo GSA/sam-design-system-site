@@ -10,10 +10,13 @@ import {
 
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { DocumentationService } from './services/documentation.service';
-
 import { routerTransition } from './router.animations';
-
 import { MarkdownService } from './services/markdown/markdown.service';
+
+import { environment } from 'environment';
+const DOCS = environment.DOCS;
+const STATICPAGES = environment.STATICPAGES;
+
 /*
  * App Component
  * Top Level Component
@@ -36,7 +39,7 @@ export class AppComponent implements OnInit {
   public sidenavConfig = {
       label: "test",
       children: [],
-  }
+  };
 
   public uikitList = {};
   public staticpagelist = {};
@@ -63,7 +66,7 @@ export class AppComponent implements OnInit {
   public ngOnInit() {
 
     // sidenav config setup
-    // DOCS is a global defined in webpack
+
     for (let idx in DOCS) {
       if (!this.uikitList[DOCS[idx]['section']]) {
         this.uikitList[DOCS[idx]['section']] = [{

@@ -29,19 +29,19 @@ Suggested content includes:
 Examples of widget layouts:
 
 **Example 1**
-![Example 1](/src/assets/img/example1.png)
+![Example 1](/assets/img/example1.png)
 
 **Example 2**
-![Example 2](/src/assets/img/example2.png)
+![Example 2](/assets/img/example2.png)
 
 **Example 3**
-![Example 3](/src/assets/img/example3.png)
+![Example 3](/assets/img/example3.png)
 
 ## Workspace Page layout
 Currently, the layout of the workspace page is fixed. Widgets appear in each of the sections (Preferences, Administration, Data Entry) based on user preferences and roles.
 
 _Example image of workspace layout blocking_
-![Workspace Layout](/src/assets/img/workspace-layout.png)
+![Workspace Layout](/assets/img/workspace-layout.png)
 
 ### Preferences Section
 #### Search

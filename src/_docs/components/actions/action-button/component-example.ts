@@ -16,8 +16,8 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../../app/services/documentation.service';
 
-//tabs/spacing matters for code example block
-var code_example = `
+// tabs/spacing matters for code example block
+const code_example = `
 <sam-action-button [action]="action"></sam-action-button>
 
 <sam-action-button [action]="action"
@@ -29,8 +29,8 @@ var code_example = `
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamActionButtonExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamActionButton";
-  typedoc_content = "";
+  typedoc_target = 'SamActionButton';
+  typedoc_content = '';
 
   example = code_example;
   action = { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: ()=>{console.log("click");}}

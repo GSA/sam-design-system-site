@@ -22,6 +22,7 @@
     "@angular/common": "4.3.3",
     "@angular/compiler": "4.3.3",
     "@angular/cli": "1.4.10",
+    "@angular/compiler-cli": "4.3.3",
     "@angular/core": "4.3.3",
     "@angular/forms": "4.3.3",
     "@angular/http": "4.3.3",
@@ -36,10 +37,10 @@
     "recursive-readdir-sync": "1.0.6",
     "rxjs": "^5.4.2",
     "typedoc": "0.5.10",
+    "typescript": "~2.3.3",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "4.3.3",
     "@angular/language-service": "4.3.3",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
@@ -55,7 +56,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
-    "tslint": "~5.7.0",
-    "typescript": "~2.3.3"
+    "tslint": "~5.7.0"
   }
 }

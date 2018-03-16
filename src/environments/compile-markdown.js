@@ -8,11 +8,21 @@ const MarkdownIt = require('markdown-it')
 const STATIC_DIR = path.join(__dirname, '../_static')
 const DOCS_DIR = path.join(__dirname, '../_docs')
 
-compileDirectories(STATIC_DIR, DOCS_DIR)
+setup(ROOT)(STATIC_DIR, DOCS_DIR)
+
+function setup (root) {
+
+  removeExistingDocs(root)
+
+  return function compile (...dirs) {
+
+    return compileDirectories(...dirs);
+    
+  }
+
+}
 
 function compileDirectories (...dirs) {
-
-  removeExistingDocs(ROOT)
 
   dirs.forEach(
     dir => pf(dir)

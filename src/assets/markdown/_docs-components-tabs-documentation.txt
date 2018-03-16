@@ -1,0 +1,2 @@
+<h1>Tabs</h1>
+<p>Allows user to navigate through divided sections of content.</p>

@@ -1,0 +1,60 @@
+<h1>Workspace Page</h1>
+<p>The workspace landing page (Tier 1 &quot;My Workspace&quot;) is available to an authenticated user. The workspace is where a user goes to work with their &quot;stuff.&quot; Subpages (Tier 2) are individualized, based on a user's organization, roles, and preferences.</p>
+<ul>
+<li>Workspace is divided into three groupings: Preferences, Administration, Data Entry</li>
+<li>'Widgets' populate each section and appear based on user's organization, roles, and preferences and link to a Tier 2 page/workspace</li>
+</ul>
+<h2>Global Elements</h2>
+<ul>
+<li><a href="/pages/global-elements#PageHeader">Page Header</a></li>
+<li><a href="/pages/global-elements#PageFooter">Page Footer</a></li>
+</ul>
+<h2>Widgets</h2>
+<p>On the workspace, widgets are relatively small blocks of content for each functional area associated with the authenticated user.
+Widgets should be built to summarize recent activity and provide access to the most important and/or time-sensitive actions the user will perform. Widgets should be informational and simple but can be varied in size.</p>
+<p>Suggested content includes:</p>
+<ul>
+<li>Clear and consistent title that identifies the domain/subpages the widget represents</li>
+<li>Settings icon (currently opens sub-menu for Help, future functionality such as hide, customize)</li>
+<li>Banner highlighting new updates/key counts (Optional)</li>
+<li>Key content area should contain the following as relevant to the functionality offered by the domain/subpages
+<ul>
+<li>Icon</li>
+<li>Action buttons for top functions (e.g., 'Change Password' 'Create Listing')</li>
+<li>Infographic or Numeric counts of actions that are part of a data entry workflow, such as approving, submitting, etc.</li>
+<li>Links to most frequently accessed content, such as top searches or favorite Reports</li>
+</ul>
+</li>
+<li>Link(s) to domain/subpages</li>
+<li>Notification counts may appear in the widget but notifications should be grouped in the Header element or Notifications feed page.</li>
+</ul>
+<p>Examples of widget layouts:</p>
+<p><strong>Example 1</strong>
+<img src="/assets/img/example1.png" alt="Example 1"></p>
+<p><strong>Example 2</strong>
+<img src="/assets/img/example2.png" alt="Example 2"></p>
+<p><strong>Example 3</strong>
+<img src="/assets/img/example3.png" alt="Example 3"></p>
+<h2>Workspace Page layout</h2>
+<p>Currently, the layout of the workspace page is fixed. Widgets appear in each of the sections (Preferences, Administration, Data Entry) based on user preferences and roles.</p>
+<p><em>Example image of workspace layout blocking</em>
+<img src="/assets/img/workspace-layout.png" alt="Workspace Layout"></p>
+<h3>Preferences Section</h3>
+<h4>Search</h4>
+<p>Authenticated users can access and execute a previously saved search from the Saved Searches workspace widget.</p>
+<h4>Reports</h4>
+<p>Authenticated users can access report functionality such as favorites and saved report criteria.</p>
+<h3>Administration Section</h3>
+<p>There are multiple administrative workspaces</p>
+<ul>
+<li>Federal Hierarchy.  The federal hierarchy administers a directory of organizations in the federal awarding and funding hierarchy.</li>
+<li>Role Management.  Role administrators assign and remove user roles.</li>
+<li>Alerts.  This is an IAE Admin function for publishing and expiring broadcast alerts</li>
+</ul>
+<h3>Data Entry Section</h3>
+<p>A user signs in to perform data entry because they have assignments or are responsible for specific objects (entities, awards, listings). “My Stuff” most frequently means objects I am accountable for, that I have to keep track of.  These should be known objects. The status of my objects is the most important driver indicating what a user is interested in.  Anything with a status that requires the user to take action is most important.</p>
+<p>There are potentially many data entry workspaces.</p>
+<ul>
+<li>“Data entry” describes award data, not administrative data. Federal and entity users enter award data.</li>
+<li>“Data entry” includes actions that are part of a data entry workflow, such as approving, submitting, etc.</li>
+</ul>

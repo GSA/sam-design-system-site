@@ -1,0 +1,110 @@
+<h1>Colors</h1>
+<p>The following colors are a subset of the <a href="https://standards.usa.gov/components/colors/">U.S. Web Design Standards</a> color palette.</p>
+<h2>Primary Colors</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">U.S Web Standard CSS class</th>
+<th>Hex Value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/assets/img/gray-color-gray-dark.png" alt="alt text" title="color-gray-dark"></td>
+<td style="text-align:center">color-gray-dark</td>
+<td>#323a45</td>
+<td style="text-align:left">Used for the header background</td>
+</tr>
+<tr>
+<td><img src="/assets/img/royal-color-primary.png" alt="alt text" title="color-primary"></td>
+<td style="text-align:center">color-primary</td>
+<td>#0071bc</td>
+<td style="text-align:left">Used for primary action buttons</td>
+</tr>
+<tr>
+<td><img src="/assets/img/aqua-color-primary-alt.png" alt="alt text" title="color-primary-alt"></td>
+<td style="text-align:center">color-primary-alt</td>
+<td>#02bfe7</td>
+<td style="text-align:left">Used for search buttons</td>
+</tr>
+<tr>
+<td><img src="/assets/img/red-color-secondary.png" alt="alt text" title="color-secondary"></td>
+<td style="text-align:center">color-secondary</td>
+<td>#e31c3d</td>
+<td style="text-align:left">Used sparingly as a highlight</td>
+</tr>
+</tbody>
+</table>
+<h2>Background Colors</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">U.S Web Standard CSS class</th>
+<th>Hex Value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/assets/img/white.png" alt="alt text" title="color-white"></td>
+<td style="text-align:center">color-white</td>
+<td>#ffffff</td>
+<td style="text-align:left">Primary background color</td>
+</tr>
+<tr>
+<td><img src="/assets/img/gray-color-gray-cool-light.png" alt="alt text" title="color-gray-cool-light"></td>
+<td style="text-align:center">color-gray-cool-light</td>
+<td>#dce4ef</td>
+<td style="text-align:left">Used to distinguish required policy text from other information</td>
+</tr>
+<tr>
+<td><img src="/assets/img/gray-color-gray-lightest.png" alt="alt text" title="color-gray-lightest"></td>
+<td style="text-align:center">color-gray-lightest</td>
+<td>#f1f1f1</td>
+<td style="text-align:left">Used as a background for complex forms with mutiple fields</td>
+</tr>
+</tbody>
+</table>
+<h2>Alert Colors</h2>
+<p>Note: The following subtle colors are primarily used for alerts, but may be used in limited cases. When using colors for other page elements, keep in mind the primary use to avoid conflict in meaning (for example, the light red is used for errors, so should be used to convey similar meaning).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">U.S Web Standard CSS class</th>
+<th>Hex Value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/assets/img/green-color-green-lightest.png" alt="alt text" title="color-green-lightest"></td>
+<td style="text-align:center">color-green-lightest</td>
+<td>#e7f4e4</td>
+<td style="text-align:left">Used for success alerts</td>
+</tr>
+<tr>
+<td><img src="/assets/img/blue-color-primary-alt-lightest.png" alt="alt text" title="color-primary-alt-lightest"></td>
+<td style="text-align:center">color-primary-alt-lightest</td>
+<td>#e1f3f8</td>
+<td style="text-align:left">Used for informational alerts</td>
+</tr>
+<tr>
+<td><img src="/assets/img/red-color-secondary-lightest.png" alt="alt text" title="color-secondary-lightest"></td>
+<td style="text-align:center">color-secondary-lightest</td>
+<td>#f9dede</td>
+<td style="text-align:left">Used for error alerts</td>
+</tr>
+<tr>
+<td><img src="/assets/img/gold-color-gold-lightest.png" alt="alt text" title="color-gold-lightest"></td>
+<td style="text-align:center">color-gold-lightest</td>
+<td>#fff1d2</td>
+<td style="text-align:left">Used for warning alerts</td>
+</tr>
+</tbody>
+</table>
+<h2>Text Color</h2>
+<h2>Link Color</h2>

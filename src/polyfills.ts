@@ -12,11 +12,14 @@
  * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
  *
  * Learn more in https://angular.io/docs/ts/latest/guide/browser-support.html
+ * 
+ * 
  */
 
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */
+
 
 /** IE9, IE10 and IE11 requires all of the following polyfills. **/
 import 'core-js/es6/symbol';
@@ -35,7 +38,7 @@ import 'core-js/es6/weak-map';
 import 'core-js/es6/set';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
-import 'classlist.js';  // Run `npm install --save classlist.js`.
+import 'classlist-polyfill';
 
 /** IE10 and IE11 requires the following for the Reflect API. */
 import 'core-js/es6/reflect';

@@ -133,7 +133,7 @@ ${imports}
 import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes.dynamic";
 import { StaticPageComponent } from "./static.component";
-import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
+import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from "../app/site-components/sitecomponents.module";
 

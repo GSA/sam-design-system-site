@@ -82,7 +82,7 @@ function isAcceptableFileName(fileName) {
   }
 }
 
-const uiKitDir = path.resolve(__dirname + '/../../sam-ui-elements/src/ui-kit');
+const uiKitDir = path.resolve(__dirname + '/../../node_modules/sam-ui-elements/src/ui-kit');
 const docsDir = path.resolve(__dirname + '/../../src/_docs');
 
 function generateObs(dir) {

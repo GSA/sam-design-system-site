@@ -2,7 +2,7 @@ import { Component, Directive } from '@angular/core';
 import { Observable } from 'rxjs';
 import {
   AutocompleteService
-} from '../../../../sam-ui-elements/src/ui-kit/form-controls/autocomplete/\
+} from 'sam-ui-elements/src/ui-kit/form-controls/autocomplete/\
 autocomplete.service';
 
 export class ACTestService implements AutocompleteService {

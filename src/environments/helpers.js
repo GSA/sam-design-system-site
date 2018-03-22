@@ -39,6 +39,8 @@ function getUIKitStructure(target){
 				component = results[2];
 			}
 		}
+		let currentPath = process.cwd() + "\\src\\docs\\";
+		val = val.replace(currentPath, "");
 		val = val.replace(/\\\\/g,"/");
 		val = val.replace(/\\/g,"/");
 		var link = val.substring(0, val.lastIndexOf("/")).replace(target+'/','');

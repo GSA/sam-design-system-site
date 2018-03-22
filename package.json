@@ -12,7 +12,7 @@
     "server:prod": "nginx -g 'daemon off;'",
     "prod": "npm run build && npm run server:prod",
     "generate-docs": "node ./config/docgen.js",
-    "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./sam-ui-elements/src/ui-kit --json './src/assets/docs.json'",
+    "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' --json './src/assets/docs.json' ./node_modules/sam-ui-elements/src/ui-kit",
     "typedoc": "./node_modules/typedoc/bin/typedoc",
     "compile-markdown": "node src/environments/compile-markdown.js",
     "set-env": "node src/environments/set-env.js",

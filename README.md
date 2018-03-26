@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.10.
 
+## Setup submodule for local development
+1. Open `.gitmodules` and change `git@github.helix.gsa.gov:GSA-IAE-APPS/sam-ui-elements.git` to `https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements.git`
+1. Run `git submodule sync` in command line
+1. Run `git submodule update --init` to load submodule
+1. Revert `.gitmodules` file so that it doesn't affect the builds
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

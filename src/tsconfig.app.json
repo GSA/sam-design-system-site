@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "paths": {
       "api-kit/*": [ "api-kit/*"],
-      "sam-ui-elements/*": [ "../sam-ui-elements/*" ],
+      "sam-ui-elements/*": [ "sam-ui-elements/*" ],
       "app-components/*": [ "app/app-components/*"],
       "environment": [ "./environments/environment" ]
     }

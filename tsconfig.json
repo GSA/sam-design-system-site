@@ -9,7 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "paths": {
-      "sam-ui-elements": [ "../sam-ui-elements" ]
+      "sam-ui-elements": [ "sam-ui-elements" ]
     },
     "skipLibCheck": true,
     "target": "es5",

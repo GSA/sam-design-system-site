@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { SamUIKitModule } from '../../../../sam-ui-elements/src/ui-kit';
+import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 
 import { SamBoxComponent } from './box';
 import { SamContainerComponent } from './container';

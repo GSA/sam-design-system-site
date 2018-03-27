@@ -16,6 +16,8 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY . /usr/src/app/
 
+RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm/ 
+RUN npm install sam-ui-elements@13.2.2 -E --no-save
 RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/GS-IAE-Npm
 RUN npm install --production
 RUN npm rebuild node-sass

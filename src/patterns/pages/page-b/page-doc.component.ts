@@ -21,7 +21,7 @@ let code_example_component = `
 import { Component} from '@angular/core';
 
 // Relative path: adjust to match your folder structure
-import { MenuItem } from '../sam-ui-elements/src/ui-kit/components/sidenav';
+import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
 
 @Component({
   template: 'your template html',

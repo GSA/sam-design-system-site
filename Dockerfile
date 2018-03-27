@@ -24,7 +24,7 @@ RUN npm rebuild node-sass
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
      && ln -sf /dev/stderr /var/log/nginx/error.log
 
-EXPOSE 8080
+EXPOSE 8443
 RUN mkdir /run/nginx
 # Set the default command to execute
 # when creating a new container

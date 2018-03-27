@@ -16,11 +16,11 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY . /usr/src/app/
 
+RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm/ 
+RUN npm install sam-ui-elements@13.2.2 -E --no-save --production
 RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/GS-IAE-Npm
 RUN npm install --production
 RUN npm rebuild node-sass
-RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm/ 
-RUN npm install sam-ui-elements@13.2.2 -E --no-save --production
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \

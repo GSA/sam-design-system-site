@@ -2,11 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.10.
 
-## Setup submodule for local development
-1. Open `.gitmodules` and change `git@github.helix.gsa.gov:GSA-IAE-APPS/sam-ui-elements.git` to `https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements.git`
-1. Run `git submodule sync` in command line
-1. Run `git submodule update --init` to load submodule
-1. Revert `.gitmodules` file so that it doesn't affect the builds
+## Setup local development
+Follow these steps to checkout sam-ui-elements in separate location in your local environment
+```
+git clone https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements
+cd sam-ui-elements
+git checkout main
+npm link --only=production
+```
+
+To link and setup your cloned environment
+```
+git clone https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site
+cd web-standards-site
+npm install
+npm link sam-ui-elements
+npm run start
+```
+
+For builds, update of `sam-ui-elements` version in the Dockerfile
 
 ## Development server
 

@@ -1,0 +1,295 @@
+
+/**********************************************
+HOME PAGE
+***********************************************/
+
+.site-container{
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1040px
+}
+
+
+/*---------------------------
+Stripes
+-----------------------------*/
+
+.stripes {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  display: grid;
+  transform: skewY(-12deg)
+}
+
+.stripes {
+  top: 0;
+  grid: repeat(5,190px)/repeat(10,1fr);
+  transform-origin: 0;
+  background: linear-gradient(#ffffff, #e6e6e6 10%, #eaeff5 38%, #eaf2f9 48%, #f6f9fc 62%)
+}
+
+.stripes :nth-child(1) {
+  grid-column: span 3;
+  background: linear-gradient(100grad, rgb(220, 220, 220), rgba(224, 224, 224, 0.3) 40%, rgba(226, 226, 226, 0.2));
+}
+
+.stripes :nth-child(2) {
+  grid-area: 3/span 3/auto/-1
+}
+
+.stripes :nth-child(3) {
+  grid-row: 4;
+  grid-column: span 5;
+}
+
+.stripes :nth-child(4) {
+  grid-area: 4/span 5/auto/-1
+}
+
+.stripes :nth-child(5) {
+  grid-area: auto/1/-1/-1;
+  background: linear-gradient(100grad,#fff 80%,#f5fafd);
+  margin-bottom: -1px;
+}
+
+@media (min-width: 670px) {
+  .stripes :nth-child(3) {
+    background: linear-gradient(100grad,#fff 50%,hsla(0,0%,100%,0));
+  }
+  
+  .stripes :nth-child(4) {
+    background: linear-gradient(100grad, rgba(255, 255, 255, 0) 10%, rgb(255, 255, 255));
+  }
+}
+
+
+/*---------------------------
+Homepage Intro Section
+-----------------------------*/
+
+#intro {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 40px
+}
+
+#intro p {
+  margin: 25px 0;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 670px) {
+  #intro {
+    padding-top:70px;
+    position: static;
+  }
+  
+  #intro p {
+    margin: 25px 55% 30px 0
+  }
+  
+}
+
+/*---------------------------
+Intro Animation
+-----------------------------*/
+
+@media (prefers-reduced-motion) {
+  #intro-animation * {
+    animation: none!important
+  }
+}
+
+#intro-animation {
+  position: relative;
+  height: 210px;
+  margin: 30px 20px 40px
+}
+
+@media (min-width: 670px) {
+  #intro-animation {
+    width:50%;
+    right: 0;
+    position: absolute;
+    height: auto;
+    margin-top: 50px;
+  }
+}
+
+
+/*---------------------------
+Particles
+-----------------------------*/
+
+.particle-container {
+  fill:rgba(255,255,255,.6);
+  stroke: rgba(255,255,255,.3);
+  stroke-width: 10;
+  animation: move 10s linear infinite; 
+  --amplitude: 50px;
+  
+  .particle{
+    animation: occilate 2s ease-in-out infinite alternate;
+  }
+  
+  @for $i from 1 through 10{
+    &:nth-child(#{$i}){
+      --amplitude:  10px + random(40)*1px;
+      $duration: 10s + random(40)*0.5s;
+      animation-duration: $duration;
+      animation-delay: $i * random(10)* -0.5s;
+      .particle{
+        animation-duration:  $duration/4;
+      }
+    }
+  }
+}
+
+@keyframes occilate{
+  100%{
+    transform: translate( 0, var(--amplitude) );
+  }
+}
+
+@keyframes move{
+  100%{
+    transform: translate( 1000px, 0 );
+  }
+}
+
+/*---------------------------
+Particle animation
+-----------------------------*/
+
+@keyframes particle-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(.85)
+  }
+}
+
+#intro-animation .particle-animation {
+  will-change: opacity,transform;
+  animation: particle-fade-in 2s cubic-bezier(.165,.84,.44,1) backwards
+}
+
+#intro-animation .particle-animation{
+  bottom: 0;
+  right: 0;
+  animation-delay: .6s
+}
+
+@media (min-width: 670px) {
+  #intro-animation .particle-animation{
+    top:220px;
+    left: 0px;
+    bottom: auto;
+    right: auto
+  }
+}
+
+#intro-animation .particle-animation svg {
+  position: relative;
+  width: 400px;
+  vertical-align: middle
+}
+
+@media (min-width: 670px) {
+  #intro-animation .particle-animation svg {
+    height:262px;
+    width: 500px
+  }
+}
+
+/*---------------------------
+Cubes
+-----------------------------*/
+
+#intro-animation .cubes {
+  top: 0
+}
+
+#intro-animation .cube {
+  position: absolute;
+  will-change: transform;
+  animation: cube-fade-in 2s cubic-bezier(.165,.84,.44,1)
+}
+
+#intro-animation .cube:nth-child(2) {
+  z-index: 1;
+}
+
+@media (min-width: 670px) {
+  #intro-animation .cubes .cube {
+    margin:0
+  }
+}
+
+@keyframes cube-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(.5)
+  }
+}
+
+#intro-animation .cube div {
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+
+#intro-animation .cube .shadow {
+  top: 40%;
+  background: #07427a
+}
+
+#intro-animation .cube .sides {
+  transform-style: preserve-3d;
+  perspective: 600px
+}
+
+#intro-animation .cube .sides div {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform
+}
+
+#intro-animation .cube .sides .front span {
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 15px;
+  opacity: .8;
+}
+
+#intro-animation .cube:nth-child(1) .sides .front span {
+  color: #bf3142;
+}
+#intro-animation .cube:nth-child(2) .sides .front span {
+  color: #16805b;
+}
+#intro-animation .cube:nth-child(3) .sides .front span {
+  color: #375e9e;
+}
+
+
+/*---------------------------
+Homepage content
+-----------------------------*/
+
+main footer.site-container {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 670px) {
+  main footer.site-container {
+    display: grid;
+    grid: repeat(3,auto)/auto-flow 1fr;
+    grid-gap: 0 40px
+  }
+}

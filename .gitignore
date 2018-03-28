@@ -72,4 +72,5 @@ npm-debug.log
 *.ngsummary.json
 *.shim.ngstyle.ts
 
-
+/src/assets/docs.json
+/src/environments/environment.ts

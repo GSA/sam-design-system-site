@@ -1,23 +1,4 @@
-<header class="site-header">
-  <nav class="site-nav">
-    <div class="container">
-      <a class="home" [routerLink]="['/']">
-        SAM Web Design System
-      </a>
-      <div class="mask-container">
-        <ul>
-          <li>
-            <a [routerLink]="['/patterns/v1/home']">Patterns</a>
-          </li>
-          <li>
-            <a [routerLink]="['overview/getting-started']">Documentation</a>
-          </li>
-        </ul>
-      </div>
-      <div class="separator"></div>
-    </div>
-  </nav>
-</header>
+<site-header></site-header>
 
 <main>
   <header>
@@ -67,21 +48,21 @@
         </svg>
       </span>
     </div>
-    <section id="intro" class="container">
-      <h1 class="sam-ui header">SAM UI Elements</h1>
+    <section id="intro" class="site-container">
+      <h1 class="sam title">SAM UI Elements</h1>
       <p>
         This site showcases a set of design standards and angular-based frontend 
         development components for building the upcoming <strong><em>SAM.gov</em>
         </strong> website.
       </p>
-      <a [routerLink]="['elements/button']" 
-        class="sam-ui primary button">
-        GET STARTED
-      </a>
+      <button [routerLink]="['elements/button']" 
+        class="sam primary button">
+        Get Started
+      </button>
     </section>
   </header>
-  <footer class="container">
-    <h2 class="sam-ui header" style="margin-top: 18.5px;">
+  <footer class="site-container">
+    <h2 class="sam title">
       Installation
     </h2>
     <code-example 
@@ -91,44 +72,19 @@
     <a [routerLink]="['overview/getting-started']">
       Read installation docs
     </a>
-    <h2 class="sam-ui header">
-      Pattern Examples
+    <h2 class="sam title">
+      Patterns
     </h2>
     <p>
-      Components and layout examples to help you quickly get started with 
+      Page and component patterns to help you quickly get started with 
       <strong><em>SAM-UI Elements</em></strong> and demonstrate best practices 
       for implementing it in <strong><em>SAM.gov</em></strong>.
     </p>
-    <a [routerLink]="['/patterns/v1/home']">
+    <a [routerLink]="['/patterns/latest/home']">
       View patterns
     </a>
   </footer>
 </main>
 
 
-<footer class="site-footer">
-  <nav class="container">
-    <ul>
-      <li>
-        <a [routerLink]="['overview/getting-started']">
-          Documentation
-        </a>
-      </li>
-      <li>
-        <a [routerLink]="['/patterns/v1/home']">
-          Patterns
-        </a>
-      </li>
-      <li>
-        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements">
-          SAM-UI Elements
-        </a>
-      </li>
-      <li>
-        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site">
-          SAM Web Design Standards
-        </a>
-      </li>
-    </ul>
-  </nav>
-</footer>
+<site-footer></site-footer>

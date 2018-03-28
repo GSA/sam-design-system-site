@@ -1,92 +1,169 @@
-<sam-page suptitle="consectetur" title="Lorem Ipsum" [breadcrumbs]="breadcrumbs">
-  
-  <sam-sidebar>
-    <a style="display:block; margin-bottom: 1em">
-      <sam-icon name="home"></sam-icon>
-      Ullamcorper nulla
-    </a>
-    
-    <sam-box>
-      <sam-heading text="Luctus Velit" alignment="center"></sam-heading>
-      <div class="sam-ui search">
-        <input type="search" name="samsearch" placeholder="Search">
-        <button>
-          <sam-icon name="search"></sam-icon>
-        </button>
-      </div>
-    </sam-box>
-    
-    <ul class="sam-ui side navigation">
-      <li>
-        <a class="active">Lorem Ipsum Dolor</a>
-        <ul>
-          <li><a>Risus sed</a></li>
-          <li><a>Magna bibendum</a></li>
-        </ul>
-      </li>
-      <li><a>Suspendisse</a></li>
-      <li><a>Maecenas</a></li>
-      <li><a>Vivamus</a></li>
-    </ul>
-  </sam-sidebar>
-  
-  <sam-container>
-    <p style="margin-top:0">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis 
-      commodo bibendum. Praesent enim nunc, faucibus quis rhoncus eget, commodo 
-      nec lectus. Suspendisse a felis condimentum, sollicitudin nisi non, 
-      pretium nulla. Sed vestibulum ex rhoncus, feugiat risus laoreet, imperdiet 
-      quam.
-    </p>
-    <ul class="sam-ui bulleted list">
-      <li>Cras vitae metus ultricies, congue sapien non, semper velit.</li>
-      <li>Donec gravida magna eu est facilisis interdum a eget arcu.</li>
-      <li>Nullam dapibus mauris id aliquam eleifend.</li>
-    </ul>
-  </sam-container>
-  
-  <sam-box>
-    <sam-heading text="Pretium"></sam-heading>
-    <sam-container>
-      <sam-icon data-emphasis="lowest"></sam-icon>
-      <sam-container>
-        <sam-heading importance="low" text="Scelerisque pretium"></sam-heading>
-        <p>
-          Nam vel elementum est. Vestibulum nec urna at metus rutrum ultricies at 
-          eget odio. Phasellus suscipit risus nulla, eget ornare dui semper vitae. 
-          Quisque ut sem orci. 
-        </p>
-      </sam-container>
-    </sam-container>
-  </sam-box>
-  
-  <sam-box>
-    <sam-heading text="Eleifend"></sam-heading>
-    <sam-container>
-      <sam-icon data-emphasis="lowest"></sam-icon>
-      <sam-container>
-        <sam-heading importance="low" text="Etiam Gravida"></sam-heading>
-        <p>
-          Sed euismod urna sed magna tincidunt ultrices. Etiam gravida quam ac 
-          mauris sodales, a lobortis tortor mattis. Phasellus vel elit aliquet, 
-          commodo ligula vitae, sodales ex.
-        </p>
-      </sam-container>
-    </sam-container>
-  </sam-box>
-  
-  <sam-box>
-    <sam-heading text="Aliquam"></sam-heading>
-    <sam-container>
-      <sam-icon data-emphasis="lowest"></sam-icon>
-      <sam-container>
-        <sam-heading importance="low" text="Integer Sed"></sam-heading>
-        <p>
-          Sed rhoncus tempor faucibus. Integer sed hendrerit arcu. Sed tempor purus 
-          dictum, scelerisque ligula consectetur
-        </p>
-      </sam-container>
-    </sam-container>
-  </sam-box>
-  
+<sam-page intro="Help Center" title="Award Domains">
+	
+	<!-- Replace with breadcrumbs component -->
+	<ul class="sam breadcrumbs">
+		<li>
+			<a>Help Center</a>
+		</li>
+		<li>
+			Award Domains
+		</li>
+	</ul>
+	
+	<sam-page-sidebar>	
+		<sam-box type="secondary">
+			<sam-title importance="low">
+				<a>
+					<sam-icon name="home"></sam-icon>
+				</a>
+				Learning Center
+			</sam-title>
+			<div class="sam search">
+				<input class="sam input" type="search" placeholder="Search">
+				<button class="sam button left attached">
+					<sam-icon name="search"></sam-icon>
+				</button>
+			</div>
+		</sam-box>
+	</sam-page-sidebar>
+	
+	<sam-container size="big" weight="thin">
+		<p class="sam paragraph remove margin">
+			The beta.SAM.gov domains contain data that has been migrated from out legacy systems. The domains
+			support two distinct types of federal awards: <em>assistance</em> and <em>acquisitions</em>.
+		</p>
+	</sam-container>
+	
+	<sam-list columns="two">
+		<sam-list-item bullet="decimal">
+			<strong>Assistance awards</strong> are grant, cooperative, loan, insurance, service, and other agreements covered by
+			the Code of Federal Regulations, specifically
+			<a>2 CFR 200</a>.
+		</sam-list-item>
+		<sam-list-item bullet="decimal">
+			<strong>Acquisition awards</strong> are contracts awarded under the
+			<a>Federal Acquisition Regulation (FAR)</a>.
+		</sam-list-item>
+	</sam-list>
+	
+	<sam-title importance="high" weight="normal">
+		Assistance
+	</sam-title>
+	<sam-box type="secondary">
+		<sam-layout pattern="media">
+			<sam-layout-img aligned="center">
+				<div class="sam image caption">
+					<span>CFDA.gov</span>
+				</div>
+			</sam-layout-img>
+			<sam-layout-content>
+				<sam-title importance="normal" weight="normal">
+					Assistance Listings
+				</sam-title>
+				<p class="sam paragraph remove margin">
+					Assistance listings provide a comprehensive description of all federal assistance including information on eligibility, how
+					to apply, and matching requirements.
+				</p>
+			</sam-layout-content>
+		</sam-layout>
+	</sam-box>
+	
+	<sam-title importance="high" weight="normal">
+		Acquisition
+	</sam-title>
+	<sam-box type="secondary">
+		<sam-layout pattern="media" margin="bottom">
+			<sam-layout-img aligned="center">
+				<div class="sam image caption">
+					<span>FBO.gov</span>
+				</div>
+			</sam-layout-img>
+			<sam-layout-content>
+				<sam-title importance="normal" weight="normal">
+					Contract Opportunities
+				</sam-title>
+				<p class="sam paragraph remove margin">
+					Assistance listings provide a comprehensive description of all federal assistance including information on eligibility, how
+					to apply, and matching requirements.
+				</p>
+			</sam-layout-content>
+		</sam-layout>
+	</sam-box>
+	
+	<sam-box>
+		<sam-layout pattern="media" margin="bottom">
+			<sam-layout-img aligned="center">
+				<div class="sam image caption">
+					<span>FPDS.gov</span>
+				</div>
+			</sam-layout-img>
+			<sam-layout-content>
+				<sam-title importance="normal" weight="normal">
+					Contract Data
+				</sam-title>
+				<p class="sam paragraph remove margin">
+					Contract actions that have an estimated value of $3,000 or more. Contract actions include definitive contracts, indefinite delivery vehicles(IDVs), delivery orders, purchase orders, contract modifications and other types of contract actions.
+				</p>
+			</sam-layout-content>
+		</sam-layout>
+	</sam-box>
+	
+	<sam-box type="secondary">
+		<sam-layout pattern="media">
+			<sam-layout-img aligned="center">
+				<div class="sam image caption">
+					<span>WDOL.gov</span>
+				</div>
+			</sam-layout-img>
+			<sam-layout-content>
+				<sam-title importance="normal" weight="normal">
+					Wage Determinations
+				</sam-title>
+				<p class="sam paragraph remove margin">
+					Wage determinations provide the required wage rates and fringe benefit rates that must be met on federal procurement contracts for each labor category covered by the Davis Bacon Act or the Service Contract Act as determined by the U.S. Department of Labor.
+				</p>
+			</sam-layout-content>
+		</sam-layout>
+	</sam-box>
+	
+	<sam-title importance="high" weight="normal">
+		Assistance & Acquisition
+	</sam-title>
+	<sam-box type="secondary">
+		<sam-layout pattern="media" margin="bottom">
+			<sam-layout-img aligned="center">
+				<div class="sam image caption">
+					<span>SAM.gov</span>
+				</div>
+			</sam-layout-img>
+			<sam-layout-content>
+				<sam-title importance="normal" weight="normal">
+					Entity Information
+				</sam-title>
+				<p>
+					<strong>Entity Registration.</strong> Anyone who wants to be considered for a federal award (acquisition awards, assistance awards, or both).
+				</p>
+				<p class="sam paragraph remove margin">
+					<strong>Exclusions.</strong> Exclusions declare individuals, firms, and others ineligible from receiving certain federal awards.
+				</p>
+			</sam-layout-content>
+		</sam-layout>
+	</sam-box>
+	
+	<sam-box>
+		<sam-layout pattern="media">
+			<sam-layout-img aligned="center">
+				<div class="sam image"></div>
+			</sam-layout-img>
+			<sam-layout-content>
+				<sam-title importance="normal" weight="normal">
+					Federal Hierarchy
+				</sam-title>
+				<p class="sam paragraph remove margin">
+					Wage determinations provide the required wage rates and fringe benefit rates that must be met on federal procurement contracts for each labor category covered by the Davis Bacon Act or the Service Contract Act as determined by the U.S. Department of Labor.
+				</p>
+			</sam-layout-content>
+		</sam-layout>
+	</sam-box>
+	
 </sam-page>

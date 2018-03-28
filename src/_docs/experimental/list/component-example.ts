@@ -15,17 +15,11 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example_1 = `
-<sam-list [items]="listData"></sam-list>
-`;
+var code_example_1 = ``;
 
-var code_example_2 = `
-<sam-list [items]="listLinkData"></sam-list>
-`;
+var code_example_2 = ``;
 
-var code_example_3 = `
-<sam-list [items]="listIconData"></sam-list>
-`;
+var code_example_3 = ``;
 
 @Component({
 	selector: 'doc-sam-list',

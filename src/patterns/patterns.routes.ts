@@ -2,7 +2,7 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PatternsComponent } from './patterns.component';
-import { PatternsHomeComponent } from './patterns-home.component';
+import { PatternsHomeComponent } from './home/patterns-home.component';
 
 import { HomeComponent } from './version-1/patterns-home.component';
 import { StarterPageComponent } from './version-1/starter-page.component';
@@ -15,7 +15,7 @@ import { TitleOptionsPageCodeComponent  } from './version-1/title-options.compon
 
 const patternsRoutes: Routes = [
   {
-    path: 'pages',
+    path: 'page',
     loadChildren: './pages/pages.module#PagesModule'
   },
   {

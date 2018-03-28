@@ -17,7 +17,7 @@ import { TitleOptionsPageCodeComponent  } from './version-1/title-options.compon
 
 
 import { PatternsComponent } from './patterns.component';
-import { PatternsHomeComponent } from './patterns-home.component';
+import { PatternsHomeComponent } from './home/patterns-home.component';
 
 @NgModule({
   declarations: [

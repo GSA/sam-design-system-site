@@ -1,0 +1,24 @@
+.prototype-main-nav{
+  background-color: white;
+  color: #16243A;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: space-between;
+  border: 2px solid rgba(207, 215, 223, 0.25);
+}
+
+.prototype-main-nav-menu{
+  display: flex;
+  align-items: center;
+  & > svg{
+    margin-left: 1.5rem;
+  }
+}
+
+.prototype-main-nav-search{
+  svg{
+    padding-left: 1rem;
+  }
+}

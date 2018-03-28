@@ -1,0 +1,234 @@
+<div class="search-mobile-page">
+  <div class="filter-screen-large">
+    <h4 class="sam-ui header">
+      Selected
+    </h4>
+    <div class="selected-filters">
+      <!-- <strong>Filters </strong> -->
+      <a class="sam-ui mini label">
+        Status: Active
+        <i class="icon close fa fa-times"></i>
+      </a>
+      
+      <a class="sam-ui mini label">
+        Domain: Assistance
+        <i class="icon close fa fa-times"></i>
+      </a>
+      
+      <a class="sam-ui mini label">
+        Location: Clement, OH
+        <i class="icon close fa fa-times"></i>
+      </a>
+    </div>
+    <h4 class="sam-ui header">
+      Add
+    </h4>
+    <div class="mask-menu">
+      <ul>
+        <li><a class="current">Filter 1</a></li>
+        <li><a>Filter 2</a></li>
+        <li><a>Filter 3</a></li>
+        <li><a>Filter 4</a></li>
+        <li><a>Filter 5</a></li>
+      </ul>
+    </div>
+    <div class="filter">
+      <span class="title small"></span>
+      <span class="checkbox large"></span>
+    </div>
+    <div class="filter">
+      <span class="title medium"></span>
+      <span class="input"></span>
+      <span class="input"></span>
+    </div>
+    <a class="sam-ui primary button">
+      <div class="sam-ui mini circular label">
+        3
+      </div>
+      <i class="fa fa-save"></i>
+      Save
+    </a>
+    <a class="sam-ui button">
+      <i class="fa fa-undo"></i>
+      Reset
+    </a>
+  </div>
+  <div class="content">
+    <div class="mask-menu">
+      <ul>
+        <li><a>All</a></li>
+        <li><a class="current">Assistance</a></li>
+        <li><a>Contracting</a></li>
+        <li><a>Entity Data</a></li>
+        <li><a>Agencies</a></li>
+        <li><a>Analytics</a></li>
+        <li><a>Help</a></li>
+        <li><a>Directories</a></li>
+      </ul>
+    </div>
+    
+    <div class="results-options">
+      <span class="showing-text">
+        1-10 of 20,643,214 results
+      </span>
+      <div class="sort">
+        <strong>Sort by</strong>
+        <select>
+          <option value="1">Relevance</option>
+          <option value="2">Title: A to Z</option>
+          <option value="2">Title: Z to A</option>
+          <option value="3">Date Modified: New to Old</option>
+          <option value="4">Date Modified: Old to New</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="search-results-mobile">
+      <div class="search-result">
+        <h4 class="sam-ui header">
+          <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam
+          elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis
+          est, vel luctus lacus. Maecenas non libero quis libero ullamcorper
+          posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque
+          ante.
+        </p>
+      </div>
+      
+      <div class="search-result">
+        <h4 class="sam-ui header">
+          <a>Cras condimentum, tellus a euismod sollicitudin</a>
+        </h4>
+        <p>
+          Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu.
+          Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante,
+          sed viverra purus eros id urna. Nam tristique rutrum enim, sagittis
+          lobortis nisi porta eu. Praesent in dictum purus, ut hendrerit mi.
+        </p>
+      </div>
+      
+      <div class="search-result">
+        <h4 class="sam-ui header">
+          <a>Duis non justo velit. Etiam risus lacus, posuere</a>
+        </h4>
+        <p>
+          Cras maximus purus eget eros varius iaculis. Aenean velit lectus,
+          vehicula eu tincidunt a, semper sed dui. Etiam eget nunc rhoncus,
+          lacinia erat et, tristique erat.
+        </p>
+      </div>
+      
+      <div class="search-result">
+        <h4 class="sam-ui header">
+          <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam
+          elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis
+          est, vel luctus lacus. Maecenas non libero quis libero ullamcorper
+          posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque
+          ante.
+        </p>
+      </div>
+      
+      <div class="search-result">
+        <h4 class="sam-ui header">
+          <a>Cras condimentum, tellus a euismod sollicitudin</a>
+        </h4>
+        <p>
+          Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu.
+          Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante,
+          sed viverra purus eros id urna.
+        </p>
+      </div>
+      
+      <div class="search-result">
+        <h4 class="sam-ui header">
+          <a>Duis non justo velit. Etiam risus lacus, posuere</a>
+        </h4>
+        <p>
+          Cras maximus purus eget eros varius iaculis. Aenean velit lectus,
+          vehicula eu tincidunt a, semper sed dui. Etiam eget nunc rhoncus,
+          lacinia erat et, tristique erat.
+        </p>
+      </div>
+    </div>
+    
+    <div class="filter-options" *ngIf="this.clicked == 1">
+      <div class="reset-filters">
+        <i class="fa fa-undo fa-lg"></i>
+      </div>
+      <div class="save-filters">
+        <div class="sam-ui mini circular label">
+          3
+        </div>
+        <i class="fa fa-save fa-lg"></i>
+      </div>
+    </div>
+    
+    <div class="filter-button" (click)="clickFilter($event)">
+      <ng-container *ngIf="this.clicked == 2">
+        <i class="fa fa-times"></i>
+      </ng-container>  
+      <ng-container *ngIf="this.clicked == 1">
+        <i class="fa fa-plus"></i>
+      </ng-container>  
+      <ng-container *ngIf="this.clicked == 0">
+        <div class="sam-ui mini circular label">
+          3
+        </div>
+        <sam-icon name="filter"></sam-icon>
+      </ng-container>  
+    </div>
+    
+    
+    <div class="overlay-screen" *ngIf="this.clicked == 2"></div>
+    
+    <div class="filter-screen" [@filters]="filterState">
+      <h4 class="sam-ui header">
+        Selected
+      </h4>
+      <div class="selected-filters">
+        <!-- <strong>Filters </strong> -->
+        <a class="sam-ui mini label">
+          Status: Active
+          <i class="icon close fa fa-times"></i>
+        </a>
+        
+        <a class="sam-ui mini label">
+          Domain: Assistance
+          <i class="icon close fa fa-times"></i>
+        </a>
+        
+        <a class="sam-ui mini label">
+          Location: Clement, OH
+          <i class="icon close fa fa-times"></i>
+        </a>
+      </div>
+      <h4 class="sam-ui header">
+        Add
+      </h4>
+      <div class="mask-menu">
+        <ul>
+          <li><a class="current">Filter 1</a></li>
+          <li><a>Filter 2</a></li>
+          <li><a>Filter 3</a></li>
+          <li><a>Filter 4</a></li>
+          <li><a>Filter 5</a></li>
+        </ul>
+      </div>
+      <div class="filter">
+        <span class="title small"></span>
+        <span class="checkbox large"></span>
+      </div>
+      <div class="filter">
+        <span class="title medium"></span>
+        <span class="input"></span>
+        <span class="input"></span>
+      </div>
+    </div>
+  </div>
+  
+</div>

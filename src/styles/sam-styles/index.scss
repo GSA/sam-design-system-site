@@ -1,0 +1,34 @@
+/*-------------------
+       Reset 
+--------------------*/
+/* Move normalize to be inside the folder */
+@import "reset";
+
+/*-------------------
+      Settings 
+--------------------*/
+@import "settings";
+
+/*-------------------
+    Components 
+--------------------*/
+@import "master";
+@import "page";
+@import "title";
+@import "icon";
+@import "box";
+@import "button";
+@import "list";
+@import "video";
+@import "layout";
+@import "search";
+@import "input";
+@import "breadcrumbs";
+@import "label";
+@import "image";
+@import "container";
+
+/*-----------------------
+    Components Legacy
+------------------------*/
+@import "components/bread-crumbs";

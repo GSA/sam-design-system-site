@@ -1,23 +1,4 @@
-<header class="site-header">
-  <nav class="site-nav">
-    <div class="container">
-      <a class="home" [routerLink]="['/']">
-        SAM Web Design System
-      </a>
-      <div class="mask-container">
-        <ul>
-          <li>
-            <a [routerLink]="['/patterns/v1/home']">Patterns</a>
-          </li>
-          <li>
-            <a [routerLink]="['/overview/getting-started']">Documentation</a>
-          </li>
-        </ul>
-      </div>
-      <div class="separator"></div>
-    </div>
-  </nav>
-</header>
+<site-header></site-header>
 
 <div class="usa-grid">
 
@@ -64,29 +45,4 @@
 </div>
 
 
-<footer class="site-footer">
-  <nav class="container">
-    <ul>
-      <li>
-        <a [routerLink]="['overview/getting-started']">
-          Documentation
-        </a>
-      </li>
-      <li>
-        <a [routerLink]="['/patterns/v1/home']">
-          Patterns
-        </a>
-      </li>
-      <li>
-        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements">
-          SAM-UI Elements
-        </a>
-      </li>
-      <li>
-        <a href="https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site">
-          SAM Web Design System
-        </a>
-      </li>
-    </ul>
-  </nav>
-</footer>
+<site-footer></site-footer>

@@ -16,27 +16,27 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 var code_example_1 = `
-<sam-heading importance="highest" text="Lorem Ipsum Dolor"></sam-heading>
+<sam-title importance="highest" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
 var code_example_2 = `
-<sam-heading importance="high" text="Lorem Ipsum Dolor"></sam-heading>
+<sam-title importance="high" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
 var code_example_3 = `
-<sam-heading importance="normal" text="Lorem Ipsum Dolor"></sam-heading>
+<sam-title importance="normal" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
 var code_example_4 = `
-<sam-heading importance="low" text="Lorem Ipsum Dolor"></sam-heading>
+<sam-title importance="low" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
 var code_example_5 = `
-<sam-heading importance="highest" sup="Sit amet" text="Lorem Ipsum Dolor"></sam-heading>
+<sam-title importance="highest" sup="Sit amet" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
 var code_example_6 = `
-<sam-heading importance="low" icon="user" text="Lorem Ipsum Dolor"></sam-heading>
+<sam-title importance="low" icon="user" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
 @Component({

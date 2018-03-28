@@ -1,0 +1,231 @@
+.search-results-page{
+  .search-header{
+      padding: .5em 1em;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+  }
+  .search-results-main{
+      display: flex;
+  }
+  .search-results-filters{
+      display: none;
+  }
+  @media only screen and (min-width: 600px){
+      .search-results-filters{
+          display: block;
+          background-color: #f1f1f1;
+          .filter{
+              border-bottom: 1px solid #d2d2d2;
+              padding-bottom: 1em;
+              margin: 1em;
+              .title{
+                  display: block;
+                  background-color: #cecdcd;
+                  height: 1.2em;
+                  margin-bottom: 10px;
+              }
+              .title.medium{
+                  width: 200px;
+              }
+              .title.small{
+                  width: 150px;
+              }
+              .checkbox{
+                  display: block;
+                  height: 1.3em;
+                  width: 1.3em;
+                  background-color: white;
+                  margin-bottom: 8px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  &:after{
+                      content: ' ';
+                      display: block;
+                      height: 1.3em;
+                      margin-left: 1.5em;
+                      width: 200px;
+                      background-color: #ddd;
+                  }
+              }
+              .checkbox.large{
+                  &:after{
+                      width: 235px !important;
+                  }
+              }
+              .checkbox.small{
+                  &:after{
+                      width: 150px !important;
+                  }
+              }
+              .input{
+                  background-color: white;
+                  margin-bottom: 8px;
+                  display: block;
+                  border-radius: 2px;
+                  height: 1.8em;
+                  border: 1px solid #ccc;
+              }
+          }
+          .filter-slide{
+              margin: 1em;
+              overflow: hidden;
+              border-bottom: 1px solid #d2d2d2;
+              padding-bottom: 1em;
+              h4{
+                  font-size: 17px;
+              }
+              a.parent{
+                  display: block;
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  i{
+                      padding-left: 5px;
+                      padding-right: 5px;
+                  }
+              }
+              .current{
+                  cursor: default;
+                  color: black;
+              }
+              label{
+                  font-size: 16px;
+                  display: inline-block;
+                  margin: 0;
+                  padding-left: 5px;
+              }
+              label::before{
+                  content: none;
+              }
+              input[type="checkbox"]{
+                  position: static;
+                  opacity: 1;
+                  margin: 0;
+                  height: 15px;
+                  display: inline-block;
+                  width: auto;
+                  &:focus{
+                      box-shadow: none;
+                  }
+              }
+          }
+      }
+  }
+  
+  .search-results-content{
+      margin: 1em;
+      .search-result{
+          h4{
+              margin-bottom: 5px;
+              letter-spacing: 0;
+              a{
+                  font-weight: 600;
+              }
+          }
+          margin-bottom: 1.5em;
+          p{
+              max-width: 850px;
+          }
+      }
+      .results-header{
+          display: none;
+      }
+      @media only screen and (min-width: 600px){
+          .results-header{
+              display: flex;
+              justify-content: space-between;
+              .showing-text{
+                  font-size: 16px;
+              }
+              .sort{
+                  display: flex;
+                  padding-right: 15px;
+                  font-size: 15px;
+                  select{
+                      -webkit-appearance: menulist;
+                      -moz-appearance: menulist; 
+                      appearance: menulist; 
+                      background-color: initial;
+                      height: 1.5em;
+                      font-size: 1.6rem;
+                      padding: 0;
+                      margin: 1px 0 0 5px;
+                      width: auto;
+                      vertical-align: baseline;
+                  }
+              }
+          }
+      }
+      .keyword{
+          display: flex;
+          span{
+              margin-top: 6px;
+              font-weight: 600;
+              margin-right: 10px;
+          }
+          & > div{
+              border: 1px solid #c7c7c7;
+              width: 88%;
+              margin-bottom: 1em;
+              padding: .3em;
+              font-size: 16px;
+              font-weight: 600;
+              background-color: #f9f9f9;
+          }
+      }
+      .selected-filters{
+          display: none;
+      }
+      @media only screen and (min-width: 600px){
+          .selected-filters{
+              display: block;
+              margin-bottom: 1.8em;
+              position: relative;
+              .options{
+                  font-size: 15px;
+                  a{
+                      padding-left: 7px;
+                  }
+              }
+          }
+      }
+      .search-result-loading-container{
+          position: absolute;
+          width: 800px;
+      }
+      .search-result-loading{
+          margin-bottom: 1.5em;
+          opacity: 0;
+          .title{
+              display: block;
+              height: 1.3em;
+              margin-bottom: 10px;
+              border-radius: 2px;
+              width: 70%;
+              background: linear-gradient(to right, #ececec, #e7e7e7);
+              background-size: 400% 400%;
+              animation: Gradient 3s ease infinite;
+              border: 1px solid #e2e2e2;
+          }
+          .line{
+              display: block;
+              height: 1.2em;
+              margin-bottom: 9px;
+              background: linear-gradient(to right, #ffffff, #d4d4d4);
+              background-size: 400% 400%;
+              animation: Gradient 3s ease infinite;
+              border-radius: 2px;
+              border: 1px solid #e2e2e2;
+              &.random-1{
+                  width: 94%;
+              }
+              &.random-2{
+                  width: 92%;
+              }
+              &.random-3{
+                  width: 95%;
+              }
+          }
+      }
+  }
+}

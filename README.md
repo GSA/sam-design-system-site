@@ -20,7 +20,7 @@ npm link sam-ui-elements
 npm run start
 ```
 
-For builds, update of `sam-ui-elements` version in the Dockerfile. Run this command know the available tags:
+For builds, update of `sam-ui-elements` version in the Dockerfile. Run this command to see the available tags:
 
 ```
 npm dist-tag ls sam-ui-elements --registry https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm

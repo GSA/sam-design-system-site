@@ -10,9 +10,7 @@ import {
 
 @Component({
   template:  `
-  <div class="prototype-page">
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
   <div class="patterns-menu">
     <a routerLink="/prototypes">Prototypes Home</a>
     <span class="patterns-menu-divider"></span>

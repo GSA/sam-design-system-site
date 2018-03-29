@@ -1,0 +1,16 @@
+input[type="radio"].sam.transition{
+  opacity: 1;
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  margin: 0;
+  position: static;
+  max-width: none;
+  cursor: default;
+  height: auto;
+  display: inline-block;
+  width: auto;
+}
+
+input[type="radio"].sam.transition:focus{
+  box-shadow: none;
+}

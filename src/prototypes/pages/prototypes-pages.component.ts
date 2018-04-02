@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
   <div class="patterns-menu">
     <a routerLink="/prototypes">Prototypes Home</a>
     <span class="patterns-menu-divider"></span>
-    Page
     <select class="sam transition" [(ngModel)]="selectedOption" (ngModelChange)="navigateTo()">
       <option *ngFor="let option of options" [ngValue]="option">{{ option.name }}</option>
     </select>

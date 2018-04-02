@@ -1,109 +1,107 @@
-<div class="prototype-picker">
-  
-  <sam-title importance="normal">
-    Picker
-  </sam-title>
-  
-  <div class="sam search">
-    <input class="sam transition input" type="search" placeholder="Search">
-    <button class="sam transition button left attached">
-      <sam-icon name="search"></sam-icon>
-    </button>
-  </div>
-  
-  <div class="picker-radios">
-    <span>
-      <input class="sam transition" type="radio" id="search-all"name="search" value="all" checked>
-      <label class="sam transition" for="search-all">Search All</label>
-    </span>
-    <span>
-      <input class="sam transition" type="radio" id="search-here" name="search" value="here">
-      <label class="sam transition" for="search-here">
-        Search here
-      </label>
-    </span>
-  </div>
-  
-  <div class="picker-crumbs">
-    Most searched
-  </div>
-  
-  <div class="picker-results">
-    <div class="picker-results-wrapper-2">
-      <a>
-        Action
-        <span>Department</span>
-      </a>
-      <a>
-        United States Information Agency
-        <span>Agency</span>
-      </a>
-      <a routerLink="/prototypes/component/picker-2">
-        Office of Intergovernmental Relations
-        <span>Office</span>
-      </a>
-      <a>
-        Bureau of Radiological Health
-        <span>Department</span>
-      </a>
-      <a>
-        Office of Human Development Services
-        <span>Agency</span>
-      </a>
-      <a>
-        U.S. Postal Service
-        <span>Department</span>
-      </a>
-      <a>
-        Old West Regional Commission
-        <span>Department</span>
-      </a>
-      <a>
-        Health Care Financing Administration
-        <span>Department</span>
-      </a>
-      <a routerLink="/prototypes/component/picker-3">
-        Interstate Commerce Commission
-        <span>Department</span>
-      </a>
-      <a>
-        Smithsonian Institution
-        <span>Office</span>
-      </a>
-      <a>
-        Interstate Commerce Commission
-        <span>Office</span>
-      </a>
-      <a>
-        Action
-        <span>Department</span>
-      </a>
-      <a>
-        United States Information Agency
-        <span>Agency</span>
-      </a>
-      <a>
-        Office of Intergovernmental Relations
-        <span>Office</span>
-      </a>
-      <a>
-        Bureau of Radiological Health
-        <span>Department</span>
-      </a>
-    </div>
-  </div>
-  
-  <br>
-  
-  <div class="picker-footer">
-    <button class="sam button disabled" type="button">Add</button>
-  </div>
-  
+<div class="prototype-picker-filter">
+  <label class="sam transition" for="agency-picker">
+    Federal Organizations 
+    (<a (click)="openModal()">Unsure?</a>)
+  </label>
+  <select class="sam transition" id="agency-picker" name="agency">
+    <option value="" selected disabled hidden>Search...</option>
+    <option>Action</option>
+    <option>United States Information Agency</option>
+    <option>Office of Intergovernmental Relations</option>
+    <option>Bureau of Radiological Health</option>
+    <option>Office of Human Development Services</option>
+    <option>U.S. Postal Service</option>
+    <option>Old West Regional Commission</option>
+    <option>Health Care Financing Administration</option>
+    <option>Interstate Commerce Commission</option>
+    <option>Smithsonian Institution</option>
+  </select>
 </div>
 
 
-
-
-
-
-<br><br><br>
+<div class="prototype-picker-overlay" *ngIf="showOverlay">
+  
+  <div class="prototype-picker">
+    
+    <sam-title importance="normal">
+      Search Federal Organizations
+    </sam-title>
+    
+    <div class="sam search">
+      <input class="sam transition input" type="search" placeholder="Search">
+      <button class="sam transition button left attached">
+        <sam-icon name="search"></sam-icon>
+      </button>
+    </div>
+    
+    <div class="picker-radios">
+      <span>
+        <input class="sam transition" type="radio" id="search-all"name="search" value="all" checked>
+        <label class="sam transition" for="search-all">Search All</label>
+      </span>
+      <span>
+        <input class="sam transition" type="radio" id="search-here" name="search" value="here">
+        <label class="sam transition" for="search-here">
+          Search here
+        </label>
+      </span>
+    </div>
+    
+    <div class="picker-crumbs">
+      Most searched
+    </div>
+    
+    <div class="picker-results">
+      <div class="picker-results-wrapper-2">
+        <a>
+          Action
+          <span>Department</span>
+        </a>
+        <a>
+          United States Information Agency
+          <span>Agency</span>
+        </a>
+        <a routerLink="/prototypes/component/picker-2">
+          Department of Defense
+          <span>Department</span>
+        </a>
+        <a>
+          Bureau of Radiological Health
+          <span>Department</span>
+        </a>
+        <a>
+          Office of Human Development Services
+          <span>Agency</span>
+        </a>
+        <a>
+          U.S. Postal Service
+          <span>Department</span>
+        </a>
+        <a>
+          Old West Regional Commission
+          <span>Department</span>
+        </a>
+        <a>
+          Health Care Financing Administration
+          <span>Agency</span>
+        </a>
+        <a routerLink="/prototypes/component/picker-3">
+          Interstate Commerce Commission
+          <span>Department</span>
+        </a>
+        <a>
+          Smithsonian Institution
+          <span>Office</span>
+        </a>
+      </div>
+    </div>
+    
+    <br>
+    
+    <div class="picker-footer">
+      <button class="sam button disabled" type="button">Add</button>
+    </div>
+    
+  </div>
+  
+</div>

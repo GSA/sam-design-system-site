@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { 
+  Router, 
+  NavigationEnd,
+  UrlTree,
+  UrlSegmentGroup,
+  UrlSegment, 
+  PRIMARY_OUTLET 
+} from '@angular/router';
 
 @Component({
   template:  `
@@ -10,9 +17,10 @@ import { Router } from '@angular/router';
     <div class="patterns-menu">
       <a routerLink="/patterns/latest/home">Patterns Home</a>
       <span class="patterns-menu-divider"></span>
-      Page
-      <select class="sam transition" [(ngModel)]="selectedValue" (ngModelChange)="navigateTo()">
-        <option *ngFor="let page of pages" [ngValue]="page">{{ page.name }}</option>
+      <select class="sam transition" [(ngModel)]="selectedOption" (ngModelChange)="navigateTo()">
+        <option *ngFor="let option of options" [ngValue]="option">
+          {{ option.name }}
+        </option>
       </select>
       <span class="patterns-menu-divider"></span>
       <a>Implementation</a>
@@ -21,19 +29,42 @@ import { Router } from '@angular/router';
 })
 export class PagesComponent {
 
-  constructor( private router: Router){}
+  selectedOption:any;
 
-  pages = [
-    { name: "A", value: "a" },
-    { name: "B", value: "b" }
+  options = [
+    { name: "User Account", value: "a" },
+    { name: "Award Domains", value: "b" }
   ];
 
-  selectedValue:any;
+  routerSubscription: any;
+
+  constructor(private router: Router){
+    this.routerSubscription = router.events.subscribe(event => {
+      if (event instanceof NavigationEnd ) {
+        const tree: UrlTree = router.parseUrl(event.url);
+        const group: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+        const segment: UrlSegment[] = group.segments;
+        this.selectOption(segment[2].path);
+      }
+    });
+  }
+
+  selectOption(value){
+    this.options.forEach(option => {
+      if(option.value === value){
+        this.selectedOption = option;
+      }
+    });
+  }
 
   navigateTo(){
-    if(this.selectedValue.value){
-      this.router.navigate([`/patterns/page/${this.selectedValue.value}`]);
+    if(this.selectedOption.value){
+      this.router.navigate([`/patterns/page/${this.selectedOption.value}`]);
     }
+  }
+
+  ngOnDestroy() {
+    this.routerSubscription.unsubscribe();
   }
 
 }

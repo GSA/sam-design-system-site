@@ -12,9 +12,8 @@ import {
   template:  `
   <router-outlet></router-outlet>
   <div class="patterns-menu">
-    <a routerLink="/prototypes">Prototypes Home</a>
+    <a routerLink="/prototypes">Prototypes</a>
     <span class="patterns-menu-divider"></span>
-    Component
     <select class="sam transition" [(ngModel)]="selectedOption" (ngModelChange)="navigateTo()">
       <option *ngFor="let option of options" [ngValue]="option">
         {{ option.name }}

@@ -1,13 +1,29 @@
 /**********************************************
-              PICKER
+PICKER
 ***********************************************/
+.prototype-picker-filter{
+  padding: 1rem;
+  label{
+    display: block !important;
+  }
+}
+
+.prototype-picker-overlay{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
 .prototype-picker{
-  width:500px;
-  margin: 4rem auto;
+  width:600px;
+  margin-top: -10rem;
   padding: 2rem;
   background-color: white;
-
   border-radius: .3rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
   will-change: transform;
@@ -49,18 +65,22 @@
 
 .picker-results{
   width: 100%;
-  overflow-x: scroll;
+  max-height: 300px;
+  padding: 3px 0;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
 }
-.picker-results:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 13%;
-  height: 285px;
-  bottom: 85px;
-  right: 14px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
-}
+
 .picker-results-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +99,7 @@
     }
   }
 }
+
 .picker-result{
   background-color: #f3eee7;
   padding: 1rem 3rem;
@@ -125,13 +146,10 @@
 
 .picker-results-wrapper-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  grid-gap: 2px;
-  //grid-auto-rows: minmax(80px, auto);
-  width: 1000px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-gap: 4px;
   a{
     display: block;
-    margin: 3px;
     color: black;
     font-size: 15px;
     line-height: 1.2em;
@@ -140,13 +158,17 @@
     border: 1px solid #f3eee7;
     border-radius: 2px;
     overflow: hidden;
-  text-overflow: ellipsis;
+    text-overflow: ellipsis;
     span{
       display: block;
       font-size: 14px;
       font-weight: normal;
     }
+    .normal{
+      font-weight: 400;
+    }
   }
+  a.active,
   a:hover{
     border: 1px solid #1abce0;
     text-decoration: none;

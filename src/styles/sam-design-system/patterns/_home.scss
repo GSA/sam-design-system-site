@@ -25,7 +25,7 @@ ol.row{
   text-decoration: none;
 }
 .card-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
   color: #16243A;
   font-size: 1em;
   line-height: 1.25;
@@ -102,7 +102,6 @@ ol.row{
       width: 28.030304%;
   }
 }
-
 
 .patterns-menu{
   color: white;

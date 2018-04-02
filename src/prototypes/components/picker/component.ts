@@ -1,9 +1,22 @@
-import { Component} from '@angular/core';
+import { Component, HostListener} from '@angular/core';
 
 @Component({
   templateUrl: 'template.html'
 })
-export class PickerComponent {}
+export class PickerComponent {
+
+  @HostListener('click', ['$event']) onClick($event) {
+    let target = $event.target.className;
+    this.showOverlay = target === "prototype-picker-overlay" ? false : true;
+   }
+
+  showOverlay: boolean = true;
+  
+  openModal(){
+    this.showOverlay = true;
+  }
+
+}
 
 
 @Component({

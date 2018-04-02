@@ -16,7 +16,12 @@
  * Removes overwrites that happen in sam-front-end layer
  */
 
+@import "transition/input";
 @import "transition/select";
+@import "transition/radio";
+@import "transition/label";
+@import "transition/button";
+@import "transition/title";
 
 /* SAM Design System Pages
    ========================================================================== */
@@ -44,7 +49,6 @@
  */
 
 @import "sam-design-system/patterns/home";
-
 
 /**
  * Components

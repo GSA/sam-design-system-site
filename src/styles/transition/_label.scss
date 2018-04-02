@@ -1,0 +1,7 @@
+label.sam.transition{
+  display: inline;
+}
+
+label.sam.transition::before{
+  content: none;
+}

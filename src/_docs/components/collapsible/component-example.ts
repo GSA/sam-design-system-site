@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<sam-collapsible [label]="'Test Label'">
   <h1>I got projected in here</h1>
 </sam-collapsible>`;
@@ -20,6 +24,19 @@ var code_example = `<sam-collapsible [label]="'Test Label'">
 export class CollapsibleExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamCollapsibleComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+
+  example = code_example;
+  
+
+  public base = '_docs/components/collapsible/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

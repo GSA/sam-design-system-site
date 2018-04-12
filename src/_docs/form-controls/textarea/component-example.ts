@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<sam-text-area
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"
@@ -33,7 +37,7 @@ export class TextareaExampleComponent extends BaseExampleComponent implements On
   };
   typedoc_target = "SamTextareaComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+
 	example = `<samTextArea
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"
@@ -42,4 +46,16 @@ export class TextareaExampleComponent extends BaseExampleComponent implements On
   [errorMessage]="textareaConfig.errorMessage"
   [disabled]="textareaConfig.disabled">
 </samTextArea>`;
+
+  public base = '_docs/form-controls/textarea/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

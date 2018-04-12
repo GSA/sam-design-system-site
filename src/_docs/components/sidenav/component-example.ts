@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
 
 @Component({
@@ -18,8 +22,17 @@ See sidenav on the left
 export class SidenavExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamSidenavComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
   example = code_example;
-  design = require("html-loader!markdown-it-loader!./design.md");
-  guidance = require("html-loader!markdown-it-loader!./guidance.md");
+
+  public base = '_docs/components/sidenav/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

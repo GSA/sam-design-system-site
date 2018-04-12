@@ -1,0 +1,120 @@
+.grid-name {
+  float: left;
+  width: 75%;
+}
+
+.grid-name1 {
+  float: left;
+  width: 60%;
+}
+
+.grid-date {
+  float: left;
+  width: 25%;
+}
+
+.grid-date1 {
+  float: left;
+  width: 40%;
+}
+
+
+.grid-desc {
+  float: left;
+  width: 100%;
+}
+
+.grid-overview1 {
+  color: red;
+}
+
+.grid-overview2 {
+  position: absolute;
+  right: 0;
+}
+
+.p_L-0x {
+  padding-left: 0;
+}
+
+.p_R-0x {
+  padding-right: 0;
+  text-align: right;
+}
+
+.ul-css {
+  list-style-type: none;
+}
+
+.grid-name-static {
+  float: left;
+  width: 70%;
+}
+
+.grid-date-static {
+  width: 25%;
+  float: right;
+  text-align: right;
+}
+
+.grid-overview-star {
+  width: 5%;
+  float: right;
+  text-align: right;
+}
+
+.report-li {
+  line-height: 1.5;
+  margin-bottom: 2.5em;
+}
+
+.report-padding-top-50 {
+  padding-top: 50px;
+}
+
+.full-width{
+  .usa-alert{
+    display:block;
+  }
+}
+
+.report__prompts {
+  div.usa-accordion-content {
+    position: relative;
+  }
+
+  .report__additionalprompts {
+    margin-top: .5em;
+    padding-bottom: 5em;
+  }
+
+  .report__promptBtns {
+    position: absolute;
+    bottom: 2.25em;
+    right: 1.25em;
+  }
+
+  .includesBases label {
+    margin-top: 0;
+  }
+
+  label[for=contractingRegion],
+  label[for=orgCode],
+  label[for=includesBases],
+  label[for=agencyName] {
+    font-weight: 600;
+  }
+  label[for=includesBases] {
+    margin-top: 25px;
+  }
+  label[for=agencyName] {
+   margin-top: 3.9rem;
+  }
+  .usa-additional_text {
+    padding-left: .5rem;
+  }
+}
+
+.reportCount {
+  padding-bottom: 2em;
+}

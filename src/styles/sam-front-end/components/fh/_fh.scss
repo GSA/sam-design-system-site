@@ -1,0 +1,69 @@
+@import 'fh-sidenav';
+
+.federal-hierarchy{
+  .fa-search{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    font-size: 150%;
+  }
+
+  .federal-hierarchy-org-item{
+    border-bottom: 2px solid $color-gray-medium;
+    padding: 10px 0 10px 0;
+  }
+
+  .org-description{
+    color: $color-black;
+    font-weight: 600;
+  }
+
+  .org-type-select{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  .federal-hierarchy-org-cbx{
+    width: 40px;
+  }
+
+  .cbx-label{
+    position: absolute;
+    right: 10000px;
+  }
+
+  .my-org-cbx-block{
+    width: 200px;
+  }
+
+  .federal-hierarchy-org-admin-section{
+    margin-top: 20px;
+    border: 2px solid $color-gray-medium;
+
+    .title-section{
+      padding: 10px 20px 10px 20px;
+      border-bottom: 2px solid $color-gray-medium;
+    }
+
+    .org-logo-image{
+      max-width: 100%;
+    }
+
+    .org-logo-container{
+      padding: 15px 20px 10px 20px;
+    }
+  }
+
+  .federal-hierarchy-org-admin-title{
+    text-decoration: underline;
+    font-size: 150%;
+  }
+
+  .federal-hierarchy-org-item-title{
+    text-decoration: underline;
+  }
+}

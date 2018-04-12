@@ -1,0 +1,91 @@
+<div class="prototype-picker-filter">
+  <label class="sam transition" for="agency-picker">
+    Federal Organizations 
+    (<a (click)="openModal()">Unsure?</a>)
+  </label>
+  <select class="sam transition" id="agency-picker" name="agency">
+    <option value="" selected disabled hidden>Search...</option>
+    <option>Action</option>
+    <option>United States Information Agency</option>
+    <option>Office of Intergovernmental Relations</option>
+    <option>Bureau of Radiological Health</option>
+    <option>Office of Human Development Services</option>
+    <option>U.S. Postal Service</option>
+    <option>Old West Regional Commission</option>
+    <option>Health Care Financing Administration</option>
+    <option>Interstate Commerce Commission</option>
+    <option>Smithsonian Institution</option>
+  </select>
+</div>
+
+
+<div class="prototype-picker-overlay">
+  
+  <div class="prototype-picker">
+    
+    <sam-title importance="normal">
+      Search Federal Organizations
+    </sam-title>
+    
+    <div class="sam search">
+      <input class="sam transition input" type="search" placeholder="Search">
+      <button routerLink="/prototypes/component/picker-5" class="sam transition button left attached">
+        <sam-icon name="search"></sam-icon>
+      </button>
+    </div>
+    
+    <div class="picker-radios">
+      <span>
+        <input class="sam transition" type="radio" id="search-all"name="search" value="all">
+        <label class="sam transition" for="search-all">Search All</label>
+      </span>
+      <span>
+        <input class="sam transition" type="radio" id="search-here" name="search" value="here" checked>
+        <label class="sam transition" for="search-here">
+          Search here
+        </label>
+      </span>
+    </div>
+    
+    <div class="picker-crumbs">
+      <a routerLink="/prototypes/component/picker-2">Department of Defense</a> / 
+      Agencies
+    </div>
+    
+    <div class="picker-results">
+      <div class="picker-results-wrapper-2">
+        <a>Defense Advanced Research Projects Agency</a>
+        <a>Defense Commissary Agency</a>
+        <a>Defense Contract Audit Agency</a>
+        <a routerLink="/prototypes/component/picker-4">Defense Contract Management Agency</a>
+        <a>Defense Finance and Accounting Service</a>
+        <a>Defense Health Agency</a>
+        <a>Defense Information Systems Agency</a>
+        <a>Defense Intelligence Agency</a>
+        <a>Defense Legal Services Agency</a>
+        <a>Defense Logistics Agency</a>
+        <a>Defense POW/MIA Accounting Agency</a>
+        <a>Defense Security Cooperation Agency</a>
+        <a>Defense Security Service</a>
+        <a>Defense Threat Reduction Agency</a>
+        <a>Joint Improvised-Threat Defeat Agency</a>
+        <a>Missile Defense Agency</a>
+        <a>National Geospatial-Intelligence Agency</a>
+        <a>National Reconnaissance Office</a>
+        <a>National Security Agency/Central Security Service</a>
+        <a>Pentagon Force Protection Agency</a>
+      </div>
+    </div>
+    
+    <br>
+    
+    <div class="picker-footer">
+      <a routerLink="/prototypes/component/picker">Reset</a> &nbsp;&nbsp;
+      <button class="sam primary button" type="button">Add Agencies</button>
+    </div>
+    
+  </div>
+  
+</div>
+
+

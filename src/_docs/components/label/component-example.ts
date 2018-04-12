@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></sam-label>`;
 
 @Component({
@@ -18,6 +22,18 @@ var code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></s
 export class LabelExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamLabelComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+
+  example = code_example;
+
+  public base = '_docs/components/label/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

@@ -1,0 +1,100 @@
+.flex-container{
+  display: flex;
+  .title-area{
+    flex-grow: 1;
+  }
+  .badge-area{
+    flex-basis: 15rem;
+    text-align: center;
+  }
+  .video-area{
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    background-color: #dedddd;
+    min-height: 220px;
+    div{
+      position: relative;
+      display: flex;
+      height: 100%;
+      text-align: center;
+      &:before{
+        font: normal normal normal 4em/1 FontAwesome;
+        content: "\F01D";
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        color: white;
+        opacity: .8;
+      }
+      span{
+        background-color: #112e51;
+        font-weight: 600;
+        color: white;
+        padding: 1rem;
+        width: 100%;
+        align-self: flex-end;
+      }
+    }
+  }
+  .menu-area{
+    padding-left: 3rem;
+  }
+}
+
+// REVIEW: Move to shared CSS
+.intersecting-header{
+  h3{
+    position: absolute;
+    top: -12px;
+    background: white;
+    left: 25%;
+    right: 25%;
+  }
+}
+
+.wdol-additional-list{
+  border: 2px solid black;
+  position: absolute !important;
+  right: 0px;
+  top: -20px;
+  padding: 0px !important;
+
+  .wdol-additional-list-title{
+    padding-left: 15px;
+    background-color: $color-gray-lighter;
+    width: 100%;
+  }
+
+  .wdol-additional-list-item{
+    padding-left: 15px;
+  }
+}
+
+
+.labor-agency-item{
+  padding: 8px 0 8px 0;
+  margin: 5px 0 5px 0;
+
+  .labor-agency-contact-item{
+    margin: 10px 0 10px 0;
+  }
+
+  .labor-agency-contact-email{
+    color: $color-primary-alt-darkest;
+  }
+
+  .labor-agency-contact-input{
+    width: 35%;
+    height: 25px;
+    display: inline;
+  }
+
+  .labor-agency-contact-label{
+    width: 60px;
+    display: inline-block;
+  }
+
+  .labor-agency-contact-form{
+    margin: 15px 0 15px 0;
+  }
+}

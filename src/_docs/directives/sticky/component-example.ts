@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 //var code_example = ``;
 
 @Component({
@@ -18,8 +22,8 @@ Scroll down and see Sidenav
 })
 export class StickyExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamStickyComponent";
-  typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+  typedoc_content = '';
+
 	example = `<div class="sticky-target usa-grid">
   <div class="usa-width-one-fourth">
     <nav sam-sticky [container]="sticky-target">
@@ -31,4 +35,16 @@ export class StickyExampleComponent extends BaseExampleComponent implements OnIn
       ...
   </div>
 </div>`;
+
+  public base = '_docs/directives/sticky/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

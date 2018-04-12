@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<div class="usa-grid-full">
   <div class="usa-width-one-whole">
     <sam-history [currentId]="'1a610c814d73fc23a6b71decc9b4c548'" [data]="history"></sam-history>
@@ -44,6 +48,18 @@ export class HistoryExampleComponent extends BaseExampleComponent implements OnI
   ];
   typedoc_target = "SamHistoryComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+
+  example = code_example;
+  
+  public base = '_docs/components/history/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

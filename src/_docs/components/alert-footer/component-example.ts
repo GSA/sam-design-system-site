@@ -11,9 +11,10 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { SamAlertFooterService } from '../../../../sam-ui-elements/src/ui-kit/components/alert-footer/alert-footer.service';
+import { SamAlertFooterService } from 'sam-ui-elements/src/ui-kit/components/alert-footer/alert-footer.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 
 //tabs/spacing matters for code example block
 var code_example = `
@@ -40,6 +41,14 @@ var code_example = `
   hint="in milliseconds, 0 is infinite" name="Dismiss Timer" 
   [(ngModel)]="footerAlertModel.timer">
 </sam-number>
+<sam-checkbox 
+  name="require-dismiss"
+  [options]="checkboxOptions"
+  label="Require user dismissal" 
+  hint="Overrides dismiss timer, require user to dismiss the alert" 
+  [ngModel]="checkboxVal"
+  (ngModelChange)="mustDimissHandler($event)">
+</sam-checkbox>
 <sam-button (click)="onFooterAlertBtnClick()" buttonText="Add Footer alert"></sam-button>`;
 
 @Component({
@@ -49,13 +58,16 @@ var code_example = `
 export class SamAlertFooterComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamAlertFooterComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+
   example = code_example;
+  checkboxOptions = [{name:'Enabled',label:'Enabled',value:true}];
+  checkboxVal = false;
   footerAlertModel = {
     title: "test title",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     type: "error",
-    timer: 0
+    timer: 0,
+    mustDismiss: false
   };
   footerAlertTypes = [{
     label:'success',
@@ -74,10 +86,27 @@ export class SamAlertFooterComponentExampleComponent extends BaseExampleComponen
     name:'info',
     value:'info',
   }];
-  constructor(_http:Http, 
-    service:DocumentationService,
-    private alertFooterService:SamAlertFooterService){
-    super(_http,service);
+
+
+  public base = '_docs/components/alert-footer/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService,
+    private alertFooterService: SamAlertFooterService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
+
+  mustDimissHandler(item){
+    if(item && item.length>0){
+      this.footerAlertModel.mustDismiss = true;
+    } else {
+      this.footerAlertModel.mustDismiss = false;
+    }
   }
   onFooterAlertBtnClick(){
     this.alertFooterService.registerFooterAlert(JSON.parse(JSON.stringify(this.footerAlertModel)));

@@ -1,0 +1,2 @@
+<h1>Select</h1>
+<p>Allows users to selection a single option from a list</p>

@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<input sam-tab-outside (tabOutside)="tabHandler($event)" /> 
 <p>{{ tabAway }}</p>
 <button (click)="reset()">reset</button>`;
@@ -18,15 +22,30 @@ var code_example = `<input sam-tab-outside (tabOutside)="tabHandler($event)" />
 `
 })
 export class TabOutsideExampleComponent extends BaseExampleComponent {
-  tabAway = "not tabbed away";
-  tabHandler(evt){
-    this.tabAway = "tabbed away";
+  public typedoc_target = 'SamTabOutsideDirective';
+  public typedoc_content = '';
+
+  public example = code_example;
+
+  public tabAway = 'not tabbed away';
+
+  public base = '_docs/directives/tab-outside/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
   }
-  reset(){
-    this.tabAway = "not tabbed away";
+
+  public tabHandler(evt) {
+    this.tabAway = 'tabbed away';
   }
-	typedoc_target = "SamTabOutsideDirective";
-  typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+  public reset() {
+    this.tabAway = 'not tabbed away';
+  }
+
 }

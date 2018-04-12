@@ -1,4 +1,0 @@
-[submodule "sam-ui-elements"]
-	path = sam-ui-elements
-	url = git@github.helix.gsa.gov:GSA-IAE-APPS/sam-ui-elements.git
-	branch = main 

@@ -1,0 +1,75 @@
+.help-content-management-sidenav{
+
+  .cm-tab{
+    border: 2px $color-gray-lightest solid !important;
+    border-bottom: none !important;
+  }
+
+  .cm-current-tab{
+    background-color: $color-cool-blue;
+    color: $color-white;
+  }
+
+  .blue-border{
+    border: 2px $color-cool-blue solid !important;
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: -7px;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid $color-cool-blue;
+  }
+
+  .border-bottom-light-gray{
+    border-bottom: 2px $color-gray-lightest solid;
+  }
+
+  legend{
+    margin-bottom: 10px;
+    font-size: 110%;
+  }
+
+  .transparent-border{
+    border-left: 4px $color-white solid;
+  }
+
+  .transparent-border:hover{
+    border-left: 4px $color-gray-lightest solid;
+  }
+
+  .request-total-count{
+    color: $color-white;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    min-width: 30px;
+    text-align: center;
+  }
+
+  .request-count{
+    display: inline-block;
+    height: 26px;
+    min-width: 30px;
+    color: $color-white;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  label{
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  input::-webkit-input-placeholder{
+    font-style: italic;
+  }
+}

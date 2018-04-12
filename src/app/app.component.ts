@@ -10,6 +10,12 @@ import {
 
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { DocumentationService } from './services/documentation.service';
+import { routerTransition } from './router.animations';
+import { MarkdownService } from './services/markdown/markdown.service';
+
+import { environment } from 'environment';
+const DOCS = environment.DOCS;
+const STATICPAGES = environment.STATICPAGES;
 
 /*
  * App Component
@@ -18,62 +24,51 @@ import { DocumentationService } from './services/documentation.service';
 
 @Component({
   selector: 'app',
+  animations: [ routerTransition ],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <sam-banner *ngIf="showBanner"></sam-banner>
-    <header *ngIf="showHeader" class="usa-header site-header">
-      <div class="usa-navbar site-header-navbar">
-        <div class="usa-logo site-logo" id="logo" style="height:60px;margin-top:0;">
-          <em class="usa-logo-text">
-            <a routerLink="/" accesskey="1" title="Home" aria-label="Home" style="line-height:60px;">
-            SAM Web Standards</a></em>
-        </div>
-      </div>
-    </header>
-    <main class="sticky-target-app">
-      <div class="usa-grid">
-        <aside class="usa-width-one-fourth">
-          <nav sam-sticky [limit]="1200" [container]="'sticky-target-app'">
-            <sam-sidenav [model]="sidenavConfig" (path)="resolveRoute($event)"></sam-sidenav>
-          </nav>&nbsp;
-        </aside>
-        <div class="usa-width-three-fourths">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
+    <main [@routerTransition]="getState(o)">
+      <router-outlet #o="outlet"></router-outlet>
     </main>
-    <sam-alert-footer>
+    <sam-alert-footer></sam-alert-footer>
   `,
   providers: [DocumentationService]
 })
 export class AppComponent implements OnInit {
 
-  sidenavConfig = {
+  public sidenavConfig = {
       label: "test",
       children: [],
   };
-  uikitList = {};
-  staticpagelist = {};
 
-  showBanner = false;
-  showHeader = true;
-  showUIKitHeader = false;
-  showUIKitSearchHeader = false;
-  constructor(private route: ActivatedRoute, private router: Router,
-              private service: DocumentationService) {}
-  resolveRoute(path){
-    if(path == "/"){
-      
-    } else {
+  public uikitList = {};
+  public staticpagelist = {};
+
+  public showBanner = false;
+  public showHeader = true;
+  public showUIKitHeader = false;
+  public showUIKitSearchHeader = false;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private service: DocumentationService) {}
+
+  public getState(outlet) {
+    return outlet.activatedRouteData.state;
+  }
+
+  public resolveRoute(path) {
+    if (path !== '/') {
       this.router.navigate([path]);
     }
   }
   public ngOnInit() {
 
-    //sidenav config setup
-    //DOCS is a global defined in webpack
-    for(var idx in DOCS){
-      if(!this.uikitList[DOCS[idx]['section']]){
+    // sidenav config setup
+
+    for (let idx in DOCS) {
+      if (!this.uikitList[DOCS[idx]['section']]) {
         this.uikitList[DOCS[idx]['section']] = [{
           label: DOCS[idx]['item'],
           route: DOCS[idx]['link']
@@ -84,21 +79,22 @@ export class AppComponent implements OnInit {
           route: DOCS[idx]['link']
         });
       }
-      
+
     }
-    var x = this.uikitList;
-    var test = Object.keys(this.uikitList).map(function(key){
-      var list = x[key];
+    let obj = this.uikitList;
+    let test = Object.keys(this.uikitList)
+      .map(function(key){
+      let list = obj[key];
       return {
         label: key,
-        route: "/",
+        route: '/',
         children: list
       };
     });
     this.sidenavConfig['children'] = test;
-    //STATICPAGES is a global defined in webpack
-    for(var idx in STATICPAGES){
-      if(!this.staticpagelist[STATICPAGES[idx]['section']]){
+    // STATICPAGES is a global defined in webpack
+    for (const idx in STATICPAGES) {
+      if (!this.staticpagelist[STATICPAGES[idx]['section']]) {
         this.staticpagelist[STATICPAGES[idx]['section']] = [{
           label: STATICPAGES[idx]['item'],
           route: STATICPAGES[idx]['link']
@@ -110,42 +106,48 @@ export class AppComponent implements OnInit {
         });
       }
     }
-    var x = this.staticpagelist;
-    var test2 = Object.keys(this.staticpagelist).map(function(key){
-      var list = x[key];
+    let x = this.staticpagelist;
+    let test2 = Object.keys(this.staticpagelist)
+      .map(function(key){
+      let list = x[key];
       return {
         label: key,
-        route: "/",
+        route: '/',
         children: list
       };
-    }).sort(function(a,b){
-      if(a.label=="Overview"){
+    }).sort(function(a, b){
+      if (a.label === 'Overview') {
         return -1;
-      } else if (b.label=="Overview"){
+      } else if (b.label === 'Overview') {
         return 1;
       }
-      if(a.label.charAt(0).toLowerCase()<b.label.charAt(0).toLowerCase()){
+      if (a.label.charAt(0).toLowerCase()
+        < b.label.charAt(0).toLowerCase()) {
         return -1;
-      } else if (a.label.charAt(0).toLowerCase()>b.label.charAt(0).toLowerCase()) {
+      } else if (a.label.charAt(0).toLowerCase()
+        > b.label.charAt(0).toLowerCase()) {
         return 1;
       }
       return 0;
     });
+
     this.sidenavConfig['children'] =  test2.concat(this.sidenavConfig['children']);
-    
-    //handlers for specific routes
+
+    // handlers for specific routes
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
-        if(event.url.match(/^\/components\/banner/)){
+        if (event.url.match(/^\/components\/banner/)) {
           this.showBanner = true;
         } else {
           this.showBanner = false;
         }
-        if(event.url.match(/^\/components\/header/) || event.url.match(/^\/components\/search-header/)){
+        if (event.url.match(/^\/components\/header/)
+          || event.url.match(/^\/components\/search-header/)) {
           this.showHeader = false;
-          if(event.url.match(/^\/components\/header/)){
+          if (event.url.match(/^\/components\/header/)) {
             this.showUIKitHeader = true;
-          } else if(event.url.match(/^\/components\/search-header/)){
+          } else if (event.url
+            .match(/^\/components\/search-header/)) {
             this.showUIKitSearchHeader = true;
           }
         } else {

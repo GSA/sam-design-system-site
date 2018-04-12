@@ -1,0 +1,9 @@
+<h1>Routes, Titles and 508 Compliance</h1>
+<h2>What does 508 have to do with lazy loading and Angular modules?</h2>
+<p>As you have worked with the router in Angular, you may have noticed that the title does not change with the route. Since Angular is a single page application framework, it only serves up a single page with a single head and title tag. Application state is managed with javascript, so the HTML is never updated.</p>
+<p>Angular provides a mechanism to change this through the <code>Title</code> service from the <code>@angular/platform-browser</code> package. It provides getters and setters for the title via the <code>getTitle</code> and <code>setTitle</code> methods.</p>
+<h2>When should the title change?</h2>
+<p>In a traditional server side MVC framework, fresh HTML is served to the browser whenever the route changes, so the title is always changed. Users expect titles to change along with the routes, so we need to ensure that as the route changes, so does our title. The only exception to this would be for hashed routes or route params. In those cases, the title should not change.</p>
+<h2>Setting Titles on Sam.gov</h2>
+<p>I have already implemented our own service for updating the titles. In the <code>AppComponent</code>, the <code>SamTitleService</code> is injected into the constructor. On initialization, we subscribe to the router and listen for <code>NavigationEnd</code> events. When navigation completes, it calls the <code>SamTitleService</code>’s <code>setTitle</code> method with the url as the parameter. <code>setTitle</code> then calls a factory function inside the service that returns the title string based on the url.</p>
+<p>Developers on the project only need to add their new route as a property of the mappings object inside <code>SamTitleService</code> with an appropriate title each route.</p>

@@ -10,6 +10,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 //tabs/spacing matters for code example block
 var code_example = `<div class="usa-width-one-whole">
   <h3>Accordions without border</h3>
@@ -45,8 +49,18 @@ var code_example = `<div class="usa-width-one-whole">
 export class AccordionExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = "SamAccordionComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-  guidance = require("html-loader!markdown-it-loader!./guidance.md");
-  design = require("html-loader!markdown-it-loader!./design.md");
-	example = code_example;
+  
+  example = code_example;
+
+  public base = '_docs/components/accordion/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

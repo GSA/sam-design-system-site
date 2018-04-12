@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<sam-checkbox
   [(model)]="checkboxModel"
   [name]="checkboxConfig.name"
@@ -16,7 +20,7 @@ var code_example = `<sam-checkbox
 </sam-checkbox>
 <br/>
 <sam-checkbox
-[(model)]="checkboxModel"
+[(model)]="checkboxModel2"
 [name]="disabledCheckboxConfig.name"
 [options]="disabledCheckboxConfig.options"
 [label]="disabledCheckboxConfig.label"
@@ -35,7 +39,8 @@ var code_example = `<sam-checkbox
 `
 })
 export class CheckboxExampleComponent extends BaseExampleComponent implements OnInit {
-	checkboxModel: any = ['ma'];
+  checkboxModel: any = ['ma'];
+  checkboxModel2: any = ['ma'];
   checkboxConfig = {
     options: [
       {value: 'dc', label: 'DC', name: 'checkbox-dc'},
@@ -55,7 +60,19 @@ export class CheckboxExampleComponent extends BaseExampleComponent implements On
     label: 'Select a region (disabled)',
   };
 	typedoc_target = "SamCheckboxComponent";
-  typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+  typedoc_content = '';
+
+  example = code_example;
+  
+  public base = '_docs/form-controls/checkbox/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

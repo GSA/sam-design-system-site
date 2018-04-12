@@ -10,19 +10,19 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from "./baseexample.component";
-import { PlaceHolderExampleComponent } from "./placeholder.component";
-import { SimpleExampleComponent } from "./simple.component";
 
 import { AccordionExampleComponent } from "./components/accordion/component-example";
 import { SamActionButtonExampleComponent } from "./components/actions/action-button/component-example";
 import { SamActionsDropdownComponentExampleComponent } from "./components/actions/actions-dropdown/component-example";
 import { AlertExampleComponent } from "./components/alert/component-example";
 import { SamAlertFooterComponentExampleComponent } from "./components/alert-footer/component-example";
+import { SamBadgeComponentExampleComponent } from "./components/badge/component-example";
 import { BannerExampleComponent } from "./components/banner/component-example";
 import { SamBreadcrumbsComponentExampleComponent } from "./components/breadcrumbs/component-example";
 import { CollapsibleExampleComponent } from "./components/collapsible/component-example";
 import { SamCommentsComponentExampleComponent } from "./components/comments/component-example";
 import { DownloadExampleComponent } from "./components/download/component-example";
+import { SamFilesComponentExampleComponent } from "./components/files/component-example";
 import { FiltersContainerExampleComponent } from "./components/filters-container/component-example";
 import { SamHeaderComponentExampleComponent } from "./components/header/component-example";
 import { HistoryExampleComponent } from "./components/history/component-example";
@@ -33,14 +33,26 @@ import { ModalExampleComponent } from "./components/modal/component-example";
 import { MultiselectDropdownExampleComponent } from "./components/multiselect-dropdown/component-example";
 import { PaginationExampleComponent } from "./components/pagination/component-example";
 import { POCExampleComponent } from "./components/point-of-contact/component-example";
+import { SamProgressExampleComponent } from "./components/progress-bar/component-example";
 import { SidenavExampleComponent } from "./components/sidenav/component-example";
 import { SpinnerExampleComponent } from "./components/spinner/component-example";
 import { TabsExampleComponent } from "./components/tabs/component-example";
+import { SamUploadComponentExampleComponent } from "./components/upload/component-example";
 import { ClickOutsideExampleComponent } from "./directives/click-outside/component-example";
+import { SamDragDropDirectiveExampleComponent } from "./directives/drag-drop/component-example";
 import { SamFocusDirectiveExampleComponent } from "./directives/focus/component-example";
 import { StickyExampleComponent } from "./directives/sticky/component-example";
 import { TabOutsideExampleComponent } from "./directives/tab-outside/component-example";
 import { ButtonExampleComponent } from "./elements/button/component-example";
+import { SamBoxComponentExampleComponent } from "./experimental/box/component-example";
+import { SamContainerComponentExampleComponent } from "./experimental/container/component-example";
+import { SamHeadingComponentExampleComponent } from "./experimental/heading/component-example";
+import { SamIconComponentExampleComponent } from "./experimental/icon/component-example";
+import { SamListComponentExampleComponent } from "./experimental/list/component-example";
+import { SamMasterPageComponentExampleComponent } from "./experimental/master-page/component-example";
+import { SamPageComponentExampleComponent } from "./experimental/page/component-example";
+import { SamSidebarComponentExampleComponent } from "./experimental/sidebar/component-example";
+import { SamYoutubeComponentExampleComponent } from "./experimental/youtube/component-example";
 import { AutocompleteExampleComponent } from "./form-controls/autocomplete/component-example";
 import { AutocompleteMultiselectExampleComponent } from "./form-controls/autocomplete-multiselect/component-example";
 import { CheckboxExampleComponent } from "./form-controls/checkbox/component-example";
@@ -64,10 +76,10 @@ import { LabelWrapperExampleComponent } from "./wrappers/label-wrapper/component
 
 import { DocTemplateComponent } from "./doc.template";
 import { routing } from "./doc.routes.dynamic";
-
-import { SamUIKitModule } from '../../sam-ui-elements/src/ui-kit';
+import { StaticPageComponent } from "./static.component";
+import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
-
+import { SiteComponentsModule } from "../app/site-components/sitecomponents.module";
 
 /**
  * AppModule` is the main entry point into Angular2's bootstraping process
@@ -79,11 +91,13 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
 		SamAlertFooterComponentExampleComponent,
+		SamBadgeComponentExampleComponent,
 		BannerExampleComponent,
 		SamBreadcrumbsComponentExampleComponent,
 		CollapsibleExampleComponent,
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
+		SamFilesComponentExampleComponent,
 		FiltersContainerExampleComponent,
 		SamHeaderComponentExampleComponent,
 		HistoryExampleComponent,
@@ -94,14 +108,26 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		MultiselectDropdownExampleComponent,
 		PaginationExampleComponent,
 		POCExampleComponent,
+		SamProgressExampleComponent,
 		SidenavExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
+		SamUploadComponentExampleComponent,
 		ClickOutsideExampleComponent,
+		SamDragDropDirectiveExampleComponent,
 		SamFocusDirectiveExampleComponent,
 		StickyExampleComponent,
 		TabOutsideExampleComponent,
 		ButtonExampleComponent,
+		SamBoxComponentExampleComponent,
+		SamContainerComponentExampleComponent,
+		SamHeadingComponentExampleComponent,
+		SamIconComponentExampleComponent,
+		SamListComponentExampleComponent,
+		SamMasterPageComponentExampleComponent,
+		SamPageComponentExampleComponent,
+		SamSidebarComponentExampleComponent,
+		SamYoutubeComponentExampleComponent,
 		AutocompleteExampleComponent,
 		AutocompleteMultiselectExampleComponent,
 		CheckboxExampleComponent,
@@ -120,7 +146,7 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
-		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
+		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent
 	],
 	entryComponents: [
 		AccordionExampleComponent,
@@ -128,11 +154,13 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		SamActionsDropdownComponentExampleComponent,
 		AlertExampleComponent,
 		SamAlertFooterComponentExampleComponent,
+		SamBadgeComponentExampleComponent,
 		BannerExampleComponent,
 		SamBreadcrumbsComponentExampleComponent,
 		CollapsibleExampleComponent,
 		SamCommentsComponentExampleComponent,
 		DownloadExampleComponent,
+		SamFilesComponentExampleComponent,
 		FiltersContainerExampleComponent,
 		SamHeaderComponentExampleComponent,
 		HistoryExampleComponent,
@@ -143,14 +171,26 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		MultiselectDropdownExampleComponent,
 		PaginationExampleComponent,
 		POCExampleComponent,
+		SamProgressExampleComponent,
 		SidenavExampleComponent,
 		SpinnerExampleComponent,
 		TabsExampleComponent,
+		SamUploadComponentExampleComponent,
 		ClickOutsideExampleComponent,
+		SamDragDropDirectiveExampleComponent,
 		SamFocusDirectiveExampleComponent,
 		StickyExampleComponent,
 		TabOutsideExampleComponent,
 		ButtonExampleComponent,
+		SamBoxComponentExampleComponent,
+		SamContainerComponentExampleComponent,
+		SamHeadingComponentExampleComponent,
+		SamIconComponentExampleComponent,
+		SamListComponentExampleComponent,
+		SamMasterPageComponentExampleComponent,
+		SamPageComponentExampleComponent,
+		SamSidebarComponentExampleComponent,
+		SamYoutubeComponentExampleComponent,
 		AutocompleteExampleComponent,
 		AutocompleteMultiselectExampleComponent,
 		CheckboxExampleComponent,
@@ -169,14 +209,15 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 		CountryServiceDirectiveExampleComponent,
 		StateServiceDirectiveExampleComponent,
 		FieldsetWrapperExampleComponent,
-		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,BaseExampleComponent,PlaceHolderExampleComponent,SimpleExampleComponent
+		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent
 	],
 	imports: [
 		BrowserModule,
 		CommonModule,
 		FormsModule,
 		SamUIKitModule,
-		routing
+		routing,
+		SiteComponentsModule
 	],
 	exports: [BaseExampleComponent]
 })

@@ -6,6 +6,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<sam-modal 
   [showClose]="true" 
   #modal1 
@@ -85,7 +89,7 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
 	@ViewChild('modal5') vcModal5;
   typedoc_target = "SamModalComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
+
   example = code_example;
   message = "";
   modalAlertTypes = [{
@@ -110,6 +114,19 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
     title:'Sample Title',
     description:'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
   };
+
+  public base = '_docs/components/modal/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
+
 	onModalInitClick(){
 		this.vcModal1.openModal();
 	}

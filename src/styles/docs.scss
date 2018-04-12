@@ -1,20 +1,68 @@
-/*******************************
-         Docs
-*******************************/
-/*---------------------------
-   Syntax Code Highlight
------------------------------*/
+
+/* SAM Styles
+   ========================================================================== */
+
+@import "sam-styles/all";
+
+/* SAM front-end
+   ========================================================================== */
+
+@import "sam-front-end/all";
+
+/* Transition
+   ========================================================================== */
+
+/**
+ * Removes overwrites that happen in sam-front-end layer
+ */
+
+@import "transition/input";
+@import "transition/select";
+@import "transition/radio";
+@import "transition/label";
+@import "transition/button";
+@import "transition/title";
+
+/* SAM Design System Pages
+   ========================================================================== */
+
+/**
+ * Homepage
+ */
+
+@import "sam-design-system/home";
+
+/**
+ * Prototypes
+ */
+
+@import "sam-design-system/prototypes/base";
+@import "sam-design-system/prototypes/animations";
+@import "sam-design-system/prototypes/homepage";
+@import "sam-design-system/prototypes/search-results";
+@import "sam-design-system/prototypes/search-results-mobile";
+@import "sam-design-system/prototypes/picker";
+@import "sam-design-system/prototypes/main-nav";
+
+/**
+ * Patterns
+ */
+
+@import "sam-design-system/patterns/home";
+
+/**
+ * Components
+ */
+
+@import "sam-design-system/components/site-header";
+@import "sam-design-system/components/site-footer";
+
+/**
+ * Syntax Code Highlight
+ */
+
 @import '~prismjs/themes/prism';
+
 code[class*="language"] {
-	font-size: 14px;
-}
-
-/*******************************
-      SAM-FRON-END CSS
-*******************************/
-@import "all";
-
-::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+    font-size: 14px;
 }

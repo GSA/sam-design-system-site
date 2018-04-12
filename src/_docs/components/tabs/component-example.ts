@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
   <sam-tab tabTitle="Opportunity" active="true" (tabSelected)="tabSelected($event)">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa rerum nemo officia nam atque nulla tempore explicabo, at voluptatem omnis ad, possimus. Odio, ex, nostrum. Pariatur tempore, accusamus deleniti magnam!
@@ -25,12 +29,23 @@ var code_example = `<sam-tabs (currentSelectedTab)="currentTabSelected($event)">
 export class TabsExampleComponent extends BaseExampleComponent implements OnInit {
 	typedoc_target = "SamTabsComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
-	currentTabSelected(evt){
 
-	}
-	tabSelected(evt){
+  example = code_example;
 
-	}
+
+  public base = '_docs/components/tabs/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
+  
+  public currentTabSelected(evt){}
+  
+	public tabSelected(evt){}
 }

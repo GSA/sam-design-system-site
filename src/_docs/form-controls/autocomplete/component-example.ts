@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<div class="usa-grid-full">
   <div class="usa-width-one">
     <h3>Example with Selectable Categories and Subheading</h3>
@@ -106,46 +110,55 @@ var code_example = `<div class="usa-grid-full">
 </div>`;
 
 @Component({
-	selector: 'doc-autocomplete',
+  selector: 'doc-autocomplete',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" [implementation]="implementation">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class AutocompleteExampleComponent extends BaseExampleComponent implements OnInit {
-	value = "apple";
-  value2 = { "code": "code05", "value": "pineapple" };
-  options = ["apple","orange","grape","banana","pineapple"];
-  kv_config = {
+  public value = 'apple';
+  public value2 = { code: 'code05', value: 'pineapple' };
+  public options = ['apple', 'orange', 'grape', 'banana', 'pineapple'];
+  public kv_config = {
     keyValueConfig: {
       keyProperty: 'code',
       valueProperty: 'value'
     }
   };
-  kv_options = [{
-    code:"code01",
-    value:"apple"
-  },{
-    code:"code02",
-    value:"orange"
-  },{
-    code:"code03",
-    value:"grape"
-  },{
-    code:"code04",
-    value:"banana"
-  },{
-    code:"code05",
-    value:"pineapple"
+  public kv_options = [{
+    code: 'code01',
+    value: 'apple'
+  }, {
+    code: 'code02',
+    value: 'orange'
+  }, {
+    code: 'code03',
+    value: 'grape'
+  }, {
+    code: 'code04',
+    value: 'banana'
+  }, {
+    code: 'code05',
+    value: 'pineapple'
   }];
-  stateValue = "";
-  countryValue = "";
-	typedoc_target = "SamAutocompleteComponent";
-  typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
-  design = require("html-loader!markdown-it-loader!./design.md");
-  guidance = require("html-loader!markdown-it-loader!./guidance.md");
-  implementation = require("html-loader!markdown-it-loader!./implementation.md");
+  public stateValue = '';
+  public countryValue = '';
+  public typedoc_target = 'SamAutocompleteComponent';
+  public typedoc_content = '';
+  public example = code_example;
+
+  public base = '_docs/form-controls/autocomplete/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
+
 }

@@ -1,53 +1,17 @@
-import {
-  Component,
-  OnInit,
-  Input
-} from '@angular/core';
-
+import { Component, OnInit, Input} from '@angular/core';
+import { Router } from '@angular/router';
 import Prism from 'prismjs';
+
+import { environment } from 'environment';
+const DOCS = environment.DOCS;
+const STATICPAGES = environment.STATICPAGES;
 
 @Component({
 	selector: 'doc-template',
-  template: `
-  <div [innerHTML]="markdown"></div>
-  
-  <sam-tabs>
-    <sam-tab tabTitle="Documentation" active="true">
-      <h2 class="sam-ui header">Examples</h2>
-      
-      <!--Refactor Tabs-->
-      <div class="sam-ui top attached tabular small menu">
-        <a class="item" (click)="tabSelected = !tabSelected; panelSelected = true;" [class.active]="tabSelected">Result</a>
-        <a class="item" (click)="tabSelected = !tabSelected; panelSelected = false;" [class.active]="!tabSelected">HTML</a>
-      </div>
-      <div class="sam-ui bottom attached clearing segment">
-        <div [hidden]="!panelSelected">
-          <ng-content></ng-content>
-        </div>
-        <ng-container *ngIf="!panelSelected">
-          <pre class="language-html"><code class="language-html" [innerHTML]="example"></code></pre>
-        </ng-container>
-      </div>
-      
-      <div class="sam-ui hidden section divider"></div>
-      
-      <div [innerHTML]="typedoc"></div>
-    </sam-tab>
-    <sam-tab tabTitle="Guidance" *ngIf="guidance">
-      <div [innerHTML]="guidance"></div>
-    </sam-tab>
-    <sam-tab tabTitle="Design" *ngIf="design">
-      <div [innerHTML]="design"></div>
-    </sam-tab>
-    <sam-tab tabTitle="Implementation" *ngIf="implementation">
-      <div [innerHTML]="implementation"></div>
-    </sam-tab>
-  </sam-tabs>
-  
-  <div class="sam-ui hidden section divider"></div>
-`
+  templateUrl: 'doc.template.html'
 })
 export class DocTemplateComponent implements OnInit {
+  
 	@Input() markdown;
 	@Input() example;
 	@Input() typedoc;
@@ -58,10 +22,123 @@ export class DocTemplateComponent implements OnInit {
   tabSelected = true;
   panelSelected = true;
   
- 	constructor(){}
+  sidenavConfig = {
+      label: "Documentation Sidenav",
+      children: [],
+  };
+  
+  constructor(private router: Router){}
+  
+  resolveRoute(path){
+    if(path == "/"){
+    } else {
+      this.router.navigate([path]);
+    }
+  }
   
 	public ngOnInit() {
-    this.example = Prism.highlight(this.example, Prism.languages.html);
+    
+    // ==========================================================
+    // SIDE NAVIGATION CONFIG SETUP
+    // ==========================================================
+    
+    // ---------------------------------------------------------- 
+    // UI-Kit links
+    // ----------------------------------------------------------
+        
+    var uikitList = {};
+
+    // Organize by section
+    for(var idx in DOCS){
+      if(!uikitList[DOCS[idx]['section']]){
+        uikitList[DOCS[idx]['section']] = [{
+          label: DOCS[idx]['item'],
+          route: DOCS[idx]['link']
+        }];
+      } else {
+        uikitList[DOCS[idx]['section']].push({
+          label: DOCS[idx]['item'],
+          route: DOCS[idx]['link']
+        });
+      }
+    }
+    
+    // Prepare data so it can be consumed by <sam-sidenav> 
+    var docsNav = uikitList;
+    var docsNavContent = Object.keys(uikitList).map( section => {
+      var sectionChildren = docsNav[section];
+      return {
+        label: section,
+        route: "/",
+        children: sectionChildren
+      };
+    });
+    
+    // Update <sam-sidenav> model
+    this.sidenavConfig['children'] = docsNavContent;
+    
+    
+    // ----------------------------------------------------------
+    // Static Pages links
+    // ----------------------------------------------------------
+    
+    //STATICPAGES is a global defined in webpack
+    
+    var staticpagelist = {};
+    
+    // Organize by section
+    for(var idx in STATICPAGES){
+      if(!staticpagelist[STATICPAGES[idx]['section']]){
+        staticpagelist[STATICPAGES[idx]['section']] = [{
+          label: STATICPAGES[idx]['item'],
+          route: STATICPAGES[idx]['link']
+        }];
+      } else {
+        staticpagelist[STATICPAGES[idx]['section']].push({
+          label: STATICPAGES[idx]['item'],
+          route: STATICPAGES[idx]['link']
+        });
+      }
+    }
+    
+    // Prepare data so it can be consumed by <sam-sidenav> 
+    var docsNavStaticPages = staticpagelist;
+    var docsNavStaticPagesContent = Object.keys(staticpagelist).map( section => {
+      var list = docsNavStaticPages[section];
+      return {
+        label: section,
+        route: "/",
+        children: list
+      };
+    });
+    
+    // Sort by alphabetical order
+    // Move Overview to the top of the list
+    docsNavStaticPagesContent.sort(function(a,b){
+      if(a.label=="Overview"){
+        return -1;
+      } else if (b.label=="Overview"){
+        return 1;
+      }
+      if( a.label.charAt(0).toLowerCase() < b.label.charAt(0).toLowerCase() ){
+        return -1;
+      } else if ( a.label.charAt(0).toLowerCase() > b.label.charAt(0).toLowerCase() ) {
+        return 1;
+      }
+      return 0;
+    });
+    
+    // Update <sam-sidenav> model
+    this.sidenavConfig['children'] = docsNavStaticPagesContent.concat(this.sidenavConfig['children']);
+    
+    
+    // ==========================================================
+    // Run Prism JS
+    // ==========================================================
+    if (this.example) {
+      this.example = Prism.highlight(this.example, Prism.languages.html);  
+    }
+    
   }
   
 }

@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 //tabs/spacing matters for code example block
 var code_example = `<sam-alert [type]="'success'" [title]="'Sample Title 1'" [description]="'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'"></sam-alert>
 <sam-alert [type]="'warning'" [title]="'Sample Title 2'" [description]="'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'"></sam-alert>
@@ -20,8 +24,20 @@ var code_example = `<sam-alert [type]="'success'" [title]="'Sample Title 1'" [de
 `
 })
 export class AlertExampleComponent extends BaseExampleComponent implements OnInit {
-	typedoc_target = "SamAlertComponent";
+  typedoc_target = "SamAlertComponent";
   typedoc_content = "";
-	markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+
+  example = code_example;
+
+  public base = '_docs/components/alert/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

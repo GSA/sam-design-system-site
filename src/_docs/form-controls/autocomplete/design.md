@@ -1,4 +1,4 @@
-![alt text](/src/assets/img/Autocomplete.png "Autocomplete")
+![alt text](/assets/img/Autocomplete.png "Autocomplete")
 
 * Autocomplete has dropdown and text entry behavior.  Dropdown behavior shows people their choices.  Text entry makes it easy to filter choices to quickly reach those that are not near the top.
 * Autocomplete has a gray (#AEB0B5) search icon (fa-search) to the far right, differentiating it from a select or text entry field.

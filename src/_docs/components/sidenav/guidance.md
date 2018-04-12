@@ -19,17 +19,17 @@ There are multiple variations of Sidenav including a public style, an authentica
 * **Consumer.** The consumer style is used on search, reporting, and help pages - pages used typically by data consumers.  The public style support multiple levels of navigation.
 
 
-> ![alt text](/src/assets/img/Sidenav.Public.png "Autocomplete with default values")
+> ![alt text](/assets/img/Sidenav.Public.png "Autocomplete with default values")
 
 
 * **Workspace.** The workspace style is used on workspace pages.  It has a single level of navigation.  Try to limit the number of navigation links in the side nave on a workspace page - be sure the pages truly are related.
 
 
-> ![alt text](/src/assets/img/Sidenav.Workspace.png "Autocomplete with default values")
+> ![alt text](/assets/img/Sidenav.Workspace.png "Autocomplete with default values")
 
 
 * **Data Entry.** The data entry style is used on data entry pages.  It has a single level of navigation and a status indicator for each link.  The status indicator has 3 states: page completed successfully, page has an error, and page is incomplete.
 
 
-> ![alt text](/src/assets/img/Sidenav.DataEntry.png "Autocomplete with default values")
+> ![alt text](/assets/img/Sidenav.DataEntry.png "Autocomplete with default values")
 

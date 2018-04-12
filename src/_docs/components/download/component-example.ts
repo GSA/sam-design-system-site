@@ -5,6 +5,10 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
+import { Http } from '@angular/http';
+import { MarkdownService } from '../../../app/services/markdown/markdown.service';
+import { DocumentationService } from '../../../app/services/documentation.service';
+
 var code_example = `<div class="usa-grid-full">
   <div class="usa-width-one-whole">
     <sam-download [packages]="packages" [downloadAllUrl]="downloadAllUrl"></sam-download>
@@ -48,6 +52,18 @@ export class DownloadExampleComponent extends BaseExampleComponent implements On
   downloadAllUrl = 'http://fakesite.com/download/1234';
   typedoc_target = "SamDownloadComponent";
   typedoc_content = "";
-  markdown = require("html-loader!markdown-it-loader!./documentation.md");
-	example = code_example;
+
+  example = code_example;
+  
+  public base = '_docs/components/download/';
+
+  constructor(
+    _http: Http,
+    public service: DocumentationService,
+    public mdService: MarkdownService) {
+
+    super(_http, service, mdService);
+
+    this.sections.forEach(this.fetchSection.bind(this));
+  }
 }

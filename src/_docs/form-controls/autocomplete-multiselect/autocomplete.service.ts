@@ -2,8 +2,7 @@ import { Component, Directive } from '@angular/core';
 import { Observable } from 'rxjs';
 import {
   AutocompleteService
-} from 'sam-ui-elements/src/ui-kit/form-controls/autocomplete/\
-autocomplete.service';
+} from 'sam-ui-elements/src/ui-kit/form-controls/autocomplete/autocomplete.service';
 
 export class ACTestService implements AutocompleteService {
   private values: any = [
@@ -69,10 +68,10 @@ export class ACTestService implements AutocompleteService {
   }
 }
 
-@Directive({
-  selector: 'sam-autocomplete-multiselect[test], sam-autcomplete-refactor[test]',
-  providers: [
-    { provide: AutocompleteService, useClass: ACTestService }
-  ]
-})
-export class TestACDirective {}
+// @Directive({
+//   selector: 'sam-autocomplete-multiselect[test], sam-autcomplete-refactor[test]',
+//   providers: [
+//     { provide: AutocompleteService, useClass: ACTestService }
+//   ]
+// })
+// export class TestACDirective {}

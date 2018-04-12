@@ -112,12 +112,14 @@ var code_example = `<div class="usa-grid-full">
 @Component({
   selector: 'doc-autocomplete',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" [implementation]="implementation">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [guidance]="guidance">
 ` + code_example + `
 </doc-template>
 `
 })
 export class AutocompleteExampleComponent extends BaseExampleComponent implements OnInit {
+  expl;
+  expl2;
   public value = 'apple';
   public value2 = { code: 'code05', value: 'pineapple' };
   public options = ['apple', 'orange', 'grape', 'banana', 'pineapple'];

@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "npm run init && ng serve --preserve-symlinks",
-    "build": "npm run init && ng build",
+    "start": "npm run init && ng serve --preserve-symlinks --aot",
+    "build": "npm run init && ng build --preserve-symlinks --aot",
     "test": "npm run init && ng test",
     "lint": "ng lint",
     "e2e": "npm run init && ng e2e",

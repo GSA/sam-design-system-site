@@ -36,6 +36,7 @@ export class MultiselectDropdownExampleComponent extends BaseExampleComponent im
   };
   typedoc_target = "SamMultiSelectDropdownComponent";
   typedoc_content = "";
+  alertBeingEdited = false;
 
   example = code_example;
 

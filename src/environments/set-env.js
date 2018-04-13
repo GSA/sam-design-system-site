@@ -12,7 +12,7 @@ const DOCS_ROUTE_PATH =
 
 const STATIC = JSON.stringify(helpers.getStaticDirStructure(STATIC_PATH))
 const DOCS = JSON.stringify(helpers.getUIKitStructure(DOCS_PATH))
-const ENV = process.env.ENV
+const ENV = process && process.env && process.env.ENV ? process.env.ENV : '';
 
 const config = {
   STATICPAGES: STATIC,
@@ -31,13 +31,14 @@ function run (config) {
   helpers.writeModuleFile(config.DOCS_PATH, config.DOCS_MODULE_PATH)
   helpers.writeRoutesFile(config.DOCS_PATH, config.STATIC_PATH, config.DOCS_ROUTE_PATH)
 
-  writeEnvFile(config)
+  writeEnvFile(config,'./environment.ts')
+  writeEnvFile(config,'./environment.prod.ts')
 
 }
 
-function writeEnvFile (config) {
+function writeEnvFile (config, file) {
 
-  const envFile = path.join(__dirname, './environment.ts')
+  const envFile = path.join(__dirname, file)
   
   const content = setVariables(config);
 
@@ -54,7 +55,6 @@ function writeEnvFile (config) {
 }
 
 function setVariables (config) {
-
   return `
 /* tslint:disable */
 import { EnvironmentVariables } from './environment.d';
@@ -63,6 +63,7 @@ export const environment: EnvironmentVariables = {
   STATICPAGES: ${config.STATICPAGES},
   DOCS: ${config.DOCS},
   ENV: '${config.ENV}',
+  API_UMBRELLA_URL: '$API_UMBRELLA_URL',
   production: ${config.ENV === 'prod' ? true : false}
 }\n`
 

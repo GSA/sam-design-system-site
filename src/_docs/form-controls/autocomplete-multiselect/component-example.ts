@@ -205,7 +205,7 @@ const code_example = `<div class="usa-grid-full">
 @Component({
   selector: 'doc-autocomplete-multiselect',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [design]="design" [guidance]="guidance" [implementation]="implementation">
+<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [guidance]="guidance">
 ` + code_example + `
   <br>
   <article>
@@ -261,10 +261,7 @@ const code_example = `<div class="usa-grid-full">
     </section>
   </article>
 </doc-template>
-`,
-providers: [
-  { provide: AutocompleteService, useClass: ACTestService }
-]
+`
 })
 export class AutocompleteMultiselectExampleComponent extends BaseExampleComponent implements OnInit {
 	value = "apple";

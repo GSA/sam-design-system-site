@@ -54,7 +54,9 @@ function writeEnvFile (config) {
 }
 
 function setVariables (config) {
-
+  var testVal = process && 
+    process.env && 
+    process.env.API_UMBRELLA_URL ? process.env.API_UMBRELLA_URL : 'nope';
   return `
 /* tslint:disable */
 import { EnvironmentVariables } from './environment.d';
@@ -63,6 +65,7 @@ export const environment: EnvironmentVariables = {
   STATICPAGES: ${config.STATICPAGES},
   DOCS: ${config.DOCS},
   ENV: '${config.ENV}',
+  API_UMBRELLA_URL: '${testVal}',
   production: ${config.ENV === 'prod' ? true : false}
 }\n`
 

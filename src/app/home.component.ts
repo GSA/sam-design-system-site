@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../environments/environment';
+
 @Component({
   templateUrl: 'home.template.html',
 })
 export class HomeComponent implements OnInit{
-  test = environment.API_UMBRELLA_URL;
+  
   ngOnInit() {
     
     const reduceMotion = matchMedia("(prefers-reduced-motion)").matches;

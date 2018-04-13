@@ -30,6 +30,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 
 EXPOSE 8443
 RUN mkdir /run/nginx
+RUN npm run build
 # Set the default command to execute
 # when creating a new container
 CMD npm run prod

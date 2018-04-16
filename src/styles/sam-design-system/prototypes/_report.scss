@@ -1,0 +1,97 @@
+sam-icon[name="bars"]{
+  display: none;
+}
+.prototype-main-nav-menu > svg{
+  margin-left: 0;
+}
+
+.report-page-options{
+  font-size: 16px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  a{
+    padding-left: 20px;
+  }
+}
+
+.report-page-layout{
+  padding: 10px;
+  .report-content{
+    display: flex;
+    .table-options{
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.report-filters{
+  font-size: 16px;
+  line-height: 19px;
+  min-width: 250px;
+  margin-right: 10px;
+}
+
+
+
+#reporttable{
+  h3 svg{
+    font-size: 16px;
+    color: #0071bc;
+    margin-bottom: 1px;
+    margin-right: 5px;
+  }
+  width: 100%;
+  max-height: 580px;
+  border-right: 3px solid #DCE4EE;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+}
+
+#reporttable table{
+  line-height: 19px;
+  width: 1500px;
+}
+
+#reporttable table th{
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  color: black;
+  padding: 5px;
+  border-right: 1px solid #DCE4EE;
+  border-bottom: 1px solid black;
+}
+
+#reporttable table td{
+  font-size: 15px;
+  padding: 5px;
+  border-right: 1px solid #DCE4EE;
+  border-bottom: 1px solid #DCE4EE;
+}
+
+#reporttable table td{
+  font-size: 15px;
+  padding: 5px;
+  border-right: 1px solid #DCE4EE;
+  border-bottom: 1px solid #DCE4EE;
+}
+
+#reporttable table tr:nth-child(2n){
+  background-color: rgba(0,0,50,.02);
+}
+
+#reporttable table tr:hover{
+  background-color: rgba(220, 228, 238, 0.5);
+}

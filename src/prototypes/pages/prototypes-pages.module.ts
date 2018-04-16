@@ -10,6 +10,7 @@ import { PagesComponent } from './prototypes-pages.component';
 import { SearchPageComponent } from './search/search.component';
 import { HomePageComponent } from './homepage/home.component';
 import { SearchMobileComponent } from './search-mobile/search.component';
+import { ReportPageComponent } from './report/report.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { SearchMobileComponent } from './search-mobile/search.component';
     PagesComponent,
     SearchPageComponent,
     HomePageComponent,
-    SearchMobileComponent
+    SearchMobileComponent,
+    ReportPageComponent
   ]
 })
 export class PrototypesPagesModule {}

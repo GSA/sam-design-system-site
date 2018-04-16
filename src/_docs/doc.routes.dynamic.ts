@@ -59,6 +59,7 @@ import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
 import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
+import { PhoneGroupExampleComponent } from "./form-templates/international-phone/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
@@ -126,6 +127,7 @@ export const ROUTES: Routes = [
 	{ path: 'form-controls/textarea', component: TextareaExampleComponent },
 	{ path: 'form-controls/time', component: TimeExampleComponent },
 	{ path: 'form-controls/toggle-switch', component: ToggleSwitchExampleComponent },
+	{ path: 'form-templates/international-phone', component: PhoneGroupExampleComponent },
 	{ path: 'form-templates/name-entry', component: NameEntryExampleComponent },
 	{ path: 'form-templates/phone-entry', component: PhoneEntryExampleComponent },
 	{ path: 'service-directives/autocomplete/country', component: CountryServiceDirectiveExampleComponent },

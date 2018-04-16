@@ -53,12 +53,12 @@ export class DocTemplateComponent implements OnInit {
       if(!uikitList[DOCS[idx]['section']]){
         uikitList[DOCS[idx]['section']] = [{
           label: DOCS[idx]['item'],
-          route: DOCS[idx]['link']
+          route: DOCS[idx]['routerlink']
         }];
       } else {
         uikitList[DOCS[idx]['section']].push({
           label: DOCS[idx]['item'],
-          route: DOCS[idx]['link']
+          route: DOCS[idx]['routerlink']
         });
       }
     }
@@ -91,12 +91,12 @@ export class DocTemplateComponent implements OnInit {
       if(!staticpagelist[STATICPAGES[idx]['section']]){
         staticpagelist[STATICPAGES[idx]['section']] = [{
           label: STATICPAGES[idx]['item'],
-          route: STATICPAGES[idx]['link']
+          route: STATICPAGES[idx]['routerlink']
         }];
       } else {
         staticpagelist[STATICPAGES[idx]['section']].push({
           label: STATICPAGES[idx]['item'],
-          route: STATICPAGES[idx]['link']
+          route: STATICPAGES[idx]['routerlink']
         });
       }
     }

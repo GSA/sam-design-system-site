@@ -66,6 +66,7 @@ import { TextExampleComponent } from "./form-controls/text/component-example";
 import { TextareaExampleComponent } from "./form-controls/textarea/component-example";
 import { TimeExampleComponent } from "./form-controls/time/component-example";
 import { ToggleSwitchExampleComponent } from "./form-controls/toggle-switch/component-example";
+import { PhoneGroupExampleComponent } from "./form-templates/international-phone/component-example";
 import { NameEntryExampleComponent } from "./form-templates/name-entry/component-example";
 import { PhoneEntryExampleComponent } from "./form-templates/phone-entry/component-example";
 import { CountryServiceDirectiveExampleComponent } from "./service-directives/autocomplete/country/component-example";
@@ -141,6 +142,7 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		TextareaExampleComponent,
 		TimeExampleComponent,
 		ToggleSwitchExampleComponent,
+		PhoneGroupExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
 		CountryServiceDirectiveExampleComponent,
@@ -204,6 +206,7 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		TextareaExampleComponent,
 		TimeExampleComponent,
 		ToggleSwitchExampleComponent,
+		PhoneGroupExampleComponent,
 		NameEntryExampleComponent,
 		PhoneEntryExampleComponent,
 		CountryServiceDirectiveExampleComponent,

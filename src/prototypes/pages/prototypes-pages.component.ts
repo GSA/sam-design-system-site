@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   <div class="patterns-menu-space"></div>
   
   <div class="patterns-menu">
-    <a routerLink="/prototypes">Prototypes Home</a>
+    <a routerLink="/prototypes">Prototypes</a>
     <span class="patterns-menu-divider"></span>
     <select class="sam transition" [(ngModel)]="selectedOption" (ngModelChange)="navigateTo()">
       <option *ngFor="let option of options" [ngValue]="option">{{ option.name }}</option>
@@ -23,7 +23,8 @@ export class PagesComponent {
   options = [
     { name: "Homepage", value: "home" },
     { name: "Search", value: "search" },
-    { name: "Search Mobile", value: "search-mobile" }
+    { name: "Search Mobile", value: "search-mobile" },
+    { name: "Report", value: "report" }
   ];
   
   selectedOption:any;

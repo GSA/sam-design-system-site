@@ -4,7 +4,6 @@
 /******************************************************/
 // Angular Dependencies
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -215,7 +214,6 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 		LabelWrapperExampleComponent,InterfacesComponent,DocTemplateComponent,StaticPageComponent,BaseExampleComponent
 	],
 	imports: [
-		BrowserModule,
 		CommonModule,
 		FormsModule,
 		SamUIKitModule,

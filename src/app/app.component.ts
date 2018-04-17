@@ -13,7 +13,7 @@ import { DocumentationService } from './services/documentation.service';
 import { routerTransition } from './router.animations';
 import { MarkdownService } from './services/markdown/markdown.service';
 
-import { environment } from 'environment';
+import { environment } from '../environments/environment';
 const DOCS = environment.DOCS;
 const STATICPAGES = environment.STATICPAGES;
 

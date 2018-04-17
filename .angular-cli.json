@@ -34,7 +34,7 @@
       "config": "./protractor.conf.js"
     }
   },
-  "linty": [
+  "lint": [
     {
       "project": "src/tsconfig.app.json",
       "exclude": "**/node_modules/**"

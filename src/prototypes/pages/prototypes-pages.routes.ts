@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PagesComponent } from './prototypes-pages.component'
+import { PagesComponent } from './prototypes-pages.component';
 import { SearchPageComponent } from './search/search.component';
 import { HomePageComponent } from './homepage/home.component';
 import { SearchMobileComponent } from './search-mobile/search.component';
@@ -40,4 +40,4 @@ const PageRoutes: Routes = [
     RouterModule
   ]
 })
-export class PagesRoutingModule{}
+export class PagesRoutingModule {}

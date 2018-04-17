@@ -2,7 +2,7 @@ import { Component, OnInit, Input} from '@angular/core';
 import { Router } from '@angular/router';
 import Prism from 'prismjs';
 
-import { environment } from '../environments/environment';
+import { environment } from 'environment';
 const DOCS = environment.DOCS;
 const STATICPAGES = environment.STATICPAGES;
 

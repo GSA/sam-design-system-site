@@ -66,6 +66,7 @@ function getUIKitStructure(target){
 	  }).join(" ");
 	  return {
 	    link: link,
+	    routerlink: "/docs/"+link,
 	    section: section,
 			item: item,
 			component: component,
@@ -99,6 +100,7 @@ function getStaticDirStructure(target){
 	  return {
       file: val,
       link: link,
+	    routerlink: "/docs/"+link,
 	    section: section,
 	    item: item
 	  };
@@ -123,7 +125,6 @@ function generateModuleString(target) {
 /******************************************************/
 // Angular Dependencies
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -146,7 +147,6 @@ import { SiteComponentsModule } from "../app/site-components/sitecomponents.modu
 	declarations: [${declarations}\n\t],
 	entryComponents: [${declarations}\n\t],
 	imports: [
-		BrowserModule,
 		CommonModule,
 		FormsModule,
 		SamUIKitModule,

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-//import * as d3 from "d3";
+// import * as d3 from "d3";
 
 @Component({
   templateUrl: 'report.template.html'
 })
-export class ReportPageComponent implements OnInit{
-  
-  ngOnInit(){
+export class ReportPageComponent implements OnInit {
+
+  ngOnInit() {
 
     // d3.csv("assets/ProgramStatusReport.csv").then(function(rows){
 
@@ -17,7 +17,7 @@ export class ReportPageComponent implements OnInit{
     //   let table = d3.select("#reporttable").append("table");
     //   let thead = table.append("thead");
     //   let tbody = table.append("tbody");
-      
+
     //   thead.append("th").text("Agency");
     //   thead.append("th").text("CFDA Number");
     //   thead.append("th").text("Title");
@@ -27,14 +27,14 @@ export class ReportPageComponent implements OnInit{
     //   thead.append("th").text("OMB Review Date");
     //   thead.append("th").text("Last Published Date");
     //   thead.append("th").text("Auto Published");
-      
+
     //   let tr = tbody.selectAll("tr")
     //   .data(data)
     //   .enter().append("tr");
-      
+
     //   let td = tr.selectAll("td")
-    //   .data(function(d){ 
-    //     return [ 
+    //   .data(function(d){
+    //     return [
     //       d["Agency"],
     //       d["CFDA Number"],
     //       d["Title"],
@@ -44,13 +44,11 @@ export class ReportPageComponent implements OnInit{
     //       d["OMB Review Date"],
     //       d["Last Published Date"],
     //       d["Auto Published"],
-    //     ] 
+    //     ]
     //   })
     //   .enter().append("td")
     //   .text(function(d){ return d; })
-  
     // });
-    
+
   }
-  
 }

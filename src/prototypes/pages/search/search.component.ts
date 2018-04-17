@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import {
   trigger,
   state,
@@ -180,33 +180,31 @@ import {
     ])
   ]
 })
-export class SearchPageComponent{
+export class SearchPageComponent{  
+  filtersDrawer = 'open';
+  selectedDomain = "All Award Data";
 
-    
-    filtersDrawer = 'open';
-    selectedDomain = "All Award Data";
-    
-    toggleFilters(){
-      this.filtersDrawer = this.filtersDrawer === 'open' ? 'close' : 'open';
-    }
-    
-    filterSlide: string;
-    filterSlideToggle(domain){
-      this.selectedDomain = domain;
-      if(domain === 'All Award Data'){
-        this.filterSlide = 'parent';
-      }else{
-        this.filterSlide = 'child';
-      }
-    }
-    
-    filterLink(){
-      if(this.filtersDrawer == 'open'){
-        return 'Hide';
-      }else{
-        return 'Show';
-      }
-    }
-    
-    
+  toggleFilters(){
+    this.filtersDrawer = this.filtersDrawer === 'open' ? 'close' : 'open';
   }
+
+  filterSlide: string;
+  filterSlideToggle(domain){
+    this.selectedDomain = domain;
+    if(domain === 'All Award Data'){
+      this.filterSlide = 'parent';
+    } else{
+      this.filterSlide = 'child';
+    }
+  }
+
+  filterLink(){
+    if(this.filtersDrawer == 'open'){
+      return 'Hide';
+    }else{
+      return 'Show';
+    }
+  }
+  
+  
+}

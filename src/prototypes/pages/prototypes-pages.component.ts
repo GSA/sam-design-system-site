@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   template:  `
-  <prototype-nav></prototype-nav>
+  <sam-prototype-nav></sam-prototype-nav>
   <router-outlet></router-outlet>
 
   <div class="patterns-menu-space"></div>

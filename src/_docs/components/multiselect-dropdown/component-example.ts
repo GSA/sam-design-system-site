@@ -17,7 +17,7 @@ const code_example = `<sam-multiselect-dropdown
   [name]="'types'"></sam-multiselect-dropdown>`;
 
 @Component({
-	selector: 'doc-multiselect-dropdown',
+  selector: 'doc-multiselect-dropdown',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -25,8 +25,8 @@ const code_example = `<sam-multiselect-dropdown
 `
 })
 export class MultiselectDropdownExampleComponent extends BaseExampleComponent implements OnInit {
-	filterTypes = ['Error', 'Informational', 'Warning'];
-	types = {
+  filterTypes = ['Error', 'Informational', 'Warning'];
+  types = {
     label: 'Types',
     options:   [
       { label: 'Informational', value: 'Informational', name: 'informational' },

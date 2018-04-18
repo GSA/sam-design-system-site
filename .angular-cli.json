@@ -37,7 +37,7 @@
   "lint": [
     {
       "project": "src/tsconfig.app.json",
-      "exclude": "**/node_modules/**"
+      "exclude": ["**/node_modules/**","**/sam-ui-elements/**"]
     },
     {
       "project": "src/tsconfig.spec.json",

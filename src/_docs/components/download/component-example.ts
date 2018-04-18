@@ -16,7 +16,7 @@ const code_example = `<div class="usa-grid-full">
 </div>`;
 
 @Component({
-	selector: 'doc-download',
+  selector: 'doc-download',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

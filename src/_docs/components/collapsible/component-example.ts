@@ -14,7 +14,7 @@ const code_example = `<sam-collapsible [label]="'Test Label'">
 </sam-collapsible>`;
 
 @Component({
-	selector: 'doc-collapsible',
+  selector: 'doc-collapsible',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

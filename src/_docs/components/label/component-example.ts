@@ -12,7 +12,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 const code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></sam-label>`;
 
 @Component({
-	selector: 'doc-label',
+  selector: 'doc-label',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

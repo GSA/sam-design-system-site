@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 @Component({
-	selector: 'doc-pagination',
+  selector: 'doc-pagination',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 <sam-pagination [currentPage]="paginationConfig.currentPage" [totalPages]="paginationConfig.totalPages"></sam-pagination>

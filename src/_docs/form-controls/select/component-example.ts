@@ -17,7 +17,7 @@ const code_example = `<sam-select
 </sam-select>`;
 
 @Component({
-	selector: 'doc-select',
+  selector: 'doc-select',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -25,7 +25,7 @@ const code_example = `<sam-select
 `
 })
 export class SelectExampleComponent extends BaseExampleComponent implements OnInit {
-	selectModel = '';
+  selectModel = '';
   selectConfig = {
     options: [
       {value: '', label: 'Default option', name: 'empty', disabled: true},

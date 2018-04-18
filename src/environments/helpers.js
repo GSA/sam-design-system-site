@@ -194,7 +194,7 @@ function generateRoutesString (docsTarget, staticTarget) {
 			.join(path.sep)
 			
 		return prev.concat(
-			`\n  { path: '${curr.link}', component: StaticPageComponent, data: { markdownfile: '${rel}' } },`
+			`\n  {\n    path: '${curr.link}',\n    component: StaticPageComponent,\n    data: { markdownfile: '${rel}' }\n  },`
 		)
 	}, '');
 
@@ -209,8 +209,7 @@ ${imports}
 import { StaticPageComponent } from './static.component';
 
 export const ROUTES: Routes = [
-	${routes}
-	${staticRoutes}
+${routes}${staticRoutes}
 ];
 export const routing = RouterModule.forChild(ROUTES);
 \n`

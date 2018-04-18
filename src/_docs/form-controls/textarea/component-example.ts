@@ -19,7 +19,7 @@ const code_example = `<sam-text-area
 </sam-text-area>`;
 
 @Component({
-	selector: 'doc-textarea',
+  selector: 'doc-textarea',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -27,7 +27,7 @@ const code_example = `<sam-text-area
 `
 })
 export class TextareaExampleComponent extends BaseExampleComponent implements OnInit {
-	textareaModel= 'Some Text';
+  textareaModel= 'Some Text';
   textareaConfig = {
     label: 'Enter zipcode',
     hint: 'Zipcode can be short or long version',
@@ -38,7 +38,7 @@ export class TextareaExampleComponent extends BaseExampleComponent implements On
   typedoc_target = 'SamTextareaComponent';
   typedoc_content = '';
 
-	example = `<samTextArea
+  example = `<samTextArea
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"
   [label]="textareaConfig.label"

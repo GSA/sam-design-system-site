@@ -17,12 +17,15 @@ const code_example = `<sam-filters-container>
     <sam-date name="example-date" [(value)]='dateModel'></sam-date>
   </sam-collapsible>
   <sam-collapsible label="'Test 3'">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ex aliquam, molestiae tempora. Nihil alias blanditiis excepturi architecto rerum repellendus adipisci ducimus minus, modi porro nostrum repudiandae perferendis placeat et.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Voluptate ex aliquam, molestiae tempora. Nihil alias blanditiis excepturi
+    architecto rerum repellendus adipisci ducimus minus, modi porro nostrum
+    repudiandae perferendis placeat et.</p>
   </sam-collapsible>
 </sam-filters-container>`;
 
 @Component({
-	selector: 'doc-spinner',
+  selector: 'doc-spinner',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -33,7 +36,7 @@ export class FiltersContainerExampleComponent extends BaseExampleComponent imple
   typedoc_target = 'SamFiltersContainerComponent';
   typedoc_content = '';
 
-	example = code_example;
+  example = code_example;
   dateModel: string = '2016-02-03';
 
   public base = '_docs/components/filters-container/';

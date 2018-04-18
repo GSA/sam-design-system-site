@@ -16,7 +16,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 
-//tabs/spacing matters for code example block
+// tabs/spacing matters for code example block
 const code_example = `
 <sam-text
   label="Title"
@@ -101,14 +101,14 @@ export class SamAlertFooterComponentExampleComponent extends BaseExampleComponen
     this.sections.forEach(this.fetchSection.bind(this));
   }
 
-  mustDimissHandler(item){
-    if (item && item.length > 0){
+  mustDimissHandler(item) {
+    if (item && item.length > 0) {
       this.footerAlertModel.mustDismiss = true;
     } else {
       this.footerAlertModel.mustDismiss = false;
     }
   }
-  onFooterAlertBtnClick(){
+  onFooterAlertBtnClick() {
     this.alertFooterService.registerFooterAlert(JSON.parse(JSON.stringify(this.footerAlertModel)));
   }
 }

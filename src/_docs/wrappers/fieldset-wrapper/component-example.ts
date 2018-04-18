@@ -16,7 +16,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-//tabs/spacing matters for code example block
+// tabs/spacing matters for code example block
 const code_example = `<sam-fieldset-wrapper label="Fieldset Label Example" hint="Hint text goes here">
   <sam-text label="Field #1" name="field1"></sam-text>
   <sam-text label="Field #2" name="field2"></sam-text>

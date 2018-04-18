@@ -8,7 +8,7 @@ export class ReportPageComponent implements OnInit {
 
   ngOnInit() {
 
-    // d3.csv("assets/ProgramStatusReport.csv").then(function(rows){
+    // d3.csv("assets/ProgramStatusReport.csv").then(function(rows) {
 
     //   let page = 1;
     //   let itemsPerPage = 50;
@@ -33,7 +33,7 @@ export class ReportPageComponent implements OnInit {
     //   .enter().append("tr");
 
     //   let td = tr.selectAll("td")
-    //   .data(function(d){
+    //   .data(function(d) {
     //     return [
     //       d["Agency"],
     //       d["CFDA Number"],
@@ -47,7 +47,7 @@ export class ReportPageComponent implements OnInit {
     //     ]
     //   })
     //   .enter().append("td")
-    //   .text(function(d){ return d; })
+    //   .text(function(d) { return d; })
     // });
 
   }

@@ -35,7 +35,7 @@ const code_example_3 = `
 `;
 
 @Component({
-	selector: 'doc-sam-icon',
+  selector: 'doc-sam-icon',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -50,9 +50,9 @@ const code_example_3 = `
 
       <h3 class="sam-ui dividing header">Available</h3>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
     </doc-template>`
 })
@@ -60,7 +60,7 @@ export class SamIconComponentExampleComponent extends BaseExampleComponent imple
   typedoc_target = 'SamIconComponent';
   typedoc_content = '';
 
-	example_1 = code_example_1.trim();
+  example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
 

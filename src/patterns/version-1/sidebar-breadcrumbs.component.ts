@@ -106,10 +106,10 @@ export class SidebarBreadcrumbsPageComponent{
     <h3 class="sam-ui header">Page with side navigation and breadcrumbs</h3>
     <sam-tabs>
       <sam-tab tabTitle="Template" active="true">
-        <code-example language="html" [code]="code_template"></code-example>
+        <sam-code-example language="html" [code]="code_template"></sam-code-example>
       </sam-tab>
       <sam-tab tabTitle="Component">
-        <code-example language="javascript" [code]="code_component"></code-example>
+        <sam-code-example language="javascript" [code]="code_component"></sam-code-example>
       </sam-tab>
     </sam-tabs>
 

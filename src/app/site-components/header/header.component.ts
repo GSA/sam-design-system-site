@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'site-header',
+  selector: 'sam-site-header',
   templateUrl: 'header.template.html',
 })
-export class SiteHeaderComponent{}
+export class SiteHeaderComponent {}

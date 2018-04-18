@@ -16,7 +16,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-//tabs/spacing matters for code example block
+// tabs/spacing matters for code example block
 const code_example = `
 <sam-breadcrumbs [crumbs]="crumbs"></sam-breadcrumbs>
 `;

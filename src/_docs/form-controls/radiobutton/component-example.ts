@@ -19,7 +19,7 @@ const code_example = `<sam-radio-button
 </sam-radio-button>`;
 
 @Component({
-	selector: 'doc-radio',
+  selector: 'doc-radio',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -27,7 +27,7 @@ const code_example = `<sam-radio-button
 `
 })
 export class RadioExampleComponent extends BaseExampleComponent implements OnInit {
-	radioModel: any = 'ma';
+  radioModel: any = 'ma';
   radioConfig = {
     options: [
       {value: 'dc', label: 'DC', name: 'radio-dc'},

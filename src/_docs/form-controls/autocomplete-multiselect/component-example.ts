@@ -6,8 +6,7 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 import {
   AutocompleteService
-} from 'sam-ui-elements/src/ui-kit/form-controls/autocomplete/\
-autocomplete.service';
+} from 'sam-ui-elements/src/ui-kit/form-controls/autocomplete/autocomplete.service';
 import { ACTestService } from './autocomplete.service';
 
 import { Http } from '@angular/http';
@@ -220,11 +219,11 @@ const code_example = `<div class="usa-grid-full">
     The following class demonstrates how to setup pagination with the component.
     As with any autocomplete service, we start by implementing the
     AutocompleteService interface.</p>
-    <code-example language="javascript" [code]="code"></code-example>
+    <sam-code-example language="javascript" [code]="code"></sam-code-example>
     <p>The values in this component come from a private member property, but this could
     just as easily come from a service call. In that case, the developer would need
      to use Angular's @Injectable() decorator.</p>
-    <code-example language="javascript" [code]="code2"></code-example>
+    <sam-code-example language="javascript" [code]="code2"></sam-code-example>
     <p>In this simple example, we use the property names start and end to track
     pagination; however, typically pagination properties are called offset and
     limit.
@@ -236,35 +235,35 @@ const code_example = `<div class="usa-grid-full">
     Finally, lastSearch is used to track the current filter string. When the
     string changes, the pagination should reset since the result list should be
     different.</p>
-    <code-example language="javascript" [code]="code3"></code-example>
+    <sam-code-example language="javascript" [code]="code3"></sam-code-example>
     <p>The resetPagination method is used to reset the pagination variables back to
     their initial state when the searchString changes.</p>
-    <code-example language="javascript" [code]="code4"></code-example>
+    <sam-code-example language="javascript" [code]="code4"></sam-code-example>
     <p>The fetch method from the AutocompleteService is where most of the magic
     happens. First, we check if the latest search string, val, is the same as the
     lastSearch. If not, we reset pagination.</p>
-    <code-example language="javascript" [code]="code5"></code-example>
+    <sam-code-example language="javascript" [code]="code5"></sam-code-example>
     <p>Next, if the pageEnd parameter is true and val hasn't changed
     since the last search, increment the indices that are used for pagination. In
     this case, I also added a check that if the index is out of scope, return an
     empty array.</p>
-    <code-example language="javascript" [code]="code6"></code-example>
+    <sam-code-example language="javascript" [code]="code6"></sam-code-example>
     <p>Finally, we call the filter method to return the sliced array with the
     correct indices.</p>
-    <code-example language="javascript" [code]="code7"></code-example>
+    <sam-code-example language="javascript" [code]="code7"></sam-code-example>
     <p>In an ideal world, most of this tracking will be done by an API call.
     However, this example serves to demonstrate the concerns that developers need
     to account for when implementing pagination on this component.</p>
     <section>
     <h3>Complete Service Code</h3>
-    <code-example language="javascript" [code]="code8"></code-example>
+    <sam-code-example language="javascript" [code]="code8"></sam-code-example>
     </section>
   </article>
 </doc-template>
 `
 })
 export class AutocompleteMultiselectExampleComponent extends BaseExampleComponent implements OnInit {
-	value = 'apple';
+  value = 'apple';
   value2 = { 'code': 'code05', 'value': 'pineapple' };
   multiselectOptions = [
     { key: 'Apple', value: 'Apple' },
@@ -278,7 +277,7 @@ export class AutocompleteMultiselectExampleComponent extends BaseExampleComponen
     keyProperty: 'key',
     valueProperty: 'value'
   };
-	typedoc_target = 'SamAutocompleteMultiselectComponent';
+  typedoc_target = 'SamAutocompleteMultiselectComponent';
   typedoc_content = '';
   example = code_example;
 

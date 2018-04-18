@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'site-footer',
+  selector: 'sam-site-footer',
   templateUrl: 'footer.template.html',
 })
-export class SiteFooterComponent{}
+export class SiteFooterComponent {}

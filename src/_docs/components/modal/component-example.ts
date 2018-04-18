@@ -50,9 +50,19 @@ const code_example = `<sam-modal
   [cancelButtonLabel]="'No'"
   (onClose)="message='Info modal closed'"
   (onSubmit)="onModal4Close()">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero, esse ratione quis quasi commodi distinctio sit aut eum facilis minima hic saepe ut ex, aliquid minus non maxime quod!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero,
+  esse ratione quis quasi commodi distinctio sit aut eum facilis minima hic saepe ut ex,
+  aliquid minus non maxime quod!
 </sam-modal>
-<sam-modal [showClose]="true" #modal5 [title]="modalConfig2.title" [type]="modalConfig2.type" [description]="modalConfig2.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal5Close()">
+<sam-modal
+  [showClose]="true"
+  #modal5
+  [title]="modalConfig2.title"
+  [type]="modalConfig2.type"
+  [description]="modalConfig2.description"
+  [submitButtonLabel]="'Yes'"
+  [cancelButtonLabel]="'No'"
+  (onSubmit)="onModal5Close()">
 </sam-modal>
 
 <p>{{message}}</p>
@@ -70,7 +80,7 @@ const code_example = `<sam-modal
 `;
 
 @Component({
-	selector: 'doc-modal',
+  selector: 'doc-modal',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -78,15 +88,15 @@ const code_example = `<sam-modal
 `
 })
 export class ModalExampleComponent extends BaseExampleComponent implements OnInit {
-	modalConfig = {
-		title: 'Test Title',
-		description: 'Description Text'
-	};
-	@ViewChild('modal1') vcModal1;
-	@ViewChild('modal2') vcModal2;
-	@ViewChild('modal3') vcModal3;
-	@ViewChild('modal4') vcModal4;
-	@ViewChild('modal5') vcModal5;
+  modalConfig = {
+    title: 'Test Title',
+    description: 'Description Text'
+  };
+  @ViewChild('modal1') vcModal1;
+  @ViewChild('modal2') vcModal2;
+  @ViewChild('modal3') vcModal3;
+  @ViewChild('modal4') vcModal4;
+  @ViewChild('modal5') vcModal5;
   typedoc_target = 'SamModalComponent';
   typedoc_content = '';
 
@@ -127,34 +137,34 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
     this.sections.forEach(this.fetchSection.bind(this));
   }
 
-	onModalInitClick(){
-		this.vcModal1.openModal();
-	}
-  onModalClose(){
+  onModalInitClick() {
+    this.vcModal1.openModal();
+  }
+  onModalClose() {
     this.vcModal1.closeModal();
   }
-  onModalInit2Click(){
-		this.vcModal2.openModal();
-	}
-  onModal2Close(){
+  onModalInit2Click() {
+    this.vcModal2.openModal();
+  }
+  onModal2Close() {
     this.vcModal2.closeModal();
   }
-  onModalInit3Click(){
-		this.vcModal3.openModal();
-	}
-  onModal3Close(){
+  onModalInit3Click() {
+    this.vcModal3.openModal();
+  }
+  onModal3Close() {
     this.vcModal3.closeModal();
   }
-  onModalInit4Click(){
-		this.vcModal4.openModal();
-	}
-  onModal4Close(){
+  onModalInit4Click() {
+    this.vcModal4.openModal();
+  }
+  onModal4Close() {
     this.vcModal4.closeModal();
   }
-  onModal5InitClick(){
+  onModal5InitClick() {
     this.vcModal5.openModal();
   }
-  onModal5Close(){
+  onModal5Close() {
     this.vcModal5.closeModal();
   }
 }

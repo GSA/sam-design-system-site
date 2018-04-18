@@ -20,7 +20,7 @@ const code_example = `
 `;
 
 @Component({
-	selector: 'doc-phone-group',
+  selector: 'doc-phone-group',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

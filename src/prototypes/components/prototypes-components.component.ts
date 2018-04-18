@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import {
   Router,
   NavigationEnd,
@@ -22,7 +22,7 @@ import {
   </div>
   `
 })
-export class ComponentsComponent {
+export class ComponentsComponent implements OnDestroy {
 
   selectedOption: any;
 
@@ -33,7 +33,7 @@ export class ComponentsComponent {
 
   routerSubscription: any;
 
-  constructor(private router: Router){
+  constructor(private router: Router) {
     this.routerSubscription = router.events.subscribe(event => {
       if (event instanceof NavigationEnd ) {
         const tree: UrlTree = router.parseUrl(event.url);
@@ -44,16 +44,16 @@ export class ComponentsComponent {
     });
   }
 
-  selectOption(value){
+  selectOption(value) {
     this.options.forEach(option => {
-      if (option.value === value){
+      if (option.value === value) {
         this.selectedOption = option;
       }
     });
   }
 
-  navigateTo(){
-    if (this.selectedOption.value){
+  navigateTo() {
+    if (this.selectedOption.value) {
       this.router.navigate([`/prototypes/component/${this.selectedOption.value}`]);
     }
   }
@@ -61,5 +61,4 @@ export class ComponentsComponent {
   ngOnDestroy() {
     this.routerSubscription.unsubscribe();
   }
-
 }

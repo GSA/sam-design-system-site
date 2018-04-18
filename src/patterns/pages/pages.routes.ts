@@ -30,4 +30,4 @@ const PageRoutes: Routes = [
     RouterModule
   ]
 })
-export class PagesRoutingModule{}
+export class PagesRoutingModule {}

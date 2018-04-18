@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
+const code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
 
 @Component({
 	selector: 'doc-sidenav',
@@ -20,8 +20,8 @@ See sidenav on the left
 `
 })
 export class SidenavExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamSidenavComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamSidenavComponent';
+  typedoc_content = '';
   example = code_example;
 
   public base = '_docs/components/sidenav/';

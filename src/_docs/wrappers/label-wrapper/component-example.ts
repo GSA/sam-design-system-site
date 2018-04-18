@@ -17,7 +17,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
-var code_example = `<sam-label-wrapper label="Fieldset Label Example" hint="Hint text goes here">
+const code_example = `<sam-label-wrapper label="Fieldset Label Example" hint="Hint text goes here">
   <sam-text label="Field #1" name="field1"></sam-text>
 </sam-label-wrapper>`;
 
@@ -27,8 +27,8 @@ var code_example = `<sam-label-wrapper label="Fieldset Label Example" hint="Hint
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class LabelWrapperExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "LabelWrapper";
-  typedoc_content = "";
+  typedoc_target = 'LabelWrapper';
+  typedoc_content = '';
 
   example = code_example;
 

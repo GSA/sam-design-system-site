@@ -16,18 +16,18 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
-var code_example = `TODO`;
+const code_example = `TODO`;
 
 @Component({
 	selector: 'doc-sam-upload',
-  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">'+ code_example +'</doc-template>'
+  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamUploadComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamUploadComponent";
-  typedoc_content = "";
-  
+  typedoc_target = 'SamUploadComponent';
+  typedoc_content = '';
+
 	example = code_example;
-      
+
   public base = '_docs/components/upload/';
 
   constructor(

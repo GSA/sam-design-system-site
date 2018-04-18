@@ -17,7 +17,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
-var code_example = `
+const code_example = `
 <sam-breadcrumbs [crumbs]="crumbs"></sam-breadcrumbs>
 `;
 @Component({
@@ -25,8 +25,8 @@ var code_example = `
   template: `<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">${code_example}</doc-template>`
 })
 export class SamBreadcrumbsComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamBreadcrumbsComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamBreadcrumbsComponent';
+  typedoc_content = '';
 
   example = code_example;
 

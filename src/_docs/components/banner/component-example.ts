@@ -18,10 +18,10 @@ View the banner at the top
 `
 })
 export class BannerExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamBannerComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamBannerComponent';
+  typedoc_content = '';
 
-  example = `<sam-banner></sam-banner>`;//code example at app level
+  example = `<sam-banner></sam-banner>`; //code example at app level
 
   public base = '_docs/components/banner/';
 

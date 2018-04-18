@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-date name="example-date" [(ngModel)]='dateModel'></sam-date>`;
+const code_example = `<sam-date name="example-date" [(ngModel)]='dateModel'></sam-date>`;
 
 @Component({
   selector: 'doc-date',

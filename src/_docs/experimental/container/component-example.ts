@@ -15,37 +15,37 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example_1 = `
+const code_example_1 = `
 <sam-container gridLines="true">
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum ut 
-    arcu pharetra pharetra sit amet eu libero. Ut tristique lacus dolor, nec 
-    lacinia ante ornare a. Phasellus sagittis, nulla eu porta imperdiet, nisi 
-    odio interdum dolor, sed dictum leo magna at odio. Donec at molestie elit. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum ut
+    arcu pharetra pharetra sit amet eu libero. Ut tristique lacus dolor, nec
+    lacinia ante ornare a. Phasellus sagittis, nulla eu porta imperdiet, nisi
+    odio interdum dolor, sed dictum leo magna at odio. Donec at molestie elit.
   </p>
 </sam-container>
 `;
 
-var code_example_2 = `
+const code_example_2 = `
 <sam-container gridLines="true">
   <p data-emphasis="divided">
     <strong>Left column</strong>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum ut 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum ut
     arcu pharetra pharetra sit amet eu libero.
   </p>
   <p>
     <strong>Right column</strong>
-    Pellentesque pellentesque orci eget lectus aliquet laoreet. Proin ac 
+    Pellentesque pellentesque orci eget lectus aliquet laoreet. Proin ac
     ultrices diam. Aenean et magna lorem.
   </p>
 </sam-container>
 `;
 
-var code_example_3 = `
+const code_example_3 = `
 <sam-container gridLines="true">
   <p data-emphasis="high">
     <strong>Left column</strong>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum ut 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum ut
     arcu pharetra pharetra sit amet eu libero.
   </p>
   <p>
@@ -55,7 +55,7 @@ var code_example_3 = `
 </sam-container>
 `;
 
-var code_example_4 = `
+const code_example_4 = `
 <sam-container gridLines="true">
   <p data-emphasis="lowest">
     <strong>Left column</strong>
@@ -68,7 +68,7 @@ var code_example_4 = `
 </sam-container>
 `;
 
-var code_example_5 = `
+const code_example_5 = `
 <sam-container gridLines="true">
   <p data-emphasis="low">
     <strong>Left column</strong>
@@ -92,12 +92,12 @@ var code_example_5 = `
           Warning
         </div>
         <p>
-          This component is under development.  
+          This component is under development.
         </p>
       </div>
 
       <p>
-        Wrapping any content with <em>sam-container</em> will create a 6 column 
+        Wrapping any content with <em>sam-container</em> will create a 6 column
         layout inside the container.
       </p>
 
@@ -107,8 +107,8 @@ var code_example_5 = `
 
       <h2 class="sam-ui header">Emphasis</h2>
       <p>
-        By default any direct child of the container (p,a,div,span,etc) will 
-        take all the horizontal space avaliable. This can be adjusted by using 
+        By default any direct child of the container (p,a,div,span,etc) will
+        take all the horizontal space avaliable. This can be adjusted by using
         the <em>data-emphasis</em> atribute.
       </p>
 
@@ -136,17 +136,17 @@ var code_example_5 = `
     </doc-template>`
 })
 export class SamContainerComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamContainerComponent";
-  typedoc_content = " ";
-  
+  typedoc_target = 'SamContainerComponent';
+  typedoc_content = ' ';
+
   example_1 = code_example_1;
   example_2 = code_example_2;
   example_3 = code_example_3;
   example_4 = code_example_4;
   example_5 = code_example_5;
 
-    
-        
+
+
   public base = '_docs/experimental/container/';
 
   constructor(

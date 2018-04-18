@@ -15,11 +15,11 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example_1 = ``;
+const code_example_1 = ``;
 
-var code_example_2 = ``;
+const code_example_2 = ``;
 
-var code_example_3 = ``;
+const code_example_3 = ``;
 
 @Component({
 	selector: 'doc-sam-list',
@@ -31,7 +31,7 @@ var code_example_3 = ``;
           Warning
         </div>
         <p>
-        This component is under development. 
+        This component is under development.
         </p>
       </div>
 
@@ -56,47 +56,47 @@ var code_example_3 = ``;
     </doc-template>`
 })
 export class SamListComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamListComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamListComponent';
+  typedoc_content = '';
 
   listData = [
     {
-      "text": "Orci varius natoque"
+      'text': 'Orci varius natoque'
     },
     {
-      "text": "Vivamus ac est eget ipsum"
+      'text': 'Vivamus ac est eget ipsum'
     }
-  ]
+  ];
 
   listLinkData = [
     {
-      "link": "#",
-      "text": "Orci varius natoque"
+      'link': '#',
+      'text': 'Orci varius natoque'
     },
     {
-      "link": "#",
-      "text": "Vivamus ac est eget ipsum"
+      'link': '#',
+      'text': 'Vivamus ac est eget ipsum'
     }
-  ]
+  ];
 
   listIconData = [
     {
-      "icon": "user",
-      "link": "#",
-      "text": "Orci varius natoque"
+      'icon': 'user',
+      'link': '#',
+      'text': 'Orci varius natoque'
     },
     {
-      "icon": "book",
-      "link": "#",
-      "text": "Vivamus ac est eget ipsum"
+      'icon': 'book',
+      'link': '#',
+      'text': 'Vivamus ac est eget ipsum'
     }
-  ]
-  
+  ];
+
 	example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
 
-          
+
   public base = '_docs/experimental/list/';
 
   constructor(

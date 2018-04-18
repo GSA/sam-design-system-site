@@ -15,27 +15,27 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example_1 = `
+const code_example_1 = `
 <sam-title importance="highest" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
-var code_example_2 = `
+const code_example_2 = `
 <sam-title importance="high" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
-var code_example_3 = `
+const code_example_3 = `
 <sam-title importance="normal" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
-var code_example_4 = `
+const code_example_4 = `
 <sam-title importance="low" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
-var code_example_5 = `
+const code_example_5 = `
 <sam-title importance="highest" sup="Sit amet" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
-var code_example_6 = `
+const code_example_6 = `
 <sam-title importance="low" icon="user" text="Lorem Ipsum Dolor"></sam-title>
 `;
 
@@ -49,7 +49,7 @@ var code_example_6 = `
           Warning
         </div>
         <p>
-          This component is under development.  
+          This component is under development.
         </p>
       </div>
 
@@ -78,8 +78,8 @@ var code_example_6 = `
           Availability:
         </div>
         <p>
-          This option its <strong>only</strong> available for highest importance 
-          headings 
+          This option its <strong>only</strong> available for highest importance
+          headings
         </p>
       </div>
 
@@ -96,9 +96,9 @@ var code_example_6 = `
     </doc-template>`
 })
 export class SamHeadingComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamHeadingComponent";
-  typedoc_content = "";
-  
+  typedoc_target = 'SamHeadingComponent';
+  typedoc_content = '';
+
   example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
@@ -106,8 +106,8 @@ export class SamHeadingComponentExampleComponent extends BaseExampleComponent im
   example_5 = code_example_5.trim();
   example_6 = code_example_6.trim();
 
-    
-        
+
+
   public base = '_docs/experimental/heading/';
 
   constructor(

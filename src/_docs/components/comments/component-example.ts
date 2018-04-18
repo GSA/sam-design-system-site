@@ -19,7 +19,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 export class CommentsDemoService implements CommentsService {
-  
+
   private offset = 5;
 
   public _username: string = 'anon-user@common-components.team';
@@ -122,9 +122,9 @@ export class CommentsDemoService implements CommentsService {
   getComments(): Observable<Comment[]> {
     const endPoint = (this._comments.length - 1) - this.offset;
     this.lastIndex = endPoint;
-    
-    return Observable.of(this._comments.slice(endPoint, this._comments.length-1));
-  };
+
+    return Observable.of(this._comments.slice(endPoint, this._comments.length - 1));
+  }
 
   postComment(_: any): Observable<Comment[]> {
     if (_.text === 'asdf') {
@@ -133,16 +133,16 @@ export class CommentsDemoService implements CommentsService {
     }
     this._comments.push(_);
     return Observable.of(this._comments);
-  };
+  }
 
   deleteComment(comment: Comment): Observable<Comment[]> {
     this._comments = this._comments.filter((item) => {
       if (item.text !== comment.text) {
         return item;
       }
-    })
-    return Observable.of(this._comments.slice(this.lastIndex, this._comments.length-1));
-  };
+    });
+    return Observable.of(this._comments.slice(this.lastIndex, this._comments.length - 1));
+  }
 
   getInitialState(): Observable<Comment[]> {
     this.lastIndex = 0;
@@ -151,7 +151,7 @@ export class CommentsDemoService implements CommentsService {
 }
 
 //tabs/spacing matters for code example block
-var code_example = `
+const code_example = `
 <sam-comments class="usa-width-one">
 </sam-comments>`;
 
@@ -164,8 +164,8 @@ var code_example = `
   ]
 })
 export class SamCommentsComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamCommentsComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamCommentsComponent';
+  typedoc_content = '';
 
   example = code_example;
 

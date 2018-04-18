@@ -16,7 +16,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
-var code_example = `TODO`;
+const code_example = `TODO`;
 
 @Component({
 	selector: 'doc-sam-sidebar',
@@ -28,7 +28,7 @@ var code_example = `TODO`;
           Warning
         </div>
         <p>
-          This component is under development. 
+          This component is under development.
         </p>
       </div>
 
@@ -40,9 +40,9 @@ var code_example = `TODO`;
     </doc-template>`
 })
 export class SamSidebarComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamSidebarComponent";
-  typedoc_content = "";
-  
+  typedoc_target = 'SamSidebarComponent';
+  typedoc_content = '';
+
 	example = code_example;
 
   public base = '_docs/experimental/sidebar/';

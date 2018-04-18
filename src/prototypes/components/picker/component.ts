@@ -6,12 +6,12 @@ import { Component, HostListener} from '@angular/core';
 export class PickerComponent {
 
   @HostListener('click', ['$event']) onClick($event) {
-    let target = $event.target.className;
-    this.showOverlay = target === "prototype-picker-overlay" ? false : true;
+    const target = $event.target.className;
+    this.showOverlay = target === 'prototype-picker-overlay' ? false : true;
    }
 
   showOverlay: boolean = true;
-  
+
   openModal(){
     this.showOverlay = true;
   }

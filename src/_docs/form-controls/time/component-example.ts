@@ -12,7 +12,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 const code_example = `<sam-time name="example-time" [(ngModel)]="time"></sam-time>`;
 
 @Component({
-	selector: 'doc-time',
+  selector: 'doc-time',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -21,7 +21,7 @@ const code_example = `<sam-time name="example-time" [(ngModel)]="time"></sam-tim
 `
 })
 export class TimeExampleComponent extends BaseExampleComponent implements OnInit {
-	time: string = '13:01';
+  time: string = '13:01';
   typedoc_target = 'SamTimeComponent';
   typedoc_content = '';
 

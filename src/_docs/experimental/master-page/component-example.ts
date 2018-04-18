@@ -15,11 +15,11 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-//tabs/spacing matters for code example block
+// tabs/spacing matters for code example block
 const code_example = `TODO`;
 
 @Component({
-	selector: 'doc-sam-master-page',
+  selector: 'doc-sam-master-page',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -43,8 +43,7 @@ export class SamMasterPageComponentExampleComponent extends BaseExampleComponent
   typedoc_target = 'SamMasterPageComponent';
   typedoc_content = ' ';
 
-	example = code_example;
-
+  example = code_example;
 
   public base = '_docs/experimental/master-page/';
 

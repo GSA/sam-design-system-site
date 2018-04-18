@@ -19,7 +19,7 @@ const code_example_disabled = `
 <sam-button buttonDisabled="true" buttonText="Button" buttonType="negative"></sam-button>`;
 
 @Component({
-	selector: 'doc-button',
+  selector: 'doc-button',
   template: `
 
   <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
@@ -38,9 +38,9 @@ const code_example_disabled = `
   page when the action is to initiate work, or at the bottom of the form,
   such as when the action is to submit that form.
   </p>
-  <code-example language="html" [code]="example_1">
+  <sam-code-example language="html" [code]="example_1">
   ` + code_example_1 + `
-  </code-example>
+  </sam-code-example>
 
   <div class="sam-ui info message">
   <div class="header">
@@ -50,12 +50,12 @@ const code_example_disabled = `
   There is a specific button type for submit buttons.
   </p>
   </div>
-  <code-example language="html" [code]="example_1_2">
+  <sam-code-example language="html" [code]="example_1_2">
   ` + code_example_1_2 + `
-  </code-example>
+  </sam-code-example>
 
   <strong>Will generate the code below</strong>
-  <code-example language="html" [code]="example_1_3"></code-example>
+  <sam-code-example language="html" [code]="example_1_3"></sam-code-example>
 
 
   <div class="sam-ui hidden divider"></div>
@@ -66,9 +66,9 @@ const code_example_disabled = `
   Examples include search or form-related actions, such as adding data to
   a table or adding terms in the Advanced section of the Agency Picker.
   </p>
-  <code-example language="html" [code]="example_2">
+  <sam-code-example language="html" [code]="example_2">
   ` + code_example_2 + `
-  </code-example>
+  </sam-code-example>
 
   <div class="sam-ui hidden divider"></div>
 
@@ -79,9 +79,9 @@ const code_example_disabled = `
   simply an icon. Examples include actions such as '<em>Edit</em>', '<em>Subscribe</em>',
   '<em>Favorite</em>', or '<em>Share</em>'.
   </p>
-  <code-example language="html" [code]="example_3">
+  <sam-code-example language="html" [code]="example_3">
   ` + code_example_3 + `
-  </code-example>
+  </sam-code-example>
 
   <div class="sam-ui hidden divider"></div>
 
@@ -90,23 +90,23 @@ const code_example_disabled = `
   Use the negative button when you want to perform a potentially destructive
   action.
   </p>
-  <code-example language="html" [code]="example_4">
+  <sam-code-example language="html" [code]="example_4">
   ` + code_example_4 + `
-  </code-example>
+  </sam-code-example>
 
   <div class="sam-ui section hidden divider"></div>
 
   <h2 class="sam-ui header">States</h2>
 
   <h3 class="sam-ui dividing header">Disabled</h3>
-  <code-example language="html" [code]="example">
+  <sam-code-example language="html" [code]="example">
   ` + code_example_disabled + `
-  </code-example>
+  </sam-code-example>
 
   </doc-template>
   `
 })
-export class ButtonExampleComponent extends BaseExampleComponent implements OnInit{
+export class ButtonExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = 'SamButtonComponent';
   typedoc_content = '';
 
@@ -131,7 +131,7 @@ export class ButtonExampleComponent extends BaseExampleComponent implements OnIn
     this.sections.forEach(this.fetchSection.bind(this));
   }
 
-  ngOnInit(){
+  ngOnInit() {
     super.ngOnInit();
   }
 

@@ -40,7 +40,7 @@ const code_example_6 = `
 `;
 
 @Component({
-	selector: 'doc-sam-heading',
+  selector: 'doc-sam-heading',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -55,21 +55,21 @@ const code_example_6 = `
 
       <h2 class="sam-ui header">Importance</h2>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
-      <code-example language="html" [code]="example_2">
+      <sam-code-example language="html" [code]="example_2">
       ` + code_example_2 + `
-      </code-example>
+      </sam-code-example>
 
-      <code-example language="html" [code]="example_3">
+      <sam-code-example language="html" [code]="example_3">
       ` + code_example_3 + `
-      </code-example>
+      </sam-code-example>
 
-      <code-example language="html" [code]="example_4">
+      <sam-code-example language="html" [code]="example_4">
       ` + code_example_4 + `
-      </code-example>
+      </sam-code-example>
 
       <h2 class="sam-ui header">Sup Heading</h2>
 
@@ -83,15 +83,15 @@ const code_example_6 = `
         </p>
       </div>
 
-      <code-example language="html" [code]="example_5">
+      <sam-code-example language="html" [code]="example_5">
       ` + code_example_5 + `
-      </code-example>
+      </sam-code-example>
 
       <h2 class="sam-ui header">Icons</h2>
 
-      <code-example language="html" [code]="example_6">
+      <sam-code-example language="html" [code]="example_6">
       ` + code_example_6 + `
-      </code-example>
+      </sam-code-example>
 
     </doc-template>`
 })

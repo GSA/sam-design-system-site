@@ -12,7 +12,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 const code_example = `<sam-poc [data]="pointOfContact"></sam-poc>`;
 
 @Component({
-	selector: 'doc-poc',
+  selector: 'doc-poc',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -20,7 +20,7 @@ const code_example = `<sam-poc [data]="pointOfContact"></sam-poc>`;
 `
 })
 export class POCExampleComponent extends BaseExampleComponent implements OnInit {
-	pointOfContact = {
+  pointOfContact = {
     fullName: 'John Doe',
     address: '1234 Waterway Rd',
     city: 'Norfolk',

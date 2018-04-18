@@ -83,7 +83,7 @@ const code_example_5 = `
 
 
 @Component({
-	selector: 'doc-sam-container',
+  selector: 'doc-sam-container',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -101,9 +101,9 @@ const code_example_5 = `
         layout inside the container.
       </p>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
       <h2 class="sam-ui header">Emphasis</h2>
       <p>
@@ -113,24 +113,24 @@ const code_example_5 = `
       </p>
 
       <h3 class="sam-ui dividing header">Lowest</h3>
-      <code-example language="html" [code]="example_4">
+      <sam-code-example language="html" [code]="example_4">
       ` + code_example_4 + `
-      </code-example>
+      </sam-code-example>
 
       <h3 class="sam-ui dividing header">Low</h3>
-      <code-example language="html" [code]="example_5">
+      <sam-code-example language="html" [code]="example_5">
       ` + code_example_5 + `
-      </code-example>
+      </sam-code-example>
 
       <h3 class="sam-ui dividing header">Divided</h3>
-      <code-example language="html" [code]="example_2">
+      <sam-code-example language="html" [code]="example_2">
       ` + code_example_2 + `
-      </code-example>
+      </sam-code-example>
 
       <h3 class="sam-ui dividing header">High</h3>
-      <code-example language="html" [code]="example_3">
+      <sam-code-example language="html" [code]="example_3">
       ` + code_example_3 + `
-      </code-example>
+      </sam-code-example>
 
 
     </doc-template>`

@@ -31,7 +31,7 @@ const code_example = `<sam-checkbox
 </sam-checkbox>`;
 
 @Component({
-	selector: 'doc-checkbox',
+  selector: 'doc-checkbox',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -65,7 +65,7 @@ export class CheckboxExampleComponent extends BaseExampleComponent implements On
     errorMessage: null,
     hint: ''
   };
-	typedoc_target = 'SamCheckboxComponent';
+  typedoc_target = 'SamCheckboxComponent';
   typedoc_content = '';
 
   example = code_example;

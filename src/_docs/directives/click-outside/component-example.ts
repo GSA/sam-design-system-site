@@ -9,10 +9,13 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-const code_example = `<button sam-click-outside (click)="clickInsideHandler()" (clickOutside)="clickOutsideHandler()">Sample Target</button>`;
+const code_example = `<button
+  sam-click-outside
+  (click)="clickInsideHandler()"
+  (clickOutside)="clickOutsideHandler()">Sample Target</button>`;
 
 @Component({
-	selector: 'doc-click-outside',
+  selector: 'doc-click-outside',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 <p>Click value: {{clickedValue}}</p>
@@ -21,11 +24,11 @@ const code_example = `<button sam-click-outside (click)="clickInsideHandler()" (
 `
 })
 export class ClickOutsideExampleComponent extends BaseExampleComponent implements OnInit {
-	clickedValue = 'None';
-	typedoc_target = 'SamClickOutsideDirective';
+  clickedValue = 'None';
+  typedoc_target = 'SamClickOutsideDirective';
   typedoc_content = '';
 
-	example = code_example;
+  example = code_example;
 
   public base = '_docs/directives/click-outside/';
 

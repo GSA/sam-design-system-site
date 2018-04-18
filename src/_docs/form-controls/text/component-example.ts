@@ -19,7 +19,7 @@ const code_example = `<sam-text
 </sam-text>`;
 
 @Component({
-	selector: 'doc-text',
+  selector: 'doc-text',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -27,7 +27,7 @@ const code_example = `<sam-text
 `
 })
 export class TextExampleComponent extends BaseExampleComponent implements OnInit {
-	textModel = 'Some Text';
+  textModel = 'Some Text';
   textConfig = {
     label: 'Enter zipcode',
     hint: 'Zipcode can be short or long version',

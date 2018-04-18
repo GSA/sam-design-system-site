@@ -23,7 +23,7 @@ const STATICPAGES = environment.STATICPAGES;
  */
 
 @Component({
-  selector: 'app',
+  selector: 'sam-app',
   animations: [ routerTransition ],
   encapsulation: ViewEncapsulation.None,
   template: `
@@ -83,7 +83,7 @@ export class AppComponent implements OnInit {
     }
     const obj = this.uikitList;
     const test = Object.keys(this.uikitList)
-      .map(function(key){
+      .map(function(key) {
       const list = obj[key];
       return {
         label: key,
@@ -108,14 +108,14 @@ export class AppComponent implements OnInit {
     }
     const x = this.staticpagelist;
     const test2 = Object.keys(this.staticpagelist)
-      .map(function(key){
+      .map(function(key) {
       const list = x[key];
       return {
         label: key,
         route: '/',
         children: list
       };
-    }).sort(function(a, b){
+    }).sort(function(a, b) {
       if (a.label === 'Overview') {
         return -1;
       } else if (b.label === 'Overview') {

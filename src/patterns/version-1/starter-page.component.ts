@@ -27,7 +27,7 @@ const code_example = `
   <div style="padding: 40px; border-top:2px dashed #ccc; background-color: #eaeaea;">
     <div class="container">
       <h3 class="sam-ui header">Basic Page Code</h3>
-      <code-example language="html" [code]="code"></code-example>
+      <sam-code-example language="html" [code]="code"></sam-code-example>
     </div>
   </div>
   `,

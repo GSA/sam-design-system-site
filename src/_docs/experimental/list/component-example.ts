@@ -22,7 +22,7 @@ const code_example_2 = ``;
 const code_example_3 = ``;
 
 @Component({
-	selector: 'doc-sam-list',
+  selector: 'doc-sam-list',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -37,21 +37,21 @@ const code_example_3 = ``;
 
       <h3 class="sam-ui dividing header">Text</h3>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
       <h3 class="sam-ui dividing header">Link</h3>
 
-      <code-example language="html" [code]="example_2">
+      <sam-code-example language="html" [code]="example_2">
       ` + code_example_2 + `
-      </code-example>
+      </sam-code-example>
 
       <h3 class="sam-ui dividing header">Icon</h3>
 
-      <code-example language="html" [code]="example_3">
+      <sam-code-example language="html" [code]="example_3">
       ` + code_example_3 + `
-      </code-example>
+      </sam-code-example>
 
     </doc-template>`
 })
@@ -92,7 +92,7 @@ export class SamListComponentExampleComponent extends BaseExampleComponent imple
     }
   ];
 
-	example_1 = code_example_1.trim();
+  example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
 

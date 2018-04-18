@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Observable, Subscription, ReplaySubject } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
 import 'rxjs/add/operator/map';
 
 const regexComponent = new RegExp('([^/]*(\.component|\.directive))');
@@ -45,7 +47,7 @@ export class DocumentationService {
     return components;
   }
 
-  public generateJSONReport(){
+  public generateJSONReport() {
     return this.loadData()
     .subscribe(
       (data) => {
@@ -72,13 +74,13 @@ export class DocumentationService {
             delete item['implementedTypes'];
             delete item['sources'];
             delete item['decorators'];
-            if (item['children']){
+            if (item['children']) {
               item['children'] = item['children'].filter(subitem => {
-                if (subitem['kindString'] == 'Property' && subitem['decorators']){
+                if (subitem['kindString'] === 'Property' && subitem['decorators']) {
                   return true;
                 }
               });
-              for (let i = 0; i < item['children'].length; i++){
+              for (let i = 0; i < item['children'].length; i++) {
                 const subItem = item['children'][i];
                 delete subItem['id'];
                 delete subItem['kind'];
@@ -88,20 +90,20 @@ export class DocumentationService {
                 // delete subItem['flags'];
                 // delete subItem['sources'];
                 subrow['apiName'] = subItem['name'];
-                if (subItem['type'] && subItem['type']['name']){
+                if (subItem['type'] && subItem['type']['name']) {
                   subrow['datatype'] = subItem['type']['name'];
-                } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] == 'union'){
+                } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'union') {
                   const typearr = [];
-                  for (let i = 0; i < subItem['type']['types'].length; i++){
-                    if (subItem['type']['types'][i]['value']){
-                      typearr.push(subItem['type']['types'][i]['value']);
-                    } else if (subItem['type']['types'][i]['name']){
-                      typearr.push(subItem['type']['types'][i]['name']);
+                  for (let j = 0; j < subItem['type']['types'].length; j++) {
+                    if (subItem['type']['types'][j]['value']) {
+                      typearr.push(subItem['type']['types'][j]['value']);
+                    } else if (subItem['type']['types'][j]['name']) {
+                      typearr.push(subItem['type']['types'][j]['name']);
                     }
                   }
                   subrow['datatype'] = typearr.join('|');
 
-                } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type'] == 'reflection')){
+                } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'reflection')) {
                   subrow['datatype'] = 'reflection';
                 }else {
                   subrow['datatype'] = '';
@@ -109,7 +111,7 @@ export class DocumentationService {
                 subrow['type'] = subItem['decorators'][0]['name'];
 
                 subrow['comment'] = '';
-                if (subItem['comment'] && subItem['comment']['shortText']){
+                if (subItem['comment'] && subItem['comment']['shortText']) {
                   subrow['comment'] = ('' + subItem['comment']['shortText']).replace(/\"/g, '""');
                 }
                 finalArr.push(subrow);
@@ -121,7 +123,7 @@ export class DocumentationService {
             return item;
           });
           finalArr = finalArr.filter(row => {
-            if (row['type'] == 'Input' || row['type'] == 'Output'){
+            if (row['type'] === 'Input' || row['type'] === 'Output') {
               return true;
             }
           });

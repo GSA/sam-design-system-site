@@ -1,5 +1,5 @@
 import { Component, Directive } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 import {
   AutocompleteService
 } from 'sam-ui-elements/src/ui-kit/form-controls/autocomplete/autocomplete.service';

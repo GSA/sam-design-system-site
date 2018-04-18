@@ -9,11 +9,18 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-const code_example = `<sam-phone-entry [phoneNumberTemplate]="'___-___-____'" [(model)]="phoneModel" (emitter)="phoneModelChange($event)"></sam-phone-entry>
-<sam-phone-entry [(model)]="phoneModel2" (emitter)="phoneModel2Change($event)"></sam-phone-entry>`;
+const code_example = `<sam-phone-entry
+  [phoneNumberTemplate]="'___-___-____'"
+  [(model)]="phoneModel"
+  (emitter)="phoneModelChange($event)">
+</sam-phone-entry>
+<sam-phone-entry
+  [(model)]="phoneModel2"
+  (emitter)="phoneModel2Change($event)">
+</sam-phone-entry>`;
 
 @Component({
-	selector: 'doc-phone-entry',
+  selector: 'doc-phone-entry',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

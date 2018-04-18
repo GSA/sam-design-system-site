@@ -115,13 +115,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "sam",
+      ["doc","sam"],
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "sam",
+      ["doc","sam"],
       "kebab-case"
     ],
     "use-input-property-decorator": true,

@@ -16,7 +16,7 @@ const code_example = `<div class="usa-grid-full">
 </div>`;
 
 @Component({
-	selector: 'doc-info-accordion',
+  selector: 'doc-info-accordion',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

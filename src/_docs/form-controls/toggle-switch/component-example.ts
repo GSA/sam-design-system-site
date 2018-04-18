@@ -16,7 +16,7 @@ const code_example = `<div class="usa-grid-full">
 </div>`;
 
 @Component({
-	selector: 'doc-toggle-switch',
+  selector: 'doc-toggle-switch',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -25,7 +25,7 @@ const code_example = `<div class="usa-grid-full">
 })
 export class ToggleSwitchExampleComponent extends BaseExampleComponent implements OnInit {
 
-	typedoc_target = 'SamToggleSwitchComponent';
+  typedoc_target = 'SamToggleSwitchComponent';
   typedoc_content = '';
 
   example = code_example;

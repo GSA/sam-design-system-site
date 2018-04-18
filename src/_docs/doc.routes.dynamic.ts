@@ -71,7 +71,7 @@ import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component
 import { StaticPageComponent } from './static.component';
 
 export const ROUTES: Routes = [
-	
+
   { path: 'components/accordion', component: AccordionExampleComponent },
   { path: 'components/actions/action-button', component: SamActionButtonExampleComponent },
   { path: 'components/actions/actions-dropdown', component: SamActionsDropdownComponentExampleComponent },
@@ -134,25 +134,78 @@ export const ROUTES: Routes = [
   { path: 'service-directives/autocomplete/state', component: StateServiceDirectiveExampleComponent },
   { path: 'wrappers/fieldset-wrapper', component: FieldsetWrapperExampleComponent },
   { path: 'wrappers/label-wrapper', component: LabelWrapperExampleComponent },
-	
-  { path: 'architecture/form-service', component: StaticPageComponent, data: { markdownfile: '_static/architecture/Form-Service.md' } },
-  { path: 'architecture/modules-and-lazy-loading', component: StaticPageComponent, data: { markdownfile: '_static/architecture/Modules-And-Lazy-Loading.md' } },
-  { path: 'architecture/title-service', component: StaticPageComponent, data: { markdownfile: '_static/architecture/Title-Service.md' } },
-  { path: 'overview/contribute', component: StaticPageComponent, data: { markdownfile: '_static/overview/Contribute.md' } },
-  { path: 'overview/getting-started', component: StaticPageComponent, data: { markdownfile: '_static/overview/Getting-Started.md' } },
-  { path: 'overview/giving-back', component: StaticPageComponent, data: { markdownfile: '_static/overview/Giving-Back.md' } },
-  { path: 'overview/how-to-use-this-site', component: StaticPageComponent, data: { markdownfile: '_static/overview/How-to-use-this-site.md' } },
-  { path: 'pages/basic-page', component: StaticPageComponent, data: { markdownfile: '_static/pages/Basic-Page.md' } },
-  { path: 'pages/buttons-and-links', component: StaticPageComponent, data: { markdownfile: '_static/pages/Buttons-and-Links.md' } },
-  { path: 'pages/colors', component: StaticPageComponent, data: { markdownfile: '_static/pages/Colors.md' } },
-  { path: 'pages/complex-data-entry', component: StaticPageComponent, data: { markdownfile: '_static/pages/Complex-Data-Entry.md' } },
-  { path: 'pages/global-elements', component: StaticPageComponent, data: { markdownfile: '_static/pages/Global-Elements.md' } },
-  { path: 'pages/graphics-and-images', component: StaticPageComponent, data: { markdownfile: '_static/pages/Graphics-and-Images.md' } },
-  { path: 'pages/list-page', component: StaticPageComponent, data: { markdownfile: '_static/pages/List-Page.md' } },
-  { path: 'pages/page-templates', component: StaticPageComponent, data: { markdownfile: '_static/pages/Page-Templates.md' } },
-  { path: 'pages/simple-data-entry', component: StaticPageComponent, data: { markdownfile: '_static/pages/Simple-Data-Entry.md' } },
-  { path: 'pages/typography', component: StaticPageComponent, data: { markdownfile: '_static/pages/Typography.md' } },
-  { path: 'pages/workspace-page', component: StaticPageComponent, data: { markdownfile: '_static/pages/Workspace-Page.md' } },
+  {
+    path: 'architecture/form-service',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/architecture/Form-Service.md' } },
+  {
+    path: 'architecture/modules-and-lazy-loading',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/architecture/Modules-And-Lazy-Loading.md' } },
+  {
+    path: 'architecture/title-service',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/architecture/Title-Service.md' } },
+  {
+    path: 'overview/contribute',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/overview/Contribute.md' } },
+  {
+    path: 'overview/getting-started',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/overview/Getting-Started.md' } },
+  {
+    path: 'overview/giving-back',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/overview/Giving-Back.md' } },
+  {
+    path: 'overview/how-to-use-this-site',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/overview/How-to-use-this-site.md' } },
+  {
+    path: 'pages/basic-page',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Basic-Page.md' } },
+  {
+    path: 'pages/buttons-and-links',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Buttons-and-Links.md' } },
+  {
+    path: 'pages/colors',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Colors.md' } },
+  {
+    path: 'pages/complex-data-entry',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Complex-Data-Entry.md' } },
+  {
+    path: 'pages/global-elements',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Global-Elements.md' } },
+  {
+    path: 'pages/graphics-and-images',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Graphics-and-Images.md' } },
+  {
+    path: 'pages/list-page',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/List-Page.md' } },
+  {
+    path: 'pages/page-templates',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Page-Templates.md' } },
+  {
+    path: 'pages/simple-data-entry',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Simple-Data-Entry.md' } },
+  {
+    path: 'pages/typography',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Typography.md' } },
+  {
+    path: 'pages/workspace-page',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/pages/Workspace-Page.md' } },
 ];
 export const routing = RouterModule.forChild(ROUTES);
 

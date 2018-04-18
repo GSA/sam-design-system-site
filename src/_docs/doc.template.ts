@@ -7,17 +7,17 @@ const DOCS = environment.DOCS;
 const STATICPAGES = environment.STATICPAGES;
 
 @Component({
-	selector: 'doc-template',
+  selector: 'doc-template',
   templateUrl: 'doc.template.html'
 })
 export class DocTemplateComponent implements OnInit {
 
-	@Input() markdown;
-	@Input() example;
-	@Input() typedoc;
-	@Input() guidance;
-	@Input() design;
-	@Input() implementation;
+  @Input() markdown;
+  @Input() example;
+  @Input() typedoc;
+  @Input() guidance;
+  @Input() design;
+  @Input() implementation;
 
   tabSelected = true;
   panelSelected = true;
@@ -27,16 +27,16 @@ export class DocTemplateComponent implements OnInit {
       children: [],
   };
 
-  constructor(private router: Router){}
+  constructor(private router: Router) {}
 
-  resolveRoute(path){
-    if (path == '/'){
+  resolveRoute(path) {
+    if (path === '/') {
     } else {
       this.router.navigate([path]);
     }
   }
 
-	public ngOnInit() {
+  public ngOnInit() {
 
     // ==========================================================
     // SIDE NAVIGATION CONFIG SETUP
@@ -49,8 +49,8 @@ export class DocTemplateComponent implements OnInit {
     const uikitList = {};
 
     // Organize by section
-    for (const idx in DOCS){
-      if (!uikitList[DOCS[idx]['section']]){
+    for (const idx in DOCS) {
+      if (!uikitList[DOCS[idx]['section']]) {
         uikitList[DOCS[idx]['section']] = [{
           label: DOCS[idx]['item'],
           route: DOCS[idx]['routerlink']
@@ -82,13 +82,13 @@ export class DocTemplateComponent implements OnInit {
     // Static Pages links
     // ----------------------------------------------------------
 
-    //STATICPAGES is a global defined in webpack
+    // STATICPAGES is a global defined in webpack
 
     const staticpagelist = {};
 
     // Organize by section
-    for (const idx in STATICPAGES){
-      if (!staticpagelist[STATICPAGES[idx]['section']]){
+    for (const idx in STATICPAGES) {
+      if (!staticpagelist[STATICPAGES[idx]['section']]) {
         staticpagelist[STATICPAGES[idx]['section']] = [{
           label: STATICPAGES[idx]['item'],
           route: STATICPAGES[idx]['routerlink']
@@ -114,13 +114,13 @@ export class DocTemplateComponent implements OnInit {
 
     // Sort by alphabetical order
     // Move Overview to the top of the list
-    docsNavStaticPagesContent.sort(function(a, b){
-      if (a.label == 'Overview'){
+    docsNavStaticPagesContent.sort(function(a, b) {
+      if (a.label === 'Overview') {
         return -1;
-      } else if (b.label == 'Overview'){
+      } else if (b.label === 'Overview') {
         return 1;
       }
-      if ( a.label.charAt(0).toLowerCase() < b.label.charAt(0).toLowerCase() ){
+      if ( a.label.charAt(0).toLowerCase() < b.label.charAt(0).toLowerCase() ) {
         return -1;
       } else if ( a.label.charAt(0).toLowerCase() > b.label.charAt(0).toLowerCase() ) {
         return 1;

@@ -1,4 +1,3 @@
-
 import {
   Component,
   OnInit,
@@ -20,7 +19,7 @@ const code_example_1 = `
 `;
 
 @Component({
-	selector: 'doc-sam-youtube',
+  selector: 'doc-sam-youtube',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -33,9 +32,9 @@ const code_example_1 = `
         </p>
       </div>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
     </doc-template>`
 })
@@ -43,8 +42,7 @@ export class SamYoutubeComponentExampleComponent extends BaseExampleComponent im
   typedoc_target = 'SamYoutubeComponent';
   typedoc_content = '';
 
-	example_1 = code_example_1.trim();
-
+  example_1 = code_example_1.trim();
 
   public base = '_docs/experimental/youtube/';
 

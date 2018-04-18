@@ -12,7 +12,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 const code_example = `<sam-name-entry [model]="nameModel" [prefix]="'ui-kit'"></sam-name-entry>`;
 
 @Component({
-	selector: 'doc-name-entry',
+  selector: 'doc-name-entry',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `
@@ -20,7 +20,7 @@ const code_example = `<sam-name-entry [model]="nameModel" [prefix]="'ui-kit'"></
 `
 })
 export class NameEntryExampleComponent extends BaseExampleComponent implements OnInit {
-	nameModel = {
+  nameModel = {
     title: 'Mr.',
     firstName: 'John',
     middleName: '',

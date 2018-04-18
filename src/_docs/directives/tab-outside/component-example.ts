@@ -14,7 +14,7 @@ const code_example = `<input sam-tab-outside (tabOutside)="tabHandler($event)" /
 <button (click)="reset()">reset</button>`;
 
 @Component({
-	selector: 'doc-taboutside',
+  selector: 'doc-taboutside',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

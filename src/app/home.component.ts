@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   templateUrl: 'home.template.html',
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
@@ -33,9 +33,9 @@ export class HomeComponent implements OnInit{
     const setState = (state, speed) =>
       directions.forEach(axis => {
         state[axis] += speed[axis];
-        if (Math.abs(state[axis]) < 360) return;
+        if (Math.abs(state[axis]) < 360) { return; }
         const max = Math.max(state[axis], 360);
-        const min = max == 360 ? Math.abs(state[axis]) : 360;
+        const min = max === 360 ? Math.abs(state[axis]) : 360;
         state[axis] = max - min;
       });
 
@@ -204,12 +204,13 @@ export class HomeComponent implements OnInit{
         return object;
       }, {});
 
-      if (rotate.x)
+      if (rotate.x) {
         darken.y = 0;
-      else {
+      } else {
         const {x} = distance;
-        if (x > 90 && x < 270)
+        if (x > 90 && x < 270) {
           directions.forEach(axis => darken[axis] = 1 - darken[axis]);
+        }
       }
 
       const alpha = (darken.x + darken.y) / .8;
@@ -220,17 +221,20 @@ export class HomeComponent implements OnInit{
     };
 
     const shouldHide = (rotateX, x, y) => {
-      if (rotateX)
+      if (rotateX) {
         return x > 90 && x < 270;
-      if (x < 90)
+      }
+      if (x < 90) {
         return y > 90 && y < 270;
-      if (x < 270)
+      }
+      if (x < 270) {
         return y < 90;
+      }
       return y > 90 && y < 270;
     };
 
     const updateSides = ({state, speed, size, tint, sides, left}) => {
-      if (headerIsHidden || cubeIsHidden(left)) return;
+      if (headerIsHidden || cubeIsHidden(left)) { return; }
 
       const animate = object => {
         const {side, rotate, hidden} = object;
@@ -260,7 +264,7 @@ export class HomeComponent implements OnInit{
 
     const tick = () => {
       cubes.forEach(updateSides);
-      if (reduceMotion) return;
+      if (reduceMotion) { return; }
       requestAnimationFrame(tick);
     };
 

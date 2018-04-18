@@ -12,7 +12,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 const code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
 
 @Component({
-	selector: 'doc-sidenav',
+  selector: 'doc-sidenav',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [guidance]="guidance">
 See sidenav on the left

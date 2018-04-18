@@ -12,7 +12,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 const code_example = `<sam-spinner></sam-spinner>`;
 
 @Component({
-	selector: 'doc-spinner',
+  selector: 'doc-spinner',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 ` + code_example + `

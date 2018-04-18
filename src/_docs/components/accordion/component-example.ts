@@ -14,7 +14,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-//tabs/spacing matters for code example block
+// tabs/spacing matters for code example block
 const code_example = `<div class="usa-width-one-whole">
   <h3>Accordions without border</h3>
   <sam-accordion>
@@ -39,7 +39,7 @@ const code_example = `<div class="usa-width-one-whole">
 </div>`;
 
 @Component({
-	selector: 'doc-accordion',
+  selector: 'doc-accordion',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [guidance]="guidance" [typedoc]="typedoc_content">
 ` + code_example + `

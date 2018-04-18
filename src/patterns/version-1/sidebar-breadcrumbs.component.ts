@@ -5,16 +5,9 @@ import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
 @Component({
   templateUrl: 'sidebar-breadcrumbs.template.html',
 })
-export class SidebarBreadcrumbsPageComponent{
+export class SidebarBreadcrumbsPageComponent {
 
   showSection = ['sidebar-breadcrumbs-code'];
-  toggleCode(){
-    if (this.showSection != null) {
-      this.showSection = null;
-    }else{
-      this.showSection = ['sidebar-breadcrumbs-code'];
-    }
-  }
 
   sidenavModel: MenuItem = {
     label: 'SideNavigation',
@@ -47,6 +40,13 @@ export class SidebarBreadcrumbsPageComponent{
     { breadcrumb: 'Lorem ipsum dolor'}
   ];
 
+  toggleCode() {
+    if (this.showSection != null) {
+      this.showSection = null;
+    } else {
+      this.showSection = ['sidebar-breadcrumbs-code'];
+    }
+  }
 }
 
 
@@ -117,7 +117,7 @@ export class SidebarBreadcrumbsPageComponent{
   </div>
   `,
 })
-export class SidebarBreadcrumbsPageCodeComponent{
+export class SidebarBreadcrumbsPageCodeComponent {
   code_template: string = code_example_template;
   code_component: string = code_example_component;
 }

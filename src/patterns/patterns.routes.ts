@@ -1,4 +1,4 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PatternsComponent } from './patterns.component';
@@ -76,4 +76,4 @@ const patternsRoutes: Routes = [
     RouterModule
   ]
 })
-export class PatternsRoutingModule{}
+export class PatternsRoutingModule {}

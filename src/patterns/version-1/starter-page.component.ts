@@ -3,12 +3,12 @@ import { Component} from '@angular/core';
 @Component({
   templateUrl: 'starter-page.template.html',
 })
-export class StarterPageComponent{
+export class StarterPageComponent {
   showSection = ['basic-page-code'];
-  toggleCode(){
+  toggleCode() {
     if (this.showSection != null) {
       this.showSection = null;
-    }else{
+    } else {
       this.showSection = ['basic-page-code'];
     }
   }
@@ -32,6 +32,6 @@ const code_example = `
   </div>
   `,
 })
-export class BasicPageCodeComponent{
+export class BasicPageCodeComponent {
   code: string = code_example;
 }

@@ -5,12 +5,12 @@ import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
 @Component({
   templateUrl: 'title-options.template.html',
 })
-export class TitleOptionsPageComponent{
+export class TitleOptionsPageComponent {
   showSection = ['title-options-code'];
-  toggleCode(){
+  toggleCode() {
     if (this.showSection != null) {
       this.showSection = null;
-    }else{
+    } else {
       this.showSection = ['title-options-code'];
     }
   }
@@ -43,6 +43,6 @@ const code_example = `
   </div>
   `,
 })
-export class TitleOptionsPageCodeComponent{
+export class TitleOptionsPageCodeComponent {
   code: string = code_example;
 }

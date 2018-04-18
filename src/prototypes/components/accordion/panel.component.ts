@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, HostBinding} from '@angular/cor
 import { trigger, state, style, animate, transition, query } from '@angular/animations';
 
 @Component({
-  selector: 'prototype-panel',
+  selector: 'sam-prototype-panel',
   template: `
   <div class="prototype-panel">
     <div class="prototype-panel-heading" [ngClass]="{ 'active': opened }" (click)="toggle.emit()">
@@ -17,13 +17,13 @@ import { trigger, state, style, animate, transition, query } from '@angular/anim
     trigger('panelContent', [
       transition(':enter', [
         query(':self', [
-          style({ 
+          style({
             opacity: 0 ,
             height: 0,
             marginTop: 0,
             marginBottom: 0
           }),
-          animate('200ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({ 
+          animate('200ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({
             opacity: 1,
             height: '*',
             marginTop: '*',
@@ -33,13 +33,13 @@ import { trigger, state, style, animate, transition, query } from '@angular/anim
       ]),
       transition(':leave', [
         query(':self', [
-          style({ 
+          style({
             opacity: 1,
             height: '*',
             marginTop: '*',
             marginBottom: '*',
           }),
-          animate('200ms ease-out', style({ 
+          animate('200ms ease-out', style({
             opacity: 0 ,
             height: 0,
             marginTop: 0,

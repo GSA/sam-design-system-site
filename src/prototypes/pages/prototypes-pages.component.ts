@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   <router-outlet></router-outlet>
 
   <div class="patterns-menu-space"></div>
-  
+
   <div class="patterns-menu">
     <a routerLink="/prototypes">Prototypes</a>
     <span class="patterns-menu-divider"></span>
@@ -17,20 +17,19 @@ import { Router } from '@angular/router';
   </div>
   `
 })
-export class PagesComponent { 
-  constructor( private router: Router){}
-  
+export class PagesComponent {
+  selectedOption: any;
+  constructor(private router: Router) {}
+
   options = [
-    { name: "Homepage", value: "home" },
-    { name: "Search", value: "search" },
-    { name: "Search Mobile", value: "search-mobile" },
-    { name: "Report", value: "report" }
+    { name: 'Homepage', value: 'home' },
+    { name: 'Search', value: 'search' },
+    { name: 'Search Mobile', value: 'search-mobile' },
+    { name: 'Report', value: 'report' }
   ];
-  
-  selectedOption:any;
-  
-  navigateTo(){
-    if(this.selectedOption.value){
+
+  navigateTo() {
+    if (this.selectedOption.value) {
       this.router.navigate([`/prototypes/page/${this.selectedOption.value}`]);
     }
   }

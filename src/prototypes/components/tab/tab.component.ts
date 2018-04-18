@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, HostBinding} from '@angular/cor
 import { trigger, state, style, animate, transition, query } from '@angular/animations';
 
 @Component({
-  selector: 'prototype-tab',
+  selector: 'sam-prototype-tab',
   template: `
   <div class="prototype-tab" *ngIf="active">
     <ng-content></ng-content>

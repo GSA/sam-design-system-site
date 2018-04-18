@@ -13,7 +13,7 @@ import { PickerLevel4Component } from './picker/component';
 import { PickerLevel5Component } from './picker/component';
 import { PickerLevel6Component } from './picker/component';
 import { MainNavComponent } from './main-nav/component';
-import { PrototypeAccordionComponent } from './accordion/accordion.component'
+import { PrototypeAccordionComponent } from './accordion/accordion.component';
 import { PrototypePanelComponent } from './accordion/panel.component';
 import { PrototypeTabsComponent } from './tab/tabs.component';
 import { PrototypeTabComponent } from './tab/tab.component';

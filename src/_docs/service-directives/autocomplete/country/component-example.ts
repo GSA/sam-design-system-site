@@ -17,16 +17,16 @@ import { MarkdownService } from '../../../../app/services/markdown/markdown.serv
 import { DocumentationService } from '../../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
-var code_example = 'TODO';
+const code_example = 'TODO';
 
 @Component({
   selector: 'doc-sam-autocomplete',
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content"> + code_example + </doc-template>'
 })
 export class CountryServiceDirectiveExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "CountryServiceDirective";
-  typedoc_content = ""; 
-;
+  typedoc_target = 'CountryServiceDirective';
+  typedoc_content = '';
+
   example = code_example;
 
   public base = '_docs/service-directives/autocomplete/country/';

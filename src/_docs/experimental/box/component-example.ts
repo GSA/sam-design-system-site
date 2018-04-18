@@ -16,15 +16,15 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 
-var code_example_1 = `
+const code_example_1 = `
 <sam-box>Lorem Ipsum</sam-box>
 `;
 
-var code_example_2 = `
+const code_example_2 = `
 <sam-box type="primary">Lorem Ipsum</sam-box>
 `;
 
-var code_example_3 = `
+const code_example_3 = `
 <sam-box type="outline">Lorem Ipsum</sam-box>
 `;
 
@@ -66,13 +66,13 @@ var code_example_3 = `
 })
 export class SamBoxComponentExampleComponent extends BaseExampleComponent implements OnInit {
 
-  typedoc_target = "SamBoxComponent";
-  typedoc_content = "";
-  markdown= "";
+  typedoc_target = 'SamBoxComponent';
+  typedoc_content = '';
+  markdown= '';
   example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
-        
+
   public base = '_docs/experimental/box/';
 
   constructor(

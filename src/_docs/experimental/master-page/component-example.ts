@@ -16,7 +16,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
-var code_example = `TODO`;
+const code_example = `TODO`;
 
 @Component({
 	selector: 'doc-sam-master-page',
@@ -28,24 +28,24 @@ var code_example = `TODO`;
           Warning
         </div>
         <p>
-          This component is under development. 
+          This component is under development.
         </p>
       </div>
 
       <p>
-        Component that serves as a container for the page component(<em>sam-page</em>). 
+        Component that serves as a container for the page component(<em>sam-page</em>).
         It is responsable for main site navigation and global UI services.
       </p>
 
     </doc-template>`
 })
 export class SamMasterPageComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamMasterPageComponent";
-  typedoc_content = " ";
-  
+  typedoc_target = 'SamMasterPageComponent';
+  typedoc_content = ' ';
+
 	example = code_example;
 
-            
+
   public base = '_docs/experimental/master-page/';
 
   constructor(

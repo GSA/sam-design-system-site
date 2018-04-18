@@ -17,9 +17,9 @@ import { MarkdownService } from '../../../../app/services/markdown/markdown.serv
 import { DocumentationService } from '../../../../app/services/documentation.service';
 
 //tabs/spacing matters for code example block
-var code_example = `
+const code_example = `
 <sam-actions-dropdown [actions]="actions"></sam-actions-dropdown>
-  
+
 <sam-actions-dropdown [disabled]="true"
   [actions]="actions"></sam-actions-dropdown>`;
 
@@ -28,14 +28,14 @@ var code_example = `
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamActionsDropdownComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamActionsDropdownComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamActionsDropdownComponent';
+  typedoc_content = '';
 
   example = code_example;
   actions: Array<any> = [
-    { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: ()=>{console.log("edit");}},
-    { name: 'delete', label: 'Delete', icon: 'fa fa-trash', callback: ()=>{console.log("delete");} },
-    { name: 'save', label: 'Save', icon: 'fa fa-floppy-o', callback: ()=>{console.log("save");} }
+    { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: () => {console.log('edit'); }},
+    { name: 'delete', label: 'Delete', icon: 'fa fa-trash', callback: () => {console.log('delete'); } },
+    { name: 'save', label: 'Save', icon: 'fa fa-floppy-o', callback: () => {console.log('save'); } }
   ];
 
   public base = '_docs/components/actions/actions-dropdown/';

@@ -24,8 +24,8 @@ const code_example = `TODO`;
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamHeaderComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamHeaderComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamHeaderComponent';
+  typedoc_content = '';
 
   example = code_example;
 

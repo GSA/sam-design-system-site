@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-checkbox
+const code_example = `<sam-checkbox
   [(ngModel)]="checkboxModel"
   [name]="checkboxConfig.name"
   [options]="checkboxConfig.options"
@@ -34,7 +34,7 @@ var code_example = `<sam-checkbox
 	selector: 'doc-checkbox',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
@@ -51,7 +51,7 @@ export class CheckboxExampleComponent extends BaseExampleComponent implements On
     label: 'Select a region (normal)',
     hasSelectAll: false,
     errorMessage: null,
-    hint: ""
+    hint: ''
   };
   disabledCheckboxConfig = {
     options: [
@@ -63,13 +63,13 @@ export class CheckboxExampleComponent extends BaseExampleComponent implements On
     label: 'Select a region (disabled)',
     hasSelectAll: false,
     errorMessage: null,
-    hint: ""
+    hint: ''
   };
-	typedoc_target = "SamCheckboxComponent";
+	typedoc_target = 'SamCheckboxComponent';
   typedoc_content = '';
 
   example = code_example;
-  
+
   public base = '_docs/form-controls/checkbox/';
 
   constructor(

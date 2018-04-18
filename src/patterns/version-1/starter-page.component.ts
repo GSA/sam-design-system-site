@@ -6,7 +6,7 @@ import { Component} from '@angular/core';
 export class StarterPageComponent{
   showSection = ['basic-page-code'];
   toggleCode(){
-    if(this.showSection != null) {
+    if (this.showSection != null) {
       this.showSection = null;
     }else{
       this.showSection = ['basic-page-code'];
@@ -14,10 +14,10 @@ export class StarterPageComponent{
   }
 }
 
-let code_example = `
+const code_example = `
 <page title="Lorem ipsum dolor sit amet">
   <p>
-  Quisque lacinia commodo neque et suscipit. Integer rutrum mauris ex, non 
+  Quisque lacinia commodo neque et suscipit. Integer rutrum mauris ex, non
   ornare leo interdum nec. Suspendisse vitae tor...
   </p>
 </page>`;

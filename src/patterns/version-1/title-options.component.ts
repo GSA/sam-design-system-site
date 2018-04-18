@@ -8,18 +8,18 @@ import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
 export class TitleOptionsPageComponent{
   showSection = ['title-options-code'];
   toggleCode(){
-    if(this.showSection != null) {
+    if (this.showSection != null) {
       this.showSection = null;
     }else{
       this.showSection = ['title-options-code'];
     }
   }
-  
+
 }
 
 
-let code_example = `
-<page 
+const code_example = `
+<page
   title="Lorem ipsum dolor sit amet"
   section="Consectetur adipiscing elit"
   badge="Commodo neque"
@@ -27,10 +27,10 @@ let code_example = `
   type="sit amet">
 
   <p>
-  Quisque lacinia commodo neque et suscipit. Integer rutrum mauris ex, non 
+  Quisque lacinia commodo neque et suscipit. Integer rutrum mauris ex, non
   ornare leo interdum nec. Suspendisse vitae tor...
   </p>
-  
+
 </page>`;
 
 @Component({

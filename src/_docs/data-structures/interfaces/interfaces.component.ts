@@ -22,17 +22,17 @@ export class InterfacesComponent {
   constructor(public service: DocumentationService) {
     this.service.getInterfaces()
     .subscribe(
-      (data) => { 
-        for(let idx in data){
+      (data) => {
+        for (const idx in data){
           data[idx]['children'] = data[idx]['children'].map(function(obj){
-            if(obj.type.types){
-              obj.type.types = obj.type.types.map(function(el){ 
-                if(el.name){
+            if (obj.type.types){
+              obj.type.types = obj.type.types.map(function(el){
+                if (el.name){
                   return el.name;
                 } else if (el.value){
-                  return '"'+el.value+'"';
+                  return '"' + el.value + '"';
                 }
-              }).join(",");
+              }).join(',');
             }
             return obj;
           });

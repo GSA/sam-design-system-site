@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-filters-container>
+const code_example = `<sam-filters-container>
   <sam-collapsible [label]="'Test 1'" [startOpened]="true">
     <h4>Filter 1</h4>
   </sam-collapsible>
@@ -25,17 +25,17 @@ var code_example = `<sam-filters-container>
 	selector: 'doc-spinner',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class FiltersContainerExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamFiltersContainerComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamFiltersContainerComponent';
+  typedoc_content = '';
 
 	example = code_example;
-  dateModel: string = "2016-02-03";
-    
+  dateModel: string = '2016-02-03';
+
   public base = '_docs/components/filters-container/';
 
   constructor(

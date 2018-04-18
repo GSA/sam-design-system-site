@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<div class="usa-grid-full">
+const code_example = `<div class="usa-grid-full">
   <div class="usa-width-one">
     <h3>Example with Selectable Categories and Subheading</h3>
     <sam-autocomplete

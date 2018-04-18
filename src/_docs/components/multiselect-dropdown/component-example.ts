@@ -9,18 +9,18 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-multiselect-dropdown 
-  [disabled]='alertBeingEdited' 
-  [(model)]="filterTypes" 
-  [label]="types.label" 
-  [options]="types.options" 
+const code_example = `<sam-multiselect-dropdown
+  [disabled]='alertBeingEdited'
+  [(model)]="filterTypes"
+  [label]="types.label"
+  [options]="types.options"
   [name]="'types'"></sam-multiselect-dropdown>`;
 
 @Component({
 	selector: 'doc-multiselect-dropdown',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
@@ -34,8 +34,8 @@ export class MultiselectDropdownExampleComponent extends BaseExampleComponent im
       { label: 'Warning', value: 'Warning', name: 'warning' }
     ]
   };
-  typedoc_target = "SamMultiSelectDropdownComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamMultiSelectDropdownComponent';
+  typedoc_content = '';
   alertBeingEdited = false;
 
   example = code_example;

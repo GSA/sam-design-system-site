@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-text
+const code_example = `<sam-text
   [(ngModel)]="textModel"
   [name]="textConfig.name"
   [label]="textConfig.label"
@@ -22,21 +22,21 @@ var code_example = `<sam-text
 	selector: 'doc-text',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class TextExampleComponent extends BaseExampleComponent implements OnInit {
 	textModel = 'Some Text';
   textConfig = {
-    label: "Enter zipcode",
-    hint: "Zipcode can be short or long version",
+    label: 'Enter zipcode',
+    hint: 'Zipcode can be short or long version',
     errorMessage: 'Uh-oh, something went wrong',
     name: 'aria-friendly-name',
     disabled: false,
   };
-  typedoc_target = "SamTextComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamTextComponent';
+  typedoc_content = '';
 
   example = code_example;
 

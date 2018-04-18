@@ -15,7 +15,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example_1 = `
+const code_example_1 = `
 <sam-youtube id="5uciZ431AGo"></sam-youtube>
 `;
 
@@ -40,12 +40,12 @@ var code_example_1 = `
     </doc-template>`
 })
 export class SamYoutubeComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamYoutubeComponent";
-  typedoc_content = "";
-  
+  typedoc_target = 'SamYoutubeComponent';
+  typedoc_content = '';
+
 	example_1 = code_example_1.trim();
 
-  
+
   public base = '_docs/experimental/youtube/';
 
   constructor(

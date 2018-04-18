@@ -21,37 +21,37 @@ const patternsRoutes: Routes = [
   {
     path: 'v1',
     component: PatternsComponent,
-    children:[
+    children: [
       {
         path: 'home',
         component: HomeComponent
       },
-      { 
-        path: 'basic-page-code', 
-        outlet:'codesection',
+      {
+        path: 'basic-page-code',
+        outlet: 'codesection',
         component: BasicPageCodeComponent
       },
-      { 
-        path: 'sidebar-breadcrumbs-code', 
-        component: SidebarBreadcrumbsPageCodeComponent, 
-        outlet:'codesection'
+      {
+        path: 'sidebar-breadcrumbs-code',
+        component: SidebarBreadcrumbsPageCodeComponent,
+        outlet: 'codesection'
       },
-      { 
-        path: 'title-options-code', 
-        component: TitleOptionsPageCodeComponent, 
-        outlet:'codesection'
+      {
+        path: 'title-options-code',
+        component: TitleOptionsPageCodeComponent,
+        outlet: 'codesection'
       },
-      { 
-        path: 'starter-page', 
-        component: StarterPageComponent 
+      {
+        path: 'starter-page',
+        component: StarterPageComponent
       },
-      { 
-        path: 'sidebar-breadcrumbs', 
-        component: SidebarBreadcrumbsPageComponent 
+      {
+        path: 'sidebar-breadcrumbs',
+        component: SidebarBreadcrumbsPageComponent
       },
-      { 
-        path: 'title-options', 
-        component: TitleOptionsPageComponent 
+      {
+        path: 'title-options',
+        component: TitleOptionsPageComponent
       }
     ]
   },

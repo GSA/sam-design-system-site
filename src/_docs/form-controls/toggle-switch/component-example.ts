@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<div class="usa-grid-full">
+const code_example = `<div class="usa-grid-full">
   <div class="usa-width-one-third">
     <sam-toggle-switch [isSwitchOn]="true"></sam-toggle-switch>
   </div>
@@ -19,14 +19,14 @@ var code_example = `<div class="usa-grid-full">
 	selector: 'doc-toggle-switch',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class ToggleSwitchExampleComponent extends BaseExampleComponent implements OnInit {
 
-	typedoc_target = "SamToggleSwitchComponent";
-  typedoc_content = "";
+	typedoc_target = 'SamToggleSwitchComponent';
+  typedoc_content = '';
 
   example = code_example;
 

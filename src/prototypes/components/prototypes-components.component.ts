@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { 
-  Router, 
+import {
+  Router,
   NavigationEnd,
   UrlTree,
   UrlSegmentGroup,
-  UrlSegment, 
-  PRIMARY_OUTLET 
+  UrlSegment,
+  PRIMARY_OUTLET
 } from '@angular/router';
 
 @Component({
@@ -23,12 +23,12 @@ import {
   `
 })
 export class ComponentsComponent {
-  
-  selectedOption:any;
+
+  selectedOption: any;
 
   options = [
-    { name: "Picker", value: "picker" },
-    { name: "Main Nav", value: "main-nav" },
+    { name: 'Picker', value: 'picker' },
+    { name: 'Main Nav', value: 'main-nav' },
   ];
 
   routerSubscription: any;
@@ -46,14 +46,14 @@ export class ComponentsComponent {
 
   selectOption(value){
     this.options.forEach(option => {
-      if(option.value === value){
+      if (option.value === value){
         this.selectedOption = option;
       }
     });
   }
 
   navigateTo(){
-    if(this.selectedOption.value){
+    if (this.selectedOption.value){
       this.router.navigate([`/prototypes/component/${this.selectedOption.value}`]);
     }
   }

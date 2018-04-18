@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-spinner></sam-spinner>`;
+const code_example = `<sam-spinner></sam-spinner>`;
 
 @Component({
 	selector: 'doc-spinner',
@@ -20,8 +20,8 @@ var code_example = `<sam-spinner></sam-spinner>`;
 `
 })
 export class SpinnerExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamSpinnerComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamSpinnerComponent';
+  typedoc_content = '';
 
   example = code_example;
 

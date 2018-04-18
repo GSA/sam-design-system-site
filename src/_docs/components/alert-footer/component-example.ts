@@ -17,35 +17,35 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 
 //tabs/spacing matters for code example block
-var code_example = `
-<sam-text 
-  label="Title" 
-  name="title" 
-  [(ngModel)]="footerAlertModel.title" 
+const code_example = `
+<sam-text
+  label="Title"
+  name="title"
+  [(ngModel)]="footerAlertModel.title"
   type="text">
 </sam-text>
-<sam-text 
-  label="Description" 
-  name="Description" 
-  [(ngModel)]="footerAlertModel.description" 
+<sam-text
+  label="Description"
+  name="Description"
+  [(ngModel)]="footerAlertModel.description"
   type="text">
 </sam-text>
-<sam-select 
-  label="Type" 
-  name="Type" 
-  [options]="footerAlertTypes" 
+<sam-select
+  label="Type"
+  name="Type"
+  [options]="footerAlertTypes"
   [(ngModel)]="footerAlertModel.type">
 </sam-select>
-<sam-number 
-  label="Dismiss Timer" 
-  hint="in milliseconds, 0 is infinite" name="Dismiss Timer" 
+<sam-number
+  label="Dismiss Timer"
+  hint="in milliseconds, 0 is infinite" name="Dismiss Timer"
   [(ngModel)]="footerAlertModel.timer">
 </sam-number>
-<sam-checkbox 
+<sam-checkbox
   name="require-dismiss"
   [options]="checkboxOptions"
-  label="Require user dismissal" 
-  hint="Overrides dismiss timer, require user to dismiss the alert" 
+  label="Require user dismissal"
+  hint="Overrides dismiss timer, require user to dismiss the alert"
   [ngModel]="checkboxVal"
   (ngModelChange)="mustDimissHandler($event)">
 </sam-checkbox>
@@ -56,35 +56,35 @@ var code_example = `
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamAlertFooterComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamAlertFooterComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamAlertFooterComponent';
+  typedoc_content = '';
 
   example = code_example;
-  checkboxOptions = [{name:'Enabled',label:'Enabled',value:true}];
+  checkboxOptions = [{name: 'Enabled', label: 'Enabled', value: true}];
   checkboxVal = false;
   footerAlertModel = {
-    title: "test title",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    type: "error",
+    title: 'test title',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    type: 'error',
     timer: 0,
     mustDismiss: false
   };
   footerAlertTypes = [{
-    label:'success',
-    name:'success',
-    value:'success',
-  },{
-    label:'warning',
-    name:'warning',
-    value:'warning',
-  },{
-    label:'error',
-    name:'error',
-    value:'error',
-  },{
-    label:'info',
-    name:'info',
-    value:'info',
+    label: 'success',
+    name: 'success',
+    value: 'success',
+  }, {
+    label: 'warning',
+    name: 'warning',
+    value: 'warning',
+  }, {
+    label: 'error',
+    name: 'error',
+    value: 'error',
+  }, {
+    label: 'info',
+    name: 'info',
+    value: 'info',
   }];
 
 
@@ -102,7 +102,7 @@ export class SamAlertFooterComponentExampleComponent extends BaseExampleComponen
   }
 
   mustDimissHandler(item){
-    if(item && item.length>0){
+    if (item && item.length > 0){
       this.footerAlertModel.mustDismiss = true;
     } else {
       this.footerAlertModel.mustDismiss = false;

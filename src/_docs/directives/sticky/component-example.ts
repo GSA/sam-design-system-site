@@ -21,7 +21,7 @@ Scroll down and see Sidenav
 `
 })
 export class StickyExampleComponent extends BaseExampleComponent implements OnInit {
-	typedoc_target = "SamStickyComponent";
+	typedoc_target = 'SamStickyComponent';
   typedoc_content = '';
 
 	example = `<div class="sticky-target usa-grid">

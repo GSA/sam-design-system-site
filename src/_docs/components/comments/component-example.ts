@@ -12,14 +12,14 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 import { Comment, CommentsService } from 'sam-ui-elements/src/ui-kit/components/comments';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 
 import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 export class CommentsDemoService implements CommentsService {
-  
+
   private offset = 5;
 
   public _username: string = 'anon-user@common-components.team';
@@ -29,78 +29,114 @@ export class CommentsDemoService implements CommentsService {
     {
       username: 'diego-dev@commoncomponents.team',
       datetime: new Date('6/1/2017'),
-      text: 'Lorem ipsum dolor sit amet, consectetuer adiing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum dolor sit amet, consectetuer adiing elit. ` +
+      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+      `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
+      `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date('02/14/2017'),
-      text: 'Lorem ipsum doit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient motur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum doit amet, consectetuer adipiscing elit. ` +
+      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+      `penatibus et magnis dis parturient motur ridiculus mus. ` +
+      `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lorem ipsum dolor sit amet, conctetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean ',
+      text: `Lorem ipsum dolor sit amet, conctetuer adipiscing elit. ` +
+      `Aenean commodo ligula eget dolor. Aenean `,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean modo ligula eget do\n massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+      `Aenean modo ligula eget do\n massa. Cum sociis natoque penatibus et ` +
+      `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+      `ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lo ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget do Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lo ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+      `Aenean commodo ligula eget do Cum sociis natoque penatibus et magnis ` +
+      `dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+      `ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lorem ipsum dolor sit amet, consectetuer adcing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur us mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum dolor sit amet, consectetuer adcing elit. ` +
+      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis ` +
+      `natoque penatibus et magnis dis parturient montes, nascetur us mus. ` +
+      `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'carlos-dev@commoncomponents.team',
       datetime: new Date('7/16/2017'),
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipido ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.'
+      text: `Lorem ipsum dolor sit amet, consectetuer adipido ` +
+      `ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ` +
+      `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+      `ultricies nec, pellentesque eu, pretium.`
     },
     {
       username: 'diego-dev@commoncomponents.team',
       datetime: new Date('6/1/2017'),
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean masa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ` +
+      `commodo ligula eget dolor. Aenean masa. Cum sociis natoque penatibus et ` +
+      `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+      `ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lorem ipsum doit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nectesque eu, pretium.',
+      text: `Lorem ipsum doit amet, consectetuer adipiscing elit. ` +
+      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+      `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
+      `Donec quam felis, ultricies nectesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lorem ipsum dolor sit amet, conctetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quamies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum dolor sit amet, conctetuer adipiscing elit. ` +
+      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+      `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
+      `Donec quamies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean modo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musquam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+      `Aenean modo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+      `penatibus et magnis dis parturient montes, nascetur ridiculus musquam ` +
+      `felis, ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lo ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula egets, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lo ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+      `Aenean commodo ligula egets, nascetur ridiculus mus. Donec quam felis, ` +
+      `ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur us mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.',
+      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+      `Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus ` +
+      `et magnis dis parturient montes, nascetur us mus. Donec quam felis, ` +
+      `ultricies nec, pellentesque eu, pretium.`,
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
     },
   ];
@@ -122,9 +158,9 @@ export class CommentsDemoService implements CommentsService {
   getComments(): Observable<Comment[]> {
     const endPoint = (this._comments.length - 1) - this.offset;
     this.lastIndex = endPoint;
-    
-    return Observable.of(this._comments.slice(endPoint, this._comments.length-1));
-  };
+
+    return Observable.of(this._comments.slice(endPoint, this._comments.length - 1));
+  }
 
   postComment(_: any): Observable<Comment[]> {
     if (_.text === 'asdf') {
@@ -133,16 +169,16 @@ export class CommentsDemoService implements CommentsService {
     }
     this._comments.push(_);
     return Observable.of(this._comments);
-  };
+  }
 
   deleteComment(comment: Comment): Observable<Comment[]> {
     this._comments = this._comments.filter((item) => {
       if (item.text !== comment.text) {
         return item;
       }
-    })
-    return Observable.of(this._comments.slice(this.lastIndex, this._comments.length-1));
-  };
+    });
+    return Observable.of(this._comments.slice(this.lastIndex, this._comments.length - 1));
+  }
 
   getInitialState(): Observable<Comment[]> {
     this.lastIndex = 0;
@@ -150,8 +186,8 @@ export class CommentsDemoService implements CommentsService {
   }
 }
 
-//tabs/spacing matters for code example block
-var code_example = `
+// tabs/spacing matters for code example block
+const code_example = `
 <sam-comments class="usa-width-one">
 </sam-comments>`;
 
@@ -164,8 +200,8 @@ var code_example = `
   ]
 })
 export class SamCommentsComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamCommentsComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamCommentsComponent';
+  typedoc_content = '';
 
   example = code_example;
 

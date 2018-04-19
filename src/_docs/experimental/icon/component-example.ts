@@ -15,7 +15,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example_1 = `
+const code_example_1 = `
 <sam-icon name="home"></sam-icon>
 <sam-icon name="user"></sam-icon>
 <sam-icon name="search"></sam-icon>
@@ -26,16 +26,16 @@ var code_example_1 = `
 <sam-icon name="book"></sam-icon>
 `;
 
-var code_example_2 = `
+const code_example_2 = `
 <sam-icon name="user"></sam-icon>
 `;
 
-var code_example_3 = `
+const code_example_3 = `
 <sam-icon name="search"></sam-icon>
 `;
 
 @Component({
-	selector: 'doc-sam-icon',
+  selector: 'doc-sam-icon',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -44,27 +44,27 @@ var code_example_3 = `
           Warning
         </div>
         <p>
-          This component is under development. 
+          This component is under development.
         </p>
       </div>
 
       <h3 class="sam-ui dividing header">Available</h3>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
     </doc-template>`
 })
 export class SamIconComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamIconComponent";
-  typedoc_content = "";
-  
-	example_1 = code_example_1.trim();
+  typedoc_target = 'SamIconComponent';
+  typedoc_content = '';
+
+  example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
 
-          
+
   public base = '_docs/experimental/icon/';
 
   constructor(

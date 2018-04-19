@@ -5,11 +5,14 @@
     "sourceMap": true,
     "declaration": false,
     "baseUrl": "./src",
+    "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "paths": {
-      "sam-ui-elements": [ "sam-ui-elements" ]
+      "api-kit/*": [ "api-kit/*"],
+      "app-components/*": [ "app/app-components/*"],
+      "environment": [ "./environments/environment" ]
     },
     "skipLibCheck": true,
     "target": "es5",
@@ -23,6 +26,8 @@
   },
   "exclude": [
     "**/node_modules/**/*",
-    "node_modules/**/*"
+    "node_modules/**/*",
+    "test.ts",
+    "**/*.spec.ts"
   ]
 }

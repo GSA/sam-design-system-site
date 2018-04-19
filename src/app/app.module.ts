@@ -36,7 +36,6 @@ const APP_PROVIDERS = [
     HomeComponent
   ],
   imports: [ // import Angular's modules
-    DocModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,

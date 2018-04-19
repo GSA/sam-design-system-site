@@ -1,0 +1,27 @@
+
+.prototype-panel{
+  border-bottom: 1px solid #DCE4EE;
+}
+
+.prototype-panel-heading{
+  color: black;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 10px 5px;
+  &::before{
+    content: "»";
+  }
+}
+
+.prototype-panel-body{
+  margin: 5px 5px 20px 15px;
+  overflow: hidden;
+  label{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+  }
+  input{
+    width: 200px;
+  }
+}

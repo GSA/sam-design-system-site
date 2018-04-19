@@ -16,16 +16,16 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../../app/services/documentation.service';
 
-//tabs/spacing matters for code example block
-var code_example = 'TODO';
+// tabs/spacing matters for code example block
+const code_example = 'TODO';
 
 @Component({
   selector: 'doc-sam-autocomplete',
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content"> + code_example + </doc-template>'
 })
 export class StateServiceDirectiveExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "StateServiceDirective";
-  typedoc_content = "";
+  typedoc_target = 'StateServiceDirective';
+  typedoc_content = '';
 
   example = code_example;
 

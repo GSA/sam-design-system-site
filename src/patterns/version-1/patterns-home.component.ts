@@ -3,6 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   templateUrl: 'patterns-home.template.html'
 })
-export class HomeComponent { 
-  
+export class HomeComponent {
+
 }

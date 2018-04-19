@@ -13,6 +13,10 @@ import { PickerLevel4Component } from './picker/component';
 import { PickerLevel5Component } from './picker/component';
 import { PickerLevel6Component } from './picker/component';
 import { MainNavComponent } from './main-nav/component';
+import { PrototypeAccordionComponent } from './accordion/accordion.component';
+import { PrototypePanelComponent } from './accordion/panel.component';
+import { PrototypeTabsComponent } from './tab/tabs.component';
+import { PrototypeTabComponent } from './tab/tab.component';
 
 @NgModule({
   imports: [
@@ -29,10 +33,18 @@ import { MainNavComponent } from './main-nav/component';
     PickerLevel4Component,
     PickerLevel5Component,
     PickerLevel6Component,
-    MainNavComponent
+    MainNavComponent,
+    PrototypeAccordionComponent,
+    PrototypePanelComponent,
+    PrototypeTabsComponent,
+    PrototypeTabComponent
   ],
   exports: [
-    MainNavComponent
+    MainNavComponent,
+    PrototypeAccordionComponent,
+    PrototypePanelComponent,
+    PrototypeTabsComponent,
+    PrototypeTabComponent
   ]
 })
 export class PrototypesComponentsModule {}

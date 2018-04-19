@@ -3,29 +3,29 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   templateUrl: 'home.template.html',
 })
-export class HomeComponent implements OnInit{
-  
+export class HomeComponent implements OnInit {
+
   ngOnInit() {
-    
-    const reduceMotion = matchMedia("(prefers-reduced-motion)").matches;
-    
+
+    const reduceMotion = matchMedia('(prefers-reduced-motion)').matches;
+
     // ===================================
     // Strut
     // ===================================
-    var Strut = {
+    const Strut = {
       random: function(t, n) {
-          return Math.random() * (n - t) + t
+          return Math.random() * (n - t) + t;
       },
       interpolate: function(t, n, e) {
-          return t * (1 - e) + n * e
+          return t * (1 - e) + n * e;
       },
       queryArray: function(t, n) {
           return n || (n = document.body),
-          Array.prototype.slice.call(n.querySelectorAll(t))
+          Array.prototype.slice.call(n.querySelectorAll(t));
       }
     };
-    
-    
+
+
     // ===================================
     // Helpers
     // ===================================
@@ -33,21 +33,21 @@ export class HomeComponent implements OnInit{
     const setState = (state, speed) =>
       directions.forEach(axis => {
         state[axis] += speed[axis];
-        if (Math.abs(state[axis]) < 360) return;
+        if (Math.abs(state[axis]) < 360) { return; }
         const max = Math.max(state[axis], 360);
-        const min = max == 360 ? Math.abs(state[axis]) : 360;
+        const min = max === 360 ? Math.abs(state[axis]) : 360;
         state[axis] = max - min;
       });
 
     const cubeIsHidden = left => left > parentWidth + 30;
-    
+
     // ======================================
     // Shared references
     // ======================================
 
-    let headerIsHidden = false;
+    const headerIsHidden = false;
 
-    let cubeMarkUp = `
+    const cubeMarkUp = `
       <div class="shadow"></div>
       <div class="sides">
         <div class="back"></div>
@@ -58,19 +58,19 @@ export class HomeComponent implements OnInit{
         <div class="bottom"></div>
       </div>
     `;
-    
-    let template = document.createDocumentFragment();
-    let cubeTemplate = document.createElement("div");
-    cubeTemplate.className = "cube";
+
+    const template = document.createDocumentFragment();
+    const cubeTemplate = document.createElement('div');
+    cubeTemplate.className = 'cube';
     cubeTemplate.innerHTML = cubeMarkUp;
     template.appendChild(cubeTemplate);
 
-    const parent = document.getElementById("intro-animation");
+    const parent = document.getElementById('intro-animation');
     const getParentWidth = () => parent.getBoundingClientRect().width;
     let parentWidth = getParentWidth();
-    window.addEventListener("resize", () => parentWidth = getParentWidth());
+    window.addEventListener('resize', () => parentWidth = getParentWidth());
 
-    const directions = ["x", "y"];
+    const directions = ['x', 'y'];
 
     const palette = {
       red: {
@@ -86,7 +86,7 @@ export class HomeComponent implements OnInit{
         shading: [50, 120, 255]
       },
     };
-    
+
     // ==========================================
     // Cube instances
     // ==========================================
@@ -99,7 +99,7 @@ export class HomeComponent implements OnInit{
         top: `${top}px`
       });
 
-      Object.assign(cube.querySelector(".shadow").style, {
+      Object.assign(cube.querySelector('.shadow').style, {
         filter: `blur(${Math.round(size * .3)}px)`,
         opacity: Math.min(size / 120, .4)
       });
@@ -107,9 +107,9 @@ export class HomeComponent implements OnInit{
 
     const createCube = (size, title) => {
       const fragment: any = document.importNode(template, true);
-      const cubeTitle = fragment.querySelector(".cube .front span");
+      const cubeTitle = fragment.querySelector('.cube .front span');
       cubeTitle.innerHTML = title;
-      const cube = fragment.querySelector(".cube");
+      const cube = fragment.querySelector('.cube');
 
       const state = {
         x: 0,
@@ -122,7 +122,7 @@ export class HomeComponent implements OnInit{
         return object;
       }, {});
 
-      const sides = Strut.queryArray(".sides div", cube).reduce((object, side) => {
+      const sides = Strut.queryArray('.sides div', cube).reduce((object, side) => {
         object[side.className] = {
           side,
           hidden: false,
@@ -133,16 +133,16 @@ export class HomeComponent implements OnInit{
         };
         return object;
       }, {});
-      
+
       sides.top.rotate.x = 90;
       sides.bottom.rotate.x = -90;
       sides.left.rotate.y = -90;
       sides.right.rotate.y = 90;
-      sides.back.rotate.y = -180
+      sides.back.rotate.y = -180;
 
       return { fragment, cube, state, speed, sides: (<any>Object).values(sides) };
     };
-    
+
     const sizes = {
       xs: 15,
       s: 25,
@@ -150,22 +150,22 @@ export class HomeComponent implements OnInit{
       l: 70,
       xl: 100
     };
-    
+
     const cubes = [
       {
-        title: "HTML",
+        title: 'HTML',
         tint: palette.red,
         size: sizes.l,
         left: 160,
         top: 20
-      },{
-        title: "JS",
+      }, {
+        title: 'JS',
         tint: palette.green,
         size: sizes.l,
         left: 100,
         top: 130
-      },{
-        title: "CSS",
+      }, {
+        title: 'CSS',
         tint: palette.blue,
         size: sizes.l,
         left: 220,
@@ -174,7 +174,7 @@ export class HomeComponent implements OnInit{
     ].map(object => Object.assign(createCube(object.size, object.title), object));
 
     cubes.forEach(setCubeStyles);
-    
+
     // ============================================
     // Cube rotating animation
     // ============================================
@@ -186,7 +186,7 @@ export class HomeComponent implements OnInit{
       }, {});
 
     const getRotation = (state, size, rotate) => {
-      const axis = rotate.x ? "Z" : "Y";
+      const axis = rotate.x ? 'Z' : 'Y';
       const direction = rotate.x > 0 ? -1 : 1;
 
       return `
@@ -204,12 +204,13 @@ export class HomeComponent implements OnInit{
         return object;
       }, {});
 
-      if (rotate.x)
+      if (rotate.x) {
         darken.y = 0;
-      else {
+      } else {
         const {x} = distance;
-        if (x > 90 && x < 270)
+        if (x > 90 && x < 270) {
           directions.forEach(axis => darken[axis] = 1 - darken[axis]);
+        }
       }
 
       const alpha = (darken.x + darken.y) / .8;
@@ -220,17 +221,20 @@ export class HomeComponent implements OnInit{
     };
 
     const shouldHide = (rotateX, x, y) => {
-      if (rotateX)
+      if (rotateX) {
         return x > 90 && x < 270;
-      if (x < 90)
+      }
+      if (x < 90) {
         return y > 90 && y < 270;
-      if (x < 270)
+      }
+      if (x < 270) {
         return y < 90;
+      }
       return y > 90 && y < 270;
     };
 
     const updateSides = ({state, speed, size, tint, sides, left}) => {
-      if (headerIsHidden || cubeIsHidden(left)) return;
+      if (headerIsHidden || cubeIsHidden(left)) { return; }
 
       const animate = object => {
         const {side, rotate, hidden} = object;
@@ -260,16 +264,16 @@ export class HomeComponent implements OnInit{
 
     const tick = () => {
       cubes.forEach(updateSides);
-      if (reduceMotion) return;
+      if (reduceMotion) { return; }
       requestAnimationFrame(tick);
     };
-    
+
     // ===============================
     // Initialize
     // ===============================
 
-    const container = document.createElement("div");
-    container.className = "cubes";
+    const container = document.createElement('div');
+    container.className = 'cubes';
 
     cubes.forEach(({fragment}) => container.appendChild(fragment));
 
@@ -277,13 +281,13 @@ export class HomeComponent implements OnInit{
       tick();
       parent.appendChild(container);
     };
-    
+
     if ('requestIdleCallback' in window) {
-      window['requestIdleCallback'](start)
+      window['requestIdleCallback'](start);
     } else {
       start();
     }
-    
+
   }
-  
+
 }

@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Observable, Subscription, ReplaySubject } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
 import 'rxjs/add/operator/map';
 
 const regexComponent = new RegExp('([^/]*(\.component|\.directive))');
@@ -23,7 +25,7 @@ export class DocumentationService {
    * Gets all components from docs.json
    */
   public getComponents(): ReplaySubject<any> {
-    let components: ReplaySubject<any> = new ReplaySubject();
+    const components: ReplaySubject<any> = new ReplaySubject();
     this.loadData()
     .subscribe(
       (data) => {
@@ -45,11 +47,11 @@ export class DocumentationService {
     return components;
   }
 
-  public generateJSONReport(){
+  public generateJSONReport() {
     return this.loadData()
     .subscribe(
       (data) => {
-        let output = data.children.reduce((accum, child) => {
+        const output = data.children.reduce((accum, child) => {
           if (child.name.match(regexComponent)) {
             for (const grandchild of child.children) {
               if (!!grandchild.decorators &&
@@ -61,8 +63,8 @@ export class DocumentationService {
           }
           let arr = accum.slice(0);
           let finalArr = [];
-          arr = arr.map(item=>{
-            let row = {};
+          arr = arr.map(item => {
+            const row = {};
             row['component'] = item['name'];
             delete item['id'];
             delete item['kind'];
@@ -72,56 +74,56 @@ export class DocumentationService {
             delete item['implementedTypes'];
             delete item['sources'];
             delete item['decorators'];
-            if(item['children']){
-              item['children'] = item['children'].filter(subitem=>{
-                if(subitem['kindString']=="Property" && subitem['decorators']){
+            if (item['children']) {
+              item['children'] = item['children'].filter(subitem => {
+                if (subitem['kindString'] === 'Property' && subitem['decorators']) {
                   return true;
                 }
               });
-              for(let i = 0; i < item['children'].length; i++){
-                let subItem = item['children'][i];
+              for (let i = 0; i < item['children'].length; i++) {
+                const subItem = item['children'][i];
                 delete subItem['id'];
                 delete subItem['kind'];
-                let subrow = {};
+                const subrow = {};
                 subrow['component'] = row['component'];
                 // delete subItem['kindString'];
                 // delete subItem['flags'];
                 // delete subItem['sources'];
                 subrow['apiName'] = subItem['name'];
-                if(subItem['type'] && subItem['type']['name']){
-                  subrow['datatype'] = subItem['type']['name'];  
-                } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type']=="union"){ 
-                  let typearr = [];
-                  for(let i = 0; i < subItem['type']['types'].length; i++){
-                    if(subItem['type']['types'][i]['value']){
-                      typearr.push(subItem['type']['types'][i]['value']);
-                    } else if (subItem['type']['types'][i]['name']){
-                      typearr.push(subItem['type']['types'][i]['name']);
+                if (subItem['type'] && subItem['type']['name']) {
+                  subrow['datatype'] = subItem['type']['name'];
+                } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'union') {
+                  const typearr = [];
+                  for (let j = 0; j < subItem['type']['types'].length; j++) {
+                    if (subItem['type']['types'][j]['value']) {
+                      typearr.push(subItem['type']['types'][j]['value']);
+                    } else if (subItem['type']['types'][j]['name']) {
+                      typearr.push(subItem['type']['types'][j]['name']);
                     }
                   }
-                  subrow['datatype'] = typearr.join("|");
-                  
-                } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type']=="reflection")){
-                  subrow['datatype'] = "reflection";
+                  subrow['datatype'] = typearr.join('|');
+
+                } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'reflection')) {
+                  subrow['datatype'] = 'reflection';
                 }else {
-                  subrow['datatype'] = "";
+                  subrow['datatype'] = '';
                 }
-                subrow['type'] = subItem['decorators'][0]['name']; 
-                
-                subrow['comment'] = "";
-                if(subItem['comment'] && subItem['comment']["shortText"]){
-                  subrow['comment'] = (""+subItem['comment']["shortText"]).replace(/\"/g, "\"\"");
+                subrow['type'] = subItem['decorators'][0]['name'];
+
+                subrow['comment'] = '';
+                if (subItem['comment'] && subItem['comment']['shortText']) {
+                  subrow['comment'] = ('' + subItem['comment']['shortText']).replace(/\"/g, '""');
                 }
                 finalArr.push(subrow);
-              };
+              }
             } else {
               finalArr.push(row);
             }
 
             return item;
           });
-          finalArr = finalArr.filter(row=>{
-            if(row['type']=="Input" || row['type']=="Output"){
+          finalArr = finalArr.filter(row => {
+            if (row['type'] === 'Input' || row['type'] === 'Output') {
               return true;
             }
           });
@@ -140,11 +142,11 @@ export class DocumentationService {
    * It is expected each id should be unique.
    */
   public getComponentById(id: number): ReplaySubject<any> {
-    let component: ReplaySubject<any> = new ReplaySubject();
+    const component: ReplaySubject<any> = new ReplaySubject();
     this.getComponents()
     .subscribe(
       (data) => {
-        for (let item of data) {
+        for (const item of data) {
           if (item.id === id) {
             component.next(item);
           }
@@ -160,11 +162,11 @@ export class DocumentationService {
    * It is expected that each name is unique.
    */
   public getComponentByName(name: string): ReplaySubject<any> {
-    let component: ReplaySubject<any> = new ReplaySubject();
+    const component: ReplaySubject<any> = new ReplaySubject();
     this.getComponents()
     .subscribe(
       (data) => {
-        for (let item of data) {
+        for (const item of data) {
           if (item.name === name) {
             component.next(item);
           }
@@ -183,7 +185,7 @@ export class DocumentationService {
       throw new Error('Method must be supplied with component name');
     }
 
-    let properties: ReplaySubject<any[]> = new ReplaySubject();
+    const properties: ReplaySubject<any[]> = new ReplaySubject();
 
     this.getComponentByName(name)
     .subscribe(
@@ -201,7 +203,7 @@ export class DocumentationService {
         }
       },
       (error) => { throw new Error(error); }
-    )
+    );
 
     return properties;
   }
@@ -210,7 +212,7 @@ export class DocumentationService {
    * Gets a property of a component by its id.
    */
   public getComponentPropertiesById(componentName: string, propertyId: number): ReplaySubject<any> {
-    let property: ReplaySubject<any> = new ReplaySubject();
+    const property: ReplaySubject<any> = new ReplaySubject();
     this.getComponentProperties(componentName)
     .subscribe(
       (data) => {
@@ -223,7 +225,7 @@ export class DocumentationService {
         );
       },
       (error) => { throw new Error(error); }
-    )
+    );
     return property;
   }
 
@@ -231,7 +233,7 @@ export class DocumentationService {
    * Gets a property of a component by its name.
    */
   public getComponentPropertiesByName(componentName: string, name: string): ReplaySubject<any[]> {
-    let properties: ReplaySubject<any[]> = new ReplaySubject();
+    const properties: ReplaySubject<any[]> = new ReplaySubject();
     this.getComponentProperties(componentName)
     .subscribe(
       (data) => {
@@ -252,7 +254,7 @@ export class DocumentationService {
    * Gets array of interfaces from docs.jsons
    */
   public getInterfaces(): ReplaySubject<any[]> {
-    let interfaces: ReplaySubject<any[]> = new ReplaySubject();
+    const interfaces: ReplaySubject<any[]> = new ReplaySubject();
     this.loadData()
     .subscribe(
       (data) => {
@@ -278,7 +280,7 @@ export class DocumentationService {
    * Gets array of types form docs.json
    */
   public getTypes(): ReplaySubject<any[]> {
-    let types: ReplaySubject<any[]> = new ReplaySubject();
+    const types: ReplaySubject<any[]> = new ReplaySubject();
     this.loadData()
     .subscribe(
       (data) => {

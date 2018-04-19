@@ -4,15 +4,14 @@ import { Component, HostListener} from '@angular/core';
   templateUrl: 'template.html'
 })
 export class PickerComponent {
+  showOverlay: boolean = true;
 
   @HostListener('click', ['$event']) onClick($event) {
-    let target = $event.target.className;
-    this.showOverlay = target === "prototype-picker-overlay" ? false : true;
-   }
+    const target = $event.target.className;
+    this.showOverlay = target === 'prototype-picker-overlay' ? false : true;
+  }
 
-  showOverlay: boolean = true;
-  
-  openModal(){
+  openModal() {
     this.showOverlay = true;
   }
 
@@ -22,24 +21,24 @@ export class PickerComponent {
 @Component({
   templateUrl: 'template-2.html'
 })
-export class PickerLevel2Component {}
+export class PickerLevel2Component extends PickerComponent {}
 
 @Component({
   templateUrl: 'template-3.html'
 })
-export class PickerLevel3Component {}
+export class PickerLevel3Component extends PickerComponent {}
 
 @Component({
   templateUrl: 'template-4.html'
 })
-export class PickerLevel4Component {}
+export class PickerLevel4Component extends PickerComponent {}
 
 @Component({
   templateUrl: 'template-5.html'
 })
-export class PickerLevel5Component {}
+export class PickerLevel5Component extends PickerComponent {}
 
 @Component({
   templateUrl: 'template-6.html'
 })
-export class PickerLevel6Component {}
+export class PickerLevel6Component extends PickerComponent {}

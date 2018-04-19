@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { 
-  Router, 
+import { Component, OnDestroy } from '@angular/core';
+import {
+  Router,
   NavigationEnd,
   UrlTree,
   UrlSegmentGroup,
-  UrlSegment, 
-  PRIMARY_OUTLET 
+  UrlSegment,
+  PRIMARY_OUTLET
 } from '@angular/router';
 
 @Component({
@@ -27,18 +27,18 @@ import {
     </div>
   `
 })
-export class PagesComponent {
+export class PagesComponent implements OnDestroy {
 
-  selectedOption:any;
+  selectedOption: any;
 
   options = [
-    { name: "User Account", value: "a" },
-    { name: "Award Domains", value: "b" }
+    { name: 'User Account', value: 'a' },
+    { name: 'Award Domains', value: 'b' }
   ];
 
   routerSubscription: any;
 
-  constructor(private router: Router){
+  constructor(private router: Router) {
     this.routerSubscription = router.events.subscribe(event => {
       if (event instanceof NavigationEnd ) {
         const tree: UrlTree = router.parseUrl(event.url);
@@ -49,16 +49,16 @@ export class PagesComponent {
     });
   }
 
-  selectOption(value){
+  selectOption(value) {
     this.options.forEach(option => {
-      if(option.value === value){
+      if (option.value === value) {
         this.selectedOption = option;
       }
     });
   }
 
-  navigateTo(){
-    if(this.selectedOption.value){
+  navigateTo() {
+    if (this.selectedOption.value) {
       this.router.navigate([`/patterns/page/${this.selectedOption.value}`]);
     }
   }
@@ -66,5 +66,4 @@ export class PagesComponent {
   ngOnDestroy() {
     this.routerSubscription.unsubscribe();
   }
-
 }

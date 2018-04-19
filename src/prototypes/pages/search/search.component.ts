@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import {
   trigger,
   state,
@@ -28,7 +28,7 @@ import {
       })),
       transition('* => open', [
         query('*', style({ opacity: 0})),
-        query(':self',[
+        query(':self', [
           animate('250ms cubic-bezier(0.175, 0.885, 0.32, 1.275)'),
         ]),
         query('*', stagger('30ms', [
@@ -43,12 +43,12 @@ import {
             display: 'none'
           }))
         ]),
-        query(':self',[
+        query(':self', [
           animate('250ms 210ms cubic-bezier(0.175, 0.885, 0.32, 1.275)'),
         ])
       ])
     ]),
-    trigger('searchResults',[
+    trigger('searchResults', [
       transition('* => *', [
         query('.search-result', style({ opacity: 0})),
         query('.search-result', stagger('100ms', [
@@ -152,7 +152,7 @@ import {
     ]),
     trigger('arrowAnimation', [
       transition('* => *', [
-        query(":enter", [
+        query(':enter', [
           style({
             display: 'inline-block',
             transform: 'translateX(-15px)',
@@ -164,7 +164,7 @@ import {
             width: '*'
           }))
         ], { optional: true }),
-        query(":leave", [
+        query(':leave', [
           style({
             display: 'inline-block',
             transform: 'translateX(0px)',
@@ -180,33 +180,29 @@ import {
     ])
   ]
 })
-export class SearchPageComponent{
+export class SearchPageComponent {
+  filtersDrawer = 'open';
+  selectedDomain = 'All Award Data';
+  filterSlide: string;
 
-    
-    filtersDrawer = 'open';
-    selectedDomain = "All Award Data";
-    
-    toggleFilters(){
-      this.filtersDrawer = this.filtersDrawer === 'open' ? 'close' : 'open';
-    }
-    
-    filterSlide: string;
-    filterSlideToggle(domain){
-      this.selectedDomain = domain;
-      if(domain === 'All Award Data'){
-        this.filterSlide = 'parent';
-      }else{
-        this.filterSlide = 'child';
-      }
-    }
-    
-    filterLink(){
-      if(this.filtersDrawer == 'open'){
-        return 'Hide';
-      }else{
-        return 'Show';
-      }
-    }
-    
-    
+  toggleFilters() {
+    this.filtersDrawer = this.filtersDrawer === 'open' ? 'close' : 'open';
   }
+
+  filterSlideToggle(domain) {
+    this.selectedDomain = domain;
+    if (domain === 'All Award Data') {
+      this.filterSlide = 'parent';
+    } else {
+      this.filterSlide = 'child';
+    }
+  }
+
+  filterLink() {
+    if (this.filtersDrawer === 'open') {
+      return 'Hide';
+    } else {
+      return 'Show';
+    }
+  }
+}

@@ -9,22 +9,29 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-phone-entry [phoneNumberTemplate]="'___-___-____'" [(model)]="phoneModel" (emitter)="phoneModelChange($event)"></sam-phone-entry>
-<sam-phone-entry [(model)]="phoneModel2" (emitter)="phoneModel2Change($event)"></sam-phone-entry>`;
+const code_example = `<sam-phone-entry
+  [phoneNumberTemplate]="'___-___-____'"
+  [(model)]="phoneModel"
+  (emitter)="phoneModelChange($event)">
+</sam-phone-entry>
+<sam-phone-entry
+  [(model)]="phoneModel2"
+  (emitter)="phoneModel2Change($event)">
+</sam-phone-entry>`;
 
 @Component({
-	selector: 'doc-phone-entry',
+  selector: 'doc-phone-entry',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class PhoneEntryExampleComponent extends BaseExampleComponent implements OnInit {
-  phoneModel = "123-456-3366";
-  phoneModel2 = "1+(123)456-3366";
-  typedoc_target = "SamPhoneEntryComponent";
-  typedoc_content = "";
+  phoneModel = '123-456-3366';
+  phoneModel2 = '1+(123)456-3366';
+  typedoc_target = 'SamPhoneEntryComponent';
+  typedoc_content = '';
 
   example = code_example;
 

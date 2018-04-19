@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-radio-button
+const code_example = `<sam-radio-button
   [(model)]="radioModel"
   [options]="radioConfig.options"
   [label]="radioConfig.label"
@@ -19,15 +19,15 @@ var code_example = `<sam-radio-button
 </sam-radio-button>`;
 
 @Component({
-	selector: 'doc-radio',
+  selector: 'doc-radio',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class RadioExampleComponent extends BaseExampleComponent implements OnInit {
-	radioModel: any = 'ma';
+  radioModel: any = 'ma';
   radioConfig = {
     options: [
       {value: 'dc', label: 'DC', name: 'radio-dc'},
@@ -39,11 +39,11 @@ export class RadioExampleComponent extends BaseExampleComponent implements OnIni
     errorMessage: '',
     hint: ''
   };
-  typedoc_target = "SamRadioButtonComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamRadioButtonComponent';
+  typedoc_content = '';
 
   example = code_example;
-  
+
   public base = '_docs/form-controls/radiobutton/';
 
   constructor(

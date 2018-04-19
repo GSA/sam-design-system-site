@@ -9,19 +9,19 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></sam-label>`;
+const code_example = `<sam-label [labelType]="'big'" [labelText]="'Big Label'"></sam-label>`;
 
 @Component({
-	selector: 'doc-label',
+  selector: 'doc-label',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class LabelExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamLabelComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamLabelComponent';
+  typedoc_content = '';
 
   example = code_example;
 

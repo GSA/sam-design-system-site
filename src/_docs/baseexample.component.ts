@@ -60,11 +60,11 @@ export class BaseExampleComponent implements OnInit {
         </tr>
       </thead>`;
     obj.forEach((item) => {
-      var comment = item['comment'] && item['comment']['shortText'] ? item.comment.shortText : "";
-      var type = item['type'] && item['type']['name'] ? item.type.name : "";
+      const comment = item['comment'] && item['comment']['shortText'] ? item.comment.shortText : '';
+      const type = item['type'] && item['type']['name'] ? item.type.name : '';
       let deprecated;
       if (item.comment && item.comment.tags) {
-        let depItems = item.comment.tags.filter(
+        const depItems = item.comment.tags.filter(
           tag => tag.tag === 'deprecated'
         );
         deprecated = depItems.length > 0 ? true : false;
@@ -87,7 +87,7 @@ export class BaseExampleComponent implements OnInit {
 
   public fetchSection (section: string) {
 
-    let fileName = section === 'markdown'
+    const fileName = section === 'markdown'
       ? 'documentation'
       : section;
 

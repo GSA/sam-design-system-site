@@ -9,15 +9,15 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<input sam-tab-outside (tabOutside)="tabHandler($event)" /> 
+const code_example = `<input sam-tab-outside (tabOutside)="tabHandler($event)" />
 <p>{{ tabAway }}</p>
 <button (click)="reset()">reset</button>`;
 
 @Component({
-	selector: 'doc-taboutside',
+  selector: 'doc-taboutside',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })

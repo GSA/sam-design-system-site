@@ -1,4 +1,4 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PrototypesHomeComponent } from './home/prototypes-home.component';
@@ -26,4 +26,4 @@ const prototypesRoutes: Routes = [
     RouterModule
   ]
 })
-export class PrototypesRoutingModule{}
+export class PrototypesRoutingModule {}

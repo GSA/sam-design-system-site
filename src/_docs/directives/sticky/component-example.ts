@@ -9,10 +9,10 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-//var code_example = ``;
+// var code_example = ``;
 
 @Component({
-	selector: 'doc-sticky',
+  selector: 'doc-sticky',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
 Scroll down and see Sidenav
@@ -21,10 +21,10 @@ Scroll down and see Sidenav
 `
 })
 export class StickyExampleComponent extends BaseExampleComponent implements OnInit {
-	typedoc_target = "SamStickyComponent";
+  typedoc_target = 'SamStickyComponent';
   typedoc_content = '';
 
-	example = `<div class="sticky-target usa-grid">
+  example = `<div class="sticky-target usa-grid">
   <div class="usa-width-one-fourth">
     <nav sam-sticky [container]="sticky-target">
       ...

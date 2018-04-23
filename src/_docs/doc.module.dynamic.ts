@@ -68,8 +68,6 @@ import { ToggleSwitchExampleComponent } from './form-controls/toggle-switch/comp
 import { PhoneGroupExampleComponent } from './form-templates/international-phone/component-example';
 import { NameEntryExampleComponent } from './form-templates/name-entry/component-example';
 import { PhoneEntryExampleComponent } from './form-templates/phone-entry/component-example';
-import { CountryServiceDirectiveExampleComponent } from './service-directives/autocomplete/country/component-example';
-import { StateServiceDirectiveExampleComponent } from './service-directives/autocomplete/state/component-example';
 import { FieldsetWrapperExampleComponent } from './wrappers/fieldset-wrapper/component-example';
 import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component-example';
 
@@ -144,8 +142,6 @@ import { SiteComponentsModule } from '../app/site-components/sitecomponents.modu
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
-    CountryServiceDirectiveExampleComponent,
-    StateServiceDirectiveExampleComponent,
     FieldsetWrapperExampleComponent,
     LabelWrapperExampleComponent,
     InterfacesComponent,
@@ -212,8 +208,6 @@ import { SiteComponentsModule } from '../app/site-components/sitecomponents.modu
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
-    CountryServiceDirectiveExampleComponent,
-    StateServiceDirectiveExampleComponent,
     FieldsetWrapperExampleComponent,
     LabelWrapperExampleComponent,
     InterfacesComponent,

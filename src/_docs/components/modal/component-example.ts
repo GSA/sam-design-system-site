@@ -10,49 +10,59 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-modal 
-  [showClose]="true" 
-  #modal1 
-  [title]="modalConfig.title" 
-  [type]="'success'" 
-  [description]="modalConfig.description" 
-  [submitButtonLabel]="'Ok'" 
+const code_example = `<sam-modal
+  [showClose]="true"
+  #modal1
+  [title]="modalConfig.title"
+  [type]="'success'"
+  [description]="modalConfig.description"
+  [submitButtonLabel]="'Ok'"
   (onClose)="message='Success modal closed'"
   (onSubmit)="onModalClose()">
 </sam-modal>
-<sam-modal 
-  [showClose]="true" 
-  #modal2 
-  [title]="modalConfig.title" 
-  [type]="'error'" 
-  [description]="modalConfig.description" 
-  [submitButtonLabel]="'Ok'" 
+<sam-modal
+  [showClose]="true"
+  #modal2
+  [title]="modalConfig.title"
+  [type]="'error'"
+  [description]="modalConfig.description"
+  [submitButtonLabel]="'Ok'"
   (onClose)="message='Error modal closed'"
   (onSubmit)="onModal2Close()">
 </sam-modal>
-<sam-modal 
-  [showClose]="true" 
-  #modal3 
-  [title]="modalConfig.title" 
-  [type]="'warning'" 
-  [description]="modalConfig.description" 
-  [submitButtonLabel]="'Yes'" 
-  [cancelButtonLabel]="'No'" 
+<sam-modal
+  [showClose]="true"
+  #modal3
+  [title]="modalConfig.title"
+  [type]="'warning'"
+  [description]="modalConfig.description"
+  [submitButtonLabel]="'Yes'"
+  [cancelButtonLabel]="'No'"
   (onClose)="message='Warning modal closed'"
   (onSubmit)="onModal3Close()">
 </sam-modal>
-<sam-modal 
-  [showClose]="true" 
-  #modal4 
-  [title]="modalConfig.title" 
-  [type]="'info'" 
-  [submitButtonLabel]="'Yes'" 
-  [cancelButtonLabel]="'No'" 
+<sam-modal
+  [showClose]="true"
+  #modal4
+  [title]="modalConfig.title"
+  [type]="'info'"
+  [submitButtonLabel]="'Yes'"
+  [cancelButtonLabel]="'No'"
   (onClose)="message='Info modal closed'"
   (onSubmit)="onModal4Close()">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero, esse ratione quis quasi commodi distinctio sit aut eum facilis minima hic saepe ut ex, aliquid minus non maxime quod!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero,
+  esse ratione quis quasi commodi distinctio sit aut eum facilis minima hic saepe ut ex,
+  aliquid minus non maxime quod!
 </sam-modal>
-<sam-modal [showClose]="true" #modal5 [title]="modalConfig2.title" [type]="modalConfig2.type" [description]="modalConfig2.description" [submitButtonLabel]="'Yes'" [cancelButtonLabel]="'No'" (onSubmit)="onModal5Close()">
+<sam-modal
+  [showClose]="true"
+  #modal5
+  [title]="modalConfig2.title"
+  [type]="modalConfig2.type"
+  [description]="modalConfig2.description"
+  [submitButtonLabel]="'Yes'"
+  [cancelButtonLabel]="'No'"
+  (onSubmit)="onModal5Close()">
 </sam-modal>
 
 <p>{{message}}</p>
@@ -70,49 +80,49 @@ var code_example = `<sam-modal
 `;
 
 @Component({
-	selector: 'doc-modal',
+  selector: 'doc-modal',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class ModalExampleComponent extends BaseExampleComponent implements OnInit {
-	modalConfig = {
-		title: "Test Title",
-		description: "Description Text"
-	};
-	@ViewChild('modal1') vcModal1;
-	@ViewChild('modal2') vcModal2;
-	@ViewChild('modal3') vcModal3;
-	@ViewChild('modal4') vcModal4;
-	@ViewChild('modal5') vcModal5;
-  typedoc_target = "SamModalComponent";
-  typedoc_content = "";
+  modalConfig = {
+    title: 'Test Title',
+    description: 'Description Text'
+  };
+  @ViewChild('modal1') vcModal1;
+  @ViewChild('modal2') vcModal2;
+  @ViewChild('modal3') vcModal3;
+  @ViewChild('modal4') vcModal4;
+  @ViewChild('modal5') vcModal5;
+  typedoc_target = 'SamModalComponent';
+  typedoc_content = '';
 
   example = code_example;
-  message = "";
+  message = '';
   modalAlertTypes = [{
-    label:'success',
-    name:'success',
-    value:'success'
-  },{
-    label:'warning',
-    name:'warning',
-    value:'warning'
-  },{
-    label:'error',
-    name:'error',
-    value:'error'
-  },{
-    label:'info',
-    name:'info',
-    value:'info'
+    label: 'success',
+    name: 'success',
+    value: 'success'
+  }, {
+    label: 'warning',
+    name: 'warning',
+    value: 'warning'
+  }, {
+    label: 'error',
+    name: 'error',
+    value: 'error'
+  }, {
+    label: 'info',
+    name: 'info',
+    value: 'info'
   }];
   modalConfig2 = {
-    type:'success',
-    title:'Sample Title',
-    description:'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+    type: 'success',
+    title: 'Sample Title',
+    description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
   };
 
   public base = '_docs/components/modal/';
@@ -127,34 +137,34 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
     this.sections.forEach(this.fetchSection.bind(this));
   }
 
-	onModalInitClick(){
-		this.vcModal1.openModal();
-	}
-  onModalClose(){
+  onModalInitClick() {
+    this.vcModal1.openModal();
+  }
+  onModalClose() {
     this.vcModal1.closeModal();
   }
-  onModalInit2Click(){
-		this.vcModal2.openModal();
-	}
-  onModal2Close(){
+  onModalInit2Click() {
+    this.vcModal2.openModal();
+  }
+  onModal2Close() {
     this.vcModal2.closeModal();
   }
-  onModalInit3Click(){
-		this.vcModal3.openModal();
-	}
-  onModal3Close(){
+  onModalInit3Click() {
+    this.vcModal3.openModal();
+  }
+  onModal3Close() {
     this.vcModal3.closeModal();
   }
-  onModalInit4Click(){
-		this.vcModal4.openModal();
-	}
-  onModal4Close(){
+  onModalInit4Click() {
+    this.vcModal4.openModal();
+  }
+  onModal4Close() {
     this.vcModal4.closeModal();
   }
-  onModal5InitClick(){
+  onModal5InitClick() {
     this.vcModal5.openModal();
   }
-  onModal5Close(){
+  onModal5Close() {
     this.vcModal5.closeModal();
   }
 }

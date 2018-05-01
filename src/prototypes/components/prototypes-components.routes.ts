@@ -57,4 +57,4 @@ const PageRoutes: Routes = [
     RouterModule
   ]
 })
-export class ComponentsRoutingModule{}
+export class ComponentsRoutingModule {}

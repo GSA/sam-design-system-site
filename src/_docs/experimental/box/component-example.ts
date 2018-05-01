@@ -16,20 +16,20 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 
-var code_example_1 = `
+const code_example_1 = `
 <sam-box>Lorem Ipsum</sam-box>
 `;
 
-var code_example_2 = `
+const code_example_2 = `
 <sam-box type="primary">Lorem Ipsum</sam-box>
 `;
 
-var code_example_3 = `
+const code_example_3 = `
 <sam-box type="outline">Lorem Ipsum</sam-box>
 `;
 
 @Component({
-	selector: 'doc-sam-box',
+  selector: 'doc-sam-box',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -46,33 +46,33 @@ var code_example_3 = `
 
       <h3 class="sam-ui dividing header">Default</h3>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
       <h3 class="sam-ui dividing header">Primary</h3>
 
-      <code-example language="html" [code]="example_2">
+      <sam-code-example language="html" [code]="example_2">
       ` + code_example_2 + `
-      </code-example>
+      </sam-code-example>
 
       <h3 class="sam-ui dividing header">Outline</h3>
 
-      <code-example language="html" [code]="example_3">
+      <sam-code-example language="html" [code]="example_3">
       ` + code_example_3 + `
-      </code-example>
+      </sam-code-example>
 
     </doc-template>`
 })
 export class SamBoxComponentExampleComponent extends BaseExampleComponent implements OnInit {
 
-  typedoc_target = "SamBoxComponent";
-  typedoc_content = "";
-  markdown= "";
+  typedoc_target = 'SamBoxComponent';
+  typedoc_content = '';
+  markdown= '';
   example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
-        
+
   public base = '_docs/experimental/box/';
 
   constructor(

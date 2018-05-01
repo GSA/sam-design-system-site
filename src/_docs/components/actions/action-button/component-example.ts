@@ -33,7 +33,7 @@ export class SamActionButtonExampleComponent extends BaseExampleComponent implem
   typedoc_content = '';
 
   example = code_example;
-  action = { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: ()=>{console.log("click");}}
+  action = { name: 'edit', label: 'Edit', icon: 'fa fa-pencil', callback: () => {console.log('click'); }};
 
   public base = '_docs/components/actions/action-button/';
 

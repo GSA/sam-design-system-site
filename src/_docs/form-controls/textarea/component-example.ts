@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example = `<sam-text-area
+const code_example = `<sam-text-area
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"
   [label]="textareaConfig.label"
@@ -19,26 +19,26 @@ var code_example = `<sam-text-area
 </sam-text-area>`;
 
 @Component({
-	selector: 'doc-textarea',
+  selector: 'doc-textarea',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class TextareaExampleComponent extends BaseExampleComponent implements OnInit {
-	textareaModel= 'Some Text';
+  textareaModel= 'Some Text';
   textareaConfig = {
-    label: "Enter zipcode",
-    hint: "Zipcode can be short or long version",
+    label: 'Enter zipcode',
+    hint: 'Zipcode can be short or long version',
     errorMessage: 'Uh-oh, something went wrong',
     name: 'aria-friendly-name',
     disabled: false,
   };
-  typedoc_target = "SamTextareaComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamTextareaComponent';
+  typedoc_content = '';
 
-	example = `<samTextArea
+  example = `<samTextArea
   [(ngModel)]="textareaModel"
   [name]="textareaConfig.name"
   [label]="textareaConfig.label"

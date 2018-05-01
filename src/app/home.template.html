@@ -1,4 +1,4 @@
-<site-header></site-header>
+<sam-site-header></sam-site-header>
 
 <main>
   <header>
@@ -55,7 +55,7 @@
         development components for building the upcoming <strong><em>SAM.gov</em>
         </strong> website.
       </p>
-      <button [routerLink]="['elements/button']" 
+      <button [routerLink]="['/docs/elements/button']" 
         class="sam primary button">
         Get Started
       </button>
@@ -65,11 +65,11 @@
     <h2 class="sam title">
       Installation
     </h2>
-    <code-example 
+    <sam-code-example 
       language="bash" 
       [code]="'$ npm install --save sam-ui-elements'">
-    </code-example>
-    <a [routerLink]="['overview/getting-started']">
+    </sam-code-example>
+    <a [routerLink]="['/docs/overview/getting-started']">
       Read installation docs
     </a>
     <h2 class="sam title">
@@ -86,4 +86,4 @@
   </footer>
 </main>
 
-<site-footer></site-footer>
+<sam-site-footer></sam-site-footer>

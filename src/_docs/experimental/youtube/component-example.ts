@@ -1,4 +1,3 @@
-
 import {
   Component,
   OnInit,
@@ -15,12 +14,12 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-var code_example_1 = `
+const code_example_1 = `
 <sam-youtube id="5uciZ431AGo"></sam-youtube>
 `;
 
 @Component({
-	selector: 'doc-sam-youtube',
+  selector: 'doc-sam-youtube',
   template: `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -33,19 +32,18 @@ var code_example_1 = `
         </p>
       </div>
 
-      <code-example language="html" [code]="example_1">
+      <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
-      </code-example>
+      </sam-code-example>
 
     </doc-template>`
 })
 export class SamYoutubeComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamYoutubeComponent";
-  typedoc_content = "";
-  
-	example_1 = code_example_1.trim();
+  typedoc_target = 'SamYoutubeComponent';
+  typedoc_content = '';
 
-  
+  example_1 = code_example_1.trim();
+
   public base = '_docs/experimental/youtube/';
 
   constructor(

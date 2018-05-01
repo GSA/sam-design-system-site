@@ -2,10 +2,10 @@ import { Component, AfterViewInit, Input, Renderer2, ElementRef } from '@angular
 import * as Prism from 'prismjs';
 
 @Component({
-  selector: 'code-example',
+  selector: 'sam-code-example',
   template: `<ng-content></ng-content>`,
 })
-export class CodeExampleComponent implements AfterViewInit{
+export class CodeExampleComponent implements AfterViewInit {
   @Input() public code: string;
   @Input() public language: string;
 
@@ -28,5 +28,4 @@ export class CodeExampleComponent implements AfterViewInit{
     this.codeNode.textContent = this.code.trim();
     Prism.highlightElement(this.codeNode);
   }
-
 }

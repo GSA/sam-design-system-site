@@ -20,18 +20,18 @@ const code_example = `
 `;
 
 @Component({
-	selector: 'doc-phone-group',
+  selector: 'doc-phone-group',
   template: `
 <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-`+code_example+`
+` + code_example + `
 </doc-template>
 `
 })
 export class PhoneGroupExampleComponent extends BaseExampleComponent implements OnInit {
-  phoneModel = "123-456-3366";
-  phoneModel2 = "1+(123)456-3366";
-  typedoc_target = "SamIntlPhoneGroup";
-  typedoc_content = "";
+  phoneModel = '123-456-3366';
+  phoneModel2 = '1+(123)456-3366';
+  typedoc_target = 'SamIntlPhoneGroup';
+  typedoc_content = '';
 
   group = new FormGroup({
     prefix: new FormControl(),

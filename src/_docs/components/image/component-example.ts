@@ -16,8 +16,8 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-//tabs/spacing matters for code example block
-var code_example = `
+// tabs/spacing matters for code example block
+const code_example = `
 <sam-image name="urmom"
 class="usa-width-one"
 src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg"
@@ -29,8 +29,8 @@ src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg"
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamImageComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamImageComponent";
-  typedoc_content = "";
+  typedoc_target = 'SamImageComponent';
+  typedoc_content = '';
 
   example = code_example;
 

@@ -5,53 +5,53 @@ import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
 @Component({
   templateUrl: 'sidebar-breadcrumbs.template.html',
 })
-export class SidebarBreadcrumbsPageComponent{
+export class SidebarBreadcrumbsPageComponent {
 
   showSection = ['sidebar-breadcrumbs-code'];
-  toggleCode(){
-    if(this.showSection != null) {
-      this.showSection = null;
-    }else{
-      this.showSection = ['sidebar-breadcrumbs-code'];
-    }
-  }
 
   sidenavModel: MenuItem = {
-    label: "SideNavigation",
+    label: 'SideNavigation',
     children: [
       {
-        label: "Lorem ipsum dolor",
-        route: "#"
+        label: 'Lorem ipsum dolor',
+        route: '#'
       },
       {
-        label: "Nullam at mauris",
-        route: "#"
+        label: 'Nullam at mauris',
+        route: '#'
       },
       {
-        label: "Maecenas feugiat",
-        route: "#"
+        label: 'Maecenas feugiat',
+        route: '#'
       },
       {
-        label: "Nunc non tellus",
-        route: "#"
+        label: 'Nunc non tellus',
+        route: '#'
       },
       {
-        label: "Aenean in felis congue",
-        route: "#"
+        label: 'Aenean in felis congue',
+        route: '#'
       }
     ]
   };
-  
+
   breadcrumbs = [
     { breadcrumb: 'Consectetur adipiscing', url: '/' },
     { breadcrumb: 'Lorem ipsum dolor'}
   ];
-  
+
+  toggleCode() {
+    if (this.showSection != null) {
+      this.showSection = null;
+    } else {
+      this.showSection = ['sidebar-breadcrumbs-code'];
+    }
+  }
 }
 
 
-let code_example_template = `
-<page 
+const code_example_template = `
+<page
   title="Lorem ipsum dolor sit amet"
   section="Consectetur adipiscing elit"
   [breadcrumbs]="breadcrumbs">
@@ -61,13 +61,13 @@ let code_example_template = `
   </sidebar>
 
   <p>
-    Quisque lacinia commodo neque et suscipit. Integer rutrum mauris ex, non 
-    ornare leo interdum nec. Suspendisse vitae tortor aliquam, tincidunt metus 
+    Quisque lacinia commodo neque et suscipit. Integer rutrum mauris ex, non
+    ornare leo interdum nec. Suspendisse vitae tortor aliquam, tincidunt metus
     ut, cursus est. Maecenas luctus maximus se...
   </p>
 </page>`;
 
-let code_example_component = `
+const code_example_component = `
 import { Component} from '@angular/core';
 
 // Relative path: adjust to match your folder structure
@@ -91,12 +91,12 @@ export class SidebarBreadcrumbsPageComponent{
       }
     ]
   };
-  
+
   breadcrumbs = [
     { breadcrumb: 'Consectetur adipiscing', url: '/' },
     { breadcrumb: 'Lorem ipsum dolor'}
   ];
-  
+
 }`;
 
 @Component({
@@ -106,18 +106,18 @@ export class SidebarBreadcrumbsPageComponent{
     <h3 class="sam-ui header">Page with side navigation and breadcrumbs</h3>
     <sam-tabs>
       <sam-tab tabTitle="Template" active="true">
-        <code-example language="html" [code]="code_template"></code-example>
+        <sam-code-example language="html" [code]="code_template"></sam-code-example>
       </sam-tab>
       <sam-tab tabTitle="Component">
-        <code-example language="javascript" [code]="code_component"></code-example>
+        <sam-code-example language="javascript" [code]="code_component"></sam-code-example>
       </sam-tab>
     </sam-tabs>
-    
+
   </div>
   </div>
   `,
 })
-export class SidebarBreadcrumbsPageCodeComponent{
+export class SidebarBreadcrumbsPageCodeComponent {
   code_template: string = code_example_template;
   code_component: string = code_example_component;
 }

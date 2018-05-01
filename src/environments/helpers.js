@@ -66,6 +66,7 @@ function getUIKitStructure(target){
 	  }).join(" ");
 	  return {
 	    link: link,
+	    routerlink: "/docs/"+link,
 	    section: section,
 			item: item,
 			component: component,
@@ -99,6 +100,7 @@ function getStaticDirStructure(target){
 	  return {
       file: val,
       link: link,
+	    routerlink: "/docs/"+link,
 	    section: section,
 	    item: item
 	  };
@@ -110,10 +112,10 @@ function getStaticDirStructure(target){
 function generateModuleString(target) {
 	let files = getUIKitStructure(target);
 	let imports = files.reduce((prev, curr) => {
-		return prev.concat(`import { ${curr.component} } from "./${curr.link}/component-example";\n`);
+		return prev.concat(`import { ${curr.component} } from './${curr.link}/component-example';\n`);
 	}, '');
-	let declarations = files.map((file) => '\n\t\t' + file.component);
-	let otherDeclarations = ['InterfacesComponent', 'DocTemplateComponent', 'StaticPageComponent', 'BaseExampleComponent'];
+	let declarations = files.map((file) => '\n    ' + file.component);
+	let otherDeclarations = ['\n    InterfacesComponent', '\n    DocTemplateComponent', '\n    StaticPageComponent', '\n    BaseExampleComponent'];
 	otherDeclarations.forEach((declaration) => {
 		declarations.push(declaration);
 	});
@@ -123,37 +125,35 @@ function generateModuleString(target) {
 /******************************************************/
 // Angular Dependencies
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { BaseExampleComponent } from "./baseexample.component";
+import { BaseExampleComponent } from './baseexample.component';
 
 ${imports}
 
-import { DocTemplateComponent } from "./doc.template";
-import { routing } from "./doc.routes.dynamic";
-import { StaticPageComponent } from "./static.component";
+import { DocTemplateComponent } from './doc.template';
+import { routing } from './doc.routes.dynamic';
+import { StaticPageComponent } from './static.component';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
-import { SiteComponentsModule } from "../app/site-components/sitecomponents.module";
+import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
 
 /**
  * \AppModule\` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-	declarations: [${declarations}\n\t],
-	entryComponents: [${declarations}\n\t],
-	imports: [
-		BrowserModule,
-		CommonModule,
-		FormsModule,
-		SamUIKitModule,
-		routing,
-		SiteComponentsModule
-	],
-	exports: [BaseExampleComponent]
+  declarations: [${declarations}\n  ],
+  entryComponents: [${declarations}\n  ],
+  imports: [
+    CommonModule,
+    FormsModule,
+    SamUIKitModule,
+    routing,
+    SiteComponentsModule
+  ],
+  exports: [BaseExampleComponent]
 })
 export class DocModule { }\n`
 }
@@ -179,11 +179,11 @@ function generateRoutesString (docsTarget, staticTarget) {
 	let files = getUIKitStructure(docsTarget);
 	let staticFiles = getStaticDirStructure(staticTarget);
 	let imports = files.reduce((prev, curr) => {
-		return prev.concat(`import { ${curr.component} } from "./${curr.link}/component-example";\n`);
+		return prev.concat(`import { ${curr.component} } from './${curr.link}/component-example';\n`);
 	}, '');
 	let routes = files.reduce((prev, curr) => {
 		return prev.concat(
-			`\n\t{ path: '${curr.link}', component: ${curr.component} },`
+			`\n  { path: '${curr.link}', component: ${curr.component} },`
 		)
 	}, '');
 	let staticRoutes = staticFiles.reduce((prev, curr) => {
@@ -194,7 +194,7 @@ function generateRoutesString (docsTarget, staticTarget) {
 			.join(path.sep)
 			
 		return prev.concat(
-			`\n\t{ path: '${curr.link}', component: StaticPageComponent, data: { markdownfile: '${rel}' } },`
+			`\n  {\n    path: '${curr.link}',\n    component: StaticPageComponent,\n    data: { markdownfile: '${rel}' }\n  },`
 		)
 	}, '');
 
@@ -206,11 +206,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 ${imports}
 
-import { StaticPageComponent } from "./static.component";
+import { StaticPageComponent } from './static.component';
 
 export const ROUTES: Routes = [
-	${routes}
-	${staticRoutes}
+${routes}${staticRoutes}
 ];
 export const routing = RouterModule.forChild(ROUTES);
 \n`

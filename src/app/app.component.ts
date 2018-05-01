@@ -23,7 +23,7 @@ const STATICPAGES = environment.STATICPAGES;
  */
 
 @Component({
-  selector: 'app',
+  selector: 'sam-app',
   animations: [ routerTransition ],
   encapsulation: ViewEncapsulation.None,
   template: `
@@ -37,7 +37,7 @@ const STATICPAGES = environment.STATICPAGES;
 export class AppComponent implements OnInit {
 
   public sidenavConfig = {
-      label: "test",
+      label: 'test',
       children: [],
   };
 
@@ -67,7 +67,7 @@ export class AppComponent implements OnInit {
 
     // sidenav config setup
 
-    for (let idx in DOCS) {
+    for (const idx in DOCS) {
       if (!this.uikitList[DOCS[idx]['section']]) {
         this.uikitList[DOCS[idx]['section']] = [{
           label: DOCS[idx]['item'],
@@ -81,10 +81,10 @@ export class AppComponent implements OnInit {
       }
 
     }
-    let obj = this.uikitList;
-    let test = Object.keys(this.uikitList)
-      .map(function(key){
-      let list = obj[key];
+    const obj = this.uikitList;
+    const test = Object.keys(this.uikitList)
+      .map(function(key) {
+      const list = obj[key];
       return {
         label: key,
         route: '/',
@@ -106,16 +106,16 @@ export class AppComponent implements OnInit {
         });
       }
     }
-    let x = this.staticpagelist;
-    let test2 = Object.keys(this.staticpagelist)
-      .map(function(key){
-      let list = x[key];
+    const x = this.staticpagelist;
+    const test2 = Object.keys(this.staticpagelist)
+      .map(function(key) {
+      const list = x[key];
       return {
         label: key,
         route: '/',
         children: list
       };
-    }).sort(function(a, b){
+    }).sort(function(a, b) {
       if (a.label === 'Overview') {
         return -1;
       } else if (b.label === 'Overview') {

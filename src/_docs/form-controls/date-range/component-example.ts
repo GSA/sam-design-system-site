@@ -17,19 +17,19 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 // tabs/spacing matters for code example block
-var code_example = `
-<sam-date-range 
+const code_example = `
+<sam-date-range
   label="Default"
-  name="example-date" 
-  #dateRangeVar="ngModel" 
-  [control]="dateRangeVar.control" 
+  name="example-date"
+  #dateRangeVar="ngModel"
+  [control]="dateRangeVar.control"
   [(ngModel)]='dateRangeModel'></sam-date-range>
 <hr />
-<sam-date-range 
+<sam-date-range
   label="Stacked"
-  name="example-date" 
-  #dateRangeVar2="ngModel" 
-  [control]="dateRangeVar2.control" 
+  name="example-date"
+  #dateRangeVar2="ngModel"
+  [control]="dateRangeVar2.control"
   stacked="true"
   [(ngModel)]='dateRangeModel2'></sam-date-range>`;
 

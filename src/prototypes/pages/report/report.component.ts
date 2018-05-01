@@ -116,5 +116,4 @@ export class ReportPageComponent implements OnInit{
     this.dataSource = new ReportDataSource(this.reportDatabase, 
       this._paginator, this._sort);
   }
-  
 }

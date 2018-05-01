@@ -4,6 +4,8 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { ReportData } from './DataSource';
 import { MdPaginator, MdSort } from '@angular/material';
+import 'rxjs/add/observable/merge';
+import 'rxjs/add/operator/map';
 
 export interface ProgramData {
   'Agency': string;

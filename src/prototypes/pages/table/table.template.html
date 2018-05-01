@@ -1,0 +1,59 @@
+<div class="example-container mat-elevation-z8 usa-grid">
+    <div class="example-header">
+        <input #filter placeholder="Filter users">
+    </div>
+      
+    <cdk-table #table mdSort [dataSource]="dataSource">
+        <!-- Column Definition: ID -->
+        <ng-container cdkColumnDef="userId">
+            <cdk-header-cell *cdkHeaderCellDef md-sort-header>
+                ID
+            </cdk-header-cell>
+            <cdk-cell *cdkCellDef="let row"> {{row.id}} </cdk-cell>
+        </ng-container>
+    
+        <!-- Column Definition: Progress -->
+        <ng-container cdkColumnDef="progress">
+            <cdk-header-cell *cdkHeaderCellDef md-sort-header start="desc">
+                Progress
+            </cdk-header-cell>
+            <cdk-cell *cdkCellDef="let row">
+                <div class="demo-progress-stat">{{row.progress}}%</div>
+                <div class="demo-progress-indicator-container">
+                    <div class="demo-progress-indicator"
+                        [style.background]="row.progress > 50 ? 'green' : 'red'"
+                        [style.width.%]="row.progress"></div>
+                </div>
+            </cdk-cell>
+        </ng-container>
+    
+        <!-- Column Definition: Name -->
+        <ng-container cdkColumnDef="userName">
+            <cdk-header-cell *cdkHeaderCellDef md-sort-header>
+                Name
+                </cdk-header-cell>
+            <cdk-cell *cdkCellDef="let row"> {{row.name}} </cdk-cell>
+        </ng-container>
+    
+        <!-- Column Definition: Color -->
+        <ng-container cdkColumnDef="color">
+            <cdk-header-cell *cdkHeaderCellDef md-sort-header>
+                Color
+            </cdk-header-cell>
+            <cdk-cell *cdkCellDef="let row" [style.color]="row.color"> {{row.color}} </cdk-cell>
+        </ng-container>
+    
+        <cdk-header-row *cdkHeaderRowDef="displayedColumns"></cdk-header-row>
+        <cdk-row *cdkRowDef="let row; columns: displayedColumns;
+            let first = first; let last = last; let even = even; let odd = odd">
+        </cdk-row>
+    </cdk-table>
+      
+    <div class="example-no-results"
+        [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'">
+        No users found matching filter.
+    </div>
+      
+    <sam-pagination #paginator [currentPage]="curPage" [totalPages]="dataSource.filteredData.length/pageSize"></sam-pagination>
+</div>
+    

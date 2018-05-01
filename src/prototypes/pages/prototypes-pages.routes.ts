@@ -6,6 +6,7 @@ import { SearchPageComponent } from './search/search.component';
 import { HomePageComponent } from './homepage/home.component';
 import { SearchMobileComponent } from './search-mobile/search.component';
 import { ReportPageComponent } from './report/report.component';
+import { TablePageComponent } from './table/table.component';
 
 const PageRoutes: Routes = [
   {
@@ -27,6 +28,10 @@ const PageRoutes: Routes = [
       {
         path: 'report',
         component: ReportPageComponent
+      },
+      {
+        path: 'table',
+        component: TablePageComponent
       }
     ]
   }

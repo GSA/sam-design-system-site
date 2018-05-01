@@ -25,7 +25,8 @@ export class PagesComponent {
     { name: 'Homepage', value: 'home' },
     { name: 'Search', value: 'search' },
     { name: 'Search Mobile', value: 'search-mobile' },
-    { name: 'Report', value: 'report' }
+    { name: 'Report', value: 'report' },
+    { name: 'Table', value: 'table' }
   ];
 
   navigateTo() {

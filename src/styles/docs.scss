@@ -118,15 +118,44 @@ cdk-table{
 cdk-row,cdk-header-row{
     display:table-row;
 }
+cdk-header-cell{
+    border-right:1px solid #DCE4EE;
+    border-bottom:1px solid #000;
+    font-weight:bold;
+    &:last-child{
+        border-right:none;
+    }
+    .mat-sort-header-arrow{
+        top:16px;
+    }
+}
+cdk-row:last-child cdk-cell{
+    border-bottom:none;
+}
+cdk-cell{
+    border-right:1px solid #DCE4EE;
+    border-bottom:1px solid #DCE4EE;
+    &:last-child{
+        border-right:none;
+    }
+}
 cdk-cell,cdk-header-cell{
     display:table-cell;
+    padding:5px;
 }
 .cdk-visually-hidden{
     display:none;
 }
-.cdk-column-userId,.cdk-column-color{
-    width:15%;
+.cdk-column-cfdaNumber,.cdk-column-status{
+    width:10%;
 }
-.cdk-column-userName,.cdk-column-progress{
-    width:35%;
+.cdk-column-lastUpdatedDate{
+    width:20%;
+}
+.cdk-column-agency,.cdk-column-title{
+    width:30%;
+}
+.datatable-example > ul{
+    padding:0;
+    text-align:right;
 }

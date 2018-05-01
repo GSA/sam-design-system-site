@@ -1,46 +1,46 @@
 <div class="example-container mat-elevation-z8 usa-grid">
     <div class="example-header">
-        <input #filter placeholder="Filter users">
+        <input #filter placeholder="Filter agency or title">
     </div>
       
     <cdk-table #table mdSort [dataSource]="dataSource">
-        <!-- Column Definition: ID -->
-        <ng-container cdkColumnDef="userId">
+        <!-- Column Definition: agency -->
+        <ng-container cdkColumnDef="agency">
             <cdk-header-cell *cdkHeaderCellDef md-sort-header>
-                ID
+                Agency
             </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row"> {{row.id}} </cdk-cell>
+            <cdk-cell *cdkCellDef="let row"> {{row.agency}} </cdk-cell>
         </ng-container>
     
-        <!-- Column Definition: Progress -->
-        <ng-container cdkColumnDef="progress">
-            <cdk-header-cell *cdkHeaderCellDef md-sort-header start="desc">
-                Progress
+        <!-- Column Definition: cfdaNumber -->
+        <ng-container cdkColumnDef="cfdaNumber">
+            <cdk-header-cell *cdkHeaderCellDef md-sort-header start="desc">CFDA #
             </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row">
-                <div class="demo-progress-stat">{{row.progress}}%</div>
-                <div class="demo-progress-indicator-container">
-                    <div class="demo-progress-indicator"
-                        [style.background]="row.progress > 50 ? 'green' : 'red'"
-                        [style.width.%]="row.progress"></div>
-                </div>
-            </cdk-cell>
+            <cdk-cell *cdkCellDef="let row"> {{row.cfdaNumber}} </cdk-cell>
         </ng-container>
     
-        <!-- Column Definition: Name -->
-        <ng-container cdkColumnDef="userName">
+        <!-- Column Definition: title -->
+        <ng-container cdkColumnDef="title">
             <cdk-header-cell *cdkHeaderCellDef md-sort-header>
-                Name
-                </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row"> {{row.name}} </cdk-cell>
+                Title
+            </cdk-header-cell>
+            <cdk-cell *cdkCellDef="let row"> {{row.title}} </cdk-cell>
         </ng-container>
     
-        <!-- Column Definition: Color -->
-        <ng-container cdkColumnDef="color">
+        <!-- Column Definition: status -->
+        <ng-container cdkColumnDef="status">
             <cdk-header-cell *cdkHeaderCellDef md-sort-header>
-                Color
+                Status
             </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row" [style.color]="row.color"> {{row.color}} </cdk-cell>
+            <cdk-cell *cdkCellDef="let row"> {{row.status}} </cdk-cell>
+        </ng-container>
+
+        <!-- Column Definition: lastUpdatedDate -->
+        <ng-container cdkColumnDef="lastUpdatedDate">
+            <cdk-header-cell *cdkHeaderCellDef>
+                Last Updated
+            </cdk-header-cell>
+            <cdk-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </cdk-cell>
         </ng-container>
     
         <cdk-header-row *cdkHeaderRowDef="displayedColumns"></cdk-header-row>
@@ -54,6 +54,6 @@
         No users found matching filter.
     </div>
       
-    <sam-pagination #paginator [currentPage]="curPage" [totalPages]="dataSource.filteredData.length/pageSize"></sam-pagination>
+    <sam-pagination class="datatable-example" #paginator [currentPage]="curPage" [totalPages]="dataSource.filteredData.length/pageSize"></sam-pagination>
 </div>
     

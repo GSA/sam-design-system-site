@@ -1,56 +1,120 @@
-import { Component, OnInit } from '@angular/core';
-//import * as d3 from "d3";
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DataSource } from '@angular/cdk';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Observable } from 'rxjs/Observable';
+import { ReportData } from './DataSource';
+import { MdPaginator, MdSort } from '@angular/material';
+
+export interface ProgramData {
+  'Agency': string;
+  'CFDA Number': number;
+  'Title': string | number;
+  'Current Status': string;
+  'Last Updated Date': string;
+  'Obligations Updated': string;
+  'OMB Review Date': string;
+  'Last Published Date': string;
+  'Auto Published': string;
+}
+
+
+export class ReportDatabase {
+  dataChange: BehaviorSubject<ProgramData[]> = new BehaviorSubject<ProgramData[]>([]);
+  get data(): ProgramData[] { return this.dataChange.value; }
+  
+  constructor() {
+    for (let i = 0; i < 1940; i++) { this.addProgram(); }
+  }
+  
+  addProgram() {
+    const copiedData = this.data.slice();
+    copiedData.push(this.createNewProgram());
+    this.dataChange.next(copiedData);
+  }
+  
+  private createNewProgram() {
+    return ReportData[this.data.length];
+  }
+}
+
+
+export class ReportDataSource extends DataSource<any>{
+  constructor(private _reportDatabase: ReportDatabase,
+              private _paginator: MdPaginator,
+              private _sort: MdSort){
+    super();
+  }
+
+  connect(): Observable<ProgramData[]>{
+    const displayDataChanges = [
+      this._paginator.page,
+      this._sort.mdSortChange,
+      this._reportDatabase.dataChange
+    ];
+    return Observable.merge(...displayDataChanges).map(()=> {
+      const data = this.getSortedData();
+      const startIndex = this._paginator.pageIndex * this._paginator.pageSize;
+      return data.splice(startIndex, this._paginator.pageSize);
+    });
+  }
+  
+  disconnect(){}
+
+  getSortedData(): ProgramData[] {
+    const data = this._reportDatabase.data.slice();
+    if (!this._sort.active || this._sort.direction == '') { return data; }
+
+    return data.sort((a, b) => {
+      let propertyA: number|string = '';
+      let propertyB: number|string = '';
+
+      switch (this._sort.active) {
+        case 'Last Updated Date': [propertyA, propertyB] = [a['Last Updated Date'], b['Last Updated Date']]; break;
+      }
+
+      let valueA = isNaN(+propertyA) ? propertyA : +propertyA;
+      let valueB = isNaN(+propertyB) ? propertyB : +propertyB;
+
+      return (valueA < valueB ? -1 : 1) * (this._sort.direction == 'asc' ? 1 : -1);
+    });
+  }
+
+}
+
 
 @Component({
   templateUrl: 'report.template.html'
 })
 export class ReportPageComponent implements OnInit{
   
-  ngOnInit(){
+  _reportData = ReportData;
+  reportDatabase = new ReportDatabase();
 
-    // d3.csv("assets/ProgramStatusReport.csv").then(function(rows){
+  dataSource: ReportDataSource | null;
+  displayedColumns = [];
 
-    //   let page = 1;
-    //   let itemsPerPage = 50;
-    //   let data = rows.slice((page - 1) * itemsPerPage, page * itemsPerPage)
+  @ViewChild(MdPaginator) _paginator: MdPaginator;
 
-    //   let table = d3.select("#reporttable").append("table");
-    //   let thead = table.append("thead");
-    //   let tbody = table.append("tbody");
-      
-    //   thead.append("th").text("Agency");
-    //   thead.append("th").text("CFDA Number");
-    //   thead.append("th").text("Title");
-    //   thead.append("th").text("Current Status");
-    //   thead.append("th").text("Last Updated Date");
-    //   thead.append("th").text("Obligations Updated");
-    //   thead.append("th").text("OMB Review Date");
-    //   thead.append("th").text("Last Published Date");
-    //   thead.append("th").text("Auto Published");
-      
-    //   let tr = tbody.selectAll("tr")
-    //   .data(data)
-    //   .enter().append("tr");
-      
-    //   let td = tr.selectAll("td")
-    //   .data(function(d){ 
-    //     return [ 
-    //       d["Agency"],
-    //       d["CFDA Number"],
-    //       d["Title"],
-    //       d["Current Status"],
-    //       d["Last Updated Date"],
-    //       d["Obligations Updated"],
-    //       d["OMB Review Date"],
-    //       d["Last Published Date"],
-    //       d["Auto Published"],
-    //     ] 
-    //   })
-    //   .enter().append("td")
-    //   .text(function(d){ return d; })
+  @ViewChild(MdSort) _sort: MdSort;
   
-    // });
-    
+  ngOnInit(){
+    this.connect();
+  }
+  
+  connect(){
+    this.displayedColumns = [
+      "Agency",
+      "CFDANumber",
+      "Title",
+      "CurrentStatus",
+      "LastUpdatedDate",
+      "ObligationsUpdated",
+      "OMBReviewDate",
+      "LastPublishedDate",
+      "AutoPublished"
+    ];
+    this.dataSource = new ReportDataSource(this.reportDatabase, 
+      this._paginator, this._sort);
   }
   
 }

@@ -1,0 +1,108 @@
+// Include overwritten component's styles
+@import './tabs/tab-group';
+@import './expansion/expansion-panel';
+@import './expansion/expansion-panel-header';
+
+@import '~@angular/material/theming';
+
+$sam-config: mat-typography-config(
+  $font-family: '"Source Sans Pro", sans-serif',
+  $caption: mat-typography-level(16px, 20px, 400),
+  $button: mat-typography-level(16px, 16px, 600),
+  $body-1: mat-typography-level(15px, 20px, 400)
+);
+
+$sam-blue: (
+  50: #e3f2fd,
+  100: #bbdefb,
+  200: #90caf9,
+  300: #64b5f6,
+  400: #42a5f5,
+  500: #0071bc,
+  600: #1e88e5,
+  700: #1976d2,
+  800: #1565c0,
+  900: #0d47a1,
+  A100: #82b1ff,
+  A200: #448aff,
+  A400: #2979ff,
+  A700: #2962ff,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$primary: mat-palette($sam-blue);
+$accent:  mat-palette($mat-amber, A200, A100, A400);
+$theme: mat-light-theme($primary, $accent);
+
+// mat-core()
+@for $zValue from 0 through 24 {
+  .mat-elevation-z#{$zValue} {
+    @include mat-elevation($zValue);
+  }
+}
+@include angular-material-typography($sam-config);
+@include mat-ripple();
+@include mat-option();
+@include mat-optgroup();
+@include cdk-a11y();
+@include cdk-overlay();
+// end of mat-core
+
+// angular-material-theme
+@include mat-core-theme($theme);
+@include mat-expansion-panel-theme($theme);
+@include mat-sidenav-theme($theme);
+@include mat-tabs-theme($theme);
+@include mat-table-theme($theme);
+@include mat-paginator-theme($theme);
+@include mat-select-theme($theme);
+@include mat-tooltip-theme($theme);
+// end of angular-material-theme
+
+
+// Overwrites
+
+.mat-tab-label{
+  min-width: 100px !important;
+}
+
+md-sidenav {
+  width: 250px;
+  font-size: 16px;
+}
+
+.mat-sidenav-container{
+  background-color: transparent !important;
+}
+
+.mat-sidenav-content{
+  padding-left: 20px;
+}
+
+.mat-sort-header-arrow{
+  top: 15px !important;
+}
+
+.mat-tooltip{
+  font-size: 14px !important;
+  line-height: 14px;
+}
+
+.mat-row{
+  height: auto !important;
+}

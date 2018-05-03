@@ -1,661 +1,152 @@
 
-<div class="report-page-options">
-  <div>
-    <a style="padding-left: 0;">
-      Hide Sidebar
-    </a>
-  </div>
-  <div>
-    <a>Download</a>
-    <a>Share</a>
-    <a>Save Filters</a>
-  </div>
-</div>
+<md-sidenav-container>
+  
+  <md-sidenav #sidenav opened mode="side">
 
-<div class="report-page-layout">
+    <md-tab-group dynamicHeight="true" disableRipple="true">
+
+      <md-tab label="Filters">
+        <div samAccordion>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Federal Organizations
+            </sam-expansion-panel-header>
+            <label>Select (<a>Can't find?</a>)</label>
+            <input class="sam transition input" placeholder="Select" type="text">
+          </sam-expansion-panel>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Program Number
+            </sam-expansion-panel-header>
+            <p>Lorem ipsum dolor sit amet</p>
+          </sam-expansion-panel>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Program Title
+            </sam-expansion-panel-header>
+            <p>Lorem ipsum dolor sit amet</p>
+          </sam-expansion-panel>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Program Number
+            </sam-expansion-panel-header>
+            Lorem Ipsum
+          </sam-expansion-panel>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Last Updated Date
+            </sam-expansion-panel-header>
+            Lorem Ipsum
+          </sam-expansion-panel>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              OMB Review Date
+            </sam-expansion-panel-header>
+            Lorem Ipsum
+          </sam-expansion-panel>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Last Published Date
+            </sam-expansion-panel-header>
+            Lorem Ipsum
+          </sam-expansion-panel>
+          
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Auto Published
+            </sam-expansion-panel-header>
+            Lorem Ipsum
+          </sam-expansion-panel>
+          
+        </div>
+      </md-tab>
+
+      <md-tab label="Fields">
+        <ul>
+          <li>Quisque quis ante ut turpis</li>
+          <li>Sed faucibus enim at.</li>
+          <li>Vivamus sit amet lectus.</li>
+          <li>Donec ac lacus ut sapien.</li>
+          <li>Morbi at risus sed magna.</li>
+          <li>Nulla venenatis odio.</li>
+        </ul>
+      </md-tab>
+
+    </md-tab-group>
+
+  </md-sidenav>
   
-  <div class="report-content">
-    
-    <div class="report-filters">
+  <a (click)="sidenav.toggle()">Toggle sidenav</a>
+  
+  <h3 class="sam title">
+    Program Status Report
+  </h3>
+  
+  <div class="report-table">
+
+    <md-table mdSort [dataSource]="dataSource">
       
-      <sam-prototype-tabs>
-        
-        <sam-prototype-tab title="Filters">
-          
-          <sam-prototype-accordion>
-            <sam-prototype-panel title="Federal Organizations">
-              <label>Select (<a>Can't find?</a>)</label>
-              <input class="sam transition input" placeholder="Select" type="text">
-            </sam-prototype-panel>
-            
-            <sam-prototype-panel title="Program Number">
-              Lorem ipsum dolor sit amet
-            </sam-prototype-panel>
-            
-            <sam-prototype-panel title="Program Title">
-              Lorem Ipsum
-            </sam-prototype-panel>
-            
-            <sam-prototype-panel title="Current Status">
-              Lorem Ipsum
-            </sam-prototype-panel>
-            
-            <sam-prototype-panel title="Last Updated Date">
-              Lorem Ipsum
-            </sam-prototype-panel>
-            
-            <sam-prototype-panel title="OMB Review Date">
-              Lorem Ipsum
-            </sam-prototype-panel>
-            
-            <sam-prototype-panel title="Last Published Date">
-              Lorem Ipsum
-            </sam-prototype-panel>
-            
-            <sam-prototype-panel title="Auto Published">
-              Lorem Ipsum
-            </sam-prototype-panel>
-          </sam-prototype-accordion>
-          
-        </sam-prototype-tab>
-        
-        <sam-prototype-tab title="Fields">
-          List of fields
-        </sam-prototype-tab>
-        
-      </sam-prototype-tabs>
+      <ng-container cdkColumnDef="Agency">
+        <md-header-cell *cdkHeaderCellDef> Agency </md-header-cell>
+        <md-cell *cdkCellDef="let row"> {{row['Agency']}} </md-cell>
+      </ng-container>
       
-    </div>
-    
-    <div style="width: 80vw">
-      <h3 class="sam title">
-        Program Status Report
-      </h3>
+      <ng-container cdkColumnDef="CFDANumber">
+        <md-header-cell *cdkHeaderCellDef> CFDA Number </md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row['CFDA Number']}}</md-cell>
+      </ng-container>
       
-      <div id="reporttable">
-        <table>
-          <thead>
-            <tr>
-              <th>Agency</th>
-              <th>CFDA Number</th>
-              <th>Title</th>
-              <th>Current Status</th>
-              <th>Last Updated Date</th>
-              <th>Obligations Updated</th>
-              <th>OMB Review Date</th>
-              <th>Last Published Date</th>
-              <th>Auto Published</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Research Service</td>
-              <td>10.001</td>
-              <td>Agricultural Research_Basic and Applied Research</td>
-              <td>Published</td>
-              <td>Nov, 08 2016</td>
-              <td>No</td>
-              <td>Oct, 30 2008</td>
-              <td>Oct, 30 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture</td>
-              <td>10.001</td>
-              <td>Sale of Federal Surplus Personal Property (title change)</td>
-              <td>Published</td>
-              <td>Dec, 05 2011</td>
-              <td>No</td>
-              <td>Jun, 16 2009</td>
-              <td>Jun, 16 2009</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Forest Service</td>
-              <td>10.003</td>
-              <td>Water Pollution</td>
-              <td>Published</td>
-              <td>Apr, 19 2016</td>
-              <td>No</td>
-              <td>Nov, 18 2011</td>
-              <td>Nov, 30 2011</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Animal And Plant Health Inspection Service</td>
-              <td>10.003</td>
-              <td>Test Plant and Animal Disease, Pest Control, and Animal Care</td>
-              <td>Published</td>
-              <td>Apr, 17 2017</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Animal And Plant Health Inspection Service</td>
-              <td>10.028</td>
-              <td>Wildlife Services TESTING</td>
-              <td>Published</td>
-              <td>Mar, 10 2016</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Animal And Plant Health Inspection Service</td>
-              <td>10.029</td>
-              <td>Avian Influenza Indemnity Program</td>
-              <td>Published</td>
-              <td>Nov, 11 2015</td>
-              <td>No</td>
-              <td>Oct, 20 2003</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.051</td>
-              <td>Commodity Loans and Loan Deficiency Payments</td>
-              <td>Published</td>
-              <td>Nov, 14 2008</td>
-              <td>No</td>
-              <td>Nov, 14 2008</td>
-              <td>Nov, 14 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.053</td>
-              <td>Dairy Indemnity Program</td>
-              <td>Published</td>
-              <td>Nov, 13 2008</td>
-              <td>No</td>
-              <td>Nov, 13 2008</td>
-              <td>Nov, 13 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.054</td>
-              <td>Emergency Conservation Program test</td>
-              <td>Published</td>
-              <td>Mar, 16 2016</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.055</td>
-              <td>Direct and Counter-cyclical Payments Program</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.056</td>
-              <td>Farm Storage Facility Loans</td>
-              <td>Published</td>
-              <td>Oct, 15 2008</td>
-              <td>No</td>
-              <td>Apr, 16 2001</td>
-              <td>Oct, 15 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.066</td>
-              <td>Livestock Assistance Program</td>
-              <td>Published</td>
-              <td>Oct, 14 2014</td>
-              <td>No</td>
-              <td>Oct, 23 2000</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.069</td>
-              <td>Conservation Reserve Program</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Natural Resources Conservation Service</td>
-              <td>10.07</td>
-              <td>Colorado River Basin Salinity Control Program</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Natural Resources Conservation Service</td>
-              <td>10.072</td>
-              <td>Wetlands Reserve Program</td>
-              <td>Published</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-              <td>Nov, 05 2008</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.073</td>
-              <td>Crop Disaster Program</td>
-              <td>Published</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-              <td>Oct, 23 2000</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.077</td>
-              <td>Livestock Compensation Program</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Oct, 15 2003</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.078</td>
-              <td>Bioenergy Program</td>
-              <td>Published</td>
-              <td>Oct, 16 2011</td>
-              <td>No</td>
-              <td>Oct, 07 2011</td>
-              <td>Oct, 16 2011</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.079</td>
-              <td>Bill Emerson Humanitarian Trust</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Oct, 20 2003</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.08</td>
-              <td>Milk Income Loss Contract Program</td>
-              <td>Published</td>
-              <td>Nov, 02 2016</td>
-              <td>No</td>
-              <td>Nov, 20 2003</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.081</td>
-              <td>Lamb Meat Adjustment Assistance Program</td>
-              <td>Published</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-              <td>Nov, 20 2003</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Farm Service Agency</td>
-              <td>10.082</td>
-              <td>Tree Assistance Program</td>
-              <td>Published</td>
-              <td>Oct, 30 2008</td>
-              <td>No</td>
-              <td>Jan, 13 2004</td>
-              <td>Oct, 30 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture</td>
-              <td>10.084</td>
-              <td>Dairy Market Loss Assistance Program</td>
-              <td>Published</td>
-              <td>Oct, 30 2008</td>
-              <td>No</td>
-              <td>May, 09 2005</td>
-              <td>Oct, 30 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Commodity Credit Corporation</td>
-              <td>10.085</td>
-              <td>Tobacco Transition Payment Program</td>
-              <td>Published</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-              <td>May, 13 2005</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture</td>
-              <td>10.086</td>
-              <td>Donation of Federal Surplus Personal Property</td>
-              <td>Published</td>
-              <td>Sep, 29 2009</td>
-              <td>No</td>
-              <td>Jun, 17 2009</td>
-              <td>Jun, 17 2009</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.153</td>
-              <td>Market News</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.155</td>
-              <td>Marketing Agreements and Orders</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.156</td>
-              <td>Federal-State Marketing Improvement Program</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.162</td>
-              <td>Inspection Grading and Standardization</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.163</td>
-              <td>Market Protection and Promotion</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.164</td>
-              <td>Wholesale Farmers and Alternative Market Development</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.165</td>
-              <td>Perishable Agricultural Commodities Act</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.167</td>
-              <td>Transportation Services</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.168</td>
-              <td>Farmers' Market Promotion Program</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Mar, 17 2006</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.169</td>
-              <td>Specialty Crop Block Grant Program</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Jan, 19 2006</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Agricultural Marketing Service</td>
-              <td>10.17</td>
-              <td>Specialty Crop Block Grant Program - Farm Bill</td>
-              <td>Published</td>
-              <td>Oct, 10 2016</td>
-              <td>No</td>
-              <td>Jul, 25 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.2</td>
-              <td>Grants for Agricultural Research, Special Research Grants</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.202</td>
-              <td>Cooperative Forestry Research</td>
-              <td>Published</td>
-              <td>Sep, 18 2008</td>
-              <td>No</td>
-              <td>Sep, 18 2008</td>
-              <td>Sep, 18 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.203</td>
-              <td>Payments to Agricultural Experiment Stations Under the Hatch Act</td>
-              <td>Published</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-              <td>Sep, 11 2008</td>
-              <td>Sep, 11 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.205</td>
-              <td>Payments to 1890 Land-Grant Colleges and Tuskegee University</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.206</td>
-              <td>Grants for Agricultural Research_Competitive Research Grants</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.207</td>
-              <td>Animal Health and Disease Research</td>
-              <td>Published</td>
-              <td>Oct, 30 2008</td>
-              <td>No</td>
-              <td>Oct, 30 2008</td>
-              <td>Oct, 30 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.21</td>
-              <td>Food and Agricultural Sciences National Needs Graduate Fellowship Grants</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.212</td>
-              <td>Small Business Innovation Research</td>
-              <td>Published</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-              <td>Nov, 05 2008</td>
-              <td>Nov, 05 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.215</td>
-              <td>Sustainable Agriculture Research and Education</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.216</td>
-              <td>1890 Institution Capacity Building Grants</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.217</td>
-              <td>Higher Education Challenge Grants</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.219</td>
-              <td>Biotechnology Risk Assessment Research</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.22</td>
-              <td>Higher Education Multicultural Scholars Program</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Department Of Agriculture/Cooperative State Research, Education, And Extension Service</td>
-              <td>10.221</td>
-              <td>Tribal Colleges Education Equity Grants</td>
-              <td>Published</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-              <td>Sep, 12 2008</td>
-              <td>Sep, 12 2008</td>
-              <td>No</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ng-container cdkColumnDef="Title">
+        <md-header-cell *cdkHeaderCellDef> Title </md-header-cell>
+        <md-cell *cdkCellDef="let row"> {{row['Title']}} </md-cell>
+      </ng-container>
       
-      <div class="table-options">
-        <div>
-          Results per page
-          <select class="sam transition">
-            <option value="100">100</option>
-            <option value="100">200</option>
-          </select>
-        </div>
-        <div>
-          Pagination here
-        </div>
-      </div>
-    </div>
+      <ng-container cdkColumnDef="CurrentStatus">
+        <md-header-cell *cdkHeaderCellDef>Current<br>Status</md-header-cell>
+        <md-cell *cdkCellDef="let row"> {{row['Current Status']}} </md-cell>
+      </ng-container>
+      
+      <ng-container cdkColumnDef="LastUpdatedDate">
+        <md-header-cell *cdkHeaderCellDef md-sort-header> Last Updated<br>Date </md-header-cell>
+        <md-cell *cdkCellDef="let row"> {{row['Last Updated Date']}} </md-cell>
+      </ng-container>
+      
+      <ng-container cdkColumnDef="ObligationsUpdated">
+        <md-header-cell *cdkHeaderCellDef> Obligations Updated </md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row['Obligations Updated']}}</md-cell>
+      </ng-container>
+      
+      <ng-container cdkColumnDef="OMBReviewDate">
+        <md-header-cell *cdkHeaderCellDef> OMB Review<br>Date </md-header-cell>
+        <md-cell *cdkCellDef="let row"> {{row['OMB Review Date']}} </md-cell>
+      </ng-container>
+      
+      <ng-container cdkColumnDef="LastPublishedDate">
+        <md-header-cell *cdkHeaderCellDef>Last Published<br>Date</md-header-cell>
+        <md-cell *cdkCellDef="let row"> {{row['Last Published Date']}} </md-cell>
+      </ng-container>
+      
+      <ng-container cdkColumnDef="AutoPublished">
+        <md-header-cell *cdkHeaderCellDef>Auto<br>Published</md-header-cell>
+        <md-cell *cdkCellDef="let row"> {{row['Auto Published']}} </md-cell>
+      </ng-container>
+      
+      <md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+      <md-row *cdkRowDef="let row; columns: displayedColumns"></md-row>
+      
+    </md-table>
     
   </div>
-  
-</div>
+
+  <md-paginator [length]="_reportData.length" 
+                [pageSizeOptions]="[50, 100, 150, 200]">
+  </md-paginator>
+
+</md-sidenav-container>

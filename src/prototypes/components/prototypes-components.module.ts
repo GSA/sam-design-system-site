@@ -13,17 +13,30 @@ import { PickerLevel4Component } from './picker/component';
 import { PickerLevel5Component } from './picker/component';
 import { PickerLevel6Component } from './picker/component';
 import { MainNavComponent } from './main-nav/component';
-import { PrototypeAccordionComponent } from './accordion/accordion.component';
-import { PrototypePanelComponent } from './accordion/panel.component';
-import { PrototypeTabsComponent } from './tab/tabs.component';
-import { PrototypeTabComponent } from './tab/tab.component';
+
+import { SamExpansionModule } from './expansion';
+import { CdkTableModule } from '@angular/cdk';
+import {
+  MdPaginatorModule,
+  MdTableModule,
+  MdSidenavModule,
+  MdSortModule,
+  MdTabsModule
+} from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ComponentsRoutingModule,
-    SamUIKitModule
+    SamUIKitModule,
+    MdTabsModule,
+    SamExpansionModule,
+    MdSidenavModule,
+    MdTableModule,
+    MdPaginatorModule,
+    MdSortModule,
+    CdkTableModule
   ],
   declarations: [
     ComponentsComponent,
@@ -33,18 +46,17 @@ import { PrototypeTabComponent } from './tab/tab.component';
     PickerLevel4Component,
     PickerLevel5Component,
     PickerLevel6Component,
-    MainNavComponent,
-    PrototypeAccordionComponent,
-    PrototypePanelComponent,
-    PrototypeTabsComponent,
-    PrototypeTabComponent
+    MainNavComponent
   ],
   exports: [
     MainNavComponent,
-    PrototypeAccordionComponent,
-    PrototypePanelComponent,
-    PrototypeTabsComponent,
-    PrototypeTabComponent
-  ]
+    MdTabsModule,
+    SamExpansionModule,
+    MdSidenavModule,
+    MdTableModule,
+    MdPaginatorModule,
+    MdSortModule,
+    CdkTableModule
+  ],
 })
 export class PrototypesComponentsModule {}

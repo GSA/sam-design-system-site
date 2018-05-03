@@ -1,8 +1,10 @@
-import { 
-  Component, 
+import {
+  Component,
   Host,
   ViewEncapsulation,
-} from "@angular/core";
+  HostBinding,
+  HostListener
+} from '@angular/core';
 import {
   trigger,
   state,
@@ -10,24 +12,13 @@ import {
   transition,
   animate,
 } from '@angular/animations';
-import { MdExpansionPanelHeader } from "@angular/material";
-import { SamExpansionPanel, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-panel';
+import { MdExpansionPanelHeader } from '@angular/material';
+import { SamExpansionPanelComponent, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-panel';
 
 @Component({
   selector: 'sam-expansion-panel-header',
   templateUrl: 'expansion-panel-header.html',
   encapsulation: ViewEncapsulation.None,
-  host: {
-    'class': 'mat-expansion-panel-header',
-    'role': 'button',
-    'tabindex': '0',
-    '[attr.aria-controls]': '_getPanelId()',
-    '[attr.aria-expanded]': '_isExpanded()',
-    '[class.mat-expanded]': '_isExpanded()',
-    '(click)': '_toggle()',
-    '(keyup)': '_keyup($event)',
-    '[@expansionHeight]': '_getExpandedState()',
-  },
   animations: [
     trigger('indicatorRotate', [
       state('collapsed', style({transform: 'rotate(0deg)'})),
@@ -41,9 +32,25 @@ import { SamExpansionPanel, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-
     ]),
   ],
 })
-export class SamExpansionPanelHeader extends MdExpansionPanelHeader {
-
-  constructor(@Host() public panel: SamExpansionPanel) {
+export class SamExpansionPanelHeaderComponent extends MdExpansionPanelHeader {
+  @HostBinding('class') hostClass = 'mat-expansion-panel-header';
+  @HostBinding('attr.role') role = 'button';
+  @HostBinding('attr.tabindex') tabindex = '0';
+  @HostBinding('attr.aria-controls') ariaControls = this._getPanelId();
+  @HostBinding('attr.aria-expanded') ariaExpanded = this._isExpanded();
+  @HostBinding('class.mat-expanded') isExpanded() {
+    return this._isExpanded();
+  }
+  @HostBinding('@expansionHeight') get getExpandedState() {
+    return this._getExpandedState();
+  }
+  @HostListener('click') onClick() {
+    this._toggle();
+  }
+  @HostListener('keyup', ['$event']) KeyUp($event) {
+    this._keyup($event);
+  }
+  constructor(@Host() public panel: SamExpansionPanelComponent) {
     super(panel);
   }
 

@@ -16,8 +16,8 @@ import { MainNavComponent } from './main-nav/component';
 
 import { SamExpansionModule } from './expansion';
 import { CdkTableModule } from '@angular/cdk';
-import { 
-  MdPaginatorModule, 
+import {
+  MdPaginatorModule,
   MdTableModule,
   MdSidenavModule,
   MdSortModule,

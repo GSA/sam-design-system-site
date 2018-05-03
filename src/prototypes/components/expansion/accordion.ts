@@ -1,9 +1,9 @@
-import { Directive, Input } from "@angular/core";
-import { CdkAccordion, MdAccordionDisplayMode } from "@angular/material";
+import { Directive, Input } from '@angular/core';
+import { CdkAccordion, MdAccordionDisplayMode } from '@angular/material';
 
 @Directive({
-  selector: 'sam-accordion-next'
+  selector: '[samAccordion]'
 })
-export class SamAccordion extends CdkAccordion {
+export class SamAccordionDirective extends CdkAccordion {
   @Input() displayMode: MdAccordionDisplayMode = 'flat';
 }

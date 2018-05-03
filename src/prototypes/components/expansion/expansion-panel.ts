@@ -1,11 +1,12 @@
-import { 
-  Component, 
+import {
+  Component,
   ViewEncapsulation,
   Host,
   Optional,
   forwardRef,
-  Input
-} from "@angular/core";
+  Input,
+  HostBinding
+} from '@angular/core';
 import {
   trigger,
   state,
@@ -13,9 +14,9 @@ import {
   transition,
   animate,
 } from '@angular/animations';
-import {SamAccordion} from './accordion';
-import {MdExpansionPanel, AccordionItem} from "@angular/material";
-import {UniqueSelectionDispatcher} from "@angular/material";
+import {SamAccordionDirective} from './accordion';
+import {MdExpansionPanel, AccordionItem} from '@angular/material';
+import {UniqueSelectionDispatcher} from '@angular/material';
 import {Subject} from 'rxjs/Subject';
 
 export const EXPANSION_PANEL_ANIMATION_TIMING = '225ms cubic-bezier(0.4,0.0,0.2,1)';
@@ -24,13 +25,8 @@ export const EXPANSION_PANEL_ANIMATION_TIMING = '225ms cubic-bezier(0.4,0.0,0.2,
   selector: 'sam-expansion-panel',
   templateUrl: 'expansion-panel.html',
   encapsulation: ViewEncapsulation.None,
-  host: {
-    'class': 'mat-expansion-panel',
-    '[class.mat-expanded]': 'expanded',
-    '[@displayMode]': '_getDisplayMode()',
-  },
   providers: [
-    {provide: AccordionItem, useExisting: forwardRef(() => SamExpansionPanel)}
+    {provide: AccordionItem, useExisting: forwardRef(() => SamExpansionPanelComponent)}
   ],
   animations: [
     trigger('bodyExpansion', [
@@ -47,11 +43,14 @@ export const EXPANSION_PANEL_ANIMATION_TIMING = '225ms cubic-bezier(0.4,0.0,0.2,
     ]),
   ],
 })
-export class SamExpansionPanel extends MdExpansionPanel {
-  
-  constructor(@Optional() @Host() accordion: SamAccordion,
+export class SamExpansionPanelComponent extends MdExpansionPanel {
+  @HostBinding('class') hostClass = 'mat-expansion-panel';
+  @HostBinding('class.mat-expanded') expanded;
+  @HostBinding('@displayMode') get getDisplayMode() {
+    return this._getDisplayMode();
+  }
+  constructor(@Optional() @Host() accordion: SamAccordionDirective,
               _uniqueSelectionDispatcher: UniqueSelectionDispatcher) {
     super(accordion, _uniqueSelectionDispatcher);
   }
-
 }

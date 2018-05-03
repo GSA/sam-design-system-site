@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 import {
-  CompatibilityModule, 
+  CompatibilityModule,
   UNIQUE_SELECTION_DISPATCHER_PROVIDER
 } from '@angular/material';
 
@@ -11,25 +11,25 @@ import {
   MdExpansionModule
 } from '@angular/material';
 
-import { SamExpansionPanelHeader } from './expansion-panel-header';
-import { SamExpansionPanel } from './expansion-panel';
-import { SamAccordion } from './accordion';
+import { SamExpansionPanelHeaderComponent } from './expansion-panel-header';
+import { SamExpansionPanelComponent } from './expansion-panel';
+import { SamAccordionDirective } from './accordion';
 
 @NgModule({
   imports: [
-    CompatibilityModule, 
+    CompatibilityModule,
     CommonModule,
     MdExpansionModule
   ],
   exports: [
-    SamAccordion,
-    SamExpansionPanel,
-    SamExpansionPanelHeader
+    SamAccordionDirective,
+    SamExpansionPanelComponent,
+    SamExpansionPanelHeaderComponent
   ],
   declarations: [
-    SamAccordion,
-    SamExpansionPanel,
-    SamExpansionPanelHeader
+    SamAccordionDirective,
+    SamExpansionPanelComponent,
+    SamExpansionPanelHeaderComponent
   ],
   providers: [UNIQUE_SELECTION_DISPATCHER_PROVIDER]
 })

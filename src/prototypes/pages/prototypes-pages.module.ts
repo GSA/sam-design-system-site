@@ -12,7 +12,6 @@ import { HomePageComponent } from './homepage/home.component';
 import { SearchMobileComponent } from './search-mobile/search.component';
 import { ReportPageComponent } from './report/report.component';
 import { CdkTableModule } from '@angular/cdk';
-import { MdSortModule, MdPaginatorModule} from '@angular/material';
 import { TablePageComponent } from './table/table.component';
 @NgModule({
   imports: [
@@ -20,8 +19,6 @@ import { TablePageComponent } from './table/table.component';
     FormsModule,
     PagesRoutingModule,
     SamUIKitModule,
-    MdSortModule,
-    MdPaginatorModule,
     CdkTableModule,
     PrototypesComponentsModule
   ],

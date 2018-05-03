@@ -81,7 +81,7 @@ min-width: 300px;
 }
 
 /*
-* Styles to make the demo's cdk-table match the material design spec
+* Styles to make the demo's sam-table match the material design spec
 * https://material.io/guidelines/components/data-tables.html
 */
 .example-table {
@@ -112,13 +112,13 @@ color: rgba(0, 0, 0, 0.54);
 font-size: 13px;
 color: rgba(0, 0, 0, 0.87);
 }
-cdk-table{
+sam-table{
     display:table;
 }
-cdk-row,cdk-header-row{
+sam-row,sam-header-row{
     display:table-row;
 }
-cdk-header-cell{
+sam-header-cell{
     border-right:1px solid #DCE4EE;
     border-bottom:1px solid #000;
     font-weight:bold;
@@ -129,33 +129,38 @@ cdk-header-cell{
         top:16px;
     }
 }
-cdk-row:last-child cdk-cell{
+sam-row:last-child sam-cell{
     border-bottom:none;
 }
-cdk-cell{
+sam-cell{
     border-right:1px solid #DCE4EE;
     border-bottom:1px solid #DCE4EE;
     &:last-child{
         border-right:none;
     }
 }
-cdk-cell,cdk-header-cell{
+sam-cell,sam-header-cell{
     display:table-cell;
     padding:5px;
 }
-.cdk-visually-hidden{
+.sam-visually-hidden{
     display:none;
 }
-.cdk-column-cfdaNumber,.cdk-column-status{
+.sam-column-cfdaNumber,.sam-column-status{
     width:10%;
 }
-.cdk-column-lastUpdatedDate{
+.sam-column-lastUpdatedDate{
     width:20%;
 }
-.cdk-column-agency,.cdk-column-title{
+.sam-column-agency,.sam-column-title{
     width:30%;
 }
 .datatable-example > ul{
     padding:0;
     text-align:right;
+}
+.sam-sort-header-button,.sam-sort-header-button:hover{
+    background: none;
+    color: black;
+    padding: 0;
 }

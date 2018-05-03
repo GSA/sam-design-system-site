@@ -17,12 +17,13 @@ import { PrototypeAccordionComponent } from './accordion/accordion.component';
 import { PrototypePanelComponent } from './accordion/panel.component';
 import { PrototypeTabsComponent } from './tab/tabs.component';
 import { PrototypeTabComponent } from './tab/tab.component';
-
+import { SamDataTableModule } from './table';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ComponentsRoutingModule,
+    SamDataTableModule,
     SamUIKitModule
   ],
   declarations: [
@@ -44,7 +45,8 @@ import { PrototypeTabComponent } from './tab/tab.component';
     PrototypeAccordionComponent,
     PrototypePanelComponent,
     PrototypeTabsComponent,
-    PrototypeTabComponent
+    PrototypeTabComponent,
+    SamDataTableModule
   ]
 })
 export class PrototypesComponentsModule {}

@@ -6,8 +6,7 @@ import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import {Observable} from 'rxjs';
 import { merge } from 'rxjs/observable/merge';
 import { fromEvent } from 'rxjs/observable/fromEvent';
-import {MdPaginator,SelectionModel} from '@angular/material';
-import {MdSort} from '@angular/material';
+import { SamSort } from '../../components/table/sort.directive';
 import { SamPaginationComponent } from 'sam-ui-elements/src/ui-kit/components/pagination';
 
 
@@ -18,11 +17,10 @@ export class TablePageComponent implements OnInit {
   pageSize = 10;
   displayedColumns = ['agency', 'cfdaNumber', 'title', 'status', 'lastUpdatedDate'];
   exampleDatabase = new ExampleDatabase();
-  selection = new SelectionModel<string>(true, []);
   dataSource: ExampleDataSource | null;
   curPage = 1;
   @ViewChild(SamPaginationComponent) paginator: SamPaginationComponent;
-  @ViewChild(MdSort) sort: MdSort;
+  @ViewChild(SamSort) sort: SamSort;
   @ViewChild('filter') filter: ElementRef;
 
   ngOnInit() {
@@ -34,17 +32,6 @@ export class TablePageComponent implements OnInit {
           if (!this.dataSource) { return; }
           this.dataSource.filter = this.filter.nativeElement.value;
         });
-  }
-
-  isAllSelected(): boolean {
-    if (!this.dataSource) { return false; }
-    if (this.selection.isEmpty()) { return false; }
-
-    if (this.filter.nativeElement.value) {
-      return this.selection.selected.length == this.dataSource.renderedData.length;
-    } else {
-      return this.selection.selected.length == this.exampleDatabase.data.length;
-    }
   }
 }
 
@@ -567,7 +554,7 @@ export class ExampleDataSource extends DataSource<any> {
 
   constructor(private _exampleDatabase: ExampleDatabase,
               private _paginator: SamPaginationComponent,
-              private _sort: MdSort) {
+              private _sort: SamSort) {
     super();
   }
 

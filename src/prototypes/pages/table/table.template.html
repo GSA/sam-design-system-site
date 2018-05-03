@@ -3,51 +3,51 @@
         <input #filter placeholder="Filter agency or title">
     </div>
       
-    <cdk-table #table mdSort [dataSource]="dataSource">
+    <sam-datatable #table samSort [dataSource]="dataSource">
         <!-- Column Definition: agency -->
         <ng-container cdkColumnDef="agency">
-            <cdk-header-cell *cdkHeaderCellDef md-sort-header>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Agency
-            </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row"> {{row.agency}} </cdk-cell>
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.agency}} </sam-cell>
         </ng-container>
     
         <!-- Column Definition: cfdaNumber -->
         <ng-container cdkColumnDef="cfdaNumber">
-            <cdk-header-cell *cdkHeaderCellDef md-sort-header start="desc">CFDA #
-            </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row"> {{row.cfdaNumber}} </cdk-cell>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header start="desc">CFDA #
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.cfdaNumber}} </sam-cell>
         </ng-container>
     
         <!-- Column Definition: title -->
         <ng-container cdkColumnDef="title">
-            <cdk-header-cell *cdkHeaderCellDef md-sort-header>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Title
-            </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row"> {{row.title}} </cdk-cell>
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.title}} </sam-cell>
         </ng-container>
     
         <!-- Column Definition: status -->
         <ng-container cdkColumnDef="status">
-            <cdk-header-cell *cdkHeaderCellDef md-sort-header>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Status
-            </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row"> {{row.status}} </cdk-cell>
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.status}} </sam-cell>
         </ng-container>
 
         <!-- Column Definition: lastUpdatedDate -->
         <ng-container cdkColumnDef="lastUpdatedDate">
-            <cdk-header-cell *cdkHeaderCellDef>
+            <sam-header-cell *cdkHeaderCellDef>
                 Last Updated
-            </cdk-header-cell>
-            <cdk-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </cdk-cell>
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </sam-cell>
         </ng-container>
     
-        <cdk-header-row *cdkHeaderRowDef="displayedColumns"></cdk-header-row>
-        <cdk-row *cdkRowDef="let row; columns: displayedColumns;
+        <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
+        <sam-row *cdkRowDef="let row; columns: displayedColumns;
             let first = first; let last = last; let even = even; let odd = odd">
-        </cdk-row>
-    </cdk-table>
+        </sam-row>
+    </sam-datatable>
       
     <div class="example-no-results"
         [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'">

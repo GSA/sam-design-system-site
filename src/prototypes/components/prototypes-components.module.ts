@@ -14,14 +14,14 @@ import { PickerLevel5Component } from './picker/component';
 import { PickerLevel6Component } from './picker/component';
 import { MainNavComponent } from './main-nav/component';
 
-import { SamTabsModule } from './tabs';
 import { SamExpansionModule } from './expansion';
 import { CdkTableModule } from '@angular/cdk';
 import { 
   MdPaginatorModule, 
   MdTableModule,
   MdSidenavModule,
-  MdSortModule
+  MdSortModule,
+  MdTabsModule
 } from '@angular/material';
 
 @NgModule({
@@ -30,7 +30,7 @@ import {
     FormsModule,
     ComponentsRoutingModule,
     SamUIKitModule,
-    SamTabsModule,
+    MdTabsModule,
     SamExpansionModule,
     MdSidenavModule,
     MdTableModule,
@@ -50,7 +50,7 @@ import {
   ],
   exports: [
     MainNavComponent,
-    SamTabsModule,
+    MdTabsModule,
     SamExpansionModule,
     MdSidenavModule,
     MdTableModule,

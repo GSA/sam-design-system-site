@@ -8,9 +8,7 @@ import {
 } from '@angular/material';
 
 import {
-  MdExpansionPanelDescription,
-  MdExpansionPanelTitle,
-  MdExpansionPanelActionRow
+  MdExpansionModule
 } from '@angular/material';
 
 import { SamExpansionPanelHeader } from './expansion-panel-header';
@@ -18,22 +16,20 @@ import { SamExpansionPanel } from './expansion-panel';
 import { SamAccordion } from './accordion';
 
 @NgModule({
-  imports: [CompatibilityModule, CommonModule],
+  imports: [
+    CompatibilityModule, 
+    CommonModule,
+    MdExpansionModule
+  ],
   exports: [
     SamAccordion,
     SamExpansionPanel,
-    MdExpansionPanelActionRow,
-    SamExpansionPanelHeader,
-    MdExpansionPanelTitle,
-    MdExpansionPanelDescription
+    SamExpansionPanelHeader
   ],
   declarations: [
     SamAccordion,
     SamExpansionPanel,
-    MdExpansionPanelActionRow,
-    SamExpansionPanelHeader,
-    MdExpansionPanelTitle,
-    MdExpansionPanelDescription
+    SamExpansionPanelHeader
   ],
   providers: [UNIQUE_SELECTION_DISPATCHER_PROVIDER]
 })

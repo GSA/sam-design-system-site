@@ -1,0 +1,52 @@
+sam-table{
+    display:table;
+}
+sam-row,sam-header-row{
+    display:table-row;
+}
+sam-header-cell{
+    border-right:1px solid #DCE4EE;
+    border-bottom:1px solid #000;
+    font-weight:bold;
+    &:last-child{
+        border-right:none;
+    }
+    .mat-sort-header-arrow{
+        top:16px;
+    }
+}
+sam-row:last-child sam-cell{
+    border-bottom:none;
+}
+sam-cell{
+    border-right:1px solid #DCE4EE;
+    border-bottom:1px solid #DCE4EE;
+    &:last-child{
+        border-right:none;
+    }
+}
+sam-cell,sam-header-cell{
+    display:table-cell;
+    padding:5px;
+}
+.sam-visually-hidden{
+    display:none;
+}
+.sam-column-cfdaNumber,.sam-column-status{
+    width:10%;
+}
+.sam-column-lastUpdatedDate{
+    width:20%;
+}
+.sam-column-agency,.sam-column-title{
+    width:30%;
+}
+.datatable-example > ul{
+    padding:0;
+    text-align:right;
+}
+.sam-sort-header-button,.sam-sort-header-button:hover{
+    background: none;
+    color: black;
+    padding: 0;
+}

@@ -2,10 +2,8 @@ import {
     ChangeDetectionStrategy, Injectable, ChangeDetectorRef, Component, Input,
     Optional, ViewEncapsulation
   } from '@angular/core';
-import {SamSort, MdSortable,SortDirection} from './sort.directive';
-//import {MdSortHeaderIntl} from './sort-header-intl';
+import {SamSort, SamSortable, SortDirection} from './sort.directive';
 import {CdkColumnDef,coerceBooleanProperty} from '@angular/cdk';
-//import {getMdSortHeaderNotContainedWithinMdSortError} from './sort-errors';
 import {Subscription} from 'rxjs/Subscription';
   
 /**
@@ -61,7 +59,7 @@ host: {
 encapsulation: ViewEncapsulation.None,
 changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SamSortHeader implements MdSortable {
+export class SamSortHeader implements SamSortable {
     /** @docs-private  */
     sortSubscription: Subscription;
 
@@ -74,10 +72,10 @@ export class SamSortHeader implements MdSortable {
     /** Sets the position of the arrow that displays when sorted. */
     @Input() arrowPosition: 'before' | 'after' = 'after';
 
-    /** Overrides the sort start value of the containing MdSort for this MdSortable. */
+    /** Overrides the sort start value of the containing MdSort for this SamSortable. */
     @Input('start') start: 'asc' | 'desc';
 
-    /** Overrides the disable clear value of the containing MdSort for this MdSortable. */
+    /** Overrides the disable clear value of the containing MdSort for this SamSortable. */
     @Input()
     get disableClear() { return this._disableClear; }
     set disableClear(v) { this._disableClear = coerceBooleanProperty(v); }

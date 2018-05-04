@@ -4,7 +4,7 @@ import {coerceBooleanProperty} from '@angular/cdk';
 
 export type SortDirection = 'asc' | 'desc' | '';
 
-export interface MdSortable {
+export interface SamSortable {
   id: string;
   start: 'asc' | 'desc';
   disableClear: boolean;
@@ -15,29 +15,29 @@ export interface Sort {
   direction: SortDirection;
 }
 
-/** Container for MdSortables to manage the sort state and provide default sort parameters. */
+/** Container for SamSortables to manage the sort state and provide default sort parameters. */
 @Directive({
   selector: '[mdSort], [samSort]',
 })
 export class SamSort {
   /** Collection of all registered sortables that this directive manages. */
-  sortables = new Map<string, MdSortable>();
+  sortables = new Map<string, SamSortable>();
 
-  /** The id of the most recently sorted MdSortable. */
+  /** The id of the most recently sorted SamSortable. */
   @Input('mdSortActive') active: string;
 
   /**
-   * The direction to set when an MdSortable is initially sorted.
-   * May be overriden by the MdSortable's sort start.
+   * The direction to set when an SamSortable is initially sorted.
+   * May be overriden by the SamSortable's sort start.
    */
   @Input('mdSortStart') start: 'asc' | 'desc' = 'asc';
 
-  /** The sort direction of the currently active MdSortable. */
+  /** The sort direction of the currently active SamSortable. */
   @Input('mdSortDirection') direction: SortDirection = '';
 
   /**
    * Whether to disable the user from clearing the sort by finishing the sort direction cycle.
-   * May be overriden by the MdSortable's disable clear input.
+   * May be overriden by the SamSortable's disable clear input.
    */
   @Input('mdSortDisableClear')
   get disableClear() { return this._disableClear; }
@@ -48,10 +48,10 @@ export class SamSort {
   @Output() mdSortChange = new EventEmitter<Sort>();
 
   /**
-   * Register function to be used by the contained MdSortables. Adds the MdSortable to the
-   * collection of MdSortables.
+   * Register function to be used by the contained SamSortables. Adds the SamSortable to the
+   * collection of SamSortables.
    */
-  register(sortable: MdSortable) {
+  register(sortable: SamSortable) {
     if (!sortable.id) {
       //throw getMdSortHeaderMissingIdError();
     }
@@ -63,15 +63,15 @@ export class SamSort {
   }
 
   /**
-   * Unregister function to be used by the contained MdSortables. Removes the MdSortable from the
-   * collection of contained MdSortables.
+   * Unregister function to be used by the contained SamSortables. Removes the SamSortable from the
+   * collection of contained SamSortables.
    */
-  deregister(sortable: MdSortable) {
+  deregister(sortable: SamSortable) {
     this.sortables.delete(sortable.id);
   }
 
   /** Sets the active sort id and determines the new sort direction. */
-  sort(sortable: MdSortable) {
+  sort(sortable: SamSortable) {
     if (this.active != sortable.id) {
       this.active = sortable.id;
       this.direction = sortable.start ? sortable.start : this.start;
@@ -83,7 +83,7 @@ export class SamSort {
   }
 
   /** Returns the next sort direction of the active sortable, checking for potential overrides. */
-  getNextSortDirection(sortable: MdSortable): SortDirection {
+  getNextSortDirection(sortable: SamSortable): SortDirection {
     if (!sortable) { return ''; }
 
     // Get the sort direction cycle with the potential sortable overrides.

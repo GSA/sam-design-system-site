@@ -1,11 +1,12 @@
 import {
     ChangeDetectionStrategy, Injectable, ChangeDetectorRef, Component, Input,
-    Optional, ViewEncapsulation
+    Optional, ViewEncapsulation, OnDestroy, OnInit, HostBinding, HostListener
   } from '@angular/core';
-import {SamSort, SamSortable, SortDirection} from './sort.directive';
-import {CdkColumnDef,coerceBooleanProperty} from '@angular/cdk';
+import {SamSortDirective, SamSortable, SortDirection} from './sort.directive';
+import {CdkColumnDef, coerceBooleanProperty} from '@angular/cdk';
 import {Subscription} from 'rxjs/Subscription';
-  
+
+
 /**
  * To modify the labels and text displayed, create a new instance of MdSortHeaderIntl and
  * include it in a custom provider.
@@ -18,10 +19,10 @@ export class MdSortHeaderIntl {
 
   /** A label to describe the current sort (visible only to screenreaders). */
   sortDescriptionLabel = (id: string, direction: SortDirection) => {
-    return `Sorted by ${id} ${direction == 'asc' ? 'ascending' : 'descending'}`;
+    return `Sorted by ${id} ${direction === 'asc' ? 'ascending' : 'descending'}`;
   }
 }
-
+/* tslint:disable */
 /**
  * Applies sorting behavior (click to change sort) and styles to an element, including an
  * arrow to display the current sort direction.
@@ -52,14 +53,10 @@ template: `
   {{_intl.sortDescriptionLabel(id, _sort.direction)}}
 </span>
 `,
-host: {
-    '(click)': '_sort.sort(this)',
-    '[class.sam-sort-header-sorted]': '_isSorted()',
-},
 encapsulation: ViewEncapsulation.None,
 changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SamSortHeader implements SamSortable {
+export class SamSortHeaderComponent implements SamSortable, OnInit, OnDestroy {
     /** @docs-private  */
     sortSubscription: Subscription;
 
@@ -67,7 +64,7 @@ export class SamSortHeader implements SamSortable {
      * ID of this sort header. If used within the context of a CdkColumnDef, this will default to
      * the column's name.
      */
-    @Input('md-sort-header') id: string;
+    @Input() id: string;
 
     /** Sets the position of the arrow that displays when sorted. */
     @Input() arrowPosition: 'before' | 'after' = 'after';
@@ -77,17 +74,21 @@ export class SamSortHeader implements SamSortable {
 
     /** Overrides the disable clear value of the containing MdSort for this SamSortable. */
     @Input()
+
+    @HostBinding('class.sam-sort-header-sorted') samSortHeaderSorted(){
+        return this._isSorted();
+    }
+    @HostListener('click') hostClick(){
+        return this._sort.sort(this);
+    }
     get disableClear() { return this._disableClear; }
     set disableClear(v) { this._disableClear = coerceBooleanProperty(v); }
     private _disableClear: boolean;
 
-    @Input('mat-sort-header')
-    get _id() { return this.id; }
-    set _id(v: string) { this.id = v; }
 
     constructor(public _intl: MdSortHeaderIntl,
                 private _changeDetectorRef: ChangeDetectorRef,
-                @Optional() public _sort: SamSort,
+                @Optional() public _sort: SamSortDirective,
                 @Optional() public _cdkColumnDef: CdkColumnDef) {
         if (!_sort) {
         //throw getMdSortHeaderNotContainedWithinMdSortError();

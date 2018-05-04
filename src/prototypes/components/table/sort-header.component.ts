@@ -34,8 +34,8 @@ export class MdSortHeaderIntl {
 @Component({
 selector: '[sam-sort-header]',
 template: `
-<div class="mat-sort-header-container"
-     [class.mat-sort-header-position-before]="arrowPosition == 'before'">
+<div class="sam-sort-header-container"
+     [class.sam-sort-header-position-before]="arrowPosition == 'before'">
   <button class="sam-sort-header-button" type="button"
           [attr.aria-label]="_intl.sortButtonLabel(id)">
     <ng-content></ng-content>
@@ -54,7 +54,7 @@ template: `
 `,
 host: {
     '(click)': '_sort.sort(this)',
-    '[class.mat-sort-header-sorted]': '_isSorted()',
+    '[class.sam-sort-header-sorted]': '_isSorted()',
 },
 encapsulation: ViewEncapsulation.None,
 changeDetection: ChangeDetectionStrategy.OnPush,

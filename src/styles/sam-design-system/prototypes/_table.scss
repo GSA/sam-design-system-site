@@ -1,8 +1,8 @@
 sam-table{
-    display:table;
+    display:block;
 }
 sam-row,sam-header-row{
-    display:table-row;
+    display:flex;
 }
 sam-header-cell{
     border-right:1px solid #DCE4EE;
@@ -26,20 +26,20 @@ sam-cell{
     }
 }
 sam-cell,sam-header-cell{
-    display:table-cell;
+    flex:1;
     padding:5px;
 }
 .sam-visually-hidden{
     display:none;
 }
 .sam-column-cfdaNumber,.sam-column-status{
-    width:10%;
+    
 }
 .sam-column-lastUpdatedDate{
-    width:20%;
+    
 }
 .sam-column-agency,.sam-column-title{
-    width:30%;
+    flex-basis: 150px;
 }
 .datatable-example > ul{
     padding:0;

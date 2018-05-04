@@ -7,7 +7,7 @@ export const _SamRow = CdkRow;
 
 /** Header template container that contains the cell outlet. Adds the right class and role. */
 @Component({
-  selector: 'md-header-row, sam-header-row',
+  selector: 'sam-header-row',
   template: CDK_ROW_TEMPLATE,
   host: {
     'class': 'sam-header-row',
@@ -19,7 +19,7 @@ export class SamHeaderRow extends _SamHeaderRow { }
 
 /** Data row template container that contains the cell outlet. Adds the right class and role. */
 @Component({
-  selector: 'md-row, sam-row',
+  selector: 'sam-row',
   template: CDK_ROW_TEMPLATE,
   host: {
     'class': 'sam-row',

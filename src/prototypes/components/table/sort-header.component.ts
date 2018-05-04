@@ -32,7 +32,7 @@ export class MdSortHeaderIntl {
  * column definition.
  */
 @Component({
-selector: '[md-sort-header], [sam-sort-header]',
+selector: '[sam-sort-header]',
 template: `
 <div class="mat-sort-header-container"
      [class.mat-sort-header-position-before]="arrowPosition == 'before'">

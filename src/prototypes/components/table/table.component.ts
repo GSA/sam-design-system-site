@@ -8,7 +8,7 @@ export const _SamTable = CdkTable;
  * Wrapper for the CdkTable with Material design styles.
  */
 @Component({
-  selector: 'md-table, sam-datatable',
+  selector: 'sam-datatable',
   template: CDK_TABLE_TEMPLATE,
   host: {
     'class': 'sam-table',

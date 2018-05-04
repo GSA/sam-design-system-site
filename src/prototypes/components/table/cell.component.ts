@@ -7,7 +7,7 @@ export const _SamCell = CdkCell;
 
 /** Header cell template container that adds the right classes and role. */
 @Directive({
-  selector: 'md-header-cell, sam-header-cell',
+  selector: 'sam-header-cell',
   host: {
     'class': 'sam-header-cell',
     'role': 'columnheader',
@@ -24,7 +24,7 @@ export class SamHeaderCell extends _SamHeaderCellBase {
 
 /** Cell template container that adds the right classes and role. */
 @Directive({
-  selector: 'md-cell, sam-cell',
+  selector: 'sam-cell',
   host: {
     'class': 'sam-cell',
     'role': 'gridcell',

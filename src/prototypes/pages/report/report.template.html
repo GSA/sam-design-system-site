@@ -91,57 +91,57 @@
   
   <div class="report-table">
 
-    <md-table mdSort [dataSource]="dataSource">
+    <sam-datatable samSort [dataSource]="dataSource">
       
       <ng-container cdkColumnDef="Agency">
-        <md-header-cell *cdkHeaderCellDef> Agency </md-header-cell>
-        <md-cell *cdkCellDef="let row"> {{row['Agency']}} </md-cell>
+        <sam-header-cell *cdkHeaderCellDef> Agency </sam-header-cell>
+        <sam-cell *cdkCellDef="let row"> {{row['Agency']}} </sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="CFDANumber">
-        <md-header-cell *cdkHeaderCellDef> CFDA Number </md-header-cell>
-        <md-cell *cdkCellDef="let row">{{row['CFDA Number']}}</md-cell>
+        <sam-header-cell *cdkHeaderCellDef> CFDA Number </sam-header-cell>
+        <sam-cell *cdkCellDef="let row">{{row['CFDA Number']}}</sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="Title">
-        <md-header-cell *cdkHeaderCellDef> Title </md-header-cell>
-        <md-cell *cdkCellDef="let row"> {{row['Title']}} </md-cell>
+        <sam-header-cell *cdkHeaderCellDef> Title </sam-header-cell>
+        <sam-cell *cdkCellDef="let row"> {{row['Title']}} </sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="CurrentStatus">
-        <md-header-cell *cdkHeaderCellDef>Current<br>Status</md-header-cell>
-        <md-cell *cdkCellDef="let row"> {{row['Current Status']}} </md-cell>
+        <sam-header-cell *cdkHeaderCellDef>Current<br>Status</sam-header-cell>
+        <sam-cell *cdkCellDef="let row"> {{row['Current Status']}} </sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="LastUpdatedDate">
-        <md-header-cell *cdkHeaderCellDef md-sort-header> Last Updated<br>Date </md-header-cell>
-        <md-cell *cdkCellDef="let row"> {{row['Last Updated Date']}} </md-cell>
+        <sam-header-cell *cdkHeaderCellDef sam-sort-header> Last Updated<br>Date </sam-header-cell>
+        <sam-cell *cdkCellDef="let row"> {{row['Last Updated Date']}} </sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="ObligationsUpdated">
-        <md-header-cell *cdkHeaderCellDef> Obligations Updated </md-header-cell>
-        <md-cell *cdkCellDef="let row">{{row['Obligations Updated']}}</md-cell>
+        <sam-header-cell *cdkHeaderCellDef> Obligations Updated </sam-header-cell>
+        <sam-cell *cdkCellDef="let row">{{row['Obligations Updated']}}</sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="OMBReviewDate">
-        <md-header-cell *cdkHeaderCellDef> OMB Review<br>Date </md-header-cell>
-        <md-cell *cdkCellDef="let row"> {{row['OMB Review Date']}} </md-cell>
+        <sam-header-cell *cdkHeaderCellDef> OMB Review<br>Date </sam-header-cell>
+        <sam-cell *cdkCellDef="let row"> {{row['OMB Review Date']}} </sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="LastPublishedDate">
-        <md-header-cell *cdkHeaderCellDef>Last Published<br>Date</md-header-cell>
-        <md-cell *cdkCellDef="let row"> {{row['Last Published Date']}} </md-cell>
+        <sam-header-cell *cdkHeaderCellDef>Last Published<br>Date</sam-header-cell>
+        <sam-cell *cdkCellDef="let row"> {{row['Last Published Date']}} </sam-cell>
       </ng-container>
       
       <ng-container cdkColumnDef="AutoPublished">
-        <md-header-cell *cdkHeaderCellDef>Auto<br>Published</md-header-cell>
-        <md-cell *cdkCellDef="let row"> {{row['Auto Published']}} </md-cell>
+        <sam-header-cell *cdkHeaderCellDef>Auto<br>Published</sam-header-cell>
+        <sam-cell *cdkCellDef="let row"> {{row['Auto Published']}} </sam-cell>
       </ng-container>
       
-      <md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
-      <md-row *cdkRowDef="let row; columns: displayedColumns"></md-row>
+      <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
+      <sam-row *cdkRowDef="let row; columns: displayedColumns"></sam-row>
       
-    </md-table>
+    </sam-datatable>
     
   </div>
 

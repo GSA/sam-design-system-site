@@ -1,0 +1,52 @@
+sam-table{
+    display:block;
+}
+sam-row,sam-header-row{
+    display:flex;
+}
+sam-header-cell{
+    border-right:1px solid #DCE4EE;
+    border-bottom:1px solid #000;
+    font-weight:bold;
+    &:last-child{
+        border-right:none;
+    }
+    .mat-sort-header-arrow{
+        top:16px;
+    }
+}
+sam-row:last-child sam-cell{
+    border-bottom:none;
+}
+sam-cell{
+    border-right:1px solid #DCE4EE;
+    border-bottom:1px solid #DCE4EE;
+    &:last-child{
+        border-right:none;
+    }
+}
+sam-cell,sam-header-cell{
+    flex:1;
+    padding:5px;
+}
+.sam-visually-hidden{
+    display:none;
+}
+.sam-column-cfdaNumber,.sam-column-status{
+    
+}
+.sam-column-lastUpdatedDate{
+    
+}
+.sam-column-agency,.sam-column-title{
+    flex-basis: 150px;
+}
+.datatable-example > ul{
+    padding:0;
+    text-align:right;
+}
+.sam-sort-header-button,.sam-sort-header-button:hover{
+    background: none;
+    color: black;
+    padding: 0;
+}

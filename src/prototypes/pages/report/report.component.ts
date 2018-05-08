@@ -3,7 +3,8 @@ import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { ReportData } from './DataSource';
-import { MdPaginator, MdSort } from '@angular/material';
+import { MdPaginator } from '@angular/material';
+import { SamSortDirective } from '../../components/table/sort.directive';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 
@@ -39,7 +40,7 @@ export class ReportDatabase {
 export class ReportDataSource extends DataSource<any> {
   constructor(private _reportDatabase: ReportDatabase,
               private _paginator: MdPaginator,
-              private _sort: MdSort) {
+              private _sort: SamSortDirective) {
     super();
   }
   connect(): Observable<ProgramData[]> {
@@ -87,7 +88,7 @@ export class ReportPageComponent implements OnInit {
   displayedColumns = [];
 
   @ViewChild(MdPaginator) _paginator: MdPaginator;
-  @ViewChild(MdSort) _sort: MdSort;
+  @ViewChild(SamSortDirective) _sort: SamSortDirective;
   ngOnInit() {
     this.connect();
   }

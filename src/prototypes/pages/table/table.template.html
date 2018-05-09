@@ -33,7 +33,7 @@
             <sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Status
             </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.status}} </sam-cell>
+            <sam-cell *cdkCellDef="let row" [ngClass]="{published:row.status=='Published'}"> {{row.status}} </sam-cell>
         </ng-container>
 
         <!-- Column Definition: lastUpdatedDate -->
@@ -43,7 +43,7 @@
             </sam-header-cell>
             <sam-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </sam-cell>
         </ng-container>
-    
+
         <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
         <sam-row *cdkRowDef="let row; columns: displayedColumns;
             let first = first; let last = last; let even = even; let odd = odd">

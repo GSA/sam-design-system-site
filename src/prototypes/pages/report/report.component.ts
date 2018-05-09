@@ -65,12 +65,20 @@ export class ReportDataSource extends DataSource<any> {
       let propertyB: number|string = '';
 
       switch (this._sort.active) {
-        case 'Last Updated Date': [propertyA, propertyB] = [a['Last Updated Date'], b['Last Updated Date']]; break;
+        case 'Agency': [propertyA, propertyB] = [a['Agency'], b['Agency']]; break;
+        case 'CFDANumber': [propertyA, propertyB] = [a['CFDA Number'], b['CFDA Number']]; break;
+        case 'Title': [propertyA, propertyB] = [a['Title'], b['Title']]; break;
+        case 'CurrentStatus': [propertyA, propertyB] = [a['Current Status'], b['Current Status']]; break;
+        case 'LastUpdatedDate': [propertyA, propertyB] = [new Date(a['Last Updated Date']).getTime(), new Date(b['Last Updated Date']).getTime()]; break;
+        case 'ObligationsUpdated': [propertyA, propertyB] = [a['Obligations Updated'], b['Obligations Updated']]; break;
+        case 'OMBReviewDate': [propertyA, propertyB] = [new Date(a['OMB Review Date']).getTime(), new Date(b['OMB Review Date']).getTime()]; break;
+        case 'LastPublishedDate': [propertyA, propertyB] = [new Date(a['Last Published Date']).getTime(), new Date(b['Last Published Date']).getTime()]; break;
+        case 'AutoPublished': [propertyA, propertyB] = [a['Auto Published'], b['Auto Published']]; break;
       }
 
       const valueA = isNaN(+propertyA) ? propertyA : +propertyA;
       const valueB = isNaN(+propertyB) ? propertyB : +propertyB;
-
+      
       return (valueA < valueB ? -1 : 1) * (this._sort.direction === 'asc' ? 1 : -1);
     });
   }

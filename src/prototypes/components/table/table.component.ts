@@ -7,10 +7,17 @@ export const _SamTable = CdkTable;
 
 /**
  * Wrapper for the CdkTable with Material design styles.
+ * Todo: revert back to using CDK_TABLE_TEMPLATE in a later version
  */
 @Component({
   selector: 'sam-datatable',
-  template: CDK_TABLE_TEMPLATE,
+  template: `
+  <div class="sam-datatable-thead">
+  <ng-container headerRowPlaceholder></ng-container>
+  </div>
+  <div class="sam-datatable-tbody">
+  <ng-container rowPlaceholder></ng-container>
+  </div>`,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

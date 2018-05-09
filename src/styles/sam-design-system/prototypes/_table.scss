@@ -1,8 +1,8 @@
 sam-table{
-    display:block;
+    display:table;
 }
 sam-row,sam-header-row{
-    display:flex;
+    display:table-row;
 }
 sam-header-cell{
     border-right:1px solid #DCE4EE;
@@ -26,7 +26,8 @@ sam-cell{
     }
 }
 sam-cell,sam-header-cell{
-    flex:1;
+    /*flex:1;*/
+    display:table-cell;
     padding:5px;
 }
 .sam-visually-hidden{
@@ -39,7 +40,7 @@ sam-cell,sam-header-cell{
     
 }
 .sam-column-agency,.sam-column-title{
-    flex-basis: 150px;
+    width:25%;
 }
 .datatable-example > ul{
     padding:0;
@@ -49,4 +50,13 @@ sam-cell,sam-header-cell{
     background: none;
     color: black;
     padding: 0;
+}
+.sam-datatable-thead{
+    display:table-header-group;
+}
+.sam-datatable-tbody{
+    display:table-row-group;
+}
+.published{
+    color:green;
 }

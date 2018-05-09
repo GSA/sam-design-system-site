@@ -42,10 +42,10 @@ template: `
     <ng-content></ng-content>
     <div *ngIf="_isSorted(); else not_sorted"
         class="fa"
-        [class.fa-long-arrow-up]="_sort.direction == 'asc'"
-        [class.fa-long-arrow-down]="_sort.direction == 'desc'">
+        [class.fa-sort-up]="_sort.direction == 'asc'"
+        [class.fa-sort-down]="_sort.direction == 'desc'">
     </div>
-    <ng-template #not_sorted><span class="fa fa-arrows-v"></span></ng-template>
+    <ng-template #not_sorted><span class="fa fa-sort"></span></ng-template>
   </button>
 
   

@@ -46,7 +46,7 @@ export class SamSortDirective {
   private _disableClear: boolean;
 
   /** Event emitted when the user changes either the active sort or sort direction. */
-  @Output() mdSortChange = new EventEmitter<Sort>();
+  @Output() samSortChange = new EventEmitter<Sort>();
 
   /**
    * Register function to be used by the contained SamSortables. Adds the SamSortable to the
@@ -80,7 +80,7 @@ export class SamSortDirective {
       this.direction = this.getNextSortDirection(sortable);
     }
 
-    this.mdSortChange.next({active: this.active, direction: this.direction});
+    this.samSortChange.next({active: this.active, direction: this.direction});
   }
 
   /** Returns the next sort direction of the active sortable, checking for potential overrides. */

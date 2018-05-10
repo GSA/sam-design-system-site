@@ -13,11 +13,11 @@ sam-header-row {
   min-height: $sam-header-row-height;
 }
 
-sam-row, sam-footer-row {
+sam-row, .sam-footer-row {
   min-height: $sam-row-height;
 }
 
-sam-row, sam-header-row, sam-footer-row {
+sam-row, sam-header-row, .sam-footer-row {
   display: flex;
   // Define a border style, but then widths default to 3px. Reset them to 0px except the bottom
   // which should be 1px;
@@ -37,7 +37,7 @@ sam-row, sam-header-row, sam-footer-row {
   }
 }
 
-sam-cell:first-child, sam-header-cell:first-child, sam-footer-cell:first-child {
+sam-cell:first-child, sam-header-cell:first-child, .sam-footer-cell:first-child {
   padding-left: $sam-row-horizontal-padding;
 
   [dir='rtl'] & {
@@ -46,7 +46,7 @@ sam-cell:first-child, sam-header-cell:first-child, sam-footer-cell:first-child {
   }
 }
 
-sam-cell:last-child, sam-header-cell:last-child, sam-footer-cell:last-child {
+sam-cell:last-child, sam-header-cell:last-child, .sam-footer-cell:last-child {
   padding-right: $sam-row-horizontal-padding;
 
   [dir='rtl'] & {
@@ -55,7 +55,7 @@ sam-cell:last-child, sam-header-cell:last-child, sam-footer-cell:last-child {
   }
 }
 
-sam-cell, sam-header-cell, sam-footer-cell {
+sam-cell, sam-header-cell, .sam-footer-cell {
   flex: 1;
   display: flex;
   align-items: center;

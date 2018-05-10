@@ -16,7 +16,7 @@ import { SamPaginationComponent } from 'sam-ui-elements/src/ui-kit/components/pa
 })
 export class TablePageComponent implements OnInit {
   pageSize = 10;
-  displayedColumns = ['agency', 'cfdaNumber', 'title', 'status', 'lastUpdatedDate'];
+  displayedColumns = ['agency', 'cfdaNumber', 'title', 'status', 'cost', 'lastUpdatedDate'];
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
   curPage = 1;
@@ -505,6 +505,7 @@ export interface CFDAData {
     ombReviewDate: string;
     lastPublishedDate: string;
     autoPublished: string;
+    cost: number;
 }
 
 /** An example database that the data source uses to retrieve data for the table. */
@@ -529,7 +530,8 @@ export class ExampleDatabase {
             obligationsUpdated: RECORDS[i][5],
             ombReviewDate: RECORDS[i][6],
             lastPublishedDate: RECORDS[i][7],
-            autoPublished: RECORDS[i][8]
+            autoPublished: RECORDS[i][8],
+            cost: Math.round(Math.random() * 100),
         };
 
         copiedData.push(record);
@@ -546,6 +548,7 @@ export class ExampleDatabase {
  * should be rendered.
  */
 export class ExampleDataSource extends DataSource<any> {
+  totalcost = 0;
   _filterChange = new BehaviorSubject('');
   get filter(): string { return this._filterChange.value; }
   set filter(filter: string) { this._paginator.currentPage = 1; this._filterChange.next(filter); }
@@ -564,7 +567,7 @@ export class ExampleDataSource extends DataSource<any> {
     // Listen for any changes in the base data, sorting, filtering, or pagination
     const displayDataChanges = [
       this._exampleDatabase.dataChange,
-      this._sort.mdSortChange,
+      this._sort.samSortChange,
       this._filterChange,
       this._paginator.pageChange,
     ];
@@ -574,6 +577,12 @@ export class ExampleDataSource extends DataSource<any> {
       this.filteredData = this._exampleDatabase.data.slice().filter((item: CFDAData) => {
         const searchStr = (item.agency + item.title).toLowerCase();
         return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
+      });
+
+      // set total
+      this.totalcost = 0;
+      this.filteredData.map((item: CFDAData) => {
+        this.totalcost += item.cost;
       });
 
       // Sort filtered data
@@ -606,6 +615,7 @@ export class ExampleDataSource extends DataSource<any> {
         case 'ombReviewDate': [propertyA, propertyB] = [a.ombReviewDate, b.ombReviewDate]; break;
         case 'lastPublishedDate': [propertyA, propertyB] = [a.lastPublishedDate, b.lastPublishedDate]; break;
         case 'autoPublished': [propertyA, propertyB] = [a.autoPublished, b.autoPublished]; break;
+        case 'cost': [propertyA, propertyB] = [a.cost, b.cost]; break;
       }
 
       const valueA = isNaN(+propertyA) ? propertyA : +propertyA;

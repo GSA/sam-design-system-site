@@ -46,7 +46,7 @@ export class ReportDataSource extends DataSource<any> {
   connect(): Observable<ProgramData[]> {
     const displayDataChanges = [
       this._paginator.page,
-      this._sort.mdSortChange,
+      this._sort.samSortChange,
       this._reportDatabase.dataChange
     ];
     return Observable.merge(...displayDataChanges).map(() => {

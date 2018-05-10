@@ -35,6 +35,14 @@
             </sam-header-cell>
             <sam-cell *cdkCellDef="let row" [ngClass]="{published:row.status=='Published'}"> {{row.status}} </sam-cell>
         </ng-container>
+        
+        <!-- Column Definition: cost -->
+        <ng-container cdkColumnDef="cost">
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+                Cost
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> ${{row.cost}} </sam-cell>
+        </ng-container>
 
         <!-- Column Definition: lastUpdatedDate -->
         <ng-container cdkColumnDef="lastUpdatedDate">
@@ -48,6 +56,16 @@
         <sam-row *cdkRowDef="let row; columns: displayedColumns;
             let first = first; let last = last; let even = even; let odd = odd">
         </sam-row>
+        <div class="sam-footer-row" rowFooterPlaceholder>
+            <div class="sam-footer-cell" *ngFor="let column of displayedColumns; let i = index;">
+                <ng-container *ngIf="i==0">
+                    Total:
+                </ng-container>
+                <ng-container *ngIf="column=='cost'">
+                    ${{dataSource.totalcost}}
+                </ng-container>
+            </div>
+        </div>
     </sam-datatable>
       
     <div class="example-no-results"

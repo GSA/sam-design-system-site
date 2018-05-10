@@ -8,11 +8,11 @@ import {Subscription} from 'rxjs/Subscription';
 
 
 /**
- * To modify the labels and text displayed, create a new instance of MdSortHeaderIntl and
+ * To modify the labels and text displayed, create a new instance of SamSortHeaderIntl and
  * include it in a custom provider.
  */
 @Injectable()
-export class MdSortHeaderIntl {
+export class SamSortHeaderIntl {
   sortButtonLabel = (id: string) => {
     return `Change sorting for ${id}`;
   }
@@ -40,18 +40,18 @@ template: `
   <button class="sam-sort-header-button" type="button"
           [attr.aria-label]="_intl.sortButtonLabel(id)">
     <ng-content></ng-content>
-    <div *ngIf="_isSorted(); else not_sorted"
+    <span *ngIf="_isSorted(); else not_sorted"
         class="fa"
         [class.fa-sort-up]="_sort.direction == 'asc'"
         [class.fa-sort-down]="_sort.direction == 'desc'">
-    </div>
+    </span>
     <ng-template #not_sorted><span class="fa fa-sort"></span></ng-template>
   </button>
 
   
 </div>
 
-<span class="sr-only" *ngIf="_isSorted()">
+<span class="sr-only" *ngIf="_isSorted()">  
   {{_intl.sortDescriptionLabel(id, _sort.direction)}}
 </span>
 `,
@@ -88,7 +88,7 @@ export class SamSortHeaderComponent implements SamSortable, OnInit, OnDestroy {
     private _disableClear: boolean;
 
 
-    constructor(public _intl: MdSortHeaderIntl,
+    constructor(public _intl: SamSortHeaderIntl,
                 private _changeDetectorRef: ChangeDetectorRef,
                 @Optional() public _sort: SamSortDirective,
                 @Optional() public _cdkColumnDef: CdkColumnDef) {
@@ -96,7 +96,7 @@ export class SamSortHeaderComponent implements SamSortable, OnInit, OnDestroy {
         //throw getMdSortHeaderNotContainedWithinMdSortError();
         }
 
-        this.sortSubscription = _sort.mdSortChange.subscribe(() => _changeDetectorRef.markForCheck());
+        this.sortSubscription = _sort.samSortChange.subscribe(() => _changeDetectorRef.markForCheck());
     }
 
     ngOnInit() {

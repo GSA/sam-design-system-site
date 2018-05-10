@@ -4,7 +4,7 @@ import {CdkTableModule} from '@angular/cdk';
 import {SamCellDirective, SamHeaderCellDirective} from './cell.component';
 import {SamHeaderRowComponent, SamRowComponent} from './row.component';
 import {CommonModule} from '@angular/common';
-import {SamSortHeaderComponent, MdSortHeaderIntl} from './sort-header.component';
+import {SamSortHeaderComponent, SamSortHeaderIntl} from './sort-header.component';
 import {SamSortDirective} from './sort.directive';
 
 export * from './cell.component';
@@ -17,6 +17,6 @@ export * from './row.component';
     SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent],
   declarations: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective,
     SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent],
-  providers: [MdSortHeaderIntl]
+  providers: [SamSortHeaderIntl]
 })
 export class SamDataTableModule {}

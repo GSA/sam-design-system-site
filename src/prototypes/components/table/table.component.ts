@@ -17,7 +17,8 @@ export const _SamTable = CdkTable;
   </div>
   <div class="sam-datatable-tbody">
   <ng-container rowPlaceholder></ng-container>
-  </div>`,
+  </div>
+  <ng-content select="[rowFooterPlaceholder]"></ng-content>`,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

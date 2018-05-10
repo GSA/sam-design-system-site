@@ -40,13 +40,15 @@ template: `
   <button class="sam-sort-header-button" type="button"
           [attr.aria-label]="_intl.sortButtonLabel(id)">
     <ng-content></ng-content>
+    <div *ngIf="_isSorted(); else not_sorted"
+        class="fa"
+        [class.fa-sort-up]="_sort.direction == 'asc'"
+        [class.fa-sort-down]="_sort.direction == 'desc'">
+    </div>
+    <ng-template #not_sorted><span class="fa fa-sort"></span></ng-template>
   </button>
 
-  <div *ngIf="_isSorted()"
-       class="fa"
-       [class.fa-arrow-up]="_sort.direction == 'asc'"
-       [class.fa-arrow-down]="_sort.direction == 'desc'">
-  </div>
+  
 </div>
 
 <span class="sr-only" *ngIf="_isSorted()">

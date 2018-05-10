@@ -54,11 +54,11 @@ export class SamSortDirective {
    */
   register(sortable: SamSortable) {
     if (!sortable.id) {
-      // throw getMdSortHeaderMissingIdError();
+      throw new Error('Missing Sort Header ID error');
     }
 
     if (this.sortables.has(sortable.id)) {
-      // throw getMdSortDuplicateMdSortableIdError(sortable.id);
+      throw new Error('Duplicate Sort Header ID error: ' + sortable.id);
     }
     this.sortables.set(sortable.id, sortable);
   }

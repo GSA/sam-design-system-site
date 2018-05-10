@@ -4,10 +4,10 @@ export let ReportData = [
     'CFDA Number': 10.001,
     'Title': 'Agricultural Research_Basic and Applied Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 08 2016',
+    'Last Updated Date': 'Nov 08, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15,10 +15,10 @@ export let ReportData = [
     'CFDA Number': 10.001,
     'Title': 'Sale of Federal Surplus Personal Property (title change)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 05 2011',
+    'Last Updated Date': 'Dec 05, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2009',
-    'Last Published Date': 'Jun, 16 2009',
+    'OMB Review Date': 'Jun 16, 2009',
+    'Last Published Date': 'Jun 16, 2009',
     'Auto Published': 'No'
   },
   {
@@ -26,10 +26,10 @@ export let ReportData = [
     'CFDA Number': 10.003,
     'Title': 'Water Pollution',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 19 2016',
+    'Last Updated Date': 'Apr 19, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 18 2011',
-    'Last Published Date': 'Nov, 30 2011',
+    'OMB Review Date': 'Nov 18, 2011',
+    'Last Published Date': 'Nov 30, 2011',
     'Auto Published': 'No'
   },
   {
@@ -37,10 +37,10 @@ export let ReportData = [
     'CFDA Number': 10.003,
     'Title': 'Test Plant and Animal Disease, Pest Control, and Animal Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 17 2017',
+    'Last Updated Date': 'Apr 17, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -48,10 +48,10 @@ export let ReportData = [
     'CFDA Number': 10.028,
     'Title': 'Wildlife Services TESTING',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 10 2016',
+    'Last Updated Date': 'Mar 10, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -59,10 +59,10 @@ export let ReportData = [
     'CFDA Number': 10.029,
     'Title': 'Avian Influenza Indemnity Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 11 2015',
+    'Last Updated Date': 'Nov 11, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Oct 20, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -70,10 +70,10 @@ export let ReportData = [
     'CFDA Number': 10.051,
     'Title': 'Commodity Loans and Loan Deficiency Payments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -81,10 +81,10 @@ export let ReportData = [
     'CFDA Number': 10.053,
     'Title': 'Dairy Indemnity Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -92,10 +92,10 @@ export let ReportData = [
     'CFDA Number': 10.054,
     'Title': 'Emergency Conservation Program test',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 16 2016',
+    'Last Updated Date': 'Mar 16, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -103,10 +103,10 @@ export let ReportData = [
     'CFDA Number': 10.055,
     'Title': 'Direct and Counter-cyclical Payments Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -114,10 +114,10 @@ export let ReportData = [
     'CFDA Number': 10.056,
     'Title': 'Farm Storage Facility Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 16 2001',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Apr 16, 2001',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -125,10 +125,10 @@ export let ReportData = [
     'CFDA Number': 10.066,
     'Title': 'Livestock Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2014',
+    'Last Updated Date': 'Oct 14, 2014',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -136,10 +136,10 @@ export let ReportData = [
     'CFDA Number': 10.069,
     'Title': 'Conservation Reserve Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -147,10 +147,10 @@ export let ReportData = [
     'CFDA Number': 10.07,
     'Title': 'Colorado River Basin Salinity Control Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -158,10 +158,10 @@ export let ReportData = [
     'CFDA Number': 10.072,
     'Title': 'Wetlands Reserve Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -169,10 +169,10 @@ export let ReportData = [
     'CFDA Number': 10.073,
     'Title': 'Crop Disaster Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -180,10 +180,10 @@ export let ReportData = [
     'CFDA Number': 10.077,
     'Title': 'Livestock Compensation Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 15 2003',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Oct 15, 2003',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -191,10 +191,10 @@ export let ReportData = [
     'CFDA Number': 10.078,
     'Title': 'Bioenergy Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2011',
+    'Last Updated Date': 'Oct 16, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2011',
-    'Last Published Date': 'Oct, 16 2011',
+    'OMB Review Date': 'Oct 07, 2011',
+    'Last Published Date': 'Oct 16, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -202,10 +202,10 @@ export let ReportData = [
     'CFDA Number': 10.079,
     'Title': 'Bill Emerson Humanitarian Trust',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2003',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Oct 20, 2003',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -213,10 +213,10 @@ export let ReportData = [
     'CFDA Number': 10.08,
     'Title': 'Milk Income Loss Contract Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 02 2016',
+    'Last Updated Date': 'Nov 02, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 20, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -224,10 +224,10 @@ export let ReportData = [
     'CFDA Number': 10.081,
     'Title': 'Lamb Meat Adjustment Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 20, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -235,10 +235,10 @@ export let ReportData = [
     'CFDA Number': 10.082,
     'Title': 'Tree Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 13 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jan 13, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -246,10 +246,10 @@ export let ReportData = [
     'CFDA Number': 10.084,
     'Title': 'Dairy Market Loss Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2005',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'May 09, 2005',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -257,10 +257,10 @@ export let ReportData = [
     'CFDA Number': 10.085,
     'Title': 'Tobacco Transition Payment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -268,10 +268,10 @@ export let ReportData = [
     'CFDA Number': 10.086,
     'Title': 'Donation of Federal Surplus Personal Property',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2009',
+    'Last Updated Date': 'Sep 29, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 17 2009',
-    'Last Published Date': 'Jun, 17 2009',
+    'OMB Review Date': 'Jun 17, 2009',
+    'Last Published Date': 'Jun 17, 2009',
     'Auto Published': 'No'
   },
   {
@@ -279,10 +279,10 @@ export let ReportData = [
     'CFDA Number': 10.153,
     'Title': 'Market News',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -290,10 +290,10 @@ export let ReportData = [
     'CFDA Number': 10.155,
     'Title': 'Marketing Agreements and Orders',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -301,10 +301,10 @@ export let ReportData = [
     'CFDA Number': 10.156,
     'Title': 'Federal-State Marketing Improvement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -312,10 +312,10 @@ export let ReportData = [
     'CFDA Number': 10.162,
     'Title': 'Inspection Grading and Standardization',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -323,10 +323,10 @@ export let ReportData = [
     'CFDA Number': 10.163,
     'Title': 'Market Protection and Promotion',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -334,10 +334,10 @@ export let ReportData = [
     'CFDA Number': 10.164,
     'Title': 'Wholesale Farmers and Alternative Market Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -345,10 +345,10 @@ export let ReportData = [
     'CFDA Number': 10.165,
     'Title': 'Perishable Agricultural Commodities Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -356,10 +356,10 @@ export let ReportData = [
     'CFDA Number': 10.167,
     'Title': 'Transportation Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -367,10 +367,10 @@ export let ReportData = [
     'CFDA Number': 10.168,
     'Title': 'Farmers\' Market Promotion Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 17 2006',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Mar 17, 2006',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -378,10 +378,10 @@ export let ReportData = [
     'CFDA Number': 10.169,
     'Title': 'Specialty Crop Block Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 19 2006',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Jan 19, 2006',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -389,10 +389,10 @@ export let ReportData = [
     'CFDA Number': 10.17,
     'Title': 'Specialty Crop Block Grant Program - Farm Bill',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2016',
+    'Last Updated Date': 'Oct 10, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Jul 25, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -400,10 +400,10 @@ export let ReportData = [
     'CFDA Number': 10.2,
     'Title': 'Grants for Agricultural Research, Special Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -411,10 +411,10 @@ export let ReportData = [
     'CFDA Number': 10.202,
     'Title': 'Cooperative Forestry Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -422,10 +422,10 @@ export let ReportData = [
     'CFDA Number': 10.203,
     'Title': 'Payments to Agricultural Experiment Stations Under the Hatch Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 11 2008',
+    'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2008',
-    'Last Published Date': 'Sep, 11 2008',
+    'OMB Review Date': 'Sep 11, 2008',
+    'Last Published Date': 'Sep 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -433,10 +433,10 @@ export let ReportData = [
     'CFDA Number': 10.205,
     'Title': 'Payments to 1890 Land-Grant Colleges and Tuskegee University',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -444,10 +444,10 @@ export let ReportData = [
     'CFDA Number': 10.206,
     'Title': 'Grants for Agricultural Research_Competitive Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -455,10 +455,10 @@ export let ReportData = [
     'CFDA Number': 10.207,
     'Title': 'Animal Health and Disease Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -466,10 +466,10 @@ export let ReportData = [
     'CFDA Number': 10.21,
     'Title': 'Food and Agricultural Sciences National Needs Graduate Fellowship Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -477,10 +477,10 @@ export let ReportData = [
     'CFDA Number': 10.212,
     'Title': 'Small Business Innovation Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -488,10 +488,10 @@ export let ReportData = [
     'CFDA Number': 10.215,
     'Title': 'Sustainable Agriculture Research and Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -499,10 +499,10 @@ export let ReportData = [
     'CFDA Number': 10.216,
     'Title': '1890 Institution Capacity Building Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -510,10 +510,10 @@ export let ReportData = [
     'CFDA Number': 10.217,
     'Title': 'Higher Education Challenge Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -521,10 +521,10 @@ export let ReportData = [
     'CFDA Number': 10.219,
     'Title': 'Biotechnology Risk Assessment Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -532,10 +532,10 @@ export let ReportData = [
     'CFDA Number': 10.22,
     'Title': 'Higher Education Multicultural Scholars Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -543,10 +543,10 @@ export let ReportData = [
     'CFDA Number': 10.221,
     'Title': 'Tribal Colleges Education Equity Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -554,10 +554,10 @@ export let ReportData = [
     'CFDA Number': 10.222,
     'Title': 'Tribal Colleges Endowment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -565,10 +565,10 @@ export let ReportData = [
     'CFDA Number': 10.223,
     'Title': 'Hispanic Serving Institutions Education Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -576,10 +576,10 @@ export let ReportData = [
     'CFDA Number': 10.224,
     'Title': 'Fund for Rural America_Research, Education, and Extension Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -587,10 +587,10 @@ export let ReportData = [
     'CFDA Number': 10.225,
     'Title': 'Community Food Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -598,10 +598,10 @@ export let ReportData = [
     'CFDA Number': 10.226,
     'Title': 'Secondary and Two-Year Postsecondary Agriculture Education Challenge Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -609,10 +609,10 @@ export let ReportData = [
     'CFDA Number': 10.227,
     'Title': '1994 Institutions Research Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 25 2000',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Oct 25, 2000',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -620,10 +620,10 @@ export let ReportData = [
     'CFDA Number': 10.228,
     'Title': 'Alaska Native Serving and Native Hawaiian Serving Institutions Education Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 10 2001',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'May 10, 2001',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -631,10 +631,10 @@ export let ReportData = [
     'CFDA Number': 10.25,
     'Title': 'Agricultural and Rural Economic Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -642,10 +642,10 @@ export let ReportData = [
     'CFDA Number': 10.253,
     'Title': 'Food Assistance and Nutrition Research Programs (FANRP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 29 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Feb 29, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -653,10 +653,10 @@ export let ReportData = [
     'CFDA Number': 10.254,
     'Title': 'Program of Research on the Economic of Invasive Species Management (PREISM)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 29 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Feb 29, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -664,10 +664,10 @@ export let ReportData = [
     'CFDA Number': 10.255,
     'Title': 'Research Innovation and Development Grants in Economic (RIDGE)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 29 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Feb 29, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -675,10 +675,10 @@ export let ReportData = [
     'CFDA Number': 10.256,
     'Title': 'Consumer Data Initiative (CDI)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 12 2007',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Dec 12, 2007',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -686,10 +686,10 @@ export let ReportData = [
     'CFDA Number': 10.29,
     'Title': 'Agricultural Market and Economic Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 02 2008',
+    'Last Updated Date': 'Dec 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 06 2008',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'Mar 06, 2008',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -697,10 +697,10 @@ export let ReportData = [
     'CFDA Number': 10.303,
     'Title': 'Integrated Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 01 2000',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Nov 01, 2000',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -708,10 +708,10 @@ export let ReportData = [
     'CFDA Number': 10.304,
     'Title': 'Homeland Security_Agricultural',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 08 2003',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Jan 08, 2003',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -719,10 +719,10 @@ export let ReportData = [
     'CFDA Number': 10.305,
     'Title': 'International Science and Education Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 25 2005',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Jan 25, 2005',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -730,10 +730,10 @@ export let ReportData = [
     'CFDA Number': 10.306,
     'Title': 'BIODIESEL',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 14 2005',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Jan 14, 2005',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -741,10 +741,10 @@ export let ReportData = [
     'CFDA Number': 10.307,
     'Title': 'Organic Agriculture Research and Extension Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 25 2005',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Jan 25, 2005',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -752,10 +752,10 @@ export let ReportData = [
     'CFDA Number': 10.308,
     'Title': 'Resident Instruction Grants for Insular Area Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 28 2005',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Jun 28, 2005',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -763,10 +763,10 @@ export let ReportData = [
     'CFDA Number': 10.309,
     'Title': 'Specialty Crop Research Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 27 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Jun 27, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -774,10 +774,10 @@ export let ReportData = [
     'CFDA Number': 10.35,
     'Title': 'Technical Assistance to Cooperatives',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 02 2005',
+    'Last Updated Date': 'Aug 02, 2005',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 02 2005',
-    'Last Published Date': 'Aug, 02 2005',
+    'OMB Review Date': 'Aug 02, 2005',
+    'Last Published Date': 'Aug 02, 2005',
     'Auto Published': 'No'
   },
   {
@@ -785,10 +785,10 @@ export let ReportData = [
     'CFDA Number': 10.352,
     'Title': 'Value-Added Producer Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 09 2005',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Feb 09, 2005',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -796,10 +796,10 @@ export let ReportData = [
     'CFDA Number': 10.404,
     'Title': 'Emergency Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -807,10 +807,10 @@ export let ReportData = [
     'CFDA Number': 10.405,
     'Title': 'Farm Labor Housing Loans and Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -818,10 +818,10 @@ export let ReportData = [
     'CFDA Number': 10.406,
     'Title': 'Farm Operating Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -829,10 +829,10 @@ export let ReportData = [
     'CFDA Number': 10.407,
     'Title': 'Farm Ownership Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -840,10 +840,10 @@ export let ReportData = [
     'CFDA Number': 10.41,
     'Title': 'Very Low to Moderate Income Housing Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 19 2008',
+    'Last Updated Date': 'Aug 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 19 2008',
-    'Last Published Date': 'Aug, 19 2008',
+    'OMB Review Date': 'Aug 19, 2008',
+    'Last Published Date': 'Aug 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -851,10 +851,10 @@ export let ReportData = [
     'CFDA Number': 10.411,
     'Title': 'Rural Housing Site Loans and Self_Help Housing Land Development Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 21 2008',
+    'Last Updated Date': 'Aug 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 21 2008',
-    'Last Published Date': 'Aug, 21 2008',
+    'OMB Review Date': 'Aug 21, 2008',
+    'Last Published Date': 'Aug 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -862,10 +862,10 @@ export let ReportData = [
     'CFDA Number': 10.415,
     'Title': 'Rural Rental Housing Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -873,10 +873,10 @@ export let ReportData = [
     'CFDA Number': 10.417,
     'Title': 'Very Low-Income Housing Repair Loans and Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 19 2008',
+    'Last Updated Date': 'Aug 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 19 2008',
-    'Last Published Date': 'Aug, 19 2008',
+    'OMB Review Date': 'Aug 19, 2008',
+    'Last Published Date': 'Aug 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -884,10 +884,10 @@ export let ReportData = [
     'CFDA Number': 10.42,
     'Title': 'Rural Self-Help Housing Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 21 2008',
+    'Last Updated Date': 'Aug 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 21 2008',
-    'Last Published Date': 'Aug, 21 2008',
+    'OMB Review Date': 'Aug 21, 2008',
+    'Last Published Date': 'Aug 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -895,10 +895,10 @@ export let ReportData = [
     'CFDA Number': 10.421,
     'Title': 'Indian Tribes and Tribal Corporation Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -906,10 +906,10 @@ export let ReportData = [
     'CFDA Number': 10.427,
     'Title': 'Rural Rental Assistance Payments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -917,10 +917,10 @@ export let ReportData = [
     'CFDA Number': 10.433,
     'Title': 'Rural Housing Preservation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -928,10 +928,10 @@ export let ReportData = [
     'CFDA Number': 10.435,
     'Title': 'State Mediation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -939,10 +939,10 @@ export let ReportData = [
     'CFDA Number': 10.437,
     'Title': 'Interest Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -950,10 +950,10 @@ export let ReportData = [
     'CFDA Number': 10.438,
     'Title': 'Section 538 Rural Rental Housing Guaranteed Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -961,10 +961,10 @@ export let ReportData = [
     'CFDA Number': 10.441,
     'Title': 'Technical and Supervisory Assistance Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 21 2008',
+    'Last Updated Date': 'Aug 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 21 2008',
-    'Last Published Date': 'Aug, 21 2008',
+    'OMB Review Date': 'Aug 21, 2008',
+    'Last Published Date': 'Aug 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -972,10 +972,10 @@ export let ReportData = [
     'CFDA Number': 10.442,
     'Title': 'Housing Application Packaging Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 19 2008',
+    'Last Updated Date': 'Aug 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 19 2008',
-    'Last Published Date': 'Aug, 19 2008',
+    'OMB Review Date': 'Aug 19, 2008',
+    'Last Published Date': 'Aug 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -983,10 +983,10 @@ export let ReportData = [
     'CFDA Number': 10.443,
     'Title': 'Outreach and Assistance for Socially Disadvantaged Farmers and Ranchers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -994,10 +994,10 @@ export let ReportData = [
     'CFDA Number': 10.444,
     'Title': 'Direct Housing_Natural Disaster Loans and Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 19 2008',
+    'Last Updated Date': 'Aug 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 19 2008',
-    'Last Published Date': 'Aug, 19 2008',
+    'OMB Review Date': 'Aug 19, 2008',
+    'Last Published Date': 'Aug 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1005,10 +1005,10 @@ export let ReportData = [
     'CFDA Number': 10.445,
     'Title': 'Direct Housing_Natural Disaster',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 19 2008',
+    'Last Updated Date': 'Aug 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 19 2008',
-    'Last Published Date': 'Aug, 19 2008',
+    'OMB Review Date': 'Aug 19, 2008',
+    'Last Published Date': 'Aug 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1016,10 +1016,10 @@ export let ReportData = [
     'CFDA Number': 10.446,
     'Title': 'Rural Community Development Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2001',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Oct 23, 2001',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1027,10 +1027,10 @@ export let ReportData = [
     'CFDA Number': 10.447,
     'Title': 'The Rural Development (RD) Multi-Family Housing  Revitalization Demonstration Program  (MPR)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1038,10 +1038,10 @@ export let ReportData = [
     'CFDA Number': 10.449,
     'Title': 'Boll Weevil Eradication Loan Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 06 2000',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Oct 06, 2000',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1049,10 +1049,10 @@ export let ReportData = [
     'CFDA Number': 10.45,
     'Title': 'Crop Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1060,10 +1060,10 @@ export let ReportData = [
     'CFDA Number': 10.451,
     'Title': 'Noninsured Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1071,10 +1071,10 @@ export let ReportData = [
     'CFDA Number': 10.452,
     'Title': 'Disaster Reserve Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1082,10 +1082,10 @@ export let ReportData = [
     'CFDA Number': 10.454,
     'Title': 'Dairy Options Pilot Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1093,10 +1093,10 @@ export let ReportData = [
     'CFDA Number': 10.455,
     'Title': 'Community Outreach and Assistance Partnership Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2004',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Jun 03, 2004',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1104,10 +1104,10 @@ export let ReportData = [
     'CFDA Number': 10.456,
     'Title': 'Partnership Agreements to Develop Non-Insurance Risk Management Tools for Producers (Farmers)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2004',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'May 14, 2004',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1115,10 +1115,10 @@ export let ReportData = [
     'CFDA Number': 10.457,
     'Title': 'Commodity Partnerships for Risk Management Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2004',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 03, 2004',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1126,10 +1126,10 @@ export let ReportData = [
     'CFDA Number': 10.458,
     'Title': 'Crop Insurance Education in Targeted States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2004',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 03, 2004',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1137,10 +1137,10 @@ export let ReportData = [
     'CFDA Number': 10.459,
     'Title': 'Commodity Partnerships for Small Agricultural Risk Management Education Sessions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1148,10 +1148,10 @@ export let ReportData = [
     'CFDA Number': 10.475,
     'Title': 'Cooperative Agreements with States for Intrastate Meat and Poultry Inspection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1159,10 +1159,10 @@ export let ReportData = [
     'CFDA Number': 10.477,
     'Title': 'Meat, Poultry, and Egg Products Inspection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1170,10 +1170,10 @@ export let ReportData = [
     'CFDA Number': 10.479,
     'Title': 'Food Safety Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 30 2006',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Mar 30, 2006',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1181,10 +1181,10 @@ export let ReportData = [
     'CFDA Number': 10.5,
     'Title': 'Cooperative Extension Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1192,10 +1192,10 @@ export let ReportData = [
     'CFDA Number': 10.551,
     'Title': 'Supplemental Nutrition Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 30 2011',
+    'Last Updated Date': 'Aug 30, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 15 2008',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Oct 15, 2008',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1203,10 +1203,10 @@ export let ReportData = [
     'CFDA Number': 10.553,
     'Title': 'School Breakfast Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 12 2008',
+    'Last Updated Date': 'Nov 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 12 2008',
-    'Last Published Date': 'Nov, 12 2008',
+    'OMB Review Date': 'Nov 12, 2008',
+    'Last Published Date': 'Nov 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1214,10 +1214,10 @@ export let ReportData = [
     'CFDA Number': 10.555,
     'Title': 'National School Lunch Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 12 2008',
+    'Last Updated Date': 'Nov 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 12 2008',
-    'Last Published Date': 'Nov, 12 2008',
+    'OMB Review Date': 'Nov 12, 2008',
+    'Last Published Date': 'Nov 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1225,10 +1225,10 @@ export let ReportData = [
     'CFDA Number': 10.556,
     'Title': 'Special Milk Program for Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 12 2008',
+    'Last Updated Date': 'Nov 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 12 2008',
-    'Last Published Date': 'Nov, 12 2008',
+    'OMB Review Date': 'Nov 12, 2008',
+    'Last Published Date': 'Nov 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1236,10 +1236,10 @@ export let ReportData = [
     'CFDA Number': 10.557,
     'Title': 'Special Supplemental Nutrition Program for Women, Infants, and Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1247,10 +1247,10 @@ export let ReportData = [
     'CFDA Number': 10.558,
     'Title': 'Child and Adult Care Food Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 12 2008',
+    'Last Updated Date': 'Nov 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 12 2008',
-    'Last Published Date': 'Nov, 12 2008',
+    'OMB Review Date': 'Nov 12, 2008',
+    'Last Published Date': 'Nov 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1258,10 +1258,10 @@ export let ReportData = [
     'CFDA Number': 10.559,
     'Title': 'Summer Food Service Program for Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1269,10 +1269,10 @@ export let ReportData = [
     'CFDA Number': 10.56,
     'Title': 'State Administrative Expenses for Child Nutrition',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1280,10 +1280,10 @@ export let ReportData = [
     'CFDA Number': 10.561,
     'Title': 'State Administrative Matching Grants for the Supplemental Nutrition Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1291,10 +1291,10 @@ export let ReportData = [
     'CFDA Number': 10.565,
     'Title': 'Commodity Supplemental Food Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1302,10 +1302,10 @@ export let ReportData = [
     'CFDA Number': 10.566,
     'Title': 'Nutrition Assistance For Puerto Rico',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1313,10 +1313,10 @@ export let ReportData = [
     'CFDA Number': 10.567,
     'Title': 'Food Distribution Program on Indian Reservations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 22 2008',
+    'Last Updated Date': 'Dec 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 22 2008',
-    'Last Published Date': 'Dec, 22 2008',
+    'OMB Review Date': 'Dec 22, 2008',
+    'Last Published Date': 'Dec 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1324,10 +1324,10 @@ export let ReportData = [
     'CFDA Number': 10.568,
     'Title': 'Emergency Food Assistance Program (Administrative Costs)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 10 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Oct 10, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1335,10 +1335,10 @@ export let ReportData = [
     'CFDA Number': 10.569,
     'Title': 'Emergency Food Assistance Program (Food Commodities)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 10 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Oct 10, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1346,10 +1346,10 @@ export let ReportData = [
     'CFDA Number': 10.572,
     'Title': 'WIC Farmers\' Market Nutrition Program (FMNP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1357,10 +1357,10 @@ export let ReportData = [
     'CFDA Number': 10.574,
     'Title': 'Team Nutrition Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 10 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Oct 10, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1368,10 +1368,10 @@ export let ReportData = [
     'CFDA Number': 10.576,
     'Title': 'Senior Farmers Market Nutrition Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 17 2003',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Dec 17, 2003',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1379,10 +1379,10 @@ export let ReportData = [
     'CFDA Number': 10.578,
     'Title': 'WIC Grants To States (WGS)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 18 2003',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Dec 18, 2003',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1390,10 +1390,10 @@ export let ReportData = [
     'CFDA Number': 10.579,
     'Title': 'Child Nutrition Discretionary Grants Limited Availability',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 23 2004',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Jan 23, 2004',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1401,10 +1401,10 @@ export let ReportData = [
     'CFDA Number': 10.58,
     'Title': 'Special Nutrition Assistance Program Outreach/Participation Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 23 2004',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Jan 23, 2004',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1412,10 +1412,10 @@ export let ReportData = [
     'CFDA Number': 10.582,
     'Title': 'Fresh Fruit and Vegetable Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jun 06, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1423,10 +1423,10 @@ export let ReportData = [
     'CFDA Number': 10.6,
     'Title': 'Foreign Market Development Cooperator Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1434,10 +1434,10 @@ export let ReportData = [
     'CFDA Number': 10.601,
     'Title': 'Market Access Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1445,10 +1445,10 @@ export let ReportData = [
     'CFDA Number': 10.603,
     'Title': 'Emerging Markets Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2002',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'May 29, 2002',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1456,10 +1456,10 @@ export let ReportData = [
     'CFDA Number': 10.604,
     'Title': 'Technical Assistance for Specialty Crops Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 03 2003',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Nov 03, 2003',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1467,10 +1467,10 @@ export let ReportData = [
     'CFDA Number': 10.605,
     'Title': 'Quality Samples Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2003',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Nov 07, 2003',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1478,10 +1478,10 @@ export let ReportData = [
     'CFDA Number': 10.606,
     'Title': 'Food for Progress',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2003',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Jul 31, 2003',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1489,10 +1489,10 @@ export let ReportData = [
     'CFDA Number': 10.607,
     'Title': 'Section 416(b)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 07 2003',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Aug 07, 2003',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1500,10 +1500,10 @@ export let ReportData = [
     'CFDA Number': 10.608,
     'Title': 'Food for Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 01 2003',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Aug 01, 2003',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1511,10 +1511,10 @@ export let ReportData = [
     'CFDA Number': 10.609,
     'Title': 'Trade Adjustment Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 30 2004',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Jan 30, 2004',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1522,10 +1522,10 @@ export let ReportData = [
     'CFDA Number': 10.652,
     'Title': 'Forestry Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1533,10 +1533,10 @@ export let ReportData = [
     'CFDA Number': 10.664,
     'Title': 'Cooperative Forestry Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1544,10 +1544,10 @@ export let ReportData = [
     'CFDA Number': 10.665,
     'Title': 'Secure Payments for States and Counties Containing Federal Land',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 19 2008',
+    'Last Updated Date': 'Dec 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 19 2008',
-    'Last Published Date': 'Dec, 19 2008',
+    'OMB Review Date': 'Dec 19, 2008',
+    'Last Published Date': 'Dec 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1555,10 +1555,10 @@ export let ReportData = [
     'CFDA Number': 10.67,
     'Title': 'National Forest_Dependent Rural Communities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1566,10 +1566,10 @@ export let ReportData = [
     'CFDA Number': 10.671,
     'Title': 'Southeast Alaska Economic Disaster Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1577,10 +1577,10 @@ export let ReportData = [
     'CFDA Number': 10.672,
     'Title': 'Rural Development, Forestry, and Communities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 28 2000',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Apr 28, 2000',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1588,10 +1588,10 @@ export let ReportData = [
     'CFDA Number': 10.674,
     'Title': 'Forest Products Lab: Technology Marketing Unit  (TMU)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Oct 20, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1599,10 +1599,10 @@ export let ReportData = [
     'CFDA Number': 10.675,
     'Title': 'Urban and Community Forestry Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2003',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 17, 2003',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1610,10 +1610,10 @@ export let ReportData = [
     'CFDA Number': 10.676,
     'Title': 'Forest Legacy Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 20 2003',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Aug 20, 2003',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1621,10 +1621,10 @@ export let ReportData = [
     'CFDA Number': 10.677,
     'Title': 'Forest Land Enhancement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 20 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Aug 20, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1632,10 +1632,10 @@ export let ReportData = [
     'CFDA Number': 10.678,
     'Title': 'Forest Stewardship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 20 2003',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Aug 20, 2003',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1643,10 +1643,10 @@ export let ReportData = [
     'CFDA Number': 10.679,
     'Title': 'Collaborative Forest Restoration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 07 2005',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Mar 07, 2005',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1654,10 +1654,10 @@ export let ReportData = [
     'CFDA Number': 10.68,
     'Title': 'Forest Health Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 07 2005',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Mar 07, 2005',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1665,10 +1665,10 @@ export let ReportData = [
     'CFDA Number': 10.681,
     'Title': 'Wood  Education and Resource  Center (WERC)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 02 2008',
+    'Last Updated Date': 'Dec 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 12 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Feb 12, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1676,10 +1676,10 @@ export let ReportData = [
     'CFDA Number': 10.684,
     'Title': 'International Forestry Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Jul 08, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1687,10 +1687,10 @@ export let ReportData = [
     'CFDA Number': 10.7,
     'Title': 'National Agricultural Library',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1698,10 +1698,10 @@ export let ReportData = [
     'CFDA Number': 10.76,
     'Title': 'Water and Waste Disposal Systems for Rural Communities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1709,10 +1709,10 @@ export let ReportData = [
     'CFDA Number': 10.761,
     'Title': 'Technical Assistance and Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1720,10 +1720,10 @@ export let ReportData = [
     'CFDA Number': 10.762,
     'Title': 'Solid Waste Management Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1731,10 +1731,10 @@ export let ReportData = [
     'CFDA Number': 10.763,
     'Title': 'Emergency Community Water Assistance Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1742,10 +1742,10 @@ export let ReportData = [
     'CFDA Number': 10.766,
     'Title': 'Community Facilities Loans and Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1753,10 +1753,10 @@ export let ReportData = [
     'CFDA Number': 10.767,
     'Title': 'Intermediary Relending Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1764,10 +1764,10 @@ export let ReportData = [
     'CFDA Number': 10.768,
     'Title': 'Business and Industry Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1775,10 +1775,10 @@ export let ReportData = [
     'CFDA Number': 10.769,
     'Title': 'Rural Business Enterprise Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1786,10 +1786,10 @@ export let ReportData = [
     'CFDA Number': 10.77,
     'Title': 'Water and Waste Disposal Loans and Grants (Section 306C)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1797,10 +1797,10 @@ export let ReportData = [
     'CFDA Number': 10.771,
     'Title': 'Rural Cooperative Development Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1808,10 +1808,10 @@ export let ReportData = [
     'CFDA Number': 10.772,
     'Title': 'Empowerment Zones Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1819,10 +1819,10 @@ export let ReportData = [
     'CFDA Number': 10.773,
     'Title': 'Rural Business Opportunity Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1830,10 +1830,10 @@ export let ReportData = [
     'CFDA Number': 10.774,
     'Title': 'National Sheep Industry Improvement Center',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1841,10 +1841,10 @@ export let ReportData = [
     'CFDA Number': 10.775,
     'Title': 'Renewable Energy Systems and Energy Efficiency Improvements Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 18 2003',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Aug 18, 2003',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1852,10 +1852,10 @@ export let ReportData = [
     'CFDA Number': 10.778,
     'Title': 'Research on the Economic Impact of Cooperatives',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 30 2006',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Mar 30, 2006',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1863,10 +1863,10 @@ export let ReportData = [
     'CFDA Number': 10.85,
     'Title': 'Rural Electrification Loans and Loan Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1874,10 +1874,10 @@ export let ReportData = [
     'CFDA Number': 10.851,
     'Title': 'Rural Telephone Loans and Loan Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1885,10 +1885,10 @@ export let ReportData = [
     'CFDA Number': 10.854,
     'Title': 'Rural Economic Development Loans and Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1896,10 +1896,10 @@ export let ReportData = [
     'CFDA Number': 10.855,
     'Title': 'Distance Learning and Telemedicine Loans and Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1907,10 +1907,10 @@ export let ReportData = [
     'CFDA Number': 10.856,
     'Title': '1890 Land Grant Institutions Rural Entrepreneurial Outreach Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 11 2004',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'May 11, 2004',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1918,10 +1918,10 @@ export let ReportData = [
     'CFDA Number': 10.857,
     'Title': 'State Bulk Fuel Revolving Fund Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2001',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Oct 24, 2001',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1929,10 +1929,10 @@ export let ReportData = [
     'CFDA Number': 10.858,
     'Title': 'Denali Commmission Grants and Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1940,10 +1940,10 @@ export let ReportData = [
     'CFDA Number': 10.859,
     'Title': 'Assistance to High Energy Cost Rural Communities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2001',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Oct 24, 2001',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1951,10 +1951,10 @@ export let ReportData = [
     'CFDA Number': 10.86,
     'Title': 'Rural Business Investment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Sep 29, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1962,10 +1962,10 @@ export let ReportData = [
     'CFDA Number': 10.861,
     'Title': 'Public Television Station Digital Transition Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 19 2005',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Apr 19, 2005',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1973,10 +1973,10 @@ export let ReportData = [
     'CFDA Number': 10.862,
     'Title': 'Household Water Well System Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 18 2004',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Oct 18, 2004',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1984,10 +1984,10 @@ export let ReportData = [
     'CFDA Number': 10.863,
     'Title': 'Community Connect Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jul 08, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -1995,10 +1995,10 @@ export let ReportData = [
     'CFDA Number': 10.864,
     'Title': 'Grant Program to Establish a Fund for Financing Water and Wastewater Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2005',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Apr 08, 2005',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2006,10 +2006,10 @@ export let ReportData = [
     'CFDA Number': 10.886,
     'Title': 'Rural Broadband Access Loans and Loan Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2017,10 +2017,10 @@ export let ReportData = [
     'CFDA Number': 10.901,
     'Title': 'Resource Conservation and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2028,10 +2028,10 @@ export let ReportData = [
     'CFDA Number': 10.902,
     'Title': 'Soil and Water Conservation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2039,10 +2039,10 @@ export let ReportData = [
     'CFDA Number': 10.903,
     'Title': 'Soil Survey',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2050,10 +2050,10 @@ export let ReportData = [
     'CFDA Number': 10.904,
     'Title': 'Watershed Protection and Flood Prevention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2061,10 +2061,10 @@ export let ReportData = [
     'CFDA Number': 10.905,
     'Title': 'Plant Materials for Conservation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2072,10 +2072,10 @@ export let ReportData = [
     'CFDA Number': 10.906,
     'Title': 'Watershed Surveys and Planning',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2083,10 +2083,10 @@ export let ReportData = [
     'CFDA Number': 10.907,
     'Title': 'Snow Survey and Water Supply Forecasting',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2094,10 +2094,10 @@ export let ReportData = [
     'CFDA Number': 10.91,
     'Title': 'Rural Abandoned Mine Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2105,10 +2105,10 @@ export let ReportData = [
     'CFDA Number': 10.912,
     'Title': 'Environmental Quality Incentives Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2116,10 +2116,10 @@ export let ReportData = [
     'CFDA Number': 10.913,
     'Title': 'Farm and Ranch Lands Protection Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2127,10 +2127,10 @@ export let ReportData = [
     'CFDA Number': 10.914,
     'Title': 'Wildlife Habitat Incentive Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2138,10 +2138,10 @@ export let ReportData = [
     'CFDA Number': 10.916,
     'Title': 'Watershed Rehabilitation Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 06 2003',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Aug 06, 2003',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2149,10 +2149,10 @@ export let ReportData = [
     'CFDA Number': 10.917,
     'Title': 'Agricultural Management Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 30 2004',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Jan 30, 2004',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2160,10 +2160,10 @@ export let ReportData = [
     'CFDA Number': 10.918,
     'Title': 'Ground and Surface Water Conservation_ Environmental Quality Incentives Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 30 2004',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Jan 30, 2004',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2171,10 +2171,10 @@ export let ReportData = [
     'CFDA Number': 10.919,
     'Title': 'Klamath Basin _ Environmental Quality Incentives Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 02 2004',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Feb 02, 2004',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2182,10 +2182,10 @@ export let ReportData = [
     'CFDA Number': 10.92,
     'Title': 'Grassland Reserve Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 26 2004',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Jul 26, 2004',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2193,10 +2193,10 @@ export let ReportData = [
     'CFDA Number': 10.921,
     'Title': 'Conservation Security Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 26 2004',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Jul 26, 2004',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2204,10 +2204,10 @@ export let ReportData = [
     'CFDA Number': 10.922,
     'Title': 'Healthy Forests Reserve Program (HFRP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 02 2007',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Aug 02, 2007',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2215,10 +2215,10 @@ export let ReportData = [
     'CFDA Number': 10.923,
     'Title': 'Emergency Watershed Protection Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 28 2007',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Aug 28, 2007',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2226,10 +2226,10 @@ export let ReportData = [
     'CFDA Number': 10.95,
     'Title': 'Agricultural Statistics Reports',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2237,10 +2237,10 @@ export let ReportData = [
     'CFDA Number': 10.96,
     'Title': 'Technical Agricultural Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2248,10 +2248,10 @@ export let ReportData = [
     'CFDA Number': 10.961,
     'Title': 'Scientific Cooperation and Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2259,10 +2259,10 @@ export let ReportData = [
     'CFDA Number': 10.962,
     'Title': 'Cochran Fellowship Program-International Training-Foreign Participant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2270,10 +2270,10 @@ export let ReportData = [
     'CFDA Number': 10.989,
     'Title': 'Clean Water',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 03 2016',
+    'Last Updated Date': 'May 03, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 03 2016',
-    'Last Published Date': 'May, 03 2016',
+    'OMB Review Date': 'May 03, 2016',
+    'Last Published Date': 'May 03, 2016',
     'Auto Published': 'No'
   },
   {
@@ -2281,10 +2281,10 @@ export let ReportData = [
     'CFDA Number': 10.994,
     'Title': 'Peanut Quota Buyout Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2292,10 +2292,10 @@ export let ReportData = [
     'CFDA Number': 10.995,
     'Title': 'Hard White Wheat Incentive Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2303,10 +2303,10 @@ export let ReportData = [
     'CFDA Number': 10.999,
     'Title': 'Long Term Standing Agreements For Storage, Transportation And Lease',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 06 2008',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'May 06, 2008',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2314,10 +2314,10 @@ export let ReportData = [
     'CFDA Number': 11.001,
     'Title': 'Census Bureau Data Products',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2325,10 +2325,10 @@ export let ReportData = [
     'CFDA Number': 11.002,
     'Title': 'Census Customer Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2336,10 +2336,10 @@ export let ReportData = [
     'CFDA Number': 11.003,
     'Title': 'Census Geography',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2347,10 +2347,10 @@ export let ReportData = [
     'CFDA Number': 11.004,
     'Title': 'Census Intergovernmental Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2358,10 +2358,10 @@ export let ReportData = [
     'CFDA Number': 11.005,
     'Title': 'Census Special Tabulations and Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2369,10 +2369,10 @@ export let ReportData = [
     'CFDA Number': 11.006,
     'Title': 'Personal Census Search',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2380,10 +2380,10 @@ export let ReportData = [
     'CFDA Number': 11.025,
     'Title': 'Measures and Analyses of the U.S. Economy',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2391,10 +2391,10 @@ export let ReportData = [
     'CFDA Number': 11.026,
     'Title': 'STAT-USA: Key Business, Economic, and International Trade Information',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2402,10 +2402,10 @@ export let ReportData = [
     'CFDA Number': 11.106,
     'Title': 'Remedies for Unfair Foreign Trade Practices_Antidumping and Countervailing Duty Investigations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2413,10 +2413,10 @@ export let ReportData = [
     'CFDA Number': 11.108,
     'Title': 'Commercial Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2424,10 +2424,10 @@ export let ReportData = [
     'CFDA Number': 11.11,
     'Title': 'Manufacturing and Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2435,10 +2435,10 @@ export let ReportData = [
     'CFDA Number': 11.111,
     'Title': 'Foreign-Trade Zones in the United States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2446,10 +2446,10 @@ export let ReportData = [
     'CFDA Number': 11.112,
     'Title': 'Market Development Cooperator Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2457,10 +2457,10 @@ export let ReportData = [
     'CFDA Number': 11.113,
     'Title': 'ITA Special Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2468,10 +2468,10 @@ export let ReportData = [
     'CFDA Number': 11.15,
     'Title': 'Export Licensing Service and Information',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2479,10 +2479,10 @@ export let ReportData = [
     'CFDA Number': 11.3,
     'Title': 'Investments for Public Works and Economic Development Facilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2490,10 +2490,10 @@ export let ReportData = [
     'CFDA Number': 11.302,
     'Title': 'Economic Development_Support for Planning Organizations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 25 2000',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Apr 25, 2000',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2501,10 +2501,10 @@ export let ReportData = [
     'CFDA Number': 11.303,
     'Title': 'Economic Development_Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Oct 21, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2512,10 +2512,10 @@ export let ReportData = [
     'CFDA Number': 11.307,
     'Title': 'Economic Adjustment Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2523,10 +2523,10 @@ export let ReportData = [
     'CFDA Number': 11.312,
     'Title': 'Research and Evaluation Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Oct 21, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2534,10 +2534,10 @@ export let ReportData = [
     'CFDA Number': 11.313,
     'Title': 'Trade Adjustment Assistance for Firms',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2545,10 +2545,10 @@ export let ReportData = [
     'CFDA Number': 11.4,
     'Title': 'Geodetic Surveys and Services (Geodesy and Applications of the National Geodetic Reference System)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2556,10 +2556,10 @@ export let ReportData = [
     'CFDA Number': 11.405,
     'Title': 'Anadromous Fish Conservation Act Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2567,10 +2567,10 @@ export let ReportData = [
     'CFDA Number': 11.407,
     'Title': 'Interjurisdictional Fisheries Act of 1986',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2578,10 +2578,10 @@ export let ReportData = [
     'CFDA Number': 11.408,
     'Title': 'Fishermen\'s Contingency Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2589,10 +2589,10 @@ export let ReportData = [
     'CFDA Number': 11.413,
     'Title': 'Fishery Products Inspection and Certification',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2600,10 +2600,10 @@ export let ReportData = [
     'CFDA Number': 11.415,
     'Title': 'Fisheries Finance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2611,10 +2611,10 @@ export let ReportData = [
     'CFDA Number': 11.417,
     'Title': 'Sea Grant Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2622,10 +2622,10 @@ export let ReportData = [
     'CFDA Number': 11.419,
     'Title': 'Coastal Zone Management Administration Awards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2633,10 +2633,10 @@ export let ReportData = [
     'CFDA Number': 11.42,
     'Title': 'Coastal Zone Management Estuarine Research Reserves',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2644,10 +2644,10 @@ export let ReportData = [
     'CFDA Number': 11.426,
     'Title': 'Financial Assistance for National Centers for Coastal Ocean Science',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2655,10 +2655,10 @@ export let ReportData = [
     'CFDA Number': 11.427,
     'Title': 'Fisheries Development and Utilization Research and Development Grants and Cooperative Agreements Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2666,10 +2666,10 @@ export let ReportData = [
     'CFDA Number': 11.429,
     'Title': 'Marine Sanctuary Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2677,10 +2677,10 @@ export let ReportData = [
     'CFDA Number': 11.43,
     'Title': 'Undersea Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2688,10 +2688,10 @@ export let ReportData = [
     'CFDA Number': 11.431,
     'Title': 'Climate and Atmospheric Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2699,10 +2699,10 @@ export let ReportData = [
     'CFDA Number': 11.432,
     'Title': 'Office of Oceanic and Atmospheric Research (OAR) Joint and Cooperative Institutes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2710,10 +2710,10 @@ export let ReportData = [
     'CFDA Number': 11.433,
     'Title': 'Marine Fisheries Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2721,10 +2721,10 @@ export let ReportData = [
     'CFDA Number': 11.434,
     'Title': 'Cooperative Fishery Statistics',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2732,10 +2732,10 @@ export let ReportData = [
     'CFDA Number': 11.435,
     'Title': 'Southeast Area Monitoring and Assessment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2743,10 +2743,10 @@ export let ReportData = [
     'CFDA Number': 11.436,
     'Title': 'Columbia River Fisheries Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2754,10 +2754,10 @@ export let ReportData = [
     'CFDA Number': 11.437,
     'Title': 'Pacific Fisheries Data Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2765,10 +2765,10 @@ export let ReportData = [
     'CFDA Number': 11.438,
     'Title': 'Pacific Coast Salmon Recovery_Pacific Salmon Treaty Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2776,10 +2776,10 @@ export let ReportData = [
     'CFDA Number': 11.439,
     'Title': 'Marine Mammal Data Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2787,10 +2787,10 @@ export let ReportData = [
     'CFDA Number': 11.44,
     'Title': 'Environmental Sciences, Applications, Data, and Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2798,10 +2798,10 @@ export let ReportData = [
     'CFDA Number': 11.441,
     'Title': 'Regional Fishery Management Councils',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2809,10 +2809,10 @@ export let ReportData = [
     'CFDA Number': 11.443,
     'Title': 'Short Term Climate Fluctuations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2820,10 +2820,10 @@ export let ReportData = [
     'CFDA Number': 11.444,
     'Title': 'Hawaii Sustainable Fisheries Development (Aquaculture Program)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2831,10 +2831,10 @@ export let ReportData = [
     'CFDA Number': 11.445,
     'Title': 'Hawaii Stock Management Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2842,10 +2842,10 @@ export let ReportData = [
     'CFDA Number': 11.449,
     'Title': 'Independent Education and Science Projects and Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2853,10 +2853,10 @@ export let ReportData = [
     'CFDA Number': 11.45,
     'Title': 'Automated Flood Warning Systems (AFWS)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2864,10 +2864,10 @@ export let ReportData = [
     'CFDA Number': 11.452,
     'Title': 'Unallied Industry Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2875,10 +2875,10 @@ export let ReportData = [
     'CFDA Number': 11.454,
     'Title': 'Unallied Management Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2886,10 +2886,10 @@ export let ReportData = [
     'CFDA Number': 11.455,
     'Title': 'Cooperative Science and Education Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2897,10 +2897,10 @@ export let ReportData = [
     'CFDA Number': 11.456,
     'Title': 'Test Para 122',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 19 2017',
+    'Last Updated Date': 'May 19, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2017',
-    'Last Published Date': 'May, 19 2017',
+    'OMB Review Date': 'May 19, 2017',
+    'Last Published Date': 'May 19, 2017',
     'Auto Published': 'No'
   },
   {
@@ -2908,10 +2908,10 @@ export let ReportData = [
     'CFDA Number': 11.457,
     'Title': 'Chesapeake Bay Studies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2919,10 +2919,10 @@ export let ReportData = [
     'CFDA Number': 11.459,
     'Title': 'Weather and Air Quality Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2930,10 +2930,10 @@ export let ReportData = [
     'CFDA Number': 11.46,
     'Title': 'Special Oceanic and Atmospheric Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2941,10 +2941,10 @@ export let ReportData = [
     'CFDA Number': 11.462,
     'Title': 'Hydrologic Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2952,10 +2952,10 @@ export let ReportData = [
     'CFDA Number': 11.463,
     'Title': 'Habitat Conservation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2963,10 +2963,10 @@ export let ReportData = [
     'CFDA Number': 11.467,
     'Title': 'Meteorologic and Hydrologic Modernization Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2974,10 +2974,10 @@ export let ReportData = [
     'CFDA Number': 11.468,
     'Title': 'Applied Meteorological Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2985,10 +2985,10 @@ export let ReportData = [
     'CFDA Number': 11.469,
     'Title': 'Congressionally Identified Awards and  Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -2996,10 +2996,10 @@ export let ReportData = [
     'CFDA Number': 11.472,
     'Title': 'Unallied Science Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3007,10 +3007,10 @@ export let ReportData = [
     'CFDA Number': 11.473,
     'Title': 'Coastal Services Center',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3018,10 +3018,10 @@ export let ReportData = [
     'CFDA Number': 11.474,
     'Title': 'Atlantic Coastal Fisheries Cooperative Management Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3029,10 +3029,10 @@ export let ReportData = [
     'CFDA Number': 11.477,
     'Title': 'Fisheries Disaster Relief',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3040,10 +3040,10 @@ export let ReportData = [
     'CFDA Number': 11.478,
     'Title': 'Center for Sponsored Coastal Ocean Research_Coastal Ocean Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3051,10 +3051,10 @@ export let ReportData = [
     'CFDA Number': 11.48,
     'Title': 'National Ocean Service Intern Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3062,10 +3062,10 @@ export let ReportData = [
     'CFDA Number': 11.481,
     'Title': 'Educational Partnership Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 26 2001',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Oct 26, 2001',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3073,10 +3073,10 @@ export let ReportData = [
     'CFDA Number': 11.55,
     'Title': 'Public Telecommunications Facilities Planning and Construction',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3084,10 +3084,10 @@ export let ReportData = [
     'CFDA Number': 11.553,
     'Title': 'Special Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 24 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Sep 24, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3095,10 +3095,10 @@ export let ReportData = [
     'CFDA Number': 11.554,
     'Title': 'Low-Power Television and Translator Digital-to-Analog Conversion',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 09 2007',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 09, 2007',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3106,10 +3106,10 @@ export let ReportData = [
     'CFDA Number': 11.555,
     'Title': 'Public Safety Interoperable Communications Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 12 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Feb 12, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3117,10 +3117,10 @@ export let ReportData = [
     'CFDA Number': 11.556,
     'Title': 'TV Converter Box Coupon Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 02 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'May 02, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3128,10 +3128,10 @@ export let ReportData = [
     'CFDA Number': 11.557,
     'Title': 'Broadband Technology Opportunities Program (BTOP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -3139,10 +3139,10 @@ export let ReportData = [
     'CFDA Number': 11.558,
     'Title': 'State Broadband Data and Development Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -3150,10 +3150,10 @@ export let ReportData = [
     'CFDA Number': 11.559,
     'Title': 'Low-Power Television and Translator Upgrade Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 19, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -3161,10 +3161,10 @@ export let ReportData = [
     'CFDA Number': 11.601,
     'Title': 'Calibration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3172,10 +3172,10 @@ export let ReportData = [
     'CFDA Number': 11.603,
     'Title': 'National Standard Reference Data System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3183,10 +3183,10 @@ export let ReportData = [
     'CFDA Number': 11.604,
     'Title': 'Standard Reference Materials',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3194,10 +3194,10 @@ export let ReportData = [
     'CFDA Number': 11.606,
     'Title': 'Weights and Measures Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3205,10 +3205,10 @@ export let ReportData = [
     'CFDA Number': 11.609,
     'Title': 'Measurement and Engineering Research and Standards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3216,10 +3216,10 @@ export let ReportData = [
     'CFDA Number': 11.61,
     'Title': 'National Center for Standards and Certification Information',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3227,10 +3227,10 @@ export let ReportData = [
     'CFDA Number': 11.611,
     'Title': 'Manufacturing Extension Partnership',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3238,10 +3238,10 @@ export let ReportData = [
     'CFDA Number': 11.612,
     'Title': 'Advanced Technology Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3249,10 +3249,10 @@ export let ReportData = [
     'CFDA Number': 11.616,
     'Title': 'Technology Innovation Program (TIP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 19 2008',
+    'Last Updated Date': 'Dec 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 22 2008',
-    'Last Published Date': 'Dec, 19 2008',
+    'OMB Review Date': 'Oct 22, 2008',
+    'Last Published Date': 'Dec 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3260,10 +3260,10 @@ export let ReportData = [
     'CFDA Number': 11.617,
     'Title': 'Congressionally-Identified Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 24 2003',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Mar 24, 2003',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3271,10 +3271,10 @@ export let ReportData = [
     'CFDA Number': 11.618,
     'Title': 'National Institute of Standards and Technology Construction Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 18 2008',
+    'Last Updated Date': 'Dec 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 24 2008',
-    'Last Published Date': 'Dec, 18 2008',
+    'OMB Review Date': 'Nov 24, 2008',
+    'Last Published Date': 'Dec 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3282,10 +3282,10 @@ export let ReportData = [
     'CFDA Number': 11.65,
     'Title': 'National Technical Information Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3293,10 +3293,10 @@ export let ReportData = [
     'CFDA Number': 11.702,
     'Title': 'Internship Program for Postsecondary Students',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3304,10 +3304,10 @@ export let ReportData = [
     'CFDA Number': 11.8,
     'Title': 'Minority Business Enterprise Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3315,10 +3315,10 @@ export let ReportData = [
     'CFDA Number': 11.801,
     'Title': 'Native American Business Enterprise Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3326,10 +3326,10 @@ export let ReportData = [
     'CFDA Number': 11.803,
     'Title': 'Minority Business Opportunity Center (MBOC)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3337,10 +3337,10 @@ export let ReportData = [
     'CFDA Number': 11.9,
     'Title': 'Patent and Trademark Technical Information Dissemination',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3348,10 +3348,10 @@ export let ReportData = [
     'CFDA Number': 12.002,
     'Title': 'Procurement Technical Assistance For Business Firms',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3359,10 +3359,10 @@ export let ReportData = [
     'CFDA Number': 12.003,
     'Title': 'Geographically Separated Families Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 01 2014',
+    'Last Updated Date': 'Apr 01, 2014',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 23 2014',
-    'Last Published Date': 'Apr, 01 2014',
+    'OMB Review Date': 'Mar 23, 2014',
+    'Last Published Date': 'Apr 01, 2014',
     'Auto Published': 'Yes'
   },
   {
@@ -3370,10 +3370,10 @@ export let ReportData = [
     'CFDA Number': 12.1,
     'Title': 'Aquatic Plant Control',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3381,10 +3381,10 @@ export let ReportData = [
     'CFDA Number': 12.101,
     'Title': 'Beach Erosion Control Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3392,10 +3392,10 @@ export let ReportData = [
     'CFDA Number': 12.102,
     'Title': 'Emergency Rehabilitation of Flood Control Works or Federally Authorized Coastal Protection Works',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3403,10 +3403,10 @@ export let ReportData = [
     'CFDA Number': 12.103,
     'Title': 'Emergency Operations Flood Response and Post Flood Response',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3414,10 +3414,10 @@ export let ReportData = [
     'CFDA Number': 12.104,
     'Title': 'Flood Plain Management Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3425,10 +3425,10 @@ export let ReportData = [
     'CFDA Number': 12.105,
     'Title': 'Protection of Essential Highways, Highway Bridge Approaches, and Public Works',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3436,10 +3436,10 @@ export let ReportData = [
     'CFDA Number': 12.106,
     'Title': 'Flood Control Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3447,10 +3447,10 @@ export let ReportData = [
     'CFDA Number': 12.107,
     'Title': 'Navigation Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3458,10 +3458,10 @@ export let ReportData = [
     'CFDA Number': 12.108,
     'Title': 'Snagging and Clearing for Flood Control',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3469,10 +3469,10 @@ export let ReportData = [
     'CFDA Number': 12.109,
     'Title': 'Protection, Clearing and Straightening Channels',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3480,10 +3480,10 @@ export let ReportData = [
     'CFDA Number': 12.11,
     'Title': 'Planning Assistance to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3491,10 +3491,10 @@ export let ReportData = [
     'CFDA Number': 12.111,
     'Title': 'Emergency Advance Measures for Flood Prevention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3502,10 +3502,10 @@ export let ReportData = [
     'CFDA Number': 12.112,
     'Title': 'Payments to States in Lieu of Real Estate Taxes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3513,10 +3513,10 @@ export let ReportData = [
     'CFDA Number': 12.113,
     'Title': 'State Memorandum of Agreement Program for the Reimbursement of Technical Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3524,10 +3524,10 @@ export let ReportData = [
     'CFDA Number': 12.114,
     'Title': 'Collaborative Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3535,10 +3535,10 @@ export let ReportData = [
     'CFDA Number': 12.116,
     'Title': 'Department of Defense Appropriation Act of 2003',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 2003',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Oct 21, 2003',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3546,10 +3546,10 @@ export let ReportData = [
     'CFDA Number': 12.3,
     'Title': 'Basic and Applied Scientific Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3557,10 +3557,10 @@ export let ReportData = [
     'CFDA Number': 12.35,
     'Title': 'Department of Defense HIV/AIDS Prevention Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 24 2006',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Aug 24, 2006',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3568,10 +3568,10 @@ export let ReportData = [
     'CFDA Number': 12.351,
     'Title': 'Basic  Scientific Research - Combating Weapons of Mass Destruction',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 02 2007',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Aug 02, 2007',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3579,10 +3579,10 @@ export let ReportData = [
     'CFDA Number': 12.352,
     'Title': 'Scientific Research - Combating Weapons of Mass Destruction',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 27 2007',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Aug 27, 2007',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3590,10 +3590,10 @@ export let ReportData = [
     'CFDA Number': 12.36,
     'Title': 'Research on Chemical and Biological Defense',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 28 2007',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Aug 28, 2007',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3601,10 +3601,10 @@ export let ReportData = [
     'CFDA Number': 12.4,
     'Title': 'Military Construction, National Guard',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3612,10 +3612,10 @@ export let ReportData = [
     'CFDA Number': 12.401,
     'Title': 'National Guard Military Operations and Maintenance (O&M) Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3623,10 +3623,10 @@ export let ReportData = [
     'CFDA Number': 12.404,
     'Title': 'National Guard Civilian Youth Opportunities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 08 2001',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Mar 08, 2001',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3634,10 +3634,10 @@ export let ReportData = [
     'CFDA Number': 12.42,
     'Title': 'Military Medical Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3645,10 +3645,10 @@ export let ReportData = [
     'CFDA Number': 12.431,
     'Title': 'Basic Scientific Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3656,10 +3656,10 @@ export let ReportData = [
     'CFDA Number': 12.55,
     'Title': 'National Flagship Language Program Grants To U.S. Institutions Of Higher Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3667,10 +3667,10 @@ export let ReportData = [
     'CFDA Number': 12.551,
     'Title': 'National Security Education Program David L. Boren Scholarships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3678,10 +3678,10 @@ export let ReportData = [
     'CFDA Number': 12.552,
     'Title': 'National Security Education Program David L. Boren Fellowships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3689,10 +3689,10 @@ export let ReportData = [
     'CFDA Number': 12.553,
     'Title': 'National Flagship Language Program Fellowships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 12 2006',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Oct 12, 2006',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3700,10 +3700,10 @@ export let ReportData = [
     'CFDA Number': 12.554,
     'Title': 'English for Heritage Language Speakers Grants to U.S. Institutions of Higher Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2006',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Oct 17, 2006',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3711,10 +3711,10 @@ export let ReportData = [
     'CFDA Number': 12.555,
     'Title': 'English for Heritage Language Speakers Scholarships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2006',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Oct 17, 2006',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3722,10 +3722,10 @@ export let ReportData = [
     'CFDA Number': 12.607,
     'Title': 'Community Economic Adjustment Assistance for Establishment, Expansion, Realignment, or Closure of a Military Installation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3733,10 +3733,10 @@ export let ReportData = [
     'CFDA Number': 12.61,
     'Title': 'Community Economic Adjustment Planning Assistance for Joint Land Use Studies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3744,10 +3744,10 @@ export let ReportData = [
     'CFDA Number': 12.611,
     'Title': 'Community Economic Adjustment Planning Assistance for Reductions in Defense Industry Employment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3755,10 +3755,10 @@ export let ReportData = [
     'CFDA Number': 12.614,
     'Title': 'Community Economic Adjustment Diversification Planning',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 23 2005',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Mar 23, 2005',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3766,10 +3766,10 @@ export let ReportData = [
     'CFDA Number': 12.615,
     'Title': 'RESEARCH AND TECHNICAL ASSISTANCE',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 06 2009',
+    'Last Updated Date': 'Jan 06, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 25 2008',
-    'Last Published Date': 'Jan, 06 2009',
+    'OMB Review Date': 'Nov 25, 2008',
+    'Last Published Date': 'Jan 06, 2009',
     'Auto Published': 'No'
   },
   {
@@ -3777,10 +3777,10 @@ export let ReportData = [
     'CFDA Number': 12.63,
     'Title': 'Basic, Applied, and Advanced Research in Science and Engineering',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3788,10 +3788,10 @@ export let ReportData = [
     'CFDA Number': 12.7,
     'Title': 'Donations/Loans of Obsolete DOD Property',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 19 2008',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 19, 2008',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3799,10 +3799,10 @@ export let ReportData = [
     'CFDA Number': 12.8,
     'Title': 'Air Force Defense Research Sciences Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3810,10 +3810,10 @@ export let ReportData = [
     'CFDA Number': 12.9,
     'Title': 'Language Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3821,10 +3821,10 @@ export let ReportData = [
     'CFDA Number': 12.901,
     'Title': 'Mathematical Sciences Grants Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3832,10 +3832,10 @@ export let ReportData = [
     'CFDA Number': 12.902,
     'Title': 'Information Security Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3843,10 +3843,10 @@ export let ReportData = [
     'CFDA Number': 12.91,
     'Title': 'Research and Technology Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3854,10 +3854,10 @@ export let ReportData = [
     'CFDA Number': 14.103,
     'Title': 'Interest Reduction Payments_Rental and Cooperative Housing for Lower Income Families',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3865,10 +3865,10 @@ export let ReportData = [
     'CFDA Number': 14.108,
     'Title': 'Rehabilitation Mortgage Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3876,10 +3876,10 @@ export let ReportData = [
     'CFDA Number': 14.11,
     'Title': 'Manufactured Home Loan Insurance_Financing Purchase of Manufactured Homes as Principal Residences of Borrowers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 17 2008',
+    'Last Updated Date': 'Oct 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2008',
-    'Last Published Date': 'Oct, 17 2008',
+    'OMB Review Date': 'Oct 17, 2008',
+    'Last Published Date': 'Oct 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3887,10 +3887,10 @@ export let ReportData = [
     'CFDA Number': 14.112,
     'Title': 'Mortgage Insurance for Construction or Substantial Rehabilitation of Condominium Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3898,10 +3898,10 @@ export let ReportData = [
     'CFDA Number': 14.117,
     'Title': 'Mortgage Insurance_Homes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 17 2008',
+    'Last Updated Date': 'Oct 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2008',
-    'Last Published Date': 'Oct, 17 2008',
+    'OMB Review Date': 'Oct 17, 2008',
+    'Last Published Date': 'Oct 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3909,10 +3909,10 @@ export let ReportData = [
     'CFDA Number': 14.119,
     'Title': 'Mortgage Insurance_Homes for Disaster Victims',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2008',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Oct 20, 2008',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3920,10 +3920,10 @@ export let ReportData = [
     'CFDA Number': 14.122,
     'Title': 'Mortgage Insurance_Homes in Urban Renewal Areas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3931,10 +3931,10 @@ export let ReportData = [
     'CFDA Number': 14.123,
     'Title': 'Mortgage Insurance_Housing in Older, Declining Areas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3942,10 +3942,10 @@ export let ReportData = [
     'CFDA Number': 14.126,
     'Title': 'Mortgage Insurance_Cooperative Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3953,10 +3953,10 @@ export let ReportData = [
     'CFDA Number': 14.127,
     'Title': 'Mortgage Insurance_Manufactured Home Parks',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3964,10 +3964,10 @@ export let ReportData = [
     'CFDA Number': 14.128,
     'Title': 'Mortgage Insurance_Hospitals',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3975,10 +3975,10 @@ export let ReportData = [
     'CFDA Number': 14.129,
     'Title': 'Mortgage Insurance_Nursing Homes, Intermediate Care Facilities, Board and Care Homes and Assisted Living Facilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3986,10 +3986,10 @@ export let ReportData = [
     'CFDA Number': 14.133,
     'Title': 'Mortgage Insurance_Purchase of Units in Condominiums',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -3997,10 +3997,10 @@ export let ReportData = [
     'CFDA Number': 14.134,
     'Title': 'Mortgage Insurance_Rental Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4008,10 +4008,10 @@ export let ReportData = [
     'CFDA Number': 14.135,
     'Title': 'Mortgage Insurance_Rental and Cooperative Housing for Moderate Income Families and Elderly, Market Interest Rate',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4019,10 +4019,10 @@ export let ReportData = [
     'CFDA Number': 14.138,
     'Title': 'Mortgage Insurance_Rental Housing for the Elderly',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4030,10 +4030,10 @@ export let ReportData = [
     'CFDA Number': 14.139,
     'Title': 'Mortgage Insurance_Rental Housing in Urban Renewal Areas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4041,10 +4041,10 @@ export let ReportData = [
     'CFDA Number': 14.142,
     'Title': 'Property Improvement Loan Insurance for Improving All Existing Structures and Building of New Nonresidential Structures',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4052,10 +4052,10 @@ export let ReportData = [
     'CFDA Number': 14.149,
     'Title': 'Rent Supplements_Rental Housing for Lower Income Families',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4063,10 +4063,10 @@ export let ReportData = [
     'CFDA Number': 14.151,
     'Title': 'Supplemental Loan Insurance_Multifamily Rental Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4074,10 +4074,10 @@ export let ReportData = [
     'CFDA Number': 14.155,
     'Title': 'Mortgage Insurance for the Purchase or Refinancing of Existing Multifamily Housing Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4085,10 +4085,10 @@ export let ReportData = [
     'CFDA Number': 14.157,
     'Title': 'Supportive Housing for the Elderly',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 01 2008',
+    'Last Updated Date': 'Dec 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 01 2008',
-    'Last Published Date': 'Dec, 01 2008',
+    'OMB Review Date': 'Dec 01, 2008',
+    'Last Published Date': 'Dec 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4096,10 +4096,10 @@ export let ReportData = [
     'CFDA Number': 14.159,
     'Title': 'Section 245 Graduated Payment Mortgage Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4107,10 +4107,10 @@ export let ReportData = [
     'CFDA Number': 14.162,
     'Title': 'Mortgage Insurance_Combination and Manufactured Home Lot Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4118,10 +4118,10 @@ export let ReportData = [
     'CFDA Number': 14.163,
     'Title': 'Mortgage Insurance_Single Family Cooperative Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4129,10 +4129,10 @@ export let ReportData = [
     'CFDA Number': 14.164,
     'Title': 'Operating Assistance for Troubled Multifamily Housing Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4140,10 +4140,10 @@ export let ReportData = [
     'CFDA Number': 14.167,
     'Title': 'Mortgage Insurance_Two Year Operating Loss Loans, Section 223(d)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4151,10 +4151,10 @@ export let ReportData = [
     'CFDA Number': 14.168,
     'Title': 'Land Sales_Certain Subdivided Land',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2008',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Oct 20, 2008',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4162,10 +4162,10 @@ export let ReportData = [
     'CFDA Number': 14.169,
     'Title': 'Housing Counseling Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4173,10 +4173,10 @@ export let ReportData = [
     'CFDA Number': 14.171,
     'Title': 'Manufactured Home Construction and Safety Standards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 19 2016',
+    'Last Updated Date': 'Apr 19, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4184,10 +4184,10 @@ export let ReportData = [
     'CFDA Number': 14.172,
     'Title': 'Mortgage Insurance_Growing Equity Mortgages',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2008',
+    'Last Updated Date': 'Jul 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2008',
-    'Last Published Date': 'Jul, 08 2008',
+    'OMB Review Date': 'Jul 08, 2008',
+    'Last Published Date': 'Jul 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4195,10 +4195,10 @@ export let ReportData = [
     'CFDA Number': 14.175,
     'Title': 'Adjustable Rate Mortgages',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4206,10 +4206,10 @@ export let ReportData = [
     'CFDA Number': 14.181,
     'Title': 'Supportive Housing for Persons with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4217,10 +4217,10 @@ export let ReportData = [
     'CFDA Number': 14.183,
     'Title': 'Home Equity Conversion Mortgages',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4228,10 +4228,10 @@ export let ReportData = [
     'CFDA Number': 14.184,
     'Title': 'Mortgages Insurance for Single Room Occupancy (SRO) Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4239,10 +4239,10 @@ export let ReportData = [
     'CFDA Number': 14.188,
     'Title': 'Housing Finance Agencies (HFA) Risk Sharing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4250,10 +4250,10 @@ export let ReportData = [
     'CFDA Number': 14.189,
     'Title': 'Qualified Participating Entities (QPE) Risk Sharing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4261,10 +4261,10 @@ export let ReportData = [
     'CFDA Number': 14.191,
     'Title': 'Multifamily Housing Service Coordinators',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 14 2008',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'Oct 14, 2008',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4272,10 +4272,10 @@ export let ReportData = [
     'CFDA Number': 14.195,
     'Title': 'Section 8 Housing Assistance Payments Program_Special Allocations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4283,10 +4283,10 @@ export let ReportData = [
     'CFDA Number': 14.197,
     'Title': 'Multifamily Assisted Housing Reform and Affordability Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4294,10 +4294,10 @@ export let ReportData = [
     'CFDA Number': 14.198,
     'Title': 'Good Neighbor Next Door Sales Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 1999',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Oct 21, 1999',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4305,10 +4305,10 @@ export let ReportData = [
     'CFDA Number': 14.199,
     'Title': 'Multifamily Property Disposition',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 16 2000',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'May 16, 2000',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4316,10 +4316,10 @@ export let ReportData = [
     'CFDA Number': 14.218,
     'Title': 'Community Development Block Grants/Entitlement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4327,10 +4327,10 @@ export let ReportData = [
     'CFDA Number': 14.225,
     'Title': 'Community Development Block Grants/Special Purpose Grants/Insular Areas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4338,10 +4338,10 @@ export let ReportData = [
     'CFDA Number': 14.227,
     'Title': 'Community Development Block Grants/Technical Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 27 2004',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Apr 27, 2004',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4349,10 +4349,10 @@ export let ReportData = [
     'CFDA Number': 14.228,
     'Title': 'Community Development Block Grants/State\'s program and Non-Entitlement Grants in Hawaii',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 23 2008',
+    'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2008',
-    'Last Published Date': 'Jul, 23 2008',
+    'OMB Review Date': 'Jul 23, 2008',
+    'Last Published Date': 'Jul 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4360,10 +4360,10 @@ export let ReportData = [
     'CFDA Number': 14.231,
     'Title': 'Emergency Shelter Grants Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4371,10 +4371,10 @@ export let ReportData = [
     'CFDA Number': 14.235,
     'Title': 'Supportive Housing Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2008',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Jul 25, 2008',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4382,10 +4382,10 @@ export let ReportData = [
     'CFDA Number': 14.238,
     'Title': 'Shelter Plus Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2008',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Jul 25, 2008',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4393,10 +4393,10 @@ export let ReportData = [
     'CFDA Number': 14.239,
     'Title': 'Home Investment Partnerships Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4404,10 +4404,10 @@ export let ReportData = [
     'CFDA Number': 14.241,
     'Title': 'Housing Opportunities for Persons with AIDS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4415,10 +4415,10 @@ export let ReportData = [
     'CFDA Number': 14.244,
     'Title': 'Empowerment Zones Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2008',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Jul 25, 2008',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4426,10 +4426,10 @@ export let ReportData = [
     'CFDA Number': 14.246,
     'Title': 'Community Development Block Grants/Brownfields Economic Development Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2008',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Jul 25, 2008',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4437,10 +4437,10 @@ export let ReportData = [
     'CFDA Number': 14.247,
     'Title': 'Self-Help Homeownership Opportunity Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4448,10 +4448,10 @@ export let ReportData = [
     'CFDA Number': 14.248,
     'Title': 'Community Development Block Grants_Section 108 Loan Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4459,10 +4459,10 @@ export let ReportData = [
     'CFDA Number': 14.249,
     'Title': 'Section 8 Moderate Rehabilitation Single Room Occupancy',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2008',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Jul 25, 2008',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4470,10 +4470,10 @@ export let ReportData = [
     'CFDA Number': 14.25,
     'Title': 'Rural Housing and Economic Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2008',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Jul 25, 2008',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4481,10 +4481,10 @@ export let ReportData = [
     'CFDA Number': 14.251,
     'Title': 'Economic Development Initiative-Special Project, Neighborhood Initiative and Miscellaneous Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 18 2006',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Oct 18, 2006',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4492,10 +4492,10 @@ export let ReportData = [
     'CFDA Number': 14.252,
     'Title': 'Section 4 Capacity Building for Affordable Housing and Community Development Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 16 2007',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Apr 16, 2007',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4503,10 +4503,10 @@ export let ReportData = [
     'CFDA Number': 14.253,
     'Title': 'Community Development Block Grant ARRA Entitlement Grants (CDBG-R)(Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4514,10 +4514,10 @@ export let ReportData = [
     'CFDA Number': 14.254,
     'Title': 'Community Development Block Grants/Special Purpose Grants/Insular Areas � (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4525,10 +4525,10 @@ export let ReportData = [
     'CFDA Number': 14.255,
     'Title': 'Community Development Block Grants/State\'s program and Non-Entitlement Grants in Hawaii � (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4536,10 +4536,10 @@ export let ReportData = [
     'CFDA Number': 14.256,
     'Title': 'Neighborhood Stabilization Program (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4547,10 +4547,10 @@ export let ReportData = [
     'CFDA Number': 14.257,
     'Title': 'Homelessness Prevention and Rapid Re-Housing Program (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4558,10 +4558,10 @@ export let ReportData = [
     'CFDA Number': 14.258,
     'Title': 'Tax Credit Assistance Program (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4569,10 +4569,10 @@ export let ReportData = [
     'CFDA Number': 14.311,
     'Title': 'Single Family Property Disposition',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 25 2000',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Apr 25, 2000',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4580,10 +4580,10 @@ export let ReportData = [
     'CFDA Number': 14.313,
     'Title': 'Dollar Home Sales',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4591,10 +4591,10 @@ export let ReportData = [
     'CFDA Number': 14.314,
     'Title': 'Assisted Living Conversion for Eligible Multifamily Housing Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4602,10 +4602,10 @@ export let ReportData = [
     'CFDA Number': 14.315,
     'Title': 'Emergency Capital Repair Grants for Multifamily Housing Projects Designated for Occupancy',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2006',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'May 18, 2006',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4613,10 +4613,10 @@ export let ReportData = [
     'CFDA Number': 14.316,
     'Title': 'Housing Counseling Training Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 25 2008',
+    'Last Updated Date': 'Jul 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 16 2006',
-    'Last Published Date': 'Jul, 25 2008',
+    'OMB Review Date': 'Nov 16, 2006',
+    'Last Published Date': 'Jul 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4624,10 +4624,10 @@ export let ReportData = [
     'CFDA Number': 14.317,
     'Title': 'Section 8 Housing Assistance Payments Program Special Allocations (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 13, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4635,10 +4635,10 @@ export let ReportData = [
     'CFDA Number': 14.318,
     'Title': 'Assisted Housing Stability and Energy and Green Retrofit Investments Program (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 12 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 12, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -4646,10 +4646,10 @@ export let ReportData = [
     'CFDA Number': 14.4,
     'Title': 'Equal Opportunity in Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4657,10 +4657,10 @@ export let ReportData = [
     'CFDA Number': 14.401,
     'Title': 'Fair Housing Assistance Program_State and Local',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4668,10 +4668,10 @@ export let ReportData = [
     'CFDA Number': 14.402,
     'Title': 'Non-Discrimination in Federally-Assisted Programs (On the Basis of Age)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2008',
+    'Last Updated Date': 'Jul 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2008',
-    'Last Published Date': 'Jul, 08 2008',
+    'OMB Review Date': 'Jul 08, 2008',
+    'Last Published Date': 'Jul 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4679,10 +4679,10 @@ export let ReportData = [
     'CFDA Number': 14.404,
     'Title': 'Non-Discrimination in Federally Assisted and Conducted Programs (On the Basis of Disability)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4690,10 +4690,10 @@ export let ReportData = [
     'CFDA Number': 14.405,
     'Title': 'Non-Discrimination in Federally Assisted Programs (On the Basis of Race, Color, or National Origin)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 10 2008',
+    'Last Updated Date': 'Jul 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 10 2008',
-    'Last Published Date': 'Jul, 10 2008',
+    'OMB Review Date': 'Jul 10, 2008',
+    'Last Published Date': 'Jul 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4702,10 +4702,10 @@ export let ReportData = [
     'Title': 'Non-Discrimination in the Community Development Block Grant \
     Program (On the Basis of Race, Color, National Origin, Religion, or Sex)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 09 2008',
+    'Last Updated Date': 'Jul 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 09 2008',
-    'Last Published Date': 'Jul, 09 2008',
+    'OMB Review Date': 'Jul 09, 2008',
+    'Last Published Date': 'Jul 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4713,10 +4713,10 @@ export let ReportData = [
     'CFDA Number': 14.407,
     'Title': 'Architectural Barriers Act Enforcement',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 15 2008',
+    'Last Updated Date': 'Jul 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 15 2008',
-    'Last Published Date': 'Jul, 15 2008',
+    'OMB Review Date': 'Jul 15, 2008',
+    'Last Published Date': 'Jul 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4724,10 +4724,10 @@ export let ReportData = [
     'CFDA Number': 14.408,
     'Title': 'Fair Housing Initiatives Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2008',
+    'Last Updated Date': 'Jul 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2008',
-    'Last Published Date': 'Jul, 08 2008',
+    'OMB Review Date': 'Jul 08, 2008',
+    'Last Published Date': 'Jul 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4735,10 +4735,10 @@ export let ReportData = [
     'CFDA Number': 14.412,
     'Title': 'Employment Opportunities for Lower Income Persons and Businesses',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 28 2008',
+    'Last Updated Date': 'Jul 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 28 2008',
-    'Last Published Date': 'Jul, 28 2008',
+    'OMB Review Date': 'Jul 28, 2008',
+    'Last Published Date': 'Jul 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4746,10 +4746,10 @@ export let ReportData = [
     'CFDA Number': 14.414,
     'Title': 'Non-Discrimination on the Basis of Disability by Public Entities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 28 2008',
+    'Last Updated Date': 'Jul 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 28 2008',
-    'Last Published Date': 'Jul, 28 2008',
+    'OMB Review Date': 'Jul 28, 2008',
+    'Last Published Date': 'Jul 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4757,10 +4757,10 @@ export let ReportData = [
     'CFDA Number': 14.415,
     'Title': 'Non-Discrimination on the Basis of Sex in Education Programs and Activities Receiving Federal Financial Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 28 2008',
+    'Last Updated Date': 'Jul 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Jul, 28 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Jul 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4768,10 +4768,10 @@ export let ReportData = [
     'CFDA Number': 14.506,
     'Title': 'General Research and Technology Activity',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 28 2008',
+    'Last Updated Date': 'Jul 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 28 2008',
-    'Last Published Date': 'Jul, 28 2008',
+    'OMB Review Date': 'Jul 28, 2008',
+    'Last Published Date': 'Jul 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4779,10 +4779,10 @@ export let ReportData = [
     'CFDA Number': 14.514,
     'Title': 'Hispanic-Serving Institutions Assisting Communities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4790,10 +4790,10 @@ export let ReportData = [
     'CFDA Number': 14.515,
     'Title': 'Alaska Native/Native Hawaiian Institutions Assisting Communities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 16 2000',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'May 16, 2000',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4801,10 +4801,10 @@ export let ReportData = [
     'CFDA Number': 14.516,
     'Title': 'Doctoral Dissertation Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 29 2008',
+    'Last Updated Date': 'Jul 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Jul, 29 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Jul 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4812,10 +4812,10 @@ export let ReportData = [
     'CFDA Number': 14.517,
     'Title': 'Early Doctoral Student Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 29 2008',
+    'Last Updated Date': 'Jul 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Jul, 29 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Jul 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4823,10 +4823,10 @@ export let ReportData = [
     'CFDA Number': 14.519,
     'Title': 'Tribal Colleges and Universities Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4834,10 +4834,10 @@ export let ReportData = [
     'CFDA Number': 14.52,
     'Title': 'Historically Black Colleges and Universities Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 31 2008',
+    'Last Updated Date': 'Jul 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Jul, 31 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Jul 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4845,10 +4845,10 @@ export let ReportData = [
     'CFDA Number': 14.85,
     'Title': 'Public and Indian Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2008',
+    'Last Updated Date': 'Jul 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2008',
-    'Last Published Date': 'Jul, 08 2008',
+    'OMB Review Date': 'Jul 08, 2008',
+    'Last Published Date': 'Jul 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4856,10 +4856,10 @@ export let ReportData = [
     'CFDA Number': 14.856,
     'Title': 'Lower Income Housing Assistance Program_Section 8 Moderate Rehabilitation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4867,10 +4867,10 @@ export let ReportData = [
     'CFDA Number': 14.862,
     'Title': 'Indian Community Development Block Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4878,10 +4878,10 @@ export let ReportData = [
     'CFDA Number': 14.865,
     'Title': 'Public and Indian Housing_Indian Loan Guarantee Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 01 2008',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'Aug 01, 2008',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4889,10 +4889,10 @@ export let ReportData = [
     'CFDA Number': 14.866,
     'Title': 'Demolition and Revitalization of Severely Distressed Public Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 01 2008',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'Aug 01, 2008',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4900,10 +4900,10 @@ export let ReportData = [
     'CFDA Number': 14.867,
     'Title': 'Indian Housing Block Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 01 2008',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'Aug 01, 2008',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4911,10 +4911,10 @@ export let ReportData = [
     'CFDA Number': 14.869,
     'Title': 'Title VI Federal Guarantees for Financing Tribal Housing Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2008',
+    'Last Updated Date': 'Jul 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2008',
-    'Last Published Date': 'Jul, 08 2008',
+    'OMB Review Date': 'Jul 08, 2008',
+    'Last Published Date': 'Jul 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4922,10 +4922,10 @@ export let ReportData = [
     'CFDA Number': 14.87,
     'Title': 'Resident Opportunity and Supportive Services - Service Coordinators',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4933,10 +4933,10 @@ export let ReportData = [
     'CFDA Number': 14.871,
     'Title': 'Section 8 Housing Choice Vouchers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 25 2000',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Apr 25, 2000',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4944,10 +4944,10 @@ export let ReportData = [
     'CFDA Number': 14.872,
     'Title': 'Public Housing Capital Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 03 2000',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'May 03, 2000',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4955,10 +4955,10 @@ export let ReportData = [
     'CFDA Number': 14.873,
     'Title': 'Native Hawaiian Housing Block Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2003',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'Jul 21, 2003',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4966,10 +4966,10 @@ export let ReportData = [
     'CFDA Number': 14.874,
     'Title': 'Loan Guarantees for Native Hawaiian Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 15 2003',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 15, 2003',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4977,10 +4977,10 @@ export let ReportData = [
     'CFDA Number': 14.875,
     'Title': 'Public Housing Neighborhood Networks Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 15 2008',
+    'Last Updated Date': 'Jul 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Jul, 15 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Jul 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4988,10 +4988,10 @@ export let ReportData = [
     'CFDA Number': 14.876,
     'Title': 'Resident Opportunity and Supportive Services - Elderly and Persons with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 15 2006',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Feb 15, 2006',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -4999,10 +4999,10 @@ export let ReportData = [
     'CFDA Number': 14.877,
     'Title': 'Public Housing Family Self-Sufficiency under Resident Opportunity and Supportive Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 15 2006',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Feb 15, 2006',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5010,10 +5010,10 @@ export let ReportData = [
     'CFDA Number': 14.878,
     'Title': 'Affordable Housing Development in Main Street Rejuvenation Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2006',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'Nov 14, 2006',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5021,10 +5021,10 @@ export let ReportData = [
     'CFDA Number': 14.879,
     'Title': 'Mainstream Vouchers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 14 2006',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'Dec 14, 2006',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5032,10 +5032,10 @@ export let ReportData = [
     'CFDA Number': 14.88,
     'Title': 'Family Unification Program (FUP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 03 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 03, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5043,10 +5043,10 @@ export let ReportData = [
     'CFDA Number': 14.881,
     'Title': 'Moving to Work Demonstration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5054,10 +5054,10 @@ export let ReportData = [
     'CFDA Number': 14.882,
     'Title': 'Native American Housing Block Grants (Formula) Recovery Act Funded',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 08, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5065,10 +5065,10 @@ export let ReportData = [
     'CFDA Number': 14.883,
     'Title': 'Native Hawaiian Housing Block Grants (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 08, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5076,10 +5076,10 @@ export let ReportData = [
     'CFDA Number': 14.884,
     'Title': 'Public Housing Capital Fund Competitive (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 12 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 12, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5087,10 +5087,10 @@ export let ReportData = [
     'CFDA Number': 14.885,
     'Title': 'Public Housing Capital Fund Stimulus (Formula) Recovery Act Funded',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 11 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 11, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5098,10 +5098,10 @@ export let ReportData = [
     'CFDA Number': 14.886,
     'Title': 'Indian Community Development Block Grant Program  (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 11 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 11, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5109,10 +5109,10 @@ export let ReportData = [
     'CFDA Number': 14.887,
     'Title': 'Native American Housing Block Grants (Competitive) Recovery Act Funded',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 12 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 12, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5120,10 +5120,10 @@ export let ReportData = [
     'CFDA Number': 14.9,
     'Title': 'Lead-Based Paint Hazard Control in Privately-Owned Housing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5131,10 +5131,10 @@ export let ReportData = [
     'CFDA Number': 14.901,
     'Title': 'Healthy Homes Demonstration Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 28 2000',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Apr 28, 2000',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5142,10 +5142,10 @@ export let ReportData = [
     'CFDA Number': 14.902,
     'Title': 'Lead Technical Studies Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2003',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jul 08, 2003',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5153,10 +5153,10 @@ export let ReportData = [
     'CFDA Number': 14.903,
     'Title': 'Operation Lead Elimination Action Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2003',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jun 20, 2003',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5164,10 +5164,10 @@ export let ReportData = [
     'CFDA Number': 14.904,
     'Title': 'Lead Outreach Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2003',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Jun 20, 2003',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5175,10 +5175,10 @@ export let ReportData = [
     'CFDA Number': 14.905,
     'Title': 'Lead Hazard Reduction Demonstration Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2003',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jun 20, 2003',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5186,10 +5186,10 @@ export let ReportData = [
     'CFDA Number': 14.906,
     'Title': 'Healthy Homes Technical Studies Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 27 2004',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Apr 27, 2004',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5197,10 +5197,10 @@ export let ReportData = [
     'CFDA Number': 14.907,
     'Title': 'Lead-Based Paint Hazard Control in Privately-Owned Housing (Recovery Act  Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 13, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5208,10 +5208,10 @@ export let ReportData = [
     'CFDA Number': 14.908,
     'Title': 'Healthy Homes Demonstration Grants (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 13, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5219,10 +5219,10 @@ export let ReportData = [
     'CFDA Number': 14.909,
     'Title': 'Lead Hazard Reduction Demonstration Grant Program (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 13, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5230,10 +5230,10 @@ export let ReportData = [
     'CFDA Number': 14.91,
     'Title': 'Healthy Homes Technical Studies Grants (Recovery Act Funded)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 13, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5241,10 +5241,10 @@ export let ReportData = [
     'CFDA Number': 15.02,
     'Title': 'Aid To Tribal Governments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 01 2010',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Dec 01, 2010',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -5252,10 +5252,10 @@ export let ReportData = [
     'CFDA Number': 15.021,
     'Title': 'Consolidated Tribal Government Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2002',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Jun 05, 2002',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5263,10 +5263,10 @@ export let ReportData = [
     'CFDA Number': 15.022,
     'Title': 'Tribal Self-Governance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5274,10 +5274,10 @@ export let ReportData = [
     'CFDA Number': 15.024,
     'Title': 'Indian Self-Determination Contract Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 28 2011',
+    'Last Updated Date': 'Jan 28, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 19 2011',
-    'Last Published Date': 'Jan, 28 2011',
+    'OMB Review Date': 'Jan 19, 2011',
+    'Last Published Date': 'Jan 28, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -5285,10 +5285,10 @@ export let ReportData = [
     'CFDA Number': 15.025,
     'Title': 'Services to Indian Children, Elderly and Families',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5296,10 +5296,10 @@ export let ReportData = [
     'CFDA Number': 15.026,
     'Title': 'Indian Adult Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 22 2011',
+    'Last Updated Date': 'Jan 22, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 13 2011',
-    'Last Published Date': 'Jan, 22 2011',
+    'OMB Review Date': 'Jan 13, 2011',
+    'Last Published Date': 'Jan 22, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -5307,10 +5307,10 @@ export let ReportData = [
     'CFDA Number': 15.027,
     'Title': 'Assistance to Tribally Controlled Community Colleges and Universities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5318,10 +5318,10 @@ export let ReportData = [
     'CFDA Number': 15.028,
     'Title': 'Tribally Controlled Community College Endowments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 06 2008',
+    'Last Updated Date': 'Jun 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2008',
-    'Last Published Date': 'Jun, 06 2008',
+    'OMB Review Date': 'Jun 06, 2008',
+    'Last Published Date': 'Jun 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5329,10 +5329,10 @@ export let ReportData = [
     'CFDA Number': 15.029,
     'Title': 'Tribal Courts',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 20 2010',
+    'Last Updated Date': 'Dec 20, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 07 2010',
-    'Last Published Date': 'Dec, 20 2010',
+    'OMB Review Date': 'Dec 07, 2010',
+    'Last Published Date': 'Dec 20, 2010',
     'Auto Published': 'Yes'
   },
   {
@@ -5340,10 +5340,10 @@ export let ReportData = [
     'CFDA Number': 15.03,
     'Title': 'Indian Law Enforcement',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5351,10 +5351,10 @@ export let ReportData = [
     'CFDA Number': 15.031,
     'Title': 'Indian Community Fire Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5362,10 +5362,10 @@ export let ReportData = [
     'CFDA Number': 15.032,
     'Title': 'Indian Economic Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5373,10 +5373,10 @@ export let ReportData = [
     'CFDA Number': 15.033,
     'Title': 'Road Maintenance_Indian Roads',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 10 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 10, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -5384,10 +5384,10 @@ export let ReportData = [
     'CFDA Number': 15.034,
     'Title': 'Agriculture on Indian Lands',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5395,10 +5395,10 @@ export let ReportData = [
     'CFDA Number': 15.035,
     'Title': 'Forestry on Indian Lands',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 10 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 10, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -5406,10 +5406,10 @@ export let ReportData = [
     'CFDA Number': 15.036,
     'Title': 'Indian Rights Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5417,10 +5417,10 @@ export let ReportData = [
     'CFDA Number': 15.037,
     'Title': 'Water Resources on Indian Lands',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 27 2011',
+    'Last Updated Date': 'Jan 27, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 18 2011',
-    'Last Published Date': 'Jan, 27 2011',
+    'OMB Review Date': 'Jan 18, 2011',
+    'Last Published Date': 'Jan 27, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -5428,10 +5428,10 @@ export let ReportData = [
     'CFDA Number': 15.038,
     'Title': 'Minerals and Mining on Indian Lands',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5439,10 +5439,10 @@ export let ReportData = [
     'CFDA Number': 15.04,
     'Title': 'Real Estate Programs_Indian Lands',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5450,10 +5450,10 @@ export let ReportData = [
     'CFDA Number': 15.041,
     'Title': 'Environmental Management_Indian Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 28 2011',
+    'Last Updated Date': 'Jan 28, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 19 2011',
-    'Last Published Date': 'Jan, 28 2011',
+    'OMB Review Date': 'Jan 19, 2011',
+    'Last Published Date': 'Jan 28, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -5461,10 +5461,10 @@ export let ReportData = [
     'CFDA Number': 15.042,
     'Title': 'Indian School Equalization Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5472,10 +5472,10 @@ export let ReportData = [
     'CFDA Number': 15.043,
     'Title': 'Indian Child and Family Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5483,10 +5483,10 @@ export let ReportData = [
     'CFDA Number': 15.044,
     'Title': 'Indian Schools_Student Transportation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5494,10 +5494,10 @@ export let ReportData = [
     'CFDA Number': 15.045,
     'Title': 'Assistance for Indian Children with Severe Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 06 2008',
+    'Last Updated Date': 'Jun 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2008',
-    'Last Published Date': 'Jun, 06 2008',
+    'OMB Review Date': 'Jun 06, 2008',
+    'Last Published Date': 'Jun 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5505,10 +5505,10 @@ export let ReportData = [
     'CFDA Number': 15.046,
     'Title': 'Administrative Cost Grants for Indian Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 06 2008',
+    'Last Updated Date': 'Jun 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2008',
-    'Last Published Date': 'Jun, 06 2008',
+    'OMB Review Date': 'Jun 06, 2008',
+    'Last Published Date': 'Jun 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5516,10 +5516,10 @@ export let ReportData = [
     'CFDA Number': 15.047,
     'Title': 'Indian Education Facilities, Operations, and Maintenance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5527,10 +5527,10 @@ export let ReportData = [
     'CFDA Number': 15.048,
     'Title': 'Bureau of Indian Affairs Facilities_Operations and Maintenance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5538,10 +5538,10 @@ export let ReportData = [
     'CFDA Number': 15.051,
     'Title': 'Endangered Species on Indian Lands',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5549,10 +5549,10 @@ export let ReportData = [
     'CFDA Number': 15.052,
     'Title': 'Litigation Support for Indian Rights',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5560,10 +5560,10 @@ export let ReportData = [
     'CFDA Number': 15.053,
     'Title': 'Attorney Fees_Indian Rights',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5571,10 +5571,10 @@ export let ReportData = [
     'CFDA Number': 15.055,
     'Title': 'Alaskan Indian Allotments and Subsistence Preference_Alaska National Interest Lands Conservation Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5582,10 +5582,10 @@ export let ReportData = [
     'CFDA Number': 15.057,
     'Title': 'Navajo-Hopi Indian Settlement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5593,10 +5593,10 @@ export let ReportData = [
     'CFDA Number': 15.058,
     'Title': 'Indian Post Secondary Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 26 2008',
+    'Last Updated Date': 'Jun 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 26 2008',
-    'Last Published Date': 'Jun, 26 2008',
+    'OMB Review Date': 'Jun 26, 2008',
+    'Last Published Date': 'Jun 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5604,10 +5604,10 @@ export let ReportData = [
     'CFDA Number': 15.059,
     'Title': 'Indian Graduate Student Scholarships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5615,10 +5615,10 @@ export let ReportData = [
     'CFDA Number': 15.06,
     'Title': 'Indian Vocational Training_United Tribes Technical College',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5626,10 +5626,10 @@ export let ReportData = [
     'CFDA Number': 15.061,
     'Title': 'Indian Job Placement_United Sioux Tribes Development Corporation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2002',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Jun 05, 2002',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5637,10 +5637,10 @@ export let ReportData = [
     'CFDA Number': 15.062,
     'Title': 'Replacement and Repair of Indian Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5648,10 +5648,10 @@ export let ReportData = [
     'CFDA Number': 15.063,
     'Title': 'Improvement and Repair of Indian Detention Facilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5659,10 +5659,10 @@ export let ReportData = [
     'CFDA Number': 15.064,
     'Title': 'Structural Fire Protection_Bureau of Indian Affairs Facilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5670,10 +5670,10 @@ export let ReportData = [
     'CFDA Number': 15.065,
     'Title': 'Safety of Dams on Indian Lands',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5681,10 +5681,10 @@ export let ReportData = [
     'CFDA Number': 15.108,
     'Title': 'Indian Employment Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5692,10 +5692,10 @@ export let ReportData = [
     'CFDA Number': 15.113,
     'Title': 'Indian Social Services_Welfare Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5703,10 +5703,10 @@ export let ReportData = [
     'CFDA Number': 15.114,
     'Title': 'Indian Education_Higher Education Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5714,10 +5714,10 @@ export let ReportData = [
     'CFDA Number': 15.124,
     'Title': 'Indian Loans_Economic Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5725,10 +5725,10 @@ export let ReportData = [
     'CFDA Number': 15.13,
     'Title': 'Indian Education_Assistance to Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5736,10 +5736,10 @@ export let ReportData = [
     'CFDA Number': 15.133,
     'Title': 'Native American Business Development Institute',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 17 2008',
+    'Last Updated Date': 'Oct 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Oct, 17 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Oct 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5747,10 +5747,10 @@ export let ReportData = [
     'CFDA Number': 15.141,
     'Title': 'Indian Housing Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5758,10 +5758,10 @@ export let ReportData = [
     'CFDA Number': 15.144,
     'Title': 'Indian Child Welfare Act_Title II Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5769,10 +5769,10 @@ export let ReportData = [
     'CFDA Number': 15.146,
     'Title': 'Ironworker Training Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5780,10 +5780,10 @@ export let ReportData = [
     'CFDA Number': 15.147,
     'Title': 'Tribal Courts_Trust Reform Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 26 2003',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Jun 26, 2003',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5791,10 +5791,10 @@ export let ReportData = [
     'CFDA Number': 15.148,
     'Title': 'Tribal Energy Development Capacity Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 18 2008',
+    'Last Updated Date': 'Dec 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Dec, 18 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Dec 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5802,10 +5802,10 @@ export let ReportData = [
     'CFDA Number': 15.214,
     'Title': 'Non-Sale Disposals of Mineral Material',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 20 2005',
+    'Last Updated Date': 'May 20, 2005',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2005',
-    'Last Published Date': 'May, 20 2005',
+    'OMB Review Date': 'May 20, 2005',
+    'Last Published Date': 'May 20, 2005',
     'Auto Published': 'No'
   },
   {
@@ -5813,10 +5813,10 @@ export let ReportData = [
     'CFDA Number': 15.222,
     'Title': 'Cooperative Inspection Agreements with States and Tribes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5824,10 +5824,10 @@ export let ReportData = [
     'CFDA Number': 15.224,
     'Title': 'Cultural Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5835,10 +5835,10 @@ export let ReportData = [
     'CFDA Number': 15.225,
     'Title': 'Recreation Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5846,10 +5846,10 @@ export let ReportData = [
     'CFDA Number': 15.226,
     'Title': 'Payments in Lieu of Taxes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5857,10 +5857,10 @@ export let ReportData = [
     'CFDA Number': 15.227,
     'Title': 'Distribution of Receipts to State and Local Governments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5868,10 +5868,10 @@ export let ReportData = [
     'CFDA Number': 15.228,
     'Title': 'National Fire Plan - Wildland Urban Interface Community Fire Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5879,10 +5879,10 @@ export let ReportData = [
     'CFDA Number': 15.229,
     'Title': 'Wild Horse and Burro Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 05 2005',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Dec 05, 2005',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5890,10 +5890,10 @@ export let ReportData = [
     'CFDA Number': 15.23,
     'Title': 'Invasive and Noxious Plant Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 13 2010',
+    'Last Updated Date': 'Dec 13, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 24 2010',
-    'Last Published Date': 'Dec, 13 2010',
+    'OMB Review Date': 'Nov 24, 2010',
+    'Last Published Date': 'Dec 13, 2010',
     'Auto Published': 'Yes'
   },
   {
@@ -5901,10 +5901,10 @@ export let ReportData = [
     'CFDA Number': 15.231,
     'Title': 'Fish, Wildlife and Plant Conservation Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 05 2005',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Dec 05, 2005',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5912,10 +5912,10 @@ export let ReportData = [
     'CFDA Number': 15.232,
     'Title': 'Wildland Fire Research and Studies Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5923,10 +5923,10 @@ export let ReportData = [
     'CFDA Number': 15.233,
     'Title': 'Forests and Woodlands Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5934,10 +5934,10 @@ export let ReportData = [
     'CFDA Number': 15.234,
     'Title': 'Secure Rural Schools and Community Self-Determination',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5945,10 +5945,10 @@ export let ReportData = [
     'CFDA Number': 15.235,
     'Title': 'Southern Nevada Public Land Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5956,10 +5956,10 @@ export let ReportData = [
     'CFDA Number': 15.236,
     'Title': 'Environmental Quality and Protection Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5967,10 +5967,10 @@ export let ReportData = [
     'CFDA Number': 15.237,
     'Title': 'Rangeland Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2008',
+    'Last Updated Date': 'Nov 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 30 2008',
-    'Last Published Date': 'Nov, 18 2008',
+    'OMB Review Date': 'Jul 30, 2008',
+    'Last Published Date': 'Nov 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -5978,10 +5978,10 @@ export let ReportData = [
     'CFDA Number': 15.238,
     'Title': 'Challenge Cost Share',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 13 2010',
+    'Last Updated Date': 'Dec 13, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 02 2010',
-    'Last Published Date': 'Dec, 13 2010',
+    'OMB Review Date': 'Dec 02, 2010',
+    'Last Published Date': 'Dec 13, 2010',
     'Auto Published': 'Yes'
   },
   {
@@ -5989,10 +5989,10 @@ export let ReportData = [
     'CFDA Number': 15.239,
     'Title': 'Management Initiatives',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6000,10 +6000,10 @@ export let ReportData = [
     'CFDA Number': 15.24,
     'Title': 'Helium Resource Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 12 2008',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Aug 12, 2008',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6011,10 +6011,10 @@ export let ReportData = [
     'CFDA Number': 15.242,
     'Title': 'National Fire Plan - Rural Fire Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6022,10 +6022,10 @@ export let ReportData = [
     'CFDA Number': 15.25,
     'Title': 'Regulation of Surface Coal Mining and Surface Effects of Underground Coal Mining',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6033,10 +6033,10 @@ export let ReportData = [
     'CFDA Number': 15.252,
     'Title': 'Abandoned Mine Land Reclamation (AMLR) Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6044,10 +6044,10 @@ export let ReportData = [
     'CFDA Number': 15.253,
     'Title': 'Not-for-Profit AMD Reclamation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6055,10 +6055,10 @@ export let ReportData = [
     'CFDA Number': 15.254,
     'Title': 'Summer Watershed Intern',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2002',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 05, 2002',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6066,10 +6066,10 @@ export let ReportData = [
     'CFDA Number': 15.255,
     'Title': 'Applied Science Program Cooperative Agreements Related to Coal Mining and Reclamation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2007',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jun 07, 2007',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6077,10 +6077,10 @@ export let ReportData = [
     'CFDA Number': 15.406,
     'Title': 'National Park Service Centennial Challenge.',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 18 2008',
+    'Last Updated Date': 'Dec 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Dec, 18 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Dec 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6088,10 +6088,10 @@ export let ReportData = [
     'CFDA Number': 15.407,
     'Title': 'Keweenaw National Historical Park (NHP) and Keweenaw NHP Advisory Commission Partner Enhancement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 08 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Aug 08, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6099,10 +6099,10 @@ export let ReportData = [
     'CFDA Number': 15.421,
     'Title': 'Alaska Coastal Marine Institute',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2006',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'May 22, 2006',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6110,10 +6110,10 @@ export let ReportData = [
     'CFDA Number': 15.422,
     'Title': 'Louisiana State University (LSU) Coastal Marine Institute  (CMI)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2006',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'May 22, 2006',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6121,10 +6121,10 @@ export let ReportData = [
     'CFDA Number': 15.423,
     'Title': 'Minerals Management Service (MMS) Environmental Studies Program (ESP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2006',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'May 22, 2006',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6132,10 +6132,10 @@ export let ReportData = [
     'CFDA Number': 15.424,
     'Title': 'Marine Minerals Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2006',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'May 22, 2006',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6143,10 +6143,10 @@ export let ReportData = [
     'CFDA Number': 15.425,
     'Title': 'Offshore Research Technology Center (OTRC) Texas Engineering Experiment Station (TEES)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2006',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'May 22, 2006',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6154,10 +6154,10 @@ export let ReportData = [
     'CFDA Number': 15.426,
     'Title': 'Coastal Impact Assistance Program (CIAP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2007',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'May 30, 2007',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6165,10 +6165,10 @@ export let ReportData = [
     'CFDA Number': 15.427,
     'Title': 'Federal Oil and Gas Royalty Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 01 2006',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jun 01, 2006',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6176,10 +6176,10 @@ export let ReportData = [
     'CFDA Number': 15.428,
     'Title': 'Marine Gas Hydrate Research Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2008',
+    'Last Updated Date': 'Nov 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Nov, 18 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Nov 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6187,10 +6187,10 @@ export let ReportData = [
     'CFDA Number': 15.504,
     'Title': 'Water Reclamation and Reuse Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 29 2010',
+    'Last Updated Date': 'Nov 29, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2008',
-    'Last Published Date': 'May, 15 2008',
+    'OMB Review Date': 'May 15, 2008',
+    'Last Published Date': 'May 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6198,10 +6198,10 @@ export let ReportData = [
     'CFDA Number': 15.506,
     'Title': 'Water Desalination Research and Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 22 2011',
+    'Last Updated Date': 'Jan 22, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 13 2011',
-    'Last Published Date': 'Jan, 22 2011',
+    'OMB Review Date': 'Jan 13, 2011',
+    'Last Published Date': 'Jan 22, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -6209,10 +6209,10 @@ export let ReportData = [
     'CFDA Number': 15.507,
     'Title': 'Water 2025',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 15 2008',
+    'Last Updated Date': 'May 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 14 2004',
-    'Last Published Date': 'May, 15 2008',
+    'OMB Review Date': 'Oct 14, 2004',
+    'Last Published Date': 'May 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6220,10 +6220,10 @@ export let ReportData = [
     'CFDA Number': 15.508,
     'Title': 'Providing Water to At-Risk Natural Desert Terminal Lakes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2004',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Oct 07, 2004',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6231,10 +6231,10 @@ export let ReportData = [
     'CFDA Number': 15.509,
     'Title': 'Colorado River Basin Salinity Control Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 15 2008',
+    'Last Updated Date': 'May 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'May, 15 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'May 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6242,10 +6242,10 @@ export let ReportData = [
     'CFDA Number': 15.51,
     'Title': 'Colorado Ute Indian Water Rights Settlement Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6253,10 +6253,10 @@ export let ReportData = [
     'CFDA Number': 15.511,
     'Title': 'Cultural Resources Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6264,10 +6264,10 @@ export let ReportData = [
     'CFDA Number': 15.512,
     'Title': 'Central Valley Project Improvement Act, Title XXXIV',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6275,10 +6275,10 @@ export let ReportData = [
     'CFDA Number': 15.513,
     'Title': 'Dutch John Federal Property and Disposition  Assistance Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 15 2008',
+    'Last Updated Date': 'May 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2007',
-    'Last Published Date': 'May, 15 2008',
+    'OMB Review Date': 'Jun 07, 2007',
+    'Last Published Date': 'May 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6286,10 +6286,10 @@ export let ReportData = [
     'CFDA Number': 15.514,
     'Title': 'Reclamation States Emergency Drought Relief',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 15 2008',
+    'Last Updated Date': 'May 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2007',
-    'Last Published Date': 'May, 15 2008',
+    'OMB Review Date': 'Jun 07, 2007',
+    'Last Published Date': 'May 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6297,10 +6297,10 @@ export let ReportData = [
     'CFDA Number': 15.515,
     'Title': 'Federal Resource Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'May 14, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6308,10 +6308,10 @@ export let ReportData = [
     'CFDA Number': 15.516,
     'Title': 'Fort Peck Reservation Rural Water System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 01 2008',
+    'Last Updated Date': 'Aug 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Aug, 01 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Aug 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6319,10 +6319,10 @@ export let ReportData = [
     'CFDA Number': 15.517,
     'Title': 'Fish and Wildlife Coordination Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 16 2008',
+    'Last Updated Date': 'May 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'May, 16 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'May 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6330,10 +6330,10 @@ export let ReportData = [
     'CFDA Number': 15.518,
     'Title': 'Garrison Diversion Unit',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6341,10 +6341,10 @@ export let ReportData = [
     'CFDA Number': 15.519,
     'Title': 'Indian Tribal Water Resources Development, Management, and Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 16 2008',
+    'Last Updated Date': 'May 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'May, 16 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'May 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6352,10 +6352,10 @@ export let ReportData = [
     'CFDA Number': 15.52,
     'Title': 'Lewis and Clark Rural Water System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6363,10 +6363,10 @@ export let ReportData = [
     'CFDA Number': 15.521,
     'Title': 'Lower Rio Grande Valley Water Resources Conservation and Improvement',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 16 2008',
+    'Last Updated Date': 'May 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'May, 16 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'May 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6374,10 +6374,10 @@ export let ReportData = [
     'CFDA Number': 15.522,
     'Title': 'Mni Wiconi Rural Water Supply Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 16 2008',
+    'Last Updated Date': 'May 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'May, 16 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'May 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6385,10 +6385,10 @@ export let ReportData = [
     'CFDA Number': 15.523,
     'Title': 'Perkins County Rural Water System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 04 2008',
+    'Last Updated Date': 'Aug 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2007',
-    'Last Published Date': 'Aug, 04 2008',
+    'OMB Review Date': 'Jun 07, 2007',
+    'Last Published Date': 'Aug 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6396,10 +6396,10 @@ export let ReportData = [
     'CFDA Number': 15.524,
     'Title': 'Recreation Resources Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2007',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Jun 07, 2007',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6407,10 +6407,10 @@ export let ReportData = [
     'CFDA Number': 15.525,
     'Title': 'Rocky Boy\'s/North Central Montana Regional Water System',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 20 2008',
+    'Last Updated Date': 'May 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'May, 20 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'May 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6418,10 +6418,10 @@ export let ReportData = [
     'CFDA Number': 15.526,
     'Title': 'San Gabriel Basin Restoration Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6429,10 +6429,10 @@ export let ReportData = [
     'CFDA Number': 15.527,
     'Title': 'San Luis Unit, Central Valley Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 27 2011',
+    'Last Updated Date': 'Jan 27, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 18 2011',
-    'Last Published Date': 'Jan, 27 2011',
+    'OMB Review Date': 'Jan 18, 2011',
+    'Last Published Date': 'Jan 27, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -6440,10 +6440,10 @@ export let ReportData = [
     'CFDA Number': 15.528,
     'Title': 'St. Mary Storage Unit Facilities Rehabilitation Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 21 2008',
+    'Last Updated Date': 'May 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'May, 21 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'May 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6451,10 +6451,10 @@ export let ReportData = [
     'CFDA Number': 15.529,
     'Title': 'Upper Colorado and San Juan River Basins Endangered Fish Recovery Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6462,10 +6462,10 @@ export let ReportData = [
     'CFDA Number': 15.53,
     'Title': 'Water Conservation Field Services Program (WCFSP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6473,10 +6473,10 @@ export let ReportData = [
     'CFDA Number': 15.531,
     'Title': 'Yakima River Basin Water Enhancement Project (YRBWEP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6484,10 +6484,10 @@ export let ReportData = [
     'CFDA Number': 15.532,
     'Title': 'Central Valley Project, Trinity River Division, Trinity River  Fish and Wildlife Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 27 2007',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Jul 27, 2007',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6495,10 +6495,10 @@ export let ReportData = [
     'CFDA Number': 15.533,
     'Title': 'California Water Security and Environmental Enhancement',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 02 2007',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Aug 02, 2007',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6506,10 +6506,10 @@ export let ReportData = [
     'CFDA Number': 15.534,
     'Title': 'Miscellaneous Public Law 93-638 Contracts, Grants, and Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6517,10 +6517,10 @@ export let ReportData = [
     'CFDA Number': 15.535,
     'Title': 'Upper Colorado River Basin Fish and Wildlife Mitigation Program.',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -6528,10 +6528,10 @@ export let ReportData = [
     'CFDA Number': 15.536,
     'Title': 'Deschutes River Conservancy (DRC)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -6539,10 +6539,10 @@ export let ReportData = [
     'CFDA Number': 15.537,
     'Title': 'Middle Rio Grande Endangered Species Collaborative Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -6550,10 +6550,10 @@ export let ReportData = [
     'CFDA Number': 15.538,
     'Title': 'Lower Colorado River Multi-Species Conservation Program.',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -6561,10 +6561,10 @@ export let ReportData = [
     'CFDA Number': 15.602,
     'Title': 'Conservation Law Enforcement Training Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6572,10 +6572,10 @@ export let ReportData = [
     'CFDA Number': 15.605,
     'Title': 'Sport Fish Restoration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6583,10 +6583,10 @@ export let ReportData = [
     'CFDA Number': 15.608,
     'Title': 'Fish and Wildlife Management Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6594,10 +6594,10 @@ export let ReportData = [
     'CFDA Number': 15.611,
     'Title': 'Wildlife Restoration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6605,10 +6605,10 @@ export let ReportData = [
     'CFDA Number': 15.614,
     'Title': 'Coastal Wetlands Planning, Protection and Restoration Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6616,10 +6616,10 @@ export let ReportData = [
     'CFDA Number': 15.615,
     'Title': 'Cooperative Endangered Species Conservation Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6627,10 +6627,10 @@ export let ReportData = [
     'CFDA Number': 15.616,
     'Title': 'Clean Vessel Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6638,10 +6638,10 @@ export let ReportData = [
     'CFDA Number': 15.619,
     'Title': 'Rhinoceros and Tiger Conservation Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6649,10 +6649,10 @@ export let ReportData = [
     'CFDA Number': 15.62,
     'Title': 'African Elephant Conservation Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6660,10 +6660,10 @@ export let ReportData = [
     'CFDA Number': 15.621,
     'Title': 'Asian Elephant Conservation Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6671,10 +6671,10 @@ export let ReportData = [
     'CFDA Number': 15.622,
     'Title': 'Sportfishing and Boating Safety Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6682,10 +6682,10 @@ export let ReportData = [
     'CFDA Number': 15.623,
     'Title': 'North American Wetlands Conservation Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6693,10 +6693,10 @@ export let ReportData = [
     'CFDA Number': 15.625,
     'Title': 'Wildlife Conservation and Restoration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6704,10 +6704,10 @@ export let ReportData = [
     'CFDA Number': 15.626,
     'Title': 'Hunter Education and Safety Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 17 2001',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'May 17, 2001',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6715,10 +6715,10 @@ export let ReportData = [
     'CFDA Number': 15.628,
     'Title': 'Multistate Conservation Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6726,10 +6726,10 @@ export let ReportData = [
     'CFDA Number': 15.629,
     'Title': 'Great Apes Conservation Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6737,10 +6737,10 @@ export let ReportData = [
     'CFDA Number': 15.63,
     'Title': 'Coastal Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 04 2008',
+    'Last Updated Date': 'Aug 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2002',
-    'Last Published Date': 'Aug, 04 2008',
+    'OMB Review Date': 'Jun 12, 2002',
+    'Last Published Date': 'Aug 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6748,10 +6748,10 @@ export let ReportData = [
     'CFDA Number': 15.631,
     'Title': 'Partners for Fish and Wildlife',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2002',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 05, 2002',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6759,10 +6759,10 @@ export let ReportData = [
     'CFDA Number': 15.632,
     'Title': 'Conservation Grants Private Stewardship for Imperiled Species',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6770,10 +6770,10 @@ export let ReportData = [
     'CFDA Number': 15.633,
     'Title': 'Landowner Incentive Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6781,10 +6781,10 @@ export let ReportData = [
     'CFDA Number': 15.634,
     'Title': 'State Wildlife Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2002',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Jun 05, 2002',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6792,10 +6792,10 @@ export let ReportData = [
     'CFDA Number': 15.635,
     'Title': 'Neotropical Migratory Bird Conservation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 18 2008',
+    'Last Updated Date': 'Jun 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 07 2003',
-    'Last Published Date': 'Jun, 18 2008',
+    'OMB Review Date': 'Jul 07, 2003',
+    'Last Published Date': 'Jun 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6803,10 +6803,10 @@ export let ReportData = [
     'CFDA Number': 15.636,
     'Title': 'Alaska Subsistence Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2004',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Apr 08, 2004',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6814,10 +6814,10 @@ export let ReportData = [
     'CFDA Number': 15.637,
     'Title': 'Migratory Bird Joint Ventures',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2004',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Apr 08, 2004',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6825,10 +6825,10 @@ export let ReportData = [
     'CFDA Number': 15.638,
     'Title': 'Tribal Landowner Incentive Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 22 2004',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Apr 22, 2004',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6836,10 +6836,10 @@ export let ReportData = [
     'CFDA Number': 15.639,
     'Title': 'Tribal Wildlife Grants Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 13 2010',
+    'Last Updated Date': 'Dec 13, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 03 2010',
-    'Last Published Date': 'Dec, 13 2010',
+    'OMB Review Date': 'Dec 03, 2010',
+    'Last Published Date': 'Dec 13, 2010',
     'Auto Published': 'Yes'
   },
   {
@@ -6847,10 +6847,10 @@ export let ReportData = [
     'CFDA Number': 15.64,
     'Title': 'Wildlife Without Borders- Latin America and the Caribbean',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 28 2011',
+    'Last Updated Date': 'Jan 28, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 19 2011',
-    'Last Published Date': 'Jan, 28 2011',
+    'OMB Review Date': 'Jan 19, 2011',
+    'Last Published Date': 'Jan 28, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -6858,10 +6858,10 @@ export let ReportData = [
     'CFDA Number': 15.641,
     'Title': 'Wildlife Without Borders-Mexico',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 22 2004',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Apr 22, 2004',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6869,10 +6869,10 @@ export let ReportData = [
     'CFDA Number': 15.642,
     'Title': 'Challenge Cost Share',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 22 2004',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Apr 22, 2004',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6880,10 +6880,10 @@ export let ReportData = [
     'CFDA Number': 15.643,
     'Title': 'Alaska Migratory Bird Co-Management Council',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2004',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Sep 22, 2004',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6891,10 +6891,10 @@ export let ReportData = [
     'CFDA Number': 15.644,
     'Title': 'Federal Junior Duck Stamp Conservation and Design',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2004',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Sep 23, 2004',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6902,10 +6902,10 @@ export let ReportData = [
     'CFDA Number': 15.645,
     'Title': 'Marine Turtle Conservation Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 08 2005',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Feb 08, 2005',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6913,10 +6913,10 @@ export let ReportData = [
     'CFDA Number': 15.647,
     'Title': 'Migratory  Bird Conservation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 12 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Apr 12, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6924,10 +6924,10 @@ export let ReportData = [
     'CFDA Number': 15.648,
     'Title': 'Central Valley Project Improvement  (CVPI) Anadromous Fish Restoration Program (AFRP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 22 2006',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Jun 22, 2006',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6935,10 +6935,10 @@ export let ReportData = [
     'CFDA Number': 15.649,
     'Title': 'Service Training and Technical Assistance (Generic Training)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6946,10 +6946,10 @@ export let ReportData = [
     'CFDA Number': 15.65,
     'Title': 'Research Grants (Generic)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6957,10 +6957,10 @@ export let ReportData = [
     'CFDA Number': 15.651,
     'Title': 'Wildlife Without Borders-Africa Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 30 2007',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Aug 30, 2007',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6968,10 +6968,10 @@ export let ReportData = [
     'CFDA Number': 15.652,
     'Title': 'Undesirable/Noxious Plant Species',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2007',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 17, 2007',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6979,10 +6979,10 @@ export let ReportData = [
     'CFDA Number': 15.653,
     'Title': 'National Outreach and Communication Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2007',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 16, 2007',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -6990,10 +6990,10 @@ export let ReportData = [
     'CFDA Number': 15.654,
     'Title': 'Visitor Facility Enhancements -  Vehicle Pullouts, Interpretive Trails, and Kiosks',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2007',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'Oct 16, 2007',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7001,10 +7001,10 @@ export let ReportData = [
     'CFDA Number': 15.655,
     'Title': 'Migratory Bird Monitoring, Assessment and Conservation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jun 03, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7012,10 +7012,10 @@ export let ReportData = [
     'CFDA Number': 15.657,
     'Title': 'Endangered Species Conservation � Recovery Implementation Funds',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -7023,10 +7023,10 @@ export let ReportData = [
     'CFDA Number': 15.805,
     'Title': 'Assistance to State Water Resources Research Institutes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7034,10 +7034,10 @@ export let ReportData = [
     'CFDA Number': 15.807,
     'Title': 'Earthquake Hazards Reduction Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7045,10 +7045,10 @@ export let ReportData = [
     'CFDA Number': 15.808,
     'Title': 'U.S. Geological Survey_ Research and Data Collection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7056,10 +7056,10 @@ export let ReportData = [
     'CFDA Number': 15.809,
     'Title': 'National Spatial Data Infrastructure Cooperative Agreements Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7067,10 +7067,10 @@ export let ReportData = [
     'CFDA Number': 15.81,
     'Title': 'National Cooperative Geologic Mapping Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 22 2011',
+    'Last Updated Date': 'Jan 22, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 13 2011',
-    'Last Published Date': 'Jan, 22 2011',
+    'OMB Review Date': 'Jan 13, 2011',
+    'Last Published Date': 'Jan 22, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -7078,10 +7078,10 @@ export let ReportData = [
     'CFDA Number': 15.811,
     'Title': 'Gap Analysis Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 23 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jun 23, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7089,10 +7089,10 @@ export let ReportData = [
     'CFDA Number': 15.812,
     'Title': 'Cooperative Research Units Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 23 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jun 23, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7100,10 +7100,10 @@ export let ReportData = [
     'CFDA Number': 15.813,
     'Title': 'Cooperative Research Units Training Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 30 2007',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Aug 30, 2007',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7111,10 +7111,10 @@ export let ReportData = [
     'CFDA Number': 15.814,
     'Title': 'National Geological and Geophysical Data Preservation Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 03 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jan 03, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7122,10 +7122,10 @@ export let ReportData = [
     'CFDA Number': 15.815,
     'Title': 'National Land Remote Sensing_Education Outreach and Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7133,10 +7133,10 @@ export let ReportData = [
     'CFDA Number': 15.816,
     'Title': 'Minerals Resources External Research Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7144,10 +7144,10 @@ export let ReportData = [
     'CFDA Number': 15.817,
     'Title': 'National Geospatial Program: Building The National Map',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -7155,10 +7155,10 @@ export let ReportData = [
     'CFDA Number': 15.818,
     'Title': 'Volcano Hazards Program Research and Monitoring.',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -7166,10 +7166,10 @@ export let ReportData = [
     'CFDA Number': 15.85,
     'Title': 'Indian Arts and Crafts Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7177,10 +7177,10 @@ export let ReportData = [
     'CFDA Number': 15.875,
     'Title': 'Economic, Social, and Political Development of the Territories',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7188,10 +7188,10 @@ export let ReportData = [
     'CFDA Number': 15.904,
     'Title': 'Historic Preservation Fund Grants-In-Aid',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7199,10 +7199,10 @@ export let ReportData = [
     'CFDA Number': 15.912,
     'Title': 'National Historic Landmark',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7210,10 +7210,10 @@ export let ReportData = [
     'CFDA Number': 15.914,
     'Title': 'National Register of Historic Places',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 10 2008',
+    'Last Updated Date': 'Jul 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 10 2008',
-    'Last Published Date': 'Jul, 10 2008',
+    'OMB Review Date': 'Jul 10, 2008',
+    'Last Published Date': 'Jul 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7221,10 +7221,10 @@ export let ReportData = [
     'CFDA Number': 15.915,
     'Title': 'Technical Preservation Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7232,10 +7232,10 @@ export let ReportData = [
     'CFDA Number': 15.916,
     'Title': 'Outdoor Recreation_Acquisition, Development and Planning',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7243,10 +7243,10 @@ export let ReportData = [
     'CFDA Number': 15.918,
     'Title': 'Disposal of Federal Surplus Real Property for Parks, Recreation, and Historic Monuments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7254,10 +7254,10 @@ export let ReportData = [
     'CFDA Number': 15.921,
     'Title': 'Rivers, Trails and Conservation Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7265,10 +7265,10 @@ export let ReportData = [
     'CFDA Number': 15.922,
     'Title': 'Native American Graves Protection and Repatriation Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7276,10 +7276,10 @@ export let ReportData = [
     'CFDA Number': 15.923,
     'Title': 'National Center for Preservation Technology and Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7287,10 +7287,10 @@ export let ReportData = [
     'CFDA Number': 15.926,
     'Title': 'American Battlefield Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7298,10 +7298,10 @@ export let ReportData = [
     'CFDA Number': 15.927,
     'Title': 'Hydropower Recreation Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2002',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Jun 05, 2002',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7309,10 +7309,10 @@ export let ReportData = [
     'CFDA Number': 15.928,
     'Title': 'Civil War Battlefield Land Acquisition Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 07 2003',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jul 07, 2003',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7320,10 +7320,10 @@ export let ReportData = [
     'CFDA Number': 15.929,
     'Title': 'Save America\'s Treasures',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 13 2004',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Apr 13, 2004',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7331,10 +7331,10 @@ export let ReportData = [
     'CFDA Number': 15.93,
     'Title': 'Chesapeake Bay Gateways Network',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 27 2007',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jun 27, 2007',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7342,10 +7342,10 @@ export let ReportData = [
     'CFDA Number': 15.931,
     'Title': 'Conservation Activities by Youth Service Organizations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2007',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Sep 11, 2007',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7353,10 +7353,10 @@ export let ReportData = [
     'CFDA Number': 15.932,
     'Title': 'Preservation of Historic Structures on the Campuses of Historically Black Colleges and Universities (HBCUs).',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 18, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -7364,10 +7364,10 @@ export let ReportData = [
     'CFDA Number': 15.978,
     'Title': 'Upper Mississippi River System Long Term Resource Monitoring Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7375,10 +7375,10 @@ export let ReportData = [
     'CFDA Number': 16.001,
     'Title': 'Law Enforcement Assistance_Narcotics and Dangerous Drugs_Laboratory Analysis',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7386,10 +7386,10 @@ export let ReportData = [
     'CFDA Number': 16.003,
     'Title': 'Law Enforcement Assistance_Narcotics and Dangerous Drugs Technical Laboratory Publications',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7397,10 +7397,10 @@ export let ReportData = [
     'CFDA Number': 16.004,
     'Title': 'Law Enforcement Assistance_Narcotics and Dangerous Drugs Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7408,10 +7408,10 @@ export let ReportData = [
     'CFDA Number': 16.012,
     'Title': 'Alcohol, Tobacco, and Firearms_Training Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7419,10 +7419,10 @@ export let ReportData = [
     'CFDA Number': 16.013,
     'Title': 'Violence Against Women Act Court Training and Improvement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7430,10 +7430,10 @@ export let ReportData = [
     'CFDA Number': 16.014,
     'Title': 'Engaging Men and Youth in Preventing Domestic Violence, Dating Violence, Sexual Assault, and Stalking',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7441,10 +7441,10 @@ export let ReportData = [
     'CFDA Number': 16.016,
     'Title': 'Culturally and Linguistically Specific Services Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7452,10 +7452,10 @@ export let ReportData = [
     'CFDA Number': 16.017,
     'Title': 'Sexual Assault Services Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7463,10 +7463,10 @@ export let ReportData = [
     'CFDA Number': 16.019,
     'Title': 'Tribal Registry',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 24 2008',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Sep 24, 2008',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7474,10 +7474,10 @@ export let ReportData = [
     'CFDA Number': 16.1,
     'Title': 'Desegregation of Public Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7485,10 +7485,10 @@ export let ReportData = [
     'CFDA Number': 16.101,
     'Title': 'Equal Employment Opportunity',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7496,10 +7496,10 @@ export let ReportData = [
     'CFDA Number': 16.103,
     'Title': 'Fair Housing and Equal Credit Opportunity',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7507,10 +7507,10 @@ export let ReportData = [
     'CFDA Number': 16.104,
     'Title': 'Protection of Voting Rights',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7518,10 +7518,10 @@ export let ReportData = [
     'CFDA Number': 16.105,
     'Title': 'Civil Rights of Institutionalized Persons',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 05 2008',
+    'Last Updated Date': 'Aug 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 05 2008',
-    'Last Published Date': 'Aug, 05 2008',
+    'OMB Review Date': 'Aug 05, 2008',
+    'Last Published Date': 'Aug 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7529,10 +7529,10 @@ export let ReportData = [
     'CFDA Number': 16.108,
     'Title': 'Americans With Disabilities Act Technical Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7540,10 +7540,10 @@ export let ReportData = [
     'CFDA Number': 16.109,
     'Title': 'Civil Rights Prosecution',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 05 2008',
+    'Last Updated Date': 'Aug 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 05 2008',
-    'Last Published Date': 'Aug, 05 2008',
+    'OMB Review Date': 'Aug 05, 2008',
+    'Last Published Date': 'Aug 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7551,10 +7551,10 @@ export let ReportData = [
     'CFDA Number': 16.11,
     'Title': 'Education and Enforcement of the Antidiscrimination Provision of the Immigration and Nationality Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7562,10 +7562,10 @@ export let ReportData = [
     'CFDA Number': 16.2,
     'Title': 'Community Relations Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7573,10 +7573,10 @@ export let ReportData = [
     'CFDA Number': 16.202,
     'Title': 'Prisoner Reentry Initiative Demonstration (Offender Reentry)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2001',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Oct 24, 2001',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7584,10 +7584,10 @@ export let ReportData = [
     'CFDA Number': 16.203,
     'Title': 'Comprehensive Approaches to Sex Offender Management Discretionary Grant (CASOM)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7595,10 +7595,10 @@ export let ReportData = [
     'CFDA Number': 16.3,
     'Title': 'Law Enforcement Assistance_FBI Advanced Police Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7606,10 +7606,10 @@ export let ReportData = [
     'CFDA Number': 16.301,
     'Title': 'Law Enforcement Assistance_FBI Crime Laboratory Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7617,10 +7617,10 @@ export let ReportData = [
     'CFDA Number': 16.302,
     'Title': 'Law Enforcement Assistance_FBI Field Police Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7628,10 +7628,10 @@ export let ReportData = [
     'CFDA Number': 16.303,
     'Title': 'Law Enforcement Assistance_FBI Fingerprint Identification',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7639,10 +7639,10 @@ export let ReportData = [
     'CFDA Number': 16.304,
     'Title': 'Law Enforcement Assistance_National Crime Information Center',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7650,10 +7650,10 @@ export let ReportData = [
     'CFDA Number': 16.305,
     'Title': 'Law Enforcement Assistance_Uniform Crime Reports',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7661,10 +7661,10 @@ export let ReportData = [
     'CFDA Number': 16.307,
     'Title': 'Combined DNA Index System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7672,10 +7672,10 @@ export let ReportData = [
     'CFDA Number': 16.308,
     'Title': 'Indian Country Investigations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7683,10 +7683,10 @@ export let ReportData = [
     'CFDA Number': 16.309,
     'Title': 'Law Enforcement Assistance_National Instant Criminal Background Check System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 25 2000',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Apr 25, 2000',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7694,10 +7694,10 @@ export let ReportData = [
     'CFDA Number': 16.32,
     'Title': 'Services for Trafficking Victims',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 16 2003',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Jan 16, 2003',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7705,10 +7705,10 @@ export let ReportData = [
     'CFDA Number': 16.321,
     'Title': 'Antiterrorism Emergency Reserve',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2003',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Jul 25, 2003',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7716,10 +7716,10 @@ export let ReportData = [
     'CFDA Number': 16.334,
     'Title': 'Test 052510',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 25 2010',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 25, 2010',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -7727,10 +7727,10 @@ export let ReportData = [
     'CFDA Number': 16.523,
     'Title': 'Juvenile Accountability Block Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7738,10 +7738,10 @@ export let ReportData = [
     'CFDA Number': 16.524,
     'Title': 'Legal Assistance for Victims',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7749,10 +7749,10 @@ export let ReportData = [
     'CFDA Number': 16.525,
     'Title': 'Grants to Reduce Domestic Violence, Dating Violence, Sexual Assault, and Stalking on Campus',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7760,10 +7760,10 @@ export let ReportData = [
     'CFDA Number': 16.526,
     'Title': 'OVW Technical Assistance Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7771,10 +7771,10 @@ export let ReportData = [
     'CFDA Number': 16.527,
     'Title': 'Supervised Visitation, Safe Havens for Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 05 2008',
+    'Last Updated Date': 'Aug 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Aug, 05 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Aug 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7782,10 +7782,10 @@ export let ReportData = [
     'CFDA Number': 16.528,
     'Title': 'Enhanced Training and Services to End Violence and Abuse of Women Later in Life',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7793,10 +7793,10 @@ export let ReportData = [
     'CFDA Number': 16.529,
     'Title': 'Education, Training, and Enhanced Services to End Violence Against and Abuse of Women with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7804,10 +7804,10 @@ export let ReportData = [
     'CFDA Number': 16.54,
     'Title': 'Juvenile Justice and Delinquency Prevention_Allocation to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7815,10 +7815,10 @@ export let ReportData = [
     'CFDA Number': 16.541,
     'Title': 'Part E - Developing, Testing and Demonstrating Promising New Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7826,10 +7826,10 @@ export let ReportData = [
     'CFDA Number': 16.543,
     'Title': 'Missing Children\'s Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7837,10 +7837,10 @@ export let ReportData = [
     'CFDA Number': 16.544,
     'Title': 'Gang-Free Schools and Communities_Community-Based Gang Intervention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 12 2007',
+    'Last Updated Date': 'Dec 12, 2007',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 12 2007',
-    'Last Published Date': 'Sep, 01 2006',
+    'OMB Review Date': 'Dec 12, 2007',
+    'Last Published Date': 'Sep 01, 2006',
     'Auto Published': 'No'
   },
   {
@@ -7848,10 +7848,10 @@ export let ReportData = [
     'CFDA Number': 16.547,
     'Title': 'Victims of Child Abuse',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7859,10 +7859,10 @@ export let ReportData = [
     'CFDA Number': 16.548,
     'Title': 'Title V_Delinquency Prevention Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7870,10 +7870,10 @@ export let ReportData = [
     'CFDA Number': 16.55,
     'Title': 'State Justice Statistics Program for Statistical Analysis Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7881,10 +7881,10 @@ export let ReportData = [
     'CFDA Number': 16.554,
     'Title': 'National Criminal History Improvement Program (NCHIP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7892,10 +7892,10 @@ export let ReportData = [
     'CFDA Number': 16.556,
     'Title': 'Grants to State Sexual Assault and Domestic Violence Coalitions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 17 2006',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Apr 17, 2006',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7903,10 +7903,10 @@ export let ReportData = [
     'CFDA Number': 16.557,
     'Title': 'Tribal Domestic Violence and Sexual Assault Coalitions Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 17 2006',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Apr 17, 2006',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7914,10 +7914,10 @@ export let ReportData = [
     'CFDA Number': 16.56,
     'Title': 'National Institute of Justice Research, Evaluation, and Development Project Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7925,10 +7925,10 @@ export let ReportData = [
     'CFDA Number': 16.562,
     'Title': 'Criminal Justice Research and Development_Graduate Research Fellowships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 05 2008',
+    'Last Updated Date': 'Aug 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 05 2008',
-    'Last Published Date': 'Aug, 05 2008',
+    'OMB Review Date': 'Aug 05, 2008',
+    'Last Published Date': 'Aug 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7936,10 +7936,10 @@ export let ReportData = [
     'CFDA Number': 16.566,
     'Title': 'National Institute of Justice W.E.B. DuBois Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 1999',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Oct 21, 1999',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7947,10 +7947,10 @@ export let ReportData = [
     'CFDA Number': 16.567,
     'Title': 1,
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 10 2015',
+    'Last Updated Date': 'Jul 10, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 10 2015',
-    'Last Published Date': 'Jul, 10 2015',
+    'OMB Review Date': 'Jul 10, 2015',
+    'Last Published Date': 'Jul 10, 2015',
     'Auto Published': 'No'
   },
   {
@@ -7958,10 +7958,10 @@ export let ReportData = [
     'CFDA Number': 16.571,
     'Title': 'Public Safety Officers\' Benefits Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7969,10 +7969,10 @@ export let ReportData = [
     'CFDA Number': 16.575,
     'Title': 'Crime Victim Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7980,10 +7980,10 @@ export let ReportData = [
     'CFDA Number': 16.576,
     'Title': 'Crime Victim Compensation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -7991,10 +7991,10 @@ export let ReportData = [
     'CFDA Number': 16.578,
     'Title': 'Federal Surplus Property Transfer Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8002,10 +8002,10 @@ export let ReportData = [
     'CFDA Number': 16.579,
     'Title': 'Edward Byrne Memorial Formula Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 06 2008',
+    'Last Updated Date': 'Aug 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 06 2008',
-    'Last Published Date': 'Aug, 06 2008',
+    'OMB Review Date': 'Aug 06, 2008',
+    'Last Published Date': 'Aug 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8013,10 +8013,10 @@ export let ReportData = [
     'CFDA Number': 16.58,
     'Title': 'Edward Byrne Memorial State and Local Law Enforcement Assistance Discretionary Grants Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8024,10 +8024,10 @@ export let ReportData = [
     'CFDA Number': 16.582,
     'Title': 'Crime Victim Assistance/Discretionary Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 06 2008',
+    'Last Updated Date': 'Aug 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 06 2008',
-    'Last Published Date': 'Aug, 06 2008',
+    'OMB Review Date': 'Aug 06, 2008',
+    'Last Published Date': 'Aug 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8035,10 +8035,10 @@ export let ReportData = [
     'CFDA Number': 16.583,
     'Title': 'Children\'s Justice Act Partnerships for Indian Communities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 22 2008',
+    'Last Updated Date': 'Sep 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2008',
-    'Last Published Date': 'Sep, 22 2008',
+    'OMB Review Date': 'Sep 22, 2008',
+    'Last Published Date': 'Sep 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8046,10 +8046,10 @@ export let ReportData = [
     'CFDA Number': 16.585,
     'Title': 'Drug Court Discretionary Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 22 2008',
+    'Last Updated Date': 'Sep 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2008',
-    'Last Published Date': 'Sep, 22 2008',
+    'OMB Review Date': 'Sep 22, 2008',
+    'Last Published Date': 'Sep 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8057,10 +8057,10 @@ export let ReportData = [
     'CFDA Number': 16.586,
     'Title': 'Violent Offender Incarceration and Truth in Sentencing Incentive Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 22 2008',
+    'Last Updated Date': 'Sep 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2008',
-    'Last Published Date': 'Sep, 22 2008',
+    'OMB Review Date': 'Sep 22, 2008',
+    'Last Published Date': 'Sep 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8068,10 +8068,10 @@ export let ReportData = [
     'CFDA Number': 16.587,
     'Title': 'Violence Against Women Discretionary Grants for Indian Tribal Governments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8079,10 +8079,10 @@ export let ReportData = [
     'CFDA Number': 16.588,
     'Title': 'Violence Against Women Formula Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8090,10 +8090,10 @@ export let ReportData = [
     'CFDA Number': 16.589,
     'Title': 'Rural Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8101,10 +8101,10 @@ export let ReportData = [
     'CFDA Number': 16.59,
     'Title': 'Grants to Encourage Arrest Policies and Enforcement of Protection Orders',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8112,10 +8112,10 @@ export let ReportData = [
     'CFDA Number': 16.593,
     'Title': 'Residential Substance Abuse Treatment for State Prisoners',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8123,10 +8123,10 @@ export let ReportData = [
     'CFDA Number': 16.595,
     'Title': 'Community Capacity Development Office',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8134,10 +8134,10 @@ export let ReportData = [
     'CFDA Number': 16.596,
     'Title': 'Correctional Grant Program for Indian Tribes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8145,10 +8145,10 @@ export let ReportData = [
     'CFDA Number': 16.597,
     'Title': 'Motor Vehicle Theft Protection Act Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 12 2008',
+    'Last Updated Date': 'Aug 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 12 2008',
-    'Last Published Date': 'Apr, 04 2008',
+    'OMB Review Date': 'Aug 12, 2008',
+    'Last Published Date': 'Apr 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8156,10 +8156,10 @@ export let ReportData = [
     'CFDA Number': 16.601,
     'Title': 'Corrections_Training and Staff Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8167,10 +8167,10 @@ export let ReportData = [
     'CFDA Number': 16.602,
     'Title': 'Corrections_Research and Evaluation and Policy Formulation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8178,10 +8178,10 @@ export let ReportData = [
     'CFDA Number': 16.603,
     'Title': 'Corrections_Technical Assistance/Clearinghouse',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8189,10 +8189,10 @@ export let ReportData = [
     'CFDA Number': 16.606,
     'Title': 'State Criminal Alien Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8200,10 +8200,10 @@ export let ReportData = [
     'CFDA Number': 16.607,
     'Title': 'Bulletproof Vest Partnership Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8211,10 +8211,10 @@ export let ReportData = [
     'CFDA Number': 16.608,
     'Title': 'Tribal Court Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8222,10 +8222,10 @@ export let ReportData = [
     'CFDA Number': 16.609,
     'Title': 'Community Prosecution and Project Safe Neighborhoods',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8233,10 +8233,10 @@ export let ReportData = [
     'CFDA Number': 16.61,
     'Title': 'Regional Information Sharing Systems',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 19 1999',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Oct 19, 1999',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8244,10 +8244,10 @@ export let ReportData = [
     'CFDA Number': 16.611,
     'Title': 'Closed-Circuit Televising of Child Victims of Abuse',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 19 1999',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Oct 19, 1999',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8255,10 +8255,10 @@ export let ReportData = [
     'CFDA Number': 16.612,
     'Title': 'National White Collar Crime Center',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 12 2008',
+    'Last Updated Date': 'Aug 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 25 1999',
-    'Last Published Date': 'Apr, 16 2008',
+    'OMB Review Date': 'Oct 25, 1999',
+    'Last Published Date': 'Apr 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8266,10 +8266,10 @@ export let ReportData = [
     'CFDA Number': 16.614,
     'Title': 'State and Local Anti-Terrorism Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2008',
+    'Last Updated Date': 'Nov 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 25 1999',
-    'Last Published Date': 'Nov, 18 2008',
+    'OMB Review Date': 'Oct 25, 1999',
+    'Last Published Date': 'Nov 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8277,10 +8277,10 @@ export let ReportData = [
     'CFDA Number': 16.615,
     'Title': 'Public Safety Officers\' Educational Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 1999',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Oct 21, 1999',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8288,10 +8288,10 @@ export let ReportData = [
     'CFDA Number': 16.616,
     'Title': 'Indian Country Alcohol and Drug Prevention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 25 2001',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Oct 25, 2001',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8299,10 +8299,10 @@ export let ReportData = [
     'CFDA Number': 16.71,
     'Title': 'Public Safety Partnership and Community Policing Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8310,10 +8310,10 @@ export let ReportData = [
     'CFDA Number': 16.726,
     'Title': 'Juvenile Mentoring Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8321,10 +8321,10 @@ export let ReportData = [
     'CFDA Number': 16.727,
     'Title': 'Enforcing Underage Drinking Laws Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 06 2008',
+    'Last Updated Date': 'Aug 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 06 2008',
-    'Last Published Date': 'Aug, 06 2008',
+    'OMB Review Date': 'Aug 06, 2008',
+    'Last Published Date': 'Aug 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8332,10 +8332,10 @@ export let ReportData = [
     'CFDA Number': 16.73,
     'Title': 'Reduction and Prevention of Children\'s Exposure to Violence',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8343,10 +8343,10 @@ export let ReportData = [
     'CFDA Number': 16.731,
     'Title': 'Tribal Youth Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8354,10 +8354,10 @@ export let ReportData = [
     'CFDA Number': 16.734,
     'Title': 'Special Data Collections and Statistical Studies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 29 2003',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Jul 29, 2003',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8365,10 +8365,10 @@ export let ReportData = [
     'CFDA Number': 16.735,
     'Title': 'Protecting Inmates and Safeguarding Communities Discretionary Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 08 2008',
+    'Last Updated Date': 'Aug 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 20 2004',
-    'Last Published Date': 'Aug, 08 2008',
+    'OMB Review Date': 'Apr 20, 2004',
+    'Last Published Date': 'Aug 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8376,10 +8376,10 @@ export let ReportData = [
     'CFDA Number': 16.736,
     'Title': 'Transitional Housing Assistance for Victims of Domestic Violence, Dating Violence, Stalking, or Sexual Assault',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2004',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'May 28, 2004',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8387,10 +8387,10 @@ export let ReportData = [
     'CFDA Number': 16.737,
     'Title': 'Gang Resistance Education and Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2000',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'May 01, 2000',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8398,10 +8398,10 @@ export let ReportData = [
     'CFDA Number': 16.738,
     'Title': 'Edward Byrne Memorial Justice Assistance Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 08 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Feb 08, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8409,10 +8409,10 @@ export let ReportData = [
     'CFDA Number': 16.739,
     'Title': 'National Prison Rape Statistics Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8420,10 +8420,10 @@ export let ReportData = [
     'CFDA Number': 16.74,
     'Title': 'Statewide Automated Victim Information Notification (SAVIN) Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2005',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Jun 09, 2005',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8431,10 +8431,10 @@ export let ReportData = [
     'CFDA Number': 16.741,
     'Title': 'Forensic DNA Backlog Reduction Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 13 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Sep 13, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8442,10 +8442,10 @@ export let ReportData = [
     'CFDA Number': 16.742,
     'Title': 'Paul Coverdell Forensic Sciences Improvement Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 11 2008',
+    'Last Updated Date': 'Aug 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 13 2005',
-    'Last Published Date': 'Aug, 11 2008',
+    'OMB Review Date': 'Sep 13, 2005',
+    'Last Published Date': 'Aug 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8453,10 +8453,10 @@ export let ReportData = [
     'CFDA Number': 16.744,
     'Title': 'Anti-Gang Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 11 2008',
+    'Last Updated Date': 'Aug 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 03 2006',
-    'Last Published Date': 'Aug, 11 2008',
+    'OMB Review Date': 'Mar 03, 2006',
+    'Last Published Date': 'Aug 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8464,10 +8464,10 @@ export let ReportData = [
     'CFDA Number': 16.745,
     'Title': 'Criminal and Juvenile Justice and Mental Health Collaboration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 13 2006',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Mar 13, 2006',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8475,10 +8475,10 @@ export let ReportData = [
     'CFDA Number': 16.746,
     'Title': 'Capital Case Litigation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 18 2006',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Aug 18, 2006',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8486,10 +8486,10 @@ export let ReportData = [
     'CFDA Number': 16.747,
     'Title': 'Crime Victims\' Rights Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 21 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Dec 21, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8497,10 +8497,10 @@ export let ReportData = [
     'CFDA Number': 16.748,
     'Title': 'Convicted Offender and/or Arrestee DNA Backlog Reduction Program (In-House Analysis and Data Review)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 24 2007',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'May 24, 2007',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8508,10 +8508,10 @@ export let ReportData = [
     'CFDA Number': 16.749,
     'Title': 'Radiation Exposure Compensation Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 09 2007',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 09, 2007',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8519,10 +8519,10 @@ export let ReportData = [
     'CFDA Number': 16.75,
     'Title': 'Support for Adam Walsh Act Implementation Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 22 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Jan 22, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8530,10 +8530,10 @@ export let ReportData = [
     'CFDA Number': 16.751,
     'Title': 'Edward Byrne Memorial Competitive Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 06 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'May 06, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8541,10 +8541,10 @@ export let ReportData = [
     'CFDA Number': 16.752,
     'Title': 'Economic High-Tech and Cyber Crime Prevention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 16 2008',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'May 16, 2008',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8552,10 +8552,10 @@ export let ReportData = [
     'CFDA Number': 16.753,
     'Title': 'Congressionally Recommended Awards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8563,10 +8563,10 @@ export let ReportData = [
     'CFDA Number': 16.8,
     'Title': 'RECOVERY ACT - Internet Crimes against Children Task Force Program (ICAC)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 15, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8574,10 +8574,10 @@ export let ReportData = [
     'CFDA Number': 16.801,
     'Title': 'RECOVERY ACT - STATE VICTIM ASSISTANCE FORMULA GRANT PROGRAM',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 14, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8585,10 +8585,10 @@ export let ReportData = [
     'CFDA Number': 16.802,
     'Title': 'RECOVERY ACT - STATE VICTIM COMPENSATION FORMULA GRANT PROGRAM',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 14, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8596,10 +8596,10 @@ export let ReportData = [
     'CFDA Number': 16.803,
     'Title': 'RECOVERY ACT - EDWARD BYRNE MEMORIAL JUSTICE ASSISTANCE GRANT (JAG) PROGRAM  / GRANTS TO STATES AND TERRITORIES',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 15, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8607,10 +8607,10 @@ export let ReportData = [
     'CFDA Number': 16.804,
     'Title': 'RECOVERY ACT - EDWARD BYRNE MEMORIAL JUSTICE ASSISTANCE GRANT (JAG) PROGRAM / GRANTS TO UNITS OF LOCAL GOVERNMENT',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 15, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8618,10 +8618,10 @@ export let ReportData = [
     'CFDA Number': 16.807,
     'Title': 'RECOVERY ACT � VOCA CRIME VICTIM ASSISTANCE DISCRETIONARY GRANT PROGRAM',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 14, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8629,10 +8629,10 @@ export let ReportData = [
     'CFDA Number': 16.808,
     'Title': 'RECOVERY ACT - EDWARD BYRNE MEMORIAL COMPETITIVE GRANT PROGRAM',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 14, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8642,10 +8642,10 @@ export let ReportData = [
     Program: Combating Criminal Narcotics Activity Stemming from the Southern \
     Border of the United States Competitive Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 14, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8653,10 +8653,10 @@ export let ReportData = [
     'CFDA Number': 16.81,
     'Title': 'Recovery Act � Assistance to Rural Law Enforcement to Combat Crime and Drugs Competitive Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 14, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8664,10 +8664,10 @@ export let ReportData = [
     'CFDA Number': 16.811,
     'Title': 'Recovery Act - CORRECTIONAL FACILITIES ON TRIBAL LANDS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 14 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 14, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8675,10 +8675,10 @@ export let ReportData = [
     'CFDA Number': 16.999,
     'Title': 'Test Program 10',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 08 2010',
+    'Last Updated Date': 'Dec 08, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 14 2009',
-    'Last Published Date': 'Dec, 08 2010',
+    'OMB Review Date': 'Oct 14, 2009',
+    'Last Published Date': 'Dec 08, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8686,10 +8686,10 @@ export let ReportData = [
     'CFDA Number': 17.002,
     'Title': 'Labor Force Statistics',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8697,10 +8697,10 @@ export let ReportData = [
     'CFDA Number': 17.003,
     'Title': 'Prices and Cost of Living Data',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8708,10 +8708,10 @@ export let ReportData = [
     'CFDA Number': 17.004,
     'Title': 'Productivity and Technology Data',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2008',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jul 11, 2008',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8719,10 +8719,10 @@ export let ReportData = [
     'CFDA Number': 17.005,
     'Title': 'Compensation and Working Conditions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2008',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jul 11, 2008',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8730,10 +8730,10 @@ export let ReportData = [
     'CFDA Number': 17.15,
     'Title': 'Employee Benefits Security Administration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8741,10 +8741,10 @@ export let ReportData = [
     'CFDA Number': 17.151,
     'Title': 'Employee Benefits Security Administration (EBSA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 12 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 12, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8752,10 +8752,10 @@ export let ReportData = [
     'CFDA Number': 17.201,
     'Title': 'Registered Apprenticeship and Other Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 13 2008',
+    'Last Updated Date': 'Jun 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 13 2008',
-    'Last Published Date': 'Jun, 13 2008',
+    'OMB Review Date': 'Jun 13, 2008',
+    'Last Published Date': 'Jun 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8763,10 +8763,10 @@ export let ReportData = [
     'CFDA Number': 17.207,
     'Title': 'Employment Service/Wagner-Peyser Funded Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8774,10 +8774,10 @@ export let ReportData = [
     'CFDA Number': 17.225,
     'Title': 'Unemployment Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8785,10 +8785,10 @@ export let ReportData = [
     'CFDA Number': 17.235,
     'Title': 'Senior Community Service Employment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2008',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jul 11, 2008',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8796,10 +8796,10 @@ export let ReportData = [
     'CFDA Number': 17.245,
     'Title': 'Trade Adjustment Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8807,10 +8807,10 @@ export let ReportData = [
     'CFDA Number': 17.258,
     'Title': 'WIA Adult Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8818,10 +8818,10 @@ export let ReportData = [
     'CFDA Number': 17.259,
     'Title': 'WIA Youth Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8829,10 +8829,10 @@ export let ReportData = [
     'CFDA Number': 17.26,
     'Title': 'WIA Dislocated  Workers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 13 2008',
+    'Last Updated Date': 'Jun 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Jun, 13 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Jun 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8840,10 +8840,10 @@ export let ReportData = [
     'CFDA Number': 17.261,
     'Title': 'WIA Pilots, Demonstrations, and Research Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 13 2008',
+    'Last Updated Date': 'Jun 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2001',
-    'Last Published Date': 'Jun, 13 2008',
+    'OMB Review Date': 'Oct 23, 2001',
+    'Last Published Date': 'Jun 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8851,10 +8851,10 @@ export let ReportData = [
     'CFDA Number': 17.264,
     'Title': 'National Farmworker Jobs Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 31 2002',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'May 31, 2002',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8862,10 +8862,10 @@ export let ReportData = [
     'CFDA Number': 17.265,
     'Title': 'Native American Employment and Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8873,10 +8873,10 @@ export let ReportData = [
     'CFDA Number': 17.266,
     'Title': 'Work Incentive Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2002',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jun 03, 2002',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8884,10 +8884,10 @@ export let ReportData = [
     'CFDA Number': 17.267,
     'Title': 'Incentive Grants - WIA Section 503',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 07 2003',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jan 07, 2003',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8895,10 +8895,10 @@ export let ReportData = [
     'CFDA Number': 17.268,
     'Title': 'H-1B Job Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8906,10 +8906,10 @@ export let ReportData = [
     'CFDA Number': 17.269,
     'Title': 'Community Based Job Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 02 2006',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'May 02, 2006',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8917,10 +8917,10 @@ export let ReportData = [
     'CFDA Number': 17.27,
     'Title': 'Reintegration of Ex-Offenders',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8928,10 +8928,10 @@ export let ReportData = [
     'CFDA Number': 17.271,
     'Title': 'Work Opportunity Tax Credit Program (WOTC)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8939,10 +8939,10 @@ export let ReportData = [
     'CFDA Number': 17.272,
     'Title': 'Permanent Labor Certification for Foreign Workers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 13 2008',
+    'Last Updated Date': 'Jun 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Jun, 13 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Jun 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8950,10 +8950,10 @@ export let ReportData = [
     'CFDA Number': 17.273,
     'Title': 'Temporary Labor Certification for Foreign Workers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8961,10 +8961,10 @@ export let ReportData = [
     'CFDA Number': 17.274,
     'Title': 'YOUTHBUILD',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2007',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jun 07, 2007',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -8972,10 +8972,10 @@ export let ReportData = [
     'CFDA Number': 17.275,
     'Title': 'PROGRAM OF COMPETITIVE GRANTS FOR WORKER TRAINING AND PLACEMENT IN HIGH GROWTH AND EMERGING INDUSTRY SECTORS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 18, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8983,10 +8983,10 @@ export let ReportData = [
     'CFDA Number': 17.276,
     'Title': 'Health Coverage Tax Credit (HCTC)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 18, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -8994,10 +8994,10 @@ export let ReportData = [
     'CFDA Number': 17.301,
     'Title': 'Non-Discrimination and Affirmative Action by Federal Contractors and Federally Assisted Construction Contractors',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9005,10 +9005,10 @@ export let ReportData = [
     'CFDA Number': 17.302,
     'Title': 'Longshore and Harbor Workers\' Compensation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9016,10 +9016,10 @@ export let ReportData = [
     'CFDA Number': 17.303,
     'Title': 'Wage and Hour Standards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9027,10 +9027,10 @@ export let ReportData = [
     'CFDA Number': 17.306,
     'Title': 'Consumer Credit Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9038,10 +9038,10 @@ export let ReportData = [
     'CFDA Number': 17.307,
     'Title': 'Coal Mine Workers\' Compensation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9049,10 +9049,10 @@ export let ReportData = [
     'CFDA Number': 17.308,
     'Title': 'Farm Labor Contractor Registration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9060,10 +9060,10 @@ export let ReportData = [
     'CFDA Number': 17.309,
     'Title': 'Labor Organization Reports',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9071,10 +9071,10 @@ export let ReportData = [
     'CFDA Number': 17.31,
     'Title': 'Energy Employees Occupational Illness Compensation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 02 2006',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Mar 02, 2006',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9082,10 +9082,10 @@ export let ReportData = [
     'CFDA Number': 17.311,
     'Title': 'Federal Transit Employee Protection Certifications: Office of Labor-Management Standards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 15, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -9093,10 +9093,10 @@ export let ReportData = [
     'CFDA Number': 17.502,
     'Title': 'Occupational Safety and Health_Susan Harwood Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 10 2008',
+    'Last Updated Date': 'Jun 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 10 2008',
-    'Last Published Date': 'Jun, 10 2008',
+    'OMB Review Date': 'Jun 10, 2008',
+    'Last Published Date': 'Jun 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9104,10 +9104,10 @@ export let ReportData = [
     'CFDA Number': 17.503,
     'Title': 'Occupational Safety and Health_State Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 10 2008',
+    'Last Updated Date': 'Jun 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 10 2008',
-    'Last Published Date': 'Jun, 10 2008',
+    'OMB Review Date': 'Jun 10, 2008',
+    'Last Published Date': 'Jun 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9115,10 +9115,10 @@ export let ReportData = [
     'CFDA Number': 17.504,
     'Title': 'Consultation Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9126,10 +9126,10 @@ export let ReportData = [
     'CFDA Number': 17.505,
     'Title': 'OSHA Data Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 10 2008',
+    'Last Updated Date': 'Jun 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 2003',
-    'Last Published Date': 'Jun, 10 2008',
+    'OMB Review Date': 'Oct 21, 2003',
+    'Last Published Date': 'Jun 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9137,10 +9137,10 @@ export let ReportData = [
     'CFDA Number': 17.6,
     'Title': 'Mine Health and Safety Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9148,10 +9148,10 @@ export let ReportData = [
     'CFDA Number': 17.601,
     'Title': 'Mine Health and Safety Counseling and Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2008',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'May 28, 2008',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9159,10 +9159,10 @@ export let ReportData = [
     'CFDA Number': 17.602,
     'Title': 'Mine Health and Safety Education and Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2008',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'May 28, 2008',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9170,10 +9170,10 @@ export let ReportData = [
     'CFDA Number': 17.603,
     'Title': 'Brookwood-Sago Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 21 2008',
+    'Last Updated Date': 'May 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 27 2007',
-    'Last Published Date': 'May, 21 2008',
+    'OMB Review Date': 'Jul 27, 2007',
+    'Last Published Date': 'May 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9181,10 +9181,10 @@ export let ReportData = [
     'CFDA Number': 17.604,
     'Title': 'Safety and Health Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9192,10 +9192,10 @@ export let ReportData = [
     'CFDA Number': 17.7,
     'Title': 'Women\'s Bureau',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 12 2008',
+    'Last Updated Date': 'Aug 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 12 2008',
-    'Last Published Date': 'Aug, 12 2008',
+    'OMB Review Date': 'Aug 12, 2008',
+    'Last Published Date': 'Aug 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9203,10 +9203,10 @@ export let ReportData = [
     'CFDA Number': 17.72,
     'Title': 'Disability Employment Policy Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 31 2002',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'May 31, 2002',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9214,10 +9214,10 @@ export let ReportData = [
     'CFDA Number': 17.801,
     'Title': 'Disabled Veterans\' Outreach Program (DVOP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9225,10 +9225,10 @@ export let ReportData = [
     'CFDA Number': 17.802,
     'Title': 'Veterans\' Employment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9236,10 +9236,10 @@ export let ReportData = [
     'CFDA Number': 17.803,
     'Title': 'Uniformed Services Employment and Reemployment Rights',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9247,10 +9247,10 @@ export let ReportData = [
     'CFDA Number': 17.804,
     'Title': 'Local Veterans\' Employment Representative Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9258,10 +9258,10 @@ export let ReportData = [
     'CFDA Number': 17.805,
     'Title': 'Homeless Veterans Reintegration Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9269,10 +9269,10 @@ export let ReportData = [
     'CFDA Number': 17.806,
     'Title': 'Veteran\'s Preference in Federal Employment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 27 2000',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Apr 27, 2000',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9280,10 +9280,10 @@ export let ReportData = [
     'CFDA Number': 17.807,
     'Title': 'Transition Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 17 2004',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Dec 17, 2004',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9291,10 +9291,10 @@ export let ReportData = [
     'CFDA Number': 19.204,
     'Title': 'Fishermen\'s Guaranty Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 10 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Oct 10, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9302,10 +9302,10 @@ export let ReportData = [
     'CFDA Number': 19.3,
     'Title': 'Program for Study of Eastern Europe and the Independent States of the Former Soviet Union',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9313,10 +9313,10 @@ export let ReportData = [
     'CFDA Number': 19.4,
     'Title': 'Educational Exchange_Graduate Students',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 10 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Oct 10, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9324,10 +9324,10 @@ export let ReportData = [
     'CFDA Number': 19.401,
     'Title': 'Educational Exchange_University Lecturers (Professors) and Research Scholars',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9335,10 +9335,10 @@ export let ReportData = [
     'CFDA Number': 19.402,
     'Title': 'International Visitors Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9346,10 +9346,10 @@ export let ReportData = [
     'CFDA Number': 19.403,
     'Title': 'American Council of Young Political Leaders',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9357,10 +9357,10 @@ export let ReportData = [
     'CFDA Number': 19.408,
     'Title': 'Educational Exchange_Teachers from Secondary and Postsecondary Levels and School Administrators',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9368,10 +9368,10 @@ export let ReportData = [
     'CFDA Number': 19.409,
     'Title': 'Arts Exchanges on International Issues',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9379,10 +9379,10 @@ export let ReportData = [
     'CFDA Number': 19.41,
     'Title': 'Educational Exchange_Congress-Bundestag Youth Exchange',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 26 2008',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Sep 26, 2008',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9390,10 +9390,10 @@ export let ReportData = [
     'CFDA Number': 19.415,
     'Title': 'Professional Exchanges_Annual Open Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9401,10 +9401,10 @@ export let ReportData = [
     'CFDA Number': 19.418,
     'Title': 'Educational Exchange, American Studies Institute',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2008',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Sep 20, 2008',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9412,10 +9412,10 @@ export let ReportData = [
     'CFDA Number': 19.421,
     'Title': 'Exchange_English Language Fellow Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 10 2001',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'May 10, 2001',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9423,10 +9423,10 @@ export let ReportData = [
     'CFDA Number': 19.423,
     'Title': 'Exchange_English Language Specialist/Speaker Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 10 2001',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'May 10, 2001',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9434,10 +9434,10 @@ export let ReportData = [
     'CFDA Number': 19.425,
     'Title': 'Benjamin Gilman International Scholarship',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 31 2002',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'May 31, 2002',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9445,10 +9445,10 @@ export let ReportData = [
     'CFDA Number': 19.43,
     'Title': 'International Education Training and Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2005',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Apr 06, 2005',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9456,10 +9456,10 @@ export let ReportData = [
     'CFDA Number': 19.431,
     'Title': 'Educational Exchange_Scholar-in-Residence (U.S. Institutions of Higher Education Host Lecturing Faculty From Abroad)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2005',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Apr 06, 2005',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9467,10 +9467,10 @@ export let ReportData = [
     'CFDA Number': 19.432,
     'Title': 'Overseas Educational Advising',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 07 2005',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Apr 07, 2005',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9478,10 +9478,10 @@ export let ReportData = [
     'CFDA Number': 19.5,
     'Title': 'Middle East Partnership Initiative (MEPI)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 15 2004',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Jan 15, 2004',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9489,10 +9489,10 @@ export let ReportData = [
     'CFDA Number': 19.51,
     'Title': 'U.S. Refugee Admissions Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2004',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Jul 08, 2004',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9500,10 +9500,10 @@ export let ReportData = [
     'CFDA Number': 19.511,
     'Title': 'Overseas Refugee Assistance Programs for East Asia',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 02 2005',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Feb 02, 2005',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9511,10 +9511,10 @@ export let ReportData = [
     'CFDA Number': 19.517,
     'Title': 'Overseas Refugee Assistance Programs for Africa',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 02 2005',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Feb 02, 2005',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9522,10 +9522,10 @@ export let ReportData = [
     'CFDA Number': 19.518,
     'Title': 'Overseas Refugee Assistance Programs for Western Hemisphere',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 03 2005',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Feb 03, 2005',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9533,10 +9533,10 @@ export let ReportData = [
     'CFDA Number': 19.519,
     'Title': 'Overseas Refugee Assistance Program for Near East and South Asia',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 03 2005',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Feb 03, 2005',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9544,10 +9544,10 @@ export let ReportData = [
     'CFDA Number': 19.52,
     'Title': 'Overseas Refugee Assistance Programs for Europe',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 20 2008',
+    'Last Updated Date': 'Sep 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 03 2005',
-    'Last Published Date': 'Sep, 20 2008',
+    'OMB Review Date': 'Feb 03, 2005',
+    'Last Published Date': 'Sep 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9555,10 +9555,10 @@ export let ReportData = [
     'CFDA Number': 19.522,
     'Title': 'Overseas Refugee Assistance Programs for Strategic Global Priorities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 27 2005',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Jan 27, 2005',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9566,10 +9566,10 @@ export let ReportData = [
     'CFDA Number': 20.1,
     'Title': 'Aviation Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 02 2008',
+    'Last Updated Date': 'Jul 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 02 2008',
-    'Last Published Date': 'Jul, 02 2008',
+    'OMB Review Date': 'Jul 02, 2008',
+    'Last Published Date': 'Jul 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9577,10 +9577,10 @@ export let ReportData = [
     'CFDA Number': 20.106,
     'Title': 'Airport Improvement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9588,10 +9588,10 @@ export let ReportData = [
     'CFDA Number': 20.108,
     'Title': 'Aviation Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9599,10 +9599,10 @@ export let ReportData = [
     'CFDA Number': 20.109,
     'Title': 'Air Transportation Centers of Excellence',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2008',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jul 11, 2008',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9610,10 +9610,10 @@ export let ReportData = [
     'CFDA Number': 20.2,
     'Title': 'Highway Research and Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 16 2006',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Feb 16, 2006',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9621,10 +9621,10 @@ export let ReportData = [
     'CFDA Number': 20.205,
     'Title': 'Highway Planning and Construction',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9632,10 +9632,10 @@ export let ReportData = [
     'CFDA Number': 20.215,
     'Title': 'Highway Training and Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2008',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jul 11, 2008',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9643,10 +9643,10 @@ export let ReportData = [
     'CFDA Number': 20.218,
     'Title': 'National Motor Carrier Safety',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9654,10 +9654,10 @@ export let ReportData = [
     'CFDA Number': 20.219,
     'Title': 'Recreational Trails Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2008',
+    'Last Updated Date': 'Jul 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2008',
-    'Last Published Date': 'Jul, 11 2008',
+    'OMB Review Date': 'Jul 11, 2008',
+    'Last Published Date': 'Jul 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9665,10 +9665,10 @@ export let ReportData = [
     'CFDA Number': 20.223,
     'Title': 'Transportation Infrastructure Finance and Innovation Act (TIFIA) Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 02 2008',
+    'Last Updated Date': 'Jul 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Jul, 02 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Jul 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9676,10 +9676,10 @@ export let ReportData = [
     'CFDA Number': 20.231,
     'Title': 'Performance and Registration Information Systems Management',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9687,10 +9687,10 @@ export let ReportData = [
     'CFDA Number': 20.232,
     'Title': 'Commercial Driver License State Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 29 2005',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 29, 2005',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9698,10 +9698,10 @@ export let ReportData = [
     'CFDA Number': 20.233,
     'Title': 'Border Enforcement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2005',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Sep 22, 2005',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9709,10 +9709,10 @@ export let ReportData = [
     'CFDA Number': 20.234,
     'Title': 'Safety Data Improvement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9720,10 +9720,10 @@ export let ReportData = [
     'CFDA Number': 20.235,
     'Title': 'Commercial Motor Vehicle Operator Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9731,10 +9731,10 @@ export let ReportData = [
     'CFDA Number': 20.236,
     'Title': 'Thermal Imaging Inspection System Demonstration Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9742,10 +9742,10 @@ export let ReportData = [
     'CFDA Number': 20.237,
     'Title': 'Safety Data Improvement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9753,10 +9753,10 @@ export let ReportData = [
     'CFDA Number': 20.238,
     'Title': 'Commercial Drivers License Information System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 01 2007',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 01, 2007',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9764,10 +9764,10 @@ export let ReportData = [
     'CFDA Number': 20.24,
     'Title': 'Fuel Tax Evasion-Intergovernmental Enforcement Effort',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9775,10 +9775,10 @@ export let ReportData = [
     'CFDA Number': 20.301,
     'Title': 'Railroad Safety',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 21 2008',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Sep 21, 2008',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9786,10 +9786,10 @@ export let ReportData = [
     'CFDA Number': 20.303,
     'Title': 'Grants-in-Aid for Railroad Safety_State Participation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 21 2008',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Sep 21, 2008',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9797,10 +9797,10 @@ export let ReportData = [
     'CFDA Number': 20.312,
     'Title': 'High Speed Ground Transportation_Next Generation High Speed Rail Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 22 2008',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'Jul 22, 2008',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9808,10 +9808,10 @@ export let ReportData = [
     'CFDA Number': 20.313,
     'Title': 'Railroad Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9819,10 +9819,10 @@ export let ReportData = [
     'CFDA Number': 20.314,
     'Title': 'Railroad Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9830,10 +9830,10 @@ export let ReportData = [
     'CFDA Number': 20.315,
     'Title': 'National Railroad Passenger Corporation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 17 2008',
+    'Last Updated Date': 'Oct 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 21 2006',
-    'Last Published Date': 'Oct, 17 2008',
+    'OMB Review Date': 'Nov 21, 2006',
+    'Last Published Date': 'Oct 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9841,10 +9841,10 @@ export let ReportData = [
     'CFDA Number': 20.316,
     'Title': 'Railroad Rehabilitation and Improvement Financing Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 27 2007',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Aug 27, 2007',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9852,10 +9852,10 @@ export let ReportData = [
     'CFDA Number': 20.317,
     'Title': 'Capital Assistance to States - Intercity Passenger Rail Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 12 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Feb 12, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9863,10 +9863,10 @@ export let ReportData = [
     'CFDA Number': 20.318,
     'Title': 'Maglev Project Selection Program - SAFETEA-LU',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 06 2009',
+    'Last Updated Date': 'Jan 06, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2008',
-    'Last Published Date': 'Jan, 06 2009',
+    'OMB Review Date': 'Nov 20, 2008',
+    'Last Published Date': 'Jan 06, 2009',
     'Auto Published': 'No'
   },
   {
@@ -9874,10 +9874,10 @@ export let ReportData = [
     'CFDA Number': 20.5,
     'Title': 'Federal Transit_Capital Investment Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9885,10 +9885,10 @@ export let ReportData = [
     'CFDA Number': 20.505,
     'Title': 'Federal Transit_Metropolitan Planning Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9896,10 +9896,10 @@ export let ReportData = [
     'CFDA Number': 20.507,
     'Title': 'Federal Transit_Formula Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9907,10 +9907,10 @@ export let ReportData = [
     'CFDA Number': 20.509,
     'Title': 'Formula Grants for Other Than Urbanized Areas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9918,10 +9918,10 @@ export let ReportData = [
     'CFDA Number': 20.513,
     'Title': 'Capital Assistance Program for Elderly Persons and Persons with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9929,10 +9929,10 @@ export let ReportData = [
     'CFDA Number': 20.514,
     'Title': 'Public Transportation Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 24 2008',
+    'Last Updated Date': 'Jun 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 24 2008',
-    'Last Published Date': 'Jun, 24 2008',
+    'OMB Review Date': 'Jun 24, 2008',
+    'Last Published Date': 'Jun 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9940,10 +9940,10 @@ export let ReportData = [
     'CFDA Number': 20.515,
     'Title': 'State Planning and Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2008',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 31, 2008',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9951,10 +9951,10 @@ export let ReportData = [
     'CFDA Number': 20.516,
     'Title': 'Job Access_Reverse Commute',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 25 2000',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Oct 25, 2000',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9962,10 +9962,10 @@ export let ReportData = [
     'CFDA Number': 20.518,
     'Title': 'Capital and Training Assistance Program for Over-the-Road Bus Accessibility',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 31 2008',
+    'Last Updated Date': 'Oct 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 10 2000',
-    'Last Published Date': 'Oct, 31 2008',
+    'OMB Review Date': 'Oct 10, 2000',
+    'Last Published Date': 'Oct 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9973,10 +9973,10 @@ export let ReportData = [
     'CFDA Number': 20.519,
     'Title': 'Clean Fuels',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 20 2006',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Apr 20, 2006',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9984,10 +9984,10 @@ export let ReportData = [
     'CFDA Number': 20.521,
     'Title': 'New Freedom Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 02 2006',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'May 02, 2006',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -9995,10 +9995,10 @@ export let ReportData = [
     'CFDA Number': 20.522,
     'Title': 'Alternatives Analysis',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 02 2006',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'May 02, 2006',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10006,10 +10006,10 @@ export let ReportData = [
     'CFDA Number': 20.6,
     'Title': 'State and Community Highway Safety',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10017,10 +10017,10 @@ export let ReportData = [
     'CFDA Number': 20.601,
     'Title': 'Alcohol Traffic Safety and Drunk Driving Prevention Incentive Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 13 2008',
+    'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 13 2008',
-    'Last Published Date': 'Nov, 13 2008',
+    'OMB Review Date': 'Nov 13, 2008',
+    'Last Published Date': 'Nov 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10028,10 +10028,10 @@ export let ReportData = [
     'CFDA Number': 20.602,
     'Title': 'Occupant Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2000',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Oct 17, 2000',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10039,10 +10039,10 @@ export let ReportData = [
     'CFDA Number': 20.605,
     'Title': 'Safety Incentives to Prevent Operation of Motor Vehicles by Intoxicated Persons',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 10 2000',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Oct 10, 2000',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10050,10 +10050,10 @@ export let ReportData = [
     'CFDA Number': 20.607,
     'Title': 'Alcohol Open Container Requirements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 25 2004',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'May 25, 2004',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10061,10 +10061,10 @@ export let ReportData = [
     'CFDA Number': 20.608,
     'Title': 'Minimum Penalties for Repeat Offenders for Driving While Intoxicated',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 25 2004',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'May 25, 2004',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10072,10 +10072,10 @@ export let ReportData = [
     'CFDA Number': 20.609,
     'Title': 'Safety Belt Performance Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 17 2006',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Apr 17, 2006',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10083,10 +10083,10 @@ export let ReportData = [
     'CFDA Number': 20.61,
     'Title': 'State Traffic Safety Information System Improvement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 17 2006',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Apr 17, 2006',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10094,10 +10094,10 @@ export let ReportData = [
     'CFDA Number': 20.611,
     'Title': 'Incentive Grant Program to Prohibit Racial Profiling',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 17 2006',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Apr 17, 2006',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10105,10 +10105,10 @@ export let ReportData = [
     'CFDA Number': 20.612,
     'Title': 'Incentive Grant Program to Increase Motorcyclist Safety',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 17 2006',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Apr 17, 2006',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10116,10 +10116,10 @@ export let ReportData = [
     'CFDA Number': 20.613,
     'Title': 'Child Safety and Child Booster Seats Incentive Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 17 2006',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Apr 17, 2006',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10127,10 +10127,10 @@ export let ReportData = [
     'CFDA Number': 20.614,
     'Title': 'National Highway Transportation Safety Administration (NHTSA) Discretionary Safety Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 07 2006',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Dec 07, 2006',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10138,10 +10138,10 @@ export let ReportData = [
     'CFDA Number': 20.7,
     'Title': 'Pipeline Safety Program Base Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10149,10 +10149,10 @@ export let ReportData = [
     'CFDA Number': 20.701,
     'Title': 'University Transportation Centers Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 02 2008',
+    'Last Updated Date': 'Jul 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 02 2008',
-    'Last Published Date': 'Jul, 02 2008',
+    'OMB Review Date': 'Jul 02, 2008',
+    'Last Published Date': 'Jul 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10160,10 +10160,10 @@ export let ReportData = [
     'CFDA Number': 20.703,
     'Title': 'Interagency Hazardous Materials Public Sector Training and Planning Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10171,10 +10171,10 @@ export let ReportData = [
     'CFDA Number': 20.704,
     'Title': 'RITA Hydrogen',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2006',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'May 09, 2006',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10182,10 +10182,10 @@ export let ReportData = [
     'CFDA Number': 20.72,
     'Title': 'State Damage Prevention Program Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 12 2007',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'Dec 12, 2007',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10193,10 +10193,10 @@ export let ReportData = [
     'CFDA Number': 20.721,
     'Title': 'PHMSA Pipeline Safety Program One Call Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 01 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Apr 01, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10204,10 +10204,10 @@ export let ReportData = [
     'CFDA Number': 20.76,
     'Title': 'University Transportation Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2006',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'May 15, 2006',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10215,10 +10215,10 @@ export let ReportData = [
     'CFDA Number': 20.761,
     'Title': 'Biobased Transportation Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2006',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Jul 11, 2006',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10226,10 +10226,10 @@ export let ReportData = [
     'CFDA Number': 20.762,
     'Title': 'Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 04 2006',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Aug 04, 2006',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10237,10 +10237,10 @@ export let ReportData = [
     'CFDA Number': 20.763,
     'Title': 'Research and Innovative Technology (RIT) Hydrogen Alternative Fuel Life Cycle',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 11 2006',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Oct 11, 2006',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10248,10 +10248,10 @@ export let ReportData = [
     'CFDA Number': 20.764,
     'Title': 'Hydrogen Storage Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 01 2007',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Jun 01, 2007',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10259,10 +10259,10 @@ export let ReportData = [
     'CFDA Number': 20.802,
     'Title': 'Federal Ship Financing Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10270,10 +10270,10 @@ export let ReportData = [
     'CFDA Number': 20.803,
     'Title': 'Maritime War Risk Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10281,10 +10281,10 @@ export let ReportData = [
     'CFDA Number': 20.806,
     'Title': 'State Maritime Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10292,10 +10292,10 @@ export let ReportData = [
     'CFDA Number': 20.807,
     'Title': 'U.S. Merchant Marine Academy',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10303,10 +10303,10 @@ export let ReportData = [
     'CFDA Number': 20.808,
     'Title': 'Capital Construction Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10314,10 +10314,10 @@ export let ReportData = [
     'CFDA Number': 20.81,
     'Title': 'Supplementary Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10325,10 +10325,10 @@ export let ReportData = [
     'CFDA Number': 20.812,
     'Title': 'Construction Reserve Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10336,10 +10336,10 @@ export let ReportData = [
     'CFDA Number': 20.813,
     'Title': 'Maritime Security Fleet Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10347,10 +10347,10 @@ export let ReportData = [
     'CFDA Number': 20.814,
     'Title': 'Assistance to Small Shipyards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 12 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Feb 12, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10358,10 +10358,10 @@ export let ReportData = [
     'CFDA Number': 20.815,
     'Title': 'Fireboat Construction',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 06 2009',
+    'Last Updated Date': 'Jan 06, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2008',
-    'Last Published Date': 'Jan, 06 2009',
+    'OMB Review Date': 'Nov 20, 2008',
+    'Last Published Date': 'Jan 06, 2009',
     'Auto Published': 'No'
   },
   {
@@ -10369,10 +10369,10 @@ export let ReportData = [
     'CFDA Number': 20.9,
     'Title': 'Transportation_Consumer Affairs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 21 2008',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Sep 21, 2008',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10380,10 +10380,10 @@ export let ReportData = [
     'CFDA Number': 20.901,
     'Title': 'Payments for Essential Air Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 21 2008',
+    'Last Updated Date': 'Sep 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 21 2008',
-    'Last Published Date': 'Sep, 21 2008',
+    'OMB Review Date': 'Sep 21, 2008',
+    'Last Published Date': 'Sep 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10391,10 +10391,10 @@ export let ReportData = [
     'CFDA Number': 20.904,
     'Title': 'Bonding Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10402,10 +10402,10 @@ export let ReportData = [
     'CFDA Number': 20.905,
     'Title': 'Disadvantaged Business Enterprises_Short Term Lending Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10413,10 +10413,10 @@ export let ReportData = [
     'CFDA Number': 20.91,
     'Title': 'Assistance to small and disadvantaged businesses',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 28 2008',
+    'Last Updated Date': 'Oct 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2007',
-    'Last Published Date': 'Oct, 28 2008',
+    'OMB Review Date': 'May 30, 2007',
+    'Last Published Date': 'Oct 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10424,10 +10424,10 @@ export let ReportData = [
     'CFDA Number': 20.93,
     'Title': 'Payments for Small Community Air Service Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2004',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jun 03, 2004',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10435,10 +10435,10 @@ export let ReportData = [
     'CFDA Number': 20.931,
     'Title': 'Transportation Planning, Research and Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 22 2006',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Aug 22, 2006',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10446,10 +10446,10 @@ export let ReportData = [
     'CFDA Number': 21.003,
     'Title': 'Taxpayer Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10457,10 +10457,10 @@ export let ReportData = [
     'CFDA Number': 21.004,
     'Title': 'Exchange of Federal Tax Information With State Tax Agencies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10468,10 +10468,10 @@ export let ReportData = [
     'CFDA Number': 21.006,
     'Title': 'Tax Counseling for the Elderly',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10479,10 +10479,10 @@ export let ReportData = [
     'CFDA Number': 21.008,
     'Title': 'Low-Income Taxpayer Clinics',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 28 2008',
+    'Last Updated Date': 'Jul 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 28 2008',
-    'Last Published Date': 'Jul, 28 2008',
+    'OMB Review Date': 'Jul 28, 2008',
+    'Last Published Date': 'Jul 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10490,10 +10490,10 @@ export let ReportData = [
     'CFDA Number': 21.02,
     'Title': 'Community Development Financial Institutions Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10501,10 +10501,10 @@ export let ReportData = [
     'CFDA Number': 21.021,
     'Title': 'Bank Enterprise Award Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10512,10 +10512,10 @@ export let ReportData = [
     'CFDA Number': 23.001,
     'Title': 'Appalachian Regional Development (See individual Appalachian Programs)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 15 2008',
+    'Last Updated Date': 'Apr 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 15 2008',
-    'Last Published Date': 'Apr, 15 2008',
+    'OMB Review Date': 'Apr 15, 2008',
+    'Last Published Date': 'Apr 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10523,10 +10523,10 @@ export let ReportData = [
     'CFDA Number': 23.002,
     'Title': 'Appalachian Area Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 22 2008',
+    'Last Updated Date': 'Sep 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2008',
-    'Last Published Date': 'Sep, 22 2008',
+    'OMB Review Date': 'Sep 22, 2008',
+    'Last Published Date': 'Sep 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10534,10 +10534,10 @@ export let ReportData = [
     'CFDA Number': 23.003,
     'Title': 'Appalachian Development Highway System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10545,10 +10545,10 @@ export let ReportData = [
     'CFDA Number': 23.009,
     'Title': 'Appalachian Local Development District Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10556,10 +10556,10 @@ export let ReportData = [
     'CFDA Number': 23.011,
     'Title': 'Appalachian Research, Technical Assistance, and Demonstration Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10567,10 +10567,10 @@ export let ReportData = [
     'CFDA Number': 27.001,
     'Title': 'Federal Civil Service Employment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 11 2007',
+    'Last Updated Date': 'Oct 11, 2007',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 11 2007',
-    'Last Published Date': 'Oct, 11 2007',
+    'OMB Review Date': 'Oct 11, 2007',
+    'Last Published Date': 'Oct 11, 2007',
     'Auto Published': 'No'
   },
   {
@@ -10578,10 +10578,10 @@ export let ReportData = [
     'CFDA Number': 27.002,
     'Title': 'Federal Employment Assistance for Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 01 2006',
+    'Last Updated Date': 'Sep 01, 2006',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 01 2006',
-    'Last Published Date': 'Sep, 01 2006',
+    'OMB Review Date': 'Sep 01, 2006',
+    'Last Published Date': 'Sep 01, 2006',
     'Auto Published': 'No'
   },
   {
@@ -10589,10 +10589,10 @@ export let ReportData = [
     'CFDA Number': 27.003,
     'Title': 'Federal Student Temporary Employment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 01 2006',
+    'Last Updated Date': 'Sep 01, 2006',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 01 2006',
-    'Last Published Date': 'Sep, 01 2006',
+    'OMB Review Date': 'Sep 01, 2006',
+    'Last Published Date': 'Sep 01, 2006',
     'Auto Published': 'No'
   },
   {
@@ -10600,10 +10600,10 @@ export let ReportData = [
     'CFDA Number': 27.005,
     'Title': 'Federal Employment for Individuals With Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 28 2008',
+    'Last Updated Date': 'Mar 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 28 2008',
-    'Last Published Date': 'Mar, 28 2008',
+    'OMB Review Date': 'Mar 28, 2008',
+    'Last Published Date': 'Mar 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10611,10 +10611,10 @@ export let ReportData = [
     'CFDA Number': 27.006,
     'Title': 'Federal Summer Employment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2005',
+    'Last Updated Date': 'Jul 08, 2005',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2005',
-    'Last Published Date': 'Jul, 08 2005',
+    'OMB Review Date': 'Jul 08, 2005',
+    'Last Published Date': 'Jul 08, 2005',
     'Auto Published': 'No'
   },
   {
@@ -10622,10 +10622,10 @@ export let ReportData = [
     'CFDA Number': 27.011,
     'Title': 'Intergovernmental Personnel Act (IPA) Mobility Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2005',
+    'Last Updated Date': 'Jul 08, 2005',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2005',
-    'Last Published Date': 'Jul, 08 2005',
+    'OMB Review Date': 'Jul 08, 2005',
+    'Last Published Date': 'Jul 08, 2005',
     'Auto Published': 'No'
   },
   {
@@ -10633,10 +10633,10 @@ export let ReportData = [
     'CFDA Number': 27.013,
     'Title': 'Presidential Management Intern Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 28 2008',
+    'Last Updated Date': 'Mar 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 28 2008',
-    'Last Published Date': 'Mar, 28 2008',
+    'OMB Review Date': 'Mar 28, 2008',
+    'Last Published Date': 'Mar 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10644,10 +10644,10 @@ export let ReportData = [
     'CFDA Number': 29.001,
     'Title': 'Clearinghouse Services, Civil Rights Discrimination Complaints',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10655,10 +10655,10 @@ export let ReportData = [
     'CFDA Number': 30.001,
     'Title': 'Employment Discrimination_Title VII of the Civil Rights Act of 1964',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10666,10 +10666,10 @@ export let ReportData = [
     'CFDA Number': 30.002,
     'Title': 'Employment Discrimination_State and Local Fair Employment Practices Agency Contracts',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10677,10 +10677,10 @@ export let ReportData = [
     'CFDA Number': 30.005,
     'Title': 'Employment Discrimination_Private Bar Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 11 2006',
+    'Last Updated Date': 'Jul 11, 2006',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 11 2006',
-    'Last Published Date': 'Jul, 11 2006',
+    'OMB Review Date': 'Jul 11, 2006',
+    'Last Published Date': 'Jul 11, 2006',
     'Auto Published': 'No'
   },
   {
@@ -10688,10 +10688,10 @@ export let ReportData = [
     'CFDA Number': 30.008,
     'Title': 'Employment Discrimination_Age Discrimination in Employment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 28 2008',
+    'Last Updated Date': 'Mar 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 28 2008',
-    'Last Published Date': 'Mar, 28 2008',
+    'OMB Review Date': 'Mar 28, 2008',
+    'Last Published Date': 'Mar 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10699,10 +10699,10 @@ export let ReportData = [
     'CFDA Number': 30.009,
     'Title': 'Employment Discrimination Project Contracts_Indian Tribes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 28 2008',
+    'Last Updated Date': 'Mar 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 28 2008',
-    'Last Published Date': 'Mar, 28 2008',
+    'OMB Review Date': 'Mar 28, 2008',
+    'Last Published Date': 'Mar 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10710,10 +10710,10 @@ export let ReportData = [
     'CFDA Number': 30.01,
     'Title': 'Employment Discrimination Equal Pay Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 28 2008',
+    'Last Updated Date': 'Mar 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 28 2008',
-    'Last Published Date': 'Mar, 28 2008',
+    'OMB Review Date': 'Mar 28, 2008',
+    'Last Published Date': 'Mar 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10721,10 +10721,10 @@ export let ReportData = [
     'CFDA Number': 30.011,
     'Title': 'Employment Discrimination_Title I of The Americans with Disabilities Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 28 2008',
+    'Last Updated Date': 'Mar 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 28 2008',
-    'Last Published Date': 'Mar, 28 2008',
+    'OMB Review Date': 'Mar 28, 2008',
+    'Last Published Date': 'Mar 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10732,10 +10732,10 @@ export let ReportData = [
     'CFDA Number': 32.001,
     'Title': 'Communications Information and Assistance and Investigation of Complaints',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 08 2005',
+    'Last Updated Date': 'Jul 08, 2005',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2005',
-    'Last Published Date': 'Jul, 08 2005',
+    'OMB Review Date': 'Jul 08, 2005',
+    'Last Published Date': 'Jul 08, 2005',
     'Auto Published': 'No'
   },
   {
@@ -10743,10 +10743,10 @@ export let ReportData = [
     'CFDA Number': 33.001,
     'Title': 'Shipping_Dispute Resolution and Investigation of Complaints',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 03 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Oct 03, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10754,10 +10754,10 @@ export let ReportData = [
     'CFDA Number': 34.001,
     'Title': 'Labor Mediation and Conciliation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10765,10 +10765,10 @@ export let ReportData = [
     'CFDA Number': 36.001,
     'Title': 'Fair Competition Counseling and Investigation of Complaints',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10776,10 +10776,10 @@ export let ReportData = [
     'CFDA Number': 39.002,
     'Title': 'test2',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 17 2017',
+    'Last Updated Date': 'May 17, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'May, 01 2009',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'May 01, 2009',
     'Auto Published': 'No'
   },
   {
@@ -10787,10 +10787,10 @@ export let ReportData = [
     'CFDA Number': 39.012,
     'Title': 'New Title',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 27 2017',
+    'Last Updated Date': 'Apr 27, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 27 2017',
-    'Last Published Date': 'Apr, 27 2017',
+    'OMB Review Date': 'Apr 27, 2017',
+    'Last Published Date': 'Apr 27, 2017',
     'Auto Published': 'No'
   },
   {
@@ -10798,10 +10798,10 @@ export let ReportData = [
     'CFDA Number': 39.015,
     'Title': 'Test',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2016',
+    'Last Updated Date': 'Sep 23, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 12 2016',
-    'Last Published Date': 'Aug, 21 2016',
+    'OMB Review Date': 'Aug 12, 2016',
+    'Last Published Date': 'Aug 21, 2016',
     'Auto Published': 'Yes'
   },
   {
@@ -10809,10 +10809,10 @@ export let ReportData = [
     'CFDA Number': 39.019,
     'Title': 'TEST2',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2016',
+    'Last Updated Date': 'Oct 20, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2016',
-    'Last Published Date': 'Oct, 20 2016',
+    'OMB Review Date': 'Oct 20, 2016',
+    'Last Published Date': 'Oct 20, 2016',
     'Auto Published': 'No'
   },
   {
@@ -10820,10 +10820,10 @@ export let ReportData = [
     'CFDA Number': 39.021,
     'Title': 'Berry Farm 3',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 12 2016',
+    'Last Updated Date': 'May 12, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 22 2016',
-    'Last Published Date': 'May, 12 2016',
+    'OMB Review Date': 'Feb 22, 2016',
+    'Last Published Date': 'May 12, 2016',
     'Auto Published': 'No'
   },
   {
@@ -10831,10 +10831,10 @@ export let ReportData = [
     'CFDA Number': 39.022,
     'Title': 'Water Pollution',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 15 2016',
+    'Last Updated Date': 'Aug 15, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2016',
-    'Last Published Date': 'Jun, 08 2016',
+    'OMB Review Date': 'Jun 08, 2016',
+    'Last Published Date': 'Jun 08, 2016',
     'Auto Published': 'No'
   },
   {
@@ -10842,10 +10842,10 @@ export let ReportData = [
     'CFDA Number': 39.023,
     'Title': 'Water Pollution',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2016',
+    'Last Updated Date': 'Sep 23, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2016',
-    'Last Published Date': 'Jun, 25 2016',
+    'OMB Review Date': 'Jun 16, 2016',
+    'Last Published Date': 'Jun 25, 2016',
     'Auto Published': 'Yes'
   },
   {
@@ -10853,10 +10853,10 @@ export let ReportData = [
     'CFDA Number': 39.024,
     'Title': 'Clean Water',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 16 2016',
+    'Last Updated Date': 'Mar 16, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 16 2016',
-    'Last Published Date': 'Mar, 16 2016',
+    'OMB Review Date': 'Mar 16, 2016',
+    'Last Published Date': 'Mar 16, 2016',
     'Auto Published': 'No'
   },
   {
@@ -10864,10 +10864,10 @@ export let ReportData = [
     'CFDA Number': 39.026,
     'Title': 'Test Program Title',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 13 2011',
+    'Last Updated Date': 'Apr 13, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 13 2011',
-    'Last Published Date': 'Apr, 13 2011',
+    'OMB Review Date': 'Apr 13, 2011',
+    'Last Published Date': 'Apr 13, 2011',
     'Auto Published': 'No'
   },
   {
@@ -10875,10 +10875,10 @@ export let ReportData = [
     'CFDA Number': 39.027,
     'Title': 'Test 1',
     'Current Status': 'Published',
-    'Last Updated Date': 'Feb, 06 2011',
+    'Last Updated Date': 'Feb 06, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 28 2011',
-    'Last Published Date': 'Feb, 06 2011',
+    'OMB Review Date': 'Jan 28, 2011',
+    'Last Published Date': 'Feb 06, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -10886,10 +10886,10 @@ export let ReportData = [
     'CFDA Number': 39.028,
     'Title': 'Test',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 28 2011',
+    'Last Updated Date': 'Jul 28, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 28 2011',
-    'Last Published Date': 'Jul, 28 2011',
+    'OMB Review Date': 'Jul 28, 2011',
+    'Last Published Date': 'Jul 28, 2011',
     'Auto Published': 'No'
   },
   {
@@ -10897,10 +10897,10 @@ export let ReportData = [
     'CFDA Number': 39.03,
     'Title': 'test program',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 09 2016',
+    'Last Updated Date': 'May 09, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2016',
-    'Last Published Date': 'May, 09 2016',
+    'OMB Review Date': 'May 09, 2016',
+    'Last Published Date': 'May 09, 2016',
     'Auto Published': 'No'
   },
   {
@@ -10908,10 +10908,10 @@ export let ReportData = [
     'CFDA Number': 39.031,
     'Title': 'Test new mail',
     'Current Status': 'Published',
-    'Last Updated Date': 'Feb, 26 2016',
+    'Last Updated Date': 'Feb 26, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 28 2011',
-    'Last Published Date': 'Feb, 26 2016',
+    'OMB Review Date': 'Jul 28, 2011',
+    'Last Published Date': 'Feb 26, 2016',
     'Auto Published': 'Yes'
   },
   {
@@ -10919,10 +10919,10 @@ export let ReportData = [
     'CFDA Number': 39.034,
     'Title': 'Test',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 27 2016',
+    'Last Updated Date': 'Jul 27, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 29 2016',
-    'Last Published Date': 'Jun, 16 2016',
+    'OMB Review Date': 'Mar 29, 2016',
+    'Last Published Date': 'Jun 16, 2016',
     'Auto Published': 'Yes'
   },
   {
@@ -10930,10 +10930,10 @@ export let ReportData = [
     'CFDA Number': 39.09,
     'Title': 'M4 Test',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 20 2018',
+    'Last Updated Date': 'Jan 20, 2018',
     'Obligations Updated': 'yes',
-    'OMB Review Date': 'Jan, 11 2018',
-    'Last Published Date': 'Jan, 20 2018',
+    'OMB Review Date': 'Jan 11, 2018',
+    'Last Published Date': 'Jan 20, 2018',
     'Auto Published': 'Yes'
   },
   {
@@ -10941,10 +10941,10 @@ export let ReportData = [
     'CFDA Number': 39.111,
     'Title': 'Test Proram',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2017',
+    'Last Updated Date': 'Oct 27, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 18 2017',
-    'Last Published Date': 'Oct, 27 2017',
+    'OMB Review Date': 'Oct 18, 2017',
+    'Last Published Date': 'Oct 27, 2017',
     'Auto Published': 'Yes'
   },
   {
@@ -10952,10 +10952,10 @@ export let ReportData = [
     'CFDA Number': 39.501,
     'Title': 'Submission to Test Extend on New FAL',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 04 2017',
+    'Last Updated Date': 'May 04, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 25 2017',
-    'Last Published Date': 'May, 04 2017',
+    'OMB Review Date': 'Apr 25, 2017',
+    'Last Published Date': 'May 04, 2017',
     'Auto Published': 'Yes'
   },
   {
@@ -10963,10 +10963,10 @@ export let ReportData = [
     'CFDA Number': 39.555,
     'Title': 'test',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 17 2017',
+    'Last Updated Date': 'May 17, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 29 2016',
-    'Last Published Date': 'May, 17 2017',
+    'OMB Review Date': 'Feb 29, 2016',
+    'Last Published Date': 'May 17, 2017',
     'Auto Published': 'No'
   },
   {
@@ -10974,10 +10974,10 @@ export let ReportData = [
     'CFDA Number': 39.981,
     'Title': 'Test FAL',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 28 2017',
+    'Last Updated Date': 'Jun 28, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 28 2017',
-    'Last Published Date': 'Jun, 28 2017',
+    'OMB Review Date': 'Jun 28, 2017',
+    'Last Published Date': 'Jun 28, 2017',
     'Auto Published': 'No'
   },
   {
@@ -10985,10 +10985,10 @@ export let ReportData = [
     'CFDA Number': 40.001,
     'Title': 'Depository Libraries for Government Publications',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -10996,10 +10996,10 @@ export let ReportData = [
     'CFDA Number': 40.002,
     'Title': 'Government Publications Sales and Distribution',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11007,10 +11007,10 @@ export let ReportData = [
     'CFDA Number': 42.001,
     'Title': 'Books for the Blind and Physically Handicapped',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11018,10 +11018,10 @@ export let ReportData = [
     'CFDA Number': 42.002,
     'Title': 'Copyright Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11029,10 +11029,10 @@ export let ReportData = [
     'CFDA Number': 42.008,
     'Title': 'Semiconductor Chip Protection Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11040,10 +11040,10 @@ export let ReportData = [
     'CFDA Number': 42.009,
     'Title': 'Vessel Hull Design Protection Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 06 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'May 06, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11051,10 +11051,10 @@ export let ReportData = [
     'CFDA Number': 43.001,
     'Title': 'Aerospace Education Services Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11062,10 +11062,10 @@ export let ReportData = [
     'CFDA Number': 43.002,
     'Title': 'Technology Transfer',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11073,10 +11073,10 @@ export let ReportData = [
     'CFDA Number': 44.001,
     'Title': 'Credit Union Charter, Examination, Supervision, and Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11084,10 +11084,10 @@ export let ReportData = [
     'CFDA Number': 44.002,
     'Title': 'Community Development Revolving Loan Fund Program for Credit Unions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 24 2008',
+    'Last Updated Date': 'Sep 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 24 2008',
-    'Last Published Date': 'Sep, 24 2008',
+    'OMB Review Date': 'Sep 24, 2008',
+    'Last Published Date': 'Sep 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11095,10 +11095,10 @@ export let ReportData = [
     'CFDA Number': 45.024,
     'Title': 'Promotion of the Arts_Grants to Organizations and Individuals',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 07 2008',
+    'Last Updated Date': 'May 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 07 2008',
-    'Last Published Date': 'May, 07 2008',
+    'OMB Review Date': 'May 07, 2008',
+    'Last Published Date': 'May 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11106,10 +11106,10 @@ export let ReportData = [
     'CFDA Number': 45.025,
     'Title': 'Promotion of the Arts_Partnership Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 07 2008',
+    'Last Updated Date': 'May 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 07 2008',
-    'Last Published Date': 'May, 07 2008',
+    'OMB Review Date': 'May 07, 2008',
+    'Last Published Date': 'May 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11117,10 +11117,10 @@ export let ReportData = [
     'CFDA Number': 45.129,
     'Title': 'Promotion of the Humanities_Federal/State Partnership',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11128,10 +11128,10 @@ export let ReportData = [
     'CFDA Number': 45.13,
     'Title': 'Promotion of the Humanities_Challenge Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11139,10 +11139,10 @@ export let ReportData = [
     'CFDA Number': 45.149,
     'Title': 'Promotion of the Humanities_Division of Preservation and Access',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11150,10 +11150,10 @@ export let ReportData = [
     'CFDA Number': 45.16,
     'Title': 'Promotion of the Humanities_Fellowships and Stipends',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11161,10 +11161,10 @@ export let ReportData = [
     'CFDA Number': 45.161,
     'Title': 'Promotion of the Humanities_Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 14 2008',
+    'Last Updated Date': 'Jul 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 14 2008',
-    'Last Published Date': 'Jul, 14 2008',
+    'OMB Review Date': 'Jul 14, 2008',
+    'Last Published Date': 'Jul 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11172,10 +11172,10 @@ export let ReportData = [
     'CFDA Number': 45.162,
     'Title': 'Promotion of the Humanities_Teaching and Learning Resources and Curriculum Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11183,10 +11183,10 @@ export let ReportData = [
     'CFDA Number': 45.163,
     'Title': 'Promotion of the Humanities_Professional Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11194,10 +11194,10 @@ export let ReportData = [
     'CFDA Number': 45.164,
     'Title': 'Promotion of the Humanities_Public Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11205,10 +11205,10 @@ export let ReportData = [
     'CFDA Number': 45.168,
     'Title': 'Promotion of the Humanities_We the People',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 15 2003',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 15, 2003',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11216,10 +11216,10 @@ export let ReportData = [
     'CFDA Number': 45.169,
     'Title': 'Promotion of the Humanities_Office of Digital Humanities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 24 2006',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Aug 24, 2006',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11227,10 +11227,10 @@ export let ReportData = [
     'CFDA Number': 45.201,
     'Title': 'Arts and Artifacts Indemnity',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11238,10 +11238,10 @@ export let ReportData = [
     'CFDA Number': 45.301,
     'Title': 'Museums for America',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11249,10 +11249,10 @@ export let ReportData = [
     'CFDA Number': 45.302,
     'Title': 'Museum Assessment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11260,10 +11260,10 @@ export let ReportData = [
     'CFDA Number': 45.303,
     'Title': 'Conservation Project Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11271,10 +11271,10 @@ export let ReportData = [
     'CFDA Number': 45.304,
     'Title': 'Conservation Assessment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11282,10 +11282,10 @@ export let ReportData = [
     'CFDA Number': 45.307,
     'Title': '21st Century Museum Professionals',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 01 2005',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Dec 01, 2005',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11293,10 +11293,10 @@ export let ReportData = [
     'CFDA Number': 45.308,
     'Title': 'Native American/Native Hawaiian Museum Services Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 01 2005',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Dec 01, 2005',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11304,10 +11304,10 @@ export let ReportData = [
     'CFDA Number': 45.309,
     'Title': 'Museum Grants for African American History and Culture',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 06 2006',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Jul 06, 2006',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11315,10 +11315,10 @@ export let ReportData = [
     'CFDA Number': 45.31,
     'Title': 'Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11326,10 +11326,10 @@ export let ReportData = [
     'CFDA Number': 45.311,
     'Title': 'Native American and Native Hawaiian Library Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 29 2008',
+    'Last Updated Date': 'May 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2008',
-    'Last Published Date': 'May, 29 2008',
+    'OMB Review Date': 'May 29, 2008',
+    'Last Published Date': 'May 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11337,10 +11337,10 @@ export let ReportData = [
     'CFDA Number': 45.312,
     'Title': 'National Leadership Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11348,10 +11348,10 @@ export let ReportData = [
     'CFDA Number': 45.313,
     'Title': 'Laura Bush 21st Century Librarian Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2003',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'May 15, 2003',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11359,10 +11359,10 @@ export let ReportData = [
     'CFDA Number': 46.001,
     'Title': 'Labor-Management Relations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11370,10 +11370,10 @@ export let ReportData = [
     'CFDA Number': 47.041,
     'Title': 'Engineering Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11381,10 +11381,10 @@ export let ReportData = [
     'CFDA Number': 47.049,
     'Title': 'Mathematical and Physical Sciences',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11392,10 +11392,10 @@ export let ReportData = [
     'CFDA Number': 47.05,
     'Title': 'Geosciences',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11403,10 +11403,10 @@ export let ReportData = [
     'CFDA Number': 47.07,
     'Title': 'Computer and Information Science and Engineering',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11414,10 +11414,10 @@ export let ReportData = [
     'CFDA Number': 47.074,
     'Title': 'Biological Sciences',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11425,10 +11425,10 @@ export let ReportData = [
     'CFDA Number': 47.075,
     'Title': 'Social, Behavioral, and Economic Sciences',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11436,10 +11436,10 @@ export let ReportData = [
     'CFDA Number': 47.076,
     'Title': 'Education and Human Resources',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11447,10 +11447,10 @@ export let ReportData = [
     'CFDA Number': 47.078,
     'Title': 'Polar Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11458,10 +11458,10 @@ export let ReportData = [
     'CFDA Number': 47.079,
     'Title': 'International Science and Engineering (OISE)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2005',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Apr 08, 2005',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11469,10 +11469,10 @@ export let ReportData = [
     'CFDA Number': 47.08,
     'Title': 'Office of Cyberinfrastructure',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 27 2006',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Feb 27, 2006',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11480,10 +11480,10 @@ export let ReportData = [
     'CFDA Number': 47.081,
     'Title': 'Office of Experimental Program to Stimulate Competitive Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 22 2008',
+    'Last Updated Date': 'Sep 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 12 2008',
-    'Last Published Date': 'Sep, 22 2008',
+    'OMB Review Date': 'Mar 12, 2008',
+    'Last Published Date': 'Sep 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11491,10 +11491,10 @@ export let ReportData = [
     'CFDA Number': 47.082,
     'Title': 'TRANS-NSF RECOVERY ACT RESEARCH SUPPORT',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 11 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 11, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -11502,10 +11502,10 @@ export let ReportData = [
     'CFDA Number': 57.001,
     'Title': 'Social Insurance for Railroad Workers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 26 2008',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Sep 26, 2008',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11513,10 +11513,10 @@ export let ReportData = [
     'CFDA Number': 57.005,
     'Title': 'ECONOMIC RECOVERY PAYMENTS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -11524,10 +11524,10 @@ export let ReportData = [
     'CFDA Number': 58.001,
     'Title': 'Securities_Investigation of Complaints and SEC Information',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11535,10 +11535,10 @@ export let ReportData = [
     'CFDA Number': 59.006,
     'Title': '8(a) Business Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 17 2008',
+    'Last Updated Date': 'Jun 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 17 2008',
-    'Last Published Date': 'Jun, 17 2008',
+    'OMB Review Date': 'Jun 17, 2008',
+    'Last Published Date': 'Jun 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11546,10 +11546,10 @@ export let ReportData = [
     'CFDA Number': 59.007,
     'Title': '7(j) Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11557,10 +11557,10 @@ export let ReportData = [
     'CFDA Number': 59.008,
     'Title': 'Disaster Assistance Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11568,10 +11568,10 @@ export let ReportData = [
     'CFDA Number': 59.009,
     'Title': 'Procurement Assistance to Small Businesses',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 17 2008',
+    'Last Updated Date': 'Jun 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 17 2008',
-    'Last Published Date': 'Jun, 17 2008',
+    'OMB Review Date': 'Jun 17, 2008',
+    'Last Published Date': 'Jun 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11579,10 +11579,10 @@ export let ReportData = [
     'CFDA Number': 59.011,
     'Title': 'Small Business Investment Companies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11590,10 +11590,10 @@ export let ReportData = [
     'CFDA Number': 59.012,
     'Title': '7(a) Loan Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11601,10 +11601,10 @@ export let ReportData = [
     'CFDA Number': 59.016,
     'Title': 'Surety Bond Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11612,10 +11612,10 @@ export let ReportData = [
     'CFDA Number': 59.026,
     'Title': 'Service Corps of Retired Executives',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11623,10 +11623,10 @@ export let ReportData = [
     'CFDA Number': 59.037,
     'Title': 'Small Business Development Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11634,10 +11634,10 @@ export let ReportData = [
     'CFDA Number': 59.041,
     'Title': '504 Certified Development Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 13 2008',
+    'Last Updated Date': 'Jun 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 13 2008',
-    'Last Published Date': 'Jun, 13 2008',
+    'OMB Review Date': 'Jun 13, 2008',
+    'Last Published Date': 'Jun 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11645,10 +11645,10 @@ export let ReportData = [
     'CFDA Number': 59.043,
     'Title': 'Women\'s Business Ownership Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 17 2008',
+    'Last Updated Date': 'Jun 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 17 2008',
-    'Last Published Date': 'Jun, 17 2008',
+    'OMB Review Date': 'Jun 17, 2008',
+    'Last Published Date': 'Jun 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11656,10 +11656,10 @@ export let ReportData = [
     'CFDA Number': 59.044,
     'Title': 'Veterans Business Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11667,10 +11667,10 @@ export let ReportData = [
     'CFDA Number': 59.046,
     'Title': 'Microloan Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11678,10 +11678,10 @@ export let ReportData = [
     'CFDA Number': 59.049,
     'Title': 'Small Disadvantaged Businesses',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 26 2000',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Apr 26, 2000',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11689,10 +11689,10 @@ export let ReportData = [
     'CFDA Number': 59.05,
     'Title': 'PRIME Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 26 2001',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 26, 2001',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11700,10 +11700,10 @@ export let ReportData = [
     'CFDA Number': 59.051,
     'Title': 'New Markets Venture Capital Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2001',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Oct 24, 2001',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11711,10 +11711,10 @@ export let ReportData = [
     'CFDA Number': 59.052,
     'Title': 'Native American Outreach',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2005',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Jun 06, 2005',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11722,10 +11722,10 @@ export let ReportData = [
     'CFDA Number': 59.053,
     'Title': 'Ombudsman and Regulatory Fairness Boards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2005',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Jun 06, 2005',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11733,10 +11733,10 @@ export let ReportData = [
     'CFDA Number': 59.054,
     'Title': '7(a)Export Loan Guarantees',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2005',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Jun 06, 2005',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11744,10 +11744,10 @@ export let ReportData = [
     'CFDA Number': 59.055,
     'Title': 'HUBZone Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2008',
+    'Last Updated Date': 'Nov 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2005',
-    'Last Published Date': 'Nov, 18 2008',
+    'OMB Review Date': 'Jun 06, 2005',
+    'Last Published Date': 'Nov 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11755,10 +11755,10 @@ export let ReportData = [
     'CFDA Number': 59.07,
     'Title': 'Drug-Free Workplace Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 27 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Jun 27, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11766,10 +11766,10 @@ export let ReportData = [
     'CFDA Number': 64.005,
     'Title': 'Grants to States for Construction of State Home Facilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11777,10 +11777,10 @@ export let ReportData = [
     'CFDA Number': 64.007,
     'Title': 'Blind Rehabilitation Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11788,10 +11788,10 @@ export let ReportData = [
     'CFDA Number': 64.008,
     'Title': 'Veterans Domiciliary Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11799,10 +11799,10 @@ export let ReportData = [
     'CFDA Number': 64.009,
     'Title': 'Veterans Medical Care Benefits',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11810,10 +11810,10 @@ export let ReportData = [
     'CFDA Number': 64.01,
     'Title': 'Veterans Nursing Home Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11821,10 +11821,10 @@ export let ReportData = [
     'CFDA Number': 64.011,
     'Title': 'Veterans Dental Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11832,10 +11832,10 @@ export let ReportData = [
     'CFDA Number': 64.012,
     'Title': 'Veterans Prescription Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11843,10 +11843,10 @@ export let ReportData = [
     'CFDA Number': 64.013,
     'Title': 'Veterans Prosthetic Appliances',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11854,10 +11854,10 @@ export let ReportData = [
     'CFDA Number': 64.014,
     'Title': 'Veterans State Domiciliary Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11865,10 +11865,10 @@ export let ReportData = [
     'CFDA Number': 64.015,
     'Title': 'Veterans State Nursing Home Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11876,10 +11876,10 @@ export let ReportData = [
     'CFDA Number': 64.016,
     'Title': 'Veterans State Hospital Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11887,10 +11887,10 @@ export let ReportData = [
     'CFDA Number': 64.018,
     'Title': 'Sharing Specialized Medical Resources',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11898,10 +11898,10 @@ export let ReportData = [
     'CFDA Number': 64.019,
     'Title': 'Veterans Rehabilitation_Alcohol and Drug Dependence',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11909,10 +11909,10 @@ export let ReportData = [
     'CFDA Number': 64.022,
     'Title': 'Veterans Home Based Primary Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11920,10 +11920,10 @@ export let ReportData = [
     'CFDA Number': 64.024,
     'Title': 'VA Homeless Providers Grant and Per Diem Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11931,10 +11931,10 @@ export let ReportData = [
     'CFDA Number': 64.026,
     'Title': 'Veterans State Adult Day Health Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 20 2005',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Dec 20, 2005',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11942,10 +11942,10 @@ export let ReportData = [
     'CFDA Number': 64.1,
     'Title': 'Automobiles and Adaptive Equipment for Certain Disabled Veterans and Members of the Armed Forces',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11953,10 +11953,10 @@ export let ReportData = [
     'CFDA Number': 64.101,
     'Title': 'Burial Expenses Allowance for Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11964,10 +11964,10 @@ export let ReportData = [
     'CFDA Number': 64.103,
     'Title': 'Life Insurance for Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11975,10 +11975,10 @@ export let ReportData = [
     'CFDA Number': 64.104,
     'Title': 'Pension for Non-Service-Connected Disability for Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11986,10 +11986,10 @@ export let ReportData = [
     'CFDA Number': 64.105,
     'Title': 'Pension to Veterans Surviving Spouses, and Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -11997,10 +11997,10 @@ export let ReportData = [
     'CFDA Number': 64.106,
     'Title': 'Specially Adapted Housing for Disabled Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12008,10 +12008,10 @@ export let ReportData = [
     'CFDA Number': 64.109,
     'Title': 'Veterans Compensation for Service-Connected Disability',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12019,10 +12019,10 @@ export let ReportData = [
     'CFDA Number': 64.11,
     'Title': 'Veterans Dependency and Indemnity Compensation for Service-Connected Death',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12030,10 +12030,10 @@ export let ReportData = [
     'CFDA Number': 64.114,
     'Title': 'Veterans Housing_Guaranteed and Insured Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12041,10 +12041,10 @@ export let ReportData = [
     'CFDA Number': 64.115,
     'Title': 'Veterans Information and Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12052,10 +12052,10 @@ export let ReportData = [
     'CFDA Number': 64.116,
     'Title': 'Vocational Rehabilitation for Disabled Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12063,10 +12063,10 @@ export let ReportData = [
     'CFDA Number': 64.117,
     'Title': 'Survivors and Dependents Educational Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12074,10 +12074,10 @@ export let ReportData = [
     'CFDA Number': 64.118,
     'Title': 'Veterans Housing_Direct Loans for Certain Disabled Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12085,10 +12085,10 @@ export let ReportData = [
     'CFDA Number': 64.119,
     'Title': 'Veterans Housing_Manufactured Home Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12096,10 +12096,10 @@ export let ReportData = [
     'CFDA Number': 64.12,
     'Title': 'Post-Vietnam Era Veterans\' Educational Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12107,10 +12107,10 @@ export let ReportData = [
     'CFDA Number': 64.124,
     'Title': 'All-Volunteer Force Educational Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 25 2008',
+    'Last Updated Date': 'Jun 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 25 2008',
-    'Last Published Date': 'Jun, 25 2008',
+    'OMB Review Date': 'Jun 25, 2008',
+    'Last Published Date': 'Jun 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12118,10 +12118,10 @@ export let ReportData = [
     'CFDA Number': 64.125,
     'Title': 'Vocational and Educational Counseling for Servicemembers and Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12129,10 +12129,10 @@ export let ReportData = [
     'CFDA Number': 64.126,
     'Title': 'Native American Veteran Direct Loan Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 19 2008',
+    'Last Updated Date': 'Jun 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 19 2008',
-    'Last Published Date': 'Jun, 19 2008',
+    'OMB Review Date': 'Jun 19, 2008',
+    'Last Published Date': 'Jun 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12140,10 +12140,10 @@ export let ReportData = [
     'CFDA Number': 64.127,
     'Title': 'Monthly Allowance for Children of Vietnam Veterans Born with Spina Bifida',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12151,10 +12151,10 @@ export let ReportData = [
     'CFDA Number': 64.128,
     'Title': 'Vocational Training and Rehabilitation for Vietnam Veterans\' Children with Spina Bifida or Other Covered Birth Defects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12162,10 +12162,10 @@ export let ReportData = [
     'CFDA Number': 64.201,
     'Title': 'National Cemeteries',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 16 2008',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jun 16, 2008',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12173,10 +12173,10 @@ export let ReportData = [
     'CFDA Number': 64.202,
     'Title': 'Procurement of Headstones and Markers and/or Presidential Memorial Certificates',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 20 2008',
+    'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 20 2008',
-    'Last Published Date': 'Jun, 20 2008',
+    'OMB Review Date': 'Jun 20, 2008',
+    'Last Published Date': 'Jun 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12184,10 +12184,10 @@ export let ReportData = [
     'CFDA Number': 64.203,
     'Title': 'State Cemetery Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12195,10 +12195,10 @@ export let ReportData = [
     'CFDA Number': 66.001,
     'Title': 'Air Pollution Control Program Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12206,10 +12206,10 @@ export let ReportData = [
     'CFDA Number': 66.032,
     'Title': 'State Indoor Radon Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12217,10 +12217,10 @@ export let ReportData = [
     'CFDA Number': 66.033,
     'Title': 'Ozone Transport Commission',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12228,10 +12228,10 @@ export let ReportData = [
     'CFDA Number': 66.034,
     'Title': 'Surveys, Studies, Research, Investigations, Demonstrations, and Special Purpose Activities Relating to the Clean Air Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12239,10 +12239,10 @@ export let ReportData = [
     'CFDA Number': 66.035,
     'Title': 'Community Action for a Renewed Environment (CARE) Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 20 2008',
+    'Last Updated Date': 'Aug 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 17 2005',
-    'Last Published Date': 'Aug, 20 2008',
+    'OMB Review Date': 'Feb 17, 2005',
+    'Last Published Date': 'Aug 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12250,10 +12250,10 @@ export let ReportData = [
     'CFDA Number': 66.036,
     'Title': 'Clean School Bus USA',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 22 2008',
+    'Last Updated Date': 'Jul 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2005',
-    'Last Published Date': 'Jul, 22 2008',
+    'OMB Review Date': 'May 20, 2005',
+    'Last Published Date': 'Jul 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12261,10 +12261,10 @@ export let ReportData = [
     'CFDA Number': 66.037,
     'Title': 'Internships, Training and Workshops for the Office of Air and Radiation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 16 2006',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Feb 16, 2006',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12274,10 +12274,10 @@ export let ReportData = [
     Federally-Recognized Indian Tribes Consistent With the Clean Air Act \
     (CAA), Tribal Sovereignty and the Protection and Management of Air Quality',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 17 2007',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Aug 17, 2007',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12285,10 +12285,10 @@ export let ReportData = [
     'CFDA Number': 66.039,
     'Title': 'National Clean Diesel Funding Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 29 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Feb 29, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12296,10 +12296,10 @@ export let ReportData = [
     'CFDA Number': 66.04,
     'Title': 'State Clean Diesel Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 06 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Mar 06, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12307,10 +12307,10 @@ export let ReportData = [
     'CFDA Number': 66.11,
     'Title': 'Healthy Communities Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 13 2005',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Apr 13, 2005',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12318,10 +12318,10 @@ export let ReportData = [
     'CFDA Number': 66.111,
     'Title': 'Regional Environmental Priority Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 20 2005',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Sep 20, 2005',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12329,10 +12329,10 @@ export let ReportData = [
     'CFDA Number': 66.112,
     'Title': 'Surveys, Studies, Investigations, Training, Demonstrations, and Special Purpose Grants for Regional Geographic Initiatives',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 22 2006',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Feb 22, 2006',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12340,10 +12340,10 @@ export let ReportData = [
     'CFDA Number': 66.113,
     'Title': 'Region 3 Environmental Priority Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 05 2008',
+    'Last Updated Date': 'Aug 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 16 2006',
-    'Last Published Date': 'Aug, 05 2008',
+    'OMB Review Date': 'Feb 16, 2006',
+    'Last Published Date': 'Aug 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12351,10 +12351,10 @@ export let ReportData = [
     'CFDA Number': 66.116,
     'Title': 'Regional Geographic Initiative/Environmental Priority Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 30 2008',
+    'Last Updated Date': 'Jul 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 21 2006',
-    'Last Published Date': 'Jul, 30 2008',
+    'OMB Review Date': 'Nov 21, 2006',
+    'Last Published Date': 'Jul 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12362,10 +12362,10 @@ export let ReportData = [
     'CFDA Number': 66.117,
     'Title': 'Region 9 multi-media and geographic priority projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12373,10 +12373,10 @@ export let ReportData = [
     'CFDA Number': 66.119,
     'Title': 'West Coast Estuaries Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 18 2008',
+    'Last Updated Date': 'Dec 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2008',
-    'Last Published Date': 'Dec, 18 2008',
+    'OMB Review Date': 'Nov 20, 2008',
+    'Last Published Date': 'Dec 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12384,10 +12384,10 @@ export let ReportData = [
     'CFDA Number': 66.202,
     'Title': 'Congressionally Mandated Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 14 2006',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Feb 14, 2006',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12395,10 +12395,10 @@ export let ReportData = [
     'CFDA Number': 66.203,
     'Title': 'Environmental Finance Center Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 05 2008',
+    'Last Updated Date': 'Dec 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2008',
-    'Last Published Date': 'Dec, 05 2008',
+    'OMB Review Date': 'Nov 20, 2008',
+    'Last Published Date': 'Dec 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12406,10 +12406,10 @@ export let ReportData = [
     'CFDA Number': 66.305,
     'Title': 'Compliance Assistance Support for Services to the Regulated Community and Other Assistance Providers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12417,10 +12417,10 @@ export let ReportData = [
     'CFDA Number': 66.306,
     'Title': 'Environmental Justice Collaborative Problem-Solving Cooperative Agreement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 05 2004',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'May 05, 2004',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12428,10 +12428,10 @@ export let ReportData = [
     'CFDA Number': 66.309,
     'Title': 'Surveys, Studies, Investigations and Special Purpose Activities Relating to Environmental Justice',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2005',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Sep 16, 2005',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12441,10 +12441,10 @@ export let ReportData = [
     Compliance Assurance and Enforcement Activities in Indian Country and \
     Other Tribal Areas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 21 2005',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Sep 21, 2005',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12452,10 +12452,10 @@ export let ReportData = [
     'CFDA Number': 66.312,
     'Title': 'State Environmental Justice Cooperative Agreement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 18 2008',
+    'Last Updated Date': 'Dec 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 01 2008',
-    'Last Published Date': 'Dec, 18 2008',
+    'OMB Review Date': 'Dec 01, 2008',
+    'Last Published Date': 'Dec 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12463,10 +12463,10 @@ export let ReportData = [
     'CFDA Number': 66.418,
     'Title': 'Construction Grants for Wastewater Treatment Works',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12474,10 +12474,10 @@ export let ReportData = [
     'CFDA Number': 66.419,
     'Title': 'Water Pollution Control State, Interstate, and Tribal Program Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 02 2008',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Oct 02, 2008',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12485,10 +12485,10 @@ export let ReportData = [
     'CFDA Number': 66.424,
     'Title': 'Surveys, Studies, Investigations, Demonstrations, and Training Grants - Section 1442 of the Safe Drinking Water Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2003',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'May 19, 2003',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12496,10 +12496,10 @@ export let ReportData = [
     'CFDA Number': 66.432,
     'Title': 'State Public Water System Supervision',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12507,10 +12507,10 @@ export let ReportData = [
     'CFDA Number': 66.433,
     'Title': 'State Underground Water Source Protection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 16 2008',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Jul 16, 2008',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12519,10 +12519,10 @@ export let ReportData = [
     'Title': 'Surveys, Studies, Investigations, Demonstrations, and Training \
     Grants and Cooperative Agreements - Section 104(b)(3) of the Clean Water Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 07 2003',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'May 07, 2003',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12530,10 +12530,10 @@ export let ReportData = [
     'CFDA Number': 66.437,
     'Title': 'Long Island Sound Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 05 2004',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Mar 05, 2004',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12541,10 +12541,10 @@ export let ReportData = [
     'CFDA Number': 66.439,
     'Title': 'Targeted Watersheds Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 24 2003',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 24, 2003',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12552,10 +12552,10 @@ export let ReportData = [
     'CFDA Number': 66.454,
     'Title': 'Water Quality Management Planning',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12563,10 +12563,10 @@ export let ReportData = [
     'CFDA Number': 66.456,
     'Title': 'National Estuary Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12574,10 +12574,10 @@ export let ReportData = [
     'CFDA Number': 66.458,
     'Title': 'Capitalization Grants for Clean Water State Revolving Funds',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12585,10 +12585,10 @@ export let ReportData = [
     'CFDA Number': 66.46,
     'Title': 'Nonpoint Source Implementation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12596,10 +12596,10 @@ export let ReportData = [
     'CFDA Number': 66.461,
     'Title': 'Regional Wetland Program Development Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12607,10 +12607,10 @@ export let ReportData = [
     'CFDA Number': 66.462,
     'Title': 'National Wetland Program Development Grants and Five-Star Restoration Training Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 17 2005',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Feb 17, 2005',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12618,10 +12618,10 @@ export let ReportData = [
     'CFDA Number': 66.463,
     'Title': 'Water Quality Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12629,10 +12629,10 @@ export let ReportData = [
     'CFDA Number': 66.466,
     'Title': 'Chesapeake Bay Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12640,10 +12640,10 @@ export let ReportData = [
     'CFDA Number': 66.467,
     'Title': 'Wastewater Operator Training Grant Program (Technical Assistance)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12651,10 +12651,10 @@ export let ReportData = [
     'CFDA Number': 66.468,
     'Title': 'Capitalization Grants for Drinking Water State Revolving Funds',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12662,10 +12662,10 @@ export let ReportData = [
     'CFDA Number': 66.469,
     'Title': 'Great Lakes Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12673,10 +12673,10 @@ export let ReportData = [
     'CFDA Number': 66.471,
     'Title': 'State Grants to Reimburse Operators of Small Water Systems for Training and Certification Costs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12684,10 +12684,10 @@ export let ReportData = [
     'CFDA Number': 66.472,
     'Title': 'Beach Monitoring and Notification Program Implementation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12695,10 +12695,10 @@ export let ReportData = [
     'CFDA Number': 66.473,
     'Title': 'Direct Implementation Tribal Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 22 2001',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Oct 22, 2001',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12706,10 +12706,10 @@ export let ReportData = [
     'CFDA Number': 66.474,
     'Title': 'Water Protection Grants to the States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12717,10 +12717,10 @@ export let ReportData = [
     'CFDA Number': 66.475,
     'Title': 'Gulf of Mexico Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2002',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'May 13, 2002',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12728,10 +12728,10 @@ export let ReportData = [
     'CFDA Number': 66.478,
     'Title': 'Water Security Training and Technical Assistance and Water Security Initiative Contamination Warning System Pilots',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 24 2003',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'Sep 24, 2003',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12739,10 +12739,10 @@ export let ReportData = [
     'CFDA Number': 66.479,
     'Title': 'Wetland Program Grants -  State/Tribal Environmental Outcome Wetland Demonstration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2005',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Apr 08, 2005',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12750,10 +12750,10 @@ export let ReportData = [
     'CFDA Number': 66.48,
     'Title': 'Assessment and Watershed Protection Program Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 31 2005',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Mar 31, 2005',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12761,10 +12761,10 @@ export let ReportData = [
     'CFDA Number': 66.481,
     'Title': 'Lake Champlain Basin Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2005',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Apr 08, 2005',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12772,10 +12772,10 @@ export let ReportData = [
     'CFDA Number': 66.508,
     'Title': 'Senior Environmental Employment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12783,10 +12783,10 @@ export let ReportData = [
     'CFDA Number': 66.509,
     'Title': 'Science To Achieve Results (STAR) Research Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12794,10 +12794,10 @@ export let ReportData = [
     'CFDA Number': 66.51,
     'Title': 'Surveys, Studies, Investigations and Special Purpose Grants within the Office of Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2003',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'May 13, 2003',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12805,10 +12805,10 @@ export let ReportData = [
     'CFDA Number': 66.511,
     'Title': 'Office of Research and Development Consolidated Research/Training/Fellowships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12816,10 +12816,10 @@ export let ReportData = [
     'CFDA Number': 66.512,
     'Title': 'Regional Environmental Monitoring and Assessment Program (REMAP) Research Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 27 2008',
+    'Last Updated Date': 'Jun 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 12 2005',
-    'Last Published Date': 'Jun, 27 2008',
+    'OMB Review Date': 'Apr 12, 2005',
+    'Last Published Date': 'Jun 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12827,10 +12827,10 @@ export let ReportData = [
     'CFDA Number': 66.513,
     'Title': 'Greater Research Opportunities (GRO) Fellowships For Undergraduate/Graduate Environmental Study',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 23 2003',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Dec 23, 2003',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12838,10 +12838,10 @@ export let ReportData = [
     'CFDA Number': 66.514,
     'Title': 'Science To Achieve Results (STAR) Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 24 2003',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Dec 24, 2003',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12849,10 +12849,10 @@ export let ReportData = [
     'CFDA Number': 66.515,
     'Title': 'Greater Research Opportunities (GRO) Research Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 23 2003',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Dec 23, 2003',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12860,10 +12860,10 @@ export let ReportData = [
     'CFDA Number': 66.516,
     'Title': 'P3 Award: National Student Design Competition for Sustainability',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 30 2008',
+    'Last Updated Date': 'Jun 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 05 2004',
-    'Last Published Date': 'Jun, 30 2008',
+    'OMB Review Date': 'Mar 05, 2004',
+    'Last Published Date': 'Jun 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12871,10 +12871,10 @@ export let ReportData = [
     'CFDA Number': 66.517,
     'Title': 'Regional Applied Research Efforts (RARE)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 06 2007',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'Jun 06, 2007',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12882,10 +12882,10 @@ export let ReportData = [
     'CFDA Number': 66.518,
     'Title': 'State Senior Environmental Employment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 09 2005',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Mar 09, 2005',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12893,10 +12893,10 @@ export let ReportData = [
     'CFDA Number': 66.6,
     'Title': 'Environmental Protection Consolidated Grants for the Insular Areas - Program Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 13 2008',
+    'Last Updated Date': 'Aug 13, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 13 2008',
-    'Last Published Date': 'Aug, 13 2008',
+    'OMB Review Date': 'Aug 13, 2008',
+    'Last Published Date': 'Aug 13, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12904,10 +12904,10 @@ export let ReportData = [
     'CFDA Number': 66.604,
     'Title': 'Environmental Justice Small Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12915,10 +12915,10 @@ export let ReportData = [
     'CFDA Number': 66.605,
     'Title': 'Performance Partnership Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 30 2008',
+    'Last Updated Date': 'Jun 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 30 2008',
-    'Last Published Date': 'Jun, 30 2008',
+    'OMB Review Date': 'Jun 30, 2008',
+    'Last Published Date': 'Jun 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12926,10 +12926,10 @@ export let ReportData = [
     'CFDA Number': 66.608,
     'Title': 'Environmental Information Exchange Network Grant Program and Related Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12937,10 +12937,10 @@ export let ReportData = [
     'CFDA Number': 66.609,
     'Title': 'Protection of Children and Older Adults (Elderly) from Environmental Health Risks',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 30 2008',
+    'Last Updated Date': 'Jun 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 30 2008',
-    'Last Published Date': 'Jun, 30 2008',
+    'OMB Review Date': 'Jun 30, 2008',
+    'Last Published Date': 'Jun 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12948,10 +12948,10 @@ export let ReportData = [
     'CFDA Number': 66.61,
     'Title': 'Surveys, Studies, Investigations and Special Purpose Grants within the Office of the Administrator',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12959,10 +12959,10 @@ export let ReportData = [
     'CFDA Number': 66.611,
     'Title': 'Environmental Policy and Innovation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12972,10 +12972,10 @@ export let ReportData = [
     Educational Outreach Related to Environmental Information and the Release \
     of Toxic Chemicals',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 11 2007',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'Oct 11, 2007',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12983,10 +12983,10 @@ export let ReportData = [
     'CFDA Number': 66.7,
     'Title': 'Consolidated Pesticide Enforcement Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -12994,10 +12994,10 @@ export let ReportData = [
     'CFDA Number': 66.701,
     'Title': 'Toxic Substances Compliance Monitoring Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13005,10 +13005,10 @@ export let ReportData = [
     'CFDA Number': 66.707,
     'Title': 'TSCA Title IV State Lead Grants Certification of Lead-Based Paint Professionals',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 30 2008',
+    'Last Updated Date': 'Jun 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 30 2008',
-    'Last Published Date': 'Jun, 30 2008',
+    'OMB Review Date': 'Jun 30, 2008',
+    'Last Published Date': 'Jun 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13016,10 +13016,10 @@ export let ReportData = [
     'CFDA Number': 66.708,
     'Title': 'Pollution Prevention Grants Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13027,10 +13027,10 @@ export let ReportData = [
     'CFDA Number': 66.709,
     'Title': 'Multi-Media Capacity Building Grants for States and Tribes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13038,10 +13038,10 @@ export let ReportData = [
     'CFDA Number': 66.714,
     'Title': 'Pesticide Environmental Stewardship Regional Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 30 2008',
+    'Last Updated Date': 'Jun 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 19 1999',
-    'Last Published Date': 'Jun, 30 2008',
+    'OMB Review Date': 'Oct 19, 1999',
+    'Last Published Date': 'Jun 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13049,10 +13049,10 @@ export let ReportData = [
     'CFDA Number': 66.715,
     'Title': 'Lead Educational Outreach and Baseline Assessment of Tribal Children\'s Exposure and Risks Associated With Lead',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 10 2001',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'May 10, 2001',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13060,10 +13060,10 @@ export let ReportData = [
     'CFDA Number': 66.716,
     'Title': 'Research, Development, Monitoring, Public Education, Training, Demonstrations, and Studies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2003',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Sep 12, 2003',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13071,10 +13071,10 @@ export let ReportData = [
     'CFDA Number': 66.717,
     'Title': 'Source Reduction Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13082,10 +13082,10 @@ export let ReportData = [
     'CFDA Number': 66.718,
     'Title': 'National Community-Based Lead Outreach and Training Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 09 2007',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Aug 09, 2007',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13093,10 +13093,10 @@ export let ReportData = [
     'CFDA Number': 66.801,
     'Title': 'Hazardous Waste Management State Program Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13104,10 +13104,10 @@ export let ReportData = [
     'CFDA Number': 66.802,
     'Title': 'Superfund State, Political Subdivision, and Indian Tribe Site_Specific Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 01 2008',
+    'Last Updated Date': 'Jul 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 01 2008',
-    'Last Published Date': 'Jul, 01 2008',
+    'OMB Review Date': 'Jul 01, 2008',
+    'Last Published Date': 'Jul 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13115,10 +13115,10 @@ export let ReportData = [
     'CFDA Number': 66.804,
     'Title': 'State and Tribal Underground Storage Tanks Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13126,10 +13126,10 @@ export let ReportData = [
     'CFDA Number': 66.805,
     'Title': 'Leaking Underground Storage Tank Trust Fund Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13137,10 +13137,10 @@ export let ReportData = [
     'CFDA Number': 66.806,
     'Title': 'Superfund Technical Assistance Grants (TAG) for Community Groups at National Priority List (NPL) Sites',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 01 2008',
+    'Last Updated Date': 'Jul 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 01 2008',
-    'Last Published Date': 'Jul, 01 2008',
+    'OMB Review Date': 'Jul 01, 2008',
+    'Last Published Date': 'Jul 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13148,10 +13148,10 @@ export let ReportData = [
     'CFDA Number': 66.808,
     'Title': 'Solid Waste Management Assistance Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 03 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Oct 03, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13159,10 +13159,10 @@ export let ReportData = [
     'CFDA Number': 66.809,
     'Title': 'Superfund State and Indian Tribe Core Program Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 01 2008',
+    'Last Updated Date': 'Jul 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 01 2008',
-    'Last Published Date': 'Jul, 01 2008',
+    'OMB Review Date': 'Jul 01, 2008',
+    'Last Published Date': 'Jul 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13170,10 +13170,10 @@ export let ReportData = [
     'CFDA Number': 66.81,
     'Title': 'Chemical Emergency Preparedness and Prevention (CEPP) Technical Assistance Grants Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 02 2008',
+    'Last Updated Date': 'Jul 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 02 2008',
-    'Last Published Date': 'Jul, 02 2008',
+    'OMB Review Date': 'Jul 02, 2008',
+    'Last Published Date': 'Jul 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13181,10 +13181,10 @@ export let ReportData = [
     'CFDA Number': 66.812,
     'Title': 'Hazardous Waste Management Grant Program for Tribes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13192,10 +13192,10 @@ export let ReportData = [
     'CFDA Number': 66.813,
     'Title': 'Alternative or Innovative Treatment Technology Research, Demonstration, Training, and Hazardous Substance Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13203,10 +13203,10 @@ export let ReportData = [
     'CFDA Number': 66.814,
     'Title': 'Brownfields Training, Research, and Technical Assistance Grants and Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 16 2003',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'May 16, 2003',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13214,10 +13214,10 @@ export let ReportData = [
     'CFDA Number': 66.815,
     'Title': 'Brownfield Job Training Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 25 2003',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Apr 25, 2003',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13225,10 +13225,10 @@ export let ReportData = [
     'CFDA Number': 66.816,
     'Title': 'Headquarters and Regional Underground Storage Tanks Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13236,10 +13236,10 @@ export let ReportData = [
     'CFDA Number': 66.817,
     'Title': 'State and Tribal Response Program Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13247,10 +13247,10 @@ export let ReportData = [
     'CFDA Number': 66.818,
     'Title': 'Brownfields Assessment and Cleanup Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13258,10 +13258,10 @@ export let ReportData = [
     'CFDA Number': 66.926,
     'Title': 'Indian Environmental General Assistance Program (GAP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 17 2008',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Jul 17, 2008',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13269,10 +13269,10 @@ export let ReportData = [
     'CFDA Number': 66.931,
     'Title': 'International Financial Assistance Projects Sponsored by the Office of International Affairs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2003',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Feb 28, 2003',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13280,10 +13280,10 @@ export let ReportData = [
     'CFDA Number': 66.94,
     'Title': 'Environmental Policy and State Innovation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2008',
+    'Last Updated Date': 'Nov 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 09 2005',
-    'Last Published Date': 'Nov, 18 2008',
+    'OMB Review Date': 'Mar 09, 2005',
+    'Last Published Date': 'Nov 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13291,10 +13291,10 @@ export let ReportData = [
     'CFDA Number': 66.95,
     'Title': 'Environmental Education and Training Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 17 2008',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Jul 17, 2008',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13302,10 +13302,10 @@ export let ReportData = [
     'CFDA Number': 66.951,
     'Title': 'Environmental Education Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13313,10 +13313,10 @@ export let ReportData = [
     'CFDA Number': 66.952,
     'Title': 'National Network for Environmental Management Studies Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2005',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Sep 30, 2005',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13324,10 +13324,10 @@ export let ReportData = [
     'CFDA Number': 68.001,
     'Title': 'National Gallery of Art Extension Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 09 2008',
+    'Last Updated Date': 'Jul 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 09 2008',
-    'Last Published Date': 'Jul, 09 2008',
+    'OMB Review Date': 'Jul 09, 2008',
+    'Last Published Date': 'Jul 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13335,10 +13335,10 @@ export let ReportData = [
     'CFDA Number': 70.002,
     'Title': 'Foreign Investment Financing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13346,10 +13346,10 @@ export let ReportData = [
     'CFDA Number': 70.003,
     'Title': 'Foreign Investment Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 18 2008',
+    'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 18 2008',
-    'Last Published Date': 'Sep, 18 2008',
+    'OMB Review Date': 'Sep 18, 2008',
+    'Last Published Date': 'Sep 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13357,10 +13357,10 @@ export let ReportData = [
     'CFDA Number': 77.006,
     'Title': 'U. S. Nuclear Regulatory Commission Nuclear Education Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 16 2006',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Nov 16, 2006',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13368,10 +13368,10 @@ export let ReportData = [
     'CFDA Number': 77.007,
     'Title': 'U.S. Nuclear Regulatory Commission Minority Serving Institutions Program (MSIP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 06 2006',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Dec 06, 2006',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13379,10 +13379,10 @@ export let ReportData = [
     'CFDA Number': 77.008,
     'Title': 'U.S. Nuclear Regulatory Commission Scholarship and Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13390,10 +13390,10 @@ export let ReportData = [
     'CFDA Number': 78.004,
     'Title': 'Commodity Futures Reparations Claims',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13401,10 +13401,10 @@ export let ReportData = [
     'CFDA Number': 81.003,
     'Title': 'Granting of Patent Licenses',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13412,10 +13412,10 @@ export let ReportData = [
     'CFDA Number': 81.005,
     'Title': 'adf',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 04 2016',
+    'Last Updated Date': 'May 04, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 30 2016',
-    'Last Published Date': 'May, 04 2016',
+    'OMB Review Date': 'Mar 30, 2016',
+    'Last Published Date': 'May 04, 2016',
     'Auto Published': 'No'
   },
   {
@@ -13423,10 +13423,10 @@ export let ReportData = [
     'CFDA Number': 81.022,
     'Title': 'new (Used Energy-Related Laboratory Equipment Grants)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 20 2018',
+    'Last Updated Date': 'Jan 20, 2018',
     'Obligations Updated': 'yes',
-    'OMB Review Date': 'Jan, 11 2018',
-    'Last Published Date': 'Jan, 20 2018',
+    'OMB Review Date': 'Jan 11, 2018',
+    'Last Published Date': 'Jan 20, 2018',
     'Auto Published': 'Yes'
   },
   {
@@ -13434,10 +13434,10 @@ export let ReportData = [
     'CFDA Number': 81.041,
     'Title': 'State Energy Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13445,10 +13445,10 @@ export let ReportData = [
     'CFDA Number': 81.042,
     'Title': 'Weatherization Assistance for Low-Income Persons',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13456,10 +13456,10 @@ export let ReportData = [
     'CFDA Number': 81.049,
     'Title': 'Office of Science Financial Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 03 2008',
+    'Last Updated Date': 'Jul 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 03 2008',
-    'Last Published Date': 'Jul, 03 2008',
+    'OMB Review Date': 'Jul 03, 2008',
+    'Last Published Date': 'Jul 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13467,10 +13467,10 @@ export let ReportData = [
     'CFDA Number': 81.057,
     'Title': 'University Coal Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13478,10 +13478,10 @@ export let ReportData = [
     'CFDA Number': 81.064,
     'Title': 'Office of Scientific and Technical Information',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13489,10 +13489,10 @@ export let ReportData = [
     'CFDA Number': 81.065,
     'Title': 'Nuclear Waste Disposal Siting',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13500,10 +13500,10 @@ export let ReportData = [
     'CFDA Number': 81.079,
     'Title': 'Regional Biomass Energy Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13511,10 +13511,10 @@ export let ReportData = [
     'CFDA Number': 81.086,
     'Title': 'Conservation Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13522,10 +13522,10 @@ export let ReportData = [
     'CFDA Number': 81.087,
     'Title': 'Renewable Energy Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13533,10 +13533,10 @@ export let ReportData = [
     'CFDA Number': 81.089,
     'Title': 'Fossil Energy Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13544,10 +13544,10 @@ export let ReportData = [
     'CFDA Number': 81.104,
     'Title': 'Office of Environmental Waste Processing',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 01 2008',
+    'Last Updated Date': 'Dec 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 01 2008',
-    'Last Published Date': 'Dec, 01 2008',
+    'OMB Review Date': 'Dec 01, 2008',
+    'Last Published Date': 'Dec 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13555,10 +13555,10 @@ export let ReportData = [
     'CFDA Number': 81.105,
     'Title': 'National Industrial Competitiveness through Energy, Environment, and Economics',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13566,10 +13566,10 @@ export let ReportData = [
     'CFDA Number': 81.106,
     'Title': 'Transport of Transuranic Wastes to the Waste Isolation Pilot Plant: States and Tribal Concerns, Proposed Solutions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13577,10 +13577,10 @@ export let ReportData = [
     'CFDA Number': 81.108,
     'Title': 'Epidemiology and Other Health Studies Financial Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13588,10 +13588,10 @@ export let ReportData = [
     'CFDA Number': 81.112,
     'Title': 'Stewardship Science Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13599,10 +13599,10 @@ export let ReportData = [
     'CFDA Number': 81.113,
     'Title': 'Defense Nuclear Nonproliferation Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13610,10 +13610,10 @@ export let ReportData = [
     'CFDA Number': 81.114,
     'Title': 'University Reactor Infrastructure and Education Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13621,10 +13621,10 @@ export let ReportData = [
     'CFDA Number': 81.117,
     'Title': 'Energy Efficiency and Renewable Energy Information Dissemination, Outreach, Training and Technical Analysis/Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13632,10 +13632,10 @@ export let ReportData = [
     'CFDA Number': 81.119,
     'Title': 'State Energy Program Special Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 26 2000',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Apr 26, 2000',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13643,10 +13643,10 @@ export let ReportData = [
     'CFDA Number': 81.121,
     'Title': 'Nuclear Energy Research, Development and Demonstration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2001',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Oct 30, 2001',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13654,10 +13654,10 @@ export let ReportData = [
     'CFDA Number': 81.122,
     'Title': 'Electricity Delivery and Energy Reliability, Research, Development and Analysis',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 27 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'May 27, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13665,10 +13665,10 @@ export let ReportData = [
     'CFDA Number': 81.123,
     'Title': 'National Nuclear Security Administration (NNSA) Minority Serving Institutions (MSI) Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2005',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Sep 16, 2005',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13676,10 +13676,10 @@ export let ReportData = [
     'CFDA Number': 81.124,
     'Title': 'Predictive Science Academic Alliance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 01 2008',
+    'Last Updated Date': 'Dec 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13687,10 +13687,10 @@ export let ReportData = [
     'CFDA Number': 81.126,
     'Title': 'Federal Loan Guarantees for Innovative Energy Technologies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 18 2006',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Aug 18, 2006',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13698,10 +13698,10 @@ export let ReportData = [
     'CFDA Number': 81.127,
     'Title': 'Energy Efficient Appliance Rebate Program (EEARP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 21, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13709,10 +13709,10 @@ export let ReportData = [
     'CFDA Number': 81.128,
     'Title': 'Energy Efficiency and Conservation Block Grant Program (EECBG)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13720,10 +13720,10 @@ export let ReportData = [
     'CFDA Number': 81.129,
     'Title': 'Energy Efficiency and Renewable Energy Technology Deployment, Demonstration and Commercialization',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 21, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13731,10 +13731,10 @@ export let ReportData = [
     'CFDA Number': 81.131,
     'Title': 'Clean Coal Power Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13742,10 +13742,10 @@ export let ReportData = [
     'CFDA Number': 81.132,
     'Title': 'Geologic Sequestration Site Characterization',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 19, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13753,10 +13753,10 @@ export let ReportData = [
     'CFDA Number': 81.133,
     'Title': 'Geologic Sequestration Training and Research Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13764,10 +13764,10 @@ export let ReportData = [
     'CFDA Number': 81.134,
     'Title': 'Industrial Carbon Capture and Storage (CCS) Application',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 19, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13775,10 +13775,10 @@ export let ReportData = [
     'CFDA Number': 81.135,
     'Title': 'Advanced Research and Projects Agency � Energy Financial Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 08, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -13786,10 +13786,10 @@ export let ReportData = [
     'CFDA Number': 81.876,
     'Title': 'M4 Testing Out of Range',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 07 2017',
+    'Last Updated Date': 'Jul 07, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 28 2017',
-    'Last Published Date': 'Jul, 07 2017',
+    'OMB Review Date': 'Jun 28, 2017',
+    'Last Published Date': 'Jul 07, 2017',
     'Auto Published': 'Yes'
   },
   {
@@ -13797,10 +13797,10 @@ export let ReportData = [
     'CFDA Number': 84.002,
     'Title': 'Adult Education - Basic Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13808,10 +13808,10 @@ export let ReportData = [
     'CFDA Number': 84.004,
     'Title': 'Civil Rights Training and Advisory Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13819,10 +13819,10 @@ export let ReportData = [
     'CFDA Number': 84.007,
     'Title': 'Federal Supplemental Educational Opportunity Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13830,10 +13830,10 @@ export let ReportData = [
     'CFDA Number': 84.01,
     'Title': 'Title I Grants to Local Educational Agencies',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2008',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'May 28, 2008',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13841,10 +13841,10 @@ export let ReportData = [
     'CFDA Number': 84.011,
     'Title': 'Migrant Education_State Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13852,10 +13852,10 @@ export let ReportData = [
     'CFDA Number': 84.013,
     'Title': 'Title I Program for Neglected and Delinquent Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2008',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'May 28, 2008',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13865,10 +13865,10 @@ export let ReportData = [
     Studies or Foreign Language and International Studies Program and Foreign \
     Language and Area Studies Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 06 2008',
+    'Last Updated Date': 'Oct 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 06 2008',
-    'Last Published Date': 'Oct, 06 2008',
+    'OMB Review Date': 'Oct 06, 2008',
+    'Last Published Date': 'Oct 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13876,10 +13876,10 @@ export let ReportData = [
     'CFDA Number': 84.016,
     'Title': 'Undergraduate International Studies and Foreign Language Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 15 2008',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Oct 15, 2008',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13887,10 +13887,10 @@ export let ReportData = [
     'CFDA Number': 84.017,
     'Title': 'International Research and Studies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 06 2008',
+    'Last Updated Date': 'Oct 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 06 2008',
-    'Last Published Date': 'Oct, 06 2008',
+    'OMB Review Date': 'Oct 06, 2008',
+    'Last Published Date': 'Oct 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13898,10 +13898,10 @@ export let ReportData = [
     'CFDA Number': 84.018,
     'Title': 'Overseas Programs_Special Bilateral Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 15 2008',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Oct 15, 2008',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13909,10 +13909,10 @@ export let ReportData = [
     'CFDA Number': 84.019,
     'Title': 'Overseas Programs - Faculty Research Abroad',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 06 2008',
+    'Last Updated Date': 'Oct 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 06 2008',
-    'Last Published Date': 'Oct, 06 2008',
+    'OMB Review Date': 'Oct 06, 2008',
+    'Last Published Date': 'Oct 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13920,10 +13920,10 @@ export let ReportData = [
     'CFDA Number': 84.021,
     'Title': 'Overseas Programs - Group Projects Abroad',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13931,10 +13931,10 @@ export let ReportData = [
     'CFDA Number': 84.022,
     'Title': 'Overseas Programs - Doctoral Dissertation Research Abroad',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 09 2008',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Oct 09, 2008',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13942,10 +13942,10 @@ export let ReportData = [
     'CFDA Number': 84.027,
     'Title': 'Special Education_Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2008',
+    'Last Updated Date': 'Nov 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2008',
-    'Last Published Date': 'Nov, 17 2008',
+    'OMB Review Date': 'Nov 17, 2008',
+    'Last Published Date': 'Nov 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13953,10 +13953,10 @@ export let ReportData = [
     'CFDA Number': 84.031,
     'Title': 'Higher Education_Institutional Aid',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 17 2008',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Jul 17, 2008',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13964,10 +13964,10 @@ export let ReportData = [
     'CFDA Number': 84.032,
     'Title': 'Federal Family Education Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 12 2008',
+    'Last Updated Date': 'Jun 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Jun, 12 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Jun 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13975,10 +13975,10 @@ export let ReportData = [
     'CFDA Number': 84.033,
     'Title': 'Federal Work-Study Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2008',
+    'Last Updated Date': 'Nov 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2008',
-    'Last Published Date': 'Nov, 17 2008',
+    'OMB Review Date': 'Nov 17, 2008',
+    'Last Published Date': 'Nov 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13986,10 +13986,10 @@ export let ReportData = [
     'CFDA Number': 84.037,
     'Title': 'Perkins Loan Cancellations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -13997,10 +13997,10 @@ export let ReportData = [
     'CFDA Number': 84.038,
     'Title': 'Federal Perkins Loan Program_Federal Capital Contributions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2008',
+    'Last Updated Date': 'Nov 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2008',
-    'Last Published Date': 'Nov, 17 2008',
+    'OMB Review Date': 'Nov 17, 2008',
+    'Last Published Date': 'Nov 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14008,10 +14008,10 @@ export let ReportData = [
     'CFDA Number': 84.04,
     'Title': 'Impact Aid_Facilities Maintenance',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14019,10 +14019,10 @@ export let ReportData = [
     'CFDA Number': 84.041,
     'Title': 'Impact Aid',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14030,10 +14030,10 @@ export let ReportData = [
     'CFDA Number': 84.042,
     'Title': 'TRIO_Student Support Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 25 2008',
+    'Last Updated Date': 'Jun 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 25 2008',
-    'Last Published Date': 'Jun, 25 2008',
+    'OMB Review Date': 'Jun 25, 2008',
+    'Last Published Date': 'Jun 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14041,10 +14041,10 @@ export let ReportData = [
     'CFDA Number': 84.044,
     'Title': 'TRIO_Talent Search',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14052,10 +14052,10 @@ export let ReportData = [
     'CFDA Number': 84.047,
     'Title': 'TRIO_Upward Bound',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14063,10 +14063,10 @@ export let ReportData = [
     'CFDA Number': 84.048,
     'Title': 'Career and Technical Education -- Basic Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 15 2008',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Oct 15, 2008',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14074,10 +14074,10 @@ export let ReportData = [
     'CFDA Number': 84.051,
     'Title': 'Career and Technical Education -- National Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2008',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jun 04, 2008',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14085,10 +14085,10 @@ export let ReportData = [
     'CFDA Number': 84.06,
     'Title': 'Indian Education_Grants to Local Educational Agencies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14096,10 +14096,10 @@ export let ReportData = [
     'CFDA Number': 84.063,
     'Title': 'Federal Pell Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14107,10 +14107,10 @@ export let ReportData = [
     'CFDA Number': 84.066,
     'Title': 'TRIO_Educational Opportunity Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14118,10 +14118,10 @@ export let ReportData = [
     'CFDA Number': 84.069,
     'Title': 'Leveraging Educational Assistance Partnership',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14129,10 +14129,10 @@ export let ReportData = [
     'CFDA Number': 84.083,
     'Title': 'Women\'s Educational Equity Act Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14140,10 +14140,10 @@ export let ReportData = [
     'CFDA Number': 84.101,
     'Title': 'Career and Technical Education - Indian Set-aside',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14151,10 +14151,10 @@ export let ReportData = [
     'CFDA Number': 84.103,
     'Title': 'TRIO Staff Training Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14162,10 +14162,10 @@ export let ReportData = [
     'CFDA Number': 84.116,
     'Title': 'Fund for the Improvement of Postsecondary Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14173,10 +14173,10 @@ export let ReportData = [
     'CFDA Number': 84.12,
     'Title': 'Minority Science and Engineering Improvement',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14184,10 +14184,10 @@ export let ReportData = [
     'CFDA Number': 84.126,
     'Title': 'Rehabilitation Services_Vocational Rehabilitation Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2008',
+    'Last Updated Date': 'Nov 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2008',
-    'Last Published Date': 'Nov, 17 2008',
+    'OMB Review Date': 'Nov 17, 2008',
+    'Last Published Date': 'Nov 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14195,10 +14195,10 @@ export let ReportData = [
     'CFDA Number': 84.128,
     'Title': 'Rehabilitation Services_Service Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 25 2008',
+    'Last Updated Date': 'Jun 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 25 2008',
-    'Last Published Date': 'Jun, 25 2008',
+    'OMB Review Date': 'Jun 25, 2008',
+    'Last Published Date': 'Jun 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14206,10 +14206,10 @@ export let ReportData = [
     'CFDA Number': 84.129,
     'Title': 'Rehabilitation Long-Term Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14217,10 +14217,10 @@ export let ReportData = [
     'CFDA Number': 84.132,
     'Title': 'Centers for Independent Living',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 12 2008',
+    'Last Updated Date': 'Jun 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Jun, 12 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Jun 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14228,10 +14228,10 @@ export let ReportData = [
     'CFDA Number': 84.133,
     'Title': 'National Institute on Disability and Rehabilitation Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 03 2008',
+    'Last Updated Date': 'Nov 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 03 2008',
-    'Last Published Date': 'Nov, 03 2008',
+    'OMB Review Date': 'Nov 03, 2008',
+    'Last Published Date': 'Nov 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14239,10 +14239,10 @@ export let ReportData = [
     'CFDA Number': 84.141,
     'Title': 'Migrant Education_High School Equivalency Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14250,10 +14250,10 @@ export let ReportData = [
     'CFDA Number': 84.144,
     'Title': 'Migrant Education_Coordination Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14261,10 +14261,10 @@ export let ReportData = [
     'CFDA Number': 84.145,
     'Title': 'Federal Real Property Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14272,10 +14272,10 @@ export let ReportData = [
     'CFDA Number': 84.149,
     'Title': 'Migrant Education_College Assistance Migrant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14283,10 +14283,10 @@ export let ReportData = [
     'CFDA Number': 84.153,
     'Title': 'Business and International Education Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14294,10 +14294,10 @@ export let ReportData = [
     'CFDA Number': 84.16,
     'Title': 'Training Interpreters for Individuals who are Deaf and Individuals who are Deaf-Blind',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14305,10 +14305,10 @@ export let ReportData = [
     'CFDA Number': 84.161,
     'Title': 'Rehabilitation Services_Client Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14316,10 +14316,10 @@ export let ReportData = [
     'CFDA Number': 84.165,
     'Title': 'Magnet Schools Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14327,10 +14327,10 @@ export let ReportData = [
     'CFDA Number': 84.169,
     'Title': 'Independent Living_State Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 12 2008',
+    'Last Updated Date': 'Jun 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Jun, 12 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Jun 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14338,10 +14338,10 @@ export let ReportData = [
     'CFDA Number': 84.17,
     'Title': 'Javits Fellowships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14349,10 +14349,10 @@ export let ReportData = [
     'CFDA Number': 84.173,
     'Title': 'Special Education_Preschool Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2008',
+    'Last Updated Date': 'Nov 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2008',
-    'Last Published Date': 'Nov, 17 2008',
+    'OMB Review Date': 'Nov 17, 2008',
+    'Last Published Date': 'Nov 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14360,10 +14360,10 @@ export let ReportData = [
     'CFDA Number': 84.177,
     'Title': 'Rehabilitation Services_Independent Living Services for Older Individuals Who are Blind',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14371,10 +14371,10 @@ export let ReportData = [
     'CFDA Number': 84.181,
     'Title': 'Special Education-Grants for Infants and Families',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2008',
+    'Last Updated Date': 'Nov 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2008',
-    'Last Published Date': 'Nov, 17 2008',
+    'OMB Review Date': 'Nov 17, 2008',
+    'Last Published Date': 'Nov 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14382,10 +14382,10 @@ export let ReportData = [
     'CFDA Number': 84.184,
     'Title': 'Safe and Drug-Free Schools and Communities_National Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14393,10 +14393,10 @@ export let ReportData = [
     'CFDA Number': 84.185,
     'Title': 'Byrd Honors Scholarships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14404,10 +14404,10 @@ export let ReportData = [
     'CFDA Number': 84.186,
     'Title': 'Safe and Drug-Free Schools and Communities_State Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14415,10 +14415,10 @@ export let ReportData = [
     'CFDA Number': 84.187,
     'Title': 'Supported Employment Services for Individuals with Significant Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 12 2008',
+    'Last Updated Date': 'Jun 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Jun, 12 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Jun 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14426,10 +14426,10 @@ export let ReportData = [
     'CFDA Number': 84.191,
     'Title': 'Adult Education_National Leadership Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14437,10 +14437,10 @@ export let ReportData = [
     'CFDA Number': 84.196,
     'Title': 'Education for Homeless Children and Youth',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2008',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jun 04, 2008',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14448,10 +14448,10 @@ export let ReportData = [
     'CFDA Number': 84.2,
     'Title': 'Graduate Assistance in Areas of National Need',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14459,10 +14459,10 @@ export let ReportData = [
     'CFDA Number': 84.203,
     'Title': 'Star Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 03 2008',
+    'Last Updated Date': 'Nov 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 03 2008',
-    'Last Published Date': 'Nov, 03 2008',
+    'OMB Review Date': 'Nov 03, 2008',
+    'Last Published Date': 'Nov 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14470,10 +14470,10 @@ export let ReportData = [
     'CFDA Number': 84.206,
     'Title': 'Javits Gifted and Talented Students Education Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 12 2008',
+    'Last Updated Date': 'Jun 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2008',
-    'Last Published Date': 'Jun, 12 2008',
+    'OMB Review Date': 'Jun 12, 2008',
+    'Last Published Date': 'Jun 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14481,10 +14481,10 @@ export let ReportData = [
     'CFDA Number': 84.213,
     'Title': 'Even Start_State Educational Agencies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14492,10 +14492,10 @@ export let ReportData = [
     'CFDA Number': 84.214,
     'Title': 'Even Start_Migrant Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14503,10 +14503,10 @@ export let ReportData = [
     'CFDA Number': 84.215,
     'Title': 'Fund for the Improvement of Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2008',
+    'Last Updated Date': 'Nov 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 18 2008',
-    'Last Published Date': 'Nov, 18 2008',
+    'OMB Review Date': 'Nov 18, 2008',
+    'Last Published Date': 'Nov 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14514,10 +14514,10 @@ export let ReportData = [
     'CFDA Number': 84.217,
     'Title': 'TRIO_McNair Post-Baccalaureate Achievement',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14525,10 +14525,10 @@ export let ReportData = [
     'CFDA Number': 84.22,
     'Title': 'Centers for International Business Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14536,10 +14536,10 @@ export let ReportData = [
     'CFDA Number': 84.224,
     'Title': 'Assistive Technology',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14547,10 +14547,10 @@ export let ReportData = [
     'CFDA Number': 84.229,
     'Title': 'Language Resource Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 09 2008',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Oct 09, 2008',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14558,10 +14558,10 @@ export let ReportData = [
     'CFDA Number': 84.234,
     'Title': 'Projects with Industry',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14569,10 +14569,10 @@ export let ReportData = [
     'CFDA Number': 84.235,
     'Title': 'Rehabilitation Services Demonstration and Training Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14580,10 +14580,10 @@ export let ReportData = [
     'CFDA Number': 84.24,
     'Title': 'Program of Protection and Advocacy of Individual Rights',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14591,10 +14591,10 @@ export let ReportData = [
     'CFDA Number': 84.243,
     'Title': 'Tech-Prep Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14602,10 +14602,10 @@ export let ReportData = [
     'CFDA Number': 84.245,
     'Title': 'Tribally Controlled Postsecondary Career and Technical Institutions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14613,10 +14613,10 @@ export let ReportData = [
     'CFDA Number': 84.246,
     'Title': 'Rehabilitation Short-Term Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14624,10 +14624,10 @@ export let ReportData = [
     'CFDA Number': 84.25,
     'Title': 'Rehabilitation Services_American Indians with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14635,10 +14635,10 @@ export let ReportData = [
     'CFDA Number': 84.256,
     'Title': 'Freely Associated States_Education Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14646,10 +14646,10 @@ export let ReportData = [
     'CFDA Number': 84.257,
     'Title': 'National Institute for Literacy',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 21 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'Oct 21, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14657,10 +14657,10 @@ export let ReportData = [
     'CFDA Number': 84.258,
     'Title': 'Even Start_Indian Tribes and Tribal Organizations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14668,10 +14668,10 @@ export let ReportData = [
     'CFDA Number': 84.259,
     'Title': 'Native Hawaiian Career and Technical Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2008',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jun 04, 2008',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14679,10 +14679,10 @@ export let ReportData = [
     'CFDA Number': 84.263,
     'Title': 'Rehabilitation Training_Experimental and Innovative Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14690,10 +14690,10 @@ export let ReportData = [
     'CFDA Number': 84.264,
     'Title': 'Rehabilitation Training_Continuing Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14701,10 +14701,10 @@ export let ReportData = [
     'CFDA Number': 84.265,
     'Title': 'Rehabilitation Training_State Vocational Rehabilitation Unit In-Service Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14712,10 +14712,10 @@ export let ReportData = [
     'CFDA Number': 84.268,
     'Title': 'Federal Direct Student Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14723,10 +14723,10 @@ export let ReportData = [
     'CFDA Number': 84.269,
     'Title': 'Institute for International Public Policy',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14734,10 +14734,10 @@ export let ReportData = [
     'CFDA Number': 84.274,
     'Title': 'American Overseas Research Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14745,10 +14745,10 @@ export let ReportData = [
     'CFDA Number': 84.275,
     'Title': 'Rehabilitation Training_General Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14756,10 +14756,10 @@ export let ReportData = [
     'CFDA Number': 84.282,
     'Title': 'Charter Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14767,10 +14767,10 @@ export let ReportData = [
     'CFDA Number': 84.283,
     'Title': 'Comprehensive Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14778,10 +14778,10 @@ export let ReportData = [
     'CFDA Number': 84.286,
     'Title': 'Ready to Teach',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14789,10 +14789,10 @@ export let ReportData = [
     'CFDA Number': 84.287,
     'Title': 'Twenty-First Century Community Learning Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14800,10 +14800,10 @@ export let ReportData = [
     'CFDA Number': 84.293,
     'Title': 'Foreign Language Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14811,10 +14811,10 @@ export let ReportData = [
     'CFDA Number': 84.295,
     'Title': 'Ready-To-Learn Television',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14822,10 +14822,10 @@ export let ReportData = [
     'CFDA Number': 84.298,
     'Title': 'State Grants for Innovative Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2008',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jun 04, 2008',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14833,10 +14833,10 @@ export let ReportData = [
     'CFDA Number': 84.304,
     'Title': 'Civic Education - Cooperative Education Exchange Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2008',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'May 28, 2008',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14844,10 +14844,10 @@ export let ReportData = [
     'CFDA Number': 84.305,
     'Title': 'Education Research, Development and Dissemination',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14855,10 +14855,10 @@ export let ReportData = [
     'CFDA Number': 84.31,
     'Title': 'Parental Information and Resource Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2008',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'May 28, 2008',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14866,10 +14866,10 @@ export let ReportData = [
     'CFDA Number': 84.315,
     'Title': 'Capacity Building for Traditionally Underserved Populations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 21 2008',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Jul 21, 2008',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14877,10 +14877,10 @@ export let ReportData = [
     'CFDA Number': 84.318,
     'Title': 'Education Technology State Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14888,10 +14888,10 @@ export let ReportData = [
     'CFDA Number': 84.323,
     'Title': 'Special Education - State Personnel Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2008',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Oct 20, 2008',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14899,10 +14899,10 @@ export let ReportData = [
     'CFDA Number': 84.324,
     'Title': 'Research in Special Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 20 2008',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Oct 20, 2008',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14910,10 +14910,10 @@ export let ReportData = [
     'CFDA Number': 84.325,
     'Title': 'Special Education - Personnel Development to Improve Services and Results for Children with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2008',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Nov 04, 2008',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14921,10 +14921,10 @@ export let ReportData = [
     'CFDA Number': 84.326,
     'Title': 'Special Education_Technical Assistance and Dissemination to Improve Services and Results for Children with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14932,10 +14932,10 @@ export let ReportData = [
     'CFDA Number': 84.327,
     'Title': 'Special Education_Technology and Media Services for Individuals with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14943,10 +14943,10 @@ export let ReportData = [
     'CFDA Number': 84.328,
     'Title': 'Special Education_Parent Information Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14954,10 +14954,10 @@ export let ReportData = [
     'CFDA Number': 84.329,
     'Title': 'Special Education_Studies and Evaluations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 18 2008',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jul 18, 2008',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14965,10 +14965,10 @@ export let ReportData = [
     'CFDA Number': 84.33,
     'Title': 'Advanced Placement Program (Advanced Placement Test Fee; Advanced Placement Incentive Program Grants)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2008',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jun 04, 2008',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14976,10 +14976,10 @@ export let ReportData = [
     'CFDA Number': 84.331,
     'Title': 'Grants to States for Incarcerated Youth Offenders',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14987,10 +14987,10 @@ export let ReportData = [
     'CFDA Number': 84.332,
     'Title': 'Comprehensive School Reform Demonstration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2008',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jun 04, 2008',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -14998,10 +14998,10 @@ export let ReportData = [
     'CFDA Number': 84.333,
     'Title': 'Demonstration Projects to Ensure Students with Disabilities Receive a Higher Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15009,10 +15009,10 @@ export let ReportData = [
     'CFDA Number': 84.334,
     'Title': 'Gaining Early Awareness and Readiness for Undergraduate Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15020,10 +15020,10 @@ export let ReportData = [
     'CFDA Number': 84.335,
     'Title': 'Child Care Access Means Parents in School',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15031,10 +15031,10 @@ export let ReportData = [
     'CFDA Number': 84.336,
     'Title': 'Teacher Quality Enhancement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 05 2008',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 05, 2008',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15042,10 +15042,10 @@ export let ReportData = [
     'CFDA Number': 84.337,
     'Title': 'International Education_Technological Innovation and Cooperation for Foreign Information Access',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2008',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'May 30, 2008',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15053,10 +15053,10 @@ export let ReportData = [
     'CFDA Number': 84.343,
     'Title': 'Assistive Technology_State Grants for Protection and Advocacy',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 07 2008',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 07, 2008',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15064,10 +15064,10 @@ export let ReportData = [
     'CFDA Number': 84.345,
     'Title': 'Underground Railroad Educational and Cultural Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 21 2008',
+    'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2000',
-    'Last Published Date': 'Jul, 21 2008',
+    'OMB Review Date': 'Oct 23, 2000',
+    'Last Published Date': 'Jul 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15075,10 +15075,10 @@ export let ReportData = [
     'CFDA Number': 84.349,
     'Title': 'Early Childhood Educator Professional Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 22 2001',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Oct 22, 2001',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15086,10 +15086,10 @@ export let ReportData = [
     'CFDA Number': 84.35,
     'Title': 'Transition to Teaching',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 22 2001',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'Oct 22, 2001',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15097,10 +15097,10 @@ export let ReportData = [
     'CFDA Number': 84.351,
     'Title': 'Arts in Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 22 2001',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Oct 22, 2001',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15108,10 +15108,10 @@ export let ReportData = [
     'CFDA Number': 84.354,
     'Title': 'Credit Enhancement for Charter School Facilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15119,10 +15119,10 @@ export let ReportData = [
     'CFDA Number': 84.356,
     'Title': 'Alaska Native Educational Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2001',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Oct 23, 2001',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15130,10 +15130,10 @@ export let ReportData = [
     'CFDA Number': 84.357,
     'Title': 'Reading First State Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15141,10 +15141,10 @@ export let ReportData = [
     'CFDA Number': 84.358,
     'Title': 'Rural Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15152,10 +15152,10 @@ export let ReportData = [
     'CFDA Number': 84.359,
     'Title': 'Early Reading First',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 07 2008',
+    'Last Updated Date': 'Oct 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2002',
-    'Last Published Date': 'Oct, 07 2008',
+    'OMB Review Date': 'Jun 03, 2002',
+    'Last Published Date': 'Oct 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15163,10 +15163,10 @@ export let ReportData = [
     'CFDA Number': 84.36,
     'Title': 'School Dropout Prevention Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2002',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jun 03, 2002',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15174,10 +15174,10 @@ export let ReportData = [
     'CFDA Number': 84.361,
     'Title': 'Voluntary Public School Choice',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2002',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 03, 2002',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15185,10 +15185,10 @@ export let ReportData = [
     'CFDA Number': 84.362,
     'Title': 'Native Hawaiian Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2002',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jun 03, 2002',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15196,10 +15196,10 @@ export let ReportData = [
     'CFDA Number': 84.363,
     'Title': 'School Leadership',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2002',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'Jun 03, 2002',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15207,10 +15207,10 @@ export let ReportData = [
     'CFDA Number': 84.364,
     'Title': 'Literacy through School Libraries',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15218,10 +15218,10 @@ export let ReportData = [
     'CFDA Number': 84.365,
     'Title': 'English Language Acquisition Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 30 2008',
+    'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 16 2002',
-    'Last Published Date': 'May, 30 2008',
+    'OMB Review Date': 'Dec 16, 2002',
+    'Last Published Date': 'May 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15229,10 +15229,10 @@ export let ReportData = [
     'CFDA Number': 84.366,
     'Title': 'Mathematics and Science Partnerships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 07 2003',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Jan 07, 2003',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15240,10 +15240,10 @@ export let ReportData = [
     'CFDA Number': 84.367,
     'Title': 'Improving Teacher Quality State Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 20 2002',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Dec 20, 2002',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15251,10 +15251,10 @@ export let ReportData = [
     'CFDA Number': 84.369,
     'Title': 'Grants for State Assessments and Related Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 07 2003',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'Jan 07, 2003',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15262,10 +15262,10 @@ export let ReportData = [
     'CFDA Number': 84.37,
     'Title': 'DC School Choice Incentive Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 05 2008',
+    'Last Updated Date': 'Jun 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 13 2005',
-    'Last Published Date': 'Jun, 05 2008',
+    'OMB Review Date': 'May 13, 2005',
+    'Last Published Date': 'Jun 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15273,10 +15273,10 @@ export let ReportData = [
     'CFDA Number': 84.371,
     'Title': 'Striving Readers',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 26 2006',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'Jan 26, 2006',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15284,10 +15284,10 @@ export let ReportData = [
     'CFDA Number': 84.372,
     'Title': 'Statewide Data Systems',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 26 2006',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jan 26, 2006',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15295,10 +15295,10 @@ export let ReportData = [
     'CFDA Number': 84.373,
     'Title': 'Special Education_Technical Assistance on State Data Collection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 26 2006',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Jan 26, 2006',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15306,10 +15306,10 @@ export let ReportData = [
     'CFDA Number': 84.374,
     'Title': 'Teacher Incentive Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 04 2008',
+    'Last Updated Date': 'Jun 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 28 2006',
-    'Last Published Date': 'Jun, 04 2008',
+    'OMB Review Date': 'Feb 28, 2006',
+    'Last Published Date': 'Jun 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15317,10 +15317,10 @@ export let ReportData = [
     'CFDA Number': 84.375,
     'Title': 'Academic Competitiveness Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 16 2006',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Mar 16, 2006',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15328,10 +15328,10 @@ export let ReportData = [
     'CFDA Number': 84.376,
     'Title': 'National Science and Mathematics Access to Retain Talent (SMART) Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 04 2008',
+    'Last Updated Date': 'Nov 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 07 2006',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Apr 07, 2006',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15339,10 +15339,10 @@ export let ReportData = [
     'CFDA Number': 84.377,
     'Title': 'School Improvement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'May 29, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15350,10 +15350,10 @@ export let ReportData = [
     'CFDA Number': 84.378,
     'Title': 'College Access Challenge Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 30 2008',
+    'Last Updated Date': 'Jul 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2008',
-    'Last Published Date': 'Jul, 30 2008',
+    'OMB Review Date': 'May 29, 2008',
+    'Last Published Date': 'Jul 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15361,10 +15361,10 @@ export let ReportData = [
     'CFDA Number': 84.379,
     'Title': 'Teacher Education Assistance for College and Higher Education Grants (TEACH Grants)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2008',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'May 29, 2008',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15372,10 +15372,10 @@ export let ReportData = [
     'CFDA Number': 84.38,
     'Title': 'Special Education -- Olympic Education Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 10 2008',
+    'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2008',
-    'Last Published Date': 'Oct, 10 2008',
+    'OMB Review Date': 'May 29, 2008',
+    'Last Published Date': 'Oct 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15385,10 +15385,10 @@ export let ReportData = [
     Mathematics, and Critical Foreign Languages and Master\'s Degrees in \
     Science, Technology, Engineering, Mathematics, and Critical Foreign Languages',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2008',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'May 29, 2008',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15396,10 +15396,10 @@ export let ReportData = [
     'CFDA Number': 84.382,
     'Title': 'Strengthening Minority-Serving Institutions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 21 2008',
+    'Last Updated Date': 'Oct 21, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2008',
-    'Last Published Date': 'Oct, 21 2008',
+    'OMB Review Date': 'May 29, 2008',
+    'Last Published Date': 'Oct 21, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15407,10 +15407,10 @@ export let ReportData = [
     'CFDA Number': 84.383,
     'Title': 'Homeless Education Disaster Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 06 2009',
+    'Last Updated Date': 'Jan 06, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 19 2008',
-    'Last Published Date': 'Jan, 06 2009',
+    'OMB Review Date': 'Nov 19, 2008',
+    'Last Published Date': 'Jan 06, 2009',
     'Auto Published': 'No'
   },
   {
@@ -15418,10 +15418,10 @@ export let ReportData = [
     'CFDA Number': 84.384,
     'Title': 'Statewide Data Systems, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15429,10 +15429,10 @@ export let ReportData = [
     'CFDA Number': 84.385,
     'Title': 'Teacher Incentive Fund, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15440,10 +15440,10 @@ export let ReportData = [
     'CFDA Number': 84.386,
     'Title': 'Education Technology State Grants, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15451,10 +15451,10 @@ export let ReportData = [
     'CFDA Number': 84.387,
     'Title': 'Education for Homeless Children and Youth, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15462,10 +15462,10 @@ export let ReportData = [
     'CFDA Number': 84.388,
     'Title': 'School Improvement Grants, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15473,10 +15473,10 @@ export let ReportData = [
     'CFDA Number': 84.389,
     'Title': 'Title I Grants to Local Educational Agencies, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15484,10 +15484,10 @@ export let ReportData = [
     'CFDA Number': 84.39,
     'Title': 'Rehabilitation Services-Vocational Rehabilitation Grants to States, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15495,10 +15495,10 @@ export let ReportData = [
     'CFDA Number': 84.391,
     'Title': 'Special Education Grants to States, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15506,10 +15506,10 @@ export let ReportData = [
     'CFDA Number': 84.392,
     'Title': 'Special Education - Preschool Grants, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15517,10 +15517,10 @@ export let ReportData = [
     'CFDA Number': 84.393,
     'Title': '84.393  Special Education - Grants for Infants and Families, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15528,10 +15528,10 @@ export let ReportData = [
     'CFDA Number': 84.394,
     'Title': 'State Fiscal Stabilization Fund (SFSF) -  Education State Grants, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15539,10 +15539,10 @@ export let ReportData = [
     'CFDA Number': 84.395,
     'Title': 'State Fiscal Stabilization Fund (SFSF) - Race-to-the-Top Incentive Grants, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15550,10 +15550,10 @@ export let ReportData = [
     'CFDA Number': 84.396,
     'Title': 'State Fiscal Stabilization Fund (SFSF) - What Works and Innovation Fund, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15561,10 +15561,10 @@ export let ReportData = [
     'CFDA Number': 84.397,
     'Title': 'State Fiscal Stabilization Fund (SFSF) - Government Services, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15572,10 +15572,10 @@ export let ReportData = [
     'CFDA Number': 84.398,
     'Title': 'Independent Living State Grants, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15583,10 +15583,10 @@ export let ReportData = [
     'CFDA Number': 84.399,
     'Title': 'Independent Living Services for Older Individuals Who are Blind, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15594,10 +15594,10 @@ export let ReportData = [
     'CFDA Number': 84.4,
     'Title': 'Centers for Independent Living, Recovery Act.',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 01 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 01, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15605,10 +15605,10 @@ export let ReportData = [
     'CFDA Number': 84.401,
     'Title': 'Impact Aid School Construction, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15616,10 +15616,10 @@ export let ReportData = [
     'CFDA Number': 84.402,
     'Title': 'Consolidated Grants to the Outlying Areas, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15627,10 +15627,10 @@ export let ReportData = [
     'CFDA Number': 84.404,
     'Title': 'Impact Aid -- School Construction Formula Grants, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15638,10 +15638,10 @@ export let ReportData = [
     'CFDA Number': 84.405,
     'Title': 'Teacher Quality Partnerships, Recovery Act',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15649,10 +15649,10 @@ export let ReportData = [
     'CFDA Number': 84.406,
     'Title': 'Capacity Building for Traditionally Underserved Populations, Recovery Act.',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 08, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -15660,10 +15660,10 @@ export let ReportData = [
     'CFDA Number': 84.789,
     'Title': 'Special Programs for the Aging_Title III, Part B_Grants for Supportive Services and Senior Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Feb, 08 2011',
+    'Last Updated Date': 'Feb 08, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 13 2010',
-    'Last Published Date': 'Feb, 08 2011',
+    'OMB Review Date': 'Dec 13, 2010',
+    'Last Published Date': 'Feb 08, 2011',
     'Auto Published': 'No'
   },
   {
@@ -15671,10 +15671,10 @@ export let ReportData = [
     'CFDA Number': 84.938,
     'Title': 'Hurricane Education Recovery',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 14 2009',
+    'Last Updated Date': 'Jan 14, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 24 2006',
-    'Last Published Date': 'Jan, 14 2009',
+    'OMB Review Date': 'Jan 24, 2006',
+    'Last Published Date': 'Jan 14, 2009',
     'Auto Published': 'No'
   },
   {
@@ -15682,10 +15682,10 @@ export let ReportData = [
     'CFDA Number': 85.001,
     'Title': 'Harry S Truman Scholarship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15693,10 +15693,10 @@ export let ReportData = [
     'CFDA Number': 85.1,
     'Title': 'Christopher Columbus Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15704,10 +15704,10 @@ export let ReportData = [
     'CFDA Number': 85.2,
     'Title': 'Barry M. Goldwater Scholarship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15715,10 +15715,10 @@ export let ReportData = [
     'CFDA Number': 85.3,
     'Title': 'Woodrow Wilson Center Fellowships in the Humanities and Social Sciences',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15726,10 +15726,10 @@ export let ReportData = [
     'CFDA Number': 85.4,
     'Title': 'Morris K. Udall Scholarship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15737,10 +15737,10 @@ export let ReportData = [
     'CFDA Number': 85.401,
     'Title': 'Morris K. Udall Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15748,10 +15748,10 @@ export let ReportData = [
     'CFDA Number': 85.402,
     'Title': 'Morris K. Udall Native American Congressional Internship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15759,10 +15759,10 @@ export let ReportData = [
     'CFDA Number': 85.5,
     'Title': 'James Madison Memorial Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15770,10 +15770,10 @@ export let ReportData = [
     'CFDA Number': 85.601,
     'Title': 'Smithsonian Institution Fellowship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 23 2005',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Aug 23, 2005',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15781,10 +15781,10 @@ export let ReportData = [
     'CFDA Number': 86.001,
     'Title': 'Pension Plan Termination Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15792,10 +15792,10 @@ export let ReportData = [
     'CFDA Number': 88.001,
     'Title': 'Architectural and Transportation Barriers Compliance Board',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15803,10 +15803,10 @@ export let ReportData = [
     'CFDA Number': 89.001,
     'Title': 'National Archives Reference Services_Historical Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15814,10 +15814,10 @@ export let ReportData = [
     'CFDA Number': 89.003,
     'Title': 'National Historical Publications and Records Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 05 2008',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'Nov 05, 2008',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15825,10 +15825,10 @@ export let ReportData = [
     'CFDA Number': 89.005,
     'Title': 'Cooperative Agreements to Support the Programs of the National Archives and Records Administration (NARA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 05 2008',
+    'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 03 2006',
-    'Last Published Date': 'Nov, 05 2008',
+    'OMB Review Date': 'May 03, 2006',
+    'Last Published Date': 'Nov 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15836,10 +15836,10 @@ export let ReportData = [
     'CFDA Number': 90.1,
     'Title': 'Denali Commission Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 31 2000',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Oct 31, 2000',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15847,10 +15847,10 @@ export let ReportData = [
     'CFDA Number': 90.2,
     'Title': 'Delta Regional Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 19 2005',
+    'Last Updated Date': 'Jul 19, 2005',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 12 2005',
-    'Last Published Date': 'Jul, 19 2005',
+    'OMB Review Date': 'Jan 12, 2005',
+    'Last Published Date': 'Jul 19, 2005',
     'Auto Published': 'No'
   },
   {
@@ -15858,10 +15858,10 @@ export let ReportData = [
     'CFDA Number': 90.201,
     'Title': 'Delta Area Economic Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 18 2008',
+    'Last Updated Date': 'Jul 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 12 2005',
-    'Last Published Date': 'Jul, 18 2008',
+    'OMB Review Date': 'Jan 12, 2005',
+    'Last Published Date': 'Jul 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15869,10 +15869,10 @@ export let ReportData = [
     'CFDA Number': 90.202,
     'Title': 'Delta Local Development District Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 28 2008',
+    'Last Updated Date': 'May 28, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 13 2005',
-    'Last Published Date': 'May, 28 2008',
+    'OMB Review Date': 'Jan 13, 2005',
+    'Last Published Date': 'May 28, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15880,10 +15880,10 @@ export let ReportData = [
     'CFDA Number': 90.3,
     'Title': 'Japan-US Friendship Commission Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Jun 08, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15891,10 +15891,10 @@ export let ReportData = [
     'CFDA Number': 90.4,
     'Title': 'Help America Vote College Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 25 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Aug 25, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15902,10 +15902,10 @@ export let ReportData = [
     'CFDA Number': 90.401,
     'Title': 'Help America Vote Act Requirements Payments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2005',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 16, 2005',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15913,10 +15913,10 @@ export let ReportData = [
     'CFDA Number': 90.402,
     'Title': 'Help America Vote Mock Election Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 06 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Mar 06, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15924,10 +15924,10 @@ export let ReportData = [
     'CFDA Number': 90.5,
     'Title': 'International Broadcasting Independent Grantee Organizations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 04 2008',
+    'Last Updated Date': 'Dec 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 28 2008',
-    'Last Published Date': 'Dec, 04 2008',
+    'OMB Review Date': 'Oct 28, 2008',
+    'Last Published Date': 'Dec 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15935,10 +15935,10 @@ export let ReportData = [
     'CFDA Number': 90.501,
     'Title': 'Demo Program Title',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 12 2016',
+    'Last Updated Date': 'May 12, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 03 2016',
-    'Last Published Date': 'May, 12 2016',
+    'OMB Review Date': 'May 03, 2016',
+    'Last Published Date': 'May 12, 2016',
     'Auto Published': 'Yes'
   },
   {
@@ -15946,10 +15946,10 @@ export let ReportData = [
     'CFDA Number': 91.001,
     'Title': 'Unsolicited Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2008',
+    'Last Updated Date': 'Nov 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2008',
-    'Last Published Date': 'Nov, 17 2008',
+    'OMB Review Date': 'Nov 17, 2008',
+    'Last Published Date': 'Nov 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15957,10 +15957,10 @@ export let ReportData = [
     'CFDA Number': 91.002,
     'Title': 'Solicited Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2008',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Sep 23, 2008',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -15968,10 +15968,10 @@ export let ReportData = [
     'CFDA Number': 93.001,
     'Title': 'Civil Rights and Privacy Rule Compliance Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 17 2015',
+    'Last Updated Date': 'Apr 17, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2015',
-    'Last Published Date': 'Apr, 17 2015',
+    'OMB Review Date': 'Apr 08, 2015',
+    'Last Published Date': 'Apr 17, 2015',
     'Auto Published': 'Yes'
   },
   {
@@ -15979,10 +15979,10 @@ export let ReportData = [
     'CFDA Number': 93.003,
     'Title': 'Public Health and Social Services Emergency Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 07 2015',
+    'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 07 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 07, 2015',
     'Auto Published': 'No'
   },
   {
@@ -15990,10 +15990,10 @@ export let ReportData = [
     'CFDA Number': 93.004,
     'Title': 'Cooperative Agreements to Improve the Health Status of Minority Populations in big Cities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 08 2015',
+    'Last Updated Date': 'Apr 08, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 08 2015',
-    'Last Published Date': 'Apr, 08 2015',
+    'OMB Review Date': 'Apr 08, 2015',
+    'Last Published Date': 'Apr 08, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16001,10 +16001,10 @@ export let ReportData = [
     'CFDA Number': 93.006,
     'Title': 'State and Territorial and Technical Assistance Capacity Development Minority HIV/AIDS Demonstration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 06 2015',
+    'Last Updated Date': 'Apr 06, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 06 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 06, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16012,10 +16012,10 @@ export let ReportData = [
     'CFDA Number': 93.008,
     'Title': 'Medical Reserve Corps Small Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 07 2015',
+    'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 07 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 07, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16023,10 +16023,10 @@ export let ReportData = [
     'CFDA Number': 93.009,
     'Title': 'Compassion Capital Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 07 2015',
+    'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 07 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 07, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16034,10 +16034,10 @@ export let ReportData = [
     'CFDA Number': 93.01,
     'Title': 'Community-Based Abstinence Education (CBAE)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 07 2015',
+    'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 07 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 07, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16045,10 +16045,10 @@ export let ReportData = [
     'CFDA Number': 93.012,
     'Title': 'Improving, Enhancing, and Evaluating Outcomes of Comprehensive Heart Health Care Programs for High-Risk Women',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 07 2015',
+    'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 07 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 07, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16056,10 +16056,10 @@ export let ReportData = [
     'CFDA Number': 93.013,
     'Title': 'Ambassadors for Change Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 06 2015',
+    'Last Updated Date': 'Apr 06, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 02 2015',
-    'Last Published Date': 'Apr, 06 2015',
+    'OMB Review Date': 'Apr 02, 2015',
+    'Last Published Date': 'Apr 06, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16067,10 +16067,10 @@ export let ReportData = [
     'CFDA Number': 93.014,
     'Title': 'Steps to Healthier Girls Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 06 2015',
+    'Last Updated Date': 'Apr 06, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 03 2015',
-    'Last Published Date': 'Apr, 06 2015',
+    'OMB Review Date': 'Apr 03, 2015',
+    'Last Published Date': 'Apr 06, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16078,10 +16078,10 @@ export let ReportData = [
     'CFDA Number': 93.015,
     'Title': 'HIV Prevention Programs for Women',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 06 2015',
+    'Last Updated Date': 'Apr 06, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 03 2015',
-    'Last Published Date': 'Apr, 06 2015',
+    'OMB Review Date': 'Apr 03, 2015',
+    'Last Published Date': 'Apr 06, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16089,10 +16089,10 @@ export let ReportData = [
     'CFDA Number': 93.017,
     'Title': 'Strengthening the Management and Services of the Women\'s and Children\'s Hospitals in Kabul',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 07 2015',
+    'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 07 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 07, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16100,10 +16100,10 @@ export let ReportData = [
     'CFDA Number': 93.018,
     'Title': 'Strengthening Public Health Services at the Outreach Offices of the U.S.-Mexico Border Health Commission',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 07 2015',
+    'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2015',
-    'Last Published Date': 'Apr, 07 2015',
+    'OMB Review Date': 'Apr 06, 2015',
+    'Last Published Date': 'Apr 07, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16111,10 +16111,10 @@ export let ReportData = [
     'CFDA Number': 93.019,
     'Title': 'Technical Assistance and Provision for Foreign Hospitals and Health Organizations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 12 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 12, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -16122,10 +16122,10 @@ export let ReportData = [
     'CFDA Number': 93.041,
     'Title': 'Special Programs for the Aging_Title VII, Chapter 3_Programs for Prevention of Elder Abuse, Neglect, and Exploitation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16133,10 +16133,10 @@ export let ReportData = [
     'CFDA Number': 93.042,
     'Title': 'Special Programs for the Aging_Title VII, Chapter 2_Long Term Care Ombudsman Services for Older Individuals',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16144,10 +16144,10 @@ export let ReportData = [
     'CFDA Number': 93.043,
     'Title': 'Special Programs for the Aging_Title III, Part D_Disease Prevention and Health Promotion Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16155,10 +16155,10 @@ export let ReportData = [
     'CFDA Number': 93.045,
     'Title': 'Special Programs for the Aging_Title III, Part C_Nutrition Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Feb, 11 2011',
+    'Last Updated Date': 'Feb 11, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 10 2011',
-    'Last Published Date': 'Feb, 11 2011',
+    'OMB Review Date': 'Feb 10, 2011',
+    'Last Published Date': 'Feb 11, 2011',
     'Auto Published': 'No'
   },
   {
@@ -16166,10 +16166,10 @@ export let ReportData = [
     'CFDA Number': 93.047,
     'Title': 'Special Programs for the Aging_Title VI, Part A, Grants to Indian Tribes_Part B, Grants to Native Hawaiians',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16177,10 +16177,10 @@ export let ReportData = [
     'CFDA Number': 93.048,
     'Title': 'Special Programs for the Aging_Title IV_and Title II_Discretionary Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 06 2015',
+    'Last Updated Date': 'Apr 06, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 02 2015',
-    'Last Published Date': 'Apr, 06 2015',
+    'OMB Review Date': 'Apr 02, 2015',
+    'Last Published Date': 'Apr 06, 2015',
     'Auto Published': 'No'
   },
   {
@@ -16188,10 +16188,10 @@ export let ReportData = [
     'CFDA Number': 93.051,
     'Title': 'Alzheimer\'s Disease Demonstration Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16199,10 +16199,10 @@ export let ReportData = [
     'CFDA Number': 93.052,
     'Title': 'National Family Caregiver Support, Title III, Part E',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2001',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'May 15, 2001',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16210,10 +16210,10 @@ export let ReportData = [
     'CFDA Number': 93.053,
     'Title': 'Nutrition Services Incentive Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 13 2003',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jun 13, 2003',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16221,10 +16221,10 @@ export let ReportData = [
     'CFDA Number': 93.054,
     'Title': 'National Family Caregiver Support, Title VI, Part C, Grants To Indian Tribes And Native Hawaiians',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2007',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jul 23, 2007',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16232,10 +16232,10 @@ export let ReportData = [
     'CFDA Number': 93.061,
     'Title': 'Innovations in Applied Public Health Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 12 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Mar 12, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16243,10 +16243,10 @@ export let ReportData = [
     'CFDA Number': 93.063,
     'Title': 'Centers for Genomics and Public Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 03 2008',
+    'Last Updated Date': 'Jun 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 12 2004',
-    'Last Published Date': 'Jun, 03 2008',
+    'OMB Review Date': 'Mar 12, 2004',
+    'Last Published Date': 'Jun 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16254,10 +16254,10 @@ export let ReportData = [
     'CFDA Number': 93.064,
     'Title': 'Laboratory Training, Evaluation, and Quality Assurance Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 24 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jun 24, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16265,10 +16265,10 @@ export let ReportData = [
     'CFDA Number': 93.065,
     'Title': 'Laboratory Leadership, Workforce Training and Management Development, Improving Public Health Laboratory Infrastructure',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 12 2008',
+    'Last Updated Date': 'Jun 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 05 2005',
-    'Last Published Date': 'Jun, 12 2008',
+    'OMB Review Date': 'Aug 05, 2005',
+    'Last Published Date': 'Jun 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16276,10 +16276,10 @@ export let ReportData = [
     'CFDA Number': 93.066,
     'Title': 'State Vital Statistics Improvement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 04 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Aug 04, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16287,10 +16287,10 @@ export let ReportData = [
     'CFDA Number': 93.067,
     'Title': 'Global AIDS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 15 2005',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Feb 15, 2005',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16298,10 +16298,10 @@ export let ReportData = [
     'CFDA Number': 93.068,
     'Title': 'Chronic Diseases:  Research, Control, and Prevention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 07 2005',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Dec 07, 2005',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16309,10 +16309,10 @@ export let ReportData = [
     'CFDA Number': 93.069,
     'Title': 'Public Health Emergency Preparedness',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 11 2007',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Jan 11, 2007',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16320,10 +16320,10 @@ export let ReportData = [
     'CFDA Number': 93.071,
     'Title': 'Medicare Enrollment Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 05 2008',
+    'Last Updated Date': 'Dec 05, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2008',
-    'Last Published Date': 'Dec, 05 2008',
+    'OMB Review Date': 'Nov 20, 2008',
+    'Last Published Date': 'Dec 05, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16331,10 +16331,10 @@ export let ReportData = [
     'CFDA Number': 93.086,
     'Title': 'Healthy Marriage Promotion and Responsible Fatherhood Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 31 2006',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Jan 31, 2006',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16342,10 +16342,10 @@ export let ReportData = [
     'CFDA Number': 93.087,
     'Title': 'Enhance the Safety of Children Affected by Parental Methamphetamine or Other Substance Abuse',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 06 2007',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Feb 06, 2007',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16353,10 +16353,10 @@ export let ReportData = [
     'CFDA Number': 93.088,
     'Title': 'Advancing System Improvements to Support Targets for Healthy People 2010',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16364,10 +16364,10 @@ export let ReportData = [
     'CFDA Number': 93.1,
     'Title': 'Health Disparities in Minority Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16375,10 +16375,10 @@ export let ReportData = [
     'CFDA Number': 93.103,
     'Title': 'Food and Drug Administration_Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16386,10 +16386,10 @@ export let ReportData = [
     'CFDA Number': 93.104,
     'Title': 'Comprehensive Community Mental Health Services for Children with Serious Emotional Disturbances (SED)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16397,10 +16397,10 @@ export let ReportData = [
     'CFDA Number': 93.105,
     'Title': 'Bilingual/Bicultural Service Demonstration Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16408,10 +16408,10 @@ export let ReportData = [
     'CFDA Number': 93.107,
     'Title': 'Model State-Supported Area Health Education Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16419,10 +16419,10 @@ export let ReportData = [
     'CFDA Number': 93.11,
     'Title': 'Maternal and Child Health Federal Consolidated Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16430,10 +16430,10 @@ export let ReportData = [
     'CFDA Number': 93.111,
     'Title': 'Adolescent Family Life Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16441,10 +16441,10 @@ export let ReportData = [
     'CFDA Number': 93.113,
     'Title': 'Environmental Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 03 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Oct 03, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16452,10 +16452,10 @@ export let ReportData = [
     'CFDA Number': 93.116,
     'Title': 'Project Grants and Cooperative Agreements for Tuberculosis Control Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16463,10 +16463,10 @@ export let ReportData = [
     'CFDA Number': 93.117,
     'Title': 'Grants for Preventive Medicine',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16474,10 +16474,10 @@ export let ReportData = [
     'CFDA Number': 93.118,
     'Title': 'Acquired Immunodeficiency Syndrome (AIDS) Activity',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 04 2008',
+    'Last Updated Date': 'Sep 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 04 2008',
-    'Last Published Date': 'Sep, 04 2008',
+    'OMB Review Date': 'Sep 04, 2008',
+    'Last Published Date': 'Sep 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16485,10 +16485,10 @@ export let ReportData = [
     'CFDA Number': 93.121,
     'Title': 'Oral Diseases and Disorders Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16496,10 +16496,10 @@ export let ReportData = [
     'CFDA Number': 93.123,
     'Title': 'Health Professions Pregraduate Scholarship Program for Indians',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16507,10 +16507,10 @@ export let ReportData = [
     'CFDA Number': 93.124,
     'Title': 'Nurse Anesthetist Traineeships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16518,10 +16518,10 @@ export let ReportData = [
     'CFDA Number': 93.127,
     'Title': 'Emergency Medical Services for Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16529,10 +16529,10 @@ export let ReportData = [
     'CFDA Number': 93.129,
     'Title': 'Technical and Non-Financial Assistance to Health Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16540,10 +16540,10 @@ export let ReportData = [
     'CFDA Number': 93.13,
     'Title': 'Cooperative Agreements to States/Territories for the Coordination and Development of Primary Care Offices',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16551,10 +16551,10 @@ export let ReportData = [
     'CFDA Number': 93.134,
     'Title': 'Grants to Increase Organ Donations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16562,10 +16562,10 @@ export let ReportData = [
     'CFDA Number': 93.135,
     'Title': 'Centers for Research and Demonstration for Health Promotion and Disease Prevention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 03 2008',
+    'Last Updated Date': 'Jun 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2008',
-    'Last Published Date': 'Jun, 03 2008',
+    'OMB Review Date': 'Jun 03, 2008',
+    'Last Published Date': 'Jun 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16573,10 +16573,10 @@ export let ReportData = [
     'CFDA Number': 93.136,
     'Title': 'Injury Prevention and Control Research and State and Community Based Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16584,10 +16584,10 @@ export let ReportData = [
     'CFDA Number': 93.137,
     'Title': 'Community Programs to Improve  Minority Health Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16595,10 +16595,10 @@ export let ReportData = [
     'CFDA Number': 93.138,
     'Title': 'Protection and Advocacy for Individuals with Mental Illness',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16606,10 +16606,10 @@ export let ReportData = [
     'CFDA Number': 93.14,
     'Title': 'Intramural Research Training Award',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16617,10 +16617,10 @@ export let ReportData = [
     'CFDA Number': 93.142,
     'Title': 'NIEHS Hazardous Waste Worker Health and Safety Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16628,10 +16628,10 @@ export let ReportData = [
     'CFDA Number': 93.143,
     'Title': 'NIEHS Superfund Hazardous Substances_Basic Research and Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16639,10 +16639,10 @@ export let ReportData = [
     'CFDA Number': 93.145,
     'Title': 'AIDS Education and Training Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16650,10 +16650,10 @@ export let ReportData = [
     'CFDA Number': 93.15,
     'Title': 'Projects for Assistance in Transition from Homelessness (PATH)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16661,10 +16661,10 @@ export let ReportData = [
     'CFDA Number': 93.153,
     'Title': 'Coordinated Services and Access to Research for Women, Infants, Children, and Youth',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16672,10 +16672,10 @@ export let ReportData = [
     'CFDA Number': 93.155,
     'Title': 'Rural Health Research Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16683,10 +16683,10 @@ export let ReportData = [
     'CFDA Number': 93.156,
     'Title': 'Geriatric Training for Physicians, Dentists and Behavioral/Mental Health Professionals',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16694,10 +16694,10 @@ export let ReportData = [
     'CFDA Number': 93.157,
     'Title': 'Centers of Excellence',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16705,10 +16705,10 @@ export let ReportData = [
     'CFDA Number': 93.161,
     'Title': 'Health Program for Toxic Substances and Disease Registry',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16716,10 +16716,10 @@ export let ReportData = [
     'CFDA Number': 93.162,
     'Title': 'National Health Service Corps Loan Repayment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16727,10 +16727,10 @@ export let ReportData = [
     'CFDA Number': 93.164,
     'Title': 'Indian Health Service Educational Loan Repayment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16738,10 +16738,10 @@ export let ReportData = [
     'CFDA Number': 93.165,
     'Title': 'Grants to States for Loan Repayment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16749,10 +16749,10 @@ export let ReportData = [
     'CFDA Number': 93.172,
     'Title': 'Human Genome Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16760,10 +16760,10 @@ export let ReportData = [
     'CFDA Number': 93.173,
     'Title': 'Research Related to Deafness and Communication Disorders',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16771,10 +16771,10 @@ export let ReportData = [
     'CFDA Number': 93.178,
     'Title': 'Nursing Workforce Diversity',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16782,10 +16782,10 @@ export let ReportData = [
     'CFDA Number': 93.181,
     'Title': 'Podiatric Residency Training in Primary Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16793,10 +16793,10 @@ export let ReportData = [
     'CFDA Number': 93.184,
     'Title': 'Disabilities Prevention',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16804,10 +16804,10 @@ export let ReportData = [
     'CFDA Number': 93.185,
     'Title': 'Immunization Research, Demonstration, Public Information and Education_Training and Clinical Skills Improvement Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16815,10 +16815,10 @@ export let ReportData = [
     'CFDA Number': 93.186,
     'Title': 'National Research Service Award in Primary Care Medicine',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16826,10 +16826,10 @@ export let ReportData = [
     'CFDA Number': 93.187,
     'Title': 'Undergraduate Scholarship Program for Individuals from Disadvantaged Backgrounds',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16837,10 +16837,10 @@ export let ReportData = [
     'CFDA Number': 93.189,
     'Title': 'Health Education and Training Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16848,10 +16848,10 @@ export let ReportData = [
     'CFDA Number': 93.191,
     'Title': 'Allied Health Special Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16859,10 +16859,10 @@ export let ReportData = [
     'CFDA Number': 93.192,
     'Title': 'Quentin N. Burdick Program for Rural Interdisciplinary Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 25 2008',
+    'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 25 2008',
-    'Last Published Date': 'Sep, 25 2008',
+    'OMB Review Date': 'Sep 25, 2008',
+    'Last Published Date': 'Sep 25, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16870,10 +16870,10 @@ export let ReportData = [
     'CFDA Number': 93.193,
     'Title': 'Urban Indian Health Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16883,10 +16883,10 @@ export let ReportData = [
     Childhood Lead Poisoning Prevention and Surveillance of Blood Lead Levels \
     in Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16894,10 +16894,10 @@ export let ReportData = [
     'CFDA Number': 93.202,
     'Title': 'Capacity Building Among American Indian Tribes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16905,10 +16905,10 @@ export let ReportData = [
     'CFDA Number': 93.204,
     'Title': 'Surveillance of Hazardous Substance Emergency Events',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16916,10 +16916,10 @@ export let ReportData = [
     'CFDA Number': 93.206,
     'Title': 'Human Health Studies_Applied Research and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16927,10 +16927,10 @@ export let ReportData = [
     'CFDA Number': 93.208,
     'Title': 'Great Lakes Human Health Effects Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16938,10 +16938,10 @@ export let ReportData = [
     'CFDA Number': 93.209,
     'Title': 'Contraception and Infertility Research Loan Repayment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16949,10 +16949,10 @@ export let ReportData = [
     'CFDA Number': 93.21,
     'Title': 'Tribal Self-Governance Program: IHS Compacts/Funding Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16960,10 +16960,10 @@ export let ReportData = [
     'CFDA Number': 93.211,
     'Title': 'Telehealth Network Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16971,10 +16971,10 @@ export let ReportData = [
     'CFDA Number': 93.212,
     'Title': 'Chiropractic Demonstration Project Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16982,10 +16982,10 @@ export let ReportData = [
     'CFDA Number': 93.213,
     'Title': 'Research and Training in Complementary and Alternative Medicine',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -16993,10 +16993,10 @@ export let ReportData = [
     'CFDA Number': 93.217,
     'Title': 'Family Planning_Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17004,10 +17004,10 @@ export let ReportData = [
     'CFDA Number': 93.22,
     'Title': 'Clinical Research Loan Repayment Program for Individuals from Disadvantaged Backgrounds',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17015,10 +17015,10 @@ export let ReportData = [
     'CFDA Number': 93.223,
     'Title': 'Development and Coordination of Rural Health Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 26 2008',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Sep 26, 2008',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17029,10 +17029,10 @@ export let ReportData = [
       Health Centers, Health Care for the Homeless, Public Housing Primary \
       Care, and School Based Health Centers)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 09 2008',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Oct 09, 2008',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17040,10 +17040,10 @@ export let ReportData = [
     'CFDA Number': 93.225,
     'Title': 'National Research Service Awards_Health Services Research Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17051,10 +17051,10 @@ export let ReportData = [
     'CFDA Number': 93.226,
     'Title': 'Research on Healthcare Costs, Quality and Outcomes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 03 2008',
+    'Last Updated Date': 'Jun 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2008',
-    'Last Published Date': 'Jun, 03 2008',
+    'OMB Review Date': 'Jun 03, 2008',
+    'Last Published Date': 'Jun 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17062,10 +17062,10 @@ export let ReportData = [
     'CFDA Number': 93.228,
     'Title': 'Indian Health Service_Health Management Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17073,10 +17073,10 @@ export let ReportData = [
     'CFDA Number': 93.229,
     'Title': 'Demonstration Cooperative Agreements for Development and Implementation of Criminal Justice Treatment Networks',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17084,10 +17084,10 @@ export let ReportData = [
     'CFDA Number': 93.23,
     'Title': 'Consolidated Knowledge Development and Application (KD&A) Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17095,10 +17095,10 @@ export let ReportData = [
     'CFDA Number': 93.231,
     'Title': 'Epidemiology Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17106,10 +17106,10 @@ export let ReportData = [
     'CFDA Number': 93.232,
     'Title': 'Loan Repayment Program for General Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17117,10 +17117,10 @@ export let ReportData = [
     'CFDA Number': 93.233,
     'Title': 'National Center on Sleep Disorders Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17128,10 +17128,10 @@ export let ReportData = [
     'CFDA Number': 93.234,
     'Title': 'Traumatic Brain Injury State Demonstration Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17139,10 +17139,10 @@ export let ReportData = [
     'CFDA Number': 93.235,
     'Title': 'Abstinence Education Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17150,10 +17150,10 @@ export let ReportData = [
     'CFDA Number': 93.236,
     'Title': 'Grants for Dental Public Health Residency Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17161,10 +17161,10 @@ export let ReportData = [
     'CFDA Number': 93.237,
     'Title': 'Special Diabetes Program for Indians_Diabetes Prevention and Treatment  Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17172,10 +17172,10 @@ export let ReportData = [
     'CFDA Number': 93.238,
     'Title': 'Cooperative Agreements for State Treatment Outcomes and Performance Pilot Studies Enhancement',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17183,10 +17183,10 @@ export let ReportData = [
     'CFDA Number': 93.239,
     'Title': 'Policy Research and Evaluation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17194,10 +17194,10 @@ export let ReportData = [
     'CFDA Number': 93.24,
     'Title': 'State Capacity Building',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17205,10 +17205,10 @@ export let ReportData = [
     'CFDA Number': 93.241,
     'Title': 'State Rural Hospital Flexibility Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17216,10 +17216,10 @@ export let ReportData = [
     'CFDA Number': 93.242,
     'Title': 'Mental Health Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17227,10 +17227,10 @@ export let ReportData = [
     'CFDA Number': 93.243,
     'Title': 'Substance Abuse and Mental Health Services_Projects of Regional and National Significance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17238,10 +17238,10 @@ export let ReportData = [
     'CFDA Number': 93.244,
     'Title': 'Mental Health Clinical and AIDS Service-Related Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17249,10 +17249,10 @@ export let ReportData = [
     'CFDA Number': 93.247,
     'Title': 'Advanced Education Nursing Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 10 2000',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'May 10, 2000',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17260,10 +17260,10 @@ export let ReportData = [
     'CFDA Number': 93.249,
     'Title': 'Public Health Training Centers Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 27 2000',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Apr 27, 2000',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17271,10 +17271,10 @@ export let ReportData = [
     'CFDA Number': 93.25,
     'Title': 'Geriatric Academic Career Awards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 20 2000',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Apr 20, 2000',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17282,10 +17282,10 @@ export let ReportData = [
     'CFDA Number': 93.251,
     'Title': 'Universal Newborn Hearing Screening',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 03 2000',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'May 03, 2000',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17293,10 +17293,10 @@ export let ReportData = [
     'CFDA Number': 93.252,
     'Title': 'Healthy Communities Access Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 14 2008',
+    'Last Updated Date': 'Aug 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 26 2000',
-    'Last Published Date': 'Aug, 14 2008',
+    'OMB Review Date': 'Apr 26, 2000',
+    'Last Published Date': 'Aug 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17304,10 +17304,10 @@ export let ReportData = [
     'CFDA Number': 93.253,
     'Title': 'Poison Control Stabilization and Enhancement Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 12 2000',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Oct 12, 2000',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17315,10 +17315,10 @@ export let ReportData = [
     'CFDA Number': 93.254,
     'Title': 'Infant Adoption Awareness Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17326,10 +17326,10 @@ export let ReportData = [
     'CFDA Number': 93.255,
     'Title': 'Children\'s Hospitals Graduate Medical Education Payment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2001',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Oct 24, 2001',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17337,10 +17337,10 @@ export let ReportData = [
     'CFDA Number': 93.256,
     'Title': 'State Planning Grants Health Care Access for the Uninsured',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 22 2008',
+    'Last Updated Date': 'Dec 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2001',
-    'Last Published Date': 'Dec, 22 2008',
+    'OMB Review Date': 'Oct 24, 2001',
+    'Last Published Date': 'Dec 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17348,10 +17348,10 @@ export let ReportData = [
     'CFDA Number': 93.257,
     'Title': 'Grants for Education, Prevention, and Early Detection of Radiogenic Cancers and Diseases',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2002',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'May 30, 2002',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17359,10 +17359,10 @@ export let ReportData = [
     'CFDA Number': 93.259,
     'Title': 'Rural Access to Emergency Devices Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17370,10 +17370,10 @@ export let ReportData = [
     'CFDA Number': 93.26,
     'Title': 'Family Planning_Personnel Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17381,10 +17381,10 @@ export let ReportData = [
     'CFDA Number': 93.262,
     'Title': 'Occupational Safety and Health Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17392,10 +17392,10 @@ export let ReportData = [
     'CFDA Number': 93.264,
     'Title': 'Nurse Faculty Loan Program (NFLP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2003',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Sep 22, 2003',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17403,10 +17403,10 @@ export let ReportData = [
     'CFDA Number': 93.265,
     'Title': 'Comprehensive Geriatric Education Program(CGEP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2003',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Jul 25, 2003',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17416,10 +17416,10 @@ export let ReportData = [
     HIV-Infected Persons in Selected Countries in Africa and the Caribbean \
     Under the President\'s Emergency Plan for AIDS Relief',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 12 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Mar 12, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17427,10 +17427,10 @@ export let ReportData = [
     'CFDA Number': 93.267,
     'Title': 'State Grants for Protection and Advocacy Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 22 2004',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jun 22, 2004',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17438,10 +17438,10 @@ export let ReportData = [
     'CFDA Number': 93.268,
     'Title': 'Immunization Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17449,10 +17449,10 @@ export let ReportData = [
     'CFDA Number': 93.269,
     'Title': 'Complex Humanitarian Emergency and War-Related Injury Public Health Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 26 2008',
+    'Last Updated Date': 'Sep 26, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 05 2008',
-    'Last Published Date': 'Sep, 26 2008',
+    'OMB Review Date': 'May 05, 2008',
+    'Last Published Date': 'Sep 26, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17460,10 +17460,10 @@ export let ReportData = [
     'CFDA Number': 93.27,
     'Title': 'Adult Viral Hepatitis Prevention and Control',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 05 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'May 05, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17471,10 +17471,10 @@ export let ReportData = [
     'CFDA Number': 93.271,
     'Title': 'Alcohol Research Career Development Awards for Scientists and Clinicians',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17482,10 +17482,10 @@ export let ReportData = [
     'CFDA Number': 93.272,
     'Title': 'Alcohol National Research Service Awards for Research Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17493,10 +17493,10 @@ export let ReportData = [
     'CFDA Number': 93.273,
     'Title': 'Alcohol Research Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17504,10 +17504,10 @@ export let ReportData = [
     'CFDA Number': 93.275,
     'Title': 'Substance Abuse and Mental Health Services-Access to Recovery',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 27 2004',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Apr 27, 2004',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17515,10 +17515,10 @@ export let ReportData = [
     'CFDA Number': 93.276,
     'Title': 'Drug-Free Communities Support Program Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17526,10 +17526,10 @@ export let ReportData = [
     'CFDA Number': 93.279,
     'Title': 'Drug Abuse and Addiction Research Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17537,10 +17537,10 @@ export let ReportData = [
     'CFDA Number': 93.28,
     'Title': 'National Institutes of Health Loan Repayment Program for Clinical Researchers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 25 2003',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jul 25, 2003',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17548,10 +17548,10 @@ export let ReportData = [
     'CFDA Number': 93.281,
     'Title': 'Mental Health Research Career/Scientist Development Awards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17559,10 +17559,10 @@ export let ReportData = [
     'CFDA Number': 93.282,
     'Title': 'Mental Health National Research Service Awards for Research Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17570,10 +17570,10 @@ export let ReportData = [
     'CFDA Number': 93.283,
     'Title': 'Centers for Disease Control and Prevention_Investigations and Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 01 2008',
+    'Last Updated Date': 'Dec 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 01 2008',
-    'Last Published Date': 'Dec, 01 2008',
+    'OMB Review Date': 'Dec 01, 2008',
+    'Last Published Date': 'Dec 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17581,10 +17581,10 @@ export let ReportData = [
     'CFDA Number': 93.284,
     'Title': 'Injury Prevention Program for American Indians and Alaskan Natives_Cooperative Agreements',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 20 2000',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Apr 20, 2000',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17592,10 +17592,10 @@ export let ReportData = [
     'CFDA Number': 93.285,
     'Title': 'National Institutes of Health Pediatric Research Loan Repayment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 11 2003',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Sep 11, 2003',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17603,10 +17603,10 @@ export let ReportData = [
     'CFDA Number': 93.286,
     'Title': 'Discovery and Applied Research for Technological Innovations to Improve Human Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17614,10 +17614,10 @@ export let ReportData = [
     'CFDA Number': 93.288,
     'Title': 'National Health Service Corps Scholarship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17625,10 +17625,10 @@ export let ReportData = [
     'CFDA Number': 93.289,
     'Title': 'President\'s Council on Physical Fitness and Sports',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 19 2008',
+    'Last Updated Date': 'Nov 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 19 2008',
-    'Last Published Date': 'Nov, 19 2008',
+    'OMB Review Date': 'Nov 19, 2008',
+    'Last Published Date': 'Nov 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17636,10 +17636,10 @@ export let ReportData = [
     'CFDA Number': 93.29,
     'Title': 'National Community Centers of Excellence in Women\'s Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 19 2000',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Oct 19, 2000',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17647,10 +17647,10 @@ export let ReportData = [
     'CFDA Number': 93.291,
     'Title': 'Surplus Property Utilization',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17658,10 +17658,10 @@ export let ReportData = [
     'CFDA Number': 93.294,
     'Title': 'Mentoring Partnership Program - Protege',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 11 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Aug 11, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17669,10 +17669,10 @@ export let ReportData = [
     'CFDA Number': 93.295,
     'Title': 'Intergenerational Approaches to HIV/AIDS Prevention Education with Women across The Lifespan Pilot Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 11 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Aug 11, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17680,10 +17680,10 @@ export let ReportData = [
     'CFDA Number': 93.296,
     'Title': 'State Partnership Grant Program to Improve Minority Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 02 2006',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'May 02, 2006',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17691,10 +17691,10 @@ export let ReportData = [
     'CFDA Number': 93.3,
     'Title': 'National Center for Health Workforce Analysis',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17702,10 +17702,10 @@ export let ReportData = [
     'CFDA Number': 93.301,
     'Title': 'Small Rural Hospital Improvement Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 10 2002',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jun 10, 2002',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17713,10 +17713,10 @@ export let ReportData = [
     'CFDA Number': 93.303,
     'Title': 'Nursing Scholarship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 19 2008',
+    'Last Updated Date': 'Sep 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 23 2007',
-    'Last Published Date': 'Sep, 19 2008',
+    'OMB Review Date': 'Jul 23, 2007',
+    'Last Published Date': 'Sep 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17724,10 +17724,10 @@ export let ReportData = [
     'CFDA Number': 93.307,
     'Title': 'Minority Health and Health Disparities Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17735,10 +17735,10 @@ export let ReportData = [
     'CFDA Number': 93.308,
     'Title': 'Extramural Loan Repayment for Individuals from Disadvantaged Backgrounds Conducting Clinical Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17746,10 +17746,10 @@ export let ReportData = [
     'CFDA Number': 93.31,
     'Title': 'Trans-NIH Research Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 24 2006',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Mar 24, 2006',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17757,10 +17757,10 @@ export let ReportData = [
     'CFDA Number': 93.342,
     'Title': 'Health Professions Student Loans, Including Primary Care Loans/Loans for Disadvantaged Students',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17768,10 +17768,10 @@ export let ReportData = [
     'CFDA Number': 93.345,
     'Title': 'Test New',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 03 2015',
+    'Last Updated Date': 'Apr 03, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 03 2015',
-    'Last Published Date': 'Apr, 03 2015',
+    'OMB Review Date': 'Apr 03, 2015',
+    'Last Published Date': 'Apr 03, 2015',
     'Auto Published': 'No'
   },
   {
@@ -17779,10 +17779,10 @@ export let ReportData = [
     'CFDA Number': 93.358,
     'Title': 'Advanced Education Nursing Traineeships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17790,10 +17790,10 @@ export let ReportData = [
     'CFDA Number': 93.359,
     'Title': 'Nurse Education, Practice and Retention Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 06 2008',
+    'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 06 2008',
-    'Last Published Date': 'Nov, 06 2008',
+    'OMB Review Date': 'Nov 06, 2008',
+    'Last Published Date': 'Nov 06, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17801,10 +17801,10 @@ export let ReportData = [
     'CFDA Number': 93.361,
     'Title': 'Nursing Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 30 2008',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Oct 30, 2008',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17812,10 +17812,10 @@ export let ReportData = [
     'CFDA Number': 93.364,
     'Title': 'Nursing Student Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17823,10 +17823,10 @@ export let ReportData = [
     'CFDA Number': 93.365,
     'Title': 'Sickle Cell Treatment Demonstration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 30 2008',
+    'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 24 2006',
-    'Last Published Date': 'Oct, 30 2008',
+    'OMB Review Date': 'Jan 24, 2006',
+    'Last Published Date': 'Oct 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17834,10 +17834,10 @@ export let ReportData = [
     'CFDA Number': 93.389,
     'Title': 'National Center for Research Resources',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17845,10 +17845,10 @@ export let ReportData = [
     'CFDA Number': 93.392,
     'Title': 'Cancer Construction',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 10 2008',
+    'Last Updated Date': 'Nov 10, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2008',
-    'Last Published Date': 'Nov, 10 2008',
+    'OMB Review Date': 'Nov 10, 2008',
+    'Last Published Date': 'Nov 10, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17856,10 +17856,10 @@ export let ReportData = [
     'CFDA Number': 93.393,
     'Title': 'Cancer Cause and Prevention Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 11 2008',
+    'Last Updated Date': 'Aug 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 11 2008',
-    'Last Published Date': 'Aug, 11 2008',
+    'OMB Review Date': 'Aug 11, 2008',
+    'Last Published Date': 'Aug 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17867,10 +17867,10 @@ export let ReportData = [
     'CFDA Number': 93.394,
     'Title': 'Cancer Detection and Diagnosis Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17878,10 +17878,10 @@ export let ReportData = [
     'CFDA Number': 93.395,
     'Title': 'Cancer Treatment Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17889,10 +17889,10 @@ export let ReportData = [
     'CFDA Number': 93.396,
     'Title': 'Cancer Biology Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17900,10 +17900,10 @@ export let ReportData = [
     'CFDA Number': 93.397,
     'Title': 'Cancer Centers Support Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17911,10 +17911,10 @@ export let ReportData = [
     'CFDA Number': 93.398,
     'Title': 'Cancer Research Manpower',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 11 2008',
+    'Last Updated Date': 'Aug 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 11 2008',
-    'Last Published Date': 'Aug, 11 2008',
+    'OMB Review Date': 'Aug 11, 2008',
+    'Last Published Date': 'Aug 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17922,10 +17922,10 @@ export let ReportData = [
     'CFDA Number': 93.399,
     'Title': 'Cancer Control',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17933,10 +17933,10 @@ export let ReportData = [
     'CFDA Number': 93.4,
     'Title': 'National Health Service Corps Scholarship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 21, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -17944,10 +17944,10 @@ export let ReportData = [
     'CFDA Number': 93.406,
     'Title': 'Nursing Education Loan Repayment Program (NELRP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'May 21, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -17955,10 +17955,10 @@ export let ReportData = [
     'CFDA Number': 93.409,
     'Title': 'Faculty Loan Repayment Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 21, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -17966,10 +17966,10 @@ export let ReportData = [
     'CFDA Number': 93.441,
     'Title': 'Indian Self-Determination',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 17 2008',
+    'Last Updated Date': 'Jun 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 18 2000',
-    'Last Published Date': 'Jun, 17 2008',
+    'OMB Review Date': 'Oct 18, 2000',
+    'Last Published Date': 'Jun 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17977,10 +17977,10 @@ export let ReportData = [
     'CFDA Number': 93.442,
     'Title': 'Special Diabetes Program for Indians (SDPI) Competitive Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2004',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Jul 08, 2004',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17988,10 +17988,10 @@ export let ReportData = [
     'CFDA Number': 93.443,
     'Title': 'Health Promotion/Disease Prevention Program for American Indians and Alaska Natives',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 13 2005',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Dec 13, 2005',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -17999,10 +17999,10 @@ export let ReportData = [
     'CFDA Number': 93.444,
     'Title': 'Tribal Self-Governance Program: Planning and Negotiation Cooperative Agreement',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 14 2008',
+    'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 02 2008',
-    'Last Published Date': 'Oct, 14 2008',
+    'OMB Review Date': 'Oct 02, 2008',
+    'Last Published Date': 'Oct 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18010,10 +18010,10 @@ export let ReportData = [
     'CFDA Number': 93.448,
     'Title': 'Food Safety and Security Monitoring Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 10 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 10, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -18021,10 +18021,10 @@ export let ReportData = [
     'CFDA Number': 93.449,
     'Title': 'Ruminant Feed Ban Support Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 09 2008',
+    'Last Updated Date': 'Jul 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 14 2005',
-    'Last Published Date': 'Jul, 09 2008',
+    'OMB Review Date': 'Apr 14, 2005',
+    'Last Published Date': 'Jul 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18032,10 +18032,10 @@ export let ReportData = [
     'CFDA Number': 93.55,
     'Title': 'Transitional Living for Homeless Youth',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 02 2008',
+    'Last Updated Date': 'Jun 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 02 2008',
-    'Last Published Date': 'Jun, 02 2008',
+    'OMB Review Date': 'Jun 02, 2008',
+    'Last Published Date': 'Jun 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18043,10 +18043,10 @@ export let ReportData = [
     'CFDA Number': 93.551,
     'Title': 'Abandoned Infants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18054,10 +18054,10 @@ export let ReportData = [
     'CFDA Number': 93.556,
     'Title': 'Promoting Safe and Stable Families',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18065,10 +18065,10 @@ export let ReportData = [
     'CFDA Number': 93.557,
     'Title': 'Education and Prevention Grants to Reduce Sexual Abuse of Runaway, Homeless and Street Youth',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 02 2008',
+    'Last Updated Date': 'Jun 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 02 2008',
-    'Last Published Date': 'Jun, 02 2008',
+    'OMB Review Date': 'Jun 02, 2008',
+    'Last Published Date': 'Jun 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18076,10 +18076,10 @@ export let ReportData = [
     'CFDA Number': 93.558,
     'Title': 'Temporary Assistance for Needy Families',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18087,10 +18087,10 @@ export let ReportData = [
     'CFDA Number': 93.56,
     'Title': 'Family Support Payments to States_Assistance Payments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18098,10 +18098,10 @@ export let ReportData = [
     'CFDA Number': 93.563,
     'Title': 'Child Support Enforcement',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 17 2008',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Jul 17, 2008',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18109,10 +18109,10 @@ export let ReportData = [
     'CFDA Number': 93.564,
     'Title': 'Child Support Enforcement Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18120,10 +18120,10 @@ export let ReportData = [
     'CFDA Number': 93.566,
     'Title': 'Refugee and Entrant Assistance_State Administered Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18131,10 +18131,10 @@ export let ReportData = [
     'CFDA Number': 93.567,
     'Title': 'Refugee and Entrant Assistance_Voluntary Agency Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18142,10 +18142,10 @@ export let ReportData = [
     'CFDA Number': 93.568,
     'Title': 'Low-Income Home Energy Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18153,10 +18153,10 @@ export let ReportData = [
     'CFDA Number': 93.569,
     'Title': 'Community Services Block Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18164,10 +18164,10 @@ export let ReportData = [
     'CFDA Number': 93.57,
     'Title': 'Community Services Block Grant_Discretionary Awards',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18175,10 +18175,10 @@ export let ReportData = [
     'CFDA Number': 93.575,
     'Title': 'Child Care and Development Block Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18186,10 +18186,10 @@ export let ReportData = [
     'CFDA Number': 93.576,
     'Title': 'Refugee and Entrant Assistance_Discretionary Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18197,10 +18197,10 @@ export let ReportData = [
     'CFDA Number': 93.579,
     'Title': 'U.S. Repatriation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18208,10 +18208,10 @@ export let ReportData = [
     'CFDA Number': 93.581,
     'Title': 'Improving the Capability of Indian Tribal Governments to Regulate Environmental Quality',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18219,10 +18219,10 @@ export let ReportData = [
     'CFDA Number': 93.583,
     'Title': 'Refugee and Entrant Assistance_Wilson/Fish Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18230,10 +18230,10 @@ export let ReportData = [
     'CFDA Number': 93.584,
     'Title': 'Refugee and Entrant Assistance_Targeted Assistance Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 11 2008',
+    'Last Updated Date': 'Jun 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 11 2008',
-    'Last Published Date': 'Jun, 11 2008',
+    'OMB Review Date': 'Jun 11, 2008',
+    'Last Published Date': 'Jun 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18241,10 +18241,10 @@ export let ReportData = [
     'CFDA Number': 93.586,
     'Title': 'State Court Improvement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18252,10 +18252,10 @@ export let ReportData = [
     'CFDA Number': 93.587,
     'Title': 'Promote the Survival and Continuing Vitality of Native American Languages',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18263,10 +18263,10 @@ export let ReportData = [
     'CFDA Number': 93.59,
     'Title': 'Community-Based Child Abuse Prevention Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18274,10 +18274,10 @@ export let ReportData = [
     'CFDA Number': 93.591,
     'Title': 'Family Violence Prevention and Services/Grants For Battered Women\'s Shelters_Grants to State Domestic Violence Coalitions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 03 2000',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'May 03, 2000',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18285,10 +18285,10 @@ export let ReportData = [
     'CFDA Number': 93.592,
     'Title': 'Family Violence Prevention and Services/Grants for Battered Women\'s Shelters_Discretionary Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18296,10 +18296,10 @@ export let ReportData = [
     'CFDA Number': 93.593,
     'Title': 'Job Opportunities for Low-Income Individuals',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18307,10 +18307,10 @@ export let ReportData = [
     'CFDA Number': 93.594,
     'Title': 'Tribal Work Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18318,10 +18318,10 @@ export let ReportData = [
     'CFDA Number': 93.595,
     'Title': 'Welfare Reform Research, Evaluations and National Studies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 29 2008',
+    'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 29 2008',
-    'Last Published Date': 'Oct, 29 2008',
+    'OMB Review Date': 'Oct 29, 2008',
+    'Last Published Date': 'Oct 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18329,10 +18329,10 @@ export let ReportData = [
     'CFDA Number': 93.596,
     'Title': 'Child Care Mandatory and Matching Funds of the Child Care and Development Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18340,10 +18340,10 @@ export let ReportData = [
     'CFDA Number': 93.597,
     'Title': 'Grants to States for Access and Visitation Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18351,10 +18351,10 @@ export let ReportData = [
     'CFDA Number': 93.598,
     'Title': 'Services to Victims of a Severe Form of Trafficking',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2001',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 24, 2001',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18362,10 +18362,10 @@ export let ReportData = [
     'CFDA Number': 93.599,
     'Title': 'Chafee Education and Training Vouchers Program (ETV)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 01 2003',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Jul 01, 2003',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18373,10 +18373,10 @@ export let ReportData = [
     'CFDA Number': 93.6,
     'Title': 'Head Start',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18384,10 +18384,10 @@ export let ReportData = [
     'CFDA Number': 93.601,
     'Title': 'Child Support Enforcement Demonstrations and Special Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18395,10 +18395,10 @@ export let ReportData = [
     'CFDA Number': 93.602,
     'Title': 'Assets for Independence Demonstration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18406,10 +18406,10 @@ export let ReportData = [
     'CFDA Number': 93.603,
     'Title': 'Adoption Incentive Payments',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18417,10 +18417,10 @@ export let ReportData = [
     'CFDA Number': 93.604,
     'Title': 'Assistance for Torture Victims',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 10 2000',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Apr 10, 2000',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18428,10 +18428,10 @@ export let ReportData = [
     'CFDA Number': 93.605,
     'Title': 'Family Connection Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 18 2008',
+    'Last Updated Date': 'Dec 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 20 2008',
-    'Last Published Date': 'Dec, 18 2008',
+    'OMB Review Date': 'Nov 20, 2008',
+    'Last Published Date': 'Dec 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18439,10 +18439,10 @@ export let ReportData = [
     'CFDA Number': 93.612,
     'Title': 'Native American Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18450,10 +18450,10 @@ export let ReportData = [
     'CFDA Number': 93.613,
     'Title': 'President\'s Committee for People with Intellectual Disabilities (PCPID)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18461,10 +18461,10 @@ export let ReportData = [
     'CFDA Number': 93.616,
     'Title': 'Mentoring Children of Prisoners',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 01 2003',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Jul 01, 2003',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18472,10 +18472,10 @@ export let ReportData = [
     'CFDA Number': 93.617,
     'Title': 'Voting Access for Individuals with Disabilities_Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 30 2003',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'May 30, 2003',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18483,10 +18483,10 @@ export let ReportData = [
     'CFDA Number': 93.618,
     'Title': 'Voting Access for Individuals with Disabilities-Grants for Protection and Advocacy Systems',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 07 2003',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Jul 07, 2003',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18494,10 +18494,10 @@ export let ReportData = [
     'CFDA Number': 93.623,
     'Title': 'Basic Center Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18505,10 +18505,10 @@ export let ReportData = [
     'CFDA Number': 93.63,
     'Title': 'Developmental Disabilities Basic Support and Advocacy Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18516,10 +18516,10 @@ export let ReportData = [
     'CFDA Number': 93.631,
     'Title': 'Developmental Disabilities Projects of National Significance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18527,10 +18527,10 @@ export let ReportData = [
     'CFDA Number': 93.632,
     'Title': 'University Centers for Excellence in Developmental Disabilities Education, Research, and Service',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18538,10 +18538,10 @@ export let ReportData = [
     'CFDA Number': 93.643,
     'Title': 'Children\'s Justice Grants to States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18549,10 +18549,10 @@ export let ReportData = [
     'CFDA Number': 93.645,
     'Title': 'Child Welfare Services_State Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18560,10 +18560,10 @@ export let ReportData = [
     'CFDA Number': 93.647,
     'Title': 'Social Services Research and Demonstration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 27 2008',
+    'Last Updated Date': 'Oct 27, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 27 2008',
-    'Last Published Date': 'Oct, 27 2008',
+    'OMB Review Date': 'Oct 27, 2008',
+    'Last Published Date': 'Oct 27, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18571,10 +18571,10 @@ export let ReportData = [
     'CFDA Number': 93.648,
     'Title': 'Child Welfare Services Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18582,10 +18582,10 @@ export let ReportData = [
     'CFDA Number': 93.652,
     'Title': 'Adoption Opportunities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 17 2008',
+    'Last Updated Date': 'Oct 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2008',
-    'Last Published Date': 'Oct, 17 2008',
+    'OMB Review Date': 'Oct 17, 2008',
+    'Last Published Date': 'Oct 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18593,10 +18593,10 @@ export let ReportData = [
     'CFDA Number': 93.658,
     'Title': 'Foster Care_Title IV-E',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 02 2008',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Oct 02, 2008',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18604,10 +18604,10 @@ export let ReportData = [
     'CFDA Number': 93.659,
     'Title': 'Adoption Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18615,10 +18615,10 @@ export let ReportData = [
     'CFDA Number': 93.667,
     'Title': 'Social Services Block Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 11 2008',
+    'Last Updated Date': 'Jun 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 11 2008',
-    'Last Published Date': 'Jun, 11 2008',
+    'OMB Review Date': 'Jun 11, 2008',
+    'Last Published Date': 'Jun 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18626,10 +18626,10 @@ export let ReportData = [
     'CFDA Number': 93.669,
     'Title': 'Child Abuse and Neglect State Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 17 2008',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Jul 17, 2008',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18637,10 +18637,10 @@ export let ReportData = [
     'CFDA Number': 93.67,
     'Title': 'Child Abuse and Neglect Discretionary Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 09 2008',
+    'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 09 2008',
-    'Last Published Date': 'Jun, 09 2008',
+    'OMB Review Date': 'Jun 09, 2008',
+    'Last Published Date': 'Jun 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18648,10 +18648,10 @@ export let ReportData = [
     'CFDA Number': 93.671,
     'Title': 'Family Violence Prevention and Services/Grants for Battered Women\'s Shelters_Grants to States and Indian Tribes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 17 2008',
+    'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 17 2008',
-    'Last Published Date': 'Jul, 17 2008',
+    'OMB Review Date': 'Jul 17, 2008',
+    'Last Published Date': 'Jul 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18659,10 +18659,10 @@ export let ReportData = [
     'CFDA Number': 93.674,
     'Title': 'Chafee Foster Care Independence Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18670,10 +18670,10 @@ export let ReportData = [
     'CFDA Number': 93.676,
     'Title': 'Unaccompanied Alien Children Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2003',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Sep 16, 2003',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18681,10 +18681,10 @@ export let ReportData = [
     'CFDA Number': 93.701,
     'Title': 'TRANS-NIH RECOVERY ACT RESEARCH SUPPORT',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 15, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18692,10 +18692,10 @@ export let ReportData = [
     'CFDA Number': 93.702,
     'Title': 'NATIONAL CENTER FOR RESEARCH RESOURCES, RECOVERY ACT CONSTRUCTION SUPPORT',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 15, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18703,10 +18703,10 @@ export let ReportData = [
     'CFDA Number': 93.703,
     'Title': 'ARRA � Health Center Integrated Services Development Initiative[g1]',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 21, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18714,10 +18714,10 @@ export let ReportData = [
     'CFDA Number': 93.704,
     'Title': 'TRANS-NIH RECOVERY ACT LOAN REPAYMENT SUPPORT',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 15 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 15, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18725,10 +18725,10 @@ export let ReportData = [
     'CFDA Number': 93.705,
     'Title': 'Aging Home-Delivered Nutrition Services for States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 19, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18736,10 +18736,10 @@ export let ReportData = [
     'CFDA Number': 93.706,
     'Title': 'Aging Nutrition Services for Native Americans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 19, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18747,10 +18747,10 @@ export let ReportData = [
     'CFDA Number': 93.707,
     'Title': 'Aging Congregate Nutrition Services for States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 19, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18758,10 +18758,10 @@ export let ReportData = [
     'CFDA Number': 93.708,
     'Title': 'ARRA - HEAD START',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18769,10 +18769,10 @@ export let ReportData = [
     'CFDA Number': 93.709,
     'Title': 'ARRA � EARLY HEAD START �',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18780,10 +18780,10 @@ export let ReportData = [
     'CFDA Number': 93.71,
     'Title': 'ARRA - COMMUNITY SERVICES BLOCK GRANT',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18791,10 +18791,10 @@ export let ReportData = [
     'CFDA Number': 93.711,
     'Title': 'ARRA �  STRENGTHENING COMMUNITIES FUND',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 20 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 20, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18802,10 +18802,10 @@ export let ReportData = [
     'CFDA Number': 93.712,
     'Title': 'ARRA IMMUNIZATION',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 26 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 26, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18813,10 +18813,10 @@ export let ReportData = [
     'CFDA Number': 93.713,
     'Title': 'ARRA � CHILD CARE AND DEVELOPMENT BLOCK GRANT',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18824,10 +18824,10 @@ export let ReportData = [
     'CFDA Number': 93.714,
     'Title': 'ARRA � EMERGENCY CONTINGENCY FUND FOR TEMPORARY ASSISTANCE FOR NEEDY FAMILIES (TANF) STATE PROGRAMS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 22 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 22, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18835,10 +18835,10 @@ export let ReportData = [
     'CFDA Number': 93.715,
     'Title': 'Recovery Act � Comparative Effectiveness Research - AHRQ',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 24 2010',
+    'Last Updated Date': 'Nov 24, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2009',
-    'Last Published Date': 'Nov, 24 2010',
+    'OMB Review Date': 'May 21, 2009',
+    'Last Published Date': 'Nov 24, 2010',
     'Auto Published': 'No'
   },
   {
@@ -18846,10 +18846,10 @@ export let ReportData = [
     'CFDA Number': 93.716,
     'Title': 'ARRA � TEMPORARY ASSISTANCE FOR NEEDY FAMILIES (TANF) SUPPLEMENTAL GRANTS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 28 2011',
+    'Last Updated Date': 'Apr 28, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 09 2011',
-    'Last Published Date': 'Apr, 28 2011',
+    'OMB Review Date': 'Feb 09, 2011',
+    'Last Published Date': 'Apr 28, 2011',
     'Auto Published': 'No'
   },
   {
@@ -18857,10 +18857,10 @@ export let ReportData = [
     'CFDA Number': 93.717,
     'Title': 'ARRA PREVENTING HEALTHCARE-ASSOCIATED INFECTIONS',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 12 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 12, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -18868,10 +18868,10 @@ export let ReportData = [
     'CFDA Number': 93.76,
     'Title': 'Rural PACE (Program of All-Inclusive Care for the Elderly) Provider Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 21 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Apr 21, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18879,10 +18879,10 @@ export let ReportData = [
     'CFDA Number': 93.767,
     'Title': 'State Children\'s Insurance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18890,10 +18890,10 @@ export let ReportData = [
     'CFDA Number': 93.768,
     'Title': 'Medicaid Infrastructure Grants To Support the Competitive Employment of People with Disabilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 08 2008',
+    'Last Updated Date': 'Aug 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 18 2000',
-    'Last Published Date': 'Aug, 08 2008',
+    'OMB Review Date': 'Oct 18, 2000',
+    'Last Published Date': 'Aug 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18901,10 +18901,10 @@ export let ReportData = [
     'CFDA Number': 93.769,
     'Title': 'Demonstration to Maintain Independence and Employment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 16 2008',
+    'Last Updated Date': 'Jul 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 18 2000',
-    'Last Published Date': 'Jul, 16 2008',
+    'OMB Review Date': 'Oct 18, 2000',
+    'Last Published Date': 'Jul 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18912,10 +18912,10 @@ export let ReportData = [
     'CFDA Number': 93.77,
     'Title': 'Medicare_Prescription Drug Coverage',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 27 2005',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Jun 27, 2005',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18923,10 +18923,10 @@ export let ReportData = [
     'CFDA Number': 93.773,
     'Title': 'Medicare_Hospital Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18934,10 +18934,10 @@ export let ReportData = [
     'CFDA Number': 93.774,
     'Title': 'Medicare_Supplementary Medical Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18945,10 +18945,10 @@ export let ReportData = [
     'CFDA Number': 93.775,
     'Title': 'State Medicaid Fraud Control Units',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18956,10 +18956,10 @@ export let ReportData = [
     'CFDA Number': 93.776,
     'Title': 'Hurricane Katrina Relief',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 14 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Feb 14, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18967,10 +18967,10 @@ export let ReportData = [
     'CFDA Number': 93.777,
     'Title': 'State Survey and Certification of Health Care Providers and Suppliers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18978,10 +18978,10 @@ export let ReportData = [
     'CFDA Number': 93.778,
     'Title': 'Medical Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -18989,10 +18989,10 @@ export let ReportData = [
     'CFDA Number': 93.779,
     'Title': 'Centers for Medicare and Medicaid Services (CMS) Research, Demonstrations and Evaluations',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19000,10 +19000,10 @@ export let ReportData = [
     'CFDA Number': 93.78,
     'Title': 'Grants to States for Operation of Qualified High-Risk Pools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 07 2003',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Jul 07, 2003',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19011,10 +19011,10 @@ export let ReportData = [
     'CFDA Number': 93.781,
     'Title': 'Seed Grants to States for Qualified High-Risk Pools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2003',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Sep 16, 2003',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19022,10 +19022,10 @@ export let ReportData = [
     'CFDA Number': 93.783,
     'Title': 'Medicare Transitional Drug Assistance Program for States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2004',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'May 28, 2004',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19033,10 +19033,10 @@ export let ReportData = [
     'CFDA Number': 93.784,
     'Title': 'Federal Reimbursement of Emergency Health Services Furnished to Undocumented Aliens',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 02 2004',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Jul 02, 2004',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19044,10 +19044,10 @@ export let ReportData = [
     'CFDA Number': 93.785,
     'Title': 'Pilot Program for National and State Background Checks--Direct Patient Access for Long-Term Care',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 28 2004',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Jul 28, 2004',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19055,10 +19055,10 @@ export let ReportData = [
     'CFDA Number': 93.786,
     'Title': 'State Pharmaceutical Assistance Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 22 2004',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Sep 22, 2004',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19066,10 +19066,10 @@ export let ReportData = [
     'CFDA Number': 93.789,
     'Title': 'Alternatives to Psychiatric Residential Treatment Facilities for Children',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 07 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Aug 07, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19077,10 +19077,10 @@ export let ReportData = [
     'CFDA Number': 93.79,
     'Title': 'Alternate Non-Emergency Service Providers or Networks',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 22 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Aug 22, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19088,10 +19088,10 @@ export let ReportData = [
     'CFDA Number': 93.791,
     'Title': 'Money Follows the Person Rebalancing Demonstration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 10 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Aug 10, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19099,10 +19099,10 @@ export let ReportData = [
     'CFDA Number': 93.793,
     'Title': 'Medicaid Transformation Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 07 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Aug 07, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19110,10 +19110,10 @@ export let ReportData = [
     'CFDA Number': 93.794,
     'Title': 'Reimbursement of State Costs for Provision of Part D Drugs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2006',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'May 18, 2006',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19121,10 +19121,10 @@ export let ReportData = [
     'CFDA Number': 93.822,
     'Title': 'Health Careers Opportunity Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19132,10 +19132,10 @@ export let ReportData = [
     'CFDA Number': 93.824,
     'Title': 'Basic/Core Area Health Education Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19143,10 +19143,10 @@ export let ReportData = [
     'CFDA Number': 93.837,
     'Title': 'Cardiovascular Diseases Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19154,10 +19154,10 @@ export let ReportData = [
     'CFDA Number': 93.838,
     'Title': 'Lung Diseases Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19165,10 +19165,10 @@ export let ReportData = [
     'CFDA Number': 93.839,
     'Title': 'Blood Diseases and Resources Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19176,10 +19176,10 @@ export let ReportData = [
     'CFDA Number': 93.846,
     'Title': 'Arthritis, Musculoskeletal and Skin Diseases Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19187,10 +19187,10 @@ export let ReportData = [
     'CFDA Number': 93.847,
     'Title': 'Diabetes, Digestive, and Kidney Diseases Extramural Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 14 2008',
+    'Last Updated Date': 'Nov 14, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 14 2008',
-    'Last Published Date': 'Nov, 14 2008',
+    'OMB Review Date': 'Nov 14, 2008',
+    'Last Published Date': 'Nov 14, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19198,10 +19198,10 @@ export let ReportData = [
     'CFDA Number': 93.853,
     'Title': 'Extramural Research Programs in the Neurosciences and Neurological Disorders',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19209,10 +19209,10 @@ export let ReportData = [
     'CFDA Number': 93.855,
     'Title': 'Allergy, Immunology and Transplantation Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19220,10 +19220,10 @@ export let ReportData = [
     'CFDA Number': 93.856,
     'Title': 'Microbiology and Infectious Diseases Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19231,10 +19231,10 @@ export let ReportData = [
     'CFDA Number': 93.859,
     'Title': 'Biomedical Research and Research Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19242,10 +19242,10 @@ export let ReportData = [
     'CFDA Number': 93.865,
     'Title': 'Child Health and Human Development Extramural Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19253,10 +19253,10 @@ export let ReportData = [
     'CFDA Number': 93.866,
     'Title': 'Aging Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19264,10 +19264,10 @@ export let ReportData = [
     'CFDA Number': 93.867,
     'Title': 'Vision Research',
     'Current Status': 'Published',
-    'Last Updated Date': 'May, 19 2008',
+    'Last Updated Date': 'May 19, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 19 2008',
-    'Last Published Date': 'May, 19 2008',
+    'OMB Review Date': 'May 19, 2008',
+    'Last Published Date': 'May 19, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19275,10 +19275,10 @@ export let ReportData = [
     'CFDA Number': 93.879,
     'Title': 'Medical Library Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 09 2008',
+    'Last Updated Date': 'Jul 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 09 2008',
-    'Last Published Date': 'Jul, 09 2008',
+    'OMB Review Date': 'Jul 09, 2008',
+    'Last Published Date': 'Jul 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19286,10 +19286,10 @@ export let ReportData = [
     'CFDA Number': 93.884,
     'Title': 'Grants for Training in Primary Care Medicine and Dentistry',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19297,10 +19297,10 @@ export let ReportData = [
     'CFDA Number': 93.887,
     'Title': 'Health Care and Other Facilities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19308,10 +19308,10 @@ export let ReportData = [
     'CFDA Number': 93.888,
     'Title': 'Specially Selected Health Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 19 2004',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Nov 19, 2004',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19319,10 +19319,10 @@ export let ReportData = [
     'CFDA Number': 93.889,
     'Title': 'National Bioterrorism Hospital Preparedness Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 23 2004',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 23, 2004',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19330,10 +19330,10 @@ export let ReportData = [
     'CFDA Number': 93.89,
     'Title': 'Healthy Communities Access Program (HCAP) Demonstration Authority',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 22 2004',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Jun 22, 2004',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19341,10 +19341,10 @@ export let ReportData = [
     'CFDA Number': 93.891,
     'Title': 'Alcohol Research Center Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19352,10 +19352,10 @@ export let ReportData = [
     'CFDA Number': 93.908,
     'Title': 'Nursing Education Loan Repayment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19363,10 +19363,10 @@ export let ReportData = [
     'CFDA Number': 93.91,
     'Title': 'Family and Community Violence Prevention Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19374,10 +19374,10 @@ export let ReportData = [
     'CFDA Number': 93.912,
     'Title': 'Rural Health Care Services Outreach and Rural Health Network Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19385,10 +19385,10 @@ export let ReportData = [
     'CFDA Number': 93.913,
     'Title': 'Grants to States for Operation of Offices of Rural Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19396,10 +19396,10 @@ export let ReportData = [
     'CFDA Number': 93.914,
     'Title': 'HIV Emergency Relief Project Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 27 2000',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Apr 27, 2000',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19407,10 +19407,10 @@ export let ReportData = [
     'CFDA Number': 93.917,
     'Title': 'HIV Care Formula Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 03 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Oct 03, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19418,10 +19418,10 @@ export let ReportData = [
     'CFDA Number': 93.918,
     'Title': 'Grants to Provide Outpatient Early Intervention Services with Respect to HIV Disease',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2008',
+    'Last Updated Date': 'Nov 18, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 18 2008',
-    'Last Published Date': 'Nov, 18 2008',
+    'OMB Review Date': 'Nov 18, 2008',
+    'Last Published Date': 'Nov 18, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19429,10 +19429,10 @@ export let ReportData = [
     'CFDA Number': 93.919,
     'Title': 'Cooperative Agreements for State-Based Comprehensive Breast and Cervical Cancer Early Detection Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19440,10 +19440,10 @@ export let ReportData = [
     'CFDA Number': 93.923,
     'Title': 'Disadvantaged Health Professions Faculty Loan Repayment (FLRP) and Minority Faculty Fellowship Program (MFFP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19451,10 +19451,10 @@ export let ReportData = [
     'CFDA Number': 93.924,
     'Title': 'Ryan White HIV/AIDS Dental Reimbursements\\Community Based Dental Partnership',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19462,10 +19462,10 @@ export let ReportData = [
     'CFDA Number': 93.925,
     'Title': 'Scholarships for Health Professions Students from Disadvantaged Backgrounds',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 09 2008',
+    'Last Updated Date': 'Jul 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 09 2008',
-    'Last Published Date': 'Jul, 09 2008',
+    'OMB Review Date': 'Jul 09, 2008',
+    'Last Published Date': 'Jul 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19473,10 +19473,10 @@ export let ReportData = [
     'CFDA Number': 93.926,
     'Title': 'Healthy Start Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19484,10 +19484,10 @@ export let ReportData = [
     'CFDA Number': 93.928,
     'Title': 'Special Projects of National Significance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 01 2008',
+    'Last Updated Date': 'Oct 01, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 01 2008',
-    'Last Published Date': 'Oct, 01 2008',
+    'OMB Review Date': 'Oct 01, 2008',
+    'Last Published Date': 'Oct 01, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19495,10 +19495,10 @@ export let ReportData = [
     'CFDA Number': 93.932,
     'Title': 'Native Hawaiian Health Systems',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 12 2008',
+    'Last Updated Date': 'Sep 12, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 12 2008',
-    'Last Published Date': 'Sep, 12 2008',
+    'OMB Review Date': 'Sep 12, 2008',
+    'Last Published Date': 'Sep 12, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19506,10 +19506,10 @@ export let ReportData = [
     'CFDA Number': 93.933,
     'Title': 'Demonstration Projects for Indian Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 17 2008',
+    'Last Updated Date': 'Jun 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 17 2008',
-    'Last Published Date': 'Jun, 17 2008',
+    'OMB Review Date': 'Jun 17, 2008',
+    'Last Published Date': 'Jun 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19517,10 +19517,10 @@ export let ReportData = [
     'CFDA Number': 93.936,
     'Title': 'National Institutes of Health Acquired Immunodeficiency Syndrome Research Loan Repayment Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19530,10 +19530,10 @@ export let ReportData = [
     'Title': 'Cooperative Agreements to Support Comprehensive School Health \
     Programs to Prevent the Spread of HIV and Other Important Health Problems',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 23 2011',
+    'Last Updated Date': 'Jan 23, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 14 2011',
-    'Last Published Date': 'Jan, 23 2011',
+    'OMB Review Date': 'Jan 14, 2011',
+    'Last Published Date': 'Jan 23, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -19541,10 +19541,10 @@ export let ReportData = [
     'CFDA Number': 93.939,
     'Title': 'HIV Prevention Activities_Non-Governmental Organization Based',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 04 2008',
+    'Last Updated Date': 'Sep 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 04 2008',
-    'Last Published Date': 'Sep, 04 2008',
+    'OMB Review Date': 'Sep 04, 2008',
+    'Last Published Date': 'Sep 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19552,10 +19552,10 @@ export let ReportData = [
     'CFDA Number': 93.94,
     'Title': 'HIV Prevention Activities_Health Department Based',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 24 2008',
+    'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 24 2008',
-    'Last Published Date': 'Oct, 24 2008',
+    'OMB Review Date': 'Oct 24, 2008',
+    'Last Published Date': 'Oct 24, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19563,10 +19563,10 @@ export let ReportData = [
     'CFDA Number': 93.941,
     'Title': 'HIV Demonstration, Research, Public and Professional Education Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 04 2008',
+    'Last Updated Date': 'Sep 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 04 2008',
-    'Last Published Date': 'Sep, 04 2008',
+    'OMB Review Date': 'Sep 04, 2008',
+    'Last Published Date': 'Sep 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19574,10 +19574,10 @@ export let ReportData = [
     'CFDA Number': 93.942,
     'Title': 'Research, Treatment and Education Programs on Lyme Disease in the United States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 03 2008',
+    'Last Updated Date': 'Jun 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 03 2008',
-    'Last Published Date': 'Jun, 03 2008',
+    'OMB Review Date': 'Jun 03, 2008',
+    'Last Published Date': 'Jun 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19587,10 +19587,10 @@ export let ReportData = [
     Syndrome (AIDS) and Human Immunodeficiency Virus (HIV) Infection in \
     Selected Population Groups',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 04 2008',
+    'Last Updated Date': 'Sep 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 04 2008',
-    'Last Published Date': 'Sep, 04 2008',
+    'OMB Review Date': 'Sep 04, 2008',
+    'Last Published Date': 'Sep 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19598,10 +19598,10 @@ export let ReportData = [
     'CFDA Number': 93.944,
     'Title': 'Human Immunodeficiency Virus (HIV)/Acquired Immunodeficiency Virus Syndrome (AIDS) Surveillance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 04 2008',
+    'Last Updated Date': 'Sep 04, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 04 2008',
-    'Last Published Date': 'Sep, 04 2008',
+    'OMB Review Date': 'Sep 04, 2008',
+    'Last Published Date': 'Sep 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19609,10 +19609,10 @@ export let ReportData = [
     'CFDA Number': 93.945,
     'Title': 'Assistance Programs for Chronic Disease Prevention and Control',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19620,10 +19620,10 @@ export let ReportData = [
     'CFDA Number': 93.946,
     'Title': 'Cooperative Agreements to Support State-Based Safe Motherhood and Infant Health Initiative Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19631,10 +19631,10 @@ export let ReportData = [
     'CFDA Number': 93.947,
     'Title': 'Tuberculosis Demonstration, Research, Public and Professional Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 17 2008',
+    'Last Updated Date': 'Oct 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 17 2008',
-    'Last Published Date': 'Oct, 17 2008',
+    'OMB Review Date': 'Oct 17, 2008',
+    'Last Published Date': 'Oct 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19642,10 +19642,10 @@ export let ReportData = [
     'CFDA Number': 93.952,
     'Title': 'Trauma Care Systems Planning and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 22 2001',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 22, 2001',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19653,10 +19653,10 @@ export let ReportData = [
     'CFDA Number': 93.954,
     'Title': 'Tribal Recruitment and Retention of Health Professionals into Indian Health Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19664,10 +19664,10 @@ export let ReportData = [
     'CFDA Number': 93.958,
     'Title': 'Block Grants for Community Mental Health Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19675,10 +19675,10 @@ export let ReportData = [
     'CFDA Number': 93.959,
     'Title': 'Block Grants for Prevention and Treatment of Substance Abuse',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19686,10 +19686,10 @@ export let ReportData = [
     'CFDA Number': 93.962,
     'Title': 'Health Administration Traineeships Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19697,10 +19697,10 @@ export let ReportData = [
     'CFDA Number': 93.964,
     'Title': 'Public Health Traineeships',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19708,10 +19708,10 @@ export let ReportData = [
     'CFDA Number': 93.965,
     'Title': 'Coal Miners Respiratory Impairment Treatment Clinics and Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19719,10 +19719,10 @@ export let ReportData = [
     'CFDA Number': 93.969,
     'Title': 'Geriatric Education Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2008',
+    'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 29 2008',
-    'Last Published Date': 'Sep, 29 2008',
+    'OMB Review Date': 'Sep 29, 2008',
+    'Last Published Date': 'Sep 29, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19730,10 +19730,10 @@ export let ReportData = [
     'CFDA Number': 93.97,
     'Title': 'Health Professions Recruitment Program for Indians',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19741,10 +19741,10 @@ export let ReportData = [
     'CFDA Number': 93.971,
     'Title': 'Health Professions Preparatory Scholarship Program for Indians',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19752,10 +19752,10 @@ export let ReportData = [
     'CFDA Number': 93.972,
     'Title': 'Health Professions Scholarship Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19763,10 +19763,10 @@ export let ReportData = [
     'CFDA Number': 93.974,
     'Title': 'Family Planning_Service Delivery Improvement Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 08 2008',
+    'Last Updated Date': 'Oct 08, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 08 2008',
-    'Last Published Date': 'Oct, 08 2008',
+    'OMB Review Date': 'Oct 08, 2008',
+    'Last Published Date': 'Oct 08, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19774,10 +19774,10 @@ export let ReportData = [
     'CFDA Number': 93.977,
     'Title': 'Preventive Health Services_Sexually Transmitted Diseases Control Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19787,10 +19787,10 @@ export let ReportData = [
     'Title': 'Preventive Health Services_Sexually Transmitted Diseases \
     Research, Demonstrations, and Public Information and Education Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 11 2008',
+    'Last Updated Date': 'Jun 11, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 11 2008',
-    'Last Published Date': 'Jun, 11 2008',
+    'OMB Review Date': 'Jun 11, 2008',
+    'Last Published Date': 'Jun 11, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19799,10 +19799,10 @@ export let ReportData = [
     'CFDA Number': 93.982,
     'Title': 'Mental Health Disaster Assistance and Emergency Mental Health',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19810,10 +19810,10 @@ export let ReportData = [
     'CFDA Number': 93.988,
     'Title': 'Cooperative Agreements for State-Based Diabetes Control Programs and Evaluation of Surveillance Systems',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jul, 31 2008',
+    'Last Updated Date': 'Jul 31, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 31 2008',
-    'Last Published Date': 'Jul, 31 2008',
+    'OMB Review Date': 'Jul 31, 2008',
+    'Last Published Date': 'Jul 31, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19821,10 +19821,10 @@ export let ReportData = [
     'CFDA Number': 93.989,
     'Title': 'International Research and Research Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19832,10 +19832,10 @@ export let ReportData = [
     'CFDA Number': 93.99,
     'Title': 'National Health Promotion',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19843,10 +19843,10 @@ export let ReportData = [
     'CFDA Number': 93.991,
     'Title': 'Preventive Health and Health Services Block Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19854,10 +19854,10 @@ export let ReportData = [
     'CFDA Number': 93.993,
     'Title': 'Public Health Research Accreditation Project',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 12 2004',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Mar 12, 2004',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19865,10 +19865,10 @@ export let ReportData = [
     'CFDA Number': 93.994,
     'Title': 'Maternal and Child Health Services Block Grant to the States',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 03 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Oct 03, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19876,10 +19876,10 @@ export let ReportData = [
     'CFDA Number': 93.995,
     'Title': 'Adolescent Family Life_Demonstration Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 15 2008',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 15, 2008',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19887,10 +19887,10 @@ export let ReportData = [
     'CFDA Number': 93.996,
     'Title': 'Bioterrorism Training and Curriculum Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2008',
+    'Last Updated Date': 'Sep 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2003',
-    'Last Published Date': 'Sep, 15 2008',
+    'OMB Review Date': 'Sep 16, 2003',
+    'Last Published Date': 'Sep 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19898,10 +19898,10 @@ export let ReportData = [
     'CFDA Number': 94.002,
     'Title': 'Retired and Senior Volunteer Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19909,10 +19909,10 @@ export let ReportData = [
     'CFDA Number': 94.003,
     'Title': 'State Commissions',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19920,10 +19920,10 @@ export let ReportData = [
     'CFDA Number': 94.004,
     'Title': 'Learn and Serve America_School and Community Based Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19931,10 +19931,10 @@ export let ReportData = [
     'CFDA Number': 94.005,
     'Title': 'Learn and Serve America_Higher Education',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19942,10 +19942,10 @@ export let ReportData = [
     'CFDA Number': 94.006,
     'Title': 'AmeriCorps',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19953,10 +19953,10 @@ export let ReportData = [
     'CFDA Number': 94.007,
     'Title': 'Planning and Program Development Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19964,10 +19964,10 @@ export let ReportData = [
     'CFDA Number': 94.009,
     'Title': 'Training and Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19975,10 +19975,10 @@ export let ReportData = [
     'CFDA Number': 94.011,
     'Title': 'Foster Grandparent Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19986,10 +19986,10 @@ export let ReportData = [
     'CFDA Number': 94.013,
     'Title': 'Volunteers in Service to America',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 17 2008',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Sep 17, 2008',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -19997,10 +19997,10 @@ export let ReportData = [
     'CFDA Number': 94.016,
     'Title': 'Senior Companion Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20008,10 +20008,10 @@ export let ReportData = [
     'CFDA Number': 95.003,
     'Title': 'this is a test',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2016',
+    'Last Updated Date': 'Nov 18, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 09 2016',
-    'Last Published Date': 'Nov, 18 2016',
+    'OMB Review Date': 'Nov 09, 2016',
+    'Last Published Date': 'Nov 18, 2016',
     'Auto Published': 'Yes'
   },
   {
@@ -20019,10 +20019,10 @@ export let ReportData = [
     'CFDA Number': 95.004,
     'Title': 'asdf',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 18 2016',
+    'Last Updated Date': 'Nov 18, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 04 2016',
-    'Last Published Date': 'Nov, 18 2016',
+    'OMB Review Date': 'Nov 04, 2016',
+    'Last Published Date': 'Nov 18, 2016',
     'Auto Published': 'Yes'
   },
   {
@@ -20030,10 +20030,10 @@ export let ReportData = [
     'CFDA Number': 96.001,
     'Title': 'Social Security_Disability Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 15 2008',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Oct 15, 2008',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20041,10 +20041,10 @@ export let ReportData = [
     'CFDA Number': 96.002,
     'Title': 'Social Security_Retirement Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20052,10 +20052,10 @@ export let ReportData = [
     'CFDA Number': 96.004,
     'Title': 'Social Security_Survivors Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 16 2008',
+    'Last Updated Date': 'Sep 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 16 2008',
-    'Last Published Date': 'Sep, 16 2008',
+    'OMB Review Date': 'Sep 16, 2008',
+    'Last Published Date': 'Sep 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20063,10 +20063,10 @@ export let ReportData = [
     'CFDA Number': 96.006,
     'Title': 'Supplemental Security Income',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20074,10 +20074,10 @@ export let ReportData = [
     'CFDA Number': 96.007,
     'Title': 'Social Security_Research and Demonstration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20085,10 +20085,10 @@ export let ReportData = [
     'CFDA Number': 96.008,
     'Title': 'Social Security - Work Incentives Planning and Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 06 2000',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'Oct 06, 2000',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20096,10 +20096,10 @@ export let ReportData = [
     'CFDA Number': 96.009,
     'Title': 'Social Security State Grants for Work Incentives Assistance to Disabled Beneficiaries',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 17 2008',
+    'Last Updated Date': 'Sep 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 09 2002',
-    'Last Published Date': 'Sep, 17 2008',
+    'OMB Review Date': 'May 09, 2002',
+    'Last Published Date': 'Sep 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20107,10 +20107,10 @@ export let ReportData = [
     'CFDA Number': 96.02,
     'Title': 'Special Benefits for Certain World War II Veterans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 26 2000',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Oct 26, 2000',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20118,10 +20118,10 @@ export let ReportData = [
     'CFDA Number': 97.004,
     'Title': 'State Domestic Preparedness Equipment Support Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 19 2011',
+    'Last Updated Date': 'Jan 19, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 06 2011',
-    'Last Published Date': 'Jan, 19 2011',
+    'OMB Review Date': 'Jan 06, 2011',
+    'Last Published Date': 'Jan 19, 2011',
     'Auto Published': 'No'
   },
   {
@@ -20129,10 +20129,10 @@ export let ReportData = [
     'CFDA Number': 97.005,
     'Title': 'State and Local Homeland Security Training  Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20140,10 +20140,10 @@ export let ReportData = [
     'CFDA Number': 97.006,
     'Title': 'State and Local Homeland Security Exercise Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 17 2008',
+    'Last Updated Date': 'Jun 17, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 21 2001',
-    'Last Published Date': 'Jun, 17 2008',
+    'OMB Review Date': 'May 21, 2001',
+    'Last Published Date': 'Jun 17, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20151,10 +20151,10 @@ export let ReportData = [
     'CFDA Number': 97.008,
     'Title': 'Urban Areas Security Initiative',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 29 2003',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'May 29, 2003',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20162,10 +20162,10 @@ export let ReportData = [
     'CFDA Number': 97.009,
     'Title': 'Cuban/Haitian Entrant  Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 15 2016',
+    'Last Updated Date': 'Sep 15, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20173,10 +20173,10 @@ export let ReportData = [
     'CFDA Number': 97.01,
     'Title': 'Citizenship Education and Training',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 22 2009',
+    'Last Updated Date': 'Jan 22, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 22 2009',
-    'Last Published Date': 'Jan, 22 2009',
+    'OMB Review Date': 'Jan 22, 2009',
+    'Last Published Date': 'Jan 22, 2009',
     'Auto Published': 'No'
   },
   {
@@ -20184,10 +20184,10 @@ export let ReportData = [
     'CFDA Number': 97.011,
     'Title': 'Boating Safety',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 23 2011',
+    'Last Updated Date': 'Jan 23, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 14 2011',
-    'Last Published Date': 'Jan, 23 2011',
+    'OMB Review Date': 'Jan 14, 2011',
+    'Last Published Date': 'Jan 23, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -20195,10 +20195,10 @@ export let ReportData = [
     'CFDA Number': 97.012,
     'Title': 'Boating Safety Financial Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 06 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 06, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -20206,10 +20206,10 @@ export let ReportData = [
     'CFDA Number': 97.013,
     'Title': 'State Access to the Oil Spill Liability Trust Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20217,10 +20217,10 @@ export let ReportData = [
     'CFDA Number': 97.014,
     'Title': 'Bridge Alteration',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20228,10 +20228,10 @@ export let ReportData = [
     'CFDA Number': 97.015,
     'Title': 'Secret Service_Training Activities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 12 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 12, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -20239,10 +20239,10 @@ export let ReportData = [
     'CFDA Number': 97.016,
     'Title': 'Reimbursement for Firefighting on Federal Property',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20250,10 +20250,10 @@ export let ReportData = [
     'CFDA Number': 97.018,
     'Title': 'National Fire Academy Training Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 03 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Oct 03, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20261,10 +20261,10 @@ export let ReportData = [
     'CFDA Number': 97.019,
     'Title': 'National Fire Academy Educational Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20272,10 +20272,10 @@ export let ReportData = [
     'CFDA Number': 97.02,
     'Title': 'Hazardous Materials Training Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20283,10 +20283,10 @@ export let ReportData = [
     'CFDA Number': 97.021,
     'Title': 'Hazardous Materials Assistance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 11 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 11, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -20294,10 +20294,10 @@ export let ReportData = [
     'CFDA Number': 97.022,
     'Title': 'Flood Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20305,10 +20305,10 @@ export let ReportData = [
     'CFDA Number': 97.023,
     'Title': 'Community Assistance Program State Support Services Element (CAP-SSSE)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 12 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 12, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -20316,10 +20316,10 @@ export let ReportData = [
     'CFDA Number': 97.024,
     'Title': 'Emergency Food and Shelter National Board Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 03 2008',
+    'Last Updated Date': 'Oct 03, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 03 2008',
-    'Last Published Date': 'Oct, 03 2008',
+    'OMB Review Date': 'Oct 03, 2008',
+    'Last Published Date': 'Oct 03, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20327,10 +20327,10 @@ export let ReportData = [
     'CFDA Number': 97.025,
     'Title': 'National Urban Search and Rescue (US&R) Response System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20338,10 +20338,10 @@ export let ReportData = [
     'CFDA Number': 97.026,
     'Title': 'Emergency Management Institute_Training Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20349,10 +20349,10 @@ export let ReportData = [
     'CFDA Number': 97.027,
     'Title': 'Emergency Management Institute (EMI)_Independent Study Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 30 2008',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 30, 2008',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20360,10 +20360,10 @@ export let ReportData = [
     'CFDA Number': 97.028,
     'Title': 'Emergency Management Institute (EMI)_Resident Educational Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20371,10 +20371,10 @@ export let ReportData = [
     'CFDA Number': 97.029,
     'Title': 'Flood Mitigation Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20382,10 +20382,10 @@ export let ReportData = [
     'CFDA Number': 97.03,
     'Title': 'Community Disaster Loans',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20393,10 +20393,10 @@ export let ReportData = [
     'CFDA Number': 97.031,
     'Title': 'Cora Brown Fund',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20404,10 +20404,10 @@ export let ReportData = [
     'CFDA Number': 97.032,
     'Title': 'Crisis Counseling',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 07 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Nov 07, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20415,10 +20415,10 @@ export let ReportData = [
     'CFDA Number': 97.033,
     'Title': 'Disaster Legal Services',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20426,10 +20426,10 @@ export let ReportData = [
     'CFDA Number': 97.034,
     'Title': 'Disaster Unemployment Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20437,10 +20437,10 @@ export let ReportData = [
     'CFDA Number': 97.036,
     'Title': 'Disaster Grants - Public Assistance (Presidentially Declared Disasters)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 16 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 16, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20448,10 +20448,10 @@ export let ReportData = [
     'CFDA Number': 97.039,
     'Title': 'Hazard Mitigation Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20459,10 +20459,10 @@ export let ReportData = [
     'CFDA Number': 97.04,
     'Title': 'Chemical Stockpile Emergency Preparedness Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20470,10 +20470,10 @@ export let ReportData = [
     'CFDA Number': 97.041,
     'Title': 'National Dam Safety Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 02 2008',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Oct 02, 2008',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20481,10 +20481,10 @@ export let ReportData = [
     'CFDA Number': 97.042,
     'Title': 'Emergency Management Performance Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 19 1999',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Oct 19, 1999',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20492,10 +20492,10 @@ export let ReportData = [
     'CFDA Number': 97.043,
     'Title': 'State Fire Training Systems Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 08 2001',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'May 08, 2001',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20503,10 +20503,10 @@ export let ReportData = [
     'CFDA Number': 97.044,
     'Title': 'Assistance to Firefighters Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20514,10 +20514,10 @@ export let ReportData = [
     'CFDA Number': 97.045,
     'Title': 'Cooperating Technical Partners',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 04 2002',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jun 04, 2002',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20525,10 +20525,10 @@ export let ReportData = [
     'CFDA Number': 97.046,
     'Title': 'Fire Management Assistance Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20536,10 +20536,10 @@ export let ReportData = [
     'CFDA Number': 97.047,
     'Title': 'Pre-Disaster Mitigation',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20547,10 +20547,10 @@ export let ReportData = [
     'CFDA Number': 97.048,
     'Title': 'Disaster Housing Assistance to Individuals and Households in Presidential Declared Disaster Areas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 07 2002',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jun 07, 2002',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20558,10 +20558,10 @@ export let ReportData = [
     'CFDA Number': 97.049,
     'Title': 'Presidential Declared Disaster Assistance - Disaster Housing Operations for Individuals and Households',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 12 2002',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jun 12, 2002',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20569,10 +20569,10 @@ export let ReportData = [
     'CFDA Number': 97.05,
     'Title': 'Presidential Declared Disaster Assistance to Individuals and Households - Other Needs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 10 2002',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jun 10, 2002',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20580,10 +20580,10 @@ export let ReportData = [
     'CFDA Number': 97.052,
     'Title': 'Emergency Operations Centers',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 22 2009',
+    'Last Updated Date': 'Jan 22, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 09 2003',
-    'Last Published Date': 'Jan, 22 2009',
+    'OMB Review Date': 'Jan 09, 2003',
+    'Last Published Date': 'Jan 22, 2009',
     'Auto Published': 'No'
   },
   {
@@ -20591,10 +20591,10 @@ export let ReportData = [
     'CFDA Number': 97.053,
     'Title': 'Citizen Corps',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 09 2003',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Jan 09, 2003',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20602,10 +20602,10 @@ export let ReportData = [
     'CFDA Number': 97.055,
     'Title': 'Interoperable Communications Equipment',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 23 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Oct 23, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20613,10 +20613,10 @@ export let ReportData = [
     'CFDA Number': 97.056,
     'Title': 'Port Security Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 09 2003',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Sep 09, 2003',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20624,10 +20624,10 @@ export let ReportData = [
     'CFDA Number': 97.057,
     'Title': 'Intercity Bus Security Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 09 2003',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Sep 09, 2003',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20635,10 +20635,10 @@ export let ReportData = [
     'CFDA Number': 97.058,
     'Title': 'Operation Safe Commerce (OSC) Cooperative Agreement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 05 2003',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Sep 05, 2003',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20646,10 +20646,10 @@ export let ReportData = [
     'CFDA Number': 97.059,
     'Title': 'Truck Security Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 05 2003',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Sep 05, 2003',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20657,10 +20657,10 @@ export let ReportData = [
     'CFDA Number': 97.06,
     'Title': 'Port Security Research and Development Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 17 2003',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Dec 17, 2003',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20668,10 +20668,10 @@ export let ReportData = [
     'CFDA Number': 97.061,
     'Title': 'Centers for Homeland Security',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 24 2004',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Feb 24, 2004',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20679,10 +20679,10 @@ export let ReportData = [
     'CFDA Number': 97.062,
     'Title': 'Scholars and Fellows, and Educational Programs',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 13 2004',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Apr 13, 2004',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20690,10 +20690,10 @@ export let ReportData = [
     'CFDA Number': 97.064,
     'Title': 'Debris Removal Insurance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 13 2004',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Apr 13, 2004',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20701,10 +20701,10 @@ export let ReportData = [
     'CFDA Number': 97.065,
     'Title': 'Homeland Security Advanced Research Projects Agency',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jun, 16 2008',
+    'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 29 2004',
-    'Last Published Date': 'Jun, 16 2008',
+    'OMB Review Date': 'Jul 29, 2004',
+    'Last Published Date': 'Jun 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20712,10 +20712,10 @@ export let ReportData = [
     'CFDA Number': 97.066,
     'Title': 'Homeland Security Information Technology Research, Testing, Evaluation and Demonstration Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 22 2009',
+    'Last Updated Date': 'Jan 22, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 22 2004',
-    'Last Published Date': 'Jan, 22 2009',
+    'OMB Review Date': 'Jun 22, 2004',
+    'Last Published Date': 'Jan 22, 2009',
     'Auto Published': 'No'
   },
   {
@@ -20723,10 +20723,10 @@ export let ReportData = [
     'CFDA Number': 97.067,
     'Title': 'Homeland Security Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2004',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'May 28, 2004',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20734,10 +20734,10 @@ export let ReportData = [
     'CFDA Number': 97.068,
     'Title': 'Competitive Training Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 28 2004',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'May 28, 2004',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20745,10 +20745,10 @@ export let ReportData = [
     'CFDA Number': 97.069,
     'Title': 'Aviation Research Grants',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 02 2008',
+    'Last Updated Date': 'Oct 02, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 22 2004',
-    'Last Published Date': 'Oct, 02 2008',
+    'OMB Review Date': 'Jun 22, 2004',
+    'Last Published Date': 'Oct 02, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20756,10 +20756,10 @@ export let ReportData = [
     'CFDA Number': 97.07,
     'Title': 'Map Modernization Management Support',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 22 2004',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jun 22, 2004',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20767,10 +20767,10 @@ export let ReportData = [
     'CFDA Number': 97.071,
     'Title': 'Metropolitan Medical Response System',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 11 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 11, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -20778,10 +20778,10 @@ export let ReportData = [
     'CFDA Number': 97.072,
     'Title': 'National Explosives Detection Canine Team Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 29 2004',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jul 29, 2004',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20789,10 +20789,10 @@ export let ReportData = [
     'CFDA Number': 97.073,
     'Title': 'State Homeland Security Program (SHSP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 07 2004',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Dec 07, 2004',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20800,10 +20800,10 @@ export let ReportData = [
     'CFDA Number': 97.074,
     'Title': 'Law Enforcement Terrorism Prevention Program (LETPP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 07 2004',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Dec 07, 2004',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20811,10 +20811,10 @@ export let ReportData = [
     'CFDA Number': 97.075,
     'Title': 'Rail and Transit Security Grant Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 14 2004',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Dec 14, 2004',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20822,10 +20822,10 @@ export let ReportData = [
     'CFDA Number': 97.076,
     'Title': 'National Center for Missing and Exploited Children (NCMEC)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 23 2005',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Feb 23, 2005',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20833,10 +20833,10 @@ export let ReportData = [
     'CFDA Number': 97.077,
     'Title': 'Homeland Security Research Testing, Evaluation, and Demonstration of Technologies Related to Nuclear Detection',
     'Current Status': 'Published',
-    'Last Updated Date': 'Jan, 21 2011',
+    'Last Updated Date': 'Jan 21, 2011',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 06 2011',
-    'Last Published Date': 'Jan, 21 2011',
+    'OMB Review Date': 'Jan 06, 2011',
+    'Last Published Date': 'Jan 21, 2011',
     'Auto Published': 'Yes'
   },
   {
@@ -20844,10 +20844,10 @@ export let ReportData = [
     'CFDA Number': 97.078,
     'Title': 'Buffer Zone Protection Program (BZPP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 08 2005',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Feb 08, 2005',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20855,10 +20855,10 @@ export let ReportData = [
     'CFDA Number': 97.079,
     'Title': 'Public Alert Radios for Schools',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 22 2008',
+    'Last Updated Date': 'Oct 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 07 2005',
-    'Last Published Date': 'Oct, 22 2008',
+    'OMB Review Date': 'Mar 07, 2005',
+    'Last Published Date': 'Oct 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20866,10 +20866,10 @@ export let ReportData = [
     'CFDA Number': 97.08,
     'Title': 'Information Analysis Infrastructure Protection (IAIP) Pilot Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 22 2008',
+    'Last Updated Date': 'Oct 22, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 06 2005',
-    'Last Published Date': 'Oct, 22 2008',
+    'OMB Review Date': 'Apr 06, 2005',
+    'Last Published Date': 'Oct 22, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20877,10 +20877,10 @@ export let ReportData = [
     'CFDA Number': 97.081,
     'Title': 'Law Enforcement Training and Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 04 2005',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Feb 04, 2005',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20888,10 +20888,10 @@ export let ReportData = [
     'CFDA Number': 97.082,
     'Title': 'Earthquake Consortium',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 17 2005',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'May 17, 2005',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20899,10 +20899,10 @@ export let ReportData = [
     'CFDA Number': 97.083,
     'Title': 'Staffing for Adequate Fire and Emergency Response (SAFER)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 31 2005',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'May 31, 2005',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20910,10 +20910,10 @@ export let ReportData = [
     'CFDA Number': 97.084,
     'Title': 'Hurricane Katrina Case Management Initiative Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 22 2005',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Nov 22, 2005',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20921,10 +20921,10 @@ export let ReportData = [
     'CFDA Number': 97.085,
     'Title': '9/11 Heroes Stamp Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 09 2005',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Nov 09, 2005',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20932,10 +20932,10 @@ export let ReportData = [
     'CFDA Number': 97.086,
     'Title': 'Homeland Security Outreach, Education, and Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 10 2005',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Nov 10, 2005',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20943,10 +20943,10 @@ export let ReportData = [
     'CFDA Number': 97.087,
     'Title': 'Alternative Housing Pilot Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 20 2008',
+    'Last Updated Date': 'Oct 20, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Sep, 28 2006',
-    'Last Published Date': 'Oct, 20 2008',
+    'OMB Review Date': 'Sep 28, 2006',
+    'Last Published Date': 'Oct 20, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20954,10 +20954,10 @@ export let ReportData = [
     'CFDA Number': 97.088,
     'Title': 'Disaster Assistance Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 14 2005',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Dec 14, 2005',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20965,10 +20965,10 @@ export let ReportData = [
     'CFDA Number': 97.089,
     'Title': 'Real ID Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Dec, 19 2005',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Dec 19, 2005',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20976,10 +20976,10 @@ export let ReportData = [
     'CFDA Number': 97.09,
     'Title': 'Law Enforcement Officer Reimbursement Agreement Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 20 2006',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Apr 20, 2006',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20987,10 +20987,10 @@ export let ReportData = [
     'CFDA Number': 97.091,
     'Title': 'Homeland Security Biowatch Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 10 2006',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Mar 10, 2006',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -20998,10 +20998,10 @@ export let ReportData = [
     'CFDA Number': 97.092,
     'Title': 'Repetitive Flood Claims',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 24 2006',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Mar 24, 2006',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21009,10 +21009,10 @@ export let ReportData = [
     'CFDA Number': 97.093,
     'Title': 'Fire Service Hazardous Materials Preparedness and Response',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2006',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'May 18, 2006',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21020,10 +21020,10 @@ export let ReportData = [
     'CFDA Number': 97.094,
     'Title': 'Prevention Advocacy Resources and Data Exchange Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2006',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'May 18, 2006',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21031,10 +21031,10 @@ export let ReportData = [
     'CFDA Number': 97.095,
     'Title': 'Safe Kids Worldwide',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2006',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'May 18, 2006',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21042,10 +21042,10 @@ export let ReportData = [
     'CFDA Number': 97.096,
     'Title': 'Commercial Equipment Direct Assistance Program (CEDAP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 18 2006',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'May 18, 2006',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21053,10 +21053,10 @@ export let ReportData = [
     'CFDA Number': 97.097,
     'Title': 'Training Resource and Data Exchange',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 17 2009',
+    'Last Updated Date': 'Nov 17, 2009',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Nov, 17 2009',
-    'Last Published Date': 'Nov, 17 2009',
+    'OMB Review Date': 'Nov 17, 2009',
+    'Last Published Date': 'Nov 17, 2009',
     'Auto Published': 'No'
   },
   {
@@ -21064,10 +21064,10 @@ export let ReportData = [
     'CFDA Number': 97.098,
     'Title': 'Disaster Donations Management Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Oct, 02 2006',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Oct 02, 2006',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21075,10 +21075,10 @@ export let ReportData = [
     'CFDA Number': 97.099,
     'Title': 'Residential Fire Safety & Fire Sprinkler Initiatives',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 30 2008',
+    'Last Updated Date': 'Sep 30, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 18 2007',
-    'Last Published Date': 'Sep, 30 2008',
+    'OMB Review Date': 'Jan 18, 2007',
+    'Last Published Date': 'Sep 30, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21086,10 +21086,10 @@ export let ReportData = [
     'CFDA Number': 97.1,
     'Title': 'Airport Checked Baggage Screening Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 18 2007',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'Jan 18, 2007',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21097,10 +21097,10 @@ export let ReportData = [
     'CFDA Number': 97.103,
     'Title': 'Degrees at a Distance Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21109,10 +21109,10 @@ export let ReportData = [
     'Title': 'Homeland Security-related Science, Technology, Engineering and \
     Mathematics (HS STEM) Career Development Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2007',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Jun 08, 2007',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21121,10 +21121,10 @@ export let ReportData = [
     'Title': 'Firefighter/Emergency Medical Services (EMS) Outreach, \
     Technology Transfer,  Information Dissemination, and Technical Assistance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 03 2007',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Aug 03, 2007',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21132,10 +21132,10 @@ export let ReportData = [
     'CFDA Number': 97.106,
     'Title': 'Securing the Cities',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 03 2007',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Aug 03, 2007',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21143,10 +21143,10 @@ export let ReportData = [
     'CFDA Number': 97.107,
     'Title': 'National Incident Management System (NIMS)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 03 2007',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Aug 03, 2007',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21154,10 +21154,10 @@ export let ReportData = [
     'CFDA Number': 97.108,
     'Title': 'Homeland Security, Research, Testing, Evaluation, and Demonstration of Technologies',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 09 2008',
+    'Last Updated Date': 'Oct 09, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 03 2007',
-    'Last Published Date': 'Oct, 09 2008',
+    'OMB Review Date': 'Aug 03, 2007',
+    'Last Published Date': 'Oct 09, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21165,10 +21165,10 @@ export let ReportData = [
     'CFDA Number': 97.109,
     'Title': 'Disaster Housing Assistance Grant',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 15 2008',
+    'Last Updated Date': 'Oct 15, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Aug, 27 2007',
-    'Last Published Date': 'Oct, 15 2008',
+    'OMB Review Date': 'Aug 27, 2007',
+    'Last Published Date': 'Oct 15, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21176,10 +21176,10 @@ export let ReportData = [
     'CFDA Number': 97.11,
     'Title': 'Severe Loss Repetitive Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 22 2008',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Jan 22, 2008',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21187,10 +21187,10 @@ export let ReportData = [
     'CFDA Number': 97.111,
     'Title': 'Regional Catastrophic Preparedness Grant Program (RCPGP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 23 2008',
+    'Last Updated Date': 'Oct 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 01 2008',
-    'Last Published Date': 'Oct, 23 2008',
+    'OMB Review Date': 'Feb 01, 2008',
+    'Last Published Date': 'Oct 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21198,10 +21198,10 @@ export let ReportData = [
     'CFDA Number': 97.112,
     'Title': 'Border Infrastructure Improvement Projects',
     'Current Status': 'Published',
-    'Last Updated Date': 'Oct, 16 2008',
+    'Last Updated Date': 'Oct 16, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 02 2008',
-    'Last Published Date': 'Oct, 16 2008',
+    'OMB Review Date': 'May 02, 2008',
+    'Last Published Date': 'Oct 16, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21209,10 +21209,10 @@ export let ReportData = [
     'CFDA Number': 97.113,
     'Title': 'Rail and Transit Security Grant Program (ARRA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -21220,10 +21220,10 @@ export let ReportData = [
     'CFDA Number': 97.114,
     'Title': 'Emergency Food and Shelter National Board Program (ARRA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -21231,10 +21231,10 @@ export let ReportData = [
     'CFDA Number': 97.115,
     'Title': 'Assistance to Firefighters Grant (ARRA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -21242,10 +21242,10 @@ export let ReportData = [
     'CFDA Number': 97.116,
     'Title': 'Port Security Grant Program (ARRA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -21253,10 +21253,10 @@ export let ReportData = [
     'CFDA Number': 97.117,
     'Title': 'TSA Airport Checked Baggage Inspection System Program � (ARRA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -21264,10 +21264,10 @@ export let ReportData = [
     'CFDA Number': 97.118,
     'Title': 'Advanced Surveillance Program (ASP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Dec, 03 2010',
+    'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 30 2009',
-    'Last Published Date': 'Dec, 03 2010',
+    'OMB Review Date': 'Apr 30, 2009',
+    'Last Published Date': 'Dec 03, 2010',
     'Auto Published': 'No'
   },
   {
@@ -21275,10 +21275,10 @@ export let ReportData = [
     'CFDA Number': 98.001,
     'Title': 'USAID Foreign Assistance for Programs Overseas',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jan, 23 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Jan 23, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21286,10 +21286,10 @@ export let ReportData = [
     'CFDA Number': 98.002,
     'Title': 'Cooperative Development Program (CDP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 16 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Mar 16, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21297,10 +21297,10 @@ export let ReportData = [
     'CFDA Number': 98.003,
     'Title': 'Ocean Freight Reimbursement Program (OFR)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 17 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Mar 17, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21308,10 +21308,10 @@ export let ReportData = [
     'CFDA Number': 98.004,
     'Title': 'Non-Governmental Organization Strengthening (NGO)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 22 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Mar 22, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21319,10 +21319,10 @@ export let ReportData = [
     'CFDA Number': 98.005,
     'Title': 'Institutional Capacity Building (ICB)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Nov, 07 2008',
+    'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 22 2004',
-    'Last Published Date': 'Nov, 07 2008',
+    'OMB Review Date': 'Mar 22, 2004',
+    'Last Published Date': 'Nov 07, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21330,10 +21330,10 @@ export let ReportData = [
     'CFDA Number': 98.006,
     'Title': 'Foreign Assistance to American Schools and Hospitals Abroad (ASHA)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 24 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Mar 24, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21341,10 +21341,10 @@ export let ReportData = [
     'CFDA Number': 98.007,
     'Title': 'Food for Peace Development Assistance Program (DAP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 31 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Mar 31, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21352,10 +21352,10 @@ export let ReportData = [
     'CFDA Number': 98.008,
     'Title': 'Food for Peace Emergency Program (EP)',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 31 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Mar 31, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21363,10 +21363,10 @@ export let ReportData = [
     'CFDA Number': 98.009,
     'Title': 'John Ogonowski Farmer-to-Farmer Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 16 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Apr 16, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21374,10 +21374,10 @@ export let ReportData = [
     'CFDA Number': 98.01,
     'Title': 'Denton Program',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'May, 25 2004',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'May 25, 2004',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21385,10 +21385,10 @@ export let ReportData = [
     'CFDA Number': 98.011,
     'Title': 'Global Development Alliance',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 10 2017',
+    'Last Updated Date': 'Aug 10, 2017',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jul, 08 2004',
-    'Last Published Date': 'Nov, 04 2008',
+    'OMB Review Date': 'Jul 08, 2004',
+    'Last Published Date': 'Nov 04, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21396,10 +21396,10 @@ export let ReportData = [
     'CFDA Number': 98.012,
     'Title': 'USAID Development Partnerships for University Cooperation and Development',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 23 2008',
+    'Last Updated Date': 'Sep 23, 2008',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 29 2005',
-    'Last Published Date': 'Sep, 23 2008',
+    'OMB Review Date': 'Jun 29, 2005',
+    'Last Published Date': 'Sep 23, 2008',
     'Auto Published': 'No'
   },
   {
@@ -21407,10 +21407,10 @@ export let ReportData = [
     'CFDA Number': 98.013,
     'Title': 'test',
     'Current Status': 'Published',
-    'Last Updated Date': 'Aug, 29 2016',
+    'Last Updated Date': 'Aug 29, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Feb, 18 2015',
-    'Last Published Date': 'Feb, 27 2015',
+    'OMB Review Date': 'Feb 18, 2015',
+    'Last Published Date': 'Feb 27, 2015',
     'Auto Published': 'Yes'
   },
   {
@@ -21418,10 +21418,10 @@ export let ReportData = [
     'CFDA Number': 98.014,
     'Title': 'Program template changes',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 25 2015',
+    'Last Updated Date': 'Mar 25, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 25 2015',
-    'Last Published Date': 'Mar, 25 2015',
+    'OMB Review Date': 'Mar 25, 2015',
+    'Last Published Date': 'Mar 25, 2015',
     'Auto Published': 'No'
   },
   {
@@ -21429,10 +21429,10 @@ export let ReportData = [
     'CFDA Number': 98.015,
     'Title': 'Program Error Tests',
     'Current Status': 'Published',
-    'Last Updated Date': 'Mar, 25 2015',
+    'Last Updated Date': 'Mar 25, 2015',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Mar, 25 2015',
-    'Last Published Date': 'Mar, 25 2015',
+    'OMB Review Date': 'Mar 25, 2015',
+    'Last Published Date': 'Mar 25, 2015',
     'Auto Published': 'No'
   },
   {
@@ -21440,10 +21440,10 @@ export let ReportData = [
     'CFDA Number': 98.016,
     'Title': 'adfad',
     'Current Status': 'Published',
-    'Last Updated Date': 'Apr, 20 2016',
+    'Last Updated Date': 'Apr 20, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Apr, 20 2016',
-    'Last Published Date': 'Apr, 20 2016',
+    'OMB Review Date': 'Apr 20, 2016',
+    'Last Published Date': 'Apr 20, 2016',
     'Auto Published': 'No'
   },
   {
@@ -21451,10 +21451,10 @@ export let ReportData = [
     'CFDA Number': 98.017,
     'Title': 'Test Change',
     'Current Status': 'Published',
-    'Last Updated Date': 'Sep, 29 2016',
+    'Last Updated Date': 'Sep 29, 2016',
     'Obligations Updated': 'No',
-    'OMB Review Date': 'Jun, 08 2016',
-    'Last Published Date': 'Jun, 08 2016',
+    'OMB Review Date': 'Jun 08, 2016',
+    'Last Published Date': 'Jun 08, 2016',
     'Auto Published': 'No'
   }
 ];

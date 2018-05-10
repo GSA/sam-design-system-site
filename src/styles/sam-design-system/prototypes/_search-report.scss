@@ -1,0 +1,28 @@
+.search-report {
+  
+  .page-toolbar{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .page-toolbar .page-toolbar-menu a{
+    padding-left: 15px;
+  }
+  
+  .selected-filters{
+    display: block;
+    margin-bottom: 1.8em;
+    position: relative;
+    .options{
+      font-size: 15px;
+      a{
+        padding-left: 7px;
+      }
+    }
+  }
+  
+}

@@ -1,235 +1,245 @@
-<div class="search-results-page">
-  <div class="search-header">
-    <a class="toggle" (click)="toggleFilters()">
+
+
+<div class="search-results-page search-report">
+  
+  <div class="page-toolbar">
+    <a (click)="sidenav.toggle()">
       <sam-icon name="slider-h"></sam-icon>
-      {{ filterLink() }} Filters
+      Toggle filters
     </a>
-    <a class="save">
-      <i class="fa fa-save"></i>
+    <a>
+      <i class="fa fa-cloud"></i>
       Save Search
     </a>
   </div>
-  <div class="search-results-main">
+  
+  <md-sidenav-container>
     
-    <div class="search-results-filters" [@filtersDrawer]="filtersDrawer">
+    <md-sidenav #sidenav opened mode="side">
       
-      <div class="filter-slide" [@filterSlide]="filterSlide">
+      <div class="search-results-filters" [@filtersDrawer]="filtersDrawer">
         
-        <h4 class="sam-ui header" @arrowAnimation>
-          
-          <a *ngIf="selectedDomain !== 'All Award Data'"
-          (click)="filterSlideToggle('All Award Data')">
-          <i class="fa fa-chevron-left" style="padding-left: 0;"></i> 
-        </a>
-        Domains
-        
-      </h4>
-      
-      <div style="display: flex; width: 280px;">
-        <div class="parents"  *ngIf="selectedDomain === 'All Award Data'">
-          <a class="parent current">All Award Data</a>
-          <a class="parent" (click)="filterSlideToggle('Assistance')">Assistance <i class="fa fa-chevron-right fa-sm"></i></a>
-          <a class="parent" (click)="filterSlideToggle('Contracting')">Contracting <i class="fa fa-chevron-right fa-sm"></i></a>
-          <a class="parent" (click)="filterSlideToggle('Entity Data')">Entity Data <i class="fa fa-chevron-right fa-sm"></i></a>
-          <a class="parent" (click)="filterSlideToggle('Agencies')">Agencies <i class="fa fa-chevron-right fa-sm"></i></a>
+        <div samAccordion multi="true">
+
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Domains
+            </sam-expansion-panel-header>
+            <div class="filter-slide" [@filterSlide]="filterSlide">
+              
+              <h4 class="sam-ui header" @arrowAnimation>
+                
+                <a *ngIf="selectedDomain !== 'All Award Data'" (click)="filterSlideToggle('All Award Data')">
+                  <i class="fa fa-chevron-left" style="padding-left: 0;"></i>
+                </a>
+                Domains
+                
+              </h4>
+              
+              <div>
+                <div class="parents"  *ngIf="selectedDomain === 'All Award Data'">
+                  <a class="parent current">All Award Data</a>
+                  <a class="parent" (click)="filterSlideToggle('Assistance')">Assistance <i class="fa fa-chevron-right fa-sm"></i></a>
+                  <a class="parent" (click)="filterSlideToggle('Contracting')">Contracting <i class="fa fa-chevron-right fa-sm"></i></a>
+                  <a class="parent" (click)="filterSlideToggle('Entity Data')">Entity Data <i class="fa fa-chevron-right fa-sm"></i></a>
+                  <a class="parent" (click)="filterSlideToggle('Agencies')">Agencies <i class="fa fa-chevron-right fa-sm"></i></a>
+                </div>
+                
+                <div class="children"  *ngIf="selectedDomain !== 'All Award Data'">
+                  <a class="parent current"> 
+                    {{ selectedDomain }}
+                  </a>
+                  <div class="child">
+                    <input type="checkbox" id="assistance-1" name="assistance" value="assistance-1" checked>
+                    <label for="assistance-1">Lorem ipsum dolor sit</label>
+                  </div>
+                  <div class="child">
+                    <input type="checkbox" id="assistance-2" name="assistance" value="assistance-2" checked>
+                    <label for="assistance-2">Maecenas non libero</label>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </sam-expansion-panel>
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Filter 2
+            </sam-expansion-panel-header>
+            Content
+          </sam-expansion-panel>
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Filter 3
+            </sam-expansion-panel-header>
+            Content
+          </sam-expansion-panel>
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Filter 4
+            </sam-expansion-panel-header>
+            Content
+          </sam-expansion-panel>
+          <sam-expansion-panel>
+            <sam-expansion-panel-header>
+              Filter 5
+            </sam-expansion-panel-header>
+            Content
+          </sam-expansion-panel>
         </div>
         
-        <div class="children"  *ngIf="selectedDomain !== 'All Award Data'">
-          <a class="parent current"> 
-            {{ selectedDomain }}
-          </a>
-          <div class="child">
-            <input type="checkbox" id="assistance-1" name="assistance" value="assistance-1" checked>
-            <label for="assistance-1">Lorem ipsum dolor sit</label>
-          </div>
-          <div class="child">
-            <input type="checkbox" id="assistance-2" name="assistance" value="assistance-2" checked>
-            <label for="assistance-2">Maecenas non libero</label>
-          </div>
-        </div>
       </div>
       
-    </div>
+    </md-sidenav>
     
-    <div class="filter">
-      <span class="title"></span>
-      <span class="checkbox large"></span>
-      <span class="checkbox small"></span>
-      <span class="checkbox"></span>
-    </div>
-    <div class="filter">
-      <span class="title small"></span>
-      <span class="checkbox large"></span>
-    </div>
-    <div class="filter">
-      <span class="title medium"></span>
-      <span class="input"></span>
-      <span class="input"></span>
-    </div>
-    <div class="filter">
-      <span class="title small"></span>
-      <span class="checkbox"></span>
-      <span class="checkbox large"></span>
-    </div>
-  </div>
-  
-  <div class="search-results-content">
-    
-    <!-- <div class="keyword">
-      <span>Keywords</span>
-      <div>
+    <div class="search-results-content">
+      
+      <div class="selected-filters">
         <a class="sam-ui mini label">
-          Department of Education
+          Status: Active
           <i class="icon close fa fa-times"></i>
         </a>
-      </div>
-    </div> -->
-    
-    <div class="selected-filters">
-      <!-- <strong>Filters </strong> -->
-      <a class="sam-ui mini label">
-        Status: Active
-        <i class="icon close fa fa-times"></i>
-      </a>
-      
-      <a class="sam-ui mini label">
-        Domain: {{ selectedDomain }}
-        <i class="icon close fa fa-times"></i>
-      </a>
-      
-      <a class="sam-ui mini label">
-        Location: Clement, OH
-        <i class="icon close fa fa-times"></i>
-      </a>
-      
-      <span class="options">
-        <a class="remove">
-          <i class="fa fa-save"></i>
-          Save Filters
+        
+        <a class="sam-ui mini label">
+          Domain: {{ selectedDomain }}
+          <i class="icon close fa fa-times"></i>
         </a>
-        <a class="remove">
-          <!-- <i class="fa fa-trash"></i> -->
-          Clear Filters
+        
+        <a class="sam-ui mini label">
+          Location: Clement, OH
+          <i class="icon close fa fa-times"></i>
         </a>
-      </span>
+        
+        <span class="options">
+          <a class="remove">
+            <i class="fa fa-cloud"></i>
+            Save Filters
+          </a>
+          <a class="remove">
+            Clear Filters
+          </a>
+        </span>
+      </div>
+      
+      <div class="results-header">
+        <p class="showing-text">
+          1-10 of 20,643,214 results
+        </p>
+        
+        <div class="sort">
+          <strong>
+            Sort by 
+          </strong>
+          <select>
+            <option value="1">Relevance</option>
+            <option value="2">Title: A to Z</option>
+            <option value="2">Title: Z to A</option>
+            <option value="3">Date Modified: New to Old</option>
+            <option value="4">Date Modified: Old to New</option>
+          </select>
+        </div>
+      </div>
+      
+      
+      <div class="search-result-loading-container" [@resultsLoading]="'done'">
+        <div class="search-result-loading">
+          <span class="title"></span>
+          <span class="line random-1"></span>
+          <span class="line random-2"></span>
+          <span class="line random-3"></span>
+        </div>
+        <div class="search-result-loading">
+          <span class="title"></span>
+          <span class="line random-1"></span>
+          <span class="line random-2"></span>
+          <span class="line random-3"></span>
+        </div>
+        <div class="search-result-loading">
+          <span class="title"></span>
+          <span class="line random-1"></span>
+          <span class="line random-2"></span>
+          <span class="line random-3"></span>
+        </div>
+        <div class="search-result-loading">
+          <span class="title"></span>
+          <span class="line random-1"></span>
+          <span class="line random-2"></span>
+          <span class="line random-3"></span>
+        </div>
+        <div class="search-result-loading">
+          <span class="title"></span>
+          <span class="line random-1"></span>
+          <span class="line random-2"></span>
+          <span class="line random-3"></span>
+        </div>
+      </div>
+      
+      <div [@searchResults]>
+        <div class="search-result">
+          <h4 class="sam-ui header">
+            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam 
+            elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis 
+            est, vel luctus lacus. Maecenas non libero quis libero ullamcorper 
+            posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque 
+            ante.
+          </p>
+        </div>
+        
+        <div class="search-result">
+          <h4 class="sam-ui header">
+            <a>Cras condimentum, tellus a euismod sollicitudin</a>
+          </h4>
+          <p>
+            Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu. 
+            Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante, 
+            sed viverra purus eros id urna. Nam tristique rutrum enim, sagittis 
+            lobortis nisi porta eu. Praesent in dictum purus, ut hendrerit mi.
+          </p>
+        </div>
+        
+        <div class="search-result">
+          <h4 class="sam-ui header">
+            <a>Duis non justo velit. Etiam risus lacus, posuere</a>
+          </h4>
+          <p>
+            Cras maximus purus eget eros varius iaculis. Aenean velit lectus, 
+            vehicula eu tincidunt a, semper sed dui. Etiam eget nunc rhoncus, 
+            lacinia erat et, tristique erat.
+          </p>
+        </div>
+        
+        <div class="search-result">
+          <h4 class="sam-ui header">
+            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam 
+            elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis 
+            est, vel luctus lacus. Maecenas non libero quis libero ullamcorper 
+            posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque 
+            ante.
+          </p>
+        </div>
+        
+        <div class="search-result">
+          <h4 class="sam-ui header">
+            <a>Cras condimentum, tellus a euismod sollicitudin</a>
+          </h4>
+          <p>
+            Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu. 
+            Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante, 
+            sed viverra purus eros id urna. 
+          </p>
+        </div>
+      </div>
+      
+      
       
     </div>
     
-    <div class="results-header">
-      <p class="showing-text">
-        1-10 of 20,643,214 results
-      </p>
-      
-      <div class="sort">
-        <strong>
-          Sort by 
-        </strong>
-        <select>
-          <option value="1">Relevance</option>
-          <option value="2">Title: A to Z</option>
-          <option value="2">Title: Z to A</option>
-          <option value="3">Date Modified: New to Old</option>
-          <option value="4">Date Modified: Old to New</option>
-        </select>
-      </div>
-    </div>
-    
-    
-    <div class="search-result-loading-container" [@resultsLoading]="'done'">
-      <div class="search-result-loading">
-        <span class="title"></span>
-        <span class="line random-1"></span>
-        <span class="line random-2"></span>
-        <span class="line random-3"></span>
-      </div>
-      <div class="search-result-loading">
-        <span class="title"></span>
-        <span class="line random-1"></span>
-        <span class="line random-2"></span>
-        <span class="line random-3"></span>
-      </div>
-      <div class="search-result-loading">
-        <span class="title"></span>
-        <span class="line random-1"></span>
-        <span class="line random-2"></span>
-        <span class="line random-3"></span>
-      </div>
-      <div class="search-result-loading">
-        <span class="title"></span>
-        <span class="line random-1"></span>
-        <span class="line random-2"></span>
-        <span class="line random-3"></span>
-      </div>
-      <div class="search-result-loading">
-        <span class="title"></span>
-        <span class="line random-1"></span>
-        <span class="line random-2"></span>
-        <span class="line random-3"></span>
-      </div>
-    </div>
-    
-    <div class="search-result">
-      <h4 class="sam-ui header">
-        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-      </h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam 
-        elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis 
-        est, vel luctus lacus. Maecenas non libero quis libero ullamcorper 
-        posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque 
-        ante.
-      </p>
-    </div>
-    
-    <div class="search-result">
-      <h4 class="sam-ui header">
-        <a>Cras condimentum, tellus a euismod sollicitudin</a>
-      </h4>
-      <p>
-        Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu. 
-        Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante, 
-        sed viverra purus eros id urna. Nam tristique rutrum enim, sagittis 
-        lobortis nisi porta eu. Praesent in dictum purus, ut hendrerit mi.
-      </p>
-    </div>
-    
-    <div class="search-result">
-      <h4 class="sam-ui header">
-        <a>Duis non justo velit. Etiam risus lacus, posuere</a>
-      </h4>
-      <p>
-        Cras maximus purus eget eros varius iaculis. Aenean velit lectus, 
-        vehicula eu tincidunt a, semper sed dui. Etiam eget nunc rhoncus, 
-        lacinia erat et, tristique erat.
-      </p>
-    </div>
-    
-    <div class="search-result">
-      <h4 class="sam-ui header">
-        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-      </h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam 
-        elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis 
-        est, vel luctus lacus. Maecenas non libero quis libero ullamcorper 
-        posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque 
-        ante.
-      </p>
-    </div>
-    
-    <div class="search-result">
-      <h4 class="sam-ui header">
-        <a>Cras condimentum, tellus a euismod sollicitudin</a>
-      </h4>
-      <p>
-        Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu. 
-        Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante, 
-        sed viverra purus eros id urna. 
-      </p>
-    </div>
-    
-    
-    
-  </div>
-</div>
+  </md-sidenav-container>
+  
 </div>

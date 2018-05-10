@@ -1,258 +1,280 @@
-<div class="report-page-toolbar">
-  <a (click)="sidenav.toggle()">Toggle filters</a>
-  <div class="report-page-options">
-    <a>
-      <i class="fa fa-download" aria-hidden="true"></i>
-      Download
-    </a>
-    <a>
-      <i class="fa fa-share-alt" aria-hidden="true"></i>
-      Share
-    </a>
-    <a>
-      <i class="fa fa-cloud" aria-hidden="true"></i>
-      Save Filters
-    </a>
-  </div>
-</div>
 
-<md-sidenav-container>
+<div class="search-report">
   
-  <md-sidenav #sidenav opened mode="side">
+  <div class="page-toolbar">
+    <a (click)="sidenav.toggle()">
+      <sam-icon name="slider-h"></sam-icon>
+      Toggle filters
+    </a>
+    <div class="page-toolbar-menu">
+      <a>
+        <i class="fa fa-download" aria-hidden="true"></i>
+        Download
+      </a>
+      <a>
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+        Share
+      </a>
+      <a>
+        <i class="fa fa-cloud" aria-hidden="true"></i>
+        Save Filters
+      </a>
+    </div>
+  </div>
+  
+  <md-sidenav-container>
     
-    <h4 class="sam report title">
-      Federal Assistance
-    </h4>
+    <md-sidenav #sidenav opened mode="side">
+      
+      <h4 class="sam report title">
+        Federal Assistance
+      </h4>
+      
+      <md-tab-group dynamicHeight="true" disableRipple="true">
+        
+        <md-tab label="Filters">
+          <div samAccordion multi="true">
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Federal Organizations
+              </sam-expansion-panel-header>
+              <label>Select (<a>Can't find?</a>)</label>
+              <input class="sam transition input" placeholder="Select" type="text">
+            </sam-expansion-panel>
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Program Number
+              </sam-expansion-panel-header>
+              <p>Lorem ipsum dolor sit amet</p>
+            </sam-expansion-panel>
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Program Title
+              </sam-expansion-panel-header>
+              <p>Lorem ipsum dolor sit amet</p>
+            </sam-expansion-panel>
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Program Number
+              </sam-expansion-panel-header>
+              Lorem Ipsum
+            </sam-expansion-panel>
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Last Updated Date
+              </sam-expansion-panel-header>
+              Lorem Ipsum
+            </sam-expansion-panel>
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                OMB Review Date
+              </sam-expansion-panel-header>
+              Lorem Ipsum
+            </sam-expansion-panel>
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Last Published Date
+              </sam-expansion-panel-header>
+              Lorem Ipsum
+            </sam-expansion-panel>
+            
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Auto Published
+              </sam-expansion-panel-header>
+              Lorem Ipsum
+            </sam-expansion-panel>
+            
+          </div>
+        </md-tab>
+        
+        <md-tab label="Fields">
+          <ul>
+            <li>Quisque quis ante ut turpis</li>
+            <li>Sed faucibus enim at.</li>
+            <li>Vivamus sit amet lectus.</li>
+            <li>Donec ac lacus ut sapien.</li>
+            <li>Morbi at risus sed magna.</li>
+            <li>Nulla venenatis odio.</li>
+          </ul>
+        </md-tab>
+        
+      </md-tab-group>
+      
+    </md-sidenav>
+    
+    <div class="selected-filters">
+      <a class="sam-ui mini label">
+        Department of Health and Hum...
+        <i class="icon close fa fa-times"></i>
+      </a>
+      
+      <a class="sam-ui mini label">
+        Formula Grants
+        <i class="icon close fa fa-times"></i>
+      </a>
+      
+      <span class="options">
+        <a class="remove">
+          <i class="fa fa-cloud"></i>
+          Save Filters
+        </a>
+        <a class="remove">
+          Clear Filters
+        </a>
+      </span>
+    </div>
     
     <md-tab-group dynamicHeight="true" disableRipple="true">
-      
-      <md-tab label="Filters">
-        <div samAccordion>
-          
-          <sam-expansion-panel multi="true">
-            <sam-expansion-panel-header>
-              Federal Organizations
-            </sam-expansion-panel-header>
-            <label>Select (<a>Can't find?</a>)</label>
-            <input class="sam transition input" placeholder="Select" type="text">
-          </sam-expansion-panel>
-          
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Program Number
-            </sam-expansion-panel-header>
-            <p>Lorem ipsum dolor sit amet</p>
-          </sam-expansion-panel>
-          
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Program Title
-            </sam-expansion-panel-header>
-            <p>Lorem ipsum dolor sit amet</p>
-          </sam-expansion-panel>
-          
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Program Number
-            </sam-expansion-panel-header>
-            Lorem Ipsum
-          </sam-expansion-panel>
-          
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Last Updated Date
-            </sam-expansion-panel-header>
-            Lorem Ipsum
-          </sam-expansion-panel>
-          
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              OMB Review Date
-            </sam-expansion-panel-header>
-            Lorem Ipsum
-          </sam-expansion-panel>
-          
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Last Published Date
-            </sam-expansion-panel-header>
-            Lorem Ipsum
-          </sam-expansion-panel>
-          
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Auto Published
-            </sam-expansion-panel-header>
-            Lorem Ipsum
-          </sam-expansion-panel>
-          
+      <md-tab label="Compliance Summary">
+        <md-paginator [length]="_reportData.length" [pageSizeOptions]="[50, 100, 150, 200]">
+        </md-paginator>
+        <div class="report-table">
+          <sam-datatable samSort [dataSource]="dataSource">
+            
+            <ng-container cdkColumnDef="Agency">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header> Agency </sam-header-cell>
+              <sam-cell *cdkCellDef="let row"> {{row['Agency']}} </sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="CFDANumber">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header> CFDA Number </sam-header-cell>
+              <sam-cell *cdkCellDef="let row">{{row['CFDA Number']}}</sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="Title">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header> Title </sam-header-cell>
+              <sam-cell *cdkCellDef="let row"> {{row['Title']}} </sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="CurrentStatus">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header>Current Status</sam-header-cell>
+              <sam-cell *cdkCellDef="let row"> {{row['Current Status']}} </sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="LastUpdatedDate">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header> Last Updated Date </sam-header-cell>
+              <sam-cell *cdkCellDef="let row"> {{row['Last Updated Date']}} </sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="ObligationsUpdated">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header> Obligations Updated </sam-header-cell>
+              <sam-cell *cdkCellDef="let row">{{row['Obligations Updated']}}</sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="OMBReviewDate">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header> OMB Review Date </sam-header-cell>
+              <sam-cell *cdkCellDef="let row"> {{row['OMB Review Date']}} </sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="LastPublishedDate">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header>Last Published Date</sam-header-cell>
+              <sam-cell *cdkCellDef="let row"> {{row['Last Published Date']}} </sam-cell>
+            </ng-container>
+            
+            <ng-container cdkColumnDef="AutoPublished">
+              <sam-header-cell *cdkHeaderCellDef sam-sort-header>Auto Published</sam-header-cell>
+              <sam-cell *cdkCellDef="let row"> {{row['Auto Published']}} </sam-cell>
+            </ng-container>
+            
+            <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
+            <sam-row *cdkRowDef="let row; columns: displayedColumns"></sam-row>
+            
+          </sam-datatable>
         </div>
       </md-tab>
-      
-      <md-tab label="Fields">
-        <ul>
-          <li>Quisque quis ante ut turpis</li>
-          <li>Sed faucibus enim at.</li>
-          <li>Vivamus sit amet lectus.</li>
-          <li>Donec ac lacus ut sapien.</li>
-          <li>Morbi at risus sed magna.</li>
-          <li>Nulla venenatis odio.</li>
-        </ul>
+      <md-tab label="Budget Summary">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
+          iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
+          sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
+          senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
+          egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
+          mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
+          Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
+          vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
+          velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
+          elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
+          id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
+        </p>
+        <p>
+          Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
+          Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
+          varius natoque penatibus et magnis dis parturient montes, nascetur 
+          ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
+          Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
+          ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
+          ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
+          ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
+          Proin cursus nisi diam.
+        </p>
+        <p>
+          Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
+          Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
+          hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
+          sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
+          tristique senectus et netus et malesuada fames ac turpis egestas. 
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
+          cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
+          nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
+          eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
+          eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
+          vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
+          sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
+          imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
+          mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
+        </p>
       </md-tab>
-      
+      <md-tab label="Listing Details">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
+          iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
+          sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
+          senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
+          egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
+          mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
+          Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
+          vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
+          velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
+          elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
+          id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
+        </p>
+        <p>
+          Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
+          Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
+          varius natoque penatibus et magnis dis parturient montes, nascetur 
+          ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
+          Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
+          ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
+          ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
+          ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
+          Proin cursus nisi diam.
+        </p>
+        <p>
+          Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
+          Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
+          hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
+          sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
+          tristique senectus et netus et malesuada fames ac turpis egestas. 
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
+          cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
+          nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
+          eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
+          eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
+          vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
+          sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
+          imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
+          mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
+        </p>
+      </md-tab> 
     </md-tab-group>
     
-  </md-sidenav>
-  
-  <md-chip-list>
-    <md-chip>Department of Health and Hum...</md-chip>
-    <md-chip>Formula Grants</md-chip>
-  </md-chip-list>
-  
-  <md-tab-group dynamicHeight="true" disableRipple="true">
-    <md-tab label="Compliance Summary">
-      <md-paginator [length]="_reportData.length" [pageSizeOptions]="[50, 100, 150, 200]">
-      </md-paginator>
-      <div class="report-table">
-        <sam-datatable samSort [dataSource]="dataSource">
-          
-          <ng-container cdkColumnDef="Agency">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> Agency </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row['Agency']}} </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="CFDANumber">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> CFDA Number </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">{{row['CFDA Number']}}</sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="Title">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> Title </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row['Title']}} </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="CurrentStatus">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Current Status</sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row['Current Status']}} </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="LastUpdatedDate">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> Last Updated Date </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row['Last Updated Date']}} </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="ObligationsUpdated">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> Obligations Updated </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">{{row['Obligations Updated']}}</sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="OMBReviewDate">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> OMB Review Date </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row['OMB Review Date']}} </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="LastPublishedDate">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Last Published Date</sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row['Last Published Date']}} </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="AutoPublished">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Auto Published</sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row['Auto Published']}} </sam-cell>
-          </ng-container>
-          
-          <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
-          <sam-row *cdkRowDef="let row; columns: displayedColumns"></sam-row>
-          
-        </sam-datatable>
-      </div>
-    </md-tab>
-    <md-tab label="Budget Summary">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
-        iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
-        sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
-        senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
-        egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
-        mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
-        Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
-        vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
-        velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
-        elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
-        id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
-      </p>
-      <p>
-        Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
-        Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
-        varius natoque penatibus et magnis dis parturient montes, nascetur 
-        ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
-        Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
-        ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
-        ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
-        ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
-        Proin cursus nisi diam.
-      </p>
-      <p>
-        Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
-        Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
-        hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
-        sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
-        tristique senectus et netus et malesuada fames ac turpis egestas. 
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-        cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
-        nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
-        eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
-        eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
-        vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
-        sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
-        imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
-        mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
-      </p>
-    </md-tab>
-    <md-tab label="Listing Details">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
-        iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
-        sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
-        senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
-        egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
-        mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
-        Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
-        vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
-        velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
-        elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
-        id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
-      </p>
-      <p>
-        Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
-        Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
-        varius natoque penatibus et magnis dis parturient montes, nascetur 
-        ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
-        Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
-        ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
-        ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
-        ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
-        Proin cursus nisi diam.
-      </p>
-      <p>
-        Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
-        Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
-        hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
-        sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
-        tristique senectus et netus et malesuada fames ac turpis egestas. 
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-        cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
-        nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
-        eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
-        eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
-        vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
-        sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
-        imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
-        mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
-      </p>
-    </md-tab> 
-  </md-tab-group>
-  
-  
-  
-</md-sidenav-container>
+  </md-sidenav-container>
+</div>

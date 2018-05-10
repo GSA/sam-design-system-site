@@ -29,7 +29,7 @@
       <md-tab label="Filters">
         <div samAccordion>
           
-          <sam-expansion-panel>
+          <sam-expansion-panel multi="true">
             <sam-expansion-panel-header>
               Federal Organizations
             </sam-expansion-panel-header>
@@ -111,6 +111,8 @@
   
   <md-tab-group dynamicHeight="true" disableRipple="true">
     <md-tab label="Compliance Summary">
+      <md-paginator [length]="_reportData.length" [pageSizeOptions]="[50, 100, 150, 200]">
+      </md-paginator>
       <div class="report-table">
         <sam-datatable samSort [dataSource]="dataSource">
           
@@ -130,12 +132,12 @@
           </ng-container>
           
           <ng-container cdkColumnDef="CurrentStatus">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Current<br>Status</sam-header-cell>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Current Status</sam-header-cell>
             <sam-cell *cdkCellDef="let row"> {{row['Current Status']}} </sam-cell>
           </ng-container>
           
           <ng-container cdkColumnDef="LastUpdatedDate">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> Last Updated<br>Date </sam-header-cell>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header> Last Updated Date </sam-header-cell>
             <sam-cell *cdkCellDef="let row"> {{row['Last Updated Date']}} </sam-cell>
           </ng-container>
           
@@ -145,17 +147,17 @@
           </ng-container>
           
           <ng-container cdkColumnDef="OMBReviewDate">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header> OMB Review<br>Date </sam-header-cell>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header> OMB Review Date </sam-header-cell>
             <sam-cell *cdkCellDef="let row"> {{row['OMB Review Date']}} </sam-cell>
           </ng-container>
           
           <ng-container cdkColumnDef="LastPublishedDate">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Last Published<br>Date</sam-header-cell>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Last Published Date</sam-header-cell>
             <sam-cell *cdkCellDef="let row"> {{row['Last Published Date']}} </sam-cell>
           </ng-container>
           
           <ng-container cdkColumnDef="AutoPublished">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Auto<br>Published</sam-header-cell>
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>Auto Published</sam-header-cell>
             <sam-cell *cdkCellDef="let row"> {{row['Auto Published']}} </sam-cell>
           </ng-container>
           
@@ -164,97 +166,93 @@
           
         </sam-datatable>
       </div>
-      
-      <md-paginator [length]="_reportData.length" 
-      [pageSizeOptions]="[50, 100, 150, 200]">
-    </md-paginator>
-  </md-tab>
-  <md-tab label="Budget Summary">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
-      iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
-      sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
-      senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
-      egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
-      mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
-      Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
-      vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
-      velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
-      elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
-      id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
-    </p>
-    <p>
-      Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
-      Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
-      varius natoque penatibus et magnis dis parturient montes, nascetur 
-      ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
-      Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
-      ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
-      ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
-      ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
-      Proin cursus nisi diam.
-    </p>
-    <p>
-      Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
-      Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
-      hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
-      sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
-      tristique senectus et netus et malesuada fames ac turpis egestas. 
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-      cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
-      nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
-      eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
-      eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
-      vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
-      sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
-      imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
-      mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
-    </p>
-  </md-tab>
-  <md-tab label="Listing Details">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
-      iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
-      sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
-      senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
-      egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
-      mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
-      Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
-      vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
-      velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
-      elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
-      id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
-    </p>
-    <p>
-      Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
-      Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
-      varius natoque penatibus et magnis dis parturient montes, nascetur 
-      ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
-      Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
-      ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
-      ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
-      ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
-      Proin cursus nisi diam.
-    </p>
-    <p>
-      Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
-      Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
-      hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
-      sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
-      tristique senectus et netus et malesuada fames ac turpis egestas. 
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-      cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
-      nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
-      eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
-      eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
-      vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
-      sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
-      imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
-      mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
-    </p>
-  </md-tab> 
-</md-tab-group>
-
-
-
+    </md-tab>
+    <md-tab label="Budget Summary">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
+        iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
+        sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
+        senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
+        egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
+        mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
+        Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
+        vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
+        velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
+        elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
+        id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
+      </p>
+      <p>
+        Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
+        Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
+        varius natoque penatibus et magnis dis parturient montes, nascetur 
+        ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
+        Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
+        ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
+        ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
+        ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
+        Proin cursus nisi diam.
+      </p>
+      <p>
+        Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
+        Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
+        hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
+        sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
+        tristique senectus et netus et malesuada fames ac turpis egestas. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
+        cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
+        nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
+        eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
+        eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
+        vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
+        sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
+        imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
+        mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
+      </p>
+    </md-tab>
+    <md-tab label="Listing Details">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
+        iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
+        sed lorem eget, maximus luctus diam. Pellentesque habitant morbi tristique 
+        senectus et netus et malesuada fames ac turpis egestas. Pellentesque 
+        egestas, elit quis viverra ultrices, orci odio interdum elit, in rhoncus 
+        mauris mauris quis tellus. Aenean sed ullamcorper nisi, sed ultricies diam. 
+        Nullam ut pellentesque arcu. Nunc sit amet pulvinar justo. Curabitur quis 
+        vulputate tortor. Vivamus vel aliquam metus, ac posuere nunc. Sed sed 
+        velit et nisl dapibus pharetra nec at purus. Integer ac libero porttitor, 
+        elementum augue in, ultricies nibh. Etiam sem enim, faucibus vitae ipsum 
+        id, dignissim feugiat leo. Aenean et ultricies ligula, a pulvinar nulla.
+      </p>
+      <p>
+        Mauris et iaculis metus. Duis at posuere sem. Phasellus vel luctus risus. 
+        Aliquam a lorem lorem. Maecenas nec mi odio. Suspendisse potenti. Orci 
+        varius natoque penatibus et magnis dis parturient montes, nascetur 
+        ridiculus mus. Nullam velit ex, semper id viverra ut, dapibus vitae nisl. 
+        Nam dapibus tincidunt est, quis tincidunt purus mattis ut. Praesent 
+        ultrices elit elit, sed gravida dui luctus et. Aliquam vulputate 
+        ullamcorper magna, ut pellentesque leo suscipit vitae. Fusce aliquam, est 
+        ut maximus mollis, arcu nisl posuere ex, a tristique lorem mi at lacus. 
+        Proin cursus nisi diam.
+      </p>
+      <p>
+        Praesent commodo placerat dui, ut condimentum sapien pharetra vitae. 
+        Aenean tristique eget mauris eget malesuada. Fusce hendrerit id quam nec 
+        hendrerit. Phasellus gravida, est eget gravida mollis, erat est eleifend 
+        sem, commodo porta libero velit viverra velit. Pellentesque habitant morbi 
+        tristique senectus et netus et malesuada fames ac turpis egestas. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
+        cubilia Curae; Curabitur venenatis imperdiet eleifend. Nulla convallis 
+        nisi congue elit semper blandit. Mauris eget arcu aliquam, aliquam tortor 
+        eget, accumsan neque. Sed ullamcorper hendrerit maximus. In congue lacus 
+        eu aliquet porttitor. Morbi nunc tortor, volutpat a ornare id, fermentum 
+        vel ex. Cras a aliquam risus, id lacinia tellus. Cras rutrum leo a odio 
+        sollicitudin, ut tincidunt nunc accumsan. Etiam sed quam vel augue posuere 
+        imperdiet aliquam in lectus. Curabitur consequat, lacus vitae interdum 
+        mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
+      </p>
+    </md-tab> 
+  </md-tab-group>
+  
+  
+  
 </md-sidenav-container>

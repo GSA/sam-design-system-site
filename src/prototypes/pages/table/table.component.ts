@@ -531,7 +531,7 @@ export class ExampleDatabase {
             ombReviewDate: RECORDS[i][6],
             lastPublishedDate: RECORDS[i][7],
             autoPublished: RECORDS[i][8],
-            cost: Math.round(Math.random()*100),
+            cost: Math.round(Math.random() * 100),
         };
 
         copiedData.push(record);
@@ -579,9 +579,9 @@ export class ExampleDataSource extends DataSource<any> {
         return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
       });
 
-      //set total
+      // set total
       this.totalcost = 0;
-      this.filteredData.map((item: CFDAData)=>{
+      this.filteredData.map((item: CFDAData) => {
         this.totalcost += item.cost;
       });
 

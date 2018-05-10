@@ -20,7 +20,8 @@ import {
   MdTableModule,
   MdSidenavModule,
   MdSortModule,
-  MdTabsModule
+  MdTabsModule,
+  MdChipsModule
 } from '@angular/material';
 
 import { SamDataTableModule } from './table';
@@ -39,7 +40,8 @@ import { SamDataTableModule } from './table';
     MdTableModule,
     MdPaginatorModule,
     MdSortModule,
-    CdkTableModule
+    CdkTableModule,
+    MdChipsModule
   ],
   declarations: [
     ComponentsComponent,
@@ -60,7 +62,8 @@ import { SamDataTableModule } from './table';
     MdPaginatorModule,
     MdSortModule,
     CdkTableModule,
-    SamDataTableModule
+    SamDataTableModule,
+    MdChipsModule
   ]
 })
 export class PrototypesComponentsModule {}

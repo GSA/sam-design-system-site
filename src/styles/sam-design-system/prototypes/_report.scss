@@ -19,7 +19,8 @@
 
 .report-table{
   width: 100%;
-  max-height: 650px;
+  margin-bottom: 20px;
+  // max-height: 650px;
   overflow-x: auto;
   &::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -34,45 +35,13 @@
 }
 
 .report-table sam-datatable{
-  line-height: 19px;
   width: 1500px;
 }
 
-.report-table sam-datatable sam-header-row{
-  border-bottom: 1px solid black;
-  border-right: 1px solid #DCE4EE;
-  padding: 0;
-}
-
-.report-table sam-datatable sam-row{
-  border-bottom: 1px solid #DCE4EE;
-  border-right: 1px solid #DCE4EE;
-  padding: 0;
-}
-
-.report-table sam-datatable sam-header-cell{
-  font-size: 15px;
-  font-weight: 600;
-  color: black;
-}
-
-.report-table sam-datatable sam-cell{
-  font-size: 15px;
-  padding: 5px 0;
-}
-
-.mat-column-Agency,
-.mat-column-Title{
+.sam-column-Agency,
+.sam-column-Title{
   flex-basis: 150px !important;
   margin-right: 10px;
-}
-
-.report-table sam-datatable sam-row:nth-child(2n){
-  background-color: rgba(0,0,50,.02);
-}
-
-.report-table sam-datatable sam-row:hover{
-  background-color: rgba(220, 228, 238, 0.5);
 }
 
 md-paginator button{

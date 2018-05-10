@@ -8,11 +8,11 @@ import {Subscription} from 'rxjs/Subscription';
 
 
 /**
- * To modify the labels and text displayed, create a new instance of MdSortHeaderIntl and
+ * To modify the labels and text displayed, create a new instance of SamSortHeaderIntl and
  * include it in a custom provider.
  */
 @Injectable()
-export class MdSortHeaderIntl {
+export class SamSortHeaderIntl {
   sortButtonLabel = (id: string) => {
     return `Change sorting for ${id}`;
   }
@@ -88,7 +88,7 @@ export class SamSortHeaderComponent implements SamSortable, OnInit, OnDestroy {
     private _disableClear: boolean;
 
 
-    constructor(public _intl: MdSortHeaderIntl,
+    constructor(public _intl: SamSortHeaderIntl,
                 private _changeDetectorRef: ChangeDetectorRef,
                 @Optional() public _sort: SamSortDirective,
                 @Optional() public _cdkColumnDef: CdkColumnDef) {

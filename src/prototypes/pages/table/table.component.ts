@@ -564,7 +564,7 @@ export class ExampleDataSource extends DataSource<any> {
     // Listen for any changes in the base data, sorting, filtering, or pagination
     const displayDataChanges = [
       this._exampleDatabase.dataChange,
-      this._sort.mdSortChange,
+      this._sort.samSortChange,
       this._filterChange,
       this._paginator.pageChange,
     ];

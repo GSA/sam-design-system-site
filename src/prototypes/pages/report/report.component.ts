@@ -3,7 +3,8 @@ import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { ReportData } from './DataSource';
-import { MdPaginator, MdSort } from '@angular/material';
+import { MdPaginator } from '@angular/material';
+import { SamSortDirective } from '../../components/table/sort.directive';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 
@@ -39,7 +40,7 @@ export class ReportDatabase {
 export class ReportDataSource extends DataSource<any> {
   constructor(private _reportDatabase: ReportDatabase,
               private _paginator: MdPaginator,
-              private _sort: MdSort) {
+              private _sort: SamSortDirective) {
     super();
   }
   connect(): Observable<ProgramData[]> {
@@ -64,7 +65,27 @@ export class ReportDataSource extends DataSource<any> {
       let propertyB: number|string = '';
 
       switch (this._sort.active) {
-        case 'Last Updated Date': [propertyA, propertyB] = [a['Last Updated Date'], b['Last Updated Date']]; break;
+        case 'Agency': [propertyA, propertyB] = [a['Agency'], b['Agency']]; break;
+        case 'CFDANumber': [propertyA, propertyB] = [a['CFDA Number'], b['CFDA Number']]; break;
+        case 'Title': [propertyA, propertyB] = [a['Title'], b['Title']]; break;
+        case 'CurrentStatus': [propertyA, propertyB] = [a['Current Status'], b['Current Status']]; break;
+        case 'LastUpdatedDate':
+          [propertyA, propertyB] = [
+            new Date(a['Last Updated Date']).getTime(),
+            new Date(b['Last Updated Date']).getTime()];
+          break;
+        case 'ObligationsUpdated': [propertyA, propertyB] = [a['Obligations Updated'], b['Obligations Updated']]; break;
+        case 'OMBReviewDate':
+          [propertyA, propertyB] = [
+            new Date(a['OMB Review Date']).getTime(),
+            new Date(b['OMB Review Date']).getTime()];
+          break;
+        case 'LastPublishedDate':
+          [propertyA, propertyB] = [
+            new Date(a['Last Published Date']).getTime(),
+            new Date(b['Last Published Date']).getTime()];
+          break;
+        case 'AutoPublished': [propertyA, propertyB] = [a['Auto Published'], b['Auto Published']]; break;
       }
 
       const valueA = isNaN(+propertyA) ? propertyA : +propertyA;
@@ -87,7 +108,7 @@ export class ReportPageComponent implements OnInit {
   displayedColumns = [];
 
   @ViewChild(MdPaginator) _paginator: MdPaginator;
-  @ViewChild(MdSort) _sort: MdSort;
+  @ViewChild(SamSortDirective) _sort: SamSortDirective;
   ngOnInit() {
     this.connect();
   }

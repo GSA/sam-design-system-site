@@ -11,13 +11,15 @@ import { SearchPageComponent } from './search/search.component';
 import { HomePageComponent } from './homepage/home.component';
 import { SearchMobileComponent } from './search-mobile/search.component';
 import { ReportPageComponent } from './report/report.component';
-
+import { CdkTableModule } from '@angular/cdk';
+import { TablePageComponent } from './table/table.component';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     PagesRoutingModule,
     SamUIKitModule,
+    CdkTableModule,
     PrototypesComponentsModule
   ],
   declarations: [
@@ -25,7 +27,8 @@ import { ReportPageComponent } from './report/report.component';
     SearchPageComponent,
     HomePageComponent,
     SearchMobileComponent,
-    ReportPageComponent
+    ReportPageComponent,
+    TablePageComponent
   ]
 })
 export class PrototypesPagesModule {}

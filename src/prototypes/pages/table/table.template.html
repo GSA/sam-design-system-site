@@ -1,0 +1,60 @@
+<div class="example-container usa-grid">
+    <h1>Sample DataTable</h1>
+    <div class="example-header">
+        <input #filter placeholder="Filter agency or title">
+    </div>
+      
+    <sam-datatable #table samSort [dataSource]="dataSource">
+        <!-- Column Definition: agency -->
+        <ng-container cdkColumnDef="agency">
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+                Agency
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.agency}} </sam-cell>
+        </ng-container>
+    
+        <!-- Column Definition: cfdaNumber -->
+        <ng-container cdkColumnDef="cfdaNumber">
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header start="desc">CFDA #
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.cfdaNumber}} </sam-cell>
+        </ng-container>
+    
+        <!-- Column Definition: title -->
+        <ng-container cdkColumnDef="title">
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+                Title
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.title}} </sam-cell>
+        </ng-container>
+    
+        <!-- Column Definition: status -->
+        <ng-container cdkColumnDef="status">
+            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+                Status
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row" [ngClass]="{published:row.status=='Published'}"> {{row.status}} </sam-cell>
+        </ng-container>
+
+        <!-- Column Definition: lastUpdatedDate -->
+        <ng-container cdkColumnDef="lastUpdatedDate">
+            <sam-header-cell *cdkHeaderCellDef>
+                Last Updated
+            </sam-header-cell>
+            <sam-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </sam-cell>
+        </ng-container>
+
+        <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
+        <sam-row *cdkRowDef="let row; columns: displayedColumns;
+            let first = first; let last = last; let even = even; let odd = odd">
+        </sam-row>
+    </sam-datatable>
+      
+    <div class="example-no-results"
+        [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'">
+        No users found matching filter.
+    </div>
+      
+    <sam-pagination class="datatable-example" #paginator [currentPage]="curPage" [totalPages]="dataSource.filteredData.length/pageSize"></sam-pagination>
+</div>
+    

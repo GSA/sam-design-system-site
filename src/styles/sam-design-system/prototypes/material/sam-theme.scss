@@ -64,6 +64,7 @@ $theme: mat-light-theme($primary, $accent);
 
 // angular-material-theme
 @include mat-core-theme($theme);
+@include mat-chips-theme($theme);
 @include mat-expansion-panel-theme($theme);
 @include mat-sidenav-theme($theme);
 @include mat-tabs-theme($theme);
@@ -75,6 +76,10 @@ $theme: mat-light-theme($primary, $accent);
 
 
 // Overwrites
+
+.mat-chip:not(.mat-basic-chip) {
+  border-radius: 5px !important;
+}
 
 .mat-tab-label{
   min-width: 100px !important;

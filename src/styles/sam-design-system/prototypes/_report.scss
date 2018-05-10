@@ -1,7 +1,26 @@
+.report-page-toolbar{
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.report-page-options{
+  a{
+    padding-left: 15px;
+  }
+}
+
+.report.title{
+  padding-left: 15px;
+}
 
 .report-table{
   width: 100%;
-  max-height: 740px;
+  margin-bottom: 20px;
+  // max-height: 650px;
   overflow-x: auto;
   &::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -15,46 +34,14 @@
   }
 }
 
-.report-table md-table{
-  line-height: 19px;
+.report-table sam-datatable{
   width: 1500px;
 }
 
-.report-table md-table md-header-row{
-  border-bottom: 1px solid black;
-  border-right: 1px solid #DCE4EE;
-  padding: 0;
-}
-
-.report-table md-table md-row{
-  border-bottom: 1px solid #DCE4EE;
-  border-right: 1px solid #DCE4EE;
-  padding: 0;
-}
-
-.report-table md-table md-header-cell{
-  font-size: 15px;
-  font-weight: 600;
-  color: black;
-}
-
-.report-table md-table md-cell{
-  font-size: 15px;
-  padding: 5px 0;
-}
-
-.mat-column-Agency,
-.mat-column-Title{
+.sam-column-Agency,
+.sam-column-Title{
   flex-basis: 150px !important;
   margin-right: 10px;
-}
-
-.report-table md-table md-row:nth-child(2n){
-  background-color: rgba(0,0,50,.02);
-}
-
-.report-table md-table md-row:hover{
-  background-color: rgba(220, 228, 238, 0.5);
 }
 
 md-paginator button{

@@ -51,7 +51,7 @@ template: `
   
 </div>
 
-<span class="sr-only" *ngIf="_isSorted()">
+<span class="sr-only" *ngIf="_isSorted()">  
   {{_intl.sortDescriptionLabel(id, _sort.direction)}}
 </span>
 `,
@@ -96,7 +96,7 @@ export class SamSortHeaderComponent implements SamSortable, OnInit, OnDestroy {
         //throw getMdSortHeaderNotContainedWithinMdSortError();
         }
 
-        this.sortSubscription = _sort.mdSortChange.subscribe(() => _changeDetectorRef.markForCheck());
+        this.sortSubscription = _sort.samSortChange.subscribe(() => _changeDetectorRef.markForCheck());
     }
 
     ngOnInit() {

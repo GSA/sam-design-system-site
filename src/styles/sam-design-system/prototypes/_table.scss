@@ -60,3 +60,15 @@ sam-cell,sam-header-cell{
 .sam-datatable-tbody{
     display:table-row-group;
 }
+.sam-datatable-tfooter{
+    display:table-footer-group;
+}
+.sam-datatable-footercell{
+    padding:5px;
+    display:table-cell;
+    border-right:1px solid #DCE4EE;
+    border-top:1px solid #000;
+    &:last-child{
+        border-right:none;
+    }
+}

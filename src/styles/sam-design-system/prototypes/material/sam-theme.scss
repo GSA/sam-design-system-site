@@ -110,3 +110,7 @@ md-sidenav {
 .mat-row{
   height: auto !important;
 }
+
+sam-expansion-panel:last-child{
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.12) !important;
+}

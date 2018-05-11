@@ -8,8 +8,9 @@ import { Observable } from 'rxjs';
 /* tslint:enable */
 import { merge } from 'rxjs/observable/merge';
 import { fromEvent } from 'rxjs/observable/fromEvent';
-import { SamSortDirective } from '../../components/table/sort.directive';
+import { SamMultiSortDirective } from '../../components/table/multicol-sort.directive';
 import { SamPaginationComponent } from 'sam-ui-elements/src/ui-kit/components/pagination';
+import { SamMultiSortable } from '../../components/table/multicol-sort.directive';
 
 @Component({
   templateUrl: 'table.template.html'
@@ -21,7 +22,7 @@ export class TablePageComponent implements OnInit {
   dataSource: ExampleDataSource | null;
   curPage = 1;
   @ViewChild(SamPaginationComponent) paginator: SamPaginationComponent;
-  @ViewChild(SamSortDirective) sort: SamSortDirective;
+  @ViewChild(SamMultiSortDirective) sort: SamMultiSortDirective;
   @ViewChild('filter') filter: ElementRef;
 
   ngOnInit() {
@@ -558,7 +559,7 @@ export class ExampleDataSource extends DataSource<any> {
 
   constructor(private _exampleDatabase: ExampleDatabase,
               private _paginator: SamPaginationComponent,
-              private _sort: SamSortDirective) {
+              private _sort: SamMultiSortDirective) {
     super();
   }
 
@@ -599,29 +600,33 @@ export class ExampleDataSource extends DataSource<any> {
 
   /** Returns a sorted copy of the database data. */
   sortData(data: CFDAData[]): CFDAData[] {
-    if (!this._sort.active || this._sort.direction === '') { return data; }
+    if (!this._sort.active) { return data; }
 
     return data.sort((a, b) => {
       let propertyA: number|string = '';
       let propertyB: number|string = '';
+      for (let i = 0; i < this._sort.active.length; i++) {
+        const sortable: SamMultiSortable = this._sort.sortables.get(this._sort.active[i]);
+        switch (sortable.id) {
+          case 'agency': [propertyA, propertyB] = [a.agency, b.agency]; break;
+          case 'cfdaNumber': [propertyA, propertyB] = [a.cfdaNumber, b.cfdaNumber]; break;
+          case 'title': [propertyA, propertyB] = [a.title, b.title]; break;
+          case 'status': [propertyA, propertyB] = [a.status, b.status]; break;
+          case 'lastUpdatedDate': [propertyA, propertyB] = [a.lastUpdatedDate, b.lastUpdatedDate]; break;
+          case 'obligationsUpdated': [propertyA, propertyB] = [a.obligationsUpdated, b.obligationsUpdated]; break;
+          case 'ombReviewDate': [propertyA, propertyB] = [a.ombReviewDate, b.ombReviewDate]; break;
+          case 'lastPublishedDate': [propertyA, propertyB] = [a.lastPublishedDate, b.lastPublishedDate]; break;
+          case 'autoPublished': [propertyA, propertyB] = [a.autoPublished, b.autoPublished]; break;
+          case 'cost': [propertyA, propertyB] = [a.cost, b.cost]; break;
+        }
 
-      switch (this._sort.active) {
-        case 'agency': [propertyA, propertyB] = [a.agency, b.agency]; break;
-        case 'cfdaNumber': [propertyA, propertyB] = [a.cfdaNumber, b.cfdaNumber]; break;
-        case 'title': [propertyA, propertyB] = [a.title, b.title]; break;
-        case 'status': [propertyA, propertyB] = [a.status, b.status]; break;
-        case 'lastUpdatedDate': [propertyA, propertyB] = [a.lastUpdatedDate, b.lastUpdatedDate]; break;
-        case 'obligationsUpdated': [propertyA, propertyB] = [a.obligationsUpdated, b.obligationsUpdated]; break;
-        case 'ombReviewDate': [propertyA, propertyB] = [a.ombReviewDate, b.ombReviewDate]; break;
-        case 'lastPublishedDate': [propertyA, propertyB] = [a.lastPublishedDate, b.lastPublishedDate]; break;
-        case 'autoPublished': [propertyA, propertyB] = [a.autoPublished, b.autoPublished]; break;
-        case 'cost': [propertyA, propertyB] = [a.cost, b.cost]; break;
+        const valueA = isNaN(+propertyA) ? propertyA : +propertyA;
+        const valueB = isNaN(+propertyB) ? propertyB : +propertyB;
+
+        if (valueA !== valueB) {
+          return (valueA < valueB ? -1 : 1) * (sortable.direction === 'asc' ? 1 : -1);
+        }
       }
-
-      const valueA = isNaN(+propertyA) ? propertyA : +propertyA;
-      const valueB = isNaN(+propertyB) ? propertyB : +propertyB;
-
-      return (valueA < valueB ? -1 : 1) * (this._sort.direction === 'asc' ? 1 : -1);
     });
   }
 }

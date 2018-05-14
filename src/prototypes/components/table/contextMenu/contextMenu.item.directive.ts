@@ -1,9 +1,7 @@
 import { Directive, Input, Output, EventEmitter, TemplateRef } from '@angular/core';
-
+/* tslint:disable */
 @Directive({
-  /* tslint:disable:directive-selector-type */
   selector: 'template[contextMenuItem]',
-  /* tslint:enable:directive-selector-type */
 })
 export class ContextMenuItemDirective {
   @Input() public divider: boolean = false;
@@ -28,3 +26,4 @@ export class ContextMenuItemDirective {
     this.execute.emit({ event: $event, item });
   }
 }
+/* tslint:enable */

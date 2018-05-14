@@ -16,10 +16,6 @@ import { ContextMenuComponent } from '../../components/table/contextMenu/context
   templateUrl: 'table.template.html'
 })
 export class TablePageComponent implements OnInit {
-  updateFilter(filterText){
-    this.filter.nativeElement.value = filterText;
-    this.dataSource.filter = filterText;
-  }
   pageSize = 10;
   totalPages = 1;
   displayedColumns = ['agency', 'cfdaNumber', 'title', 'status', 'cost', 'lastUpdatedDate'];
@@ -39,6 +35,11 @@ export class TablePageComponent implements OnInit {
           if (!this.dataSource) { return; }
           this.dataSource.filter = this.filter.nativeElement.value;
         });
+  }
+
+  updateFilter(filterText) {
+    this.filter.nativeElement.value = filterText;
+    this.dataSource.filter = filterText;
   }
 }
 
@@ -596,7 +597,7 @@ export class ExampleDataSource extends DataSource<any> {
 
       // Grab the page's slice of the filtered sorted data.
       const startIndex = (this._paginator.currentPage - 1) * 10;
-      this._paginator.totalPages = Math.ceil(this.filteredData.length/10);
+      this._paginator.totalPages = Math.ceil(this.filteredData.length / 10);
       this.renderedData = sortedData.splice(startIndex, 10);
       return this.renderedData;
     });

@@ -20,10 +20,14 @@ export * from './row.component';
 
 @NgModule({
   imports: [CdkTableModule, CommonModule],
-  exports: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective, SamMultiSortDirective, ContextMenuComponent, ContextMenuItemDirective,
-    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent, SamSortMultiHeaderComponent, ContextMenuAttachDirective],
-  declarations: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective, SamMultiSortDirective, ContextMenuComponent, ContextMenuItemDirective,
-    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent, SamSortMultiHeaderComponent, ContextMenuAttachDirective],
+  exports: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective,
+    SamMultiSortDirective, ContextMenuComponent, ContextMenuItemDirective,
+    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent,
+    SamSortMultiHeaderComponent, ContextMenuAttachDirective],
+  declarations: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective,
+    SamMultiSortDirective, ContextMenuComponent, ContextMenuItemDirective,
+    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent,
+    SamSortMultiHeaderComponent, ContextMenuAttachDirective],
   providers: [SamSortHeaderIntl, SamMultiSortHeaderIntl, ContextMenuService]
 })
 export class SamDataTableModule {}

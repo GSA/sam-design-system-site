@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { ContextMenuItemDirective } from './contextMenu.item.directive';
 import { CONTEXT_MENU_OPTIONS, IContextMenuOptions } from './contextMenu.options';
 import { ContextMenuService, IContextMenuClickEvent } from './contextMenu.service';
@@ -242,3 +243,4 @@ export class ContextMenuComponent implements AfterContentInit {
     this.changeDetector.markForCheck();
   }
 }
+/* tslint:enable */

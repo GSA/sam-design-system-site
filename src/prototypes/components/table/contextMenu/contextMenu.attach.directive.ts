@@ -1,7 +1,7 @@
 import { ContextMenuComponent } from './contextMenu.component';
 import { ContextMenuService } from './contextMenu.service';
 import { Directive, HostListener, Input } from '@angular/core';
-
+/* tslint:disable */
 @Directive({
   selector: '[contextMenu]',
 })
@@ -22,3 +22,4 @@ export class ContextMenuAttachDirective {
     event.stopPropagation();
   }
 }
+/* tslint:enable */

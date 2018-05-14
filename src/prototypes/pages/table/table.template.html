@@ -3,21 +3,28 @@
     <div class="example-header">
         <input #filter placeholder="Filter agency or title">
     </div>
-      
+    <context-menu>
+        <template contextMenuItem (execute)="updateFilter($event.item.agency)">
+            Agency
+        </template>
+        <template contextMenuItem (execute)="updateFilter($event.item.title)">
+            Title
+        </template>
+    </context-menu>
     <sam-datatable #table samMultiSort [dataSource]="dataSource">
         <!-- Column Definition: agency -->
         <ng-container cdkColumnDef="agency">
             <sam-header-cell *cdkHeaderCellDef sam-sort-multi-header>
                 Agency
             </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.agency}} </sam-cell>
+            <sam-cell *cdkCellDef="let row" [contextMenu]="basicMenu" [contextMenuSubject]="row"> {{row.agency}} </sam-cell>
         </ng-container>
     
         <!-- Column Definition: cfdaNumber -->
         <ng-container cdkColumnDef="cfdaNumber">
             <sam-header-cell *cdkHeaderCellDef sam-sort-multi-header>CFDA #
             </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.cfdaNumber}} </sam-cell>
+            <sam-cell *cdkCellDef="let row" [contextMenu]="basicMenu" [contextMenuSubject]="row"> {{row.cfdaNumber}} </sam-cell>
         </ng-container>
     
         <!-- Column Definition: title -->
@@ -25,7 +32,7 @@
             <sam-header-cell *cdkHeaderCellDef sam-sort-multi-header>
                 Title
             </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.title}} </sam-cell>
+            <sam-cell *cdkCellDef="let row" [contextMenu]="basicMenu" [contextMenuSubject]="row"> {{row.title}} </sam-cell>
         </ng-container>
     
         <!-- Column Definition: status -->
@@ -33,7 +40,7 @@
             <sam-header-cell *cdkHeaderCellDef sam-sort-multi-header>
                 Status
             </sam-header-cell>
-            <sam-cell *cdkCellDef="let row" [ngClass]="{published:row.status=='Published'}"> {{row.status}} </sam-cell>
+            <sam-cell *cdkCellDef="let row" [contextMenu]="basicMenu" [contextMenuSubject]="row"> {{row.status}} </sam-cell>
         </ng-container>
         
         <!-- Column Definition: cost -->
@@ -41,7 +48,7 @@
             <sam-header-cell *cdkHeaderCellDef sam-sort-multi-header>
                 Cost
             </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> ${{row.cost}} </sam-cell>
+            <sam-cell *cdkCellDef="let row" [contextMenu]="basicMenu" [contextMenuSubject]="row"> ${{row.cost}} </sam-cell>
         </ng-container>
 
         <!-- Column Definition: lastUpdatedDate -->
@@ -49,7 +56,7 @@
             <sam-header-cell *cdkHeaderCellDef>
                 Last Updated
             </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </sam-cell>
+            <sam-cell *cdkCellDef="let row" [contextMenu]="basicMenu" [contextMenuSubject]="row"> {{row.lastUpdatedDate}} </sam-cell>
         </ng-container>
 
         <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
@@ -76,7 +83,7 @@
         <sam-pagination
             class="datatable-example"
             #paginator [currentPage]="curPage" 
-            [totalPages]="dataSource.filteredData.length/pageSize"></sam-pagination>
+            [totalPages]="totalPages"></sam-pagination>
     </div>
 </div>
     

@@ -9,16 +9,21 @@ import {SamSortMultiHeaderComponent, SamMultiSortHeaderIntl} from './sort-multi-
 import {SamSortDirective} from './sort.directive';
 import {SamMultiSortDirective} from './multicol-sort.directive';
 
+import { ContextMenuAttachDirective } from './contextMenu/contextMenu.attach.directive';
+import { ContextMenuItemDirective } from './contextMenu/contextMenu.item.directive';
+import { ContextMenuComponent } from './contextMenu/contextMenu.component';
+import { ContextMenuService } from './contextMenu/contextMenu.service';
+
 export * from './cell.component';
 export * from './table.component';
 export * from './row.component';
 
 @NgModule({
   imports: [CdkTableModule, CommonModule],
-  exports: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective, SamMultiSortDirective,
-    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent, SamSortMultiHeaderComponent],
-  declarations: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective, SamMultiSortDirective,
-    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent, SamSortMultiHeaderComponent],
-  providers: [SamSortHeaderIntl, SamMultiSortHeaderIntl]
+  exports: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective, SamMultiSortDirective, ContextMenuComponent, ContextMenuItemDirective,
+    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent, SamSortMultiHeaderComponent, ContextMenuAttachDirective],
+  declarations: [SamDataTableComponent, SamHeaderCellDirective, SamCellDirective, SamMultiSortDirective, ContextMenuComponent, ContextMenuItemDirective,
+    SamHeaderRowComponent, SamRowComponent, SamSortDirective, SamSortHeaderComponent, SamSortMultiHeaderComponent, ContextMenuAttachDirective],
+  providers: [SamSortHeaderIntl, SamMultiSortHeaderIntl, ContextMenuService]
 })
 export class SamDataTableModule {}

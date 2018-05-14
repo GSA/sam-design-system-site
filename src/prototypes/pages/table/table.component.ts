@@ -11,12 +11,13 @@ import { fromEvent } from 'rxjs/observable/fromEvent';
 import { SamMultiSortDirective } from '../../components/table/multicol-sort.directive';
 import { SamPaginationComponent } from 'sam-ui-elements/src/ui-kit/components/pagination';
 import { SamMultiSortable } from '../../components/table/multicol-sort.directive';
-
+import { ContextMenuComponent } from '../../components/table/contextMenu/contextMenu.component';
 @Component({
   templateUrl: 'table.template.html'
 })
 export class TablePageComponent implements OnInit {
   pageSize = 10;
+  totalPages = 1;
   displayedColumns = ['agency', 'cfdaNumber', 'title', 'status', 'cost', 'lastUpdatedDate'];
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
@@ -24,7 +25,7 @@ export class TablePageComponent implements OnInit {
   @ViewChild(SamPaginationComponent) paginator: SamPaginationComponent;
   @ViewChild(SamMultiSortDirective) sort: SamMultiSortDirective;
   @ViewChild('filter') filter: ElementRef;
-
+  @ViewChild(ContextMenuComponent) public basicMenu: ContextMenuComponent;
   ngOnInit() {
     this.dataSource = new ExampleDataSource(this.exampleDatabase, this.paginator, this.sort);
     fromEvent(this.filter.nativeElement, 'keyup')
@@ -34,6 +35,11 @@ export class TablePageComponent implements OnInit {
           if (!this.dataSource) { return; }
           this.dataSource.filter = this.filter.nativeElement.value;
         });
+  }
+
+  updateFilter(filterText) {
+    this.filter.nativeElement.value = filterText;
+    this.dataSource.filter = filterText;
   }
 }
 
@@ -591,6 +597,7 @@ export class ExampleDataSource extends DataSource<any> {
 
       // Grab the page's slice of the filtered sorted data.
       const startIndex = (this._paginator.currentPage - 1) * 10;
+      this._paginator.totalPages = Math.ceil(this.filteredData.length / 10);
       this.renderedData = sortedData.splice(startIndex, 10);
       return this.renderedData;
     });

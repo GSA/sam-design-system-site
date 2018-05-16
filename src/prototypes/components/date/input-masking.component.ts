@@ -35,6 +35,7 @@ export class SamInputMaskComponent implements ControlValueAccessor, OnInit {
     disabled;
     onChange: (val) => void = (val) => {};
     onTouched: () => void = () => {};
+    pattern = /([^_\/\)\(-\s])/g;
 
     constructor(protected cdr: ChangeDetectorRef) { }
 
@@ -79,7 +80,7 @@ export class SamInputMaskComponent implements ControlValueAccessor, OnInit {
         } else {
           return template
             .split('')
-            .filter(char => char.match(/([^_\)\(-\s])/g))
+            .filter(char => char.match(this.pattern))
             .join('');
         }
       }
@@ -93,7 +94,7 @@ export class SamInputMaskComponent implements ControlValueAccessor, OnInit {
 
         const digits = numberStr
             .split('')
-            .filter(digit => digit.match(/([^_\)\(-\s])/g));
+            .filter(digit => digit.match(this.pattern));
 
         const blanks = this.template
             ? this.template.split('')

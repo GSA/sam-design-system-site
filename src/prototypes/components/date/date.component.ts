@@ -10,11 +10,11 @@ import * as moment from 'moment/moment';
     <sam-input-mask
         [id]='id'
         [disabled]='disabled'
-        [placeholder]="'mm-dd-yyyy'"
+        [placeholder]="'mm/dd/yyyy'"
         [(ngModel)]='inputDateVal'
         (ngModelChange)='modelChangeHandler($event)'
         [disableFocusBehavior]='disableFocusBehavior'
-        [template]='"__-__-____"' ></sam-input-mask>
+        [template]='template' ></sam-input-mask>
 </sam-label-wrapper>`,
     providers: [{
         provide: NG_VALUE_ACCESSOR,
@@ -31,7 +31,7 @@ export class SamDatePickerComponent implements ControlValueAccessor, OnInit {
     @Input() disableFocusBehavior: boolean = true;
     @ViewChild('wrapper') wrapper;
 
-    template = '__-__-____';
+    template = '__/__/____';
     inputDateVal;
     disabled;
 

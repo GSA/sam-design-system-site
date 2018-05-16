@@ -13,6 +13,7 @@ import { SearchMobileComponent } from './search-mobile/search.component';
 import { ReportPageComponent } from './report/report.component';
 import { CdkTableModule } from '@angular/cdk';
 import { TablePageComponent } from './table/table.component';
+import { DatePageComponent } from './date/date.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -28,7 +29,8 @@ import { TablePageComponent } from './table/table.component';
     HomePageComponent,
     SearchMobileComponent,
     ReportPageComponent,
-    TablePageComponent
+    TablePageComponent,
+    DatePageComponent
   ]
 })
 export class PrototypesPagesModule {}

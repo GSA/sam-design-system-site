@@ -1,0 +1,33 @@
+<div class="usa-grid">
+    <h1>Date Component Prototype</h1>
+    <div>
+        <sam-datepicker
+            #model1="ngModel"
+            [control]="model1.control"
+            [id]="'example1'"
+            [(ngModel)]="example1"
+            label="Example #1"
+            hint="Uses experimental component and includes focus behavior #1. Default validations turned on."></sam-datepicker>
+        <p>Model value: {{ example1 | json }}</p>
+    </div>
+    <div>
+        <sam-datepicker
+            #model2="ngModel"
+            [control]="model2.control"
+            [id]="'example2'"
+            [(ngModel)]="example2"
+            [disableFocusBehavior]="false"
+            label="Example #2"
+            hint="Uses experimental component and includes focus behavior #2. Default validations turned on."></sam-datepicker>
+        <p>Model value: {{ example2 | json }}</p>
+    </div>
+    <div>
+        <sam-label-wrapper 
+            [label]="'Example #3'"
+            [hint]="'Uses normal input and type=date. No control of skinning native datepicker'"
+            [name]="'example3'">
+            <input type="date" id="example3" [(ngModel)]="example3">
+        </sam-label-wrapper>
+        <p>Model value: {{ example3 | json }}</p>
+    </div>
+</div>

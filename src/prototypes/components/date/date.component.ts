@@ -8,7 +8,7 @@ import * as moment from 'moment/moment';
 @Component({
     selector: 'sam-datepicker',
     template: `
-<sam-label-wrapper #wrapper [label]='label' [hint]='hint' [name]='id'>
+<sam-label-wrapper #wrapper [label]='label' [hint]='hint' [name]='name'>
     <sam-input-mask
         [name]='name'
         [disabled]='disabled'

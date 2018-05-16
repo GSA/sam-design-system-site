@@ -1,6 +1,8 @@
 import { Input, Component, ViewEncapsulation, ViewChild, OnInit,
-    forwardRef, ChangeDetectionStrategy, HostListener } from '@angular/core';
+    forwardRef, ChangeDetectionStrategy, HostListener, ChangeDetectorRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, AbstractControl, ValidatorFn } from '@angular/forms';
+import { SamFormControl } from 'sam-ui-elements/src/ui-kit/form-controls/sam-form-control';
+import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
 import * as moment from 'moment/moment';
 
 @Component({
@@ -8,10 +10,10 @@ import * as moment from 'moment/moment';
     template: `
 <sam-label-wrapper #wrapper [label]='label' [hint]='hint' [name]='id'>
     <sam-input-mask
-        [id]='id'
+        [name]='name'
         [disabled]='disabled'
         [placeholder]="'mm/dd/yyyy'"
-        [(ngModel)]='inputDateVal'
+        [(ngModel)]='value'
         (ngModelChange)='modelChangeHandler($event)'
         [disableFocusBehavior]='disableFocusBehavior'
         [template]='template' ></sam-input-mask>
@@ -22,18 +24,12 @@ import * as moment from 'moment/moment';
         multi: true
     }]
 })
-export class SamDatePickerComponent implements ControlValueAccessor, OnInit {
-    @Input() label: string;
-    @Input() hint: string;
-    @Input() id: string;
-    @Input() control: AbstractControl;
+export class SamDatePickerComponent extends SamFormControl implements OnInit {
     @Input() defaultValidations: boolean = true;
     @Input() disableFocusBehavior: boolean = true;
     @ViewChild('wrapper') wrapper;
 
     template = '__/__/____';
-    inputDateVal;
-    disabled;
 
     static dateRequired() {
         return (c: AbstractControl) => {
@@ -72,6 +68,10 @@ export class SamDatePickerComponent implements ControlValueAccessor, OnInit {
         };
     }
 
+    constructor(cdr: ChangeDetectorRef, service: SamFormService) {
+        super(service, cdr);
+    }
+
     @HostListener('focus') onfocus() {
         this.onTouched();
     }
@@ -95,26 +95,6 @@ export class SamDatePickerComponent implements ControlValueAccessor, OnInit {
     }
 
     modelChangeHandler(evt) {
-        this.onChange(this.inputDateVal);
-    }
-
-    // these get overwritten by the register methods
-    onChange: (val) => void = (val) => {};
-    onTouched: () => void = () => {};
-
-    registerOnChange(fn) {
-        this.onChange = fn;
-    }
-
-    registerOnTouched(fn) {
-        this.onTouched = fn;
-    }
-
-    writeValue(val) {
-        this.inputDateVal = val;
-    }
-
-    setDisabledState(state: boolean) {
-        this.disabled = state ? true : null;
+        this.onChange(this.value);
     }
 }

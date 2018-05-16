@@ -1,4 +1,6 @@
-import { Component, forwardRef, Input, ViewEncapsulation, ChangeDetectorRef, ChangeDetectionStrategy, HostListener } from '@angular/core';
+import { Component, forwardRef, Input,
+    ViewEncapsulation, ChangeDetectorRef,
+    ChangeDetectionStrategy, HostListener, OnInit } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 export const VALUE_ACCESSOR: any = {
@@ -9,39 +11,39 @@ export const VALUE_ACCESSOR: any = {
 
 @Component({
     selector: 'sam-input-mask',
-    template: `<input 
-        [disabled]="disabled"
-        type="text"
-        [attr.id]="id"
-        [attr.placeholder]="placeholder"
-        [(ngModel)]="inputVal"
-        (ngModelChange)="onModelChange()"
-        (focus)="onFocus()"
-        (blur)="onBlur()" />`,
+    template: `<input
+        [disabled]='disabled'
+        type='text'
+        [attr.id]='id'
+        [attr.placeholder]='placeholder'
+        [(ngModel)]='inputVal'
+        (ngModelChange)='onModelChange()'
+        (focus)='onFocus()'
+        (blur)='onBlur()' />`,
     providers: [ VALUE_ACCESSOR ],
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SamInputMaskComponent implements ControlValueAccessor{
+export class SamInputMaskComponent implements ControlValueAccessor, OnInit {
     @Input() template: string;
     @Input() placeholder: string;
     @Input() id: string;
     @Input() disableFocusBehavior: boolean = false;
-    
+
     inputVal;
     previousVal;
     disabled;
     onChange: (val) => void = (val) => {};
     onTouched: () => void = () => {};
 
-    constructor(protected cdr: ChangeDetectorRef){ }
+    constructor(protected cdr: ChangeDetectorRef) { }
 
-    @HostListener('focus') onfocus(){
+    @HostListener('focus') onfocus() {
         this.onTouched();
     }
 
     onFocus() {
-        if(!this.disableFocusBehavior){
+        if (!this.disableFocusBehavior) {
             this.inputVal = this.templateToNumber(this.inputVal);
         }
     }
@@ -49,25 +51,25 @@ export class SamInputMaskComponent implements ControlValueAccessor{
     onBlur() {
         const newVal = this.numberToTemplate(this.inputVal);
         this.inputVal = newVal;
-        if(newVal !== this.previousVal){
+        if (newVal !== this.previousVal) {
             this.previousVal = this.inputVal;
             this.onChange(this.inputVal);
         }
     }
 
-    onModelChange(){
-        if(this.previousVal && this.inputVal === ''){
+    onModelChange() {
+        if (this.previousVal && this.inputVal === '') {
             this.onChange(this.inputVal);
         }
     }
 
-    ngOnInit(){
-        if(!this.template){
-            throw Error("No template provided");
+    ngOnInit() {
+        if (!this.template) {
+            throw Error('No template provided');
         }
     }
-    
-    emitChanges(evt){
+
+    emitChanges(evt) {
         this.onChange(this.inputVal);
     }
 
@@ -87,16 +89,16 @@ export class SamInputMaskComponent implements ControlValueAccessor{
             return;
         }
 
-        numberStr = numberStr.replace(/\D/g,'');
-    
+        numberStr = numberStr.replace(/\D/g, '');
+
         const digits = numberStr
             .split('')
             .filter(digit => digit.match(/([^_\)\(-\s])/g));
-    
+
         const blanks = this.template
             ? this.template.split('')
             : [];
-    
+
         return blanks.map(
                 blank => {
                     if (blank === '_') {
@@ -111,20 +113,20 @@ export class SamInputMaskComponent implements ControlValueAccessor{
             .concat(digits.join(''));
     }
 
-    registerOnChange(fn){
+    registerOnChange(fn) {
         this.onChange = fn;
     }
 
-    registerOnTouched(fn){
+    registerOnTouched(fn) {
         this.onTouched = fn;
     }
 
-    writeValue(val){
+    writeValue(val) {
         this.inputVal = val;
         this.cdr.detectChanges();
     }
 
-    setDisabledState(state: boolean){
+    setDisabledState(state: boolean) {
         this.disabled = state ? true : null;
     }
 }

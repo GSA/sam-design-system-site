@@ -1,19 +1,20 @@
-import { Input, Component, ViewEncapsulation, ViewChild, forwardRef, ChangeDetectionStrategy, HostListener } from '@angular/core';
+import { Input, Component, ViewEncapsulation, ViewChild, OnInit,
+    forwardRef, ChangeDetectionStrategy, HostListener } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, AbstractControl, ValidatorFn } from '@angular/forms';
 import * as moment from 'moment/moment';
 
 @Component({
     selector: 'sam-datepicker',
     template: `
-<sam-label-wrapper #wrapper [label]="label" [hint]="hint" [name]="id">
-    <sam-input-mask 
-        [id]="id"
-        [disabled]="disabled"
+<sam-label-wrapper #wrapper [label]='label' [hint]='hint' [name]='id'>
+    <sam-input-mask
+        [id]='id'
+        [disabled]='disabled'
         [placeholder]="'mm-dd-yyyy'"
-        [(ngModel)]="inputDateVal"
-        (ngModelChange)="modelChangeHandler($event)"
-        [disableFocusBehavior]="disableFocusBehavior"
-        [template]="'__-__-____'" ></sam-input-mask>
+        [(ngModel)]='inputDateVal'
+        (ngModelChange)='modelChangeHandler($event)'
+        [disableFocusBehavior]='disableFocusBehavior'
+        [template]='"__-__-____"' ></sam-input-mask>
 </sam-label-wrapper>`,
     providers: [{
         provide: NG_VALUE_ACCESSOR,
@@ -21,7 +22,7 @@ import * as moment from 'moment/moment';
         multi: true
     }]
 })
-export class SamDatePickerComponent implements ControlValueAccessor{
+export class SamDatePickerComponent implements ControlValueAccessor, OnInit {
     @Input() label: string;
     @Input() hint: string;
     @Input() id: string;
@@ -30,37 +31,9 @@ export class SamDatePickerComponent implements ControlValueAccessor{
     @Input() disableFocusBehavior: boolean = true;
     @ViewChild('wrapper') wrapper;
 
-    template = "__-__-____"
+    template = '__-__-____';
     inputDateVal;
     disabled;
-    onChange: (val) => void = (val) => {};
-    onTouched: () => void = () => {};
-
-    @HostListener('focus') onfocus(){
-        this.onTouched();
-    }
-
-    ngOnInit(){
-        if(this.control && this.defaultValidations){
-            const validators: ValidatorFn[] = [];
-            if (this.control.validator) {
-                validators.push(this.control.validator);
-            }
-            // if (this.required) {
-            //     //validators.push(SamDateComponent.dateRequired());
-            // }
-            validators.push(SamDatePickerComponent.dateValidation());
-            this.control.setValidators(validators);
-            this.control.statusChanges.subscribe(() => {
-                this.wrapper.formatErrors(this.control);
-            });
-            this.wrapper.formatErrors(this.control);
-        }
-    }
-
-    modelChangeHandler(evt){
-        this.onChange(this.inputDateVal);
-    }
 
     static dateRequired() {
         return (c: AbstractControl) => {
@@ -74,7 +47,7 @@ export class SamDatePickerComponent implements ControlValueAccessor{
             return undefined;
         };
     }
-      
+
     static dateValidation() {
         const minYear = 1000;
         return (c: AbstractControl) => {
@@ -99,19 +72,49 @@ export class SamDatePickerComponent implements ControlValueAccessor{
         };
     }
 
-    registerOnChange(fn){
+    @HostListener('focus') onfocus() {
+        this.onTouched();
+    }
+
+    ngOnInit() {
+        if (this.control && this.defaultValidations) {
+            const validators: ValidatorFn[] = [];
+            if (this.control.validator) {
+                validators.push(this.control.validator);
+            }
+            // if (this.required) {
+            //     //validators.push(SamDateComponent.dateRequired());
+            // }
+            validators.push(SamDatePickerComponent.dateValidation());
+            this.control.setValidators(validators);
+            this.control.statusChanges.subscribe(() => {
+                this.wrapper.formatErrors(this.control);
+            });
+            this.wrapper.formatErrors(this.control);
+        }
+    }
+
+    modelChangeHandler(evt) {
+        this.onChange(this.inputDateVal);
+    }
+
+    // these get overwritten by the register methods
+    onChange: (val) => void = (val) => {};
+    onTouched: () => void = () => {};
+
+    registerOnChange(fn) {
         this.onChange = fn;
     }
 
-    registerOnTouched(fn){
+    registerOnTouched(fn) {
         this.onTouched = fn;
     }
 
-    writeValue(val){
+    writeValue(val) {
         this.inputDateVal = val;
     }
 
-    setDisabledState(state: boolean){
+    setDisabledState(state: boolean) {
         this.disabled = state ? true : null;
     }
 }

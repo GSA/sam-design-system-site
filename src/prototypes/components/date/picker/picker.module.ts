@@ -1,4 +1,4 @@
-import { CommonModule }   from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';

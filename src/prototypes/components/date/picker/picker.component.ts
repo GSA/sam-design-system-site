@@ -1,3 +1,4 @@
+/* tslint:disable */
 import {
     animate, Component, ElementRef, EventEmitter, Input, keyframes, OnChanges,
     OnInit, Output, Renderer, SimpleChange, state, style, transition, trigger
@@ -710,3 +711,4 @@ import {
       return { 'invalidYear': true };
     }
   }
+  /* tslint:enable */

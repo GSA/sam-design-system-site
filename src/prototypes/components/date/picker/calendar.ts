@@ -1,3 +1,4 @@
+/* tslint:disable */
 export class Calendar {
     firstWeekDay: number;
 
@@ -64,3 +65,4 @@ const months = "JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC".split(" ");
 for (var i=0; i<months.length; i++) {
     Calendar[months[i]] = i;
 }
+/* tslint:enable */

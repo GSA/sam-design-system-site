@@ -7,6 +7,7 @@ import { HomePageComponent } from './homepage/home.component';
 import { SearchMobileComponent } from './search-mobile/search.component';
 import { ReportPageComponent } from './report/report.component';
 import { TablePageComponent } from './table/table.component';
+import { DatePageComponent } from './date/date.component';
 
 const PageRoutes: Routes = [
   {
@@ -32,6 +33,10 @@ const PageRoutes: Routes = [
       {
         path: 'table',
         component: TablePageComponent
+      },
+      {
+        path: 'date',
+        component: DatePageComponent
       }
     ]
   }

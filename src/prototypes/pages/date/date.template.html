@@ -30,4 +30,10 @@
         </sam-label-wrapper>
         <p>Model value: {{ example3 | json }}</p>
     </div>
+    <div>
+        <material-datepicker 
+            [label]="'Example #4'"
+            [hint]="'3rd party picker, no support to work with @angular/forms and validations'" [name]="'example4'" [(date)]="example4"></material-datepicker>
+        <p>Model value: {{ example4 | json }}</p>
+    </div>
 </div>

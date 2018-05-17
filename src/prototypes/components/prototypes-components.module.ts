@@ -25,6 +25,8 @@ import {
 } from '@angular/material';
 
 import { SamDataTableModule } from './table';
+import { SamDatePickerComponent } from './date/date.component';
+import { SamInputMaskComponent } from './date/input-masking.component';
 
 @NgModule({
   imports: [
@@ -51,7 +53,9 @@ import { SamDataTableModule } from './table';
     PickerLevel4Component,
     PickerLevel5Component,
     PickerLevel6Component,
-    MainNavComponent
+    MainNavComponent,
+    SamDatePickerComponent,
+    SamInputMaskComponent
   ],
   exports: [
     MainNavComponent,
@@ -63,7 +67,8 @@ import { SamDataTableModule } from './table';
     MdSortModule,
     CdkTableModule,
     SamDataTableModule,
-    MdChipsModule
+    SamDatePickerComponent,
+    SamInputMaskComponent
   ]
 })
 export class PrototypesComponentsModule {}

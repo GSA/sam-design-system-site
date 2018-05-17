@@ -27,6 +27,7 @@ import {
 import { SamDataTableModule } from './table';
 import { SamDatePickerComponent } from './date/date.component';
 import { SamInputMaskComponent } from './date/input-masking.component';
+import { DatepickerProtoModule } from './date/picker/picker.module';
 
 @NgModule({
   imports: [
@@ -43,7 +44,8 @@ import { SamInputMaskComponent } from './date/input-masking.component';
     MdPaginatorModule,
     MdSortModule,
     CdkTableModule,
-    MdChipsModule
+    MdChipsModule,
+    DatepickerProtoModule
   ],
   declarations: [
     ComponentsComponent,
@@ -68,7 +70,8 @@ import { SamInputMaskComponent } from './date/input-masking.component';
     CdkTableModule,
     SamDataTableModule,
     SamDatePickerComponent,
-    SamInputMaskComponent
+    SamInputMaskComponent,
+    DatepickerProtoModule
   ]
 })
 export class PrototypesComponentsModule {}

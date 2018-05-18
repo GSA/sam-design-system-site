@@ -13,6 +13,29 @@ import {
   group
 } from '@angular/animations';
 
+const listItems = {
+  state: {
+    label: 'State',
+    value: 'Arizona'
+  },
+  counties: {
+    label: 'Counties',
+    value: ['Pima', 'Pinal', 'Yavapai', 'Yuma']
+  },
+  modification: {
+    label: 'Modification #',
+    value: '3'
+  },
+  construction: {
+    label: 'Construction Type',
+    value: 'Building'
+  },
+  revisedDate: {
+    label: 'Last Revised Date',
+    value: new Date()
+  }
+};
+
 
 @Component({
   templateUrl: 'search.template.html',
@@ -184,6 +207,8 @@ export class SearchPageComponent {
   filtersDrawer = 'open';
   selectedDomain = 'All Award Data';
   filterSlide: string;
+
+  public listData = listItems;
 
   toggleFilters() {
     this.filtersDrawer = this.filtersDrawer === 'open' ? 'close' : 'open';

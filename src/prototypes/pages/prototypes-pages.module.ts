@@ -13,6 +13,19 @@ import { SearchMobileComponent } from './search-mobile/search.component';
 import { ReportPageComponent } from './report/report.component';
 import { CdkTableModule } from '@angular/cdk';
 import { TablePageComponent } from './table/table.component';
+import { SamDateRangeFilterComponent } from './search/sam-front-end-components/date-range';
+import { SamWDFilters } from './search/sam-front-end-components/wage-determination';
+import { SearchUtil } from './search/sam-front-end-components/wage-determination/search.util';
+import { SamSortFilter } from './search/sam-front-end-components/sort-by/sort.filter';
+import { SamSortComponent } from './search/sam-front-end-components/sort-by/sam-sort';
+import {
+  SamSearchResultAsideComponent,
+  SamSearchResultBodyComponent,
+  SamSearchResultComponent,
+  SamSearchResultHeaderComponent,
+  SamSearchResultMainComponent,
+  SamSearchResultHeaderMetaRight
+} from './search/sam-front-end-components/search-result';
 @NgModule({
   imports: [
     CommonModule,
@@ -20,7 +33,7 @@ import { TablePageComponent } from './table/table.component';
     PagesRoutingModule,
     SamUIKitModule,
     CdkTableModule,
-    PrototypesComponentsModule
+    PrototypesComponentsModule,
   ],
   declarations: [
     PagesComponent,
@@ -28,7 +41,20 @@ import { TablePageComponent } from './table/table.component';
     HomePageComponent,
     SearchMobileComponent,
     ReportPageComponent,
-    TablePageComponent
+    TablePageComponent,
+    SamDateRangeFilterComponent,
+    SamWDFilters,
+    SamSearchResultAsideComponent,
+    SamSearchResultBodyComponent,
+    SamSearchResultComponent,
+    SamSearchResultHeaderComponent,
+    SamSearchResultMainComponent,
+    SamSearchResultHeaderMetaRight,
+    SamSortFilter,
+    SamSortComponent
+  ],
+  providers: [
+    SearchUtil
   ]
 })
 export class PrototypesPagesModule {}

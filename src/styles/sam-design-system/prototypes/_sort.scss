@@ -1,0 +1,33 @@
+sam-sort{
+  display: inline-block;
+  select {
+    margin: 0;
+  }
+  & > div{
+    display: flex;
+    sam-select {
+      align-self: center;
+    }
+    .sam-ui.primary {
+      margin-right: 0;
+    }
+    sam-label-wrapper{
+      & > div{
+        display: flex;
+        label{
+          margin-right: 10px;
+          align-self: center;
+          white-space: nowrap;
+        }
+      }
+    }
+    a{
+      margin-left: -1px !important;
+      align-self: center;
+      border-radius: 0rem 0.3rem 0.3rem 0 !important;
+      i{
+        font-size: 15px !important;
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
 
 
 <div class="search-results-page search-report">
-  
   <div class="page-toolbar">
     <a (click)="sidenav.toggle()">
       <sam-icon name="slider-h"></sam-icon>
@@ -20,71 +19,32 @@
       <div class="search-results-filters" [@filtersDrawer]="filtersDrawer">
         
         <div samAccordion multi="true">
-
           <sam-expansion-panel>
             <sam-expansion-panel-header>
-              Domains
+              Status
             </sam-expansion-panel-header>
-            <div class="filter-slide" [@filterSlide]="filterSlide">
-              
-              <h4 class="sam-ui header" @arrowAnimation>
-                
-                <a *ngIf="selectedDomain !== 'All Award Data'" (click)="filterSlideToggle('All Award Data')">
-                  <i class="fa fa-chevron-left" style="padding-left: 0;"></i>
-                </a>
-                Domains
-                
-              </h4>
-              
-              <div>
-                <div class="parents"  *ngIf="selectedDomain === 'All Award Data'">
-                  <a class="parent current">All Award Data</a>
-                  <a class="parent" (click)="filterSlideToggle('Assistance')">Assistance <i class="fa fa-chevron-right fa-sm"></i></a>
-                  <a class="parent" (click)="filterSlideToggle('Contracting')">Contracting <i class="fa fa-chevron-right fa-sm"></i></a>
-                  <a class="parent" (click)="filterSlideToggle('Entity Data')">Entity Data <i class="fa fa-chevron-right fa-sm"></i></a>
-                  <a class="parent" (click)="filterSlideToggle('Agencies')">Agencies <i class="fa fa-chevron-right fa-sm"></i></a>
-                </div>
-                
-                <div class="children"  *ngIf="selectedDomain !== 'All Award Data'">
-                  <a class="parent current"> 
-                    {{ selectedDomain }}
-                  </a>
-                  <div class="child">
-                    <input type="checkbox" id="assistance-1" name="assistance" value="assistance-1" checked>
-                    <label for="assistance-1">Lorem ipsum dolor sit</label>
-                  </div>
-                  <div class="child">
-                    <input type="checkbox" id="assistance-2" name="assistance" value="assistance-2" checked>
-                    <label for="assistance-2">Maecenas non libero</label>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
+            <sam-checkbox
+              [name]="'status-checkbox'"
+              [options]="[
+                { name: 'Active Only', label: 'Active Only', value: 'Active Only'}
+              ]"
+            ></sam-checkbox>
           </sam-expansion-panel>
           <sam-expansion-panel>
             <sam-expansion-panel-header>
-              Filter 2
+              Date
             </sam-expansion-panel-header>
-            Content
+            <sam-date-range-filter
+              [radioSelection]="'date'"
+            ></sam-date-range-filter>
           </sam-expansion-panel>
           <sam-expansion-panel>
             <sam-expansion-panel-header>
-              Filter 3
+              Wage Determination
             </sam-expansion-panel-header>
-            Content
-          </sam-expansion-panel>
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Filter 4
-            </sam-expansion-panel-header>
-            Content
-          </sam-expansion-panel>
-          <sam-expansion-panel>
-            <sam-expansion-panel-header>
-              Filter 5
-            </sam-expansion-panel-header>
-            Content
+            <wage-determination-filters
+              [isGovUser]="true"
+            ></wage-determination-filters>
           </sam-expansion-panel>
         </div>
         
@@ -93,7 +53,7 @@
     </md-sidenav>
     
     <div class="search-results-content">
-      
+      <h1>Search Results</h1>
       <div class="selected-filters">
         <a class="sam-ui mini label">
           Status: Active
@@ -101,12 +61,12 @@
         </a>
         
         <a class="sam-ui mini label">
-          Domain: {{ selectedDomain }}
+          Wage Determination: DBA
           <i class="icon close fa fa-times"></i>
         </a>
         
         <a class="sam-ui mini label">
-          Location: Clement, OH
+          Location: Arizona
           <i class="icon close fa fa-times"></i>
         </a>
         
@@ -123,20 +83,11 @@
       
       <div class="results-header">
         <p class="showing-text">
-          1-10 of 20,643,214 results
+          Showing 1 to 10 of 20,643,214 results
         </p>
         
-        <div class="sort">
-          <strong>
-            Sort by 
-          </strong>
-          <select>
-            <option value="1">Relevance</option>
-            <option value="2">Title: A to Z</option>
-            <option value="2">Title: Z to A</option>
-            <option value="3">Date Modified: New to Old</option>
-            <option value="4">Date Modified: Old to New</option>
-          </select>
+        <div>
+          <sort-by></sort-by>
         </div>
       </div>
       
@@ -175,7 +126,50 @@
       </div>
       
       <div [@searchResults]>
-        <div class="search-result">
+        <sam-search-result
+          *ngFor="let result of [1,2,3,4,5,6,7,8,9,10]">
+          <sam-search-result-header>
+              <div meta>Wage Determination: DBA</div>
+              <h4>
+                <a>CO20180014 (Revision 2)</a>
+              </h4>
+          </sam-search-result-header>
+          <sam-search-result-main>
+              <ul>
+                  <li>
+                    <strong>
+                      {{listData?.state.label}}
+                    </strong>
+                    {{ listData?.state.value }}
+                  </li>
+                  <li>
+                    <strong>
+                      {{ listData?.counties.label }}
+                    </strong>
+                    {{ listData?.counties.value.join(', ') }}
+                  </li>
+                  <li>
+                    <strong>
+                      {{listData?.modification.label}}
+                    </strong>
+                    {{ listData?.modification.value }}
+                  </li>
+                  <li>
+                    <strong>
+                      {{listData?.construction.label}}
+                    </strong>
+                    {{ listData?.construction.value }}
+                  </li>
+                  <li>
+                    <strong>
+                      {{ listData?.revisedDate.label }}
+                    </strong>
+                    {{ listData?.revisedDate.value | date }}
+                  </li>
+                </ul>
+          </sam-search-result-main>
+        </sam-search-result>
+        <!-- <div class="search-result">
           <h4 class="sam-ui header">
             <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
           </h4>
@@ -233,10 +227,8 @@
             Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante, 
             sed viverra purus eros id urna. 
           </p>
-        </div>
+        </div> -->
       </div>
-      
-      
       
     </div>
     

@@ -256,6 +256,7 @@ interface ValidationResult {
             <span>{{ currentMonth }}</span>
             <input
               #yearInput
+              type="text"
               class="datepicker__calendar__nav__header__year"
               placeholder="Year"
               [formControl]="yearControl"
@@ -640,6 +641,7 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
   */
   onCancel(): void {
     this.closeCalendar();
+    this.calendarButton.nativeElement.focus();
   }
 
   /**
@@ -701,6 +703,7 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
       this.syncVisualsWithDate();
       this.enablePageTabIndex();
       this.onChange(this.inputText);
+      this.calendarButton.nativeElement.focus();
     }
   }
 

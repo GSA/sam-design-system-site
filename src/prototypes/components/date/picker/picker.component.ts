@@ -186,6 +186,7 @@ interface ValidationResult {
 
       .datepicker-input-wrapper{
         position: relative;
+        max-width: 460px;
       }
       .datepicker-input-wrapper input {
         margin: 0;
@@ -205,7 +206,6 @@ interface ValidationResult {
     [name]="name">
     <div class="datepicker">
       <div class="datepicker-input-wrapper">
-        
         <sam-input-mask
           [disabled]="disabled"
           [attr.id]="name"

@@ -18,6 +18,7 @@ export const VALUE_ACCESSOR: any = {
         type='text'
         [attr.id]='name'
         [attr.placeholder]='placeholder'
+        [attr.maxlength]='maxlength'
         [ngModel]='value'
         (ngModelChange)='onModelChange($event)'
         (focus)='onFocus()'
@@ -30,6 +31,7 @@ export class SamInputMaskComponent extends SamFormControl implements OnInit {
     @Input() template: string;
     @Input() placeholder: string;
     @Input() disableFocusBehavior: boolean = false;
+    @Input() maxlength: number;
 
     previousVal;
     pattern = /([^_\/\)\(-\s])/g;
@@ -69,6 +71,9 @@ export class SamInputMaskComponent extends SamFormControl implements OnInit {
     onModelChange(newVal) {
         this.value = newVal;
         if (this.previousVal && this._value === '') {
+            this.onChange(this._value);
+            this.cdr.detectChanges();
+        } else if (this.maxlength && newVal && newVal.length == this.maxlength){
             this.onChange(this._value);
             this.cdr.detectChanges();
         }

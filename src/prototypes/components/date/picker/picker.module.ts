@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 import { DatepickerComponent } from './picker.component';
 
+import { SamInputMaskComponent } from './input-masking.component';
+
 export * from './picker.component';
 
 @NgModule({
-  declarations: [ DatepickerComponent ],
-  exports: [ DatepickerComponent ],
+  declarations: [ DatepickerComponent, SamInputMaskComponent ],
+  exports: [ DatepickerComponent, SamInputMaskComponent ],
   imports: [ SamUIKitModule, CommonModule, FormsModule, ReactiveFormsModule ]
 })
 export class DatepickerProtoModule { }

@@ -25,9 +25,8 @@ import {
 } from '@angular/material';
 
 import { SamDataTableModule } from './table';
-import { SamDatePickerComponent } from './date/date.component';
-import { SamInputMaskComponent } from './date/input-masking.component';
 import { DatepickerProtoModule } from './date/picker/picker.module';
+import { SamDatePickerComponent } from './date/date.component';
 
 @NgModule({
   imports: [
@@ -57,7 +56,6 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     PickerLevel6Component,
     MainNavComponent,
     SamDatePickerComponent,
-    SamInputMaskComponent
   ],
   exports: [
     MainNavComponent,
@@ -70,7 +68,6 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     CdkTableModule,
     SamDataTableModule,
     SamDatePickerComponent,
-    SamInputMaskComponent,
     DatepickerProtoModule
   ]
 })

@@ -205,13 +205,17 @@ interface ValidationResult {
     [name]="name">
     <div class="datepicker">
       <div class="datepicker-input-wrapper">
-        <input
+        
+        <sam-input-mask
           [disabled]="disabled"
           [attr.id]="name"
+          [template]="'__/__/____'"
           maxlength="10"
           [placeholder]="placeholder"
+          [disableFocusBehavior]="true"
           [(ngModel)]="inputText"
-          (ngModelChange)="syncInputWithCal()" />
+          (ngModelChange)="syncInputWithCal()">
+        </sam-input-mask>
         <span class="fa fa-calendar" 
           #calendarButton
           (click)="onInputClick()"

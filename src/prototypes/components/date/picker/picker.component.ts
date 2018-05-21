@@ -220,15 +220,23 @@ interface ValidationResult {
           #calendarButton
           (click)="onInputClick()"
           (keyup.enter)="onInputClick()"
-          tabindex="0"></span>
+          role="button"
+          [attr.aria-expanded]="showCalendar ? 'true' : 'false'"
+          tabindex="0">
+          <span class="sr-only">Calendar</span>  
+        </span>
       </div>
       <div
+        role="dialog"
+        aria-label="Calendar"
         class="datepicker__calendar"
         *ngIf="showCalendar"
         #calendarpopup
         id="sam-date-calendar-popup">
-        <div class="datepicker__calendar__nav">
+        <div class="datepicker__calendar__nav" role="application">
           <div tabindex="0"
+            role="button"
+            aria-label="Previous Year"
             class="datepicker__calendar__nav__arrow"
             (click)="onArrowClick('left')" (keyup.enter)="onArrowClick('left')">
           <svg class="datepicker__calendar__nav__chevron" x="0px" y="0px" viewBox="0 0 50 50">
@@ -244,7 +252,7 @@ interface ValidationResult {
             </g>
           </svg>
           </div>
-          <div class="datepicker__calendar__nav__header">
+          <div class="datepicker__calendar__nav__header" role="presentation">
             <span>{{ currentMonth }}</span>
             <input
               #yearInput
@@ -255,6 +263,8 @@ interface ValidationResult {
               (blur)="onYearSubmit()" />
           </div>
           <div tabindex="0"
+            role="button"
+            aria-label="Next Year"
             class="datepicker__calendar__nav__arrow"
             (click)="onArrowClick('right')" (keyup.enter)="onArrowClick('right')">
             <svg class="datepicker__calendar__nav__chevron" x="0px" y="0px" viewBox="0 0 50 50">
@@ -291,6 +301,8 @@ interface ValidationResult {
                 'color': isHoveredDay(day) ? accentColor : getDayFontColor(day),
                 'pointer-events': day == 0 ? 'none' : ''
                 }"
+              [attr.role]="day != 0 ? 'button' : null"
+              [attr.aria-label]="day != 0 ? months[day.getMonth()] + ' ' + day.getDate() + ', ' + day.getFullYear() : null"
               [attr.tabindex]="day != 0 ? 0 : null"
               (click)="onSelectDay(day)"
               (keyup.enter)="onSelectDay(day)"

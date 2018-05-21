@@ -7,6 +7,7 @@ import { MdPaginator } from '@angular/material';
 import { SamSortDirective } from '../../components/table/sort.directive';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
+import { SamModalComponent } from '../../../../../sam-ui-elements/src/ui-kit/components/modal';
 
 export interface ProgramData {
   'Agency': string;
@@ -131,6 +132,7 @@ export class ReportPageComponent implements OnInit {
 
   @ViewChild(MdPaginator) _paginator: MdPaginator;
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
+  @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
 
   public ngOnInit() {
     this.connect();
@@ -138,6 +140,7 @@ export class ReportPageComponent implements OnInit {
 
   public toggleFieldsEditor () {
     this.editFields = !this.editFields;
+    this.fieldsEditor.open();
   }
 
   public connect() {

@@ -16,7 +16,7 @@
       </a>
       <a>
         <i class="fa fa-cloud" aria-hidden="true"></i>
-        Save Report
+        Save Criteria
       </a>
     </div>
   </div>
@@ -29,13 +29,13 @@
           <h2>Report Type</h2>
           <ul>
             <li>
-              <a class="selected">Federal Assitance</a>
+              <a class="selected">Compliance Summary</a>
             </li>
             <li>
-              <a>Contract Data</a>
+              <a>Budget Summary</a>
             </li>
             <li>
-              <a>Wage Determinations</a>
+              <a>Listing Details</a>
             </li>
           </ul>
         </div>
@@ -145,7 +145,7 @@
 
     <header class="header">
       <h1>
-        Federal Assistance
+        Federal Assistance Compliance Summary
       </h1>
     </header>
 
@@ -172,18 +172,29 @@
     </div>
     
     <md-tab-group dynamicHeight="true" disableRipple="true">
-      <md-tab label="Compliance Summary">
+      <md-tab label="Table">
         <div class="data-controls-container">
           <md-paginator
             class="pagination-control"
             [length]="_reportData.length"
             [pageSizeOptions]="[50, 100, 150, 200]">
           </md-paginator>
-          <button
+          <sam-button
             class="fields-control"
+            buttonText="Edit Fields"
+            buttonType="tertiary"
             (click)="toggleFieldsEditor()">
             Edit Fields
-          </button>
+          </sam-button>
+          <sam-modal
+            [showClose]="true"
+            #fieldsEditor
+            [title]="'Edit Fields'"
+            [type]="'info'"
+            [description]="'Edit fields for report'"
+            [submitButtonLabel]="'Yes'"
+            [cancelButtonLabel]="'No'">
+          </sam-modal>
         </div>
         <div *ngIf="editFields"
           class="fields-container">
@@ -282,7 +293,7 @@
           </sam-datatable>
         </div>
       </md-tab>
-      <md-tab label="Budget Summary">
+      <md-tab label="Summary">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
           iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
@@ -324,7 +335,7 @@
           mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
         </p>
       </md-tab>
-      <md-tab label="Listing Details">
+      <md-tab label="Charts">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
           iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 

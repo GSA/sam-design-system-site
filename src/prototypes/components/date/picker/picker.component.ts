@@ -233,7 +233,7 @@ interface ValidationResult {
         *ngIf="showCalendar"
         #calendarpopup
         id="sam-date-calendar-popup">
-        <div class="datepicker__calendar__nav" role="application">
+        <div class="datepicker__calendar__nav">
           <div tabindex="0"
             role="button"
             aria-label="Previous Year"
@@ -252,7 +252,7 @@ interface ValidationResult {
             </g>
           </svg>
           </div>
-          <div class="datepicker__calendar__nav__header" role="presentation">
+          <div class="datepicker__calendar__nav__header">
             <span>{{ currentMonth }}</span>
             <input
               #yearInput

@@ -73,7 +73,7 @@ export class SamInputMaskComponent extends SamFormControl implements OnInit {
         if (this.previousVal && this._value === '') {
             this.onChange(this._value);
             this.cdr.detectChanges();
-        } else if (this.maxlength && newVal && newVal.length == this.maxlength){
+        } else if (this.maxlength && newVal && newVal.length === this.maxlength) {
             this.onChange(this._value);
             this.cdr.detectChanges();
         }

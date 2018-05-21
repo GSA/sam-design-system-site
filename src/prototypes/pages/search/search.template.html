@@ -6,18 +6,38 @@
       <sam-icon name="slider-h"></sam-icon>
       Toggle filters
     </a>
-    <a>
-      <i class="fa fa-cloud"></i>
-      Save Search
-    </a>
+    <div class="page-toolbar-menu">
+      <a>
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+        Share
+      </a>
+      <a>
+        <i class="fa fa-cloud"></i>
+        Save Search
+      </a>
+    </div>
   </div>
   
   <md-sidenav-container>
     
     <md-sidenav #sidenav opened mode="side">
+      <div class="section navigation">
+        <h2>Workflow</h2>
+        <ul>
+          <li>
+            <a class="selected">DBA Workflow</a>
+          </li>
+          <li>
+            <a>SCA Workflow</a>
+          </li>
+          <li>
+            <a>Collective Bargaining Agreement</a>
+          </li>
+        </ul>
+      </div>
       
-      <div class="search-results-filters" [@filtersDrawer]="filtersDrawer">
-        
+      <div class="section search-results-filters" [@filtersDrawer]="filtersDrawer">
+        <h2>Filters</h2>
         <div samAccordion multi="true">
           <sam-expansion-panel>
             <sam-expansion-panel-header>
@@ -50,10 +70,29 @@
         
       </div>
       
+      <div class="section resources">
+        <h2>DBA References</h2>
+        <ul>
+          <li>
+            <a>DBAs due to be revised</a>
+          </li>
+          <li>
+            <a>DBA Rollover Crosswalk</a>
+          </li>
+          <li>
+            <a>Submit e98</a>
+          </li>
+        </ul>
+      </div>
     </md-sidenav>
     
+    <header class="header">
+      <h1>DBA Workflow Results</h1>
+      <p>{{ helpText }}</p>
+    </header>
+
+
     <div class="search-results-content">
-      <h1>Search Results</h1>
       <div class="selected-filters">
         <a class="sam-ui mini label">
           Status: Active
@@ -82,10 +121,11 @@
       </div>
       
       <div class="results-header">
-        <p class="showing-text">
-          Showing 1 to 10 of 20,643,214 results
-        </p>
-        
+        <md-paginator
+          class="showing-text"
+          [length]="20463214"
+          [pageSizeOptions]="[50, 100, 150, 200]">
+        </md-paginator>
         <div>
           <sort-by></sort-by>
         </div>
@@ -169,65 +209,6 @@
                 </ul>
           </sam-search-result-main>
         </sam-search-result>
-        <!-- <div class="search-result">
-          <h4 class="sam-ui header">
-            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam 
-            elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis 
-            est, vel luctus lacus. Maecenas non libero quis libero ullamcorper 
-            posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque 
-            ante.
-          </p>
-        </div>
-        
-        <div class="search-result">
-          <h4 class="sam-ui header">
-            <a>Cras condimentum, tellus a euismod sollicitudin</a>
-          </h4>
-          <p>
-            Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu. 
-            Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante, 
-            sed viverra purus eros id urna. Nam tristique rutrum enim, sagittis 
-            lobortis nisi porta eu. Praesent in dictum purus, ut hendrerit mi.
-          </p>
-        </div>
-        
-        <div class="search-result">
-          <h4 class="sam-ui header">
-            <a>Duis non justo velit. Etiam risus lacus, posuere</a>
-          </h4>
-          <p>
-            Cras maximus purus eget eros varius iaculis. Aenean velit lectus, 
-            vehicula eu tincidunt a, semper sed dui. Etiam eget nunc rhoncus, 
-            lacinia erat et, tristique erat.
-          </p>
-        </div>
-        
-        <div class="search-result">
-          <h4 class="sam-ui header">
-            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam 
-            elementum ipsum, vel facilisis turpis pretium nec. Nulla nec venenatis 
-            est, vel luctus lacus. Maecenas non libero quis libero ullamcorper 
-            posuere sit amet vehicula enim. Nam sed cursus enim, et scelerisque 
-            ante.
-          </p>
-        </div>
-        
-        <div class="search-result">
-          <h4 class="sam-ui header">
-            <a>Cras condimentum, tellus a euismod sollicitudin</a>
-          </h4>
-          <p>
-            Vivamus bibendum sapien id rutrum feugiat. Donec vel fermentum arcu. 
-            Quisque tincidunt, est et efficitur vestibulum, ipsum eros lacinia ante, 
-            sed viverra purus eros id urna. 
-          </p>
-        </div> -->
       </div>
       
     </div>

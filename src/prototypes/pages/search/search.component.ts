@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   trigger,
   state,
@@ -12,6 +12,8 @@ import {
   animation,
   group
 } from '@angular/animations';
+import { Http } from '@angular/http';
+import { Observable } from 'rxjs';
 
 const listItems = {
   state: {
@@ -203,12 +205,29 @@ const listItems = {
     ])
   ]
 })
-export class SearchPageComponent {
+export class SearchPageComponent
+  implements OnInit {
   filtersDrawer = 'open';
   selectedDomain = 'All Award Data';
   filterSlide: string;
 
   public listData = listItems;
+  public helpText: string;
+
+  constructor (public http: Http) {}
+
+  public ngOnInit () {
+    this.http.get('/assets/helpText.txt')
+      .map(
+        (response) => {
+          return response.text();
+        }
+      )
+      .subscribe(
+        (data) => this.helpText = data,
+        (err) => this.helpText = ''
+      );
+  }
 
   toggleFilters() {
     this.filtersDrawer = this.filtersDrawer === 'open' ? 'close' : 'open';

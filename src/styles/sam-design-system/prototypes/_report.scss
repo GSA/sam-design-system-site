@@ -34,3 +34,10 @@
 md-paginator button{
   background-color: transparent !important;
 }
+
+.fields-container {
+  > ul {
+    list-style-type: none;
+    columns: 2;
+  }
+}

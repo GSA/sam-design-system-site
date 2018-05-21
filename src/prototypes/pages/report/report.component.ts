@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ApplicationRef } from '@angular/core';
 import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
@@ -38,6 +38,7 @@ export class ReportDatabase {
 }
 
 export class ReportDataSource extends DataSource<any> {
+
   constructor(private _reportDatabase: ReportDatabase,
               private _paginator: MdPaginator,
               private _sort: SamSortDirective) {
@@ -107,12 +108,39 @@ export class ReportPageComponent implements OnInit {
   dataSource: ReportDataSource | null;
   displayedColumns = [];
 
+  public orgOptions: any[] = [
+    {label: 'Published Date', name: 'Published Date', value: 'Published Date'},
+    {label: 'Modified Date', name: 'Modified Date', value: 'Modified Date'}
+  ];
+
+  public assistanceOptions: any[] = [
+    { key: 'fg', value: 'Formula Grants'},
+    { key: 'fga', value: 'Formula Grants (Apportionments)'},
+    { key: 'fgca', value: 'Formula Grants (Cooperative Agreements)'},
+    { key: 'fghig', value: 'Formula Grants (Health Incentive Grants)' },
+    { key: 'ca', value: 'Cooperative Agreements'},
+    { key: 'cadg', value: 'Cooperative Agreements (Discretionary Grants)'}
+  ];
+
+  public assistanceConfig = {
+    keyProperty: 'key',
+    valueProperty: 'value'
+  };
+
+  public editFields = false;
+
   @ViewChild(MdPaginator) _paginator: MdPaginator;
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
-  ngOnInit() {
+
+  public ngOnInit() {
     this.connect();
   }
-  connect() {
+
+  public toggleFieldsEditor () {
+    this.editFields = !this.editFields;
+  }
+
+  public connect() {
     this.displayedColumns = [
       'Agency',
       'CFDANumber',

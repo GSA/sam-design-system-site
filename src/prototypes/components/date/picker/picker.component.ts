@@ -210,7 +210,7 @@ interface ValidationResult {
           [disabled]="disabled"
           [attr.id]="name"
           [template]="'__/__/____'"
-          maxlength="10"
+          [maxlength]="10"
           [placeholder]="placeholder"
           [disableFocusBehavior]="true"
           [(ngModel)]="inputText"

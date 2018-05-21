@@ -7,7 +7,7 @@ import { MdPaginator } from '@angular/material';
 import { SamSortDirective } from '../../components/table/sort.directive';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
-import { SamModalComponent } from '../../../../../sam-ui-elements/src/ui-kit/components/modal';
+import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
 
 export interface ProgramData {
   'Agency': string;
@@ -140,7 +140,7 @@ export class ReportPageComponent implements OnInit {
 
   public toggleFieldsEditor () {
     this.editFields = !this.editFields;
-    this.fieldsEditor.open();
+    // this.fieldsEditor.openModal();
   }
 
   public connect() {

@@ -143,9 +143,12 @@
       </div>
     </md-sidenav>
 
-    <header class="header">
-      <h1>
+    <header class="sam-ui header">
+      <p class="sup header">
         Federal Assistance Compliance Summary
+      </p>
+      <h1>
+        My Saved Report Criteria
       </h1>
     </header>
 
@@ -179,22 +182,25 @@
             [length]="_reportData.length"
             [pageSizeOptions]="[50, 100, 150, 200]">
           </md-paginator>
-          <sam-button
-            class="fields-control"
-            buttonText="Edit Fields"
-            buttonType="tertiary"
+          <div
+            class="fields-control mock-accordion"
             (click)="toggleFieldsEditor()">
             Edit Fields
-          </sam-button>
-          <sam-modal
+            <span
+              class="fa"
+              [ngClass]="{
+                'fa-angle-down': !editFields,
+                'fa-angle-up': editFields}">
+            </span>
+          </div>
+          <!-- <sam-modal
             [showClose]="true"
-            #fieldsEditor
             [title]="'Edit Fields'"
             [type]="'info'"
             [description]="'Edit fields for report'"
             [submitButtonLabel]="'Yes'"
             [cancelButtonLabel]="'No'">
-          </sam-modal>
+          </sam-modal> -->
         </div>
         <div *ngIf="editFields"
           class="fields-container">

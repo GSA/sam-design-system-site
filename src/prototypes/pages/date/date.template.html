@@ -32,8 +32,13 @@
     </div>
     <div>
         <material-datepicker 
+            #model4="ngModel"
+            [control]="model4.control"
+            [placeholder]="'mm/dd/yyyy'"
             [label]="'Example #4'"
-            [hint]="'3rd party picker, no support to work with @angular/forms and validations'" [name]="'example4'" [(date)]="example4"></material-datepicker>
+            [hint]="'Forked 3rd party picker, iffy 508 support'"
+            [name]="'example4'"
+            [(ngModel)]="example4"></material-datepicker>
         <p>Model value: {{ example4 | json }}</p>
     </div>
 </div>

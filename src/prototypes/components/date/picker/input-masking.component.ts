@@ -1,6 +1,6 @@
 import { Component, forwardRef, Input,
     ViewEncapsulation, ChangeDetectorRef,
-    ChangeDetectionStrategy, HostListener, OnInit } from '@angular/core';
+    ChangeDetectionStrategy, HostListener, OnInit, OnChanges } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { SamFormControl } from 'sam-ui-elements/src/ui-kit/form-controls/sam-form-control';
 import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
@@ -18,6 +18,7 @@ export const VALUE_ACCESSOR: any = {
         type='text'
         [attr.id]='name'
         [attr.placeholder]='placeholder'
+        [attr.maxlength]='maxlength'
         [ngModel]='value'
         (ngModelChange)='onModelChange($event)'
         (focus)='onFocus()'
@@ -26,10 +27,11 @@ export const VALUE_ACCESSOR: any = {
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SamInputMaskComponent extends SamFormControl implements OnInit {
+export class SamInputMaskComponent extends SamFormControl implements OnInit, OnChanges {
     @Input() template: string;
     @Input() placeholder: string;
     @Input() disableFocusBehavior: boolean = false;
+    @Input() maxlength: number;
 
     previousVal;
     pattern = /([^_\/\)\(-\s])/g;
@@ -71,6 +73,15 @@ export class SamInputMaskComponent extends SamFormControl implements OnInit {
         if (this.previousVal && this._value === '') {
             this.onChange(this._value);
             this.cdr.detectChanges();
+        } else if (this.maxlength && newVal && newVal.length === this.maxlength) {
+            this.onChange(this._value);
+            this.cdr.detectChanges();
+        }
+    }
+
+    ngOnChanges(changes) {
+        if (changes['maxlength'] && typeof this.maxlength !== 'number') {
+            throw Error('Wrong data type passed in for maxlength. Expected "number", got ' + typeof this.maxlength);
         }
     }
 

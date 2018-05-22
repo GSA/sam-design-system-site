@@ -1,0 +1,3 @@
+- `sam-design-system` contains any prototype or site-specific (`sam-design-system` only) styles
+- `sam-styles` contains all styles for finalized patterns. This is our transition goal.
+- transition contains styles that reset `sam-front-end` in order for `sam-styles` to work correctly

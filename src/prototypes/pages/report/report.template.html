@@ -184,68 +184,12 @@
             [length]="_reportData.length"
             [pageSizeOptions]="[50, 100, 150, 200]">
           </md-paginator>
-          <div
-            class="fields-control mock-accordion"
-            (click)="toggleFieldsEditor()">
-            Edit Fields
-            <span
-              class="fa"
-              [ngClass]="{
-                'fa-angle-down': !editFields,
-                'fa-angle-up': editFields}">
-            </span>
-          </div>
-          <!-- <sam-modal
-            [showClose]="true"
-            [title]="'Edit Fields'"
-            [type]="'info'"
-            [description]="'Edit fields for report'"
-            [submitButtonLabel]="'Yes'"
-            [cancelButtonLabel]="'No'">
-          </sam-modal> -->
-        </div>
-        <div *ngIf="editFields"
-          class="fields-container">
-          <ul>
-            <li>
-              <strong>Organization</strong>
-              <sam-checkbox
-                [name]="'radio'"
-                [options]="[
-                  {label: 'Dept or Ind. Agency', name: 'Dept or Ind. Agency', value: 'Dept or Ind. Agency'},
-                  {label: 'Subtier', name: 'Subtier', value: 'Subtier'}
-                ]"
-              ></sam-checkbox>
-            </li>
-            <li>
-              <strong>Listing</strong>
-              <sam-checkbox
-                [name]="'radio'"
-                [options]="[
-                  {label: 'CFDA Number', name: 'CFDA Number', value: 'CFDA Number'},
-                  {label: 'Title', name: 'Title', value: 'Title'},
-                  {label: 'Obligations', name: 'Obligations', value: 'Obligations'},
-                  {label: 'Post (FY16)', name: 'Post (FY16)', value: 'Post (FY16)'},
-                  {label: 'Current (FY17)', name: 'Current (FY17)', value: 'Current (FY17)'},
-                  {label: 'Budget (FY18)', name: 'Budget (FY18)', value: 'Budget (FY18)'}
-                ]"
-              ></sam-checkbox>
-            </li>
-            <li>
-              <strong>Status</strong>
-              <sam-checkbox
-                [name]="'radio'"
-                [options]="[
-                  {label: 'Current Status', name: 'Current Status', value: 'Current Status'},
-                  {label: 'Updated in Current Year', name: 'Updated in Current Year', value: 'Updated in Current Year'},
-                  {label: 'Obligations Updated', name: 'Obligations Updated', value: 'Obligations Updated'},
-                  {label: 'Last Updated Date', name: 'Last Updated Date', value: 'Last Updated Date'},
-                  {label: 'OMB Review Date', name: 'OMB Review Date', value: 'OMB Review Date'},
-                  {label: 'Last Published Date', name: 'Last Published Date', value: 'Last Published Date'}
-                ]"
-              ></sam-checkbox>
-            </li>
-          </ul>
+          <sam-button
+            class="fields-control"
+            buttonType="secondary"
+            buttonText="Edit Fields"
+            (click)="toggleFieldsEditor()"
+          ></sam-button>
         </div>
         <div class="report-table">
           <sam-datatable samSort [dataSource]="dataSource">
@@ -389,3 +333,41 @@
     
   </md-sidenav-container>
 </div>
+
+<sam-modal
+  [showClose]="true"
+  [title]="'Edit Fields'"
+  [type]="'info'"
+  [description]="'Edit fields for report'"
+  [submitButtonLabel]="'Done'"
+  [cancelButtonLabel]="'Cancel'">
+  <div class="fields-container">
+    <ul>
+      <li>
+        <strong>{{ options.organization.label }} </strong>
+        <sam-checkbox
+          [(ngModel)]="options.organization.selected"
+          [name]="options.organization.label"
+          [options]="options.organization.options"
+        ></sam-checkbox>
+      </li>
+      <li>
+        <strong>{{  options.listing.label }}</strong>
+        <sam-checkbox
+          [(ngModel)]="options.listing.selected"
+          [name]="options.listing.label"
+          [options]="options.listing.options"
+        ></sam-checkbox>
+      </li>
+      <li>
+        <strong>{{ options.status.label }}</strong>
+        <sam-checkbox
+          [(ngModel)]="options.status.selected"
+          [name]="options.status.label"
+          [options]="options.status.options"
+        ></sam-checkbox>
+      </li>
+    </ul>
+    <sam-pagination currentPage="1" totalPages="200"></sam-pagination>
+  </div>
+</sam-modal>

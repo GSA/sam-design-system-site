@@ -129,18 +129,19 @@ export class ReportPageComponent implements OnInit {
   };
 
   public editFields = false;
+  public options: any;
 
   @ViewChild(MdPaginator) _paginator: MdPaginator;
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
   @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
 
   public ngOnInit() {
+    this.options = this.checkboxOptions();
     this.connect();
   }
 
   public toggleFieldsEditor () {
-    this.editFields = !this.editFields;
-    // this.fieldsEditor.openModal();
+    this.fieldsEditor.openModal();
   }
 
   public connect() {
@@ -155,7 +156,64 @@ export class ReportPageComponent implements OnInit {
       'LastPublishedDate',
       'AutoPublished'
     ];
-    this.dataSource = new ReportDataSource(this.reportDatabase,
-      this._paginator, this._sort);
+
+    this.dataSource = new ReportDataSource(
+      this.reportDatabase,
+      this._paginator,
+      this._sort
+    );
+  }
+
+  public checkboxOptions (): {organization: any, listing: any, status: any} {
+
+    const organization = {
+      label: 'Organization',
+      options: [
+        {label: 'Dept or Ind. Agency', name: 'Dept or Ind. Agency', value: 'Dept or Ind. Agency'},
+        {label: 'Subtier', name: 'Subtier', value: 'Subtier'}
+      ],
+      selected: []
+    };
+    organization.options.forEach(
+      option => organization.selected.push(option.value)
+    );
+
+    const listing = {
+      label: 'Listing',
+      options: [
+        {label: 'CFDA Number', name: 'CFDA Number', value: 'CFDA Number'},
+        {label: 'Title', name: 'Title', value: 'Title'},
+        {label: 'Obligations', name: 'Obligations', value: 'Obligations'},
+        {label: 'Post (FY16)', name: 'Post (FY16)', value: 'Post (FY16)'},
+        {label: 'Current (FY17)', name: 'Current (FY17)', value: 'Current (FY17)'},
+        {label: 'Budget (FY18)', name: 'Budget (FY18)', value: 'Budget (FY18)'}
+      ],
+      selected: []
+    };
+    listing.options.forEach(
+      option => listing.selected.push(option.value)
+    );
+
+    const status = {
+      label: 'Status',
+      options: [
+        {label: 'Current Status', name: 'Current Status', value: 'Current Status'},
+        {label: 'Updated in Current Year', name: 'Updated in Current Year', value: 'Updated in Current Year'},
+        {label: 'Obligations Updated', name: 'Obligations Updated', value: 'Obligations Updated'},
+        {label: 'Last Updated Date', name: 'Last Updated Date', value: 'Last Updated Date'},
+        {label: 'OMB Review Date', name: 'OMB Review Date', value: 'OMB Review Date'},
+        {label: 'Last Published Date', name: 'Last Published Date', value: 'Last Published Date'}
+      ],
+      selected: []
+    };
+    status.options.forEach(
+      option => status.selected.push(option.value)
+    );
+
+    return {
+      organization,
+      listing,
+      status
+    };
   }
 }

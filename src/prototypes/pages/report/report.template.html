@@ -368,6 +368,10 @@
         ></sam-checkbox>
       </li>
     </ul>
-    <sam-pagination currentPage="1" totalPages="200"></sam-pagination>
+    <md-paginator
+      class="pagination-control"
+      [length]="'200'"
+      [pageSizeOptions]="[50, 100, 150, 200]">
+    </md-paginator> 
   </div>
 </sam-modal>

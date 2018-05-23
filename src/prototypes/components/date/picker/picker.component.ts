@@ -1,7 +1,6 @@
-/* tslint:disable */
 import {
   animate, Component, ViewChild, ElementRef, EventEmitter, Input, keyframes, OnChanges,
-  OnInit, Output, Renderer, SimpleChange, state, style, transition, trigger, forwardRef
+  OnInit, Output, Renderer, SimpleChange, state, style, transition, trigger, forwardRef, OnDestroy
 } from '@angular/core';
 import { FormControl, Validators, ControlValueAccessor,
   AbstractControl, NG_VALUE_ACCESSOR, ValidatorFn } from '@angular/forms';
@@ -9,16 +8,14 @@ import { FormControl, Validators, ControlValueAccessor,
 import { Calendar } from './calendar';
 import * as moment from 'moment';
 
-interface DateFormatFunction {
-  (date: Date): string;
-}
+type DateFormatFunction = (date: Date) => string;
 
 interface ValidationResult {
   [key: string]: boolean;
 }
-  
+
 @Component({
-  selector: 'material-datepicker',
+  selector: 'sam-datepicker',
   animations: [
     trigger('calendarAnimation', [
       transition('* => left', [
@@ -44,7 +41,7 @@ interface ValidationResult {
     multi: true
   }]
 })
-export class DatepickerComponent implements OnInit, OnChanges, ControlValueAccessor {
+export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, ControlValueAccessor {
   private readonly DEFAULT_FORMAT = 'MM/DD/YYYY';
 
   private dateVal: Date;
@@ -54,7 +51,7 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
   // two way bindings
   @Output() dateChange = new EventEmitter<Date>();
 
-  @Input() get date(): Date { return this.dateVal; };
+  @Input() get date(): Date { return this.dateVal; }
   set date(val: Date) {
     this.dateVal = val;
     this.dateChange.emit(val);
@@ -94,15 +91,38 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
   clickListener: Function;
   // forms
   yearControl: FormControl;
-
-  @ViewChild('calendarpopup') calendarpopup : ElementRef;
-  @ViewChild('calendarButton') calendarButton : ElementRef;
   _focusableString: string =
   'a[href], area, button, select, textarea, *[tabindex], \
   input:not([type="hidden"])';
   @Input() control: AbstractControl;
   @Input() defaultValidations: boolean = true;
   @ViewChild('wrapper') wrapper;
+  @ViewChild('calendarpopup') calendarpopup: ElementRef;
+  @ViewChild('calendarButton') calendarButton: ElementRef;
+
+  static dateValidation() {
+    const minYear = 1000;
+    return (c: AbstractControl) => {
+        const error = {
+            dateError: {
+                message: ''
+            }
+        };
+        if (c.dirty && (c.value && c.value !== undefined)) {
+            const dateM = moment(c.value);
+            if (!dateM.isValid()) {
+                error.dateError.message = 'Invalid date';
+                return error;
+            } else {
+                if (dateM.get('year') < minYear) {
+                    error.dateError.message = 'Please enter 4 digit year';
+                    return error;
+                }
+            }
+        }
+        return undefined;
+    };
+  }
 
   constructor(private renderer: Renderer, private elementRef: ElementRef) {
     this.dateFormat = this.DEFAULT_FORMAT;
@@ -175,7 +195,7 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
 
   // -------------------------------------------------------------------------------- //
   // -------------------------------- State Management ------------------------------ //
-  // -------------------------------------------------------------------------------- //  
+  // -------------------------------------------------------------------------------- //
   /**
   * Closes the calendar and syncs visual components with selected or current date.
   * This way if a user opens the calendar with this month, scrolls to two months from now,
@@ -211,22 +231,22 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
     this.dayNamesOrdered = this.dayNames.slice(); // Copy DayNames with default value (weekStart = 0)
     if (this.weekStart < 0 || this.weekStart >= this.dayNamesOrdered.length) {
       // Out of range
-      throw Error(`The weekStart is not in range between ${0} and ${this.dayNamesOrdered.length - 1}`)
+      throw Error(`The weekStart is not in range between ${0} and ${this.dayNamesOrdered.length - 1}`);
     } else {
       this.calendar = new Calendar(this.weekStart);
       this.dayNamesOrdered = this.dayNamesOrdered.slice(this.weekStart, this.dayNamesOrdered.length)
         .concat(this.dayNamesOrdered.slice(0, this.weekStart)); // Append beginning to end
     }
   }
-  syncInputWithCal(){
-    if(this.inputText && this.inputText.length==10){
-      let date = new Date(this.inputText);
-      if(this.isDateValid(date) && !isNaN(date.getTime())){
+  syncInputWithCal() {
+    if (this.inputText && this.inputText.length === 10) {
+      const date = new Date(this.inputText);
+      if (this.isDateValid(date) && !isNaN(date.getTime())) {
         this.date = date;
         this.syncVisualsWithDate();
       }
       this.onChange(this.inputText);
-    } else if (this.inputText === ''){
+    } else if (this.inputText === '') {
       this.onChange('');
     }
   }
@@ -265,7 +285,7 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
   * Sets the visible input text
   */
   setInputText(date: Date): void {
-    let inputText = "";
+    let inputText = '';
     const dateFormat: string | DateFormatFunction = this.dateFormat;
     if (dateFormat === undefined || dateFormat === null) {
       inputText = moment(date).format(this.DEFAULT_FORMAT);
@@ -306,7 +326,7 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
       }
     }
     // check if new date would be within range
-    let newDate = new Date(newYear, newMonth);
+    const newDate = new Date(newYear, newMonth);
     let newDateValid: boolean;
     if (direction === 'left') {
       newDateValid = !this.rangeStart || newDate.getTime() >= this.rangeStart.getTime();
@@ -338,12 +358,12 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
    * @return {Array} The input with the invalid days replaced by 0
    */
   filterInvalidDays(calendarDays: Array<number>): Array<number> {
-    let newCalendarDays = [];
+    const newCalendarDays = [];
     calendarDays.forEach((day: number | Date) => {
       if (day === 0 || !this.isDateValid(<Date> day)) {
-        newCalendarDays.push(0)
+        newCalendarDays.push(0);
       } else {
-        newCalendarDays.push(day)
+        newCalendarDays.push(day);
       }
     });
     return newCalendarDays;
@@ -362,9 +382,9 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
   */
   onInputClick(): void {
     this.showCalendar = !this.showCalendar;
-    if(this.showCalendar){
+    if (this.showCalendar) {
       this.disablePageTabIndex();
-      window.setTimeout(()=>{
+      window.setTimeout(() => {
         this.calendarButton.nativeElement.scrollIntoView();
       });
     } else {
@@ -380,13 +400,13 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
     this.disablePageTabIndex();
   }
 
-  disablePageTabIndex(){
-    let els = document.querySelectorAll(this._focusableString);
-    for(let i = 0; i < els.length; i++){
-      let el = els.item(i);
-      let tabindex = el.getAttribute('tabindex') ? el.getAttribute('tabindex') : '0';
-      if(!el.getAttribute('tabindex')){
-        el.setAttribute('data-sam-noinitial-tabindex','1');
+  disablePageTabIndex() {
+    const els = document.querySelectorAll(this._focusableString);
+    for (let i = 0; i < els.length; i++) {
+      const el = els.item(i);
+      const tabindex = el.getAttribute('tabindex') ? el.getAttribute('tabindex') : '0';
+      if (!el.getAttribute('tabindex')) {
+        el.setAttribute('data-sam-noinitial-tabindex', '1');
       }
       el.setAttribute('data-sam-tabindex', tabindex);
       el.setAttribute('tabindex', '-1');
@@ -394,14 +414,15 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
     }
   }
 
-  enablePageTabIndex(){
-    let els = document.querySelectorAll('*[data-sam-tabindex]');
-    for(let i = 0; i < els.length; i++){
-      let el = els.item(i);
-      if(el.hasAttribute('data-sam-noinitial-tabindex')){
+  enablePageTabIndex() {
+    const els = document.querySelectorAll('*[data-sam-tabindex]');
+    for (let i = 0; i < els.length; i++) {
+      const el = els.item(i);
+      if (el.hasAttribute('data-sam-noinitial-tabindex')) {
         el.removeAttribute('tabindex');
+        el.removeAttribute('data-sam-noinitial-tabindex');
       } else {
-        el.setAttribute('tabindex',el.getAttribute('data-sam-tabindex'));
+        el.setAttribute('tabindex', el.getAttribute('data-sam-tabindex'));
       }
       el.removeAttribute('data-sam-tabindex');
       el.setAttribute('aria-hidden', 'false');
@@ -443,9 +464,9 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
   * Closes the calendar if a click is not within the datepicker component
   */
   handleGlobalClick(event: MouseEvent): void {
-    if(this.showCalendar && this.calendarpopup){
+    if (this.showCalendar && this.calendarpopup) {
       const withinElement = this.calendarpopup.nativeElement.contains(event.target);
-      if (!withinElement && this.calendarButton.nativeElement!=event.target) {
+      if (!withinElement && this.calendarButton.nativeElement !== event.target) {
         this.showCalendar = false;
         this.enablePageTabIndex();
       }
@@ -551,46 +572,21 @@ export class DatepickerComponent implements OnInit, OnChanges, ControlValueAcces
     return { 'invalidYear': true };
   }
 
-  onChange = (val)=>{};
-  onTouched = ()=>{};
-  registerOnChange(fn){
+  onChange = (val) => {};
+  onTouched = () => {};
+  registerOnChange(fn) {
     this.onChange = fn;
   }
 
-  registerOnTouched(fn){
+  registerOnTouched(fn) {
     this.onTouched = fn;
   }
 
-  setDisabledState(newState: boolean){
+  setDisabledState(newState: boolean) {
     this.disabled = newState;
   }
 
-  writeValue(val){
+  writeValue(val) {
     this.inputText = val;
   }
-
-  static dateValidation() {
-    const minYear = 1000;
-    return (c: AbstractControl) => {
-        const error = {
-            dateError: {
-                message: ''
-            }
-        };
-        if (c.dirty && (c.value && c.value !== undefined)) {
-            const dateM = moment(c.value);
-            if (!dateM.isValid()) {
-                error.dateError.message = 'Invalid date';
-                return error;
-            } else {
-                if (dateM.get('year') < minYear) {
-                    error.dateError.message = 'Please enter 4 digit year';
-                    return error;
-                }
-            }
-        }
-        return undefined;
-    };
 }
-}
-/* tslint:enable */

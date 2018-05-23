@@ -1,24 +1,24 @@
 <div class="usa-grid">
     <h1>Date Component Prototype</h1>
     <div>
-        <sam-datepicker
+        <sam-datepicker-prototype
             #model1="ngModel"
             [control]="model1.control"
             [name]="'example1'"
             [(ngModel)]="example1"
             label="Example #1"
-            hint="Uses experimental component and includes focus behavior #1. Default validations turned on."></sam-datepicker>
+            hint="Uses experimental component and includes focus behavior #1. Default validations turned on."></sam-datepicker-prototype>
         <p>Model value: {{ example1 | json }}</p>
     </div>
     <div>
-        <sam-datepicker
+        <sam-datepicker-prototype
             #model2="ngModel"
             [control]="model2.control"
             [name]="'example2'"
             [(ngModel)]="example2"
             [disableFocusBehavior]="false"
             label="Example #2"
-            hint="Uses experimental component and includes focus behavior #2. Default validations turned on."></sam-datepicker>
+            hint="Uses experimental component and includes focus behavior #2. Default validations turned on."></sam-datepicker-prototype>
         <p>Model value: {{ example2 | json }}</p>
     </div>
     <div>
@@ -31,14 +31,14 @@
         <p>Model value: {{ example3 | json }}</p>
     </div>
     <div>
-        <material-datepicker 
+        <sam-datepicker 
             #model4="ngModel"
             [control]="model4.control"
             [placeholder]="'mm/dd/yyyy'"
             [label]="'Example #4'"
             [hint]="'Forked 3rd party picker, iffy 508 support'"
             [name]="'example4'"
-            [(ngModel)]="example4"></material-datepicker>
+            [(ngModel)]="example4"></sam-datepicker>
         <p>Model value: {{ example4 | json }}</p>
     </div>
 </div>

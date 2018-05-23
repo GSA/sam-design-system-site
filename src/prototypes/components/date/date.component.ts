@@ -6,7 +6,7 @@ import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
 import * as moment from 'moment/moment';
 
 @Component({
-    selector: 'sam-datepicker',
+    selector: 'sam-datepicker-prototype',
     template: `
 <sam-label-wrapper #wrapper [label]='label' [hint]='hint' [name]='name'>
     <sam-input-mask

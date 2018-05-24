@@ -120,7 +120,11 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
     };
   }
 
-  constructor(public samFormService: SamFormService, public cdr: ChangeDetectorRef, private renderer: Renderer, private elementRef: ElementRef) {
+  constructor(
+    public samFormService: SamFormService,
+    public cdr: ChangeDetectorRef,
+    private renderer: Renderer,
+    private elementRef: ElementRef) {
     super(samFormService, cdr);
     this.dateFormat = this.DEFAULT_FORMAT;
     // view logic

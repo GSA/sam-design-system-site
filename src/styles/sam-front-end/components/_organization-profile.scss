@@ -1,10 +1,16 @@
 .organization-profile{
+  margin-left: 8px;
+
+  .sam-ui.grid > .column {
+    padding-left: 0;
+  }
+
   a:hover, .fa-pencil:hover{
     cursor: pointer;
   }
 
   .org-notification{
-    min-height: 100px;
+    min-height: 36px;
   }
 
   .current-hierarchy-link{

@@ -12,6 +12,10 @@
     margin-top: 0em;
   }
 
+  side-nav-filter + * {
+    padding-top: 5rem !important;
+  }
+
   /*
    * Responsive
    */
@@ -34,6 +38,11 @@
 }
 
 .usa-fsd-sidebar {
+  h1,
+  h2 {
+    margin-left: 0.9rem;
+  }
+
   h1 {
     margin-bottom: 0rem;
     font-size: 2.6rem
@@ -49,9 +58,10 @@
   .usa-avatar {
     width: 120px;
     height: 120px;
+    margin-bottom: 2.4rem;
+    margin-left: 1.8rem;
     border: 1px solid $color-base;
     text-align: center;
     font-size: 120px;
-    margin-left: (200px - 120px) / 2;
   }
 }

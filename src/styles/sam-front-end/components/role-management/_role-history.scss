@@ -1,0 +1,17 @@
+.role-history-page {
+
+  .field-span {
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.73em;
+    vertical-align: text-bottom;
+  }
+
+  .gray-bottom-border {
+    border-bottom: solid $color-gray-light 3px;
+  }
+
+  .form-section {
+    border: none !important;
+  }
+}

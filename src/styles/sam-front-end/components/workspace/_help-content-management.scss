@@ -2,6 +2,7 @@
 
 .help-content-management{
 
+
   .content-item{
     border: 1.5px solid $color-gray-light;
     padding: 5px;
@@ -82,6 +83,11 @@
 }
 
 .help-content-management-edit{
+
+  .file-container, sam-label-wrapper label {
+    max-width: 46rem;
+  }
+
   .section-border{
     border: 1px solid $color-gray-lighter;
     margin: 5px 0px;

@@ -46,25 +46,31 @@
     display: inline-block;
   }
 
-  sam-alert {
-    position: absolute;
-    text-align: left;
+  .usa-profile {
+    &.usa-profile-details,
+    &.usa-profile-password,
+    &.usa-profile-migrations {
+      sam-alert {
+        position: absolute;
+        text-align: left;
 
-    &.usa-alert-main {
-      position: static;
-      margin-top: -20px;
+        &.usa-alert-main {
+          position: static;
+          margin-top: -20px;
 
-      .usa-alert {
-        margin-bottom: 1em;
+          .usa-alert {
+            margin-bottom: 1em;
+          }
+        }
+
+        .usa-alert {
+          margin-top: 0px;
+        }
+
+        a {
+          font-weight: 600;
+        }
       }
-    }
-
-    .usa-alert {
-      margin-top: 0px;
-    }
-
-    a {
-      font-weight: 600;
     }
   }
 

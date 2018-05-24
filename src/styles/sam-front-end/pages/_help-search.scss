@@ -1,0 +1,16 @@
+.help-search {
+  .type-label {
+    width: 9rem !important;
+    text-align: center;
+  }
+
+  .help-result:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  sam-checkbox {
+    ul {
+      margin-top: .5rem;
+    }
+  }
+}

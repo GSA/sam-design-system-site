@@ -12,6 +12,10 @@
     }
   }
 
+  legend {
+    font-weight: 700;
+  }
+
   sam-label-wrapper {
     > div {
       margin-top: 1em;
@@ -19,6 +23,8 @@
   }
 
   fieldset {
+    margin-top: 2em;
+
     &.name,
     &.phone,
     &.office {
@@ -36,12 +42,31 @@
 
     &.name {
       margin-top: 0rem;
+
       fieldset {
         sam-label-wrapper:nth-child(1) {
           > div {
             margin-top: 1.5rem;
           }
         }
+      }
+
+      .usa-unstyled-list {
+        li:last-child {
+          label {
+            margin-bottom: 0em;
+          }
+        }
+      }
+    }
+  }
+
+  sam-intl-telephone-group {
+    fieldset {
+      margin-top: 0;
+
+      .usa-form-hint {
+        margin-bottom: 1em;
       }
     }
   }

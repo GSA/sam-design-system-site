@@ -1,8 +1,4 @@
 sam-header {
-  header > nav {
-    border-bottom: 2px solid #232A45;
-  }
-
   .panel-login {
     position: relative;
     width: 100%;
@@ -13,12 +9,11 @@ sam-header {
 
     .sam-ui.container {
       position: relative;
-
       > div {
         display: inline-block;
         position: absolute;
         width: 380px;
-        top: 12px;
+        top: 10px;
         right: 0px;
         background-color: #FFFFFF;
         border-right: 1px solid #232A45;
@@ -27,5 +22,32 @@ sam-header {
         text-align: left;
       }
     }
+  }
+
+  display: block;
+  position: relative;
+
+  .drawer-bg-animation{
+    background-color: #323a45;
+  }
+
+  .right.menu li > button.item:not(.notification-container) + div{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 66px;
+    left: 0;
+  }
+
+  .sam-ui.inverted.icon.menu .item{
+    color: white;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .sign-up-link{
+    margin: 8.5px 8.5px 8.5px 0;
   }
 }

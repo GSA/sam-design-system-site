@@ -4,8 +4,8 @@
     margin-right: 0;
   }
 
-  input, textarea, label, .input-container {
-    max-width: inherit;
+  input, textarea, label, .input-container, sam-label-wrapper > div, .file-container {
+    max-width: inherit !important;
   }
 
   .grey-wrapper {

@@ -1,24 +1,4 @@
 .usa-login {
-  .usa-grid {
-    .usa-grid {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-  }
-
-  > .usa-grid {
-    > .usa-width-one-half {
-      min-height: 400px;
-      &:nth-child(1) {
-        border-right: 1px solid #000000;
-      }
-
-      &:nth-child(2) {
-        padding-left: 2.35765%;
-      }
-    }
-  }
-
   h1 + span {
     display: inline-block;
     width: 90%;
@@ -43,6 +23,12 @@
 
   .usa-links {
     margin-top: 30px;
+  }
+
+  sam-fieldset-wrapper {
+    legend {
+      font-weight: 700;
+    }
   }
 
   .form-delivery,
@@ -100,14 +86,15 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    .form-otp,
-    .form-delivery {
-      width: auto;
+    > .sam-ui.grid {
+      > .column {
+        padding-top: 30px;
+      }
     }
 
-    .form-delivery {
-      margin-left: 1em;
-      margin-right: 1em;
+    form {
+      width: 32rem;
+      margin: 0 auto;
     }
   }
 }

@@ -1,12 +1,14 @@
 import {
   animate, Component, ViewChild, ElementRef, EventEmitter, Input, keyframes, OnChanges,
-  OnInit, Output, Renderer, SimpleChange, state, style, transition, trigger, forwardRef, OnDestroy
+  OnInit, Output, Renderer2, SimpleChange, state, style, transition, trigger, forwardRef, OnDestroy, ChangeDetectorRef, HostListener
 } from '@angular/core';
 import { FormControl, Validators, ControlValueAccessor,
   AbstractControl, NG_VALUE_ACCESSOR, ValidatorFn } from '@angular/forms';
 
 import { Calendar } from './calendar';
 import * as moment from 'moment';
+import { SamFormControl } from 'sam-ui-elements/src/ui-kit/form-controls/sam-form-control';
+import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
 
 type DateFormatFunction = (date: Date) => string;
 
@@ -41,13 +43,10 @@ interface ValidationResult {
     multi: true
   }]
 })
-export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, ControlValueAccessor {
+export class DatepickerComponent extends SamFormControl implements OnInit, OnChanges, OnDestroy, ControlValueAccessor {
   private readonly DEFAULT_FORMAT = 'MM/DD/YYYY';
 
   private dateVal: Date;
-  @Input() label: string;
-  @Input() hint: string;
-  @Input() name: string;
   // two way bindings
   @Output() dateChange = new EventEmitter<Date>();
 
@@ -57,7 +56,6 @@ export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, Contro
     this.dateChange.emit(val);
   }
   // api bindings
-  @Input() disabled: boolean;
   @Input() accentColor: string;
   @Input() altInputStyle: boolean;
   @Input() dateFormat: string | DateFormatFunction;
@@ -90,13 +88,11 @@ export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, Contro
   // listeners
   clickListener: Function;
   // forms
+  disabled: boolean;
   yearControl: FormControl;
   _focusableString: string =
   'a[href], area, button, select, textarea, *[tabindex], \
   input:not([type="hidden"])';
-  @Input() control: AbstractControl;
-  @Input() defaultValidations: boolean = true;
-  @ViewChild('wrapper') wrapper;
   @ViewChild('calendarpopup') calendarpopup: ElementRef;
   @ViewChild('calendarButton') calendarButton: ElementRef;
 
@@ -124,7 +120,14 @@ export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, Contro
     };
   }
 
-  constructor(private renderer: Renderer, private elementRef: ElementRef) {
+  @HostListener('document:click', ['$event']) documentClickHandler(event: MouseEvent) {
+    this.handleGlobalClick(event);
+  }
+
+  constructor(
+    public samFormService: SamFormService,
+    public cdr: ChangeDetectorRef) {
+    super(samFormService, cdr);
     this.dateFormat = this.DEFAULT_FORMAT;
     // view logic
     this.showCalendar = false;
@@ -144,12 +147,7 @@ export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, Contro
       'January', 'February', 'March', 'April', 'May', 'June', 'July',
       'August', 'September', 'October', 'November', ' December'
     ];
-    // listeners
-    this.clickListener = renderer.listenGlobal(
-      'document',
-      'click',
-      (event: MouseEvent) => this.handleGlobalClick(event)
-    );
+
     // form controls
     this.yearControl = new FormControl('', Validators.compose([
       Validators.required,
@@ -163,7 +161,7 @@ export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, Contro
     this.updateDayNames();
     this.syncVisualsWithDate();
 
-    if (this.control && this.defaultValidations) {
+    if (this.control && !this.disableValidation) {
         const validators: ValidatorFn[] = [];
         if (this.control.validator) {
             validators.push(this.control.validator);
@@ -570,20 +568,6 @@ export class DatepickerComponent implements OnInit, OnChanges, OnDestroy, Contro
       return null;
     }
     return { 'invalidYear': true };
-  }
-
-  onChange = (val) => {};
-  onTouched = () => {};
-  registerOnChange(fn) {
-    this.onChange = fn;
-  }
-
-  registerOnTouched(fn) {
-    this.onTouched = fn;
-  }
-
-  setDisabledState(newState: boolean) {
-    this.disabled = newState;
   }
 
   writeValue(val) {

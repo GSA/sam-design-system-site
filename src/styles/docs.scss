@@ -9,19 +9,19 @@
 
 @import "sam-front-end/all";
 
-/* Transition
+/* Reset
    ========================================================================== */
 
 /**
  * Removes overwrites that happen in sam-front-end layer
  */
 
-@import "transition/input";
-@import "transition/select";
-@import "transition/radio";
-@import "transition/label";
-@import "transition/button";
-@import "transition/title";
+@import "reset/input";
+@import "reset/select";
+@import "reset/radio";
+@import "reset/label";
+@import "reset/button";
+@import "reset/title";
 
 /* SAM Design System Pages
    ========================================================================== */

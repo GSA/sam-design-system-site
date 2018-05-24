@@ -26,7 +26,6 @@ import {
 
 import { SamDataTableModule } from './table';
 import { DatepickerProtoModule } from './date/picker/picker.module';
-import { SamDatePickerComponent } from './date/date.component';
 
 @NgModule({
   imports: [
@@ -55,7 +54,6 @@ import { SamDatePickerComponent } from './date/date.component';
     PickerLevel5Component,
     PickerLevel6Component,
     MainNavComponent,
-    SamDatePickerComponent,
   ],
   exports: [
     MainNavComponent,
@@ -67,7 +65,6 @@ import { SamDatePickerComponent } from './date/date.component';
     MdSortModule,
     CdkTableModule,
     SamDataTableModule,
-    SamDatePickerComponent,
     DatepickerProtoModule
   ]
 })

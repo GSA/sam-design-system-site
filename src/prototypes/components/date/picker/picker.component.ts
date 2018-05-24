@@ -1,6 +1,6 @@
 import {
   animate, Component, ViewChild, ElementRef, EventEmitter, Input, keyframes, OnChanges,
-  OnInit, Output, Renderer, SimpleChange, state, style, transition, trigger, forwardRef, OnDestroy, ChangeDetectorRef
+  OnInit, Output, Renderer2, SimpleChange, state, style, transition, trigger, forwardRef, OnDestroy, ChangeDetectorRef, HostListener
 } from '@angular/core';
 import { FormControl, Validators, ControlValueAccessor,
   AbstractControl, NG_VALUE_ACCESSOR, ValidatorFn } from '@angular/forms';
@@ -95,6 +95,9 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
   input:not([type="hidden"])';
   @ViewChild('calendarpopup') calendarpopup: ElementRef;
   @ViewChild('calendarButton') calendarButton: ElementRef;
+  @HostListener('document:click', ['$event']) documentClickHandler(event: MouseEvent) {
+    this.handleGlobalClick(event);
+  }
 
   static dateValidation() {
     const minYear = 1000;
@@ -122,9 +125,7 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
 
   constructor(
     public samFormService: SamFormService,
-    public cdr: ChangeDetectorRef,
-    private renderer: Renderer,
-    private elementRef: ElementRef) {
+    public cdr: ChangeDetectorRef) {
     super(samFormService, cdr);
     this.dateFormat = this.DEFAULT_FORMAT;
     // view logic
@@ -145,12 +146,7 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
       'January', 'February', 'March', 'April', 'May', 'June', 'July',
       'August', 'September', 'October', 'November', ' December'
     ];
-    // listeners
-    this.clickListener = renderer.listenGlobal(
-      'document',
-      'click',
-      (event: MouseEvent) => this.handleGlobalClick(event)
-    );
+
     // form controls
     this.yearControl = new FormControl('', Validators.compose([
       Validators.required,

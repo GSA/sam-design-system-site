@@ -95,9 +95,6 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
   input:not([type="hidden"])';
   @ViewChild('calendarpopup') calendarpopup: ElementRef;
   @ViewChild('calendarButton') calendarButton: ElementRef;
-  @HostListener('document:click', ['$event']) documentClickHandler(event: MouseEvent) {
-    this.handleGlobalClick(event);
-  }
 
   static dateValidation() {
     const minYear = 1000;
@@ -121,6 +118,10 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
         }
         return undefined;
     };
+  }
+
+  @HostListener('document:click', ['$event']) documentClickHandler(event: MouseEvent) {
+    this.handleGlobalClick(event);
   }
 
   constructor(

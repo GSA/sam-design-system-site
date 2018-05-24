@@ -1,55 +1,83 @@
-.org-create-page{
-
-
-  .create-org-form-section{
-    border-top: 1px $color-black solid;
+.org-create-page {
+  .create-org-page-hint {
+    position: absolute;
+    top: -55px;
+    left: 15px;
   }
 
-  .usa-input-error{
+  .usa-input-error {
+    padding-left: .5em !important;
+  }
+
+  .review-dates > .grid {
+    margin-top: .2em;
+  }
+
+  .create-org-border-section {
+    border: 1px solid $color-gray-lighter;
+    padding: 10px;
+    margin-top: 1em;
+    margin-bottom: 2px;
+  }
+
+  .usa-input-error {
     margin-top: 0;
   }
 
-  .org-create-label label{
+  .org-create-label label {
     font-weight: 400;
   }
 
-  .create-org-address-section label{
-    margin-top: 10px;
-  }
-
-  .create-org-code-section label{
+  .create-org-code-section label {
     margin-top: 10px;
     font-weight: bold;
   }
 
-  .create-org-basic-section label{
+  .create-org-basic-section label {
     font-weight: bold;
   }
 
-  .create-org-basic-section .sam-fieldset-wrapper fieldset ul li label{
+  .create-org-basic-section .sam-fieldset-wrapper fieldset ul li label {
     font-weight: 400;
     padding-left: 5px;
   }
 
-  .org-confirm-header{
-    border-bottom: 1px $color-black solid;
-  }
-
-  .org-confirm-body{
-    border-top: 1px $color-black solid;
-    border-bottom: 1px $color-black solid;
+  .org-confirm-body {
     margin-top: 2px;
   }
 
-  .fa-plus-circle:hover{
-    cursor: pointer;
-  }
-
-  .org-create-expand-link{
+  .org-create-expand-link {
     text-decoration: underline;
   }
 
-  .org-create-expand-link:hover{
+  .org-create-expand-link:hover, .fa-plus-circle:hover  {
     cursor: pointer;
+  }
+
+  .confirm-item{
+    display: flex;
+  }
+
+  .confirm-description{
+    font-weight: bold;
+    width: 190px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .confirm-value{
+    display: inline-block;
+  }
+
+  .org-type-block{
+    min-width: 100px;
+    display: inline-block;
+  }
+
+  .review-dates .column {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
   }
 }

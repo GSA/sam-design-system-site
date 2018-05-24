@@ -1,4 +1,10 @@
 sam-pagination {
+  text-align: center;
+
+  ul {
+    padding-left: 0;
+  }
+
   .disabled {
     opacity: .6;
     pointer-events: none;

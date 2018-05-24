@@ -40,3 +40,25 @@
     background-color: transparent;
   }
 }
+
+.usa-button-cancel{
+  display: inline-block;
+  background-color: $color-gray-lightest;
+  color: $color-cool-blue;
+  margin: 0em 0.25em 0em 0em;
+  padding: 0.9em 1.5em 0.9em;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 0.7em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  min-width: 100px;
+
+  &:hover {
+    background-color: $color-gray-light;
+    color: $color-cool-blue;
+    opacity: .6;
+  }
+}

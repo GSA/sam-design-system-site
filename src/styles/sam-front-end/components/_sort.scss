@@ -15,7 +15,6 @@ sam-sort{
       & > div{
         display: flex;
         label{
-          width: 40%;
           margin-right: 10px;
           align-self: center;
           white-space: nowrap;
@@ -28,7 +27,7 @@ sam-sort{
       border-radius: 0rem 0.3rem 0.3rem 0 !important;
       i{
         font-size: 15px !important;
-      } 
+      }
     }
   }
 }

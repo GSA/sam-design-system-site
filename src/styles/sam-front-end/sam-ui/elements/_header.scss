@@ -562,3 +562,11 @@ a.#{$prefix}.inverted.grey.header:hover {
 .#{$prefix}.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: $mediumFontSize;
 }
+
+/*-------------------
+      Truncating
+--------------------*/
+.#{$prefix}.header .truncate{
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -5,25 +5,13 @@
   }
 
   fieldset {
-    &.phone,
-    &.office {
-      label:nth-child(1) {
-        margin-top: 0rem;
-      }
-    }
-
-    &.name {
-      margin-top: 0rem;
-      fieldset {
-        label:nth-child(1) {
-          margin-top: 1.5rem;
-        }
-      }
-    }
-
     > div:nth-child(1) {
        margin-top: 1em;
     }
+  }
+
+  .forgot-content {
+    margin-top: 1em;
   }
 
   sam-alert {

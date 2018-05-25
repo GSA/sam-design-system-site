@@ -1,6 +1,6 @@
 import {
   animate, Component, ViewChild, ElementRef, EventEmitter, Input, keyframes, OnChanges,
-  OnInit, Output, Renderer2, SimpleChange, state, style, transition, trigger, forwardRef, OnDestroy, ChangeDetectorRef, HostListener
+  OnInit, Output, Renderer2, SimpleChange, state, style, transition, trigger, forwardRef, ChangeDetectorRef, HostListener
 } from '@angular/core';
 import { FormControl, Validators, ControlValueAccessor,
   AbstractControl, NG_VALUE_ACCESSOR, ValidatorFn } from '@angular/forms';
@@ -43,7 +43,7 @@ interface ValidationResult {
     multi: true
   }]
 })
-export class DatepickerComponent extends SamFormControl implements OnInit, OnChanges, OnDestroy, ControlValueAccessor {
+export class DatepickerComponent extends SamFormControl implements OnInit, OnChanges, ControlValueAccessor {
   private readonly DEFAULT_FORMAT = 'MM/DD/YYYY';
 
   private dateVal: Date;
@@ -85,8 +85,6 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
   animate: string;
   // colors
   colors: { [id: string]: string };
-  // listeners
-  clickListener: Function;
   // forms
   disabled: boolean;
   yearControl: FormControl;
@@ -185,10 +183,6 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
     if (changes['firstDayOfTheWeek'] || changes['dayNames']) {
       this.updateDayNames();
     }
-  }
-
-  ngOnDestroy() {
-    this.clickListener();
   }
 
   // -------------------------------------------------------------------------------- //

@@ -16,18 +16,18 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 // tabs/spacing matters for code example block
-var code_example = `TODO`;
+const code_example = `TODO`;
 
 @Component({
   selector: 'doc-sam-title',
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamTitleComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamTitleComponent";
-  typedoc_content = "";
-  
+  typedoc_target = 'SamTitleComponent';
+  typedoc_content = '';
+
   example = code_example;
-  
+
   public base = 'ADD_BASE_URL';
 
   constructor(

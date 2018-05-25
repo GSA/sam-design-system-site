@@ -22,7 +22,7 @@ const ignoredComponents = [
   'SamAutocompleteComponentRefactor',
   'SamInternationalPrefix',
   'SamTelephone',
-  
+
 ]
 
 function ObservableStream (observer, path) {
@@ -222,7 +222,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 // tabs/spacing matters for code example block
-var code_example = \`TODO\`;
+const code_example = \`TODO\`;
 
 @Component({
   selector: 'doc-${selector}',
@@ -233,11 +233,11 @@ var code_example = \`TODO\`;
 '
 })
 export class ${component}ExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "${component}";
-  typedoc_content = "";
-  
+  typedoc_target = '${component}';
+  typedoc_content = '';
+
   example = code_example;
-  
+
   public base = 'ADD_BASE_URL';
 
   constructor(

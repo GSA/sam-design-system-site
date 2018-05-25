@@ -16,7 +16,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 // tabs/spacing matters for code example block
-var code_example = `
+const code_example = `
 <sam-input-mask
   [disabled]="disabled"
   [attr.id]="name"
@@ -35,15 +35,15 @@ var code_example = `
   template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamInputMaskComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "SamInputMaskComponent";
-  typedoc_content = "";
-  
+  typedoc_target = 'SamInputMaskComponent';
+  typedoc_content = '';
+
   example = code_example;
   disabled = false;
   name = 'example';
   placeholder = 'mm/dd/yyyy';
   inputValue = '';
-  
+
   public base = '_docs/experimental/input-mask/';
 
   constructor(

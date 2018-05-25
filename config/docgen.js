@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const root = require('../helpers').root();
+//const root = require('../src/app/environment/helpers').root();
 const rxjs = require('rxjs');
 const Observable = rxjs.Observable;
 
@@ -19,7 +19,10 @@ const ignoredComponents = [
   'SamSidenavModule',
   'SidenavService',
   'SamTabComponent',
-  'SamAutocompleteComponentRefactor'
+  'SamAutocompleteComponentRefactor',
+  'SamInternationalPrefix',
+  'SamTelephone',
+  
 ]
 
 function ObservableStream (observer, path) {
@@ -82,8 +85,8 @@ function isAcceptableFileName(fileName) {
   }
 }
 
-const uiKitDir = path.resolve(__dirname + '/../../node_modules/sam-ui-elements/src/ui-kit');
-const docsDir = path.resolve(__dirname + '/../../src/_docs');
+const uiKitDir = path.resolve(__dirname + '/../node_modules/sam-ui-elements/src/ui-kit');
+const docsDir = path.resolve(__dirname + '/../src/_docs');
 
 function generateObs(dir) {
   return Observable.create((observer) => {

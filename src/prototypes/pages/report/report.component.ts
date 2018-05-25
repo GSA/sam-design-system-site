@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { ReportData } from './DataSource';
 import { MdPaginator } from '@angular/material';
-import { SamSortDirective } from '../../components/table/sort.directive';
+import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 

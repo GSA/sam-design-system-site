@@ -1741,7 +1741,7 @@ Floated Menu / Item
 .#{$prefix}.menu .lighter.grey.active.item,
 .#{$prefix}.lighter.grey.menu {
   background-color: $lighterGrey;
-  border: none !important;
+  //border: none !important;
 }
 .#{$prefix}.lighter.grey.menu .item:before {
   background-color: $offWhite;

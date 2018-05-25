@@ -1,0 +1,35 @@
+us-security-modal{
+    .modal-dialog{
+        .modal-content{
+            max-width:550px;
+            min-width:auto!important;//registration signup modal override
+        }
+
+        .modal-header{
+            background:#235591;
+            padding:10px 5px;
+            text-align:center;
+
+            img{
+                vertical-align: middle;
+            }
+        }
+
+        .modal-body{
+            text-align:center;
+        }
+        .usa-modal-content-btn-area > a{
+            padding:15.3px 25.5px;
+            @media only screen and (max-width: $mobileBreakpoint) {
+                display:block;
+            }
+            /*
+            display block for mobile view
+            */
+        }
+        .main-line{
+            margin: 0 auto 1em; 
+            max-width:375px;
+        }
+    }
+}

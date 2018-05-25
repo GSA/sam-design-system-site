@@ -1,17 +1,23 @@
-.organization-detail{
+.organization-detail {
+  .sam-ui.grid > .column {
+    padding-left: 0;
+  }
+
+  .sam-ui.grid {
+    margin: 0;
+  }
 
   .org-logo-container{
     min-height: 200px;
   }
 
   .org-logo-image{
-    padding: 5px;
-    opacity: 0.6;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 100%;
+    max-width: 200px;
   }
 
   .org-logo-insert-icon{

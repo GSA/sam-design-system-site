@@ -17,6 +17,16 @@
     }
   }
 
+  .sam-editor-wrapper {
+    > sam-label-wrapper {
+      > div {
+        > label:nth-child(1) {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+
   section {
     position: relative;
     margin-bottom: 4rem;
@@ -49,11 +59,10 @@
   .usa-form-group {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    margin-left: 1em;
 
     label {
       display: inline-block;
-      min-width: 180px;
+      min-width: 190px;
       margin-top: 0em;
       font-weight: 700;
       float: left;
@@ -62,10 +71,62 @@
     .usa-form-control {
       display: inline-block;
     }
+  }
 
-    &.kba {
-      label {
-        width: 48%;
+  sam-entity-picker,
+  sam-intl-telephone-group {
+    .usa-form-hint {
+      margin-bottom: 0.8em;
+    }
+  }
+
+  sam-entity-picker {
+    .sam-autocomplete {
+      margin-bottom: 1.5em;
+    }
+
+    sam-label-wrapper {
+      > div {
+        margin-top: 0;
+      }
+    }
+  }
+
+  sam-intl-telephone-group {
+    legend {
+      font-weight: bold;
+    }
+
+    sam-label-wrapper {
+      > div {
+        margin-top: 0em;
+
+        label {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  div.kba {
+    label {
+      font-weight: normal !important;
+    }
+  }
+
+  section.kba {
+    .column {
+      &:nth-child(1) {
+        width: auto;
+      }
+
+      &:nth-child(2) {
+        max-width: 100px;
+        overflow: hidden;
+
+        .kba {
+          overflow: hidden;
+        }
       }
     }
   }
@@ -116,6 +177,12 @@
     margin-top: 1em;
   }
 
+  sam-agency-picker-v2 {
+    sam-autocomplete-refactor + div {
+      margin-top: 1rem;
+    }
+  }
+
   section {
     > sam-alert {
       bottom: -34px;
@@ -123,7 +190,53 @@
     }
   }
 
+  #api,
   #deactivate {
+    h3 {
+      font-size: 1.4em;
+      font-weight: 600;
+    }
+
+    .usa-input-error.usa-input-error-message {
+      margin-top: 1rem;
+      margin-bottom: -0.5rem;
+    }
+
+    .grid-api {
+      margin-top: 1em;
+      margin-bottom: -1em;
+
+      .column {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        > span,
+        label {
+          display: inline-block;
+          line-height: 44px;
+        }
+
+        input[type="password"] {
+          margin-top: 0px;
+        }
+
+        > .div {
+          margin-bottom: 0.5em;
+        }
+
+        button {
+          margin-top: 1.5rem;
+          margin-right: 0px;
+        }
+
+        .text-right {
+          button {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+
     .usa-button-controls {
       text-align: left;
 

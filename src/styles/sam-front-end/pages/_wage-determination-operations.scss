@@ -1,0 +1,11 @@
+.wage-determination-operations {
+  #prime-subcon-name,
+  #prime-subcon-union,
+  #location-state,
+  #location-county {
+    sam-label-wrapper > div {
+      position: relative;
+      max-width: 46rem;
+    }
+  }
+}

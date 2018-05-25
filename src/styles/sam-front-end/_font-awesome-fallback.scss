@@ -1,6 +1,6 @@
 $fa_fallback_md: 15px;
 .fa-fallback-icons{
-    .fa-ambulance{ 
+    .fa-ambulance{
         &:before{
             content: none;
         }
@@ -9,7 +9,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-bars{ 
+    .fa-bars{
         &:before{
             content: none;
         }
@@ -44,7 +44,7 @@ $fa_fallback_md: 15px;
             }
         }
     }
-    .fa-comments{ 
+    .fa-comments{
         &:before{
             content: none;
         }
@@ -53,7 +53,18 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-sign-out{ 
+    .fa-comments-homepage{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-comments-homepage.png') no-repeat;
+        background-size: 34px 34px;
+        width: 68px;
+        height: 68px;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+    .fa-sign-out{
         &:before{
             content: none;
         }
@@ -62,7 +73,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file-text-o{ 
+    .fa-file-text-o{
         &:before{
             content: none;
         }
@@ -71,7 +82,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-pie-chart{ 
+    .fa-pie-chart{
         &:before{
             content: none;
         }
@@ -80,7 +91,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-star-o{ 
+    .fa-star-o{
         &:before{
             content: none;
         }
@@ -89,7 +100,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-angle-down{ 
+    .fa-angle-down{
         &:before{
             content: none;
         }
@@ -98,7 +109,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-book{ 
+    .fa-book{
         &:before{
             content: none;
         }
@@ -107,7 +118,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-database{ 
+    .fa-database{
         &:before{
             content: none;
         }
@@ -116,7 +127,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file-word-o{ 
+    .fa-file-word-o{
         &:before{
             content: none;
         }
@@ -125,7 +136,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-plus-circle{ 
+    .fa-plus-circle{
         &:before{
             content: none;
         }
@@ -134,7 +145,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-star{ 
+    .fa-star{
         &:before{
             content: none;
         }
@@ -143,7 +154,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-angle-left{ 
+    .fa-angle-left{
         &:before{
             content: none;
         }
@@ -152,7 +163,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-briefcase{ 
+    .fa-briefcase{
         &:before{
             content: none;
         }
@@ -161,7 +172,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-edit{ 
+    .fa-edit{
         &:before{
             content: none;
         }
@@ -170,7 +181,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file{ 
+    .fa-file{
         &:before{
             content: none;
         }
@@ -179,7 +190,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-plus-square-o{ 
+    .fa-plus-square-o{
         &:before{
             content: none;
         }
@@ -188,7 +199,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-table{ 
+    .fa-table{
         &:before{
             content: none;
         }
@@ -197,7 +208,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-angle-right{ 
+    .fa-angle-right{
         &:before{
             content: none;
         }
@@ -206,7 +217,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-building{ 
+    .fa-building{
         &:before{
             content: none;
         }
@@ -215,7 +226,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-envelope-o{ 
+    .fa-envelope-o{
         &:before{
             content: none;
         }
@@ -224,7 +235,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-home{ 
+    .fa-home{
         &:before{
             content: none;
         }
@@ -233,7 +244,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-plus-square{ 
+    .fa-plus-square{
         &:before{
             content: none;
         }
@@ -242,7 +253,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-tag{ 
+    .fa-tag{
         &:before{
             content: none;
         }
@@ -251,7 +262,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-area-chart{ 
+    .fa-area-chart{
         &:before{
             content: none;
         }
@@ -260,7 +271,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-calendar-check-o{ 
+    .fa-calendar-check-o{
         &:before{
             content: none;
         }
@@ -269,7 +280,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-envelope{ 
+    .fa-envelope{
         &:before{
             content: none;
         }
@@ -278,7 +289,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-html5{ 
+    .fa-html5{
         &:before{
             content: none;
         }
@@ -287,7 +298,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-plus{ 
+    .fa-plus{
         &:before{
             content: none;
         }
@@ -296,7 +307,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-times-circle-o{ 
+    .fa-times-circle-o{
         &:before{
             content: none;
         }
@@ -305,7 +316,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-circle-left{ 
+    .fa-arrow-circle-left{
         &:before{
             content: none;
         }
@@ -314,7 +325,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-caret-square-o-down{ 
+    .fa-caret-square-o-down{
         &:before{
             content: none;
         }
@@ -323,7 +334,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-exclamation-triangle{ 
+    .fa-exclamation-triangle{
         &:before{
             content: none;
         }
@@ -332,7 +343,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-info-circle{ 
+    .fa-info-circle{
         &:before{
             content: none;
         }
@@ -341,7 +352,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-save{ 
+    .fa-save{
         &:before{
             content: none;
         }
@@ -350,7 +361,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-times-circle{ 
+    .fa-times-circle{
         &:before{
             content: none;
         }
@@ -359,7 +370,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-circle-o-left{ 
+    .fa-arrow-circle-o-left{
         &:before{
             content: none;
         }
@@ -368,7 +379,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-chain{ 
+    .fa-chain{
         &:before{
             content: none;
         }
@@ -377,7 +388,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-external-link{ 
+    .fa-external-link{
         &:before{
             content: none;
         }
@@ -386,7 +397,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-line-chart{ 
+    .fa-line-chart{
         &:before{
             content: none;
         }
@@ -395,7 +406,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-search-plus{ 
+    .fa-search-plus{
         &:before{
             content: none;
         }
@@ -404,7 +415,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-times{ 
+    .fa-times{
         &:before{
             content: none;
         }
@@ -413,7 +424,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-circle-o-right{ 
+    .fa-arrow-circle-o-right{
         &:before{
             content: none;
         }
@@ -422,7 +433,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-check{ 
+    .fa-check{
         &:before{
             content: none;
         }
@@ -431,7 +442,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-fax{ 
+    .fa-fax{
         &:before{
             content: none;
         }
@@ -440,7 +451,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-link{ 
+    .fa-link{
         &:before{
             content: none;
         }
@@ -458,7 +469,16 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-trash{ 
+    .fa-search-workspace{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-search-dark.png') no-repeat;
+        background-size: 68px 68px;
+        width: 68px;
+        height: 68px;
+    }
+    .fa-trash{
         &:before{
             content: none;
         }
@@ -467,7 +487,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-circle-right{ 
+    .fa-arrow-circle-right{
         &:before{
             content: none;
         }
@@ -476,7 +496,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-chevron-down{ 
+    .fa-chevron-down{
         &:before{
             content: none;
         }
@@ -485,7 +505,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file-archive-o{ 
+    .fa-file-archive-o{
         &:before{
             content: none;
         }
@@ -494,16 +514,18 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-map-marker{ 
+    .fa-map-marker{
         &:before{
             content: none;
         }
         background: url('/assets/fonts/font-awesome/fallback/fa-map-marker.png') no-repeat;
-        background-size: $fa_fallback_md $fa_fallback_md;
-        width: $fa_fallback_md;
-        height: $fa_fallback_md;
+        background-size: 34px 34px;
+        width: 68px;
+        height: 68px;
+        background-position-x: 50%;
+        background-position-y: 50%;
     }
-    .fa-ship{ 
+    .fa-ship{
         &:before{
             content: none;
         }
@@ -512,7 +534,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-user-plus{ 
+    .fa-user-plus{
         &:before{
             content: none;
         }
@@ -521,7 +543,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-left{ 
+    .fa-arrow-left{
         &:before{
             content: none;
         }
@@ -530,7 +552,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-circle-thin{ 
+    .fa-circle-thin{
         &:before{
             content: none;
         }
@@ -539,7 +561,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file-excel-o{ 
+    .fa-file-excel-o{
         &:before{
             content: none;
         }
@@ -548,7 +570,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-map-signs{ 
+    .fa-map-signs{
         &:before{
             content: none;
         }
@@ -557,7 +579,18 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-sitemap{ 
+    .fa-map-signs-homepage{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-map-signs-homepage.png') no-repeat;
+        background-size: 34px 34px;
+        width: 68px;
+        height: 68px;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+    .fa-sitemap{
         &:before{
             content: none;
         }
@@ -566,7 +599,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-user{ 
+    .fa-user{
         &:before{
             content: none;
         }
@@ -575,7 +608,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-right{ 
+    .fa-arrow-right{
         &:before{
             content: none;
         }
@@ -584,16 +617,16 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-circle{ 
+    .fa-circle{
         &:before{
             content: none;
         }
         background: url('/assets/fonts/font-awesome/fallback/fa-circle.png') no-repeat;
-        background-size: $fa_fallback_md $fa_fallback_md;
-        width: $fa_fallback_md;
-        height: $fa_fallback_md;
+        background-size: 68px 68px;
+        width: 68px;
+        height: 68px;
     }
-    .fa-file-image-o{ 
+    .fa-file-image-o{
         &:before{
             content: none;
         }
@@ -602,7 +635,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-minus{ 
+    .fa-minus{
         &:before{
             content: none;
         }
@@ -611,7 +644,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-sliders{ 
+    .fa-sliders{
         &:before{
             content: none;
         }
@@ -620,7 +653,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-users{ 
+    .fa-users{
         &:before{
             content: none;
         }
@@ -629,7 +662,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-ban{ 
+    .fa-ban{
         &:before{
             content: none;
         }
@@ -638,7 +671,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-close{ 
+    .fa-close{
         &:before{
             content: none;
         }
@@ -647,7 +680,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file-pdf-o{ 
+    .fa-file-pdf-o{
         &:before{
             content: none;
         }
@@ -656,7 +689,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-pencil-square-o{ 
+    .fa-pencil-square-o{
         &:before{
             content: none;
         }
@@ -665,7 +698,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-spinner{ 
+    .fa-spinner{
         &:before{
             content: none;
         }
@@ -674,7 +707,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-bank{ 
+    .fa-bank{
         &:before{
             content: none;
         }
@@ -683,7 +716,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-cloud-download{ 
+    .fa-cloud-download{
         &:before{
             content: none;
         }
@@ -692,7 +725,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file-powerpoint-o{ 
+    .fa-file-powerpoint-o{
         &:before{
             content: none;
         }
@@ -701,7 +734,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-pencil{ 
+    .fa-pencil{
         &:before{
             content: none;
         }
@@ -710,7 +743,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-square{ 
+    .fa-square{
         &:before{
             content: none;
         }
@@ -719,7 +752,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-down{ 
+    .fa-arrow-down{
         &:before{
             content: none;
         }
@@ -728,7 +761,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-arrow-up{ 
+    .fa-arrow-up{
         &:before{
             content: none;
         }
@@ -737,7 +770,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-bell-o{ 
+    .fa-bell-o{
         &:before{
             content: none;
         }
@@ -746,7 +779,16 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-bold{ 
+    .fa-bell-o-workspace{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-bell-o-dark.png') no-repeat;
+        background-size: 68px 68px;
+        width: 68px;
+        height: 68px;
+    }
+    .fa-bold{
         &:before{
             content: none;
         }
@@ -755,7 +797,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-building-o{ 
+    .fa-building-o{
         &:before{
             content: none;
         }
@@ -764,7 +806,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-caret-down{ 
+    .fa-caret-down{
         &:before{
             content: none;
         }
@@ -773,7 +815,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-check-circle{ 
+    .fa-check-circle{
         &:before{
             content: none;
         }
@@ -782,7 +824,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-check-square-o{ 
+    .fa-check-square-o{
         &:before{
             content: none;
         }
@@ -791,7 +833,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-chevron-circle-right{ 
+    .fa-chevron-circle-right{
         &:before{
             content: none;
         }
@@ -800,7 +842,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-chevron-left{ 
+    .fa-chevron-left{
         &:before{
             content: none;
         }
@@ -809,7 +851,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-chevron-right{ 
+    .fa-chevron-right{
         &:before{
             content: none;
         }
@@ -818,7 +860,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-cloud{ 
+    .fa-cloud{
         &:before{
             content: none;
         }
@@ -827,7 +869,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-commenting-o{ 
+    .fa-commenting-o{
         &:before{
             content: none;
         }
@@ -836,7 +878,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-copy{ 
+    .fa-copy{
         &:before{
             content: none;
         }
@@ -845,7 +887,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-ellipsis-h{ 
+    .fa-ellipsis-h{
         &:before{
             content: none;
         }
@@ -854,7 +896,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-exclamation-circle{ 
+    .fa-exclamation-circle{
         &:before{
             content: none;
         }
@@ -863,7 +905,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-eye{ 
+    .fa-eye{
         &:before{
             content: none;
         }
@@ -872,7 +914,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-file-o{ 
+    .fa-file-o{
         &:before{
             content: none;
         }
@@ -881,7 +923,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-flag{ 
+    .fa-flag{
         &:before{
             content: none;
         }
@@ -890,7 +932,16 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-floppy-o{ 
+    .fa-flag-homepage{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-flag-homepage.png') no-repeat;
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .fa-floppy-o{
         &:before{
             content: none;
         }
@@ -899,7 +950,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-folder{ 
+    .fa-folder{
         &:before{
             content: none;
         }
@@ -908,7 +959,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-id-badge{ 
+    .fa-id-badge{
         &:before{
             content: none;
         }
@@ -917,7 +968,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-indent{ 
+    .fa-indent{
         &:before{
             content: none;
         }
@@ -926,7 +977,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-italic{ 
+    .fa-italic{
         &:before{
             content: none;
         }
@@ -935,7 +986,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-list-alt{ 
+    .fa-list-alt{
         &:before{
             content: none;
         }
@@ -944,7 +995,16 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-list-ol{ 
+    .fa-list-alt-workspace{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-list-alt-dark.png') no-repeat;
+        background-size: 68px 68px;
+        width: 68px;
+        height: 68px;
+    }
+    .fa-list-ol{
         &:before{
             content: none;
         }
@@ -953,7 +1013,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-list{ 
+    .fa-list{
         &:before{
             content: none;
         }
@@ -962,7 +1022,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-lock{ 
+    .fa-lock{
         &:before{
             content: none;
         }
@@ -971,7 +1031,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-newspaper-o{ 
+    .fa-newspaper-o{
         &:before{
             content: none;
         }
@@ -980,7 +1040,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-outdent{ 
+    .fa-outdent{
         &:before{
             content: none;
         }
@@ -989,7 +1049,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-paper-plane{ 
+    .fa-paper-plane{
         &:before{
             content: none;
         }
@@ -998,7 +1058,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-phone{ 
+    .fa-phone{
         &:before{
             content: none;
         }
@@ -1007,7 +1067,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-play-circle-o{ 
+    .fa-play-circle-o{
         &:before{
             content: none;
         }
@@ -1016,7 +1076,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-play-circle{ 
+    .fa-play-circle{
         &:before{
             content: none;
         }
@@ -1025,7 +1085,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-print{ 
+    .fa-print{
         &:before{
             content: none;
         }
@@ -1034,7 +1094,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-question-circle{ 
+    .fa-question-circle{
         &:before{
             content: none;
         }
@@ -1043,7 +1103,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-sort-amount-asc{ 
+    .fa-sort-amount-asc{
         &:before{
             content: none;
         }
@@ -1052,7 +1112,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-sort-amount-desc{ 
+    .fa-sort-amount-desc{
         &:before{
             content: none;
         }
@@ -1061,7 +1121,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-square-o{ 
+    .fa-square-o{
         &:before{
             content: none;
         }
@@ -1070,7 +1130,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-thumbs-down{ 
+    .fa-thumbs-down{
         &:before{
             content: none;
         }
@@ -1079,7 +1139,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-thumbs-o-down{ 
+    .fa-thumbs-o-down{
         &:before{
             content: none;
         }
@@ -1088,7 +1148,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-thumbs-o-up{ 
+    .fa-thumbs-o-up{
         &:before{
             content: none;
         }
@@ -1097,7 +1157,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-thumbs-up{ 
+    .fa-thumbs-up{
         &:before{
             content: none;
         }
@@ -1106,7 +1166,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-trash-o{ 
+    .fa-trash-o{
         &:before{
             content: none;
         }
@@ -1115,7 +1175,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-user-circle-o{ 
+    .fa-user-circle-o{
         &:before{
             content: none;
         }
@@ -1124,7 +1184,18 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-user-circle{ 
+    .fa-user-circle-o-homepage{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-user-circle-o-homepage.png') no-repeat;
+        background-size: 34px 34px;
+        width: 68px;
+        height: 68px;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+    .fa-user-circle{
         &:before{
             content: none;
         }
@@ -1133,7 +1204,7 @@ $fa_fallback_md: 15px;
         width: $fa_fallback_md;
         height: $fa_fallback_md;
     }
-    .fa-video-camera{ 
+    .fa-video-camera{
         &:before{
             content: none;
         }

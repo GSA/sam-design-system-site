@@ -1,14 +1,60 @@
-@import "role-details";
-@import "permission-selector";
-@import "role-sidenav";
-@import "role-workspace";
-@import "role-content";
-@import "object-details";
-@import "manage-request";
-@import "rolemgmt-workspace";
-@import "rolemgmt-sidenav";
-@import "rolemgmt-content";
-@import "request-details";
-@import "roles-directory";
-@import "bulk-update";
-@import "view-request-page";
+@import 'role-details';
+@import 'permission-selector';
+@import 'role-sidenav';
+@import 'role-workspace';
+@import 'role-content';
+@import 'object-details';
+@import 'manage-request';
+@import 'rolemgmt-workspace';
+@import 'rolemgmt-sidenav';
+@import 'rolemgmt-content';
+@import 'request-details';
+@import 'roles-directory';
+@import 'bulk-update';
+@import 'bulk-assign';
+@import 'role-history';
+@import 'view-request-page';
+@import 'view-access';
+@import 'view-assignment';
+
+[type='checkbox']:checked.permission + label::before {
+  background-color: #0071bc;
+  box-shadow: 0 0 0 1px #0071bc;
+}
+
+[type='checkbox'].permission + label::before,
+[type='checkbox']:focus.permission + label::before {
+  box-shadow: 0 0 0 2px #0071bc;
+}
+
+.existing-color {
+  color: $red;
+}
+
+.updated-color {
+  color: $green;
+}
+
+.default-color {
+  color: $color-gray-light;
+}
+
+.status-icon {
+  padding-top: 2px;
+  font-size: 140%;
+  display: inline-block;
+  max-width: 18px;
+}
+
+.span-group {
+  position: relative;
+  display: block;
+  padding: 3px 0px !important;
+}
+
+.status-span {
+  display: inline-block;
+  line-height: 1.73em;
+  vertical-align: text-bottom;
+  word-break: break-all;
+}

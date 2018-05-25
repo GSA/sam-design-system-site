@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 20040;
   background-color: #000000;
   opacity: .5;
   -webkit-backface-visibility: hidden;
@@ -18,7 +18,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 20050;
   outline: 0;
 
   .usa-alert{
@@ -28,7 +28,7 @@
   .modal-content {
     position: relative;
     background: #FCFCFC;
-    width: 600px;
+    max-width: 600px;
     margin: 30px auto;
 
     .modal-body {

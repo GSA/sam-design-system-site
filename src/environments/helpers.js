@@ -139,6 +139,7 @@ import { StaticPageComponent } from './static.component';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
+import {CdkTableModule} from '@angular/cdk';
 
 /**
  * \AppModule\` is the main entry point into Angular2's bootstraping process
@@ -151,7 +152,8 @@ import { SiteComponentsModule } from '../app/site-components/sitecomponents.modu
     FormsModule,
     SamUIKitModule,
     routing,
-    SiteComponentsModule
+		SiteComponentsModule,
+		CdkTableModule
   ],
   exports: [BaseExampleComponent]
 })

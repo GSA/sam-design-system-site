@@ -205,6 +205,7 @@ function generateComponentStub(fileObj) {
   const selector = fileObj.selector || '';
   const component = fileObj.component || '';
   return `
+/* tslint:disable */
 import {
   Component,
   OnInit,

@@ -1,6 +1,5 @@
 
 <div class="search-report">
-  
   <div class="page-toolbar">
     <a (click)="sidenav.toggle()">
       <sam-icon name="slider-h"></sam-icon>
@@ -17,24 +16,32 @@
       </a>
       <a>
         <i class="fa fa-cloud" aria-hidden="true"></i>
-        Save Filters
+        Save Criteria
       </a>
     </div>
   </div>
   
   <md-sidenav-container>
-    
     <md-sidenav #sidenav opened mode="side">
-      
-      <h4 class="sam report title">
-        Federal Assistance
-      </h4>
-      
-      <md-tab-group dynamicHeight="true" disableRipple="true">
-        
-        <md-tab label="Filters">
-          <div samAccordion multi="true">
-            
+
+      <div samAccordion multi="true">
+        <div class="section navigation">
+          <h2>Report Type</h2>
+          <ul>
+            <li>
+              <a class="selected">Compliance Summary</a>
+            </li>
+            <li>
+              <a>Budget Summary</a>
+            </li>
+            <li>
+              <a>Listing Details</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section search-results-filters">
+            <h2>Filters</h2>
             <sam-expansion-panel>
               <sam-expansion-panel-header>
                 Federal Organizations
@@ -45,71 +52,108 @@
             
             <sam-expansion-panel>
               <sam-expansion-panel-header>
-                Program Number
+                Updated for FY19
               </sam-expansion-panel-header>
-              <p>Lorem ipsum dolor sit amet</p>
+              <sam-checkbox
+                [name]="'radio'"
+                [options]="[
+                  {label: 'Yes', name: 'yes', value: 'yes'}
+                ]"
+              ></sam-checkbox>
             </sam-expansion-panel>
             
             <sam-expansion-panel>
               <sam-expansion-panel-header>
-                Program Title
+                Date
               </sam-expansion-panel-header>
-              <p>Lorem ipsum dolor sit amet</p>
+              <sam-select
+                [name]="'date type'"
+                [label]="'Date Type'"
+                [options]="orgOptions"
+              ></sam-select>
+              <sam-date-range-filter
+                [radioSelection]="'date'"
+              ></sam-date-range-filter>
             </sam-expansion-panel>
             
             <sam-expansion-panel>
               <sam-expansion-panel-header>
-                Program Number
+                Types of Assistance
               </sam-expansion-panel-header>
-              Lorem Ipsum
+              <sam-autocomplete-multiselect
+                [label]="'Types of Assistance'"
+                [options]="assistanceOptions"
+                [keyValueConfig]="assistanceConfig"
+              ></sam-autocomplete-multiselect>
             </sam-expansion-panel>
             
             <sam-expansion-panel>
               <sam-expansion-panel-header>
-                Last Updated Date
+                Eligibility
               </sam-expansion-panel-header>
-              Lorem Ipsum
+              <sam-autocomplete-multiselect
+                [label]="'Beneficiaries'"
+                [options]="assistanceOptions"
+                [keyValueConfig]="assistanceConfig"
+              ></sam-autocomplete-multiselect>
+              <sam-autocomplete-multiselect
+                [label]="'Applicants'"
+                [options]="assistanceOptions"
+                [keyValueConfig]="assistanceConfig"
+              ></sam-autocomplete-multiselect>
             </sam-expansion-panel>
             
             <sam-expansion-panel>
               <sam-expansion-panel-header>
-                OMB Review Date
+                Financial Codes
               </sam-expansion-panel-header>
-              Lorem Ipsum
+              <sam-autocomplete-multiselect
+                [label]="'Account Identification'"
+                [options]="assistanceOptions"
+                [keyValueConfig]="assistanceConfig"
+              ></sam-autocomplete-multiselect>
+              <sam-autocomplete-multiselect
+                [label]="'Tafs Code'"
+                [options]="assistanceOptions"
+                [keyValueConfig]="assistanceConfig"
+              ></sam-autocomplete-multiselect>
             </sam-expansion-panel>
-            
-            <sam-expansion-panel>
-              <sam-expansion-panel-header>
-                Last Published Date
-              </sam-expansion-panel-header>
-              Lorem Ipsum
-            </sam-expansion-panel>
-            
-            <sam-expansion-panel>
-              <sam-expansion-panel-header>
-                Auto Published
-              </sam-expansion-panel-header>
-              Lorem Ipsum
-            </sam-expansion-panel>
-            
-          </div>
-        </md-tab>
-        
-        <md-tab label="Fields">
-          <ul>
-            <li>Quisque quis ante ut turpis</li>
-            <li>Sed faucibus enim at.</li>
-            <li>Vivamus sit amet lectus.</li>
-            <li>Donec ac lacus ut sapien.</li>
-            <li>Morbi at risus sed magna.</li>
-            <li>Nulla venenatis odio.</li>
-          </ul>
-        </md-tab>
-        
-      </md-tab-group>
-      
-    </md-sidenav>
     
+            <sam-expansion-panel>
+              <sam-expansion-panel-header>
+                Audits
+              </sam-expansion-panel-header>
+              <sam-checkbox
+                [name]="'audit checkbox'"
+                [options]="[
+                  {label: 'Yes', name: 'yes', value: 'yes'}
+                ]"
+              ></sam-checkbox>
+            </sam-expansion-panel>
+        </div>
+
+        <div class="section resources">
+          <h2>Resources</h2>
+          <ul>
+            <li>
+              <a>About Federal Assitance</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </md-sidenav>
+
+    <header class="header">
+      <div class="sam-ui header">
+        <p class="sup header">
+          Federal Assistance Compliance Summary
+        </p>
+        <h1>
+          My Saved Report Criteria
+        </h1>
+      </div>
+    </header>
+
     <div class="selected-filters">
       <a class="sam-ui mini label">
         Department of Health and Hum...
@@ -133,9 +177,20 @@
     </div>
     
     <md-tab-group dynamicHeight="true" disableRipple="true">
-      <md-tab label="Compliance Summary">
-        <md-paginator [length]="_reportData.length" [pageSizeOptions]="[50, 100, 150, 200]">
-        </md-paginator>
+      <md-tab label="Table">
+        <div class="data-controls-container">
+          <md-paginator
+            class="pagination-control"
+            [length]="_reportData.length"
+            [pageSizeOptions]="[50, 100, 150, 200]">
+          </md-paginator>
+          <sam-button
+            class="fields-control"
+            buttonType="secondary"
+            buttonText="Edit Fields"
+            (click)="toggleFieldsEditor()"
+          ></sam-button>
+        </div>
         <div class="report-table">
           <sam-datatable samSort [dataSource]="dataSource">
             
@@ -190,7 +245,7 @@
           </sam-datatable>
         </div>
       </md-tab>
-      <md-tab label="Budget Summary">
+      <md-tab label="Summary">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
           iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
@@ -232,7 +287,7 @@
           mattis, tellus libero sodales purus, eu tempor augue risus nec ligula.
         </p>
       </md-tab>
-      <md-tab label="Listing Details">
+      <md-tab label="Charts">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a elit 
           iaculis, facilisis arcu eget, fringilla nulla. Cras dolor nisl, bibendum 
@@ -278,3 +333,45 @@
     
   </md-sidenav-container>
 </div>
+
+<sam-modal
+  [showClose]="true"
+  [title]="'Edit Fields'"
+  [type]="'info'"
+  [description]="'Edit fields for report'"
+  [submitButtonLabel]="'Done'"
+  [cancelButtonLabel]="'Cancel'">
+  <div class="fields-container">
+    <ul>
+      <li>
+        <strong>{{ options.organization.label }} </strong>
+        <sam-checkbox
+          [(ngModel)]="options.organization.selected"
+          [name]="options.organization.label"
+          [options]="options.organization.options"
+        ></sam-checkbox>
+      </li>
+      <li>
+        <strong>{{  options.listing.label }}</strong>
+        <sam-checkbox
+          [(ngModel)]="options.listing.selected"
+          [name]="options.listing.label"
+          [options]="options.listing.options"
+        ></sam-checkbox>
+      </li>
+      <li>
+        <strong>{{ options.status.label }}</strong>
+        <sam-checkbox
+          [(ngModel)]="options.status.selected"
+          [name]="options.status.label"
+          [options]="options.status.options"
+        ></sam-checkbox>
+      </li>
+    </ul>
+    <md-paginator
+      class="pagination-control"
+      [length]="'200'"
+      [pageSizeOptions]="[50, 100, 150, 200]">
+    </md-paginator> 
+  </div>
+</sam-modal>

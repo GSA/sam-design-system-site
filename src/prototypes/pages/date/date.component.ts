@@ -4,7 +4,6 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 @Component({
     selector: 'sam-date-demo',
     templateUrl: './date.template.html',
-
 })
 export class DatePageComponent {
     example1;

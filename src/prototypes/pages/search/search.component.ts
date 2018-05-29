@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   trigger,
   state,
@@ -12,6 +12,31 @@ import {
   animation,
   group
 } from '@angular/animations';
+import { Http } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+
+const listItems = {
+  state: {
+    label: 'State',
+    value: 'Arizona'
+  },
+  counties: {
+    label: 'Counties',
+    value: ['Pima', 'Pinal', 'Yavapai', 'Yuma']
+  },
+  modification: {
+    label: 'Modification #',
+    value: '3'
+  },
+  construction: {
+    label: 'Construction Type',
+    value: 'Building'
+  },
+  revisedDate: {
+    label: 'Last Revised Date',
+    value: new Date()
+  }
+};
 
 
 @Component({
@@ -180,10 +205,29 @@ import {
     ])
   ]
 })
-export class SearchPageComponent {
+export class SearchPageComponent
+  implements OnInit {
   filtersDrawer = 'open';
   selectedDomain = 'All Award Data';
   filterSlide: string;
+
+  public listData = listItems;
+  public helpText: string;
+
+  constructor (public http: Http) {}
+
+  public ngOnInit () {
+    this.http.get('/assets/helpText.txt')
+      .map(
+        (response) => {
+          return response.text();
+        }
+      )
+      .subscribe(
+        (data) => this.helpText = data,
+        (err) => this.helpText = ''
+      );
+  }
 
   toggleFilters() {
     this.filtersDrawer = this.filtersDrawer === 'open' ? 'close' : 'open';

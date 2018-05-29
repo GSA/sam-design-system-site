@@ -13,7 +13,9 @@ import {
   group
 } from '@angular/animations';
 import { Http } from '@angular/http';
-import { Observable } from 'rxjs/observable';
+/* tslint:disable */
+import { Observable } from 'rxjs';
+/* tslint:enable */
 
 const listItems = {
   state: {

@@ -1,3 +1,5 @@
+// Disabling lint as this is 3rd party code for demo only
+/* tslint:disable */
 import {
   Component,
   ViewChild,

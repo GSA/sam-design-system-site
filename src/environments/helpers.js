@@ -120,6 +120,7 @@ function generateModuleString(target) {
 		declarations.push(declaration);
 	});
 	return `
+/* tslint:disable */
 /******************************************************/
 /* File generated in ../config/helpers.js             */
 /******************************************************/
@@ -201,6 +202,7 @@ function generateRoutesString (docsTarget, staticTarget) {
 	}, '');
 
 	return `
+/* tslint:disable */
 /******************************************************/
 /* File generated in ../config/helpers.js             */
 /******************************************************/

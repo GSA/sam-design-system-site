@@ -13,7 +13,7 @@ import {
   group
 } from '@angular/animations';
 import { Http } from '@angular/http';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/observable';
 
 const listItems = {
   state: {

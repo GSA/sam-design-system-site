@@ -1,3 +1,5 @@
+// Disabling lint as this is 3rd party code for demo only
+/* tslint:disable */
 import { Component, Input, forwardRef  } from '@angular/core';
 import {NumberFormatter} from "@angular/common/src/pipes/intl";
 import { ControlValueAccessor,NG_VALUE_ACCESSOR } from '@angular/forms';

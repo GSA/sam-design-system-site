@@ -1,3 +1,5 @@
+// Disabling lint as this is 3rd party code for demo only
+/* tslint:disable */
 import {Component, OnInit, Input} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {SearchUtil} from '../wage-determination/search.util';

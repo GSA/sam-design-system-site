@@ -69,12 +69,14 @@ export class SamSearchResultHeaderComponent {
   @HostBinding('class') public classes = 'header';
 }
 
+/* tslint:disable */
 @Directive({
   selector: '[meta]',
 })
 export class SamSearchResultHeaderMetaRight {
   @HostBinding('class') public classes = 'meta';
 }
+/* tslint:enable */
 
 @Component({
   selector: 'sam-search-result-body',

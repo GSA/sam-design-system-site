@@ -1,0 +1,14 @@
+fsd-widget {
+  > .grid {
+    > .column {
+      .grid {
+        .column {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+      }
+    }
+  }
+
+  @include fsd-searchbar;
+}

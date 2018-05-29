@@ -75,4 +75,34 @@
     font-weight: 600;
     font-size: 2rem;
   }
+
+  #include-hierarchy{
+    width: auto;
+  }
+
+  #include-hierarchy + label::before {
+    height:  1.3rem;
+    line-height:  1.3rem;
+    margin-right:  0.3em;
+    width:  1.3rem;   
+  }
+
+  .domain-icon {
+    color: $blue;
+    font-size: 140%;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+
+  .v-middle {
+    vertical-align: middle;
+  }
+
+  .user-search-auto, .entity-search-auto {
+    .fa-times-circle {
+      display: none
+    }
+  }
+  
 }

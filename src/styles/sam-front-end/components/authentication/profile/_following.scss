@@ -1,0 +1,14 @@
+// IE10 and IE11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .usa-profile-subscriptions {
+    select {
+      background-image: url(/assets/img/arrow-down.png);
+      &:disabled {
+        background: #d6d7d9;
+      }
+    }
+    select::-ms-expand {
+      display: none;
+    }
+  }
+}

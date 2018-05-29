@@ -135,7 +135,6 @@ $large: $current-large;
 //@import 'components/search-header';
 @import 'components/searchbar';
 @import 'components/sort'; // REVIEW: Move to common components
-@import 'components/status_banner';
 @import 'components/table-entry';
 @import 'components/title-subtitle'; // REVIEW: Move to common components
 
@@ -167,14 +166,22 @@ $large: $current-large;
 //@import 'components/multiselect';
 @import 'components/pagination';
 //@import 'components/tabs';
+@import 'components/sam-time';
 @import 'components/toggle-switch';
 //@import 'components/well';
+@import 'components/watchlist';
 
+/*-------------------
+  Extended components
+--------------------*/
+@import 'components/us-security-modal';
+@import 'components/video-player';
 /*-------------------
      Pages
 --------------------*/
 // TODO: Move pages found in components
 // folder to the pages folder
+@import 'pages/help';
 @import 'pages/_help-support.scss';
 @import 'pages/entity-object-view';
 @import 'pages/opportunity';
@@ -186,6 +193,9 @@ $large: $current-large;
 @import 'pages/wage-determination';
 @import 'pages/assistance-listing-operations';
 @import 'pages/opportunities-operations';
+@import 'pages/wage-determination-operations';
+@import 'pages/help-search';
+@import 'pages/home';
 @import 'components/aac-confirm';
 @import 'components/aac-request';
 @import 'components/authentication';
@@ -200,7 +210,8 @@ $large: $current-large;
 @import 'components/users/index';
 @import 'components/role-management/role-managment';
 @import 'components/data-service/data-service';
-@import 'components/fh/fh';
+@import 'components/fh/index';
+@import 'components/upload';
 
 /*-------------------
      Templates
@@ -259,7 +270,7 @@ $large: $current-large;
   and show footer when scroll down
 */
 .occupy-page{
-  min-height: 77vh;
+  min-height: 40vh;
 }
 
 .overlay{
@@ -367,6 +378,13 @@ select {
   background-repeat: no-repeat;
 }
 
+// Make sure to color disabled checkboxes as grey
+[type="checkbox"]:disabled:checked + label::before {
+  background-color: #d6d7d9 !important;
+  box-shadow: 0 0 0 1px #aeb0b5 !important;
+  cursor: not-allowed;
+}
+
 // a method for creating a two column layout where the left and right column are approximately the same height (see grant-or-edit-access.template)
 .column-wrappable {
   li {
@@ -386,6 +404,10 @@ select {
   background-color: #f1f1f1;
 }
 
+.h5{
+  font-size: 1.5rem;
+}
+
 .h4{
   font-size: 2rem;
   font-weight: 600;
@@ -395,6 +417,35 @@ select {
   font-size: 2.3rem;
 }
 
+.h2 {
+  font-size: 3rem;
+}
+
 .h1{
   font-size: 4rem;
+}
+
+.form-section {
+  border: 1px solid #d6d7d9;
+  padding: 10px;
+  margin-top: 1em;
+  margin-bottom: 2px;
+}
+
+.screenreader {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* The legend should at least have at much space between it and the items as the
+   items have between themselves
+ */
+sam-radio-button, sam-checkbox {
+  legend:not(:empty) {
+    min-height: 2.25em;
+  }
 }

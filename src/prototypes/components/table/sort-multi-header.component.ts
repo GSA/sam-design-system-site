@@ -2,7 +2,7 @@ import {
     ChangeDetectionStrategy, Injectable, ChangeDetectorRef, Component, Input,
     Optional, ViewEncapsulation, OnDestroy, OnInit, HostBinding, HostListener
   } from '@angular/core';
-import {SamSortDirective, SamSortable, SortDirection} from './sort.directive';
+import {SamSortDirective, SamSortable, SortDirection} from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import {SamMultiSortDirective, SamMultiSortable} from './multicol-sort.directive';
 import {CdkColumnDef, coerceBooleanProperty} from '@angular/cdk';
 import {Subscription} from 'rxjs/Subscription';

@@ -2,4 +2,23 @@
   .classification-location {
     font-weight: 600;
   }
+
+  opp-form-contact-info {
+    #poc-primary,
+    #poc-secondary {
+      sam-text > sam-label-wrapper > div {
+        position: relative;
+        max-width: 46rem;
+      }
+    }
+  }
 }
+
+.notice-id-input {
+  display: inline;
+}
+
+.ivl-contact{
+  word-break: break-all;
+}
+

@@ -1,0 +1,50 @@
+$line-height: 4rem;
+$sub-item-color: #f6f6f6;
+
+.learning-center {
+  .help-sidenav {
+    margin-left: 0;
+    padding-left: 0;
+    border-bottom: 1px solid black;
+
+    a {
+      color: black;
+      font-weight: normal;
+    }
+
+    a.active {
+      color: #132947;
+      font-weight: bold;
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .item, .sub-item {
+      list-style-type: none;
+      line-height: $line-height;
+      height: $line-height;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .item {
+      border-top: 1px solid black;
+    }
+
+    .sub-item {
+      background-color: $sub-item-color;
+    }
+
+    .sub-item:not(:last-child) {
+      border-bottom: 2px solid white;
+    }
+
+  }
+}

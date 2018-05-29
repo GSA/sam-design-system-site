@@ -1,0 +1,57 @@
+$dark-blue: #102d50;
+$light-blue:  #0070b8;
+
+home {
+  @media screen and (max-width: 600px) {
+    .sam-is-free {
+      width: 120px !important;
+      height: 120px !important;
+      bottom: -126px !important;
+    }
+  }
+
+  .sam-ui[class*="very relaxed"].grid > .column:not(.row),
+  .sam-ui[class*="very relaxed"].grid > .row > .column,
+  .sam-ui.grid > [class*="very relaxed"].row > .column {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .provide-feedback:hover {
+    cursor: pointer;
+    color: lighten(#454443, 20%);
+  }
+
+  .home-section {
+    padding: 5rem 0 3rem 0;
+  }
+
+  .bg-blue {
+    background-color: $dark-blue;
+  }
+
+  h2 {
+    color: $dark-blue;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    color: $light-blue;
+  }
+
+  li > a {
+    color: $dark-blue;
+  }
+
+  li {
+    margin-bottom: .5rem;
+  }
+
+  .color-blue {
+    color: $dark-blue;
+  }
+
+  .color-light-blue {
+    color: $light-blue;
+  }
+}

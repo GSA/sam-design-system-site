@@ -26,6 +26,7 @@ import {
   SamSearchResultMainComponent,
   SamSearchResultHeaderMetaRight
 } from './search/sam-front-end-components/search-result';
+import { DatePageComponent } from './date/date.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -51,10 +52,11 @@ import {
     SamSearchResultMainComponent,
     SamSearchResultHeaderMetaRight,
     SamSortFilter,
-    SamSortComponent
+    SamSortComponent,
+    DatePageComponent
   ],
   providers: [
-    SearchUtil
+    SearchUtil,
   ]
 })
 export class PrototypesPagesModule {}

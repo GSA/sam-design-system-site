@@ -1,0 +1,19 @@
+.rm-widget {
+
+  .sam-autocomplete{
+    margin-top: 30px
+  }
+
+  .fa-times-circle {
+    display: none
+  }
+
+  .fsd-widget {
+    @include fsd-searchbar;
+
+    .sam-autocomplete {
+      margin-top: 0px;
+    }
+  }
+  
+}

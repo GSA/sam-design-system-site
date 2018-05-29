@@ -1,0 +1,21 @@
+.view-assignment-page {
+  .form-section {
+    border: none !important;
+  }
+
+  .ord-section {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: .5em;
+    margin-top: .5em;
+  }
+
+  .status-span{
+    padding: .3em 0;
+    width: 15em; 
+    background-color: #E2E2E2; 
+    text-align: center; 
+    border-radius: 3px;
+  }
+}

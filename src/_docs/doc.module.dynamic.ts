@@ -39,18 +39,25 @@ import { TabsExampleComponent } from './components/tabs/component-example';
 import { SamUploadComponentExampleComponent } from './components/upload/component-example';
 import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
+import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
 import { SamFocusDirectiveExampleComponent } from './directives/focus/component-example';
 import { StickyExampleComponent } from './directives/sticky/component-example';
 import { TabOutsideExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
+import { SamDataTableComponentExampleComponent } from './experimental/data-table/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
+import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
+import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
+import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
+import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
 import { SamYoutubeComponentExampleComponent } from './experimental/youtube/component-example';
 import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 import { AutocompleteMultiselectExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
@@ -78,6 +85,7 @@ import { StaticPageComponent } from './static.component';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
+import {CdkTableModule} from '@angular/cdk';
 
 /**
  * AppModule` is the main entry point into Angular2's bootstraping process
@@ -113,18 +121,25 @@ import { SiteComponentsModule } from '../app/site-components/sitecomponents.modu
     SamUploadComponentExampleComponent,
     ClickOutsideExampleComponent,
     SamDragDropDirectiveExampleComponent,
+    SamExternalLinkDirectiveExampleComponent,
     SamFocusDirectiveExampleComponent,
     StickyExampleComponent,
     TabOutsideExampleComponent,
     ButtonExampleComponent,
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
+    SamDataTableComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
+    SamInputMaskComponentExampleComponent,
+    SamLabelNextComponentExampleComponent,
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
+    SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamTitleComponentExampleComponent,
+    SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
     AutocompleteExampleComponent,
     AutocompleteMultiselectExampleComponent,
@@ -179,18 +194,25 @@ import { SiteComponentsModule } from '../app/site-components/sitecomponents.modu
     SamUploadComponentExampleComponent,
     ClickOutsideExampleComponent,
     SamDragDropDirectiveExampleComponent,
+    SamExternalLinkDirectiveExampleComponent,
     SamFocusDirectiveExampleComponent,
     StickyExampleComponent,
     TabOutsideExampleComponent,
     ButtonExampleComponent,
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
+    SamDataTableComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
+    SamInputMaskComponentExampleComponent,
+    SamLabelNextComponentExampleComponent,
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
+    SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamTitleComponentExampleComponent,
+    SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
     AutocompleteExampleComponent,
     AutocompleteMultiselectExampleComponent,
@@ -220,7 +242,8 @@ import { SiteComponentsModule } from '../app/site-components/sitecomponents.modu
     FormsModule,
     SamUIKitModule,
     routing,
-    SiteComponentsModule
+		SiteComponentsModule,
+		CdkTableModule
   ],
   exports: [BaseExampleComponent]
 })

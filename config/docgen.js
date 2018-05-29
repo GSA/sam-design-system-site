@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const root = require('../helpers').root();
+//const root = require('../src/app/environment/helpers').root();
 const rxjs = require('rxjs');
 const Observable = rxjs.Observable;
 
@@ -19,7 +19,10 @@ const ignoredComponents = [
   'SamSidenavModule',
   'SidenavService',
   'SamTabComponent',
-  'SamAutocompleteComponentRefactor'
+  'SamAutocompleteComponentRefactor',
+  'SamInternationalPrefix',
+  'SamTelephone',
+
 ]
 
 function ObservableStream (observer, path) {
@@ -82,8 +85,8 @@ function isAcceptableFileName(fileName) {
   }
 }
 
-const uiKitDir = path.resolve(__dirname + '/../../node_modules/sam-ui-elements/src/ui-kit');
-const docsDir = path.resolve(__dirname + '/../../src/_docs');
+const uiKitDir = path.resolve(__dirname + '/../node_modules/sam-ui-elements/src/ui-kit');
+const docsDir = path.resolve(__dirname + '/../src/_docs');
 
 function generateObs(dir) {
   return Observable.create((observer) => {
@@ -219,7 +222,7 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 // tabs/spacing matters for code example block
-var code_example = \`TODO\`;
+const code_example = \`TODO\`;
 
 @Component({
   selector: 'doc-${selector}',
@@ -230,11 +233,11 @@ var code_example = \`TODO\`;
 '
 })
 export class ${component}ExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = "${component}";
-  typedoc_content = "";
-  
+  typedoc_target = '${component}';
+  typedoc_content = '';
+
   example = code_example;
-  
+
   public base = 'ADD_BASE_URL';
 
   constructor(

@@ -12,17 +12,9 @@
   }
 
   .usa-alert {
-    position: absolute;
-    bottom: -60px;
-    right: 0px;
-  }
-
-  .usa-alerts {
-    position: absolute;
-  }
-
-  .usa-alert-text {
-    max-width: inherit !important;
+    margin-left: -170px;
+    padding-right: 40px;
+    transform: translateX(-100%);
   }
 
   .label-wrapper:nth-child(1) {

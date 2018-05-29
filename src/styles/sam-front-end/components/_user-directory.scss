@@ -3,12 +3,9 @@
     margin-top: 3em;
   }
 
-  sam-agency-picker {
-    .organization-container {
-      > label {
-        font-size: 1.2em;
-        font-weight: 700;
-      }
+  sam-agency-picker-v2 {
+    sam-autocomplete-refactor + div {
+      margin-top: 1rem;
     }
   }
 

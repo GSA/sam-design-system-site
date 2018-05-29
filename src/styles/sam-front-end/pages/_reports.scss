@@ -81,6 +81,7 @@
 .report__prompts {
   div.usa-accordion-content {
     position: relative;
+    overflow: visible;
   }
 
   .report__additionalprompts {
@@ -89,9 +90,12 @@
   }
 
   .report__promptBtns {
-    position: absolute;
-    bottom: 2.25em;
-    right: 1.25em;
+    // position: absolute;
+    // bottom: 2.25em;
+    // right: 1.25em;
+    display:block;
+    overflow:hidden;
+    text-align: right;
   }
 
   .includesBases label {
@@ -118,3 +122,12 @@
 .reportCount {
   padding-bottom: 2em;
 }
+
+.agOnlyPicker{
+  display:block;
+  width:460px;
+}
+// sam-agency-picker-v2 > sam-label-wrapper > div{
+//   display:block;
+//   width:460px;
+// }

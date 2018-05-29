@@ -33,18 +33,25 @@ import { TabsExampleComponent } from './components/tabs/component-example';
 import { SamUploadComponentExampleComponent } from './components/upload/component-example';
 import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
+import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
 import { SamFocusDirectiveExampleComponent } from './directives/focus/component-example';
 import { StickyExampleComponent } from './directives/sticky/component-example';
 import { TabOutsideExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
+import { SamDataTableComponentExampleComponent } from './experimental/data-table/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
+import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
+import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
+import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
+import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
 import { SamYoutubeComponentExampleComponent } from './experimental/youtube/component-example';
 import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 import { AutocompleteMultiselectExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
@@ -99,18 +106,25 @@ export const ROUTES: Routes = [
   { path: 'components/upload', component: SamUploadComponentExampleComponent },
   { path: 'directives/click-outside', component: ClickOutsideExampleComponent },
   { path: 'directives/drag-drop', component: SamDragDropDirectiveExampleComponent },
+  { path: 'directives/external-link', component: SamExternalLinkDirectiveExampleComponent },
   { path: 'directives/focus', component: SamFocusDirectiveExampleComponent },
   { path: 'directives/sticky', component: StickyExampleComponent },
   { path: 'directives/tab-outside', component: TabOutsideExampleComponent },
   { path: 'elements/button', component: ButtonExampleComponent },
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
+  { path: 'experimental/data-table', component: SamDataTableComponentExampleComponent },
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
   { path: 'experimental/icon', component: SamIconComponentExampleComponent },
+  { path: 'experimental/input-mask', component: SamInputMaskComponentExampleComponent },
+  { path: 'experimental/label', component: SamLabelNextComponentExampleComponent },
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageComponentExampleComponent },
+  { path: 'experimental/search', component: SamSearchComponentExampleComponent },
   { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
+  { path: 'experimental/title', component: SamTitleComponentExampleComponent },
+  { path: 'experimental/video-player', component: SamVideoPlayerComponentExampleComponent },
   { path: 'experimental/youtube', component: SamYoutubeComponentExampleComponent },
   { path: 'form-controls/autocomplete', component: AutocompleteExampleComponent },
   { path: 'form-controls/autocomplete-multiselect', component: AutocompleteMultiselectExampleComponent },

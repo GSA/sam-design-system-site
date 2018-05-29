@@ -30,6 +30,20 @@
     cursor: pointer;
   }
 
+  .access-action-icon, .first-action-icon{
+    text-align: center;
+    display: inline-block;
+    margin-left: .5em;
+    margin-right: 0;
+    height: 30px;
+    min-width: 30px;
+    color: $blue;
+  }
+
+  .first-action-icon{
+    margin-left: 0;
+  }
+
   .results-text {
     line-height: 4.4rem;
   }

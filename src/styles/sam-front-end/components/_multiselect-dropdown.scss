@@ -1,4 +1,9 @@
 sam-multiselect-dropdown {
+  &.right-alight .dropdown-list {
+    right: 0 !important;
+    left: inherit !important;
+  }
+
   .checkbox-item {
     white-space: nowrap;
   }

@@ -15,6 +15,12 @@
     }
   }
 
+  sam-modal {
+    .modal-content {
+      width: 700px;
+    }
+  }
+
   sam-label-wrapper {
     > div {
       margin-bottom: 1em;
@@ -27,6 +33,23 @@
 
       legend + .usa-form-hint {
         margin-bottom: 1em;
+      }
+    }
+  }
+
+  sidebar {
+    > .steps {
+      border: 0px none;
+
+      .step {
+        background-color: transparent;
+        color: $linkColor;
+        text-decoration: $linkUnderline;
+
+        &:hover {
+          color: $linkHoverColor;
+          text-decoration: $linkHoverUnderline;
+        }
       }
     }
   }
@@ -68,7 +91,7 @@
   .usa-toolbar {
     position: absolute;
     top: (51px - 37px) / 2;
-    left: 180px;
+    left: 176px;
   }
 
   .sam-actions {
@@ -167,6 +190,93 @@
     }
   }
 
+  #password,
+  .api {
+    legend {
+      font-size: 1.7rem;
+    }
+  }
+
+  sam-password {
+    .usa-password {
+      margin-top: 0.6em;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    .usa-form-large {
+      max-width: 100%;
+
+      > div {
+        max-width: 50%;
+      }
+
+      .usa-password-progress {
+        left: 50%;
+        margin-left: auto;
+
+        ul {
+          margin-left: 7rem;
+
+          .header {
+            margin-top: 1.3rem;
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .api {
+    .usa-input-error.usa-input-error-message {
+      margin-top: 1rem;
+      margin-bottom: -0.5rem;
+    }
+
+    .grid-api {
+      margin-top: 1em;
+      margin-bottom: -1em;
+
+      .column {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        > span,
+        label {
+          display: inline-block;
+          line-height: 44px;
+        }
+
+        input[type="password"] {
+          margin-top: 0px;
+        }
+
+        > .div {
+          margin-bottom: 0.5em;
+        }
+
+        button {
+          margin-top: 1.5rem;
+          margin-right: 0px;
+        }
+
+        .text-right {
+          button {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+
+    sam-fieldset-wrapper {
+      > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   .review {
     legend {
       margin-bottom: 0.5em;
@@ -189,6 +299,25 @@
         margin-top: 0.25em;
         margin-right: 0.3em;
       }
+    }
+
+    dl {
+      margin-top: 0px;
+
+      dd {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  system-history {
+    > .sam-ui {
+      margin-top: 3em !important;
+    }
+
+    legend {
+      margin-bottom: 2rem;
+      font-size: 2rem;
     }
   }
 

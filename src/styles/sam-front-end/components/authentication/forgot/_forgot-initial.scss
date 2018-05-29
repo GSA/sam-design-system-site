@@ -4,6 +4,10 @@
   max-width: 100%;
   margin: 0 auto;
 
+  label {
+    margin-top: 1em;
+  }
+
   button[type="submit"] {
     margin-bottom: 1.2rem;
   }

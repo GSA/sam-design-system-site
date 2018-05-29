@@ -24,15 +24,15 @@ import {
   MdChipsModule
 } from '@angular/material';
 
-import { SamDataTableModule } from './table';
+import { SamExperimentalDataTableModule } from './table';
+import { DatepickerProtoModule } from './date/picker/picker.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ComponentsRoutingModule,
-
-    SamDataTableModule,
+    SamExperimentalDataTableModule,
     SamUIKitModule,
     MdTabsModule,
     SamExpansionModule,
@@ -41,7 +41,8 @@ import { SamDataTableModule } from './table';
     MdPaginatorModule,
     MdSortModule,
     CdkTableModule,
-    MdChipsModule
+    MdChipsModule,
+    DatepickerProtoModule,
   ],
   declarations: [
     ComponentsComponent,
@@ -51,7 +52,7 @@ import { SamDataTableModule } from './table';
     PickerLevel4Component,
     PickerLevel5Component,
     PickerLevel6Component,
-    MainNavComponent
+    MainNavComponent,
   ],
   exports: [
     MainNavComponent,
@@ -62,8 +63,8 @@ import { SamDataTableModule } from './table';
     MdPaginatorModule,
     MdSortModule,
     CdkTableModule,
-    SamDataTableModule,
-    MdChipsModule
+    SamExperimentalDataTableModule,
+    DatepickerProtoModule,
   ]
 })
 export class PrototypesComponentsModule {}

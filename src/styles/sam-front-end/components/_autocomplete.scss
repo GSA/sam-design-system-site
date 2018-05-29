@@ -7,14 +7,19 @@
   display: inline-block;
   overflow: visible;
   width: 100%;
-  
 
-  & > sam-label-wrapper > div{
-    position: relative;
+  input::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
   }
 
   .input-container,
-  .sam-autocomplete-results {
+  .sam-autocomplete-results,
+  label[for=poc-primary-email],
+  label[for=poc-primary-full-name],
+  label[for=poc-secondary-email],
+  label[for=poc-secondary-full-name], {
     position: relative;
     max-width: 46rem;
   }
@@ -77,6 +82,10 @@
     margin-bottom: 1rem;
 
     li {
+      &.indented {
+        padding-left: 3.2rem;
+      }
+
       position: relative;
       border-top: 1px solid #eaeaea;
       font-size: 1.7rem;
@@ -102,6 +111,10 @@
     .category {
       font-weight: 900;
       margin-top: 1rem;
+
+      &:not(.selectable) {
+        pointer-events: none;
+      }
     }
   }
 }

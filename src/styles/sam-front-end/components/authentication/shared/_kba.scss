@@ -16,28 +16,46 @@
 
   .usa-input-error {
     position: inherit;
-    padding-left: 0rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
+
+    select,
+    input[type="text"],
+    input[type="password"] {
+      border: $input-border-width solid $color-gray;
+    }
+  }
+
+  .usa-kba-error {
+    select,
+    input[type="text"],
+    input[type="password"] {
+      border: 2px solid $color-secondary-dark;
+    }
+  }
+
+  .usa-input-error-message {
+    min-height: 32px;
   }
 
   .usa-additional_text {
     line-height: 3rem;
   }
 
+  select,
+  input[type="text"],
+  input[type="password"] {
+    position: relative;
+    max-width: 100%;
+    top: -3px;
+  }
+
+  label {
+    height: 3rem;
+    line-height: 3rem;
+  }
+
   .question {
-    width: 60%;
-
-    div {
-      padding-right: 2rem;
-    }
-
-    select {
-      position: relative;
-      max-width: none;
-      top: -3px;
-    }
-
     .usa-input-error {
       select {
         // To equalize decrease in padding from border size increase which affects line-height
@@ -52,15 +70,10 @@
 
     label {
       margin-top: 1rem;
-      line-height: 3rem;
     }
   }
 
   .answer {
-    position: relative;
-    width: 38%;
-    top: -2px;
-
     .usa-input-error {
       border-left-width: 0px;
     }

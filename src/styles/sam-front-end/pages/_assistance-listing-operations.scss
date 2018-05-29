@@ -1,5 +1,16 @@
 .assistance-listing-operations{
 
+  fal-form-contact-info {
+    sam-poc-entry {
+      sam-text, sam-autocomplete, sam-number, sam-text-area {
+        sam-label-wrapper > div > label {
+          position: relative;
+          max-width: 46rem;
+        }
+      }
+    }
+  }
+
   .usa-alert{
     width: 100%;
   }
@@ -73,6 +84,15 @@
       display: inline;
     }
 
+  }
+
+  .regional-office-form {
+    sam-text, sam-agency-picker-v2, sam-select, sam-text-area {
+      sam-label-wrapper > div > label, div.sam-ui.secondary.pointing.menu {
+        position: relative;
+        max-width: 46rem;
+      }
+    }
   }
 
 }

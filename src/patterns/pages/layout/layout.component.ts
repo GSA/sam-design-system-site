@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'sam-layout-demo-component',
-  template: '<h1>Hello, World</h1>'
+  templateUrl: './layout.template.html'
 })
 export class SamLayoutDemoComponent {}

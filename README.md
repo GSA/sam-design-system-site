@@ -14,7 +14,7 @@ npm link --only=production
 To link and setup your cloned environment
 ```
 git clone https://github.com/GSA/sam-design-system-site
-cd web-standards-site
+cd sam-design-system-site
 npm install
 npm link sam-ui-elements
 npm run start

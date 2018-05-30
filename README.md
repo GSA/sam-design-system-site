@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Setup local development
 Follow these steps to checkout sam-ui-elements in separate location in your local environment
 ```
-git clone https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements
+git clone https://github.com/GSA/sam-ui-elements
 cd sam-ui-elements
 git checkout main
 npm link --only=production
@@ -13,7 +13,7 @@ npm link --only=production
 
 To link and setup your cloned environment
 ```
-git clone https://github.helix.gsa.gov/GSA-IAE-APPS/web-standards-site
+git clone https://github.com/GSA/sam-design-system-site
 cd web-standards-site
 npm install
 npm link sam-ui-elements

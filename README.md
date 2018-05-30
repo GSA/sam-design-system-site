@@ -15,6 +15,7 @@ To link and setup your cloned environment
 ```
 git clone https://github.com/GSA/sam-design-system-site
 cd sam-design-system-site
+git checkout develop
 npm install
 npm link sam-ui-elements
 npm run start

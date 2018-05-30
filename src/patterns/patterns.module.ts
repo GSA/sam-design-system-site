@@ -37,8 +37,7 @@ import { PatternsHomeComponent } from './home/patterns-home.component';
     SamUIKitModule,
     SiteComponentsModule
   ],
-  exports: [
-  ],
+  exports: [],
 })
 export class ExamplesModule { }
 

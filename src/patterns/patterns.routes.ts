@@ -12,7 +12,6 @@ import { SidebarBreadcrumbsPageCodeComponent  } from './version-1/sidebar-breadc
 import { TitleOptionsPageComponent  } from './version-1/title-options.component';
 import { TitleOptionsPageCodeComponent  } from './version-1/title-options.component';
 
-
 const patternsRoutes: Routes = [
   {
     path: 'page',

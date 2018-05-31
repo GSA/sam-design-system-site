@@ -70,6 +70,7 @@
     margin: 0 0 16px;
     .intro{
       @include sam-typography-level-to-styles($config, lead);
+      text-transform: uppercase;
       display: block;
     }
   }

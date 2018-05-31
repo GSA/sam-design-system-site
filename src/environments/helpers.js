@@ -39,7 +39,7 @@ function getUIKitStructure(target){
 				component = results[2];
 			}
 		}
-		let currentPath = process.cwd() + "\\src\\docs\\";
+		let currentPath = path.join(process.cwd(),'/src/_docs/');
 		val = val.replace(currentPath, "");
 		val = val.replace(/\\\\/g,"/");
 		val = val.replace(/\\/g,"/");
@@ -85,9 +85,12 @@ function getStaticDirStructure(target){
 	  return val.match(regex);
 	});
 	files = files.map(function(val){
+		var filename = val.replace(path.join(target),"");
+		val = val.replace(path.join(process.cwd(), '/src/'),"");
 		val = val.replace(/\\\\/g,"/");
 		val = val.replace(/\\/g,"/");
-    var filename = val.replace(target,"");
+		filename = filename.replace(/\\\\/g, "/");
+		filename = filename.replace(/\\/g, "/");
 	  var link = filename.substring(1).replace(/\.md$/,"").toLowerCase().replace(/\s/g,"-");
 	  var section = link.substring(0,link.indexOf("/")).split("-").map(function(val){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())
@@ -190,14 +193,8 @@ function generateRoutesString (docsTarget, staticTarget) {
 		)
 	}, '');
 	let staticRoutes = staticFiles.reduce((prev, curr) => {
-
-		const rel = path.relative(__dirname, curr.file)
-			.split(path.sep)
-			.filter(word => word !== '..')
-			.join(path.sep)
-			
 		return prev.concat(
-			`\n  {\n    path: '${curr.link}',\n    component: StaticPageComponent,\n    data: { markdownfile: '${rel}' }\n  },`
+			`\n  {\n    path: '${curr.link}',\n    component: StaticPageComponent,\n    data: { markdownfile: '${curr.file}' }\n  },`
 		)
 	}, '');
 

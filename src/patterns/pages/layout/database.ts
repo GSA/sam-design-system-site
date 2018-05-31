@@ -44,6 +44,7 @@ export class SampleDataSource extends DataSource<any> {
               private _paginator: SamDatabankPaginationComponent,
               private _sort: SamSortDirective,
               private _fhFilter: FormControl,
+              private _dateFilter: FormControl
             ) {
     super();
   }
@@ -53,6 +54,7 @@ export class SampleDataSource extends DataSource<any> {
       this._sort.samSortChange,
       this._sampleDatabase.dataChange,
       this._fhFilter.valueChanges,
+      this._dateFilter.valueChanges
     ];
     return Observable.merge(...displayDataChanges).map(() => {
       let data = this.getSortedData();
@@ -66,6 +68,20 @@ export class SampleDataSource extends DataSource<any> {
         });
       }
 
+      // date filter
+      if (this._dateFilter.value && this._dateFilter.value !== 'Invalid Date') {
+        const dateB = new Date(this._dateFilter.value);
+        data = data.filter((row) => {
+          const dateA = new Date(row['Last Updated Date']);
+          if (dateA.getDate() === (dateB.getDate()+1) &&
+            dateA.getMonth() === dateB.getMonth() &&
+            dateA.getFullYear() === dateB.getFullYear()) {
+            return true;
+          }
+        });
+      }
+
+      // pagination
       const startIndex = this._paginator.currentPage * this._paginator.pageSize;
       this._paginator.totalPages = Math.ceil(data.length / 10);
       return data.splice(startIndex, this._paginator.pageSize);

@@ -49,19 +49,22 @@ export class SamLayoutDemoComponent {
   public options: any;
   public optionsBackup: any;
   public filterItems = [];
-  public curPage = 1;
+  public curPage = 0;
   public totalPages;
   public fhInputText;
+  public dateModel;
 
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
   @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
   @ViewChild('paginator') _paginator: SamDatabankPaginationComponent;
   @ViewChild('fhInput') fhInput: NgModel;
+  @ViewChild('dateFilter') dateFilter: NgModel;
 
   public ngOnInit() {
     this.options = this.checkboxOptions();
     this.connect();
 
+    //chips behavior
     const fhInputChipsObs = this.fhInput.control.valueChanges.subscribe((val) => {
       if (val) {
         const item = {
@@ -83,13 +86,32 @@ export class SamLayoutDemoComponent {
         });
       }
     });
+    const dateFilterChipsObs = this.dateFilter.control.valueChanges.subscribe((val) => {
+      if (val && val !== 'Invalid Date') {
+        const item = {
+          label: 'Date: ' + val,
+          type: 'dateFilter',
+          value: val
+        };
+
+        this.filterItems = this.filterItems.filter(filterItem => {
+          if (filterItem.type !== 'dateFilter') {
+            return true;
+          }
+        });
+
+        this.filterItems.push(item);
+      }
+    });
   }
 
   public toggleFieldsEditor () {
+    // backup in case of cancel action
     this.optionsBackup = cloneDeep(this.options);
     this.fieldsEditor.openModal();
   }
 
+  // setup datasource
   public connect() {
     this.referenceColumns = [
       'Agency',
@@ -108,10 +130,12 @@ export class SamLayoutDemoComponent {
       this.reportDatabase,
       this._paginator,
       this._sort,
-      this.fhInput.control
+      this.fhInput.control,
+      this.dateFilter.control
     );
   }
 
+  // setup modal checkboxes
   public checkboxOptions (): {organization: any, listing: any, status: any} {
 
     const organization = {
@@ -163,6 +187,7 @@ export class SamLayoutDemoComponent {
     };
   }
 
+  //modal action handlers
   cancelModalAction(){
     this.options = cloneDeep(this.optionsBackup);
   }
@@ -197,6 +222,9 @@ export class SamLayoutDemoComponent {
   }
 
   removeFilter(filterItem) {
+    if (filterItem.type === 'dateFilter') {
+      this.dateModel = null;
+    }
     if (filterItem.type === 'fhFilter') {
       this.fhInputText = null;
     }

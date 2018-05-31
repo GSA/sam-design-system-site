@@ -1,13 +1,20 @@
 <sam-toolbar></sam-toolbar>
 <sam-layout-b>
 	<sam-aside>
-    <!-- update with real agency filter -->
+    <!-- update with real 'Agency' filter -->
     <input
       class="sam transition input"
       placeholder="Select"
       #fhInput="ngModel"
       [(ngModel)]="fhInputText"
       type="text" />
+
+    <!-- update with real 'Last Updated Date' date filter -->
+    <sam-date
+      label='Last Updated Date'
+      #dateFilter="ngModel"
+      name='date-example'
+      [(ngModel)]="dateModel"></sam-date>
 	</sam-aside>
 	<sam-main>
     <!-- page title goes here? -->

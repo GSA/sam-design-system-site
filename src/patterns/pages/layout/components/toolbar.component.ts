@@ -8,12 +8,12 @@ import {
 @Component({
     selector: 'sam-toolbar',
     template: `
-  <div class="page-toolbar">
+  <div class="sam menu">
     <a>
       <sam-icon name="slider-h"></sam-icon>
       Toggle filters
     </a>
-    <div class="page-toolbar-menu">
+    <div class="section right">
       <a>
         <i class="fa fa-download" aria-hidden="true"></i>
         Download

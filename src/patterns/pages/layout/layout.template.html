@@ -1,7 +1,13 @@
 <sam-toolbar></sam-toolbar>
 <sam-layout-b>
 	<sam-aside>
-		test
+    <!-- update with real agency filter -->
+    <input
+      class="sam transition input"
+      placeholder="Select"
+      #fhInput="ngModel"
+      [(ngModel)]="fhInputText"
+      type="text" />
 	</sam-aside>
 	<sam-main>
     <!-- page title goes here? -->
@@ -13,7 +19,23 @@
     </h1>
     
     <!-- chips + save/clear filters -->
-
+    <div class="selected-filters">
+      <a *ngFor="let filterItem of filterItems" class="sam-ui mini label" (click)="removeFilter(filterItem)">
+        {{ filterItem.label }}
+        <i class="icon close fa fa-times"></i>
+      </a>
+      
+      <span class="options">
+        <a class="remove">
+          <i class="fa fa-cloud"></i>
+          Save Filters
+        </a>
+        <a class="remove">
+          Clear Filters
+        </a>
+      </span>
+    </div>
+      
     <!-- tabs -->
 
     <!-- pagination + edit fields button -->

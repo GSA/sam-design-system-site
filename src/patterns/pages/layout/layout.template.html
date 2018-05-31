@@ -11,7 +11,10 @@
     <!-- tabs -->
 
     <!-- pagination + edit fields button -->
-
+    <sam-databank-pagination
+      class="datatable-example"
+      #paginator [currentPage]="curPage" 
+      [totalPages]="totalPages"></sam-databank-pagination>
     <!-- datatable -->
 		<sam-datatable samSort [dataSource]="dataSource">
       <ng-container cdkColumnDef="Agency">

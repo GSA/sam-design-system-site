@@ -10,7 +10,7 @@ import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
 import { SamLayoutDemoComponent, SamActionBarComponent,
   SamAsideComponent, SamMainComponent, SamLayoutComponent,
-  SamToolbarComponent } from './layout';
+  SamToolbarComponent, SamDatabankPaginationComponent } from './layout';
 
 
 @NgModule({
@@ -29,7 +29,8 @@ import { SamLayoutDemoComponent, SamActionBarComponent,
     SamActionBarComponent,
     SamAsideComponent,
     SamMainComponent,
-    SamToolbarComponent
+    SamToolbarComponent,
+    SamDatabankPaginationComponent
   ]
 })
 export class PagesModule {}

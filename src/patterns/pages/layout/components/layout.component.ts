@@ -24,5 +24,9 @@ import {
     @ContentChild(SamMainComponent)
     public main: SamMainComponent;
   
-    public ngAfterContentInit () {}
+    public ngAfterContentInit () {
+      if(!this.main){
+        throw new Error('No SamMainComponent provided');
+      }
+    }
   }

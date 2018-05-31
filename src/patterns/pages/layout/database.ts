@@ -7,6 +7,7 @@ import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { FormControl, NgModel } from '@angular/forms';
+import { SamDatabankPaginationComponent } from '.';
 
 // rename
 export interface ProgramData {
@@ -40,21 +41,22 @@ export interface ProgramData {
 export class ReportDataSource extends DataSource<any> {
   
     constructor(private _reportDatabase: ReportDatabase,
-                //private _paginator: MdPaginator,
+                private _paginator: SamDatabankPaginationComponent,
                 private _sort: SamSortDirective
               ) {
       super();
     }
     connect(): Observable<ProgramData[]> {
       const displayDataChanges = [
-        //this._paginator.page,
+        this._paginator.pageChange,
         this._sort.samSortChange,
         this._reportDatabase.dataChange
       ];
       return Observable.merge(...displayDataChanges).map(() => {
         let data = this.getSortedData();
-        //const startIndex = this._paginator.pageIndex * this._paginator.pageSize;
-        return data.splice(0, 10);//this._paginator.pageSize);
+        const startIndex = this._paginator.currentPage * this._paginator.pageSize;
+        this._paginator.totalPages = Math.ceil(data.length / 10);
+        return data.splice(startIndex, this._paginator.pageSize);
       });
     }
     disconnect() {}

@@ -11,6 +11,7 @@ import { ReportDatabase, ReportDataSource } from './database';
 import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
+import { SamDatabankPaginationComponent } from '.';
 
 
 @Component({
@@ -45,9 +46,12 @@ export class SamLayoutDemoComponent {
   public editFields = false;
   public options: any;
   public filterItems = [];
+  public curPage = 1;
+  public totalPages;
 
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
   @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
+  @ViewChild('paginator') _paginator: SamDatabankPaginationComponent;
 
   public ngOnInit() {
     this.options = this.checkboxOptions();
@@ -74,7 +78,7 @@ export class SamLayoutDemoComponent {
     // data table
     this.dataSource = new ReportDataSource(
       this.reportDatabase,
-      //this._paginator,
+      this._paginator,
       this._sort,
     );
   }

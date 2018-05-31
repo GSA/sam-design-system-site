@@ -6,6 +6,7 @@
     $config: sam-typography-config();
   }
 
+  @include sam-base-typography($config);
   @include sam-breadcrumbs-typography($config);
 
 }

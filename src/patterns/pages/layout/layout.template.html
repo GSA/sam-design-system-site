@@ -88,7 +88,9 @@
   [type]="'info'"
   [description]="'Edit fields for report'"
   [submitButtonLabel]="'Done'"
-  [cancelButtonLabel]="'Cancel'">
+  [cancelButtonLabel]="'Cancel'"
+  (close)="cancelModalAction()"
+  (submit)="submitModalAction()">
   <div class="fields-container">
     <ul>
       <li>
@@ -97,7 +99,6 @@
           [(ngModel)]="options.organization.selected"
           [name]="options.organization.label"
           [options]="options.organization.options"
-          (ngModelChange)="toggleColumns()"
         ></sam-checkbox>
       </li>
       <li>
@@ -106,7 +107,6 @@
           [(ngModel)]="options.listing.selected"
           [name]="options.listing.label"
           [options]="options.listing.options"
-          (ngModelChange)="toggleColumns()"
         ></sam-checkbox>
       </li>
       <li>
@@ -115,7 +115,6 @@
           [(ngModel)]="options.status.selected"
           [name]="options.status.label"
           [options]="options.status.options"
-          (ngModelChange)="toggleColumns()"
         ></sam-checkbox>
       </li>
     </ul>

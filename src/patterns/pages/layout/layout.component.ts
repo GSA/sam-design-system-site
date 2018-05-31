@@ -12,6 +12,7 @@ import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-t
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { SamDatabankPaginationComponent } from '.';
+import { cloneDeep } from 'lodash';
 
 
 @Component({
@@ -46,6 +47,7 @@ export class SamLayoutDemoComponent {
 
   public editFields = false;
   public options: any;
+  public optionsBackup: any;
   public filterItems = [];
   public curPage = 1;
   public totalPages;
@@ -60,6 +62,7 @@ export class SamLayoutDemoComponent {
   }
 
   public toggleFieldsEditor () {
+    this.optionsBackup = cloneDeep(this.options);
     this.fieldsEditor.openModal();
   }
 
@@ -133,6 +136,15 @@ export class SamLayoutDemoComponent {
       listing,
       status
     };
+  }
+
+  cancelModalAction(){
+    this.options = cloneDeep(this.optionsBackup);
+  }
+
+  submitModalAction(){
+    this.fieldsEditor.closeModal(false);
+    this.toggleColumns();
   }
 
   toggleColumns() {

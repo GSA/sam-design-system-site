@@ -1,7 +1,8 @@
 import {
   Component,
   ContentChild,
-  AfterContentInit
+  AfterContentInit,
+  HostBinding
 } from '@angular/core';
 
 @Component({
@@ -14,7 +15,9 @@ export class SamActionBarComponent {}
   selector: 'sam-aside',
   template: '<ng-content></ng-content>'
 })
-export class SamAsideComponent {}
+export class SamAsideComponent {
+  @HostBinding('class.sidebar') container: boolean = true;
+}
 
 @Component({
   selector: 'sam-main',
@@ -28,6 +31,7 @@ export class SamMainComponent {}
   template: '<ng-content></ng-content>'
 })
 export class SamLayoutComponent implements AfterContentInit {
+  @HostBinding('class.container') container: boolean = true;
   @ContentChild(SamActionBarComponent)
   public actions: SamActionBarComponent;
 

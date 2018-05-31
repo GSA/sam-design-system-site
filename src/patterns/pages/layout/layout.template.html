@@ -4,15 +4,6 @@
 		test
 	</sam-aside>
 	<sam-main>
-		<h1>"I can't do that Dave"</h1>
-		<h3> Which movie is that line from?</h3>
-		<select name="Movie">
-			<option value="Star Wars">Star Wars</option>
-			<option value="2001">2001</option>
-			<option value="War Games">War Games</option>
-		</select>
-		<button type="submit">Submit</button>
-		
 		<sam-datatable samSort [dataSource]="dataSource">
             <ng-container cdkColumnDef="Agency">
               <sam-header-cell *cdkHeaderCellDef sam-sort-header> Agency </sam-header-cell>

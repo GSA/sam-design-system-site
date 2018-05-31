@@ -42,7 +42,8 @@ export class SampleDataSource extends DataSource<any> {
   
   constructor(private _sampleDatabase: ReportDatabase,
               private _paginator: SamDatabankPaginationComponent,
-              private _sort: SamSortDirective
+              private _sort: SamSortDirective,
+              private _fhFilter: FormControl,
             ) {
     super();
   }
@@ -50,10 +51,21 @@ export class SampleDataSource extends DataSource<any> {
     const displayDataChanges = [
       this._paginator.pageChange,
       this._sort.samSortChange,
-      this._sampleDatabase.dataChange
+      this._sampleDatabase.dataChange,
+      this._fhFilter.valueChanges,
     ];
     return Observable.merge(...displayDataChanges).map(() => {
       let data = this.getSortedData();
+
+      // fh filter
+      if (this._fhFilter.value) {
+        data = data.filter((row) => {
+          if (row.Agency.toLowerCase().includes(this._fhFilter.value.toLowerCase())) {
+            return true;
+          }
+        });
+      }
+
       const startIndex = this._paginator.currentPage * this._paginator.pageSize;
       this._paginator.totalPages = Math.ceil(data.length / 10);
       return data.splice(startIndex, this._paginator.pageSize);

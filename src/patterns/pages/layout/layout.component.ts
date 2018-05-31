@@ -13,7 +13,7 @@ import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { SamDatabankPaginationComponent } from '.';
 import { cloneDeep } from 'lodash';
-
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'sam-layout-demo-component',
@@ -51,14 +51,38 @@ export class SamLayoutDemoComponent {
   public filterItems = [];
   public curPage = 1;
   public totalPages;
+  public fhInputText;
 
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
   @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
   @ViewChild('paginator') _paginator: SamDatabankPaginationComponent;
+  @ViewChild('fhInput') fhInput: NgModel;
 
   public ngOnInit() {
     this.options = this.checkboxOptions();
     this.connect();
+
+    const fhInputChipsObs = this.fhInput.control.valueChanges.subscribe((val) => {
+      if (val) {
+        const item = {
+          label: val,
+          type: 'fhFilter',
+          value: val // org id would actually populate here
+        };
+        this.filterItems = this.filterItems.filter(filterItem => {
+          if (filterItem.type !== 'fhFilter') {
+            return true;
+          }
+        });
+        this.filterItems.push(item);
+      } else {
+        this.filterItems = this.filterItems.filter(filterItem => {
+          if (filterItem.type !== 'fhFilter') {
+            return true;
+          }
+        });
+      }
+    });
   }
 
   public toggleFieldsEditor () {
@@ -84,6 +108,7 @@ export class SamLayoutDemoComponent {
       this.reportDatabase,
       this._paginator,
       this._sort,
+      this.fhInput.control
     );
   }
 
@@ -169,5 +194,16 @@ export class SamLayoutDemoComponent {
         delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];
       }
     }
+  }
+
+  removeFilter(filterItem) {
+    if (filterItem.type === 'fhFilter') {
+      this.fhInputText = null;
+    }
+    this.filterItems = this.filterItems.filter((val) => {
+      if (filterItem.type !== val.type && filterItem.value !== val.value) {
+        return true;
+      }
+    });
   }
 }

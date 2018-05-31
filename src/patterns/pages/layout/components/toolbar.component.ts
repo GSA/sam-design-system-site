@@ -8,7 +8,7 @@ import {
 @Component({
     selector: 'sam-toolbar',
     template: `
-  <div class="sam menu">
+  <div class="sam small menu">
     <a>
       <sam-icon name="slider-h"></sam-icon>
       Toggle filters

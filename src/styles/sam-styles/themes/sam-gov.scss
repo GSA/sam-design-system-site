@@ -1,0 +1,17 @@
+// Include structure
+@import '../breadcrumbs/structure';
+
+// Include theme
+@import '../core/theming/all-theme';
+
+// Include non-theme styles for core.
+@include sam-core();
+
+// Define a theme.
+$primary: sam-palette($uswds-blue, 700, 500, 900);
+$secondary:  sam-palette($uswds-light-blue, 500, 200, 600);
+
+$theme: sam-theme($primary, $secondary);
+
+// Include all theme styles for the components.
+@include sam-gov-theme($theme);

@@ -113,32 +113,28 @@
   [cancelButtonLabel]="'Cancel'"
   (close)="cancelModalAction()"
   (submit)="submitModalAction()">
-  <div class="fields-container">
-    <ul>
-      <li>
-        <strong>{{ options.organization.label }} </strong>
-        <sam-checkbox
-          [(ngModel)]="options.organization.selected"
-          [name]="options.organization.label"
-          [options]="options.organization.options"
-        ></sam-checkbox>
-      </li>
-      <li>
-        <strong>{{  options.listing.label }}</strong>
-        <sam-checkbox
-          [(ngModel)]="options.listing.selected"
-          [name]="options.listing.label"
-          [options]="options.listing.options"
-        ></sam-checkbox>
-      </li>
-      <li>
-        <strong>{{ options.status.label }}</strong>
-        <sam-checkbox
-          [(ngModel)]="options.status.selected"
-          [name]="options.status.label"
-          [options]="options.status.options"
-        ></sam-checkbox>
-      </li>
-    </ul>
+  <div class="sam reset checkboxes labels fieldsets">
+
+    <h4 class="sam heading">{{ options.organization.label }} </h4>
+    <sam-checkbox
+      [(ngModel)]="options.organization.selected"
+      [name]="options.organization.label"
+      [options]="options.organization.options"
+    ></sam-checkbox>
+
+    <h4 class="sam heading">{{  options.listing.label }}</h4>
+    <sam-checkbox
+      [(ngModel)]="options.listing.selected"
+      [name]="options.listing.label"
+      [options]="options.listing.options"
+    ></sam-checkbox>
+
+    <h4 class="sam heading">{{ options.status.label }}</h4>
+    <sam-checkbox
+      [(ngModel)]="options.status.selected"
+      [name]="options.status.label"
+      [options]="options.status.options"
+    ></sam-checkbox>
+
   </div>
 </sam-modal>

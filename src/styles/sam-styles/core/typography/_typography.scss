@@ -87,7 +87,7 @@
 
   h4.sam.heading, .sam.h4, #{$selector} h4 {
     @include sam-typography-level-to-styles($config, heading-4);
-    margin: 0 0 16px;
+    margin: 10px 0 10px;
   }
 
   .sam.body, #{$selector} {

@@ -1,7 +1,26 @@
+// Deprecated use .sam.reset
 label.sam.transition{
   display: inline;
 }
 
 label.sam.transition::before{
   content: none;
+}
+
+@mixin sam-label-reset($selector: '.sam.reset') {  
+  label#{$selector},
+  label.sam.transition{
+    display: inline;
+  }
+  
+  label#{$selector}::before,
+  label.sam.transition::before{
+    content: none;
+  }
+}
+
+@include sam-label-reset();
+
+.sam.reset.labels{
+	@include sam-label-reset('');
 }

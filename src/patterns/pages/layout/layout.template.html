@@ -106,6 +106,7 @@
           [(ngModel)]="options.listing.selected"
           [name]="options.listing.label"
           [options]="options.listing.options"
+          (ngModelChange)="toggleColumns()"
         ></sam-checkbox>
       </li>
       <li>
@@ -114,6 +115,7 @@
           [(ngModel)]="options.status.selected"
           [name]="options.status.label"
           [options]="options.status.options"
+          (ngModelChange)="toggleColumns()"
         ></sam-checkbox>
       </li>
     </ul>

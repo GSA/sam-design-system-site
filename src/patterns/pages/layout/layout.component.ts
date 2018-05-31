@@ -22,6 +22,7 @@ export class SamLayoutDemoComponent {
   _reportData = SampleData;
   reportDatabase = new ReportDatabase();
   dataSource: SampleDataSource | null;
+  referenceColumns = [];
   displayedColumns = [];
 
   public orgOptions: any[] = [
@@ -63,7 +64,7 @@ export class SamLayoutDemoComponent {
   }
 
   public connect() {
-    this.displayedColumns = [
+    this.referenceColumns = [
       'Agency',
       'CFDANumber',
       'Title',
@@ -74,7 +75,7 @@ export class SamLayoutDemoComponent {
       'LastPublishedDate',
       'AutoPublished'
     ];
-
+    this.displayedColumns = this.referenceColumns.slice(0);
     // data table
     this.dataSource = new SampleDataSource(
       this.reportDatabase,
@@ -88,46 +89,44 @@ export class SamLayoutDemoComponent {
     const organization = {
       label: 'Organization',
       options: [
-        {label: 'Dept or Ind. Agency', name: 'Dept or Ind. Agency', value: 'Dept or Ind. Agency'},
-        {label: 'Subtier', name: 'Subtier', value: 'Subtier'}
+        {label: 'Dept or Ind. Agency', name: 'Dept or Ind. Agency', value: 'Agency'}
       ],
-      selected: ['Dept or Ind. Agency']
+      selected: [
+        'Agency'
+      ]
     };
-    // organization.options.forEach(
-    //   option => organization.selected.push(option.value)
-    // );
 
     const listing = {
       label: 'Listing',
       options: [
-        {label: 'CFDA Number', name: 'CFDA Number', value: 'CFDA Number'},
-        {label: 'Title', name: 'Title', value: 'Title'},
-        {label: 'Obligations', name: 'Obligations', value: 'Obligations'},
-        {label: 'Post (FY16)', name: 'Post (FY16)', value: 'Post (FY16)'},
-        {label: 'Current (FY17)', name: 'Current (FY17)', value: 'Current (FY17)'},
-        {label: 'Budget (FY18)', name: 'Budget (FY18)', value: 'Budget (FY18)'}
+        {label: 'CFDA Number', name: 'CFDA Number', value: 'CFDANumber'},
+        {label: 'Title', name: 'Title', value: 'Title'}
       ],
-      selected: []
+      selected: [
+        'CFDANumber',
+        'Title'
+      ]
     };
-    // listing.options.forEach(
-    //   option => listing.selected.push(option.value)
-    // );
 
     const status = {
       label: 'Status',
       options: [
-        {label: 'Current Status', name: 'Current Status', value: 'Current Status'},
-        {label: 'Updated in Current Year', name: 'Updated in Current Year', value: 'Updated in Current Year'},
-        {label: 'Obligations Updated', name: 'Obligations Updated', value: 'Obligations Updated'},
-        {label: 'Last Updated Date', name: 'Last Updated Date', value: 'Last Updated Date'},
-        {label: 'OMB Review Date', name: 'OMB Review Date', value: 'OMB Review Date'},
-        {label: 'Last Published Date', name: 'Last Published Date', value: 'Last Published Date'}
+        {label: 'Current Status', name: 'Current Status', value: 'CurrentStatus'},
+        {label: 'Last Updated Date', name: 'Last Updated Date', value: 'LastUpdatedDate'},
+        {label: 'Obligations Updated', name: 'Obligations Updated', value: 'ObligationsUpdated'},
+        {label: 'OMB Review Date', name: 'OMB Review Date', value: 'OMBReviewDate'},
+        {label: 'Last Published Date', name: 'Last Published Date', value: 'LastPublishedDate'},
+        {label: 'Auto Published', name: 'Auto Published', value: 'AutoPublished'}
       ],
-      selected: []
+      selected: [
+        'CurrentStatus',
+        'LastUpdatedDate',
+        'ObligationsUpdated',
+        'OMBReviewDate',
+        'LastPublishedDate',
+        'AutoPublished'
+      ]
     };
-    // status.options.forEach(
-    //   option => status.selected.push(option.value)
-    // );
 
     return {
       organization,
@@ -137,12 +136,26 @@ export class SamLayoutDemoComponent {
   }
 
   toggleColumns() {
-    if (this.options.organization.selected.indexOf('Dept or Ind. Agency') !== -1
-      && this.displayedColumns.indexOf('Agency') === -1) {
-      this.displayedColumns.unshift('Agency');
-    } else if (this.options.organization.selected.indexOf('Dept or Ind. Agency') === -1
-      && this.displayedColumns.indexOf('Agency') !== -1) {
-      this.displayedColumns.shift();
+    this.displayedColumns = this.referenceColumns.slice(0);
+    for(const option of this.options.organization.options){
+      const optionValue = option.value;
+      if (this.options.organization.selected.indexOf(option.value) === -1) {
+        delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];
+      }
+    }
+
+    for(const option of this.options.listing.options){
+      const optionValue = option.value;
+      if (this.options.listing.selected.indexOf(option.value) === -1) {
+        delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];
+      }
+    }
+
+    for(let option of this.options.status.options){
+      const optionValue = option.value;
+      if (this.options.status.selected.indexOf(option.value) === -1) {
+        delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];
+      }
     }
   }
 }

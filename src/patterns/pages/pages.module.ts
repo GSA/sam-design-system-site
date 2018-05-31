@@ -8,7 +8,8 @@ import { PagesRoutingModule } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
-import { SamLayoutDemoComponent } from './layout';
+import { SamLayoutDemoComponent, SamActionBarComponent, SamAsideComponent, SamMainComponent, SamLayoutComponent } from './layout';
+
 
 @NgModule({
   imports: [
@@ -21,7 +22,11 @@ import { SamLayoutDemoComponent } from './layout';
     PagesComponent,
     PageAComponent,
     PageBComponent,
-    SamLayoutDemoComponent
+    SamLayoutDemoComponent,
+    SamLayoutComponent,
+    SamActionBarComponent,
+    SamAsideComponent,
+    SamMainComponent,
   ]
 })
 export class PagesModule {}

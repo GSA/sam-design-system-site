@@ -22,8 +22,9 @@ export class SamAsideComponent {}
 })
 export class SamMainComponent {}
 
+// there's already a layout component
 @Component({
-  selector: 'sam-layout',
+  selector: 'sam-layout-b',
   template: '<ng-content></ng-content>'
 })
 export class SamLayoutComponent implements AfterContentInit {

@@ -1,4 +1,4 @@
-// Represents a typography level from the Material design spec.
+
 @function sam-typography-level(
   $font-size,
   $line-height: $font-size,
@@ -7,40 +7,47 @@
   $letter-spacing: null) {
 
   @return (
-    font-size: $font-size,
-    line-height: $line-height,
-    font-weight: $font-weight,
-    font-family: $font-family,
-    letter-spacing: $letter-spacing
+    font-size:        $font-size,
+    line-height:      $line-height,
+    font-weight:      $font-weight,
+    font-family:      $font-family,
+    letter-spacing:   $letter-spacing
   );
 }
 
-// Represents a collection of typography levels.
-// Defaults come from https://material.io/guidelines/style/typography.html
+// Defaults come from https://designsystem.digital.gov/components/typography/
 @function sam-typography-config(
-  $font-family:   '"Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
-  $headline:      sam-typography-level(24px, 32px, 400),
-  $title:         sam-typography-level(20px, 32px, 500),
-  $subheading-2:  sam-typography-level(16px, 28px, 400),
-  $subheading-1:  sam-typography-level(15px, 24px, 400),
-  $body-2:        sam-typography-level(14px, 24px, 500),
-  $body-1:        sam-typography-level(14px, 20px, 400),
-  $caption:       sam-typography-level(12px, 20px, 400),
-  $button:        sam-typography-level(14px, 14px, 500),
+  $font-family:   '"Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif',
+  $display-1:     sam-typography-level(59px, 77px, 700),
+  $display-2:     sam-typography-level(44px, 57px, 300),
+  $heading-1:     sam-typography-level(44px, 57px, 700),
+  $heading-2:     sam-typography-level(34px, 44px, 700),
+  $heading-3:     sam-typography-level(24px, 31px, 700),
+  $heading-4:     sam-typography-level(19px, 25px, 700),
+  $heading-5:     sam-typography-level(16px, 21px, 700),
+  $heading-6:     sam-typography-level(13px, 17px, 700),
+  $lead:          sam-typography-level(22px, 33px, 300),
+  $body:          sam-typography-level(17px, 26px, 400),
+  $small:         sam-typography-level(12px, 20px, 400),
+  $button:        sam-typography-level(14px, 14px, 600),
   $input:         sam-typography-level(inherit, 1.125, 400)
 ) {
 
   // Declare an initial map with all of the levels.
   $config: (
-    headline:       $headline,
-    title:          $title,
-    subheading-2:   $subheading-2,
-    subheading-1:   $subheading-1,
-    body-2:         $body-2,
-    body-1:         $body-1,
-    caption:        $caption,
-    button:         $button,
-    input:          $input,
+    display-1:   $display-1,
+    display-2:   $display-2,
+    heading-1:   $heading-1,
+    heading-2:   $heading-2,
+    heading-3:   $heading-3,
+    heading-4:   $heading-4,
+    heading-5:   $heading-5,
+    heading-6:   $heading-6,
+    lead:        $lead,
+    body:        $body,
+    small:       $small,
+    button:      $button,
+    input:       $input
   );
 
   // Loop through the levels and set the `font-family` of the ones that don't have one to the base.
@@ -58,39 +65,35 @@
 
 // Adds the base typography styles, based on a config.
 @mixin sam-base-typography($config, $selector: '.sam-typography') {
-  .sam.h1, .sam.headline, #{$selector} h1 {
-    @include sam-typography-level-to-styles($config, headline);
+  h1.sam.heading, .sam.h1, #{$selector} h1 {
+    @include sam-typography-level-to-styles($config, heading-1);
     margin: 0 0 16px;
   }
 
-  .sam.h2, .sam.title, #{$selector} h2 {
-    @include sam-typography-level-to-styles($config, title);
+  h2.sam.heading, .sam.h2, #{$selector} h2 {
+    @include sam-typography-level-to-styles($config, heading-2);
     margin: 0 0 16px;
   }
 
-  .sam.h3, .sam.subheading-2, #{$selector} h3 {
-    @include sam-typography-level-to-styles($config, subheading-2);
+  h3.sam.heading, .sam.h3, #{$selector} h3 {
+    @include sam-typography-level-to-styles($config, heading-3);
     margin: 0 0 16px;
   }
 
-  .sam.h4, .sam.subheading-1, #{$selector} h4 {
-    @include sam-typography-level-to-styles($config, subheading-1);
+  h4.sam.heading, .sam.h4, #{$selector} h4 {
+    @include sam-typography-level-to-styles($config, heading-4);
     margin: 0 0 16px;
   }
 
-  .sam.body.strong, .sam.body-2 {
-    @include sam-typography-level-to-styles($config, body-2);
-  }
-
-  .sam.body, .sam.body-1, #{$selector} {
-    @include sam-typography-level-to-styles($config, body-1);
+  .sam.body, #{$selector} {
+    @include sam-typography-level-to-styles($config, body);
 
     p {
       margin: 0 0 12px;
     }
   }
 
-  .sam.small, .sam.caption {
-    @include sam-typography-level-to-styles($config, caption);
+  .sam.small {
+    @include sam-typography-level-to-styles($config, small);
   }
 }

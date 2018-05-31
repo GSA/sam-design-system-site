@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
-import { ReportDatabase, ReportDataSource } from './database';
+import { ReportDatabase, SampleDataSource } from './database';
 import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
@@ -21,7 +21,7 @@ import { SamDatabankPaginationComponent } from '.';
 export class SamLayoutDemoComponent {
   _reportData = SampleData;
   reportDatabase = new ReportDatabase();
-  dataSource: ReportDataSource | null;
+  dataSource: SampleDataSource | null;
   displayedColumns = [];
 
   public orgOptions: any[] = [
@@ -76,7 +76,7 @@ export class SamLayoutDemoComponent {
     ];
 
     // data table
-    this.dataSource = new ReportDataSource(
+    this.dataSource = new SampleDataSource(
       this.reportDatabase,
       this._paginator,
       this._sort,

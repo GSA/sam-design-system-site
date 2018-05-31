@@ -17,10 +17,16 @@
     <!-- tabs -->
 
     <!-- pagination + edit fields button -->
-    <sam-databank-pagination
-      class="datatable-example"
-      #paginator [currentPage]="curPage" 
-      [totalPages]="totalPages"></sam-databank-pagination>
+    <div>
+      <sam-databank-pagination
+        #paginator
+        [currentPage]="curPage" 
+        [totalPages]="totalPages"></sam-databank-pagination>
+      <sam-button
+        buttonType="secondary"
+        buttonText="Edit Fields"
+        (click)="toggleFieldsEditor()"></sam-button>
+    </div>
 
     <!-- datatable -->
 		<sam-datatable samSort [dataSource]="dataSource">
@@ -74,3 +80,42 @@
     </sam-datatable>
 	</sam-main>
 </sam-layout-b>
+
+<!-- modals -->
+<sam-modal
+  [showClose]="true"
+  [title]="'Edit Fields'"
+  [type]="'info'"
+  [description]="'Edit fields for report'"
+  [submitButtonLabel]="'Done'"
+  [cancelButtonLabel]="'Cancel'">
+  <div class="fields-container">
+    <ul>
+      <li>
+        <strong>{{ options.organization.label }} </strong>
+        <sam-checkbox
+          [(ngModel)]="options.organization.selected"
+          [name]="options.organization.label"
+          [options]="options.organization.options"
+          (ngModelChange)="toggleColumns()"
+        ></sam-checkbox>
+      </li>
+      <li>
+        <strong>{{  options.listing.label }}</strong>
+        <sam-checkbox
+          [(ngModel)]="options.listing.selected"
+          [name]="options.listing.label"
+          [options]="options.listing.options"
+        ></sam-checkbox>
+      </li>
+      <li>
+        <strong>{{ options.status.label }}</strong>
+        <sam-checkbox
+          [(ngModel)]="options.status.selected"
+          [name]="options.status.label"
+          [options]="options.status.options"
+        ></sam-checkbox>
+      </li>
+    </ul>
+  </div>
+</sam-modal>

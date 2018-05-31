@@ -26,7 +26,7 @@
   $heading-4:     sam-typography-level(19px, 25px, 700),
   $heading-5:     sam-typography-level(16px, 21px, 700),
   $heading-6:     sam-typography-level(13px, 17px, 700),
-  $lead:          sam-typography-level(22px, 33px, 300),
+  $lead:          sam-typography-level(22px, 33px, 300, null, 0),
   $body:          sam-typography-level(17px, 26px, 400),
   $small:         sam-typography-level(12px, 20px, 400),
   $button:        sam-typography-level(14px, 14px, 600),
@@ -68,6 +68,10 @@
   h1.sam.heading, .sam.h1, #{$selector} h1 {
     @include sam-typography-level-to-styles($config, heading-1);
     margin: 0 0 16px;
+    .intro{
+      @include sam-typography-level-to-styles($config, lead);
+      display: block;
+    }
   }
 
   h2.sam.heading, .sam.h2, #{$selector} h2 {

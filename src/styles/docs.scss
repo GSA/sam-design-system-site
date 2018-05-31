@@ -1,9 +1,4 @@
 
-/* SAM Styles
-   ========================================================================== */
-
-@import "sam-styles/all";
-
 /* SAM front-end
    ========================================================================== */
 
@@ -22,6 +17,11 @@
 @import "reset/label";
 @import "reset/button";
 @import "reset/title";
+
+/* SAM Styles
+   ========================================================================== */
+
+@import "sam-styles/themes/sam-gov";
 
 /* SAM Design System Pages
    ========================================================================== */
@@ -63,6 +63,7 @@
  */
 
 @import "sam-design-system/patterns/home";
+@import "sam-design-system/patterns/layout";
 
 /**
  * Components

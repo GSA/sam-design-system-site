@@ -8,7 +8,10 @@ import { PagesRoutingModule } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
-import { SamLayoutDemoComponent } from './layout';
+import { SamLayoutDemoComponent, SamActionBarComponent,
+  SamAsideComponent, SamMainComponent, SamLayoutComponent,
+  SamToolbarComponent, SamDatabankPaginationComponent } from './layout';
+
 
 // Data Entry
 import { SinglePageEditorComponent } from './data-entry/single-page-editor/page.component';
@@ -61,7 +64,13 @@ import { DataFilesPageComponent } from './data-services/data-files/page.componen
     WorkspaceUserDirectoryComponent,
     StandardReportPageComponent,
     AdhocReportPageComponent,
-    DataFilesPageComponent
+    DataFilesPageComponent,
+    SamLayoutComponent,
+    SamActionBarComponent,
+    SamAsideComponent,
+    SamMainComponent,
+    SamToolbarComponent,
+    SamDatabankPaginationComponent
   ]
 })
 export class PagesModule {}

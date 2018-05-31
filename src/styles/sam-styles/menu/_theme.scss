@@ -1,0 +1,9 @@
+@import '../core/theming/theming';
+
+@mixin sam-menu-theme($theme) {
+  $foreground: map-get($map: $theme, $key: foreground);
+  
+  .sam.menu{
+    border-bottom-color: sam-color($foreground, divider);
+  }
+}

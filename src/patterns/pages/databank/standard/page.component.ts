@@ -1,6 +1,8 @@
-import { Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   templateUrl: 'page.template.html'
 })
-export class StandardReportPageComponent { }
+export class StandardReportPageComponent {
+	
+}

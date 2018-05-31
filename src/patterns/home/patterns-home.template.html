@@ -16,7 +16,7 @@
     
     
     <sam-title importance="high" weight="normal">
-      Pages
+      Help Pages
     </sam-title>
     
     <ol class="row card-list">
@@ -38,6 +38,12 @@
           </p>
         </a>
       </li>
+    </ol>
+
+    <sam-title importance="high" weight="normal">
+      Group Prototype
+    </sam-title>
+    <ol class="row card-list">
       <li class="col span-4">
         <a [routerLink]="['/patterns/page/layout']" class="card">
           <h3 class="card-title">Layout<small>Group Prototype</small></h3>
@@ -48,6 +54,165 @@
       </li>
     </ol>
     
+
+    <sam-title importance="high" weight="normal">
+      Search Pages
+    </sam-title>
+    
+    <ol class="row card-list">
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/search/search-awards']" class="card">
+          <h3 class="card-title">Search Awards<small>Search Results</small></h3>
+          <p class="card-description">
+            A search results page supports keyword search with additional filtering to fine tune results.  Optional features for a search page include downloading results, saving search criteria, sharing search criteria, and scheduling periodic execution of a saved search.
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/search/search-learning']" class="card">
+          <h3 class="card-title">Search Learning Center<small>Search Results</small></h3>
+          <p class="card-description">
+            A search results page supports keyword search with additional filtering to fine tune results.  Optional features for a search page include downloading results, saving search criteria, sharing search criteria, and scheduling periodic execution of a saved search.
+          </p>
+        </a>
+      </li>
+    </ol>
+    <ol class="row card-list">
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/search/display-listing']" class="card">
+          <h3 class="card-title">Assistance Listing<small>Display Page</small></h3>
+          <p class="card-description">
+            A display page provides a comprehensive view of a single search result.  It is typically more dense than a dashboard page, includes all fields, and gives people a quick view of all there is to know about a record.  Typically a user would drill down into a display page from a search results or other list view of records.
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/search/dashboard-listing']" class="card">
+          <h3 class="card-title">Assistance Listing<small>Dashboard Page</small></h3>
+          <p class="card-description">
+             A dashboard page provides a visually compelling view of a single search result that features key fields and uses infographics and charts to tell a story about the record.  Typically someone would drill down into a dashboard page from a search result or other list view of records.
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/search/display-opportunity']" class="card">
+          <h3 class="card-title">Contract Opportunity<small>Display Page</small></h3>
+          <p class="card-description">
+             A display page provides a comprehensive view of a single search result.  It is typically more dense than a dashboard page, includes all fields, and gives people a quick view of all there is to know about a record.  Typically a user would drill down into a display page from a search results or other list view of records.
+          </p>
+        </a>
+      </li>
+    </ol>
+
+    <sam-title importance="high" weight="normal">
+      Workspace Pages
+    </sam-title>
+    
+    <ol class="row card-list">
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/workspace/workspace-landing']" class="card">
+          <h3 class="card-title">Workspace<small>Landing Page</small></h3>
+          <p class="card-description">
+            A workspace landing page provides an entry point for multiple independent categories of information.  It is customized to reflect the type of work done by an individual.  For example, the illustration to the left might be for someone create, edits, or oversees work with pears, bananas, monkeys, apples, and oranges.  There is a workspace element for each type of information (pears, bananas, monkeys, etc) that is the start place for working with that information.  It is important to help someone see quickly which categories or records require their attention or action.
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/workspace/workspace-listings']" class="card">
+          <h3 class="card-title">Assistance Listings<small>Workspace Page</small></h3>
+          <p class="card-description">
+            A workspace page provides an entry point for managing a single category of information.  It may be customized to reflect a person’s role in managing that information (contributor, author, reviewer, etc).  A workspace page typically lists the records a person manages, provides searching, sorting, and filtering of those records, infographics of key summary metrics, and status information.  It is important to help someone quickly see which records require their attention or action.
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/workspace/workspace-users']" class="card">
+          <h3 class="card-title">User Directory<small>Workspace Page</small></h3>
+          <p class="card-description">
+             A workspace page provides an entry point for managing a single category of information.  It may be customized to reflect a person’s role in managing that information (contributor, author, reviewer, etc).  A workspace page typically lists the records a person manages, provides searching, sorting, and filtering of those records, infographics of key summary metrics, and status information.  It is important to help someone quickly see which records require their attention or action.
+          </p>
+        </a>
+      </li>
+    </ol>
+
+    <sam-title importance="high" weight="normal">
+      Data Entry Pages
+    </sam-title>
+    
+    <ol class="row card-list">
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/data-entry/single-page-editor']" class="card">
+          <h3 class="card-title">Role Request<small>Single Page Editor</small></h3>
+          <p class="card-description">
+            A single page editor has a small number of fields, often completed and submitted in a single session.
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/data-entry/multi-page-editor']" class="card">
+          <h3 class="card-title">Assistance Listing<small>Multiple Page Editor</small></h3>
+          <p class="card-description">
+            Data entry is split across multiple pages where there are a large number of fields to be completed.  We can expect that users may fill out some multi-page forms in one session and other may be completed across multiple sessions.
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/data-entry/review-page']" class="card">
+          <h3 class="card-title">Assistance Listing<small>Review Page</small></h3>
+          <p class="card-description">
+             A review page may be provided during data entry to accompany a multi-page form, giving people a view of all fields on a single page.  The fields will be read only and displayed concisely - not using the real estate that an editor might require.  A review page typically has fields with restricted access which are visible to people who edit and perform reviews.  If all fields are public and there is a “Published View,” a review page may be redundant.
+          </p>
+        </a>
+      </li>
+    </ol>
+    <ol class="row card-list">
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/data-entry/version-page']" class="card">
+          <h3 class="card-title">Assistance Listing<small>Version Page</small></h3>
+          <p class="card-description">
+            A version page is a review page that shows people what has changed since a previous version of the record was published.
+          </p>
+        </a>
+      </li>
+    </ol>
+
+    <sam-title importance="high" weight="normal">
+      Databank
+    </sam-title>
+    
+    <ol class="row card-list">
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/databank/standard']" class="card">
+          <h3 class="card-title">Small Business Goaling Report<small>Standard Report</small></h3>
+          <p class="card-description">
+            
+          </p>
+        </a>
+      </li>
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/databank/adhoc']" class="card">
+          <h3 class="card-title">Small Business Analysis<small>Adhoc Report</small></h3>
+          <p class="card-description">
+           
+          </p>
+        </a>
+      </li>
+    </ol>
+
+    <sam-title importance="high" weight="normal">
+      Data Services
+    </sam-title>
+    <ol class="row card-list">
+      <li class="col span-4">
+        <a [routerLink]="['/patterns/page/data-services/data-files']" class="card">
+          <h3 class="card-title">Data Services<small>Data Files</small></h3>
+          <p class="card-description">
+            A data services page provides a "file system" view.
+          </p>
+        </a>
+      </li>
+    </ol>
+
   </div>
 </div>
 

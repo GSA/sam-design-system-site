@@ -61,26 +61,21 @@ export class SamAsideComponent {
 
 @Component({
   selector: 'sam-aside-container',
-  template: `
-  <div>
-    <ng-content></ng-content>
-  </div>
-  `
+  template: '<ng-content></ng-content>'
 })
-export class SamAsideContainerComponent
-   {
+export class SamAsideContainerComponent {
 
   @HostBinding('class')
-  public classes = 'sam-aside-container';
+  public classes = 'sidebar sam-aside-container';
 
   @ContentChildren(forwardRef(() => SamAsideComponent), { descendants: true})
   public sidenavs;
-  
+
   constructor (
     private _element: ElementRef,
     private _renderer: Renderer2) {}
 
-  public _registerSidenav (sidenav: SamAsideComponent) {
+  public registerSidenav (sidenav: SamAsideComponent) {
     if (!sidenav) {
       return;
     } else {
@@ -96,7 +91,6 @@ export class SamAsideContainerComponent
   }
 
   private _setContainerClass (isAdd: boolean) {
-    console.log('Called!', isAdd);
     if (isAdd) {
       this._renderer.addClass(
         this._element.nativeElement,
@@ -123,11 +117,11 @@ export class SamAsideContainerComponent
 export class SamLayoutComponent implements AfterContentInit {
   @HostBinding('class.container') container: boolean = true;
 
-  @ContentChild(SamActionBarComponent)
-  public actions: SamActionBarComponent;
-
   @ViewChild(SamAsideContainerComponent)
   public sidenavContainer: SamAsideContainerComponent;
+
+  @ContentChild(SamActionBarComponent)
+  public actions: SamActionBarComponent;
 
   @ContentChildren(SamAsideComponent, { descendants: true })
   public sidenavs: QueryList<SamAsideComponent>;
@@ -136,10 +130,22 @@ export class SamLayoutComponent implements AfterContentInit {
   public main: SamMainComponent;
 
   public ngAfterContentInit () {
-    this.sidenavContainer.sidenavs = this.sidenavs;
-    this.sidenavs.forEach(sidenav =>{
-      this.sidenavContainer._registerSidenav(sidenav);
+    /**
+     * Content doesn't get projected "through" multiple
+     * <ng-content> tags, so anything inside ng-content
+     * is registered as a child of SamLayoutComponent.
+     *
+     * However, we need the SamAside components projected
+     * into the SamAsideContainer component.
+     *
+     * To work around this, we have SamLayoutComponent
+     * manually register each SamAside content child with
+     * the aside container component.
+     */
+    this.sidenavs.forEach(sidenav => {
+      this.sidenavContainer.registerSidenav(sidenav);
     });
+
     if (!this.main) {
       throw new Error('No SamMainComponent provided');
     }

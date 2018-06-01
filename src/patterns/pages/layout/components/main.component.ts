@@ -1,8 +1,9 @@
 import {
-  Component,
-  ContentChild,
-  AfterContentInit,
-  HostBinding
+    Component,
+    ContentChild,
+    AfterContentInit,
+    HostBinding,
+    Input
 } from '@angular/core';
 
 @Component({

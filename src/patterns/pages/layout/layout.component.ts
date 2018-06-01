@@ -50,7 +50,7 @@ export class SamLayoutDemoComponent implements OnInit {
   public options: any;
   public optionsBackup: any;
   public filterItems = [];
-  public curPage = 0;
+  public curPage = 1;
   public totalPages;
   public fhInputText;
   public dateModel;
@@ -69,19 +69,19 @@ export class SamLayoutDemoComponent implements OnInit {
     const fhInputChipsObs = this.fhInput.control.valueChanges.subscribe((val) => {
       if (val) {
         const item = {
-          label: val,
-          type: 'fhFilter',
+          id: val,
+          label: 'Agency',
           value: val // org id would actually populate here
         };
         this.filterItems = this.filterItems.filter(filterItem => {
-          if (filterItem.type !== 'fhFilter') {
+          if (filterItem.label !== 'Agency') {
             return true;
           }
         });
         this.filterItems.push(item);
       } else {
         this.filterItems = this.filterItems.filter(filterItem => {
-          if (filterItem.type !== 'fhFilter') {
+          if (filterItem.label !== 'Agency') {
             return true;
           }
         });
@@ -90,13 +90,13 @@ export class SamLayoutDemoComponent implements OnInit {
     const dateFilterChipsObs = this.dateFilter.control.valueChanges.subscribe((val) => {
       if (val && val !== 'Invalid Date') {
         const item = {
-          label: 'Date: ' + val,
-          type: 'dateFilter',
+          id: val,
+          label: 'Last Updated Date',
           value: val
         };
 
         this.filterItems = this.filterItems.filter(filterItem => {
-          if (filterItem.type !== 'dateFilter') {
+          if (filterItem.label !== 'Last Updated Date') {
             return true;
           }
         });
@@ -223,16 +223,22 @@ export class SamLayoutDemoComponent implements OnInit {
   }
 
   removeFilter(filterItem) {
-    if (filterItem.type === 'dateFilter') {
+    if (filterItem.label === 'Last Updated Date') {
       this.dateModel = null;
     }
-    if (filterItem.type === 'fhFilter') {
+    if (filterItem.label === 'Agency') {
       this.fhInputText = null;
     }
     this.filterItems = this.filterItems.filter((val) => {
-      if (filterItem.type !== val.type && filterItem.value !== val.value) {
+      if (filterItem.label !== val.label && filterItem.value !== val.value) {
         return true;
       }
     });
+  }
+
+  removeAllFilters() {
+    this.dateModel = null;
+    this.fhInputText = null;
+    this.filterItems = [];
   }
 }

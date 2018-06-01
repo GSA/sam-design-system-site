@@ -9,8 +9,7 @@ import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { FormControl, NgModel } from '@angular/forms';
 import { SamDatabankPaginationComponent } from '.';
 
-// rename
-export interface ProgramData {
+export interface SampleDataDef {
   'Agency': string;
   'CFDA Number': number;
   'Title': string | number;
@@ -23,8 +22,8 @@ export interface ProgramData {
 }
   
 export class ReportDatabase {
-  dataChange: BehaviorSubject<ProgramData[]> = new BehaviorSubject<ProgramData[]>([]);
-  get data(): ProgramData[] { return this.dataChange.value; }
+  dataChange: BehaviorSubject<SampleDataDef[]> = new BehaviorSubject<SampleDataDef[]>([]);
+  get data(): SampleDataDef[] { return this.dataChange.value; }
   constructor() {
     for (let i = 0; i < 1940; i++) { this.addProgram(); }
   }
@@ -48,17 +47,21 @@ export class SampleDataSource extends DataSource<any> {
             ) {
     super();
   }
-  connect(): Observable<ProgramData[]> {
+  connect(): Observable<SampleDataDef[]> {
     const displayDataChanges = [
       this._paginator.pageChange,
       this._sort.samSortChange,
       this._sampleDatabase.dataChange,
-      this._fhFilter.valueChanges,
-      this._dateFilter.valueChanges
+      this._fhFilter.valueChanges.map(()=>{
+        this._paginator.currentPage = 1;
+      }),
+      this._dateFilter.valueChanges.map(()=>{
+        this._paginator.currentPage = 1;
+      })
     ];
     return Observable.merge(...displayDataChanges).map(() => {
       let data = this.getSortedData();
-
+      
       // fh filter
       if (this._fhFilter.value) {
         data = data.filter((row) => {
@@ -82,14 +85,15 @@ export class SampleDataSource extends DataSource<any> {
       }
 
       // pagination
-      const startIndex = this._paginator.currentPage * this._paginator.pageSize;
+      const startIndex = (this._paginator.currentPage - 1) * this._paginator.pageSize;
       this._paginator.totalPages = Math.ceil(data.length / 10);
-      return data.splice(startIndex, this._paginator.pageSize);
+      data = data.splice(startIndex, this._paginator.pageSize);
+      return data;
     });
   }
   disconnect() {}
 
-  getSortedData(): ProgramData[] {
+  getSortedData(): SampleDataDef[] {
     const data = this._sampleDatabase.data.slice();
     if (!this._sort.active || this._sort.direction === '') { return data; }
 

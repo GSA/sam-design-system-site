@@ -12,6 +12,18 @@ import { SamMainComponent } from './main.component';
 import { SamDatabankPaginationComponent } from './pagination.component';
 import { SamToolbarComponent } from './toolbar.component';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
+import {
+  SamFeedbackWrapperComponent
+} from './feedback-wrapper.component';
+import {
+  SamFiltersWrapperComponent
+} from './filters-wrapper.component';
+import {
+  SamResourcesWrapperComponent
+} from './resources-wrapper.component';
+import {
+  SamDatabankTitleSectionDirective
+} from './title-section.component';
 
 @NgModule({
   imports: [
@@ -26,7 +38,11 @@ import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
     SamLayoutComponent,
     SamMainComponent,
     SamDatabankPaginationComponent,
-    SamToolbarComponent
+    SamToolbarComponent,
+    SamFeedbackWrapperComponent,
+    SamFiltersWrapperComponent,
+    SamResourcesWrapperComponent,
+    SamDatabankTitleSectionDirective
   ],
   exports: [
     SamAsideModule,
@@ -34,7 +50,11 @@ import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
     SamLayoutComponent,
     SamMainComponent,
     SamDatabankPaginationComponent,
-    SamToolbarComponent
+    SamToolbarComponent,
+    SamFeedbackWrapperComponent,
+    SamFiltersWrapperComponent,
+    SamResourcesWrapperComponent,
+    SamDatabankTitleSectionDirective
   ]
 })
 export class SamLayoutComponentsModule {}

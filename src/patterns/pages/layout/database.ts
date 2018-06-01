@@ -57,8 +57,9 @@ export class SampleDataSource extends DataSource<any> {
       this._dateFilter.valueChanges
     ];
     return Observable.merge(...displayDataChanges).map(() => {
+      
       let data = this.getSortedData();
-
+      
       // fh filter
       if (this._fhFilter.value) {
         data = data.filter((row) => {
@@ -82,9 +83,11 @@ export class SampleDataSource extends DataSource<any> {
       }
 
       // pagination
-      const startIndex = this._paginator.currentPage * this._paginator.pageSize;
+      const startIndex = (this._paginator.currentPage - 1) * this._paginator.pageSize;
       this._paginator.totalPages = Math.ceil(data.length / 10);
-      return data.splice(startIndex, this._paginator.pageSize);
+      data = data.splice(startIndex, this._paginator.pageSize);
+      console.log(data,startIndex, this._paginator.currentPage);
+      return data;
     });
   }
   disconnect() {}

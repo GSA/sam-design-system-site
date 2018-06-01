@@ -49,7 +49,7 @@ export class SamLayoutDemoComponent {
   public options: any;
   public optionsBackup: any;
   public filterItems = [];
-  public curPage = 0;
+  public curPage = 1;
   public totalPages;
   public fhInputText;
   public dateModel;

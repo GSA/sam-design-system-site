@@ -2,3 +2,23 @@
 	max-width:1150px; 
 	margin:0 auto;
 }
+
+.sam-aside-container {	
+	&.aside-opened {
+		.sam-aside {
+			visibility: visible;
+		}
+	}
+	
+	.sam-aside {
+		display: inline-block;
+		visibility: hidden;
+	}
+
+	.sam-main {
+		display: inline-block;
+	}
+
+	display: flex;
+}
+

@@ -1,6 +1,6 @@
-<sam-toolbar></sam-toolbar>
+<sam-toolbar [sidenav]="sidenav"></sam-toolbar>
 <sam-layout-b>
-	<sam-aside>
+  <sam-aside #sidenav>
     <!-- update with real 'Agency' filter -->
     <input
       class="sam transition input"
@@ -15,7 +15,7 @@
       #dateFilter="ngModel"
       name='date-example'
       [(ngModel)]="dateModel"></sam-date>
-	</sam-aside>
+  </sam-aside>
 	<sam-main>
     <!-- page title goes here? -->
     <h1 class="sam heading">

@@ -28,6 +28,7 @@
   $heading-6:     sam-typography-level(13px, 17px, 700),
   $lead:          sam-typography-level(22px, 33px, 300, null, 0),
   $body:          sam-typography-level(17px, 26px, 400),
+  $body-2:        sam-typography-level(17px, 26px, 600),
   $small:         sam-typography-level(15px, 20px, 400),
   $button:        sam-typography-level(14px, 14px, 600),
   $input:         sam-typography-level(inherit, 1.125, 400)
@@ -45,6 +46,7 @@
     heading-6:   $heading-6,
     lead:        $lead,
     body:        $body,
+    body-2:      $body-2,
     small:       $small,
     button:      $button,
     input:       $input

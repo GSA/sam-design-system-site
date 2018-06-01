@@ -62,14 +62,17 @@ $uswds-warm-gray: (
 );
 
 
-$divider: map-get($map: $uswds-cool-gray, $key: 200);
+$divider:               map-get($map: $uswds-cool-gray, $key: 200);
+$dark-secondary-text:   rgba(black, 0.54);
 
 // Foreground palette for light themes.
 $sam-theme-foreground: (
-  divider: $divider
+  divider:          $divider,
+  text:             rgba(black, 0.87),
+  secondary-text:   $dark-secondary-text,
 );
 
 // Background palette for light themes.
 $sam-theme-background: (
-
+  card: #ffffff
 );

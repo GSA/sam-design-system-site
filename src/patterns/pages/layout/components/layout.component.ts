@@ -68,26 +68,19 @@ export class SamAsideComponent {
   `
 })
 export class SamAsideContainerComponent
-  implements AfterContentInit {
+   {
 
   @HostBinding('class')
   public classes = 'sam-aside-container';
 
   @ContentChildren(forwardRef(() => SamAsideComponent), { descendants: true})
-  public sidenavs: QueryList<SamAsideComponent>;
-
+  public sidenavs;
+  
   constructor (
     private _element: ElementRef,
     private _renderer: Renderer2) {}
 
-  public ngAfterContentInit () {
-    console.log('# of Sidenavs', this.sidenavs.length);
-    this.sidenavs.forEach(
-      sidenav => this._registerSidenav(sidenav)
-    );
-  }
-
-  private _registerSidenav (sidenav: SamAsideComponent) {
+  public _registerSidenav (sidenav: SamAsideComponent) {
     if (!sidenav) {
       return;
     } else {
@@ -103,7 +96,7 @@ export class SamAsideContainerComponent
   }
 
   private _setContainerClass (isAdd: boolean) {
-    console.log('Called!');
+    console.log('Called!', isAdd);
     if (isAdd) {
       this._renderer.addClass(
         this._element.nativeElement,
@@ -133,6 +126,9 @@ export class SamLayoutComponent implements AfterContentInit {
   @ContentChild(SamActionBarComponent)
   public actions: SamActionBarComponent;
 
+  @ViewChild(SamAsideContainerComponent)
+  public sidenavContainer: SamAsideContainerComponent;
+
   @ContentChildren(SamAsideComponent, { descendants: true })
   public sidenavs: QueryList<SamAsideComponent>;
 
@@ -140,8 +136,10 @@ export class SamLayoutComponent implements AfterContentInit {
   public main: SamMainComponent;
 
   public ngAfterContentInit () {
-    // console.log('# of Sidenavs in Layout', this.sidenavs.length);
-    console.log('Sidenavs project into Layout', this.sidenavs.length);
+    this.sidenavContainer.sidenavs = this.sidenavs;
+    this.sidenavs.forEach(sidenav =>{
+      this.sidenavContainer._registerSidenav(sidenav);
+    });
     if (!this.main) {
       throw new Error('No SamMainComponent provided');
     }

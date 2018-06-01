@@ -29,10 +29,13 @@
     
     <!-- chips + save/clear filters -->
     <div class="selected-filters">
-      <a *ngFor="let filterItem of filterItems" class="sam-ui mini label" (click)="removeFilter(filterItem)">
-        {{ filterItem.label }}
-        <i class="icon close fa fa-times"></i>
-      </a>
+      <sam-filter-drawer>
+        <li sam-filter-drawer-item *ngFor="let filterItem of filterItems"
+          (remove)="removeFilter($event)"
+          [fieldId]="filterItem.id"
+          [fieldLabel]="filterItem.label"
+          [fieldValue]="filterItem.value"></li>
+      </sam-filter-drawer>
       
       <span class="options">
         <a class="remove">

@@ -68,19 +68,19 @@ export class SamLayoutDemoComponent {
     const fhInputChipsObs = this.fhInput.control.valueChanges.subscribe((val) => {
       if (val) {
         const item = {
-          label: val,
-          type: 'fhFilter',
+          id: val,
+          label: 'Agency',
           value: val // org id would actually populate here
         };
         this.filterItems = this.filterItems.filter(filterItem => {
-          if (filterItem.type !== 'fhFilter') {
+          if (filterItem.label !== 'Agency') {
             return true;
           }
         });
         this.filterItems.push(item);
       } else {
         this.filterItems = this.filterItems.filter(filterItem => {
-          if (filterItem.type !== 'fhFilter') {
+          if (filterItem.label !== 'Agency') {
             return true;
           }
         });
@@ -89,13 +89,13 @@ export class SamLayoutDemoComponent {
     const dateFilterChipsObs = this.dateFilter.control.valueChanges.subscribe((val) => {
       if (val && val !== 'Invalid Date') {
         const item = {
-          label: 'Date: ' + val,
-          type: 'dateFilter',
+          id: val,
+          label: 'Date',
           value: val
         };
 
         this.filterItems = this.filterItems.filter(filterItem => {
-          if (filterItem.type !== 'dateFilter') {
+          if (filterItem.label !== 'Date') {
             return true;
           }
         });
@@ -222,14 +222,14 @@ export class SamLayoutDemoComponent {
   }
 
   removeFilter(filterItem) {
-    if (filterItem.type === 'dateFilter') {
+    if (filterItem.label === 'Date') {
       this.dateModel = null;
     }
-    if (filterItem.type === 'fhFilter') {
+    if (filterItem.label === 'Agency') {
       this.fhInputText = null;
     }
     this.filterItems = this.filterItems.filter((val) => {
-      if (filterItem.type !== val.type && filterItem.value !== val.value) {
+      if (filterItem.label !== val.label && filterItem.value !== val.value) {
         return true;
       }
     });

@@ -3,7 +3,8 @@ import {
   ContentChild,
   AfterContentInit,
   HostBinding,
-  ViewChild
+  ViewChild,
+  OnInit
 } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
@@ -19,7 +20,7 @@ import { NgModel } from '@angular/forms';
   selector: 'sam-layout-demo-component',
   templateUrl: './layout.template.html'
 })
-export class SamLayoutDemoComponent {
+export class SamLayoutDemoComponent implements OnInit {
   _reportData = SampleData;
   reportDatabase = new ReportDatabase();
   dataSource: SampleDataSource | null;
@@ -64,7 +65,7 @@ export class SamLayoutDemoComponent {
     this.options = this.checkboxOptions();
     this.connect();
 
-    //chips behavior
+    // chips behavior
     const fhInputChipsObs = this.fhInput.control.valueChanges.subscribe((val) => {
       if (val) {
         const item = {
@@ -187,33 +188,33 @@ export class SamLayoutDemoComponent {
     };
   }
 
-  //modal action handlers
-  cancelModalAction(){
+  // modal action handlers
+  cancelModalAction() {
     this.options = cloneDeep(this.optionsBackup);
   }
 
-  submitModalAction(){
+  submitModalAction() {
     this.fieldsEditor.closeModal(false);
     this.toggleColumns();
   }
 
   toggleColumns() {
     this.displayedColumns = this.referenceColumns.slice(0);
-    for(const option of this.options.organization.options){
+    for (const option of this.options.organization.options){
       const optionValue = option.value;
       if (this.options.organization.selected.indexOf(option.value) === -1) {
         delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];
       }
     }
 
-    for(const option of this.options.listing.options){
+    for (const option of this.options.listing.options){
       const optionValue = option.value;
       if (this.options.listing.selected.indexOf(option.value) === -1) {
         delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];
       }
     }
 
-    for(let option of this.options.status.options){
+    for (const option of this.options.status.options){
       const optionValue = option.value;
       if (this.options.status.selected.indexOf(option.value) === -1) {
         delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];

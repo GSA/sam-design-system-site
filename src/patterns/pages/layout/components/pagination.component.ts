@@ -29,7 +29,7 @@ export class SamDatabankPaginationComponent {
      */
     @Input() disabled: boolean = false;
     /**
-     * 
+     *
      */
     @Input() dontShowLast: boolean = true;
     /**

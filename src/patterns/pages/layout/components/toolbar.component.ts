@@ -1,11 +1,11 @@
 import {
-    Component,
-    ContentChild,
-    AfterContentInit,
-    HostBinding,
-    Input
-  } from '@angular/core';
-import { SamAsideComponent } from '.';
+  Component,
+  ContentChild,
+  AfterContentInit,
+  HostBinding,
+  Input
+} from '@angular/core';
+import { SamAsideComponent } from './aside';
 
 @Component({
     selector: 'sam-toolbar',

@@ -16,7 +16,9 @@ import {
   SamLayoutComponent,
   SamToolbarComponent,
   SamDatabankPaginationComponent,
-  SamFiltersWrapperComponent
+  SamFiltersWrapperComponent,
+  SamFeedbackWrapperComponent,
+  SamResourcesWrapperComponent
 } from './layout';
 
 
@@ -78,7 +80,9 @@ import { DataFilesPageComponent } from './data-services/data-files/page.componen
     SamMainComponent,
     SamToolbarComponent,
     SamDatabankPaginationComponent,
-    SamFiltersWrapperComponent
+    SamFiltersWrapperComponent,
+    SamFeedbackWrapperComponent,
+    SamResourcesWrapperComponent
   ]
 })
 export class PagesModule {}

@@ -6,3 +6,5 @@ export * from './components/main.component';
 export * from './components/layout.component';
 export * from './components/pagination.component';
 export * from './components/filters-wrapper.component';
+export * from './components/feedback-wrapper.component';
+export * from './components/resources-wrapper.component';

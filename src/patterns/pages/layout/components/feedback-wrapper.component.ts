@@ -5,10 +5,9 @@ import {
     HostBinding
 } from '@angular/core';
 
-
 @Component({
-selector: 'sam-filters-wrapper',
-template: '<ng-content></ng-content>'
+    selector: 'sam-feedback-wrapper',
+    template: '<ng-content></ng-content>'
 })
-export class SamFiltersWrapperComponent {
+export class SamFeedbackWrapperComponent {
 }

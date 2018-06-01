@@ -51,7 +51,7 @@
     <sam-tabs>
       <sam-tab tabTitle="Table">
         <!-- pagination + edit fields button -->
-        <div>
+        <sam-action-bar>
           <sam-databank-pagination
             #paginator
             [currentPage]="curPage" 
@@ -60,7 +60,7 @@
             buttonType="secondary"
             buttonText="Edit Fields"
             (click)="toggleFieldsEditor()"></sam-button>
-        </div>
+        </sam-action-bar>
       
         <!-- datatable -->
         <sam-datatable samSort [dataSource]="dataSource">

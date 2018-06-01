@@ -5,6 +5,8 @@ import {
     HostBinding
 } from '@angular/core';
 import { SamFiltersWrapperComponent } from './filters-wrapper.component';
+import { SamResourcesWrapperComponent } from './resources-wrapper.component';
+import { SamFeedbackWrapperComponent } from './feedback-wrapper.component';
 
 
 @Component({
@@ -16,4 +18,10 @@ export class SamAsideComponent {
 
     @ContentChild(SamFiltersWrapperComponent)
     public filtersWrapper: SamFiltersWrapperComponent;
+
+    @ContentChild(SamResourcesWrapperComponent)
+    public resourcesWrapper: SamResourcesWrapperComponent;
+
+    @ContentChild(SamFeedbackWrapperComponent)
+    public feedbackWrapper: SamFeedbackWrapperComponent;
 }

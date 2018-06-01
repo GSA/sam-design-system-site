@@ -11,7 +11,4 @@ import {
     template: '<ng-content></ng-content>'
 })
 export class SamMainComponent {
-    @Input('id') id = "primary-content";
-    @HostBinding('attr.id') attrId = this.id;
-    @HostBinding('attr.tabindex') tabindex = 0;
 }

@@ -8,9 +8,16 @@ import { PagesRoutingModule } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
-import { SamLayoutDemoComponent, SamActionBarComponent,
-  SamAsideComponent, SamMainComponent, SamLayoutComponent,
-  SamToolbarComponent, SamDatabankPaginationComponent } from './layout';
+import {
+  SamLayoutDemoComponent,
+  SamActionBarComponent,
+  SamAsideComponent,
+  SamMainComponent,
+  SamLayoutComponent,
+  SamToolbarComponent,
+  SamDatabankPaginationComponent,
+  SamFiltersWrapperComponent
+} from './layout';
 
 
 // Data Entry
@@ -70,7 +77,8 @@ import { DataFilesPageComponent } from './data-services/data-files/page.componen
     SamAsideComponent,
     SamMainComponent,
     SamToolbarComponent,
-    SamDatabankPaginationComponent
+    SamDatabankPaginationComponent,
+    SamFiltersWrapperComponent
   ]
 })
 export class PagesModule {}

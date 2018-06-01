@@ -2,6 +2,7 @@
 @import '../core';
 @import '../../breadcrumbs/theme';
 @import '../../menu/theme';
+@import '../../table/theme';
 
 @import '../../box/box';
 @import '../../button/button';
@@ -26,4 +27,5 @@
   @include sam-breadcrumbs-theme($theme);
   @include sam-button-theme($theme);
   @include sam-menu-theme($theme);
+  @include sam-table-theme($theme);
 }

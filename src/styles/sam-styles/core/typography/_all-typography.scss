@@ -8,5 +8,5 @@
 
   @include sam-base-typography($config);
   @include sam-breadcrumbs-typography($config);
-
+  @include sam-table-typography($config);
 }

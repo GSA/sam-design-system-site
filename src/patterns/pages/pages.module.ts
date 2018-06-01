@@ -18,7 +18,8 @@ import {
   SamDatabankPaginationComponent,
   SamFiltersWrapperComponent,
   SamFeedbackWrapperComponent,
-  SamResourcesWrapperComponent
+  SamResourcesWrapperComponent,
+  SamDatabankTitleSectionDirective
 } from './layout';
 
 
@@ -82,7 +83,8 @@ import { DataFilesPageComponent } from './data-services/data-files/page.componen
     SamDatabankPaginationComponent,
     SamFiltersWrapperComponent,
     SamFeedbackWrapperComponent,
-    SamResourcesWrapperComponent
+    SamResourcesWrapperComponent,
+    SamDatabankTitleSectionDirective
   ]
 })
 export class PagesModule {}

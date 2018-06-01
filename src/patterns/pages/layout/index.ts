@@ -8,3 +8,4 @@ export * from './components/pagination.component';
 export * from './components/filters-wrapper.component';
 export * from './components/feedback-wrapper.component';
 export * from './components/resources-wrapper.component';
+export * from './components/title-section.component';

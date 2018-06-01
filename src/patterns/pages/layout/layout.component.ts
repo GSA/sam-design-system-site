@@ -234,7 +234,8 @@ export class SamLayoutDemoComponent {
       }
     });
   }
-  removeAllFilters(){
+
+  removeAllFilters() {
     this.dateModel = null;
     this.fhInputText = null;
     this.filterItems = [];

@@ -90,12 +90,12 @@ export class SamLayoutDemoComponent {
       if (val && val !== 'Invalid Date') {
         const item = {
           id: val,
-          label: 'Date',
+          label: 'Last Updated Date',
           value: val
         };
 
         this.filterItems = this.filterItems.filter(filterItem => {
-          if (filterItem.label !== 'Date') {
+          if (filterItem.label !== 'Last Updated Date') {
             return true;
           }
         });
@@ -222,7 +222,7 @@ export class SamLayoutDemoComponent {
   }
 
   removeFilter(filterItem) {
-    if (filterItem.label === 'Date') {
+    if (filterItem.label === 'Last Updated Date') {
       this.dateModel = null;
     }
     if (filterItem.label === 'Agency') {

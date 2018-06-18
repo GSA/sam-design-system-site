@@ -67,7 +67,7 @@
       <sam-action-bar>
         <sam-databank-pagination
           #paginator
-          [currentPage]="pagination.currentPage | async" 
+          [currentPage]="0"
           [totalPages]="length"
           (pageChange)="onPageChange($event)"
         ></sam-databank-pagination>

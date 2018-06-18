@@ -33,7 +33,8 @@ export class PagesComponent implements OnDestroy {
 
   options = [
     { name: 'User Account', value: 'a' },
-    { name: 'Award Domains', value: 'b' }
+    { name: 'Award Domains', value: 'b' },
+    { name: 'Layout', value: 'layout'}
   ];
 
   routerSubscription: any;

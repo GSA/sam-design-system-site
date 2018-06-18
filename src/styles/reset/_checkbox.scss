@@ -1,0 +1,20 @@
+@mixin sam-checkbox-reset($selector: '.sam.reset') {  
+  input[type="checkbox"]#{$selector}{
+    opacity: 1;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    margin: 0;
+    position: static;
+    max-width: none;
+    cursor: default;
+    height: 16px;
+    display: inline-block;
+    width: auto;
+  }
+}
+
+@include sam-checkbox-reset();
+
+.sam.reset.checkboxes{
+	@include sam-checkbox-reset('');
+}

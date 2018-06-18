@@ -1,6 +1,10 @@
 // Import all the theming functionality.
 @import '../core';
 @import '../../breadcrumbs/theme';
+@import '../../menu/theme';
+@import '../../table/theme';
+@import '../../pagination/theme';
+@import '../../sidenav/theme';
 
 @import '../../box/box';
 @import '../../button/button';
@@ -24,4 +28,8 @@
   @include sam-box-theme($theme);
   @include sam-breadcrumbs-theme($theme);
   @include sam-button-theme($theme);
+  @include sam-menu-theme($theme);
+  @include sam-table-theme($theme);
+  @include sam-pagination-theme($theme);
+  @include sam-sidenav-theme($theme);
 }

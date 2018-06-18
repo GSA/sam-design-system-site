@@ -8,13 +8,15 @@ import { PagesRoutingModule } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
+import { LayoutModule } from './layout';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     PagesRoutingModule,
-    SamUIKitModule
+    SamUIKitModule,
+    LayoutModule
   ],
   declarations: [
     PagesComponent,

@@ -1,0 +1,11 @@
+@mixin sam-fieldset-reset($selector: '.sam.reset') {  
+  fieldset#{$selector}{
+    padding: 0;
+  }
+}
+
+@include sam-fieldset-reset();
+
+.sam.reset.fieldsets{
+	@include sam-fieldset-reset('');
+}

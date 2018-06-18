@@ -1,0 +1,93 @@
+
+.selected-filters {
+
+	sam-filter-drawer{
+		display:inline-flex;
+	}
+
+	ul{
+		margin:0px 10px 20px 0;
+		padding:0px;
+
+		li{
+			display:inline-block;
+			width: auto;
+			padding: 3px 10px 5px;
+			margin-right:5px;
+			background-color:#f0f0f0;
+			border-radius:3px;
+			font-size:1.4rem;
+		}
+		li i{
+			margin-left:5px;
+			cursor: pointer;
+		}
+	}
+
+	.options{
+		a{
+			margin:0 10px 0 0;
+		}
+	}
+}
+
+
+// fieldset spacing and font size //
+
+sam-aside fieldset.usa-fieldset-inputs {
+	padding: 0px;
+	margin: 40px 0;
+}
+sam-aside fieldset label{
+	font-size:1.4rem;
+}
+
+sam-aside sam-resources-wrapper {
+	
+	ul{
+		padding-left:18px;
+	}
+}
+
+// table css //
+
+.sam-table{
+
+	.sam-datatable-thead{
+		position:sticky;
+		top:0px;
+		background-color:#fff;
+	}
+
+	.sam-cell{
+		display:block;
+		font-size:14px;
+		text-align: center;
+	}
+
+	.sam-column-Agency,
+	.sam-column-Title{
+		text-align: left;
+	}
+
+	sam-cell:first-child, 
+	sam-header-cell:first-child, 
+	.sam-footer-cell:first-child{
+		padding-left:0px;
+	}
+
+	sam-cell:last-child, 
+	sam-header-cell:last-child, 
+	.sam-footer-cell:last-child{
+		padding-right:0px;
+	}
+
+
+}
+
+
+
+sam-action-bar{
+	display: flex;
+	justify-content: space-between;
+}

@@ -1,0 +1,25 @@
+.sam.pagination ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sam.pagination li {
+	display: inline;
+}
+
+.sam.pagination a {
+	padding: 5px 8px 5px 10px;
+	text-decoration: none;
+}
+
+.sam.pagination a.active {
+	border-radius: 2px;
+}
+
+.sam.pagination .fa-angle-left{
+	margin-right: 5px;
+}
+
+.sam.pagination .fa-angle-right{
+	margin-left: 5px;
+}

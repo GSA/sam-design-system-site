@@ -5,13 +5,13 @@ import {
     AfterContentInit,
     HostBinding,
     Input
-  } from '@angular/core';
-  
+} from '@angular/core';
+
 @Directive({
-    selector: '[sam-title-section]'
+    selector: '[samTitleSection]'
 })
 export class SamDatabankTitleSectionDirective {
-    @Input('id') id = "primary-content";
+    @Input('id') id = 'primary-content';
     @HostBinding('class.sam') samClass = true;
     @HostBinding('class.heading') headingClass = true;
     @HostBinding('attr.id') attrId = this.id;

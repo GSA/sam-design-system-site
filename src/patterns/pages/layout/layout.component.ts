@@ -4,7 +4,8 @@ import {
   AfterContentInit,
   HostBinding,
   ViewChild,
-  OnInit
+  OnInit,
+  ChangeDetectorRef
 } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
@@ -87,7 +88,8 @@ export class SamLayoutDemoComponent implements OnInit {
 
   constructor (
     private _fb: FormBuilder,
-    private _store: DataStore
+    private _store: DataStore,
+    private cdr: ChangeDetectorRef
   ) {
     this.form = this._fb.group({
       fhInputText: [''],
@@ -111,6 +113,8 @@ export class SamLayoutDemoComponent implements OnInit {
 
     this.pagination = this.model
       .map(model => model.pagination);
+      
+    this.cdr.detectChanges();
   }
 
   public toggleFieldsEditor () {

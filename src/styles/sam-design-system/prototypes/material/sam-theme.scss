@@ -68,7 +68,7 @@ $theme: mat-light-theme($primary, $accent);
 @include mat-expansion-panel-theme($theme);
 @include mat-sidenav-theme($theme);
 @include mat-tabs-theme($theme);
-@include mat-table-theme($theme);
+// @include mat-table-theme($theme);
 @include mat-paginator-theme($theme);
 @include mat-select-theme($theme);
 @include mat-tooltip-theme($theme);

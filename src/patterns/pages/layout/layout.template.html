@@ -1,0 +1,236 @@
+
+<sam-toolbar [sidenav]="aside"></sam-toolbar>
+
+<sam-page-next>
+  <sam-aside #aside opened mode="side">
+    <sam-filters-wrapper [group]="form">
+      <!-- update with real 'Agency' filter -->
+      <input
+        class="sam transition input"
+        placeholder="Select"
+        [formControl]="form.controls.fhInputText"
+        type="text" />
+      
+      <!-- update with real 'Last Updated Date' date filter -->
+      <sam-date
+        label='Last Updated Date'
+        name='date-example'
+        [formControl]="form.controls.dateModel"
+      ></sam-date>
+    </sam-filters-wrapper>
+    <!-- finalize this implementation -->
+    <sam-resources-wrapper>
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="https://beta.sam.gov/help/assistance-listing" target="blank">About Federal Assistance</a></li>
+      </ul>
+    </sam-resources-wrapper>
+  </sam-aside>
+  
+  <!-- Main Content -->
+
+  <!-- page title goes here -->
+  <h1 samTitleSection>
+    <span class="intro">
+      Federal Assistance Compliance Summary 
+    </span>
+    My Saved Report Criteria <br>
+    
+  </h1>
+  
+  <!-- filter-drawer + save/clear filters -->
+  <div class="selected-filters">
+    <sam-filter-drawer>
+      <li sam-filter-drawer-item
+        *ngFor="let filterItem of filters | async"
+        (remove)="removeFilter($event)"
+        [fieldId]="filterItem.id"
+        [fieldLabel]="filterItem.label"
+        [fieldValue]="filterItem.value"
+      ></li>
+    </sam-filter-drawer>
+    
+    <span class="options">
+      <a class="remove">
+        <i class="fa fa-cloud"></i>
+        Save Filters
+      </a>
+      <a class="remove" (click)="removeAllFilters()">
+        Clear Filters
+      </a>
+    </span>
+  </div>
+
+  <sam-tabs>
+    <sam-tab tabTitle="Table">
+      <!-- pagination + edit fields button -->
+      <sam-action-bar>
+        <sam-databank-pagination
+          #paginator
+          [currentPage]="0"
+          [totalPages]="length"
+          (pageChange)="onPageChange($event)"
+        ></sam-databank-pagination>
+        <sam-button
+          buttonType="secondary"
+          buttonText="Edit Fields"
+          (click)="toggleFieldsEditor()"
+        ></sam-button>
+      </sam-action-bar>
+      
+      <!-- datatable -->
+      <sam-datatable samSort
+        [dataSource]="dataSource"
+        (samSortChange)="onSortChange($event)">
+        <ng-container cdkColumnDef="Agency">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            Agency
+        </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['Agency']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="CFDANumber">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            CFDA Number
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['CFDA Number']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="Title">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            Title
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['Title']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="CurrentStatus">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            Current Status
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['Current Status']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="LastUpdatedDate">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            Last Updated Date
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['Last Updated Date']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="ObligationsUpdated">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            Obligations Updated
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['Obligations Updated']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="OMBReviewDate">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            OMB Review Date
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['OMB Review Date']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="LastPublishedDate">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            Last Published Date
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['Last Published Date']}}
+          </sam-cell>
+        </ng-container>
+        
+        <ng-container cdkColumnDef="AutoPublished">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            Auto Published
+          </sam-header-cell>
+          <sam-cell *cdkCellDef="let row">
+            {{row['Auto Published']}}
+          </sam-cell>
+        </ng-container>
+        
+        <sam-header-row
+          *cdkHeaderRowDef="displayedColumns"
+        ></sam-header-row>
+        <sam-row
+          *cdkRowDef="let row; columns: displayedColumns"
+        ></sam-row> 
+      </sam-datatable>
+    </sam-tab>
+    <sam-tab tabTitle="Summary">
+      bbbb
+    </sam-tab>
+    <sam-tab tabTitle="Charts">
+      cccc
+    </sam-tab>
+  </sam-tabs>
+  
+</sam-page-next>
+
+<!-- modals -->
+<sam-modal
+  [showClose]="true"
+  [title]="'Edit Fields'"
+  [type]="'info'"
+  [description]="'Edit fields for report'"
+  [submitButtonLabel]="'Done'"
+  [cancelButtonLabel]="'Cancel'"
+  (close)="cancelModalAction()"
+  (submit)="submitModalAction()">
+<div class="sam reset checkboxes labels fieldsets">
+  
+  <h4 class="sam heading">{{ options.organization.label }} </h4>
+  <sam-checkbox
+  [(ngModel)]="options.organization.selected"
+  [name]="options.organization.label"
+  [options]="options.organization.options"
+  ></sam-checkbox>
+  
+  <h4 class="sam heading">{{  options.listing.label }}</h4>
+  <sam-checkbox
+  [(ngModel)]="options.listing.selected"
+  [name]="options.listing.label"
+  [options]="options.listing.options"
+  ></sam-checkbox>
+  
+  <h4 class="sam heading">{{ options.status.label }}</h4>
+  <sam-checkbox
+  [(ngModel)]="options.status.selected"
+  [name]="options.status.label"
+  [options]="options.status.options"
+  ></sam-checkbox>
+  
+</div>
+</sam-modal>

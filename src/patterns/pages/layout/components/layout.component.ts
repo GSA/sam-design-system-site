@@ -22,7 +22,7 @@ import { SamMainComponent } from './main.component';
     <ng-content></ng-content>
   `
 })
-export class SamLayoutComponent implements AfterContentInit {
+export class SamLayoutComponent {
   @HostBinding('class.container') container: boolean = true;
 
   @ContentChild(SamActionBarComponent)
@@ -30,8 +30,4 @@ export class SamLayoutComponent implements AfterContentInit {
 
   @ContentChild(SamMainComponent)
   public main: SamMainComponent;
-
-  public ngAfterContentInit () {
-   
-  }
 }

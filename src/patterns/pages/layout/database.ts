@@ -11,8 +11,7 @@ import {
   SamModalComponent
 } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { FormControl, NgModel } from '@angular/forms';
-import { SamDatabankPaginationComponent } from '.';
-import { DataStore } from '../../architecture';
+import { SamDatabankPaginationComponent, DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 
 export interface SampleDataDef {
   'Agency': string;

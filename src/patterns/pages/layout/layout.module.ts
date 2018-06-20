@@ -4,11 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 
-import { SamLayoutComponentsModule } from './components';
-import { SamLayoutDemoComponent } from '.';
-import { DataStore } from '../../architecture';
-import { layoutStore } from './update/layout-store';
-
+import { SamLayoutDemoComponent } from './layout.component';
+import { DataStore, layoutStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 
 @NgModule({
   imports: [
@@ -16,7 +13,6 @@ import { layoutStore } from './update/layout-store';
     FormsModule,
     ReactiveFormsModule,
     SamUIKitModule,
-    SamLayoutComponentsModule
   ],
   declarations: [
     SamLayoutDemoComponent

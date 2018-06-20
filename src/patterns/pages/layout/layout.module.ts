@@ -6,6 +6,7 @@ import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 
 import { SamLayoutDemoComponent } from './layout.component';
 import { DataStore, layoutStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { PrototypesComponentsModule } from 'prototypes/components/prototypes-components.module';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { DataStore, layoutStore } from 'sam-ui-elements/src/ui-kit/experimental/
     FormsModule,
     ReactiveFormsModule,
     SamUIKitModule,
+    PrototypesComponentsModule
   ],
   declarations: [
     SamLayoutDemoComponent

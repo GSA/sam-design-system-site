@@ -15,30 +15,30 @@ import {
   MdExpansionPanelTitle
 } from './expansion-panel-header';
 import {
-  MdExpansionPanel,
-  MdExpansionPanelActionRow,
+  MdExpansionPanelComponent,
+  MdExpansionPanelActionRowDirective,
 } from './expansion-panel';
 import {
-  CdkAccordion,
-  MdAccordion,
+  CdkAccordionDirective,
+  MdAccordionDirective,
 } from './accordion';
 
 @NgModule({
   imports: [CommonModule],
   exports: [
-    CdkAccordion,
-    MdAccordion,
-    MdExpansionPanel,
-    MdExpansionPanelActionRow,
+    CdkAccordionDirective,
+    MdAccordionDirective,
+    MdExpansionPanelComponent,
+    MdExpansionPanelActionRowDirective,
     MdExpansionPanelHeader,
     MdExpansionPanelTitle,
     MdExpansionPanelDescription
   ],
   declarations: [
-    CdkAccordion,
-    MdAccordion,
-    MdExpansionPanel,
-    MdExpansionPanelActionRow,
+    CdkAccordionDirective,
+    MdAccordionDirective,
+    MdExpansionPanelComponent,
+    MdExpansionPanelActionRowDirective,
     MdExpansionPanelHeader,
     MdExpansionPanelTitle,
     MdExpansionPanelDescription
@@ -48,15 +48,15 @@ import {
 export class MdExpansionModule {}
 
 export {
-  CdkAccordion,
-  MdAccordion,
+  CdkAccordionDirective,
+  MdAccordionDirective,
   MdAccordionDisplayMode
 } from './accordion';
 export {AccordionItem} from './accordion-item';
 export {
-  MdExpansionPanel,
+  MdExpansionPanelComponent,
   MdExpansionPanelState,
-  MdExpansionPanelActionRow
+  MdExpansionPanelActionRowDirective
 } from './expansion-panel';
 export {
   MdExpansionPanelHeader,

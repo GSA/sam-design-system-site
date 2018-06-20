@@ -1,3 +1,4 @@
+/* tslint:disable */
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -20,7 +21,7 @@ import {
   animate,
 } from '@angular/animations';
 import {SPACE, ENTER} from '@angular/cdk';
-import {MdExpansionPanel, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-panel';
+import {MdExpansionPanelComponent, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-panel';
 
 
 /**
@@ -33,7 +34,7 @@ import {MdExpansionPanel, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-pa
 @Component({
   moduleId: module.id,
   selector: 'md-expansion-panel-header, mat-expansion-panel-header, sam-expansion-panel-header',
-  //styleUrls: ['./expansion-panel-header.css'],
+  // styleUrls: ['./expansion-panel-header.css'],
   templateUrl: './expansion-panel-header.html',
   encapsulation: ViewEncapsulation.None,
   host: {
@@ -61,7 +62,7 @@ import {MdExpansionPanel, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-pa
   ],
 })
 export class MdExpansionPanelHeader {
-  constructor(@Host() public panel: MdExpansionPanel) {}
+  constructor(@Host() public panel: MdExpansionPanelComponent) {}
 
   /** Toggles the expanded state of the panel. */
   _toggle(): void {

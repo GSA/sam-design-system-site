@@ -19,9 +19,9 @@ let nextId = 0;
  * Directive whose purpose is to manage the expanded state of CdkAccordionItem children.
  */
 @Directive({
-  selector: '[cdk-accordion]',
+  selector: '[samAccordion]',
 })
-export class CdkAccordion {
+export class CdkAccordionDirective {
   /** A readonly id value to use for unique selection coordination. */
   readonly id = `cdk-accordion-${nextId++}`;
 
@@ -50,9 +50,6 @@ export class CdkAccordion {
  * Directive for a Material Design Accordion.
  */
 @Directive({
-  selector: 'mat-accordion, md-accordion, sam-accordion',
-  host: {
-    class: 'mat-accordion'
-  }
+  selector: '[samMatAccordion], [samMdAccordion]'
 })
-export class MdAccordion extends CdkAccordion {}
+export class MdAccordionDirective extends CdkAccordionDirective {}

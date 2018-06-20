@@ -14,6 +14,7 @@ import {
   ViewEncapsulation,
   Optional,
   forwardRef,
+  HostBinding,
 } from '@angular/core';
 import {
   trigger,
@@ -22,7 +23,7 @@ import {
   transition,
   animate,
 } from '@angular/animations';
-import {MdAccordion, MdAccordionDisplayMode} from './accordion';
+import {MdAccordionDirective, MdAccordionDisplayMode} from './accordion';
 import {AccordionItem} from './accordion-item';
 import {UniqueSelectionDispatcher} from '../core/coordination/unique-selection-dispatcher';
 
@@ -43,17 +44,12 @@ export const EXPANSION_PANEL_ANIMATION_TIMING = '225ms cubic-bezier(0.4,0.0,0.2,
  */
 @Component({
   moduleId: module.id,
-  //styleUrls: ['./expansion-panel.css'],
+  // styleUrls: ['./expansion-panel.css'],
   selector: 'md-expansion-panel, mat-expansion-panel, sam-expansion-panel',
   templateUrl: './expansion-panel.html',
   encapsulation: ViewEncapsulation.None,
-  host: {
-    'class': 'mat-expansion-panel',
-    '[class.mat-expanded]': 'expanded',
-    '[@displayMode]': '_getDisplayMode()',
-  },
   providers: [
-    {provide: AccordionItem, useExisting: forwardRef(() => MdExpansionPanel)}
+    {provide: AccordionItem, useExisting: forwardRef(() => MdExpansionPanelComponent)}
   ],
   animations: [
     trigger('bodyExpansion', [
@@ -70,11 +66,16 @@ export const EXPANSION_PANEL_ANIMATION_TIMING = '225ms cubic-bezier(0.4,0.0,0.2,
     ]),
   ],
 })
-export class MdExpansionPanel extends AccordionItem {
+export class MdExpansionPanelComponent extends AccordionItem {
+  @HostBinding('class') hostClass = 'mat-expansion-panel';
+  @HostBinding('class.mat-expanded') expanded;
+  @HostBinding('@displayMode') get getDisplayMode() {
+    return this._getDisplayMode();
+  }
   /** Whether the toggle indicator should be hidden. */
   @Input() hideToggle: boolean = false;
 
-  constructor(@Optional() @Host() accordion: MdAccordion,
+  constructor(@Optional() @Host() accordion: MdAccordionDirective,
               _uniqueSelectionDispatcher: UniqueSelectionDispatcher) {
     super(accordion, _uniqueSelectionDispatcher);
     this.accordion = accordion;
@@ -106,9 +107,8 @@ export class MdExpansionPanel extends AccordionItem {
 }
 
 @Directive({
-  selector: 'mat-action-row, md-action-row',
-  host: {
-    class: 'mat-action-row'
-  }
+  selector: '[samMatActionRow], [samMdActionRow]',
 })
-export class MdExpansionPanelActionRow {}
+export class MdExpansionPanelActionRowDirective {
+  @HostBinding('class') hostClass = 'mat-action-row';
+}

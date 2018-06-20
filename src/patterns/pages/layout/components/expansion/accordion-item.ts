@@ -8,7 +8,7 @@
 
 import {Output, EventEmitter, Input, Injectable, OnDestroy, Optional} from '@angular/core';
 import {UniqueSelectionDispatcher} from '../core/coordination/unique-selection-dispatcher';
-import {CdkAccordion} from './accordion';
+import {CdkAccordionDirective} from './accordion';
 
 /** Used to generate unique ID for each expansion panel. */
 let nextId = 0;
@@ -39,7 +39,7 @@ export class AccordionItem implements OnDestroy {
          * In the unique selection dispatcher, the id parameter is the id of the CdkAccordonItem,
          * the name value is the id of the accordion.
          */
-        let accordionId = this.accordion ? this.accordion.id : this.id;
+        const accordionId = this.accordion ? this.accordion.id : this.id;
         this._expansionDispatcher.notify(this.id, accordionId);
       } else {
         this.closed.emit();
@@ -51,7 +51,7 @@ export class AccordionItem implements OnDestroy {
   /** Unregister function for _expansionDispatcher **/
   private _removeUniqueSelectionListener: () => void = () => {};
 
-  constructor(@Optional() public accordion: CdkAccordion,
+  constructor(@Optional() public accordion: CdkAccordionDirective,
               protected _expansionDispatcher: UniqueSelectionDispatcher) {
      this._removeUniqueSelectionListener =
        _expansionDispatcher.listen((id: string, accordionId: string) => {

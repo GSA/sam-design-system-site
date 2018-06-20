@@ -5,6 +5,7 @@
 @import '../../table/theme';
 @import '../../pagination/theme';
 @import '../../sidenav/theme';
+@import '../../expansion/theme';
 
 @import '../../box/box';
 @import '../../button/button';
@@ -32,4 +33,5 @@
   @include sam-table-theme($theme);
   @include sam-pagination-theme($theme);
   @include sam-sidenav-theme($theme);
+  @include sam-expansion-panel-theme($theme);
 }

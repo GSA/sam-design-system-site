@@ -2,29 +2,46 @@
 <sam-toolbar [sidenav]="aside"></sam-toolbar>
 
 <sam-page-next>
+
   <sam-aside #aside opened mode="side">
+
     <sam-filters-wrapper [group]="form">
-      <!-- update with real 'Agency' filter -->
-      <input
-        class="sam transition input"
-        placeholder="Select"
-        [formControl]="form.controls.fhInputText"
-        type="text" />
       
-      <!-- update with real 'Last Updated Date' date filter -->
-      <sam-date
-        label='Last Updated Date'
-        name='date-example'
-        [formControl]="form.controls.dateModel"
-      ></sam-date>
+      <div samAccordion multi="true">
+        <sam-expansion-panel>
+          <sam-expansion-panel-header>
+            Federal Organizations
+          </sam-expansion-panel-header>
+          <!-- update with real 'Agency' filter -->
+          <input
+            class="sam transition input"
+            placeholder="Select"
+            [formControl]="form.controls.fhInputText"
+            type="text" />
+        </sam-expansion-panel>
+        <sam-expansion-panel>
+          <sam-expansion-panel-header>
+            Last Updated Date
+          </sam-expansion-panel-header>
+          <!-- update with real 'Last Updated Date' date filter -->
+          <sam-date
+            label='Last Updated Date'
+            name='date-example'
+            [formControl]="form.controls.dateModel"
+          ></sam-date>
+        </sam-expansion-panel>
+      </div>
+
     </sam-filters-wrapper>
+
     <!-- finalize this implementation -->
     <sam-resources-wrapper>
-      <h3>Resources</h3>
+      <h3 class="sam heading">Resources</h3>
       <ul>
         <li><a href="https://beta.sam.gov/help/assistance-listing" target="blank">About Federal Assistance</a></li>
       </ul>
     </sam-resources-wrapper>
+
   </sam-aside>
   
   <!-- Main Content -->

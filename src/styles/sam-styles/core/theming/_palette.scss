@@ -67,6 +67,7 @@ $dark-secondary-text:   rgba(black, 0.54);
 
 // Foreground palette for light themes.
 $sam-theme-foreground: (
+  base:              black,
   divider:          $divider,
   text:             rgba(black, 0.87),
   secondary-text:   $dark-secondary-text,
@@ -75,6 +76,7 @@ $sam-theme-foreground: (
 // Background palette for light themes.
 $sam-theme-background: (
   card: #ffffff,
+  hover:      rgba(black, 0.04),
   dialog:     white,
   background:  map-get($map: $uswds-cool-gray, $key: 200)
 );

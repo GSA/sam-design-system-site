@@ -13,7 +13,6 @@ import { PickerLevel4Component } from './picker/component';
 import { PickerLevel5Component } from './picker/component';
 import { PickerLevel6Component } from './picker/component';
 import { MainNavComponent } from './main-nav/component';
-import { SamExpansionModule } from './expansion';
 import { CdkTableModule } from '@angular/cdk';
 import {
   MdPaginatorModule,
@@ -35,7 +34,6 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     SamExperimentalDataTableModule,
     SamUIKitModule,
     MdTabsModule,
-    SamExpansionModule,
     MdSidenavModule,
     MdTableModule,
     MdPaginatorModule,
@@ -57,7 +55,6 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
   exports: [
     MainNavComponent,
     MdTabsModule,
-    SamExpansionModule,
     MdSidenavModule,
     MdTableModule,
     MdPaginatorModule,

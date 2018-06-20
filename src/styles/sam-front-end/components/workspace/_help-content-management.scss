@@ -135,8 +135,8 @@
 
   .public-view-tag, .status-tag{
     position: absolute;
-    top: -1px;
-    right: 11px;
+    top: 27px;
+    right: 22px;
     min-width: 80px;
     padding: 0px 10px;
     background-color: $color-gray-lightest;
@@ -153,8 +153,12 @@
   }
 
   .sam-ui.header{
-    border: 1px solid $color-gray-lighter;
-    padding: 15px;
+    //border: 1px solid $color-gray-lighter;
+    //padding: 15px;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .file-input-div, .file-input-error-div{
@@ -218,5 +222,11 @@
     margin: 5px 0;
     padding: 20px 15px;
   }
+
+  .m-r-6{
+    margin-right: 6em;
+  }
+
+  
 }
 

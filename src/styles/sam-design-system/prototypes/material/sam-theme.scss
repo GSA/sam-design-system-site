@@ -1,6 +1,4 @@
 // Include overwritten component's styles
-@import './expansion/expansion-panel';
-@import './expansion/expansion-panel-header';
 
 @import '~@angular/material/theming';
 
@@ -65,10 +63,8 @@ $theme: mat-light-theme($primary, $accent);
 // angular-material-theme
 @include mat-core-theme($theme);
 @include mat-chips-theme($theme);
-@include mat-expansion-panel-theme($theme);
 @include mat-sidenav-theme($theme);
 @include mat-tabs-theme($theme);
-// @include mat-table-theme($theme);
 @include mat-paginator-theme($theme);
 @include mat-select-theme($theme);
 @include mat-tooltip-theme($theme);
@@ -111,6 +107,3 @@ md-sidenav {
   height: auto !important;
 }
 
-sam-expansion-panel:last-child{
-  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.12) !important;
-}

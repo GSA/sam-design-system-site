@@ -1,6 +1,27 @@
 .roles-directory {
   .user-role {
     margin-top: 1em;
+    background-color: white; 
+    border: 1px solid lightgray
+  }
+
+  .action-bar {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .user-image-div {
+    background-color: transparent;
+  }
+
+  .user-image {
+    width: 50px !important; 
+    opacity: .5;
+  }
+
+  .side-cbx {
+    padding-left:40%; 
+    padding-right: 0px; 
+    font-size: 85%;
   }
 
   .sam-actions {
@@ -99,10 +120,31 @@
     vertical-align: middle;
   }
 
-  .user-search-auto, .entity-search-auto {
-    .fa-times-circle {
+  .user-search-auto, .entity-search-auto, .organization-container {
+    .fa-times-circle, .usa-form-hint {
       display: none
     }
   }
+
+  .menu-links-div{
+    position:absolute; 
+    right: 0px; 
+    top: -40px
+  }
   
+  .filter-selections-div {
+    max-height: 180px; 
+    overflow-y: auto; 
+    padding-left: 4px; 
+    position: relative; 
+    overflow-x: hidden;
+  }
+
+  .spinner-size {
+    font-size: 0.7em;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
 }

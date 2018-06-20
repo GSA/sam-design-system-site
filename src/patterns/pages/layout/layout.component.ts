@@ -12,10 +12,9 @@ import { SampleDatabase, SampleDataSource } from './database';
 import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-import { SamDatabankPaginationComponent } from '.';
+import { SamDatabankPaginationComponent, DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 import { cloneDeep } from 'lodash';
 import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
-import { DataStore } from '../../architecture';
 
 @Component({
   selector: 'sam-layout-demo-component',

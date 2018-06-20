@@ -17,7 +17,6 @@ import { CdkTableModule } from '@angular/cdk';
 import {
   MdPaginatorModule,
   MdTableModule,
-  MdSidenavModule,
   MdSortModule,
   MdTabsModule,
   MdChipsModule
@@ -34,7 +33,6 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     SamExperimentalDataTableModule,
     SamUIKitModule,
     MdTabsModule,
-    MdSidenavModule,
     MdTableModule,
     MdPaginatorModule,
     MdSortModule,
@@ -55,7 +53,6 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
   exports: [
     MainNavComponent,
     MdTabsModule,
-    MdSidenavModule,
     MdTableModule,
     MdPaginatorModule,
     MdSortModule,

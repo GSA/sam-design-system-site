@@ -7,6 +7,7 @@ import {
 
 import { SamPageNextComponent } from './page/page.component';
 import { MdSidenavModule } from './sidenav';
+import { MdExpansionModule } from './expansion';
 import { SamActionBarComponent } from './actionbar.component';
 import { SamLayoutComponent } from './layout.component';
 import { SamMainComponent } from './main.component';
@@ -32,7 +33,8 @@ import {
     FormsModule,
     ReactiveFormsModule,
     SamUIKitModule,
-    MdSidenavModule
+    MdSidenavModule,
+    MdExpansionModule
   ],
   declarations: [
     SamActionBarComponent,
@@ -48,6 +50,7 @@ import {
   ],
   exports: [
     MdSidenavModule,
+    MdExpansionModule,
     SamActionBarComponent,
     SamLayoutComponent,
     SamMainComponent,

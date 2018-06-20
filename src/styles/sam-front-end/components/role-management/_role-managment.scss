@@ -58,3 +58,51 @@
   vertical-align: text-bottom;
   word-break: break-all;
 }
+
+.rm-permission-tab {
+
+  .rm-permission-li {
+    margin-bottom: 16px;
+  }
+
+  .rm-permission-func-name {
+    font-weight: 600;
+     font-size: 1.7rem;
+      padding-left: 30px;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.display-inline-block {
+  display: inline-block !important;
+}
+
+.display-inline {
+  display: inline !important;
+}
+
+.display-initial {
+  display: initial !important;
+}
+
+.disable-pointer-event {
+  pointer-events: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.align-center {
+  text-align: center;
+}
+
+rm-comments {
+  .rm-comments-character-calc-span {
+    font-weight: 400
+  }
+}
+

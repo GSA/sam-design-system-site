@@ -47,4 +47,43 @@
   .italic-span{
     font-style: italic
   }
+
+  .usa-form-hint {
+    display: none;
+  }
+
+  sam-text-area {
+    .usa-form-hint {
+      display: block !important;
+    }
+  
+  }
+
+  .users-div {
+    margin-top: .5em;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .users-table {
+    background-color:white;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .access-user-div {
+    max-height: 250px;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .access-user-name {
+    padding-bottom: 0; 
+    padding-top: 0;
+  }
+
+  .permission-domain-name {
+    border-bottom: 1px solid lightgray;
+  }
 }

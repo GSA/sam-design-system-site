@@ -84,25 +84,6 @@ import {
       });
     }
   
-    removeFilter(filterItem) {
-      const removed = {};
-      removed[filterItem.id] = '';
-      const newValue = {
-        ...this._store.currentState.filters,
-        ...removed
-      };
-      this._store.update(
-        {
-          type: 'FILTERS_CHANGED',
-          payload: newValue
-        }
-      );
-    }
-  
-    removeAllFilters() {
-      this.form.reset();
-    }
-  
     public onPageChange (event) {
       const pg = {
         pageSize: this._paginator.pageSize,

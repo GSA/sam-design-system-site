@@ -5,6 +5,7 @@ import { PagesComponent } from './pages.component';
 import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
 import { SamLayoutDemoComponent } from './layout';
+import { SamSearchDemoComponent } from './search/search.component';
 
 const PageRoutes: Routes = [
   {
@@ -22,6 +23,10 @@ const PageRoutes: Routes = [
       {
         path: 'layout',
         component: SamLayoutDemoComponent
+      },
+      {
+        path: 'search',
+        component: SamSearchDemoComponent
       },
     ]
   }

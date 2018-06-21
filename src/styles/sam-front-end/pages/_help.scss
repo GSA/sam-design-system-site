@@ -47,4 +47,10 @@ $sub-item-color: #f6f6f6;
     }
 
   }
+  .page-content.row {
+    position: inherit;
+    .column {
+      position: inherit;
+    }
+  }
 }

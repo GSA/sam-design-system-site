@@ -12,7 +12,7 @@ import { SampleDatabase, SampleDataSource } from './database';
 import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-import { SamDatabankPaginationComponent, DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 import { cloneDeep } from 'lodash';
 import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
 
@@ -37,15 +37,11 @@ export class SamLayoutDemoComponent implements OnInit {
   public form: FormGroup;
   public model: Observable<any>;
   public filters: Observable<any>;
-  public pagination: Observable<any>;
   public data: Observable<any>;
   public length: number;
 
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
   @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
-  @ViewChild('paginator') _paginator: SamDatabankPaginationComponent;
-  @ViewChild('fhInput') fhInput: NgModel;
-  @ViewChild('dateFilter') dateFilter: NgModel;
 
   constructor (
     private _fb: FormBuilder,
@@ -70,9 +66,6 @@ export class SamLayoutDemoComponent implements OnInit {
 
     this.filters = this.model
       .map(model => this._filtersToPills(model.filters));
-
-    this.pagination = this.model
-      .map(model => model.pagination);
   }
 
   public toggleFieldsEditor () {
@@ -186,21 +179,6 @@ export class SamLayoutDemoComponent implements OnInit {
         delete this.displayedColumns[this.displayedColumns.indexOf(option.value)];
       }
     }
-  }
-
-
-  public onPageChange (event) {
-    const pg = {
-      pageSize: this._paginator.pageSize,
-      currentPage: this._paginator.currentPage,
-      totalPages: this._paginator.totalPages
-    };
-    this._store.update(
-      {
-        type: 'PAGE_CHANGE',
-        payload: pg
-      }
-    );
   }
 
   public onSortChange (event) {

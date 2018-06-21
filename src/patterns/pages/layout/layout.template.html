@@ -4,7 +4,6 @@
   <sam-aside>
 
     <sam-filters-wrapper [group]="form">
-      
       <div samAccordion multi="true">
         <sam-expansion-panel>
           <sam-expansion-panel-header>
@@ -36,7 +35,12 @@
     <sam-resources-wrapper>
       <h3 class="sam heading">Resources</h3>
       <ul>
-        <li><a href="https://beta.sam.gov/help/assistance-listing" target="blank">About Federal Assistance</a></li>
+        <li>
+          <a href="https://beta.sam.gov/help/assistance-listing"
+            target="blank">
+            About Federal Assistance
+          </a>
+        </li>
       </ul>
     </sam-resources-wrapper>
 
@@ -44,8 +48,9 @@
   
   <!-- Main Content -->
   <sam-main>
+
     <!-- page title goes here -->
-    <sam-page-title 
+    <sam-page-title
       title="My Saved Report Criteria"
       super="Federal Assistance Compliance Summary">
     </sam-page-title>
@@ -56,7 +61,8 @@
         *ngFor="let filterItem of filters | async"
         [fieldId]="filterItem.id"
         [fieldLabel]="filterItem.label"
-        [fieldValue]="filterItem.value"></li>
+        [fieldValue]="filterItem.value"
+      ></li>
     </sam-filter-drawer>
     
     <sam-tabs>
@@ -64,12 +70,10 @@
         <!-- pagination + edit fields button -->
         <sam-action-bar>
           <sam-databank-pagination
-            #paginator
-            [currentPage]="0"
             [totalPages]="length"
-            (pageChange)="onPageChange($event)"
           ></sam-databank-pagination>
           <sam-button
+            class="action-control"
             buttonType="secondary"
             buttonText="Edit Fields"
             (click)="toggleFieldsEditor()"
@@ -186,6 +190,7 @@
             *cdkRowDef="let row; columns: displayedColumns"
           ></sam-row> 
         </sam-datatable>
+
       </sam-tab>
       <sam-tab tabTitle="Summary">
         bbbb
@@ -211,9 +216,9 @@
       
       <h4 class="sam heading">{{ options.organization.label }} </h4>
       <sam-checkbox
-      [(ngModel)]="options.organization.selected"
-      [name]="options.organization.label"
-      [options]="options.organization.options"
+        [(ngModel)]="options.organization.selected"
+        [name]="options.organization.label"
+        [options]="options.organization.options"
       ></sam-checkbox>
       
       <h4 class="sam heading">{{  options.listing.label }}</h4>

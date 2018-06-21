@@ -75,125 +75,37 @@
             (click)="toggleFieldsEditor()"
           ></sam-button>
         </sam-action-bar>
-        
-        <!-- datatable -->
-        <sam-datatable samSort
-          [dataSource]="dataSource"
-          (samSortChange)="onSortChange($event)">
-          <ng-container cdkColumnDef="Agency">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              Agency
+      
+      <!-- datatable -->
+      <sam-datatable samSort
+        [dataSource]="dataSource"
+        (samSortChange)="onSortChange($event)">
+        <ng-container *ngFor="let col of columnDefObs | async" [cdkColumnDef]="col.def">
+          <sam-header-cell
+            *cdkHeaderCellDef
+            sam-sort-header>
+            {{ col.headerLabel }}
           </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['Agency']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="CFDANumber">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              CFDA Number
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['CFDA Number']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="Title">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              Title
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['Title']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="CurrentStatus">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              Current Status
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['Current Status']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="LastUpdatedDate">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              Last Updated Date
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['Last Updated Date']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="ObligationsUpdated">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              Obligations Updated
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['Obligations Updated']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="OMBReviewDate">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              OMB Review Date
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['OMB Review Date']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="LastPublishedDate">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              Last Published Date
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['Last Published Date']}}
-            </sam-cell>
-          </ng-container>
-          
-          <ng-container cdkColumnDef="AutoPublished">
-            <sam-header-cell
-              *cdkHeaderCellDef
-              sam-sort-header>
-              Auto Published
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row">
-              {{row['Auto Published']}}
-            </sam-cell>
-          </ng-container>
-          
-          <sam-header-row
-            *cdkHeaderRowDef="displayedColumns"
-          ></sam-header-row>
-          <sam-row
-            *cdkRowDef="let row; columns: displayedColumns"
-          ></sam-row> 
-        </sam-datatable>
-      </sam-tab>
-      <sam-tab tabTitle="Summary">
-        bbbb
-      </sam-tab>
-      <sam-tab tabTitle="Charts">
-        cccc
-      </sam-tab>
-    </sam-tabs>
+          <sam-cell *cdkCellDef="let row">
+            {{ row[col.cellId] }}
+          </sam-cell>
+        </ng-container>
+        
+        <sam-header-row
+          *cdkHeaderRowDef="displayedColumns"
+        ></sam-header-row>
+        <sam-row
+          *cdkRowDef="let row; columns: displayedColumns"
+        ></sam-row> 
+      </sam-datatable>
+    </sam-tab>
+    <sam-tab tabTitle="Summary">
+      bbbb
+    </sam-tab>
+    <sam-tab tabTitle="Charts">
+      cccc
+    </sam-tab>
+  </sam-tabs>
     
   </sam-main>
 

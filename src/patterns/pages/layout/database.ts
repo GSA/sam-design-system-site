@@ -80,7 +80,9 @@ export class SampleDataSource extends DataSource<any> {
 
   private _getSortedData(model): SampleDataDef[] {
     const data = this._sampleDatabase.data.slice();
-    if (!model.sort.active || model.sort.direction === '') {
+    const state = this._store.currentState;
+    
+    if (!state.sort.active || state.sort.direction === '') {
       return data;
     }
 
@@ -88,7 +90,7 @@ export class SampleDataSource extends DataSource<any> {
       let propertyA: number|string = '';
       let propertyB: number|string = '';
 
-      switch (model.sort.active) {
+      switch (state.sort.active) {
         case 'Agency':
           [propertyA, propertyB] = [a['Agency'], b['Agency']];
           break;
@@ -134,7 +136,7 @@ export class SampleDataSource extends DataSource<any> {
       const valueB = isNaN(+propertyB) ? propertyB : +propertyB;
 
       return (valueA < valueB ? -1 : 1)
-        * (model.sort.direction === 'asc' ? 1 : -1);
+        * (state.sort.direction === 'asc' ? 1 : -1);
     });
   }
 

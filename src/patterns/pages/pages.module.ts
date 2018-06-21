@@ -9,6 +9,7 @@ import { PagesComponent } from './pages.component';
 import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
 import { LayoutModule } from './layout';
+import { SearchDemoModule } from './search/search.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { LayoutModule } from './layout';
     FormsModule,
     PagesRoutingModule,
     SamUIKitModule,
-    LayoutModule
+    LayoutModule,
+    SearchDemoModule
   ],
   declarations: [
     PagesComponent,

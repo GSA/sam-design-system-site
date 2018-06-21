@@ -100,7 +100,7 @@ export class SamLayoutDemoComponent implements OnInit {
     this.options = this.checkboxOptions();
     this.connect();
 
-    this.model = this._store.state;
+    this.model = (<any> this._store.state);
     this.data = this.model.map(model => model.data);
 
     this.data.subscribe(
@@ -229,24 +229,6 @@ export class SamLayoutDemoComponent implements OnInit {
     }
   }
 
-  removeFilter(filterItem) {
-    const removed = {};
-    removed[filterItem.id] = '';
-    const newValue = {
-      ...this._store.currentState.filters,
-      ...removed
-    };
-    this._store.update(
-      {
-        type: 'FILTERS_CHANGED',
-        payload: newValue
-      }
-    );
-  }
-
-  removeAllFilters() {
-    this.form.reset();
-  }
 
   public onPageChange (event) {
     const pg = {

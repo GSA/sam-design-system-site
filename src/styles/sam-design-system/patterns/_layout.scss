@@ -1,32 +1,33 @@
 
-.selected-filters {
 
-	sam-filter-drawer{
+
+sam-filter-drawer {
+	.sam {
 		display:inline-flex;
-	}
 
-	ul{
-		margin:0px 10px 20px 0;
-		padding:0px;
-
-		li{
-			display:inline-block;
-			width: auto;
-			padding: 3px 10px 5px;
-			margin-right:5px;
-			background-color:#f0f0f0;
-			border-radius:3px;
-			font-size:1.4rem;
+		ul{
+			margin:0px 10px 20px 0;
+			padding:0px;
+	
+			li{
+				display:inline-block;
+				width: auto;
+				padding: 3px 10px 5px;
+				margin-right:5px;
+				background-color:#f0f0f0;
+				border-radius:3px;
+				font-size:1.4rem;
+			}
+			li i{
+				margin-left:5px;
+				cursor: pointer;
+			}
 		}
-		li i{
-			margin-left:5px;
-			cursor: pointer;
-		}
-	}
-
-	.options{
-		a{
-			margin:0 10px 0 0;
+	
+		.options{
+			a{
+				margin:0 10px 0 0;
+			}
 		}
 	}
 }

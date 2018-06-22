@@ -16,6 +16,7 @@ import {
   import { cloneDeep } from 'lodash';
   import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
   import { DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture';
+  import { filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture/model';
   
   @Component({
     selector: 'sam-search-demo-component',
@@ -107,14 +108,15 @@ import {
       );
     }
   
-    private _filtersToPills (filters): any[] {
+    private _filtersToPills (filters): filterItemModel[] {
       const keys = Object.keys(filters);
       return keys.map(
         key => {
-          const obj: any = {};
-          obj.id = key;
-          obj.label = key;
-          obj.value = filters[key];
+          const obj: filterItemModel = {
+            id: key,
+            label: key,
+            value: filters[key]
+          };
           return obj;
         }
       )

@@ -1,0 +1,49 @@
+.release-notes {
+    .tp-mar-2em{
+        margin-top: 2em;
+    }
+    .tp-mar-1em{
+        margin-top: 1em;
+    }
+    .search-width{
+        width: 17.5em;
+    }
+    .sec-border{
+        // box-shadow: 0 7px 7px rgba(50, 50, 93, 0.1), 0 0 7px rgba(0, 0, 0, 0.07) 
+        border-color: lightgrey;
+        border-style: solid;
+        border-width: 0.08em;
+        margin-bottom: 1em;
+    }
+    .sec-pd {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+    .ft-wt{
+        font-size: 0.8em;
+    }
+    .ft-bold{
+        font-weight: 700;
+    }
+    .lt-pd{
+        padding-left: .75em;
+        padding-bottom: 1em;
+    }
+
+    .tx-pd{
+        margin-top: 10px;
+        margin-bottom: 2em; 
+    }
+    .mg-10{
+        margin-bottom: 10em;
+    }
+
+    .ft-sz{
+        font-size: 0.9em;
+    }
+    list-results-message{
+        font-weight: bold;
+    }
+}

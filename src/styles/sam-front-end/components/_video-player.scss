@@ -168,11 +168,11 @@
     .px-video-fullscreen-btn-container input[type="checkbox"]:checked:hover+label {
         background-position: -6px -1015px;
     }
-    [type="checkbox"]:not(.align-right) + label::before, 
+    [type="checkbox"]:not(.align-right) + label::before,
     [type="radio"] + label::before {
         display: none;
     }
-    [type="checkbox"] + label, 
+    [type="checkbox"] + label,
     [type="radio"] + label {
         margin-bottom: 0;
     }
@@ -450,4 +450,9 @@
        }
    }
 
+}
+.learning-center-video {
+  video {
+    min-height: 275px;
+  }
 }

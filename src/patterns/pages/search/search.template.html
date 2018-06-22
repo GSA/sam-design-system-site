@@ -1,0 +1,94 @@
+<sam-page-next>
+  <sam-toolbar></sam-toolbar>
+
+  <sam-aside>
+    <sam-filters-wrapper [group]="form">
+      <div samAccordion multi="true">
+        <sam-expansion-panel>
+          <sam-expansion-panel-header>
+            Federal Organizations
+          </sam-expansion-panel-header>
+          <!-- update with real 'Agency' filter -->
+          <input
+            class="sam transition input"
+            placeholder="Select"
+            [formControl]="form.controls.fhInputText"
+            type="text" />
+        </sam-expansion-panel>
+        <sam-expansion-panel>
+          <sam-expansion-panel-header>
+            Last Updated Date
+          </sam-expansion-panel-header>
+          <!-- update with real 'Last Updated Date' date filter -->
+          <sam-date
+            label='Last Updated Date'
+            name='date-example'
+            [formControl]="form.controls.dateModel"
+          ></sam-date>
+        </sam-expansion-panel>
+      </div>
+    </sam-filters-wrapper>
+    <!-- finalize this implementation -->
+    <sam-resources-wrapper>
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="https://beta.sam.gov/help/assistance-listing" target="blank">About Federal Assistance</a></li>
+      </ul>
+    </sam-resources-wrapper>
+  </sam-aside>
+  
+  <!-- Main Content -->
+  <sam-main>
+    <!-- page title goes here -->
+    <sam-page-title 
+      title="My Saved Report Criteria"
+      super="Federal Assistance Compliance Summary">
+    </sam-page-title>
+
+  
+    
+    <sam-filter-drawer>
+      <li sam-filter-drawer-item
+        *ngFor="let filterItem of filters | async"
+        [fieldId]="filterItem.id"
+        [fieldLabel]="filterItem.label"
+        [fieldValue]="filterItem.value"
+      ></li>
+    </sam-filter-drawer>
+    
+    <div>
+        Showing 1 - 10 of 2,296 results
+    </div>
+    <div class="sam-ui grid" *ngFor="let result of _sampleData">
+      <div class="eight wide column">
+          <h3 class="wage-determination-number">{{ result.title }}</h3>
+          <p>{{ result.objective | slice:0:150 }}{{result.objective?.length > 150 ? '...' : ''}}</p>
+          <ul class="sam-ui small list">
+              <li *ngIf="result.organizationHierarchy">
+                  <strong>Department/Ind. Agency</strong><br>
+                  {{ result.organizationHierarchy[0].name }}
+              </li>
+              <li *ngIf="result.organizationHierarchy && result.organizationHierarchy.length > 1">
+                  <strong>Office</strong><br>
+                  <span>{{ result.organizationHierarchy[result.organizationHierarchy.length-1].name }}</span>
+              </li>
+          </ul>
+      </div>
+      <div class="four wide column">
+          <ul class="sam-ui small list">
+              <li>
+                  <span class="sam-ui mini label">Assistance Listing</span>
+              </li>
+              <li class="wd-revision-number">
+                  <strong>CFDA Number</strong><br>
+                  <span>{{ result.programNumber }}</span>
+              </li>
+              <li class="wd-revision-number">
+                  <strong>Is Funded</strong><br>
+                  <span>{{ result.isFunded ? 'Yes' : 'No' }}</span>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </sam-main>
+</sam-page-next>

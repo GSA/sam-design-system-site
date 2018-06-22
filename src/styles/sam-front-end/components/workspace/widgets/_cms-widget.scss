@@ -1,0 +1,10 @@
+.cms-widget {
+  .underline-link {
+    text-decoration: underline;
+  }
+  em {
+    &.fa {
+      color: #0071bc;
+    }
+  }
+}

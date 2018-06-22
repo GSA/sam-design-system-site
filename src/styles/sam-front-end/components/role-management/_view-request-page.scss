@@ -7,4 +7,35 @@
   .form-section {
     border: none !important;
   }
+
+  .request-main-div {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: .5em; 
+    margin-top: .5em;
+  }
+
+  .request-status-div {
+    padding: .3em 0; 
+    width: 15em; 
+    background-color: #E2E2E2; 
+    text-align: center; 
+    border-radius: 3px;
+  }
+
+  .request-updated-by-div, .request-date-div {
+    width: 15em; 
+    text-align: center;
+  }
+
+  .request-entity-div {
+    display:inline-block; 
+    vertical-align: top;
+  }
+
+  .request-entity-val-div {
+    display:inline-block; 
+    padding-top: .2px;
+  }
 }

@@ -1,9 +1,4 @@
 
-/* SAM Styles
-   ========================================================================== */
-
-@import "sam-styles/all";
-
 /* SAM front-end
    ========================================================================== */
 
@@ -19,9 +14,16 @@
 @import "reset/input";
 @import "reset/select";
 @import "reset/radio";
+@import "reset/checkbox";
+@import "reset/fieldset";
 @import "reset/label";
 @import "reset/button";
 @import "reset/title";
+
+/* SAM Styles
+   ========================================================================== */
+
+@import "sam-styles/themes/sam-gov";
 
 /* SAM Design System Pages
    ========================================================================== */
@@ -48,7 +50,7 @@
 @import "sam-design-system/prototypes/search-results";
 @import "sam-design-system/prototypes/sort";
 
-@import "sam-design-system/prototypes/table";
+// @import "sam-design-system/prototypes/table";
 @import "sam-design-system/prototypes/click-menu";
 @import "sam-design-system/prototypes/date-picker";
 
@@ -63,6 +65,7 @@
  */
 
 @import "sam-design-system/patterns/home";
+@import "sam-design-system/patterns/layout";
 
 /**
  * Components
@@ -80,3 +83,4 @@
 code[class*="language"] {
     font-size: 14px;
 }
+

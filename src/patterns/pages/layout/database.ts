@@ -11,7 +11,7 @@ import {
   SamModalComponent
 } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { FormControl, NgModel } from '@angular/forms';
-import { SamDatabankPaginationComponent, DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamDatabankPaginationComponent, SamPageNextService, layoutEvents } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 
 export interface SampleDataDef {
   'Agency': string;
@@ -54,23 +54,17 @@ export class SampleDataSource extends DataSource<any> {
 
   constructor(
     private _sampleDatabase: SampleDatabase,
-    private _store: DataStore) {
+    private _service: SamPageNextService) {
     super();
     this._sampleDatabase.dataChange.subscribe(
-      data => this._store.update(
-        {
-          type: 'DATA_CHANGED',
-          payload: data
-        }
-      )
+      data => this._service.properties['data'].setValue(data)
     );
   }
 
   connect(): Observable<SampleDataDef[]> {
 
-    const sub = this._store.state
-      .map(model => model.data)
-      .map(data => this._getSortedData(data))
+    const sub = this._service.valueChanges
+      .map(value => this._getSortedData(value.data))
       .map(data => this._filtersMap(data));
 
     return sub;
@@ -80,8 +74,8 @@ export class SampleDataSource extends DataSource<any> {
 
   private _getSortedData(model): SampleDataDef[] {
     const data = this._sampleDatabase.data.slice();
-    const state = this._store.currentState;
-    
+    const state = this._service.value;
+
     if (!state.sort.active || state.sort.direction === '') {
       return data;
     }
@@ -141,8 +135,8 @@ export class SampleDataSource extends DataSource<any> {
   }
 
   private _filtersMap (data) {
-    const model = this._store.currentState;
 
+    const model = this._service.value;
     // fh filter
     const fh = model.filters.fhInputText;
     if (!!fh) {
@@ -174,7 +168,6 @@ export class SampleDataSource extends DataSource<any> {
       * pagination.pageSize;
     // this._paginator.totalPages = Math.ceil(data.length / 10);
     data = data.splice(startIndex, pagination.pageSize);
-
     return data;
   }
 }

@@ -13,13 +13,13 @@ import { SampleDatabase, SampleDataSource } from './database';
 import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-import { DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamPageNextService } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 import { cloneDeep } from 'lodash';
 import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'sam-layout-demo-component',
-  templateUrl: './layout.template.html'
+  templateUrl: './layout.template.html',
 })
 export class SamLayoutDemoComponent implements OnInit {
   _sampleData = SampleData;
@@ -93,7 +93,7 @@ export class SamLayoutDemoComponent implements OnInit {
 
   constructor (
     private _fb: FormBuilder,
-    private _store: DataStore,
+    private _service: SamPageNextService,
     private cdr: ChangeDetectorRef
   ) {
     this.form = this._fb.group({
@@ -106,15 +106,14 @@ export class SamLayoutDemoComponent implements OnInit {
     this.options = this.checkboxOptions();
     this.connect();
 
-    this.model = (<any> this._store.state);
-    this.data = this.model.map(model => model.data);
-
-    this.data.subscribe(
-      data => this.length = data.length
+    this._service.properties['data'].valueChanges.subscribe(
+      data => {
+        this.length = data.length;
+      }
     );
 
-    this.filters = this.model
-      .map(model => this._filtersToPills(model.filters));
+    this.filters = this._service.properties['filters'].valueChanges
+      .map(model => this._filtersToPills(model));
 
     this.cdr.detectChanges();
   }
@@ -142,7 +141,7 @@ export class SamLayoutDemoComponent implements OnInit {
     // data table
     this.dataSource = new SampleDataSource(
       this.sampleDatabase,
-      this._store
+      this._service
     );
   }
 
@@ -233,12 +232,7 @@ export class SamLayoutDemoComponent implements OnInit {
   }
 
   public onSortChange (event) {
-    this._store.update(
-      {
-        type: 'SORT_CHANGE',
-        payload: event
-      }
-    );
+    this._service.properties['sort'].setValue(event);
   }
 
   private _filtersToPills (filters): any[] {

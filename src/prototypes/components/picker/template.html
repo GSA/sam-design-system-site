@@ -36,11 +36,23 @@
     
     <div class="picker-radios">
       <span>
-        <input class="sam transition" type="radio" id="search-all"name="search" value="all" checked>
-        <label class="sam transition" for="search-all">Search All</label>
+        <input class="sam transition" 
+        type="radio" 
+        id="search-all" 
+        name="search" 
+        value="all" 
+        [checked]="searchOption === 'all'">
+        <label class="sam transition" for="search-all">
+          Search All
+        </label>
       </span>
       <span>
-        <input class="sam transition" type="radio" id="search-here" name="search" value="here">
+        <input class="sam transition" 
+          type="radio" 
+          id="search-here" 
+          name="search" 
+          value="here"
+          [checked]="searchOption === 'here'">
         <label class="sam transition" for="search-here">
           Search here
         </label>
@@ -48,58 +60,45 @@
     </div>
     
     <div class="picker-crumbs">
-      Most searched
+      <ng-container *ngFor="let crumb of breadcrumbs; index as i; last as isLast">
+        <a *ngIf="!isLast" (click)="getParent()">{{ crumb.name }}</a> 
+        <ng-container *ngIf="isLast">{{ crumb.name}} </ng-container>
+        <ng-container *ngIf="!isLast" > / </ng-container>
+      </ng-container>
     </div>
     
     <div class="picker-results">
       <div class="picker-results-wrapper-2">
-        <a>
-          Action
-          <span>Department</span>
-        </a>
-        <a>
-          United States Information Agency
-          <span>Agency</span>
-        </a>
-        <a routerLink="/prototypes/component/picker-2">
+        
+        <ng-container *ngFor="let result of results">
+          <a (click)="getChildren(result)">
+            {{ result.name }}
+            <span>
+              {{ result.type || result.found }}
+              <ng-container *ngIf="result.found">found</ng-container>
+            </span>
+          </a>
+        </ng-container>
+        
+        <!-- <a routerLink="/prototypes/component/picker-2">
           Department of Defense
           <span>Department</span>
-        </a>
-        <a>
-          Bureau of Radiological Health
-          <span>Department</span>
-        </a>
-        <a>
-          Office of Human Development Services
-          <span>Agency</span>
-        </a>
-        <a>
-          U.S. Postal Service
-          <span>Department</span>
-        </a>
-        <a>
-          Old West Regional Commission
-          <span>Department</span>
-        </a>
-        <a>
-          Health Care Financing Administration
-          <span>Agency</span>
         </a>
         <a routerLink="/prototypes/component/picker-3">
           Interstate Commerce Commission
           <span>Department</span>
-        </a>
-        <a>
-          Smithsonian Institution
-          <span>Office</span>
-        </a>
+        </a> -->
       </div>
     </div>
     
     <br>
     
     <div class="picker-footer">
-      <button class="sam button disabled" type="button">Add</button>
+      <a *ngIf="level !== 0" routerLink="/prototypes/component/picker">
+        Reset
+      </a>
+      &nbsp;&nbsp;
+      <button class="sam primary button" type="button" [class.disabled]="level === 0">Add</button>
     </div>
     
   </div>

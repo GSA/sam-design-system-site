@@ -7,8 +7,8 @@ import { ComponentsRoutingModule } from './prototypes-components.routes';
 
 import { ComponentsComponent } from './prototypes-components.component';
 import { PickerComponent } from './picker/component';
-import { PickerLevel2Component } from './picker/component';
-import { PickerLevel3Component } from './picker/component';
+// import { PickerLevel2Component } from './picker/component';
+// import { PickerLevel3Component } from './picker/component';
 import { PickerLevel4Component } from './picker/component';
 import { PickerLevel5Component } from './picker/component';
 import { PickerLevel6Component } from './picker/component';
@@ -43,8 +43,8 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
   declarations: [
     ComponentsComponent,
     PickerComponent,
-    PickerLevel2Component,
-    PickerLevel3Component,
+    // PickerLevel2Component,
+    // PickerLevel3Component,
     PickerLevel4Component,
     PickerLevel5Component,
     PickerLevel6Component,

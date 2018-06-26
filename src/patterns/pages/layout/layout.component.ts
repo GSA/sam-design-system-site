@@ -5,7 +5,8 @@ import {
   HostBinding,
   ViewChild,
   OnInit,
-  ChangeDetectorRef
+  ChangeDetectorRef,
+  forwardRef
 } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
@@ -13,7 +14,7 @@ import { SampleDatabase, SampleDataSource } from './database';
 import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-import { SamPageNextService} from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamPageNextService, DataStore, layoutStore} from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 import { filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture/model';
 import { cloneDeep } from 'lodash';
 import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
@@ -21,6 +22,13 @@ import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'sam-layout-demo-component',
   templateUrl: './layout.template.html',
+  providers: [
+    {
+      provide: DataStore,
+      useValue: layoutStore
+    },
+    forwardRef(() => SamPageNextService)
+  ]
 })
 export class SamLayoutDemoComponent implements OnInit {
   _sampleData = SampleData;

@@ -17,13 +17,6 @@ import { DataStore, SamPageNextService, layoutStore } from 'sam-ui-elements/src/
   declarations: [
     SamLayoutDemoComponent
   ],
-  providers: [
-    {
-      provide: DataStore,
-      useValue: layoutStore
-    },
-    forwardRef(() => SamPageNextService)
-  ],
   exports: [
     SamLayoutDemoComponent
   ]

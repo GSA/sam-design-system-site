@@ -11,7 +11,7 @@ import {
   SamModalComponent
 } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { FormControl, NgModel } from '@angular/forms';
-import { SamDatabankPaginationComponent, SamPageNextService, layoutEvents } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamDatabankPaginationComponent, DataStore, SamPageNextService } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 
 export interface SampleDataDef {
   'Agency': string;
@@ -57,14 +57,14 @@ export class SampleDataSource extends DataSource<any> {
     private _service: SamPageNextService) {
     super();
     this._sampleDatabase.dataChange.subscribe(
-      data => this._service.properties['data'].setValue(data)
+      data => this._service.model.properties.data.setValue(data)
     );
   }
 
   connect(): Observable<SampleDataDef[]> {
 
-    const sub = this._service.valueChanges
-      .map(value => this._getSortedData(value.data))
+    const sub = this._service.model.valueChanges
+      .map(model => this._getSortedData(model.data))
       .map(data => this._filtersMap(data));
 
     return sub;
@@ -74,7 +74,7 @@ export class SampleDataSource extends DataSource<any> {
 
   private _getSortedData(model): SampleDataDef[] {
     const data = this._sampleDatabase.data.slice();
-    const state = this._service.value;
+    const state = this._service.model.value;
 
     if (!state.sort.active || state.sort.direction === '') {
       return data;
@@ -135,8 +135,8 @@ export class SampleDataSource extends DataSource<any> {
   }
 
   private _filtersMap (data) {
+    const model = this._service.model.value;
 
-    const model = this._service.value;
     // fh filter
     const fh = model.filters.fhInputText;
     if (!!fh) {
@@ -168,6 +168,7 @@ export class SampleDataSource extends DataSource<any> {
       * pagination.pageSize;
     // this._paginator.totalPages = Math.ceil(data.length / 10);
     data = data.splice(startIndex, pagination.pageSize);
+
     return data;
   }
 }

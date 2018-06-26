@@ -106,13 +106,13 @@ export class SamLayoutDemoComponent implements OnInit {
     this.options = this.checkboxOptions();
     this.connect();
 
-    this._service.properties['data'].valueChanges.subscribe(
+    this._service.model.properties.data.valueChanges.subscribe(
       data => {
         this.length = data.length;
       }
     );
 
-    this.filters = this._service.properties['filters'].valueChanges
+    this.filters = this._service.model.properties.filters.valueChanges
       .map(model => this._filtersToPills(model));
 
     this.cdr.detectChanges();
@@ -232,7 +232,7 @@ export class SamLayoutDemoComponent implements OnInit {
   }
 
   public onSortChange (event) {
-    this._service.properties['sort'].setValue(event);
+    this._service.model.properties.sort.setValue(event);
   }
 
   private _filtersToPills (filters): any[] {

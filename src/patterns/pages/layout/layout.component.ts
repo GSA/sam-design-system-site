@@ -1,11 +1,9 @@
 import {
   Component,
-  ContentChild,
-  AfterContentInit,
-  HostBinding,
   ViewChild,
   OnInit,
-  ChangeDetectorRef
+  ChangeDetectorRef,
+  forwardRef
 } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
@@ -13,14 +11,21 @@ import { SampleDatabase, SampleDataSource } from './database';
 import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-import { SamDatabankPaginationComponent, DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamPageNextService, DataStore, layoutStore} from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 import { filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture/model';
 import { cloneDeep } from 'lodash';
-import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'sam-layout-demo-component',
-  templateUrl: './layout.template.html'
+  templateUrl: './layout.template.html',
+  providers: [
+    {
+      provide: DataStore,
+      useValue: layoutStore
+    },
+    forwardRef(() => SamPageNextService)
+  ]
 })
 export class SamLayoutDemoComponent implements OnInit {
   _sampleData = SampleData;
@@ -38,56 +43,62 @@ export class SamLayoutDemoComponent implements OnInit {
   public form: FormGroup;
   public model: Observable<any>;
   public filters: Observable<any>;
-  public pagination: Observable<any>;
   public data: Observable<any>;
   public length: number;
-  public columnDefObs = Observable.of([{
-    'def': 'Agency',
-    'headerLabel': 'Agency',
-    'cellId': 'Agency'
-  },{
-    'def': 'CFDANumber',
-    'headerLabel': 'CFDA Number',
-    'cellId': 'CFDA Number'
-  },{
-    'def': 'Title',
-    'headerLabel': 'Title',
-    'cellId': 'Title'
-  },{
-    'def': 'CurrentStatus',
-    'headerLabel': 'Current Status',
-    'cellId': 'Current Status'
-  },{
-    'def': 'LastUpdatedDate',
-    'headerLabel': 'Last Updated Date',
-    'cellId': 'Last Updated Date'
-  },{
-    'def': 'ObligationsUpdated',
-    'headerLabel': 'Obligations Updated',
-    'cellId': 'Obligations Updated'
-  },{
-    'def': 'OMBReviewDate',
-    'headerLabel': 'OMB Review Date',
-    'cellId': 'OMB Review Date'
-  },{
-    'def': 'LastPublishedDate',
-    'headerLabel': 'Last Published Date',
-    'cellId': 'Last Published Date'
-  },{
-    'def': 'AutoPublished',
-    'headerLabel': 'Auto Published',
-    'cellId': 'Auto Published'
-  }]);
+  public columnDefObs = Observable.of([
+    {
+      'def': 'Agency',
+      'headerLabel': 'Agency',
+      'cellId': 'Agency'
+    },
+    {
+      'def': 'CFDANumber',
+      'headerLabel': 'CFDA Number',
+      'cellId': 'CFDA Number'
+    },
+    {
+      'def': 'Title',
+      'headerLabel': 'Title',
+      'cellId': 'Title'
+    },
+    {
+      'def': 'CurrentStatus',
+      'headerLabel': 'Current Status',
+      'cellId': 'Current Status'
+    },
+    {
+      'def': 'LastUpdatedDate',
+      'headerLabel': 'Last Updated Date',
+      'cellId': 'Last Updated Date'
+    },
+    {
+      'def': 'ObligationsUpdated',
+      'headerLabel': 'Obligations Updated',
+      'cellId': 'Obligations Updated'
+    },
+    {
+      'def': 'OMBReviewDate',
+      'headerLabel': 'OMB Review Date',
+      'cellId': 'OMB Review Date'
+    },
+    {
+      'def': 'LastPublishedDate',
+      'headerLabel': 'Last Published Date',
+      'cellId': 'Last Published Date'
+    },
+    {
+      'def': 'AutoPublished',
+      'headerLabel': 'Auto Published',
+      'cellId': 'Auto Published'
+    }
+  ]);
 
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
   @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
-  @ViewChild('paginator') _paginator: SamDatabankPaginationComponent;
-  @ViewChild('fhInput') fhInput: NgModel;
-  @ViewChild('dateFilter') dateFilter: NgModel;
 
   constructor (
     private _fb: FormBuilder,
-    private _store: DataStore,
+    private _service: SamPageNextService,
     private cdr: ChangeDetectorRef
   ) {
     this.form = this._fb.group({
@@ -100,19 +111,15 @@ export class SamLayoutDemoComponent implements OnInit {
     this.options = this.checkboxOptions();
     this.connect();
 
-    this.model = (<any> this._store.state);
-    this.data = this.model.map(model => model.data);
-
-    this.data.subscribe(
-      data => this.length = data.length
+    this._service.model.properties.data.valueChanges.subscribe(
+      data => {
+        this.length = data.length;
+      }
     );
 
-    this.filters = this.model
-      .map(model => this._filtersToPills(model.filters));
+    this.filters = this._service.model.properties.filters.valueChanges
+      .map(model => this._filtersToPills(model));
 
-    this.pagination = this.model
-      .map(model => model.pagination);
-      
     this.cdr.detectChanges();
   }
 
@@ -139,7 +146,7 @@ export class SamLayoutDemoComponent implements OnInit {
     // data table
     this.dataSource = new SampleDataSource(
       this.sampleDatabase,
-      this._store
+      this._service
     );
   }
 
@@ -229,28 +236,8 @@ export class SamLayoutDemoComponent implements OnInit {
     }
   }
 
-
-  public onPageChange (event) {
-    const pg = {
-      pageSize: this._paginator.pageSize,
-      currentPage: this._paginator.currentPage,
-      totalPages: this._paginator.totalPages
-    };
-    this._store.update(
-      {
-        type: 'PAGE_CHANGE',
-        payload: pg
-      }
-    );
-  }
-
   public onSortChange (event) {
-    this._store.update(
-      {
-        type: 'SORT_CHANGE',
-        payload: event
-      }
-    );
+    this._service.model.properties.sort.setValue(event);
   }
 
   private _filtersToPills (filters): filterItemModel[] {

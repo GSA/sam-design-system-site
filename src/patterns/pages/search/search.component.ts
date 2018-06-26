@@ -1,8 +1,5 @@
 import {
     Component,
-    ContentChild,
-    AfterContentInit,
-    HostBinding,
     ViewChild,
     OnInit,
     ChangeDetectorRef
@@ -12,12 +9,9 @@ import {
   import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
   import 'rxjs/add/observable/merge';
   import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-  import { SamDatabankPaginationComponent } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
-  import { cloneDeep } from 'lodash';
+  import { SamDatabankPaginationComponent, DataStore, filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
   import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
-  import { DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture';
-  import { filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture/model';
-  
+
   @Component({
     selector: 'sam-search-demo-component',
     templateUrl: './search.template.html'

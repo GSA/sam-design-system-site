@@ -1,8 +1,5 @@
 import {
     Component,
-    ContentChild,
-    AfterContentInit,
-    HostBinding,
     ViewChild,
     OnInit,
     ChangeDetectorRef
@@ -12,11 +9,9 @@ import {
   import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
   import 'rxjs/add/observable/merge';
   import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-  import { SamDatabankPaginationComponent } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
-  import { cloneDeep } from 'lodash';
+  import { SamDatabankPaginationComponent, DataStore, filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
   import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
-  import { DataStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture';
-  
+
   @Component({
     selector: 'sam-search-demo-component',
     templateUrl: './search.template.html'
@@ -107,14 +102,15 @@ import {
       );
     }
   
-    private _filtersToPills (filters): any[] {
+    private _filtersToPills (filters): filterItemModel[] {
       const keys = Object.keys(filters);
       return keys.map(
         key => {
-          const obj: any = {};
-          obj.id = key;
-          obj.label = key;
-          obj.value = filters[key];
+          const obj: filterItemModel = {
+            id: key,
+            label: key,
+            value: filters[key]
+          };
           return obj;
         }
       )

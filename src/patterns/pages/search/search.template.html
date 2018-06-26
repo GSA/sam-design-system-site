@@ -50,7 +50,6 @@
     <sam-filter-drawer>
       <li sam-filter-drawer-item
         *ngFor="let filterItem of filters | async"
-        (remove)="removeFilter($event)"
         [fieldId]="filterItem.id"
         [fieldLabel]="filterItem.label"
         [fieldValue]="filterItem.value"

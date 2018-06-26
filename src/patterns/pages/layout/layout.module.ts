@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 
 import { SamLayoutDemoComponent } from './layout.component';
-import { DataStore, SamPageNextService, layoutStore } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 
 @NgModule({
   imports: [

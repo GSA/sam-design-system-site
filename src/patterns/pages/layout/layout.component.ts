@@ -1,8 +1,5 @@
 import {
   Component,
-  ContentChild,
-  AfterContentInit,
-  HostBinding,
   ViewChild,
   OnInit,
   ChangeDetectorRef,
@@ -17,7 +14,7 @@ import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
 import { SamPageNextService, DataStore, layoutStore} from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 import { filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture/model';
 import { cloneDeep } from 'lodash';
-import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'sam-layout-demo-component',

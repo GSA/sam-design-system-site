@@ -7,7 +7,7 @@
   // we use a light backdrop.
   $sidenav-backdrop-color: invert(sam-color($background, card, 0.6)) !default;
   $sidenav-background-color: sam-color($background, dialog) !default;
-  $sidenav-container-background-color:  sam-color($background, background) !default;
+  $sidenav-container-background-color:  sam-color($background, dialog) !default;
   $sidenav-push-background-color: sam-color($background, dialog) !default;
 
   .mat-sidenav-container {

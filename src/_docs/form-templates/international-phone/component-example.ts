@@ -1,14 +1,14 @@
 import {
   Component,
-  OnInit,
-  Input
+  OnInit
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
 import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
 
 const code_example = `
   <sam-intl-telephone-group
@@ -17,6 +17,25 @@ const code_example = `
     [phoneName]="'Intl Telephone'"
     [prefixName]="'Intl Country'"
   ></sam-intl-telephone-group>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <sam-text
+      formControlName="name"
+      [name]="textConfig.name"
+      [label]="textConfig.label"
+      [control]="name"
+    ></sam-text>
+    <sam-intl-telephone-group
+      [useFormService]="true"
+      [label]="'International Phone Number'"
+      [group]="form.controls.phone"
+      [phoneName]="'Intl Telephone'"
+      [prefixName]="'Intl Country'"
+    ></sam-intl-telephone-group>
+    <button type="submit">Submit</button>
+  </form>
+
+  {{ form.status | json }}
 `;
 
 @Component({
@@ -28,27 +47,64 @@ const code_example = `
 `
 })
 export class PhoneGroupExampleComponent extends BaseExampleComponent implements OnInit {
+  // @ViewChild(SamIntlPhoneGroup) public phone: SamIntlPhoneGroup;
   phoneModel = '123-456-3366';
   phoneModel2 = '1+(123)456-3366';
   typedoc_target = 'SamIntlPhoneGroup';
   typedoc_content = '';
 
   group = new FormGroup({
-    prefix: new FormControl(),
-    phone: new FormControl()
+    prefix: new FormControl('', Validators.required),
+    phone: new FormControl('', Validators.required)
   });
 
   example = code_example;
 
   public base = '_docs/form-templates/international-phone/';
+  public form: FormGroup;
+  public message;
+  public messages = ['Big bad error 1', 'big bad error 2'];
+  public submitted = false;
+
+  public textConfig = {
+    name: 'test',
+    label: 'Name',
+    hint: ''
+  };
 
   constructor(
     _http: Http,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
+    public mdService: MarkdownService,
+    public formService: SamFormService,
+    private _fb: FormBuilder) {
 
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));
+
+    this.form = this._fb.group(
+      {
+        name: ['', Validators.required],
+        phone: new FormGroup(
+          {
+            prefix: new FormControl('', Validators.required),
+            phone: new FormControl('', Validators.required)
+          }
+        )
+      }
+    );
+  }
+
+  public ngOnInit () {
+    super.ngOnInit();
+  }
+
+  private _strategy (): boolean {
+    return !!this.submitted;
+  }
+
+  public onSubmit () {
+    this.submitted = true;
   }
 }

@@ -129,7 +129,7 @@ function generateModuleString(target) {
 /******************************************************/
 // Angular Dependencies
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -143,7 +143,7 @@ import { StaticPageComponent } from './static.component';
 import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
-import {CdkTableModule} from '@angular/cdk';
+import { CdkTableModule } from '@angular/cdk';
 
 /**
  * \AppModule\` is the main entry point into Angular2's bootstraping process
@@ -153,7 +153,8 @@ import {CdkTableModule} from '@angular/cdk';
   entryComponents: [${declarations}\n  ],
   imports: [
     CommonModule,
-    FormsModule,
+		FormsModule,
+		ReactiveFormsModule,
     SamUIKitModule,
     routing,
 		SiteComponentsModule,

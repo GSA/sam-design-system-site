@@ -63,7 +63,7 @@ $theme: mat-light-theme($primary, $accent);
 // angular-material-theme
 @include mat-core-theme($theme);
 @include mat-chips-theme($theme);
-@include mat-sidenav-theme($theme);
+// @include mat-sidenav-theme($theme);
 @include mat-tabs-theme($theme);
 @include mat-paginator-theme($theme);
 @include mat-select-theme($theme);
@@ -86,9 +86,9 @@ md-sidenav {
   font-size: 16px;
 }
 
-.mat-sidenav-container{
-  background-color: transparent !important;
-}
+// .mat-sidenav-container{
+//   background-color: transparent !important;
+// }
 
 .mat-sidenav-content{
   padding-left: 20px;

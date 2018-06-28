@@ -57,9 +57,9 @@
     </sam-filter-drawer>
     
     <div>
-        Showing 1 - 10 of 2,296 results
+        Showing {{ curPage>1 ? ((curPage-1)*10)+1 : '1' }} - {{ activeRows.length >= 10 ? curPage*10 : activeRows.length }} of {{ _samplePage.totalElements }} results
     </div>
-    <div class="sam-ui grid" *ngFor="let result of _sampleData">
+    <div class="sam-ui grid" *ngFor="let result of activeRows">
       <div class="eight wide column">
           <h3 class="wage-determination-number">{{ result.title }}</h3>
           <p>{{ result.objective | slice:0:150 }}{{result.objective?.length > 150 ? '...' : ''}}</p>
@@ -90,5 +90,11 @@
           </ul>
       </div>
     </div>
+    <sam-action-bar>
+      <sam-databank-pagination
+        [currentPage]="curPage"
+        [totalPages]="length">
+      </sam-databank-pagination>
+    </sam-action-bar>
   </sam-main>
 </sam-page-next>

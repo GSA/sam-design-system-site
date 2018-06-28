@@ -2,6 +2,7 @@ import {
     Component,
     ViewChild,
     OnInit,
+    forwardRef,
     ChangeDetectorRef
   } from '@angular/core';
   import { Observable } from 'rxjs/Observable';
@@ -9,15 +10,22 @@ import {
   import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
   import 'rxjs/add/observable/merge';
   import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
-  import { SamDatabankPaginationComponent, DataStore, filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+  import { SamDatabankPaginationComponent, DataStore, layoutStore, SamPageNextService, filterItemModel } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
   import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
 
   @Component({
     selector: 'sam-search-demo-component',
-    templateUrl: './search.template.html'
+    templateUrl: './search.template.html',
+    providers: [{
+      provide: DataStore,
+      useValue: layoutStore
+    },
+    forwardRef(() => SamPageNextService)]
   })
   export class SamSearchDemoComponent implements OnInit {
     _sampleData = SampleData._embedded.results;
+    _samplePage = SampleData.page;
+    activeRows = [];
     referenceColumns = [];
     displayedColumns = [];
   
@@ -43,7 +51,7 @@ import {
   
     constructor (
       private _fb: FormBuilder,
-      private _store: DataStore,
+      private _service: SamPageNextService,
       private cdr: ChangeDetectorRef
     ) {
       this.form = this._fb.group({
@@ -53,53 +61,37 @@ import {
     }
   
     public ngOnInit() {
-  
-      this.model = this._store.state;
-      this.data = this.model.map(model => model.data);
-  
-      this.data.subscribe(
-        data => this.length = data.length
-      );
-  
-      this.filters = this.model
-        .map(model => this._filtersToPills(model.filters));
-  
-      this.pagination = this.model
-        .map(model => model.pagination);
-        
-      this.cdr.detectChanges();
-
-      this.filters.subscribe(data=>{
-          //reload data via http call
-          if(data.length != 0){
-            this._sampleData = SampleData._embedded.results.slice(0,1);
-          } else {
-            this._sampleData = SampleData._embedded.results;
-          }
-      });
-    }
-  
-    public onPageChange (event) {
-      const pg = {
-        pageSize: this._paginator.pageSize,
-        currentPage: this._paginator.currentPage,
-        totalPages: this._paginator.totalPages
-      };
-      this._store.update(
-        {
-          type: 'PAGE_CHANGE',
-          payload: pg
+      this._service.get('data').setValue(this._sampleData);
+      this._service.get('data').valueChanges.subscribe(
+        data => {
+          this.length = data.length
+          this.activeRows = data;
         }
       );
+  
+      this.filters = this._service.get('filters').valueChanges
+        .map(model => this._filtersToPills(model));
+
+      this.filters.subscribe(data => {
+        this.curPage = 1;
+        //reload data via http call
+        if(data.length != 0){
+          this._service.get('data').setValue(this._sampleData.slice(0,1));
+        } else {
+          this._service.get('data').setValue(this._sampleData);
+        }
+      });
+
+      this._service.get('pagination').valueChanges.subscribe(model => {
+        this.curPage = model.currentPage;
+        this._service.get('data').setValue(this._sampleData);
+      });
+        
+      this.cdr.detectChanges();
     }
   
     public onSortChange (event) {
-      this._store.update(
-        {
-          type: 'SORT_CHANGE',
-          payload: event
-        }
-      );
+      this._service.get('sort').setValue(event);
     }
   
     private _filtersToPills (filters): filterItemModel[] {

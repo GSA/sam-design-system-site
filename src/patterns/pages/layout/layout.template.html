@@ -69,14 +69,15 @@
       <sam-tab tabTitle="Table">
         <!-- pagination + edit fields button -->
         <sam-action-bar>
-          <sam-databank-pagination
+          <sam-databank-pagination samPageAction actionType="'glub glub'"
             [totalPages]="length"
           ></sam-databank-pagination>
           <sam-button
+            samPageAction actionType="'glubGlub'"
             class="action-control"
             buttonType="secondary"
             buttonText="Edit Fields"
-            (click)="toggleFieldsEditor()"
+            (click)="toggleFieldsEditor('glubGlub')"
           ></sam-button>
         </sam-action-bar>
       

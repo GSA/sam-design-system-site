@@ -11,6 +11,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
 
 const code_example = `
+  <h2>Standalone Example</h2>
   <sam-intl-telephone-group
     [label]="'International Phone Number'"
     [group]="group"
@@ -18,13 +19,8 @@ const code_example = `
     [prefixName]="'Intl Country'"
   ></sam-intl-telephone-group>
 
+  <h2>Example using Form Service</h2>
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <sam-text
-      formControlName="name"
-      [name]="textConfig.name"
-      [label]="textConfig.label"
-      [control]="name"
-    ></sam-text>
     <sam-intl-telephone-group
       [useFormService]="true"
       [label]="'International Phone Number'"
@@ -32,7 +28,11 @@ const code_example = `
       [phoneName]="'Intl Telephone'"
       [prefixName]="'Intl Country'"
     ></sam-intl-telephone-group>
-    <button type="submit">Submit</button>
+
+    <div>
+      <button class="sam-ui button secondary" type="reset" (click)="reset()">Reset</button>
+      <button class="sam-ui button primary" type="submit">Submit</button>
+    </div>
   </form>
 
   {{ form.status | json }}
@@ -105,6 +105,10 @@ export class PhoneGroupExampleComponent extends BaseExampleComponent implements 
   }
 
   public onSubmit () {
-    this.submitted = true;
+    this.formService.fireSubmit();
+  }
+
+  public reset () {
+    this.formService.fireReset();
   }
 }

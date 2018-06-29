@@ -1,2 +1,0 @@
-<h1>Collapsible</h1>
-<p>Allow users to toggle content in a small well</p>

@@ -16,9 +16,8 @@ const code_example = `
     [label]="'International Phone Number'"
     [group]="group"
     [phoneName]="'Intl Telephone'"
-    [prefixName]="'Intl Country'"
-  ></sam-intl-telephone-group>
-
+    [prefixName]="'Intl Country'">
+  </sam-intl-telephone-group>
   <h2>Example using Form Service</h2>
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <sam-intl-telephone-group
@@ -30,7 +29,7 @@ const code_example = `
     ></sam-intl-telephone-group>
 
     <div>
-      <button class="sam-ui button secondary" type="reset" (click)="reset()">Reset</button>
+      <button class="sam-ui button secondary" type="button" (click)="reset()">Reset</button>
       <button class="sam-ui button primary" type="submit">Submit</button>
     </div>
   </form>
@@ -105,10 +104,17 @@ export class PhoneGroupExampleComponent extends BaseExampleComponent implements 
   }
 
   public onSubmit () {
-    this.formService.fireSubmit();
+    this.formService.fireSubmit(this.form);
   }
 
   public reset () {
-    this.formService.fireReset();
+    this.form.reset({
+      name: '',
+      phone: {
+        prefix: '',
+        phone: ''
+      }
+    });
+    this.formService.fireReset(this.form);
   }
 }

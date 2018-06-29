@@ -19,15 +19,12 @@ import { SamAlertFooterComponentExampleComponent } from './components/alert-foot
 import { SamBadgeComponentExampleComponent } from './components/badge/component-example';
 import { BannerExampleComponent } from './components/banner/component-example';
 import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumbs/component-example';
-import { CollapsibleExampleComponent } from './components/collapsible/component-example';
 import { SamCommentsComponentExampleComponent } from './components/comments/component-example';
 import { DownloadExampleComponent } from './components/download/component-example';
 import { SamFilesComponentExampleComponent } from './components/files/component-example';
-import { FiltersContainerExampleComponent } from './components/filters-container/component-example';
 import { SamHeaderComponentExampleComponent } from './components/header/component-example';
 import { HistoryExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
-import { InfoAccordionExampleComponent } from './components/info-accordion/component-example';
 import { LabelExampleComponent } from './components/label/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
@@ -101,15 +98,12 @@ import { CdkTableModule } from '@angular/cdk';
     SamBadgeComponentExampleComponent,
     BannerExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
-    CollapsibleExampleComponent,
     SamCommentsComponentExampleComponent,
     DownloadExampleComponent,
     SamFilesComponentExampleComponent,
-    FiltersContainerExampleComponent,
     SamHeaderComponentExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
-    InfoAccordionExampleComponent,
     LabelExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
@@ -174,15 +168,12 @@ import { CdkTableModule } from '@angular/cdk';
     SamBadgeComponentExampleComponent,
     BannerExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
-    CollapsibleExampleComponent,
     SamCommentsComponentExampleComponent,
     DownloadExampleComponent,
     SamFilesComponentExampleComponent,
-    FiltersContainerExampleComponent,
     SamHeaderComponentExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
-    InfoAccordionExampleComponent,
     LabelExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,

@@ -1,2 +1,0 @@
-<h1>Info accordion</h1>
-<p>Provides a dynamic information accordion</p>

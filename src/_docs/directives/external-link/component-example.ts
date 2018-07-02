@@ -16,7 +16,13 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 // tabs/spacing matters for code example block
-const code_example = `TODO`;
+const code_example = `<p>
+  <a target="_blank" [routerLink]="'beta.sam.gov'">Sam.gov</a>
+</p>
+<p>
+  <a target="_blank" [hideIcon]="true" [routerLink]="'beta.sam.gov'">Sam.gov</a>
+</p>
+`;
 
 @Component({
   selector: 'doc-a',
@@ -28,7 +34,7 @@ export class SamExternalLinkDirectiveExampleComponent extends BaseExampleCompone
 
   example = code_example;
 
-  public base = 'ADD_BASE_URL';
+  public base = '_docs/directives/external-link/';
 
   constructor(
     _http: Http,

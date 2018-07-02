@@ -127,10 +127,6 @@ export class SamLayoutDemoComponent implements OnInit {
     // backup in case of cancel action
     // this.optionsBackup = cloneDeep(this.options);
     // this.fieldsEditor.openModal();
-    const obj = {}
-    obj[name] = true;
-    this._service.get('actions').patchValue(obj);
-    console.log('Would have opened the modal');
   }
 
   // setup datasource

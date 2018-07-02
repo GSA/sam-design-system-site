@@ -18,6 +18,7 @@ const code_example = `
     [phoneName]="'Intl Telephone'"
     [prefixName]="'Intl Country'">
   </sam-intl-telephone-group>
+
   <h2>Example using Form Service</h2>
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <sam-intl-telephone-group
@@ -33,8 +34,6 @@ const code_example = `
       <button class="sam-ui button primary" type="submit">Submit</button>
     </div>
   </form>
-
-  {{ form.status | json }}
 `;
 
 @Component({
@@ -46,7 +45,6 @@ const code_example = `
 `
 })
 export class PhoneGroupExampleComponent extends BaseExampleComponent implements OnInit {
-  // @ViewChild(SamIntlPhoneGroup) public phone: SamIntlPhoneGroup;
   phoneModel = '123-456-3366';
   phoneModel2 = '1+(123)456-3366';
   typedoc_target = 'SamIntlPhoneGroup';
@@ -54,7 +52,7 @@ export class PhoneGroupExampleComponent extends BaseExampleComponent implements 
 
   group = new FormGroup({
     prefix: new FormControl('', Validators.required),
-    phone: new FormControl('', Validators.required)
+    phone: new FormControl('1234', Validators.required)
   });
 
   example = code_example;
@@ -84,23 +82,15 @@ export class PhoneGroupExampleComponent extends BaseExampleComponent implements 
 
     this.form = this._fb.group(
       {
-        name: ['', Validators.required],
+        name: [null, Validators.required],
         phone: new FormGroup(
           {
-            prefix: new FormControl('', Validators.required),
-            phone: new FormControl('', Validators.required)
+            prefix: new FormControl(null, Validators.required),
+            phone: new FormControl('1234', Validators.required)
           }
         )
       }
     );
-  }
-
-  public ngOnInit () {
-    super.ngOnInit();
-  }
-
-  private _strategy (): boolean {
-    return !!this.submitted;
   }
 
   public onSubmit () {
@@ -108,13 +98,7 @@ export class PhoneGroupExampleComponent extends BaseExampleComponent implements 
   }
 
   public reset () {
-    this.form.reset({
-      name: '',
-      phone: {
-        prefix: '',
-        phone: ''
-      }
-    });
+    this.form.reset();
     this.formService.fireReset(this.form);
   }
 }

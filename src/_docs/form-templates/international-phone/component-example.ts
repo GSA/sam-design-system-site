@@ -16,8 +16,8 @@ const code_example = `
     [label]="'International Phone Number'"
     [group]="group"
     [phoneName]="'Intl Telephone'"
-    [prefixName]="'Intl Country'"
-  ></sam-intl-telephone-group>
+    [prefixName]="'Intl Country'">
+  </sam-intl-telephone-group>
 
   <h2>Example using Form Service</h2>
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -30,12 +30,10 @@ const code_example = `
     ></sam-intl-telephone-group>
 
     <div>
-      <button class="sam-ui button secondary" type="reset" (click)="reset()">Reset</button>
+      <button class="sam-ui button secondary" type="button" (click)="reset()">Reset</button>
       <button class="sam-ui button primary" type="submit">Submit</button>
     </div>
   </form>
-
-  {{ form.status | json }}
 `;
 
 @Component({
@@ -47,7 +45,6 @@ const code_example = `
 `
 })
 export class PhoneGroupExampleComponent extends BaseExampleComponent implements OnInit {
-  // @ViewChild(SamIntlPhoneGroup) public phone: SamIntlPhoneGroup;
   phoneModel = '123-456-3366';
   phoneModel2 = '1+(123)456-3366';
   typedoc_target = 'SamIntlPhoneGroup';
@@ -55,7 +52,7 @@ export class PhoneGroupExampleComponent extends BaseExampleComponent implements 
 
   group = new FormGroup({
     prefix: new FormControl('', Validators.required),
-    phone: new FormControl('', Validators.required)
+    phone: new FormControl('1234', Validators.required)
   });
 
   example = code_example;
@@ -85,30 +82,23 @@ export class PhoneGroupExampleComponent extends BaseExampleComponent implements 
 
     this.form = this._fb.group(
       {
-        name: ['', Validators.required],
+        name: [null, Validators.required],
         phone: new FormGroup(
           {
-            prefix: new FormControl('', Validators.required),
-            phone: new FormControl('', Validators.required)
+            prefix: new FormControl(null, Validators.required),
+            phone: new FormControl('1234', Validators.required)
           }
         )
       }
     );
   }
 
-  public ngOnInit () {
-    super.ngOnInit();
-  }
-
-  private _strategy (): boolean {
-    return !!this.submitted;
-  }
-
   public onSubmit () {
-    this.formService.fireSubmit();
+    this.formService.fireSubmit(this.form);
   }
 
   public reset () {
-    this.formService.fireReset();
+    this.form.reset();
+    this.formService.fireReset(this.form);
   }
 }

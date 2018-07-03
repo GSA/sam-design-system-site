@@ -64,7 +64,7 @@
         [fieldValue]="filterItem.value"
       ></li>
     </sam-filter-drawer>
-    
+
     <sam-tabs>
       <sam-tab tabTitle="Table">
         <!-- pagination + edit fields button -->
@@ -73,13 +73,12 @@
             [totalPages]="length"
           ></sam-databank-pagination>
           <sam-button
-            class="action-control"
+            samPageAction
             buttonType="secondary"
             buttonText="Edit Fields"
             (click)="toggleFieldsEditor()"
           ></sam-button>
         </sam-action-bar>
-      
       <!-- datatable -->
       <sam-datatable samSort
         [dataSource]="dataSource"
@@ -113,41 +112,42 @@
   </sam-tabs>
     
   </sam-main>
+</sam-page-next>
 
-  <!-- modals -->
-  <sam-modal
-    [showClose]="true"
-    [title]="'Edit Fields'"
-    [type]="'info'"
-    [description]="'Edit fields for report'"
-    [submitButtonLabel]="'Done'"
-    [cancelButtonLabel]="'Cancel'"
-    (close)="cancelModalAction()"
-    (submit)="submitModalAction()">
-    <div class="sam reset checkboxes labels fieldsets">
-      
-      <h4 class="sam heading">{{ options.organization.label }} </h4>
-      <sam-checkbox
-        [(ngModel)]="options.organization.selected"
-        [name]="options.organization.label"
-        [options]="options.organization.options"
-      ></sam-checkbox>
-      
-      <h4 class="sam heading">{{  options.listing.label }}</h4>
-      <sam-checkbox
+<sam-modal
+  [showClose]="true"
+  [title]="'Edit Fields'"
+  [type]="'info'"
+  [description]="'Edit fields for report'"
+  [submitButtonLabel]="'Done'"
+  [cancelButtonLabel]="'Cancel'"
+  [closeOnEscape]="true"
+  (close)="cancelModalAction()"
+  (submit)="submitModalAction()">
+  
+  <div class="sam reset checkboxes labels fieldsets">
+
+    <h4 class="sam heading">{{ options.organization.label }} </h4>
+    <sam-checkbox
+      [(ngModel)]="options.organization.selected"
+      [name]="options.organization.label"
+      [options]="options.organization.options"
+    ></sam-checkbox>
+    
+    <h4 class="sam heading">{{  options.listing.label }}</h4>
+    <sam-checkbox
       [(ngModel)]="options.listing.selected"
       [name]="options.listing.label"
       [options]="options.listing.options"
-      ></sam-checkbox>
-      
-      <h4 class="sam heading">{{ options.status.label }}</h4>
-      <sam-checkbox
+    ></sam-checkbox>
+    
+    <h4 class="sam heading">{{ options.status.label }}</h4>
+    <sam-checkbox
       [(ngModel)]="options.status.selected"
       [name]="options.status.label"
       [options]="options.status.options"
-      ></sam-checkbox>
-      
-    </div>
-  </sam-modal>
+    ></sam-checkbox>
 
-</sam-page-next>
+  </div>
+
+</sam-modal>

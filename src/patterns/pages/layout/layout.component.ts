@@ -123,10 +123,10 @@ export class SamLayoutDemoComponent implements OnInit {
     this.cdr.detectChanges();
   }
 
-  public toggleFieldsEditor (name) {
+  public toggleFieldsEditor () {
     // backup in case of cancel action
-    // this.optionsBackup = cloneDeep(this.options);
-    // this.fieldsEditor.openModal();
+    this.optionsBackup = cloneDeep(this.options);
+    this.fieldsEditor.openModal();
   }
 
   // setup datasource

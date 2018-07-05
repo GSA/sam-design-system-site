@@ -4,23 +4,19 @@ import { Component, HostListener} from '@angular/core';
   templateUrl: 'template.html'
 })
 export class PickerComponent {
-  @HostListener('click', ['$event']) onClick($event) {
-    const target = $event.target.className;
-    this.showOverlay = target === 'prototype-picker-overlay' ? false : true;
-  }
 
   showOverlay: boolean = true;
 
   data: Object[] = [
-    { 
+    {
       'name': 'Action',
       'type': 'Department'
     },
-    { 
+    {
       'name': 'United States Information Agency',
       'type': 'Agency'
     },
-    { 
+    {
       'name': 'Department of Defense',
       'type': 'Department',
       'children' : [
@@ -100,31 +96,31 @@ export class PickerComponent {
         }
       ]
     },
-    { 
+    {
       'name': 'Bureau of Radiological Health',
       'type': 'Department'
     },
-    { 
+    {
       'name': 'Office of Human Development Services',
       'type': 'Agency'
     },
-    { 
+    {
       'name': 'U.S. Postal Service',
       'type': 'Department'
     },
-    { 
+    {
       'name': 'Old West Regional Commission',
       'type': 'Department'
     },
-    { 
+    {
       'name': 'Health Care Financing Administration',
       'type': 'Agency'
     },
-    { 
+    {
       'name': 'Interstate Commerce Commission',
       'type': 'Department'
     },
-    { 
+    {
       'name': 'Smithsonian Institution',
       'type': 'Office'
     }
@@ -138,24 +134,30 @@ export class PickerComponent {
     {
       'name': 'Most Searched'
     }
-  ]
+  ];
+
+  @HostListener('click', ['$event'])
+  onClick($event) {
+    const target = $event.target.className;
+    this.showOverlay = target === 'prototype-picker-overlay' ? false : true;
+  }
 
   openModal() {
     this.showOverlay = true;
   }
 
-  getParent(){
+  getParent() {
     this.results = this.parent;
   }
 
   getChildren(result) {
-    if(result.children){
+    if (result.children) {
 
       this.parent = this.results;
-      
-      if(this.level > 0){
+
+      if (this.level > 0) {
         this.breadcrumbs.push({'name': result.name});
-      }else{
+      } else {
         this.breadcrumbs = [{ 'name': result.name }];
       }
 

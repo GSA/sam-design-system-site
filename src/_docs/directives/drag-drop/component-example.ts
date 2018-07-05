@@ -18,7 +18,7 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 // tabs/spacing matters for code example block
 const code_example = `
 <p>Drop a file into the area below</p>
-<div 
+<div
   style="width:50px;height:50px;border:1px solid #000;"
   sam-drag-drop (dropEvent)="handleDrop($event)"></div>
 <p>{{detectionText}}</p>`;
@@ -32,7 +32,7 @@ export class SamDragDropDirectiveExampleComponent extends BaseExampleComponent i
   typedoc_content = '';
 
   example = code_example;
-  detectionText = "";
+  detectionText = '';
 
 
   public base = '_docs/directives/drag-drop/';
@@ -47,7 +47,7 @@ export class SamDragDropDirectiveExampleComponent extends BaseExampleComponent i
     this.sections.forEach(this.fetchSection.bind(this));
   }
 
-  handleDrop(data){
-    this.detectionText = "Detected an item drop";
+  handleDrop(data) {
+    this.detectionText = 'Detected an item drop';
   }
 }

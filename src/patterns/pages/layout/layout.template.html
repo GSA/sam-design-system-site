@@ -64,7 +64,7 @@
         [fieldValue]="filterItem.value"
       ></li>
     </sam-filter-drawer>
-
+    
     <sam-tabs>
       <sam-tab tabTitle="Table">
         <!-- pagination + edit fields button -->
@@ -74,16 +74,20 @@
           ></sam-databank-pagination>
           <sam-button
             samPageAction
+            class="action-control"
             buttonType="secondary"
             buttonText="Edit Fields"
             (click)="toggleFieldsEditor()"
           ></sam-button>
         </sam-action-bar>
+      
       <!-- datatable -->
       <sam-datatable samSort
         [dataSource]="dataSource"
         (samSortChange)="onSortChange($event)">
-        <ng-container *ngFor="let col of columnDefObs | async" [cdkColumnDef]="col.def">
+        <ng-container
+          *ngFor="let col of columnDefObs | async"
+          [cdkColumnDef]="col.def">
           <sam-header-cell
             *cdkHeaderCellDef
             sam-sort-header>
@@ -112,8 +116,10 @@
   </sam-tabs>
     
   </sam-main>
+
 </sam-page-next>
 
+<!-- modals -->
 <sam-modal
   [showClose]="true"
   [title]="'Edit Fields'"
@@ -121,12 +127,10 @@
   [description]="'Edit fields for report'"
   [submitButtonLabel]="'Done'"
   [cancelButtonLabel]="'Cancel'"
-  [closeOnEscape]="true"
   (close)="cancelModalAction()"
   (submit)="submitModalAction()">
-  
   <div class="sam reset checkboxes labels fieldsets">
-
+    
     <h4 class="sam heading">{{ options.organization.label }} </h4>
     <sam-checkbox
       [(ngModel)]="options.organization.selected"
@@ -136,18 +140,17 @@
     
     <h4 class="sam heading">{{  options.listing.label }}</h4>
     <sam-checkbox
-      [(ngModel)]="options.listing.selected"
-      [name]="options.listing.label"
-      [options]="options.listing.options"
+    [(ngModel)]="options.listing.selected"
+    [name]="options.listing.label"
+    [options]="options.listing.options"
     ></sam-checkbox>
     
     <h4 class="sam heading">{{ options.status.label }}</h4>
     <sam-checkbox
-      [(ngModel)]="options.status.selected"
-      [name]="options.status.label"
-      [options]="options.status.options"
+    [(ngModel)]="options.status.selected"
+    [name]="options.status.label"
+    [options]="options.status.options"
     ></sam-checkbox>
-
+    
   </div>
-
 </sam-modal>

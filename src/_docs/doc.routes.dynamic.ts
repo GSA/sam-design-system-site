@@ -39,6 +39,7 @@ import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDataTableComponentExampleComponent } from './experimental/data-table/component-example';
+import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -46,6 +47,7 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamPageTitleExampleComponent } from './experimental/page-title/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
@@ -109,6 +111,7 @@ export const ROUTES: Routes = [
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
   { path: 'experimental/data-table', component: SamDataTableComponentExampleComponent },
+  { path: 'experimental/filter-drawer', component: SamFilterDrawerComponentExampleComponent },
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
   { path: 'experimental/icon', component: SamIconComponentExampleComponent },
   { path: 'experimental/input-mask', component: SamInputMaskComponentExampleComponent },
@@ -116,6 +119,7 @@ export const ROUTES: Routes = [
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageComponentExampleComponent },
+  { path: 'experimental/page-title', component: SamPageTitleExampleComponent },
   { path: 'experimental/search', component: SamSearchComponentExampleComponent },
   { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/title', component: SamTitleComponentExampleComponent },

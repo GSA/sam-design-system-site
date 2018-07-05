@@ -45,6 +45,7 @@ import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDataTableComponentExampleComponent } from './experimental/data-table/component-example';
+import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -52,6 +53,7 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamPageTitleExampleComponent } from './experimental/page-title/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
@@ -124,6 +126,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDataTableComponentExampleComponent,
+    SamFilterDrawerComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -131,6 +134,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
+    SamPageTitleExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTitleComponentExampleComponent,
@@ -194,6 +198,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDataTableComponentExampleComponent,
+    SamFilterDrawerComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -201,6 +206,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
+    SamPageTitleExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTitleComponentExampleComponent,

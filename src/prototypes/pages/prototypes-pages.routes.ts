@@ -8,6 +8,7 @@ import { SearchMobileComponent } from './search-mobile/search.component';
 import { ReportPageComponent } from './report/report.component';
 import { TablePageComponent } from './table/table.component';
 import { DatePageComponent } from './date/date.component';
+import { DollarDemoComponent } from './dollar/dollar.component';
 
 const PageRoutes: Routes = [
   {
@@ -37,6 +38,10 @@ const PageRoutes: Routes = [
       {
         path: 'date',
         component: DatePageComponent
+      },
+      {
+        path: 'dollar',
+        component: DollarDemoComponent
       }
     ]
   }

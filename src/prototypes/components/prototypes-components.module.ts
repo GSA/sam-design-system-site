@@ -24,6 +24,7 @@ import {
 
 import { SamExperimentalDataTableModule } from './table';
 import { DatepickerProtoModule } from './date/picker/picker.module';
+import { SamDollarComponent } from './dollar/dollar.component';
 
 @NgModule({
   imports: [
@@ -49,6 +50,7 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     PickerLevel5Component,
     PickerLevel6Component,
     MainNavComponent,
+    SamDollarComponent,
   ],
   exports: [
     MainNavComponent,
@@ -59,6 +61,7 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     CdkTableModule,
     SamExperimentalDataTableModule,
     DatepickerProtoModule,
+    SamDollarComponent,
   ]
 })
 export class PrototypesComponentsModule {}

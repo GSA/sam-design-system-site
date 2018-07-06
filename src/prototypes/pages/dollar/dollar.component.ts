@@ -1,10 +1,9 @@
-import { Component, ViewEncapsulation, forwardRef, ChangeDetectionStrategy, HostListener } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'sam-dollar-demo',
     templateUrl: './dollar.template.html',
 })
 export class DollarDemoComponent {
-    dollarVal = "$12.12";
+    dollarVal = '$12.12';
 }

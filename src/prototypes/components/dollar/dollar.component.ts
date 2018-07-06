@@ -6,7 +6,9 @@ import {
     forwardRef,
     Output,
     EventEmitter,
-    OnDestroy
+    OnInit,
+    OnDestroy,
+    AfterViewInit
   } from '@angular/core';
 import { LabelWrapper } from 'sam-ui-elements/src/ui-kit/wrappers/label-wrapper';
 import {
@@ -16,11 +18,11 @@ import {
   Validators,
   ValidatorFn
 } from '@angular/forms';
-import { Subject } from 'rxjs';
+import { Subject } from 'rxjs/Subject';
 import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
 
 @Component({
-    selector: "sam-dollar",
+    selector: 'sam-dollar',
     templateUrl: 'dollar.template.html',
     providers: [{
         provide: NG_VALUE_ACCESSOR,
@@ -28,7 +30,7 @@ import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
         multi: true
     }]
 })
-export class SamDollarComponent {
+export class SamDollarComponent implements ControlValueAccessor, OnInit, OnDestroy, AfterViewInit {
   /**
   * Sets the text input value
   */
@@ -93,12 +95,11 @@ export class SamDollarComponent {
   @ViewChild(LabelWrapper) public wrapper: LabelWrapper;
 
 
+  attrType = 'text';
+  previousValue = null;
+  private ngUnsubscribe: Subject<any> = new Subject();
   public onChange: any = (c) => null;
   public onTouched: any = () => null;
-  attrType = "text";
-  previousValue = null;
-
-  private ngUnsubscribe: Subject<any> = new Subject();
 
   constructor(private samFormService: SamFormService,
     private cdr: ChangeDetectorRef) {}
@@ -146,7 +147,7 @@ export class SamDollarComponent {
     }
   }
 
-  public ngOnDestroy(){
+  public ngOnDestroy() {
     this.cdr.detach();
     this.ngUnsubscribe.next();
     this.ngUnsubscribe.complete();
@@ -160,22 +161,22 @@ export class SamDollarComponent {
   }
 
   public numberWithCommas (x) {
-    var parts = x.toString().split(".");
-    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    return parts.join(".");
+    const parts = x.toString().split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return parts.join('.');
   }
 
-  public onFocus(){
+  public onFocus() {
       this.onTouched();
       this.value = this.dollarToStr(this.value);
       this.cdr.detectChanges();
-      this.attrType = "number";
+      this.attrType = 'number';
   }
 
   public onLoseFocus() {
-    this.attrType = "text";
-    let value = this.strToDollar(this.value);
-    if(value != this.previousValue){
+    this.attrType = 'text';
+    const value = this.strToDollar(this.value);
+    if (value !== this.previousValue) {
         this.onInputChange2(value);
         this.previousValue = value;
     }
@@ -184,29 +185,29 @@ export class SamDollarComponent {
     this.blur.emit(true);
   }
 
-  public dollarToStr(value){
-    let strValue = value.replace(/\$/g,"");
-    strValue = strValue.replace(/,/g,"");
+  public dollarToStr(value) {
+    let strValue = value.replace(/\$/g, '');
+    strValue = strValue.replace(/,/g, '');
     return strValue;
   }
 
-  public strToDollar(value){
+  public strToDollar(value) {
     let dollarVal = value.trim();
-    if(dollarVal !== ''){
-        dollarVal = "" + Math.round(dollarVal*100)/100;
+    if (dollarVal !== '') {
+        dollarVal = '' + Math.round( dollarVal * 100 ) / 100;
         dollarVal = this.numberWithCommas(dollarVal);
-        dollarVal = "$" + dollarVal;
+        dollarVal = '$' + dollarVal;
     }
     return dollarVal;
   }
 
   public onInputChange() {
     this.onTouched();
-    let value: any = this.strToDollar(this.value);
+    const value: any = this.strToDollar(this.value);
     this.onChange(value);
   }
 
-  public onInputChange2(value){
+  public onInputChange2(value) {
     this.onTouched();
     this.onChange(value);
   }

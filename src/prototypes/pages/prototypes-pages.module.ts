@@ -28,7 +28,7 @@ import {
 } from './search/sam-front-end-components/search-result';
 import { DatePageComponent } from './date/date.component';
 import { SortArrayOfObjects } from './search/sam-front-end-components/wage-determination/sort-array-object.pipe';
-import { DollarDemoComponent } from './dollar/dollar.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -57,7 +57,6 @@ import { DollarDemoComponent } from './dollar/dollar.component';
     SamSortComponent,
     DatePageComponent,
     SortArrayOfObjects,
-    DollarDemoComponent
   ],
   providers: [
     SearchUtil,

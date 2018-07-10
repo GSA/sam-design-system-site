@@ -84,7 +84,7 @@ const code_example = `
         </sam-row>
     </sam-datatable>
 
-    <div 
+    <div
         class="example-no-results"
         [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'"
         style="padding:10px 0;">

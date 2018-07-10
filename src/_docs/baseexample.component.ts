@@ -49,7 +49,7 @@ export class BaseExampleComponent implements OnInit {
   }
 
   public setupTypedocContent(obj: any): void {
-    if(!obj || obj.length === 0){
+    if (!obj || obj.length === 0) {
       return;
     }
     this.typedoc_content += `

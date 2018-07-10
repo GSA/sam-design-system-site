@@ -21,7 +21,7 @@ const code_example = `
 <sam-dollar
   [(ngModel)]="dollarVal"
   label="Dollar component prototype"
-  name="dollar"></sam-dollar>
+  [id]="'dollar'"></sam-dollar>
 <p>{{dollarVal}}</p>`;
 
 @Component({

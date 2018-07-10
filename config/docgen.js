@@ -22,7 +22,9 @@ const ignoredComponents = [
   'SamAutocompleteComponentRefactor',
   'SamInternationalPrefix',
   'SamTelephone',
-
+  'SamHeaderComponent',
+  'SamBannerComponent',
+  'SamUploadComponentV2'//not ready yet
 ]
 
 function ObservableStream (observer, path) {

@@ -84,11 +84,15 @@ const code_example = `
         </sam-row>
     </sam-datatable>
 
-    <div class="example-no-results"
-        [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'" style="padding:10px 0;">
+    <div 
+        class="example-no-results"
+        [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'"
+        style="padding:10px 0;">
         No users found matching filter.
     </div>
-    <div [style.display]="dataSource.renderedData.length != 0 ? '' : 'none'" style="text-align:right;">
+    <div
+        [style.display]="dataSource.renderedData.length != 0 ? '' : 'none'"
+        style="text-align:right;">
         <sam-pagination
             class="datatable-example"
             #paginator [currentPage]="curPage"

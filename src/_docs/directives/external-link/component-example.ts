@@ -16,12 +16,13 @@ import { MarkdownService } from '../../../app/services/markdown/markdown.service
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 // tabs/spacing matters for code example block
-const code_example = `<p>
-  <a target="_blank" [routerLink]="'beta.sam.gov'">Sam.gov</a>
-</p>
-<p>
-  <a target="_blank" [hideIcon]="true" [routerLink]="'beta.sam.gov'">Sam.gov</a>
-</p>
+const code_example = `
+  <p>
+    <a rel="noopener noreferrer" target="_blank" [routerLink]="'beta.sam.gov'">Sam.gov</a>
+  </p>
+  <p>
+    <a rel="noopener noreferrer" target="_blank" [hideIcon]="true" [routerLink]="'beta.sam.gov'">Sam.gov</a>
+  </p>
 `;
 
 @Component({

@@ -10,7 +10,7 @@ export class MarkdownService {
   constructor(private http: Http) {
     this.processString =
       new MarkdownProcessor(
-        '/assets/markdown/'
+        './assets/markdown/'
       )
       .processString;
   }

@@ -65,55 +65,56 @@
       ></li>
     </sam-filter-drawer>
     
-    <sam-tabs>
-      <sam-tab tabTitle="Table">
-        <!-- pagination + edit fields button -->
-        <sam-action-bar>
-          <sam-databank-pagination
-            [totalPages]="length"
-          ></sam-databank-pagination>
-          <sam-button
-            samPageAction
-            buttonType="secondary"
-            buttonText="Edit Fields"
-            (click)="toggleFieldsEditor()"
-          ></sam-button>
-        </sam-action-bar>
-      
-      <!-- datatable -->
-      <sam-datatable samSort
-        [dataSource]="dataSource"
-        (samSortChange)="onSortChange($event)">
-        <ng-container
-          *ngFor="let col of columnDefObs | async"
-          [cdkColumnDef]="col.def">
-          <sam-header-cell
-            *cdkHeaderCellDef
-            sam-sort-header>
-            {{ col.headerLabel }}
-          </sam-header-cell>
-
-          <sam-cell *cdkCellDef="let row">
-            {{ row[col.cellId] }}
-          </sam-cell>
-        </ng-container>
+    <sam-main-content>
+      <sam-tabs samContentOutlet>
+        <sam-tab tabTitle="Table">
+          <!-- pagination + edit fields button -->
+          <sam-action-bar>
+            <sam-databank-pagination
+              [totalPages]="length"
+            ></sam-databank-pagination>
+            <sam-button
+              samPageAction
+              buttonType="secondary"
+              buttonText="Edit Fields"
+              (click)="toggleFieldsEditor()"
+            ></sam-button>
+          </sam-action-bar>
         
-        <sam-header-row
-          *cdkHeaderRowDef="displayedColumns"
-        ></sam-header-row>
-        <sam-row
-          *cdkRowDef="let row; columns: displayedColumns"
-        ></sam-row> 
-      </sam-datatable>
-    </sam-tab>
-    <sam-tab tabTitle="Summary">
-      bbbb
-    </sam-tab>
-    <sam-tab tabTitle="Charts">
-      cccc
-    </sam-tab>
-  </sam-tabs>
-    
+        <!-- datatable -->
+        <sam-datatable samSort
+          [dataSource]="dataSource"
+          (samSortChange)="onSortChange($event)">
+          <ng-container
+            *ngFor="let col of columnDefObs | async"
+            [cdkColumnDef]="col.def">
+            <sam-header-cell
+              *cdkHeaderCellDef
+              sam-sort-header>
+              {{ col.headerLabel }}
+            </sam-header-cell>
+
+            <sam-cell *cdkCellDef="let row">
+              {{ row[col.cellId] }}
+            </sam-cell>
+          </ng-container>
+          
+          <sam-header-row
+            *cdkHeaderRowDef="displayedColumns"
+          ></sam-header-row>
+          <sam-row
+            *cdkRowDef="let row; columns: displayedColumns"
+          ></sam-row> 
+        </sam-datatable>
+      </sam-tab>
+      <sam-tab tabTitle="Summary">
+        bbbb
+      </sam-tab>
+      <sam-tab tabTitle="Charts">
+        cccc
+      </sam-tab>
+      </sam-tabs>
+    </sam-main-content>
   </sam-main>
 
 </sam-page-next>

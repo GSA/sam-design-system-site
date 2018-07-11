@@ -18,7 +18,8 @@
     "set-env": "node src/environments/set-env.js",
     "update-build-env": "node src/environments/update-build-env.js",
     "init": "npm run compile-markdown && npm run set-env && npm run docs",
-    "bundle-analyzer": "webpack-bundle-analyzer dist/stats.json"
+    "bundle-analyzer": "webpack-bundle-analyzer dist/stats.json",
+    "federalist": "npm install && npm run compile-markdown && npm run set-env && npm run docs && ng build --base-href $BASEURL/dist/"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +36,7 @@
     "@angular/platform-browser": "4.3.3",
     "@angular/platform-browser-dynamic": "4.3.3",
     "@angular/router": "4.3.3",
+    "@gsa-sam/sam-ui-elements": "0.0.1",
     "accessible-html5-video-player": "^1.0.3",
     "classlist-polyfill": "1.0.3",
     "core-js": "^2.4.1",

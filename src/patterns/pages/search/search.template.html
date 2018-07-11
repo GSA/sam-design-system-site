@@ -32,7 +32,7 @@
     <sam-resources-wrapper>
       <h3>Resources</h3>
       <ul>
-        <li><a href="https://beta.sam.gov/help/assistance-listing" target="blank">About Federal Assistance</a></li>
+        <li><a href="https://beta.sam.gov/help/assistance-listing" target="_blank" rel="noopener noreferrer">About Federal Assistance</a></li>
       </ul>
     </sam-resources-wrapper>
   </sam-aside>
@@ -44,8 +44,6 @@
       title="My Saved Report Criteria"
       super="Federal Assistance Compliance Summary">
     </sam-page-title>
-
-  
     
     <sam-filter-drawer>
       <li sam-filter-drawer-item
@@ -55,46 +53,50 @@
         [fieldValue]="filterItem.value"
       ></li>
     </sam-filter-drawer>
-    
-    <div>
-        Showing {{ curPage>1 ? ((curPage-1)*10)+1 : '1' }} - {{ activeRows.length >= 10 ? curPage*10 : activeRows.length }} of {{ _samplePage.totalElements }} results
-    </div>
-    <div class="sam-ui grid" *ngFor="let result of activeRows">
-      <div class="eight wide column">
-          <h3 class="wage-determination-number">{{ result.title }}</h3>
-          <p>{{ result.objective | slice:0:150 }}{{result.objective?.length > 150 ? '...' : ''}}</p>
-          <ul class="sam-ui small list">
-              <li *ngIf="result.organizationHierarchy">
-                  <strong>Department/Ind. Agency</strong><br>
-                  {{ result.organizationHierarchy[0].name }}
-              </li>
-              <li *ngIf="result.organizationHierarchy && result.organizationHierarchy.length > 1">
-                  <strong>Office</strong><br>
-                  <span>{{ result.organizationHierarchy[result.organizationHierarchy.length-1].name }}</span>
-              </li>
-          </ul>
+
+    <sam-main-content>
+      <div samContentOutlet>
+        <div>
+            Showing {{ curPage>1 ? ((curPage-1)*10)+1 : '1' }} - {{ activeRows.length >= 10 ? curPage*10 : activeRows.length }} of {{ _samplePage.totalElements }} results
+        </div>
+        <div class="sam-ui grid" *ngFor="let result of activeRows">
+          <div class="eight wide column">
+              <h3 class="wage-determination-number">{{ result.title }}</h3>
+              <p>{{ result.objective | slice:0:150 }}{{result.objective?.length > 150 ? '...' : ''}}</p>
+              <ul class="sam-ui small list">
+                  <li *ngIf="result.organizationHierarchy">
+                      <strong>Department/Ind. Agency</strong><br>
+                      {{ result.organizationHierarchy[0].name }}
+                  </li>
+                  <li *ngIf="result.organizationHierarchy && result.organizationHierarchy.length > 1">
+                      <strong>Office</strong><br>
+                      <span>{{ result.organizationHierarchy[result.organizationHierarchy.length-1].name }}</span>
+                  </li>
+              </ul>
+          </div>
+          <div class="four wide column">
+              <ul class="sam-ui small list">
+                  <li>
+                      <span class="sam-ui mini label">Assistance Listing</span>
+                  </li>
+                  <li class="wd-revision-number">
+                      <strong>CFDA Number</strong><br>
+                      <span>{{ result.programNumber }}</span>
+                  </li>
+                  <li class="wd-revision-number">
+                      <strong>Is Funded</strong><br>
+                      <span>{{ result.isFunded ? 'Yes' : 'No' }}</span>
+                  </li>
+              </ul>
+          </div>
+        </div>
       </div>
-      <div class="four wide column">
-          <ul class="sam-ui small list">
-              <li>
-                  <span class="sam-ui mini label">Assistance Listing</span>
-              </li>
-              <li class="wd-revision-number">
-                  <strong>CFDA Number</strong><br>
-                  <span>{{ result.programNumber }}</span>
-              </li>
-              <li class="wd-revision-number">
-                  <strong>Is Funded</strong><br>
-                  <span>{{ result.isFunded ? 'Yes' : 'No' }}</span>
-              </li>
-          </ul>
-      </div>
-    </div>
-    <sam-action-bar>
-      <sam-databank-pagination
-        [currentPage]="curPage"
-        [totalPages]="length">
-      </sam-databank-pagination>
-    </sam-action-bar>
+      <sam-action-bar>
+        <sam-databank-pagination
+          [currentPage]="curPage"
+          [totalPages]="length">
+        </sam-databank-pagination>
+      </sam-action-bar>
+    </sam-main-content>
   </sam-main>
 </sam-page-next>

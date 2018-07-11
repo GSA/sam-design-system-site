@@ -17,12 +17,9 @@ import { SamActionsDropdownComponentExampleComponent } from './components/action
 import { AlertExampleComponent } from './components/alert/component-example';
 import { SamAlertFooterComponentExampleComponent } from './components/alert-footer/component-example';
 import { SamBadgeComponentExampleComponent } from './components/badge/component-example';
-import { BannerExampleComponent } from './components/banner/component-example';
 import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumbs/component-example';
 import { SamCommentsComponentExampleComponent } from './components/comments/component-example';
 import { DownloadExampleComponent } from './components/download/component-example';
-import { SamFilesComponentExampleComponent } from './components/files/component-example';
-import { SamHeaderComponentExampleComponent } from './components/header/component-example';
 import { HistoryExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
 import { LabelExampleComponent } from './components/label/component-example';
@@ -45,6 +42,7 @@ import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDataTableComponentExampleComponent } from './experimental/data-table/component-example';
+import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
@@ -98,12 +96,9 @@ import { CdkTableModule } from '@angular/cdk';
     AlertExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
-    BannerExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
     SamCommentsComponentExampleComponent,
     DownloadExampleComponent,
-    SamFilesComponentExampleComponent,
-    SamHeaderComponentExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
     LabelExampleComponent,
@@ -126,6 +121,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDataTableComponentExampleComponent,
+    SamDollarComponentExampleComponent,
     SamFilterDrawerComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
@@ -170,12 +166,9 @@ import { CdkTableModule } from '@angular/cdk';
     AlertExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
-    BannerExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
     SamCommentsComponentExampleComponent,
     DownloadExampleComponent,
-    SamFilesComponentExampleComponent,
-    SamHeaderComponentExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
     LabelExampleComponent,
@@ -198,6 +191,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDataTableComponentExampleComponent,
+    SamDollarComponentExampleComponent,
     SamFilterDrawerComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,

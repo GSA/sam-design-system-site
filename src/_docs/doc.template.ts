@@ -136,6 +136,7 @@ export class DocTemplateComponent implements OnInit {
     // Run Prism JS
     // ==========================================================
     if (this.example) {
+      this.example = this.example.trim();
       this.example = Prism.highlight(this.example, Prism.languages.html);
     }
 

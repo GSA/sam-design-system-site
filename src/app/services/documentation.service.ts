@@ -191,14 +191,24 @@ export class DocumentationService {
     .subscribe(
       (data) => {
         if (data.children) {
+          data.children = data.children.filter((child) => {
+            if (!!child.decorators &&
+                (child.decorators[0].name === 'Input' ||
+                 child.decorators[0].name === 'Output')) {
+                   return child;
+                 }
+          });
+          data.children = data.children.sort((prev, next) => {
+            if (prev.decorators[0].name === 'Input' && next.decorators[0].name === 'Output') {
+              return -1;
+            } else if (prev.decorators[0].name === 'Output' && next.decorators[0].name === 'Input') {
+              return 1;
+            } else {
+              return (prev.name).localeCompare(next.name);
+            }
+          });
           properties.next(
-            data.children.filter((child) => {
-              if (!!child.decorators &&
-                  (child.decorators[0].name === 'Input' ||
-                   child.decorators[0].name === 'Output')) {
-                     return child;
-                   }
-            })
+            data.children
           );
         }
       },

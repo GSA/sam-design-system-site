@@ -95,7 +95,7 @@ export class BaseExampleComponent implements OnInit {
       : section;
 
     return this.mdService
-      .get(`${this.base}${fileName}.md`)
+      .get(`${this.base.replace(/^_/g,'')}${fileName}.md`) 
       .subscribe(
         (data: any) => {
           this[section] = data.text();

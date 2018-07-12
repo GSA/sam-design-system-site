@@ -286,14 +286,14 @@ function processFile (file) {
 }
 
 function createFileName (file, root) {
-
   const parsed = path.parse(file)
 
   let rel = path.relative(root, parsed.dir);
 
   let spl = rel.split(path.sep).filter(str => str !== '..')
   let newFileName = parsed.name + EXT
-  let newBaseName = spl.join('-') + '-' + newFileName
+  let newBaseName = spl.join('-') + '-' + newFileName;
+  newBaseName = newBaseName.replace(/^_/g,'');
 
   return path.join(root, newBaseName)
 

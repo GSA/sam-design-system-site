@@ -45,7 +45,7 @@ export class StaticPageComponent implements OnInit {
             .filter((section: string) => section !== 'src')
             .join('/');
 
-          this.mdService.get(fileName)
+          this.mdService.get(fileName.replace(/^_/g,''))
             .catch((err) => {
               this.content = this.defaultContent;
               return Observable.of(err);

@@ -13,10 +13,12 @@ const DOCS_ROUTE_PATH =
 const STATIC = JSON.stringify(helpers.getStaticDirStructure(STATIC_PATH))
 const DOCS = JSON.stringify(helpers.getUIKitStructure(DOCS_PATH))
 const ENV = process && process.env && process.env.ENV ? process.env.ENV : '';
+const BRANCH = process && process.env && process.env.BRANCH ? process.env.BRANCH : 'blue';
 
 const config = {
   STATICPAGES: STATIC,
   DOCS: DOCS,
+  BRANCH: BRANCH,
   ENV: ENV,
   STATIC_PATH: STATIC_PATH,
   DOCS_PATH: DOCS_PATH,
@@ -60,10 +62,10 @@ function setVariables (config) {
 import { EnvironmentVariables } from './environment.d';
 
 export const environment: EnvironmentVariables = {
+  BRANCH: '${config.BRANCH}',
   STATICPAGES: ${config.STATICPAGES},
   DOCS: ${config.DOCS},
   ENV: '${config.ENV}',
-  API_UMBRELLA_URL: '$API_UMBRELLA_URL',
   production: ${config.ENV === 'prod' ? true : false}
 }\n`
 

@@ -20,6 +20,7 @@ import { SamUIKitModule } from '@gsa-sam/sam-ui-elements/src/ui-kit';
 import { SiteComponentsModule } from './site-components/sitecomponents.module';
 
 import { MarkdownService } from './services/markdown/markdown.service';
+import { environment } from 'environment';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -42,7 +43,7 @@ const APP_PROVIDERS = [
     HttpModule,
     SamUIKitModule,
     SiteComponentsModule,
-    RouterModule.forRoot(ROUTES, {useHash: true})
+    RouterModule.forRoot(ROUTES, {'useHash': environment.BRANCH && environment.BRANCH !== 'master' ? true : false})
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

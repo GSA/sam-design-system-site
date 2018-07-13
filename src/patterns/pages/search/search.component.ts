@@ -7,16 +7,16 @@ import {
   } from '@angular/core';
   import { Observable } from 'rxjs/Observable';
   import { SampleData } from './datasource';
-  import { SamSortDirective } from 'sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
+  import { SamSortDirective } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
   import 'rxjs/add/observable/merge';
-  import { SamModalComponent } from 'sam-ui-elements/src/ui-kit/components/modal';
+  import { SamModalComponent } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/modal';
   import {
     SamDatabankPaginationComponent,
     DataStore,
     layoutStore,
     SamPageNextService,
     filterItemModel
-  } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+  } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/patterns/layout';
   import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
 
   @Component({

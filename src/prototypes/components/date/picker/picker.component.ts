@@ -7,8 +7,8 @@ import { FormControl, Validators, ControlValueAccessor,
 
 import { Calendar } from './calendar';
 import * as moment from 'moment';
-import { SamFormControl } from 'sam-ui-elements/src/ui-kit/form-controls/sam-form-control';
-import { SamFormService } from 'sam-ui-elements/src/ui-kit/form-service';
+import { SamFormControl } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-controls/sam-form-control';
+import { SamFormService } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-service';
 
 type DateFormatFunction = (date: Date) => string;
 

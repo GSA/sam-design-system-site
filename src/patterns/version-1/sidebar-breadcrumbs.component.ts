@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 
-import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
+import { MenuItem } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/sidenav';
 
 @Component({
   templateUrl: 'sidebar-breadcrumbs.template.html',
@@ -71,7 +71,7 @@ const code_example_component = `
 import { Component} from '@angular/core';
 
 // Relative path: adjust to match your folder structure
-import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
+import { MenuItem } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/sidenav';
 
 @Component({
   template: 'your template html',

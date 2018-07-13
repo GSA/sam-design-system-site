@@ -2,7 +2,7 @@ import { Component, Directive } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import {
   AutocompleteService
-} from 'sam-ui-elements/src/ui-kit/form-controls/autocomplete/autocomplete.service';
+} from '@gsa-sam/sam-ui-elements/src/ui-kit/form-controls/autocomplete/autocomplete.service';
 
 export class ACTestService implements AutocompleteService {
   private values: any = [

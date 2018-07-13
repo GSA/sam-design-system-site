@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 
-import { MenuItem } from 'sam-ui-elements/src/ui-kit/components/sidenav';
+import { MenuItem } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/sidenav';
 
 @Component({
   templateUrl: 'title-options.template.html',

@@ -11,7 +11,7 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { Comment, CommentsService } from 'sam-ui-elements/src/ui-kit/components/comments';
+import { Comment, CommentsService } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/comments';
 import { Observable } from 'rxjs/Observable';
 
 import { Http } from '@angular/http';

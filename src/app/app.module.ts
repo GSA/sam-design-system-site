@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-import { SamAlertFooterService } from 'sam-ui-elements/src/ui-kit/components/alert-footer';
+import { SamAlertFooterService } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/alert-footer';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 
 import { DocModule } from '../_docs/doc.module.dynamic';
-import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
+import { SamUIKitModule } from '@gsa-sam/sam-ui-elements/src/ui-kit';
 import { SiteComponentsModule } from './site-components/sitecomponents.module';
 
 import { MarkdownService } from './services/markdown/markdown.service';

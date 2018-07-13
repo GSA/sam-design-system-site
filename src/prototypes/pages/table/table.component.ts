@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 import { merge } from 'rxjs/observable/merge';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { SamMultiSortDirective } from '../../components/table/multicol-sort.directive';
-import { SamPaginationComponent } from 'sam-ui-elements/src/ui-kit/components/pagination';
+import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/pagination';
 import { SamMultiSortable } from '../../components/table/multicol-sort.directive';
 import { ContextMenuComponent } from '../../components/table/contextMenu/contextMenu.component';
 @Component({

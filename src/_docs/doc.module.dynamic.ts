@@ -22,7 +22,6 @@ import { SamCommentsComponentExampleComponent } from './components/comments/comp
 import { DownloadExampleComponent } from './components/download/component-example';
 import { HistoryExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
-import { LabelExampleComponent } from './components/label/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
 import { PaginationExampleComponent } from './components/pagination/component-example';
@@ -101,7 +100,6 @@ import { CdkTableModule } from '@angular/cdk';
     DownloadExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
-    LabelExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
     PaginationExampleComponent,
@@ -171,7 +169,6 @@ import { CdkTableModule } from '@angular/cdk';
     DownloadExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
-    LabelExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
     PaginationExampleComponent,

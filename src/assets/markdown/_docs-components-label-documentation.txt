@@ -1,2 +1,0 @@
-<h1>Label</h1>
-<p>Labels draw attention to new or important content.</p>

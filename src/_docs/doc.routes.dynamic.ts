@@ -16,7 +16,6 @@ import { SamCommentsComponentExampleComponent } from './components/comments/comp
 import { DownloadExampleComponent } from './components/download/component-example';
 import { HistoryExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
-import { LabelExampleComponent } from './components/label/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
 import { PaginationExampleComponent } from './components/pagination/component-example';
@@ -86,7 +85,6 @@ export const ROUTES: Routes = [
   { path: 'components/download', component: DownloadExampleComponent },
   { path: 'components/history', component: HistoryExampleComponent },
   { path: 'components/image', component: SamImageComponentExampleComponent },
-  { path: 'components/label', component: LabelExampleComponent },
   { path: 'components/modal', component: ModalExampleComponent },
   { path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
   { path: 'components/pagination', component: PaginationExampleComponent },

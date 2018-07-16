@@ -19,7 +19,7 @@
     "update-build-env": "node src/environments/update-build-env.js",
     "init": "npm run compile-markdown && npm run set-env && npm run docs",
     "bundle-analyzer": "webpack-bundle-analyzer dist/stats.json",
-    "federalist": "npm install && npm run compile-markdown && npm run set-env && npm run docs && ng build --prod --base-href $BASEURL"
+    "federalist": "npm install && npm run compile-markdown && npm run set-env && npm run docs && ng build --prod --base-href $BASEURL/"
   },
   "private": true,
   "dependencies": {

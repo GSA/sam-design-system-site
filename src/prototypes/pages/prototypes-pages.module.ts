@@ -28,7 +28,6 @@ import {
 } from './search/sam-front-end-components/search-result';
 import { DatePageComponent } from './date/date.component';
 import { SortArrayOfObjects } from './search/sam-front-end-components/wage-determination/sort-array-object.pipe';
-
 @NgModule({
   imports: [
     CommonModule,

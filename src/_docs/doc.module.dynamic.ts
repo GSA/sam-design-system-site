@@ -22,7 +22,6 @@ import { SamCommentsComponentExampleComponent } from './components/comments/comp
 import { DownloadExampleComponent } from './components/download/component-example';
 import { HistoryExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
-import { LabelExampleComponent } from './components/label/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
 import { PaginationExampleComponent } from './components/pagination/component-example';
@@ -80,7 +79,7 @@ import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component
 import { DocTemplateComponent } from './doc.template';
 import { routing } from './doc.routes.dynamic';
 import { StaticPageComponent } from './static.component';
-import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
+import { SamUIKitModule } from '@gsa-sam/sam-ui-elements/src/ui-kit';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
 import { CdkTableModule } from '@angular/cdk';
@@ -101,7 +100,6 @@ import { CdkTableModule } from '@angular/cdk';
     DownloadExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
-    LabelExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
     PaginationExampleComponent,
@@ -171,7 +169,6 @@ import { CdkTableModule } from '@angular/cdk';
     DownloadExampleComponent,
     HistoryExampleComponent,
     SamImageComponentExampleComponent,
-    LabelExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
     PaginationExampleComponent,

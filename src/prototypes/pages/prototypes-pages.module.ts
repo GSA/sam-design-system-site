@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { SamUIKitModule } from 'sam-ui-elements/src/ui-kit';
+import { SamUIKitModule } from '@gsa-sam/sam-ui-elements/src/ui-kit';
 import { PagesRoutingModule } from './prototypes-pages.routes';
 import { PrototypesComponentsModule  } from '../components/prototypes-components.module';
 

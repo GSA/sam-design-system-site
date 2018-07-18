@@ -2,9 +2,10 @@ import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
+
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
-import { SamPageNextService } from 'sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamPageNextService } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/patterns/layout';
 
 export interface SampleDataDef {
   'Agency': string;

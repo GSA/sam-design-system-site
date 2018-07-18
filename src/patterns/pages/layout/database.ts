@@ -2,20 +2,10 @@ import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
-import {
-  SamSortDirective
-} from '@gsa-sam/sam-ui-elements';
+
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
-import {
-  SamModalComponent
-} from '@gsa-sam/sam-ui-elements';
-import { FormControl, NgModel } from '@angular/forms';
-import {
-  SamDatabankPaginationComponent,
-  DataStore,
-  SamPageNextService
-} from '@gsa-sam/sam-ui-elements';
+import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
 
 export interface SampleDataDef {
   'Agency': string;
@@ -61,7 +51,8 @@ export class SampleDataSource extends DataSource<any> {
     private _service: SamPageNextService) {
     super();
     this._sampleDatabase.dataChange.subscribe(
-      data => this._service.model.properties.data.setValue(data)
+      data => this._service.model.properties.data
+        .setValue(data)
     );
   }
 
@@ -90,7 +81,8 @@ export class SampleDataSource extends DataSource<any> {
 
       switch (state.sort.active) {
         case 'Agency':
-          [propertyA, propertyB] = [a['Agency'], b['Agency']];
+          [propertyA, propertyB] =
+            [a['Agency'], b['Agency']];
           break;
         case 'CFDANumber':
           [propertyA, propertyB] =
@@ -109,8 +101,10 @@ export class SampleDataSource extends DataSource<any> {
             new Date(b['Last Updated Date']).getTime()];
           break;
         case 'ObligationsUpdated':
-          [propertyA, propertyB] =
-            [a['Obligations Updated'], b['Obligations Updated']];
+          [propertyA, propertyB] = [
+            a['Obligations Updated'],
+            b['Obligations Updated']
+          ];
           break;
         case 'OMBReviewDate':
           [propertyA, propertyB] = [
@@ -130,8 +124,13 @@ export class SampleDataSource extends DataSource<any> {
           return;
       }
 
-      const valueA = isNaN(+propertyA) ? propertyA : +propertyA;
-      const valueB = isNaN(+propertyB) ? propertyB : +propertyB;
+      const valueA = isNaN(+propertyA)
+        ? propertyA
+        : +propertyA;
+
+      const valueB = isNaN(+propertyB)
+        ? propertyB
+        : +propertyB;
 
       return (valueA < valueB ? -1 : 1)
         * (state.sort.direction === 'asc' ? 1 : -1);
@@ -167,11 +166,11 @@ export class SampleDataSource extends DataSource<any> {
     }
 
     // Pagination
-    const pagination = model.pagination;
-    const startIndex = (pagination.currentPage)
-      * pagination.pageSize;
-    // this._paginator.totalPages = Math.ceil(data.length / 10);
-    data = data.splice(startIndex, pagination.pageSize);
+    const pag = model.pagination;
+    const last = (pag.currentPage * pag.pageSize);
+    const startIndex = last - pag.pageSize;
+
+    data = data.splice(startIndex, pag.pageSize);
 
     return data;
   }

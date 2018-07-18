@@ -23,3 +23,45 @@
 .sam.pagination .fa-angle-right{
 	margin-left: 5px;
 }
+
+.sam.pagination.databank {
+
+	label {
+		font-weight: 500;
+	}
+
+	select {
+		display: inline;
+		max-width: 6rem;
+		padding: 0 1.5em 0  0.4em;
+		border-width: 0 0 2px 0;
+		color: black;
+	}
+
+	button {
+		background-color: transparent;
+		color: inherit;
+
+		padding: 0.8em 1em;
+		border-radius: 50%;
+		box-shadow: none;
+		transition: background-color 0.2s;
+	}
+
+	button:active:not(:disabled) {
+		background-color: lightgrey;
+	}
+
+	> * {
+		white-space: nowrap;
+		margin: 1rem;
+	}
+
+	.arrows {
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	display: flex;
+	align-items: center;
+}

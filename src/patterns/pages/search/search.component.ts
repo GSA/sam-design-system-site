@@ -11,7 +11,7 @@ import {
   import 'rxjs/add/observable/merge';
   import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
   import {
-    SamDatabankPaginationComponent,
+    SamPaginationNextComponent,
     DataStore,
     layoutStore,
     SamPageNextService,
@@ -50,7 +50,7 @@ import {
 
     @ViewChild(SamSortDirective) _sort: SamSortDirective;
     @ViewChild(SamModalComponent) fieldsEditor: SamModalComponent;
-    @ViewChild('paginator') _paginator: SamDatabankPaginationComponent;
+    @ViewChild('paginator') _paginator: SamPaginationNextComponent;
     @ViewChild('fhInput') fhInput: NgModel;
     @ViewChild('dateFilter') dateFilter: NgModel;
 

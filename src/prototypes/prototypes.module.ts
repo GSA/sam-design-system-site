@@ -17,8 +17,7 @@ import { PrototypesHomeComponent } from './home/prototypes-home.component';
     SamUIKitModule,
     SiteComponentsModule
   ],
-  exports: [
-  ],
+  exports: [],
 })
 export class PrototypesModule { }
 

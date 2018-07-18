@@ -6,7 +6,7 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 import {
   AutocompleteService
-} from '@gsa-sam/sam-ui-elements/src/ui-kit/form-controls/autocomplete/autocomplete.service';
+} from '@gsa-sam/sam-ui-elements';
 import { ACTestService } from './autocomplete.service';
 
 import { Http } from '@angular/http';

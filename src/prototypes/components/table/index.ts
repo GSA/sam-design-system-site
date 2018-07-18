@@ -9,7 +9,7 @@ import { ContextMenuItemDirective } from './contextMenu/contextMenu.item.directi
 import { ContextMenuComponent } from './contextMenu/contextMenu.component';
 import { ContextMenuService } from './contextMenu/contextMenu.service';
 
-import { SamDataTableModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/data-table/index';
+import { SamDataTableModule } from '@gsa-sam/sam-ui-elements';
 
 
 @NgModule({

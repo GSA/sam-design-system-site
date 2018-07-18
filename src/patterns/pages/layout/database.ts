@@ -4,18 +4,18 @@ import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
 import {
   SamSortDirective
-} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
+} from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 import {
   SamModalComponent
-} from '@gsa-sam/sam-ui-elements/src/ui-kit/components/modal';
+} from '@gsa-sam/sam-ui-elements';
 import { FormControl, NgModel } from '@angular/forms';
 import {
   SamDatabankPaginationComponent,
   DataStore,
   SamPageNextService
-} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+} from '@gsa-sam/sam-ui-elements';
 
 export interface SampleDataDef {
   'Agency': string;

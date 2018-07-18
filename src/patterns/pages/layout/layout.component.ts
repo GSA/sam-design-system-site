@@ -8,11 +8,11 @@ import {
 import { Observable } from 'rxjs/Observable';
 import { SampleData } from './datasource';
 import { SampleDatabase, SampleDataSource } from './database';
-import { SamSortDirective } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
+import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
-import { SamModalComponent } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/modal';
-import { SamPageNextService, DataStore, layoutStore} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/patterns/layout';
-import { filterItemModel } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/patterns/layout/architecture/model';
+import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
+import { SamPageNextService, DataStore, layoutStore} from '@gsa-sam/sam-ui-elements';
+import { filterItemModel } from '@gsa-sam/sam-ui-elements';
 import { cloneDeep } from 'lodash';
 import { FormBuilder, FormGroup } from '@angular/forms';
 

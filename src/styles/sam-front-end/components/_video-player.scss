@@ -350,6 +350,9 @@
         }
     }
 
+    .px-video-container {
+      position: relative;
+    }
     .px-video-container.fullscreen {
         position: fixed;
         top: 0;
@@ -454,5 +457,14 @@
 .learning-center-video {
   video {
     min-height: 275px;
+  }
+}
+.cms-video-container {
+  .px-video-container {
+    margin: 0 auto;
+  }
+  video {
+    min-height: 280px;
+    height: auto;
   }
 }

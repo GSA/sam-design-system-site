@@ -86,4 +86,13 @@
   .permission-domain-name {
     border-bottom: 1px solid lightgray;
   }
+
+  .relative-div-cover {
+    position: absolute;
+    right:0; 
+    left:0; 
+    top:0; 
+    bottom: 0; 
+    z-index:100;
+  }
 }

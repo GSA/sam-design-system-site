@@ -1,0 +1,220 @@
+@import '../vendor/uswds/core/variables';
+
+$horizontal-padding: 1rem;
+$vertical-padding: 3rem;
+$icon-size: 2rem;
+$light-grey: #9c9c9c;
+
+sam-upload-v2 {
+  .icon.close {
+    cursor: pointer;
+    width: $icon-size;
+    min-width: $icon-size;
+    font-size: $icon-size;
+    min-height: $icon-size;
+    line-height: $icon-size;
+  }
+
+  .disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  .file-container {
+    // max-width: $input-max-width;
+    // border: 1px solid #4f4f4f;
+    width: 100%;
+    padding: $horizontal-padding;
+  }
+
+  .upload-cloud {
+    margin: $vertical-padding 0;
+  }
+
+  .drag-border {
+    border: 3px dashed $light-grey;
+    border-radius: 1rem;
+  }
+
+  .file-container-dragging {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+    color: $light-grey;
+  }
+}
+
+sam-upload-v2 {
+  .remove-icon {
+    color: $color-secondary;
+  }
+
+  .clear-button {
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .clear-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .upload-table {
+    width: 100%; 
+    margin-top: 1rem; 
+    border: 2px solid $color-gray-lighter;
+    border-bottom: none;
+  }
+
+  .upload-table-header {
+    border: none;
+    background-color: $color-gray-lightest;
+    color: $color-gray-dark;
+
+    th {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .upload-table-row {
+    border: none;
+    border-bottom: 2px solid $color-gray-lighter;
+  }
+
+  .upload-table-doc-col {
+    width: 49%;
+    .pdf-icon {
+      float: left;
+      line-height: 35px;
+    }
+
+    p, .file-link {
+      display: inline-block;
+      max-width: 430px;
+      line-height: 35px;
+      margin-bottom: 0px;
+      padding-left: 10px;
+      padding-top: 3px;
+      word-break: break-all;
+    }
+
+    .inline-icon-group {
+      position: absolute; 
+      right: 17px; 
+      top: 0;
+      margin-top: 2px; 
+      display: inline-block; 
+      background-color: white;
+    }
+
+    .inline-edit-icon {
+      background: $color-gray-lighter;
+      color: $color-gray-dark;
+      padding: 5px;
+      line-height: 15px;
+      margin-top: 3px;
+
+      .fa {
+        padding: 0 4px;
+      }
+    }
+
+    .inline-edit-icon:hover {
+      background: $color-gray-lighter;
+      color: $color-gray-dark;
+    }
+
+    .inline-pencil-icon {
+      line-height:35px;
+      color: $primaryColor;
+    }
+
+    .inline-name-input {
+      height: 38px; 
+      padding-right: 70px;
+      padding-top: 5px;
+      padding-left: 9px;
+    }
+  }
+
+  .upload-table-props-col {
+    vertical-align: top;
+    width: 17%;
+    text-align: center;
+    padding: 13px 0px 5px 0px;
+
+    .secure-cbx {
+      margin-top: 1px;
+      width: 150px;
+      margin-left: 30px;
+    }
+
+    .secure-label {
+      margin-top: 1px;
+    }
+
+    button {
+      padding-top: 0px !important;
+    }
+  }
+
+  .upload-secure-span {
+    font-weight: bold;
+    color: $color-gray-medium;
+  }
+
+  .no-border {
+    border-bottom: none;
+  }
+
+  .file-error {
+    color: red;
+  }
+
+  .file-container-no-drag {
+    border: 2px solid $color-gray-lighter;
+  }
+
+  .file-max-error {
+    background-color: $warningBackgroundColor;
+    padding: $horizontal-padding;
+  }
+
+  .file-item {
+    margin-bottom: .7em;
+  }
+
+  .file-row {
+    display: flex;
+    justify-content: space-between;
+
+
+    & > *:not(:first-child) {
+      padding-left: .5rem;
+    }
+
+    .file-name {
+      flex-grow: 1;
+      text-align: left;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .file-size {
+      white-space: nowrap;
+    }
+
+    .file-progress {
+      width: 8rem;
+    }
+
+    .file-delete {
+      min-width: $icon-size;
+      text-align: center;
+    }
+  }
+}

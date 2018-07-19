@@ -168,3 +168,15 @@ sam-cell, sam-header-cell, .sam-footer-cell {
    transform-origin: left;
    right: 0;
  }
+
+ /**
+ * sam-styles custom
+ */
+ .sam.large.table{
+   overflow-x: auto;
+   .sam-datatable-thead,
+   .sam-datatable-tbody{
+     width: 1500px;
+   }
+ }
+

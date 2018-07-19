@@ -1,4 +1,36 @@
 /**********************************************
+              <sam-main> 
+***********************************************/ 
+
+sam-resources-wrapper {
+  padding: 15px;
+  display: block;
+}
+
+.sam-main {
+  padding: 15px;
+  display: block;
+}
+
+sam-action-bar{
+  display: flex;
+  flex-direction: column;
+  .actions-container{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  sam-action-bar{
+    flex-direction: row;
+    justify-content: space-between;
+    .actions-container{
+      margin-top: 0px;
+    }
+  }
+}
+
+/**********************************************
                   LAYOUT 
 ***********************************************/ 
 .sam.layout{

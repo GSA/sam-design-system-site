@@ -52,50 +52,39 @@ sam-aside sam-resources-wrapper {
 
 // table css //
 
-.sam-table{
+// .sam-table{
 
-	.sam-datatable-thead{
-		position:sticky;
-		top:0px;
-		background-color:#fff;
-	}
+// 	.sam-datatable-thead{
+// 		position:sticky;
+// 		top:0px;
+// 		background-color:#fff;
+// 	}
 
-	.sam-cell{
-		display:block;
-		font-size:14px;
-		text-align: center;
-	}
+// 	.sam-cell{
+// 		display:block;
+// 		font-size:14px;
+// 		text-align: center;
+// 	}
 
-	.sam-column-Agency,
-	.sam-column-Title{
-		text-align: left;
-	}
+// 	.sam-column-Agency,
+// 	.sam-column-Title{
+// 		text-align: left;
+// 	}
 
-	sam-cell:first-child, 
-	sam-header-cell:first-child, 
-	.sam-footer-cell:first-child{
-		padding-left:0px;
-	}
+// 	sam-cell:first-child, 
+// 	sam-header-cell:first-child, 
+// 	.sam-footer-cell:first-child{
+// 		padding-left:0px;
+// 	}
 
-	sam-cell:last-child, 
-	sam-header-cell:last-child, 
-	.sam-footer-cell:last-child{
-		padding-right:0px;
-	}
-
-
-}
+// 	sam-cell:last-child, 
+// 	sam-header-cell:last-child, 
+// 	.sam-footer-cell:last-child{
+// 		padding-right:0px;
+// 	}
 
 
+// }
 
-sam-action-bar{
-	display: flex;
-	justify-content: space-between;
 
-	.actions-container {
-		>* {
-			display: inline-block;
-			margin: 0 1rem 0 1rem;
-		}
-	}
-}
+

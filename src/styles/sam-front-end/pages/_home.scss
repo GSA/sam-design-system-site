@@ -2,6 +2,13 @@ $dark-blue: #102d50;
 $light-blue:  #0070b8;
 
 home {
+  .sam-is-free {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: -180px
+  }
   @media screen and (max-width: 600px) {
     .sam-is-free {
       width: 120px !important;

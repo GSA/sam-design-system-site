@@ -40,6 +40,10 @@ sam-files, sam-upload {
     font-size: 2.2rem;
     margin: 1.5rem 0;
     color: $light-grey;
+    pointer-events: none;
+    * {
+      pointer-events: none;
+    }
   }
 }
 

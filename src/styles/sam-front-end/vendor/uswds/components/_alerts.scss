@@ -70,6 +70,10 @@
   background-image: url('#{$image-path}/alerts/info.svg');
 }
 
+.usa-alert-plain {
+  background-color: #FCFCFC;
+}
+
 .usa-alert-no_icon {
   background-image: none;
 }

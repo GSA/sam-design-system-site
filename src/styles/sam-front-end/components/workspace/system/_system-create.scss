@@ -229,6 +229,12 @@
     }
   }
 
+  #password {
+    .text-right {
+      max-width: 50%;
+    }
+  }
+
   .api {
     .usa-input-error.usa-input-error-message {
       margin-top: 1rem;

@@ -33,8 +33,8 @@
 
     <!-- finalize this implementation -->
     <sam-resources-wrapper>
-      <h3 class="sam heading">Resources</h3>
-      <ul>
+      <h4 class="sam heading">Resources</h4>
+      <ul class="sam list">
         <li>
           <a href="https://beta.sam.gov/help/assistance-listing"
             target="_blank" rel="noopener noreferrer">
@@ -84,6 +84,7 @@
         <!-- datatable -->
         <sam-datatable samSort
           [dataSource]="dataSource"
+          class="sam large table"
           (samSortChange)="onSortChange($event)">
           <ng-container
             *ngFor="let col of columnDefObs | async"

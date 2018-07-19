@@ -26,8 +26,13 @@
 
 .sam.pagination.databank {
 
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+
 	label {
-		font-weight: 500;
+		font-weight: 400;
 	}
 
 	select {
@@ -41,7 +46,7 @@
 	button {
 		background-color: transparent;
 		color: inherit;
-
+		width: 50px;
 		padding: 0.8em 1em;
 		border-radius: 50%;
 		box-shadow: none;
@@ -54,14 +59,21 @@
 
 	> * {
 		white-space: nowrap;
-		margin: 1rem;
 	}
 
 	.arrows {
 		white-space: nowrap;
-		overflow: hidden;
 	}
 
-	display: flex;
-	align-items: center;
+	
+}
+
+@media screen and (min-width: 600px) {
+  .sam.pagination.databank { 
+		flex-direction: row;
+		align-items: center;
+		.selector{
+			margin-right: 15px;
+		}
+	}
 }

@@ -20,13 +20,13 @@
   $font-family:   '"Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif',
   $display-1:     sam-typography-level(59px, 77px, 700),
   $display-2:     sam-typography-level(44px, 57px, 300),
-  $heading-1:     sam-typography-level(44px, 57px, 700),
+  $heading-1:     sam-typography-level(44px, 45px, 700),
   $heading-2:     sam-typography-level(34px, 44px, 700),
   $heading-3:     sam-typography-level(24px, 31px, 700),
   $heading-4:     sam-typography-level(19px, 25px, 700),
   $heading-5:     sam-typography-level(16px, 21px, 700),
   $heading-6:     sam-typography-level(13px, 17px, 700),
-  $lead:          sam-typography-level(22px, 33px, 300, null, 0),
+  $lead:          sam-typography-level(22px, 26px, 300, null, 0),
   $body:          sam-typography-level(17px, 26px, 400),
   $body-2:        sam-typography-level(17px, 26px, 600),
   $small:         sam-typography-level(16px, 20px, 400),
@@ -69,22 +69,23 @@
 @mixin sam-base-typography($config, $selector: '.sam-typography') {
   h1.sam.heading, .sam.h1, #{$selector} h1 {
     @include sam-typography-level-to-styles($config, heading-1);
-    margin: 0 0 16px;
+    margin: 0 0 15px;
     .intro{
       @include sam-typography-level-to-styles($config, lead);
       text-transform: uppercase;
       display: block;
+      margin-bottom: 5px;
     }
   }
 
   h2.sam.heading, .sam.h2, #{$selector} h2 {
     @include sam-typography-level-to-styles($config, heading-2);
-    margin: 0 0 16px;
+    margin: 0 0 15px;
   }
 
   h3.sam.heading, .sam.h3, #{$selector} h3 {
     @include sam-typography-level-to-styles($config, heading-3);
-    margin: 0 0 16px;
+    margin: 0 0 15px;
   }
 
   h4.sam.heading, .sam.h4, #{$selector} h4 {

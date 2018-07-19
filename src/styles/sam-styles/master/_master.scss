@@ -60,10 +60,10 @@ $class: sam;
 /*----------------------
         Layout
 -----------------------*/
-.#{$class}.master{
-  display: grid;
-  min-height: 100vh;
-}
+// .#{$class}.master{
+//   display: grid;
+//   min-height: 100vh;
+// }
 
 .#{$class}.master > .header,
 .#{$class}.master > .footer{

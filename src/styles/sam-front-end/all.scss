@@ -124,6 +124,7 @@ $large: $current-large;
   Specific Components (App Components)
 ----------------------------------------*/
 @import 'components/agency-picker';
+@import 'components/download-modal';
 @import 'components/alert'; // REVIEW: Move to common components
 @import 'components/button'; // REVIEW: Move to common components
 @import 'components/date-range-filter';
@@ -213,6 +214,7 @@ $large: $current-large;
 @import 'components/data-service/data-service';
 @import 'components/fh/index';
 @import 'components/upload';
+@import 'components/upload-v2';
 
 /*-------------------
      Templates
@@ -384,6 +386,10 @@ select {
   background-color: #d6d7d9 !important;
   box-shadow: 0 0 0 1px #aeb0b5 !important;
   cursor: not-allowed;
+}
+
+[type="radio"]:disabled:checked + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #a5acb5;
 }
 
 // a method for creating a two column layout where the left and right column are approximately the same height (see grant-or-edit-access.template)

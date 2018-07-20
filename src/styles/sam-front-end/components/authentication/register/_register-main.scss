@@ -61,6 +61,68 @@
     }
   }
 
+  fieldset.office {
+    position: relative;
+
+    sam-agency-picker-v2 {
+      .usa-form-hint {
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .usa-agency-tip {
+    font-size: 1.6rem;
+    left: 100%;
+    margin-left: 10rem;
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+
+    ul {
+      display: block;
+      margin: 0rem;
+      margin-left: 2rem * 1.75;
+      padding-left: 0rem;
+
+      li {
+        display: block;
+        position: relative;
+        padding: 0px;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+
+        &:before {
+          line-height: 0px;
+          content: '- ';
+        }
+
+        &:after {
+          margin-bottom: 0px;
+        }
+
+        &.hint,
+        &.header {
+          display: block;
+          margin: 1.5rem 0rem;
+          padding: 0px;
+          background-color: transparent;
+
+          &:before {
+            content: '';
+          }
+        }
+
+        &.header {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
   sam-intl-telephone-group {
     fieldset {
       margin-top: 0;

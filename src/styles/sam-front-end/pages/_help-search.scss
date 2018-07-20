@@ -17,4 +17,37 @@
   list-results-message{
     font-weight: bold;
   }
+  .search-bar{
+    padding-bottom: 1em;
+    border-style: solid;
+    border-width: 0.09em;
+    border-color: #d6d7d9; 
+  }
+  .mg-1{
+    margin-left: 0.5em;
+  }
+  .rd-clr{
+    color: $color-secondary;
+  }
+  .search-heading{
+    padding: 0.5em;
+    background: #f2f2f2;
+  }
+  .search-pd{
+    padding:0.5em;
+  }
+  .pd-1em{
+    padding-top: 1.5em;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 0.75em
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 0.75em
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 0.75em
+  }
 }

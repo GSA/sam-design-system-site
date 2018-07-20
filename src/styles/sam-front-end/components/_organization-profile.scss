@@ -17,4 +17,48 @@
     color: $color-black;
     text-decoration: none;
   }
+
+  .procurement-radio-btn {
+    width: 1px;
+  }
+
+  .procurement-radio-label {
+    width: 200px;
+    display:inline-block;
+  }
+
+  .aac-detail-span {
+    display: inline-block;
+    position: relative;
+    padding-left: 4px;
+  }
+
+  .aac-code-input {
+    display: inline-block;
+    text-transform:uppercase;
+    position: relative;
+    padding-left: 1.6em;
+  }
+
+  .aac-detail-span {
+    z-index: 1;
+    top: 1.25rem;
+    position: absolute;
+    left: 1.4rem;
+  }
+
+  .office-type-edit-section {
+    // margin-top: 18px
+  }
+
+  .profile-edit-btn {
+    color: #0071bc;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .has-inactive-office {
+    line-height: 1.2em;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
 }

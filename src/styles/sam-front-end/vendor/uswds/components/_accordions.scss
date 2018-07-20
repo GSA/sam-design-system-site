@@ -135,3 +135,35 @@ $accordion-border: 3px solid $color-gray-lightest;
 .usa-accordion-button[aria-expanded=false] {
   @include accordion-button-unopened-styles;
 }
+
+.opp-accordion-button {
+  background-color: $color-gray-lightest;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  color: $color-base;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $font-bold;
+  margin: 0;
+  padding: 1.5rem 5.5rem 1.5rem 3rem;
+  width: 100%;
+  text-align: left;
+}
+
+.opp-accordion-section-content {
+  background-color: $color-white;
+  overflow: auto;
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &:not([aria-hidden]) {
+    @include sr-only();
+  }
+
+  @include accessibly-hidden();
+}

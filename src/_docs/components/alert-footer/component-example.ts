@@ -11,7 +11,7 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-import { SamAlertFooterService } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/alert-footer/alert-footer.service';
+import { SamAlertFooterService } from '@gsa-sam/sam-ui-elements';
 import { DocumentationService } from '../../../app/services/documentation.service';
 import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';

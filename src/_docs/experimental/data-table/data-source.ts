@@ -1,6 +1,6 @@
-import { SamSortable, SamSortDirective } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/data-table/sort.directive';
+import { SamSortable, SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import { merge } from 'rxjs/observable/merge';
-import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/pagination';
+import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements';
 import { DataSource } from '@angular/cdk';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { RECORDS } from './data';

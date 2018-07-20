@@ -8,7 +8,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
-import { SamFormService } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-service';
+import { SamFormService } from '@gsa-sam/sam-ui-elements';
 
 const code_example = `
   <h2>Standalone Example</h2>

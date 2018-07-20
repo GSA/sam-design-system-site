@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { SamUIKitModule } from '@gsa-sam/sam-ui-elements/src/ui-kit';
+import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
 import { DatepickerComponent } from './picker.component';
 
 export * from './picker.component';

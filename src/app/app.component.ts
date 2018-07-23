@@ -4,16 +4,15 @@
 import {
   Component,
   OnInit,
-  Inject,
   ViewEncapsulation
 } from '@angular/core';
 
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { DocumentationService } from './services/documentation.service';
 import { routerTransition } from './router.animations';
-import { MarkdownService } from './services/markdown/markdown.service';
 
 import { environment } from 'environment';
+import { SamTitleService } from './services/title/title.service';
 const DOCS = environment.DOCS;
 const STATICPAGES = environment.STATICPAGES;
 
@@ -52,7 +51,8 @@ export class AppComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private service: DocumentationService) {}
+    private service: DocumentationService,
+    private title: SamTitleService) {}
 
   public getState(outlet) {
     return outlet.activatedRouteData.state;
@@ -136,6 +136,8 @@ export class AppComponent implements OnInit {
     // handlers for specific routes
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
+        this.title.setTitle(this.router.url);
+        console.log(this.router.url);
         if (event.url.match(/^\/components\/banner/)) {
           this.showBanner = true;
         } else {

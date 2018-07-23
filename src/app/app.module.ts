@@ -15,11 +15,11 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 
-import { DocModule } from '../_docs/doc.module.dynamic';
 import { SamUIKitModule } from '@gsa-sam/sam-ui-elements/src/ui-kit';
 import { SiteComponentsModule } from './site-components/sitecomponents.module';
 
 import { MarkdownService } from './services/markdown/markdown.service';
+import { SamTitleService } from './services/title/title.service';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -48,7 +48,8 @@ const APP_PROVIDERS = [
     ENV_PROVIDERS,
     APP_PROVIDERS,
     SamAlertFooterService,
-    MarkdownService
+    MarkdownService,
+    SamTitleService
   ]
 })
 export class AppModule {

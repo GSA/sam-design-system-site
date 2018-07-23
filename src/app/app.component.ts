@@ -136,8 +136,9 @@ export class AppComponent implements OnInit {
     // handlers for specific routes
     this.router.events.subscribe( (event) => {
       if (event instanceof NavigationEnd) {
+        // Set Page Title
         this.title.setTitle(this.router.url);
-        console.log(this.router.url);
+
         if (event.url.match(/^\/components\/banner/)) {
           this.showBanner = true;
         } else {

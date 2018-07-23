@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { SamUIKitModule } from '@gsa-sam/sam-ui-elements/src/ui-kit';
+import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
 
 import { SamSearchDemoComponent } from './search.component';
-import { SamLayoutComponentsModule, DataStore, layoutStore } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamLayoutComponentsModule, DataStore, layoutStore } from '@gsa-sam/sam-ui-elements';
 
 
 @NgModule({

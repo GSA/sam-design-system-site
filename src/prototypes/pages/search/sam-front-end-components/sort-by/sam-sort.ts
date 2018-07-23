@@ -3,7 +3,7 @@
 import { Component, Input, forwardRef  } from '@angular/core';
 import {NumberFormatter} from "@angular/common/src/pipes/intl";
 import { ControlValueAccessor,NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
+import { OptionsType } from '@gsa-sam/sam-ui-elements';
 /**
 * SamSortComponent - Lists results message component
 */

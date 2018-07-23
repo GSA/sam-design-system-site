@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { DatepickerComponent } from './picker.component';
 import { By } from '@angular/platform-browser';
 import { ChangeDetectorRef, Renderer, ElementRef } from '@angular/core';
-import { SamFormService } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-service';
+import { SamFormService } from '@gsa-sam/sam-ui-elements';
 
 describe('The picker component', () => {
   describe('isolated tests', () => {

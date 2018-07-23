@@ -5,7 +5,7 @@ import { SampleData } from './datasource';
 
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
-import { SamPageNextService } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/patterns/layout';
+import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
 
 export interface SampleDataDef {
   'Agency': string;

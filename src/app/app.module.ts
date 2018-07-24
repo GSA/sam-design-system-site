@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule, ApplicationRef } from '@angular/core';
-import { RouterModule, PreloadAllModules } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { SamAlertFooterService } from '@gsa-sam/sam-ui-elements';
 /*
  * Platform and Environment providers/directives/pipes
@@ -15,11 +15,11 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 
-import { DocModule } from '../_docs/doc.module.dynamic';
 import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
 import { SiteComponentsModule } from './site-components/sitecomponents.module';
 
 import { MarkdownService } from './services/markdown/markdown.service';
+import { SamTitleService } from './services/title/title.service';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -48,7 +48,8 @@ const APP_PROVIDERS = [
     ENV_PROVIDERS,
     APP_PROVIDERS,
     SamAlertFooterService,
-    MarkdownService
+    MarkdownService,
+    SamTitleService
   ]
 })
 export class AppModule {

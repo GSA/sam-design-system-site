@@ -50,96 +50,123 @@ The **sam-page-next** component is the main wrapper component for the page. For 
 
 When the component is instantiated, the sam-page-next component connects any interactions between the children in its content model. For example, the toggle button in the toolbar component triggers the toggle method on the aside component. This interaction is setup by the sam-page-next controller.
 
-Content-model: **sam-toolbar**, **sam-aside**, **sam-main**
+*Content-model:*
+* **sam-toolbar**
+*  **sam-aside**
+*  **sam-main**
 
-Contexts in which this component can be used: Any Angular application
+*Contexts in which this component can be used:* 
+* Any Angular application
 
 ### SamToolbarComponent
 The **sam-toolbar** component provides user interactions that apply to the entire page. Toggling the aside, saving the criteria and downloading the current results are examples of actions that are taken at the page level.
 
-Content model: none
+*Content model:* none
 
-Contexts in which this component can be used: **sam-page-next**
+*Contexts in which this component can be used:*
+* **sam-page-next**
 
 ### SamAsideComponent
 The **sam-aside** component provides a side navigation area for additional page controls or information. The side navigation can be opened or closed, and it collapses on smaller screens.
 
-Content model: TBD
+*Content model:* TBD
 
-Contexts in which this component can be used: **sam-page-next**
+*Contexts in which this component can be used:*
+* **sam-page-next**
 
 ### SamMainComponent
 The **sam-main** component is a container component for the content of the page. 
 
 It accepts a **sam-page-title**, **sam-filter-drawer** and **sam-main-content** component as its content model.
 
-Content model: **sam-page-title**, **sam-filter-drawer**, **sam-main-content**
+*Content model:*
+* **sam-page-title**
+* **sam-filter-drawer**
+* **sam-main-content**
 
-Contexts in which this component can be used: **sam-page-next**
+*Contexts in which this component can be used:*
+* **sam-page-next**
 
-#### SamPageTitleComponent
+### SamPageTitleComponent
 The **sam-page-title** component provides a style title for the page. It also allows for super text and additional information to be displayed above and below the title respectively.
 
-Content model: none
+*Content model:* none
 
-Contexts in which this component can be used: **sam-main-content**
+*Contexts in which this component can be used:*
+* **sam-main-content**
 
-#### SamFilterDrawerComponent
+### SamFilterDrawerComponent
 The **sam-filter-drawer** component displays which filters have been applied with the ability to remove a single item, clear all, or save the filters. Underneath, it is an **li**, so each child should also be an **li**.
 
-Content model: **li with sam-filter-drawer-item directive**
+*Content model:*
+* **li with sam-filter-drawer-item directive**
 
-Contexts in which this component can be used: **sam-main**
+*Contexts in which this component can be used:*
+* **sam-main**
 
-##### SamFilterDrawerItemDirective
+### SamFilterDrawerItemDirective
 The **sam-filter-drawer-item** directive should be applied to **li** elements for each item in teh **sam-filter-drawer**. 
 
-Content model: **any valid HTML for li**
+*Content model:*
+* **any valid HTML for li**
 
-Contexts in which this component can be used: **sam-filter-drawer**
+*Contexts in which this component can be used:*
+* **sam-filter-drawer**
 
-#### SamMainContentComponent
+### SamMainContentComponent
 The **sam-main-content** component is a wrapper for the content to be displayed within the main component. It may take a **sam-action-bar** component, and to dispaly the content, a parent DOM node must be supplied with the **samContentOutlet** directive applied.
 
-Content model: **sam-action-bar**, any HTML with **samContentOutlet** directive
+*Content model:*
+* **sam-action-bar**
+* any HTML with **samContentOutlet** directive
 
-Contexts in which this component can be used: **sam-main**
+*Contexts in which this component can be used:*
+* **sam-main**
 
-##### SamActionBarComponent
+### SamActionBarComponent
 The **sam-action-bar** provides actions used to manipulate the main content of the page. It takes a **sam-pagination-next** component and additionally may take any number of additional form controls with the **samPageAction** directive applied.
 
-Content model: **sam-pagination-next**, any form control with **samPageAction** directive
+*Content model:*
+* **sam-pagination-next**
+* any form control with **samPageAction** directive
 
-Contexts in which this component can be used: **sam-main-content**
+*Contexts in which this component can be used:*
+* **sam-main-content**
 
-###### SamPaginationNext
+### SamPaginationNext
 The **sam-pagination-next** component provides basic pagination functionality for the page.
 
-Content model: none
+*Content model:* none
 
-Contexts in which this component can be used: **sam-main-content**
+*Contexts in which this component can be used:*
+* **sam-main-content**
 
-###### SamPageActionDirective
+### SamPageActionDirective
 The **samPageAction** directive defines actions that can be taken to manipulate the main content of the page. This directive can be applied to any form control, and the appropriate styles and layout will be added.
 
-Content model: Valid HTML for form control
+*Content model:*
+* Valid HTML for form control
 
-Contexts in which this component can be used: **sam-main-content**
+*Contexts in which this component can be used:*
+* **sam-main-content**
 
-##### SamContentOutletDirective
+### SamContentOutletDirective
 The **samContentOutlet** directive may be applied to any HTML element that represents the main content of the page. This directive will appropriately style and layout the wrapper. 
 
-Content model: none
+*Content model:* none
 
-Contexts in which this component can be used: **sam-page-next**
+*Contexts in which this component can be used:*
+* **sam-page-next**
 
 
 ### SamModalComponent
 If a modal is needed on the page, the **sam-modal** component should be used. However, it should not be a content child of the **sam-page-next** component but rather a sibling. Developers will need to configure that for themselves.
 
-Content model: See **sam-modal**
+*Content model:*
+* See **sam-modal**
 
-Contexts in which this component can be used: Any Angular application
+*Contexts in which this component can be used:*
+* Any Angular application
 
 
 

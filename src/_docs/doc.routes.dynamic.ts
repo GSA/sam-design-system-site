@@ -232,6 +232,11 @@ export const ROUTES: Routes = [
     component: StaticPageComponent,
     data: { markdownfile: '_static/pages/Workspace-Page.md' }
   },
+  {
+    path: 'patterns/layout',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/patterns/layout.md' }
+  },
 ];
 export const routing = RouterModule.forChild(ROUTES);
 

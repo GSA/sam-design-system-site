@@ -2,7 +2,6 @@ import {
   Component,
   OnInit,
 } from '@angular/core';
-import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { DocumentationService } from '../app/services/documentation.service';
 import { MarkdownService } from '../app/services/markdown/markdown.service';
@@ -27,9 +26,7 @@ export class BaseExampleComponent implements OnInit {
 
   public base;
 
-  constructor(
-    private _http: Http,
-    public service: DocumentationService,
+  constructor(public service: DocumentationService,
     public mdService: MarkdownService) {}
 
   public ngOnInit(): void {

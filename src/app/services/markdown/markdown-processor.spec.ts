@@ -1,4 +1,3 @@
-
 import { MarkdownProcessor } from './markdown-processor';
 
 describe('Sam Design System Markdown Service', () => {

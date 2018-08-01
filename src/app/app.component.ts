@@ -49,7 +49,6 @@ export class AppComponent implements OnInit {
   public showUIKitSearchHeader = false;
 
   constructor(
-    private route: ActivatedRoute,
     private router: Router,
     private service: DocumentationService,
     private title: SamTitleService) {}

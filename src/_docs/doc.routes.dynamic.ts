@@ -170,69 +170,19 @@ export const ROUTES: Routes = [
     data: { markdownfile: '_static/overview/Giving-Back.md' }
   },
   {
-    path: 'overview/how-to-use-this-site',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/overview/How-to-use-this-site.md' }
-  },
-  {
     path: 'overview/innovation-process',
     component: StaticPageComponent,
     data: { markdownfile: '_static/overview/Innovation-Process.md' }
   },
   {
-    path: 'pages/basic-page',
+    path: 'styles/colors',
     component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Basic-Page.md' }
+    data: { markdownfile: '_static/styles/Colors.md' }
   },
   {
-    path: 'pages/buttons-and-links',
+    path: 'styles/typography',
     component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Buttons-and-Links.md' }
-  },
-  {
-    path: 'pages/colors',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Colors.md' }
-  },
-  {
-    path: 'pages/complex-data-entry',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Complex-Data-Entry.md' }
-  },
-  {
-    path: 'pages/global-elements',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Global-Elements.md' }
-  },
-  {
-    path: 'pages/graphics-and-images',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Graphics-and-Images.md' }
-  },
-  {
-    path: 'pages/list-page',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/List-Page.md' }
-  },
-  {
-    path: 'pages/page-templates',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Page-Templates.md' }
-  },
-  {
-    path: 'pages/simple-data-entry',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Simple-Data-Entry.md' }
-  },
-  {
-    path: 'pages/typography',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Typography.md' }
-  },
-  {
-    path: 'pages/workspace-page',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/pages/Workspace-Page.md' }
+    data: { markdownfile: '_static/styles/Typography.md' }
   },
 ];
 export const routing = RouterModule.forChild(ROUTES);

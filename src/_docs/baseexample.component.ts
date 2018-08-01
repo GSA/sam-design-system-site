@@ -1,16 +1,8 @@
 import {
   Component,
   OnInit,
-  Input,
-  ComponentRef,
-  ViewChild,
-  ViewRef,
-  TemplateRef,
-  ComponentFactoryResolver,
-  ViewContainerRef,
-  ChangeDetectorRef
 } from '@angular/core';
-import { Http, Response, Headers } from '@angular/http';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { DocumentationService } from '../app/services/documentation.service';
 import { MarkdownService } from '../app/services/markdown/markdown.service';

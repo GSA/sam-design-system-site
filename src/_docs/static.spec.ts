@@ -47,7 +47,6 @@ describe(`StaticPageComponent tests`, () => {
   it(`should be initialized`, () => {
     expect(fixture).toBeDefined();
     expect(comp).toBeDefined();
-    console.log("huhhh?");
   });
 
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { pipe } from '../../../../../sam-ui-elements/src/ui-kit/utilities/pipe';
+import { pipe } from '@gsa-sam/sam-ui-elements';
 import { mappings } from './mappings';
 
 @Injectable()

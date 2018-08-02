@@ -1,14 +1,6 @@
 import {
   Component,
   OnInit,
-  Input,
-  ComponentRef,
-  ViewChild,
-  ViewRef,
-  TemplateRef,
-  ComponentFactoryResolver,
-  ViewContainerRef,
-  ChangeDetectorRef
 } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -36,7 +28,7 @@ export class BaseExampleComponent implements OnInit {
   public base;
 
   constructor(
-    private _http: Http,
+    public http: Http,
     public service: DocumentationService,
     public mdService: MarkdownService) {}
 

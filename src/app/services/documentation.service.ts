@@ -60,20 +60,10 @@ export class DocumentationService {
           let arr = accum.slice(0);
           let finalArr = [];
 
-          function _deleteProps (item) {
-            const unneeded = ['id', 'kind', 'kindString',
-            'flags', 'groups', 'implementedTypes', 'sources',
-            'decorators'];
-  
-            unneeded.forEach(
-              property => delete item[property]
-            );
-          }
-
           arr = arr.map(item => {
             const row = {};
             row['component'] = item['name'];
-            _deleteProps(item);
+            this._deleteProps(item);
             if (item['children']) {
               item['children'] = item['children'].filter(subitem => {
                 if (subitem['kindString'] === 'Property' && subitem['decorators']) {
@@ -89,7 +79,7 @@ export class DocumentationService {
 
                 subrow['component'] = row['component'];
                 subrow['apiName'] = subItem['name'];
-                
+
                 if (subItem['type'] && subItem['type']['name']) {
                   subrow['datatype'] = subItem['type']['name'];
                 } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'union') {
@@ -307,5 +297,15 @@ export class DocumentationService {
       (error) => { throw new Error(error); }
     );
     return types;
+  }
+
+  private _deleteProps (item) {
+    const unneeded = ['id', 'kind', 'kindString',
+    'flags', 'groups', 'implementedTypes', 'sources',
+    'decorators'];
+
+    unneeded.forEach(
+      property => delete item[property]
+    );
   }
 }

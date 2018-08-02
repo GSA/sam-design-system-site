@@ -1,89 +1,76 @@
 <sam-site-header></sam-site-header>
 
-<main>
-  <header>
-    <div class="stripes">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div id="intro-animation">
-      <span class="particle-animation">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388 262"> 
-          <g>
-            <g class="particle-container">
-              <circle class="particle" r="7" cx="0" cy="230"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="8" cx="0" cy="205"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="9" cx="0" cy="180"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="8" cx="0" cy="155"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="6" cx="0" cy="130"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="7" cx="0" cy="105"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="6" cx="0" cy="80"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="9" cx="0" cy="55"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="9" cx="0" cy="30"></circle>
-            </g>
-            <g class="particle-container">
-              <circle class="particle" r="6" cx="0" cy="5"></circle>
-            </g>
-          </g>
-          
-        </svg>
-      </span>
-    </div>
-    <section id="intro" class="site-container">
-      <h1 class="sam title">SAM UI Elements</h1>
-      <p>
-        This site showcases a set of design standards and angular-based frontend 
-        development components for building the upcoming <strong><em>SAM.gov</em>
-        </strong> website.
-      </p>
-      <button [routerLink]="['/docs/elements/button']" 
-        class="sam primary button">
-        Get Started
-      </button>
-    </section>
-  </header>
-  <footer class="site-container">
-    <h2 class="sam title">
-      Installation
-    </h2>
-    <sam-code-example 
-      language="bash" 
-      [code]="'$ npm install --save sam-ui-elements'">
-    </sam-code-example>
-    <a [routerLink]="['/docs/overview/getting-started']">
-      Read installation docs
-    </a>
-    <h2 class="sam title">
-      Patterns
-    </h2>
-    <p>
-      Page and component patterns to help you quickly get started with 
-      <strong><em>SAM-UI Elements</em></strong> and demonstrate best practices 
-      for implementing it in <strong><em>SAM.gov</em></strong>.
+<section class="home background blue">
+  
+  <div class="home intro-text">
+    <h2 class="sam heading center">SAM Design System</h2>
+    <p class="center">
+      This is a federal open source project under active development. It is being 
+      designed for use in award or other federal financial systems. It provides 
+      public access and encourages sharing of federal code across the government 
+      <a href="https://sourcecode.cio.gov/">(Federal Policy About Sharing Source Code)</a>.
     </p>
-    <a [routerLink]="['/patterns/latest/home']">
-      View patterns
-    </a>
-  </footer>
-</main>
+  </div>
+  
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <div class="home card first">
+        <h3 class="sam heading">Get Started</h3>
+        <p>
+          Welcome to the SAM.gov Design System Site. This design system is in 
+          an MVP state and under active development. Please come back frequently 
+          to see our progress!
+        </p>
+        <a class="sam home outline reverse  button" [routerLink]="['/docs/overview/getting-started']">
+          View Docs
+        </a>
+      </div>
+    </div>
+    <div class="usa-width-one-half">
+      <div class="home card second">
+        <h3 class="sam heading">Styles</h3>
+        <p style="margin-bottom: 66px;">
+          Styles include the color scheme and typography for the SAM.gov Web 
+          Design System.
+        </p>
+        <a class="sam home outline reverse  button" [routerLink]="['/docs/styles/colors']">
+          View Styles
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="usa-grid">
+    <div class="usa-width-one-half">
+      <div class="home card third">
+        <h3 class="sam heading">Components</h3>
+        <p>
+          The components are a collection of user interface controls including 
+          buttons, menus, filtering and form controls, modal dialogs and alerts, 
+          and many others.
+        </p>
+        <a class="sam home outline reverse  button" [routerLink]="['/docs/components/accordion']">
+          View Components
+        </a>
+      </div>
+    </div>
+    <div class="usa-width-one-half">
+      <div class="home card fourth">
+        <h3 class="sam heading">Patterns</h3>
+        <p>
+          The patterns are a collection of layouts that provide consistent design 
+          solutions for recurring features that are found throughout our website 
+          and other single page, data-centric web applications.
+        </p>
+        <a class="sam home outline reverse  button" [routerLink]="['/patterns/latest/home']">
+          View Patterns
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- feature branch - initial deploy doc -->
+
 
 <sam-site-footer></sam-site-footer>

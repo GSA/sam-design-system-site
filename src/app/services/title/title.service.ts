@@ -3,7 +3,6 @@ import { Title } from '@angular/platform-browser';
 import { pipe } from '../../../../../sam-ui-elements/src/ui-kit/utilities/pipe';
 import { mappings } from './mappings';
 
-
 @Injectable()
 export class SamTitleService {
   public _titleTemplate: string = 'SAM Design System';
@@ -36,7 +35,7 @@ export class SamTitleService {
     return this.ngTitleService.getTitle();
   }
 
-  public buildTitle (defaultStr: string, appendedStr?: string): string {
+  public buildTitle (defaultStr: string, appendedStr: string): string {
     return appendedStr
       ? `${defaultStr} | ${appendedStr}`
       : defaultStr;

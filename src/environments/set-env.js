@@ -1,7 +1,6 @@
 const fs = require('fs')
 const helpers = require('./helpers')
 const path = require('path')
-console.log(process.cwd());
 const STATIC_PATH = path.join(process.cwd(), 'src/_static')
 const DOCS_PATH = path.join(process.cwd(), 'src/_docs')
 

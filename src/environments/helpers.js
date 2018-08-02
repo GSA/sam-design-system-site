@@ -39,6 +39,7 @@ function getUIKitStructure(target){
 				component = results[2];
 			}
 		}
+		console.log(val,process.cwd());
 		let currentPath = path.join(process.cwd(),'/src/_docs/');
 		val = val.replace(currentPath, "");
 		val = val.replace(/\\\\/g,"/");
@@ -64,7 +65,7 @@ function getUIKitStructure(target){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())
 	    return val;
 	  }).join(" ");
-	  return {
+	  let x = {
 	    link: link,
 	    routerlink: "/docs/"+link,
 	    section: section,
@@ -72,6 +73,8 @@ function getUIKitStructure(target){
 			component: component,
 			subsection: subsection
 	  };
+		//console.log(x);
+		return x;
 	})
 
   return mapped;

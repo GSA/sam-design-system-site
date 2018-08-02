@@ -7,7 +7,7 @@
     "start": "npm run init && ng serve --preserve-symlinks",
     "start:aot": "npm run init && ng serve --preserve-symlinks --aot",
     "build": "npm run init && ng build --preserve-symlinks --prod --stats-json",
-    "test": "npm run init && ng test",
+    "test": "npm run init && ng test --single-run --code-coverage",
     "lint": "ng lint",
     "e2e": "npm run init && ng e2e",
     "server:prod": "nginx -g 'daemon off;'",

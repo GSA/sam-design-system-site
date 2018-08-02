@@ -1,14 +1,14 @@
 const fs = require('fs')
 const helpers = require('./helpers')
 const path = require('path')
-
-const STATIC_PATH = path.join(__dirname, '../_static')
-const DOCS_PATH = path.join(__dirname, '../_docs')
+console.log(process.cwd());
+const STATIC_PATH = path.join(process.cwd(), 'src/_static')
+const DOCS_PATH = path.join(process.cwd(), 'src/_docs')
 
 const DOCS_MODULE_PATH =
-  path.join(__dirname, '../_docs/doc.module.dynamic.ts')
+  path.join(process.cwd(), 'src/_docs/doc.module.dynamic.ts')
 const DOCS_ROUTE_PATH =
-  path.join(__dirname, '../_docs/doc.routes.dynamic.ts')
+  path.join(process.cwd(), 'src/_docs/doc.routes.dynamic.ts')
 
 const STATIC = JSON.stringify(helpers.getStaticDirStructure(STATIC_PATH))
 const DOCS = JSON.stringify(helpers.getUIKitStructure(DOCS_PATH))

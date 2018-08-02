@@ -1,3 +1,4 @@
+/* tslint:disable */
 export const docs = {
 	"id": 0,
 	"name": "sam-cli",

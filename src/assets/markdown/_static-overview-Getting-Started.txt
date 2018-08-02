@@ -1,2 +1,18 @@
 <h1>Getting Started</h1>
-<p>This site showcases the SAM UI-Kit, an angular2-based frontend development toolkit for building the upcoming sam.gov website.</p>
+<p>The SAM.gov Web Design System is an open source project maintained as part of the <a href="https://beta.SAM.gov">beta.SAM.gov</a> program.</p>
+<h2>For Developers</h2>
+<p>Documentation for setting up your environment to use the design system can be found on github.com.</p>
+<ul>
+<li><a href="https://github.com/GSA/sam-ui-elements">sam-ui-elements Github repository</a></li>
+</ul>
+<h3>Technology</h3>
+<ul>
+<li>Angular 4 (current)/Typescript</li>
+<li>USWDS Grid</li>
+</ul>
+<h3>UI Control Dependencies</h3>
+<ul>
+<li>Angular CDK Table (experimental)</li>
+<li>Simple MDE Text Editor (experimental)</li>
+<li>Paypal Open Source Video Player</li>
+</ul>

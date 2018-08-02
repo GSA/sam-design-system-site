@@ -1,6 +1,6 @@
 <h2>Contribute</h2>
 <p>The Github repositories can be found here:</p>
 <ul>
-<li><a href="https://csp-github.sam.gov/GSA-IAE/sam-ui-elements">sam-ui-elements Github repository</a></li>
-<li><a href="https://csp-github.sam.gov/GSA-IAE/web-standards-site">this site's Github repository</a></li>
+<li><a href="https://github.com/GSA/sam-ui-elements">sam-ui-elements Github repository</a></li>
+<li><a href="https://github.com/GSA/sam-design-system-site">this site's Github repository</a></li>
 </ul>

@@ -10,6 +10,11 @@ HOME PAGE
   max-width: 1040px
 }
 
+.site-header{
+  background-color:#fff;
+  font-size: 1.5rem !important;
+  padding: 0.5rem 0 !important;
+  }
 
 /*---------------------------
 Stripes
@@ -27,12 +32,11 @@ Stripes
   top: 0;
   grid: repeat(5,190px)/repeat(10,1fr);
   transform-origin: 0;
-  background: linear-gradient(#ffffff, #e6e6e6 10%, #eaeff5 38%, #eaf2f9 48%, #f6f9fc 62%)
+  background: linear-gradient(#ffffff, #1A4366 10%, #1A4366 38%, #1A4366 48%, #1A4366 62%)
 }
 
 .stripes :nth-child(1) {
   grid-column: span 3;
-  background: linear-gradient(100grad, rgb(220, 220, 220), rgba(224, 224, 224, 0.3) 40%, rgba(226, 226, 226, 0.2));
 }
 
 .stripes :nth-child(2) {
@@ -72,24 +76,27 @@ Homepage Intro Section
 #intro {
   position: relative;
   z-index: 1;
-  padding-bottom: 40px
+  padding-bottom: 70px;
+  text-align: center;
+  max-width: 700px;
+  color:#fff;
 }
 
 #intro p {
   margin: 25px 0;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.2;
 }
 
 @media (min-width: 670px) {
   #intro {
-    padding-top:70px;
+    padding-top:100px;
     position: static;
   }
   
   #intro p {
-    margin: 25px 55% 30px 0
+    margin: 50px 50px 30px 0
   }
   
 }
@@ -292,4 +299,66 @@ main footer.site-container {
     grid: repeat(3,auto)/auto-flow 1fr;
     grid-gap: 0 40px
   }
+}
+
+
+/*---------------------------
+Homepage Styling With USWDS
+-----------------------------*/
+section.home{
+  padding: 40px 0;
+}
+
+.home.intro-text{
+  margin: 0 auto;
+  max-width: 700px;
+  color: white;
+  padding: 80px 15px 50px 15px;
+  a{
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.home.button.reverse{
+  color: white;
+  border-color: currentColor;
+}
+
+.home.button.outline{
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+}
+
+section.home.background.blue{
+  background: #205493;
+  background: -moz-linear-gradient(top, #205493 0%, #112e51 34%);
+  background: -webkit-linear-gradient(top, #205493 0%,#112e51 34%);
+  background: linear-gradient(to bottom, #205493 0%,#112e51 34%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#205493', endColorstr='#112e51',GradientType=0 );
+}
+
+.home.card{
+  color: white;
+  box-shadow: none !important;
+  p{
+    margin-bottom: 40px;
+  }
+  &.first{
+    background-color:#205493;
+  }
+  &.second{
+    background-color:#4aa564;
+  }
+  &.third{
+    background-color:#5b616b;
+  }
+  &.fourth{
+    background-color:#323a45;
+  }
+} 
+
+.center{
+  text-align: center;
 }

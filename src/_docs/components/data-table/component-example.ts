@@ -13,8 +13,8 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 
 import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
+import { MarkdownService } from 'app/services/markdown/markdown.service';
+import { DocumentationService } from 'app/services/documentation.service';
 import { SamSortable, SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import { merge } from 'rxjs/observable/merge';
 import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements';
@@ -111,7 +111,7 @@ export class SamDataTableComponentExampleComponent extends BaseExampleComponent 
 
   example = code_example;
 
-  public base = '_docs/experimental/data-table/';
+  public base = '_docs/components/data-table/';
 
   constructor(
     _http: Http,

@@ -173,6 +173,11 @@ export const ROUTES: Routes = [
     data: { markdownfile: '_static/overview/Innovation-Process.md' }
   },
   {
+    path: 'patterns/layout',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/patterns/layout.md' }
+  },
+  {
     path: 'styles/colors',
     component: StaticPageComponent,
     data: { markdownfile: '_static/styles/Colors.md' }

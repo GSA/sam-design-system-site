@@ -8,14 +8,12 @@
   cursor: pointer;
   white-space: nowrap;
   display: inline-block;
-  //height: 40px;
   padding: 5px 14px;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   background: #fff;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
-  //text-transform: uppercase;
   letter-spacing: .025em;
   color: #000;
   text-decoration: none;
@@ -37,4 +35,18 @@
 .sam.button.left.attached{
   border-radius: 0 4px 4px 0px;
   border: none;
+}
+
+.sam.button.link {
+  box-shadow: none;
+  color: #0071bc;
+}
+
+.sam.button.link:hover {
+  transform: none;
+  color: #004370;
+}
+
+.sam.button.link:disabled {
+  color: gray;
 }

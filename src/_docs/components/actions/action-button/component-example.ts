@@ -1,14 +1,7 @@
 
 import {
   Component,
-  OnInit,
-  Input,
-  ComponentRef,
-  ViewChild,
-  ViewRef,
-  TemplateRef,
-  ComponentFactoryResolver,
-  ViewContainerRef
+  OnInit
 } from '@angular/core';
 import { BaseExampleComponent } from '../../../baseexample.component';
 

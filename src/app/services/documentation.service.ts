@@ -1,15 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
 import { ReplaySubject } from 'rxjs/ReplaySubject';
 import 'rxjs/add/operator/map';
 
-const regexComponent = new RegExp('([^/]*(\.component|\.directive))');
-const regexNotComponent = new RegExp('([^.component])');
-const regexTypes = new RegExp('types.ts');
-const regexInterfaces = new RegExp('interfaces.ts');
-
+const regexComponent =
+  new RegExp('([^/]*(\.component|\.directive))');
 
 @Injectable()
 export class DocumentationService {
@@ -18,7 +14,7 @@ export class DocumentationService {
 
   public loadData(): Observable<any> {
     return this._http.get('/assets/docs.json')
-            .map((res: Response) => res.json());
+      .map((res: Response) => res.json());
   }
 
   /**
@@ -63,17 +59,11 @@ export class DocumentationService {
           }
           let arr = accum.slice(0);
           let finalArr = [];
+
           arr = arr.map(item => {
             const row = {};
             row['component'] = item['name'];
-            delete item['id'];
-            delete item['kind'];
-            delete item['kindString'];
-            delete item['flags'];
-            delete item['groups'];
-            delete item['implementedTypes'];
-            delete item['sources'];
-            delete item['decorators'];
+            this._deleteProps(item);
             if (item['children']) {
               item['children'] = item['children'].filter(subitem => {
                 if (subitem['kindString'] === 'Property' && subitem['decorators']) {
@@ -81,15 +71,15 @@ export class DocumentationService {
                 }
               });
               for (let i = 0; i < item['children'].length; i++) {
+
                 const subItem = item['children'][i];
                 delete subItem['id'];
                 delete subItem['kind'];
                 const subrow = {};
+
                 subrow['component'] = row['component'];
-                // delete subItem['kindString'];
-                // delete subItem['flags'];
-                // delete subItem['sources'];
                 subrow['apiName'] = subItem['name'];
+
                 if (subItem['type'] && subItem['type']['name']) {
                   subrow['datatype'] = subItem['type']['name'];
                 } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'union') {
@@ -127,11 +117,8 @@ export class DocumentationService {
               return true;
             }
           });
-          console.log(finalArr);
           return accum;
         }, []);
-
-        console.log(output);
       },
       (error) => { throw new Error(error); }
     );
@@ -310,5 +297,15 @@ export class DocumentationService {
       (error) => { throw new Error(error); }
     );
     return types;
+  }
+
+  private _deleteProps (item) {
+    const unneeded = ['id', 'kind', 'kindString',
+    'flags', 'groups', 'implementedTypes', 'sources',
+    'decorators'];
+
+    unneeded.forEach(
+      property => delete item[property]
+    );
   }
 }

@@ -5,27 +5,30 @@ import {
   TestBed,
   ComponentFixture
 } from '@angular/core/testing';
-
+import {RouterTestingModule} from '@angular/router/testing';
+import {MockBackend} from "@angular/http/testing";
+import { HttpModule } from '@angular/http';
 // Load the implementations that should be tested
 import { AppComponent } from './app.component';
-import { AppState } from './app.service';
+import { SamTitleService } from './services/title/title.service';
+import { DocumentationService } from './services/documentation.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Subscription } from 'rxjs/Subscription';
 
 describe(`App`, () => {
   let comp: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
-  // async beforeEach
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ AppComponent ],
-      schemas: [NO_ERRORS_SCHEMA],
-      providers: [AppState]
-    })
-    .compileComponents(); // compile template and css
-  }));
-
-  // synchronous beforeEach
   beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [HttpModule,RouterTestingModule,BrowserAnimationsModule],
+      declarations: [ AppComponent ],
+      providers: [
+        SamTitleService, 
+        DocumentationService,
+      ],
+      schemas: [NO_ERRORS_SCHEMA]
+    });
     fixture = TestBed.createComponent(AppComponent);
     comp    = fixture.componentInstance;
 
@@ -37,18 +40,5 @@ describe(`App`, () => {
     expect(comp).toBeDefined();
   });
 
-  it(`should be @AngularClass`, () => {
-    expect(comp.url).toEqual('https://twitter.com/AngularClass');
-    expect(comp.angularclassLogo).toEqual('assets/img/angularclass-avatar.png');
-    expect(comp.name).toEqual('Angular 2 Webpack Starter');
-  });
-
-  it('should log ngOnInit', () => {
-    spyOn(console, 'log');
-    expect(console.log).not.toHaveBeenCalled();
-
-    comp.ngOnInit();
-    expect(console.log).toHaveBeenCalled();
-  });
 
 });

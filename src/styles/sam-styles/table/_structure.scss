@@ -9,16 +9,20 @@ sam-datatable {
   display: block;
 }
 
-sam-header-row {
+table.sam-table{
+  width: 100%;
+}
+
+sam-header-row, tr[sam-header-row] {
   min-height: $sam-header-row-height;
 }
 
-sam-row, .sam-footer-row {
+sam-row, tr[sam-row], .sam-footer-row {
   padding: 4px 0px 4px 0px;
   min-height: $sam-row-height;
 }
 
-sam-row, sam-header-row, .sam-footer-row {
+sam-row, tr[sam-row], sam-header-row, tr[sam-header-row], .sam-footer-row {
   display: flex;
   // Define a border style, but then widths default to 3px. Reset them to 0px except the bottom
   // which should be 1px;
@@ -38,7 +42,8 @@ sam-row, sam-header-row, .sam-footer-row {
   }
 }
 
-sam-cell:first-child, sam-header-cell:first-child, .sam-footer-cell:first-child {
+sam-cell:first-child, sam-header-cell:first-child, .sam-footer-cell:first-child,
+td[sam-cell]:first-child, th[sam-header-cell]:first-child {
   padding-left: $sam-row-horizontal-padding;
 
   [dir='rtl'] & {
@@ -47,7 +52,8 @@ sam-cell:first-child, sam-header-cell:first-child, .sam-footer-cell:first-child 
   }
 }
 
-sam-cell:last-child, sam-header-cell:last-child, .sam-footer-cell:last-child {
+sam-cell:last-child, sam-header-cell:last-child, .sam-footer-cell:last-child,
+td[sam-cell]:last-child, th[sam-header-cell]:last-child {
   padding-right: $sam-row-horizontal-padding;
 
   [dir='rtl'] & {
@@ -56,7 +62,8 @@ sam-cell:last-child, sam-header-cell:last-child, .sam-footer-cell:last-child {
   }
 }
 
-sam-cell, sam-header-cell, .sam-footer-cell {
+sam-cell, sam-header-cell, .sam-footer-cell,
+td[sam-cell], th[sam-header-cell] {
   flex: 1;
   display: flex;
   align-items: center;

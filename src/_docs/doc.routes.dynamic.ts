@@ -13,6 +13,7 @@ import { SamAlertFooterComponentExampleComponent } from './components/alert-foot
 import { SamBadgeComponentExampleComponent } from './components/badge/component-example';
 import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumbs/component-example';
 import { SamCommentsComponentExampleComponent } from './components/comments/component-example';
+import { SamDataTableComponentExampleComponent } from './components/data-table/component-example';
 import { DownloadExampleComponent } from './components/download/component-example';
 import { HistoryExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
@@ -34,7 +35,6 @@ import { TabOutsideExampleComponent } from './directives/tab-outside/component-e
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
-import { SamDataTableComponentExampleComponent } from './experimental/data-table/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
@@ -82,6 +82,7 @@ export const ROUTES: Routes = [
   { path: 'components/badge', component: SamBadgeComponentExampleComponent },
   { path: 'components/breadcrumbs', component: SamBreadcrumbsComponentExampleComponent },
   { path: 'components/comments', component: SamCommentsComponentExampleComponent },
+  { path: 'components/data-table', component: SamDataTableComponentExampleComponent },
   { path: 'components/download', component: DownloadExampleComponent },
   { path: 'components/history', component: HistoryExampleComponent },
   { path: 'components/image', component: SamImageComponentExampleComponent },
@@ -103,7 +104,6 @@ export const ROUTES: Routes = [
   { path: 'elements/button', component: ButtonExampleComponent },
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
-  { path: 'experimental/data-table', component: SamDataTableComponentExampleComponent },
   { path: 'experimental/dollar', component: SamDollarComponentExampleComponent },
   { path: 'experimental/filter-drawer', component: SamFilterDrawerComponentExampleComponent },
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },

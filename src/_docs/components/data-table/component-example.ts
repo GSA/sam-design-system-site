@@ -13,8 +13,8 @@ import {
 import { BaseExampleComponent } from '../../baseexample.component';
 
 import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
+import { MarkdownService } from 'app/services/markdown/markdown.service';
+import { DocumentationService } from 'app/services/documentation.service';
 import { SamSortable, SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import { merge } from 'rxjs/observable/merge';
 import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements';
@@ -30,59 +30,59 @@ const code_example = `
     <div class="example-header">
         <input #filter placeholder="Filter agency or title">
     </div>
-    <sam-datatable #table samSort [dataSource]="dataSource">
+    <table sam-datatable #table samSort [dataSource]="dataSource">
         <!-- Column Definition: agency -->
         <ng-container cdkColumnDef="agency">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+            <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Agency
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.agency}} </sam-cell>
+            </th>
+            <td sam-cell *cdkCellDef="let row"> {{row.agency}} </td>
         </ng-container>
 
         <!-- Column Definition: cfdaNumber -->
         <ng-container cdkColumnDef="cfdaNumber">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>CFDA #
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.cfdaNumber}} </sam-cell>
+            <th sam-header-cell *cdkHeaderCellDef sam-sort-header>CFDA #
+            </th>
+            <td sam-cell *cdkCellDef="let row"> {{row.cfdaNumber}} </td>
         </ng-container>
 
         <!-- Column Definition: title -->
         <ng-container cdkColumnDef="title">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+            <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Title
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.title}} </sam-cell>
+            </th>
+            <td sam-cell *cdkCellDef="let row"> {{row.title}} </td>
         </ng-container>
 
         <!-- Column Definition: status -->
         <ng-container cdkColumnDef="status">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+            <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Status
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.status}} </sam-cell>
+            </th>
+            <td sam-cell *cdkCellDef="let row"> {{row.status}} </td>
         </ng-container>
 
         <!-- Column Definition: cost -->
         <ng-container cdkColumnDef="cost">
-            <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+            <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
                 Cost
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.cost}} </sam-cell>
+            </th>
+            <td sam-cell *cdkCellDef="let row"> {{row.cost}} </td>
         </ng-container>
 
         <!-- Column Definition: lastUpdatedDate -->
         <ng-container cdkColumnDef="lastUpdatedDate">
-            <sam-header-cell *cdkHeaderCellDef>
+            <th sam-header-cell *cdkHeaderCellDef>
                 Last Updated
-            </sam-header-cell>
-            <sam-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </sam-cell>
+            </th>
+            <td sam-cell *cdkCellDef="let row"> {{row.lastUpdatedDate}} </td>
         </ng-container>
 
-        <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
-        <sam-row *cdkRowDef="let row; columns: displayedColumns;
+        <tr sam-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+        <tr sam-row *cdkRowDef="let row; columns: displayedColumns;
             let first = first; let last = last; let even = even; let odd = odd">
-        </sam-row>
-    </sam-datatable>
+        </tr>
+    </table>
 
     <div
         class="example-no-results"
@@ -111,7 +111,7 @@ export class SamDataTableComponentExampleComponent extends BaseExampleComponent 
 
   example = code_example;
 
-  public base = '_docs/experimental/data-table/';
+  public base = '_docs/components/data-table/';
 
   constructor(
     _http: Http,

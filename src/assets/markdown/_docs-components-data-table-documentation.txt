@@ -1,2 +1,2 @@
-<h1>SamDataTableComponent</h1>
+<h1>SamDataTableComponent (RC)</h1>
 <p>A data table component that implements like Angular <a href="https://material.angular.io/components/table/overview">Material</a>.</p>

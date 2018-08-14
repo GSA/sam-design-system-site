@@ -95,7 +95,12 @@ const code_example = `
 
 @Component({
   selector: 'doc-sam-datatable',
-  template: '<doc-template [markdown]="markdown" [example]="example" [guidance]="guidance" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
+  template: `<doc-template
+    [markdown]="markdown"
+    [example]="example"
+    [guidance]="guidance"
+    [typedoc]="typedoc_content">` + code_example + `
+  </doc-template>`
 })
 export class SamDataTableComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = 'SamDataTableComponent';

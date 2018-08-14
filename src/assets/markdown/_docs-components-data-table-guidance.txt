@@ -1,0 +1,5 @@
+<h2>Guidance</h2>
+<p><em>When to use</em></p>
+<ul>
+<li>Information needs to be displayed in a tabular format</li>
+</ul>

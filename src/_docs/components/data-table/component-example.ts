@@ -54,14 +54,6 @@ const code_example = `
             <td sam-cell *cdkCellDef="let row"> {{row.title}} </td>
         </ng-container>
 
-        <!-- Column Definition: status -->
-        <ng-container cdkColumnDef="status">
-            <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
-                Status
-            </th>
-            <td sam-cell *cdkCellDef="let row"> {{row.status}} </td>
-        </ng-container>
-
         <!-- Column Definition: cost -->
         <ng-container cdkColumnDef="cost">
             <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
@@ -103,7 +95,7 @@ const code_example = `
 
 @Component({
   selector: 'doc-sam-datatable',
-  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
+  template: '<doc-template [markdown]="markdown" [example]="example" [guidance]="guidance" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
 })
 export class SamDataTableComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = 'SamDataTableComponent';
@@ -125,7 +117,7 @@ export class SamDataTableComponentExampleComponent extends BaseExampleComponent 
 
   pageSize = 10;
   totalPages = 1;
-  displayedColumns = ['agency', 'cfdaNumber', 'title', 'status', 'cost', 'lastUpdatedDate'];
+  displayedColumns = ['agency', 'cfdaNumber', 'title', 'cost', 'lastUpdatedDate'];
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
   curPage = 1;

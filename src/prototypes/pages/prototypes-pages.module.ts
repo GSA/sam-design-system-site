@@ -28,6 +28,7 @@ import {
 } from './search/sam-front-end-components/search-result';
 import { DatePageComponent } from './date/date.component';
 import { SortArrayOfObjects } from './search/sam-front-end-components/wage-determination/sort-array-object.pipe';
+import { DynamicFormsPageComponent } from './dynamic-forms';
 @NgModule({
   imports: [
     CommonModule,
@@ -56,6 +57,7 @@ import { SortArrayOfObjects } from './search/sam-front-end-components/wage-deter
     SamSortComponent,
     DatePageComponent,
     SortArrayOfObjects,
+    DynamicFormsPageComponent
   ],
   providers: [
     SearchUtil,

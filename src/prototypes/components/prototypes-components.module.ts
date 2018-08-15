@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
 import { ComponentsRoutingModule } from './prototypes-components.routes';
 
 import { ComponentsComponent } from './prototypes-components.component';
 import { PickerComponent } from './picker/component';
-// import { PickerLevel2Component } from './picker/component';
-// import { PickerLevel3Component } from './picker/component';
+
 import { PickerLevel4Component } from './picker/component';
 import { PickerLevel5Component } from './picker/component';
 import { PickerLevel6Component } from './picker/component';
@@ -24,6 +23,8 @@ import {
 
 import { SamExperimentalDataTableModule } from './table';
 import { DatepickerProtoModule } from './date/picker/picker.module';
+import { SamDynamicFormComponent, CustomFormlyDemoModule } from './dynamic-form';
+import { FormlyModule } from '@ngx-formly/core';
 
 @NgModule({
   imports: [
@@ -39,16 +40,18 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     CdkTableModule,
     MdChipsModule,
     DatepickerProtoModule,
+    ReactiveFormsModule,
+    FormlyModule,
+    CustomFormlyDemoModule
   ],
   declarations: [
     ComponentsComponent,
     PickerComponent,
-    // PickerLevel2Component,
-    // PickerLevel3Component,
     PickerLevel4Component,
     PickerLevel5Component,
     PickerLevel6Component,
     MainNavComponent,
+    SamDynamicFormComponent,
   ],
   exports: [
     MainNavComponent,
@@ -59,6 +62,7 @@ import { DatepickerProtoModule } from './date/picker/picker.module';
     CdkTableModule,
     SamExperimentalDataTableModule,
     DatepickerProtoModule,
+    SamDynamicFormComponent,
   ]
 })
 export class PrototypesComponentsModule {}

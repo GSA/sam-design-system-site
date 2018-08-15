@@ -20,6 +20,8 @@ import { SiteComponentsModule } from './site-components/sitecomponents.module';
 
 import { MarkdownService } from './services/markdown/markdown.service';
 import { SamTitleService } from './services/title/title.service';
+import { FormlyModule } from '@ngx-formly/core';
+import { FormlySAMUIModule } from '@gsa-sam/sam-ui-elements/src/formly';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -42,7 +44,9 @@ const APP_PROVIDERS = [
     HttpModule,
     SamUIKitModule,
     SiteComponentsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    FormlyModule,
+    FormlySAMUIModule
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

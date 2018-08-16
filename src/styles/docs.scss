@@ -81,6 +81,127 @@
 @import '~prismjs/themes/prism';
 
 code[class*="language"] {
+    font-size: 13px;
+}
+
+pre::-webkit-scrollbar {
+    height: 6px;
+}
+
+:not(pre) > code[class*="language-"], 
+pre[class*="language-"] {
+    background: #fdfdfd;
+}
+
+pre[class*="language-"] {
+    padding: .8em;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+}
+
+/**
+ * Styles doc pages
+ */
+
+.doc-examples{
+    margin-top: 20px;
+    border: 2px solid #e8e8e8;
+    max-width: 1080px;
+    border-radius: 2px;
+    .usa-width-one-whole{
+        padding-bottom: 30px;
+        border-bottom: 2px solid #e8e8e8;
+    }
+    .usa-width-one-whole:last-child{
+        border-bottom: none;
+    }
+}
+
+.doc-page{
+    display: flex;
+    margin-bottom: 30px;
+    .doc-main{
+        flex-grow: 1;
+    }
+}
+
+.doc-dark-background{
+    background-color: #212121;
+    padding: 10px;
+}
+
+.sam.colors{
+    display: flex;
+}
+
+.sam.color{
     font-size: 14px;
+    padding: 10px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    &::before{
+        display: block;
+        line-height: 16px;
+        font-weight: 600;
+    }
+    &.inverted{
+        border: 1px solid map-get($map: $uswds-cool-gray, $key: 200);
+    }
+}
+
+
+.sam.color.text{
+    color: white;
+    background-color: map-get($map: $uswds-cool-gray, $key: 700);
+    &::before{
+        content: 'Text';
+    }
+    &.inverted{
+        color: map-get($map: $uswds-cool-gray, $key: 700);
+        background-color: white;
+    }
+}
+
+.sam.color.headers{
+    color: white;
+    background-color: map-get($map: $uswds-cool-gray, $key: 600);
+    &::before{
+        content: 'Headers';
+    }
+    &.inverted{
+        color: map-get($map: $uswds-cool-gray, $key: 700);
+        background-color: white;
+        border-width: 1px 0px;
+    }
+}
+
+.sam.color.links{
+    color: white;
+    background-color: map-get($map: $uswds-blue, $key: 500);
+    &::before{
+        content: 'Links';
+    }
+    &.inverted{
+        color: map-get($map: $uswds-cool-gray, $key: 700);
+        background-color: white;
+    }
+}
+
+.sam.color.background.default{
+    color: map-get($map: $uswds-cool-gray, $key: 700);
+    background-color: white;
+    border: 1px solid map-get($map: $uswds-cool-gray, $key: 200);
+    &::before{
+        content: 'Default';
+    }
+}
+
+.sam.color.background.primary{
+    color: white;
+    background-color: map-get($map: $uswds-blue, $key: 900);
+    &::before{
+        content: 'Highlight';
+    }
 }
 

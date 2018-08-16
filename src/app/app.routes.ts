@@ -14,5 +14,9 @@ export const ROUTES: Routes = [
   {
     path: 'prototypes',
     loadChildren: '../prototypes/prototypes.module#PrototypesModule'
+  },
+  {
+    path: 'styles',
+    loadChildren: '../styles/docs/styles.module#StylesModule'
   }
 ];

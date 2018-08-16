@@ -1,0 +1,95 @@
+
+<div class="usa-grid">
+  <div class="usa-width-one-whole">
+    
+    <h1 class="sam heading">
+      <span class="intro">Styles</span>
+      Buttons
+    </h1>
+    
+    <p class="sam lead">
+      Use buttons to signal actions.
+    </p>
+    
+    <h2 class="sam heading">Primary Action</h2>
+    <p>
+      Use major action buttons for the most important buttons the users will look 
+      for in order to initiate an activity (<em>e.g., Create Listing</em>) or 
+      complete an activity (<em>e.g., Submit</em>). Typically no more than one 
+      button in this color should appear on the page, although there may be 
+      occasions to modify this rule. Major actions buttons generally appear at 
+      the top of a page when the action is to initiate work, or at the bottom of 
+      the form, such as when the action is to submit that form.
+    </p>
+    
+    <div class="usa-grid doc-examples">
+      <div class="usa-width-one-whole">
+        <h3 class="sam heading">States</h3>
+        <button class="sam button primary" type="button">Default</button>
+        <button class="sam button primary hover" type="button">Hover</button>
+        <button class="sam button primary active" type="button">Active</button>
+        <button class="sam button primary focus" type="button">Focus</button>
+        <button class="sam button primary disabled" type="button" disabled>Disabled</button>
+        <sam-code-example language="html" [code]="button_primary_markup"></sam-code-example>
+        
+        <h3 class="sam heading">Sizes</h3>
+        <button class="sam button primary" type="button">Normal</button>
+        <button class="sam button primary small" type="button">Small</button>
+        <sam-code-example language="html" [code]="button_primary_sizes_markup"></sam-code-example>
+      </div>
+    </div>
+    
+    <h2 class="sam heading">Secondary Action</h2>
+    <p>
+      They represent useful, but not necessary actions the user may want to take.
+      Generally, these buttons are represented by an icon and/or related term. 
+      Examples include actions such as '<em>Edit</em>', '<em>Subscribe</em>', 
+      '<em>Favorite</em>', or '<em>Share</em>'.
+    </p>
+    
+    <div class="usa-grid doc-examples">
+      <div class="usa-width-one-whole">
+        <h3 class="sam heading">States</h3>
+        <button class="sam button secondary" type="button">Default</button>
+        <button class="sam button secondary hover" type="button">Hover</button>
+        <button class="sam button secondary active" type="button">Active</button>
+        <button class="sam button secondary focus" type="button">Focus</button>
+        <button class="sam button secondary disabled" type="button" disabled>Disabled</button>
+        <sam-code-example language="html" [code]="button_secondary_markup"></sam-code-example>
+        
+        <h3 class="sam heading">Dark Background</h3>
+        
+        <div class="doc-dark-background">
+          <button class="sam button inverted secondary" type="button">Default</button>
+          <button class="sam button inverted secondary hover" type="button">Hover</button>
+          <button class="sam button inverted secondary active" type="button">Active</button>
+          <button class="sam button inverted secondary focus" type="button">Focus</button>
+          <button class="sam button inverted secondary disabled" type="button" disabled>Disabled</button>
+        </div>
+        <sam-code-example language="html" [code]="button_secondary_dark_markup"></sam-code-example>
+        
+        <h3 class="sam heading">Sizes</h3>
+        <button class="sam button secondary" type="button">Normal</button>
+        <button class="sam button secondary small" type="button">Small</button>
+        <sam-code-example language="html" [code]="button_secondary_sizes_markup"></sam-code-example>
+      </div>
+    </div>
+    
+    <h2 class="sam heading">Icon Buttons</h2>
+    
+    <div class="doc-examples">
+      <button class="sam button secondary" type="button">
+        <span class="fa fa-user" aria-hidden="true"></span>
+        User
+      </button>
+      <button class="sam button secondary small" type="button">
+        <span class="fa fa-user" aria-hidden="true"></span>
+        User
+      </button>
+    </div>
+    <sam-code-example language="html" [code]="button_icon_sizes_markup"></sam-code-example>
+    
+  </div>
+</div>
+
+

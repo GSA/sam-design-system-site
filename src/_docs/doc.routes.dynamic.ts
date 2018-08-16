@@ -32,6 +32,7 @@ import { SamFocusDirectiveExampleComponent } from './directives/focus/component-
 import { StickyExampleComponent } from './directives/sticky/component-example';
 import { TabOutsideExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
+import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDataTableComponentExampleComponent } from './experimental/data-table/component-example';
@@ -101,6 +102,7 @@ export const ROUTES: Routes = [
   { path: 'directives/sticky', component: StickyExampleComponent },
   { path: 'directives/tab-outside', component: TabOutsideExampleComponent },
   { path: 'elements/button', component: ButtonExampleComponent },
+  { path: 'experimental/actions-list', component: SamActionsListComponentExampleComponent },
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
   { path: 'experimental/data-table', component: SamDataTableComponentExampleComponent },

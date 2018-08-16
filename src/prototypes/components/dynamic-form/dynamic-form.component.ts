@@ -96,7 +96,13 @@ export class SamDynamicFormComponent {
             value: 'Places'
           }
         ],
-      }
+      },
+      validators: {
+        ip: {
+          expression: function TestValidator () { return true; },
+          message: 'Broke as a joke',
+        },
+      },
     },
     {
       key: 'custom',

@@ -15,6 +15,7 @@ import { SamPageNextService, DataStore, layoutStore} from '@gsa-sam/sam-ui-eleme
 import { filterItemModel } from '@gsa-sam/sam-ui-elements';
 import { cloneDeep } from 'lodash';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormlyFieldConfig } from '@ngx-formly/core';
 
 @Component({
   selector: 'sam-layout-demo-component',
@@ -28,6 +29,121 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   ]
 })
 export class SamLayoutDemoComponent implements OnInit {
+  /**
+   * Provide any model to formly. The key for each property
+   * corresponds to the key on each FormlyField config.
+   */
+  public model1 = {
+    fhInputText: null,
+    dateModel: [],
+    email: {
+      key: 'start',
+      value: 'start'
+    },
+    text: 'Hello World',
+    checkbox: [],
+  };
+
+  /**
+   * Array of configuration options for form controls.
+   * The key specifies the corresponding field form the model,
+   * and the type determines which UI control to use. Each
+   * UI control can be configured using templateOptions. Any
+   * valid member of the components interface can be set here
+   * (see corresponding component documentation).
+   */
+  public fields: FormlyFieldConfig[] = [
+    {
+      key: 'fhInputText',
+      type: 'text',
+      wrappers: ['filter'],
+      templateOptions: {
+        label: 'Agency',
+        id: 'agency',
+        name: 'agency'
+      }
+    },
+    {
+      key: 'email',
+      type: 'autocomplete',
+      wrappers: ['filter'],
+      templateOptions: {
+        label: 'Email Address',
+        labelText: 'Email address',
+        placeholder: 'Enter email',
+        name: 'autocomplete test',
+        id: 'unique_and_meaningful_id_value_1',
+        hint: 'Show a hint here...',
+        config: {
+          categoryProperty: 'category',
+          categoryIsSelectable: true,
+          keyValueConfig: {
+            keyProperty: 'key',
+            valueProperty: 'value',
+            subheadProperty: 'subhead'
+          }
+        },
+        allowAny: false,
+        categories: [
+          {
+            key: 'People',
+            value: 'People'
+          },
+          {
+            key: 'Places',
+            value: 'Places'
+          }
+        ],
+      },
+      validators: {
+        ip: {
+          expression: function TestValidator () { return true; },
+          message: 'Broke as a joke',
+        },
+      },
+    },
+    {
+      key: 'text',
+      type: 'text',
+      wrappers: ['filter'],
+      templateOptions: {
+        label: 'Text',
+        name: 'Text',
+        id: 'Text'
+      }
+    },
+    {
+      key: 'checkbox',
+      type: 'checkbox',
+      wrappers: ['filter'],
+      templateOptions: {
+        options: [
+          {
+            value: 'dc',
+            label: 'DC',
+            name: 'checkbox-dc'
+          },
+          {
+            value: 'ma',
+            label: 'Maryland',
+            name: 'checkbox-maryland'
+          },
+          {
+            value: 'va',
+            label: 'Virginia',
+            name: 'checkbox-virginia'
+          },
+        ],
+        name: 'my-sr-name',
+        label: 'Select a region (normal)',
+        hasSelectAll: false,
+        errorMessage: null,
+        hint: ''
+      }
+    }
+  ];
+
+
   _sampleData = SampleData;
   sampleDatabase = new SampleDatabase();
   dataSource: SampleDataSource | null;
@@ -102,7 +218,7 @@ export class SamLayoutDemoComponent implements OnInit {
     private cdr: ChangeDetectorRef
   ) {
     this.form = this._fb.group({
-      fhInputText: [''],
+      fhInputText: [],
       dateModel: []
     });
   }

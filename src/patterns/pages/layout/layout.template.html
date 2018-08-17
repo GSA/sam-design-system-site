@@ -5,30 +5,14 @@
 
     <sam-filters-wrapper [group]="form">
       <div samAccordion multi="true">
-        <sam-expansion-panel>
-          <sam-expansion-panel-header>
-            Federal Organizations
-          </sam-expansion-panel-header>
-          <!-- update with real 'Agency' filter -->
-          <input
-            class="sam transition input"
-            placeholder="Select"
-            [formControl]="form.controls.fhInputText"
-            type="text" />
-        </sam-expansion-panel>
-        <sam-expansion-panel>
-          <sam-expansion-panel-header>
-            Last Updated Date
-          </sam-expansion-panel-header>
-          <!-- update with real 'Last Updated Date' date filter -->
-          <sam-date
-            label='Last Updated Date'
-            name='date-example'
-            [formControl]="form.controls.dateModel"
-          ></sam-date>
-        </sam-expansion-panel>
+        <!-- Formly creates the Reactive form group from the
+        empty group you provide by with the values from the
+        model. Fields are used to configure the UI components -->
+        <formly-form
+          [form]="form"
+          [fields]="fields"
+          [model]="model"></formly-form>
       </div>
-
     </sam-filters-wrapper>
 
     <!-- finalize this implementation -->

@@ -74,7 +74,7 @@ const code_example = function (options) {
       [contentModel]="example1_model"
       (action)="actionHandler($event)"
     ></sam-actions>
-    
+
     <h2>Disabled State</h2>
     <sam-actions
       [contentModel]="example2_model"

@@ -13,22 +13,22 @@ import { DemoHelpers } from './demo-helpers';
 
     <!-- <form> Tag is not strictly necessary, but it is
       provided as an example -->
-    <form [formGroup]="form">
+    <sam-filters-wrapper [group]="form">
+      <div samAccordion multi="true">
+        <!-- Formly creates the Reactive form group from the
+        empty group you provide by with the values from the
+        model. Fields are used to configure the UI components -->
+        <formly-form [form]="form" [fields]="fields" [model]="model">
 
-      <!-- Formly creates the Reactive form group from the
-      empty group you provide by with the values from the
-      model. Fields are used to configure the UI components -->
-      <formly-form [form]="form" [fields]="fields" [model]="model">
+          <button type="button"
+            class="btn btn-default"
+            (click)="updateFieldsFromComponent()">
+            Submit
+          </button>
 
-        <button type="button"
-          class="btn btn-default"
-          (click)="updateFieldsFromComponent()">
-          Submit
-        </button>
-
-      </formly-form>
-
-    </form>
+        </formly-form>
+      </div>
+    </sam-filters-wrapper>
   `,
   providers: [
     {
@@ -70,7 +70,9 @@ export class SamDynamicFormComponent {
     {
       key: 'email',
       type: 'autocomplete',
+      wrappers: ['filter'],
       templateOptions: {
+        label: 'Email Address',
         labelText: 'Email address',
         placeholder: 'Enter email',
         name: 'autocomplete test',
@@ -107,8 +109,10 @@ export class SamDynamicFormComponent {
     {
       key: 'custom',
       type: 'custom-autocomplete',
+      wrappers: ['filter'],
       templateOptions: {
         labelText: 'Custom',
+        label: 'Custom',
         placeholder: 'Custom',
         name: 'autocomplete test',
         id: 'unique_and_meaningful_id_value_2',
@@ -129,6 +133,7 @@ export class SamDynamicFormComponent {
     {
       key: 'text',
       type: 'text',
+      wrappers: ['filter'],
       templateOptions: {
         label: 'Text',
         name: 'Text',
@@ -138,6 +143,7 @@ export class SamDynamicFormComponent {
     {
       key: 'checkbox',
       type: 'checkbox',
+      wrappers: ['filter'],
       templateOptions: {
         options: [
           {

@@ -28,12 +28,15 @@ import {
 } from './search/sam-front-end-components/search-result';
 import { DatePageComponent } from './date/date.component';
 import { SortArrayOfObjects } from './search/sam-front-end-components/wage-determination/sort-array-object.pipe';
+import { DynamicFormsPageComponent } from './dynamic-forms';
+import { FormlyModule } from '@ngx-formly/core';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     PagesRoutingModule,
     SamUIKitModule,
+    FormlyModule,
     CdkTableModule,
     PrototypesComponentsModule,
   ],
@@ -56,6 +59,7 @@ import { SortArrayOfObjects } from './search/sam-front-end-components/wage-deter
     SamSortComponent,
     DatePageComponent,
     SortArrayOfObjects,
+    DynamicFormsPageComponent
   ],
   providers: [
     SearchUtil,

@@ -23,7 +23,7 @@ RUN npm install tslint
 RUN npm install codelyzer
 RUN npm rebuild node-sass
 RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm/ 
-RUN npm install @gsa-sam/sam-ui-elements@r15.1 -E --no-save --production
+RUN npm install @gsa-sam/sam-ui-elements@r15.2 -E --no-save --production
 RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/GS-IAE-Npm
 
 RUN npm run lint

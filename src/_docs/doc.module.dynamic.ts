@@ -39,6 +39,7 @@ import { SamFocusDirectiveExampleComponent } from './directives/focus/component-
 import { StickyExampleComponent } from './directives/sticky/component-example';
 import { TabOutsideExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
+import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
@@ -117,6 +118,7 @@ import { CdkTableModule } from '@angular/cdk';
     StickyExampleComponent,
     TabOutsideExampleComponent,
     ButtonExampleComponent,
+    SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
@@ -186,6 +188,7 @@ import { CdkTableModule } from '@angular/cdk';
     StickyExampleComponent,
     TabOutsideExampleComponent,
     ButtonExampleComponent,
+    SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,

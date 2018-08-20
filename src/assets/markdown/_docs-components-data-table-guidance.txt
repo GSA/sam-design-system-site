@@ -3,3 +3,7 @@
 <ul>
 <li>Information needs to be displayed in a tabular format</li>
 </ul>
+<p><em>Depends on</em></p>
+<ul>
+<li>Angular Material's Component Development Kit</li>
+</ul>

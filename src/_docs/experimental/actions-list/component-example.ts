@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
-const example1_model = [
+const example1_model = `[
   {
     label: 'Share',
     icon: 'fa-share-alt'
@@ -26,9 +26,9 @@ const example1_model = [
     label: 'Toggle',
     icon: 'fa-bars'
   }
-];
+]`;
 
-const example2_model = [
+const example2_model = `[
   {
     label: 'Share',
     icon: 'fa-share-alt',
@@ -49,37 +49,27 @@ const example2_model = [
     icon: 'fa-bars',
     disabled: true
   }
-];
+]`;
 
-const code_example = function (options) {
-  return `
+
+const example = `
 <h2>Basic Example</h2>
 <sam-actions
-  [contentModel]="${options.basic}"
+  [contentModel]="${example1_model}"
+  (action)="actionHandler($event)"
 ></sam-actions>
 
 <h2>Disabled State</h2>
 <sam-actions
-  [contentModel]="${options.disabled}"
-></sam-actions>
-  `;
-};
+  [contentModel]="${example2_model}"
+  (action)="actionHandler($event)"
+></sam-actions>`;
 
 @Component({
   selector: 'doc-sam-box',
   template: `
-    <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
-    <h2>Basic Example</h2>
-    <sam-actions
-      [contentModel]="example1_model"
-      (action)="actionHandler($event)"
-    ></sam-actions>
-
-    <h2>Disabled State</h2>
-    <sam-actions
-      [contentModel]="example2_model"
-      (action)="actionHandler($event)"
-    ></sam-actions>
+    <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
+    ${example}
     </doc-template>`
 })
 export class SamActionsListComponentExampleComponent extends BaseExampleComponent implements OnInit {
@@ -88,15 +78,7 @@ export class SamActionsListComponentExampleComponent extends BaseExampleComponen
   typedoc_content = '';
   markdown= '';
 
-  example1_model = example1_model;
-  example2_model = example2_model;
-
-  example = code_example(
-    {
-      basic: this.example1_model,
-      disabled: this.example2_model
-    }
-  );
+  example = example;
 
   public base = '_docs/experimental/actions-list/';
 

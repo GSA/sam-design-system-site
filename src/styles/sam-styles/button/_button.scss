@@ -1,45 +1,214 @@
 
 
 @mixin sam-button-theme($theme) {
-
+  
 }
 
 .sam.button{
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 8.5px;
+  margin-right: 8.5px;
+  margin-bottom: 8.5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
   cursor: pointer;
-  white-space: nowrap;
   display: inline-block;
-  padding: 5px 14px;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-  background: #fff;
-  border-radius: 4px;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 600;
-  letter-spacing: .025em;
-  color: #000;
+  font-weight: 700;
+  line-height: 1;
+  padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
-  transition: all .15s ease;
-  border: none;
 }
 
-.sam.button:hover{
-  transform: translateY(-1px);
-  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-}
-
+// Primary
 .sam.button.primary{
   color: white;
-  background: #0071bc;
+  background-color: #0071bc;
 }
 
-// Attached
-.sam.button.left.attached{
-  border-radius: 0 4px 4px 0px;
-  border: none;
+.sam.button.primary:hover,
+.sam.button.primary.hover{
+  background-color: #205493;
 }
 
+.sam.button.primary:active,
+.sam.button.primary.active{
+  background-color: #112e51;
+}
+
+.sam.button.primary:focus,
+.sam.button.primary.focus{
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.sam.button.primary:disabled,
+.sam.button.primary.disabled{
+  background-color: #d6d7d9;
+  pointer-events: none;
+}
+
+.sam.button.primary.small{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+}
+
+// Secondary
+.sam.button.secondary{
+  color: #0071bc;
+  background-color: transparent;
+}
+
+.sam.button.secondary:hover,
+.sam.button.secondary.hover{
+  color: #205494;
+  background-color: transparent;
+}
+
+.sam.button.secondary:active,
+.sam.button.secondary.active{
+  color: #112e51;
+  background-color: transparent;
+}
+
+.sam.button.secondary:focus,
+.sam.button.secondary.focus{
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.sam.button.secondary:disabled,
+.sam.button.secondary.disabled{
+  color: #d6d7d9;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.sam.button.secondary.small{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+}
+
+//Secondary Inverted
+.sam.button.inverted.secondary{
+  color: rgba(255, 255, 255, 0.8);;
+  background-color: transparent;
+}
+
+.sam.button.inverted.secondary:hover,
+.sam.button.inverted.secondary.hover{
+  color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+}
+
+.sam.button.inverted.secondary:active,
+.sam.button.inverted.secondary.active{
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+}
+
+.sam.button.inverted.secondary:focus,
+.sam.button.inverted.secondary.focus{
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.sam.button.inverted.secondary:disabled,
+.sam.button.inverted.secondary.disabled{
+  color: rgba(255, 255, 255, 0.4);;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+
+// Tool - Tertiary
+.sam.button.tool{
+  color: #323a45;
+  background-color: transparent;
+}
+
+.sam.button.tool:hover,
+.sam.button.tool.hover{
+  color: #205494;
+  background-color: transparent;
+}
+
+.sam.button.tool:active,
+.sam.button.tool.active{
+  color: #112e51;
+  background-color: transparent;
+}
+
+.sam.button.tool:focus,
+.sam.button.tool.focus{
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.sam.button.tool:disabled,
+.sam.button.tool.disabled{
+  color: #d6d7d9;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.sam.button.tool.small{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+}
+
+//Tool - Tertiary Inverted
+.sam.button.inverted.tool{
+  color: rgba(255, 255, 255, 0.8);;
+  background-color: transparent;
+}
+
+.sam.button.inverted.tool:hover,
+.sam.button.inverted.tool.hover{
+  color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+}
+
+.sam.button.inverted.tool:active,
+.sam.button.inverted.tool.active{
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+}
+
+.sam.button.inverted.tool:focus,
+.sam.button.inverted.tool.focus{
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.sam.button.inverted.tool:disabled,
+.sam.button.inverted.tool.disabled{
+  color: rgba(255, 255, 255, 0.4);;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+
+
+// Legacy use "sam button secondary"
 .sam.button.link {
   box-shadow: none;
   color: #0071bc;
+  background-color: transparent;
 }
 
 .sam.button.link:hover {

@@ -41,7 +41,7 @@ const code_example = `<div class="usa-width-one-whole">
 @Component({
   selector: 'doc-accordion',
   template: `
-<doc-template [markdown]="markdown" [example]="example" [guidance]="guidance" [typedoc]="typedoc_content">
+<doc-template [markdown]="markdown" [example]="example" [guidance]="guidance" [design]="design" [typedoc]="typedoc_content">
 ` + code_example + `
 </doc-template>
 `

@@ -36,10 +36,7 @@ export class SamLayoutDemoComponent implements OnInit {
   public model1 = {
     fhInputText: null,
     dateModel: [],
-    email: {
-      key: 'start',
-      value: 'start'
-    },
+    email: { key: 'start', value: 'start' },
     text: 'Hello World',
     checkbox: [],
   };

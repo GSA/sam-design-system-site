@@ -27,7 +27,8 @@ export class PagesComponent {
     { name: 'Search Mobile', value: 'search-mobile' },
     { name: 'Report', value: 'report' },
     { name: 'Table', value: 'table' },
-    { name: 'Date', value: 'date' }
+    { name: 'Date', value: 'date' },
+    { name: 'Icon', value: 'icon' }
   ];
 
   navigateTo() {

@@ -1,6 +1,14 @@
-import { Component, ViewEncapsulation, forwardRef, ChangeDetectionStrategy, HostListener } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { faCoffee,faCaretDown,faInfo,faBook,faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+    Component
+} from '@angular/core';
+import {
+    faCoffee,
+    faCaretDown,
+    faInfo,
+    faBook,
+    faPencilAlt
+} from '@fortawesome/free-solid-svg-icons';
+
 @Component({
     selector: 'sam-icon-demo',
     templateUrl: './icon.template.html',

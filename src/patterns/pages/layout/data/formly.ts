@@ -1,0 +1,44 @@
+import { FormlyFieldConfig } from '@ngx-formly/core';
+
+/**
+ * Array of configuration options for form controls.
+ * The key specifies the corresponding field form the model,
+ * and the type determines which UI control to use. Each
+ * UI control can be configured using templateOptions. Any
+ * valid member of the components interface can be set here
+ * (see corresponding component documentation).
+ */
+export const fields: FormlyFieldConfig[] = [
+  {
+    key: 'fhInputText',
+    type: 'text',
+    wrappers: ['filter'],
+    templateOptions: {
+      label: 'Agency',
+      id: 'agency',
+      name: 'agency'
+    }
+  },
+  {
+    key: 'dateModel',
+    type: 'date',
+    wrappers: ['filter'],
+    templateOptions: {
+      name: 'date',
+      label: 'Date Modified',
+      id: 'date-modified'
+    }
+  }
+];
+
+/**
+ * Provide any model to formly. The key for each property
+ * corresponds to the key on each FormlyField config.
+ */
+export const model = {
+  fhInputText: null,
+  dateModel: null,
+  email: { key: 'start', value: 'start' },
+  text: 'Hello World',
+  checkbox: [],
+};

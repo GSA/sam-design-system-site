@@ -1,7 +1,7 @@
 import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
-import { SampleData } from './datasource';
+import { SampleData } from './data';
 
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';

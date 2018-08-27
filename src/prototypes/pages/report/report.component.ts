@@ -8,6 +8,9 @@ import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
+import { 
+  faSlidersH
+} from '@fortawesome/free-solid-svg-icons';
 
 export interface ProgramData {
   'Agency': string;
@@ -104,6 +107,7 @@ export class ReportDataSource extends DataSource<any> {
   templateUrl: 'report.template.html'
 })
 export class ReportPageComponent implements OnInit {
+  faSlidersH = faSlidersH;
   _reportData = ReportData;
   reportDatabase = new ReportDatabase();
   dataSource: ReportDataSource | null;

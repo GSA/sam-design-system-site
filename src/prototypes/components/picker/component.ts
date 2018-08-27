@@ -1,10 +1,13 @@
 import { Component, HostListener} from '@angular/core';
+import { 
+  faSearch
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   templateUrl: 'template.html'
 })
 export class PickerComponent {
-
+  faSearch = faSearch;
   showOverlay: boolean = true;
 
   data: Object[] = [

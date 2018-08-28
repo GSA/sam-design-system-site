@@ -7,7 +7,8 @@ import { TypographyComponent } from './typography.component';
 import { ColorsComponent } from './colors.component';
 import { ButtonsComponent } from './buttons.component';
 import { DocsComponent } from './docs.component';
-import { ToolsComponent } from './tools.component';
+import { LabelsComponent } from './labels.component';
+import { FormControlsComponent } from './formcontrols.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ToolsComponent } from './tools.component';
     TypographyComponent,
     ColorsComponent,
     ButtonsComponent,
-    ToolsComponent
+    LabelsComponent,
+    FormControlsComponent
   ],
   imports: [
     CommonModule,

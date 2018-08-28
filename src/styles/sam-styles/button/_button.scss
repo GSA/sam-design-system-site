@@ -57,7 +57,7 @@
 
 .sam.button.primary.small{
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -95,7 +95,7 @@
 
 .sam.button.secondary.small{
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -132,90 +132,72 @@
 }
 
 
-// Tool - Tertiary
-.sam.button.tool{
+// Tertiary
+.sam.button.tertiary{
   color: #323a45;
   background-color: transparent;
 }
 
-.sam.button.tool:hover,
-.sam.button.tool.hover{
+.sam.button.tertiary:hover,
+.sam.button.tertiary.hover{
   color: #205494;
   background-color: transparent;
 }
 
-.sam.button.tool:active,
-.sam.button.tool.active{
+.sam.button.tertiary:active,
+.sam.button.tertiary.active{
   color: #112e51;
   background-color: transparent;
 }
 
-.sam.button.tool:focus,
-.sam.button.tool.focus{
+.sam.button.tertiary:focus,
+.sam.button.tertiary.focus{
   outline: 2px dotted #aeb0b5;
   outline-offset: 3px;
   box-shadow: none;
 }
 
-.sam.button.tool:disabled,
-.sam.button.tool.disabled{
+.sam.button.tertiary:disabled,
+.sam.button.tertiary.disabled{
   color: #d6d7d9;
   background-color: transparent;
   pointer-events: none;
 }
 
-.sam.button.tool.small{
+.sam.button.tertiary.small{
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1;
 }
 
-//Tool - Tertiary Inverted
-.sam.button.inverted.tool{
+//Tertiary Inverted
+.sam.button.inverted.tertiary{
   color: rgba(255, 255, 255, 0.8);;
   background-color: transparent;
 }
 
-.sam.button.inverted.tool:hover,
-.sam.button.inverted.tool.hover{
+.sam.button.inverted.tertiary:hover,
+.sam.button.inverted.tertiary.hover{
   color: rgba(255, 255, 255, 0.9);
   background-color: transparent;
 }
 
-.sam.button.inverted.tool:active,
-.sam.button.inverted.tool.active{
+.sam.button.inverted.tertiary:active,
+.sam.button.inverted.tertiary.active{
   color: rgba(255, 255, 255, 1);
   background-color: transparent;
 }
 
-.sam.button.inverted.tool:focus,
-.sam.button.inverted.tool.focus{
+.sam.button.inverted.tertiary:focus,
+.sam.button.inverted.tertiary.focus{
   outline: 2px dotted #aeb0b5;
   outline-offset: 3px;
   box-shadow: none;
 }
 
-.sam.button.inverted.tool:disabled,
-.sam.button.inverted.tool.disabled{
+.sam.button.inverted.tertiary:disabled,
+.sam.button.inverted.tertiary.disabled{
   color: rgba(255, 255, 255, 0.4);;
   background-color: transparent;
   pointer-events: none;
-}
-
-
-
-// Legacy use "sam button secondary"
-.sam.button.link {
-  box-shadow: none;
-  color: #0071bc;
-  background-color: transparent;
-}
-
-.sam.button.link:hover {
-  transform: none;
-  color: #004370;
-}
-
-.sam.button.link:disabled {
-  color: gray;
 }

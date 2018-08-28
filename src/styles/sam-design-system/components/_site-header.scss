@@ -1,48 +1,14 @@
 .site-header{
-  padding: 1rem 0;
-  font-size: 1.8rem;
-  border-bottom: 2px solid rgba(207,215,223,.25)
+  padding-left: 15px;
+  border-bottom: 2px solid rgba(207,215,223,.25);
 }
-.site-header > .site-container {
-  display: -ms-flexbox;
+.site-header > nav {
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
 }
 
-.site-header a {
-  color: #16243A;
-  //font-weight: normal;
-  transition: color .1s;
-  white-space: nowrap;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.site-header a.active,
-.site-header a:hover {
-  color: #6e7986;
-  text-decoration: none;
-}
-
-.site-header a.text-logo{
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .site-header ul {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 0;
   list-style: none;
-}
-
-.site-header li {
-  padding: 0 2rem;
-}
-
-.site-header li:last-child {
-  padding-right: 0;
 }

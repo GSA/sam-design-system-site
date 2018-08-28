@@ -14,7 +14,7 @@ import {
 } from '@angular/animations';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { 
+import {
   faSlidersH
 } from '@fortawesome/free-solid-svg-icons';
 

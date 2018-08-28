@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { 
+import {
   faHome,
   faSearch
 } from '@fortawesome/free-solid-svg-icons';

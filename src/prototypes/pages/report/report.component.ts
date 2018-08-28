@@ -8,7 +8,7 @@ import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
-import { 
+import {
   faSlidersH
 } from '@fortawesome/free-solid-svg-icons';
 

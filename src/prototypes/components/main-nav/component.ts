@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { 
+import {
   faBars,
   faUser,
   faSearch
@@ -12,5 +12,5 @@ import {
 export class MainNavComponent {
   faBars = faBars;
   faUser = faUser;
-  faSearch = faSearch
+  faSearch = faSearch;
 }

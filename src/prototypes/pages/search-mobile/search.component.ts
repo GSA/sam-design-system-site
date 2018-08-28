@@ -16,7 +16,7 @@ import {
   animation,
   group
 } from '@angular/animations';
-
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   templateUrl: 'search.template.html',
@@ -32,7 +32,7 @@ import {
   ]
 })
 export class SearchMobileComponent {
-
+  faFilter = faFilter;
   filterOptions = false;
   clicked = 0;
   filterState = 'close';

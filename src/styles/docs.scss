@@ -105,6 +105,8 @@ pre[class*="language-"] {
 
 .doc-examples{
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
     border: 2px solid #e8e8e8;
     max-width: 1080px;
     border-radius: 2px;
@@ -114,14 +116,6 @@ pre[class*="language-"] {
     }
     .usa-width-one-whole:last-child{
         border-bottom: none;
-    }
-}
-
-.doc-page{
-    display: flex;
-    margin-bottom: 30px;
-    .doc-main{
-        flex-grow: 1;
     }
 }
 

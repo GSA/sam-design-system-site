@@ -4,7 +4,8 @@ import { TypographyComponent } from './typography.component';
 import { ColorsComponent } from './colors.component';
 import { ButtonsComponent } from './buttons.component';
 import { DocsComponent } from './docs.component';
-import { ToolsComponent } from './tools.component';
+import { LabelsComponent } from './labels.component';
+import { FormControlsComponent } from './formcontrols.component';
 
 const stylesRoutes: Routes = [
   {
@@ -24,8 +25,12 @@ const stylesRoutes: Routes = [
         component: ButtonsComponent
       },
       {
-        path: 'tools',
-        component: ToolsComponent
+        path: 'labels',
+        component: LabelsComponent
+      },
+      {
+        path: 'form-controls',
+        component: FormControlsComponent
       }
     ]
   }

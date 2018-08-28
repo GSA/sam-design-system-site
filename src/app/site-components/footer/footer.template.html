@@ -1,20 +1,25 @@
 <footer class="site-footer">
-  <nav class="site-container">
+  <nav>
     <ul>
       <li>
-        <a [routerLink]="['/']">Home</a>
+        <a class="sam button small secondary" [routerLink]="['/patterns/latest/home']" routerLinkActive="active">
+          Patterns
+        </a>
       </li>
       <li>
-        <a [routerLink]="['/patterns/latest/home']" routerLinkActive="active">Patterns</a>
+        <a  class="sam button small secondary" [routerLink]="['/prototypes']" routerLinkActive="active">
+          Prototypes
+        </a>
       </li>
       <li>
-          <a [routerLink]="['/prototypes']" routerLinkActive="active">Prototypes</a>
+        <a  class="sam button small secondary" [routerLink]="['/docs/overview/getting-started']" routerLinkActive="active">
+          Documentation
+        </a>
       </li>
       <li>
-        <a [routerLink]="['/overview/getting-started']" routerLinkActive="active">Documentation</a>
-      </li>
-      <li>
-        <a [routerLink]="['/overview/contribute']" routerLinkActive="active">Contribute</a>
+        <a  class="sam button small secondary" [routerLink]="['/styles/colors']" routerLinkActive="active">
+          Styles
+        </a>
       </li>
     </ul>
   </nav>

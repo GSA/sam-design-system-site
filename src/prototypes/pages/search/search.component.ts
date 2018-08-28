@@ -14,6 +14,9 @@ import {
 } from '@angular/animations';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import {
+  faSlidersH
+} from '@fortawesome/free-solid-svg-icons';
 
 const listItems = {
   state: {
@@ -210,6 +213,7 @@ export class SearchPageComponent
   filtersDrawer = 'open';
   selectedDomain = 'All Award Data';
   filterSlide: string;
+  faSlidersH = faSlidersH;
 
   public listData = listItems;
   public helpText: string;

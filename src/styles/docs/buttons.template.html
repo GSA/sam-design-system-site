@@ -42,9 +42,8 @@
     <h2 class="sam heading">Secondary Action</h2>
     <p>
       They represent useful, but not necessary actions the user may want to take.
-      Generally, these buttons are represented by an icon and/or related term. 
-      Examples include actions such as '<em>Edit</em>', '<em>Subscribe</em>', 
-      '<em>Favorite</em>', or '<em>Share</em>'.
+      Examples include actions such as '<em>Next</em>', '<em>Cancel</em>', or 
+      '<em>Clear</em>'.
     </p>
     
     <div class="usa-grid doc-examples">
@@ -72,22 +71,71 @@
         <button class="sam button secondary" type="button">Normal</button>
         <button class="sam button secondary small" type="button">Small</button>
         <sam-code-example language="html" [code]="button_secondary_sizes_markup"></sam-code-example>
+        
+        <h3 class="sam heading">Icons</h3>
+        <button class="sam button secondary" type="button">
+          <span class="fa fa-user" aria-hidden="true"></span>
+          User
+        </button>
+        <button class="sam button secondary small" type="button">
+          <span class="fa fa-user" aria-hidden="true"></span>
+          User
+        </button>
+        <sam-code-example language="html" [code]="button_icon_sizes_markup"></sam-code-example>
       </div>
     </div>
     
-    <h2 class="sam heading">Icon Buttons</h2>
+    <h2 class="sam heading">Tertiary Action</h2>
+    <p>
+      Generally used for page actions or tools. These buttons are represented by 
+      an icon and/or related term. Examples include actions such as '<em>Download</em>', 
+      '<em>Subscribe</em>', '<em>Favorite</em>', or '<em>Share</em>'.
+    </p>
     
-    <div class="doc-examples">
-      <button class="sam button secondary" type="button">
-        <span class="fa fa-user" aria-hidden="true"></span>
-        User
-      </button>
-      <button class="sam button secondary small" type="button">
-        <span class="fa fa-user" aria-hidden="true"></span>
-        User
-      </button>
+    <div class="usa-grid doc-examples">
+      <div class="usa-width-one-whole">
+        <h3 class="sam heading">States</h3>
+        <button class="sam button tertiary" type="button">Default</button>
+        <button class="sam button tertiary hover" type="button">Hover</button>
+        <button class="sam button tertiary active" type="button">Active</button>
+        <button class="sam button tertiary focus" type="button">Focus</button>
+        <button class="sam button tertiary disabled" type="button" disabled>Disabled</button>
+        <sam-code-example language="html" [code]="button_tertiary_markup"></sam-code-example>
+        
+        <h3 class="sam heading">Dark Background</h3>
+        
+        <div class="doc-dark-background">
+          <button class="sam button inverted tertiary" type="button">Default</button>
+          <button class="sam button inverted tertiary hover" type="button">Hover</button>
+          <button class="sam button inverted tertiary active" type="button">Active</button>
+          <button class="sam button inverted tertiary focus" type="button">Focus</button>
+          <button class="sam button inverted tertiary disabled" type="button" disabled>Disabled</button>
+        </div>
+        <sam-code-example language="html" [code]="button_tertiary_dark_markup"></sam-code-example>
+        
+        
+        <h3 class="sam heading">Sizes</h3>
+        <button class="sam button tertiary" type="button">Normal</button>
+        <button class="sam button tertiary small" type="button">Small</button>
+        <sam-code-example language="html" [code]="button_tertiary_sizes_markup"></sam-code-example>
+        
+        <h3 class="sam heading">Icons</h3>
+        <button class="sam button tertiary" type="button">
+          <span class="fa fa-download" aria-hidden="true"></span>
+          Download
+        </button>
+        <button class="sam button tertiary" type="button">
+          <span class="fa fa-share-alt" aria-hidden="true"></span>
+          Share
+        </button>
+        <button class="sam button tertiary" type="button">
+          <span class="fa fa-save" aria-hidden="true"></span>
+          Save
+        </button>
+        <sam-code-example language="html" [code]="button_tertiary_icons_markup"></sam-code-example>
+        
+      </div>
     </div>
-    <sam-code-example language="html" [code]="button_icon_sizes_markup"></sam-code-example>
     
   </div>
 </div>

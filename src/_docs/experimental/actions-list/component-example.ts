@@ -51,6 +51,26 @@ const example2_model = `[
   }
 ]`;
 
+const example3_model = `[
+  {
+    label: 'Share',
+    icon: 'fa-share-alt',
+    showMore: true
+  },
+  {
+    label: 'Download',
+    icon: 'fa-download'
+  },
+  {
+    label: 'Save',
+    icon: 'fa-cloud'
+  },
+  {
+    label: 'Toggle',
+    icon: 'fa-bars',
+    showMore: true
+  }
+]`;
 
 const example = `
 <h2>Basic Example</h2>
@@ -62,6 +82,12 @@ const example = `
 <h2>Disabled State</h2>
 <sam-actions
   [contentModel]="${example2_model}"
+  (action)="actionHandler($event)"
+></sam-actions>
+
+<h2>With 'more' dropdown</h2>
+<sam-actions
+  [contentModel]="${example3_model}"
   (action)="actionHandler($event)"
 ></sam-actions>`;
 

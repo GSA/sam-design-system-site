@@ -179,16 +179,6 @@ export const ROUTES: Routes = [
     component: StaticPageComponent,
     data: { markdownfile: '_static/patterns/layout.md' }
   },
-  {
-    path: 'styles/colors',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/styles/Colors.md' }
-  },
-  {
-    path: 'styles/typography',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/styles/Typography.md' }
-  },
 ];
 export const routing = RouterModule.forChild(ROUTES);
 

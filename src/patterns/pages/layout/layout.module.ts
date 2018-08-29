@@ -6,6 +6,7 @@ import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
 
 import { SamLayoutDemoComponent } from './layout.component';
 import { FormlyModule } from '@ngx-formly/core';
+import { SamFilterModule } from '@gsa-sam/sam-ui-elements';
 
 @NgModule({
   imports: [
@@ -13,13 +14,14 @@ import { FormlyModule } from '@ngx-formly/core';
     FormsModule,
     ReactiveFormsModule,
     SamUIKitModule,
-    FormlyModule
+    FormlyModule,
+    SamFilterModule
   ],
   declarations: [
-    SamLayoutDemoComponent
+    SamLayoutDemoComponent,
   ],
   exports: [
-    SamLayoutDemoComponent
+    SamLayoutDemoComponent,
   ]
 })
 export class LayoutModule {}

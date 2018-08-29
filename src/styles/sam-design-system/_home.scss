@@ -1,3 +1,20 @@
+/**********************************************
+Trying Gray Background (Pending Approval)
+***********************************************/
+
+body{
+  background-color: #f1f1f1;
+  .site-header{
+    border-bottom: 2px solid #ececec;
+    background-color: white;
+  }
+  .mat-sidenav-container, .mat-sidenav{
+    background-color: transparent;
+  }
+  // sam-toolbar .menu{
+  //   background-color: white;
+  // }
+}
 
 /**********************************************
 HOME PAGE
@@ -12,6 +29,9 @@ section.home{
   max-width: 800px;
   color: white;
   padding: 80px 15px 50px 15px;
+  .heading, p {
+    text-align: center;
+  }
   a{
     color: white;
   }
@@ -56,7 +76,3 @@ section.home.background.blue{
     background-color:#323a45;
   }
 } 
-
-.center{
-  text-align: center;
-}

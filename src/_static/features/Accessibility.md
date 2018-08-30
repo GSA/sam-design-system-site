@@ -11,4 +11,4 @@ Follow best practices when developing new components.
 
 ## 508 compliance design approach
 
-Design components that take accessibility into account.
+Designed components that take accessibility into account. No component should be designed in ways that are incompatible for accessibility tools.

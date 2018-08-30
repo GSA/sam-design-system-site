@@ -10,28 +10,37 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
-
+import {
+  faHome,
+  faUser,
+  faSearch,
+  faCog,
+  faVideo,
+  faComment,
+  faNewspaper,
+  faBook
+} from '@fortawesome/free-solid-svg-icons';
 import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
 const code_example_1 = `
-<sam-icon name="home"></sam-icon>
-<sam-icon name="user"></sam-icon>
-<sam-icon name="search"></sam-icon>
-<sam-icon name="cog"></sam-icon>
-<sam-icon name="video"></sam-icon>
-<sam-icon name="comment"></sam-icon>
-<sam-icon name="newspaper"></sam-icon>
-<sam-icon name="book"></sam-icon>
+<sam-icon [icon]="faHome"></sam-icon>
+<sam-icon [icon]="faUser" size="lg"></sam-icon>
+<sam-icon [icon]="faSearch" size="2x"></sam-icon>
+<sam-icon [icon]="faCog" size="4x"></sam-icon>
+<sam-icon [icon]="faVideo" size="8x"></sam-icon>
+<sam-icon [icon]="faComment" fixedWidth="true"></sam-icon>
+<sam-icon [icon]="faNewspaper" rotate="90"></sam-icon>
+<sam-icon [icon]="faBook" spin="true"></sam-icon>
 `;
 
 const code_example_2 = `
-<sam-icon name="user"></sam-icon>
+<sam-icon [icon]="faUser"></sam-icon>
 `;
 
 const code_example_3 = `
-<sam-icon name="search"></sam-icon>
+<sam-icon [icon]="faSearch"></sam-icon>
 `;
 
 @Component({
@@ -63,7 +72,14 @@ export class SamIconComponentExampleComponent extends BaseExampleComponent imple
   example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
-
+  faHome = faHome;
+  faUser = faUser;
+  faSearch = faSearch;
+  faCog = faCog;
+  faVideo = faVideo;
+  faComment = faComment;
+  faNewspaper = faNewspaper;
+  faBook = faBook;
 
   public base = '_docs/experimental/icon/';
 

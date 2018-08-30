@@ -1,1 +1,2 @@
 <h1>SamIconComponent</h1>
+<p>This component uses font-awesome's SVG core to provide an alternate wrapper for Angular projects.</p>

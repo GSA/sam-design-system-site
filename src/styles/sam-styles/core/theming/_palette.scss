@@ -61,23 +61,19 @@ $uswds-warm-gray: (
   500: #494440, //gray-warm-dark
 );
 
-
-$divider:               map-get($map: $uswds-cool-gray, $key: 200);
-$dark-secondary-text:   rgba(black, 0.54);
-
 // Foreground palette for light themes.
 $sam-theme-foreground: (
-  base:             black,
-  divider:          $divider,
-  text:             rgba(black, 0.7),
-  headers:          map-get($map: $uswds-cool-gray, $key: 600),
-  secondary-text:   $dark-secondary-text,
+  text:         map-get($map: $uswds-cool-gray, $key: 700),
+  light-text:   map-get($map: $uswds-cool-gray, $key: 300),
+  link:         map-get($map: $uswds-blue, $key: 500),
+  headers:      map-get($map: $uswds-cool-gray, $key: 600),
+  divider:      map-get($map: $uswds-cool-gray, $key: 200),
 );
 
 // Background palette for light themes.
 $sam-theme-background: (
-  card:         #ffffff,
-  hover:        rgba(black, 0.04),
-  dialog:       white,
-  background:   map-get($map: $uswds-cool-gray, $key: 200)
+  accordion:         white,
+  accordion-hover:   map-get($map: $uswds-cool-gray, $key: 100),
+  sidenav:           white,
+  table:             white
 );

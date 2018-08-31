@@ -6,8 +6,8 @@
   $foreground: map-get($theme, foreground);
 
   .mat-expansion-panel {
-    background: sam-color($background, card);
-    color: sam-color($foreground, base);
+    background: sam-color($background, accordion);
+    color: sam-color($foreground, text);
   }
 
   .mat-action-row {
@@ -16,17 +16,17 @@
 
   .mat-expansion-panel-header:focus, 
   .mat-expansion-panel-header:hover {
-    background: sam-color($background, hover);
+    background: sam-color($background, accordion-hover);
   }
   .mat-expansion-panel-header-title {
     color: sam-color($foreground, text);
   }
 
   .mat-expansion-panel-header-description {
-    color: sam-color($foreground, secondary-text);
+    color: sam-color($foreground, light-text);
   }
 
   .mat-expansion-indicator::after {
-    color: sam-color($foreground, secondary-text);
+    color: sam-color($foreground, light-text);
   }
 }

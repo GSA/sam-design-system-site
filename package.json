@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "npm run init && ng serve --preserve-symlinks",
     "start:aot": "npm run init && ng serve --preserve-symlinks --aot",
-    "build": "npm run init && ng build --preserve-symlinks --prod --stats-json",
+    "build": "npm run init && NODE_OPTIONS=--max-old-space-size=3072 ng build --preserve-symlinks --prod --stats-json",
     "test": "npm run init && ng test --single-run --code-coverage",
     "test:watch": "npm run init && ng test --code-coverage",
     "lint": "ng lint",

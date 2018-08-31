@@ -35,6 +35,7 @@ import { TabOutsideExampleComponent } from './directives/tab-outside/component-e
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
+import { ButtonNextExampleComponent } from './experimental/button-next/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
@@ -105,6 +106,7 @@ export const ROUTES: Routes = [
   { path: 'elements/button', component: ButtonExampleComponent },
   { path: 'experimental/actions-list', component: SamActionsListComponentExampleComponent },
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
+  { path: 'experimental/button-next', component: ButtonNextExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
   { path: 'experimental/dollar', component: SamDollarComponentExampleComponent },
   { path: 'experimental/filter-drawer', component: SamFilterDrawerComponentExampleComponent },

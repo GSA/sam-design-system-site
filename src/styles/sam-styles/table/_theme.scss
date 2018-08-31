@@ -7,7 +7,7 @@
   $foreground: map-get($theme, foreground);
 
   .sam-table {
-    background: sam-color($background, 'card');
+    background: sam-color($background, table);
   }
 
   sam-row, sam-header-row, sam-footer-row,

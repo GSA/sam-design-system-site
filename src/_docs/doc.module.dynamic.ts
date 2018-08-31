@@ -41,6 +41,7 @@ import { TabOutsideExampleComponent } from './directives/tab-outside/component-e
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
+import { ButtonNextExampleComponent } from './experimental/button-next/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
@@ -120,6 +121,7 @@ import { CdkTableModule } from '@angular/cdk';
     ButtonExampleComponent,
     SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,
+    ButtonNextExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFilterDrawerComponentExampleComponent,
@@ -190,6 +192,7 @@ import { CdkTableModule } from '@angular/cdk';
     ButtonExampleComponent,
     SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,
+    ButtonNextExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFilterDrawerComponentExampleComponent,

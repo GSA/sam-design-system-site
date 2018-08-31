@@ -79,6 +79,7 @@
  */
 
 @import '~prismjs/themes/prism';
+@import '~prismjs/plugins/previewers/prism-previewers';
 
 code[class*="language"] {
     font-size: 13px;

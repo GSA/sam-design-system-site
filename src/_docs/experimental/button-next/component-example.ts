@@ -23,17 +23,12 @@ const code_example_disabled = `
   template: `
 
   <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
-  
-  <h1 class="sam heading">
-    <span class="intro">Documentation</span>
-    Buttons
-  </h1>
 
-  <h2 class="sam heading">Actions</h2>
+  <h2 class="sam heading">Primary Action</h2>
 
   <div class="usa-grid doc-examples">
     <div class="usa-width-one-whole">
-    
+
       <h3 class="sam heading">Primary</h3>
       <sam-code-example language="html" [code]="example_1">
       ` + code_example_1 + `
@@ -54,34 +49,42 @@ const code_example_disabled = `
     </div>
   </div>
 
-  
+  <h2 class="sam heading">Secondary Action</h2>
+  <div class="usa-grid doc-examples">
+    <div class="usa-width-one-whole">
+      <sam-code-example language="html" [code]="example_2">
+      ` + code_example_2 + `
+      </sam-code-example>
+    </div>
+  </div>
 
-  
-
-
-  <h3 class="sam heading">Secondary</h3>
-  <sam-code-example language="html" [code]="example_2">
-  ` + code_example_2 + `
-  </sam-code-example>
-
-  <h3 class="sam heading">Tertiary</h3>
-  <sam-code-example language="html" [code]="example_3">
-  ` + code_example_3 + `
-  </sam-code-example>
+  <h2 class="sam heading">Tertiary Action</h2>
+  <div class="usa-grid doc-examples">
+    <div class="usa-width-one-whole">
+      <sam-code-example language="html" [code]="example_3">
+      ` + code_example_3 + `
+      </sam-code-example>
+    </div>
+  </div>
 
   <h2 class="sam heading">Sizes</h2>
-
-  <sam-code-example language="html" [code]="example_4">
-  ` + code_example_4 + `
-  </sam-code-example>
+  <div class="usa-grid doc-examples">
+    <div class="usa-width-one-whole">
+      <sam-code-example language="html" [code]="example_4">
+      ` + code_example_4 + `
+      </sam-code-example>
+    </div>
+  </div>
 
   <h2 class="sam heading">States</h2>
-
-  <h3 class="sam heading">Disabled</h3>
-  <sam-code-example language="html" [code]="example">
-  ` + code_example_disabled + `
-  </sam-code-example>
-
+  <div class="usa-grid doc-examples">
+    <div class="usa-width-one-whole">
+      <h3 class="sam heading">Disabled</h3>
+      <sam-code-example language="html" [code]="example">
+      ` + code_example_disabled + `
+      </sam-code-example>
+    </div>
+  </div>
   </doc-template>
   `
 })
@@ -97,7 +100,7 @@ export class ButtonNextExampleComponent extends BaseExampleComponent implements 
 
   example = code_example_disabled.trim();
 
-  public base = '_docs/elements/button-next/';
+  public base = '_docs/experimental/button-next/';
 
   constructor(
     _http: Http,

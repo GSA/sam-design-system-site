@@ -1,16 +1,28 @@
 .sam.label:not(.input){
-  background-color: #e8e8e8;
+  background-color: #dce4ef;
   font-size: 13px;
   font-weight: 600;
   padding: 2px 10px;
   border-radius: 2px;
   color: #212121;
   border: 1px solid #c7c7c7;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.sam.label .sam.button{
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.sam.label .normal.weight{
+  font-weight: 400;
 }
 
 .sam.status.label{
   font-size: 14px;
-  display: inline-block;
   text-transform: uppercase;
   background-color: transparent;
   line-height: 20px;

@@ -1,0 +1,35 @@
+// horizontal scroll
+.sam-tabs-next-wrapper{
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+.sam-tabs-next {
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 18px;
+    box-sizing: content-box;
+}
+
+.sam-ui.secondary.pointing.menu.sam-tabs-next{
+    padding-top: 1px;
+    padding-bottom: 5px;
+    height: 60px;
+
+    .item{
+        margin-right:5px;
+        padding: 15px 30px;
+        border: 1px solid #ccc;
+        background: transparent;
+        color: #5B616B;
+
+        &.active{
+            background-color: #5B616B;
+            color:white;
+        }
+        &:last-child{
+            margin-right:0px;
+        }
+    }   
+}

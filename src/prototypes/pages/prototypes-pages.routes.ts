@@ -9,6 +9,7 @@ import { ReportPageComponent } from './report/report.component';
 import { TablePageComponent } from './table/table.component';
 import { DatePageComponent } from './date/date.component';
 import { DynamicFormsPageComponent } from './dynamic-forms';
+import { TabsDemoComponent } from './tabs/tabs-demo.component';
 
 const PageRoutes: Routes = [
   {
@@ -42,6 +43,10 @@ const PageRoutes: Routes = [
       {
         path: 'dynamic-form',
         component: DynamicFormsPageComponent
+      },
+      {
+        path: 'tabs',
+        component: TabsDemoComponent
       }
     ]
   }

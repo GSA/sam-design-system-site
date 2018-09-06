@@ -1,0 +1,13 @@
+// horizontal scroll
+.sam-tabs-next-wrapper{
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+.sam-tabs-next {
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 18px;
+    box-sizing: content-box;
+}

@@ -30,6 +30,7 @@ import { DatePageComponent } from './date/date.component';
 import { SortArrayOfObjects } from './search/sam-front-end-components/wage-determination/sort-array-object.pipe';
 import { DynamicFormsPageComponent } from './dynamic-forms';
 import { FormlyModule } from '@ngx-formly/core';
+import { TabsDemoComponent } from './tabs/tabs-demo.component';
 
 @NgModule({
   imports: [
@@ -60,7 +61,8 @@ import { FormlyModule } from '@ngx-formly/core';
     SamSortComponent,
     DatePageComponent,
     SortArrayOfObjects,
-    DynamicFormsPageComponent
+    DynamicFormsPageComponent,
+    TabsDemoComponent
   ],
   providers: [
     SearchUtil,

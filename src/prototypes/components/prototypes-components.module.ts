@@ -25,6 +25,7 @@ import { SamExperimentalDataTableModule } from './table';
 import { DatepickerProtoModule } from './date/picker/picker.module';
 import { SamDynamicFormComponent, CustomFormlyDemoModule } from './dynamic-form';
 import { FormlyModule } from '@ngx-formly/core';
+import { SamTabsNextModule } from './tabs';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { FormlyModule } from '@ngx-formly/core';
     DatepickerProtoModule,
     ReactiveFormsModule,
     FormlyModule,
-    CustomFormlyDemoModule
+    CustomFormlyDemoModule,
+    SamTabsNextModule
   ],
   declarations: [
     ComponentsComponent,
@@ -63,6 +65,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamExperimentalDataTableModule,
     DatepickerProtoModule,
     SamDynamicFormComponent,
+    SamTabsNextModule
   ]
 })
 export class PrototypesComponentsModule {}

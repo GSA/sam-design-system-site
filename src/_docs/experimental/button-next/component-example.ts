@@ -5,6 +5,10 @@ import { BaseExampleComponent } from '../../baseexample.component';
 import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
+import {
+  faHome,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
 
 const code_example_1 = `<sam-button-next action="primary">Create</sam-button-next>`;
 const code_example_1_2 = `<sam-button-next action="submit">Submit</sam-button-next>`;
@@ -13,6 +17,33 @@ const code_example_3 = `<sam-button-next action="tertiary">Share</sam-button-nex
 const code_example_4 = `
 <sam-button-next action="primary">Normal</sam-button-next>
 <sam-button-next action="primary" size="small">Small</sam-button-next>`;
+const code_example_5 = `
+<sam-button-next action="primary">
+  <sam-icon [icon]="faHome"></sam-icon>
+  Home
+</sam-button-next>
+<sam-button-next action="primary" size="small">
+  <sam-icon [icon]="faUser"></sam-icon>
+  User
+</sam-button-next>
+
+<sam-button-next action="secondary">
+  <sam-icon [icon]="faHome"></sam-icon>
+  Home
+</sam-button-next>
+<sam-button-next action="secondary" size="small">
+  <sam-icon [icon]="faUser"></sam-icon>
+  User
+</sam-button-next>
+
+<sam-button-next action="tertiary">
+  <sam-icon [icon]="faHome"></sam-icon>
+  Home
+</sam-button-next>
+<sam-button-next action="tertiary" size="small">
+  <sam-icon [icon]="faUser"></sam-icon>
+  User
+</sam-button-next>`;
 const code_example_disabled = `
 <sam-button-next isDisabled="true" action="primary">Button</sam-button-next>
 <sam-button-next isDisabled="true" action="secondary">Button</sam-button-next>
@@ -76,6 +107,15 @@ const code_example_disabled = `
     </div>
   </div>
 
+  <h2 class="sam heading">Icons</h2>
+  <div class="usa-grid doc-examples">
+    <div class="usa-width-one-whole">
+      <sam-code-example language="html" [code]="example_5">
+      ` + code_example_5 + `
+      </sam-code-example>
+    </div>
+  </div>
+
   <h2 class="sam heading">States</h2>
   <div class="usa-grid doc-examples">
     <div class="usa-width-one-whole">
@@ -97,8 +137,11 @@ export class ButtonNextExampleComponent extends BaseExampleComponent implements 
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
   example_4 = code_example_4.trim();
-
+  example_5 = code_example_5.trim();
   example = code_example_disabled.trim();
+
+  faHome = faHome;
+  faUser = faUser;
 
   public base = '_docs/experimental/button-next/';
 

@@ -3,34 +3,59 @@
     height: 50px;
     width: 100%;
     overflow:hidden;
-}
-.sam-tabs-next {
-    height: 100%;
-    width: 100%;
-    overflow-x: scroll;
-    padding-bottom: 18px;
-    box-sizing: content-box;
-}
-
-.sam-ui.secondary.pointing.menu.sam-tabs-next{
-    padding-top: 1px;
-    padding-bottom: 5px;
-    height: 60px;
-
-    .item{
-        margin-right:5px;
-        padding: 10px 30px;
-        height: 25px;
-        border: 1px solid #ccc;
-        background: transparent;
-        color: #5B616B;
-
-        &.active{
-            background-color: #5B616B;
-            color:white;
+    .sam-ui.secondary.pointing.menu.sam-tabs-next{
+        height: 100%;
+        width: 100%;
+        overflow-x: scroll;
+        box-sizing: content-box;
+        padding-top: 1px;
+        padding-bottom: 5px;
+        height: 60px;
+        position:relative;  
+        
+        &.scrolling{
+            width: calc(100% - 36px);
+            margin-left:18px;
         }
-        &:last-child{
-            margin-right:0px;
+
+        .item{
+            margin-right:5px;
+            padding: 10px 30px;
+            height: 25px;
+            border: 1px solid #ccc;
+            background: transparent;
+            color: #5B616B;
+            
+            &.active{
+                background-color: #205593;
+                color:white;
+            }
+            &:last-of-type{
+                margin-right:0px;
+            }
         }
-    }   
+
+        .tab-prev-btn-wrapper{
+            position: absolute;
+            z-index: 300;
+            left: -18px;
+            height: 50px;
+            line-height: 50px;
+            display:block;
+        }
+        
+        .tab-next-btn-wrapper{
+            position: absolute;
+            z-index: 300;
+            right: 0;
+            height: 50px;
+            line-height: 50px;
+            display:block;
+        }
+
+        .tab-nav-btn{
+            display:block;
+            position: fixed;
+        }
+    }
 }

@@ -13,6 +13,10 @@ import {
   OnChanges,
   ViewChild
 } from '@angular/core';
+import {
+  faArrowCircleLeft,
+  faArrowCircleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 /**
  * The <sam-tab> component contains the content for a tab
@@ -57,9 +61,15 @@ export class SamTabNextComponent {
   selector: 'sam-tabs-next',
   template: `
   <div class="sam-tabs-next-wrapper">
-    <div class="sam-tabs-next sam-ui menu"
-      [ngClass]="[themes[theme],size]"
+    <div #tabsContent class="sam-tabs-next sam-ui menu"
+      [ngClass]="[themes[theme],size,scrolling]"
       *ngIf="tabs && tabs.length">
+      <div *ngIf="scrollable" class="tab-prev-btn-wrapper">
+        <div
+          (mousedown)="scrollMouseDown('left')"
+          (mouseup)="scrollMouseUp()"
+          class="tab-nav-btn tab-prev-btn"><sam-icon [icon]="faArrowCircleLeft"></sam-icon></div>
+      </div>
       <ng-container *ngFor="let tab of tabs; let i = index">
         <a class="item" #tabEl (click)="selectTab(tab, i)"
           [ngClass]="{ active: tab.active, disabled: tab.disabled }"
@@ -74,6 +84,12 @@ export class SamTabNextComponent {
           *ngIf="tab.float">
         </button>
       </ng-container>
+      <div *ngIf="scrollable" class="tab-next-btn-wrapper">
+        <div
+          (mousedown)="scrollMouseDown('right')"
+          (mouseup)="scrollMouseUp()"
+          class="tab-nav-btn tab-next-btn"><sam-icon [icon]="faArrowCircleRight"></sam-icon></div>
+      </div>
     </div>
   </div>
   <ng-content></ng-content>
@@ -82,6 +98,7 @@ export class SamTabNextComponent {
 export class SamTabsNextComponent implements AfterContentInit, OnChanges {
   @ContentChildren(SamTabNextComponent) tabs: QueryList<SamTabNextComponent>;
   @ViewChildren('tabEl') tabEls: QueryList<ElementRef>;
+  @ViewChild('tabsContent') tabsContent: ElementRef;
   /**
   * Set tabs size
   */
@@ -135,6 +152,10 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
     separate: 'separate tabular',
   };
 
+  scrollable = false;
+  scrolling = '';
+  faArrowCircleLeft = faArrowCircleLeft;
+  faArrowCircleRight = faArrowCircleRight;
 
   constructor(private cdr: ChangeDetectorRef) {}
 
@@ -176,13 +197,19 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
         this.selectTab(this.tabs.first, 0);
       }
     });
+    
+  }
+
+  ngAfterViewInit(){
+    if(this.tabsContent.nativeElement.scrollWidth > this.tabsContent.nativeElement.clientWidth){
+      this.scrollable = true;
+      this.scrolling = this.scrollable ? 'scrolling' : '';
+      this.cdr.detectChanges();
+    }
   }
 
   selectTab(tab: SamTabNextComponent, index) {
-      this.tabEls.toArray()[index].nativeElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest'
-      });
+      this.scrollToEl(this.tabEls.toArray()[index].nativeElement);
       this.tabs.forEach(t => t.active = false);
       tab.active = true;
       this.active = index;
@@ -190,5 +217,87 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
       this.activeChange.emit(this.active);
       this.currentSelectedTab.emit(tab);
       this.tabChange.emit(tab);
+  }
+
+  timeInterval;
+  scrollMouseDown(direction){
+    let comp = this;
+    if(direction == 'left'){
+      comp.scrollLeft();
+    } else {
+      comp.scrollRight();
+    }
+    this.timeInterval=setInterval(function(){
+      if(direction == 'left'){
+        comp.scrollLeft();
+      } else {
+        comp.scrollRight();
+      }
+    },800);
+  }
+  scrollMouseUp(){
+    clearInterval(this.timeInterval);
+  }
+  scrollLeft(){ 
+    let found = false;
+    let elArr = this.tabEls.toArray();
+    for(let idx in elArr){
+      let item = elArr[idx];
+      let prevItem = parseInt(idx)!=0 ? elArr[parseInt(idx)-1] : null;
+      let isElVisible = this.isScrolledIntoView(item.nativeElement);
+      let isPrevElVisible = prevItem ? this.isScrolledIntoView(prevItem.nativeElement) : null;
+      if(isElVisible && !isPrevElVisible && prevItem){
+        found = true;
+        this.scrollToEl(prevItem.nativeElement);
+        break;
+      }
+    }
+    if(!found && elArr.length > 0){
+      this.scrollToEl(elArr[0].nativeElement);
+    }
+  }
+
+  scrollRight(){
+    let trueFlag = false;
+    let found = false;
+    let elArr = this.tabEls.toArray();
+    for(let item of elArr){
+      let isElVisible = this.isScrolledIntoView(item.nativeElement);
+      if(isElVisible){
+        trueFlag = true;
+      }
+      if(!isElVisible && trueFlag){
+        found = true;
+        //scroll to this item
+        this.scrollToEl(item.nativeElement);
+        break;
+      }
+    }
+    if(!found && elArr.length > 0){
+      this.scrollToEl(elArr[elArr.length-1].nativeElement)
+    }
+    this.tabsContent.nativeElement.focus();
+  } 
+
+  isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemLeft = rect.left;
+    var elemRight = rect.right;
+    var parentRect = el.parentNode.getBoundingClientRect();
+    var parentElemLeft = parentRect.left;
+    var parentElemRight = parentRect.right;
+    //console.log(el, elemLeft,elemRight, parentElemLeft, parentElemRight)
+    // Only completely visible elements return true:
+    var isVisible = (elemLeft >= parentElemLeft) && (elemRight <= parentElemRight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
+  }
+
+  scrollToEl(el){
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
   }
 }

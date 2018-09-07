@@ -11,7 +11,8 @@ import {
   ViewChildren,
   ElementRef,
   OnChanges,
-  ViewChild
+  ViewChild,
+  AfterViewInit
 } from '@angular/core';
 import {
   faArrowCircleLeft,
@@ -95,7 +96,7 @@ export class SamTabNextComponent {
   <ng-content></ng-content>
   `
 })
-export class SamTabsNextComponent implements AfterContentInit, OnChanges {
+export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterViewInit {
   @ContentChildren(SamTabNextComponent) tabs: QueryList<SamTabNextComponent>;
   @ViewChildren('tabEl') tabEls: QueryList<ElementRef>;
   @ViewChild('tabsContent') tabsContent: ElementRef;
@@ -156,6 +157,7 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
   scrolling = '';
   faArrowCircleLeft = faArrowCircleLeft;
   faArrowCircleRight = faArrowCircleRight;
+  timeInterval;
 
   constructor(private cdr: ChangeDetectorRef) {}
 
@@ -197,11 +199,11 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
         this.selectTab(this.tabs.first, 0);
       }
     });
-    
+
   }
 
-  ngAfterViewInit(){
-    if(this.tabsContent.nativeElement.scrollWidth > this.tabsContent.nativeElement.clientWidth){
+  ngAfterViewInit() {
+    if (this.tabsContent.nativeElement.scrollWidth > this.tabsContent.nativeElement.clientWidth) {
       this.scrollable = true;
       this.scrolling = this.scrollable ? 'scrolling' : '';
       this.cdr.detectChanges();
@@ -219,88 +221,84 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
       this.tabChange.emit(tab);
   }
 
-  timeInterval;
-  scrollMouseDown(direction){
-    let comp = this;
-    if(direction == 'left'){
+  scrollMouseDown(direction) {
+    const comp = this;
+    if (direction === 'left') {
       comp.scrollLeft();
     } else {
       comp.scrollRight();
     }
-    console.log('first fire');
-    this.timeInterval=setInterval(function(){
-      console.log('rep fire', direction);
-      if(direction == 'left'){
+    this.timeInterval = setInterval(function() {
+      if (direction === 'left') {
         comp.scrollLeft();
       } else {
         comp.scrollRight();
       }
-    },800);
+    }, 800);
   }
-  scrollMouseUp(){
+  scrollMouseUp() {
     clearInterval(this.timeInterval);
   }
-  scrollLeft(){ 
+
+  scrollLeft() {
     let found = false;
-    let elArr = this.tabEls.toArray();
-    for(let idx in elArr){
-      let item = elArr[idx];
-      let prevItem = parseInt(idx)!=0 ? elArr[parseInt(idx)-1] : null;
-      let isElVisible = this.isScrolledIntoView(item.nativeElement);
-      let isPrevElVisible = prevItem ? this.isScrolledIntoView(prevItem.nativeElement) : null;
-      if(isElVisible && !isPrevElVisible && prevItem){
+    const elArr = this.tabEls.toArray();
+    for (let idx = 0; idx < elArr.length; idx++) {
+      const item = elArr[idx];
+      const intIdx = Number(idx);
+      const prevItem = intIdx !== 0 ? elArr[ intIdx - 1] : null;
+      const isElVisible = this.isScrolledIntoView(item.nativeElement);
+      const isPrevElVisible = prevItem ? this.isScrolledIntoView(prevItem.nativeElement) : null;
+      if (isElVisible && !isPrevElVisible && prevItem) {
         found = true;
-        //this.isScrolledIntoView(prevItem.nativeElement,true)
+        // this.isScrolledIntoView(prevItem.nativeElement,true)
         this.scrollToEl(prevItem.nativeElement);
         break;
       }
     }
-    if(!found && elArr.length > 0){
+    if (!found && elArr.length > 0) {
       this.scrollToEl(elArr[0].nativeElement);
     }
   }
 
-  scrollRight(){
+  scrollRight () {
     let trueFlag = false;
     let found = false;
-    let elArr = this.tabEls.toArray();
-    for(let item of elArr){
-      let isElVisible = this.isScrolledIntoView(item.nativeElement);
-      if(isElVisible){
+    const elArr = this.tabEls.toArray();
+    for (const item of elArr) {
+      const isElVisible = this.isScrolledIntoView(item.nativeElement);
+      if (isElVisible) {
         trueFlag = true;
       }
-      if(!isElVisible && trueFlag){
-        //this.isScrolledIntoView(item.nativeElement,true)
+      if (!isElVisible && trueFlag) {
+        // this.isScrolledIntoView(item.nativeElement,true)
         found = true;
-        //scroll to this item
         this.scrollToEl(item.nativeElement);
         break;
       }
     }
-    if(!found && elArr.length > 0){
-      this.scrollToEl(elArr[elArr.length-1].nativeElement)
+    if (!found && elArr.length > 0) {
+      this.scrollToEl(elArr[elArr.length - 1].nativeElement);
     }
     this.tabsContent.nativeElement.focus();
-  } 
+  }
 
-  isScrolledIntoView(el,debug=false) {
-    var rect = el.getBoundingClientRect();
-    var elemLeft = rect.left;
-    var elemRight = rect.right;
-    var parentRect = el.parentNode.getBoundingClientRect();
-    var parentElemLeft = parentRect.left-1;
-    var parentElemRight = parentRect.right+1;
-    if(debug){
-      console.log(el, elemLeft,elemRight, parentElemLeft, parentElemRight)
+  isScrolledIntoView (el, debug = false) {
+    const rect = el.getBoundingClientRect();
+    const elemLeft = rect.left;
+    const elemRight = rect.right;
+    const parentRect = el.parentNode.getBoundingClientRect();
+    const parentElemLeft = parentRect.left - 1;
+    const parentElemRight = parentRect.right + 1;
+    if (debug) {
+      console.log(el, elemLeft, elemRight, parentElemLeft, parentElemRight);
     }
-    // Only completely visible elements return true:
-    var isVisible = (elemLeft >= parentElemLeft) && (elemRight <= parentElemRight);
-    // Partially visible elements return true:
-    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+
+    const isVisible = (elemLeft >= parentElemLeft) && (elemRight <= parentElemRight);
     return isVisible;
   }
 
-  scrollToEl(el){
+  scrollToEl(el) {
     el.scrollIntoView({
       behavior: 'smooth',
       block: 'center'

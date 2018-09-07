@@ -6,7 +6,7 @@ import { SamExperimentalModule } from '@gsa-sam/sam-ui-elements';
 @NgModule({
     declarations: [ SamTabsNextComponent, SamTabNextComponent ],
     exports: [ SamTabsNextComponent, SamTabNextComponent ],
-    imports: [CommonModule,SamExperimentalModule]
+    imports: [CommonModule, SamExperimentalModule]
 })
 export class SamTabsNextModule { }
 

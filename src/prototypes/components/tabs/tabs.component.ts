@@ -24,7 +24,7 @@ import {
       <ng-content select=".title"></ng-content>
     </ng-template>
     <div [class.hide]="!active">
-      <ng-content></ng-content>  
+      <ng-content></ng-content>
     </div>
   `
 })
@@ -64,7 +64,7 @@ export class SamTabNextComponent {
         <a class="item" #tabEl (click)="selectTab(tab, i)"
           [ngClass]="{ active: tab.active, disabled: tab.disabled }"
           *ngIf="!tab.float">
-          <ng-container 
+          <ng-container
             *ngTemplateOutlet="tab.titleVar;context:tab">
           </ng-container>
         </a>

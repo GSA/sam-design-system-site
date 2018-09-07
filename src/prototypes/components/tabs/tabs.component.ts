@@ -15,8 +15,8 @@ import {
   AfterViewInit
 } from '@angular/core';
 import {
-  faArrowCircleLeft,
-  faArrowCircleRight,
+  faChevronRight,
+  faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
 /**
@@ -63,34 +63,37 @@ export class SamTabNextComponent {
   template: `
   <div class="sam-tabs-next-wrapper">
     <div *ngIf="scrollable" class="tab-prev-btn-wrapper">
-      <div
+      <button 
+        *ngIf="showPrevBtn"
+        tabindex="-1"
         (mousedown)="scrollMouseDown('left')"
         (mouseup)="scrollMouseUp()"
-        class="tab-nav-btn tab-prev-btn"><sam-icon [icon]="faArrowCircleLeft"></sam-icon></div>
+        class="tab-nav-btn tab-prev-btn"><sam-icon [icon]="faChevronLeft"></sam-icon></button>
+      <span class="spacer" *ngIf="!showPrevBtn"></span>
     </div>
     <div #tabsContent class="sam-tabs-next sam-ui menu"
       [ngClass]="[themes[theme],size,scrolling]"
-      *ngIf="tabs && tabs.length">
+      *ngIf="tabs && tabs.length"
+      role="tablist"
+      (scroll)="onScroll($event)">
       <ng-container *ngFor="let tab of tabs; let i = index">
-        <a class="item" #tabEl (click)="selectTab(tab, i)"
-          [ngClass]="{ active: tab.active, disabled: tab.disabled }"
-          *ngIf="!tab.float">
+        <button [attr.tabindex]="tabindex" role="tab" #tabEl class="item"
+          [ngClass]="{ active: tab.active }"
+          [attr.disabled]="tab.disabled ? 'disabled' : null" (click)="selectTab(tab, i)">
           <ng-container
             *ngTemplateOutlet="tab.titleVar;context:tab">
           </ng-container>
-        </a>
-        <button #tabEl class="sam-ui button secondary tiny"
-          [attr.disabled]="tab.disabled ? 'disabled' : null"
-          [innerText]="tab.titleVar" (click)="selectTab(tab, i)"
-          *ngIf="tab.float">
         </button>
       </ng-container>
     </div>
     <div *ngIf="scrollable" class="tab-next-btn-wrapper">
-      <div
+      <button
+        *ngIf="showNextBtn"
+        tabindex="-1"
         (mousedown)="scrollMouseDown('right')"
         (mouseup)="scrollMouseUp()"
-        class="tab-nav-btn tab-next-btn"><sam-icon [icon]="faArrowCircleRight"></sam-icon></div>
+        class="tab-nav-btn tab-next-btn"><sam-icon [icon]="faChevronRight"></sam-icon></button>
+        <span class="spacer" *ngIf="!showNextBtn"></span>
     </div>
   </div>
   <ng-content></ng-content>
@@ -133,6 +136,8 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterV
    */
   @Input() active: number = -1;
 
+  @Input() tabindex = 0;
+
   /**
    * Emits change on active tab index
    */
@@ -149,15 +154,18 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterV
   private _size = 'large';
   private _theme = 'default';
   private themes = {
-    default: 'secondary pointing',
+    default: '',
+    pointing: 'pointing secondary',
     separate: 'separate tabular',
   };
 
   scrollable = false;
   scrolling = '';
-  faArrowCircleLeft = faArrowCircleLeft;
-  faArrowCircleRight = faArrowCircleRight;
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
   timeInterval;
+  showPrevBtn = true;
+  showNextBtn = true;
 
   constructor(private cdr: ChangeDetectorRef) {}
 
@@ -234,8 +242,9 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterV
       } else {
         comp.scrollRight();
       }
-    }, 800);
+    }, 500);
   }
+  
   scrollMouseUp() {
     clearInterval(this.timeInterval);
   }
@@ -303,5 +312,24 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterV
       behavior: 'smooth',
       block: 'center'
     });
+  }
+
+  onScroll(event){
+    if(this.scrollable){
+      const elArr = this.tabEls.toArray();
+      if(elArr.length == 0){
+        return;
+      }
+      if (this.showPrevBtn && this.isScrolledIntoView(elArr[0].nativeElement)) {
+        this.showPrevBtn = false;
+      } else if (!this.showPrevBtn && !this.isScrolledIntoView(elArr[0].nativeElement)) {
+        this.showPrevBtn = true;
+      }
+      if (this.showNextBtn && this.isScrolledIntoView(elArr[elArr.length-1].nativeElement)) {
+        this.showNextBtn = false;
+      } else if (!this.showNextBtn && !this.isScrolledIntoView(elArr[elArr.length-1].nativeElement)) {
+        this.showNextBtn = true;
+      }
+    }
   }
 }

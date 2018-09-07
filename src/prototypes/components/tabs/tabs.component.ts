@@ -10,7 +10,8 @@ import {
   EventEmitter,
   ViewChildren,
   ElementRef,
-  OnChanges
+  OnChanges,
+  ViewChild
 } from '@angular/core';
 
 /**
@@ -19,12 +20,17 @@ import {
 @Component({
   selector: 'sam-tab-next',
   template: `
+    <ng-template #titleVar>
+      <ng-content select=".title"></ng-content>
+    </ng-template>
     <div [class.hide]="!active">
-      <ng-content></ng-content>
+      <ng-content></ng-content>  
     </div>
   `
 })
 export class SamTabNextComponent {
+  @ViewChild('titleVar') titleVar;
+
   /**
    * Set tab text
    */
@@ -58,11 +64,13 @@ export class SamTabNextComponent {
         <a class="item" #tabEl (click)="selectTab(tab, i)"
           [ngClass]="{ active: tab.active, disabled: tab.disabled }"
           *ngIf="!tab.float">
-          {{tab.tabTitle}}
+          <ng-container 
+            *ngTemplateOutlet="tab.titleVar;context:tab">
+          </ng-container>
         </a>
         <button #tabEl class="sam-ui button secondary tiny"
           [attr.disabled]="tab.disabled ? 'disabled' : null"
-          [innerText]="tab.tabTitle" (click)="selectTab(tab, i)"
+          [innerText]="tab.titleVar" (click)="selectTab(tab, i)"
           *ngIf="tab.float">
         </button>
       </ng-container>

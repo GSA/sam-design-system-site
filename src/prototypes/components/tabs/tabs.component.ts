@@ -61,15 +61,15 @@ export class SamTabNextComponent {
   selector: 'sam-tabs-next',
   template: `
   <div class="sam-tabs-next-wrapper">
+    <div *ngIf="scrollable" class="tab-prev-btn-wrapper">
+      <div
+        (mousedown)="scrollMouseDown('left')"
+        (mouseup)="scrollMouseUp()"
+        class="tab-nav-btn tab-prev-btn"><sam-icon [icon]="faArrowCircleLeft"></sam-icon></div>
+    </div>
     <div #tabsContent class="sam-tabs-next sam-ui menu"
       [ngClass]="[themes[theme],size,scrolling]"
       *ngIf="tabs && tabs.length">
-      <div *ngIf="scrollable" class="tab-prev-btn-wrapper">
-        <div
-          (mousedown)="scrollMouseDown('left')"
-          (mouseup)="scrollMouseUp()"
-          class="tab-nav-btn tab-prev-btn"><sam-icon [icon]="faArrowCircleLeft"></sam-icon></div>
-      </div>
       <ng-container *ngFor="let tab of tabs; let i = index">
         <a class="item" #tabEl (click)="selectTab(tab, i)"
           [ngClass]="{ active: tab.active, disabled: tab.disabled }"
@@ -84,12 +84,12 @@ export class SamTabNextComponent {
           *ngIf="tab.float">
         </button>
       </ng-container>
-      <div *ngIf="scrollable" class="tab-next-btn-wrapper">
-        <div
-          (mousedown)="scrollMouseDown('right')"
-          (mouseup)="scrollMouseUp()"
-          class="tab-nav-btn tab-next-btn"><sam-icon [icon]="faArrowCircleRight"></sam-icon></div>
-      </div>
+    </div>
+    <div *ngIf="scrollable" class="tab-next-btn-wrapper">
+      <div
+        (mousedown)="scrollMouseDown('right')"
+        (mouseup)="scrollMouseUp()"
+        class="tab-nav-btn tab-next-btn"><sam-icon [icon]="faArrowCircleRight"></sam-icon></div>
     </div>
   </div>
   <ng-content></ng-content>
@@ -227,7 +227,9 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
     } else {
       comp.scrollRight();
     }
+    console.log('first fire');
     this.timeInterval=setInterval(function(){
+      console.log('rep fire', direction);
       if(direction == 'left'){
         comp.scrollLeft();
       } else {
@@ -248,6 +250,7 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
       let isPrevElVisible = prevItem ? this.isScrolledIntoView(prevItem.nativeElement) : null;
       if(isElVisible && !isPrevElVisible && prevItem){
         found = true;
+        //this.isScrolledIntoView(prevItem.nativeElement,true)
         this.scrollToEl(prevItem.nativeElement);
         break;
       }
@@ -267,6 +270,7 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
         trueFlag = true;
       }
       if(!isElVisible && trueFlag){
+        //this.isScrolledIntoView(item.nativeElement,true)
         found = true;
         //scroll to this item
         this.scrollToEl(item.nativeElement);
@@ -279,14 +283,16 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
     this.tabsContent.nativeElement.focus();
   } 
 
-  isScrolledIntoView(el) {
+  isScrolledIntoView(el,debug=false) {
     var rect = el.getBoundingClientRect();
     var elemLeft = rect.left;
     var elemRight = rect.right;
     var parentRect = el.parentNode.getBoundingClientRect();
-    var parentElemLeft = parentRect.left;
-    var parentElemRight = parentRect.right;
-    //console.log(el, elemLeft,elemRight, parentElemLeft, parentElemRight)
+    var parentElemLeft = parentRect.left-1;
+    var parentElemRight = parentRect.right+1;
+    if(debug){
+      console.log(el, elemLeft,elemRight, parentElemLeft, parentElemRight)
+    }
     // Only completely visible elements return true:
     var isVisible = (elemLeft >= parentElemLeft) && (elemRight <= parentElemRight);
     // Partially visible elements return true:

@@ -15,11 +15,12 @@
         
         &.scrolling{
             width: calc(100% - 36px);
-            margin-left:18px;
+            margin-top: 0px;
+            float:left;
         }
 
         .item{
-            margin-right:5px;
+            margin-right: 5px;
             padding: 10px 30px;
             height: 25px;
             border: 1px solid #ccc;
@@ -35,27 +36,23 @@
             }
         }
 
-        .tab-prev-btn-wrapper{
-            position: absolute;
-            z-index: 300;
-            left: -18px;
-            height: 50px;
-            line-height: 50px;
-            display:block;
-        }
         
-        .tab-next-btn-wrapper{
-            position: absolute;
-            z-index: 300;
-            right: 0;
-            height: 50px;
-            line-height: 50px;
-            display:block;
-        }
+    }
+    .tab-prev-btn-wrapper{
+        display: block;
+        float:left;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    .tab-next-btn-wrapper{
+        display: block;
+        float:left;
+        height: 50px;
+        line-height: 50px;
+    }
 
-        .tab-nav-btn{
-            display:block;
-            position: fixed;
-        }
+    .tab-nav-btn{
+        //display: block;
     }
 }

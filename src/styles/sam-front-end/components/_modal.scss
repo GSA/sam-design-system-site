@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 20040;
+  z-index: 1;
   background-color: #000000;
   opacity: .5;
   -webkit-backface-visibility: hidden;
@@ -43,11 +43,11 @@
   .usa-modal-content-btn-area {
     text-align: center;
   }
-  
-.padding-left-50px 
+
+.padding-left-50px
 {
 	padding-left: 50px;
-} 
+}
 .display-inline
 {
 	display:inline;
@@ -75,5 +75,21 @@
 .height-50px
 {
 	height: 50px;
+}
+.height-63px
+{
+	height:63px;
+}
+.vertical-align-top
+{
+	vertical-align:top;
+}
+.padding-top-5px
+{
+	padding-top:5px;
+}
+.margin-bottom-2em
+{
+	margin-bottom:2em;
 }
 }

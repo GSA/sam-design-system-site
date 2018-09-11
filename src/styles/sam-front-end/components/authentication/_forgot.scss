@@ -23,5 +23,17 @@
 
   .usa-button-controls {
     margin-top: 1rem;
+
+    .usa-alert {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .usa-password-progress {
+    ul {
+      margin-top: -3em;
+    }
   }
 }

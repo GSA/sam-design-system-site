@@ -20,6 +20,11 @@ sam-upload-v2 {
     cursor: not-allowed;
     opacity: .5;
   }
+  
+  .empty-space{
+    display: inline-block;
+    width: 30px
+  }
 
   .file-container {
     // max-width: $input-max-width;
@@ -42,6 +47,11 @@ sam-upload-v2 {
     margin: 1.5rem 0;
     color: $light-grey;
   }
+  .opportunity-file-actions-hide {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: -0.5;
+  }
 }
 
 sam-upload-v2 {
@@ -62,8 +72,8 @@ sam-upload-v2 {
   }
 
   .upload-table {
-    width: 100%; 
-    margin-top: 1rem; 
+    width: 100%;
+    margin-top: 1rem;
     border: 2px solid $color-gray-lighter;
     border-bottom: none;
   }
@@ -86,7 +96,7 @@ sam-upload-v2 {
 
   .upload-table-doc-col {
     width: 49%;
-    .pdf-icon {
+    .file-icon {
       float: left;
       line-height: 35px;
     }
@@ -102,11 +112,11 @@ sam-upload-v2 {
     }
 
     .inline-icon-group {
-      position: absolute; 
-      right: 17px; 
+      position: absolute;
+      right: 17px;
       top: 0;
-      margin-top: 2px; 
-      display: inline-block; 
+      margin-top: 2px;
+      display: inline-block;
       background-color: white;
     }
 
@@ -133,7 +143,7 @@ sam-upload-v2 {
     }
 
     .inline-name-input {
-      height: 38px; 
+      height: 38px;
       padding-right: 70px;
       padding-top: 5px;
       padding-left: 9px;
@@ -148,7 +158,7 @@ sam-upload-v2 {
 
     .secure-cbx {
       margin-top: 1px;
-      width: 150px;
+      width: 100px;
       margin-left: 30px;
     }
 

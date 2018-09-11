@@ -1,42 +1,118 @@
-
-div.sam-collapsible div.collapsible-header {
-  clear: both;
+//------ Accordion Bar / Button ------
+.sam-collapsible-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
   margin: 0;
-  padding: 1.5rem;
-  width: 100%;
-  background-color: $color-gray-lightest;
-}
-div.sam-collapsible div.collapsible-header .label {
-  color: $color-base;
-  font-weight: 700;
-  width: 90%;
-  line-height: 1;
-  margin-bottom: 0;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: #f1f1f1;
+  background-position: right 3rem center;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  color: #212121;
+  cursor: pointer;
   display: inline-block;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.5rem 5.5rem 1.5rem 3rem;
+  width: 100%;
 }
-div.sam-collapsible div.collapsible-header .expand-hide {
-  float: right;
+.sam-collapsible-button[aria-expanded=false] {
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
 }
-
-div.sam-collapsible div.collapsible-content{
-  padding: .5rem 1.5rem;
-  position: relative;
+.sam-collapsible-button:hover {
+  background-color: transparent;
 }
-
-div.sam-collapsible div.collapsible-content.closed {
+.sam-collapsible-button:focus {
+  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+.sam-collapsible-button:hover {
+  background-color: #d6d7d9;
+  color: #212121;
+}
+.sam-collapsible-button h1,
+.sam-collapsible-button h2,
+.sam-collapsible-button h3,
+.sam-collapsible-button h4,
+.sam-collapsible-button h5,
+.sam-collapsible-button h6 {
+  margin: 0;
+}
+.sam-collapsible-expand {
+  color: #9ca4ab !important;
+}
+//------ Description Section ------
+.sam-collapsible-content {
+  background-color: #f1f1f16b;
+  overflow: auto;
+  padding: 3rem;
+}
+.sam-collapsible-content > *:first-child {
+  margin-top: 0;
+}
+.sam-collapsible-content > *:last-child {
+  margin-bottom: 0;
+}
+.sam-collapsible-content:not([aria-hidden]) {
+  position: absolute;
+  left: -999em;
+}
+.sam-collapsible-content[aria-hidden=true] {
   display: none;
 }
-div.sam-collapsible div.collapsible-content.open {
-  display: block;
+.sam-collapsible-pre-wrap {
+  white-space:pre-wrap;
 }
 
-// Content inside collapsible
-div.sam-collapsible legend{
-  font-size: 1.9rem;
-  line-height: 2rem;
-  width: 100%
+//------ More Information Icon ------
+.sam-collapsible-more-info {
+  position: absolute;
+  font-size: 1.2em;
+  line-height: 1;
+  cursor: pointer;
+  background-color: transparent;
+  color: #212121;
+  padding: 0px;
+  margin-top: 0em;
+}
+.sam-collapsible-more-info:hover {
+  background-color: transparent;
+  color: #9ca4ab;
 }
 
-div.sam-collapsible .label-wrapper label{
-  margin-top: 0;
+//------ Description Close Button ------
+.sam-collapsible-close {
+  position: absolute;
+  top: 7rem;
+  right: 1.5rem;
+  font-size: 1.3em;
+  line-height: 1;
+  cursor: pointer;
+  background-color: transparent;
+  color: #212121;
+  padding: 2px;
+}
+.sam-collapsible-close:hover {
+  background-color: transparent;
+  color: #9ca4ab;
+}
+
+//------ Occupation Table ------
+.sam-collapsible-td-border-top {
+  border-top: 0px !important;
+}
+.sam-collapsible-occupation {
+  width: 70%;
+}
+.sam-collapsible-rates {
+  width: 15%;
+}
+.sam-collapsible-fringes {
+  width: 15%;
 }

@@ -50,4 +50,12 @@ sam-header {
   .sign-up-link{
     margin: 8.5px 8.5px 8.5px 0;
   }
+
+  .#{$prefix}.menu .item > img.sam-logo:not(.#{$prefix}) {
+    width: 200px;
+  }
+  
+  .notification-dropdown{
+    position: relative;
+  }
 }

@@ -1,4 +1,32 @@
 .bulk-update-page {
+
+  .sam-toggle-disabled {
+    pointer-events: none;
+  }
+
+  .sam-toggle-enabled {
+    pointer-events: all;
+  }
+
+  .permission-margin {
+    margin-top: 0.5em !important;
+  }
+
+  .spinner-shown-padding {
+    padding: 0.2em 1.5em 0.2em !important;
+  }
+
+  .spinner-hidden-padding {
+    padding: 0.9em 1.5em 0.9em !important;
+  }
+
+  .static-content {
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 0.5em;
+  }
+
   label, textarea, input, select {
     max-width: inherit;
   }
@@ -94,5 +122,9 @@
     top:0; 
     bottom: 0; 
     z-index:100;
+  }
+
+  .input-toggle {
+  max-width: 200px;
   }
 }

@@ -50,8 +50,12 @@
           }
         }
       }
+    }
 
+    &.phone {
       .usa-unstyled-list {
+        margin-top: 0.5rem;
+
         li:last-child {
           label {
             margin-bottom: 0em;
@@ -59,6 +63,17 @@
         }
       }
     }
+  }
+
+  sam-intl-telephone-group {
+    .usa-form-hint {
+      margin-bottom: 0em !important;
+    }
+  }
+
+  sam-phone-entry > sam-label-wrapper > div {
+    margin-top: 1em !important;
+    margin-bottom: 1em;
   }
 
   fieldset.office {
@@ -120,6 +135,12 @@
           font-weight: bold;
         }
       }
+    }
+  }
+
+  sam-name-entry {
+    sam-select {
+      display: none;
     }
   }
 

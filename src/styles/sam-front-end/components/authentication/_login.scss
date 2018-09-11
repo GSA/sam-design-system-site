@@ -13,6 +13,7 @@
   }
 
   .usa-button-controls {
+    position: relative;
     text-align: right;
 
     button {
@@ -93,8 +94,17 @@
     }
 
     form {
+      position: relative;
       width: 32rem;
       margin: 0 auto;
     }
+  }
+
+  .usa-alert {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1em;
+    z-index: 1;
   }
 }

@@ -7,9 +7,23 @@
 
 }
 
-.workspace-top-header{
-  font-size: $medium;
-  font-weight: 400;
+// .workspace-top-header{
+//   font-size: $medium;
+//   font-weight: 400;
+// }
+
+.workspace-top-header {
+  background: url(~/assets/img/help-main-res-medium.jpg); 
+  background-size: cover;
+  .fed-link {
+    margin-top: 0.5em !important;
+  }
+}
+
+.workspace-shortcuts {
+  h2 {
+    font-size: 2.3rem !important;
+  }
 }
 
 .workspace-dropdown{

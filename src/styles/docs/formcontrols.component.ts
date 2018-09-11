@@ -32,9 +32,24 @@ const code_input_text_markup = `
 </form>
 `;
 
+const code_input_checkbox_markup = `
+<input class="sam checkbox" id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
+<label for="truth">Sojourner Truth</label>
+
+<input class="sam checkbox" id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
+<label for="douglass">Frederick Douglass</label>
+
+<input class="sam checkbox"  id="washington" type="checkbox" name="historical-figures-1" value="washington">
+<label for="washington">Booker T. Washington</label>
+
+<input class="sam checkbox"  id="carver" type="checkbox" name="historical-figures-1" disabled>
+<label for="carver">George Washington Carver</label>
+`;
+
 @Component({
   templateUrl: 'formcontrols.template.html',
 })
 export class FormControlsComponent {
   input_text_markup = code_input_text_markup.trim();
+  input_checkbox_markup = code_input_checkbox_markup.trim();
 }

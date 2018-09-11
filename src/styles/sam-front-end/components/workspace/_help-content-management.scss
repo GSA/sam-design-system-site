@@ -1,7 +1,9 @@
 @import "help-content-management/help-content-management-sidenav";
 
 .help-content-management{
-
+  .main-container {
+    margin-bottom: 1em;
+  }
 
   .content-item{
     border: 1.5px solid $color-gray-light;
@@ -38,6 +40,7 @@
     padding-bottom: 8px;
     margin-bottom: 0px;
   }
+
 
   sam-sort select{
     min-width: 100px;
@@ -83,6 +86,13 @@
 }
 
 .help-content-management-edit{
+
+  .content-description-box {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+    margin-top: auto;
+    margin-bottom:  auto;
+    white-space: pre-wrap;
+  }
 
   .file-container, sam-label-wrapper label {
     max-width: 46rem;
@@ -161,6 +171,11 @@
     text-align: center;
   }
 
+  .edit-tag {
+    top: 17.7px;
+    right: 12px;
+  }
+
   .public-view-tag{
     right: 0px;
   }
@@ -216,6 +231,12 @@
     padding-right: 5px;
   }
 
+  #video-for-thumbnail {
+    width: 100%;
+    position: absolute;
+    right: 10000px;
+  }
+
 }
 
 .help-content-management-detail{
@@ -244,6 +265,11 @@
     margin-right: 6em;
   }
 
-
+  .content-description-text {
+    white-space: pre-line;
+  }
+  .sm-font {
+    font-size: 0.9em !important;
+  }
 }
 

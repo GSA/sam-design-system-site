@@ -27,6 +27,11 @@
     }
   }
 
+  sam-radio-button {
+    display: block;
+    margin-top: 1rem;
+  }
+
   section {
     position: relative;
     margin-bottom: 4rem;
@@ -62,7 +67,7 @@
 
     label {
       display: inline-block;
-      min-width: 190px;
+      min-width: 250px;
       margin-top: 0em;
       font-weight: 700;
       float: left;
@@ -71,6 +76,10 @@
     .usa-form-control {
       display: inline-block;
     }
+  }
+
+  #otp-preference + label {
+    font-weight: normal;
   }
 
   sam-entity-picker,
@@ -177,6 +186,10 @@
     margin-top: 1em;
   }
 
+  .usa-unstyled-list {
+    margin-top: 0.5rem;
+  }
+
   sam-agency-picker-v2 {
     .usa-form-hint {
       strong {
@@ -250,6 +263,12 @@
           font-weight: bold;
         }
       }
+    }
+  }
+
+  sam-name-entry {
+    sam-select {
+      display: none;
     }
   }
 

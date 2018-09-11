@@ -134,3 +134,44 @@
 .text-align-right {
   text-align: right;
 }
+
+.singleSpace{
+  padding-bottom: 10px;
+  display: block;
+}
+
+.doubleSpace{
+  padding-bottom: 25px;
+  display: block;
+}
+
+.topDoubleSpace{
+  padding-top: 25px;
+  display: block;
+}
+
+.fontWeight600{
+  font-weight: 600;
+}
+
+.margintop10{
+  margin-top:10px;
+}
+
+.positionRelative{
+  position: relative;
+}
+
+
+.chartValueHover{
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.chartKeyBlock{
+  border:1px solid #000; 
+  width: 10px; 
+  height: 10px; 
+  display: inline-block;
+}

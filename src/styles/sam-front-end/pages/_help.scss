@@ -46,6 +46,20 @@ $sub-item-color: #f6f6f6;
       border-bottom: 2px solid white;
     }
 
+    .svg-viewbox {
+      position: absolute;
+      left: 100%;
+      top: 0;
+    }
+
+    .nav-list-item {
+      padding-top: 1px;
+      padding-left: 1rem;
+      padding-right:1rem;
+      background-color: white;
+      border-top: 1px solid black;
+    }
+
   }
   .page-content.row {
     position: inherit;

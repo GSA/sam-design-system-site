@@ -48,6 +48,10 @@ sam-files, sam-upload {
 }
 
 sam-upload {
+  .file-error{
+    color: red;
+  }
+  
   .file-max-error {
     background-color: $warningBackgroundColor;
     padding: $horizontal-padding;

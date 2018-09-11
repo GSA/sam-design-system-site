@@ -1,0 +1,51 @@
+.award-data {
+    .section-title {
+        font-size: 24px;
+        color: #122E51;
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-sub-title {
+        font-size: 20px;
+        color: #122E51;
+        font-weight: bold;
+        margin-bottom: .5rem;
+        margin-top: -.5rem;
+      }
+
+      .official-warning {
+        font-size: 16px;
+        color: #E21C3D;
+        line-height: 25px;
+      }
+
+      .section-text {
+        color: #000000;
+        line-height: 22px;
+        margin-top: 1rem;
+      }
+
+      .image-sub-heading {
+        font-size: 17px;
+        font-weight: lighter;
+        color: #122E51;
+      }
+
+      .image-column {
+        padding-right: 4rem !important;
+        padding-left: 4rem !important;
+      }
+
+      section {
+        padding: 2rem;
+      }
+      
+      section:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+      .section-image {
+        width: 6.5em;
+      }
+}

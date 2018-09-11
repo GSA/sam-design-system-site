@@ -28,23 +28,27 @@
   }
 
   .aac-detail-span {
-    display: inline-block;
+    top: 1.25rem;
+    margin-bottom: 50px;
     position: relative;
-    padding-left: 4px;
+  }
+
+  .aac-code-input, .aac-detail-code {
+    position: absolute;
+    text-transform:uppercase;
+    top: 0;
+    left: 0;
+  }
+
+  .aac-detail-code{
+    z-index: 1;
+    top: 1.30rem;
+    left: 1.5rem;
+    width: 20%;
   }
 
   .aac-code-input {
-    display: inline-block;
-    text-transform:uppercase;
-    position: relative;
-    padding-left: 1.6em;
-  }
-
-  .aac-detail-span {
-    z-index: 1;
-    top: 1.25rem;
-    position: absolute;
-    left: 1.4rem;
+    padding-left: 3.5rem;
   }
 
   .office-type-edit-section {

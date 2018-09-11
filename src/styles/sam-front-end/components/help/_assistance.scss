@@ -1,0 +1,37 @@
+.assistance {
+    .footer {
+        background-color: #dce4ee;
+    }
+}
+.assistance-listing {
+    .header {
+        color: #E21C3D;
+    }
+    .assistance-sidebar {
+        width: 330px !important;
+        float: right;
+    }
+    .assistance-links {
+        background-color: #dce4ee;
+        text-align: right;
+    }
+    .assistance-links-light {
+        background-color: #eff2f7;
+        text-align: right;
+    }
+    .assistance-public {
+        position: relative;
+        right: 3.5em;
+    }
+    .assistance-link-manage {
+        position: relative;
+        right: 1.5em;
+    }
+    .assistance-link-signin {
+        position: relative;
+        right: 4.5em;
+    }
+    .download-btn {
+        width: 100%;
+    }
+}

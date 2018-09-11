@@ -1,0 +1,35 @@
+/**************************************************************************************
+
+  Custom styles for pages
+
+  Inline css must be defined here and the classes are called at their respective pages.
+
+**************************************************************************************/
+
+
+.agency-picker {
+  .clear-both {
+    clear:both;
+  }
+}
+
+.entity-picker {
+  .font-size {
+    font-size: 85%;
+  }
+}
+
+.opp-result {
+  .top-margin {
+    margin-top: 10px;
+  }
+}
+
+.change-request-dropdown {
+  .font-weight {
+    font-weight: 600;
+  }
+}
+
+
+

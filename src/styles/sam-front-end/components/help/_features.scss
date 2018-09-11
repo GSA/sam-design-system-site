@@ -1,0 +1,12 @@
+.features {
+    .stackable {
+        margin-top: 4rem !important;
+    }
+    .stackable:nth-child(odd) {
+        background-color: #f8f9fa;
+    }
+    // Replacing <br> spacing in the original source code
+    .top-spacing-br {
+        margin-top: 26px !important;
+    }
+}

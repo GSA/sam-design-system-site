@@ -6,7 +6,7 @@
 
 // Mixin that renders all of the core styles that are not theme-dependent.
 @mixin sam-core($typography-config: null) {
-  @include sam-reset();
+  // @include sam-reset();
   @include sam-typography($typography-config);
 }
 

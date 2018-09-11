@@ -4,7 +4,15 @@
     margin: 0 auto;
   }
 
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
   fieldset {
+    > legend {
+      font-size: 2rem;
+    }
+
     > div:nth-child(1) {
        margin-top: 1em;
     }

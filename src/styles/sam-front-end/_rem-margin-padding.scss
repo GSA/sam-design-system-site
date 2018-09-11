@@ -1,0 +1,134 @@
+@mixin rem-margin-and-padding($spacing) {
+  @for $i from 1 to 10 {
+    // Margin
+    %margin-#{$i}rem { margin: $spacing * $i !important; }
+
+    %margin-top-#{$i}rem,
+    %margin-vertical-#{$i}rem { margin-top: $spacing * $i !important; }
+
+    %margin-bottom-#{$i}rem,
+    %margin-vertical-#{$i}rem { margin-bottom: $spacing * $i !important; }
+
+    %margin-left-#{$i}rem,
+    %margin-horizontal-#{$i}rem { margin-left: $spacing * $i !important; }
+
+    %margin-right-#{$i}rem,
+    %margin-horizontal-#{$i}rem { margin-right: $spacing * $i !important; }
+
+    // Padding
+    %padding-#{$i}rem { padding: $spacing * $i !important; }
+
+    %padding-top-#{$i}rem,
+    %padding-vertical-#{$i}rem { padding-top: $spacing * $i !important; }
+
+    %padding-bottom-#{$i}rem,
+    %padding-vertical-#{$i}rem { padding-bottom: $spacing * $i !important; }
+
+    %padding-left-#{$i}rem,
+    %padding-horizontal-#{$i}rem { padding-left: $spacing * $i !important; }
+
+    %padding-right-#{$i}rem,
+    %padding-horizontal-#{$i}rem { padding-right: $spacing * $i !important; }
+    }
+}
+
+$spacing: 1rem;
+@include rem-margin-and-padding($spacing);
+
+// Shorthand for setting margins and padding
+//
+// m - margin
+// p - padding
+// V - vertical
+// H - horizontal
+// T - top
+// B - bottom
+// L - left
+// R - right
+
+.m_All-1rem { @extend %margin-1rem; }
+.m_All-3rem { @extend %margin-3rem; }
+.m_All-4rem { @extend %margin-4rem; }
+
+.m_V-1rem { @extend %margin-vertical-1rem; }
+.m_V-2rem { @extend %margin-vertical-2rem; }
+.m_V-3rem { @extend %margin-vertical-3rem; }
+.m_V-4rem { @extend %margin-vertical-4rem; }
+.m_V-5rem { @extend %margin-vertical-5rem; }
+
+.m_H-3rem { @extend %margin-horizontal-3rem; }
+
+.m_T-0_9rem-inv { margin-top: -0.9rem !important; }
+.m_T-0_2rem { margin-top: 0.2rem !important; }
+.m_T-1rem { @extend %margin-top-1rem; }
+.m_T-2rem { @extend %margin-top-2rem; }
+.m_T-3rem { @extend %margin-top-3rem; }
+.m_T-4rem { @extend %margin-top-4rem; }
+.m_T-5rem { @extend %margin-top-5rem; }
+.m_T-6rem { @extend %margin-top-6rem; }
+
+.m_B-1rem { @extend %margin-bottom-1rem; }
+.m_B-2rem { @extend %margin-bottom-2rem; }
+.m_B-3rem { @extend %margin-bottom-3rem; }
+.m_B-4rem { @extend %margin-bottom-4rem; }
+.m_B-5rem { @extend %margin-bottom-5rem; }
+.m_B-6rem { @extend %margin-bottom-6rem; }
+
+.m_L-1rem { @extend %margin-left-1rem; }
+.m_L-2rem { @extend %margin-left-2rem; }
+.m_L-3rem { @extend %margin-left-3rem; }
+.m_L-4rem { @extend %margin-left-4rem; }
+.m_L-5rem { @extend %margin-left-5rem; }
+.m_L-6rem { @extend %margin-left-6rem; }
+.m_L-7rem { @extend %margin-left-7rem; }
+.m_L-8rem { @extend %margin-left-8rem; }
+
+.m_R-1rem { @extend %margin-right-1rem; }
+.m_R-2rem { @extend %margin-right-2rem; }
+.m_R-3rem { @extend %margin-right-3rem; }
+.m_R-4rem { @extend %margin-right-4rem; }
+.m_R-5rem { @extend %margin-right-5rem; }
+.m_R-6rem { @extend %margin-right-6rem; }
+
+
+.p_All-1rem { @extend %padding-1rem; }
+.p_All-2rem { @extend %padding-2rem; }
+.p_All-3rem { @extend %padding-3rem; }
+.p_All-4rem { @extend %padding-4rem; }
+
+.p_V-1rem {  @extend %padding-vertical-1rem; }
+.p_V-3rem {  @extend %padding-vertical-3rem; }
+
+.p_H-3rem {  @extend %padding-horizontal-3rem; }
+.p_H-4rem {  @extend %padding-horizontal-4rem; }
+
+.p_T-1rem { @extend %padding-top-1rem; }
+.p_T-2rem { @extend %padding-top-2rem; }
+.p_T-3rem { @extend %padding-top-3rem; }
+.p_T-4rem { @extend %padding-top-4rem; }
+.p_T-5rem { @extend %padding-top-5rem; }
+.p_T-6rem { @extend %padding-top-6rem; }
+
+.p_B-1rem { @extend %padding-bottom-1rem; }
+.p_B-2rem { @extend %padding-bottom-2rem; }
+.p_B-3rem { @extend %padding-bottom-3rem; }
+.p_B-4rem { @extend %padding-bottom-4rem; }
+.p_B-5rem { @extend %padding-bottom-5rem; }
+.p_B-6rem { @extend %padding-bottom-6rem; }
+
+.p_L-1rem { @extend %padding-left-1rem; }
+.p_L-2rem { @extend %padding-left-2rem; }
+.p_L-3rem { @extend %padding-left-3rem; }
+.p_L-4rem { @extend %padding-left-4rem; }
+.p_L-5rem { @extend %padding-left-5rem; }
+.p_L-6rem { @extend %padding-left-6rem; }
+.p_L-7rem { @extend %padding-left-7rem; }
+.p_L-8rem { @extend %padding-left-8rem; }
+
+.p_R-0_6rem { padding-right: 0.6rem !important; }
+.p_R-1rem { @extend %padding-right-1rem; }
+.p_R-2rem { @extend %padding-right-2rem; }
+.p_R-3rem { @extend %padding-right-3rem; }
+.p_R-4rem { @extend %padding-right-4rem; }
+.p_R-5rem { @extend %padding-right-5rem; }
+.p_R-6rem { @extend %padding-right-6rem; }

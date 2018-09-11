@@ -2,18 +2,11 @@ import { Component } from '@angular/core';
 
 const code_normal_label_markup = `
 <span class="sam label">Normal</span>
-<span class="sam label"><span class="normal weight">Label:</span> Normal</span>
 `;
 
 const code_normal_icons_label_markup = `
 <span class="sam label">
   Normal with icon
-  <button class="sam button tertiary">
-    <span class="fa fa-close" aria-hidden="true"></span>
-  </button>
-</span>
-<span class="sam label">
-  <span class="normal weight">Label:</span> Normal with icon & label
   <button class="sam button tertiary">
     <span class="fa fa-close" aria-hidden="true"></span>
   </button>

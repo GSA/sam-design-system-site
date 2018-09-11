@@ -2,6 +2,16 @@
               <sam-main> 
 ***********************************************/ 
 
+sam-filters-wrapper {
+  sam-button-next {
+    display: block;
+    text-align: center;
+  }
+  sam-button-next:first-of-type {
+    margin-top: 1rem;
+  }
+}
+
 sam-resources-wrapper {
   padding: 15px;
   display: block;

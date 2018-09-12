@@ -99,20 +99,27 @@ import {
       this._service.get('sort').setValue(event);
     }
 
-    private _filtersToPills (filters): filterItemModel[] {
+    private _filtersToPills (filters): any[] {
       const keys = Object.keys(filters);
-      return keys.map(
-        key => {
-          const obj: filterItemModel = {
-            id: key,
-            label: key,
-            value: filters[key]
-          };
-          return obj;
+
+      return keys.map(key => {
+        let value;
+
+        if (filters[key]) {
+          if (filters[key].constructor === Array) {
+            value = filters[key];
+          } else {
+            value = [filters[key]];
+          }
+        } else {
+          value = [];
         }
-      )
-      .filter(
-        filter => !!filter.value
-      );
+
+        return {
+          label: key,
+          value: value
+        };
+      })
+      .filter(filter => filter.value.length > 0);
     }
   }

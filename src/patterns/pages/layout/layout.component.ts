@@ -166,17 +166,32 @@ export class SamLayoutDemoComponent implements OnInit {
       );
   }
 
-  private _filtersToPills (filters): filterItemModel[] {
+  public removeItem (event) {
+    console.log(event);
+  }
+
+  private _filtersToPills (filters): any[] {
     const keys = Object.keys(filters);
 
     return keys.map(key => {
+      let value;
+
+      if (filters[key]) {
+        if (filters[key].constructor === Array) {
+          value = filters[key];
+        } else {
+          value = [filters[key]];
+        }
+      } else {
+        value = [];
+      }
+
       return {
-        id: key,
         label: key,
-        value: filters[key]
+        value: value
       };
     })
-    .filter(filter => !!filter.value);
+    .filter(filter => filter.value.length > 0);
   }
 
   private _toggleColumn (field): void {

@@ -7,7 +7,7 @@ export class DocsComponent implements OnInit {
 
   sidenavModel = {
     label: 'Toggle Sidenav',
-    icon: 'fa-bars'
+    icon: 'fa-chevron-circle-left'
   };
 
   constructor(private cdr: ChangeDetectorRef) {}

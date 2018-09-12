@@ -75,5 +75,6 @@ $sam-theme-background: (
   accordion:         white,
   accordion-hover:   map-get($map: $uswds-cool-gray, $key: 100),
   sidenav:           white,
-  table:             white
+  table:             white,
+  table-header:      map-get($map: $uswds-cool-gray, $key: 600),
 );

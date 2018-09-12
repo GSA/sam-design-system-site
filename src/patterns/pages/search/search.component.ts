@@ -98,6 +98,21 @@ import {
       this._service.get('sort').setValue(event);
     }
 
+    public removeItem (event): void {
+      const current = this._service.get('filters').value;
+      const key = Object.keys(event)[0];
+
+      if (current[key]) {
+        if (current[key].constructor === Array) {
+          const index = current[key].indexOf(event[key]);
+          current[key].splice(index, 1);
+        } else {
+          current[key] = null;
+        }
+        this._service.get('filters').patchValue(current);
+      }
+    }
+
     private _filtersToPills (filters): any[] {
       const keys = Object.keys(filters);
 

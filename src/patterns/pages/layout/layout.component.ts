@@ -77,7 +77,7 @@ export class SamLayoutDemoComponent implements OnInit {
       { key: 'three', value: 'three' },
       { key: 'four', value: 'four' },
       { key: 'five', value: 'five' },
-      ];
+    ];
 
   constructor (
     private _fb: FormBuilder,
@@ -151,6 +151,21 @@ export class SamLayoutDemoComponent implements OnInit {
     this._service.model.properties.sort.setValue(event);
   }
 
+  public removeItem (event): void {
+    const current = this._service.get('filters').value;
+    const key = Object.keys(event)[0];
+
+    if (current[key]) {
+      if (current[key].constructor === Array) {
+        const index = current[key].indexOf(event[key]);
+        current[key].splice(index, 1);
+      } else {
+        current[key] = null;
+      }
+      this._service.get('filters').patchValue(current);
+    }
+  }
+
   private _connectToPageService () {
     this._service.model.properties.data.valueChanges
       .subscribe(
@@ -164,10 +179,6 @@ export class SamLayoutDemoComponent implements OnInit {
       .map(
         serviceModel => this._filtersToPills(serviceModel)
       );
-  }
-
-  public removeItem (event) {
-    console.log(event);
   }
 
   private _filtersToPills (filters): any[] {
@@ -192,6 +203,14 @@ export class SamLayoutDemoComponent implements OnInit {
       };
     })
     .filter(filter => filter.value.length > 0);
+  }
+
+  public pillsToFilters (event) {
+    Object.keys(event).forEach(
+      key => {
+
+      }
+    );
   }
 
   private _toggleColumn (field): void {

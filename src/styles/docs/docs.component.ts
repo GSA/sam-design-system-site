@@ -5,10 +5,10 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 })
 export class DocsComponent implements OnInit {
 
-  sidenavModel = {
-    label: 'Toggle Sidenav',
-    icon: 'fa-bars'
-  };
+  // sidenavModel = {
+  //   label: 'Toggle Sidenav',
+  //   icon: 'fa-bars'
+  // };
 
   constructor(private cdr: ChangeDetectorRef) {}
 

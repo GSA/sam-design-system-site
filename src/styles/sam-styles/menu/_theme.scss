@@ -4,6 +4,6 @@
   $foreground: map-get($map: $theme, $key: foreground);
   
   .sam.menu{
-    border-bottom-color: sam-color($foreground, divider);
+    background-color: #f1f1f1;
   }
 }

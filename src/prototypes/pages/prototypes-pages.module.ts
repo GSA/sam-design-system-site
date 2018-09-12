@@ -31,6 +31,7 @@ import { SortArrayOfObjects } from './search/sam-front-end-components/wage-deter
 import { DynamicFormsPageComponent } from './dynamic-forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { TabsDemoComponent } from './tabs/tabs-demo.component';
+import { SamExperimentalModule } from '@gsa-sam/sam-ui-elements';
 
 @NgModule({
   imports: [
@@ -41,6 +42,7 @@ import { TabsDemoComponent } from './tabs/tabs-demo.component';
     FormlyModule,
     CdkTableModule,
     PrototypesComponentsModule,
+    SamExperimentalModule
   ],
   declarations: [
     PagesComponent,

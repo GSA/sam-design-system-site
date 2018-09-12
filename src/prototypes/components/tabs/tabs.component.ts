@@ -10,8 +10,14 @@ import {
   EventEmitter,
   ViewChildren,
   ElementRef,
-  OnChanges
+  OnChanges,
+  ViewChild,
+  AfterViewInit
 } from '@angular/core';
+import {
+  faChevronRight,
+  faChevronLeft,
+} from '@fortawesome/free-solid-svg-icons';
 
 /**
  * The <sam-tab> component contains the content for a tab
@@ -19,12 +25,17 @@ import {
 @Component({
   selector: 'sam-tab-next',
   template: `
+    <ng-template #titleVar>
+      <ng-content select=".title"></ng-content>
+    </ng-template>
     <div [class.hide]="!active">
       <ng-content></ng-content>
     </div>
   `
 })
 export class SamTabNextComponent {
+  @ViewChild('titleVar') titleVar;
+
   /**
    * Set tab text
    */
@@ -51,29 +62,47 @@ export class SamTabNextComponent {
   selector: 'sam-tabs-next',
   template: `
   <div class="sam-tabs-next-wrapper">
-    <div class="sam-tabs-next sam-ui menu"
-      [ngClass]="[themes[theme],size]"
-      *ngIf="tabs && tabs.length">
+    <div *ngIf="scrollable" class="tab-prev-btn-wrapper">
+      <button
+        *ngIf="showPrevBtn"
+        tabindex="-1"
+        (mousedown)="scrollMouseDown('left')"
+        (mouseup)="scrollMouseUp()"
+        class="tab-nav-btn tab-prev-btn"><sam-icon [icon]="faChevronLeft"></sam-icon></button>
+      <span class="spacer" *ngIf="!showPrevBtn"></span>
+    </div>
+    <div #tabsContent class="sam-tabs-next sam-ui menu"
+      [ngClass]="[themes[theme],size,scrolling]"
+      *ngIf="tabs && tabs.length"
+      role="tablist"
+      (scroll)="onScroll()">
       <ng-container *ngFor="let tab of tabs; let i = index">
-        <a class="item" #tabEl (click)="selectTab(tab, i)"
-          [ngClass]="{ active: tab.active, disabled: tab.disabled }"
-          *ngIf="!tab.float">
-          {{tab.tabTitle}}
-        </a>
-        <button #tabEl class="sam-ui button secondary tiny"
-          [attr.disabled]="tab.disabled ? 'disabled' : null"
-          [innerText]="tab.tabTitle" (click)="selectTab(tab, i)"
-          *ngIf="tab.float">
+        <button [attr.tabindex]="tabindex" role="tab" #tabEl class="item"
+          [ngClass]="{ active: tab.active }"
+          [attr.disabled]="tab.disabled ? 'disabled' : null" (click)="selectTab(tab, i)">
+          <ng-container
+            *ngTemplateOutlet="tab.titleVar;context:tab">
+          </ng-container>
         </button>
       </ng-container>
+    </div>
+    <div *ngIf="scrollable" class="tab-next-btn-wrapper">
+      <button
+        *ngIf="showNextBtn"
+        tabindex="-1"
+        (mousedown)="scrollMouseDown('right')"
+        (mouseup)="scrollMouseUp()"
+        class="tab-nav-btn tab-next-btn"><sam-icon [icon]="faChevronRight"></sam-icon></button>
+        <span class="spacer" *ngIf="!showNextBtn"></span>
     </div>
   </div>
   <ng-content></ng-content>
   `
 })
-export class SamTabsNextComponent implements AfterContentInit, OnChanges {
+export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterViewInit {
   @ContentChildren(SamTabNextComponent) tabs: QueryList<SamTabNextComponent>;
   @ViewChildren('tabEl') tabEls: QueryList<ElementRef>;
+  @ViewChild('tabsContent') tabsContent: ElementRef;
   /**
   * Set tabs size
   */
@@ -107,6 +136,8 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
    */
   @Input() active: number = -1;
 
+  @Input() tabindex = 0;
+
   /**
    * Emits change on active tab index
    */
@@ -123,10 +154,18 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
   private _size = 'large';
   private _theme = 'default';
   private themes = {
-    default: 'secondary pointing',
+    default: '',
+    pointing: 'pointing secondary',
     separate: 'separate tabular',
   };
 
+  scrollable = false;
+  scrolling = '';
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
+  timeInterval;
+  showPrevBtn = true;
+  showNextBtn = true;
 
   constructor(private cdr: ChangeDetectorRef) {}
 
@@ -168,13 +207,19 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
         this.selectTab(this.tabs.first, 0);
       }
     });
+
+  }
+
+  ngAfterViewInit() {
+    if (this.tabsContent.nativeElement.scrollWidth > this.tabsContent.nativeElement.clientWidth) {
+      this.scrollable = true;
+      this.scrolling = this.scrollable ? 'scrolling' : '';
+      this.cdr.detectChanges();
+    }
   }
 
   selectTab(tab: SamTabNextComponent, index) {
-      this.tabEls.toArray()[index].nativeElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest'
-      });
+      this.scrollToEl(this.tabEls.toArray()[index].nativeElement);
       this.tabs.forEach(t => t.active = false);
       tab.active = true;
       this.active = index;
@@ -182,5 +227,85 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges {
       this.activeChange.emit(this.active);
       this.currentSelectedTab.emit(tab);
       this.tabChange.emit(tab);
+  }
+
+  scrollMouseDown(direction) {
+    const comp = this;
+    if (direction === 'left') {
+      comp.scrollLeft();
+    } else {
+      comp.scrollRight();
+    }
+    clearInterval(this.timeInterval);
+    this.timeInterval = setInterval(() => {
+      if (direction === 'left') {
+        comp.scrollLeft();
+      } else {
+        comp.scrollRight();
+      }
+    }, 500);
+  }
+
+  scrollMouseUp() {
+    clearInterval(this.timeInterval);
+  }
+
+  scrollLeft() {
+    const scrollVal = this.tabsContent.nativeElement.scrollLeft - this.tabsContent.nativeElement.clientWidth;
+    this.tabsContent.nativeElement.scroll({
+      left: scrollVal,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollRight () {
+    const scrollVal = this.tabsContent.nativeElement.scrollLeft + this.tabsContent.nativeElement.clientWidth;
+    this.tabsContent.nativeElement.scroll({
+      left: scrollVal,
+      behavior: 'smooth'
+    });
+  }
+
+  isScrolledIntoView (el, debug = false) {
+    const rect = el.getBoundingClientRect();
+    const elemLeft = rect.left;
+    const elemRight = rect.right;
+    const parentRect = el.parentNode.getBoundingClientRect();
+    const parentElemLeft = parentRect.left - 1;
+    const parentElemRight = parentRect.right + 1;
+    if (debug) {
+      console.log(el, elemLeft, elemRight, parentElemLeft, parentElemRight);
+    }
+
+    const isVisible = (elemLeft >= parentElemLeft) && (elemRight <= parentElemRight);
+    return isVisible;
+  }
+
+  scrollToEl(el) {
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  }
+
+  onScroll() {
+    if (this.scrollable) {
+      const elArr = this.tabEls.toArray();
+      if (elArr.length === 0) {
+        return;
+      }
+      if (this.showPrevBtn && this.isScrolledIntoView(elArr[0].nativeElement)) {
+        this.showPrevBtn = false;
+        clearInterval(this.timeInterval);
+      } else if (!this.showPrevBtn && !this.isScrolledIntoView(elArr[0].nativeElement)) {
+        this.showPrevBtn = true;
+      }
+      if (this.showNextBtn && this.isScrolledIntoView(elArr[elArr.length - 1].nativeElement)) {
+        this.showNextBtn = false;
+        clearInterval(this.timeInterval);
+      } else if (!this.showNextBtn && !this.isScrolledIntoView(elArr[elArr.length - 1].nativeElement)) {
+        this.showNextBtn = true;
+      }
+    }
   }
 }

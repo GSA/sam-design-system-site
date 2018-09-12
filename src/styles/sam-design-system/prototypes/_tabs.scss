@@ -1,35 +1,86 @@
+$actualHeight: 60px;
 // horizontal scroll
 .sam-tabs-next-wrapper{
-    height: 50px;
+    height: $actualHeight;
     width: 100%;
     overflow:hidden;
-}
-.sam-tabs-next {
-    height: 100%;
-    width: 100%;
-    overflow-x: scroll;
-    padding-bottom: 18px;
-    box-sizing: content-box;
-}
 
-.sam-ui.secondary.pointing.menu.sam-tabs-next{
-    padding-top: 1px;
-    padding-bottom: 5px;
-    height: 60px;
-
-    .item{
-        margin-right:5px;
-        padding: 15px 30px;
-        border: 1px solid #ccc;
+    .sam-ui.menu.sam-tabs-next{
+        height: 100%;
+        width: 100%;
+        overflow-x: scroll;
+        box-sizing: content-box;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 80px;
+        position:relative;  
         background: transparent;
-        color: #5B616B;
+        border: 0;
+        
+        &.scrolling{
+            width: calc(100% - 36px);
+            margin-top: 0px;
+            padding-top: 0;
+            float:left;
+        }
 
-        &.active{
-            background-color: #5B616B;
-            color:white;
+        .item{
+            margin-right: 5px;
+            padding: 9px 30px;
+            height: 25px;
+            border: 1px solid #ccc;
+            background: transparent;
+            color: #5B616B;
+            
+            &.active{
+                background-color: #205593;
+                color:white;
+            }
+            &:last-of-type{
+                margin-right:0px;
+            }
         }
-        &:last-child{
-            margin-right:0px;
+
+        
+    }
+    .tab-prev-btn-wrapper{
+        display: block;
+        float:left;
+    }
+    
+    .tab-next-btn-wrapper{
+        display: block;
+        float:left;
+
+        .tab-nav-btn{
+            text-align: right;
         }
-    }   
+    }
+
+    .tab-nav-btn{
+        width: 18px;
+        height: 50px;
+        line-height: 50px;
+        color:#000;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+        background: transparent;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:active{
+            color: #205593;
+        }
+    }
+
+    .spacer{
+        width: 18px;
+        height: $actualHeight;
+        display: block;
+    }
 }

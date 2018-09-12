@@ -16,8 +16,7 @@ import {
   SamModalComponent,
   SamPageNextService,
   DataStore,
-  layoutStore,
-  filterItemModel
+  layoutStore
 } from '@gsa-sam/sam-ui-elements';
 import {
   faTable,

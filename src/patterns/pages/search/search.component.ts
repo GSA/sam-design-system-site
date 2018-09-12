@@ -14,8 +14,7 @@ import {
     SamPaginationNextComponent,
     DataStore,
     layoutStore,
-    SamPageNextService,
-    filterItemModel
+    SamPageNextService
   } from '@gsa-sam/sam-ui-elements';
   import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
 

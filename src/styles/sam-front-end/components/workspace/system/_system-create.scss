@@ -283,6 +283,21 @@
     }
   }
 
+  .organization {
+    .usa-alert {
+      margin-bottom: 1.2rem;
+
+      .usa-alert-close {
+        top: 1.5rem;
+        right: 2.5rem;
+      }
+
+      .usa-alert-body {
+        width: 96%;
+      }
+    }
+  }
+
   .review {
     legend {
       margin-bottom: 0.5em;

@@ -20,5 +20,13 @@
       @include sr-only();
     }
   }
-  
+  h2.sam-ui.header {
+    font-size: $h3;
+  }
+  .build-info{
+    color: #d6d7d9;
+    margin: 0;
+    font-size: small;
+    line-height: 0;
+  }
 }

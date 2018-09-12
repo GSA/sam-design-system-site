@@ -16,6 +16,7 @@
 @import 'view-request-page';
 @import 'view-access';
 @import 'view-assignment';
+@import 'rm-comments';
 
 [type='checkbox']:checked.permission + label::before {
   background-color: #0071bc;

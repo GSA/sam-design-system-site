@@ -70,6 +70,15 @@ export class SamLayoutDemoComponent implements OnInit {
   @ViewChild(SamModalComponent)
     public fieldsEditor: SamModalComponent;
 
+    public test = [];
+    public testOptions = [
+      { key: 'one', value: 'one' },
+      { key: 'two', value: 'two' },
+      { key: 'three', value: 'three' },
+      { key: 'four', value: 'four' },
+      { key: 'five', value: 'five' },
+      ];
+
   constructor (
     private _fb: FormBuilder,
     private _service: SamPageNextService,

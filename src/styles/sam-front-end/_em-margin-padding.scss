@@ -1,0 +1,134 @@
+@mixin em-margin-and-padding($spacing) {
+  @for $i from 1 to 10 {
+    // Margin
+    %margin-#{$i}em { margin: $spacing * $i !important; }
+
+    %margin-top-#{$i}em,
+    %margin-vertical-#{$i}em { margin-top: $spacing * $i !important; }
+
+    %margin-bottom-#{$i}em,
+    %margin-vertical-#{$i}em { margin-bottom: $spacing * $i !important; }
+
+    %margin-left-#{$i}em,
+    %margin-horizontal-#{$i}em { margin-left: $spacing * $i !important; }
+
+    %margin-right-#{$i}em,
+    %margin-horizontal-#{$i}em { margin-right: $spacing * $i !important; }
+
+    // Padding
+    %padding-#{$i}em { padding: $spacing * $i !important; }
+
+    %padding-top-#{$i}em,
+    %padding-vertical-#{$i}em { padding-top: $spacing * $i !important; }
+
+    %padding-bottom-#{$i}em,
+    %padding-vertical-#{$i}em { padding-bottom: $spacing * $i !important; }
+
+    %padding-left-#{$i}em,
+    %padding-horizontal-#{$i}em { padding-left: $spacing * $i !important; }
+
+    %padding-right-#{$i}em,
+    %padding-horizontal-#{$i}em { padding-right: $spacing * $i !important; }
+    }
+}
+
+$spacing: 1em;
+@include em-margin-and-padding($spacing);
+
+// Shorthand for setting margins and padding
+//
+// m - margin
+// p - padding
+// V - vertical
+// H - horizontal
+// T - top
+// B - bottom
+// L - left
+// R - right
+
+.m_All-1em { @extend %margin-1em; }
+.m_All-3em { @extend %margin-3em; }
+.m_All-4em { @extend %margin-4em; }
+
+.m_V-1em { @extend %margin-vertical-1em; }
+.m_V-2em { @extend %margin-vertical-2em; }
+.m_V-3em { @extend %margin-vertical-3em; }
+.m_V-4em { @extend %margin-vertical-4em; }
+.m_V-5em { @extend %margin-vertical-5em; }
+
+.m_H-3em { @extend %margin-horizontal-3em; }
+
+.m_T-0_9em-inv { margin-top: -0.9em !important; }
+.m_T-0_2em { margin-top: 0.2em !important; }
+.m_T-1em { @extend %margin-top-1em; }
+.m_T-2em { @extend %margin-top-2em; }
+.m_T-3em { @extend %margin-top-3em; }
+.m_T-4em { @extend %margin-top-4em; }
+.m_T-5em { @extend %margin-top-5em; }
+.m_T-6em { @extend %margin-top-6em; }
+
+.m_B-1em { @extend %margin-bottom-1em; }
+.m_B-2em { @extend %margin-bottom-2em; }
+.m_B-3em { @extend %margin-bottom-3em; }
+.m_B-4em { @extend %margin-bottom-4em; }
+.m_B-5em { @extend %margin-bottom-5em; }
+.m_B-6em { @extend %margin-bottom-6em; }
+
+.m_L-1em { @extend %margin-left-1em; }
+.m_L-2em { @extend %margin-left-2em; }
+.m_L-3em { @extend %margin-left-3em; }
+.m_L-4em { @extend %margin-left-4em; }
+.m_L-5em { @extend %margin-left-5em; }
+.m_L-6em { @extend %margin-left-6em; }
+.m_L-7em { @extend %margin-left-7em; }
+.m_L-8em { @extend %margin-left-8em; }
+
+.m_R-1em { @extend %margin-right-1em; }
+.m_R-2em { @extend %margin-right-2em; }
+.m_R-3em { @extend %margin-right-3em; }
+.m_R-4em { @extend %margin-right-4em; }
+.m_R-5em { @extend %margin-right-5em; }
+.m_R-6em { @extend %margin-right-6em; }
+
+
+.p_All-1em { @extend %padding-1em; }
+.p_All-2em { @extend %padding-2em; }
+.p_All-3em { @extend %padding-3em; }
+.p_All-4em { @extend %padding-4em; }
+
+.p_V-1em {  @extend %padding-vertical-1em; }
+.p_V-3em {  @extend %padding-vertical-3em; }
+
+.p_H-3em {  @extend %padding-horizontal-3em; }
+.p_H-4em {  @extend %padding-horizontal-4em; }
+
+.p_T-1em { @extend %padding-top-1em; }
+.p_T-2em { @extend %padding-top-2em; }
+.p_T-3em { @extend %padding-top-3em; }
+.p_T-4em { @extend %padding-top-4em; }
+.p_T-5em { @extend %padding-top-5em; }
+.p_T-6em { @extend %padding-top-6em; }
+
+.p_B-1em { @extend %padding-bottom-1em; }
+.p_B-2em { @extend %padding-bottom-2em; }
+.p_B-3em { @extend %padding-bottom-3em; }
+.p_B-4em { @extend %padding-bottom-4em; }
+.p_B-5em { @extend %padding-bottom-5em; }
+.p_B-6em { @extend %padding-bottom-6em; }
+
+.p_L-1em { @extend %padding-left-1em; }
+.p_L-2em { @extend %padding-left-2em; }
+.p_L-3em { @extend %padding-left-3em; }
+.p_L-4em { @extend %padding-left-4em; }
+.p_L-5em { @extend %padding-left-5em; }
+.p_L-6em { @extend %padding-left-6em; }
+.p_L-7em { @extend %padding-left-7em; }
+.p_L-8em { @extend %padding-left-8em; }
+
+.p_R-0_6em { padding-right: 0.6em !important; }
+.p_R-1em { @extend %padding-right-1em; }
+.p_R-2em { @extend %padding-right-2em; }
+.p_R-3em { @extend %padding-right-3em; }
+.p_R-4em { @extend %padding-right-4em; }
+.p_R-5em { @extend %padding-right-5em; }
+.p_R-6em { @extend %padding-right-6em; }

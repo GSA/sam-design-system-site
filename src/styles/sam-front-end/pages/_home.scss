@@ -2,6 +2,17 @@ $dark-blue: #102d50;
 $light-blue:  #0070b8;
 
 home {
+  .img {
+    min-height: 300px;
+    background-size: cover !important;
+  }
+  .welcome-banner {
+    background: url(~assets/img/home/columns.jpg); 
+  }
+  .welcome-banner-text {
+    color: white;
+    padding: 2rem 4rem !important;
+  }
   .sam-is-free {
     width: 200px;
     height: 200px;
@@ -30,13 +41,78 @@ home {
   }
 
   .home-section {
+    background-color: #f7f7f6;
     padding: 5rem 0 3rem 0;
+  }
+
+  .fed-assistance-classroom-img {
+    background: url(~assets/img/home/classroom.jpg);
+  }
+
+  .contracting {
+    background-color: #ffffff;
+  }
+
+  .contracting-people-img {
+    background: url(~assets/img/home/people.jpg); 
+  }
+
+  .entities {
+    background-color: #f1f0ef;
+  }
+
+  .entities-coffee-img {
+    background: url(~assets/img/home/coffee.jpg); 
+  }
+
+  .what-is-beta-sam {
+    background-color: #e4e2e0;
+  }
+
+  .what-is-beta-sam-video-container {
+    margin: 0.5rem auto;
+  }
+
+  .what-is-sam-video {
+    min-height: 300px;
+  }
+
+  .feedback-icon {
+    margin-top: -45px;
+  }
+
+  .feedback-icon-circle {
+    color: #00a4cf; 
+    font-size: 80px;
+  }
+
+  .feedback-icon-comment {
+    color: #ffffff; 
+    font-size: 50px; 
+    line-height: 75px;
+  }
+
+  .feedback-button {
+    margin-left: 80px; 
+    margin-top: .5rem; 
+    margin-right: 200px;
   }
 
   .bg-blue {
     background-color: $dark-blue;
   }
 
+  .bottom-row-item h4 {
+    margin-top: 0.5em;
+  }
+
+  .bottom-row-item a {
+    color: white;
+  }
+
+  .inner-icon {
+    color: #112e51;
+  }
   h2 {
     color: $dark-blue;
     margin-bottom: 3rem;

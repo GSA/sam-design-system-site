@@ -50,4 +50,11 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     font-size: 0.75em
   }
+
+  .help-results-raised-segment {
+    box-shadow: 0 7px 7px rgba(50, 50, 93, 0.1), 0 0 7px rgba(0, 0, 0, 0.07) !important;
+  }
+  .video-bgk-thumbnail {
+    background-color: #E8E8E8;
+  }
 }

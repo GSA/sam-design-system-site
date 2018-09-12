@@ -1,25 +1,8 @@
-.label-wrapper-horizontal {
-  display: table;
-
-  > * {
-    display: table-cell;
-    vertical-align: middle;
+sam-label-wrapper, sam-fieldset-wrapper{
+  .date-group{
+    overflow:auto;
   }
-
-  &:first-child {
-    padding-right: 8px;
-  }
-
-  label {
-    display: inline-block;
-  }
-
-  .usa-form-group {
-    display: inline-block;
-    float: none;
-  }
-
-  .date-group {
-    display: inline-block;
+  .toggle-more{
+    margin-bottom: 1.7rem;
   }
 }

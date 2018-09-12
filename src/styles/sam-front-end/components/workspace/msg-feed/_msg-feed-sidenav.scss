@@ -1,5 +1,14 @@
 .msg-feed-sidenav{
 
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    padding-left: 0 !important;
+    list-style-type: none !important;
+  }
+
   .border-top-black{
     border-top: 1px black solid;
   }

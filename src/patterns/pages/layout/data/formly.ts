@@ -28,6 +28,21 @@ export const fields: FormlyFieldConfig[] = [
       label: 'Date Modified',
       id: 'date-modified'
     }
+  },
+  {
+    key: 'autocomplete',
+    type: 'autocomplete',
+    wrappers: ['filter'],
+    templateOptions: {
+      name: 'ac',
+      label: 'Test Autocomplete',
+      id: 'test-ac',
+      options: [
+        { key: 'one', value: 'one' },
+        { key: 'two', value: 'two' },
+        { key: 'three', value: 'three' }
+      ]
+    }
   }
 ];
 
@@ -41,4 +56,5 @@ export const model = {
   email: { key: 'start', value: 'start' },
   text: 'Hello World',
   checkbox: [],
+  autocomplete: null
 };

@@ -49,3 +49,47 @@ input.sam.input.error{
 .dollar-text{
   text-align:right;
 }
+
+input[type="checkbox"].sam.checkbox + label {
+  display: block;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+input[type="checkbox"].sam.checkbox + label:before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  content: '';
+  margin-right: 5px;
+  border: 1px solid #D1D7DC;
+  transform: translateY(20%);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 200ms ease-in;
+  box-shadow: none;
+  background-position: 0px -2px;
+}
+
+input[type="checkbox"].sam.checkbox:checked + label {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+input[type="checkbox"].sam.checkbox:checked + label:before {
+  border: 1px solid #f1f1f1;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23000' fill-rule='nonzero'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 0px -2px;
+}
+
+input[type="checkbox"].sam.checkbox {
+  width: 15px;
+  height: 15px;
+  order: 1;
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+  visibility: hidden;
+}

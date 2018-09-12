@@ -1,4 +1,8 @@
 .roles-directory {
+
+  .org-selected-bkg {
+    background: #fdb81e !important;
+  }
   .user-role {
     margin-top: 1em;
     background-color: white; 
@@ -146,5 +150,41 @@
 
   .inline-block {
     display: inline-block;
+  }
+
+  .role-options{
+    max-height: 20em;
+    overflow-y: auto;
+    padding-left: 4px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .domain-options {
+    max-height: 320px;
+    overflow-y: auto;
+    padding-left: 4px;
+    position: relative;
+  }
+
+  .result-actions {
+    display: inline-block;
+  }
+
+  .user-details {
+    padding: 1em;
+  }
+
+  .user-icon-wrapper {
+    background-color: transparent;
+  }
+
+  .user-icon {
+    width: 50px;
+    opacity: .5;
+  }
+
+  .spinner-container {
+    margin-top: 3em;
   }
 }

@@ -1,0 +1,29 @@
+pre{
+    width: 100%;
+  }
+   @media print{
+     body *{
+       /* shrink page slightly to fit on a standard letter/legal paper by default */
+       zoom: 97%;
+       /* hide everything and choose what to print by a whitelist strategy */
+       visibility: hidden;
+     }
+     sam-header, alert-header, alert-footer, sam-footer{
+       /* remove space being taken up */
+       display: none;
+     }
+     body main{
+       /* for safari only, the parent container also needs to be visible to be printed */
+       visibility: visible !important;
+     }
+     body main pre{
+       visibility: visible !important;
+       overflow-x: hidden; /* Hide scrollbars when printing todo: find better solution ?? */
+       /* From https://css-tricks.com/snippets/css/make-pre-text-wrap */
+       white-space: pre-wrap;                   /* css-3 */
+       white-space: -moz-pre-wrap !important;   /* Mozilla, since 1999 */
+       white-space: -pre-wrap;                  /* Opera 4-6 */
+       white-space: -o-pre-wrap;                /* Opera 7 */
+       word-wrap: break-word;                   /* Internet Explorer 5.5+ */
+     }
+   }

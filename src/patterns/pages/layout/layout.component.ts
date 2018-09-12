@@ -211,14 +211,6 @@ export class SamLayoutDemoComponent implements OnInit {
     .filter(filter => filter.value.length > 0);
   }
 
-  public pillsToFilters (event) {
-    Object.keys(event).forEach(
-      key => {
-
-      }
-    );
-  }
-
   private _toggleColumn (field): void {
     for (const option of field.options){
       const value = option.value;

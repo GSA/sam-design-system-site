@@ -19,6 +19,10 @@ import {
   layoutStore,
   filterItemModel
 } from '@gsa-sam/sam-ui-elements';
+import {
+  faTable,
+  faChartBar
+} from '@fortawesome/free-solid-svg-icons';
 
 import {
   fields,
@@ -63,6 +67,9 @@ export class SamLayoutDemoComponent implements OnInit {
   public data: Observable<any>;
   public length: number;
   public columnDefObs = Observable.of(columnDefinitions);
+
+  public faTable = faTable;
+  public faChartBar = faChartBar;
 
   @ViewChild(SamSortDirective)
     public _sort: SamSortDirective;

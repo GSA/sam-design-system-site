@@ -48,8 +48,11 @@
     </sam-filter-drawer>
     
     <sam-main-content>
-      <sam-tabs samContentOutlet>
-        <sam-tab tabTitle="Summary">
+      <sam-tabs-next samContentOutlet>
+        <sam-tab-next>
+          <div class="title">
+            <sam-icon [icon]="faTable"></sam-icon> Summary
+          </div>
           <!-- pagination + edit fields button -->
           <sam-action-bar>
             <sam-pagination-next
@@ -90,14 +93,20 @@
             *cdkRowDef="let row; columns: displayedColumns"
           ></sam-row> 
         </sam-datatable>
-      </sam-tab>
-      <sam-tab tabTitle="Award Details">
+      </sam-tab-next>
+      <sam-tab-next>
+        <div class="title">
+          <sam-icon [icon]="faTable"></sam-icon> Award Details
+        </div>
         bbbb
-      </sam-tab>
-      <sam-tab tabTitle="Chart">
+      </sam-tab-next>
+      <sam-tab-next tabTitle="Chart">
+        <div class="title">
+          <sam-icon [icon]="faChartBar"></sam-icon> Chart
+        </div>
         cccc
-      </sam-tab>
-      </sam-tabs>
+      </sam-tab-next>
+      </sam-tabs-next>
     </sam-main-content>
   </sam-main>
 

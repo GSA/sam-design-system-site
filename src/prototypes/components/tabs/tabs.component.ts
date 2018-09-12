@@ -63,7 +63,7 @@ export class SamTabNextComponent {
   template: `
   <div class="sam-tabs-next-wrapper">
     <div *ngIf="scrollable" class="tab-prev-btn-wrapper">
-      <button 
+      <button
         *ngIf="showPrevBtn"
         tabindex="-1"
         (mousedown)="scrollMouseDown('left')"
@@ -75,7 +75,7 @@ export class SamTabNextComponent {
       [ngClass]="[themes[theme],size,scrolling]"
       *ngIf="tabs && tabs.length"
       role="tablist"
-      (scroll)="onScroll($event)">
+      (scroll)="onScroll()">
       <ng-container *ngFor="let tab of tabs; let i = index">
         <button [attr.tabindex]="tabindex" role="tab" #tabEl class="item"
           [ngClass]="{ active: tab.active }"
@@ -236,7 +236,8 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterV
     } else {
       comp.scrollRight();
     }
-    this.timeInterval = setInterval(function() {
+    clearInterval(this.timeInterval);
+    this.timeInterval = setInterval(() => {
       if (direction === 'left') {
         comp.scrollLeft();
       } else {
@@ -244,52 +245,25 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterV
       }
     }, 500);
   }
-  
+
   scrollMouseUp() {
     clearInterval(this.timeInterval);
   }
 
   scrollLeft() {
-    let found = false;
-    const elArr = this.tabEls.toArray();
-    for (let idx = 0; idx < elArr.length; idx++) {
-      const item = elArr[idx];
-      const intIdx = Number(idx);
-      const prevItem = intIdx !== 0 ? elArr[ intIdx - 1] : null;
-      const isElVisible = this.isScrolledIntoView(item.nativeElement);
-      const isPrevElVisible = prevItem ? this.isScrolledIntoView(prevItem.nativeElement) : null;
-      if (isElVisible && !isPrevElVisible && prevItem) {
-        found = true;
-        // this.isScrolledIntoView(prevItem.nativeElement,true)
-        this.scrollToEl(prevItem.nativeElement);
-        break;
-      }
-    }
-    if (!found && elArr.length > 0) {
-      this.scrollToEl(elArr[0].nativeElement);
-    }
+    const scrollVal = this.tabsContent.nativeElement.scrollLeft - this.tabsContent.nativeElement.clientWidth;
+    this.tabsContent.nativeElement.scroll({
+      left: scrollVal,
+      behavior: 'smooth'
+    });
   }
 
   scrollRight () {
-    let trueFlag = false;
-    let found = false;
-    const elArr = this.tabEls.toArray();
-    for (const item of elArr) {
-      const isElVisible = this.isScrolledIntoView(item.nativeElement);
-      if (isElVisible) {
-        trueFlag = true;
-      }
-      if (!isElVisible && trueFlag) {
-        // this.isScrolledIntoView(item.nativeElement,true)
-        found = true;
-        this.scrollToEl(item.nativeElement);
-        break;
-      }
-    }
-    if (!found && elArr.length > 0) {
-      this.scrollToEl(elArr[elArr.length - 1].nativeElement);
-    }
-    this.tabsContent.nativeElement.focus();
+    const scrollVal = this.tabsContent.nativeElement.scrollLeft + this.tabsContent.nativeElement.clientWidth;
+    this.tabsContent.nativeElement.scroll({
+      left: scrollVal,
+      behavior: 'smooth'
+    });
   }
 
   isScrolledIntoView (el, debug = false) {
@@ -314,20 +288,22 @@ export class SamTabsNextComponent implements AfterContentInit, OnChanges, AfterV
     });
   }
 
-  onScroll(event){
-    if(this.scrollable){
+  onScroll() {
+    if (this.scrollable) {
       const elArr = this.tabEls.toArray();
-      if(elArr.length == 0){
+      if (elArr.length === 0) {
         return;
       }
       if (this.showPrevBtn && this.isScrolledIntoView(elArr[0].nativeElement)) {
         this.showPrevBtn = false;
+        clearInterval(this.timeInterval);
       } else if (!this.showPrevBtn && !this.isScrolledIntoView(elArr[0].nativeElement)) {
         this.showPrevBtn = true;
       }
-      if (this.showNextBtn && this.isScrolledIntoView(elArr[elArr.length-1].nativeElement)) {
+      if (this.showNextBtn && this.isScrolledIntoView(elArr[elArr.length - 1].nativeElement)) {
         this.showNextBtn = false;
-      } else if (!this.showNextBtn && !this.isScrolledIntoView(elArr[elArr.length-1].nativeElement)) {
+        clearInterval(this.timeInterval);
+      } else if (!this.showNextBtn && !this.isScrolledIntoView(elArr[elArr.length - 1].nativeElement)) {
         this.showNextBtn = true;
       }
     }

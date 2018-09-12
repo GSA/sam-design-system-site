@@ -1,4 +1,4 @@
-$actualHeight: 50px;
+$actualHeight: 60px;
 // horizontal scroll
 .sam-tabs-next-wrapper{
     height: $actualHeight;
@@ -12,7 +12,7 @@ $actualHeight: 50px;
         box-sizing: content-box;
         padding-top: 0px;
         padding-bottom: 0px;
-        height: 65px;
+        height: 80px;
         position:relative;  
         background: transparent;
         border: 0;
@@ -59,10 +59,12 @@ $actualHeight: 50px;
 
     .tab-nav-btn{
         width: 18px;
-        height: $actualHeight;
-        line-height: $actualHeight;
+        height: 50px;
+        line-height: 50px;
         color:#000;
         padding: 0;
+        margin-right: 0;
+        margin-left: 0;
         background: transparent;
         outline: none;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -78,7 +80,7 @@ $actualHeight: 50px;
 
     .spacer{
         width: 18px;
-        height: 50px;
+        height: $actualHeight;
         display: block;
     }
 }

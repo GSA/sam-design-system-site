@@ -1,10 +1,18 @@
 <sam-page-next>
+
+  <!-- page title goes here -->
+  <sam-page-title
+    super="Contract Detail Report"
+    title="Contract Detail based on Account IDs for FY18"
+    inverted="true">
+  </sam-page-title>
+
   <sam-toolbar></sam-toolbar>
 
   <sam-aside>
 
     <sam-filters-wrapper [group]="form">
-      <h4 class="sam heading">Filters</h4>
+      <h4 class="sam heading">Filter By</h4>
       <sam-filters
         [form]="form"
         [fields]="fields"
@@ -25,15 +33,9 @@
     </sam-resources-wrapper>
 
   </sam-aside>
-  
+
   <!-- Main Content -->
   <sam-main>
-
-    <!-- page title goes here -->
-    <sam-page-title
-      title="My Saved Report Criteria"
-      super="Federal Assistance Compliance Summary">
-    </sam-page-title>
 
     <!-- filter-drawer -->
     <sam-filter-drawer>
@@ -47,18 +49,19 @@
     
     <sam-main-content>
       <sam-tabs samContentOutlet>
-        <sam-tab tabTitle="Table">
+        <sam-tab tabTitle="Summary">
           <!-- pagination + edit fields button -->
           <sam-action-bar>
             <sam-pagination-next
               [totalUnits]="length"
             ></sam-pagination-next>
-            <sam-button
+            <sam-button-next
               samPageAction
-              buttonType="secondary"
-              buttonText="Edit Fields"
+              action="secondary"
               (click)="toggleFieldsEditor()"
-            ></sam-button>
+            >
+            Columns
+          </sam-button-next>
           </sam-action-bar>
         
         <!-- datatable -->
@@ -88,10 +91,10 @@
           ></sam-row> 
         </sam-datatable>
       </sam-tab>
-      <sam-tab tabTitle="Summary">
+      <sam-tab tabTitle="Award Details">
         bbbb
       </sam-tab>
-      <sam-tab tabTitle="Charts">
+      <sam-tab tabTitle="Chart">
         cccc
       </sam-tab>
       </sam-tabs>

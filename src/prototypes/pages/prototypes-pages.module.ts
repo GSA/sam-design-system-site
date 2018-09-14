@@ -30,7 +30,8 @@ import { DatePageComponent } from './date/date.component';
 import { SortArrayOfObjects } from './search/sam-front-end-components/wage-determination/sort-array-object.pipe';
 import { DynamicFormsPageComponent } from './dynamic-forms';
 import { FormlyModule } from '@ngx-formly/core';
-import { IconDemoComponent } from './icon/icon.component';
+import { TabsDemoComponent } from './tabs/tabs-demo.component';
+import { SamExperimentalModule } from '@gsa-sam/sam-ui-elements';
 
 @NgModule({
   imports: [
@@ -41,6 +42,7 @@ import { IconDemoComponent } from './icon/icon.component';
     FormlyModule,
     CdkTableModule,
     PrototypesComponentsModule,
+    SamExperimentalModule
   ],
   declarations: [
     PagesComponent,
@@ -62,7 +64,7 @@ import { IconDemoComponent } from './icon/icon.component';
     DatePageComponent,
     SortArrayOfObjects,
     DynamicFormsPageComponent,
-    IconDemoComponent
+    TabsDemoComponent
   ],
   providers: [
     SearchUtil,

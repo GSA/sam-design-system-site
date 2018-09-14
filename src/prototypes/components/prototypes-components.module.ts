@@ -62,7 +62,7 @@ import { FormlyModule } from '@ngx-formly/core';
     CdkTableModule,
     SamExperimentalDataTableModule,
     DatepickerProtoModule,
-    SamDynamicFormComponent,
+    SamDynamicFormComponent
   ]
 })
 export class PrototypesComponentsModule {}

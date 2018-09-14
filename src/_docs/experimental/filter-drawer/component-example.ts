@@ -18,11 +18,11 @@ import { DocumentationService } from '../../../app/services/documentation.servic
 
 // tabs/spacing matters for code example block
 const code_example = `<sam-filter-drawer (clear)="clearHandler()" (save)="saveHandler()">
-  <li sam-filter-drawer-item *ngFor="let filterItem of filters"
-    [fieldId]="filterItem.id"
-    [fieldLabel]="filterItem.label"
-    [fieldValue]="filterItem.value"
-    (remove)="itemRemoveHandler($event)"></li>
+  <sam-filter-drawer-item *ngFor="let filterItem of filters"
+    [label]="filterItem.label"
+    [values]="[filterItem.value]"
+    (remove)="itemRemoveHandler($event)"
+  ></sam-filter-drawer-item>
 </sam-filter-drawer>
 <p *ngIf="message">{{message}}</p>
 <br/>

@@ -19,4 +19,9 @@
   h4.sam.inverted.heading{
     color: white;
   }
+
+  h1.sam.heading.inverted .intro{
+    color: invert(sam-color($foreground, headers, .8));
+  }
+
 }

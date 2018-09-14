@@ -1,0 +1,44 @@
+.following-page {
+
+  .sam-ui.table {
+    border: none;
+
+    th {
+      &:first-of-type {
+        width: 6%;
+        position: relative;
+        label {
+          margin-bottom: 0em;
+        }
+      }
+      &.email-col,
+      &.action-col {
+        padding: 0 1.2em;
+      }
+
+      > span {
+        display: block;
+      }
+    }
+
+    td {
+      padding: 0 0.5em;
+      &:first-of-type {
+        position: relative;
+        label {
+          margin-bottom: 0em;
+        }
+      }
+
+      &.desc-row {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.msg-feed-sidenav {
+  .clear-all-btn {
+    text-align: center;
+  }
+}

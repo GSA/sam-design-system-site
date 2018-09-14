@@ -28,7 +28,8 @@ export class PagesComponent {
     { name: 'Report', value: 'report' },
     { name: 'Table', value: 'table' },
     { name: 'Date', value: 'date' },
-    { name: 'Icon', value: 'icon' }
+    { name: 'Icon', value: 'icon' },
+    { name: 'Tabs', value: 'tabs' }
   ];
 
   navigateTo() {

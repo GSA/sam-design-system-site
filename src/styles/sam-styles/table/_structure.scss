@@ -72,7 +72,9 @@ td[sam-cell], th[sam-header-cell] {
   min-height: inherit;
 }
 
-
+sam-header-cell{
+  overflow: visible;
+}
 /**
  * SORT
  */
@@ -109,6 +111,11 @@ td[sam-cell], th[sam-header-cell] {
    color: currentColor;
    span.fa{
      padding-left: 5px;
+    }
+    &:focus{
+      outline: 2px dotted #aeb0b5;
+      outline-offset: 1px;
+      box-shadow: none;
     }
  }
  

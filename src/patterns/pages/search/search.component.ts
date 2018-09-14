@@ -14,8 +14,7 @@ import {
     SamPaginationNextComponent,
     DataStore,
     layoutStore,
-    SamPageNextService,
-    filterItemModel
+    SamPageNextService
   } from '@gsa-sam/sam-ui-elements';
   import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
 
@@ -99,20 +98,42 @@ import {
       this._service.get('sort').setValue(event);
     }
 
-    private _filtersToPills (filters): filterItemModel[] {
-      const keys = Object.keys(filters);
-      return keys.map(
-        key => {
-          const obj: filterItemModel = {
-            id: key,
-            label: key,
-            value: filters[key]
-          };
-          return obj;
+    public removeItem (event): void {
+      const current = this._service.get('filters').value;
+      const key = Object.keys(event)[0];
+
+      if (current[key]) {
+        if (current[key].constructor === Array) {
+          const index = current[key].indexOf(event[key]);
+          current[key].splice(index, 1);
+        } else {
+          current[key] = null;
         }
-      )
-      .filter(
-        filter => !!filter.value
-      );
+        this._service.get('filters').patchValue(current);
+      }
+    }
+
+    private _filtersToPills (filters): any[] {
+      const keys = Object.keys(filters);
+
+      return keys.map(key => {
+        let value;
+
+        if (filters[key]) {
+          if (filters[key].constructor === Array) {
+            value = filters[key];
+          } else {
+            value = [filters[key]];
+          }
+        } else {
+          value = [];
+        }
+
+        return {
+          label: key,
+          value: value
+        };
+      })
+      .filter(filter => filter.value.length > 0);
     }
   }

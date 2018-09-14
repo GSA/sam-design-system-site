@@ -1,5 +1,7 @@
 import { Component, AfterViewInit, Input, Renderer2, ElementRef } from '@angular/core';
 import * as Prism from 'prismjs';
+import 'prismjs/components/prism-scss';
+import 'prismjs/plugins/previewers/prism-previewers';
 
 @Component({
   selector: 'sam-code-example',

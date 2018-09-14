@@ -7,7 +7,7 @@
   $foreground: map-get($theme, foreground);
 
   .sam-table {
-    background: sam-color($background, 'card');
+    background: sam-color($background, table);
   }
 
   sam-row, sam-header-row, sam-footer-row,
@@ -15,8 +15,13 @@
     border-bottom-color: sam-color($foreground, divider);
   }
 
+  sam-header-row,
+  th.sam-header-cell{
+    background-color: sam-color($background, table-header);
+  }
+
   .sam-header-cell {
-    color: sam-color($foreground, text);
+    color: white;
   }
 
   .sam-cell, .sam-footer-cell {
@@ -34,7 +39,7 @@
   // Overrides USWDS Button default style
   .sam-sort-header-button:hover{
     background-color: transparent;
-    color: #0071bc;
+    color: white;
   }
 }
 

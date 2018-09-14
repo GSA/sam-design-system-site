@@ -1,5 +1,5 @@
 @mixin margin-and-padding-spacing($spacing) {
-  @for $i from 1 to 11 {
+  @for $i from 1 to 30 {
     // Margin
     %margin-#{$i}x { margin: $spacing * $i !important; }
 
@@ -81,6 +81,7 @@ $spacing: 5px;
 .m_L-6x { @extend %margin-left-6x; }
 .m_L-7x { @extend %margin-left-7x; }
 .m_L-8x { @extend %margin-left-8x; }
+.m_L-20x { @extend %margin-left-20x; }
 
 .m_R-1x { @extend %margin-right-1x; }
 .m_R-2x { @extend %margin-right-2x; }
@@ -89,15 +90,8 @@ $spacing: 5px;
 .m_R-5x { @extend %margin-right-5x; }
 .m_R-6x { @extend %margin-right-6x; }
 
-.m_0 { margin: 0 !important; }
-.m_R-0 { margin-right: 0 !important; }
-.m_T-0 { margin-top: 0 !important; }
-.m_B-0 { margin-bottom: 0 !important; }
 
-.m_auto {
-  margin-left: auto;
-  margin-right: auto;
-}
+.p_0 { padding: 0 !important; }
 
 .p_All-3x { @extend %padding-3x; }
 .p_All-4x { @extend %padding-4x; }
@@ -122,7 +116,7 @@ $spacing: 5px;
 .p_B-5x { @extend %padding-bottom-5x; }
 .p_B-6x { @extend %padding-bottom-6x; }
 
-.p_L-1x { @extend %padding-left-2x; }
+.p_L-1x { @extend %padding-left-1x; }
 .p_L-2x { @extend %padding-left-2x; }
 .p_L-3x { @extend %padding-left-3x; }
 .p_L-4x { @extend %padding-left-4x; }
@@ -137,3 +131,4 @@ $spacing: 5px;
 .p_R-4x { @extend %padding-right-4x; }
 .p_R-5x { @extend %padding-right-5x; }
 .p_R-6x { @extend %padding-right-6x; }
+.p_R-25x {@extend %padding-right-25x; }

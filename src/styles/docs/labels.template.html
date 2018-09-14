@@ -7,11 +7,26 @@
     <p class="sam lead">
       Labels draw attention to new or important content.
     </p>
-
-    <h2 class="sam heading">Status labels</h2>
+    
+    <h2 class="sam heading">Label types</h2>
     
     <div class="usa-grid doc-examples">
       <div class="usa-width-one-whole">
+        
+        <h3 class="sam heading">Normal</h3>
+        <span class="sam label">Normal</span>
+        <sam-code-example language="html" [code]="label_normal_markup"></sam-code-example> 
+        
+        <h3 class="sam heading">Normal with icons</h3>
+        <span class="sam label">
+          Normal with icon
+          <button class="sam button tertiary">
+            <span class="fa fa-close" aria-hidden="true"></span>
+          </button>
+        </span>
+        <sam-code-example language="html" [code]="label_normal_icons_markup"></sam-code-example> 
+        
+        <h3 class="sam heading">Status</h3>
         <span class="sam green status label">Published</span>
         <span class="sam dark gray status label">Cancelled</span>
         <span class="sam gray status label ">Inactive</span>
@@ -19,7 +34,9 @@
         <span class="sam light blue status label">Draft</span>
         <span class="sam red status label">Expired</span>
         <sam-code-example language="html" [code]="label_markup"></sam-code-example> 
+        
       </div>
     </div>
+    
   </div>
 </div>

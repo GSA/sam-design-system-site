@@ -46,7 +46,7 @@ export class BaseExampleComponent implements OnInit {
       return;
     }
     this.typedoc_content += `
-      <h2 class="sam-ui header">API Reference</h2>
+      <h2 class="sam heading">API Reference</h2>
       <table class="sam-ui definition celled table">
       <thead>
         <tr>

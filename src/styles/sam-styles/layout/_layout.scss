@@ -2,6 +2,21 @@
               <sam-main> 
 ***********************************************/ 
 
+sam-filters-wrapper {
+  padding-top: 15px;
+  display: block;
+  h4.sam.heading{
+    padding-left: 15px;
+  }
+  sam-button-next {
+    display: block;
+    text-align: center;
+  }
+  sam-button-next:first-of-type {
+    margin-top: 1rem;
+  }
+}
+
 sam-resources-wrapper {
   padding: 15px;
   display: block;

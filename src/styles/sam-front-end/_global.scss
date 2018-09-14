@@ -1,3 +1,26 @@
+/*0 padding styles migrated here - can be used regardless of px, rem, or em*/
+.m_0 { margin: 0 !important; }
+.m_R-0 { margin-right: 0 !important; }
+.m_T-0 { margin-top: 0 !important; }
+.m_B-0 { margin-bottom: 0 !important; }
+.m_L-0 { margin-left: 0 !important; }
+
+.m_auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p_0 { padding: 0 !important; }
+.p_R-0 { padding-right: 0 !important; }
+.p_T-0 { padding-top: 0 !important; }
+.p_B-0 { padding-bottom: 0 !important; }
+.p_L-0 { padding-left: 0 !important; }
+
+.p_auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -26,6 +49,22 @@
   word-wrap: break-word;
 }
 
+.whitespace-preline {
+    white-space: pre-line;
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+.no-bkg {
+  background: none;
+}
+
+.no-bkg:hover {
+  background: none;
+}
+
 .sr-only {
   position: absolute;
   overflow: hidden;
@@ -36,6 +75,7 @@
   padding: 0;
   border: 0;
 }
+
 
 .show {
   display: block;
@@ -53,8 +93,32 @@
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
+.normal {
+  font-weight: 400;
+}
+
 .bold {
-  font-weight: $font-bold;
+  font-weight: $font-bold !important;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .marginCenter {

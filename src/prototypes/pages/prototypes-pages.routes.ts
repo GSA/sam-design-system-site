@@ -9,7 +9,7 @@ import { ReportPageComponent } from './report/report.component';
 import { TablePageComponent } from './table/table.component';
 import { DatePageComponent } from './date/date.component';
 import { DynamicFormsPageComponent } from './dynamic-forms';
-import { IconDemoComponent } from './icon/icon.component';
+import { TabsDemoComponent } from './tabs/tabs-demo.component';
 
 const PageRoutes: Routes = [
   {
@@ -45,8 +45,8 @@ const PageRoutes: Routes = [
         component: DynamicFormsPageComponent
       },
       {
-        path: 'icon',
-        component: IconDemoComponent
+        path: 'tabs',
+        component: TabsDemoComponent
       }
     ]
   }

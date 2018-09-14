@@ -40,3 +40,10 @@
 .mat-expansion-panel-body .results-list {
   position: static;
 }
+.mat-expansion-panel-body .sam-autocomplete-multiselect .sam-autocomplete-multiselect-input{
+  width: 150px;
+}
+.mat-expansion-panel-body .sam-autocomplete-multiselect ul.multiselect-parent-list{
+  position: static;
+  width: 207px;
+}

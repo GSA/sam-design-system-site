@@ -11,7 +11,7 @@ npm install @gsa-sam/sam-ui-elements
 Load in your desired module into your angular application
 
 ```
-import { SamModalModule } from ‘@gsa-sam/sam-ui-elements’’;
+import { SamModalModule } from ‘@gsa-sam/sam-ui-elements’;
 ```
 
 Our source code can be found here at the [sam-ui-elements Github repository](https://github.com/GSA/sam-ui-elements)

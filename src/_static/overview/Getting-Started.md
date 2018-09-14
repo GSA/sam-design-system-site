@@ -2,6 +2,12 @@
 
 The SAM.gov Web Design System is an open source project maintained as part of the [beta.SAM.gov](https://beta.SAM.gov) program.
 
+# Mobility
+Our aim is to make sure each component also works well on mobile devices.
+
+# Accessibility
+The SAM Design System meets the WCAG 2.0 AA accessibility guidelines and conforms to the standards of Section 508 of the Rehabilitation Act. Please reach out to us for more discussion.
+
 ## For Developers
 With npm:
 ```

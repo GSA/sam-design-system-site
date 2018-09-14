@@ -30,6 +30,23 @@ export const fields: FormlyFieldConfig[] = [
     }
   },
   {
+    key: 'checkbox',
+    type: 'checkbox',
+    wrappers: ['filter'],
+    templateOptions: {
+      name: 'checkbox',
+      label: 'Checkbox Example',
+      id: 'checkbox',
+      options: [
+        { value: 'one', label: 'one', name: 'one' },
+        { value: 'two', label: 'two', name: 'two' },
+        { value: 'three', label: 'three', name: 'three' },
+        { value: 'four', label: 'four', name: 'four' },
+        { value: 'five', label: 'five', name: 'five' },
+      ]
+    }
+  },
+  {
     key: 'autocomplete',
     type: 'autocomplete',
     wrappers: ['filter'],

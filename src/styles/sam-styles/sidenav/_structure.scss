@@ -88,6 +88,7 @@
   display: block;
   height: 100%;
   overflow: auto;
+  min-height: 600px;
 }
 
 .mat-sidenav {
@@ -136,4 +137,9 @@
   }
 }
 
+@media (max-width: 600px){
+  sam-aside.mat-sidenav.mat-sidenav-over{
+    background-color: #f1f1f1;
+  }
+}
 

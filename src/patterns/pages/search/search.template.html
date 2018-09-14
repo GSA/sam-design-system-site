@@ -46,12 +46,12 @@
     </sam-page-title>
     
     <sam-filter-drawer>
-      <li sam-filter-drawer-item
+      <sam-filter-drawer-item
         *ngFor="let filterItem of filters | async"
-        [fieldId]="filterItem.id"
-        [fieldLabel]="filterItem.label"
-        [fieldValue]="filterItem.value"
-      ></li>
+        [label]="filterItem.label"
+        [values]="[filterItem.value]"
+        (remove)="removeItem($event)"
+      ></sam-filter-drawer-item>
     </sam-filter-drawer>
 
     <sam-main-content>

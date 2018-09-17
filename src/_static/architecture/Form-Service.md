@@ -15,7 +15,7 @@ The SAM Form Service provides a way to emit form events to SAM form controls and
 
 Inject the service from the ui-kit and use the `fireSubmit()` to update error messages on form controls. 
 
-```
+```typescript
 constructor(public samFormService: SamFormService){}
 
 formSubmitHandler(){
@@ -51,7 +51,7 @@ In template code:
 ```
 
 In component code:
-```
+```typescript
 formEmailSubmitHandler(){
     //this will only update the error messages on exampleFormGroup2
     this.samFormService.fireSubmit(this.exampleFormGroup2);

@@ -10,14 +10,14 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Inject the service from the ui-kit and use the <code>fireSubmit()</code> to update error messages on form controls.</p>
-<pre class="language-html"><code class="language-html">constructor(public samFormService: SamFormService){}
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">public</span> samFormService<span class="token punctuation">:</span> SamFormService<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-formSubmitHandler(){
-    this.samFormService.fireSubmit();
-    if(this.exampleFormGroup.valid){
-        //handle rest of submission
-    }
-}
+<span class="token function">formSubmitHandler</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>samFormService<span class="token punctuation">.</span><span class="token function">fireSubmit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>exampleFormGroup<span class="token punctuation">.</span>valid<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//handle rest of submission</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h3>Working with multiple forms</h3>
 <p>If you have multiple forms active on the page, you can also pass in your &quot;root&quot; Abstract Control to fire the event against a single form instance</p>
@@ -40,11 +40,11 @@ formSubmitHandler(){
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>In component code:</p>
-<pre class="language-html"><code class="language-html">formEmailSubmitHandler(){
-    //this will only update the error messages on exampleFormGroup2
-    this.samFormService.fireSubmit(this.exampleFormGroup2);
-    if(this.exampleFormGroup2.valid){
-        //handle rest of submission
-    }
-}
+<pre class="language-typescript"><code class="language-typescript"><span class="token function">formEmailSubmitHandler</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//this will only update the error messages on exampleFormGroup2</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>samFormService<span class="token punctuation">.</span><span class="token function">fireSubmit</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>exampleFormGroup2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>exampleFormGroup2<span class="token punctuation">.</span>valid<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//handle rest of submission</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>

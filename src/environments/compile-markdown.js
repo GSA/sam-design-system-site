@@ -1,6 +1,8 @@
 const fs = require('fs')
 const path = require('path')
 const Prism = require('prismjs');
+require('prismjs/components/prism-bash');
+require('prismjs/components/prism-typescript');
 const ROOT = path.join(__dirname, '../assets/markdown/')
 const EXT = '.txt'
 
@@ -119,9 +121,11 @@ function highlight (str, lang) {
     return ''
 
   }
-  console.log(Prism.languages['html'],"...");
-  if (Prism.languages['html']) {
-    lang = "html";
+  if(!lang){
+    lang = 'html';
+  }
+
+  if (Prism.languages[lang]) {
     try {
 
       return '<pre class="language-'
@@ -130,8 +134,7 @@ function highlight (str, lang) {
         + lang
         + '">'
         + Prism.highlight(str, Prism.languages[lang])
-        + '</code></pre>'
-
+        + '</code></pre>';
     } catch (err) {
 
       return ''

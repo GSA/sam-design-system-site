@@ -1,69 +1,69 @@
 <p>There are multiple strategies for working with the autocomplete component. First, data can be provided either as an array of string or as an array of objects that provide key/value pairs.</p>
 <p>To use key/value pairs with this component, you will also need to include the <code>config</code> property. You must provide the name of the property on the object you want to use in that config for both the key and the value.</p>
 <p>Imagine your options are an array of people objects with the following structure.</p>
-<pre class="language-html"><code class="language-html">const options = [
-    {
-        name: 'Jack',
-        id: 01,
-        address: '1 Main Street',
-        sibling: 02
-    },
-    {
-        name: 'Jill',
-        id: 02,
-        address: '1 Main Street',
-        sibling: 01
-    }
-]
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'Jack'</span><span class="token punctuation">,</span>
+        id<span class="token punctuation">:</span> <span class="token number">01</span><span class="token punctuation">,</span>
+        address<span class="token punctuation">:</span> <span class="token string">'1 Main Street'</span><span class="token punctuation">,</span>
+        sibling<span class="token punctuation">:</span> <span class="token number">02</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'Jill'</span><span class="token punctuation">,</span>
+        id<span class="token punctuation">:</span> <span class="token number">02</span><span class="token punctuation">,</span>
+        address<span class="token punctuation">:</span> <span class="token string">'1 Main Street'</span><span class="token punctuation">,</span>
+        sibling<span class="token punctuation">:</span> <span class="token number">01</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
 </code></pre>
 <p>For the component, I want to display the name property to the user, but I need to pass back the id property to my server. I can then set the config to support this behavior:</p>
-<pre class="language-html"><code class="language-html">const config = {
-    keyValueConfig: {
-        keyProperty: 'id',
-        valueProperty: 'name'
-    }
-}
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+    keyValueConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        keyProperty<span class="token punctuation">:</span> <span class="token string">'id'</span><span class="token punctuation">,</span>
+        valueProperty<span class="token punctuation">:</span> <span class="token string">'name'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Now, the component will display the person's <code>name</code> and pass out the person object from the component.</p>
 <p>This component can also be used with an injected service to provide the options or by using the <code>options</code> input on the component. You should not use both, and the <code>options</code> input will always take precedence over the injected service. If <code>options</code> are passed to the component at all, the service will be ignored.</p>
-<pre class="language-html"><code class="language-html">@Injectable()
-export class MyService implements AutocompleteService {
+<pre class="language-typescript"><code class="language-typescript">@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyService</span> <span class="token keyword">implements</span> <span class="token class-name">AutocompleteService</span> <span class="token punctuation">{</span>
 
-    constructor(private http: Http) {} // This is completely optional, but necessary if you need to make remote calls
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> http<span class="token punctuation">:</span> Http<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// This is completely optional, but necessary if you need to make remote calls</span>
 
-    setFetchMethod(_: any) {}
+    <span class="token function">setFetchMethod</span><span class="token punctuation">(</span>_<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-    fetch(value: any, pageEnd: boolean, serviceOptions: any): Observable<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>any</span><span class="token punctuation">></span></span> {
-        return Observable.of([]).map(o => o);
-    }
-}
+    <span class="token function">fetch</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">,</span> pageEnd<span class="token punctuation">:</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span> serviceOptions<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Observable<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> Observable<span class="token punctuation">.</span><span class="token keyword">of</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>o <span class="token operator">=></span> o<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>One of the strategies we employ with this approach is to provide the dependency directly on the component with a directive. A thorough understanding of Angular's Dependency Injection framework is helpful if you plan on using this approach. However, the reasoning behind this approach for us initially was to support the use of a customizable service, and the directive allows us to apply the token directly onto the component without worrying about potential interactions with other autocomplete components that might also be available within the same parent component.</p>
-<pre class="language-html"><code class="language-html">@Directive({
-    selector: 'sam-autocomplete[myService]',
-    providers: [
-        {provide: AutocompleteService, useExisting: MyService}
-    ]
-})
-export class MyServiceDirective {}
+<pre class="language-typescript"><code class="language-typescript">@<span class="token function">Directive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    selector<span class="token punctuation">:</span> <span class="token string">'sam-autocomplete[myService]'</span><span class="token punctuation">,</span>
+    providers<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>provide<span class="token punctuation">:</span> AutocompleteService<span class="token punctuation">,</span> useExisting<span class="token punctuation">:</span> MyService<span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyServiceDirective</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 </code></pre>
 <p>This directive is for the simplest use case. Here, you have created a service and are injecting into the component. Be aware of <code>useExisting</code>. This value may or may not be the correct choice depending on your use case. <code>useExisting</code> injects an already instantiated service. Documentation for the dependency injection framework and other values are available through Angular's documentation site.</p>
 <p>We can also use the directive to more powerfully manipulate the service with additional input or output parameters. If you need to pass the service variables from the parent component or you would like to emit additional data from the service, you could follow this approach:</p>
-<pre class="language-html"><code class="language-html">@Directive({
-    selector: 'sam-autocomplete[myService]',
-    providers: [
-        {provide: AutocompleteService, useExisting: MyService}
-    ]
-})
-export class MyServiceDirective {
-    @Input() extraServiceVariable: any;
-    @Output() serviceEventEmitter: EventEmitter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>any</span><span class="token punctuation">></span></span> = new EventEmitter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>any</span><span class="token punctuation">></span></span>();
+<pre class="language-typescript"><code class="language-typescript">@<span class="token function">Directive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    selector<span class="token punctuation">:</span> <span class="token string">'sam-autocomplete[myService]'</span><span class="token punctuation">,</span>
+    providers<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>provide<span class="token punctuation">:</span> AutocompleteService<span class="token punctuation">,</span> useExisting<span class="token punctuation">:</span> MyService<span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyServiceDirective</span> <span class="token punctuation">{</span>
+    @<span class="token function">Input</span><span class="token punctuation">(</span><span class="token punctuation">)</span> extraServiceVariable<span class="token punctuation">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
+    @<span class="token function">Output</span><span class="token punctuation">(</span><span class="token punctuation">)</span> serviceEventEmitter<span class="token punctuation">:</span> EventEmitter<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EventEmitter</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    ngOnChanges() {
-        this.service.myCustomMethod(extraServiceVariable);
-        this.serviceEventEmitter.emit(this.service.someMethod());
-    }
-}
+    <span class="token function">ngOnChanges</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>service<span class="token punctuation">.</span><span class="token function">myCustomMethod</span><span class="token punctuation">(</span>extraServiceVariable<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>serviceEventEmitter<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>service<span class="token punctuation">.</span><span class="token function">someMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>In your html implementation, you would then have something like:</p>
 <p><code>&lt;sam-autocomplete myService [extraServiceVariable]=&quot;stateVariable&quot; (serviceEventEmitter)=&quot;eventHandlerMethod($event)&quot;&gt;&lt;/sam-autocomplete&gt;</code></p>

@@ -14,14 +14,14 @@ We take security seriously as a project supported by the US Federal Government. 
 ## For Developers
 With npm:
 
-```
+```bash
 npm install @gsa-sam/sam-ui-elements
 ```
 
 Import your desired module into your angular application
 
-```
-import { SamModalModule } from ‘@gsa-sam/sam-ui-elements’’;
+```typescript
+import { SamModalModule } from ‘@gsa-sam/sam-ui-elements’;
 
 @NgModule({
   declarations: [ ... ],
@@ -35,7 +35,7 @@ export class AppModule { }
 
 Then use the component in templates as desired:
 
-```
+```html
 <sam-modal>
     ...show an example of one of our components within an application…
 </sam-modal>

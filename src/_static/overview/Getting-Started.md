@@ -2,7 +2,7 @@
 
 The SAM.gov Web Design System is an open source project maintained as part of the [beta.SAM.gov](https://beta.SAM.gov) program.
 
-# Mobility
+# Mobile Friendly
 Our aim is to provide a set of components that work across desktop, tablet, and mobile devices. We use responsive design to automatically scale page layouts to adjust based on browser size.
 
 # Accessibility

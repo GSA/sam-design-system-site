@@ -37,7 +37,7 @@ Then use the component in templates as desired:
 
 ```
 <sam-modal>
-    ...show an example of one of our components within an application…
+    . . .You can find examples using sam-modal in the components documnetation section. . . 
 </sam-modal>
 ```
 

@@ -1,16 +1,16 @@
 <h2>Form Service Overview</h2>
 <p>The SAM Form Service provides a way to emit form events to SAM form controls and templates.</p>
-<pre><code>&lt;form formGroupName=&quot;exampleFormGroup&quot;&gt;
-    &lt;sam-text required=&quot;true&quot;
-        useFormService=&quot;true&quot; 
-        [control]=&quot;exampleFormGroup.get(&quot;textControl&quot;)&quot;
-        formControlName=&quot;textControl&quot;&gt;&lt;/sam-text&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">formGroupName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>exampleFormGroup<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    &lt;sam-text required="true"
+        useFormService="true" 
+        [control]="exampleFormGroup.get("textControl")"
+        formControlName="textControl"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-text</span><span class="token punctuation">></span></span>
     
-    &lt;button (click)=&quot;formSubmitHandler()&quot;&gt;Submit&lt;/button&gt;
-&lt;/form&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">(click)</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>formSubmitHandler()<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Submit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Inject the service from the ui-kit and use the <code>fireSubmit()</code> to update error messages on form controls.</p>
-<pre><code>constructor(public samFormService: SamFormService){}
+<pre class="language-html"><code class="language-html">constructor(public samFormService: SamFormService){}
 
 formSubmitHandler(){
     this.samFormService.fireSubmit();
@@ -22,25 +22,25 @@ formSubmitHandler(){
 <h3>Working with multiple forms</h3>
 <p>If you have multiple forms active on the page, you can also pass in your &quot;root&quot; Abstract Control to fire the event against a single form instance</p>
 <p>In template code:</p>
-<pre><code>&lt;form formGroupName=&quot;exampleFormGroup&quot;&gt;
-    &lt;sam-text required=&quot;true&quot; 
-        useFormService=&quot;true&quot; 
-        [control]=&quot;exampleFormGroup.get(&quot;nameControl&quot;)&quot;
-        formControlName=&quot;nameControl&quot;&gt;&lt;/sam-text&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">formGroupName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>exampleFormGroup<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    &lt;sam-text required="true" 
+        useFormService="true" 
+        [control]="exampleFormGroup.get("nameControl")"
+        formControlName="nameControl"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-text</span><span class="token punctuation">></span></span>
     
-    &lt;button (click)=&quot;formNameSubmitHandler()&quot;&gt;Submit&lt;/button&gt;
-&lt;/form&gt;
-&lt;form formGroupName=&quot;exampleFormGroup2&quot;&gt;
-    &lt;sam-text required=&quot;true&quot; 
-        useFormService=&quot;true&quot; 
-        [control]=&quot;exampleFormGroup2.get(&quot;emailControl&quot;)&quot;
-        formControlName=&quot;emailControl&quot;&gt;&lt;/sam-text&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">(click)</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>formNameSubmitHandler()<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Submit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">formGroupName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>exampleFormGroup2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    &lt;sam-text required="true" 
+        useFormService="true" 
+        [control]="exampleFormGroup2.get("emailControl")"
+        formControlName="emailControl"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-text</span><span class="token punctuation">></span></span>
     
-    &lt;button (click)=&quot;formEmailSubmitHandler()&quot;&gt;Submit&lt;/button&gt;
-&lt;/form&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">(click)</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>formEmailSubmitHandler()<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Submit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>In component code:</p>
-<pre><code>formEmailSubmitHandler(){
+<pre class="language-html"><code class="language-html">formEmailSubmitHandler(){
     //this will only update the error messages on exampleFormGroup2
     this.samFormService.fireSubmit(this.exampleFormGroup2);
     if(this.exampleFormGroup2.valid){

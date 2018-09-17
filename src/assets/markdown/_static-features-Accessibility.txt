@@ -1,8 +1,0 @@
-<h1>Accessibility</h1>
-<p>The Design system site provides components that follow 508 compliance.</p>
-<h2>How we test for 508 compliance</h2>
-<p>Some tools are involved during the development of our components. We use JAWS for manually testing against screenreaders. AMP is another tool that gives us scan results of our components on 508 compliance.</p>
-<h2>508 compliance approach for developers</h2>
-<p>Follow best practices when developing new components.</p>
-<h2>508 compliance design approach</h2>
-<p>Design components that take accessibility into account.</p>

@@ -1,7 +1,0 @@
-<h2>Giving Back</h2>
-<p>Please reach out to the SAM.gov Web Design System team through github issues and pull requests.</p>
-<p>The Github repositories can be found here:</p>
-<ul>
-<li><a href="https://github.com/GSA/sam-ui-elements">sam-ui-elements Github repository</a></li>
-<li><a href="https://github.com/GSA/sam-design-system-site">this site's Github repository</a></li>
-</ul>

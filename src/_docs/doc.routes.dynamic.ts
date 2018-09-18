@@ -19,6 +19,7 @@ import { HistoryExampleComponent } from './components/history/component-example'
 import { SamImageComponentExampleComponent } from './components/image/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
+import { SamPageTitleExampleComponent } from './components/page-title/component-example';
 import { PaginationExampleComponent } from './components/pagination/component-example';
 import { POCExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
@@ -45,7 +46,6 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
-import { SamPageTitleExampleComponent } from './experimental/page-title/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
@@ -91,6 +91,7 @@ export const ROUTES: Routes = [
   { path: 'components/image', component: SamImageComponentExampleComponent },
   { path: 'components/modal', component: ModalExampleComponent },
   { path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
+  { path: 'components/page-title', component: SamPageTitleExampleComponent },
   { path: 'components/pagination', component: PaginationExampleComponent },
   { path: 'components/point-of-contact', component: POCExampleComponent },
   { path: 'components/progress-bar', component: SamProgressExampleComponent },
@@ -117,7 +118,6 @@ export const ROUTES: Routes = [
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageComponentExampleComponent },
-  { path: 'experimental/page-title', component: SamPageTitleExampleComponent },
   { path: 'experimental/search', component: SamSearchComponentExampleComponent },
   { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/tabs', component: SamTabsNextComponentExampleComponent },

@@ -30,17 +30,17 @@
 <p>While modules and the router are all that is minimally required to get lazy loading setup in Angular, the build process must also be respected.</p>
 <p>First, the webpack build must be configured to support chunking. Since we are lazy loading, our main bundle should only contain the code necessary for the initial load. Chunking allows webpack to break our modules into smaller pieces that can then be loaded by the browser as needed.</p>
 <p>To support chunking with webpack, we only need to add  the <code>chunkFilename</code> property to the output object.</p>
-<pre><code>output: {
-    filename: ‘[name].js’,
-    chunkFilename: ‘[name]-chunk.js’,
-    path: ... etc ...
-}
+<pre class="language-javascript"><code class="language-javascript">output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  filename<span class="token punctuation">:</span> ‘<span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">.</span>js’<span class="token punctuation">,</span>
+  chunkFilename<span class="token punctuation">:</span> ‘<span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token operator">-</span>chunk<span class="token punctuation">.</span>js’<span class="token punctuation">,</span>
+  path<span class="token punctuation">:</span> <span class="token operator">...</span> etc <span class="token operator">...</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Next we need to add the <code>angular-router-loader</code> module. Be sure to install and save it via npm first.</p>
-<pre><code>loaders: [
-    ‘angular-router-loader’,
-    ...
-]
+<pre class="language-javascript"><code class="language-javascript">loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+  ‘angular<span class="token operator">-</span>router<span class="token operator">-</span>loader’<span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">]</span>
 </code></pre>
 <p>The <code>angular-router-loader</code> module will manage breaking up our modules into chunks and resolving the <code>loadChildren</code> paths to the correct chunk.</p>
 <p>The webpack configuration for our project has been updated, so there should be no need under normal circumstances for developers to modify this portion of the configuration.</p>
@@ -78,67 +78,67 @@
 <h3>Building a Lazy Loaded Module</h3>
 <p>Now that we have defined terms, let us walk through an example of setting up a lazy loaded feature module. First, let’s create a routing module.</p>
 <h4>Creating the Feature Module’s Routing Module</h4>
-<pre><code>// in /example-child1.routes.ts
-const routes: Routes = [
-  {
-    path: ‘’,
-    component: ‘ExampleComponent’,
-    children: [
-      { path: ‘’, loadChildren:   
-        ‘./ExampleChild1.module#ExampleChild1Module’ },
-      ...etc...
-    ]
-  }
-]
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// in /example-child1.routes.ts</span>
+<span class="token keyword">const</span> routes<span class="token punctuation">:</span> Routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> ‘’<span class="token punctuation">,</span>
+    component<span class="token punctuation">:</span> ‘ExampleComponent’<span class="token punctuation">,</span>
+    children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> path<span class="token punctuation">:</span> ‘’<span class="token punctuation">,</span> loadChildren<span class="token punctuation">:</span>   
+        ‘<span class="token punctuation">.</span><span class="token operator">/</span>ExampleChild1<span class="token punctuation">.</span><span class="token keyword">module</span>#ExampleChild1Module’ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token operator">...</span>etc<span class="token operator">...</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
 
-@NgModule({
-  imports: [ RouterModule ],
-  exports: [ RouterModule.forChild(routes) ]
-})
-export class ExampleRoutingModule
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span> RouterModule <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  exports<span class="token punctuation">:</span> <span class="token punctuation">[</span> RouterModule<span class="token punctuation">.</span><span class="token function">forChild</span><span class="token punctuation">(</span>routes<span class="token punctuation">)</span> <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ExampleRoutingModule</span>
 </code></pre>
 <p>Notice that the path property is an empty string. This is by design and part of the syntax needed for lazy loading. When the feature module is registered with its parent, the path string will be added there, and the app routing module will use this route with an empty path string as the entry point for the module.</p>
 <p>We spoke earlier that each feature module may only have one parent route with no siblings, and now we see why. Any sibling routes declared in the module will be ignored.</p>
 <h4>Creating the Feature Module</h4>
-<pre><code>// in /example-child1.module.ts
-@NgModule({
-  imports: [
-    CommonModule,
-    ExampleRoutingModule,
-    CommonComponentsModule,
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// in /example-child1.module.ts</span>
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    CommonModule<span class="token punctuation">,</span>
+    ExampleRoutingModule<span class="token punctuation">,</span>
+    CommonComponentsModule<span class="token punctuation">,</span>
     ApiKitModule
-  ],
-  declarations: [
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  declarations<span class="token punctuation">:</span> <span class="token punctuation">[</span>
     ExampleComponent
-  ],
-  providers: [
-    // If the Example component needs them, add here
-  ]
-})
-export class ExampleModule {}
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  providers<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// If the Example component needs them, add here</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ExampleModule</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 </code></pre>
 <h4>Register the Feature Module via AppRoutingModule</h4>
 <p>Next, let’s update the <code>AppRoutingModule</code> found in app.routes.ts</p>
-<pre><code>// in app.routes.ts
-const routes: Routes = [
-  { path: ‘example’, loadChildren: 
-      ‘./example-file.module#ExampleFile’ }
-]
-@NgModule({
-  imports: [ RouterModule ],
-  exports: [ RouterModule.forRoot(routes) ]
-})
-export class AppRoutingModule
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// in app.routes.ts</span>
+<span class="token keyword">const</span> routes<span class="token punctuation">:</span> Routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> path<span class="token punctuation">:</span> ‘example’<span class="token punctuation">,</span> loadChildren<span class="token punctuation">:</span> 
+      ‘<span class="token punctuation">.</span><span class="token operator">/</span>example<span class="token operator">-</span>file<span class="token punctuation">.</span><span class="token keyword">module</span>#ExampleFile’ <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span> RouterModule <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  exports<span class="token punctuation">:</span> <span class="token punctuation">[</span> RouterModule<span class="token punctuation">.</span><span class="token function">forRoot</span><span class="token punctuation">(</span>routes<span class="token punctuation">)</span> <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AppRoutingModule</span>
 </code></pre>
 <p>The only remaining step is to import the routing module into the <code>AppModule</code>:</p>
-<pre><code>// in app.module.ts
-@NgModule({
-  imports: [
-    ...,
-    AppRoutingModule,
-    ...,
-  ],
-})
-export class AppRoutingModule
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// in app.module.ts</span>
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token operator">...</span><span class="token punctuation">,</span>
+    AppRoutingModule<span class="token punctuation">,</span>
+    <span class="token operator">...</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AppRoutingModule</span>
 </code></pre>
 <p>And we’re done! The application will now lazy load the <code>ExampleModule</code>, reducing the size of the main bundle and decreasing initial compilation time. Our code is now truly modular, loosely coupled, resilient, and easy to modify.</p>

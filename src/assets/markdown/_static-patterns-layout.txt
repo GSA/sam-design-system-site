@@ -4,41 +4,41 @@
 <p>The layout pattern also includes a pattern for managing data and interactions. By conforming to the configuration of the patterns, new variations have been developed as quickly as in a day.</p>
 <h2>Components</h2>
 <p>An overview of the available components and how they are related and nested.</p>
-<pre><code>&lt;sam-page-next&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-page-next</span><span class="token punctuation">></span></span>
 
-  &lt;sam-toolbar&gt;&lt;/sam-toolbar&gt;
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-toolbar</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-toolbar</span><span class="token punctuation">></span></span>
 
-  &lt;sam-aside&gt;...TBD...&lt;/sam-aside&gt;
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-aside</span><span class="token punctuation">></span></span>...TBD...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-aside</span><span class="token punctuation">></span></span>
 
-  &lt;sam-main&gt;
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-main</span><span class="token punctuation">></span></span>
 
-    &lt;sam-page-title&gt;&lt;/sam-page-title&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-page-title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-page-title</span><span class="token punctuation">></span></span>
 
-    &lt;sam-filter-drawer&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-filter-drawer</span><span class="token punctuation">></span></span>
 
-      &lt;li sam-filter-drawer-item&gt;...&lt;/li&gt;
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">sam-filter-drawer-item</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
 
-    &lt;/sam-filter-drawer&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-filter-drawer</span><span class="token punctuation">></span></span>
 
-    &lt;sam-main-content&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-main-content</span><span class="token punctuation">></span></span>
 
-      &lt;sam-action-bar&gt;
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-action-bar</span><span class="token punctuation">></span></span>
 
-        &lt;sam-pagination-next&gt;&lt;/sam-pagination-next&gt;
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-pagination-next</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-pagination-next</span><span class="token punctuation">></span></span>
 
-        &lt;... samPageAction&gt;&lt;/...&gt;
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>...</span> <span class="token attr-name">samPageAction</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>...</span><span class="token punctuation">></span></span>
 
-      &lt;/sam-action-bar&gt;
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-action-bar</span><span class="token punctuation">></span></span>
 
-      &lt;... samContentOutlet&gt;&lt;/...&gt;
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>...</span> <span class="token attr-name">samContentOutlet</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>...</span><span class="token punctuation">></span></span>
 
-    &lt;/sam-main-content&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-main-content</span><span class="token punctuation">></span></span>
 
-  &lt;/sam-main&gt;
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-main</span><span class="token punctuation">></span></span>
 
-&lt;/sam-page-next&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-page-next</span><span class="token punctuation">></span></span>
 
-&lt;sam-modal&gt;&lt;/sam-modal&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-modal</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-modal</span><span class="token punctuation">></span></span>
 </code></pre>
 <h3>SamPageNextComponent</h3>
 <p>The <strong>sam-page-next</strong> component is the main wrapper component for the page. For its content model, it can take a <strong>sam-toolbar</strong>, <strong>sam-aside</strong>, and a <strong>sam-main</strong>.</p>

@@ -157,6 +157,11 @@ export const ROUTES: Routes = [
     data: { markdownfile: '_static/architecture/Title-Service.md' }
   },
   {
+    path: 'features/release-process',
+    component: StaticPageComponent,
+    data: { markdownfile: '_static/features/Release-Process.md' }
+  },
+  {
     path: 'overview/contribute',
     component: StaticPageComponent,
     data: { markdownfile: '_static/overview/Contribute.md' }
@@ -165,11 +170,6 @@ export const ROUTES: Routes = [
     path: 'overview/getting-started',
     component: StaticPageComponent,
     data: { markdownfile: '_static/overview/Getting-Started.md' }
-  },
-  {
-    path: 'overview/giving-back',
-    component: StaticPageComponent,
-    data: { markdownfile: '_static/overview/Giving-Back.md' }
   },
   {
     path: 'overview/innovation-process',

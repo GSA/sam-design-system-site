@@ -45,18 +45,22 @@ First, the webpack build must be configured to support chunking. Since we are la
 
 To support chunking with webpack, we only need to add  the `chunkFilename` property to the output object.
 
-    output: {
-        filename: ‘[name].js’,
-        chunkFilename: ‘[name]-chunk.js’,
-        path: ... etc ...
-    }
+```javascript
+output: {
+  filename: ‘[name].js’,
+  chunkFilename: ‘[name]-chunk.js’,
+  path: ... etc ...
+}
+```
 
 Next we need to add the `angular-router-loader` module. Be sure to install and save it via npm first.
 
-    loaders: [
-        ‘angular-router-loader’,
-        ...
-    ]
+```javascript
+loaders: [
+  ‘angular-router-loader’,
+  ...
+]
+```
 
 The `angular-router-loader` module will manage breaking up our modules into chunks and resolving the `loadChildren` paths to the correct chunk.
 
@@ -118,71 +122,79 @@ All of our routes should be written in lowercase using the kebab-case spelling c
 Now that we have defined terms, let us walk through an example of setting up a lazy loaded feature module. First, let’s create a routing module.
 
 #### Creating the Feature Module’s Routing Module
-    // in /example-child1.routes.ts
-    const routes: Routes = [
-      {
-        path: ‘’,
-        component: ‘ExampleComponent’,
-        children: [
-          { path: ‘’, loadChildren:   
-            ‘./ExampleChild1.module#ExampleChild1Module’ },
-          ...etc...
-        ]
-      }
+```typescript
+// in /example-child1.routes.ts
+const routes: Routes = [
+  {
+    path: ‘’,
+    component: ‘ExampleComponent’,
+    children: [
+      { path: ‘’, loadChildren:   
+        ‘./ExampleChild1.module#ExampleChild1Module’ },
+      ...etc...
     ]
+  }
+]
 
-    @NgModule({
-      imports: [ RouterModule ],
-      exports: [ RouterModule.forChild(routes) ]
-    })
-    export class ExampleRoutingModule
+@NgModule({
+  imports: [ RouterModule ],
+  exports: [ RouterModule.forChild(routes) ]
+})
+export class ExampleRoutingModule
+```
     
 Notice that the path property is an empty string. This is by design and part of the syntax needed for lazy loading. When the feature module is registered with its parent, the path string will be added there, and the app routing module will use this route with an empty path string as the entry point for the module.
 
 We spoke earlier that each feature module may only have one parent route with no siblings, and now we see why. Any sibling routes declared in the module will be ignored.
 
 #### Creating the Feature Module
-    // in /example-child1.module.ts
-    @NgModule({
-      imports: [
-        CommonModule,
-        ExampleRoutingModule,
-        CommonComponentsModule,
-        ApiKitModule
-      ],
-      declarations: [
-        ExampleComponent
-      ],
-      providers: [
-        // If the Example component needs them, add here
-      ]
-    })
-    export class ExampleModule {}
+```typescript
+// in /example-child1.module.ts
+@NgModule({
+  imports: [
+    CommonModule,
+    ExampleRoutingModule,
+    CommonComponentsModule,
+    ApiKitModule
+  ],
+  declarations: [
+    ExampleComponent
+  ],
+  providers: [
+    // If the Example component needs them, add here
+  ]
+})
+export class ExampleModule {}
+```
 
 #### Register the Feature Module via AppRoutingModule
 Next, let’s update the `AppRoutingModule` found in app.routes.ts
 
-    // in app.routes.ts
-    const routes: Routes = [
-      { path: ‘example’, loadChildren: 
-          ‘./example-file.module#ExampleFile’ }
-    ]
-    @NgModule({
-      imports: [ RouterModule ],
-      exports: [ RouterModule.forRoot(routes) ]
-    })
-    export class AppRoutingModule
+```typescript
+// in app.routes.ts
+const routes: Routes = [
+  { path: ‘example’, loadChildren: 
+      ‘./example-file.module#ExampleFile’ }
+]
+@NgModule({
+  imports: [ RouterModule ],
+  exports: [ RouterModule.forRoot(routes) ]
+})
+export class AppRoutingModule
+```
 
 The only remaining step is to import the routing module into the `AppModule`:
 
-    // in app.module.ts
-    @NgModule({
-      imports: [
-        ...,
-        AppRoutingModule,
-        ...,
-      ],
-    })
-    export class AppRoutingModule
+```typescript
+// in app.module.ts
+@NgModule({
+  imports: [
+    ...,
+    AppRoutingModule,
+    ...,
+  ],
+})
+export class AppRoutingModule
+```
 
 And we’re done! The application will now lazy load the `ExampleModule`, reducing the size of the main bundle and decreasing initial compilation time. Our code is now truly modular, loosely coupled, resilient, and easy to modify. 

@@ -1,10 +1,33 @@
 <h1>Getting Started</h1>
 <p>The SAM.gov Web Design System is an open source project maintained as part of the <a href="https://beta.SAM.gov">beta.SAM.gov</a> program.</p>
+<h1>Mobile Friendly</h1>
+<p>Our aim is to provide a set of components that work across desktop, tablet, and mobile devices. We use responsive design to automatically scale page layouts to adjust based on browser size.</p>
+<h1>Accessibility</h1>
+<p>The SAM Design System meets the WCAG 2.0 AA accessibility guidelines and conforms to the standards of Section 508 of the Rehabilitation Act. Please reach out to us for more discussion.</p>
+<h1>Security</h1>
+<p>We take security seriously as a project supported by the US Federal Government. If a security vulnerability is discovered, we will work to remediate it and publish a patch as quickly as possible. If you discover any issues with our components, please send a brief description of the problem to support@gsa.gov.</p>
 <h2>For Developers</h2>
-<p>Documentation for setting up your environment to use the design system can be found on github.com.</p>
-<ul>
-<li><a href="https://github.com/GSA/sam-ui-elements">sam-ui-elements Github repository</a></li>
-</ul>
+<p>With npm:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> @gsa-sam/sam-ui-elements
+</code></pre>
+<p>Import your desired module into your angular application</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> SamModalModule <span class="token punctuation">}</span> <span class="token keyword">from</span> ‘@gsa<span class="token operator">-</span>sam<span class="token operator">/</span>sam<span class="token operator">-</span>ui<span class="token operator">-</span>elements’<span class="token punctuation">;</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  declarations<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token operator">...</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    SamModalModule<span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  providers<span class="token punctuation">:</span> <span class="token punctuation">[</span> … <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AppModule</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>Then use the component in templates as desired:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sam-modal</span><span class="token punctuation">></span></span>
+    ...show an example of one of our components within an application…
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sam-modal</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>Our source code can be found here at the <a href="https://github.com/GSA/sam-ui-elements">sam-ui-elements Github repository</a></p>
 <h3>Technology</h3>
 <ul>
 <li>Angular 4 (current)/Typescript</li>

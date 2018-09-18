@@ -149,7 +149,7 @@ export class SamTabsNextComponentExampleComponent extends BaseExampleComponent i
 
   example = code_example;
 
-  public base = '_docs/experimental/tabs';
+  public base = '_docs/experimental/tabs/';
 
   constructor(
     _http: Http,

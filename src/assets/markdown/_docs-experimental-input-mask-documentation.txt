@@ -1,3 +1,0 @@
-<h1>SamInputMaskComponent</h1>
-<p><em>ALPHA</em> - This component is used to change digits to a formatted string.</p>
-<p>'03122018' get changed to '03/12/2018'</p>

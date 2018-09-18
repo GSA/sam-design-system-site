@@ -1,2 +1,0 @@
-<h1>Button</h1>
-<p>Use buttons to signal important actions available to the user.</p>

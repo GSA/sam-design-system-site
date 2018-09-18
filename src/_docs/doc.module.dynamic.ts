@@ -31,7 +31,6 @@ import { SamProgressExampleComponent } from './components/progress-bar/component
 import { SidenavExampleComponent } from './components/sidenav/component-example';
 import { SpinnerExampleComponent } from './components/spinner/component-example';
 import { TabsExampleComponent } from './components/tabs/component-example';
-import { SamUploadComponentExampleComponent } from './components/upload/component-example';
 import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
 import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
@@ -55,6 +54,7 @@ import { SamPageComponentExampleComponent } from './experimental/page/component-
 import { SamPageTitleExampleComponent } from './experimental/page-title/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
+import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
 import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
 import { SamYoutubeComponentExampleComponent } from './experimental/youtube/component-example';
@@ -71,6 +71,7 @@ import { TextExampleComponent } from './form-controls/text/component-example';
 import { TextareaExampleComponent } from './form-controls/textarea/component-example';
 import { TimeExampleComponent } from './form-controls/time/component-example';
 import { ToggleSwitchExampleComponent } from './form-controls/toggle-switch/component-example';
+import { SamUploadComponentExampleComponent } from './form-controls/upload/component-example';
 import { PhoneGroupExampleComponent } from './form-templates/international-phone/component-example';
 import { NameEntryExampleComponent } from './form-templates/name-entry/component-example';
 import { PhoneEntryExampleComponent } from './form-templates/phone-entry/component-example';
@@ -111,7 +112,6 @@ import { CdkTableModule } from '@angular/cdk';
     SidenavExampleComponent,
     SpinnerExampleComponent,
     TabsExampleComponent,
-    SamUploadComponentExampleComponent,
     ClickOutsideExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,
@@ -135,6 +135,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamPageTitleExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
@@ -151,6 +152,7 @@ import { CdkTableModule } from '@angular/cdk';
     TextareaExampleComponent,
     TimeExampleComponent,
     ToggleSwitchExampleComponent,
+    SamUploadComponentExampleComponent,
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
@@ -182,7 +184,6 @@ import { CdkTableModule } from '@angular/cdk';
     SidenavExampleComponent,
     SpinnerExampleComponent,
     TabsExampleComponent,
-    SamUploadComponentExampleComponent,
     ClickOutsideExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,
@@ -206,6 +207,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamPageTitleExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
@@ -222,6 +224,7 @@ import { CdkTableModule } from '@angular/cdk';
     TextareaExampleComponent,
     TimeExampleComponent,
     ToggleSwitchExampleComponent,
+    SamUploadComponentExampleComponent,
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,

@@ -1,2 +1,0 @@
-<h1>FieldsetWrapper</h1>
-<p>Provides a fieldset wrapper that is meant to provide a label for a group of form controls.</p>

@@ -1,2 +1,0 @@
-<h1>International Phone Group</h1>
-<p>Provides a form group to input international phone numbers.</p>

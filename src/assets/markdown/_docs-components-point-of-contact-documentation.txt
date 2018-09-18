@@ -1,2 +1,0 @@
-<h1>Point of Contact</h1>
-<p>Provides a general format for point of contact information</p>

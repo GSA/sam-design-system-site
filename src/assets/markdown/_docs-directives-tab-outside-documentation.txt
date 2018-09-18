@@ -1,2 +1,0 @@
-<h1>Tab Outside</h1>
-<p>Provides an Angular2 attribute directive to handle when the focused target is tabbed away.</p>

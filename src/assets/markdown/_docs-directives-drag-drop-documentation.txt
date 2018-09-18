@@ -1,1 +1,0 @@
-<h1>SamDragDropDirective</h1>

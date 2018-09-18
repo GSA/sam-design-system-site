@@ -1,4 +1,5 @@
 
+/* tslint:disable */
 import {
   Component,
   OnInit,
@@ -28,7 +29,7 @@ export class SamUploadComponentExampleComponent extends BaseExampleComponent imp
 
   example = code_example;
 
-  public base = '_docs/components/upload/';
+  public base = 'ADD_BASE_URL';
 
   constructor(
     _http: Http,
@@ -40,3 +41,4 @@ export class SamUploadComponentExampleComponent extends BaseExampleComponent imp
     this.sections.forEach(this.fetchSection.bind(this));
   }
 }
+

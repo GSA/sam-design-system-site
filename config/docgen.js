@@ -24,7 +24,8 @@ const ignoredComponents = [
   'SamTelephone',
   'SamHeaderComponent',
   'SamBannerComponent',
-  'SamUploadComponentV2'//not ready yet
+  'SamUploadComponentV2',//not ready yet
+  'SamFiltersComponent'
 ]
 
 function ObservableStream (observer, path) {

@@ -1,2 +1,0 @@
-<h1>SamPageTitle</h1>
-<p>Creates an <code>&lt;h1&gt;</code> based heading title for the page. Contains additional configurations for setting the tabindex and id attributes for accessibility.</p>

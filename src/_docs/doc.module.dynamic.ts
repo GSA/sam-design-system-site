@@ -25,6 +25,7 @@ import { HistoryExampleComponent } from './components/history/component-example'
 import { SamImageComponentExampleComponent } from './components/image/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
+import { SamPageTitleExampleComponent } from './components/page-title/component-example';
 import { PaginationExampleComponent } from './components/pagination/component-example';
 import { POCExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
@@ -51,7 +52,6 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
-import { SamPageTitleExampleComponent } from './experimental/page-title/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
@@ -106,6 +106,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamImageComponentExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
+    SamPageTitleExampleComponent,
     PaginationExampleComponent,
     POCExampleComponent,
     SamProgressExampleComponent,
@@ -132,7 +133,6 @@ import { CdkTableModule } from '@angular/cdk';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
-    SamPageTitleExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
@@ -178,6 +178,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamImageComponentExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
+    SamPageTitleExampleComponent,
     PaginationExampleComponent,
     POCExampleComponent,
     SamProgressExampleComponent,
@@ -204,7 +205,6 @@ import { CdkTableModule } from '@angular/cdk';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
-    SamPageTitleExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,

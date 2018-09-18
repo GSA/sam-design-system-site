@@ -33,7 +33,7 @@ export class SamPageTitleExampleComponent extends BaseExampleComponent implement
 
   example = code_example;
 
-  public base = '_docs/experimental/page-title/';
+  public base = '_docs/components/page-title/';
 
   constructor(
     _http: Http,

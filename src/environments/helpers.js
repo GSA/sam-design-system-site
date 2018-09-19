@@ -44,6 +44,7 @@ function getUIKitStructure(target){
 			}
 		}
 		let currentPath = path.join(process.cwd(),'/src/_docs/');
+		let docPath = val.replace(path.join(process.cwd(), '/src/'), "").replace('/component-example.ts','');
 		val = val.replace(currentPath, "");
 		val = val.replace(/\\\\/g,"/");
 		val = val.replace(/\\/g,"/");
@@ -72,7 +73,6 @@ function getUIKitStructure(target){
 		if(doc2Components.includes(component)){
 			doc2Flag = true;
 		}
-		
 	  return {
 	    link: link,
 	    routerlink: "/docs/"+link,
@@ -80,7 +80,8 @@ function getUIKitStructure(target){
 			item: item,
 			component: component,
 			subsection: subsection,
-			doc2Flag: doc2Flag
+			doc2Flag: doc2Flag,
+			docPath: docPath
 	  };
 	})
 
@@ -203,7 +204,7 @@ function generateRoutesString (docsTarget, staticTarget) {
 	let routes = files.reduce((prev, curr) => {
 		if(curr.doc2Flag){
 			return prev.concat(
-				`\n  { path: '${curr.link}', component: BaseDocPageComponent, children: [
+				`\n  { path: '${curr.link}', component: BaseDocPageComponent, data: { path: '${curr.docPath}'}, children: [
 						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
 				]},`
 			)

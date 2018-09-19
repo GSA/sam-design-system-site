@@ -3,6 +3,7 @@ import { BaseExampleComponent } from './baseexample.component';
 import { Http } from '@angular/http';
 import { MarkdownService } from 'app/services/markdown/markdown.service';
 import { DocumentationService } from 'app/services/documentation.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'doc-base-page',
@@ -22,22 +23,25 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
     ngOnInit() {
         const ctx = this;
 
-        // the paths here can probably get passed in via data from route
-        this._http.get('/assets/_docs/components/breadcrumbs/component-example.html').subscribe((res) => {
-            console.log(res.text());
+        this._http.get('/assets/' + this.route.snapshot.data.path + '/component-example.html').subscribe((res) => {
+            // console.log(res.text());
             ctx.example = res.text();
         });
-        this._http.get('/assets/_docs/components/breadcrumbs/component-example.ts').subscribe((res) => {
-            console.log(res.text());
+        this._http.get('/assets/' + this.route.snapshot.data.path + '/component-example.ts').subscribe((res) => {
+            // console.log(res.text());
             ctx.codeExample = res.text();
         });
-        this._http.get('/assets/_docs/components/breadcrumbs/documentation.md').subscribe((res) => {
-            console.log(res.text());
+        this._http.get('/assets/' + this.route.snapshot.data.path + '/documentation.md').subscribe((res) => {
+            // console.log(res.text());
             ctx.markdown = res.text();
         });
-        this._http.get('/assets/_docs/components/breadcrumbs/design.md').subscribe((res) => {
-            console.log(res.text());
+        this._http.get('/assets/' + this.route.snapshot.data.path + '/design.md').subscribe((res) => {
+            // console.log(res.text());
             ctx.design = res.text();
+        });
+        this._http.get('/assets/' + this.route.snapshot.data.path + '/guidance.md').subscribe((res) => {
+            // console.log(res.text());
+            ctx.guidance = res.text();
         });
 
         this.service.getComponentProperties(this.typedoc_target)
@@ -50,7 +54,8 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
     constructor(
         public _http: Http,
         public service: DocumentationService,
-        public mdService: MarkdownService) {
+        public mdService: MarkdownService,
+        public route: ActivatedRoute) {
 
         super(_http, service, mdService);
     }

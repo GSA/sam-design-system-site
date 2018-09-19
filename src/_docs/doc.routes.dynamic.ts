@@ -4,6 +4,7 @@
 /* File generated in ../config/helpers.js             */
 /******************************************************/
 import { Routes, RouterModule } from '@angular/router';
+import { BaseDocPageComponent } from './base-doc-page.component';
 
 import { AccordionExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
@@ -83,7 +84,9 @@ export const ROUTES: Routes = [
   { path: 'components/alert', component: AlertExampleComponent },
   { path: 'components/alert-footer', component: SamAlertFooterComponentExampleComponent },
   { path: 'components/badge', component: SamBadgeComponentExampleComponent },
-  { path: 'components/breadcrumbs', component: SamBreadcrumbsComponentExampleComponent },
+  { path: 'components/breadcrumbs', component: BaseDocPageComponent, children: [
+						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
+				]},
   { path: 'components/comments', component: SamCommentsComponentExampleComponent },
   { path: 'components/data-table', component: SamDataTableComponentExampleComponent },
   { path: 'components/download', component: DownloadExampleComponent },

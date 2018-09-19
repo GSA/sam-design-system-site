@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from './baseexample.component';
+import { BaseDocPageComponent } from './base-doc-page.component';
+import { Doc2TemplateComponent } from './doc2.component';
 
 import { AccordionExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
@@ -161,7 +163,9 @@ import { CdkTableModule } from '@angular/cdk';
     InterfacesComponent,
     DocTemplateComponent,
     StaticPageComponent,
-    BaseExampleComponent
+    BaseExampleComponent,
+    BaseDocPageComponent,
+    Doc2TemplateComponent
   ],
   entryComponents: [
     AccordionExampleComponent,
@@ -233,7 +237,9 @@ import { CdkTableModule } from '@angular/cdk';
     InterfacesComponent,
     DocTemplateComponent,
     StaticPageComponent,
-    BaseExampleComponent
+    BaseExampleComponent,
+    BaseDocPageComponent,
+    Doc2TemplateComponent
   ],
   imports: [
     CommonModule,

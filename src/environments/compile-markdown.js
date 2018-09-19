@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const path = require('path')
 const Prism = require('prismjs');
 require('prismjs/components/prism-bash');
@@ -9,6 +9,17 @@ const EXT = '.txt'
 const MarkdownIt = require('markdown-it')
 const STATIC_DIR = path.join(__dirname, '../_static')
 const DOCS_DIR = path.join(__dirname, '../_docs')
+const rimraf = require('rimraf')
+
+rimraf(path.join(ROOT, '../_docs'),{}, function(){
+  console.log('clearing DOCS in assets folder');
+  fs.copy(DOCS_DIR,  path.join(ROOT, '../_docs'), function(err){
+    if (err) return console.error(err);
+   
+    console.log("DOCS dir copy success!")
+  }); //copies file
+})
+
 
 setup(ROOT)(STATIC_DIR, DOCS_DIR)
 
@@ -315,4 +326,20 @@ function handleError (error) {
     console.log(error)
   }
 
+}
+
+
+function copyFile(src, dest) {
+
+  let readStream = fs.createReadStream(src);
+
+  readStream.once('error', (err) => {
+    console.log(err);
+  });
+
+  readStream.once('end', () => {
+    console.log('done copying');
+  });
+
+  readStream.pipe(fs.createWriteStream(dest));
 }

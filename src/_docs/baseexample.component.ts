@@ -17,6 +17,7 @@ export class BaseExampleComponent implements OnInit {
   public markdown: string = '';
   public guidance: string = '';
   public example: string = '';
+  public codeExample: string = '';
   public design: string = '';
 
   public sections = [

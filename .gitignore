@@ -78,3 +78,4 @@ package-lock.json
 /src/environments/environment.ts
 /src/environments/environment.prod.ts
 /src/assets/markdown
+/src/assets/_docs

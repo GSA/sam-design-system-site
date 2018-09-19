@@ -5,6 +5,10 @@ var recursiveReadSync = require('recursive-readdir-sync');
 var path = require('path');
 const EVENT = process.env.npm_lifecycle_event || '';
 
+const doc2Components = [
+  'SamBreadcrumbsComponentExampleComponent'
+];
+
 exports.hasProcessFlag = hasProcessFlag;
 exports.hasNpmFlag = hasNpmFlag;
 exports.getUIKitStructure = getUIKitStructure;
@@ -63,14 +67,20 @@ function getUIKitStructure(target){
 		item = link.split("/")[itemIndex].split("-").map(function(val){
 	    val = val.replace(/^\w/g, l => l.toUpperCase())
 	    return val;
-	  }).join(" ");
+		}).join(" ");
+		var doc2Flag = false;
+		if(doc2Components.includes(component)){
+			doc2Flag = true;
+		}
+		
 	  return {
 	    link: link,
 	    routerlink: "/docs/"+link,
 	    section: section,
 			item: item,
 			component: component,
-			subsection: subsection
+			subsection: subsection,
+			doc2Flag: doc2Flag
 	  };
 	})
 
@@ -118,7 +128,7 @@ function generateModuleString(target) {
 		return prev.concat(`import { ${curr.component} } from './${curr.link}/component-example';\n`);
 	}, '');
 	let declarations = files.map((file) => '\n    ' + file.component);
-	let otherDeclarations = ['\n    InterfacesComponent', '\n    DocTemplateComponent', '\n    StaticPageComponent', '\n    BaseExampleComponent'];
+	let otherDeclarations = ['\n    InterfacesComponent', '\n    DocTemplateComponent', '\n    StaticPageComponent', '\n    BaseExampleComponent', '\n    BaseDocPageComponent','\n    Doc2TemplateComponent'];
 	otherDeclarations.forEach((declaration) => {
 		declarations.push(declaration);
 	});
@@ -134,6 +144,8 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { BaseExampleComponent } from './baseexample.component';
+import { BaseDocPageComponent } from './base-doc-page.component';
+import { Doc2TemplateComponent } from './doc2.component';
 
 ${imports}
 
@@ -189,9 +201,17 @@ function generateRoutesString (docsTarget, staticTarget) {
 		return prev.concat(`import { ${curr.component} } from './${curr.link}/component-example';\n`);
 	}, '');
 	let routes = files.reduce((prev, curr) => {
-		return prev.concat(
-			`\n  { path: '${curr.link}', component: ${curr.component} },`
-		)
+		if(curr.doc2Flag){
+			return prev.concat(
+				`\n  { path: '${curr.link}', component: BaseDocPageComponent, children: [
+						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
+				]},`
+			)
+		} else {
+			return prev.concat(
+				`\n  { path: '${curr.link}', component: ${curr.component} },`
+			)
+		}
 	}, '');
 	let staticRoutes = staticFiles.reduce((prev, curr) => {
 		return prev.concat(
@@ -205,6 +225,7 @@ function generateRoutesString (docsTarget, staticTarget) {
 /* File generated in ../config/helpers.js             */
 /******************************************************/
 import { Routes, RouterModule } from '@angular/router';
+import { BaseDocPageComponent } from './base-doc-page.component';
 
 ${imports}
 

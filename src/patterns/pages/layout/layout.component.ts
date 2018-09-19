@@ -204,11 +204,24 @@ export class SamLayoutDemoComponent implements OnInit {
       }
 
       return {
-        label: key,
+        label: this._mapLabel(key),
         value: value
       };
     })
     .filter(filter => filter.value.length > 0);
+  }
+
+  private _mapLabel (key): string {
+    switch (key) {
+      case 'fhInputText':
+        return 'Agency';
+      case 'dateModel':
+        return 'Date Modified';
+      case 'checkbox':
+        return 'Checkbox Example';
+      default:
+        return '';
+    }
   }
 
   private _toggleColumn (field): void {

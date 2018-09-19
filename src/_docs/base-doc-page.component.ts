@@ -52,8 +52,6 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
             // console.log(res.text());
             ctx.guidance = res.text();
         });
-
-        
     }
 
     constructor(

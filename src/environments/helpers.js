@@ -204,8 +204,8 @@ function generateRoutesString (docsTarget, staticTarget) {
 	let routes = files.reduce((prev, curr) => {
 		if(curr.doc2Flag){
 			return prev.concat(
-				`\n  { path: '${curr.link}', component: BaseDocPageComponent, data: { path: '${curr.docPath}'}, children: [
-						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
+				`\n  { path: '${curr.link}', component: BaseDocPageComponent, data: { path: '${curr.docPath}', componentName: '${curr.component.replace('ExampleComponent','')}'}, children: [
+						{ path: '', component: ${curr.component} }
 				]},`
 			)
 		} else {

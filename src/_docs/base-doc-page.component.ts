@@ -18,11 +18,20 @@ import { ActivatedRoute } from '@angular/router';
 </doc-template-next>`,
 })
 export class BaseDocPageComponent extends BaseExampleComponent implements OnInit {
-    typedoc_target = 'SamBreadcrumbsComponent';
 
     ngOnInit() {
         const ctx = this;
+        this.typedoc_target = this.route.snapshot.data.componentName;
 
+        if (this.typedoc_target) {
+            this.service.getComponentProperties(this.typedoc_target)
+            .subscribe(
+                (data) => { this.setupTypedocContent(data); },
+                (error) => { throw new Error(error); }
+            );
+        }
+
+        // todo: see if we can find out if we should make the call or not
         this._http.get('/assets/' + this.route.snapshot.data.path + '/component-example.html').subscribe((res) => {
             // console.log(res.text());
             ctx.example = res.text();
@@ -44,11 +53,7 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
             ctx.guidance = res.text();
         });
 
-        this.service.getComponentProperties(this.typedoc_target)
-        .subscribe(
-            (data) => { this.setupTypedocContent(data); },
-            (error) => { throw new Error(error); }
-        );
+        
     }
 
     constructor(

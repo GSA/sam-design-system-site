@@ -84,7 +84,7 @@ export const ROUTES: Routes = [
   { path: 'components/alert', component: AlertExampleComponent },
   { path: 'components/alert-footer', component: SamAlertFooterComponentExampleComponent },
   { path: 'components/badge', component: SamBadgeComponentExampleComponent },
-  { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: { path: '_docs/components/breadcrumbs'}, children: [
+  { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: { path: '_docs/components/breadcrumbs', componentName: 'SamBreadcrumbsComponent'}, children: [
 						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
 				]},
   { path: 'components/comments', component: SamCommentsComponentExampleComponent },

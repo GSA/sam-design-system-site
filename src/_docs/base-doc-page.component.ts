@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BaseExampleComponent } from './baseexample.component';
 import { Http } from '@angular/http';
-import { MarkdownService } from '../app/services/markdown/markdown.service';
-import { DocumentationService } from '../app/services/documentation.service';
+import { MarkdownService } from 'app/services/markdown/markdown.service';
+import { DocumentationService } from 'app/services/documentation.service';
 
 @Component({
-  selector: 'test-example',
+  selector: 'doc-base-page',
   template: `
 <doc-template-next
     [markdown]="markdown"
@@ -16,12 +16,13 @@ import { DocumentationService } from '../app/services/documentation.service';
   <router-outlet></router-outlet>
 </doc-template-next>`,
 })
-export class BaseDocPageComponent extends BaseExampleComponent{
+export class BaseDocPageComponent extends BaseExampleComponent implements OnInit {
     typedoc_target = 'SamBreadcrumbsComponent';
-    typedoc_content = '';
 
-    ngOnInit(){
-        let ctx = this;
+    ngOnInit() {
+        const ctx = this;
+
+        // the paths here can probably get passed in via data from route
         this._http.get('/assets/_docs/components/breadcrumbs/component-example.html').subscribe((res) => {
             console.log(res.text());
             ctx.example = res.text();
@@ -33,20 +34,18 @@ export class BaseDocPageComponent extends BaseExampleComponent{
         this._http.get('/assets/_docs/components/breadcrumbs/documentation.md').subscribe((res) => {
             console.log(res.text());
             ctx.markdown = res.text();
-        })
+        });
         this._http.get('/assets/_docs/components/breadcrumbs/design.md').subscribe((res) => {
             console.log(res.text());
             ctx.design = res.text();
-        })
-        
+        });
+
         this.service.getComponentProperties(this.typedoc_target)
         .subscribe(
             (data) => { this.setupTypedocContent(data); },
             (error) => { throw new Error(error); }
         );
     }
-
-    public base = '_docs/components/breadcrumbs/';
 
     constructor(
         public _http: Http,

@@ -1,8 +1,10 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, OnChanges} from '@angular/core';
 import { Router } from '@angular/router';
 import Prism from 'prismjs';
 import PrismTS from 'prismjs/components/prism-typescript';
-PrismTS;//imports typescript into Prism
+/* tslint:disable */
+PrismTS;// imports typescript into Prism
+/* tslint:enable */
 import { environment } from 'environment';
 const DOCS = environment.DOCS;
 const STATICPAGES = environment.STATICPAGES;
@@ -13,7 +15,7 @@ import { debug } from 'util';
   selector: 'doc-template-next',
   templateUrl: 'doc2.template.html'
 })
-export class Doc2TemplateComponent implements OnInit {
+export class Doc2TemplateComponent implements OnInit, OnChanges {
 
   @Input() markdown;
   @Input() example;
@@ -43,76 +45,64 @@ export class Doc2TemplateComponent implements OnInit {
     }
   }
 
-    ngOnChanges(c){
-        if(c['example'] && this.example){
+    ngOnChanges(c) {
+        if (c['example'] && this.example) {
             this.runPrism('example');
         }
-        if(c['codeExample'] && this.codeExample){
+        if (c['codeExample'] && this.codeExample) {
             this.runPrism('codeExample');
         }
-        if(c['markdown'] && this.markdown){
+        if (c['markdown'] && this.markdown) {
             this.runMarkdown('markdown');
         }
-        if(c['design'] && this.design){
+        if (c['design'] && this.design) {
             this.runMarkdown('design');
         }
     }
 
     private highlight (str, lang) {
-    
+
         if (str.length < 1) {
-    
-        return ''
-    
+            return '';
         }
-        if(!lang){
-        lang = 'html';
+        if (!lang) {
+            lang = 'html';
         }
-    
+
         if (Prism.languages[lang]) {
-        try {
-    
-            return '<pre class="language-'
-            + lang
-            + '"><code class="language-'
-            + lang
-            + '">'
-            + Prism.highlight(str, Prism.languages[lang])
-            + '</code></pre>';
-        } catch (err) {
-    
-            return ''
-    
+            try {
+
+                return '<pre class="language-'
+                + lang
+                + '"><code class="language-'
+                + lang
+                + '">'
+                + Prism.highlight(str, Prism.languages[lang])
+                + '</code></pre>';
+            } catch (err) {
+
+                return '';
+
+            }
+
         }
-    
-        }
-    
-        return ''
-    
-        /**
-         * Required test cases:
-         * - str.length < 1
-         * - ( str.length > 1
-         *     && (lang && Prism.languages[lang]) === true )
-         * - ( str.length > 1
-         *     && (lang && Prism.languages[lang]) === false )
-         */
-    
+
+        return '';
+
     }
 
-    runMarkdown(type){
-        if(type && this[type]){
+    runMarkdown(type) {
+        if (type && this[type]) {
             this[type] = this.md.render(this[type]);
-            console.log(type,this[type]);
         }
     }
 
-    runPrism(type){
-        if (type=='example') {
+    runPrism(type) {
+        if (type === 'example') {
             this.example = this.example.trim();
             this.example = Prism.highlight(this.example, Prism.languages.html);
         }
-        if (type=='codeExample') {
+        if (type === 'codeExample') {
             this.codeExample = this.codeExample.trim();
             this.codeExample = Prism.highlight(this.codeExample, Prism.languages.typescript);
         }
@@ -120,7 +110,7 @@ export class Doc2TemplateComponent implements OnInit {
 
   public ngOnInit() {
 
-    this.md = MarkdownIt({ highlight: this.highlight })
+    this.md = MarkdownIt({ highlight: this.highlight });
 
     // ==========================================================
     // SIDE NAVIGATION CONFIG SETUP

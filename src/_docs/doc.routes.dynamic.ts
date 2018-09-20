@@ -99,7 +99,9 @@ export const ROUTES: Routes = [
   { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: { path: '_docs/components/breadcrumbs', componentName: 'SamBreadcrumbsComponent'}, children: [
 						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
 				]},
-  { path: 'components/comments', component: SamCommentsComponentExampleComponent },
+  { path: 'components/comments', component: BaseDocPageComponent, data: { path: '_docs/components/comments', componentName: 'SamCommentsComponent'}, children: [
+						{ path: '', component: SamCommentsComponentExampleComponent }
+				]},
   { path: 'components/data-table', component: SamDataTableComponentExampleComponent },
   { path: 'components/download', component: DownloadExampleComponent },
   { path: 'components/history', component: HistoryExampleComponent },

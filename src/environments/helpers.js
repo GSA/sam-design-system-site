@@ -12,7 +12,8 @@ const doc2Components = [
 	'SamActionsDropdownComponentExampleComponent',
 	'SamAlertComponentExampleComponent',
 	'SamAlertFooterComponentExampleComponent',
-	'SamBadgeComponentExampleComponent'
+	'SamBadgeComponentExampleComponent',
+	'SamCommentsComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

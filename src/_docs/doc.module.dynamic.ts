@@ -13,17 +13,17 @@ import { BaseExampleComponent } from './baseexample.component';
 import { BaseDocPageComponent } from './base-doc-page.component';
 import { Doc2TemplateComponent } from './doc2.component';
 
-import { AccordionExampleComponent } from './components/accordion/component-example';
+import { SamAccordionComponentExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
 import { SamActionsDropdownComponentExampleComponent } from './components/actions/actions-dropdown/component-example';
-import { AlertExampleComponent } from './components/alert/component-example';
+import { SamAlertComponentExampleComponent } from './components/alert/component-example';
 import { SamAlertFooterComponentExampleComponent } from './components/alert-footer/component-example';
 import { SamBadgeComponentExampleComponent } from './components/badge/component-example';
 import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumbs/component-example';
 import { SamCommentsComponentExampleComponent } from './components/comments/component-example';
 import { SamDataTableComponentExampleComponent } from './components/data-table/component-example';
 import { DownloadExampleComponent } from './components/download/component-example';
-import { HistoryExampleComponent } from './components/history/component-example';
+import { SamHistoryComponentExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
@@ -94,17 +94,17 @@ import { CdkTableModule } from '@angular/cdk';
  */
 @NgModule({
   declarations: [
-    AccordionExampleComponent,
+    SamAccordionComponentExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
-    AlertExampleComponent,
+    SamAlertComponentExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
     SamCommentsComponentExampleComponent,
     SamDataTableComponentExampleComponent,
     DownloadExampleComponent,
-    HistoryExampleComponent,
+    SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
@@ -168,17 +168,17 @@ import { CdkTableModule } from '@angular/cdk';
     Doc2TemplateComponent
   ],
   entryComponents: [
-    AccordionExampleComponent,
+    SamAccordionComponentExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
-    AlertExampleComponent,
+    SamAlertComponentExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
     SamCommentsComponentExampleComponent,
     SamDataTableComponentExampleComponent,
     DownloadExampleComponent,
-    HistoryExampleComponent,
+    SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,

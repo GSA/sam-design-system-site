@@ -1,22 +1,9 @@
 
 import {
-  Component,
-  OnInit,
-  Input,
-  ComponentRef,
-  ViewChild,
-  ViewRef,
-  TemplateRef,
-  ComponentFactoryResolver,
-  ViewContainerRef
+  Component
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
 import { Comment, CommentsService } from '@gsa-sam/sam-ui-elements';
 import { Observable } from 'rxjs/Observable';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
 
 export class CommentsDemoService implements CommentsService {
 
@@ -186,34 +173,13 @@ export class CommentsDemoService implements CommentsService {
   }
 }
 
-// tabs/spacing matters for code example block
-const code_example = `
-<sam-comments class="usa-width-one">
-</sam-comments>`;
-
-
 @Component({
   selector: 'doc-sam-comments',
-  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>',
+  templateUrl: './component-example.html',
   providers: [
     { provide: CommentsService, useClass: CommentsDemoService }
   ]
 })
-export class SamCommentsComponentExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = 'SamCommentsComponent';
-  typedoc_content = '';
+export class SamCommentsComponentExampleComponent {
 
-  example = code_example;
-
-  public base = '_docs/components/comments/';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
 }

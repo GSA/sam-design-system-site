@@ -23,7 +23,6 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
     ngOnInit() {
         const ctx = this;
         this.typedoc_target = this.route.snapshot.data.componentName;
-
         if (this.typedoc_target) {
             this.service.getComponentProperties(this.typedoc_target)
             .subscribe(

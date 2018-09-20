@@ -6,6 +6,6 @@ import {
   selector: 'doc-accordion',
   templateUrl: './component-example.html'
 })
-export class AccordionExampleComponent {
+export class SamAccordionComponentExampleComponent {
 
 }

@@ -8,5 +8,5 @@ import {
   templateUrl: './component-example.html'
 })
 export class SamFocusDirectiveExampleComponent {
-  
+
 }

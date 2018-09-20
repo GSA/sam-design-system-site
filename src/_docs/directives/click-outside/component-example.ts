@@ -7,7 +7,7 @@ import {
   templateUrl: './component-example.html'
 })
 export class SamClickOutsideDirectiveExampleComponent {
-  clickedValue = 'None'; 
+  clickedValue = 'None';
 
   public clickOutsideHandler() {
     this.clickedValue = 'Clicked outside \'Sample Target\'';

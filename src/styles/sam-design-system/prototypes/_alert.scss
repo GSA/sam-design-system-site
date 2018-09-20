@@ -1,3 +1,7 @@
+$alertWarningColor: #D84009;
+$alertSuccessColor: #4aa564;
+$alertInfoColor: #00A7CF;
+$alertErrorColor: #EC1942;
 sam-alert-next{
     & > div{
         background: #ffffff;
@@ -14,33 +18,33 @@ sam-alert-next{
     
     .sam-alert-error{
         .sam-alert-body{
-            border-left: 5px solid #EC1942; 
+            border-left: 5px solid $alertErrorColor; 
             sam-icon{
-                color: #EC1942;
+                color: $alertErrorColor;
             }
         }
     }
     .sam-alert-info{
         .sam-alert-body{
-            border-left: 5px solid #00A7CF;
+            border-left: 5px solid $alertInfoColor;
             sam-icon{
-                color: #00A7CF;
+                color: $alertInfoColor;
             }
         }
     }
     .sam-alert-success{
         .sam-alert-body{
-            border-left: 5px solid #4aa564;
+            border-left: 5px solid $alertSuccessColor;
             sam-icon{
-                color: #4aa564;
+                color: $alertSuccessColor;
             }
         }
     }
     .sam-alert-warning{
         .sam-alert-body{
-            border-left: 5px solid #fdb81e;
+            border-left: 5px solid $alertWarningColor;
             sam-icon{
-                color: #fdb81e;
+                color: $alertWarningColor;
             }
         }
     }

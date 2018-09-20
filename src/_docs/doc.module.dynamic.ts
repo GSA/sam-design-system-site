@@ -32,8 +32,8 @@ import { SamPaginationComponentExampleComponent } from './components/pagination/
 import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
 import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
-import { SpinnerExampleComponent } from './components/spinner/component-example';
-import { TabsExampleComponent } from './components/tabs/component-example';
+import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
+import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
 import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
 import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
@@ -113,8 +113,8 @@ import { CdkTableModule } from '@angular/cdk';
     SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
     SamSidenavComponentExampleComponent,
-    SpinnerExampleComponent,
-    TabsExampleComponent,
+    SamSpinnerComponentExampleComponent,
+    SamTabsComponentExampleComponent,
     ClickOutsideExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,
@@ -187,8 +187,8 @@ import { CdkTableModule } from '@angular/cdk';
     SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
     SamSidenavComponentExampleComponent,
-    SpinnerExampleComponent,
-    TabsExampleComponent,
+    SamSpinnerComponentExampleComponent,
+    SamTabsComponentExampleComponent,
     ClickOutsideExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,

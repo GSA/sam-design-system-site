@@ -25,8 +25,8 @@ import { SamPaginationComponentExampleComponent } from './components/pagination/
 import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
 import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
-import { SpinnerExampleComponent } from './components/spinner/component-example';
-import { TabsExampleComponent } from './components/tabs/component-example';
+import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
+import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
 import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
 import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
@@ -129,8 +129,12 @@ export const ROUTES: Routes = [
   { path: 'components/sidenav', component: BaseDocPageComponent, data: { path: '_docs/components/sidenav', componentName: 'SamSidenavComponent'}, children: [
 						{ path: '', component: SamSidenavComponentExampleComponent }
 				]},
-  { path: 'components/spinner', component: SpinnerExampleComponent },
-  { path: 'components/tabs', component: TabsExampleComponent },
+  { path: 'components/spinner', component: BaseDocPageComponent, data: { path: '_docs/components/spinner', componentName: 'SamSpinnerComponent'}, children: [
+						{ path: '', component: SamSpinnerComponentExampleComponent }
+				]},
+  { path: 'components/tabs', component: BaseDocPageComponent, data: { path: '_docs/components/tabs', componentName: 'SamTabsComponent'}, children: [
+						{ path: '', component: SamTabsComponentExampleComponent }
+				]},
   { path: 'directives/click-outside', component: ClickOutsideExampleComponent },
   { path: 'directives/drag-drop', component: SamDragDropDirectiveExampleComponent },
   { path: 'directives/external-link', component: SamExternalLinkDirectiveExampleComponent },

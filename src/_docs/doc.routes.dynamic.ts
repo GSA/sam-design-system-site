@@ -24,7 +24,7 @@ import { SamPageTitleExampleComponent } from './components/page-title/component-
 import { SamPaginationComponentExampleComponent } from './components/pagination/component-example';
 import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
-import { SidenavExampleComponent } from './components/sidenav/component-example';
+import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
 import { SpinnerExampleComponent } from './components/spinner/component-example';
 import { TabsExampleComponent } from './components/tabs/component-example';
 import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
@@ -126,7 +126,9 @@ export const ROUTES: Routes = [
   { path: 'components/progress-bar', component: BaseDocPageComponent, data: { path: '_docs/components/progress-bar', componentName: 'SamProgress'}, children: [
 						{ path: '', component: SamProgressExampleComponent }
 				]},
-  { path: 'components/sidenav', component: SidenavExampleComponent },
+  { path: 'components/sidenav', component: BaseDocPageComponent, data: { path: '_docs/components/sidenav', componentName: 'SamSidenavComponent'}, children: [
+						{ path: '', component: SamSidenavComponentExampleComponent }
+				]},
   { path: 'components/spinner', component: SpinnerExampleComponent },
   { path: 'components/tabs', component: TabsExampleComponent },
   { path: 'directives/click-outside', component: ClickOutsideExampleComponent },

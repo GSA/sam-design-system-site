@@ -21,6 +21,7 @@ const doc2Components = [
 	'SamPaginationComponentExampleComponent',
 	'SamPointOfContactComponentExampleComponent',
 	'SamProgressExampleComponent',
+	'SamSidenavComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

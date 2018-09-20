@@ -31,7 +31,7 @@ import { SamPageTitleExampleComponent } from './components/page-title/component-
 import { SamPaginationComponentExampleComponent } from './components/pagination/component-example';
 import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
-import { SidenavExampleComponent } from './components/sidenav/component-example';
+import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
 import { SpinnerExampleComponent } from './components/spinner/component-example';
 import { TabsExampleComponent } from './components/tabs/component-example';
 import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
@@ -112,7 +112,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamPaginationComponentExampleComponent,
     SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
-    SidenavExampleComponent,
+    SamSidenavComponentExampleComponent,
     SpinnerExampleComponent,
     TabsExampleComponent,
     ClickOutsideExampleComponent,
@@ -186,7 +186,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamPaginationComponentExampleComponent,
     SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
-    SidenavExampleComponent,
+    SamSidenavComponentExampleComponent,
     SpinnerExampleComponent,
     TabsExampleComponent,
     ClickOutsideExampleComponent,

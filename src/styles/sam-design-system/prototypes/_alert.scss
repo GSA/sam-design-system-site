@@ -6,6 +6,10 @@ sam-alert-next{
 
     .sam-alert-body{
         padding: 10px 5px;
+        sam-icon{
+            margin-right: 4px;
+            margin-left: 2px;
+        }
     }
     
     .sam-alert-error{

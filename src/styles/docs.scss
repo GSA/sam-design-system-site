@@ -202,3 +202,10 @@ pre[class*="language-"] {
         content: 'Highlight';
     }
 }
+
+// documentation specifc styles
+doc-sam-alert-next{
+    sam-alert-next > div{
+        margin-bottom:20px;
+    }
+}

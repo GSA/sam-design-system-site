@@ -93,7 +93,9 @@ export const ROUTES: Routes = [
   { path: 'components/alert-footer', component: BaseDocPageComponent, data: { path: '_docs/components/alert-footer', componentName: 'SamAlertFooterComponent'}, children: [
 						{ path: '', component: SamAlertFooterComponentExampleComponent }
 				]},
-  { path: 'components/badge', component: SamBadgeComponentExampleComponent },
+  { path: 'components/badge', component: BaseDocPageComponent, data: { path: '_docs/components/badge', componentName: 'SamBadgeComponent'}, children: [
+						{ path: '', component: SamBadgeComponentExampleComponent }
+				]},
   { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: { path: '_docs/components/breadcrumbs', componentName: 'SamBreadcrumbsComponent'}, children: [
 						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
 				]},

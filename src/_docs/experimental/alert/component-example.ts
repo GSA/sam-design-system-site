@@ -6,7 +6,7 @@ import {
 
 @Component({
   selector: 'doc-sam-alert-next',
-  template: ''
+  templateUrl: './component-example.html'
 })
 export class SamAlertNextComponentExampleComponent {
   

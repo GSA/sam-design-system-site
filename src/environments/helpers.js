@@ -6,7 +6,8 @@ var path = require('path');
 const EVENT = process.env.npm_lifecycle_event || '';
 
 const doc2Components = [
-  'SamBreadcrumbsComponentExampleComponent'
+	'SamBreadcrumbsComponentExampleComponent',
+	'SamAlertNextComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

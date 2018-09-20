@@ -212,14 +212,13 @@ function generateComponentStub(fileObj) {
   const selector = fileObj.selector || '';
   const component = fileObj.component || '';
   return `
-/* tslint:disable */
 import {
   Component
 } from '@angular/core';
 
 @Component({
   selector: 'doc-${selector}',
-  template: ''
+  templateUrl: './component-example.html'
 })
 export class ${component}ExampleComponent {
   

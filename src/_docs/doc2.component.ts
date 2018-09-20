@@ -9,7 +9,6 @@ import { environment } from 'environment';
 const DOCS = environment.DOCS;
 const STATICPAGES = environment.STATICPAGES;
 import * as MarkdownIt from 'markdown-it';
-import { debug } from 'util';
 
 @Component({
   selector: 'doc-template-next',
@@ -57,6 +56,9 @@ export class Doc2TemplateComponent implements OnInit, OnChanges {
         }
         if (c['design'] && this.design) {
             this.runMarkdown('design');
+        }
+        if (c['guidance'] && this.guidance) {
+            this.runMarkdown('guidance');
         }
     }
 

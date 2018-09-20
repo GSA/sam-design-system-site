@@ -78,7 +78,9 @@ import { StaticPageComponent } from './static.component';
 
 export const ROUTES: Routes = [
 
-  { path: 'components/accordion', component: AccordionExampleComponent },
+  { path: 'components/accordion', component: BaseDocPageComponent, data: { path: '_docs/components/accordion', componentName: 'Accordion'}, children: [
+						{ path: '', component: AccordionExampleComponent }
+				]},
   { path: 'components/actions/action-button', component: SamActionButtonExampleComponent },
   { path: 'components/actions/actions-dropdown', component: SamActionsDropdownComponentExampleComponent },
   { path: 'components/alert', component: AlertExampleComponent },

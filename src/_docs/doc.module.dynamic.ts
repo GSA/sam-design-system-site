@@ -34,12 +34,12 @@ import { SamProgressExampleComponent } from './components/progress-bar/component
 import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
 import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
 import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
-import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
+import { SamClickOutsideDirectiveExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
 import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
 import { SamFocusDirectiveExampleComponent } from './directives/focus/component-example';
-import { StickyExampleComponent } from './directives/sticky/component-example';
-import { TabOutsideExampleComponent } from './directives/tab-outside/component-example';
+import { SamStickyComponentExampleComponent } from './directives/sticky/component-example';
+import { SamTabOutsideDirectiveExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
@@ -115,12 +115,12 @@ import { CdkTableModule } from '@angular/cdk';
     SamSidenavComponentExampleComponent,
     SamSpinnerComponentExampleComponent,
     SamTabsComponentExampleComponent,
-    ClickOutsideExampleComponent,
+    SamClickOutsideDirectiveExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,
     SamFocusDirectiveExampleComponent,
-    StickyExampleComponent,
-    TabOutsideExampleComponent,
+    SamStickyComponentExampleComponent,
+    SamTabOutsideDirectiveExampleComponent,
     ButtonExampleComponent,
     SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,
@@ -189,12 +189,12 @@ import { CdkTableModule } from '@angular/cdk';
     SamSidenavComponentExampleComponent,
     SamSpinnerComponentExampleComponent,
     SamTabsComponentExampleComponent,
-    ClickOutsideExampleComponent,
+    SamClickOutsideDirectiveExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,
     SamFocusDirectiveExampleComponent,
-    StickyExampleComponent,
-    TabOutsideExampleComponent,
+    SamStickyComponentExampleComponent,
+    SamTabOutsideDirectiveExampleComponent,
     ButtonExampleComponent,
     SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,

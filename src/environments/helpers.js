@@ -24,6 +24,12 @@ const doc2Components = [
 	'SamSidenavComponentExampleComponent',
 	'SamSpinnerComponentExampleComponent',
 	'SamTabsComponentExampleComponent',
+	'SamClickOutsideDirectiveExampleComponent',
+	'SamDragDropDirectiveExampleComponent',
+	'SamExternalLinkDirectiveExampleComponent',
+	'SamFocusDirectiveExampleComponent',
+	'SamStickyComponentExampleComponent',
+	'SamTabOutsideDirectiveExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

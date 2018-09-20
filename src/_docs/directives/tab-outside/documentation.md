@@ -1,3 +1,3 @@
 # Tab Outside
 
-Provides an Angular2 attribute directive to handle when the focused target is tabbed away.
+Provides an Angular attribute directive to handle when the focused target is tabbed away.

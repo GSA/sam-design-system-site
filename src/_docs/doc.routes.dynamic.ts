@@ -27,12 +27,12 @@ import { SamProgressExampleComponent } from './components/progress-bar/component
 import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
 import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
 import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
-import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
+import { SamClickOutsideDirectiveExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
 import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
 import { SamFocusDirectiveExampleComponent } from './directives/focus/component-example';
-import { StickyExampleComponent } from './directives/sticky/component-example';
-import { TabOutsideExampleComponent } from './directives/tab-outside/component-example';
+import { SamStickyComponentExampleComponent } from './directives/sticky/component-example';
+import { SamTabOutsideDirectiveExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
@@ -135,12 +135,24 @@ export const ROUTES: Routes = [
   { path: 'components/tabs', component: BaseDocPageComponent, data: { path: '_docs/components/tabs', componentName: 'SamTabsComponent'}, children: [
 						{ path: '', component: SamTabsComponentExampleComponent }
 				]},
-  { path: 'directives/click-outside', component: ClickOutsideExampleComponent },
-  { path: 'directives/drag-drop', component: SamDragDropDirectiveExampleComponent },
-  { path: 'directives/external-link', component: SamExternalLinkDirectiveExampleComponent },
-  { path: 'directives/focus', component: SamFocusDirectiveExampleComponent },
-  { path: 'directives/sticky', component: StickyExampleComponent },
-  { path: 'directives/tab-outside', component: TabOutsideExampleComponent },
+  { path: 'directives/click-outside', component: BaseDocPageComponent, data: { path: '_docs/directives/click-outside', componentName: 'SamClickOutsideDirective'}, children: [
+						{ path: '', component: SamClickOutsideDirectiveExampleComponent }
+				]},
+  { path: 'directives/drag-drop', component: BaseDocPageComponent, data: { path: '_docs/directives/drag-drop', componentName: 'SamDragDropDirective'}, children: [
+						{ path: '', component: SamDragDropDirectiveExampleComponent }
+				]},
+  { path: 'directives/external-link', component: BaseDocPageComponent, data: { path: '_docs/directives/external-link', componentName: 'SamExternalLinkDirective'}, children: [
+						{ path: '', component: SamExternalLinkDirectiveExampleComponent }
+				]},
+  { path: 'directives/focus', component: BaseDocPageComponent, data: { path: '_docs/directives/focus', componentName: 'SamFocusDirective'}, children: [
+						{ path: '', component: SamFocusDirectiveExampleComponent }
+				]},
+  { path: 'directives/sticky', component: BaseDocPageComponent, data: { path: '_docs/directives/sticky', componentName: 'SamStickyComponent'}, children: [
+						{ path: '', component: SamStickyComponentExampleComponent }
+				]},
+  { path: 'directives/tab-outside', component: BaseDocPageComponent, data: { path: '_docs/directives/tab-outside', componentName: 'SamTabOutsideDirective'}, children: [
+						{ path: '', component: SamTabOutsideDirectiveExampleComponent }
+				]},
   { path: 'elements/button', component: ButtonExampleComponent },
   { path: 'experimental/actions-list', component: SamActionsListComponentExampleComponent },
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },

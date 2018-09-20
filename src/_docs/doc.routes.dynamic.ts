@@ -123,7 +123,9 @@ export const ROUTES: Routes = [
   { path: 'components/point-of-contact', component: BaseDocPageComponent, data: { path: '_docs/components/point-of-contact', componentName: 'SamPointOfContactComponent'}, children: [
 						{ path: '', component: SamPointOfContactComponentExampleComponent }
 				]},
-  { path: 'components/progress-bar', component: SamProgressExampleComponent },
+  { path: 'components/progress-bar', component: BaseDocPageComponent, data: { path: '_docs/components/progress-bar', componentName: 'SamProgress'}, children: [
+						{ path: '', component: SamProgressExampleComponent }
+				]},
   { path: 'components/sidenav', component: SidenavExampleComponent },
   { path: 'components/spinner', component: SpinnerExampleComponent },
   { path: 'components/tabs', component: TabsExampleComponent },

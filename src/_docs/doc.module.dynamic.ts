@@ -23,7 +23,7 @@ import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumb
 import { SamCommentsComponentExampleComponent } from './components/comments/component-example';
 import { SamDataTableComponentExampleComponent } from './components/data-table/component-example';
 import { DownloadExampleComponent } from './components/download/component-example';
-import { HistoryExampleComponent } from './components/history/component-example';
+import { SamHistoryComponentExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
@@ -104,7 +104,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamCommentsComponentExampleComponent,
     SamDataTableComponentExampleComponent,
     DownloadExampleComponent,
-    HistoryExampleComponent,
+    SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,
@@ -178,7 +178,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamCommentsComponentExampleComponent,
     SamDataTableComponentExampleComponent,
     DownloadExampleComponent,
-    HistoryExampleComponent,
+    SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
     ModalExampleComponent,
     MultiselectDropdownExampleComponent,

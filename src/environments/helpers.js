@@ -15,6 +15,7 @@ const doc2Components = [
 	'SamBreadcrumbsComponentExampleComponent',
 	'SamCommentsComponentExampleComponent',
 	'SamDataTableComponentExampleComponent',
+	'SamHistoryComponentExampleComponent',
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

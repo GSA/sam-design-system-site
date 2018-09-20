@@ -16,7 +16,7 @@ import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumb
 import { SamCommentsComponentExampleComponent } from './components/comments/component-example';
 import { SamDataTableComponentExampleComponent } from './components/data-table/component-example';
 import { DownloadExampleComponent } from './components/download/component-example';
-import { HistoryExampleComponent } from './components/history/component-example';
+import { SamHistoryComponentExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
 import { ModalExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
@@ -106,7 +106,9 @@ export const ROUTES: Routes = [
 						{ path: '', component: SamDataTableComponentExampleComponent }
 				]},
   { path: 'components/download', component: DownloadExampleComponent },
-  { path: 'components/history', component: HistoryExampleComponent },
+  { path: 'components/history', component: BaseDocPageComponent, data: { path: '_docs/components/history', componentName: 'SamHistoryComponent'}, children: [
+						{ path: '', component: SamHistoryComponentExampleComponent }
+				]},
   { path: 'components/image', component: SamImageComponentExampleComponent },
   { path: 'components/modal', component: ModalExampleComponent },
   { path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },

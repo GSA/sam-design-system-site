@@ -17,6 +17,9 @@ const doc2Components = [
 	'SamDataTableComponentExampleComponent',
 	'SamHistoryComponentExampleComponent',
 	'SamImageComponentExampleComponent',
+	'SamModalComponentExampleComponent',
+	'SamPaginationComponentExampleComponent',
+	'SamPointOfContactComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

@@ -25,11 +25,11 @@ import { SamDataTableComponentExampleComponent } from './components/data-table/c
 import { DownloadExampleComponent } from './components/download/component-example';
 import { SamHistoryComponentExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
-import { ModalExampleComponent } from './components/modal/component-example';
+import { SamModalComponentExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
 import { SamPageTitleExampleComponent } from './components/page-title/component-example';
-import { PaginationExampleComponent } from './components/pagination/component-example';
-import { POCExampleComponent } from './components/point-of-contact/component-example';
+import { SamPaginationComponentExampleComponent } from './components/pagination/component-example';
+import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
 import { SidenavExampleComponent } from './components/sidenav/component-example';
 import { SpinnerExampleComponent } from './components/spinner/component-example';
@@ -106,11 +106,11 @@ import { CdkTableModule } from '@angular/cdk';
     DownloadExampleComponent,
     SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
-    ModalExampleComponent,
+    SamModalComponentExampleComponent,
     MultiselectDropdownExampleComponent,
     SamPageTitleExampleComponent,
-    PaginationExampleComponent,
-    POCExampleComponent,
+    SamPaginationComponentExampleComponent,
+    SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
     SidenavExampleComponent,
     SpinnerExampleComponent,
@@ -180,11 +180,11 @@ import { CdkTableModule } from '@angular/cdk';
     DownloadExampleComponent,
     SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
-    ModalExampleComponent,
+    SamModalComponentExampleComponent,
     MultiselectDropdownExampleComponent,
     SamPageTitleExampleComponent,
-    PaginationExampleComponent,
-    POCExampleComponent,
+    SamPaginationComponentExampleComponent,
+    SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
     SidenavExampleComponent,
     SpinnerExampleComponent,

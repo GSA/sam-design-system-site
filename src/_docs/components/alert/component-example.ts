@@ -7,5 +7,5 @@ import {
   templateUrl: './component-example.html'
 })
 export class SamAlertComponentExampleComponent {
-  
+
 }

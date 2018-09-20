@@ -9,7 +9,7 @@ import { BaseDocPageComponent } from './base-doc-page.component';
 import { AccordionExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
 import { SamActionsDropdownComponentExampleComponent } from './components/actions/actions-dropdown/component-example';
-import { AlertExampleComponent } from './components/alert/component-example';
+import { SamAlertComponentExampleComponent } from './components/alert/component-example';
 import { SamAlertFooterComponentExampleComponent } from './components/alert-footer/component-example';
 import { SamBadgeComponentExampleComponent } from './components/badge/component-example';
 import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumbs/component-example';
@@ -81,10 +81,18 @@ export const ROUTES: Routes = [
   { path: 'components/accordion', component: BaseDocPageComponent, data: { path: '_docs/components/accordion', componentName: 'Accordion'}, children: [
 						{ path: '', component: AccordionExampleComponent }
 				]},
-  { path: 'components/actions/action-button', component: SamActionButtonExampleComponent },
-  { path: 'components/actions/actions-dropdown', component: SamActionsDropdownComponentExampleComponent },
-  { path: 'components/alert', component: AlertExampleComponent },
-  { path: 'components/alert-footer', component: SamAlertFooterComponentExampleComponent },
+  { path: 'components/actions/action-button', component: BaseDocPageComponent, data: { path: '_docs/components/actions/action-button', componentName: 'SamActionButton'}, children: [
+						{ path: '', component: SamActionButtonExampleComponent }
+				]},
+  { path: 'components/actions/actions-dropdown', component: BaseDocPageComponent, data: { path: '_docs/components/actions/actions-dropdown', componentName: 'SamActionsDropdownComponent'}, children: [
+						{ path: '', component: SamActionsDropdownComponentExampleComponent }
+				]},
+  { path: 'components/alert', component: BaseDocPageComponent, data: { path: '_docs/components/alert', componentName: 'SamAlertComponent'}, children: [
+						{ path: '', component: SamAlertComponentExampleComponent }
+				]},
+  { path: 'components/alert-footer', component: BaseDocPageComponent, data: { path: '_docs/components/alert-footer', componentName: 'SamAlertFooterComponent'}, children: [
+						{ path: '', component: SamAlertFooterComponentExampleComponent }
+				]},
   { path: 'components/badge', component: SamBadgeComponentExampleComponent },
   { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: { path: '_docs/components/breadcrumbs', componentName: 'SamBreadcrumbsComponent'}, children: [
 						{ path: '', component: SamBreadcrumbsComponentExampleComponent }

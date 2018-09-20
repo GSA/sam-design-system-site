@@ -7,7 +7,11 @@ const EVENT = process.env.npm_lifecycle_event || '';
 
 const doc2Components = [
 	'SamBreadcrumbsComponentExampleComponent',
-	'AccordionExampleComponent'
+	'AccordionExampleComponent',
+	'SamActionButtonExampleComponent',
+	'SamActionsDropdownComponentExampleComponent',
+	'SamAlertComponentExampleComponent',
+	'SamAlertFooterComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

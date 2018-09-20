@@ -16,7 +16,7 @@ import { Doc2TemplateComponent } from './doc2.component';
 import { AccordionExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
 import { SamActionsDropdownComponentExampleComponent } from './components/actions/actions-dropdown/component-example';
-import { AlertExampleComponent } from './components/alert/component-example';
+import { SamAlertComponentExampleComponent } from './components/alert/component-example';
 import { SamAlertFooterComponentExampleComponent } from './components/alert-footer/component-example';
 import { SamBadgeComponentExampleComponent } from './components/badge/component-example';
 import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumbs/component-example';
@@ -97,7 +97,7 @@ import { CdkTableModule } from '@angular/cdk';
     AccordionExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
-    AlertExampleComponent,
+    SamAlertComponentExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
@@ -171,7 +171,7 @@ import { CdkTableModule } from '@angular/cdk';
     AccordionExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
-    AlertExampleComponent,
+    SamAlertComponentExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
     SamBreadcrumbsComponentExampleComponent,

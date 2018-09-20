@@ -13,6 +13,7 @@ import { ActivatedRoute } from '@angular/router';
     [codeExample]="codeExample"
     [example]="example"
     [design]="design"
+    [guidance]="guidance"
     [typedoc]="typedoc_content">
   <router-outlet></router-outlet>
 </doc-template-next>`,

@@ -1,0 +1,43 @@
+sam-alert-next{
+    & > div{
+        background: #ffffff;
+        box-shadow: 0px 1px 3px #666;
+    }
+
+    .sam-alert-body{
+        padding: 10px 5px;
+    }
+    
+    .sam-alert-error{
+        .sam-alert-body{
+            border-left: 5px solid #EC1942; 
+            sam-icon{
+                color: #EC1942;
+            }
+        }
+    }
+    .sam-alert-info{
+        .sam-alert-body{
+            border-left: 5px solid #00A7CF;
+            sam-icon{
+                color: #00A7CF;
+            }
+        }
+    }
+    .sam-alert-success{
+        .sam-alert-body{
+            border-left: 5px solid #4aa564;
+            sam-icon{
+                color: #4aa564;
+            }
+        }
+    }
+    .sam-alert-warning{
+        .sam-alert-body{
+            border-left: 5px solid #fdb81e;
+            sam-icon{
+                color: #fdb81e;
+            }
+        }
+    }
+}

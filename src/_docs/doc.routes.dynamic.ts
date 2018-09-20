@@ -6,7 +6,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { BaseDocPageComponent } from './base-doc-page.component';
 
-import { AccordionExampleComponent } from './components/accordion/component-example';
+import { SamAccordionComponentExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
 import { SamActionsDropdownComponentExampleComponent } from './components/actions/actions-dropdown/component-example';
 import { SamAlertComponentExampleComponent } from './components/alert/component-example';
@@ -78,8 +78,8 @@ import { StaticPageComponent } from './static.component';
 
 export const ROUTES: Routes = [
 
-  { path: 'components/accordion', component: BaseDocPageComponent, data: { path: '_docs/components/accordion', componentName: 'Accordion'}, children: [
-						{ path: '', component: AccordionExampleComponent }
+  { path: 'components/accordion', component: BaseDocPageComponent, data: { path: '_docs/components/accordion', componentName: 'SamAccordionComponent'}, children: [
+						{ path: '', component: SamAccordionComponentExampleComponent }
 				]},
   { path: 'components/actions/action-button', component: BaseDocPageComponent, data: { path: '_docs/components/actions/action-button', componentName: 'SamActionButton'}, children: [
 						{ path: '', component: SamActionButtonExampleComponent }
@@ -109,7 +109,9 @@ export const ROUTES: Routes = [
   { path: 'components/history', component: BaseDocPageComponent, data: { path: '_docs/components/history', componentName: 'SamHistoryComponent'}, children: [
 						{ path: '', component: SamHistoryComponentExampleComponent }
 				]},
-  { path: 'components/image', component: SamImageComponentExampleComponent },
+  { path: 'components/image', component: BaseDocPageComponent, data: { path: '_docs/components/image', componentName: 'SamImageComponent'}, children: [
+						{ path: '', component: SamImageComponentExampleComponent }
+				]},
   { path: 'components/modal', component: ModalExampleComponent },
   { path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
   { path: 'components/page-title', component: SamPageTitleExampleComponent },

@@ -6,7 +6,7 @@ var path = require('path');
 const EVENT = process.env.npm_lifecycle_event || '';
 
 const doc2Components = [
-	'AccordionExampleComponent',
+	'SamAccordionComponentExampleComponent',
 	'SamActionButtonExampleComponent',
 	'SamActionsDropdownComponentExampleComponent',
 	'SamAlertComponentExampleComponent',
@@ -16,6 +16,7 @@ const doc2Components = [
 	'SamCommentsComponentExampleComponent',
 	'SamDataTableComponentExampleComponent',
 	'SamHistoryComponentExampleComponent',
+	'SamImageComponentExampleComponent',
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

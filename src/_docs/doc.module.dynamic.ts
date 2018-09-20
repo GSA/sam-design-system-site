@@ -13,7 +13,7 @@ import { BaseExampleComponent } from './baseexample.component';
 import { BaseDocPageComponent } from './base-doc-page.component';
 import { Doc2TemplateComponent } from './doc2.component';
 
-import { AccordionExampleComponent } from './components/accordion/component-example';
+import { SamAccordionComponentExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
 import { SamActionsDropdownComponentExampleComponent } from './components/actions/actions-dropdown/component-example';
 import { SamAlertComponentExampleComponent } from './components/alert/component-example';
@@ -94,7 +94,7 @@ import { CdkTableModule } from '@angular/cdk';
  */
 @NgModule({
   declarations: [
-    AccordionExampleComponent,
+    SamAccordionComponentExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
     SamAlertComponentExampleComponent,
@@ -168,7 +168,7 @@ import { CdkTableModule } from '@angular/cdk';
     Doc2TemplateComponent
   ],
   entryComponents: [
-    AccordionExampleComponent,
+    SamAccordionComponentExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
     SamAlertComponentExampleComponent,

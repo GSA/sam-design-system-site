@@ -27,7 +27,7 @@ export class SamActionsListComponentExampleComponent {
       icon: 'fa-bars'
     }
   ];
-  
+
   example2_model = [
     {
       label: 'Share',
@@ -50,7 +50,7 @@ export class SamActionsListComponentExampleComponent {
       disabled: true
     }
   ];
-  
+
   example3_model = [
     {
       label: 'Share',

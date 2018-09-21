@@ -4,7 +4,7 @@ import {
 
 @Component({
   selector: 'doc-number',
-  templateUrl: './component-example.html' 
+  templateUrl: './component-example.html'
 })
 export class SamNumberComponentExampleComponent {
   numValue = 10;

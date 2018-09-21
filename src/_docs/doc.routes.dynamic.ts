@@ -360,10 +360,30 @@ export const ROUTES: Routes = [
 			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: PhoneGroupExampleComponent }
   ]},
-  { path: 'form-templates/name-entry', component: NameEntryExampleComponent },
-  { path: 'form-templates/phone-entry', component: PhoneEntryExampleComponent },
-  { path: 'wrappers/fieldset-wrapper', component: FieldsetWrapperExampleComponent },
-  { path: 'wrappers/label-wrapper', component: LabelWrapperExampleComponent },
+  { path: 'form-templates/name-entry', component: BaseDocPageComponent, data: {
+    path: '_docs/form-templates/name-entry',
+    componentName: 'NameEntry',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: NameEntryExampleComponent }
+  ]},
+  { path: 'form-templates/phone-entry', component: BaseDocPageComponent, data: {
+    path: '_docs/form-templates/phone-entry',
+    componentName: 'PhoneEntry',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: PhoneEntryExampleComponent }
+  ]},
+  { path: 'wrappers/fieldset-wrapper', component: BaseDocPageComponent, data: {
+    path: '_docs/wrappers/fieldset-wrapper',
+    componentName: 'FieldsetWrapper',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: FieldsetWrapperExampleComponent }
+  ]},
+  { path: 'wrappers/label-wrapper', component: BaseDocPageComponent, data: {
+    path: '_docs/wrappers/label-wrapper',
+    componentName: 'LabelWrapper',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: LabelWrapperExampleComponent }
+  ]},
   {
     path: 'architecture/form-service',
     component: StaticPageComponent,

@@ -8,5 +8,5 @@ import {
   templateUrl: './component-example.html'
 })
 export class SamDollarComponentExampleComponent {
-  dollarVal = "$12.12";
+  dollarVal = '$12.12';
 }

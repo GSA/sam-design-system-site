@@ -11,11 +11,11 @@ export class SamFilterDrawerComponentExampleComponent {
     id: 'aaa',
     label: 'item 1 label',
     value: 'item 1 value'
-  },{
+  }, {
     id: 'bbb',
     label: 'item 2 label',
     value: 'item 2 value'
-  },{
+  }, {
     id: 'ccc',
     label: 'item 3 label',
     value: 'item 3 value'
@@ -23,24 +23,24 @@ export class SamFilterDrawerComponentExampleComponent {
   filters = this.filtersTemplate;
   message = '';
 
-  itemRemoveHandler(removedItem){
-    this.filters = this.filters.filter((item)=>{
-      if(item.id !== removedItem.id){
-        return true
+  itemRemoveHandler(removedItem) {
+    this.filters = this.filters.filter((item) => {
+      if (item.id !== removedItem.id) {
+        return true;
       }
     });
   }
 
-  resetItems(){
+  resetItems() {
     this.message = '';
     this.filters = this.filtersTemplate;
   }
-  
-  clearHandler(){
+
+  clearHandler() {
     this.message = 'Clear event detected';
   }
 
-  saveHandler(){
+  saveHandler() {
     this.message = 'Save event detected';
   }
 }

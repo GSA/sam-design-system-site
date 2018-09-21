@@ -50,6 +50,10 @@ const doc2Components = [
 	'SamTimeComponentExampleComponent',
 	'SamToggleSwitchComponentExampleComponent',
 	'PhoneGroupExampleComponent',
+	'NameEntryExampleComponent',
+	'PhoneEntryExampleComponent',
+	'FieldsetWrapperExampleComponent',
+	'LabelWrapperExampleComponent',
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

@@ -46,19 +46,22 @@ export class Doc2TemplateComponent implements OnInit, OnChanges {
 
     ngOnChanges(c) {
         if (c['example'] && this.example) {
-            this.runPrism('example');
+          this.runPrism('example');
         }
         if (c['codeExample'] && this.codeExample) {
-            this.runPrism('codeExample');
+          this.runPrism('codeExample');
         }
         if (c['markdown'] && this.markdown) {
-            this.runMarkdown('markdown');
+          this.runMarkdown('markdown');
         }
         if (c['design'] && this.design) {
-            this.runMarkdown('design');
+          this.runMarkdown('design');
         }
         if (c['guidance'] && this.guidance) {
-            this.runMarkdown('guidance');
+          this.runMarkdown('guidance');
+        }
+        if (c['implementation'] && this.implementation) {
+          this.runMarkdown('implementation');
         }
     }
 

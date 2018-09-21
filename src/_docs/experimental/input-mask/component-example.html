@@ -1,0 +1,12 @@
+<sam-input-mask
+  [disabled]="disabled"
+  [attr.id]="name"
+  [template]="'__/__/____'"
+  [maxlength]="10"
+  [placeholder]="placeholder"
+  [disableFocusBehavior]="true"
+  [(ngModel)]="inputValue">
+</sam-input-mask>
+<p>
+{{inputValue}}
+</p>

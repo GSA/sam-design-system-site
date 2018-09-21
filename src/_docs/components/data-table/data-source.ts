@@ -1,8 +1,10 @@
-import { SamSortable, SamSortDirective } from '@gsa-sam/sam-ui-elements';
+import {
+  SamSortable,
+  SamSortDirective,
+  SamPaginationComponent
+} from '@gsa-sam/sam-ui-elements';
 import { merge } from 'rxjs/observable/merge';
-import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements';
 import { DataSource } from '@angular/cdk';
-import { fromEvent } from 'rxjs/observable/fromEvent';
 import { RECORDS } from './data';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 /* tslint:disable */
@@ -62,83 +64,83 @@ export class ExampleDatabase {
  * should be rendered.
  */
 export class ExampleDataSource extends DataSource<any> {
-    totalcost = 0;
-    _filterChange = new BehaviorSubject('');
-    get filter(): string { return this._filterChange.value; }
-    set filter(filter: string) { this._paginator.currentPage = 1; this._filterChange.next(filter); }
+  totalcost = 0;
+  _filterChange = new BehaviorSubject('');
+  get filter(): string { return this._filterChange.value; }
+  set filter(filter: string) { this._paginator.currentPage = 1; this._filterChange.next(filter); }
 
-    filteredData: CFDAData[] = [];
-    renderedData: CFDAData[] = [];
+  filteredData: CFDAData[] = [];
+  renderedData: CFDAData[] = [];
 
-    constructor(private _exampleDatabase: ExampleDatabase,
-                private _paginator: SamPaginationComponent,
-                private _sort: SamSortDirective) {
-      super();
-    }
+  constructor(private _exampleDatabase: ExampleDatabase,
+    private _paginator: SamPaginationComponent,
+    private _sort: SamSortDirective) {
+    super();
+  }
 
-    /** Connect function called by the table to retrieve one stream containing the data to render. */
-    connect(): Observable<CFDAData[]> {
-      // Listen for any changes in the base data, sorting, filtering, or pagination
-      const displayDataChanges = [
-        this._exampleDatabase.dataChange,
-        this._sort.samSortChange,
-        this._filterChange,
-        this._paginator.pageChange,
-      ];
+  /** Connect function called by the table to retrieve one stream containing the data to render. */
+  connect(): Observable<CFDAData[]> {
+    // Listen for any changes in the base data, sorting, filtering, or pagination
+    const displayDataChanges = [
+      this._exampleDatabase.dataChange,
+      this._sort.samSortChange,
+      this._filterChange,
+      this._paginator.pageChange,
+    ];
 
-      return merge(...displayDataChanges).map(() => {
-        // Filter data
-        this.filteredData = this._exampleDatabase.data.slice().filter((item: CFDAData) => {
-          const searchStr = (item.agency + item.title).toLowerCase();
-          return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
-        });
-
-        // set total
-        this.totalcost = 0;
-        this.filteredData.map((item: CFDAData) => {
-          this.totalcost += item.cost;
-        });
-
-        // Sort filtered data
-        const sortedData = this.sortData(this.filteredData.slice());
-
-        // Grab the page's slice of the filtered sorted data.
-        const startIndex = (this._paginator.currentPage - 1) * 10;
-        this._paginator.totalPages = Math.ceil(this.filteredData.length / 10);
-        this.renderedData = sortedData.splice(startIndex, 10);
-        return this.renderedData;
+    return merge(...displayDataChanges).map(() => {
+      // Filter data
+      this.filteredData = this._exampleDatabase.data.slice().filter((item: CFDAData) => {
+        const searchStr = (item.agency + item.title).toLowerCase();
+        return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
       });
-    }
 
-    disconnect() {}
+      // set total
+      this.totalcost = 0;
+      this.filteredData.map((item: CFDAData) => {
+        this.totalcost += item.cost;
+      });
 
-    /** Returns a sorted copy of the database data. */
-    sortData(data: CFDAData[]): CFDAData[] {
-        if (!this._sort.active) { return data; }
+      // Sort filtered data
+      const sortedData = this.sortData(this.filteredData.slice());
 
-        return data.sort((a, b) => {
-            let propertyA: number|string = '';
-            let propertyB: number|string = '';
-            if (this._sort.active) {
-                const sortable: SamSortable = this._sort.sortables.get(this._sort.active);
-                switch (sortable.id) {
-                    case 'agency': [propertyA, propertyB] = [a.agency, b.agency]; break;
-                    case 'cfdaNumber': [propertyA, propertyB] = [a.cfdaNumber, b.cfdaNumber]; break;
-                    case 'title': [propertyA, propertyB] = [a.title, b.title]; break;
-                    case 'status': [propertyA, propertyB] = [a.status, b.status]; break;
-                    case 'lastUpdatedDate': [propertyA, propertyB] = [a.lastUpdatedDate, b.lastUpdatedDate]; break;
-                    case 'obligationsUpdated': [propertyA, propertyB] = [a.obligationsUpdated, b.obligationsUpdated]; break;
-                    case 'ombReviewDate': [propertyA, propertyB] = [a.ombReviewDate, b.ombReviewDate]; break;
-                    case 'lastPublishedDate': [propertyA, propertyB] = [a.lastPublishedDate, b.lastPublishedDate]; break;
-                    case 'autoPublished': [propertyA, propertyB] = [a.autoPublished, b.autoPublished]; break;
-                    case 'cost': [propertyA, propertyB] = [a.cost, b.cost]; break;
-                }
+      // Grab the page's slice of the filtered sorted data.
+      const startIndex = (this._paginator.currentPage - 1) * 10;
+      this._paginator.totalPages = Math.ceil(this.filteredData.length / 10);
+      this.renderedData = sortedData.splice(startIndex, 10);
+      return this.renderedData;
+    });
+  }
 
-                const valueA = isNaN(+propertyA) ? propertyA : +propertyA;
-                const valueB = isNaN(+propertyB) ? propertyB : +propertyB;
+  disconnect() {}
 
-                return (valueA < valueB ? -1 : 1) * (this._sort.direction === 'asc' ? 1 : -1);
-            }
-        });
-    }
+  /** Returns a sorted copy of the database data. */
+  sortData(data: CFDAData[]): CFDAData[] {
+    if (!this._sort.active) { return data; }
+
+    return data.sort((a, b) => {
+      let propertyA: number|string = '';
+      let propertyB: number|string = '';
+      if (this._sort.active) {
+        const sortable: SamSortable = this._sort.sortables.get(this._sort.active);
+        switch (sortable.id) {
+          case 'agency': [propertyA, propertyB] = [a.agency, b.agency]; break;
+          case 'cfdaNumber': [propertyA, propertyB] = [a.cfdaNumber, b.cfdaNumber]; break;
+          case 'title': [propertyA, propertyB] = [a.title, b.title]; break;
+          case 'status': [propertyA, propertyB] = [a.status, b.status]; break;
+          case 'lastUpdatedDate': [propertyA, propertyB] = [a.lastUpdatedDate, b.lastUpdatedDate]; break;
+          case 'obligationsUpdated': [propertyA, propertyB] = [a.obligationsUpdated, b.obligationsUpdated]; break;
+          case 'ombReviewDate': [propertyA, propertyB] = [a.ombReviewDate, b.ombReviewDate]; break;
+          case 'lastPublishedDate': [propertyA, propertyB] = [a.lastPublishedDate, b.lastPublishedDate]; break;
+          case 'autoPublished': [propertyA, propertyB] = [a.autoPublished, b.autoPublished]; break;
+          case 'cost': [propertyA, propertyB] = [a.cost, b.cost]; break;
+        }
+
+        const valueA = isNaN(+propertyA) ? propertyA : +propertyA;
+        const valueB = isNaN(+propertyB) ? propertyB : +propertyB;
+
+        return (valueA < valueB ? -1 : 1) * (this._sort.direction === 'asc' ? 1 : -1);
+      }
+    });
+  }
 }

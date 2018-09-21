@@ -1,29 +1,12 @@
 import {
-  Component,
-  OnInit,
-  Input
+  Component
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
-
-const code_example = `<div class="usa-grid-full">
-  <div class="usa-width-one-whole">
-    <sam-history [currentId]="'1a610c814d73fc23a6b71decc9b4c548'" [data]="history"></sam-history>
-  </div>
-</div>`;
 
 @Component({
   selector: 'doc-history',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-` + code_example + `
-</doc-template>
-`
+  templateUrl: './component-example.html'
 })
-export class HistoryExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamHistoryComponentExampleComponent {
   history = [
     {
       authoritative: '0',
@@ -46,20 +29,4 @@ export class HistoryExampleComponent extends BaseExampleComponent implements OnI
       url: 'opportunities/1a610c814d73fc23a6b71decc9b4c548',
     }
   ];
-  typedoc_target = 'SamHistoryComponent';
-  typedoc_content = '';
-
-  example = code_example;
-
-  public base = '_docs/components/history/';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
 }

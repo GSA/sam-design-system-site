@@ -1,38 +1,79 @@
 import {
-  Component,
-  OnInit,
-  Input
+  Component
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
-
-const code_example = `<sam-sidenav [model]="config"></sam-sidenav>`;
+import {
+  SidenavService
+} from '@gsa-sam/sam-ui-elements';
 
 @Component({
   selector: 'doc-sidenav',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content" [guidance]="guidance">
-See sidenav on the left
-</doc-template>
-`
+  templateUrl: './component-example.html',
+  providers: [ SidenavService ]
 })
-export class SidenavExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = 'SamSidenavComponent';
-  typedoc_content = '';
-  example = code_example;
-
-  public base = '_docs/components/sidenav/';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
+export class SamSidenavComponentExampleComponent {
+  config = {
+    label: 'stuff',
+    children: [
+      {
+        label: 'Item 1',
+        route: '/foo',
+        children: [
+          {
+            label: 'Child 1',
+            route: '/lorem',
+            children: [
+              {
+                label: 'Grandchild 1',
+                route: '/sit'
+              },
+              {
+                label: 'Grandchild 2',
+                route: '/amet'
+              },
+              {
+                label: 'Grandchild 3',
+                route: '/consectetur'
+              }
+            ]
+          },
+          {
+            label: 'Child 2',
+            route: '/ipsum',
+            children: [
+              {
+                label: 'Grandchild 1',
+                route: '/adipisicings'
+              }
+            ]
+          },
+          {
+            label: 'Child 3',
+            route: '/dolor'
+          }
+        ]
+      },
+      {
+        label: 'Item 2',
+        route: '/bar',
+        children: [
+          {
+            label: 'Child 1',
+            route: '/elit'
+          },
+          {
+            label: 'Child 2',
+            route: '/cumque'
+          },
+          {
+            label: 'Child 3',
+            route: '/dignissimos'
+          }
+        ]
+      },
+      {
+        label: 'Item 3',
+        route: '/baz'
+      }
+    ]
+  };
 }

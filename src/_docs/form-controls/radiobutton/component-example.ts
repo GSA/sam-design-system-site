@@ -1,32 +1,12 @@
 import {
-  Component,
-  OnInit,
-  Input
+  Component
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
-
-const code_example = `<sam-radio-button
-  [(model)]="radioModel"
-  [options]="radioConfig.options"
-  [label]="radioConfig.label"
-  [hint]="radioConfig.hint"
-  [name]="radioConfig.name"
-  [errorMessage]="radioConfig.errorMessage">
-</sam-radio-button>`;
 
 @Component({
   selector: 'doc-radio',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-` + code_example + `
-</doc-template>
-`
+  templateUrl: './component-example.html'
 })
-export class RadioExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamRadioComponentExampleComponent {
   radioModel: any = 'ma';
   radioConfig = {
     options: [
@@ -39,20 +19,4 @@ export class RadioExampleComponent extends BaseExampleComponent implements OnIni
     errorMessage: '',
     hint: ''
   };
-  typedoc_target = 'SamRadioButtonComponent';
-  typedoc_content = '';
-
-  example = code_example;
-
-  public base = '_docs/form-controls/radiobutton/';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
 }

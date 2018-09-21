@@ -1,25 +1,12 @@
 import {
-  Component,
-  OnInit,
-  Input
+  Component
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
-
-const code_example = `<sam-poc [data]="pointOfContact"></sam-poc>`;
 
 @Component({
   selector: 'doc-poc',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-` + code_example + `
-</doc-template>
-`
+  templateUrl: './component-example.html'
 })
-export class POCExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamPointOfContactComponentExampleComponent {
   pointOfContact = {
     fullName: 'John Doe',
     address: '1234 Waterway Rd',
@@ -30,20 +17,4 @@ export class POCExampleComponent extends BaseExampleComponent implements OnInit 
     phone: '222-222-2222',
     website: 'www.testsite.gov'
   };
-  typedoc_target = 'SamPointOfContactComponent';
-  typedoc_content = '';
-
-  example = code_example;
-
-  public base = '_docs/components/point-of-contact/';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
 }

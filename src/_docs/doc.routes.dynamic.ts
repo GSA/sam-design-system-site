@@ -35,6 +35,7 @@ import { SamStickyComponentExampleComponent } from './directives/sticky/componen
 import { SamTabOutsideDirectiveExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
+import { SamAlertNextComponentExampleComponent } from './experimental/alert/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { ButtonNextExampleComponent } from './experimental/button-next/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
@@ -231,6 +232,12 @@ export const ROUTES: Routes = [
     componentName: 'SamActionsListComponent',
 			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: SamActionsListComponentExampleComponent }
+  ]},
+  { path: 'experimental/alert', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/alert',
+    componentName: 'SamAlertNextComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamAlertNextComponentExampleComponent }
   ]},
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/button-next', component: ButtonNextExampleComponent },

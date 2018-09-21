@@ -14,12 +14,13 @@ import { ActivatedRoute } from '@angular/router';
     [example]="example"
     [design]="design"
     [guidance]="guidance"
+    [implementation]="implementation"
     [typedoc]="typedoc_content">
   <router-outlet></router-outlet>
 </doc-template-next>`,
 })
 export class BaseDocPageComponent extends BaseExampleComponent implements OnInit {
-
+    implementation;
     ngOnInit() {
         const ctx = this;
         // console.log(this.route.snapshot.data.sections);
@@ -61,6 +62,12 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
             this._http.get('/assets/' + this.route.snapshot.data.path + '/guidance.md').subscribe((res) => {
                 // console.log(res.text());
                 ctx.guidance = res.text();
+            });
+        }
+        if (this.route.snapshot.data.sections.indexOf('implementation.md') !== -1) {
+            this._http.get('/assets/' + this.route.snapshot.data.path + '/implementation.md').subscribe((res) => {
+                // console.log(res.text());
+                ctx.implementation = res.text();
             });
         }
     }

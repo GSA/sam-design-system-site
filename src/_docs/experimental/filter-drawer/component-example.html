@@ -1,0 +1,12 @@
+<sam-filter-drawer (clear)="clearHandler()" (save)="saveHandler()">
+    <sam-filter-drawer-item *ngFor="let filterItem of filters"
+        [label]="filterItem.label"
+        [values]="[filterItem.value]"
+        (remove)="itemRemoveHandler($event)"></sam-filter-drawer-item>
+</sam-filter-drawer>
+<p *ngIf="message">{{message}}</p>
+<br/>
+<button class="sam-ui button secondary"
+    type="button"
+    (click)="resetItems()"
+    (keyup.enter)="resetItems()">Reset</button>

@@ -60,19 +60,19 @@ import { SamTabsNextComponentExampleComponent } from './experimental/tabs/compon
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
 import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
 import { SamYoutubeComponentExampleComponent } from './experimental/youtube/component-example';
-import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
-import { AutocompleteMultiselectExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
-import { CheckboxExampleComponent } from './form-controls/checkbox/component-example';
-import { DateExampleComponent } from './form-controls/date/component-example';
+import { SamAutocompleteComponentExampleComponent } from './form-controls/autocomplete/component-example';
+import { SamAutocompleteMultiselectComponentExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
+import { SamCheckboxComponentExampleComponent } from './form-controls/checkbox/component-example';
+import { SamDateComponentExampleComponent } from './form-controls/date/component-example';
 import { SamDateRangeComponentExampleComponent } from './form-controls/date-range/component-example';
-import { DateTimeExampleComponent } from './form-controls/date-time/component-example';
-import { NumberExampleComponent } from './form-controls/number/component-example';
-import { RadioExampleComponent } from './form-controls/radiobutton/component-example';
-import { SelectExampleComponent } from './form-controls/select/component-example';
-import { TextExampleComponent } from './form-controls/text/component-example';
-import { TextareaExampleComponent } from './form-controls/textarea/component-example';
-import { TimeExampleComponent } from './form-controls/time/component-example';
-import { ToggleSwitchExampleComponent } from './form-controls/toggle-switch/component-example';
+import { SamDateTimeComponentExampleComponent } from './form-controls/date-time/component-example';
+import { SamNumberComponentExampleComponent } from './form-controls/number/component-example';
+import { SamRadioComponentExampleComponent } from './form-controls/radiobutton/component-example';
+import { SamSelectComponentExampleComponent } from './form-controls/select/component-example';
+import { SamTextComponentExampleComponent } from './form-controls/text/component-example';
+import { SamTextareaComponentExampleComponent } from './form-controls/textarea/component-example';
+import { SamTimeComponentExampleComponent } from './form-controls/time/component-example';
+import { SamToggleSwitchComponentExampleComponent } from './form-controls/toggle-switch/component-example';
 import { SamUploadComponentExampleComponent } from './form-controls/upload/component-example';
 import { PhoneGroupExampleComponent } from './form-templates/international-phone/component-example';
 import { NameEntryExampleComponent } from './form-templates/name-entry/component-example';
@@ -141,19 +141,19 @@ import { CdkTableModule } from '@angular/cdk';
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
-    AutocompleteExampleComponent,
-    AutocompleteMultiselectExampleComponent,
-    CheckboxExampleComponent,
-    DateExampleComponent,
+    SamAutocompleteComponentExampleComponent,
+    SamAutocompleteMultiselectComponentExampleComponent,
+    SamCheckboxComponentExampleComponent,
+    SamDateComponentExampleComponent,
     SamDateRangeComponentExampleComponent,
-    DateTimeExampleComponent,
-    NumberExampleComponent,
-    RadioExampleComponent,
-    SelectExampleComponent,
-    TextExampleComponent,
-    TextareaExampleComponent,
-    TimeExampleComponent,
-    ToggleSwitchExampleComponent,
+    SamDateTimeComponentExampleComponent,
+    SamNumberComponentExampleComponent,
+    SamRadioComponentExampleComponent,
+    SamSelectComponentExampleComponent,
+    SamTextComponentExampleComponent,
+    SamTextareaComponentExampleComponent,
+    SamTimeComponentExampleComponent,
+    SamToggleSwitchComponentExampleComponent,
     SamUploadComponentExampleComponent,
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
@@ -215,19 +215,19 @@ import { CdkTableModule } from '@angular/cdk';
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
-    AutocompleteExampleComponent,
-    AutocompleteMultiselectExampleComponent,
-    CheckboxExampleComponent,
-    DateExampleComponent,
+    SamAutocompleteComponentExampleComponent,
+    SamAutocompleteMultiselectComponentExampleComponent,
+    SamCheckboxComponentExampleComponent,
+    SamDateComponentExampleComponent,
     SamDateRangeComponentExampleComponent,
-    DateTimeExampleComponent,
-    NumberExampleComponent,
-    RadioExampleComponent,
-    SelectExampleComponent,
-    TextExampleComponent,
-    TextareaExampleComponent,
-    TimeExampleComponent,
-    ToggleSwitchExampleComponent,
+    SamDateTimeComponentExampleComponent,
+    SamNumberComponentExampleComponent,
+    SamRadioComponentExampleComponent,
+    SamSelectComponentExampleComponent,
+    SamTextComponentExampleComponent,
+    SamTextareaComponentExampleComponent,
+    SamTimeComponentExampleComponent,
+    SamToggleSwitchComponentExampleComponent,
     SamUploadComponentExampleComponent,
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,

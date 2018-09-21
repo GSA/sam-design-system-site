@@ -30,7 +30,26 @@ const doc2Components = [
 	'SamFocusDirectiveExampleComponent',
 	'SamStickyComponentExampleComponent',
 	'SamTabOutsideDirectiveExampleComponent',
-	'SamActionsListComponentExampleComponent'
+	'SamActionsListComponentExampleComponent',
+	'SamDollarComponentExampleComponent',
+	'SamFilterDrawerComponentExampleComponent',
+	'SamIconComponentExampleComponent',
+	'SamInputMaskComponentExampleComponent',
+	'SamTabsNextComponentExampleComponent',
+	'SamAutocompleteComponentExampleComponent',
+	'SamAutocompleteMultiselectComponentExampleComponent',
+	'SamCheckboxComponentExampleComponent',
+	'SamDateComponentExampleComponent',
+	'SamDateRangeComponentExampleComponent',
+	'SamDateTimeComponentExampleComponent',
+	'SamNumberComponentExampleComponent',
+	'SamRadioComponentExampleComponent',
+	'SamSelectComponentExampleComponent',
+	'SamTextComponentExampleComponent',
+	'SamTextareaComponentExampleComponent',
+	'SamTimeComponentExampleComponent',
+	'SamToggleSwitchComponentExampleComponent',
+	'PhoneGroupExampleComponent',
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

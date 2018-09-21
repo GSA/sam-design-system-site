@@ -29,7 +29,8 @@ const doc2Components = [
 	'SamExternalLinkDirectiveExampleComponent',
 	'SamFocusDirectiveExampleComponent',
 	'SamStickyComponentExampleComponent',
-	'SamTabOutsideDirectiveExampleComponent'
+	'SamTabOutsideDirectiveExampleComponent',
+	'SamActionsListComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

@@ -226,7 +226,12 @@ export const ROUTES: Routes = [
     { path: '', component: SamTabOutsideDirectiveExampleComponent }
   ]},
   { path: 'elements/button', component: ButtonExampleComponent },
-  { path: 'experimental/actions-list', component: SamActionsListComponentExampleComponent },
+  { path: 'experimental/actions-list', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/actions-list',
+    componentName: 'SamActionsListComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamActionsListComponentExampleComponent }
+  ]},
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/button-next', component: ButtonNextExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },

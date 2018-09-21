@@ -78,81 +78,153 @@ import { StaticPageComponent } from './static.component';
 
 export const ROUTES: Routes = [
 
-  { path: 'components/accordion', component: BaseDocPageComponent, data: { path: '_docs/components/accordion', componentName: 'SamAccordionComponent'}, children: [
-						{ path: '', component: SamAccordionComponentExampleComponent }
-				]},
-  { path: 'components/actions/action-button', component: BaseDocPageComponent, data: { path: '_docs/components/actions/action-button', componentName: 'SamActionButton'}, children: [
-						{ path: '', component: SamActionButtonExampleComponent }
-				]},
-  { path: 'components/actions/actions-dropdown', component: BaseDocPageComponent, data: { path: '_docs/components/actions/actions-dropdown', componentName: 'SamActionsDropdownComponent'}, children: [
-						{ path: '', component: SamActionsDropdownComponentExampleComponent }
-				]},
-  { path: 'components/alert', component: BaseDocPageComponent, data: { path: '_docs/components/alert', componentName: 'SamAlertComponent'}, children: [
-						{ path: '', component: SamAlertComponentExampleComponent }
-				]},
-  { path: 'components/alert-footer', component: BaseDocPageComponent, data: { path: '_docs/components/alert-footer', componentName: 'SamAlertFooterComponent'}, children: [
-						{ path: '', component: SamAlertFooterComponentExampleComponent }
-				]},
-  { path: 'components/badge', component: BaseDocPageComponent, data: { path: '_docs/components/badge', componentName: 'SamBadgeComponent'}, children: [
-						{ path: '', component: SamBadgeComponentExampleComponent }
-				]},
-  { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: { path: '_docs/components/breadcrumbs', componentName: 'SamBreadcrumbsComponent'}, children: [
-						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
-				]},
-  { path: 'components/comments', component: BaseDocPageComponent, data: { path: '_docs/components/comments', componentName: 'SamCommentsComponent'}, children: [
-						{ path: '', component: SamCommentsComponentExampleComponent }
-				]},
-  { path: 'components/data-table', component: BaseDocPageComponent, data: { path: '_docs/components/data-table', componentName: 'SamDataTableComponent'}, children: [
-						{ path: '', component: SamDataTableComponentExampleComponent }
-				]},
+  { path: 'components/accordion', component: BaseDocPageComponent, data: {
+    path: '_docs/components/accordion',
+    componentName: 'SamAccordionComponent',
+			sections: ['component-example.html','component-example.ts','design.md','documentation.md','guidance.md']}, children: [
+    { path: '', component: SamAccordionComponentExampleComponent }
+  ]},
+  { path: 'components/actions/action-button', component: BaseDocPageComponent, data: {
+    path: '_docs/components/actions/action-button',
+    componentName: 'SamActionButton',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamActionButtonExampleComponent }
+  ]},
+  { path: 'components/actions/actions-dropdown', component: BaseDocPageComponent, data: {
+    path: '_docs/components/actions/actions-dropdown',
+    componentName: 'SamActionsDropdownComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamActionsDropdownComponentExampleComponent }
+  ]},
+  { path: 'components/alert', component: BaseDocPageComponent, data: {
+    path: '_docs/components/alert',
+    componentName: 'SamAlertComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamAlertComponentExampleComponent }
+  ]},
+  { path: 'components/alert-footer', component: BaseDocPageComponent, data: {
+    path: '_docs/components/alert-footer',
+    componentName: 'SamAlertFooterComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamAlertFooterComponentExampleComponent }
+  ]},
+  { path: 'components/badge', component: BaseDocPageComponent, data: {
+    path: '_docs/components/badge',
+    componentName: 'SamBadgeComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamBadgeComponentExampleComponent }
+  ]},
+  { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: {
+    path: '_docs/components/breadcrumbs',
+    componentName: 'SamBreadcrumbsComponent',
+			sections: ['component-example.html','component-example.ts','design.md','documentation.md']}, children: [
+    { path: '', component: SamBreadcrumbsComponentExampleComponent }
+  ]},
+  { path: 'components/comments', component: BaseDocPageComponent, data: {
+    path: '_docs/components/comments',
+    componentName: 'SamCommentsComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamCommentsComponentExampleComponent }
+  ]},
+  { path: 'components/data-table', component: BaseDocPageComponent, data: {
+    path: '_docs/components/data-table',
+    componentName: 'SamDataTableComponent',
+			sections: ['component-example.html','component-example.ts','data-source.ts','data.ts','documentation.md','guidance.md']}, children: [
+    { path: '', component: SamDataTableComponentExampleComponent }
+  ]},
   { path: 'components/download', component: DownloadExampleComponent },
-  { path: 'components/history', component: BaseDocPageComponent, data: { path: '_docs/components/history', componentName: 'SamHistoryComponent'}, children: [
-						{ path: '', component: SamHistoryComponentExampleComponent }
-				]},
-  { path: 'components/image', component: BaseDocPageComponent, data: { path: '_docs/components/image', componentName: 'SamImageComponent'}, children: [
-						{ path: '', component: SamImageComponentExampleComponent }
-				]},
-  { path: 'components/modal', component: BaseDocPageComponent, data: { path: '_docs/components/modal', componentName: 'SamModalComponent'}, children: [
-						{ path: '', component: SamModalComponentExampleComponent }
-				]},
+  { path: 'components/history', component: BaseDocPageComponent, data: {
+    path: '_docs/components/history',
+    componentName: 'SamHistoryComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamHistoryComponentExampleComponent }
+  ]},
+  { path: 'components/image', component: BaseDocPageComponent, data: {
+    path: '_docs/components/image',
+    componentName: 'SamImageComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamImageComponentExampleComponent }
+  ]},
+  { path: 'components/modal', component: BaseDocPageComponent, data: {
+    path: '_docs/components/modal',
+    componentName: 'SamModalComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamModalComponentExampleComponent }
+  ]},
   { path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
   { path: 'components/page-title', component: SamPageTitleExampleComponent },
-  { path: 'components/pagination', component: BaseDocPageComponent, data: { path: '_docs/components/pagination', componentName: 'SamPaginationComponent'}, children: [
-						{ path: '', component: SamPaginationComponentExampleComponent }
-				]},
-  { path: 'components/point-of-contact', component: BaseDocPageComponent, data: { path: '_docs/components/point-of-contact', componentName: 'SamPointOfContactComponent'}, children: [
-						{ path: '', component: SamPointOfContactComponentExampleComponent }
-				]},
-  { path: 'components/progress-bar', component: BaseDocPageComponent, data: { path: '_docs/components/progress-bar', componentName: 'SamProgress'}, children: [
-						{ path: '', component: SamProgressExampleComponent }
-				]},
-  { path: 'components/sidenav', component: BaseDocPageComponent, data: { path: '_docs/components/sidenav', componentName: 'SamSidenavComponent'}, children: [
-						{ path: '', component: SamSidenavComponentExampleComponent }
-				]},
-  { path: 'components/spinner', component: BaseDocPageComponent, data: { path: '_docs/components/spinner', componentName: 'SamSpinnerComponent'}, children: [
-						{ path: '', component: SamSpinnerComponentExampleComponent }
-				]},
-  { path: 'components/tabs', component: BaseDocPageComponent, data: { path: '_docs/components/tabs', componentName: 'SamTabsComponent'}, children: [
-						{ path: '', component: SamTabsComponentExampleComponent }
-				]},
-  { path: 'directives/click-outside', component: BaseDocPageComponent, data: { path: '_docs/directives/click-outside', componentName: 'SamClickOutsideDirective'}, children: [
-						{ path: '', component: SamClickOutsideDirectiveExampleComponent }
-				]},
-  { path: 'directives/drag-drop', component: BaseDocPageComponent, data: { path: '_docs/directives/drag-drop', componentName: 'SamDragDropDirective'}, children: [
-						{ path: '', component: SamDragDropDirectiveExampleComponent }
-				]},
-  { path: 'directives/external-link', component: BaseDocPageComponent, data: { path: '_docs/directives/external-link', componentName: 'SamExternalLinkDirective'}, children: [
-						{ path: '', component: SamExternalLinkDirectiveExampleComponent }
-				]},
-  { path: 'directives/focus', component: BaseDocPageComponent, data: { path: '_docs/directives/focus', componentName: 'SamFocusDirective'}, children: [
-						{ path: '', component: SamFocusDirectiveExampleComponent }
-				]},
-  { path: 'directives/sticky', component: BaseDocPageComponent, data: { path: '_docs/directives/sticky', componentName: 'SamStickyComponent'}, children: [
-						{ path: '', component: SamStickyComponentExampleComponent }
-				]},
-  { path: 'directives/tab-outside', component: BaseDocPageComponent, data: { path: '_docs/directives/tab-outside', componentName: 'SamTabOutsideDirective'}, children: [
-						{ path: '', component: SamTabOutsideDirectiveExampleComponent }
-				]},
+  { path: 'components/pagination', component: BaseDocPageComponent, data: {
+    path: '_docs/components/pagination',
+    componentName: 'SamPaginationComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamPaginationComponentExampleComponent }
+  ]},
+  { path: 'components/point-of-contact', component: BaseDocPageComponent, data: {
+    path: '_docs/components/point-of-contact',
+    componentName: 'SamPointOfContactComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamPointOfContactComponentExampleComponent }
+  ]},
+  { path: 'components/progress-bar', component: BaseDocPageComponent, data: {
+    path: '_docs/components/progress-bar',
+    componentName: 'SamProgress',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamProgressExampleComponent }
+  ]},
+  { path: 'components/sidenav', component: BaseDocPageComponent, data: {
+    path: '_docs/components/sidenav',
+    componentName: 'SamSidenavComponent',
+			sections: ['component-example.html','component-example.ts','design.md','documentation.md','guidance.md']}, children: [
+    { path: '', component: SamSidenavComponentExampleComponent }
+  ]},
+  { path: 'components/spinner', component: BaseDocPageComponent, data: {
+    path: '_docs/components/spinner',
+    componentName: 'SamSpinnerComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamSpinnerComponentExampleComponent }
+  ]},
+  { path: 'components/tabs', component: BaseDocPageComponent, data: {
+    path: '_docs/components/tabs',
+    componentName: 'SamTabsComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamTabsComponentExampleComponent }
+  ]},
+  { path: 'directives/click-outside', component: BaseDocPageComponent, data: {
+    path: '_docs/directives/click-outside',
+    componentName: 'SamClickOutsideDirective',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamClickOutsideDirectiveExampleComponent }
+  ]},
+  { path: 'directives/drag-drop', component: BaseDocPageComponent, data: {
+    path: '_docs/directives/drag-drop',
+    componentName: 'SamDragDropDirective',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamDragDropDirectiveExampleComponent }
+  ]},
+  { path: 'directives/external-link', component: BaseDocPageComponent, data: {
+    path: '_docs/directives/external-link',
+    componentName: 'SamExternalLinkDirective',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamExternalLinkDirectiveExampleComponent }
+  ]},
+  { path: 'directives/focus', component: BaseDocPageComponent, data: {
+    path: '_docs/directives/focus',
+    componentName: 'SamFocusDirective',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamFocusDirectiveExampleComponent }
+  ]},
+  { path: 'directives/sticky', component: BaseDocPageComponent, data: {
+    path: '_docs/directives/sticky',
+    componentName: 'SamStickyComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamStickyComponentExampleComponent }
+  ]},
+  { path: 'directives/tab-outside', component: BaseDocPageComponent, data: {
+    path: '_docs/directives/tab-outside',
+    componentName: 'SamTabOutsideDirective',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamTabOutsideDirectiveExampleComponent }
+  ]},
   { path: 'elements/button', component: ButtonExampleComponent },
   { path: 'experimental/actions-list', component: SamActionsListComponentExampleComponent },
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },

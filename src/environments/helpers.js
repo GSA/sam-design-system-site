@@ -49,7 +49,7 @@ function hasNpmFlag(flag) {
 
 function getUIKitStructure(target){
 	let docFiles = recursiveReadSync(target);	
-	
+	// console.log(docFiles);
 	let filteredFiles = docFiles.filter((val) => {
 		let reg = new RegExp(/component-example\.ts$/g);
 		return reg.exec(val);
@@ -96,6 +96,22 @@ function getUIKitStructure(target){
 		if(doc2Components.includes(component)){
 			doc2Flag = true;
 		}
+		let lookup = docFiles.filter((item)=>{
+			if(item.includes(docPath+"/")){
+				return true;
+			}
+		});
+		if(lookup && lookup.length > 0){
+			lookup = lookup.map((item)=>{
+				let match = item.match(/([a-zA-Z-]+\.\w+)$/);
+				if(match && match.length > 1){
+					return match[1];
+				} else {
+					return match[0];
+				}
+			});
+		}
+		// console.log("lookuppp2",component,lookup);
 	  return {
 	    link: link,
 	    routerlink: "/docs/"+link,
@@ -104,7 +120,8 @@ function getUIKitStructure(target){
 			component: component,
 			subsection: subsection,
 			doc2Flag: doc2Flag,
-			docPath: docPath
+			docPath: docPath,
+			docSections: lookup
 	  };
 	})
 
@@ -227,9 +244,10 @@ function generateRoutesString (docsTarget, staticTarget) {
 	let routes = files.reduce((prev, curr) => {
 		if(curr.doc2Flag){
 			return prev.concat(
-				`\n  { path: '${curr.link}', component: BaseDocPageComponent, data: { path: '${curr.docPath}', componentName: '${curr.component.replace('ExampleComponent','')}'}, children: [
-						{ path: '', component: ${curr.component} }
-				]},`
+				`\n  { path: '${curr.link}', component: BaseDocPageComponent, data: {\n    path: '${curr.docPath}',\n    componentName: '${curr.component.replace('ExampleComponent','')}',
+			sections: ['`+curr.docSections.join("','")+`']}, children: [
+    { path: '', component: ${curr.component} }
+  ]},`
 			)
 		} else {
 			return prev.concat(

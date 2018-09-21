@@ -22,6 +22,7 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
 
     ngOnInit() {
         const ctx = this;
+        // console.log(this.route.snapshot.data.sections);
         this.typedoc_target = this.route.snapshot.data.componentName;
         if (this.typedoc_target) {
             this.service.getComponentProperties(this.typedoc_target)
@@ -32,26 +33,36 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
         }
 
         // todo: see if we can find out if we should make the call or not
-        this._http.get('/assets/' + this.route.snapshot.data.path + '/component-example.html').subscribe((res) => {
-            // console.log(res.text());
-            ctx.example = res.text();
-        });
-        this._http.get('/assets/' + this.route.snapshot.data.path + '/component-example.ts').subscribe((res) => {
-            // console.log(res.text());
-            ctx.codeExample = res.text();
-        });
-        this._http.get('/assets/' + this.route.snapshot.data.path + '/documentation.md').subscribe((res) => {
-            // console.log(res.text());
-            ctx.markdown = res.text();
-        });
-        this._http.get('/assets/' + this.route.snapshot.data.path + '/design.md').subscribe((res) => {
-            // console.log(res.text());
-            ctx.design = res.text();
-        });
-        this._http.get('/assets/' + this.route.snapshot.data.path + '/guidance.md').subscribe((res) => {
-            // console.log(res.text());
-            ctx.guidance = res.text();
-        });
+        if(this.route.snapshot.data.sections.indexOf('component-example.html') !== -1) {
+            this._http.get('/assets/' + this.route.snapshot.data.path + '/component-example.html').subscribe((res) => {
+                // console.log(res.text());
+                ctx.example = res.text();
+            });
+        }
+        if(this.route.snapshot.data.sections.indexOf('component-example.ts') !== -1) {
+            this._http.get('/assets/' + this.route.snapshot.data.path + '/component-example.ts').subscribe((res) => {
+                // console.log(res.text());
+                ctx.codeExample = res.text();
+            });
+        }
+        if(this.route.snapshot.data.sections.indexOf('documentation.md') !== -1) {
+            this._http.get('/assets/' + this.route.snapshot.data.path + '/documentation.md').subscribe((res) => {
+                // console.log(res.text());
+                ctx.markdown = res.text();
+            });
+        }
+        if(this.route.snapshot.data.sections.indexOf('design.md') !== -1) {
+            this._http.get('/assets/' + this.route.snapshot.data.path + '/design.md').subscribe((res) => {
+                // console.log(res.text());
+                ctx.design = res.text();
+            });
+        }
+        if(this.route.snapshot.data.sections.indexOf('guidance.md') !== -1) {
+            this._http.get('/assets/' + this.route.snapshot.data.path + '/guidance.md').subscribe((res) => {
+                // console.log(res.text());
+                ctx.guidance = res.text();
+            });
+        }
     }
 
     constructor(

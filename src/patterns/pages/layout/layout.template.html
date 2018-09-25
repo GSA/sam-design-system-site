@@ -38,13 +38,10 @@
   <sam-main>
 
     <!-- filter-drawer -->
-    <sam-filter-drawer>
-      <sam-filter-drawer-item
-        *ngFor="let filterItem of filters | async"
-        [label]="filterItem.label"
-        [values]="filterItem.value"
-        (remove)="removeItem($event)"
-      ></sam-filter-drawer-item>
+    <sam-filter-drawer
+      dynamicChips
+      [map]="filtersToPills"
+      (remove)="removeItem($event)">
     </sam-filter-drawer>
     
     <sam-main-content>

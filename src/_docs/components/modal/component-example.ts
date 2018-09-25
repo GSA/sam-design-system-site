@@ -1,106 +1,19 @@
 import {
   Component,
-  OnInit,
-  Input,
   ViewChild
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
-
-const code_example = `<sam-modal
-  [showClose]="true"
-  #modal1
-  [title]="modalConfig.title"
-  [type]="'success'"
-  [description]="modalConfig.description"
-  [submitButtonLabel]="'Ok'"
-  (onClose)="message='Success modal closed'"
-  (onSubmit)="onModalClose()">
-</sam-modal>
-<sam-modal
-  [showClose]="true"
-  #modal2
-  [title]="modalConfig.title"
-  [type]="'error'"
-  [description]="modalConfig.description"
-  [submitButtonLabel]="'Ok'"
-  (onClose)="message='Error modal closed'"
-  (onSubmit)="onModal2Close()">
-</sam-modal>
-<sam-modal
-  [showClose]="true"
-  #modal3
-  [title]="modalConfig.title"
-  [type]="'warning'"
-  [description]="modalConfig.description"
-  [submitButtonLabel]="'Yes'"
-  [cancelButtonLabel]="'No'"
-  (onClose)="message='Warning modal closed'"
-  (onSubmit)="onModal3Close()">
-</sam-modal>
-<sam-modal
-  [showClose]="true"
-  #modal4
-  [title]="modalConfig.title"
-  [type]="'info'"
-  [submitButtonLabel]="'Yes'"
-  [cancelButtonLabel]="'No'"
-  (onClose)="message='Info modal closed'"
-  (onSubmit)="onModal4Close()">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero,
-  esse ratione quis quasi commodi distinctio sit aut eum facilis minima hic saepe ut ex,
-  aliquid minus non maxime quod!
-</sam-modal>
-<sam-modal
-  [showClose]="true"
-  #modal5
-  [title]="modalConfig2.title"
-  [type]="modalConfig2.type"
-  [description]="modalConfig2.description"
-  [submitButtonLabel]="'Yes'"
-  [cancelButtonLabel]="'No'"
-  (onSubmit)="onModal5Close()">
-</sam-modal>
-
-<p>{{message}}</p>
-
-<sam-button buttonText="Show Success Modal" (click)="onModalInitClick()"></sam-button><br/>
-<sam-button buttonText="Show Error Modal" (click)="onModalInit2Click()"></sam-button><br/>
-<sam-button buttonText="Show Warning Modal" (click)="onModalInit3Click()">Show Warning Modal</sam-button><br/>
-<sam-button buttonText="Show Info Modal" (click)="onModalInit4Click()"></sam-button>
-<hr/>
-<sam-text label="Title" [(ngModel)]="modalConfig2.title" name="title"></sam-text>
-<sam-text label="Description" [(ngModel)]="modalConfig2.description" name="description"></sam-text>
-<sam-select label="Type" name="type" [(ngModel)]="modalConfig2.type" [options]="modalAlertTypes">
-</sam-select>
-<sam-button (click)="onModal5InitClick()" buttonText="Show Modal"></sam-button>
-`;
 
 @Component({
   selector: 'doc-modal',
-  template: `
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-` + code_example + `
-</doc-template>
-`
+  templateUrl: './component-example.html'
 })
-export class ModalExampleComponent extends BaseExampleComponent implements OnInit {
-  modalConfig = {
-    title: 'Test Title',
-    description: 'Description Text'
-  };
+export class SamModalComponentExampleComponent {
   @ViewChild('modal1') vcModal1;
   @ViewChild('modal2') vcModal2;
   @ViewChild('modal3') vcModal3;
   @ViewChild('modal4') vcModal4;
   @ViewChild('modal5') vcModal5;
-  typedoc_target = 'SamModalComponent';
-  typedoc_content = '';
 
-  example = code_example;
   message = '';
   modalAlertTypes = [{
     label: 'success',
@@ -119,23 +32,15 @@ export class ModalExampleComponent extends BaseExampleComponent implements OnIni
     name: 'info',
     value: 'info'
   }];
+  modalConfig = {
+    title: 'Test Title',
+    description: 'Description Text'
+  };
   modalConfig2 = {
     type: 'success',
     title: 'Sample Title',
     description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
   };
-
-  public base = '_docs/components/modal/';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
 
   onModalInitClick() {
     this.vcModal1.openModal();

@@ -82,4 +82,6 @@ export class MyServiceDirective {
 
 In your html implementation, you would then have something like:
 
-`<sam-autocomplete myService [extraServiceVariable]="stateVariable" (serviceEventEmitter)="eventHandlerMethod($event)"></sam-autocomplete>`
+```
+<sam-autocomplete myService [extraServiceVariable]="stateVariable" (serviceEventEmitter)="eventHandlerMethod($event)"></sam-autocomplete>
+```

@@ -13,33 +13,33 @@ import { BaseExampleComponent } from './baseexample.component';
 import { BaseDocPageComponent } from './base-doc-page.component';
 import { Doc2TemplateComponent } from './doc2.component';
 
-import { AccordionExampleComponent } from './components/accordion/component-example';
+import { SamAccordionComponentExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
 import { SamActionsDropdownComponentExampleComponent } from './components/actions/actions-dropdown/component-example';
-import { AlertExampleComponent } from './components/alert/component-example';
+import { SamAlertComponentExampleComponent } from './components/alert/component-example';
 import { SamAlertFooterComponentExampleComponent } from './components/alert-footer/component-example';
 import { SamBadgeComponentExampleComponent } from './components/badge/component-example';
 import { SamBreadcrumbsComponentExampleComponent } from './components/breadcrumbs/component-example';
 import { SamCommentsComponentExampleComponent } from './components/comments/component-example';
 import { SamDataTableComponentExampleComponent } from './components/data-table/component-example';
 import { DownloadExampleComponent } from './components/download/component-example';
-import { HistoryExampleComponent } from './components/history/component-example';
+import { SamHistoryComponentExampleComponent } from './components/history/component-example';
 import { SamImageComponentExampleComponent } from './components/image/component-example';
-import { ModalExampleComponent } from './components/modal/component-example';
+import { SamModalComponentExampleComponent } from './components/modal/component-example';
 import { MultiselectDropdownExampleComponent } from './components/multiselect-dropdown/component-example';
 import { SamPageTitleExampleComponent } from './components/page-title/component-example';
-import { PaginationExampleComponent } from './components/pagination/component-example';
-import { POCExampleComponent } from './components/point-of-contact/component-example';
+import { SamPaginationComponentExampleComponent } from './components/pagination/component-example';
+import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
-import { SidenavExampleComponent } from './components/sidenav/component-example';
-import { SpinnerExampleComponent } from './components/spinner/component-example';
-import { TabsExampleComponent } from './components/tabs/component-example';
-import { ClickOutsideExampleComponent } from './directives/click-outside/component-example';
+import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
+import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
+import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
+import { SamClickOutsideDirectiveExampleComponent } from './directives/click-outside/component-example';
 import { SamDragDropDirectiveExampleComponent } from './directives/drag-drop/component-example';
 import { SamExternalLinkDirectiveExampleComponent } from './directives/external-link/component-example';
 import { SamFocusDirectiveExampleComponent } from './directives/focus/component-example';
-import { StickyExampleComponent } from './directives/sticky/component-example';
-import { TabOutsideExampleComponent } from './directives/tab-outside/component-example';
+import { SamStickyComponentExampleComponent } from './directives/sticky/component-example';
+import { SamTabOutsideDirectiveExampleComponent } from './directives/tab-outside/component-example';
 import { ButtonExampleComponent } from './elements/button/component-example';
 import { SamActionsListComponentExampleComponent } from './experimental/actions-list/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
@@ -60,19 +60,19 @@ import { SamTabsNextComponentExampleComponent } from './experimental/tabs/compon
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
 import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
 import { SamYoutubeComponentExampleComponent } from './experimental/youtube/component-example';
-import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
-import { AutocompleteMultiselectExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
-import { CheckboxExampleComponent } from './form-controls/checkbox/component-example';
-import { DateExampleComponent } from './form-controls/date/component-example';
+import { SamAutocompleteComponentExampleComponent } from './form-controls/autocomplete/component-example';
+import { SamAutocompleteMultiselectComponentExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
+import { SamCheckboxComponentExampleComponent } from './form-controls/checkbox/component-example';
+import { SamDateComponentExampleComponent } from './form-controls/date/component-example';
 import { SamDateRangeComponentExampleComponent } from './form-controls/date-range/component-example';
-import { DateTimeExampleComponent } from './form-controls/date-time/component-example';
-import { NumberExampleComponent } from './form-controls/number/component-example';
-import { RadioExampleComponent } from './form-controls/radiobutton/component-example';
-import { SelectExampleComponent } from './form-controls/select/component-example';
-import { TextExampleComponent } from './form-controls/text/component-example';
-import { TextareaExampleComponent } from './form-controls/textarea/component-example';
-import { TimeExampleComponent } from './form-controls/time/component-example';
-import { ToggleSwitchExampleComponent } from './form-controls/toggle-switch/component-example';
+import { SamDateTimeComponentExampleComponent } from './form-controls/date-time/component-example';
+import { SamNumberComponentExampleComponent } from './form-controls/number/component-example';
+import { SamRadioComponentExampleComponent } from './form-controls/radiobutton/component-example';
+import { SamSelectComponentExampleComponent } from './form-controls/select/component-example';
+import { SamTextComponentExampleComponent } from './form-controls/text/component-example';
+import { SamTextareaComponentExampleComponent } from './form-controls/textarea/component-example';
+import { SamTimeComponentExampleComponent } from './form-controls/time/component-example';
+import { SamToggleSwitchComponentExampleComponent } from './form-controls/toggle-switch/component-example';
 import { SamUploadComponentExampleComponent } from './form-controls/upload/component-example';
 import { PhoneGroupExampleComponent } from './form-templates/international-phone/component-example';
 import { NameEntryExampleComponent } from './form-templates/name-entry/component-example';
@@ -94,33 +94,33 @@ import { CdkTableModule } from '@angular/cdk';
  */
 @NgModule({
   declarations: [
-    AccordionExampleComponent,
+    SamAccordionComponentExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
-    AlertExampleComponent,
+    SamAlertComponentExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
     SamCommentsComponentExampleComponent,
     SamDataTableComponentExampleComponent,
     DownloadExampleComponent,
-    HistoryExampleComponent,
+    SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
-    ModalExampleComponent,
+    SamModalComponentExampleComponent,
     MultiselectDropdownExampleComponent,
     SamPageTitleExampleComponent,
-    PaginationExampleComponent,
-    POCExampleComponent,
+    SamPaginationComponentExampleComponent,
+    SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
-    SidenavExampleComponent,
-    SpinnerExampleComponent,
-    TabsExampleComponent,
-    ClickOutsideExampleComponent,
+    SamSidenavComponentExampleComponent,
+    SamSpinnerComponentExampleComponent,
+    SamTabsComponentExampleComponent,
+    SamClickOutsideDirectiveExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,
     SamFocusDirectiveExampleComponent,
-    StickyExampleComponent,
-    TabOutsideExampleComponent,
+    SamStickyComponentExampleComponent,
+    SamTabOutsideDirectiveExampleComponent,
     ButtonExampleComponent,
     SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,
@@ -141,19 +141,19 @@ import { CdkTableModule } from '@angular/cdk';
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
-    AutocompleteExampleComponent,
-    AutocompleteMultiselectExampleComponent,
-    CheckboxExampleComponent,
-    DateExampleComponent,
+    SamAutocompleteComponentExampleComponent,
+    SamAutocompleteMultiselectComponentExampleComponent,
+    SamCheckboxComponentExampleComponent,
+    SamDateComponentExampleComponent,
     SamDateRangeComponentExampleComponent,
-    DateTimeExampleComponent,
-    NumberExampleComponent,
-    RadioExampleComponent,
-    SelectExampleComponent,
-    TextExampleComponent,
-    TextareaExampleComponent,
-    TimeExampleComponent,
-    ToggleSwitchExampleComponent,
+    SamDateTimeComponentExampleComponent,
+    SamNumberComponentExampleComponent,
+    SamRadioComponentExampleComponent,
+    SamSelectComponentExampleComponent,
+    SamTextComponentExampleComponent,
+    SamTextareaComponentExampleComponent,
+    SamTimeComponentExampleComponent,
+    SamToggleSwitchComponentExampleComponent,
     SamUploadComponentExampleComponent,
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
@@ -168,33 +168,33 @@ import { CdkTableModule } from '@angular/cdk';
     Doc2TemplateComponent
   ],
   entryComponents: [
-    AccordionExampleComponent,
+    SamAccordionComponentExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
-    AlertExampleComponent,
+    SamAlertComponentExampleComponent,
     SamAlertFooterComponentExampleComponent,
     SamBadgeComponentExampleComponent,
     SamBreadcrumbsComponentExampleComponent,
     SamCommentsComponentExampleComponent,
     SamDataTableComponentExampleComponent,
     DownloadExampleComponent,
-    HistoryExampleComponent,
+    SamHistoryComponentExampleComponent,
     SamImageComponentExampleComponent,
-    ModalExampleComponent,
+    SamModalComponentExampleComponent,
     MultiselectDropdownExampleComponent,
     SamPageTitleExampleComponent,
-    PaginationExampleComponent,
-    POCExampleComponent,
+    SamPaginationComponentExampleComponent,
+    SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
-    SidenavExampleComponent,
-    SpinnerExampleComponent,
-    TabsExampleComponent,
-    ClickOutsideExampleComponent,
+    SamSidenavComponentExampleComponent,
+    SamSpinnerComponentExampleComponent,
+    SamTabsComponentExampleComponent,
+    SamClickOutsideDirectiveExampleComponent,
     SamDragDropDirectiveExampleComponent,
     SamExternalLinkDirectiveExampleComponent,
     SamFocusDirectiveExampleComponent,
-    StickyExampleComponent,
-    TabOutsideExampleComponent,
+    SamStickyComponentExampleComponent,
+    SamTabOutsideDirectiveExampleComponent,
     ButtonExampleComponent,
     SamActionsListComponentExampleComponent,
     SamBoxComponentExampleComponent,
@@ -215,19 +215,19 @@ import { CdkTableModule } from '@angular/cdk';
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,
     SamYoutubeComponentExampleComponent,
-    AutocompleteExampleComponent,
-    AutocompleteMultiselectExampleComponent,
-    CheckboxExampleComponent,
-    DateExampleComponent,
+    SamAutocompleteComponentExampleComponent,
+    SamAutocompleteMultiselectComponentExampleComponent,
+    SamCheckboxComponentExampleComponent,
+    SamDateComponentExampleComponent,
     SamDateRangeComponentExampleComponent,
-    DateTimeExampleComponent,
-    NumberExampleComponent,
-    RadioExampleComponent,
-    SelectExampleComponent,
-    TextExampleComponent,
-    TextareaExampleComponent,
-    TimeExampleComponent,
-    ToggleSwitchExampleComponent,
+    SamDateTimeComponentExampleComponent,
+    SamNumberComponentExampleComponent,
+    SamRadioComponentExampleComponent,
+    SamSelectComponentExampleComponent,
+    SamTextComponentExampleComponent,
+    SamTextareaComponentExampleComponent,
+    SamTimeComponentExampleComponent,
+    SamToggleSwitchComponentExampleComponent,
     SamUploadComponentExampleComponent,
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,

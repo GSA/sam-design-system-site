@@ -6,7 +6,54 @@ var path = require('path');
 const EVENT = process.env.npm_lifecycle_event || '';
 
 const doc2Components = [
-  'SamBreadcrumbsComponentExampleComponent'
+	'SamAccordionComponentExampleComponent',
+	'SamActionButtonExampleComponent',
+	'SamActionsDropdownComponentExampleComponent',
+	'SamAlertComponentExampleComponent',
+	'SamAlertFooterComponentExampleComponent',
+	'SamBadgeComponentExampleComponent',
+	'SamBreadcrumbsComponentExampleComponent',
+	'SamCommentsComponentExampleComponent',
+	'SamDataTableComponentExampleComponent',
+	'SamHistoryComponentExampleComponent',
+	'SamImageComponentExampleComponent',
+	'SamModalComponentExampleComponent',
+	'SamPaginationComponentExampleComponent',
+	'SamPointOfContactComponentExampleComponent',
+	'SamProgressExampleComponent',
+	'SamSidenavComponentExampleComponent',
+	'SamSpinnerComponentExampleComponent',
+	'SamTabsComponentExampleComponent',
+	'SamClickOutsideDirectiveExampleComponent',
+	'SamDragDropDirectiveExampleComponent',
+	'SamExternalLinkDirectiveExampleComponent',
+	'SamFocusDirectiveExampleComponent',
+	'SamStickyComponentExampleComponent',
+	'SamTabOutsideDirectiveExampleComponent',
+	'SamActionsListComponentExampleComponent',
+	'SamDollarComponentExampleComponent',
+	'SamFilterDrawerComponentExampleComponent',
+	'SamIconComponentExampleComponent',
+	'SamInputMaskComponentExampleComponent',
+	'SamTabsNextComponentExampleComponent',
+	'SamAutocompleteComponentExampleComponent',
+	'SamAutocompleteMultiselectComponentExampleComponent',
+	'SamCheckboxComponentExampleComponent',
+	'SamDateComponentExampleComponent',
+	'SamDateRangeComponentExampleComponent',
+	'SamDateTimeComponentExampleComponent',
+	'SamNumberComponentExampleComponent',
+	'SamRadioComponentExampleComponent',
+	'SamSelectComponentExampleComponent',
+	'SamTextComponentExampleComponent',
+	'SamTextareaComponentExampleComponent',
+	'SamTimeComponentExampleComponent',
+	'SamToggleSwitchComponentExampleComponent',
+	'PhoneGroupExampleComponent',
+	'NameEntryExampleComponent',
+	'PhoneEntryExampleComponent',
+	'FieldsetWrapperExampleComponent',
+	'LabelWrapperExampleComponent',
 ];
 
 exports.hasProcessFlag = hasProcessFlag;
@@ -26,7 +73,7 @@ function hasNpmFlag(flag) {
 
 function getUIKitStructure(target){
 	let docFiles = recursiveReadSync(target);	
-	
+	// console.log(docFiles);
 	let filteredFiles = docFiles.filter((val) => {
 		let reg = new RegExp(/component-example\.ts$/g);
 		return reg.exec(val);
@@ -44,6 +91,7 @@ function getUIKitStructure(target){
 			}
 		}
 		let currentPath = path.join(process.cwd(),'/src/_docs/');
+		let docPath = val.replace(path.join(process.cwd(), '/src/'), "").replace('/component-example.ts','');
 		val = val.replace(currentPath, "");
 		val = val.replace(/\\\\/g,"/");
 		val = val.replace(/\\/g,"/");
@@ -72,7 +120,22 @@ function getUIKitStructure(target){
 		if(doc2Components.includes(component)){
 			doc2Flag = true;
 		}
-		
+		let lookup = docFiles.filter((item)=>{
+			if(item.includes(docPath+"/")){
+				return true;
+			}
+		});
+		if(lookup && lookup.length > 0){
+			lookup = lookup.map((item)=>{
+				let match = item.match(/([a-zA-Z-]+\.\w+)$/);
+				if(match && match.length > 1){
+					return match[1];
+				} else {
+					return match[0];
+				}
+			});
+		}
+		// console.log("lookuppp2",component,lookup);
 	  return {
 	    link: link,
 	    routerlink: "/docs/"+link,
@@ -80,7 +143,9 @@ function getUIKitStructure(target){
 			item: item,
 			component: component,
 			subsection: subsection,
-			doc2Flag: doc2Flag
+			doc2Flag: doc2Flag,
+			docPath: docPath,
+			docSections: lookup
 	  };
 	})
 
@@ -203,9 +268,10 @@ function generateRoutesString (docsTarget, staticTarget) {
 	let routes = files.reduce((prev, curr) => {
 		if(curr.doc2Flag){
 			return prev.concat(
-				`\n  { path: '${curr.link}', component: BaseDocPageComponent, children: [
-						{ path: '', component: SamBreadcrumbsComponentExampleComponent }
-				]},`
+				`\n  { path: '${curr.link}', component: BaseDocPageComponent, data: {\n    path: '${curr.docPath}',\n    componentName: '${curr.component.replace('ExampleComponent','')}',
+			sections: ['`+curr.docSections.join("','")+`']}, children: [
+    { path: '', component: ${curr.component} }
+  ]},`
 			)
 		} else {
 			return prev.concat(

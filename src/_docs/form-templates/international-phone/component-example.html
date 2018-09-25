@@ -1,0 +1,22 @@
+<h2>Standalone Example</h2>
+<sam-intl-telephone-group
+    [label]="'International Phone Number'"
+    [group]="group"
+    [phoneName]="'Intl Telephone'"
+    [prefixName]="'Intl Country'">
+</sam-intl-telephone-group>
+
+<h2>Example using Form Service</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <sam-intl-telephone-group
+        [useFormService]="true"
+        [label]="'International Phone Number'"
+        [group]="form.controls.phone"
+        [phoneName]="'Intl Telephone'"
+        [prefixName]="'Intl Country'"></sam-intl-telephone-group>
+
+    <div>
+        <button class="sam-ui button secondary" type="button" (click)="reset()">Reset</button>
+        <button class="sam-ui button primary" type="submit">Submit</button>
+    </div>
+</form>

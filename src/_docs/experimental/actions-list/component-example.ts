@@ -1,122 +1,76 @@
 
 import {
-  Component,
-  OnInit
+  Component
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
-
-const example1_model = `[
-  {
-    label: 'Share',
-    icon: 'fa-share-alt'
-  },
-  {
-    label: 'Download',
-    icon: 'fa-download'
-  },
-  {
-    label: 'Save',
-    icon: 'fa-cloud'
-  },
-  {
-    label: 'Toggle',
-    icon: 'fa-bars'
-  }
-]`;
-
-const example2_model = `[
-  {
-    label: 'Share',
-    icon: 'fa-share-alt',
-    disabled: true
-  },
-  {
-    label: 'Download',
-    icon: 'fa-download',
-    disabled: true
-  },
-  {
-    label: 'Save',
-    icon: 'fa-cloud',
-    disabled: true
-  },
-  {
-    label: 'Toggle',
-    icon: 'fa-bars',
-    disabled: true
-  }
-]`;
-
-const example3_model = `[
-  {
-    label: 'Share',
-    icon: 'fa-share-alt',
-    showMore: true
-  },
-  {
-    label: 'Download',
-    icon: 'fa-download'
-  },
-  {
-    label: 'Save',
-    icon: 'fa-cloud'
-  },
-  {
-    label: 'Toggle',
-    icon: 'fa-bars',
-    showMore: true
-  }
-]`;
-
-const example = `
-<h2>Basic Example</h2>
-<sam-actions
-  [contentModel]="${example1_model}"
-  (action)="actionHandler($event)"
-></sam-actions>
-
-<h2>Disabled State</h2>
-<sam-actions
-  [contentModel]="${example2_model}"
-  (action)="actionHandler($event)"
-></sam-actions>
-
-<h2>With 'more' dropdown</h2>
-<sam-actions
-  [contentModel]="${example3_model}"
-  (action)="actionHandler($event)"
-></sam-actions>`;
 
 @Component({
   selector: 'doc-sam-box',
-  template: `
-    <doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">
-    ${example}
-    </doc-template>`
+  templateUrl: './component-example.html'
 })
-export class SamActionsListComponentExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamActionsListComponentExampleComponent {
 
-  typedoc_target = 'SamActionsListComponent';
-  typedoc_content = '';
-  markdown= '';
+  example1_model = [
+    {
+      label: 'Share',
+      icon: 'fa-share-alt'
+    },
+    {
+      label: 'Download',
+      icon: 'fa-download'
+    },
+    {
+      label: 'Save',
+      icon: 'fa-cloud'
+    },
+    {
+      label: 'Toggle',
+      icon: 'fa-bars'
+    }
+  ];
 
-  example = example;
+  example2_model = [
+    {
+      label: 'Share',
+      icon: 'fa-share-alt',
+      disabled: true
+    },
+    {
+      label: 'Download',
+      icon: 'fa-download',
+      disabled: true
+    },
+    {
+      label: 'Save',
+      icon: 'fa-cloud',
+      disabled: true
+    },
+    {
+      label: 'Toggle',
+      icon: 'fa-bars',
+      disabled: true
+    }
+  ];
 
-  public base = '_docs/experimental/actions-list/';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
+  example3_model = [
+    {
+      label: 'Share',
+      icon: 'fa-share-alt',
+      showMore: true
+    },
+    {
+      label: 'Download',
+      icon: 'fa-download'
+    },
+    {
+      label: 'Save',
+      icon: 'fa-cloud'
+    },
+    {
+      label: 'Toggle',
+      icon: 'fa-bars',
+      showMore: true
+    }
+  ];
 
   public actionHandler (action) {
     window.alert(JSON.stringify(action));

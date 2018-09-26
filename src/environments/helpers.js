@@ -54,6 +54,7 @@ const doc2Components = [
 	'PhoneEntryExampleComponent',
 	'FieldsetWrapperExampleComponent',
 	'LabelWrapperExampleComponent',
+	'SamAlertNextComponentExampleComponent',
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

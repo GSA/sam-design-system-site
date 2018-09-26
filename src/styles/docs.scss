@@ -54,6 +54,7 @@
 // @import "sam-design-system/prototypes/table";
 @import "sam-design-system/prototypes/click-menu";
 @import "sam-design-system/prototypes/date-picker";
+@import "sam-design-system/prototypes/alert";
 
 
 /**
@@ -199,5 +200,12 @@ pre[class*="language-"] {
     background-color: map-get($map: $uswds-blue, $key: 900);
     &::before{
         content: 'Highlight';
+    }
+}
+
+// documentation specifc styles
+doc-sam-alert-next{
+    sam-alert-next > div{
+        margin-bottom:20px;
     }
 }

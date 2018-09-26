@@ -154,11 +154,14 @@ dirStream
         paths = paths.slice(0, paths.length - 1);
         let filePath = paths.join('/');
         let componentFileName = path.resolve(docsDir, filePath + '/component-example.ts');
+        let componentTemplateFileName = path.resolve(docsDir, filePath + '/component-example.html');
         let markdownFileName = path.resolve(docsDir, filePath + '/documentation.md');
         // Create markdown file
         createFile(markdownFileName, ('# ' + fileObj.component), (err) => console.error(err));
         // Create component file
         createFile(componentFileName, generateComponentStub(fileObj), (err) => console.error(err));
+        // Create component template file
+        // createFile(componentTemplateFileName, '', (err) => console.error(err));
       });
     },
     err => console.error(err)
@@ -209,51 +212,16 @@ function generateComponentStub(fileObj) {
   const selector = fileObj.selector || '';
   const component = fileObj.component || '';
   return `
-/* tslint:disable */
 import {
-  Component,
-  OnInit,
-  Input,
-  ComponentRef,
-  ViewChild,
-  ViewRef,
-  TemplateRef,
-  ViewContainerRef
+  Component
 } from '@angular/core';
-import { BaseExampleComponent } from '../../baseexample.component';
-
-import { Http } from '@angular/http';
-import { MarkdownService } from '../../../app/services/markdown/markdown.service';
-import { DocumentationService } from '../../../app/services/documentation.service';
-
-// tabs/spacing matters for code example block
-const code_example = \`TODO\`;
 
 @Component({
   selector: 'doc-${selector}',
-  template: '\
-<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">\
-' + code_example + '\
-</doc-template>\
-'
+  templateUrl: './component-example.html'
 })
-export class ${component}ExampleComponent extends BaseExampleComponent implements OnInit {
-  typedoc_target = '${component}';
-  typedoc_content = '';
-
-  example = code_example;
-
-  public base = 'ADD_BASE_URL';
-
-  constructor(
-    _http: Http,
-    public service: DocumentationService,
-    public mdService: MarkdownService) {
-
-    super(_http, service, mdService);
-
-    this.sections.forEach(this.fetchSection.bind(this));
-  }
+export class ${component}ExampleComponent {
+  
 }
 
 `

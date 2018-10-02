@@ -15,7 +15,7 @@ import {
     </sam-master-page>
     <div class="patterns-menu-space"></div>
     <div class="patterns-menu">
-      <a routerLink="/patterns/latest/home">Patterns Home</a>
+      <a routerLink="/patterns/home">Patterns Home</a>
       <span class="patterns-menu-divider"></span>
       <select class="sam transition" [(ngModel)]="selectedOption" (ngModelChange)="navigateTo()">
         <option *ngFor="let option of options" [ngValue]="option">

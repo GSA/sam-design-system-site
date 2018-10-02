@@ -1,4 +1,4 @@
-<sam-page-next [backButtonText]="'Back to Report'">
+<sam-page-next *ngIf="flag; else content" #page [backButtonText]="'Back to Report'">
 
   <!-- page title goes here -->
   <sam-page-title
@@ -51,13 +51,13 @@
       type="warning">This report doesn't pull real data</sam-alert-next>
 
     <sam-main-content>
-      <sam-tabs-next samContentOutlet>
+      <sam-tabs-next>
         <sam-tab-next>
           <div class="title">
             <sam-icon [icon]="faTable"></sam-icon> Summary
           </div>
           <!-- pagination + edit fields button -->
-          <sam-action-bar>
+          <sam-action-bar *ngIf="flag2">
             <sam-pagination-next
               [totalUnits]="length"
             ></sam-pagination-next>
@@ -66,12 +66,12 @@
               action="secondary"
               (click)="toggleFieldsEditor()"
             >
-            Columns
-          </sam-button-next>
+              Columns
+            </sam-button-next>
           </sam-action-bar>
         
         <!-- datatable -->
-        <sam-datatable samSort
+        <sam-datatable *ngIf="flag2; else spinner" samSort
           [dataSource]="dataSource"
           class="sam large table"
           (samSortChange)="onSortChange($event)">
@@ -114,7 +114,19 @@
   </sam-main>
 
 </sam-page-next>
+<ng-template #content>
+    <sam-page-next [backButtonText]="'Back to Report'">
+        <sam-page-title
+          super="Contract Detail Report"
+          title="Contract Detail based on Account IDs for FY18"
+          inverted="true">
+        </sam-page-title>
 
+        <sam-spinner></sam-spinner>
+    </sam-page-next>
+</ng-template>
+
+<ng-template #spinner><sam-spinner></sam-spinner></ng-template>
 <!-- modals -->
 <sam-modal
   [showClose]="true"

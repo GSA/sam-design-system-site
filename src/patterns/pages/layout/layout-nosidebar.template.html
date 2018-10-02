@@ -1,0 +1,118 @@
+<sam-page-next [backButtonText]="'Back to Report'">
+
+        <!-- page title goes here -->
+        <sam-page-title
+          super="Contract Detail Report"
+          title="Contract Detail based on Account IDs for FY18"
+          inverted="true">
+        </sam-page-title>
+      
+        <sam-toolbar></sam-toolbar>
+      
+        <!-- Main Content -->
+        <sam-main>
+      
+          <sam-alert-next
+            type="warning">This report doesn't pull real data</sam-alert-next>
+      
+          <sam-main-content>
+            <sam-tabs-next samContentOutlet>
+              <sam-tab-next>
+                <div class="title">
+                  <sam-icon [icon]="faTable"></sam-icon> Summary
+                </div>
+                <!-- pagination + edit fields button -->
+                <sam-action-bar>
+                  <sam-pagination-next
+                    [totalUnits]="length"
+                  ></sam-pagination-next>
+                  <sam-button-next
+                    samPageAction
+                    action="secondary"
+                    (click)="toggleFieldsEditor()"
+                  >
+                  Columns
+                </sam-button-next>
+                </sam-action-bar>
+              
+              <!-- datatable -->
+              <sam-datatable samSort
+                [dataSource]="dataSource"
+                class="sam large table"
+                (samSortChange)="onSortChange($event)">
+                <ng-container
+                  *ngFor="let col of columnDefObs | async"
+                  [cdkColumnDef]="col.def">
+                  <sam-header-cell
+                    *cdkHeaderCellDef
+                    sam-sort-header>
+                    {{ col.headerLabel }}
+                  </sam-header-cell>
+      
+                  <sam-cell *cdkCellDef="let row">
+                    {{ row[col.cellId] }}
+                  </sam-cell>
+                </ng-container>
+                
+                <sam-header-row
+                  *cdkHeaderRowDef="displayedColumns"
+                ></sam-header-row>
+                <sam-row
+                  *cdkRowDef="let row; columns: displayedColumns"
+                ></sam-row> 
+              </sam-datatable>
+            </sam-tab-next>
+            <sam-tab-next>
+              <div class="title">
+                <sam-icon [icon]="faTable"></sam-icon> Award Details
+              </div>
+              bbbb
+            </sam-tab-next>
+            <sam-tab-next tabTitle="Chart">
+              <div class="title">
+                <sam-icon [icon]="faChartBar"></sam-icon> Chart
+              </div>
+              cccc
+            </sam-tab-next>
+            </sam-tabs-next>
+          </sam-main-content>
+        </sam-main>
+      
+      </sam-page-next>
+      
+      <!-- modals -->
+      <sam-modal
+        [showClose]="true"
+        [title]="'Edit Fields'"
+        [type]="'info'"
+        [description]="'Edit fields for report'"
+        [submitButtonLabel]="'Done'"
+        [cancelButtonLabel]="'Cancel'"
+        (close)="cancelModalAction()"
+        (submit)="submitModalAction()">
+        <div class="sam reset checkboxes labels fieldsets">
+          
+          <h4 class="sam heading">{{ options.organization.label }} </h4>
+          <sam-checkbox
+            [(ngModel)]="options.organization.selected"
+            [name]="options.organization.label"
+            [options]="options.organization.options"
+          ></sam-checkbox>
+          
+          <h4 class="sam heading">{{  options.listing.label }}</h4>
+          <sam-checkbox
+          [(ngModel)]="options.listing.selected"
+          [name]="options.listing.label"
+          [options]="options.listing.options"
+          ></sam-checkbox>
+          
+          <h4 class="sam heading">{{ options.status.label }}</h4>
+          <sam-checkbox
+          [(ngModel)]="options.status.selected"
+          [name]="options.status.label"
+          [options]="options.status.options"
+          ></sam-checkbox>
+          
+        </div>
+      </sam-modal>
+      

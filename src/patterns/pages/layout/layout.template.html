@@ -1,4 +1,4 @@
-<sam-page-next *ngIf="flag; else content" #page [backButtonText]="'Back to Report'">
+<sam-page-next [backButtonText]="'Back to Report'">
 
   <!-- page title goes here -->
   <sam-page-title
@@ -7,11 +7,11 @@
     inverted="true">
   </sam-page-title>
 
-  <sam-toolbar></sam-toolbar>
+  <sam-toolbar [showToggle]="flag"></sam-toolbar>
 
   <sam-aside>
 
-    <sam-filters-wrapper [group]="form">
+    <sam-filters-wrapper *ngIf="flag; else spinner" [group]="form">
       <h4 class="sam heading">Filter By</h4>
       <sam-filters
         [form]="form"
@@ -114,19 +114,9 @@
   </sam-main>
 
 </sam-page-next>
-<ng-template #content>
-    <sam-page-next [backButtonText]="'Back to Report'">
-        <sam-page-title
-          super="Contract Detail Report"
-          title="Contract Detail based on Account IDs for FY18"
-          inverted="true">
-        </sam-page-title>
-
-        <sam-spinner></sam-spinner>
-    </sam-page-next>
-</ng-template>
 
 <ng-template #spinner><sam-spinner></sam-spinner></ng-template>
+
 <!-- modals -->
 <sam-modal
   [showClose]="true"

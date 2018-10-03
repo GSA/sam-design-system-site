@@ -48,6 +48,7 @@ import { ButtonNextExampleComponent } from './experimental/button-next/component
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
+import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -85,10 +86,11 @@ import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component
 import { DocTemplateComponent } from './doc.template';
 import { routing } from './doc.routes.dynamic';
 import { StaticPageComponent } from './static.component';
-import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
+import { SamUIKitModule, SamFilterModule } from '@gsa-sam/sam-ui-elements';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
 import { CdkTableModule } from '@angular/cdk';
+import { FormlyModule } from '@ngx-formly/core';
 
 /**
  * AppModule` is the main entry point into Angular2's bootstraping process
@@ -130,6 +132,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFilterDrawerComponentExampleComponent,
+    SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -205,6 +208,7 @@ import { CdkTableModule } from '@angular/cdk';
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFilterDrawerComponentExampleComponent,
+    SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -248,7 +252,9 @@ import { CdkTableModule } from '@angular/cdk';
     CommonModule,
 		FormsModule,
 		ReactiveFormsModule,
-    SamUIKitModule,
+		SamUIKitModule,
+		SamFilterModule,
+		FormlyModule,
     routing,
 		SiteComponentsModule,
 		CdkTableModule

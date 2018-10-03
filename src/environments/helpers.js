@@ -55,6 +55,7 @@ const doc2Components = [
 	'FieldsetWrapperExampleComponent',
 	'LabelWrapperExampleComponent',
 	'SamAlertNextComponentExampleComponent',
+	'SamFiltersComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;
@@ -218,10 +219,11 @@ ${imports}
 import { DocTemplateComponent } from './doc.template';
 import { routing } from './doc.routes.dynamic';
 import { StaticPageComponent } from './static.component';
-import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
+import { SamUIKitModule, SamFilterModule } from '@gsa-sam/sam-ui-elements';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
 import { CdkTableModule } from '@angular/cdk';
+import { FormlyModule } from '@ngx-formly/core';
 
 /**
  * \AppModule\` is the main entry point into Angular2's bootstraping process
@@ -233,7 +235,9 @@ import { CdkTableModule } from '@angular/cdk';
     CommonModule,
 		FormsModule,
 		ReactiveFormsModule,
-    SamUIKitModule,
+		SamUIKitModule,
+		SamFilterModule,
+		FormlyModule,
     routing,
 		SiteComponentsModule,
 		CdkTableModule

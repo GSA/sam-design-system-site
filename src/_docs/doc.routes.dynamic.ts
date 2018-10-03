@@ -41,6 +41,7 @@ import { ButtonNextExampleComponent } from './experimental/button-next/component
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
+import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -253,6 +254,12 @@ export const ROUTES: Routes = [
     componentName: 'SamFilterDrawerComponent',
 			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: SamFilterDrawerComponentExampleComponent }
+  ]},
+  { path: 'experimental/filters', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/filters',
+    componentName: 'SamFiltersComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamFiltersComponentExampleComponent }
   ]},
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {

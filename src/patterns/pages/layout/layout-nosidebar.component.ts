@@ -16,8 +16,7 @@ import {
   SamModalComponent,
   SamPageNextService,
   DataStore,
-  layoutStore,
-  SamPageNextComponent
+  layoutStore
 } from '@gsa-sam/sam-ui-elements';
 import {
   faTable,
@@ -38,7 +37,7 @@ import {
 
 @Component({
   selector: 'sam-layout-demo-component',
-  templateUrl: './layout.template.html',
+  templateUrl: './layout-nosidebar.template.html',
   providers: [
     {
       provide: DataStore,
@@ -47,7 +46,7 @@ import {
     forwardRef(() => SamPageNextService)
   ]
 })
-export class SamLayoutDemoComponent implements OnInit {
+export class SamLayoutNoSidebarDemoComponent implements OnInit {
   public model = model;
   public fields: FormlyFieldConfig[] = fields;
 
@@ -70,8 +69,6 @@ export class SamLayoutDemoComponent implements OnInit {
 
   public faTable = faTable;
   public faChartBar = faChartBar;
-  public metadataLoaded = false;
-  public flag2 = false;
 
   @ViewChild(SamSortDirective)
     public _sort: SamSortDirective;
@@ -99,20 +96,10 @@ export class SamLayoutDemoComponent implements OnInit {
   public ngOnInit() {
     // Connect table to data
     this.connect();
-
-    // simulate metadata api call
-    setTimeout(() => {
-      this._service.sendPageMessage('open sidebar');
-      this.metadataLoaded = true;
-      this.cdr.detectChanges();
-      // simulate data api call
-      setTimeout(() => {
-        this.flag2 = true;
-        this.cdr.detectChanges();
-        this._connectToPageService();
-        this.cdr.detectChanges();
-      }, 5000);
-    }, 2000);
+    // Subscribe to page service
+    this._connectToPageService();
+    // Ensure view is up-to-date with changes in model
+    this.cdr.detectChanges();
   }
 
   public toggleFieldsEditor () {
@@ -170,21 +157,6 @@ export class SamLayoutDemoComponent implements OnInit {
     this._service.model.properties.sort.setValue(event);
   }
 
-  public removeItem (event): void {
-    const current = this._service.get('filters').value;
-    const key = Object.keys(event)[0];
-
-    if (current[key]) {
-      if (current[key].constructor === Array) {
-        const index = current[key].indexOf(event[key]);
-        current[key].splice(index, 1);
-      } else {
-        current[key] = null;
-      }
-      this._service.get('filters').patchValue(current);
-    }
-  }
-
   private _connectToPageService () {
     this._service.model.properties.data.valueChanges
       .subscribe(
@@ -192,24 +164,6 @@ export class SamLayoutDemoComponent implements OnInit {
           this.length = data.length;
         }
       );
-  }
-
-  public filtersToPills (filters): any[] {
-    const key = Object.keys(filters)[0];
-
-    let value;
-
-    if (filters[key]) {
-      if (filters[key].constructor === Array) {
-        value = filters[key];
-      } else {
-        value = [filters[key]];
-      }
-    } else {
-      value = [];
-    }
-
-    return value;
   }
 
   private _toggleColumn (field): void {

@@ -1,4 +1,4 @@
-<sam-page-next [backButtonText]="'Back to Report'">
+<sam-page-next [startSidebarClosed]="true" [backButtonText]="'Back to Report'">
 
   <!-- page title goes here -->
   <sam-page-title
@@ -7,11 +7,11 @@
     inverted="true">
   </sam-page-title>
 
-  <sam-toolbar></sam-toolbar>
+  <sam-toolbar [showToggle]="false"></sam-toolbar>
 
   <sam-aside>
 
-    <sam-filters-wrapper [group]="form">
+    <sam-filters-wrapper *ngIf="metadataLoaded" [group]="form">
       <h4 class="sam heading">Filter By</h4>
       <sam-filters
         [form]="form"
@@ -48,13 +48,13 @@
       type="warning">This report doesn't pull real data</sam-alert-next>
 
     <sam-main-content>
-      <sam-tabs-next samContentOutlet>
+      <sam-tabs-next>
         <sam-tab-next>
           <div class="title">
             <sam-icon [icon]="faTable"></sam-icon> Summary
           </div>
           <!-- pagination + edit fields button -->
-          <sam-action-bar>
+          <sam-action-bar *ngIf="flag2">
             <sam-pagination-next
               [totalUnits]="length"
             ></sam-pagination-next>
@@ -67,30 +67,30 @@
           </sam-action-bar>
         
         <!-- datatable -->
-        <sam-datatable samSort
+        <sam-datatable *ngIf="flag2; else spinner" samSort
+          [allowHorizontalScroll]="true"
           [dataSource]="dataSource"
-          class="sam large table"
           (samSortChange)="onSortChange($event)">
           <ng-container
             *ngFor="let col of columnDefObs | async"
             [cdkColumnDef]="col.def">
-            <sam-header-cell
+            <th sam-header-cell
               *cdkHeaderCellDef
               sam-sort-header>
               {{ col.headerLabel }}
-            </sam-header-cell>
+            </th>
 
-            <sam-cell *cdkCellDef="let row">
+            <td sam-cell *cdkCellDef="let row">
               {{ row[col.cellId] }}
-            </sam-cell>
+            </td>
           </ng-container>
           
-          <sam-header-row
+          <tr sam-header-row
             *cdkHeaderRowDef="displayedColumns"
-          ></sam-header-row>
-          <sam-row
+          ></tr>
+          <tr sam-row
             *cdkRowDef="let row; columns: displayedColumns"
-          ></sam-row> 
+          ></tr> 
         </sam-datatable>
       </sam-tab-next>
       <sam-tab-next>
@@ -110,6 +110,8 @@
   </sam-main>
 
 </sam-page-next>
+
+<ng-template #spinner><sam-spinner></sam-spinner></ng-template>
 
 <!-- modals -->
 <sam-modal

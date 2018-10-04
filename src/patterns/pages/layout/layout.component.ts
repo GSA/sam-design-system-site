@@ -70,8 +70,8 @@ export class SamLayoutDemoComponent implements OnInit {
 
   public faTable = faTable;
   public faChartBar = faChartBar;
-  public flag = false;
-  public flag2 = false;s
+  public metadataLoaded = false;
+  public flag2 = false;
 
   @ViewChild(SamSortDirective)
     public _sort: SamSortDirective;
@@ -102,7 +102,8 @@ export class SamLayoutDemoComponent implements OnInit {
 
     // simulate metadata api call
     setTimeout(()=>{
-      this.flag = true;
+      this._service.sendPageMessage('open aside');
+      this.metadataLoaded = true;
       this.cdr.detectChanges();
       // simulate data api call
       setTimeout(()=>{

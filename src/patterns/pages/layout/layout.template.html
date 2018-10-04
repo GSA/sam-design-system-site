@@ -7,11 +7,11 @@
     inverted="true">
   </sam-page-title>
 
-  <sam-toolbar [showToggle]="flag"></sam-toolbar>
+  <sam-toolbar [showToggle]="false"></sam-toolbar>
 
   <sam-aside>
 
-    <sam-filters-wrapper *ngIf="flag; else spinner" [group]="form">
+    <sam-filters-wrapper *ngIf="metadataLoaded" [group]="form">
       <h4 class="sam heading">Filter By</h4>
       <sam-filters
         [form]="form"

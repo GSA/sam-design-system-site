@@ -1,4 +1,4 @@
-<sam-filter-drawer (clear)="clearHandler()" (save)="saveHandler()">
+<sam-filter-drawer (clear)="clearHandler()">
     <sam-filter-drawer-item *ngFor="let filterItem of filters"
         [label]="filterItem.label"
         [values]="[filterItem.value]"

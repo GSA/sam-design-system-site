@@ -24,11 +24,13 @@ export class SamFilterDrawerComponentExampleComponent {
   message = '';
 
   itemRemoveHandler(removedItem) {
+    const key = Object.keys(removedItem)[0];
     this.filters = this.filters.filter((item) => {
-      if (item.id !== removedItem.id) {
+      if (item.label !== key) {
         return true;
       }
     });
+    this.message = `"${key}" removed`;
   }
 
   resetItems() {
@@ -37,10 +39,7 @@ export class SamFilterDrawerComponentExampleComponent {
   }
 
   clearHandler() {
+    this.filters = [];
     this.message = 'Clear event detected';
-  }
-
-  saveHandler() {
-    this.message = 'Save event detected';
   }
 }

@@ -102,7 +102,7 @@ export class SamLayoutDemoComponent implements OnInit {
 
     // simulate metadata api call
     setTimeout(()=>{
-      this._service.sendPageMessage('open aside');
+      this._service.sendPageMessage('open sidebar');
       this.metadataLoaded = true;
       this.cdr.detectChanges();
       // simulate data api call

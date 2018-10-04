@@ -41,6 +41,7 @@ import { ButtonNextExampleComponent } from './experimental/button-next/component
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
+import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -48,6 +49,7 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
@@ -254,6 +256,12 @@ export const ROUTES: Routes = [
 			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: SamFilterDrawerComponentExampleComponent }
   ]},
+  { path: 'experimental/filters', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/filters',
+    componentName: 'SamFiltersComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamFiltersComponentExampleComponent }
+  ]},
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {
     path: '_docs/experimental/icon',
@@ -271,6 +279,12 @@ export const ROUTES: Routes = [
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageComponentExampleComponent },
+  { path: 'experimental/resources-wrapper', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/resources-wrapper',
+    componentName: 'SamResourcesWrapperComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamResourcesWrapperComponentExampleComponent }
+  ]},
   { path: 'experimental/search', component: SamSearchComponentExampleComponent },
   { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/tabs', component: BaseDocPageComponent, data: {

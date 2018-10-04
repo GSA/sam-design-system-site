@@ -2,7 +2,7 @@
     <div class="example-header">
         <input #filter placeholder="Filter agency or title">
     </div>
-    <table sam-datatable #table samSort [dataSource]="dataSource">
+    <sam-datatable #table samSort [dataSource]="dataSource">
         <!-- Column Definition: agency -->
         <ng-container cdkColumnDef="agency">
             <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
@@ -46,7 +46,7 @@
         <tr sam-row *cdkRowDef="let row; columns: displayedColumns;
             let first = first; let last = last; let even = even; let odd = odd">
         </tr>
-    </table>
+    </sam-datatable>
 
     <div
         class="example-no-results"

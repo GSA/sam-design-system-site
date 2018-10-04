@@ -68,29 +68,29 @@
         
         <!-- datatable -->
         <sam-datatable *ngIf="flag2; else spinner" samSort
+          [allowHorizontalScroll]="true"
           [dataSource]="dataSource"
-          class="sam large table"
           (samSortChange)="onSortChange($event)">
           <ng-container
             *ngFor="let col of columnDefObs | async"
             [cdkColumnDef]="col.def">
-            <sam-header-cell
+            <th sam-header-cell
               *cdkHeaderCellDef
               sam-sort-header>
               {{ col.headerLabel }}
-            </sam-header-cell>
+            </th>
 
-            <sam-cell *cdkCellDef="let row">
+            <td sam-cell *cdkCellDef="let row">
               {{ row[col.cellId] }}
-            </sam-cell>
+            </td>
           </ng-container>
           
-          <sam-header-row
+          <tr sam-header-row
             *cdkHeaderRowDef="displayedColumns"
-          ></sam-header-row>
-          <sam-row
+          ></tr>
+          <tr sam-row
             *cdkRowDef="let row; columns: displayedColumns"
-          ></sam-row> 
+          ></tr> 
         </sam-datatable>
       </sam-tab-next>
       <sam-tab-next>

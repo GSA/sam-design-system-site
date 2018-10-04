@@ -191,49 +191,24 @@ export class SamLayoutDemoComponent implements OnInit {
           this.length = data.length;
         }
       );
-
-    this.filters = this._service.model.properties.filters
-      .valueChanges
-      .map(
-        serviceModel => this._filtersToPills(serviceModel)
-      );
   }
 
-  private _filtersToPills (filters): any[] {
-    const keys = Object.keys(filters);
+  public filtersToPills (filters): any[] {
+    const key = Object.keys(filters)[0];
 
-    return keys.map(key => {
-      let value;
+    let value;
 
-      if (filters[key]) {
-        if (filters[key].constructor === Array) {
-          value = filters[key];
-        } else {
-          value = [filters[key]];
-        }
+    if (filters[key]) {
+      if (filters[key].constructor === Array) {
+        value = filters[key];
       } else {
-        value = [];
+        value = [filters[key]];
       }
-
-      return {
-        label: this._mapLabel(key),
-        value: value
-      };
-    })
-    .filter(filter => filter.value.length > 0);
-  }
-
-  private _mapLabel (key): string {
-    switch (key) {
-      case 'fhInputText':
-        return 'Agency';
-      case 'dateModel':
-        return 'Date Modified';
-      case 'checkbox':
-        return 'Checkbox Example';
-      default:
-        return '';
+    } else {
+      value = [];
     }
+
+    return value;
   }
 
   private _toggleColumn (field): void {

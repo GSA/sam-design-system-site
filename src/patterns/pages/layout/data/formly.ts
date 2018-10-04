@@ -12,6 +12,7 @@ export const fields: FormlyFieldConfig[] = [
   {
     key: 'fhInputText',
     type: 'text',
+    wrappers: ['filter'],
     templateOptions: {
       label: 'Agency',
       id: 'agency',

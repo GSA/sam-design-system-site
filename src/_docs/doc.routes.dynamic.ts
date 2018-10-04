@@ -49,6 +49,7 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
@@ -278,6 +279,12 @@ export const ROUTES: Routes = [
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageComponentExampleComponent },
+  { path: 'experimental/resources-wrapper', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/resources-wrapper',
+    componentName: 'SamResourcesWrapperComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamResourcesWrapperComponentExampleComponent }
+  ]},
   { path: 'experimental/search', component: SamSearchComponentExampleComponent },
   { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/tabs', component: BaseDocPageComponent, data: {

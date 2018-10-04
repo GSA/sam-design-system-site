@@ -56,6 +56,7 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
@@ -140,6 +141,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
+    SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
@@ -216,6 +218,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageComponentExampleComponent,
+    SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,

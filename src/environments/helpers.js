@@ -55,7 +55,8 @@ const doc2Components = [
 	'FieldsetWrapperExampleComponent',
 	'LabelWrapperExampleComponent',
 	'SamAlertNextComponentExampleComponent',
-	'SamFiltersComponentExampleComponent'
+	'SamFiltersComponentExampleComponent',
+	'SamResourcesWrapperComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

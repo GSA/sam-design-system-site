@@ -173,8 +173,8 @@ export class SamLayoutDemoComponent implements OnInit {
   public removeItem (event): void {
     const current = this._service.get('filters').value;
     let key = Object.keys(event)[0];
-    const fieldsObj = this.fields.find((item)=>{
-      if(item.templateOptions && item.templateOptions.label === key){
+    const fieldsObj = this.fields.find((item) => {
+      if (item.templateOptions && item.templateOptions.label === key) {
         return true;
       }
     });

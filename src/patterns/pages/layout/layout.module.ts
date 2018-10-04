@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
 
 import { SamLayoutDemoComponent } from './layout.component';
+import { SamLayoutNoSidebarDemoComponent } from './layout-nosidebar.component';
 import { FormlyModule } from '@ngx-formly/core';
 import { SamFilterModule } from '@gsa-sam/sam-ui-elements';
 
@@ -19,9 +20,11 @@ import { SamFilterModule } from '@gsa-sam/sam-ui-elements';
   ],
   declarations: [
     SamLayoutDemoComponent,
+    SamLayoutNoSidebarDemoComponent,
   ],
   exports: [
     SamLayoutDemoComponent,
+    SamLayoutNoSidebarDemoComponent,
   ]
 })
 export class LayoutModule {}

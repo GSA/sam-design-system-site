@@ -64,7 +64,7 @@ $theme: mat-light-theme($primary, $accent);
 @include mat-core-theme($theme);
 @include mat-chips-theme($theme);
 // @include mat-sidenav-theme($theme);
-@include mat-tabs-theme($theme);
+// @include mat-tabs-theme($theme);
 @include mat-paginator-theme($theme);
 @include mat-select-theme($theme);
 @include mat-tooltip-theme($theme);
@@ -77,9 +77,9 @@ $theme: mat-light-theme($primary, $accent);
   border-radius: 5px !important;
 }
 
-.mat-tab-label{
-  min-width: 100px !important;
-}
+// .mat-tab-label{
+//   min-width: 100px !important;
+// }
 
 // md-sidenav {
 //   width: 250px;

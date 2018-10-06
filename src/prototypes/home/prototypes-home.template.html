@@ -1,115 +1,91 @@
 <sam-site-header></sam-site-header>
 
-<div class="patterns-page">
-  <div class="patterns-page-wrapper">
-
-    <h1 class="sam heading">
-      Prototypes
-    </h1>
-    
-    <h2 class="sam heading">
-      Pages
-    </h2>
-    
-    <ol class="row card-list">
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/home']" class="card">
-          <h3 class="card-title">Home <small>Desktop</small></h3>
-          <p class="card-description">
-            Explores main navigation in home page.
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/search']" class="card">
-          <h3 class="card-title">Search <small>Desktop</small></h3>
-          <p class="card-description">
-            Explores search workflow and introduces a new way of loading results.
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/search-mobile']" class="card">
-          <h3 class="card-title">Search<small>Mobile</small></h3>
-          <p class="card-description">
-            Explores search workflow in mobile.
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/report']" class="card">
-          <h3 class="card-title">Report <small>Desktop</small></h3>
-          <p class="card-description">
-            Exploring report workflow
-          </p>
-        </a>
-      </li>
-    </ol>
-    
-    <h2 class="sam heading">
-      Components
-    </h2>
-    
-    <ol class="row card-list">
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/component/picker']" class="card">
-          <h3 class="card-title">Picker <small>Desktop</small></h3>
-          <p class="card-description">
-            Improves agency picker component
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/component/main-nav']" class="card">
-          <h3 class="card-title">Main Navigation <small>Desktop & Mobile</small></h3>
-          <p class="card-description">
-            Exploring search workflow
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/table']" class="card">
-          <h3 class="card-title">Table <small>Desktop</small></h3>
-          <p class="card-description">
-            Exploring a DataTable component
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/date']" class="card">
-          <h3 class="card-title">Date <small>Desktop</small></h3>
-          <p class="card-description">
-            Exploring a Date component
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/dynamic-form']" class="card">
-          <h3 class="card-title">Dynamic Forms <small>Desktop</small></h3>
-          <p class="card-description">
-            Exploring Dynamic Forms
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/icon']" class="card">
-          <h3 class="card-title">Icon <small>Desktop</small></h3>
-          <p class="card-description">
-            Exploring Icon w/SVG
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/prototypes/page/tabs']" class="card">
-          <h3 class="card-title">Tabs <small>Desktop</small></h3>
-          <p class="card-description">
-            Exploring Tabs with horizontal scroll
-          </p>
-        </a>
-      </li>
-    </ol>
-    
+<div class="usa-grid">
+  
+  <h1 class="sam heading">Prototypes</h1>
+  
+  <p class="sam lead">
+    Early iterations of possible pages and components.
+  </p>
+  
+  <div class="usa-grid-full sam-docs flex">
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/home']" class="sam-docs card">
+        <div class="title">Home Page</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/search']" class="sam-docs card">
+        <div class="title">Search Page</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/search-mobile']" class="sam-docs card">
+        <div class="title">Search Page</div>
+        <span class="sam small">Mobile</span>
+      </a>
+    </div>
   </div>
+  
+  <div class="usa-grid-full sam-docs flex">
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/report']" class="sam-docs card">
+        <div class="title">Report Page</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/component/picker']" class="sam-docs card">
+        <div class="title">Picker Component</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/component/main-nav']" class="sam-docs card">
+        <div class="title">Main Navigation Component</div>
+        <span class="sam small">Desktop & Mobile</span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="usa-grid-full sam-docs flex">
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/table']" class="sam-docs card">
+        <div class="title">Table Component</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/date']" class="sam-docs card">
+        <div class="title">Date Component</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/dynamic-form']" class="sam-docs card">
+        <div class="title">Dynamic Forms Component</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="usa-grid-full sam-docs flex">
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/icon']" class="sam-docs card">
+        <div class="title">Icon Component</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/prototypes/page/tabs']" class="sam-docs card">
+        <div class="title">Tabs Component</div>
+        <span class="sam small">Desktop</span>
+      </a>
+    </div>
+  </div>
+  
 </div>
 
 <sam-site-footer></sam-site-footer>

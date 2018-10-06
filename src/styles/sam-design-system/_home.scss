@@ -52,24 +52,3 @@ section.home.background.blue{
   background: linear-gradient(to bottom, #205493 0%,#112e51 34%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#205493', endColorstr='#112e51',GradientType=0 );
 }
-
-.home.card{
-  color: white;
-  box-shadow: none !important;
-  padding-top: 10px;
-  p{
-    margin-bottom: 40px;
-  }
-  &.first{
-    background-color:#205493;
-  }
-  &.second{
-    background-color:#4aa564;
-  }
-  &.third{
-    background-color:#5b616b;
-  }
-  &.fourth{
-    background-color:#323a45;
-  }
-} 

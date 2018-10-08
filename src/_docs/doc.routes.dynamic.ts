@@ -73,6 +73,8 @@ import { SamUploadComponentExampleComponent } from './form-controls/upload/compo
 import { PhoneGroupExampleComponent } from './form-templates/international-phone/component-example';
 import { NameEntryExampleComponent } from './form-templates/name-entry/component-example';
 import { PhoneEntryExampleComponent } from './form-templates/phone-entry/component-example';
+import { SamFiltersWrapperComponentExampleComponent } from './layout/filters-wrapper/component-example';
+import { SamToolbarComponentExampleComponent } from './layout/toolbar/component-example';
 import { FieldsetWrapperExampleComponent } from './wrappers/fieldset-wrapper/component-example';
 import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component-example';
 
@@ -392,6 +394,18 @@ export const ROUTES: Routes = [
     componentName: 'PhoneEntry',
 			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: PhoneEntryExampleComponent }
+  ]},
+  { path: 'layout/filters-wrapper', component: BaseDocPageComponent, data: {
+    path: '_docs/layout/filters-wrapper',
+    componentName: 'SamFiltersWrapperComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamFiltersWrapperComponentExampleComponent }
+  ]},
+  { path: 'layout/toolbar', component: BaseDocPageComponent, data: {
+    path: '_docs/layout/toolbar',
+    componentName: 'SamToolbarComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamToolbarComponentExampleComponent }
   ]},
   { path: 'wrappers/fieldset-wrapper', component: BaseDocPageComponent, data: {
     path: '_docs/wrappers/fieldset-wrapper',

@@ -143,7 +143,7 @@ dirStream
        */
       if ( fileObj &&
            fileObj.path &&
-           (fileObj.path.includes('layout') ||
+           (fileObj.path.includes('layout-deprecated') ||
            fileObj.path.includes('pipes'))) { 
              return;
            }

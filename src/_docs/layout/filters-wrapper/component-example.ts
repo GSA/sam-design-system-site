@@ -1,6 +1,6 @@
 
 import {
-  Component
+  Component, OnInit
 } from '@angular/core';
 import {
   FormBuilder
@@ -10,13 +10,13 @@ import {
   selector: 'doc-sam-filters-wrapper',
   templateUrl: './component-example.html'
 })
-export class SamFiltersWrapperComponentExampleComponent {
+export class SamFiltersWrapperComponentExampleComponent implements OnInit {
   formGroup;
-  constructor(public fb: FormBuilder){}
+  constructor(public fb: FormBuilder) {}
 
-  ngOnInit(){
+  ngOnInit() {
     this.formGroup = this.fb.group({
-      test: ""
+      test: ''
     });
   }
 }

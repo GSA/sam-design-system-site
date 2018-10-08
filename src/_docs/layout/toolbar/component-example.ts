@@ -8,7 +8,7 @@ import {
   templateUrl: './component-example.html'
 })
 export class SamToolbarComponentExampleComponent {
-  actionHandler(event){
+  actionHandler(event) {
     console.log(event);
   }
 }

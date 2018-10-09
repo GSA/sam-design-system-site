@@ -16,15 +16,14 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY . /usr/src/app/
 
+RUN chmod +x sam-ui-elements-build.sh
+RUN ./sam-ui-elements-build.sh
 
 RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/GS-IAE-Npm
 RUN npm install --production
 RUN npm install tslint
 RUN npm install codelyzer
 RUN npm rebuild node-sass
-RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm/ 
-RUN npm install @gsa-sam/sam-ui-elements@0.3.0 -E --no-save --production
-RUN npm config set registry https://artifactory.helix.gsa.gov/artifactory/api/npm/GS-IAE-Npm
 
 RUN npm run lint
 RUN npm run build

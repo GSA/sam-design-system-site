@@ -7,7 +7,6 @@ Follow these steps to checkout `sam-ui-elements` in a separate location on your 
 ```
 git clone https://github.helix.gsa.gov/GSA-IAE-APPS/sam-ui-elements
 cd sam-ui-elements
-git checkout main
 npm link --only=production
 ```
 
@@ -20,15 +19,9 @@ npm link @gsa-sam/sam-ui-elements
 npm run start
 ```
 
-For builds, update of `@gsa-sam/sam-ui-elements` version in the Dockerfile. Run this command to see the available tags:
-
-```
-npm dist-tag ls @gsa-sam/sam-ui-elements --registry https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm
-```
-
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
+Run `npm run start` for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 

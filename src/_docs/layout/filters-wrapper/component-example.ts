@@ -24,25 +24,24 @@ import {
 })
 export class SamFiltersWrapperComponentExampleComponent implements OnInit {
   formGroup;
-  message = "";
+  message = '';
   submitted = false;
-  
+
   constructor(public fb: FormBuilder, public service: SamPageNextService) {}
 
   ngOnInit() {
     this.formGroup = this.fb.group({
       testFilter: ''
     });
-    
-    this.service.model.properties.filters.valueChanges.subscribe(data=>{
-      if(data && data.testFilters){
-        this.message = "form submitted";
+
+    this.service.model.properties.filters.valueChanges.subscribe(data => {
+      if (data && data.testFilters) {
+        this.message = 'form submitted';
         this.submitted = true;
       } else {
-        this.message = "form resetted";
+        this.message = 'form resetted';
         this.submitted = false;
       }
     });
   }
 }
-

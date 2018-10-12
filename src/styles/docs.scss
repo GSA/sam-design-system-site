@@ -41,7 +41,7 @@
  * Patterns
  */
 
- @import "sam-design-system/patterns/layout";
+ @import "sam-design-system/patterns";
 
 /**
  * Prototypes
@@ -191,12 +191,5 @@ pre[class*="language-"] {
     background-color: map-get($map: $uswds-blue, $key: 900);
     &::before{
         content: 'Highlight';
-    }
-}
-
-// documentation specifc styles
-doc-sam-alert-next{
-    sam-alert-next > div{
-        margin-bottom:20px;
     }
 }

@@ -61,7 +61,7 @@
 
             <!-- Pagination + Columns button -->
             <sam-action-bar *ngIf="flag2">
-              <sam-pagination-next [totalUnits]="length"></sam-pagination-next>
+              <sam-pagination-next id="table-pagination" [totalUnits]="length"></sam-pagination-next>
               <sam-button-next samPageAction 
                 action="secondary"
                 (click)="toggleFieldsEditor()">

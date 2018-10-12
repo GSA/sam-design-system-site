@@ -35,7 +35,7 @@ export class SamFiltersWrapperComponentExampleComponent implements OnInit {
     });
 
     this.service.model.properties.filters.valueChanges.subscribe(data => {
-      if (data && data.testFilters) {
+      if (data && data.testFilter) {
         this.message = 'form submitted';
         this.submitted = true;
       } else {

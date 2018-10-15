@@ -38,7 +38,7 @@
     "@angular/router": "4.3.3",
     "@fortawesome/fontawesome-svg-core": "1.2.2",
     "@fortawesome/free-solid-svg-icons": "5.2.0",
-    "@gsa-sam/sam-ui-elements": "0.3.4",
+    "@gsa-sam/sam-ui-elements": "0.3.5",
     "@ngx-formly/core": "^2.1.1",
     "accessible-html5-video-player": "^1.0.3",
     "classlist-polyfill": "1.0.3",

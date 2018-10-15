@@ -32,18 +32,47 @@ const code_input_text_markup = `
 </form>
 `;
 
+const code_input_text_area_markup =`
+<label for="textarea1">Example textarea</label>
+<textarea class="sam" id="textarea1" rows="2"></textarea>
+`;
+
+const code_input_select_markup = `
+<label for="options">Dropdown label</label>
+<select class="sam" name="options" id="options">
+  <option value>- Select -</option>
+  <option value="value1">Option A</option>
+  <option value="value2">Option B</option>
+  <option value="value3">Option C</option>
+</select>
+`;
+
 const code_input_checkbox_markup = `
-<input class="sam checkbox" id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
+<input class="sam" id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
 <label for="truth">Sojourner Truth</label>
 
-<input class="sam checkbox" id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
+<input class="sam" id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
 <label for="douglass">Frederick Douglass</label>
 
-<input class="sam checkbox"  id="washington" type="checkbox" name="historical-figures-1" value="washington">
+<input class="sam"  id="washington" type="checkbox" name="historical-figures-1" value="washington">
 <label for="washington">Booker T. Washington</label>
 
-<input class="sam checkbox"  id="carver" type="checkbox" name="historical-figures-1" disabled>
+<input class="sam"  id="carver" type="checkbox" name="historical-figures-1" disabled>
 <label for="carver">George Washington Carver</label>
+`;
+
+const code_input_radio_markup = `
+<input class="sam" id="stanton" type="radio" checked name="historical-figures-2" value="stanton">
+<label for="stanton">Elizabeth Cady Stanton</label>
+
+<input class="sam"  id="anthony" type="radio" name="historical-figures-2" value="anthony">
+<label for="anthony">Susan B. Anthony</label>
+
+<input class="sam"  id="tubman" type="radio" name="historical-figures-2" value="tubman">
+<label for="tubman">Harriet Tubman</label>
+
+<input class="sam"  id="tanton" type="radio" name="historical-figures-2" value="tanton" disabled>
+<label for="tubman">Susan Tanton</label>
 `;
 
 @Component({
@@ -52,4 +81,7 @@ const code_input_checkbox_markup = `
 export class FormControlsComponent {
   input_text_markup = code_input_text_markup.trim();
   input_checkbox_markup = code_input_checkbox_markup.trim();
+  input_text_area_markup = code_input_text_area_markup.trim();
+  input_select_markup = code_input_select_markup.trim();
+  input_radio_markup = code_input_radio_markup.trim();
 }

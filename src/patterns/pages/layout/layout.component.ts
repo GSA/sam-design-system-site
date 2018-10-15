@@ -2,6 +2,7 @@ import {
   Component,
   ViewChild,
   OnInit,
+  OnDestroy,
   ChangeDetectorRef,
   forwardRef
 } from '@angular/core';
@@ -47,7 +48,7 @@ import {
     forwardRef(() => SamPageNextService)
   ]
 })
-export class SamLayoutDemoComponent implements OnInit {
+export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public model = model;
   public fields: FormlyFieldConfig[] = fields;
 

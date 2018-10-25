@@ -7,7 +7,7 @@ import {
 } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
 import {MockBackend} from "@angular/http/testing";
-import { HttpClientModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { AppComponent } from './app.component';
 import { SamTitleService } from './services/title/title.service';

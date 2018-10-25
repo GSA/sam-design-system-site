@@ -2,7 +2,7 @@ import {
   Component,
   OnInit,
 } from '@angular/core';
-import { HttpClient, Response, Headers } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import { DocumentationService } from '../app/services/documentation.service';
 import { MarkdownService } from '../app/services/markdown/markdown.service';

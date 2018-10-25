@@ -6,7 +6,7 @@ import {
   ComponentFixture
 } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import { HttpClientModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { BaseExampleComponent } from './baseexample.component';
 import { MarkdownService } from '../app/services/markdown/markdown.service';

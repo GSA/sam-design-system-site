@@ -12,7 +12,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
@@ -36,7 +36,7 @@ export class SamPageTitleExampleComponent extends BaseExampleComponent implement
   public base = '_docs/components/page-title/';
 
   constructor(
-    _http: Http,
+    _http: HttpClient,
     public service: DocumentationService,
     public mdService: MarkdownService) {
 

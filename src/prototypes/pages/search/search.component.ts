@@ -12,7 +12,7 @@ import {
   animation,
   group
 } from '@angular/animations';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import {
   faSlidersH
@@ -218,7 +218,7 @@ export class SearchPageComponent
   public listData = listItems;
   public helpText: string;
 
-  constructor (public http: Http) {}
+  constructor (public http: HttpClient) {}
 
   public ngOnInit () {
     this.http.get('/assets/helpText.txt')

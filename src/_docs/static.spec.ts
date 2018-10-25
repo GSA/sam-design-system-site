@@ -6,7 +6,7 @@ import {
   ComponentFixture
 } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/http';
 // Load the implementations that should be tested
 import { StaticPageComponent } from './static.component';
 import { MarkdownService } from '../app/services/markdown/markdown.service';
@@ -19,7 +19,7 @@ describe(`StaticPageComponent tests`, () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, HttpModule],
+      imports: [RouterTestingModule, HttpClientModule],
       declarations: [ StaticPageComponent ],
       providers: [
         { 

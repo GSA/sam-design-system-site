@@ -7,7 +7,7 @@ import {
 } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
 import {MockBackend} from "@angular/http/testing";
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/http';
 // Load the implementations that should be tested
 import { AppComponent } from './app.component';
 import { SamTitleService } from './services/title/title.service';
@@ -21,7 +21,7 @@ describe(`App`, () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpModule,RouterTestingModule,BrowserAnimationsModule],
+      imports: [HttpClientModule,RouterTestingModule,BrowserAnimationsModule],
       declarations: [ AppComponent ],
       providers: [
         SamTitleService, 

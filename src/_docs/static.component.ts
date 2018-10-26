@@ -4,7 +4,7 @@ import {
 } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs/Observable';
+import { Observable, of } from 'rxjs';
 
 import { MarkdownService } from '../app/services/markdown/markdown.service';
 
@@ -40,7 +40,7 @@ export class StaticPageComponent implements OnInit {
           this.mdService.get(fileName)
             .catch((err) => {
               this.content = this.defaultContent;
-              return Observable.of(err);
+              return of(err);
             })
             .map((res) => res.text())
             .subscribe(

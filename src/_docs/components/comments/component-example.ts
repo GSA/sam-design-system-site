@@ -3,7 +3,7 @@ import {
   Component
 } from '@angular/core';
 import { Comment, CommentsService } from '@gsa-sam/sam-ui-elements';
-import { Observable } from 'rxjs/Observable';
+import { Observable, of } from 'rxjs';
 
 export class CommentsDemoService implements CommentsService {
 
@@ -146,7 +146,7 @@ export class CommentsDemoService implements CommentsService {
     const endPoint = (this._comments.length - 1) - this.offset;
     this.lastIndex = endPoint;
 
-    return Observable.of(this._comments.slice(endPoint, this._comments.length - 1));
+    return of(this._comments.slice(endPoint, this._comments.length - 1));
   }
 
   postComment(_: any): Observable<Comment[]> {
@@ -155,7 +155,7 @@ export class CommentsDemoService implements CommentsService {
       return Observable.throw(err);
     }
     this._comments.push(_);
-    return Observable.of(this._comments);
+    return of(this._comments);
   }
 
   deleteComment(comment: Comment): Observable<Comment[]> {
@@ -164,12 +164,12 @@ export class CommentsDemoService implements CommentsService {
         return item;
       }
     });
-    return Observable.of(this._comments.slice(this.lastIndex, this._comments.length - 1));
+    return of(this._comments.slice(this.lastIndex, this._comments.length - 1));
   }
 
   getInitialState(): Observable<Comment[]> {
     this.lastIndex = 0;
-    return Observable.of(this._comments.slice(-2));
+    return of(this._comments.slice(-2));
   }
 }
 

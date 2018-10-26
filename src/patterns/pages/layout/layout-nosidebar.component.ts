@@ -6,7 +6,7 @@ import {
   forwardRef
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Observable } from 'rxjs/Observable';
+import { Observable, of } from 'rxjs';
 import 'rxjs/add/observable/merge';
 import { cloneDeep } from 'lodash';
 import { FormlyFieldConfig } from '@ngx-formly/core';
@@ -65,7 +65,7 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
   public filters: Observable<any>;
   public data: Observable<any>;
   public length: number;
-  public columnDefObs = Observable.of(columnDefinitions);
+  public columnDefObs = of(columnDefinitions);
 
   public faTable = faTable;
   public faChartBar = faChartBar;

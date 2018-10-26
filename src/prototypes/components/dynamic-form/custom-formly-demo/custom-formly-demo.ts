@@ -1,5 +1,5 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
-import { AbstractSamFormly } from '@gsa-sam/sam-ui-elements/src/formly/sam-formly';
+import { AbstractSamFormly } from '@gsa-sam/sam-ui-elements';
 import { AutocompleteService, SamAutocompleteComponent } from '@gsa-sam/sam-ui-elements';
 /* tslint:disable */
 import { Observable } from 'rxjs';

@@ -3,7 +3,7 @@ import { SamUIKitModule } from '@gsa-sam/sam-ui-elements';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { CustomFormlyDemoComponent } from './custom-formly-demo';
-import { FormlySAMUIModule } from '@gsa-sam/sam-ui-elements/src/formly';
+import { FormlySAMUIModule } from '@gsa-sam/sam-ui-elements';
 
 @NgModule({
   imports: [

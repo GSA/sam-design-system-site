@@ -24,7 +24,7 @@
 /* SAM Styles
    ========================================================================== */
 
-@import "@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov";
+@import "~@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov";
 
 
 /* SAM Design System
@@ -71,8 +71,8 @@
  * Syntax Code Highlight
  */
 
-@import 'prismjs/themes/prism';
-@import 'prismjs/plugins/previewers/prism-previewers';
+@import '~prismjs/themes/prism';
+@import '~prismjs/plugins/previewers/prism-previewers';
 
 code[class*="language"] {
     font-size: 13px;

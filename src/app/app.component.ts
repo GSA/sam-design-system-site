@@ -7,7 +7,7 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { DocumentationService } from './services/documentation.service';
 import { routerTransition } from './router.animations';
 

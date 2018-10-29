@@ -73,6 +73,7 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
+    "webpack": "^2.2.0",
     "webpack-bundle-analyzer": "2.9.0"
   }
 }

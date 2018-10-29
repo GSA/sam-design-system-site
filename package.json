@@ -1,5 +1,5 @@
 {
-  "name": "sam-cli",
+  "name": "sam-design-system-site",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -38,6 +38,7 @@
     "@angular/router": "4.3.3",
     "@fortawesome/fontawesome-svg-core": "1.2.2",
     "@fortawesome/free-solid-svg-icons": "5.2.0",
+    "@gsa-sam/sam-ui-elements": "0.3.7",
     "@ngx-formly/core": "^2.1.1",
     "accessible-html5-video-player": "^1.0.3",
     "classlist-polyfill": "1.0.3",
@@ -72,6 +73,7 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
+    "webpack": "^2.2.0",
     "webpack-bundle-analyzer": "2.9.0"
   }
 }

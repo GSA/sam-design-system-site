@@ -1,0 +1,8 @@
+// Assign this class to the parent and child
+// to have equal height elements in a row
+// Example: src/patterns/home/patterns-home.template.html
+@media screen and (min-width: 600px) {
+  .sam-docs.flex{
+      display: flex;
+  }
+}

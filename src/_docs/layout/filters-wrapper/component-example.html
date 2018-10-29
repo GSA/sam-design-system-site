@@ -1,0 +1,9 @@
+<sam-page-next>
+    <sam-filters-wrapper [group]="formGroup">
+        <sam-text name="test" label="Test filter" [formControl]="formGroup.get('testFilter')"></sam-text>
+    </sam-filters-wrapper>
+    <sam-main>
+        <p>{{ message }}</p>
+        <pre *ngIf="submitted">{{ formGroup.value | json}}</pre>
+    </sam-main>
+</sam-page-next>

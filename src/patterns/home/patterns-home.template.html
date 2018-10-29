@@ -1,73 +1,52 @@
 <sam-site-header></sam-site-header>
 
-<div class="patterns-page">
-  <div class="patterns-page-wrapper">
-    
-    <h1 class="sam heading">
-      Patterns
-    </h1>
-    
-    <p class="sam lead">
-      Page and component patterns to help you quickly get started with 
-      <strong><em>SAM-UI Elements</em></strong>.
-      To understand how the components work together to build pages, read the 
-      <a [routerLink]="['/docs/patterns/layout']">documentation</a>.
-    </p>
-    
-    
-    <h2 class="sam heading">
-      Pages
-    </h2>
-    
-    <ol class="row card-list">
-      <li class="col span-4">
-        <a [routerLink]="['/patterns/page/a']" class="card">
-          <h3 class="card-title">User Account <small>Page Pattern A</small></h3>
-          <p class="card-description">
-            Includes examples of side bar, side navigation, breadcrumbs, video, call-out box, list, 
-            list with icon, horizontal list, two column list, button.
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/patterns/page/b']" class="card">
-          <h3 class="card-title">Award Domains <small>Page Pattern B</small></h3>
-          <p class="card-description">
-            Includes examples of side bar, side navigation, breadcrumbs, list with icon, two column list, 
-            results, container.
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/patterns/page/layout']" class="card">
-          <h3 class="card-title">General Template<small>Report Layout</small></h3>
-          <p class="card-description">
-            Includes examples of side bar, side navigation, breadcrumbs, list with icon, two column list, 
-            results, container.
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/patterns/page/layout-nosidebar']" class="card">
-          <h3 class="card-title">General Template<small>Report Layout (no sidebar)</small></h3>
-          <p class="card-description">
-            Includes examples of sbreadcrumbs, list with icon, two column list, 
-            results, container.
-          </p>
-        </a>
-      </li>
-      <li class="col span-4">
-        <a [routerLink]="['/patterns/page/search']" class="card">
-          <h3 class="card-title">General Template<small>Search Layout</small></h3>
-          <p class="card-description">
-            Includes examples of side bar, side navigation, breadcrumbs, list with icon, two column list, 
-            results, container.
-          </p>
-        </a>
-      </li>
-    </ol>
-    
+<div class="usa-grid">
+  
+  <h1 class="sam heading">Patterns</h1>
+  
+  <p class="sam lead">
+    Page and component patterns to help you quickly get started with 
+    <strong><em>SAM-UI Elements</em></strong>.
+    To understand how the components work together to build pages, read the 
+    <a [routerLink]="['/docs/patterns/layout']">documentation</a>.
+  </p>
+  
+  <div class="usa-grid-full sam-docs flex">
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/patterns/page/a']" class="sam-docs card">
+        <div class="title">User Account</div>
+        <span class="sam small">Pattern A</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/patterns/page/b']" class="sam-docs card">
+        <div class="title">Award Domains</div>
+        <span class="sam small">Pattern B</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/patterns/page/layout']" class="sam-docs card">
+        <div class="title">Contract Detail Report</div>
+        <span class="sam small">Report Pattern with Filters</span>
+      </a>
+    </div>
   </div>
+  
+  <div class="usa-grid-full sam-docs flex">
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/patterns/page/layout-nosidebar']" class="sam-docs card">
+        <div class="title">Contract Detail Report</div>
+        <span class="sam small">Report Pattern</span>
+      </a>
+    </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/patterns/page/search']" class="sam-docs card">
+        <div class="title">Search</div>
+        <span class="sam small">Search Pattern</span>
+      </a>
+    </div>
+  </div>
+  
 </div>
 
 <sam-site-footer></sam-site-footer>

@@ -2,6 +2,7 @@ import {
   Component,
   ViewChild,
   OnInit,
+  OnDestroy,
   ChangeDetectorRef,
   forwardRef
 } from '@angular/core';
@@ -47,7 +48,7 @@ import {
     forwardRef(() => SamPageNextService)
   ]
 })
-export class SamLayoutDemoComponent implements OnInit {
+export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public model = model;
   public fields: FormlyFieldConfig[] = fields;
 
@@ -104,15 +105,25 @@ export class SamLayoutDemoComponent implements OnInit {
     setTimeout(() => {
       this._service.sendPageMessage('open sidebar');
       this.metadataLoaded = true;
-      this.cdr.detectChanges();
+      if (!this.cdr['destroyed']) {
+        this.cdr.detectChanges();
+      }
       // simulate data api call
       setTimeout(() => {
         this.flag2 = true;
-        this.cdr.detectChanges();
+        if (!this.cdr['destroyed']) {
+          this.cdr.detectChanges();
+        }
         this._connectToPageService();
-        this.cdr.detectChanges();
-      }, 5000);
-    }, 2000);
+        if (!this.cdr['destroyed']) {
+          this.cdr.detectChanges();
+        }
+      }, 3000);
+    }, 1000);
+  }
+
+  ngOnDestroy() {
+    this.cdr.detach(); // do this
   }
 
   public toggleFieldsEditor () {

@@ -47,7 +47,6 @@ import { SamBoxComponentExampleComponent } from './experimental/box/component-ex
 import { ButtonNextExampleComponent } from './experimental/button-next/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
-import { SamFilterDrawerComponentExampleComponent } from './experimental/filter-drawer/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
@@ -80,6 +79,9 @@ import { SamUploadComponentExampleComponent } from './form-controls/upload/compo
 import { PhoneGroupExampleComponent } from './form-templates/international-phone/component-example';
 import { NameEntryExampleComponent } from './form-templates/name-entry/component-example';
 import { PhoneEntryExampleComponent } from './form-templates/phone-entry/component-example';
+import { SamFilterDrawerComponentExampleComponent } from './layout/filter-drawer/component-example';
+import { SamFiltersWrapperComponentExampleComponent } from './layout/filters-wrapper/component-example';
+import { SamToolbarComponentExampleComponent } from './layout/toolbar/component-example';
 import { FieldsetWrapperExampleComponent } from './wrappers/fieldset-wrapper/component-example';
 import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component-example';
 
@@ -132,7 +134,6 @@ import { FormlyModule } from '@ngx-formly/core';
     ButtonNextExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
-    SamFilterDrawerComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
@@ -165,6 +166,9 @@ import { FormlyModule } from '@ngx-formly/core';
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
+    SamFilterDrawerComponentExampleComponent,
+    SamFiltersWrapperComponentExampleComponent,
+    SamToolbarComponentExampleComponent,
     FieldsetWrapperExampleComponent,
     LabelWrapperExampleComponent,
     InterfacesComponent,
@@ -209,7 +213,6 @@ import { FormlyModule } from '@ngx-formly/core';
     ButtonNextExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
-    SamFilterDrawerComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
     SamIconComponentExampleComponent,
@@ -242,6 +245,9 @@ import { FormlyModule } from '@ngx-formly/core';
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
+    SamFilterDrawerComponentExampleComponent,
+    SamFiltersWrapperComponentExampleComponent,
+    SamToolbarComponentExampleComponent,
     FieldsetWrapperExampleComponent,
     LabelWrapperExampleComponent,
     InterfacesComponent,

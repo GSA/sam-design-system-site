@@ -5,7 +5,7 @@
     height: 20px;
 
 
-  .switch-input {display:none;}
+
 
   .switch-label {
     position: absolute;
@@ -38,7 +38,7 @@
   }
 
   .switch-input:focus + .switch-label {
-    box-shadow: 0 0 1px rgb(17, 46, 81);
+    box-shadow: 0 0 5px rgb(17, 46, 81);
   }
 
   .switch-input:checked + .switch-label:before {

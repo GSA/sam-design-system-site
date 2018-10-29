@@ -1,0 +1,95 @@
+.sam-docs.card {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  background: #fff;
+  will-change: transform;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
+  transition: transform .2s ease-in;
+  margin-bottom: 20px;
+  
+  .title{
+    font-size: 17px;
+    font-weight: 700;
+    color: #323a45;
+    letter-spacing: -0.3px;
+  }
+  .sam.small{
+    color: #5b616b;
+  }
+  // Overwrites default padding top
+  h3.sam.heading{
+    padding-top: 0px;
+  }
+}
+
+.sam-docs.card:focus{
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.sam-docs.card:hover{
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.sam-docs.card:hover::after {
+  opacity: 1;
+}
+
+.sam-docs.card::before {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.sam-docs.card::after {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+}
+
+.sam-docs.card::before, 
+.sam-docs.card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  will-change: opacity;
+  transition: opacity .2s ease-in;
+}
+
+// when ".card" is not assigned to an "a tag"
+// Clickable items inside ".card" are disabled 
+// because "::before" & "::after" its placed in front.
+// Removing shadow enables clickable items
+// TODO: Find better solution and remove this style
+.sam-docs.card.remove.shadow{
+  &::before, &::after{
+      content: none;
+  }
+}
+
+.sam-docs.card{
+  &.blue{
+      color: white;
+      background-color:#205493;
+  }
+  &.green{
+      color: white;
+      background-color:#4aa564;
+  }
+  &.gray{
+      color: white;
+      background-color:#5b616b;
+  }
+  &.dark.gray{
+      color: white;
+      background-color:#323a45;
+  }
+} 

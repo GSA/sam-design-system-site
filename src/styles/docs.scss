@@ -20,38 +20,42 @@
 @import "reset/button";
 @import "reset/title";
 
+
 /* SAM Styles
    ========================================================================== */
 
-@import "~@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov";
+@import "@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov";
 
-/* SAM Design System Pages
+
+/* SAM Design System
    ========================================================================== */
 
+@import "sam-design-system/card";
+@import "sam-design-system/developer-menu";
+@import "sam-design-system/utilities";
+@import "sam-design-system/home";
+@import "sam-design-system/site-header";
+@import "sam-design-system/site-footer";
+
 /**
- * Homepage
+ * Patterns
  */
 
-@import "sam-design-system/home";
+ @import "sam-design-system/patterns";
 
 /**
  * Prototypes
  */
 
-@import "sam-design-system/prototypes/base";
 @import "sam-design-system/prototypes/animations";
 @import "sam-design-system/prototypes/homepage";
 @import "sam-design-system/prototypes/search-results-mobile";
 @import "sam-design-system/prototypes/picker";
 @import "sam-design-system/prototypes/main-nav";
-
 @import "sam-design-system/prototypes/search-report";
 @import "sam-design-system/prototypes/report";
 @import "sam-design-system/prototypes/search-results";
 @import "sam-design-system/prototypes/sort";
-@import "sam-design-system/prototypes/tabs";
-
-// @import "sam-design-system/prototypes/table";
 @import "sam-design-system/prototypes/click-menu";
 @import "sam-design-system/prototypes/date-picker";
 @import "sam-design-system/prototypes/alert";
@@ -60,28 +64,15 @@
 /**
  * Material (Experiment)
  */
-@import "sam-design-system/prototypes/material/sam-theme";
+// @import "sam-design-system/prototypes/material/sam-theme";
 
-/**
- * Patterns
- */
-
-@import "sam-design-system/patterns/home";
-@import "sam-design-system/patterns/layout";
-
-/**
- * Components
- */
-
-@import "sam-design-system/components/site-header";
-@import "sam-design-system/components/site-footer";
 
 /**
  * Syntax Code Highlight
  */
 
-@import '~prismjs/themes/prism';
-@import '~prismjs/plugins/previewers/prism-previewers';
+@import 'prismjs/themes/prism';
+@import 'prismjs/plugins/previewers/prism-previewers';
 
 code[class*="language"] {
     font-size: 13px;
@@ -200,12 +191,5 @@ pre[class*="language-"] {
     background-color: map-get($map: $uswds-blue, $key: 900);
     &::before{
         content: 'Highlight';
-    }
-}
-
-// documentation specifc styles
-doc-sam-alert-next{
-    sam-alert-next > div{
-        margin-bottom:20px;
     }
 }

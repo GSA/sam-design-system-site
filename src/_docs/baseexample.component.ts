@@ -51,7 +51,7 @@ export class BaseExampleComponent implements OnInit {
       <table class="sam-ui definition celled table">
       <thead>
         <tr>
-          <th></th>
+          <th>Name</th>
           <th>Type</th>
           <th>Comment</th>
         </tr>

@@ -18,9 +18,9 @@
           <sam-main-content>
             <sam-tabs-next samContentOutlet>
               <sam-tab-next>
-                <div class="title">
+                <ng-template sam-tab-label>
                   <sam-icon [icon]="faTable"></sam-icon> Summary
-                </div>
+                </ng-template>
                 <!-- pagination + edit fields button -->
                 <sam-action-bar>
                   <sam-pagination-next
@@ -32,48 +32,61 @@
                     (click)="toggleFieldsEditor()"
                   >
                   Columns
-                </sam-button-next>
+                  </sam-button-next>
                 </sam-action-bar>
               
-              <!-- datatable -->
-              <sam-datatable samSort
-                [dataSource]="dataSource"
-                class="sam large table"
-                (samSortChange)="onSortChange($event)">
-                <ng-container
-                  *ngFor="let col of columnDefObs | async"
-                  [cdkColumnDef]="col.def">
-                  <sam-header-cell
-                    *cdkHeaderCellDef
-                    sam-sort-header>
-                    {{ col.headerLabel }}
-                  </sam-header-cell>
-      
-                  <sam-cell *cdkCellDef="let row">
-                    {{ row[col.cellId] }}
-                  </sam-cell>
-                </ng-container>
-                
-                <sam-header-row
-                  *cdkHeaderRowDef="displayedColumns"
-                ></sam-header-row>
-                <sam-row
-                  *cdkRowDef="let row; columns: displayedColumns"
-                ></sam-row> 
-              </sam-datatable>
-            </sam-tab-next>
-            <sam-tab-next>
-              <div class="title">
-                <sam-icon [icon]="faTable"></sam-icon> Award Details
-              </div>
-              bbbb
-            </sam-tab-next>
-            <sam-tab-next tabTitle="Chart">
-              <div class="title">
-                <sam-icon [icon]="faChartBar"></sam-icon> Chart
-              </div>
-              cccc
-            </sam-tab-next>
+                <!-- datatable -->
+                <sam-datatable samSort
+                  [dataSource]="dataSource"
+                  class="sam large table"
+                  (samSortChange)="onSortChange($event)">
+                  <ng-container
+                    *ngFor="let col of columnDefObs | async"
+                    [cdkColumnDef]="col.def">
+                    <sam-header-cell
+                      *cdkHeaderCellDef
+                      sam-sort-header>
+                      {{ col.headerLabel }}
+                    </sam-header-cell>
+        
+                    <sam-cell *cdkCellDef="let row">
+                      {{ row[col.cellId] }}
+                    </sam-cell>
+                  </ng-container>
+                  
+                  <sam-header-row
+                    *cdkHeaderRowDef="displayedColumns"
+                  ></sam-header-row>
+                  <sam-row
+                    *cdkRowDef="let row; columns: displayedColumns"
+                  ></sam-row> 
+                </sam-datatable>
+              </sam-tab-next>
+              <sam-tab-next>
+                <ng-template sam-tab-label>
+                  <sam-icon [icon]="faTable"></sam-icon> Award Details
+                </ng-template>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam felis 
+                  dui, lobortis eget odio quis, facilisis consectetur lectus. Donec 
+                  sodales tortor sagittis sem efficitur congue. Maecenas sed velit sed 
+                  felis vestibulum suscipit. Vivamus pellentesque nisi vitae neque cursus 
+                  blandit. Orci varius natoque penatibus et magnis dis parturient montes, 
+                  nascetur ridiculus mus. Donec vel efficitur nulla, sit amet luctus justo. 
+                  Maecenas et ante vestibulum, feugiat lectus id, sollicitudin neque. 
+                  Aenean porttitor metus non nunc malesuada cursus. Ut felis enim, 
+                  ultrices congue facilisis venenatis, posuere eu libero. Etiam rhoncus 
+                  pellentesque eros, non laoreet nulla ultricies quis.
+                </div>
+              </sam-tab-next>
+              <sam-tab-next>
+                  <ng-template sam-tab-label>
+                    <sam-icon [icon]="faChartBar"></sam-icon> Chart
+                  </ng-template>
+                  <div class="tab-content">
+                    Add Chart Example
+                  </div>
+              </sam-tab-next>      
             </sam-tabs-next>
           </sam-main-content>
         </sam-main>

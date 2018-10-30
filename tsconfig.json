@@ -1,24 +1,26 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "baseUrl": "./src",
+    "forceConsistentCasingInFileNames": true,
     "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "paths": {
-      "api-kit/*": [ "api-kit/*"],
-      "app-components/*": [ "app/app-components/*"],
-      "environment": [ "./environments/environment" ]
-    },
-    "skipLibCheck": true,
+    "allowUnreachableCode": true,
     "target": "es5",
+    "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+      "api-kit/*": [ "api-kit/*"],
+      "app-components/*": [ "app/app-components/*"],
+      "environment": [ "./environments/environment.ts" ]
+    },
     "lib": [
       "es2017",
       "dom"

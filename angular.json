@@ -12,16 +12,12 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist",
+            "deployUrl": "/token-assets/DEPLOYMENT_HASH_TOKEN/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
             "preserveSymlinks": true,
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "node_modules"
-              ]
-            },
             "assets": [
               "src/assets",
               "src/favicon.ico"
@@ -32,13 +28,16 @@
             "scripts": []
           },
           "configurations": {
-            "prod": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ]
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             }
           }
         },
@@ -50,8 +49,8 @@
             "host": "0.0.0.0"
           },
           "configurations": {
-            "prod": {
-              "browserTarget": "sam-cli:build:prod"
+            "production": {
+              "browserTarget": "sam-cli:build:production"
             }
           }
         },

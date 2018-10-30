@@ -21,7 +21,7 @@ import { SiteComponentsModule } from './site-components/sitecomponents.module';
 import { MarkdownService } from './services/markdown/markdown.service';
 import { SamTitleService } from './services/title/title.service';
 import { FormlyModule } from '@ngx-formly/core';
-import { FormlySAMUIModule } from '@gsa-sam/sam-ui-elements';
+import {FormlySAMUIModule} from '@gsa-sam/sam-ui-elements/src/formly';
 
 // Application wide providers
 const APP_PROVIDERS = [

@@ -6,7 +6,7 @@ import {
   ComponentFixture
 } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { BaseExampleComponent } from './baseexample.component';
 import { MarkdownService } from '../app/services/markdown/markdown.service';
@@ -121,7 +121,7 @@ for(let i = 0; i < components.length; i++){
             beforeEach(() => {
                 
                 TestBed.configureTestingModule({
-                imports: [RouterTestingModule, HttpModule],
+                imports: [RouterTestingModule, HttpClientModule],
                 declarations: [components[i]],
                 providers: [
                     { 

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SamAlertFooterService } from '@gsa-sam/sam-ui-elements';
@@ -21,7 +21,7 @@ import { SiteComponentsModule } from './site-components/sitecomponents.module';
 import { MarkdownService } from './services/markdown/markdown.service';
 import { SamTitleService } from './services/title/title.service';
 import { FormlyModule } from '@ngx-formly/core';
-import { FormlySAMUIModule } from '@gsa-sam/sam-ui-elements/src/formly';
+import {FormlySAMUIModule} from '@gsa-sam/sam-ui-elements/src/formly';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -41,7 +41,7 @@ const APP_PROVIDERS = [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     SamUIKitModule,
     SiteComponentsModule,
     RouterModule.forRoot(ROUTES),

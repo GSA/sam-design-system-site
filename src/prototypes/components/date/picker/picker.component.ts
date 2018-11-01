@@ -1,14 +1,18 @@
+// import {
+//   animate, Component, ViewChild, ElementRef, EventEmitter, Input, keyframes, OnChanges,
+//   OnInit, Output, Renderer2, SimpleChange, state, style, transition, trigger, forwardRef, ChangeDetectorRef, HostListener
+// } from '@angular/core';
+import { Component, SimpleChange, ChangeDetectorRef, ViewChild, ElementRef, Output, Input, EventEmitter, OnInit, OnChanges, forwardRef, HostListener } from '@angular/core';
 import {
-  animate, Component, ViewChild, ElementRef, EventEmitter, Input, keyframes, OnChanges,
-  OnInit, Output, Renderer2, SimpleChange, state, style, transition, trigger, forwardRef, ChangeDetectorRef, HostListener
-} from '@angular/core';
-import { FormControl, Validators, ControlValueAccessor,
-  AbstractControl, NG_VALUE_ACCESSOR, ValidatorFn } from '@angular/forms';
+  FormControl, Validators, ControlValueAccessor,
+  AbstractControl, NG_VALUE_ACCESSOR, ValidatorFn
+} from '@angular/forms';
 
 import { Calendar } from './calendar';
 import * as moment from 'moment';
 import { SamFormControl } from '@gsa-sam/sam-ui-elements';
 import { SamFormService } from '@gsa-sam/sam-ui-elements';
+import { trigger, transition, animate, keyframes, style } from '@angular/animations';
 
 type DateFormatFunction = (date: Date) => string;
 
@@ -89,7 +93,7 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
   disabled: boolean;
   yearControl: FormControl;
   _focusableString: string =
-  'a[href], area, button, select, textarea, *[tabindex], \
+    'a[href], area, button, select, textarea, *[tabindex], \
   input:not([type="hidden"])';
   @ViewChild('calendarpopup') calendarpopup: ElementRef;
   @ViewChild('calendarButton') calendarButton: ElementRef;
@@ -97,24 +101,24 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
   static dateValidation() {
     const minYear = 1000;
     return (c: AbstractControl) => {
-        const error = {
-            dateError: {
-                message: ''
-            }
-        };
-        if (c.dirty && (c.value && c.value !== undefined)) {
-            const dateM = moment(c.value);
-            if (!dateM.isValid()) {
-                error.dateError.message = 'Invalid date';
-                return error;
-            } else {
-                if (dateM.get('year') < minYear) {
-                    error.dateError.message = 'Please enter 4 digit year';
-                    return error;
-                }
-            }
+      const error = {
+        dateError: {
+          message: ''
         }
-        return undefined;
+      };
+      if (c.dirty && (c.value && c.value !== undefined)) {
+        const dateM = moment(c.value);
+        if (!dateM.isValid()) {
+          error.dateError.message = 'Invalid date';
+          return error;
+        } else {
+          if (dateM.get('year') < minYear) {
+            error.dateError.message = 'Please enter 4 digit year';
+            return error;
+          }
+        }
+      }
+      return undefined;
     };
   }
 
@@ -160,19 +164,19 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
     this.syncVisualsWithDate();
 
     if (this.control && !this.disableValidation) {
-        const validators: ValidatorFn[] = [];
-        if (this.control.validator) {
-            validators.push(this.control.validator);
-        }
-        // if (this.required) {
-        //     //validators.push(SamDateComponent.dateRequired());
-        // }
-        validators.push(DatepickerComponent.dateValidation());
-        this.control.setValidators(validators);
-        this.control.statusChanges.subscribe(() => {
-            this.wrapper.formatErrors(this.control);
-        });
+      const validators: ValidatorFn[] = [];
+      if (this.control.validator) {
+        validators.push(this.control.validator);
+      }
+      // if (this.required) {
+      //     //validators.push(SamDateComponent.dateRequired());
+      // }
+      validators.push(DatepickerComponent.dateValidation());
+      this.control.setValidators(validators);
+      this.control.statusChanges.subscribe(() => {
         this.wrapper.formatErrors(this.control);
+      });
+      this.wrapper.formatErrors(this.control);
     }
   }
 
@@ -341,7 +345,7 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
    */
   isDateValid(date: Date): boolean {
     return (!this.rangeStart || date.getTime() >= this.rangeStart.getTime()) &&
-            (!this.rangeEnd || date.getTime() <= this.rangeEnd.getTime());
+      (!this.rangeEnd || date.getTime() <= this.rangeEnd.getTime());
   }
 
   /**
@@ -352,7 +356,7 @@ export class DatepickerComponent extends SamFormControl implements OnInit, OnCha
   filterInvalidDays(calendarDays: Array<number>): Array<number> {
     const newCalendarDays = [];
     calendarDays.forEach((day: number | Date) => {
-      if (day === 0 || !this.isDateValid(<Date> day)) {
+      if (day === 0 || !this.isDateValid(<Date>day)) {
         newCalendarDays.push(0);
       } else {
         newCalendarDays.push(day);

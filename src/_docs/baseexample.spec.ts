@@ -6,13 +6,13 @@ import {
   ComponentFixture
 } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { BaseExampleComponent } from './baseexample.component';
 import { MarkdownService } from '../app/services/markdown/markdown.service';
 import { DocumentationService } from '../app/services/documentation.service';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 describe(`BaseExampleComponent tests`, () => {
   let comp: BaseExampleComponent;
@@ -20,7 +20,7 @@ describe(`BaseExampleComponent tests`, () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, HttpModule],
+      imports: [RouterTestingModule, HttpClientModule],
       declarations: [ BaseExampleComponent ],
       providers: [
         { 

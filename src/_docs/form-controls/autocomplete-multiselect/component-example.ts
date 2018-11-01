@@ -4,9 +4,7 @@ import {
 import {
   AutocompleteService
 } from '@gsa-sam/sam-ui-elements';
-import {
-  Observable
-} from 'rxjs/Observable';
+import { Observable, of } from 'rxjs';
 
 export class ACTestService implements AutocompleteService {
   private values: any = [
@@ -51,13 +49,13 @@ export class ACTestService implements AutocompleteService {
       this.start = this.end;
       this.end = this.end + 2;
       if (this.end > this.values.length) {
-        return Observable.of([]);
+        return of([]);
       }
     }
 
     this.lastSearch = val;
 
-    return Observable.of(this.filter(val).slice(this.start, this.end));
+    return of(this.filter(val).slice(this.start, this.end));
   }
 
   private filter (val) {

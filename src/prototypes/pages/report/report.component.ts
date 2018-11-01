@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ApplicationRef } from '@angular/core';
 import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs-compat';
 import { ReportData } from './DataSource';
 import { MdPaginator } from '@angular/material';
 import { SamSortDirective } from '@gsa-sam/sam-ui-elements';

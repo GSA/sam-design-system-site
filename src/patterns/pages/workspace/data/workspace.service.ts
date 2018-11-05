@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 
 
+@Injectable()
 export class WorkspaceService {
 
   constructor() { }

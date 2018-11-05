@@ -11,7 +11,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
@@ -31,7 +31,7 @@ export class SamTitleComponentExampleComponent extends BaseExampleComponent impl
   public base = 'ADD_BASE_URL';
 
   constructor(
-    _http: HttpClient,
+    _http: Http,
     public service: DocumentationService,
     public mdService: MarkdownService) {
 

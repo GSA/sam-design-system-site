@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
@@ -43,7 +43,7 @@ export class MultiselectDropdownExampleComponent extends BaseExampleComponent im
   public base = '_docs/components/multiselect-dropdown/';
 
   constructor(
-    _http: HttpClient,
+    _http: Http,
     public service: DocumentationService,
     public mdService: MarkdownService) {
 

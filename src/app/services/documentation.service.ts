@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-import { ReplaySubject } from 'rxjs/ReplaySubject';
-import 'rxjs/add/operator/map';
-import { HttpClient } from '@angular/common/http';
+import { Observable, ReplaySubject } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Http } from '@angular/http';
 
 const regexComponent =
   new RegExp('([^/]*(\.component|\.directive))');
@@ -11,11 +10,13 @@ const regexComponent =
 @Injectable()
 export class DocumentationService {
 
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: Http) { }
 
   public loadData(): Observable<any> {
     return this._http.get('/assets/docs.json')
-      .map((res: Response) => res.json());
+      .pipe(
+        map((res: Response) => res.json())
+      );
   }
 
   /**

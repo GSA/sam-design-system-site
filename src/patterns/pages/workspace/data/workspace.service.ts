@@ -16,14 +16,14 @@ export class WorkspaceService {
 
     let data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
-
+    ob = this.filter(ob, filter);
     let pageSize = 10;
 
-    return data;
+    return ob;
   }
 
 
-  filter(data: Observable<Opportunity[]>, filter: filter) {
+  private filter(data: Observable<Opportunity[]>, filter: filter) {
 
     if (filter.type) {
       data = data.map(projects => projects.filter(proj => proj.data.type === filter.type));
@@ -34,7 +34,7 @@ export class WorkspaceService {
     }
 
     if (filter.title) {
-      data = data.map(projects => projects.filter(proj => proj.data.title.indexOf(filter.title)!==-1));
+      data = data.map(projects => projects.filter(proj => proj.data.title.indexOf(filter.title) !== -1));
     }
 
     return data;
@@ -53,7 +53,7 @@ export class filter {
   page: number;
   type: string;
   status: string;
-  title:string;
+  title: string;
 
 
 

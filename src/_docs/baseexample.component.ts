@@ -2,7 +2,7 @@ import {
   Component,
   OnInit,
 } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { DocumentationService } from '../app/services/documentation.service';
 import { MarkdownService } from '../app/services/markdown/markdown.service';
@@ -30,7 +30,7 @@ export class BaseExampleComponent implements OnInit {
   public base;
 
   constructor(
-    public http: HttpClient,
+    public http: Http,
     public service: DocumentationService,
     public mdService: MarkdownService) {}
 

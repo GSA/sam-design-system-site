@@ -2,7 +2,7 @@ import { Component, Input, OnInit} from '@angular/core';
 
 import { BaseExampleComponent } from '../../baseexample.component';
 
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 import {
@@ -146,7 +146,7 @@ export class ButtonNextExampleComponent extends BaseExampleComponent implements 
   public base = '_docs/experimental/button-next/';
 
   constructor(
-    _http: HttpClient,
+    _http: Http,
     public service: DocumentationService,
     public mdService: MarkdownService) {
 

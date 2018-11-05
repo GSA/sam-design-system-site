@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BaseExampleComponent } from './baseexample.component';
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import { MarkdownService } from 'app/services/markdown/markdown.service';
 import { DocumentationService } from 'app/services/documentation.service';
 import { ActivatedRoute } from '@angular/router';
@@ -73,7 +73,7 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
     }
 
     constructor(
-        public _http: HttpClient,
+        public _http: Http,
         public service: DocumentationService,
         public mdService: MarkdownService,
         public route: ActivatedRoute) {

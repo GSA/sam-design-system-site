@@ -3,8 +3,8 @@ import {
   OnInit
 } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import 'rxjs/add/operator/map';
-import { Observable, of } from 'rxjs';
+import { of } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 import { MarkdownService } from '../app/services/markdown/markdown.service';
 
@@ -38,11 +38,13 @@ export class StaticPageComponent implements OnInit {
             .join('/');
 
           this.mdService.get(fileName)
-            .catch((err) => {
-              this.content = this.defaultContent;
-              return of(err);
-            })
-            .map((res) => res.text())
+            .pipe(
+              catchError((err) => {
+                this.content = this.defaultContent;
+                return of(err);
+              }),
+              map((res) => res.text())
+            )
             .subscribe(
               (res) => this.content = res,
               (err) => this.content = this.defaultContent

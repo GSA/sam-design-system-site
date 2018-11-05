@@ -1998,8 +1998,7 @@ export let SampleOppData = [
         "awardee": {
           "location": {}
         },
-        "fairOpportunity": {},
-        "deliveryOrderNumber": "donumber",
+                "deliveryOrderNumber": "donumber",
         "justificationAuthority": {
           "authority": "far1",
           "modificationNumber": "modnumber"
@@ -2336,7 +2335,7 @@ export let SampleOppData = [
         "awardee": {
           "location": {}
         },
-        "fairOpportunity": {},
+     
         "justificationAuthority": {}
       },
       "naics": [],
@@ -2391,7 +2390,6 @@ export let SampleOppData = [
         "awardee": {
           "location": {}
         },
-        "fairOpportunity": {},
         "justificationAuthority": {}
       },
       "naics": [],

@@ -47,23 +47,12 @@ export class WorkspaceService {
 }
 
 export class filter {
-
-
   //zero based
   page: number;
   type: string;
   status: string;
   title: string;
-
-
-
-
-
 }
-
-
-
-
 
 export interface City {
   code?: string;
@@ -91,9 +80,6 @@ export interface Awardee {
   location?: Location;
 }
 
-export interface FairOpportunity {
-}
-
 export interface JustificationAuthority {
   authority?: string;
   modificationNumber?: string;
@@ -105,7 +91,7 @@ export interface Award {
   number?: string;
   awardee?: Awardee;
   lineItemNumber?: string;
-  fairOpportunity?: FairOpportunity;
+ 
   deliveryOrderNumber?: string;
   justificationAuthority?: JustificationAuthority;
 }

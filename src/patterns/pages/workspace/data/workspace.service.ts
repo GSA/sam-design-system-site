@@ -3,6 +3,7 @@ import { SampleOppData } from './datasource';
 import { Observable } from 'rxjs';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,22 +12,35 @@ export class WorkspaceService {
   constructor() { }
 
   //Will pass in 
-  getData(filter:filter) {
+  getData(filter: filter) {
+
     let data = <Opportunity[]>SampleOppData;
-let pageSize =10;
-data.splice(pageSize)
+    let ob = Observable.of(data);
+
+    let pageSize = 10;
+
     return data;
   }
 
 
-  filter(data: Opportunity[], property: string) {
+  filter(data: Observable<Opportunity[]>, filter: filter) {
 
+    if (filter.type) {
+      data = data.map(projects => projects.filter(proj => proj.data.type === filter.type));
+    }
 
+    if (filter.status) {
+      data = data.map(projects => projects.filter(proj => proj.status === filter.status));
+    }
 
+    if (filter.title) {
+      data = data.map(projects => projects.filter(proj => proj.data.title.indexOf(filter.title)!==-1));
+    }
 
+    return data;
   }
 
-  sort(data: Opportunity[], property: string) {
+  sort(data: Opportunity[], filter: filter) {
 
 
   }
@@ -34,8 +48,14 @@ data.splice(pageSize)
 
 export class filter {
 
+
   //zero based
-  page:number;
+  page: number;
+  type: string;
+  status: string;
+  title:string;
+
+
 
 
 
@@ -192,6 +212,3 @@ export interface Opportunity {
   createdBy?: string;
   id?: string;
 }
-
-
-

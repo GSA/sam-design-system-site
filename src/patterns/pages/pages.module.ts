@@ -10,6 +10,8 @@ import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
 import { LayoutModule } from './layout';
 import { SearchDemoModule } from './search/search.module';
+import { SampleDemoModule } from './sample/sample.module';
+
 
 @NgModule({
   imports: [
@@ -18,7 +20,8 @@ import { SearchDemoModule } from './search/search.module';
     PagesRoutingModule,
     SamUIKitModule,
     LayoutModule,
-    SearchDemoModule
+    SearchDemoModule,
+    SampleDemoModule
   ],
   declarations: [
     PagesComponent,

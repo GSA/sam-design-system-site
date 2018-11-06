@@ -1,0 +1,29 @@
+<sam-page-next>
+    <sam-toolbar></sam-toolbar>
+    <sam-aside>
+        <sam-resources-wrapper>
+                <sam-button buttonText="Subawards" buttonType="secondary"></sam-button>
+                <sam-button buttonText="Bioprefered" buttonType="secondary"></sam-button>
+                <sam-button buttonText="Service Contract" buttonType="secondary"></sam-button>
+        </sam-resources-wrapper>
+        <!-- <sam-filters-wrapper [group]="form">
+                <h4 class="sam heading">Filter By</h4>
+                <sam-filters
+                  [form]="form"
+                  [fields]="fields"
+                  [model]="model"></sam-filters>
+              </sam-filters-wrapper> -->
+   
+    <sam-filters-wrapper [group]="form">
+       
+            <sam-expansion-panel>
+                <sam-expansion-panel-header>
+                    Federal Organizations
+                </sam-expansion-panel-header>
+                <!-- update with real 'Agency' filter -->
+                <input class="sam transition input" placeholder="" [formControl]="form.controls.fhInputText" type="text" />
+            </sam-expansion-panel>
+      
+    </sam-filters-wrapper>
+</sam-aside>
+</sam-page-next>

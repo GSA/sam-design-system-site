@@ -10,6 +10,7 @@ import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
 import { LayoutModule } from './layout';
 import { SearchDemoModule } from './search/search.module';
+import { WorkspaceModule } from './workspace/workspace.module';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { SearchDemoModule } from './search/search.module';
     PagesRoutingModule,
     SamUIKitModule,
     LayoutModule,
-    SearchDemoModule
+    SearchDemoModule,
+    WorkspaceModule
   ],
   declarations: [
     PagesComponent,
@@ -26,4 +28,4 @@ import { SearchDemoModule } from './search/search.module';
     PageBComponent
   ]
 })
-export class PagesModule {}
+export class PagesModule { }

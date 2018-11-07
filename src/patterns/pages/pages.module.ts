@@ -10,8 +10,6 @@ import { PageAComponent } from './page-a/page.component';
 import { PageBComponent } from './page-b/page.component';
 import { LayoutModule } from './layout';
 import { SearchDemoModule } from './search/search.module';
-import { SampleDemoModule } from './sample/sample.module';
-
 import { WorkspaceModule } from './workspace/workspace.module';
 
 @NgModule({
@@ -22,7 +20,6 @@ import { WorkspaceModule } from './workspace/workspace.module';
     SamUIKitModule,
     LayoutModule,
     SearchDemoModule,
-    SampleDemoModule,
     WorkspaceModule
   ],
   declarations: [

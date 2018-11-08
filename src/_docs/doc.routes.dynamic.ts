@@ -301,7 +301,7 @@ export const ROUTES: Routes = [
   { path: 'form-controls/autocomplete-multiselect', component: BaseDocPageComponent, data: {
     path: '_docs/form-controls/autocomplete-multiselect',
     componentName: 'SamAutocompleteMultiselectComponent',
-			sections: ['service.ts','component-example.html','component-example.ts','design.md','documentation.md','guidance.md','implementation.md']}, children: [
+			sections: ['component-example.html','component-example.ts','design.md','documentation.md','guidance.md','implementation.md']}, children: [
     { path: '', component: SamAutocompleteMultiselectComponentExampleComponent }
   ]},
   { path: 'form-controls/checkbox', component: BaseDocPageComponent, data: {

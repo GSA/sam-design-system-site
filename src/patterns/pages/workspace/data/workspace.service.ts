@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { SampleOppData } from './datasource';
 import { Observable } from 'rxjs';
+import 'rxjs/add/observable/of';
 
 
 

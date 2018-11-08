@@ -1,1 +1,80 @@
-<div> Workspace working</div>
+<sam-page-next>
+    <sam-toolbar></sam-toolbar>
+    <sam-aside>
+        <sam-resources-wrapper>
+            <sam-button buttonText="Subawards" buttonType="secondary"></sam-button>
+            <sam-button buttonText="Bioprefered" buttonType="secondary"></sam-button>
+            <sam-button buttonText="Service Contract" buttonType="secondary"></sam-button>
+        </sam-resources-wrapper>
+        <sam-filters-wrapper [group]="form" samAccordion multi="false">
+            <sam-filters [form]="form" [fields]="fields" [model]="model"></sam-filters>
+        </sam-filters-wrapper>
+    </sam-aside>
+    <sam-main>
+        <sam-main-content>
+            <sam-tabs-next samContentOutlet>
+                <sam-tab-next>
+                    <ng-template sam-tab-label>
+                        <sam-icon [icon]="faChartBar"></sam-icon> Subawards
+                    </ng-template>
+                    <div class="tab-content">
+                        <!-- pagination + edit fields button -->
+                        <sam-action-bar>
+                            <sam-pagination-next [totalUnits]="length"></sam-pagination-next>
+                        </sam-action-bar>
+
+                        <!-- datatable -->
+                        <!-- <sam-datatable samSort [dataSource]="dataSource" class="sam large table" (samSortChange)="onSortChange($event)">
+                            <ng-container *ngFor="let col of columnDefObs | async" [cdkColumnDef]="col.def">
+                                <sam-header-cell *cdkHeaderCellDef sam-sort-header>
+                                    {{ col }}
+                                </sam-header-cell>
+
+                                sam-cell *cdkCellDef="let row">
+                                    {{ row[col.cellId] }}
+                                </sam-cell> 
+                            </ng-container>
+
+                            <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
+                            <sam-row *cdkRowDef="let row; columns: displayedColumns"></sam-row>
+                        </sam-datatable> -->
+
+                        <div *ngFor="let item of dataSource">
+                            {{item.data.type}}
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </sam-tab-next>
+                <sam-tab-next>
+                    <ng-template sam-tab-label>
+                        <sam-icon [icon]="faChartBar"></sam-icon> Dashboard
+                    </ng-template>
+                    <div class="tab-content">
+                        Dashboard content is displayed here
+                    </div>
+                </sam-tab-next>
+                <sam-tab-next>
+                    <ng-template sam-tab-label>
+                        Upload
+                    </ng-template>
+                    <div class="tab-content">
+                        Dashboard content is displayed here
+                    </div>
+                </sam-tab-next>
+                <sam-tab-next>
+                    <ng-template sam-tab-label>
+                        New Report
+                    </ng-template>
+                    <div class="tab-content">
+                        Dashboard content is displayed here
+                    </div>
+                </sam-tab-next>
+            </sam-tabs-next>
+        </sam-main-content>
+    </sam-main>
+</sam-page-next>

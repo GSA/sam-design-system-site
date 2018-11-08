@@ -15,9 +15,10 @@ export class WorkspaceService {
 
     let data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
-    ob = this.filter(ob, filter);
-    let pageSize = 10;
-
+    if (filter) {
+      ob = this.filter(ob, filter);
+      let pageSize = 10;
+    }
     return ob;
   }
 
@@ -90,7 +91,7 @@ export interface Award {
   number?: string;
   awardee?: Awardee;
   lineItemNumber?: string;
- 
+
   deliveryOrderNumber?: string;
   justificationAuthority?: JustificationAuthority;
 }

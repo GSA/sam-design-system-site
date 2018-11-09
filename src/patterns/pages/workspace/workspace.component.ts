@@ -45,6 +45,8 @@ export class SamWorkspaceDemoComponent implements OnInit {
   public error: any;
   public filterItems = [];
   public data: any[];
+  public options = ['Cancelled','Draft', 'Inactive','Published', 'Review'];
+  public sortvalue: string;
 
   constructor(private _fb: FormBuilder,
     private wsService: WorkspaceService,

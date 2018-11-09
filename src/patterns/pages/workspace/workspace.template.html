@@ -24,9 +24,20 @@
                         <sam-icon [icon]="faChartBar"></sam-icon> Subawards
                     </ng-template>
                     <div class="tab-content">
-                        <div>
+                        <div class="usa-grid-full sam-docs flex">
                             Showing {{ curPage>1 ? ((curPage-1)*10)+1 : '1' }} - {{ dataSource.length >= 10 ?
                             curPage*10 : dataSource.length }} of {{ dataSource.length }} results
+                        </div>
+                        <div class="usa-grid-full sam-docs flex">
+                                <sam-autocomplete
+                                [(ngModel)]="sortvalue"
+                                name="inputname"
+                                [options]="options"
+                                labelText="Sort By">
+                            </sam-autocomplete>
+                        </div>
+                        <div>
+                            
                         </div>
                         <div class="usa-grid-full sam-docs flex" *ngFor="let item of dataSource">
                             <div class="sam-docs card usa-width-one-third">
@@ -59,7 +70,6 @@
                             </div>
                         </div>
                         <div *ngIf="length == 0">
-                            Searching for "{{filter.status}}"<br>
                             You do not have any assitance listings.
                         </div>
                     </div>

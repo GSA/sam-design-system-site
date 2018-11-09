@@ -44,6 +44,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
   public curPage = 1;
   public error: any;
   public filterItems = [];
+  public data: any[];
 
   constructor(private _fb: FormBuilder,
     private wsService: WorkspaceService,
@@ -57,6 +58,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
 
   public ngOnInit() {
     this.getData(this.filter);
+    this.dataSource = this.data;
 
     this.filters = this._service.get('filters').valueChanges
       .map(model => this._filtersToPills(model));
@@ -79,14 +81,13 @@ export class SamWorkspaceDemoComponent implements OnInit {
 
   onTypeChange(name: string) {
     this.dataSource = [];
-    this.filter.status = name;
-    this.getData(this.filter);
+    this.dataSource = name ?this.data.filter(u => u.data.type == name): this.data;
   }
   getData(filter: filter): void {
     this.wsService.getData(filter).subscribe(
       (data) => {
         this.length = data.length;
-        this.dataSource = data;
+        this.data = data;
       },
       (error) => {
         this.error = error;

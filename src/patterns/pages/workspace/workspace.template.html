@@ -2,9 +2,10 @@
     <sam-toolbar></sam-toolbar>
     <sam-aside>
         <sam-resources-wrapper>
-            <sam-button (click)="onTypeChange('draft')" buttonText="Subawards" buttonType="secondary"></sam-button>
-            <sam-button (click)="onTypeChange('b')" buttonText="Bioprefered" buttonType="secondary"></sam-button>
-            <sam-button (click)="onTypeChange('')" buttonText="Service Contract" buttonType="secondary"></sam-button>
+            <sam-button (click)="onTypeChange('a')" buttonText="Subawards" buttonType="secondary"></sam-button>
+            <sam-button (click)="onTypeChange('s')" buttonText="Bioprefered" buttonType="secondary"></sam-button>
+            <sam-button (click)="onTypeChange('r')" buttonText="Service Contract" buttonType="secondary"></sam-button>
+            <sam-button (click)="onTypeChange('')" buttonText="Reset" buttonType="secondary"></sam-button>
         </sam-resources-wrapper>
         <sam-filters-wrapper [group]="form" samAccordion multi="false">
             <sam-filters [form]="form" [fields]="fields" [model]="model"></sam-filters>

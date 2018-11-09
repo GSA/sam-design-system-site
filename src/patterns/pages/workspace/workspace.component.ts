@@ -45,7 +45,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
   public error: any;
   public filterItems = [];
   public data: any[];
-  public options = ['Cancelled','Draft', 'Inactive','Published', 'Review'];
+  public options = ['Cancelled', 'Draft', 'Inactive', 'Published', 'Review'];
   public sortvalue: string;
 
   constructor(private _fb: FormBuilder,
@@ -63,7 +63,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
     this.dataSource = this.data;
 
     this.filters = this._service.get('filters').valueChanges
-      .map(model => this._filtersToPills(model));
+      .map(res => this._filtersToPills(res));
 
     this.filters.subscribe(data => {
       this.curPage = 1;
@@ -74,8 +74,8 @@ export class SamWorkspaceDemoComponent implements OnInit {
       }
     });
 
-    this._service.get('pagination').valueChanges.subscribe(model => {
-      this.curPage = model.currentPage;
+    this._service.get('pagination').valueChanges.subscribe(result => {
+      this.curPage = result.currentPage;
       this._service.get('data').setValue(this.dataSource);
     });
     this.cdr.detectChanges();
@@ -83,10 +83,10 @@ export class SamWorkspaceDemoComponent implements OnInit {
 
   onTypeChange(name: string) {
     this.dataSource = [];
-    this.dataSource = name ?this.data.filter(u => u.data.type == name): this.data;
+    this.dataSource = name ? this.data.filter(u => u.data.type == name) : this.data;
   }
-  getData(filter: filter): void {
-    this.wsService.getData(filter).subscribe(
+  getData(item: filter): void {
+    this.wsService.getData(item).subscribe(
       (data) => {
         this.length = data.length;
         this.data = data;
@@ -116,6 +116,6 @@ export class SamWorkspaceDemoComponent implements OnInit {
         value: value
       };
     })
-      .filter(filter => filter.value.length > 0);
+      .filter(res => res.value.length > 0);
   }
 }

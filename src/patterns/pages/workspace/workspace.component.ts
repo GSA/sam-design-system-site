@@ -1,23 +1,15 @@
 import {
   Component,
-  ViewChild,
   OnInit,
   forwardRef,
   ChangeDetectorRef,
-  OnDestroy
 } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { SampleOppData } from './data/datasource';
 import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
-import {
-  SamPaginationNextComponent,
-  DataStore,
-  layoutStore,
-  SamPageNextService
-} from '@gsa-sam/sam-ui-elements';
-import { NgModel, FormBuilder, FormGroup } from '@angular/forms';
+import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { WorkspaceService, filter } from './data/workspace.service';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import {
@@ -35,14 +27,10 @@ import {
   templateUrl: './workspace.template.html',
   providers: [
     WorkspaceService,
-    {
-      provide: DataStore,
-      useValue: layoutStore
-    },
     forwardRef(() => SamPageNextService)
   ]
 })
-export class SamWorkspaceDemoComponent implements OnInit, OnDestroy {
+export class SamWorkspaceDemoComponent implements OnInit {
   public form: FormGroup;
   public model = model;
   public filters: Observable<any>;
@@ -52,12 +40,14 @@ export class SamWorkspaceDemoComponent implements OnInit, OnDestroy {
   public length: number;
   public optionsBackup: any;
   public dataSource: any[];
-  displayedColumns = [];
-  filter :filter;
-  referenceColumns = [];
+  public filter: filter = new filter();
+  public curPage = 1;
+  public error: any;
+  public filterItems = [];
 
   constructor(private _fb: FormBuilder,
     private wsService: WorkspaceService,
+    private cdr: ChangeDetectorRef,
     private _service: SamPageNextService) {
     this.form = this._fb.group({
       fhInputText: [''],
@@ -66,37 +56,63 @@ export class SamWorkspaceDemoComponent implements OnInit, OnDestroy {
   }
 
   public ngOnInit() {
-    this._connectToPageService();
-    this.dataSource = this.getData();
-    this.getData();
+    this.getData(this.filter);
+
+    this.filters = this._service.get('filters').valueChanges
+      .map(model => this._filtersToPills(model));
+
+    this.filters.subscribe(data => {
+      this.curPage = 1;
+      if (data.length !== 0) {
+        this._service.get('data').setValue(this.dataSource.slice(0, 1));
+      } else {
+        this._service.get('data').setValue(this.dataSource);
+      }
+    });
+
+    this._service.get('pagination').valueChanges.subscribe(model => {
+      this.curPage = model.currentPage;
+      this._service.get('data').setValue(this.dataSource);
+    });
+    this.cdr.detectChanges();
   }
-  private _connectToPageService() {
-    this._service.model.properties.data.valueChanges
-      .subscribe(
-        data => {
-          this.length = data.length;
+
+  onTypeChange(name: string) {
+    this.dataSource = [];
+    this.filter.status = name;
+    this.getData(this.filter);
+  }
+  getData(filter: filter): void {
+    this.wsService.getData(filter).subscribe(
+      (data) => {
+        this.length = data.length;
+        this.dataSource = data;
+      },
+      (error) => {
+        this.error = error;
+      });
+  }
+  private _filtersToPills(filters): any[] {
+    const keys = Object.keys(filters);
+
+    return keys.map(key => {
+      let value;
+
+      if (filters[key]) {
+        if (filters[key].constructor === Array) {
+          value = filters[key];
+        } else {
+          value = [filters[key]];
         }
-      );
+      } else {
+        value = [];
+      }
+
+      return {
+        label: key,
+        value: value
+      };
+    })
+      .filter(filter => filter.value.length > 0);
   }
-  ngOnDestroy() {
-
-  }
- 
- 
-
-
-  getData(): any {
-    let results;
-    this.wsService.getData(this.filter).subscribe(
-      (res) => {
-        results = res;
-       
-       
-        }, 
-        (error) => {
-          return error;
-        } );
-        return results;
-  }
-
 }

@@ -2,15 +2,20 @@
     <sam-toolbar></sam-toolbar>
     <sam-aside>
         <sam-resources-wrapper>
-            <sam-button buttonText="Subawards" buttonType="secondary"></sam-button>
-            <sam-button buttonText="Bioprefered" buttonType="secondary"></sam-button>
-            <sam-button buttonText="Service Contract" buttonType="secondary"></sam-button>
+            <sam-button (click)="onTypeChange('draft')" buttonText="Subawards" buttonType="secondary"></sam-button>
+            <sam-button (click)="onTypeChange('b')" buttonText="Bioprefered" buttonType="secondary"></sam-button>
+            <sam-button (click)="onTypeChange('')" buttonText="Service Contract" buttonType="secondary"></sam-button>
         </sam-resources-wrapper>
         <sam-filters-wrapper [group]="form" samAccordion multi="false">
             <sam-filters [form]="form" [fields]="fields" [model]="model"></sam-filters>
         </sam-filters-wrapper>
     </sam-aside>
     <sam-main>
+        <sam-filter-drawer>
+            <sam-filter-drawer-item *ngFor="let filterItem of filters | async" [label]="filterItem.label" [values]="[filterItem.value]"
+                (remove)="removeItem($event)"></sam-filter-drawer-item>
+        </sam-filter-drawer>
+
         <sam-main-content>
             <sam-tabs-next samContentOutlet>
                 <sam-tab-next>
@@ -18,36 +23,44 @@
                         <sam-icon [icon]="faChartBar"></sam-icon> Subawards
                     </ng-template>
                     <div class="tab-content">
-                        <!-- pagination + edit fields button -->
-                        <sam-action-bar>
-                            <sam-pagination-next [totalUnits]="length"></sam-pagination-next>
-                        </sam-action-bar>
-
-                        <!-- datatable -->
-                        <!-- <sam-datatable samSort [dataSource]="dataSource" class="sam large table" (samSortChange)="onSortChange($event)">
-                            <ng-container *ngFor="let col of columnDefObs | async" [cdkColumnDef]="col.def">
-                                <sam-header-cell *cdkHeaderCellDef sam-sort-header>
-                                    {{ col }}
-                                </sam-header-cell>
-
-                                sam-cell *cdkCellDef="let row">
-                                    {{ row[col.cellId] }}
-                                </sam-cell> 
-                            </ng-container>
-
-                            <sam-header-row *cdkHeaderRowDef="displayedColumns"></sam-header-row>
-                            <sam-row *cdkRowDef="let row; columns: displayedColumns"></sam-row>
-                        </sam-datatable> -->
-
-                        <div *ngFor="let item of dataSource">
-                            {{item.data.type}}
+                        <div>
+                            Showing {{ curPage>1 ? ((curPage-1)*10)+1 : '1' }} - {{ dataSource.length >= 10 ?
+                            curPage*10 : dataSource.length }} of {{ dataSource.length }} results
                         </div>
-
-
-
-
-
-
+                        <div class="usa-grid-full sam-docs flex" *ngFor="let item of dataSource">
+                            <div class="sam-docs card usa-width-one-third">
+                                <div class="title">{{item.data.title}}</div>
+                                <div class="sam-docs usa-width-one-third">
+                                    <div>Award Details</div>
+                                    <div class="sam small"> {{item.data.award.number}}</div>
+                                    <div class="sam small"> {{item.data.award.amount}}</div>
+                                    <div class="sam small">{{item.data.archive.type}}</div>
+                                </div>
+                                <div class="sam-docs usa-width-one-third">
+                                    <div>Point Of Contact</div>
+                                    <div> Organisation Id : {{item.data.organizationId}}</div>
+                                    <div style="margin-top:10px;" *ngFor="let cont of item.data.pointOfContact">
+                                        <div class="sam big">{{cont.type}}</div>
+                                        <div class="sam small">{{cont.email}}</div>
+                                        <div class="sam small">{{cont.phone}}</div>
+                                        <div class="sam small">{{cont.fullName}}</div>
+                                      
+                                    </div>
+                                </div>
+                                <div class="sam-docs usa-width-one-third">
+                                    <div>Audit Trail Details</div>
+                                    <div class="sam small">Posted On {{item.postedDate | date: 'yy-MM-dd'}}</div>
+                                    <div class="sam small">Last Modified On {{item.modifiedDate | date: 'yy-MM-dd'}}</div>
+                                    <div class="sam small">Modified By {{item.modifiedBy }}</div>
+                                    <div class="sam small">Created On {{item.createdDate | date: 'yy-MM-dd'}}</div>
+                                    <div class="sam small">Created By {{item.createdBy }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div *ngIf="length == 0">
+                            Searching for "{{filter.status}}"<br>
+                            You do not have any assitance listings.
+                        </div>
                     </div>
                 </sam-tab-next>
                 <sam-tab-next>
@@ -58,12 +71,13 @@
                         Dashboard content is displayed here
                     </div>
                 </sam-tab-next>
+
                 <sam-tab-next>
                     <ng-template sam-tab-label>
                         Upload
                     </ng-template>
                     <div class="tab-content">
-                        Dashboard content is displayed here
+                        Upload content is displayed here
                     </div>
                 </sam-tab-next>
                 <sam-tab-next>
@@ -71,7 +85,7 @@
                         New Report
                     </ng-template>
                     <div class="tab-content">
-                        Dashboard content is displayed here
+                        Report content is displayed here
                     </div>
                 </sam-tab-next>
             </sam-tabs-next>

@@ -23,10 +23,11 @@ import {
 })
 export class SamPaginationNextComponentExampleComponent implements OnInit {
 
-
-  constructor(public fb: FormBuilder) {}
+  public unit = "Unit";
+  public totalUnits =100;
+  constructor(public fb: FormBuilder) { }
 
   ngOnInit() {
-   
+
   }
 }

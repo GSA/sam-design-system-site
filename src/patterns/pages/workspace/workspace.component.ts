@@ -94,8 +94,6 @@ export class SamWorkspaceDemoComponent implements OnInit {
   }
 
   onSortChange(sortvalue: string) {
-
-
   }
 
   getData(item: filter): void {

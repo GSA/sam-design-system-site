@@ -30,7 +30,7 @@ export class WorkspaceService {
     }
 
     if (filter.status) {
-      data = data.map(projects => projects.filter(proj => proj.status === filter.status));
+      data = data.map(projects => projects.filter(proj => filter.status.indexOf(proj.status.code) !== -1));
     }
 
     if (filter.title) {
@@ -50,7 +50,7 @@ export class filter {
   //zero based
   page: number;
   type: string;
-  status: string;
+  status: string[];
   title: string;
 }
 

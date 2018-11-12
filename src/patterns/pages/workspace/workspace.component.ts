@@ -46,13 +46,11 @@ export class SamWorkspaceDemoComponent implements OnInit {
   public filterItems = [];
   public data: any[];
   public options = [
-    { value: 'cancelled', label: 'Cancelled', name: 'cancel' },
-    { value: 'draft', label: 'Draft', name: 'draft' },
-    { value: 'inactive', label: 'Inactive', name: 'inactive' },
-    { value: 'published', label: 'Published', name: 'published' },
-    { value: 'review', label: 'Review', name: 'review' },
+    { value: 'title', label: 'Title', name: 'title' },
+    { value: 'status', label: 'Status', name: 'status' },
+    { value: 'organizations', label: 'Organizations', name: 'organizations' },
+    { value: 'date', label: 'Date', name: 'date' },
   ];
-  // public options = ['Cancelled', 'Draft', 'Inactive', 'Published', 'Review'];
   public sortvalue: string;
 
   constructor(private _fb: FormBuilder,
@@ -67,7 +65,6 @@ export class SamWorkspaceDemoComponent implements OnInit {
 
   public ngOnInit() {
     this.getData(this.filter);
-    this.dataSource = this.data;
 
     this.filters = this._service.get('filters').valueChanges
       .map(res => this._filtersToPills(res));
@@ -89,21 +86,23 @@ export class SamWorkspaceDemoComponent implements OnInit {
 
     this.form.valueChanges.subscribe(
       res => {
+        this.getData(res);
         this._service.get('filters').patchValue(res);
       }
     );
 
   }
 
-  onTypeChange(name: string) {
-    this.dataSource = [];
-    this.dataSource = name ? this.data.filter(u => u.data.type == name) : this.data;
+  onSortChange(sortvalue: string) {
+
+
   }
+
   getData(item: filter): void {
     this.wsService.getData(item).subscribe(
       (data) => {
         this.length = data.length;
-        this.data = data;
+        this.dataSource = data;
       },
       (error) => {
         this.error = error;

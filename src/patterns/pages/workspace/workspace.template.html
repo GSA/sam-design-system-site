@@ -2,10 +2,9 @@
     <sam-toolbar></sam-toolbar>
     <sam-aside>
         <sam-resources-wrapper>
-            <sam-button (click)="onTypeChange('a')" buttonText="Subawards" buttonType="secondary"></sam-button>
-            <sam-button (click)="onTypeChange('s')" buttonText="Bioprefered" buttonType="secondary"></sam-button>
-            <sam-button (click)="onTypeChange('r')" buttonText="Service Contract" buttonType="secondary"></sam-button>
-            <sam-button (click)="onTypeChange('')" buttonText="Reset" buttonType="secondary"></sam-button>
+            <sam-button buttonText="Subawards" buttonType="secondary"></sam-button>
+            <sam-button  buttonText="Bioprefered" buttonType="secondary"></sam-button>
+            <sam-button  buttonText="Service Contract" buttonType="secondary"></sam-button>
         </sam-resources-wrapper>
         <sam-filters [form]="form" [fields]="fields" [model]="model"></sam-filters>
     </sam-aside>
@@ -25,7 +24,7 @@
                         <sam-action-bar>
                             <sam-pagination-next id="table-pagination" [totalUnits]="dataSource.length"></sam-pagination-next>
                             <sam-select samPageAction [(ngModel)]="sortvalue" name="inputname" [options]="options" label="Sort By"
-                              (modelChange)="onSortChange()">
+                              (modelChange)="onSortChange(sortvalue)">
                             </sam-select>
                           </sam-action-bar>
                         <div>

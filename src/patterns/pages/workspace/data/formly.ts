@@ -1,7 +1,7 @@
 import { FormlyFieldConfig } from '@ngx-formly/core';
 export const fields: FormlyFieldConfig[] = [
     {
-        key: 'fhInputText',
+        key: 'type',
         type: 'text',
         wrappers: ['filter'],
         templateOptions: {
@@ -11,7 +11,7 @@ export const fields: FormlyFieldConfig[] = [
         }
       },
     {
-        key: 'checkbox',
+        key: 'status',
         type: 'checkbox',
         wrappers: ['filter'],
         templateOptions: {
@@ -26,7 +26,7 @@ export const fields: FormlyFieldConfig[] = [
             { value: 'inactive', label: 'Inactive', name: 'inactive' },
           ]
         }
-      }, 
+      },
       {
         key: 'dateModel',
         type: 'date',
@@ -38,7 +38,7 @@ export const fields: FormlyFieldConfig[] = [
         }
       },
       {
-        key: 'assistanceModel',
+        key: 'title',
         type: 'text',
         wrappers: ['filter'],
         templateOptions: {
@@ -50,8 +50,8 @@ export const fields: FormlyFieldConfig[] = [
 ];
 
 export const model = {
-    fhInputText: null,
+    type: null,
     dateModel: null,
-    checkbox: [],
-    assistanceModel:null
+    status: [],
+    title: null
   };

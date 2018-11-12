@@ -45,7 +45,14 @@ export class SamWorkspaceDemoComponent implements OnInit {
   public error: any;
   public filterItems = [];
   public data: any[];
-  public options = ['Cancelled', 'Draft', 'Inactive', 'Published', 'Review'];
+  public options = [
+    { value: 'cancelled', label: 'Cancelled', name: 'cancel' },
+    { value: 'draft', label: 'Draft', name: 'draft' },
+    { value: 'inactive', label: 'Inactive', name: 'inactive' },
+    { value: 'published', label: 'Published', name: 'published' },
+    { value: 'review', label: 'Review', name: 'review' },
+  ];
+  // public options = ['Cancelled', 'Draft', 'Inactive', 'Published', 'Review'];
   public sortvalue: string;
 
   constructor(private _fb: FormBuilder,
@@ -79,6 +86,13 @@ export class SamWorkspaceDemoComponent implements OnInit {
       this._service.get('data').setValue(this.dataSource);
     });
     this.cdr.detectChanges();
+
+    this.form.valueChanges.subscribe(
+      res => {
+        this._service.get('filters').patchValue(res);
+      }
+    );
+
   }
 
   onTypeChange(name: string) {

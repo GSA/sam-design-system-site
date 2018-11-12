@@ -7,9 +7,7 @@
             <sam-button (click)="onTypeChange('r')" buttonText="Service Contract" buttonType="secondary"></sam-button>
             <sam-button (click)="onTypeChange('')" buttonText="Reset" buttonType="secondary"></sam-button>
         </sam-resources-wrapper>
-        <sam-filters-wrapper [group]="form" samAccordion multi="false">
-            <sam-filters [form]="form" [fields]="fields" [model]="model"></sam-filters>
-        </sam-filters-wrapper>
+        <sam-filters [form]="form" [fields]="fields" [model]="model"></sam-filters>
     </sam-aside>
     <sam-main>
         <sam-filter-drawer>
@@ -24,18 +22,12 @@
                         <sam-icon [icon]="faChartBar"></sam-icon> Subawards
                     </ng-template>
                     <div class="tab-content">
-                        <div class="usa-grid-full sam-docs flex">
-                            Showing {{ curPage>1 ? ((curPage-1)*10)+1 : '1' }} - {{ dataSource.length >= 10 ?
-                            curPage*10 : dataSource.length }} of {{ dataSource.length }} results
-                        </div>
-                        <div class="usa-grid-full sam-docs flex">
-                                <sam-autocomplete
-                                [(ngModel)]="sortvalue"
-                                name="inputname"
-                                [options]="options"
-                                labelText="Sort By">
-                            </sam-autocomplete>
-                        </div>
+                        <sam-action-bar>
+                            <sam-pagination-next id="table-pagination" [totalUnits]="dataSource.length"></sam-pagination-next>
+                            <sam-select samPageAction [(ngModel)]="sortvalue" name="inputname" [options]="options" label="Sort By"
+                              (modelChange)="onSortChange()">
+                            </sam-select>
+                          </sam-action-bar>
                         <div>
                             
                         </div>

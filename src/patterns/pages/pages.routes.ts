@@ -7,6 +7,8 @@ import { PageBComponent } from './page-b/page.component';
 import { SamLayoutDemoComponent } from './layout';
 import { SamLayoutNoSidebarDemoComponent } from './layout';
 import { SamSearchDemoComponent } from './search/search.component';
+import { SamWorkspaceDemoComponent } from './workspace/workspace.component';
+
 
 const PageRoutes: Routes = [
   {
@@ -32,6 +34,10 @@ const PageRoutes: Routes = [
       {
         path: 'search',
         component: SamSearchDemoComponent
+      },
+      {
+        path: 'workspace',
+        component: SamWorkspaceDemoComponent
       },
     ]
   }

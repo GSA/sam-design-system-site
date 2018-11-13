@@ -1,3 +1,4 @@
+/* tslint:disable */ 
 import { Injectable } from '@angular/core';
 import { SampleOppData } from './datasource';
 import { Observable } from 'rxjs';
@@ -10,14 +11,14 @@ export class WorkspaceService {
 
   constructor() { }
 
-  //Will pass in 
+  //Will pass in
   getData(filter: filter) {
 
-    let data = <Opportunity[]>SampleOppData;
+    const data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
     if (filter) {
       ob = this.filter(ob, filter);
-      let pageSize = 10;
+      const pageSize = 10;
     }
     return ob;
   }

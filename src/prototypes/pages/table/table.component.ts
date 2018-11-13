@@ -1,11 +1,10 @@
+/* tslint:disable */
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-// import * as d3 from 'd3';
+
 import { CdkTableModule } from '@angular/cdk';
 import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-/* tslint:disable */
 import { Observable } from 'rxjs';
-/* tslint:enable */
 import { merge } from 'rxjs/observable/merge';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { SamMultiSortDirective } from '../../components/table/multicol-sort.directive';

@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { Component, SimpleChange, ChangeDetectorRef, ViewChild, ElementRef, Output, Input, 
   EventEmitter, OnInit, OnChanges, forwardRef, HostListener } from '@angular/core';
 import {

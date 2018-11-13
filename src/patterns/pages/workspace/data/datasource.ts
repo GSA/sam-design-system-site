@@ -1,3 +1,4 @@
+/* tslint:disable */ 
 export let SampleOppData = [
   {
     'data': {

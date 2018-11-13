@@ -1,8 +1,5 @@
-// import {
-//   animate, Component, ViewChild, ElementRef, EventEmitter, Input, keyframes, OnChanges,
-//   OnInit, Output, Renderer2, SimpleChange, state, style, transition, trigger, forwardRef, ChangeDetectorRef, HostListener
-// } from '@angular/core';
-import { Component, SimpleChange, ChangeDetectorRef, ViewChild, ElementRef, Output, Input, EventEmitter, OnInit, OnChanges, forwardRef, HostListener } from '@angular/core';
+import { Component, SimpleChange, ChangeDetectorRef, ViewChild, ElementRef, Output, Input, 
+  EventEmitter, OnInit, OnChanges, forwardRef, HostListener } from '@angular/core';
 import {
   FormControl, Validators, ControlValueAccessor,
   AbstractControl, NG_VALUE_ACCESSOR, ValidatorFn

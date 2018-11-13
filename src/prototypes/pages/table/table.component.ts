@@ -1,5 +1,6 @@
+/* tslint:disable */
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-// import * as d3 from 'd3';
+
 import { CdkTableModule } from '@angular/cdk';
 import { DataSource } from '@angular/cdk';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';

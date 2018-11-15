@@ -12,7 +12,7 @@ import {
 } from '@gsa-sam/sam-ui-elements';
 
 @Component({
-  selector: 'doc-sam-pagination-next',
+  selector: 'doc-sam-page',
   templateUrl: './component-example.html',
   providers: [
     {
@@ -21,10 +21,9 @@ import {
     }
   ]
 })
-export class SamPaginationNextComponentExampleComponent implements OnInit {
+export class SamPageComponentExampleComponent implements OnInit {
 
-  public unit = 'Unit';
-  public totalUnits = 100;
+
   constructor(public fb: FormBuilder) { }
 
   ngOnInit() {

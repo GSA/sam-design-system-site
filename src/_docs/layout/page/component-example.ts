@@ -26,6 +26,9 @@ export class SamPageComponentExampleComponent implements OnInit {
 
   constructor(public fb: FormBuilder) { }
 
+  public intro: string = 'intro test';
+
+  public title: string = 'title test';
   ngOnInit() {
 
   }

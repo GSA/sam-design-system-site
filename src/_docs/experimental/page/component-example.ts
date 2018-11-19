@@ -39,7 +39,7 @@ const code_example = `TODO`;
 
     </doc-template>`
 })
-export class SamPageComponentExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamPageSampleComponentExampleComponent extends BaseExampleComponent implements OnInit {
   typedoc_target = 'SamPageComponent';
   typedoc_content = '';
 

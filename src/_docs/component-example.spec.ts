@@ -50,7 +50,7 @@ import { SamInputMaskComponentExampleComponent } from './experimental/input-mask
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
-import { SamPageComponentExampleComponent } from './experimental/page/component-example';
+import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
 import { SamPageTitleExampleComponent } from './experimental/page-title/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
@@ -101,7 +101,7 @@ let components = [
     SamLabelNextComponentExampleComponent,
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
-    SamPageComponentExampleComponent,
+    SamPageSampleComponentExampleComponent,
     SamPageTitleExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,

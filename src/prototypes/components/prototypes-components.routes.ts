@@ -39,6 +39,10 @@ const PageRoutes: Routes = [
       {
         path: 'fh-service',
         component: DocFHServiceDemo
+      },
+      {
+        path: 'hierarchy-picker',
+        loadChildren: `./hierarchy-picker-demo/hierarchy-picker-demo.module#HierarchyPickerDemoModule`
       }
     ]
   }

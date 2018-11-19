@@ -74,6 +74,7 @@ import { NameEntryExampleComponent } from './form-templates/name-entry/component
 import { PhoneEntryExampleComponent } from './form-templates/phone-entry/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './layout/filter-drawer/component-example';
 import { SamFiltersWrapperComponentExampleComponent } from './layout/filters-wrapper/component-example';
+import { SamPaginationNextComponentExampleComponent } from './layout/pagination/component-example';
 import { SamToolbarComponentExampleComponent } from './layout/toolbar/component-example';
 import { FieldsetWrapperExampleComponent } from './wrappers/fieldset-wrapper/component-example';
 import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component-example';
@@ -400,6 +401,12 @@ export const ROUTES: Routes = [
     componentName: 'SamFiltersWrapperComponent',
 			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: SamFiltersWrapperComponentExampleComponent }
+  ]},
+  { path: 'layout/pagination', component: BaseDocPageComponent, data: {
+    path: '_docs/layout/pagination',
+    componentName: 'SamPaginationNextComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamPaginationNextComponentExampleComponent }
   ]},
   { path: 'layout/toolbar', component: BaseDocPageComponent, data: {
     path: '_docs/layout/toolbar',

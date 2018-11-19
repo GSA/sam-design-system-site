@@ -81,6 +81,7 @@ import { NameEntryExampleComponent } from './form-templates/name-entry/component
 import { PhoneEntryExampleComponent } from './form-templates/phone-entry/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './layout/filter-drawer/component-example';
 import { SamFiltersWrapperComponentExampleComponent } from './layout/filters-wrapper/component-example';
+import { SamPaginationNextComponentExampleComponent } from './layout/pagination/component-example';
 import { SamToolbarComponentExampleComponent } from './layout/toolbar/component-example';
 import { FieldsetWrapperExampleComponent } from './wrappers/fieldset-wrapper/component-example';
 import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component-example';
@@ -168,6 +169,7 @@ import { FormlyModule } from '@ngx-formly/core';
     PhoneEntryExampleComponent,
     SamFilterDrawerComponentExampleComponent,
     SamFiltersWrapperComponentExampleComponent,
+    SamPaginationNextComponentExampleComponent,
     SamToolbarComponentExampleComponent,
     FieldsetWrapperExampleComponent,
     LabelWrapperExampleComponent,
@@ -247,6 +249,7 @@ import { FormlyModule } from '@ngx-formly/core';
     PhoneEntryExampleComponent,
     SamFilterDrawerComponentExampleComponent,
     SamFiltersWrapperComponentExampleComponent,
+    SamPaginationNextComponentExampleComponent,
     SamToolbarComponentExampleComponent,
     FieldsetWrapperExampleComponent,
     LabelWrapperExampleComponent,

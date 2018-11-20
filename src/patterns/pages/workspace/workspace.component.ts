@@ -39,9 +39,8 @@ export class SamWorkspaceDemoComponent implements OnInit {
   public data: any[];
   public options = [
     { value: 'title', label: 'Title', name: 'title' },
-    { value: 'status', label: 'Status', name: 'status' },
-    { value: 'organizations', label: 'Organizations', name: 'organizations' },
-    { value: 'date', label: 'Created Date', name: 'date' },
+  
+    { value: 'createdDate', label: 'Created Date', name: 'date' },
   ];
   public sortvalue: string;
 

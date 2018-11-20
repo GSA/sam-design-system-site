@@ -13,13 +13,12 @@ export class WorkspaceService {
 
   //Will pass in
   getData(filter: filter) {
-    console.log("FILTER");
-    console.log(filter);
     const data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
     let pageSize = 0;
     if (filter) {
       ob = this.filter(ob, filter);
+      ob = this.sort(ob, filter);
       if (filter.pageSize && filter.pageSize !== 0) {
 
         pageSize = filter.pageSize;
@@ -48,13 +47,12 @@ export class WorkspaceService {
     }
 
     if (filter.dateModel) {
-      console.log("Date model");
-      let filterDate = new Date(filter.dateModel);    
+      let filterDate = new Date(filter.dateModel);
       if (!isNaN(filterDate.getTime())) {
         data = data.map(projects => projects.filter(proj => {
           let tDate = new Date(proj.createdDate);
-            return tDate.getFullYear() + '' + tDate.getMonth() + '' + tDate.getDate() ===
-            filterDate.getFullYear() + '' + filterDate.getMonth() + '' +( filterDate.getDate()+1)
+          return tDate.getFullYear() + '' + tDate.getMonth() + '' + tDate.getDate() ===
+            filterDate.getFullYear() + '' + filterDate.getMonth() + '' + (filterDate.getDate() + 1)
             ;
         }))
       }
@@ -63,10 +61,20 @@ export class WorkspaceService {
     return data;
   }
 
-  sort(data: Opportunity[], filter: filter) {
-
-
+  sort(data: Observable<Opportunity[]>, filter: filter) {
+    if (filter.sortField) {
+      console.log(filter.sortField);
+      data = data.map(items => items.sort(function (a, b) {
+        if (a[filter.sortField] < b[filter.sortField])
+          return -1;
+        if (a[filter.sortField] > b[filter.sortField])
+          return 1;
+        return 0;
+      }))
+    }
+    return data;
   }
+
 }
 
 export class filter {

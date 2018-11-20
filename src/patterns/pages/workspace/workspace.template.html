@@ -22,7 +22,7 @@
                     </ng-template>
                     <div class="tab-content">
                         <sam-action-bar>
-                            <sam-pagination-next id="table-pagination" [totalUnits]="dataSource.length"></sam-pagination-next>
+                            <sam-pagination-next id="table-pagination" [totalUnits]="length"></sam-pagination-next>
                             <sam-select samPageAction [(ngModel)]="sortvalue" name="inputname" [options]="options" label="Sort By"
                               (modelChange)="onSortChange(sortvalue)">
                             </sam-select>

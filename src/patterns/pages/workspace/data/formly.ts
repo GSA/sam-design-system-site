@@ -33,7 +33,7 @@ export const fields: FormlyFieldConfig[] = [
         wrappers: ['filter'],
         templateOptions: {
           name: 'date',
-          label: 'Date',
+          label: 'Created Date',
           id: 'date-modified'
         }
       },

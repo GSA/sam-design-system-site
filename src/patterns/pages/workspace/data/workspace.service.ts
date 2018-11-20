@@ -20,7 +20,7 @@ export class WorkspaceService {
     if (filter) {
       ob = this.filter(ob, filter);
       ob = this.sort(ob, filter);
-
+     
 
       if (filter.page) {
         page = filter.page;
@@ -39,7 +39,7 @@ export class WorkspaceService {
     if (end >= totalItems) {
       end = totalItems - 1;
     }
-    ob = ob.map(items => items.slice(start, end));
+       ob = ob.map(items => items.slice(start, end));
 
     return Observable.of({ "result": ob, "totalItems": totalItems });
   }

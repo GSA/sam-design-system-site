@@ -1,4 +1,4 @@
-/* tslint:disable */ 
+/* tslint:disable */
 import { Injectable } from '@angular/core';
 import { SampleOppData } from './datasource';
 import { Observable } from 'rxjs';
@@ -13,13 +13,22 @@ export class WorkspaceService {
 
   //Will pass in
   getData(filter: filter) {
-
+    console.log("FILTER");
+    console.log(filter);
     const data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
+    let pageSize = 0;
     if (filter) {
       ob = this.filter(ob, filter);
-      const pageSize = 10;
+      if (filter.pageSize && filter.pageSize !== 0) {
+
+        pageSize = filter.pageSize;
+      }
+    } else {
+      pageSize = 10;
+
     }
+    let totalItems = data.length;
     return ob;
   }
 
@@ -30,12 +39,12 @@ export class WorkspaceService {
       data = data.map(projects => projects.filter(proj => proj.data.type === filter.type));
     }
 
-    if (filter.status) {
+    if (filter.status&& filter.status.length>0) {
       data = data.map(projects => projects.filter(proj => filter.status.indexOf(proj.status.code) !== -1));
     }
 
     if (filter.title) {
-      data = data.map(projects => projects.filter(proj => proj.data.title.indexOf(filter.title) !== -1));
+      data = data.map(projects => projects.filter(proj => proj.data.title.toLowerCase().indexOf(filter.title.toLowerCase()) !== -1));
     }
 
     return data;
@@ -53,6 +62,8 @@ export class filter {
   type: string;
   status: string[];
   title: string;
+  pageSize: number;
+  sortField: string;
 }
 
 export interface City {

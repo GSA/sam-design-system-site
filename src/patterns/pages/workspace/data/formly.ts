@@ -43,7 +43,7 @@ export const fields: FormlyFieldConfig[] = [
         wrappers: ['filter'],
         templateOptions: {
           name: 'typeofassistance',
-          label: 'Type of Assistance',
+          label: 'Opportunity Title',
           id: 'type-of-assistance'
         }
       },

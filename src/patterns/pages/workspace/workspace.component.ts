@@ -1,9 +1,4 @@
-import {
-  Component,
-  OnInit,
-  forwardRef,
-  ChangeDetectorRef,
-} from '@angular/core';
+import { Component, OnInit, forwardRef, ChangeDetectorRef, } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
@@ -12,10 +7,7 @@ import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { WorkspaceService, filter } from './data/workspace.service';
 import { FormlyFieldConfig } from '@ngx-formly/core';
-import {
-  fields,
-  model,
-} from './data/formly';
+import { fields, model, } from './data/formly';
 
 import {
   faTable,
@@ -49,7 +41,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
     { value: 'title', label: 'Title', name: 'title' },
     { value: 'status', label: 'Status', name: 'status' },
     { value: 'organizations', label: 'Organizations', name: 'organizations' },
-    { value: 'date', label: 'Date', name: 'date' },
+    { value: 'date', label: 'Created Date', name: 'date' },
   ];
   public sortvalue: string;
 
@@ -92,6 +84,8 @@ export class SamWorkspaceDemoComponent implements OnInit {
   }
 
   onSortChange(sortvalue: string) {
+    this.filter.sortField = sortvalue;
+    this.getData(this.filter);
   }
 
   getData(item: filter): void {
@@ -104,6 +98,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
         this.error = error;
       });
   }
+
   private _filtersToPills(filters): any[] {
     const keys = Object.keys(filters);
 

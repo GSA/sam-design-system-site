@@ -39,7 +39,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
   public data: any[];
   public options = [
     { value: 'title', label: 'Title', name: 'title' },
-  
+
     { value: 'createdDate', label: 'Created Date', name: 'date' },
   ];
   public sortvalue: string;
@@ -90,8 +90,13 @@ export class SamWorkspaceDemoComponent implements OnInit {
   getData(item: filter): void {
     this.wsService.getData(item).subscribe(
       (data) => {
-        this.length = data.length;
-        this.dataSource = data;
+        this.length = data.totalItems;
+        data.result.subscribe(
+          (data2) => {
+
+            this.dataSource = data2
+          }
+        );
       },
       (error) => {
         this.error = error;

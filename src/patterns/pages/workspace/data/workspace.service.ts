@@ -12,24 +12,36 @@ export class WorkspaceService {
   constructor() { }
 
   //Will pass in
-  getData(filter: filter) {
-    console.log(filter);
+  getData(filter: filter): Observable<results> {
     const data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
-    let pageSize = 0;
+    let pageSize = 10;
+    let page = 0;
     if (filter) {
       ob = this.filter(ob, filter);
       ob = this.sort(ob, filter);
-      if (filter.pageSize && filter.pageSize !== 0) {
 
-        pageSize = filter.pageSize;
+
+      if (filter.page) {
+        page = filter.page;
       }
     } else {
       pageSize = 10;
 
     }
     let totalItems = data.length;
-    return ob;
+    let start = page * pageSize;
+    let end = (page * pageSize) + pageSize;
+    if (start >= totalItems) {
+      start = totalItems - 1;
+    }
+
+    if (end >= totalItems) {
+      end = totalItems - 1;
+    }
+    ob = ob.map(items => items.slice(start, end));
+
+    return Observable.of({ "result": ob, "totalItems": totalItems });
   }
 
 
@@ -76,6 +88,13 @@ export class WorkspaceService {
   }
 
 }
+
+
+export class results {
+  result: Observable<Opportunity[]>;
+  totalItems: number;
+}
+
 
 export class filter {
   //zero based

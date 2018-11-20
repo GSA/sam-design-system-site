@@ -13,6 +13,7 @@ export class WorkspaceService {
 
   //Will pass in
   getData(filter: filter) {
+    console.log(filter);
     const data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
     let pageSize = 0;
@@ -61,9 +62,8 @@ export class WorkspaceService {
     return data;
   }
 
-  sort(data: Observable<Opportunity[]>, filter: filter) {
+  private sort(data: Observable<Opportunity[]>, filter: filter) {
     if (filter.sortField) {
-      console.log(filter.sortField);
       data = data.map(items => items.sort(function (a, b) {
         if (a[filter.sortField] < b[filter.sortField])
           return -1;

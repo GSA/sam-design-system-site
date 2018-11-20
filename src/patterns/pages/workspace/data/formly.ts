@@ -1,13 +1,13 @@
 import { FormlyFieldConfig } from '@ngx-formly/core';
 export const fields: FormlyFieldConfig[] = [
   {
-    key: 'type',
+    key: 'title',
     type: 'text',
     wrappers: ['filter'],
     templateOptions: {
-      label: 'Federal Organizations',
-      id: 'federalOrganizations',
-      name: 'federalOrganizations'
+      name: 'typeofassistance',
+      label: 'Opportunity Title',
+      id: 'type-of-assistance'
     }
   },
   {
@@ -37,16 +37,7 @@ export const fields: FormlyFieldConfig[] = [
       id: 'date-modified'
     }
   },
-  {
-    key: 'title',
-    type: 'text',
-    wrappers: ['filter'],
-    templateOptions: {
-      name: 'typeofassistance',
-      label: 'Opportunity Title',
-      id: 'type-of-assistance'
-    }
-  },
+
 ];
 
 export const model = {

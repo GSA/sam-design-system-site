@@ -1,4 +1,4 @@
-/* tslint:disable */ 
+/* tslint:disable */
 export let SampleOppData = [
   {
     'data': {
@@ -837,7 +837,8 @@ export let SampleOppData = [
     'createdBy': 'b4e44c1b5aca24a4eca51b073c0d38e2',
 
     'id': '75ccade486e435999e0f0baf3b7b930f'
-  }, {
+  },
+  {
     'data': {
       'type': 'a',
       'award': {
@@ -1997,7 +1998,7 @@ export let SampleOppData = [
         'awardee': {
           'location': {}
         },
-                'deliveryOrderNumber': 'donumber',
+        'deliveryOrderNumber': 'donumber',
         'justificationAuthority': {
           'authority': 'far1',
           'modificationNumber': 'modnumber'
@@ -2334,7 +2335,7 @@ export let SampleOppData = [
         'awardee': {
           'location': {}
         },
-     
+
         'justificationAuthority': {}
       },
       'naics': [],
@@ -2827,5 +2828,4 @@ export let SampleOppData = [
 
     'id': '97e482ec17044583a6e44b9f25ba00c1'
   }
-
 ]

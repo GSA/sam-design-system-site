@@ -39,12 +39,25 @@ export class WorkspaceService {
       data = data.map(projects => projects.filter(proj => proj.data.type === filter.type));
     }
 
-    if (filter.status&& filter.status.length>0) {
+    if (filter.status && filter.status.length > 0) {
       data = data.map(projects => projects.filter(proj => filter.status.indexOf(proj.status.code) !== -1));
     }
 
     if (filter.title) {
       data = data.map(projects => projects.filter(proj => proj.data.title.toLowerCase().indexOf(filter.title.toLowerCase()) !== -1));
+    }
+
+    if (filter.dateModel) {
+      console.log("Date model");
+      let filterDate = new Date(filter.dateModel);    
+      if (!isNaN(filterDate.getTime())) {
+        data = data.map(projects => projects.filter(proj => {
+          let tDate = new Date(proj.createdDate);
+            return tDate.getFullYear() + '' + tDate.getMonth() + '' + tDate.getDate() ===
+            filterDate.getFullYear() + '' + filterDate.getMonth() + '' +( filterDate.getDate()+1)
+            ;
+        }))
+      }
     }
 
     return data;
@@ -62,6 +75,7 @@ export class filter {
   type: string;
   status: string[];
   title: string;
+  dateModel: string;
   pageSize: number;
   sortField: string;
 }

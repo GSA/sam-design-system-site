@@ -58,8 +58,6 @@ export class SamWorkspaceDemoComponent implements OnInit {
     private cdr: ChangeDetectorRef,
     private _service: SamPageNextService) {
     this.form = this._fb.group({
-      fhInputText: [''],
-      dateModel: []
     });
   }
 
@@ -86,8 +84,8 @@ export class SamWorkspaceDemoComponent implements OnInit {
 
     this.form.valueChanges.subscribe(
       res => {
-        this.getData(res);
         this._service.get('filters').patchValue(res);
+        this.getData(res);
       }
     );
 

@@ -1,6 +1,6 @@
-import { Component, OnInit, forwardRef, ChangeDetectorRef, } from '@angular/core';
+import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild,  ViewChild} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
+import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
 import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { WorkspaceService, filter } from './data/workspace.service';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { fields, model, } from './data/formly';
+
 
 import {
   faTable,
@@ -44,12 +45,37 @@ export class SamWorkspaceDemoComponent implements OnInit {
   ];
   public sortvalue: string;
 
+  @ViewChild(SamPaginationNextComponent)
+  public pagination: SamPaginationNextComponent;
+
   constructor(private _fb: FormBuilder,
     private wsService: WorkspaceService,
     private cdr: ChangeDetectorRef,
     private _service: SamPageNextService) {
     this.form = this._fb.group({
     });
+  }
+
+  public ngAfterContentInit() {
+    this.pagination.pageChange.subscribe(
+      evt => this._onPageChange(evt)
+    );
+
+
+  }
+
+
+  private _onPageChange(event) {
+
+    const pg = {
+      pageSize: this.pagination.pageSize,
+      currentPage: this.pagination.currentPage,
+      totalPages: this.pagination.totalPages,
+      totalUnits: this.pagination.totalUnits
+    };
+    this.filter.page = pg.currentPage
+    this.getData(this.filter);
+
   }
 
   public ngOnInit() {

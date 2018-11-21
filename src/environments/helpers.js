@@ -59,6 +59,9 @@ const doc2Components = [
 	'SamResourcesWrapperComponentExampleComponent',
 	'SamFiltersWrapperComponentExampleComponent',
 	'SamToolbarComponentExampleComponent',
+	'SamPaginationNextComponentExampleComponent',
+	'SamPageComponentExampleComponent'
+
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

@@ -20556,7 +20556,7 @@ export let SampleData = [
     {
       'Agency': 'Department Of Homeland Security',
       'CFDA Number': 97.049,
-      'Title': 'Presidential Declared Disaster Assistance - Disaster Housing Operations for Individuals and Households',
+      'Title': 'Presidential Declared Disaster Assistance - Housing Operations for Individuals',
       'Current Status': 'Published',
       'Last Updated Date': 'Oct 23, 2008',
       'Obligations Updated': 'No',
@@ -20710,7 +20710,7 @@ export let SampleData = [
     {
       'Agency': 'Department Of Homeland Security',
       'CFDA Number': 97.066,
-      'Title': 'Homeland Security Information Technology Research, Testing, Evaluation and Demonstration Program',
+      'Title': 'Homeland Security Information Demonstration Program',
       'Current Status': 'Published',
       'Last Updated Date': 'Jan 22, 2009',
       'Obligations Updated': 'No',
@@ -20831,7 +20831,7 @@ export let SampleData = [
     {
       'Agency': 'Department Of Homeland Security',
       'CFDA Number': 97.077,
-      'Title': 'Homeland Security Research Testing, Evaluation, and Demonstration of Technologies Related to Nuclear Detection',
+      'Title': 'Homeland Security Testing, Evaluation, and Demonstration of Technologies',
       'Current Status': 'Published',
       'Last Updated Date': 'Jan 21, 2011',
       'Obligations Updated': 'No',
@@ -21106,8 +21106,7 @@ export let SampleData = [
     {
       'Agency': 'Department Of Homeland Security',
       'CFDA Number': 97.104,
-      'Title': 'Homeland Security-related Science, Technology, Engineering and \
-      Mathematics (HS STEM) Career Development Program',
+      'Title': 'Homeland Security Science, Technology, Engineering and Mathematics Career Development',
       'Current Status': 'Published',
       'Last Updated Date': 'Oct 09, 2008',
       'Obligations Updated': 'No',
@@ -21251,7 +21250,7 @@ export let SampleData = [
     {
       'Agency': 'Department Of Homeland Security',
       'CFDA Number': 97.117,
-      'Title': 'TSA Airport Checked Baggage Inspection System Program � (ARRA)',
+      'Title': 'TSA Airport Checked Baggage Inspection System Program (ARRA)',
       'Current Status': 'Published',
       'Last Updated Date': 'Dec 03, 2010',
       'Obligations Updated': 'No',

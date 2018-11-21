@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { Component, OnInit } from '@angular/core';
 import { FHServiceMock } from './fh.service.mock';
 import { Subscription, Subject, Observable } from 'rxjs';

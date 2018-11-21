@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { Injectable } from '@angular/core';
 import { SampleOppData } from './datasource';
 import { Observable } from 'rxjs';
@@ -10,16 +11,37 @@ export class WorkspaceService {
 
   constructor() { }
 
-  //Will pass in 
-  getData(filter: filter) {
-
-    let data = <Opportunity[]>SampleOppData;
+  //Will pass in
+  getData(filter: filter): Observable<results> {
+    const data = <Opportunity[]>SampleOppData;
     let ob = Observable.of(data);
+    let pageSize = 10;
+    let page = 0;
     if (filter) {
       ob = this.filter(ob, filter);
-      let pageSize = 10;
+      ob = this.sort(ob, filter);
+     
+
+      if (filter.page) {
+        page = filter.page;
+      }
+    } else {
+      pageSize = 10;
+
     }
-    return ob;
+    let totalItems = data.length;
+    let start = page * pageSize;
+    let end = (page * pageSize) + pageSize;
+    if (start >= totalItems) {
+      start = totalItems - 1;
+    }
+
+    if (end >= totalItems) {
+      end = totalItems - 1;
+    }
+       ob = ob.map(items => items.slice(start, end));
+
+    return Observable.of({ "result": ob, "totalItems": totalItems });
   }
 
 
@@ -29,22 +51,50 @@ export class WorkspaceService {
       data = data.map(projects => projects.filter(proj => proj.data.type === filter.type));
     }
 
-    if (filter.status) {
+    if (filter.status && filter.status.length > 0) {
       data = data.map(projects => projects.filter(proj => filter.status.indexOf(proj.status.code) !== -1));
     }
 
     if (filter.title) {
-      data = data.map(projects => projects.filter(proj => proj.data.title.indexOf(filter.title) !== -1));
+      data = data.map(projects => projects.filter(proj => proj.data.title.toLowerCase().indexOf(filter.title.toLowerCase()) !== -1));
+    }
+
+    if (filter.dateModel) {
+      let filterDate = new Date(filter.dateModel);
+      if (!isNaN(filterDate.getTime())) {
+        data = data.map(projects => projects.filter(proj => {
+          let tDate = new Date(proj.createdDate);
+          return tDate.getFullYear() + '' + tDate.getMonth() + '' + tDate.getDate() ===
+            filterDate.getFullYear() + '' + filterDate.getMonth() + '' + (filterDate.getDate() + 1)
+            ;
+        }))
+      }
     }
 
     return data;
   }
 
-  sort(data: Opportunity[], filter: filter) {
-
-
+  private sort(data: Observable<Opportunity[]>, filter: filter) {
+    if (filter.sortField) {
+      data = data.map(items => items.sort(function (a, b) {
+        if (a[filter.sortField] < b[filter.sortField])
+          return -1;
+        if (a[filter.sortField] > b[filter.sortField])
+          return 1;
+        return 0;
+      }))
+    }
+    return data;
   }
+
 }
+
+
+export class results {
+  result: Observable<Opportunity[]>;
+  totalItems: number;
+}
+
 
 export class filter {
   //zero based
@@ -52,6 +102,9 @@ export class filter {
   type: string;
   status: string[];
   title: string;
+  dateModel: string;
+  pageSize: number;
+  sortField: string;
 }
 
 export interface City {

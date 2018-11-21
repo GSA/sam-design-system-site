@@ -221,7 +221,7 @@ export class SearchPageComponent
   constructor (public http: Http) {}
 
   public ngOnInit () {
-    
+
     this.http.get('/assets/helpText.txt')
       .map(
         (response: any) => {

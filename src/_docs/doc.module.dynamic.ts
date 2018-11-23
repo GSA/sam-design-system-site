@@ -52,6 +52,7 @@ import { SamHeadingComponentExampleComponent } from './experimental/heading/comp
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
+import { SamLayoutContentComponentExampleComponent } from './experimental/layout/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
@@ -79,7 +80,11 @@ import { SamUploadComponentExampleComponent } from './form-controls/upload/compo
 import { PhoneGroupExampleComponent } from './form-templates/international-phone/component-example';
 import { NameEntryExampleComponent } from './form-templates/name-entry/component-example';
 import { PhoneEntryExampleComponent } from './form-templates/phone-entry/component-example';
+import { ChipHostDirectiveExampleComponent } from './layout/filter-drawer/chip-host/component-example';
 import { SamFilterDrawerComponentExampleComponent } from './layout/filter-drawer/component-example';
+import { DynamicChipsDirectiveExampleComponent } from './layout/filter-drawer/dynamic-chips/component-example';
+import { SamFilterDrawerChipExampleComponent } from './layout/filter-drawer/filter-drawer-chip/component-example';
+import { SamFilterDrawerItemComponentExampleComponent } from './layout/filter-drawer/filter-drawer-item/component-example';
 import { SamFiltersWrapperComponentExampleComponent } from './layout/filters-wrapper/component-example';
 import { SamPageComponentExampleComponent } from './layout/page/component-example';
 import { SamPaginationNextComponentExampleComponent } from './layout/pagination/component-example';
@@ -141,6 +146,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,
+    SamLayoutContentComponentExampleComponent,
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageSampleComponentExampleComponent,
@@ -168,7 +174,11 @@ import { FormlyModule } from '@ngx-formly/core';
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
+    ChipHostDirectiveExampleComponent,
     SamFilterDrawerComponentExampleComponent,
+    DynamicChipsDirectiveExampleComponent,
+    SamFilterDrawerChipExampleComponent,
+    SamFilterDrawerItemComponentExampleComponent,
     SamFiltersWrapperComponentExampleComponent,
     SamPageComponentExampleComponent,
     SamPaginationNextComponentExampleComponent,
@@ -222,6 +232,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,
+    SamLayoutContentComponentExampleComponent,
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageSampleComponentExampleComponent,
@@ -249,7 +260,11 @@ import { FormlyModule } from '@ngx-formly/core';
     PhoneGroupExampleComponent,
     NameEntryExampleComponent,
     PhoneEntryExampleComponent,
+    ChipHostDirectiveExampleComponent,
     SamFilterDrawerComponentExampleComponent,
+    DynamicChipsDirectiveExampleComponent,
+    SamFilterDrawerChipExampleComponent,
+    SamFilterDrawerItemComponentExampleComponent,
     SamFiltersWrapperComponentExampleComponent,
     SamPageComponentExampleComponent,
     SamPaginationNextComponentExampleComponent,

@@ -2,6 +2,9 @@ const fs = require('fs');
 const path = require('path');
 //const root = require('../src/app/environment/helpers').root();
 const rxjs = require('rxjs');
+const operators = require('rxjs/operators');
+const flatMap = operators.flatMap;
+const merge = operators.merge;
 const Observable = rxjs.Observable;
 
 const stream = require('stream');
@@ -103,22 +106,24 @@ function generateObs(dir) {
         observer.next(newPath);
       });
     });
-  })
-  .flatMap((file) => {
-    let stat = fs.statSync(file);
-    if (stat && stat.isDirectory()) {
-      return generateObs(file);
-    } else {
-        return Observable.create((observer) => {
-          const writeStream = new ObservableStream(observer, file);
-          const readStream = fs.createReadStream(file);
-
-          readStream.on('open', () => {
-            readStream.pipe(writeStream, 'utf-8', (err, data) => {});
+  }).pipe(
+    flatMap((file) => {
+      let stat = fs.statSync(file);
+      if (stat && stat.isDirectory()) {
+        return generateObs(file);
+      } else {
+          return Observable.create((observer) => {
+            const writeStream = new ObservableStream(observer, file);
+            const readStream = fs.createReadStream(file);
+  
+            readStream.on('open', () => {
+              readStream.pipe(writeStream, 'utf-8', (err, data) => {});
+            });
           });
-        });
-    }
-  })
+      }
+    })
+  );
+
 }
 
 let dirStream = 
@@ -128,7 +133,9 @@ let docStream =
   generateObs(docsDir)
 
 dirStream
-  .merge(docStream)
+  .pipe(
+    merge(docStream)
+  )
   .subscribe(
     (fileObj) => {
       if (!fileObj) return;
@@ -161,7 +168,7 @@ dirStream
         // Create component file
         createFile(componentFileName, generateComponentStub(fileObj), (err) => console.error(err));
         // Create component template file
-        // createFile(componentTemplateFileName, '', (err) => console.error(err));
+        createFile(componentTemplateFileName, '', (err) => console.error(err));
       });
     },
     err => console.error(err)
@@ -218,7 +225,7 @@ import {
 
 @Component({
   selector: 'doc-${selector}',
-  templateUrl: './component-example.html'
+  templateUrl: 'component-example.html'
 })
 export class ${component}ExampleComponent {
   

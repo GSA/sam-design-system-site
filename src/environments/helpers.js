@@ -61,7 +61,6 @@ const doc2Components = [
 	'SamToolbarComponentExampleComponent',
 	'SamPaginationNextComponentExampleComponent',
 	'SamPageComponentExampleComponent'
-
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

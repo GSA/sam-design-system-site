@@ -73,8 +73,8 @@ export class SamWorkspaceDemoComponent implements OnInit {
       totalPages: this.pagination.totalPages,
       totalUnits: this.pagination.totalUnits
     };
-   
-    this.filter.page = pg.currentPage-1;
+
+    this.filter.page = pg.currentPage - 1;
     this.getData(this.filter);
 
   }
@@ -121,7 +121,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
         data.result.subscribe(
           (data2) => {
 
-            this.dataSource = data2
+            this.dataSource = data2;
           }
         );
       },

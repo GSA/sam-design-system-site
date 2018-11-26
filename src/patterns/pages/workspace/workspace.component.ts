@@ -1,4 +1,4 @@
-import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild,  ViewChild} from '@angular/core';
+import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild,  ViewChild,AfterContentInit} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';

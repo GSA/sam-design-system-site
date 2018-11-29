@@ -11,6 +11,6 @@ import { HierarchicalDataService } from '../../services/hierarchical.service';
 export class SamHierarchicalAutocompleteComponentExampleComponent {
 
   constructor(public service: HierarchicalDataService) { 
-   
+
   }
 }

@@ -1,5 +1,4 @@
 /* tslint:disable */
-import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SamHiercarchicalServiceInterface } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-interface';
@@ -11,29 +10,29 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
 
 
     getDataByText(searchValue?: string): Observable<object[]> {
-        let data = Observable.of(SampleHierarchicalData);
+        let data = Observable.of(SampleHierarchicalData.slice());
+
         if (searchValue) {
-            data = data.map(items => items.filter(itm =>
+            console.log("searchValue: " + searchValue)
+            return data.map(items => items.filter(itm =>
                 (itm.name.indexOf(searchValue) !== -1 ||
                     itm.subtext.indexOf(searchValue) !== -1
-                )))
+                )));
+        } else {
+            return data;
         }
-        return data;
     }
 
 
     getHiercarchicalById(id?: string): Observable<object[]> {
-        let data = Observable.of(SampleHierarchicalData);
-        if (id) {
+        let data = Observable.of(SampleHierarchicalData.slice());
+
+        console.log("id: " + id)
 
 
-            data = data.map(items => items.filter(itm => itm.parentId === id))
-        }
-        return data;
+
+        return data.map(items => items.filter(itm => itm.parentId === id));
     }
 
-    getTest() {
-        return 'Test';
-    }
 
 }

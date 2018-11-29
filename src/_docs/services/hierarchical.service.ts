@@ -10,10 +10,8 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
 
 
     getDataByText(searchValue?: string): Observable<object[]> {
-        let data = Observable.of(SampleHierarchicalData.slice());
-
+        let data = Observable.of(SampleHierarchicalData);
         if (searchValue) {
-            console.log("searchValue: " + searchValue)
             return data.map(items => items.filter(itm =>
                 (itm.name.indexOf(searchValue) !== -1 ||
                     itm.subtext.indexOf(searchValue) !== -1
@@ -25,12 +23,7 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
 
 
     getHiercarchicalById(id?: string): Observable<object[]> {
-        let data = Observable.of(SampleHierarchicalData.slice());
-
-        console.log("id: " + id)
-
-
-
+        let data = Observable.of(SampleHierarchicalData);
         return data.map(items => items.filter(itm => itm.parentId === id));
     }
 

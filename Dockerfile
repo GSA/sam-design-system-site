@@ -1,4 +1,4 @@
-FROM dtr-1.prod-iae.bsp.gsa.gov/docker-datacenter/node-nginx:10-alpine-20181010
+FROM dtr-1.prod-iae.bsp.gsa.gov/docker-datacenter/node-nginx:10.11.0-alpine-20181128
 ARG GIT_SHA
 ENV GIT_SHA $GIT_SHA
 

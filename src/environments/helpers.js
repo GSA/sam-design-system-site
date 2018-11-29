@@ -60,7 +60,8 @@ const doc2Components = [
 	'SamFiltersWrapperComponentExampleComponent',
 	'SamToolbarComponentExampleComponent',
 	'SamPaginationNextComponentExampleComponent',
-	'SamPageComponentExampleComponent'
+	'SamPageComponentExampleComponent',
+	'SamHierarchicalAutocompleteComponentExampleComponent'
 
 ];
 
@@ -230,6 +231,7 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
 import { CdkTableModule } from '@angular/cdk';
 import { FormlyModule } from '@ngx-formly/core';
+import { HierarchicalDataService } from './services/hierarchical.service';
 
 /**
  * \AppModule\` is the main entry point into Angular2's bootstraping process
@@ -248,7 +250,8 @@ import { FormlyModule } from '@ngx-formly/core';
 		SiteComponentsModule,
 		CdkTableModule
   ],
-  exports: [BaseExampleComponent]
+  exports: [BaseExampleComponent], 
+  providers: [HierarchicalDataService]
 })
 export class DocModule { }\n`
 }

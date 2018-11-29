@@ -79,3 +79,7 @@ package-lock.json
 /src/environments/environment.prod.ts
 /src/assets/markdown
 /src/assets/_docs
+
+# Sonarqube
+.scannerwork/
+.sonar-project.properties

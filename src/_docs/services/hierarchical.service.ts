@@ -11,6 +11,7 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
 
     getDataByText(searchValue?: string): Observable<object[]> {
         let data = Observable.of(SampleHierarchicalData);
+
         if (searchValue) {
             return data.map(items => items.filter(itm =>
                 (itm.name.indexOf(searchValue) !== -1 ||

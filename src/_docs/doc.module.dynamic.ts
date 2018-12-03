@@ -49,6 +49,7 @@ import { SamContainerComponentExampleComponent } from './experimental/container/
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
+import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental/hierarchical-tree-grid/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
@@ -138,6 +139,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalTreeGridComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,
@@ -219,6 +221,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalTreeGridComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,

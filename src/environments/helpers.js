@@ -60,7 +60,8 @@ const doc2Components = [
 	'SamFiltersWrapperComponentExampleComponent',
 	'SamToolbarComponentExampleComponent',
 	'SamPaginationNextComponentExampleComponent',
-	'SamPageComponentExampleComponent'
+	'SamPageComponentExampleComponent',
+	'SamHierarchicalTreeGridComponentExampleComponent'
 
 ];
 

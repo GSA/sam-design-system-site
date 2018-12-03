@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SamHiercarchicalServiceInterface } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-interface';
+
 import { SampleHierarchicalData } from './hierarchical.data';
 import 'rxjs/add/observable/of';
 

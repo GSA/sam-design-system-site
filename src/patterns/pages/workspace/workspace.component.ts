@@ -1,4 +1,4 @@
-import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild,  ViewChild} from '@angular/core';
+import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild, ViewChild, AfterContentInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
@@ -23,7 +23,7 @@ import {
     forwardRef(() => SamPageNextService)
   ]
 })
-export class SamWorkspaceDemoComponent implements OnInit {
+export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   public form: FormGroup;
   public model = model;
   public filters: Observable<any>;
@@ -73,8 +73,8 @@ export class SamWorkspaceDemoComponent implements OnInit {
       totalPages: this.pagination.totalPages,
       totalUnits: this.pagination.totalUnits
     };
-   
-    this.filter.page = pg.currentPage-1;
+
+    this.filter.page = pg.currentPage - 1;
     this.getData(this.filter);
 
   }
@@ -121,7 +121,7 @@ export class SamWorkspaceDemoComponent implements OnInit {
         data.result.subscribe(
           (data2) => {
 
-            this.dataSource = data2
+            this.dataSource = data2;
           }
         );
       },

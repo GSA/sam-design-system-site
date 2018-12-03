@@ -1,7 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
-import { HierarchicalTreeSelectedItemModel,TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
+import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
 import { SamHierarchicalAutocompleteSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/autocomplete/autocomplete.component';
 
 
@@ -25,11 +25,11 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
   ngOnInit() {
     this.settings.keyField = "id";
     // this.settings.erorMessage
-    //this.settings.id
-    //this.settings.labelShowFullHint
-    //this.settings.labelText
-    //this.settings.labelhint
-    //this.settings.required
+    // this.settings.id
+    // this.settings.labelShowFullHint
+    // this.settings.labelText
+    // this.settings.labelhint
+    // this.settings.required
     this.model.treeMode = TreeMode.SINGLE;
   }
 }

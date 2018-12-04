@@ -49,6 +49,7 @@ import { SamContainerComponentExampleComponent } from './experimental/container/
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
+import { SamHierarchicalAutocompleteComponentExampleComponent } from './experimental/hierarchical-autocomplete/component-example';
 import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental/hierarchical-tree-grid/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -97,6 +98,7 @@ import { InterfacesComponent } from './data-structures/interfaces/interfaces.com
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
 import { CdkTableModule } from '@angular/cdk';
 import { FormlyModule } from '@ngx-formly/core';
+import { HierarchicalDataService } from './services/hierarchical.service';
 
 /**
  * AppModule` is the main entry point into Angular2's bootstraping process
@@ -139,6 +141,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalAutocompleteComponentExampleComponent,
     SamHierarchicalTreeGridComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -221,6 +224,7 @@ import { FormlyModule } from '@ngx-formly/core';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalAutocompleteComponentExampleComponent,
     SamHierarchicalTreeGridComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -277,6 +281,7 @@ import { FormlyModule } from '@ngx-formly/core';
 		SiteComponentsModule,
 		CdkTableModule
   ],
-  exports: [BaseExampleComponent]
+  exports: [BaseExampleComponent], 
+  providers: [HierarchicalDataService]
 })
 export class DocModule { }

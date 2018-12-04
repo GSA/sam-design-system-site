@@ -16,6 +16,8 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
   public model = new HierarchicalTreeSelectedItemModel();
   public settings = new SamHierarchicalAutocompleteSettings();
 
+  public model2 = new HierarchicalTreeSelectedItemModel();
+  public settings2 = new SamHierarchicalAutocompleteSettings();
 
   constructor(public service: HierarchicalDataService) {
 
@@ -25,11 +27,20 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
   ngOnInit() {
     this.settings.keyField = "id";
     // this.settings.erorMessage
-    // this.settings.id
+    this.settings.id = "autocomplete1";
     // this.settings.labelShowFullHint
-    // this.settings.labelText
+    this.settings.labelText = "Autocomplete 1;"
     // this.settings.labelhint
     // this.settings.required
     this.model.treeMode = TreeMode.SINGLE;
+
+    this.settings2.keyField = "id";
+    // this.settings2.erorMessage
+    this.settings2.id = "autocomplete2"
+    // this.setting2s.labelShowFullHint
+    this.settings2.labelText = "Autocomplete 2";
+    // this.settings2.labelhint
+    // this.settings2.required
+    this.model2.treeMode = TreeMode.SINGLE;
   }
 }

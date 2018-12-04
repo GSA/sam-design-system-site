@@ -11,6 +11,7 @@ import { PageBComponent } from './page-b/page.component';
 import { LayoutModule } from './layout';
 import { SearchDemoModule } from './search/search.module';
 import { WorkspaceModule } from './workspace/workspace.module';
+import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { WorkspaceModule } from './workspace/workspace.module';
   declarations: [
     PagesComponent,
     PageAComponent,
-    PageBComponent
+    PageBComponent,
+    SamWorkspaceDashboardComponent
   ]
 })
 export class PagesModule { }

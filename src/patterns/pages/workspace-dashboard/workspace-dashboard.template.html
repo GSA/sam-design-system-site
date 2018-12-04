@@ -1,0 +1,100 @@
+<!-- Temporary wrapper to create page padding -->
+<!-- Replace with layout -->
+<div style="padding: 20px;">
+  
+  
+  <!-- CONTRACTING -->
+  <h3 class="sam heading">Contracting</h3>
+  <sam-card>
+    <ng-container class="header">
+      <h4 class="sam heading">Opportunities</h4>
+      <button class="sam secondary button">Create Opportunity</button>
+    </ng-container>
+    
+    <div class="sam statistics">
+      <a class="green statistic">
+        <div class="value"><span class="circular">15</span></div>
+        <div class="label">Active</div>
+      </a>
+      <a class="blue statistic">
+        <div class="value"><span class="circular">0</span></div>
+        <div class="label">Draft</div>
+      </a>
+      <a class="red statistic">
+        <div class="value"><span class="circular">1</span></div>
+        <div class="label">Rejected</div>
+      </a>
+      <a class="orange statistic">
+        <div class="value"><span class="circular">2</span></div>
+        <div class="label">Overdue</div>
+      </a>
+    </div>
+  </sam-card>
+  
+  
+  <!-- PENDING REQUEST -->
+  <h3 class="sam heading">Pending Requests</h3>
+  <sam-card link="true">
+    <div class="sam feed">
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            <a class="action">Assign Role</a> to K. Litchfield 
+            <div class="date">Sep 24 8:55 AM</div>
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            <a class="action">Assign Role</a> to M. Sanchez 
+            <div class="date">10:04 AM</div>
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            <a class="action">Delete Opportunity</a> for A. Lewis
+            <div class="date">Monday</div>
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            <a class="action">Assign Role</a> to J. Wong 
+            <div class="date">Nov 12</div>
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="content">
+          <div class="summary">
+            <a class="action">Approve Sub-Award Report</a> for A. Peterson 
+            <div class="date">Nov 9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sam-card>
+  
+  
+  <!-- USER DIRECTORY -->
+  <sam-segment>
+    <h3 class="sam heading">
+      <span class="fa fa-file-o fa-2x icon"></span>
+      User Directory
+    </h3>
+    <label class="sam input label" for="input-type-text">
+      Who are you looking for?
+    </label>
+    <div class="sam search">
+      <input class="sam input" id="input-type-text" name="input-type-text" type="text">
+      <button class="sam tertiary button">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+    </div>
+  </sam-segment>
+  
+</div>

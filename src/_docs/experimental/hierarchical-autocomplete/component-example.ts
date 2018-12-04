@@ -31,7 +31,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     // this.settings.labelShowFullHint
     this.settings.labelText = "Autocomplete 1;"
     // this.settings.labelhint
-    // this.settings.required
+    // this.settings.required = true;
     this.model.treeMode = TreeMode.SINGLE;
 
     this.settings2.keyField = "id";

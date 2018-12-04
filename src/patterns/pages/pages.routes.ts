@@ -8,6 +8,7 @@ import { SamLayoutDemoComponent } from './layout';
 import { SamLayoutNoSidebarDemoComponent } from './layout';
 import { SamSearchDemoComponent } from './search/search.component';
 import { SamWorkspaceDemoComponent } from './workspace/workspace.component';
+import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 
 
 const PageRoutes: Routes = [
@@ -38,6 +39,10 @@ const PageRoutes: Routes = [
       {
         path: 'workspace',
         component: SamWorkspaceDemoComponent
+      },
+      {
+        path: 'workspace-dashboard',
+        component: SamWorkspaceDashboardComponent
       },
     ]
   }

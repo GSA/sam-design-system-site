@@ -12,7 +12,6 @@ import { SamHierarchicalAutocompleteSettings } from '@gsa-sam/sam-ui-elements/sr
 })
 export class SamHierarchicalAutocompleteComponentExampleComponent implements OnInit {
 
-
   public model = new HierarchicalTreeSelectedItemModel();
   public settings = new SamHierarchicalAutocompleteSettings();
 

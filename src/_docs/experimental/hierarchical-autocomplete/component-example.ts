@@ -26,21 +26,21 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
 
   ngOnInit() {
     this.settings.keyField = "id";
-    // this.settings.erorMessage
+    // this.settings.erorMessage = "Error AutoComplete 1";
     this.settings.id = "autocomplete1";
     // this.settings.labelShowFullHint
     this.settings.labelText = "Autocomplete 1;"
-    // this.settings.labelhint
+    // this.settings.labelhint = "Some hint";
     // this.settings.required = true;
     this.model.treeMode = TreeMode.SINGLE;
 
     this.settings2.keyField = "id";
-    // this.settings2.erorMessage
+    // this.settings2.erorMessage = "Error AutoComplete 2";
     this.settings2.id = "autocomplete2"
-    // this.setting2s.labelShowFullHint
+    this.settings2.labelShowFullHint = false;
     this.settings2.labelText = "Autocomplete 2";
-    // this.settings2.labelhint
-    // this.settings2.required
+    this.settings2.labelhint = "Some hint";
+    // this.settings2.required  = true;
     this.model2.treeMode = TreeMode.SINGLE;
   }
 }

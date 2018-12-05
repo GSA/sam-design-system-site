@@ -1,3 +1,11 @@
+
+  <ng-template #temp let-item>
+      <div>
+          <span>Template</span>
+        {{item['name'] +': '+ item['subtext'] }}
+      </div>
+  </ng-template>
+
 <sam-hierarchical-autocomplete [service]="service" [model]="model" [settings]="settings" ></sam-hierarchical-autocomplete>
 
-<sam-hierarchical-autocomplete [service]="service" [model]="model2" [settings]="settings2" ></sam-hierarchical-autocomplete>
+<sam-hierarchical-autocomplete [service]="service" [model]="model2" [settings]="settings2" [itemTemplate]="temp" ></sam-hierarchical-autocomplete>

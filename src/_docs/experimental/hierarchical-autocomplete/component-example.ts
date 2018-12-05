@@ -24,13 +24,13 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
 
 
   ngOnInit() {
-    this.settings.keyField = "id";  
+    this.settings.keyField = "id";
     this.settings.id = "autocomplete1";
     this.settings.labelText = "Autocomplete 1;"
     this.model.treeMode = TreeMode.SINGLE;
 
     this.settings2.keyField = "id";
-    this.settings2.id = "autocomplete2"  
+    this.settings2.id = "autocomplete2"
     this.settings2.labelText = "Autocomplete 2";
     this.model2.treeMode = TreeMode.SINGLE;
   }

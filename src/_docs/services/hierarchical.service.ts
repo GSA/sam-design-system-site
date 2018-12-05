@@ -9,7 +9,6 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class HierarchicalDataService implements SamHiercarchicalServiceInterface {
 
-
     getDataByText(searchValue?: string): Observable<object[]> {
         let data = Observable.of(SampleHierarchicalData);
 
@@ -22,7 +21,6 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
             return data;
         }
     }
-
 
     getHiercarchicalById(id?: string): Observable<object[]> {
         let data = Observable.of(SampleHierarchicalData);

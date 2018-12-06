@@ -3,7 +3,6 @@
 # "@gsa-sam/sam-ui-elements": "0.3.0" to
 # "@gsa-sam/sam-ui-elements": "https://artifactory.helix.gsa.gov/artifactory/api/npm/ART-001-GP-SFE-npm/@gsa-sam/sam-ui-elements/-/@gsa-sam/sam-ui-elements-0.3.0.tgz\""
 
-
 echo "update sam-ui-elements entry for build"
 
 # output to view in build

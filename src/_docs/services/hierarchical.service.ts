@@ -23,35 +23,25 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
         } else {
             itemsOb = data;
         }
-
         let items: object[];
-
-
         itemsOb.subscribe(
             (result) => {
                 items = result;
             }
-
         );
-
-
         let totalItemCount = items.length;
-        
+       
         let maxSectionPosition = currentItems + itemIncrease;
         if(maxSectionPosition>totalItemCount){
             maxSectionPosition= totalItemCount;
         }
-
         let subItemsitems = items.slice(currentItems,maxSectionPosition );
 
         let returnItem = {
             items: subItemsitems,
             totalItems: totalItemCount
         };
-
-
         return Observable.of(returnItem);
-
     }
 
     getHiercarchicalById(id?: string): Observable<object[]> {

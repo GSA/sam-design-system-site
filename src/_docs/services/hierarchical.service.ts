@@ -9,7 +9,7 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class HierarchicalDataService implements SamHiercarchicalServiceInterface {
 
-    getDataByText(searchValue?: string): Observable<SearchByTextResult> {
+    getDataByText(currentItems: number, searchValue?: string): Observable<SearchByTextResult> {
         let itemIncrease = 25;
         // items: object[];
         // totalItems: number;
@@ -25,6 +25,8 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
         }
 
         let items: object[];
+
+
         itemsOb.subscribe(
             (result) => {
                 items = result;
@@ -34,10 +36,16 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
 
 
         let totalItemCount = items.length;
+        
+        let maxSectionPosition = currentItems + itemIncrease;
+        if(maxSectionPosition>totalItemCount){
+            maxSectionPosition= totalItemCount;
+        }
+
+        let subItemsitems = items.slice(currentItems,maxSectionPosition );
 
         let returnItem = {
-
-            items: items,
+            items: subItemsitems,
             totalItems: totalItemCount
         };
 

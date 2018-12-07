@@ -1,4 +1,7 @@
-<sam-hierarchical-tree-grid [service]="service" [templateConfigurations]="configurations">
-    <!-- <div class="gridBody">
-    </div> -->
+
+{{result.name}}
+<sam-hierarchical-tree-grid 
+[templateConfigurations]="configurations" 
+(itemSelected)="onSelectedItem($event)"
+[dataSource]="data">
 </sam-hierarchical-tree-grid>

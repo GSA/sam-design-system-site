@@ -42,6 +42,7 @@ import { SamContainerComponentExampleComponent } from './experimental/container/
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
+import { SamHierarchicalAutocompleteComponentExampleComponent } from './experimental/hierarchical-autocomplete/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
@@ -261,6 +262,12 @@ export const ROUTES: Routes = [
     { path: '', component: SamFiltersComponentExampleComponent }
   ]},
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
+  { path: 'experimental/hierarchical-autocomplete', component: BaseDocPageComponent, data: {
+    path: '_docs\experimental\hierarchical-autocomplete\component-example.ts',
+    componentName: 'SamHierarchicalAutocompleteComponent',
+			sections: ['']}, children: [
+    { path: '', component: SamHierarchicalAutocompleteComponentExampleComponent }
+  ]},
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {
     path: '_docs\experimental\icon\component-example.ts',
     componentName: 'SamIconComponent',

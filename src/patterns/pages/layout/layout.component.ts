@@ -105,18 +105,18 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
     let val = 0;
     setInterval((subject: Subject<number>) => {
       subject.next(val++);
-    }, 250, this.progressLabel);
+    }, 100, this.progressLabel);
 
     let remaining = 100;
     setInterval((subject: Subject<string>) => {
       if (remaining > 0) {
-        const str = remaining-- + ' mins remaining';
+        const str = remaining-- + ' minutes remaining';
         subject.next(str);
       } else {
         this.flag2 = true;
         subject.complete();
       }
-    }, 250, this.valueAsText);
+    }, 100, this.valueAsText);
     // Connect table to data
     this.connect();
 

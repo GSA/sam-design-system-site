@@ -47,7 +47,7 @@
     <sam-alert-next
       type="warning">This report doesn't pull real data</sam-alert-next>
 
-    <sam-main-content>
+    <sam-main-content *ngIf="flag2; else spinner">
 
       <sam-tabs-next dynamicHeight>
 
@@ -68,7 +68,7 @@
             </sam-action-bar>
 
             <!-- Datatable -->
-            <sam-datatable *ngIf="flag2; else spinner" samSort
+            <sam-datatable samSort
               [allowHorizontalScroll]="true"
               [dataSource]="dataSource"
               (samSortChange)="onSortChange($event)">

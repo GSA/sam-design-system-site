@@ -11,8 +11,6 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
 
     getDataByText(currentItems: number, searchValue?: string): Observable<SearchByTextResult> {
         let itemIncrease = 25;
-        // items: object[];
-        // totalItems: number;
         let data = Observable.of(SampleHierarchicalData);
         let itemsOb: Observable<Object[]>;
         if (searchValue) {
@@ -30,12 +28,12 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
             }
         );
         let totalItemCount = items.length;
-       
+
         let maxSectionPosition = currentItems + itemIncrease;
-        if(maxSectionPosition>totalItemCount){
-            maxSectionPosition= totalItemCount;
+        if (maxSectionPosition > totalItemCount) {
+            maxSectionPosition = totalItemCount;
         }
-        let subItemsitems = items.slice(currentItems,maxSectionPosition );
+        let subItemsitems = items.slice(currentItems, maxSectionPosition);
 
         let returnItem = {
             items: subItemsitems,
@@ -48,6 +46,4 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
         let data = Observable.of(SampleHierarchicalData);
         return data.map(items => items.filter(itm => itm.parentId === id));
     }
-
-
 }

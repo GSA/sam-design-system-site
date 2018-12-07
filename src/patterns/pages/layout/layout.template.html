@@ -57,7 +57,6 @@
             <sam-icon [icon]="faTable"></sam-icon> Summary
           </ng-template>
           <div class="tab-content">
-
             <!-- Pagination + Columns button -->
             <sam-action-bar *ngIf="flag2">
               <sam-pagination-next id="table-pagination" [totalUnits]="length"></sam-pagination-next>
@@ -134,7 +133,9 @@
 
 </sam-page-next>
 
-<ng-template #spinner><sam-spinner></sam-spinner></ng-template>
+<ng-template #spinner>
+    <sam-progress label="Loading..." [valueAsText]="valueAsText | async" [value]="progressLabel | async"></sam-progress>
+</ng-template>
 
 <!-- modals -->
 <sam-modal

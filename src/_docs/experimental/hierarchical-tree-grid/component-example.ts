@@ -19,7 +19,7 @@ import 'rxjs/add/operator/map';
 export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit {
   @ViewChild(MdPaginator) _paginator: MdPaginator;
   @ViewChild(SamSortDirective) _sort: SamSortDirective;
-  data: object[];
+  data: any[];
   result: any = {};
 
   constructor(public service: HierarchicalDataService) {
@@ -37,6 +37,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   }
 
   onSelectedItem(item) {
+    this.result = {};
     this.result = item;
   }
 

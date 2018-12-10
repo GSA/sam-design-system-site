@@ -3,12 +3,7 @@ import {
   Component, OnInit, ViewChild
 } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
-import { DataSource } from '@angular/cdk';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs-compat';
 
-import { MdPaginator } from '@angular/material';
-import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 
@@ -17,8 +12,6 @@ import 'rxjs/add/operator/map';
   templateUrl: './component-example.html'
 })
 export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit {
-  @ViewChild(MdPaginator) _paginator: MdPaginator;
-  @ViewChild(SamSortDirective) _sort: SamSortDirective;
   data: any[];
   result: any = {};
 
@@ -37,7 +30,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   }
 
   onSelectedItem(item) {
-    this.result = {};
+   // this.result = {};
     this.result = item;
   }
 

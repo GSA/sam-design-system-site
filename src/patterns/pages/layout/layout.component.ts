@@ -7,7 +7,7 @@ import {
   forwardRef
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Observable, of } from 'rxjs';
+import { Observable, of, Subject } from 'rxjs';
 import 'rxjs/add/observable/merge';
 import { cloneDeep } from 'lodash';
 import { FormlyFieldConfig } from '@ngx-formly/core';
@@ -74,6 +74,8 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public metadataLoaded = false;
   public flag2 = false;
 
+  public progressLabel: Subject<number> = new Subject();
+
   @ViewChild(SamSortDirective)
     public _sort: SamSortDirective;
 
@@ -89,6 +91,8 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
       { key: 'five', value: 'five' },
     ];
 
+    public valueAsText = new Subject<string>();
+
   constructor (
     private _fb: FormBuilder,
     private _service: SamPageNextService,
@@ -98,6 +102,21 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   }
 
   public ngOnInit() {
+    let val = 0;
+    setInterval((subject: Subject<number>) => {
+      subject.next(val++);
+    }, 100, this.progressLabel);
+
+    let remaining = 100;
+    setInterval((subject: Subject<string>) => {
+      if (remaining > 0) {
+        const str = remaining-- + ' minutes remaining';
+        subject.next(str);
+      } else {
+        this.flag2 = true;
+        subject.complete();
+      }
+    }, 100, this.valueAsText);
     // Connect table to data
     this.connect();
 
@@ -110,7 +129,6 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
       }
       // simulate data api call
       setTimeout(() => {
-        this.flag2 = true;
         if (!this.cdr['destroyed']) {
           this.cdr.detectChanges();
         }

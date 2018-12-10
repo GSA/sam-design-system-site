@@ -8,6 +8,7 @@ import { SamLayoutDemoComponent } from './layout.component';
 import { SamLayoutNoSidebarDemoComponent } from './layout-nosidebar.component';
 import { FormlyModule } from '@ngx-formly/core';
 import { SamFilterModule } from '@gsa-sam/sam-ui-elements';
+import { SamProgressModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/progress/progress.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { SamFilterModule } from '@gsa-sam/sam-ui-elements';
     ReactiveFormsModule,
     SamUIKitModule,
     FormlyModule,
-    SamFilterModule
+    SamFilterModule,
+    SamProgressModule
   ],
   declarations: [
     SamLayoutDemoComponent,

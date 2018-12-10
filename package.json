@@ -20,7 +20,7 @@
     "update-build-env": "node src/environments/update-build-env.js",
     "init": "npm run compile-markdown && npm run set-env && npm run docs",
     "bundle-analyzer": "webpack-bundle-analyzer dist/stats.json",
-    "federalist": "ng federalist"
+    "federalist": "ng build && cp -r ./dist ./_sites"
   },
   "private": true,
   "dependencies": {

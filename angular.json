@@ -89,6 +89,38 @@
               "**/layout/components/core/**"
             ]
           }
+        },
+        "federalist": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "_sites",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "polyfills": "src/polyfills.ts",
+            "preserveSymlinks": true,
+            "assets": [
+              "src/assets",
+              "src/favicon.ico"
+            ],
+            "styles": [
+              "src/styles/docs.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
         }
       }
     },

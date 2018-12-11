@@ -5,15 +5,24 @@
   </div>
 </ng-template>
 <label for="id">Id:</label>
-<input id="id" type="text">
+<input id="id"  [(ngModel)]="id" type="text">
 
 <label for="name">Name:</label>
-<input id="name" type="text">
+<input id="name"  [(ngModel)]="name" type="text">
 
 <label for="subtext">Subtext:</label>
-<input id="subtext" type="text">
+<input id="subtext"  [(ngModel)]="subtext" type="text">
 <button (click)="addItem()">Add Item</button>
 
+<h2>Single Item Default Template</h2>
 <sam-selected-result [model]="model" [settings]="settings"></sam-selected-result>
 
+<h2>Single Item Custom Template</h2>
 <sam-selected-result [model]="model2" [settings]="settings2"></sam-selected-result>
+
+
+<h2>Multiple Items Default Template</h2>
+<sam-selected-result [model]="model3" [settings]="settings3"></sam-selected-result>
+
+<h2>Multiple Item Custom Template</h2>
+<sam-selected-result [model]="model4" [settings]="settings4"></sam-selected-result>

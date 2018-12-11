@@ -61,7 +61,8 @@ const doc2Components = [
 	'SamToolbarComponentExampleComponent',
 	'SamPaginationNextComponentExampleComponent',
 	'SamPageComponentExampleComponent',
-	'SamHierarchicalAutocompleteComponentExampleComponent'
+	'SamHierarchicalAutocompleteComponentExampleComponent',
+	'SamHierarchicalSelectedResultComponentExampleComponent'
 
 ];
 

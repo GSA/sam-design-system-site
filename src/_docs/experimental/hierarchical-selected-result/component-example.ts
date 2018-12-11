@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 /* tslint:disable */
 import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
-import { SamHierarchicalAutocompleteSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/autocomplete/autocomplete.component';
+import { SelectedResultSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/selected-result/selected-result.component';
 
 
 
@@ -14,10 +14,10 @@ import { SamHierarchicalAutocompleteSettings } from '@gsa-sam/sam-ui-elements/sr
 export class SamHierarchicalSelectedResultComponentExampleComponent implements OnInit {
 
   public model = new HierarchicalTreeSelectedItemModel();
-  public settings = new SamHierarchicalAutocompleteSettings();
+  public settings = new SelectedResultSettings();
 
   public model2 = new HierarchicalTreeSelectedItemModel();
-  public settings2 = new SamHierarchicalAutocompleteSettings();
+  public settings2 = new SelectedResultSettings();
 
   constructor(public service: HierarchicalDataService) {
 
@@ -26,15 +26,35 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
 
   ngOnInit() {
     this.settings.keyField = 'id';
-    this.settings.id = 'autocomplete1';
-    this.settings.labelText = 'Autocomplete 1';
-    this.model.treeMode = TreeMode.SINGLE;
     this.settings.valueProperty = 'name';
     this.settings.subValueProperty = 'subtext';
+    this.model.treeMode = TreeMode.SINGLE;
+
 
     this.settings2.keyField = 'id';
-    this.settings2.id = 'autocomplete2';
-    this.settings2.labelText = 'Autocomplete 2';
-    this.model2.treeMode = TreeMode.SINGLE;
+    this.settings2.valueProperty = 'name';
+    this.settings2.subValueProperty = 'subtext';
+    this.model2.treeMode = TreeMode.MULTIPLE;
+
+    let exampleItem1 = new ExampleItem('1', 'Item 1', 'Sub Item info 1');
+    this.model.addItem(exampleItem1, 'id');
+    this.model2.addItem(exampleItem1, 'id');
   }
+
+  addItem() {
+    console.log('Add item');
+    let id = '3';
+    let name = '3434';
+    let subtext = '3434';
+    let exampleItem = new ExampleItem(id, name, subtext);
+    this.model.addItem(exampleItem, 'id');
+    this.model2.addItem(exampleItem, 'id');
+  }
+
+
+}
+
+class ExampleItem {
+  constructor(public id: string, public name: string, public subtext: string) { }
+
 }

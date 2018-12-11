@@ -1,10 +1,19 @@
+<ng-template #temp let-item>
+  <div>
+    <span>Template</span>
+    {{item['name'] +': '+ item['subtext'] }}
+  </div>
+</ng-template>
+<label for="id">Id:</label>
+<input id="id" type="text">
 
-  <ng-template #temp let-item>
-      <div>
-          <span>Template</span>
-        {{item['name'] +': '+ item['subtext'] }}
-      </div>
-  </ng-template>
+<label for="name">Name:</label>
+<input id="name" type="text">
 
+<label for="subtext">Subtext:</label>
+<input id="subtext" type="text">
+<button (click)="addItem()">Add Item</button>
 
-  <sam-selected-result></sam-selected-result>
+<sam-selected-result [model]="model" [settings]="settings"></sam-selected-result>
+
+<sam-selected-result [model]="model2" [settings]="settings2"></sam-selected-result>

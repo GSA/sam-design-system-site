@@ -17,8 +17,6 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
   name: string='Item 1';
   subtext: string='Sub Item info 1';
 
-
-
   public model = new HierarchicalTreeSelectedItemModel();
   public settings = new SelectedResultSettings();
 

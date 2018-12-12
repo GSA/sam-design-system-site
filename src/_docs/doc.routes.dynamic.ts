@@ -43,6 +43,7 @@ import { SamDollarComponentExampleComponent } from './experimental/dollar/compon
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
 import { SamHierarchicalAutocompleteComponentExampleComponent } from './experimental/hierarchical-autocomplete/component-example';
+import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental/hierarchical-tree-grid/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
@@ -267,6 +268,12 @@ export const ROUTES: Routes = [
     componentName: 'SamHierarchicalAutocompleteComponent',
 			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: SamHierarchicalAutocompleteComponentExampleComponent }
+  ]},
+  { path: 'experimental/hierarchical-tree-grid', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/hierarchical-tree-grid',
+    componentName: 'SamHierarchicalTreeGridComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamHierarchicalTreeGridComponentExampleComponent }
   ]},
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {
     path: '_docs/experimental/icon',

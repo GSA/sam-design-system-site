@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { HierarchicalDataService } from '../../services/hierarchical.service';
+
 /* tslint:disable */
 import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
 import { SelectedResultSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/selected-result/selected-result.component';
@@ -13,9 +13,9 @@ import { SelectedResultSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/expe
 })
 export class SamHierarchicalSelectedResultComponentExampleComponent implements OnInit {
 
-  id: string ='1';
-  name: string='Item 1';
-  subtext: string='Sub Item info 1';
+  id: string = '1';
+  name: string = 'Item 1';
+  subtext: string = 'Sub Item info 1';
 
   public model = new HierarchicalTreeSelectedItemModel();
   public settings = new SelectedResultSettings();
@@ -28,11 +28,6 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
 
   public model4 = new HierarchicalTreeSelectedItemModel();
   public settings4 = new SelectedResultSettings();
-
-  constructor(public service: HierarchicalDataService) {
-
-  }
-
 
   ngOnInit() {
     this.settings.keyField = 'id';
@@ -60,7 +55,7 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
   }
 
   addItem() {
-   
+
     let exampleItem = new ExampleItem(this.id, this.name, this.subtext);
     this.model.addItem(exampleItem, 'id');
     this.model2.addItem(exampleItem, 'id');

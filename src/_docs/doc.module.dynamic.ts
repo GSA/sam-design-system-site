@@ -99,6 +99,7 @@ import { SiteComponentsModule } from '../app/site-components/sitecomponents.modu
 import { CdkTableModule } from '@angular/cdk';
 import { FormlyModule } from '@ngx-formly/core';
 import { HierarchicalDataService } from './services/hierarchical.service';
+import { SamHierarchicalModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical.module';
 
 /**
  * AppModule` is the main entry point into Angular2's bootstraping process
@@ -279,7 +280,8 @@ import { HierarchicalDataService } from './services/hierarchical.service';
 		FormlyModule,
     routing,
 		SiteComponentsModule,
-		CdkTableModule
+    CdkTableModule,SamHierarchicalModule
+    
   ],
   exports: [BaseExampleComponent], 
   providers: [HierarchicalDataService]

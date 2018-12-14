@@ -1,6 +1,10 @@
 {{result.id}}
-<sam-hierarchical-tree-grid 
-[templateConfigurations]="configurations" 
-(itemSelected)="onSelectedItem($event)"
-[dataSource]="data">
+<sam-hierarchical-tree-header [selectConfig]="selectConfig"></sam-hierarchical-tree-header>
+
+<sam-hierarchical-tree-grid [templateConfigurations]="configurations" (itemSelected)="onSelectedItem($event)"
+    [dataSource]="data">
 </sam-hierarchical-tree-grid>
+
+<div *ngFor="let item of options">
+    {{item.value}} - {{item.label}}
+</div>

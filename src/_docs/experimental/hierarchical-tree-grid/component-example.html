@@ -1,5 +1,9 @@
-{{result.id}}
-<sam-hierarchical-tree-header [selectConfig]="selectConfig"></sam-hierarchical-tree-header>
+{{result.id}},
+
+{{selectedAgency}}
+<sam-hierarchical-tree-header [selectConfig]="selectConfig" (selectedAgency)="onAgencySelect($event)"></sam-hierarchical-tree-header>
+
+
 
 <sam-hierarchical-tree-grid [templateConfigurations]="configurations" (itemSelected)="onSelectedItem($event)"
     [dataSource]="data">

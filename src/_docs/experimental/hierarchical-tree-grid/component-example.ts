@@ -1,5 +1,5 @@
 import {
-  Component, OnInit, ViewChild
+  Component, OnInit, ViewChild, AfterViewInit
 } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 import 'rxjs/add/observable/merge';
@@ -9,9 +9,10 @@ import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
   selector: 'doc-sam-tree-grid',
   templateUrl: './component-example.html'
 })
-export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit {
+export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit, AfterViewInit {
   data: any[];
   result: any = {};
+  selectedAgency: number;
   selectConfig = {
     options: []
   };
@@ -20,13 +21,17 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
     this.service.getHiercarchicalById(null).subscribe(
       (res) => {
         this.data = res;
-        this.selectConfig.options = this.getOptionsData(this.data);
       });
   }
+
   configurations: any = {
     displayedColumns: ['id', 'name', 'subtext'],
   };
   public ngOnInit() {
+  }
+
+  public ngAfterViewInit() {
+    this.selectConfig.options = this.getOptionsData(this.data);
   }
   onSelectedItem(item) {
     this.result = item;
@@ -38,11 +43,23 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
         const item = {};
         item['name'] = ele.name;
         item['id'] = ele.id;
-        item['value'] = ele.parentId;
-        item['label'] = ele.parentId;
+        item['value'] = ele.id;
+        item['label'] = ele.subtext;
         temp.push(item);
       }
     });
     return temp;
+  }
+  onAgencySelect(agecySelectedItem) {
+    this.selectedAgency = agecySelectedItem;
+    this.getData('2');
+  }
+  getData(id: string | null): void {
+    this.data = [];
+    this.service.getHiercarchicalById(id).subscribe(
+      (res) => {
+        this.data = res;
+        this.selectConfig.options = this.getOptionsData(this.data);
+      });
   }
 }

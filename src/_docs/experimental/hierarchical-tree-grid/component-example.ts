@@ -5,8 +5,8 @@ import { HierarchicalDataService } from '../../services/hierarchical.service';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
-import { Subscription, Observable, Subject, of, BehaviorSubject } from 'rxjs';
-import { switchMap, map } from 'rxjs/operators';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 @Component({
   selector: 'doc-sam-tree-grid',
   templateUrl: './component-example.html'
@@ -31,8 +31,10 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
       switchMap(agencyId => this.service.getHiercarchicalById(agencyId)),
     );
 
-    this.tableData$.subscribe(
-      data => this.setOptionsData(data)
+    this.selectedAgency$.subscribe(
+      // TODO: Create smart default or handle null value in service or document that null
+      // and undefined must be handled by service
+      id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
     );
   }
 
@@ -50,7 +52,6 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
       return temp;
     } else {
       data.forEach((ele) => {
-        console.log(ele);
         if (ele.id) {
           const item = {};
           item['name'] = ele.name;
@@ -63,22 +64,4 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
       return temp;
     }
   }
-
-  // onAgencySelect(agecySelectedItem) {
-  //   this.selectedAgency = agecySelectedItem;
-
-  //   this.service.getHiercarchicalById(agecySelectedItem).subscribe(
-  //     (res) => {
-  //       this.data = res;
-  //     });
-  // }
-
-  // getData(id: string | null): void {
-  //   this.data = [];
-  //   // this.tableData$.next(id);
-  //   this.service.getHiercarchicalById(id).subscribe(
-  //     (res) => {
-  //       this.data = res;
-  //     });
-  // }
 }

@@ -7,8 +7,6 @@
   (selectedAgency)="selectedAgency$.next($event)">
 </sam-hierarchical-tree-header>
 
-{{ tableData$ | async | json }}
-
 <sam-hierarchical-tree-grid [templateConfigurations]="configurations"
   (itemSelected)="onSelectedItem($event)"
   [dataSource]="tableData$ | async">

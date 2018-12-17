@@ -1,14 +1,15 @@
 {{result.id}},
 
-{{selectedAgency}}
-<sam-hierarchical-tree-header [selectConfig]="selectConfig" (selectedAgency)="onAgencySelect($event)"></sam-hierarchical-tree-header>
+{{ selectedAgency$ | async }}
+<sam-hierarchical-tree-header
+  [options]="options"
+  label="Test"
+  (selectedAgency)="selectedAgency$.next($event)">
+</sam-hierarchical-tree-header>
 
+{{ tableData$ | async | json }}
 
-
-<sam-hierarchical-tree-grid [templateConfigurations]="configurations" (itemSelected)="onSelectedItem($event)"
-    [dataSource]="data">
+<sam-hierarchical-tree-grid [templateConfigurations]="configurations"
+  (itemSelected)="onSelectedItem($event)"
+  [dataSource]="tableData$ | async">
 </sam-hierarchical-tree-grid>
-
-<div *ngFor="let item of options">
-    {{item.value}} - {{item.label}}
-</div>

@@ -41,6 +41,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     this.model.treeMode = TreeMode.SINGLE;
     this.settings.valueProperty = 'name';
     this.settings.subValueProperty = 'subtext';
+    this.settings.placeHolderText = "Fill";
 
     this.settings2.keyField = 'id';
     this.settings2.id = 'autocomplete2';

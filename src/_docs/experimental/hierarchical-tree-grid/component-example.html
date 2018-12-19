@@ -1,10 +1,11 @@
-<sam-hierarchical-tree-header
-  [options]="options"
-  label="Test"
+<sam-hierarchical-tree-header 
+  [options]="options" 
   (selectedAgency)="selectedAgency$.next($event)">
 </sam-hierarchical-tree-header>
 
-<sam-hierarchical-tree-grid [templateConfigurations]="configurations"
-  (itemSelected)="onSelectedItem($event)" (rowChanged) = "agencyRowChange$.next($event)"
-  [dataSource]="tableData$ | async">
+<sam-hierarchical-tree-grid 
+  [templateConfigurations]="configurations" 
+  (rowChanged)="selectedAgency$.next($event)"
+  [dataSource]="tableData$ | async"
+  [filterText]="filterText">
 </sam-hierarchical-tree-grid>

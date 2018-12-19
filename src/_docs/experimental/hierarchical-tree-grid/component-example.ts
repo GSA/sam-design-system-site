@@ -5,23 +5,20 @@ import { HierarchicalDataService } from '../../services/hierarchical.service';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 @Component({
   selector: 'doc-sam-tree-grid',
   templateUrl: './component-example.html'
 })
 export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit {
-  data: any[];
-  result: any = {};
-  selectedAgency: number;
-  options = [];
-
+  public options = [];
+  public filterText: string = '';
   public tableData$: Observable<any>;
   public selectedAgency$ = new BehaviorSubject<any>(null);
-  public agencyRowChange$ = new BehaviorSubject<any>(null);
+  public rowChanged$ = new BehaviorSubject<any>([]);
 
-  constructor(public service: HierarchicalDataService) {}
+  constructor(public service: HierarchicalDataService) { }
 
   configurations: any = {
     displayedColumns: ['id', 'name', 'subtext'],
@@ -39,11 +36,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
     );
   }
 
-  onSelectedItem(item) {
-    this.result = item;
-  }
-
-  setOptionsData (data: any[]): void {
+  setOptionsData(data: any[]): void {
     this.options = this.getOptionsData(data);
   }
 

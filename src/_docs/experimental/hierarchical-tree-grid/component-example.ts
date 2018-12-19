@@ -5,7 +5,7 @@ import { HierarchicalDataService } from '../../services/hierarchical.service';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
 import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
-import { Observable, BehaviorSubject, observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 @Component({
   selector: 'doc-sam-tree-grid',

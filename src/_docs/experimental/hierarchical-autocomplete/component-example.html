@@ -1,11 +1,23 @@
+<ng-template #temp let-item>
+  <span>
+    <span>Template</span>
+    {{item['name'] +': '+ item['subtext'] }}
+  </span>
+</ng-template>
 
-  <ng-template #temp let-item>
-      <div>
-          <span>Template</span>
-        {{item['name'] +': '+ item['subtext'] }}
-      </div>
-  </ng-template>
+<h2>Single Item Default Template</h2>
+<sam-hierarchical-autocomplete [service]="service" [model]="model" [settings]="settings"></sam-hierarchical-autocomplete>
+<sam-selected-result [model]="model" [settings]="resultSettings"></sam-selected-result>
 
-<sam-hierarchical-autocomplete [service]="service" [model]="model" [settings]="settings" ></sam-hierarchical-autocomplete>
+<h2>Single Item Custom Template</h2>
+<sam-hierarchical-autocomplete [service]="service" [model]="model2" [settings]="settings2" [itemTemplate]="temp"></sam-hierarchical-autocomplete>
+<sam-selected-result [model]="model2" [settings]="resultSettings" [itemTemplate]="temp"></sam-selected-result>
 
-<sam-hierarchical-autocomplete [service]="service" [model]="model2" [settings]="settings2" [itemTemplate]="temp" ></sam-hierarchical-autocomplete>
+
+<h2>Multiple Items Default Template</h2>
+<sam-hierarchical-autocomplete [service]="service" [model]="model3" [settings]="settings3"></sam-hierarchical-autocomplete>
+<sam-selected-result [model]="model3" [settings]="resultSettings"></sam-selected-result>
+
+<h2>Multiple Item Custom Template</h2>
+<sam-hierarchical-autocomplete [service]="service" [model]="model4" [settings]="settings4" [itemTemplate]="temp"></sam-hierarchical-autocomplete>
+<sam-selected-result [model]="model4" [settings]="resultSettings" [itemTemplate]="temp"></sam-selected-result>

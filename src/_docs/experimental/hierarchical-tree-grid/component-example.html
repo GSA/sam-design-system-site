@@ -1,12 +1,14 @@
 <sam-hierarchical-tree-header 
   [options]="options" 
   (selectedAgency)="selectedAgency$.next($event)"
-  (filterText)="filterText$.next($event)">
+  (filterText)="filterText$.next($event)"
+  (viewType)="viewType$.next($event)">
 </sam-hierarchical-tree-header>
 
 <sam-hierarchical-tree-grid 
   [templateConfigurations]="configurations" 
   (rowChanged)="selectedAgency$.next($event)"
   [dataSource]="tableData$ | async"
-  [filterText]="filterText">
+  [filterText]="filterText"
+  [viewTye]="viewTye">
 </sam-hierarchical-tree-grid>

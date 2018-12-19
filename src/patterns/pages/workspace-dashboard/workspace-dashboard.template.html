@@ -201,13 +201,6 @@
 
     <!-- ADD A NEW ROLE -->
 
-    <!-- ADD A NEW ROLE MOBILE VIEW -->
-    <div class="sam mobile role">
-      <h3>
-        <a class="mobilerole">Add a New Role</a>
-      </h3>
-    </div>
-
     <!-- ADD A NEW ROLE DESKTOP VIEW -->
     <div class="rolecard">
       <ng-container class="header">
@@ -227,13 +220,10 @@
             <option value="role3">Role 3</option>
           </select>
         </div>
-        <form action="">
-          <label class="checkrole">I verify I have a business need for this role.
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-          <button type="button" class="rolerequest">Request Role</button>
+        <form id="checkrole"> <input type="checkbox" name="checkrole" value="verified">
+          <label for="love"> I verify I have a business need for this role.</label>
         </form>
+        <button type="button" class="rolerequest">Request Role</button>
       </div>
     </div>
   </div>
@@ -340,16 +330,16 @@
           <div class="value"><span class="circular">1</span></div>
           <div class="label">Rejected</div>
         </a>
-        <a class="orange statistic">
+        <a class="yellow statistic">
           <div class="value"><span class="circular">2</span></div>
           <div class="label">Pending</div>
         </a>
-        <a class="green statistic">
-          <div class="value"><span class="circular">2</span></div>
+        <a class="orange statistic">
+          <div class="value"><span class="circular">1</span></div>
           <div class="label">Expired</div>
         </a>
-        <a class="blue statistic">
-          <div class="value"><span class="circular">2</span></div>
+        <a class="grey statistic">
+          <div class="value"><span class="circular">0</span></div>
           <div class="label">Cancelled</div>
         </a>
       </div>
@@ -413,6 +403,12 @@
       </div>
     </sam-segment>
 
+    <!-- ADD A NEW ROLE MOBILE VIEW-->
+    <div class="sam mobile role">
+      <h3>
+        <a class="mobilerole">Add a New Role</a>
+      </h3>
+    </div>
   </div>
   <!-- </article> -->
 

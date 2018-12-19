@@ -50,13 +50,14 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
     getBreadcrumbOptions(id: string): any[] {
         const data = SampleHierarchicalData;
         let breadcrumbs = [];
-
-        let currentItem = data.find(item => item.id === id);
-        breadcrumbs.push(currentItem);
-        while (currentItem.parentId !== null) {
-            currentItem = data.find(item => item.id === currentItem.parentId);
+        if (id !== null) {
+            let currentItem = data.find(item => item.id === id);
             breadcrumbs.push(currentItem);
+            while (currentItem.parentId !== null) {
+                currentItem = data.find(item => item.id === currentItem.parentId);
+                breadcrumbs.push(currentItem);
+            }
+            return breadcrumbs;
         }
-        return breadcrumbs;
     }
 }

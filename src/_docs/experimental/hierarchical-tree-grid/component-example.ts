@@ -17,6 +17,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   public tableData$: Observable<any>;
   public selectedAgency$ = new BehaviorSubject<any>(null);
   public rowChanged$ = new BehaviorSubject<any>([]);
+  public filterText$ = new BehaviorSubject<any>('');
 
   constructor(public service: HierarchicalDataService) { }
 
@@ -32,8 +33,12 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
     this.selectedAgency$.subscribe(
       // TODO: Create smart default or handle null value in service or document that null
       // and undefined must be handled by service
-      id => this.setOptionsData(this.service.getBreadcrumbOptions(id || '232'))
+      id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
     );
+
+    this.filterText$.subscribe(text =>
+      this.filterText = text);
+
   }
 
   setOptionsData(data: any[]): void {
@@ -51,7 +56,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
           item['name'] = ele.name;
           item['id'] = ele.id;
           item['value'] = ele.id;
-          item['label'] = ele.subtext;
+          item['label'] = ele.name;
           temp.push(item);
         }
       });

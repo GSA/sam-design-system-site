@@ -64,4 +64,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
       return temp;
     }
   }
+  onSelect(){
+    
+  }
 }

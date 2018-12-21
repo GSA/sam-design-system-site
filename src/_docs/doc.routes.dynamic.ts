@@ -280,7 +280,7 @@ export const ROUTES: Routes = [
   { path: 'experimental/hierarchical-tree-grid', component: BaseDocPageComponent, data: {
     path: '_docs/experimental/hierarchical-tree-grid',
     componentName: 'SamHierarchicalTreeGridComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['component-example.html','component-example.ts','documentation.md','hierarchy-datasource.ts']}, children: [
     { path: '', component: SamHierarchicalTreeGridComponentExampleComponent }
   ]},
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {

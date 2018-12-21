@@ -8,9 +8,9 @@
 
 <sam-hierarchical-tree-grid 
   [templateConfigurations]="configurations" 
-  (rowChanged)="selectedAgency$.next($event)"
   [gridData]="tableData$ | async"
   [filterText]="filterText"
+  (rowChanged)="selectedAgency$.next($event)"
   (selectResults)="selectResults$.next($event)">
 </sam-hierarchical-tree-grid>
 

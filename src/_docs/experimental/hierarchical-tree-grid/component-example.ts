@@ -20,14 +20,13 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   public selectedAgency$ = new BehaviorSubject<any>(null);
   public rowChanged$ = new BehaviorSubject<any>([]);
   public filterText$ = new BehaviorSubject<any>('');
-
   public selectResults$ = new BehaviorSubject<any[]>([]);
-
   public selectItems: any[];
   constructor(public service: HierarchicalDataService) { }
 
   configurations: any = {
     displayedColumns: ['id', 'name', 'subtext'],
+    primaryKey : 'id'
   };
 
   public ngOnInit() {

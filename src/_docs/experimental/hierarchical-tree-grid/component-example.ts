@@ -20,9 +20,9 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   public selectedAgency$ = new BehaviorSubject<any>(null);
   public rowChanged$ = new BehaviorSubject<any>([]);
   public filterText$ = new BehaviorSubject<any>('');
-  public viewType$ = new BehaviorSubject<string>('table');
+
   public selectResults$ = new BehaviorSubject<any[]>([]);
-  public viewTye: string;
+
   public selectItems: any[];
   constructor(public service: HierarchicalDataService) { }
 
@@ -42,9 +42,6 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
     );
     this.filterText$.subscribe(text =>
       this.filterText = text);
-
-    this.viewType$.subscribe(type =>
-      this.viewTye = type);
   }
   setOptionsData(data: any[]): void {
     this.options = this.getOptionsData(data);

@@ -37,6 +37,5 @@ jobs:
         
       # run tests!
       - run: ng lint
-      - run: pwd
-      - run: ls
+      - run: npm run build
 

@@ -1,5 +1,6 @@
 import {
-  Component, OnInit, ViewChild, AfterViewInit
+  Component,
+  OnInit,
 } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 import 'rxjs/add/observable/merge';
@@ -15,11 +16,14 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   public options = [];
   public filterText: string = '';
   public tableData$: Observable<any>;
+  public selectResults: any[];
   public selectedAgency$ = new BehaviorSubject<any>(null);
   public rowChanged$ = new BehaviorSubject<any>([]);
   public filterText$ = new BehaviorSubject<any>('');
   public viewType$ = new BehaviorSubject<string>('table');
+  public selectResults$ = new BehaviorSubject<any[]>([]);
   public viewTye: string;
+  public selectItems: any[];
   constructor(public service: HierarchicalDataService) { }
 
   configurations: any = {
@@ -30,18 +34,18 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
     this.tableData$ = this.selectedAgency$.pipe(
       switchMap(agencyId => this.service.getHiercarchicalById(agencyId)),
     );
-
     this.selectedAgency$.subscribe(
       id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
     );
-
+    this.selectResults$.subscribe(res =>
+      this.selectItems = res
+    );
     this.filterText$.subscribe(text =>
       this.filterText = text);
 
     this.viewType$.subscribe(type =>
       this.viewTye = type);
   }
-
   setOptionsData(data: any[]): void {
     this.options = this.getOptionsData(data);
   }
@@ -64,7 +68,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
       return temp;
     }
   }
-  onSelect(){
-    
+  onSelect() {
+    this.selectResults = this.selectItems;
   }
 }

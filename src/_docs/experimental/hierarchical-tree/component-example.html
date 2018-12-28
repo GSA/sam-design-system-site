@@ -8,5 +8,21 @@
 [gridData]="tableData$ | async" 
 (selectedAgency)="selectedAgency$.next($event)"
 (selectResults)="selectResults$.next($event)">
+</sam-hierarchical-tree> 
 
-</sam-hierarchical-tree>
+
+<div>
+  <sam-datatable #table samSort [dataSource]="hierarchyDataSource">
+
+    <ng-container *ngFor="let col of hierarchyConfiguration.displayedColumns;let cIndex = index;" cdkColumnDef="{{col}}">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
+        {{col}}
+      </th>
+      <td sam-cell *cdkCellDef="let row; let rIndex = index;"> {{row[col]}} </td>
+    </ng-container>
+
+    <tr sam-header-row *cdkHeaderRowDef="hierarchyConfiguration.displayedColumns"></tr>
+    <tr  sam-row *cdkRowDef="let row; columns: hierarchyConfiguration.displayedColumns;
+      let first = first; let last = last; let even = even; let odd = odd"></tr>
+  </sam-datatable>
+</div>

@@ -2,10 +2,8 @@
   {{selectItems | json}}
 </div>
 
-
 <sam-hierarchical-tree 
 [hierarchyConfiguration]="hierarchyConfiguration" 
-[gridData]="tableData$ | async"
 [samDataSource]="hierarchyDataSource"
 (selectedAgency)="selectedAgency$.next($event)"
 (selectResults)="selectResults$.next($event)">
@@ -13,7 +11,7 @@
 
 
 <div>
-  <sam-datatable #table samSort [dataSource]="hierarchyDataSource">
+   <sam-datatable #table samSort [dataSource]="hierarchyDataSource1">
 
     <ng-container *ngFor="let col of hierarchyConfiguration.displayedColumns;let cIndex = index;" cdkColumnDef="{{col}}">
       <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
@@ -25,5 +23,5 @@
     <tr sam-header-row *cdkHeaderRowDef="hierarchyConfiguration.displayedColumns"></tr>
     <tr  sam-row *cdkRowDef="let row; columns: hierarchyConfiguration.displayedColumns;
       let first = first; let last = last; let even = even; let odd = odd"></tr>
-  </sam-datatable>
+  </sam-datatable> 
 </div>

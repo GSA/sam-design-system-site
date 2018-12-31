@@ -27,8 +27,6 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
     primaryKey: 'id'
   };
 
-  datares = [];
-
   public hierarchyDataSource: HierarchyDataSource | null;
   public dataChange: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
   @ViewChild(SamSortDirective) sort: SamSortDirective;

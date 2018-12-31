@@ -5,7 +5,8 @@
 
 <sam-hierarchical-tree 
 [hierarchyConfiguration]="hierarchyConfiguration" 
-[gridData]="tableData$ | async" 
+[gridData]="tableData$ | async"
+[samDataSource]="hierarchyDataSource"
 (selectedAgency)="selectedAgency$.next($event)"
 (selectResults)="selectResults$.next($event)">
 </sam-hierarchical-tree> 

@@ -65,7 +65,8 @@ const doc2Components = [
 	'SamHierarchicalSelectedResultComponentExampleComponent',
 	'SamHierarchicalTreeGridComponentExampleComponent',
 	'SamHierarchicalTreeComponentExampleComponent',
-	'ProgressComponentExampleComponent'
+	'ProgressComponentExampleComponent',
+	'SamHierarchicalComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

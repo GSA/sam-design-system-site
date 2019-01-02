@@ -49,6 +49,7 @@ import { SamContainerComponentExampleComponent } from './experimental/container/
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
+import { SamHierarchicalComponentExampleComponent } from './experimental/hierarchical/component-example';
 import { SamHierarchicalAutocompleteComponentExampleComponent } from './experimental/hierarchical-autocomplete/component-example';
 import { SamHierarchicalSelectedResultComponentExampleComponent } from './experimental/hierarchical-selected-result/component-example';
 import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental/hierarchical-tree-grid/component-example';
@@ -143,6 +144,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalComponentExampleComponent,
     SamHierarchicalAutocompleteComponentExampleComponent,
     SamHierarchicalSelectedResultComponentExampleComponent,
     SamHierarchicalTreeGridComponentExampleComponent,
@@ -228,6 +230,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalComponentExampleComponent,
     SamHierarchicalAutocompleteComponentExampleComponent,
     SamHierarchicalSelectedResultComponentExampleComponent,
     SamHierarchicalTreeGridComponentExampleComponent,

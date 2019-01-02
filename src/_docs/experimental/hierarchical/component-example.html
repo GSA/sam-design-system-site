@@ -1,11 +1,22 @@
-Single Select without template 
+Single Select without template
 <sam-hierarchical [service]="service" [model]="model" [settings]="settings"></sam-hierarchical>
 
-Single Select with template 
-<sam-hierarchical [service]="service" [model]="model2" [settings]="settings2"></sam-hierarchical>
+Single Select with template
+<sam-hierarchical [service]="service" [model]="model2" [settings]="settings2"
+ [suggestionTemplate]="temp" [selectedItemTemplate]="temp"></sam-hierarchical>
 
-Multi Select without template 
+Multi Select without template
 <sam-hierarchical [service]="service" [model]="model3" [settings]="settings3"></sam-hierarchical>
 
-Multi Select with template 
-<sam-hierarchical [service]="service" [model]="model4" [settings]="settings4"></sam-hierarchical>
+Multi Select with template
+<sam-hierarchical [service]="service" [model]="model4" [settings]="settings4"
+ [suggestionTemplate]="temp" [selectedItemTemplate]="temp"></sam-hierarchical>
+
+
+
+<ng-template #temp let-item>
+    <span>
+        <span>Template</span>
+        {{item['name'] +': '+ item['subtext'] }}
+    </span>
+</ng-template>

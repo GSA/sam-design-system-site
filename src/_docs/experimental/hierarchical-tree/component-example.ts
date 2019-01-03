@@ -21,10 +21,13 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
   public selectResults$ = new BehaviorSubject<any[]>([]);
   public selectItems: any[];
   public hierarchyConfiguration: any = {
-    displayedColumns: ['id', 'name', 'subtext'],
-    primaryKey: 'id'
+    primaryKey: 'id',
+    gridDisplayedColumn:  [
+      { headerText: 'Id',  fieldName: 'id' , displayOrder: 1},
+      { headerText: 'Name',  fieldName: 'name' , displayOrder: 2},
+      { headerText: 'Sub Text',  fieldName: 'subtext' , displayOrder: 3}
+    ]
   };
-
   constructor(public service: HierarchicalDataService) { }
 
   public ngOnInit() {

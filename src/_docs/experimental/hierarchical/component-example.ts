@@ -38,6 +38,7 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings.valueProperty = 'name';
     this.settings.subValueProperty = 'subtext';
     this.settings.placeHolderText = "Enter text";
+    this.settings.modalTitle ="Advanced Lookup";
 
     this.settings2.keyField = 'id';
     this.settings2.id = 'autocomplete2';
@@ -45,13 +46,15 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings2.valueProperty = 'name';
     this.settings2.subValueProperty = 'subtext';
     this.settings2.placeHolderText = "Enter text";
-    
+    this.settings2.modalTitle ="Advanced Lookup";
+
     this.settings3.keyField = 'id';
     this.settings3.id = 'autocomplete3';
     this.settings3.labelText = 'Autocomplete 3';  
     this.settings3.valueProperty = 'name';
     this.settings3.subValueProperty = 'subtext';
     this.settings3.placeHolderText = "Enter text";
+    this.settings3.modalTitle ="Advanced Lookup";
 
     this.settings4.keyField = 'id';
     this.settings4.id = 'autocomplete4';
@@ -59,6 +62,7 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings4.valueProperty = 'name';
     this.settings4.subValueProperty = 'subtext';
     this.settings4.placeHolderText = "Enter text";
+    this.settings4.modalTitle ="Advanced Lookup";
 
 
     this.model.treeMode = TreeMode.SINGLE;

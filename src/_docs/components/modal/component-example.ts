@@ -31,7 +31,20 @@ export class SamModalComponentExampleComponent {
     label: 'info',
     name: 'info',
     value: 'info'
-  }];
+  },
+  {
+    label: 'plain',
+    name: 'plain',
+    value: 'plain'
+  },
+  {
+    label: 'primary',
+    name: 'primary',
+    value: 'primary'
+  }
+
+
+];
   modalConfig = {
     title: 'Test Title',
     description: 'Description Text'

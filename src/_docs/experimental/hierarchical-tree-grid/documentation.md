@@ -1,1 +1,1 @@
-# SamHierarchicalAutocompleteComponent
+# SamHierarchicalTreeGridComponent

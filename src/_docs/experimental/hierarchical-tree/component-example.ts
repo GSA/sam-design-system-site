@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  ChangeDetectorRef
 } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 import 'rxjs/add/observable/merge';
@@ -28,12 +29,13 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
       { headerText: 'Sub Text',  fieldName: 'subtext' , displayOrder: 3}
     ]
   };
-  constructor(public service: HierarchicalDataService) { }
+  constructor(public service: HierarchicalDataService, private cdr: ChangeDetectorRef) { }
 
   public ngOnInit() {
     this.tableData$ = this.selectedAgency$.pipe(
       switchMap(id => this.service.getHiercarchicalById(id)),
     );
+    this.cdr.detectChanges();
     this.selectedAgency$.subscribe(
       id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
     );

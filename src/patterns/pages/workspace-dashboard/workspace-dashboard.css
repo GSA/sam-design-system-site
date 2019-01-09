@@ -39,6 +39,7 @@
     margin: 0;
     padding: 0;
     height: 100px;
+    text-align: center;
   }
   .headernav li{
     display: inline;
@@ -215,3 +216,4 @@
       visibility: visible;
     }
   }
+  

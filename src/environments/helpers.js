@@ -64,6 +64,7 @@ const doc2Components = [
 	'SamHierarchicalAutocompleteComponentExampleComponent',
 	'SamHierarchicalSelectedResultComponentExampleComponent',
 	'SamHierarchicalTreeGridComponentExampleComponent',
+	'SamHierarchicalTreeComponentExampleComponent',
 	'ProgressComponentExampleComponent',
 	'SamHierarchicalComponentExampleComponent'
 ];

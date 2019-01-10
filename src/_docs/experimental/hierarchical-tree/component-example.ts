@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  ChangeDetectorRef
 } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 import 'rxjs/add/observable/merge';
@@ -8,42 +9,42 @@ import 'rxjs/add/operator/map';
 import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
+
+
 @Component({
   selector: 'doc-sam-tree-grid',
   templateUrl: './component-example.html'
 })
-export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit {
-  public options = [];
-  public filterText: string = '';
+export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
+
   public tableData$: Observable<any>;
-  public selectResults: any[];
   public selectedAgency$ = new BehaviorSubject<any>(null);
-  public rowChanged$ = new BehaviorSubject<any>([]);
-  public filterText$ = new BehaviorSubject<any>('');
   public selectResults$ = new BehaviorSubject<any[]>([]);
   public selectItems: any[];
-  constructor(public service: HierarchicalDataService) { }
-
-  configurations: any = {
-    displayedColumns: ['id', 'name', 'subtext'],
-    primaryKey : 'id'
+  public hierarchyConfiguration: any = {
+    primaryKey: 'id',
+    gridDisplayedColumn:  [
+      { headerText: 'Id',  fieldName: 'id' , displayOrder: 1},
+      { headerText: 'Name',  fieldName: 'name' , displayOrder: 2},
+      { headerText: 'Sub Text',  fieldName: 'subtext' , displayOrder: 3}
+    ]
   };
+  constructor(public service: HierarchicalDataService, private cdr: ChangeDetectorRef) { }
 
   public ngOnInit() {
     this.tableData$ = this.selectedAgency$.pipe(
-      switchMap(agencyId => this.service.getHiercarchicalById(agencyId)),
+      switchMap(id => this.service.getHiercarchicalById(id)),
     );
+    this.cdr.detectChanges();
     this.selectedAgency$.subscribe(
       id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
     );
     this.selectResults$.subscribe(res =>
       this.selectItems = res
     );
-    this.filterText$.subscribe(text =>
-      this.filterText = text);
   }
   setOptionsData(data: any[]): void {
-    this.options = this.getOptionsData(data);
+    this.hierarchyConfiguration.options = this.getOptionsData(data);
   }
 
   getOptionsData(data: any[]): OptionsType[] {
@@ -63,8 +64,5 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
       });
       return temp;
     }
-  }
-  onSelect() {
-    this.selectResults = this.selectItems;
   }
 }

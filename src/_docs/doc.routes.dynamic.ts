@@ -24,7 +24,6 @@ import { SamPageTitleExampleComponent } from './components/page-title/component-
 import { SamPaginationComponentExampleComponent } from './components/pagination/component-example';
 import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
-import { SamDataTableComponentExampleComponent } from './components/secondary-data-table/component-example';
 import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
 import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
 import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
@@ -180,12 +179,6 @@ export const ROUTES: Routes = [
     componentName: 'SamProgress',
 			sections: ['']}, children: [
     { path: '', component: SamProgressExampleComponent }
-  ]},
-  { path: 'components/secondary-data-table', component: BaseDocPageComponent, data: {
-    path: '_docs\components\secondary-data-table\component-example.ts',
-    componentName: 'SamDataTableComponent',
-			sections: ['']}, children: [
-    { path: '', component: SamDataTableComponentExampleComponent }
   ]},
   { path: 'components/sidenav', component: BaseDocPageComponent, data: {
     path: '_docs\components\sidenav\component-example.ts',

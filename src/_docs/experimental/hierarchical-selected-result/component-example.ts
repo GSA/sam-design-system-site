@@ -17,12 +17,6 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
   name: string = 'Item 1';
   subtext: string = 'Sub Item info 1';
 
-  public model = new HierarchicalTreeSelectedItemModel();
-  public settings = new SelectedResultConfiguration();
-
-  public model2 = new HierarchicalTreeSelectedItemModel();
-  public settings2 = new SelectedResultConfiguration();
-
   public model3 = new HierarchicalTreeSelectedItemModel();
   public settings3 = new SelectedResultConfiguration();
 
@@ -30,17 +24,6 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
   public settings4 = new SelectedResultConfiguration();
 
   ngOnInit() {
-    this.settings.keyField = 'id';
-    this.settings.valueProperty = 'name';
-    this.settings.subValueProperty = 'subtext';
-    this.model.treeMode = TreeMode.SINGLE;
-
-
-    this.settings2.keyField = 'id';
-    this.settings2.valueProperty = 'name';
-    this.settings2.subValueProperty = 'subtext';
-    this.model2.treeMode = TreeMode.SINGLE;
-
     this.settings3.keyField = 'id';
     this.settings3.valueProperty = 'name';
     this.settings3.subValueProperty = 'subtext';
@@ -55,15 +38,10 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
   }
 
   addItem() {
-
     let exampleItem = new ExampleItem(this.id, this.name, this.subtext);
-    this.model.addItem(exampleItem, 'id');
-    this.model2.addItem(exampleItem, 'id');
     this.model3.addItem(exampleItem, 'id');
     this.model4.addItem(exampleItem, 'id');
   }
-
-
 }
 
 class ExampleItem {

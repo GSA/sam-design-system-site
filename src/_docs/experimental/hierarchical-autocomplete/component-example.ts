@@ -27,12 +27,9 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
 
   public resultSettings = new SelectedResultConfiguration();
 
-
-
   constructor(public service: HierarchicalDataService) {
 
   }
-
 
   ngOnInit() {
     this.settings.keyField = 'id';
@@ -50,7 +47,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     this.settings2.valueProperty = 'name';
     this.settings2.subValueProperty = 'subtext';
     this.settings2.placeHolderText = "Autocomplete 2";
-
+    
     this.settings3.keyField = 'id';
     this.settings3.id = 'autocomplete3';
     this.settings3.labelText = 'Autocomplete 3';

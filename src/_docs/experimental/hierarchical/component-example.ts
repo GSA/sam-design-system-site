@@ -88,7 +88,6 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: 'Sub Text', fieldName: 'subtext' }
     ];
 
-
     this.model.treeMode = TreeMode.SINGLE;
     this.model2.treeMode = TreeMode.SINGLE;
     this.model3.treeMode = TreeMode.MULTIPLE;

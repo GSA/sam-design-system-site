@@ -33,8 +33,7 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
 
   public ngOnInit() {
     this.tableData$ = this.selectedAgency$.pipe(
-      switchMap(id => this.service.getHiercarchicalById(id)),
-    );
+      switchMap(id => this.service.getHiercarchicalById(id)),    );
     this.cdr.detectChanges();
     this.selectedAgency$.subscribe(
       id => this.setOptionsData(this.service.getBreadcrumbOptions(id))

@@ -42,9 +42,13 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
         return Observable.of(returnItem);
     }
 
-    getHiercarchicalById(id?: string): Observable<object[]> {
+    getHiercarchicalById(id?: string, searchValue?: string): Observable<object[]> {
         let data = Observable.of(SampleHierarchicalData);
-        return data.map(items => items.filter(itm => itm.parentId === id));
+        if (searchValue) {
+            return data.map(items => items.filter(itm => itm.parentId === id && (itm.name.indexOf(searchValue) !== -1 || itm.subtext.indexOf(searchValue) !== -1)));
+        } else {
+            return data.map(items => items.filter(itm => itm.parentId === id));
+        }
     }
 
     getBreadcrumbOptions(id: string): any[] {

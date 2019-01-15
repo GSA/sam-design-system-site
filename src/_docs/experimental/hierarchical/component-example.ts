@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 /* tslint:disable */
 import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
-import { SamHierarchicalSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical/hierarchical.component';
+import { SamHierarchicalConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalConfiguration';
 
 
 
@@ -14,10 +14,10 @@ import { SamHierarchicalSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/exp
 export class SamHierarchicalComponentExampleComponent implements OnInit {
 
 
-  public settings = new SamHierarchicalSettings();
-  public settings2 = new SamHierarchicalSettings();
-  public settings3 = new SamHierarchicalSettings();
-  public settings4 = new SamHierarchicalSettings();
+  public settings = new SamHierarchicalConfiguration();
+  public settings2 = new SamHierarchicalConfiguration();
+  public settings3 = new SamHierarchicalConfiguration();
+  public settings4 = new SamHierarchicalConfiguration();
 
   public model = new HierarchicalTreeSelectedItemModel();
   public model2 = new HierarchicalTreeSelectedItemModel();

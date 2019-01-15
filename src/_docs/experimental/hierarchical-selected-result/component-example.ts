@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 /* tslint:disable */
 import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
-import { SelectedResultSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/selected-result/selected-result.component';
+import { SelectedResultConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
 
 
 
@@ -18,16 +18,16 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
   subtext: string = 'Sub Item info 1';
 
   public model = new HierarchicalTreeSelectedItemModel();
-  public settings = new SelectedResultSettings();
+  public settings = new SelectedResultConfiguration();
 
   public model2 = new HierarchicalTreeSelectedItemModel();
-  public settings2 = new SelectedResultSettings();
+  public settings2 = new SelectedResultConfiguration();
 
   public model3 = new HierarchicalTreeSelectedItemModel();
-  public settings3 = new SelectedResultSettings();
+  public settings3 = new SelectedResultConfiguration();
 
   public model4 = new HierarchicalTreeSelectedItemModel();
-  public settings4 = new SelectedResultSettings();
+  public settings4 = new SelectedResultConfiguration();
 
   ngOnInit() {
     this.settings.keyField = 'id';

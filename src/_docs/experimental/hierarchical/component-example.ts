@@ -39,6 +39,12 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings.subValueProperty = 'subtext';
     this.settings.placeHolderText = "Enter text";
     this.settings.modalTitle ="Advanced Lookup";
+    this.settings.primaryKey=  'id';
+    this.settings.gridDisplayedColumn= [
+      { headerText: 'Id', fieldName: 'id' },
+      { headerText: 'Name', fieldName: 'name'},
+      { headerText: 'Sub Text', fieldName: 'subtext' }
+    ];
 
     this.settings2.keyField = 'id';
     this.settings2.id = 'autocomplete2';
@@ -47,6 +53,12 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings2.subValueProperty = 'subtext';
     this.settings2.placeHolderText = "Enter text";
     this.settings2.modalTitle ="Advanced Lookup";
+    this.settings2.primaryKey=  'id';
+    this.settings2.gridDisplayedColumn= [
+      { headerText: 'Id', fieldName: 'id' },
+      { headerText: 'Name', fieldName: 'name'},
+      { headerText: 'Sub Text', fieldName: 'subtext' }
+    ];
 
     this.settings3.keyField = 'id';
     this.settings3.id = 'autocomplete3';
@@ -55,6 +67,12 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings3.subValueProperty = 'subtext';
     this.settings3.placeHolderText = "Enter text";
     this.settings3.modalTitle ="Advanced Lookup";
+    this.settings3.primaryKey=  'id';
+    this.settings3.gridDisplayedColumn= [
+      { headerText: 'Id', fieldName: 'id' },
+      { headerText: 'Name', fieldName: 'name'},
+      { headerText: 'Sub Text', fieldName: 'subtext' }
+    ];
 
     this.settings4.keyField = 'id';
     this.settings4.id = 'autocomplete4';
@@ -63,6 +81,12 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings4.subValueProperty = 'subtext';
     this.settings4.placeHolderText = "Enter text";
     this.settings4.modalTitle ="Advanced Lookup";
+    this.settings4.primaryKey=  'id';
+    this.settings4.gridDisplayedColumn= [
+      { headerText: 'Id', fieldName: 'id' },
+      { headerText: 'Name', fieldName: 'name'},
+      { headerText: 'Sub Text', fieldName: 'subtext' }
+    ];
 
 
     this.model.treeMode = TreeMode.SINGLE;

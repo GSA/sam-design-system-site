@@ -17,8 +17,7 @@ private loadedData;
             let item = data[i];
             let results = data.filter(it => it.parentId === item.id);
             item['childCount'] = results.length;
-        }
-        
+        }        
         this.loadedData= data;
     }
 

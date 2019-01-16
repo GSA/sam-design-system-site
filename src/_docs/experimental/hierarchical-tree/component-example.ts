@@ -26,7 +26,9 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
     gridDisplayedColumn: [
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
-      { headerText: 'Sub Text', fieldName: 'subtext' }
+      { headerText: 'Sub Text', fieldName: 'subtext' },
+      { headerText: 'Children', fieldName: 'childCount' }
+
     ]
   };
   constructor(public service: HierarchicalDataService, private cdr: ChangeDetectorRef) { }
@@ -38,9 +40,8 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
     //   this.selectedAgency$.subscribe(
     //     id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
     //   );
-    this.selectResults$.subscribe(res =>
-      this.selectItems = res)
-      ;
+    this.selectResults$.subscribe(res => this.selectItems = res);
+
     // }
     // setOptionsData(data: any[]): void {
     //   this.hierarchyConfiguration.options = this.getOptionsData(data);

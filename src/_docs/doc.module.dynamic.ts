@@ -49,7 +49,10 @@ import { SamContainerComponentExampleComponent } from './experimental/container/
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
+import { SamHierarchicalComponentExampleComponent } from './experimental/hierarchical/component-example';
 import { SamHierarchicalAutocompleteComponentExampleComponent } from './experimental/hierarchical-autocomplete/component-example';
+import { SamHierarchicalSelectedResultComponentExampleComponent } from './experimental/hierarchical-selected-result/component-example';
+import { SamHierarchicalTreeComponentExampleComponent } from './experimental/hierarchical-tree/component-example';
 import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental/hierarchical-tree-grid/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -57,6 +60,7 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
+import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
@@ -141,7 +145,10 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalComponentExampleComponent,
     SamHierarchicalAutocompleteComponentExampleComponent,
+    SamHierarchicalSelectedResultComponentExampleComponent,
+    SamHierarchicalTreeComponentExampleComponent,
     SamHierarchicalTreeGridComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -149,6 +156,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageSampleComponentExampleComponent,
+    ProgressComponentExampleComponent,
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
@@ -224,7 +232,10 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
     SamHeadingComponentExampleComponent,
+    SamHierarchicalComponentExampleComponent,
     SamHierarchicalAutocompleteComponentExampleComponent,
+    SamHierarchicalSelectedResultComponentExampleComponent,
+    SamHierarchicalTreeComponentExampleComponent,
     SamHierarchicalTreeGridComponentExampleComponent,
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
@@ -232,6 +243,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamListComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageSampleComponentExampleComponent,
+    ProgressComponentExampleComponent,
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,

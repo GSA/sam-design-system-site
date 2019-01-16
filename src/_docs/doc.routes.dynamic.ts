@@ -42,7 +42,10 @@ import { SamContainerComponentExampleComponent } from './experimental/container/
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
 import { SamHeadingComponentExampleComponent } from './experimental/heading/component-example';
+import { SamHierarchicalComponentExampleComponent } from './experimental/hierarchical/component-example';
 import { SamHierarchicalAutocompleteComponentExampleComponent } from './experimental/hierarchical-autocomplete/component-example';
+import { SamHierarchicalSelectedResultComponentExampleComponent } from './experimental/hierarchical-selected-result/component-example';
+import { SamHierarchicalTreeComponentExampleComponent } from './experimental/hierarchical-tree/component-example';
 import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental/hierarchical-tree-grid/component-example';
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
@@ -50,6 +53,7 @@ import { SamLabelNextComponentExampleComponent } from './experimental/label/comp
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
+import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
@@ -263,16 +267,36 @@ export const ROUTES: Routes = [
     { path: '', component: SamFiltersComponentExampleComponent }
   ]},
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
+  { path: 'experimental/hierarchical', component: BaseDocPageComponent, data: {
+    path: '_docs\experimental\hierarchical\component-example.ts',
+    componentName: 'SamHierarchicalComponent',
+			sections: ['']}, children: [
+    { path: '', component: SamHierarchicalComponentExampleComponent }
+  ]},
   { path: 'experimental/hierarchical-autocomplete', component: BaseDocPageComponent, data: {
     path: '_docs\experimental\hierarchical-autocomplete\component-example.ts',
     componentName: 'SamHierarchicalAutocompleteComponent',
 			sections: ['']}, children: [
     { path: '', component: SamHierarchicalAutocompleteComponentExampleComponent }
   ]},
+  { path: 'experimental/hierarchical-selected-result', component: BaseDocPageComponent, data: {
+    path: '_docs\experimental\hierarchical-selected-result\component-example.ts',
+    componentName: 'SamHierarchicalSelectedResultComponent',
+			sections: ['']}, children: [
+    { path: '', component: SamHierarchicalSelectedResultComponentExampleComponent }
+  ]},
+  { path: 'experimental/hierarchical-tree', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/hierarchical-tree',
+    componentName: 'SamHierarchicalTreeComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamHierarchicalTreeComponentExampleComponent }
+  ]},
   { path: 'experimental/hierarchical-tree-grid', component: BaseDocPageComponent, data: {
     path: '_docs\experimental\hierarchical-tree-grid\component-example.ts',
     componentName: 'SamHierarchicalTreeGridComponent',
+ workspace-dashboard
 			sections: ['']}, children: [
+ master
     { path: '', component: SamHierarchicalTreeGridComponentExampleComponent }
   ]},
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {
@@ -291,6 +315,12 @@ export const ROUTES: Routes = [
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageSampleComponentExampleComponent },
+  { path: 'experimental/progress', component: BaseDocPageComponent, data: {
+    path: '_docs\experimental\progress\component-example.ts',
+    componentName: 'ProgressComponent',
+			sections: ['']}, children: [
+    { path: '', component: ProgressComponentExampleComponent }
+  ]},
   { path: 'experimental/resources-wrapper', component: BaseDocPageComponent, data: {
     path: '_docs\experimental\resources-wrapper\component-example.ts',
     componentName: 'SamResourcesWrapperComponent',

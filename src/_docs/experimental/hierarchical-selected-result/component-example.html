@@ -14,15 +14,8 @@
 <input id="subtext" [(ngModel)]="subtext" type="text">
 <button (click)="addItem()">Add Item</button>
 
-<h2>Single Item Default Template</h2>
-<sam-selected-result [model]="model" [settings]="settings"></sam-selected-result>
-
-<h2>Single Item Custom Template</h2>
-<sam-selected-result [model]="model2" [settings]="settings2" [itemTemplate]="temp"></sam-selected-result>
-
-
 <h2>Multiple Items Default Template</h2>
-<sam-selected-result [model]="model3" [settings]="settings3"></sam-selected-result>
+<sam-selected-result [model]="model3" [configuration]="settings3"></sam-selected-result>
 
 <h2>Multiple Item Custom Template</h2>
-<sam-selected-result [model]="model4" [settings]="settings4" [itemTemplate]="temp"></sam-selected-result>
+<sam-selected-result [model]="model4" [configuration]="settings4" [itemTemplate]="temp"></sam-selected-result>

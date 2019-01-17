@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 /* tslint:disable */
 import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
-import { SamHierarchicalAutocompleteSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/autocomplete/autocomplete.component';
-import { SelectedResultSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/selected-result/selected-result.component';
+import { SamHierarchicalAutocompleteConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalAutocompleteConfiguration';
+import { SelectedResultConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
 
 
 @Component({
@@ -14,25 +14,22 @@ import { SelectedResultSettings } from '@gsa-sam/sam-ui-elements/src/ui-kit/expe
 export class SamHierarchicalAutocompleteComponentExampleComponent implements OnInit {
 
   public model = new HierarchicalTreeSelectedItemModel();
-  public settings = new SamHierarchicalAutocompleteSettings();
+  public settings = new SamHierarchicalAutocompleteConfiguration();
 
   public model2 = new HierarchicalTreeSelectedItemModel();
-  public settings2 = new SamHierarchicalAutocompleteSettings();
+  public settings2 = new SamHierarchicalAutocompleteConfiguration();
 
   public model3 = new HierarchicalTreeSelectedItemModel();
-  public settings3 = new SamHierarchicalAutocompleteSettings();
+  public settings3 = new SamHierarchicalAutocompleteConfiguration();
 
   public model4 = new HierarchicalTreeSelectedItemModel();
-  public settings4 = new SamHierarchicalAutocompleteSettings();
+  public settings4 = new SamHierarchicalAutocompleteConfiguration();
 
-  public resultSettings = new SelectedResultSettings();
-
-
+  public resultSettings = new SelectedResultConfiguration();
 
   constructor(public service: HierarchicalDataService) {
 
   }
-
 
   ngOnInit() {
     this.settings.keyField = 'id';
@@ -50,7 +47,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     this.settings2.valueProperty = 'name';
     this.settings2.subValueProperty = 'subtext';
     this.settings2.placeHolderText = "Autocomplete 2";
-
+    
     this.settings3.keyField = 'id';
     this.settings3.id = 'autocomplete3';
     this.settings3.labelText = 'Autocomplete 3';

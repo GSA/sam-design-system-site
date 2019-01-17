@@ -9,9 +9,21 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class HierarchicalDataService implements SamHiercarchicalServiceInterface {
 
+private loadedData;
+    constructor(){
+        const data = SampleHierarchicalData;
+        for (let i = 0; i < data.length; i++) {
+
+            let item = data[i];
+            let results = data.filter(it => it.parentId === item.id);
+            item['childCount'] = results.length;
+        }        
+        this.loadedData= data;
+    }
+
     getDataByText(currentItems: number, searchValue?: string): Observable<SearchByTextResult> {
         let itemIncrease = 25;
-        let data = Observable.of(SampleHierarchicalData);
+        let data = Observable.of(this.loadedData);
         let itemsOb: Observable<Object[]>;
         if (searchValue) {
             itemsOb = data.map(items => items.filter(itm =>
@@ -42,22 +54,13 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
         return Observable.of(returnItem);
     }
 
-    getHiercarchicalById(id?: string): Observable<object[]> {
-        let data = Observable.of(SampleHierarchicalData);
-        return data.map(items => items.filter(itm => itm.parentId === id));
-    }
-
-    getBreadcrumbOptions(id: string): any[] {
-        const data = SampleHierarchicalData;
-        let breadcrumbs = [];
-        if (id !== null) {
-            let currentItem = data.find(item => item.id === id);
-            breadcrumbs.push(currentItem);
-            while (currentItem.parentId !== null) {
-                currentItem = data.find(item => item.id === currentItem.parentId);
-                breadcrumbs.push(currentItem);
-            }
-            return breadcrumbs;
+    getHiercarchicalById(id?: string, searchValue?: string): Observable<object[]> {
+        let data = Observable.of(this.loadedData);
+        if (searchValue) {
+            return data.map(items => items.filter(itm => itm.parentId === id && (itm.name.indexOf(searchValue) !== -1 || itm.subtext.indexOf(searchValue) !== -1)));
+        } else {
+            return data.map(items => items.filter(itm => itm.parentId === id));
         }
     }
+  
 }

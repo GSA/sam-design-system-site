@@ -46,4 +46,18 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
         let data = Observable.of(SampleHierarchicalData);
         return data.map(items => items.filter(itm => itm.parentId === id));
     }
+
+    getBreadcrumbOptions(id: string): any[] {
+        const data = SampleHierarchicalData;
+        let breadcrumbs = [];
+        if (id !== null) {
+            let currentItem = data.find(item => item.id === id);
+            breadcrumbs.push(currentItem);
+            while (currentItem.parentId !== null) {
+                currentItem = data.find(item => item.id === currentItem.parentId);
+                breadcrumbs.push(currentItem);
+            }
+            return breadcrumbs;
+        }
+    }
 }

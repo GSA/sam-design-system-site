@@ -62,7 +62,11 @@ const doc2Components = [
 	'SamPaginationNextComponentExampleComponent',
 	'SamPageComponentExampleComponent',
 	'SamHierarchicalAutocompleteComponentExampleComponent',
+	'SamHierarchicalSelectedResultComponentExampleComponent',
 	'SamHierarchicalTreeGridComponentExampleComponent',
+	'SamHierarchicalTreeComponentExampleComponent',
+	'ProgressComponentExampleComponent',
+	'SamHierarchicalComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

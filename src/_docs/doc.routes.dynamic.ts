@@ -286,15 +286,15 @@ export const ROUTES: Routes = [
     { path: '', component: SamHierarchicalSelectedResultComponentExampleComponent }
   ]},
   { path: 'experimental/hierarchical-tree', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/hierarchical-tree',
+    path: '_docs\experimental\hierarchical-tree\component-example.ts',
     componentName: 'SamHierarchicalTreeComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHierarchicalTreeComponentExampleComponent }
   ]},
   { path: 'experimental/hierarchical-tree-grid', component: BaseDocPageComponent, data: {
     path: '_docs\experimental\hierarchical-tree-grid\component-example.ts',
     componentName: 'SamHierarchicalTreeGridComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md','hierarchy-datasource.ts']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHierarchicalTreeGridComponentExampleComponent }
   ]},
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {

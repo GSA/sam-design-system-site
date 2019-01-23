@@ -46,7 +46,10 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: "Sub Text", fieldName: "subtext" },
       { headerText: "Children", fieldName: "childCount" }
     ];
-    this.settings.childCountField="childCount";
+    this.settings.childCountField = "childCount";
+    this.settings.filterPlaceholderText = 'Filter Placeholder';
+    this.settings.topLevelBreadcrumbText = "All Departments";
+    this.settings.valueProperty = "name";
 
     this.settings2.keyField = "id";
     this.settings2.id = "autocomplete2";
@@ -62,7 +65,10 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: "Sub Text", fieldName: "subtext" },
       { headerText: "Children", fieldName: "childCount" }
     ];
-    this.settings2.childCountField="childCount";
+    this.settings2.childCountField = "childCount";
+    this.settings2.filterPlaceholderText = 'Filter Placeholder';
+    this.settings2.topLevelBreadcrumbText = "All Departments";
+    this.settings2.valueProperty = "name";
 
     this.settings3.keyField = "id";
     this.settings3.id = "autocomplete3";
@@ -78,7 +84,10 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: "Sub Text", fieldName: "subtext" },
       { headerText: "Children", fieldName: "childCount" }
     ];
-    this.settings3.childCountField="childCount";
+    this.settings3.childCountField = "childCount";
+    this.settings3.filterPlaceholderText = 'Filter Placeholder';
+    this.settings3.topLevelBreadcrumbText = "All Departments";
+    this.settings3.valueProperty = "name";
 
     this.settings4.keyField = "id";
     this.settings4.id = "autocomplete4";
@@ -94,14 +103,15 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: "Sub Text", fieldName: "subtext" },
       { headerText: "Children", fieldName: "childCount" }
     ];
-    this.settings4.childCountField="childCount";
+    this.settings4.childCountField = "childCount";
+    this.settings4.filterPlaceholderText = 'Filter Placeholder';
 
     this.model.treeMode = TreeMode.SINGLE;
     this.model2.treeMode = TreeMode.SINGLE;
     this.model3.treeMode = TreeMode.MULTIPLE;
     this.model4.treeMode = TreeMode.MULTIPLE;
 
-    
+
 
 
   }

@@ -2,18 +2,18 @@ import {
   Component,
   OnInit,
   ChangeDetectorRef
-} from "@angular/core";
-import { HierarchicalDataService } from "../../services/hierarchical.service";
-import "rxjs/add/observable/merge";
-import "rxjs/add/operator/map";
-import { OptionsType } from "@gsa-sam/sam-ui-elements/src/ui-kit/types";
-import { Observable, BehaviorSubject } from "rxjs";
-import { switchMap } from "rxjs/operators";
+} from '@angular/core';
+import { HierarchicalDataService } from '../../services/hierarchical.service';
+import 'rxjs/add/observable/merge';
+import 'rxjs/add/operator/map';
+import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 
 @Component({
-  selector: "doc-sam-tree-grid",
-  templateUrl: "./component-example.html"
+  selector: 'doc-sam-tree-grid',
+  templateUrl: './component-example.html'
 })
 export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
 
@@ -22,12 +22,12 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
   public selectResults$ = new BehaviorSubject<any[]>([]);
   public selectItems: any[];
   public hierarchyConfiguration: any = {
-    primaryKey: "id",
+    primaryKey: 'id',
     gridDisplayedColumn: [
-      { headerText: "Id", fieldName: "id" },
-      { headerText: "Name", fieldName: "name" },
-      { headerText: "Sub Text", fieldName: "subtext" },
-      { headerText: "Children", fieldName: "childCount" }
+      { headerText: 'Id', fieldName: 'id' },
+      { headerText: 'Name', fieldName: 'name' },
+      { headerText: 'Sub Text', fieldName: 'subtext' },
+      { headerText: 'Children', fieldName: 'childCount' }
 
     ]
   };
@@ -55,10 +55,10 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
     //     data.forEach((ele) => {
     //       if (ele.id) {
     //         const item = {};
-    //         item["name"] = ele.name;
-    //         item["id"] = ele.parentId;
-    //         item["value"] = ele.id;
-    //         item["label"] = ele.name;
+    //         item['name'] = ele.name;
+    //         item['id'] = ele.parentId;
+    //         item['value'] = ele.id;
+    //         item['label'] = ele.name;
     //         temp.push(item);
     //       }
     //     });

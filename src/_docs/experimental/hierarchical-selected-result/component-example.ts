@@ -24,14 +24,14 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
   public settings4 = new SelectedResultConfiguration();
 
   ngOnInit() {
-    this.settings3.keyField = 'id';
-    this.settings3.valueProperty = 'name';
-    this.settings3.subValueProperty = 'subtext';
+    this.settings3.primaryKeyField = 'id';
+    this.settings3.primaryTextField = 'name';
+    this.settings3.secondaryTextField = 'subtext';
     this.model3.treeMode = TreeMode.MULTIPLE;
 
-    this.settings4.keyField = 'id';
-    this.settings4.valueProperty = 'name';
-    this.settings4.subValueProperty = 'subtext';
+    this.settings4.primaryKeyField = 'id';
+    this.settings4.primaryTextField = 'name';
+    this.settings4.secondaryTextField = 'subtext';
     this.model4.treeMode = TreeMode.MULTIPLE;
 
     this.addItem();

@@ -32,23 +32,23 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
 
 
   ngOnInit() {
-    this.settings.id = 'autocomplete1'; // GOOD
-    this.settings.primaryKeyField = 'id';// GOOD
-    this.settings.primaryTextField = 'name'; // GOOD
-    this.settings.secondaryTextField = 'subtext';// GOOD
+    this.settings.id = 'autocomplete1'; 
+    this.settings.primaryKeyField = 'id';
+    this.settings.primaryTextField = 'name'; 
+    this.settings.secondaryTextField = 'subtext';
     this.settings.labelText = 'Autocomplete 1';
 
-    this.settings.autocompletePlaceHolderText = 'Enter text'; //Add more  description ex. autocomplete 
-    this.settings.modalTitle = 'Advanced Lookup';// GOOD
-    this.settings.gridColumnsDisplayed = [ // Switch verbage
+    this.settings.autocompletePlaceHolderText = 'Enter text'; 
+    this.settings.modalTitle = 'Advanced Lookup';
+    this.settings.gridColumnsDisplayed = [ 
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
       { headerText: 'Children', fieldName: 'childCount' }
     ];
-    this.settings.childCountField = 'childCount'; // GOOD
-    this.settings.filterPlaceholderText = 'Filter Placeholder'; // GOOD
-    this.settings.topLevelBreadcrumbText = 'All Departments'; // GOOD
+    this.settings.childCountField = 'childCount'; 
+    this.settings.filterPlaceholderText = 'Filter Placeholder'; 
+    this.settings.topLevelBreadcrumbText = 'All Departments'; 
    
 
     this.settings2.primaryKeyField = 'id';

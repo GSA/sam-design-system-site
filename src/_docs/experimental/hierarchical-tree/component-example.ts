@@ -23,7 +23,7 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
   public selectItems: any[];
   public hierarchyConfiguration: any = {
     primaryKey: 'id',
-    gridDisplayedColumn: [
+    gridColumnsDisplayed: [
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },

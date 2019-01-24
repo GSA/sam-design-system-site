@@ -32,32 +32,33 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
 
 
   ngOnInit() {
-    this.settings.primaryKeyField = 'id';
-    this.settings.id = 'autocomplete1';
+    this.settings.id = 'autocomplete1'; // GOOD
+    this.settings.primaryKeyField = 'id';// GOOD
+    this.settings.primaryTextField = 'name'; // GOOD
+    this.settings.secondaryTextField = 'subtext';// GOOD
     this.settings.labelText = 'Autocomplete 1';
-    this.settings.primaryTextField = 'name';
-    this.settings.secondaryTextField = 'subtext';
-    this.settings.placeHolderText = 'Enter text';
-    this.settings.modalTitle = 'Advanced Lookup';
-    this.settings.gridDisplayedColumn = [
+
+    this.settings.autocompletePlaceHolderText = 'Enter text'; //Add more  description ex. autocomplete 
+    this.settings.modalTitle = 'Advanced Lookup';// GOOD
+    this.settings.gridColumnsDisplayed = [ // Switch verbage
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
       { headerText: 'Children', fieldName: 'childCount' }
     ];
-    this.settings.childCountField = 'childCount';
-    this.settings.filterPlaceholderText = 'Filter Placeholder';
-    this.settings.topLevelBreadcrumbText = 'All Departments';
-  
+    this.settings.childCountField = 'childCount'; // GOOD
+    this.settings.filterPlaceholderText = 'Filter Placeholder'; // GOOD
+    this.settings.topLevelBreadcrumbText = 'All Departments'; // GOOD
+   
 
     this.settings2.primaryKeyField = 'id';
     this.settings2.id = 'autocomplete2';
     this.settings2.labelText = 'Autocomplete 2';
     this.settings2.primaryTextField = 'name';
     this.settings2.secondaryTextField = 'subtext';
-    this.settings2.placeHolderText = 'Enter text';
+    this.settings2.autocompletePlaceHolderText = 'Enter text';
     this.settings2.modalTitle = 'Advanced Lookup';
-    this.settings2.gridDisplayedColumn = [
+    this.settings2.gridColumnsDisplayed = [
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
@@ -73,10 +74,10 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings3.labelText = 'Autocomplete 3';
     this.settings3.primaryTextField = 'name';
     this.settings3.secondaryTextField = 'subtext';
-    this.settings3.placeHolderText = 'Enter text';
+    this.settings3.autocompletePlaceHolderText = 'Enter text';
     this.settings3.modalTitle = 'Advanced Lookup';
 
-    this.settings3.gridDisplayedColumn = [
+    this.settings3.gridColumnsDisplayed = [
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
@@ -92,10 +93,10 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings4.labelText = 'Autocomplete 4';
     this.settings4.primaryTextField = 'name';
     this.settings4.secondaryTextField = 'subtext';
-    this.settings4.placeHolderText = 'Enter text';
+    this.settings4.autocompletePlaceHolderText = 'Enter text';
     this.settings4.modalTitle = 'Advanced Lookup';
 
-    this.settings4.gridDisplayedColumn = [
+    this.settings4.gridColumnsDisplayed = [
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },

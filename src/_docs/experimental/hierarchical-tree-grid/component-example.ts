@@ -25,7 +25,7 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   constructor(public service: HierarchicalDataService) { }
 
   configurations: any = {
-    displayedColumns: ['id', 'name', 'subtext'],
+    gridColumnsDisplayed: ['id', 'name', 'subtext'],
     primaryKey : 'id'
   };
 

@@ -38,7 +38,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     this.model.treeMode = TreeMode.SINGLE;
     this.settings.primaryTextField = 'name';
     this.settings.secondaryTextField = 'subtext';
-    this.settings.placeHolderText = "Autocomplete 1";
+    this.settings.autocompletePlaceHolderText = "Autocomplete 1";
 
     this.settings2.primaryKeyField = 'id';
     this.settings2.id = 'autocomplete2';
@@ -46,7 +46,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     this.model2.treeMode = TreeMode.SINGLE;
     this.settings2.primaryTextField = 'name';
     this.settings2.secondaryTextField = 'subtext';
-    this.settings2.placeHolderText = "Autocomplete 2";
+    this.settings2.autocompletePlaceHolderText = "Autocomplete 2";
     
     this.settings3.primaryKeyField = 'id';
     this.settings3.id = 'autocomplete3';
@@ -54,7 +54,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     this.model3.treeMode = TreeMode.MULTIPLE;
     this.settings3.primaryTextField = 'name';
     this.settings3.secondaryTextField = 'subtext';
-    this.settings3.placeHolderText = "Autocomplete 3";
+    this.settings3.autocompletePlaceHolderText = "Autocomplete 3";
 
     this.settings4.primaryKeyField = 'id';
     this.settings4.id = 'autocomplete4';
@@ -62,7 +62,7 @@ export class SamHierarchicalAutocompleteComponentExampleComponent implements OnI
     this.model4.treeMode = TreeMode.MULTIPLE;
     this.settings4.primaryTextField = 'name';
     this.settings4.secondaryTextField = 'subtext';
-    this.settings4.placeHolderText = "Autocomplete 4";
+    this.settings4.autocompletePlaceHolderText = "Autocomplete 4";
 
     this.resultSettings.primaryKeyField = 'id';
     this.resultSettings.primaryTextField = 'name';

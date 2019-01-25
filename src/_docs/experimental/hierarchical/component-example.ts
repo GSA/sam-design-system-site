@@ -104,6 +104,7 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     ];
     this.settings4.childCountField = 'childCount';
     this.settings4.filterPlaceholderText = 'Filter Placeholder';
+    this.settings4.topLevelBreadcrumbText = 'All Departments';
 
     this.model.treeMode = TreeMode.SINGLE;
     this.model2.treeMode = TreeMode.SINGLE;

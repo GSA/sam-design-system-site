@@ -135,7 +135,6 @@ $large: $current-large;
 @import 'components/image-library';
 @import 'components/list-builder';
 @import 'components/notifications'; // REVIEW: Move to common components
-//@import 'components/search-header';
 @import 'components/searchbar';
 @import 'components/sort'; // REVIEW: Move to common components
 @import 'components/table-entry';
@@ -146,8 +145,6 @@ $large: $current-large;
 ----------------------------------------*/
 @import 'components/accordion';
 @import 'components/actions';
-//@import 'components/alphabet-selector';
-//@import 'components/autocomplete-dropdown';
 @import 'components/account-identification-code';
 @import 'components/autocomplete-multiselect';
 @import 'components/autocomplete';
@@ -164,21 +161,19 @@ $large: $current-large;
 @import 'components/info-accordion';
 @import 'components/input';
 @import 'components/label-wrapper';
-//@import 'components/list-input';
 @import 'components/modal';
 @import 'components/multiselect-dropdown';
-//@import 'components/multiselect';
 @import 'components/pagination';
-//@import 'components/tabs';
 @import 'components/sam-time';
 @import 'components/toggle-switch';
-//@import 'components/well';
 @import 'components/watchlist';
 
 /*-------------------
   Extended components
 --------------------*/
 @import 'components/us-security-modal';
+@import 'components/sa-security-modal';
+@import 'components/sa-static-security-modal';
 @import 'components/video-player';
 /*-------------------
      Pages
@@ -187,10 +182,13 @@ $large: $current-large;
 // folder to the pages folder
 @import 'pages/help';
 @import 'pages/_help-support.scss';
+@import 'pages/awards';
 @import 'pages/entity-object-view';
+@import 'pages/exclusions';
 @import 'pages/opportunity';
 @import 'pages/organization';
 @import 'pages/search';
+@import 'pages/databank';
 @import 'pages/reports';
 @import 'pages/alerts';
 @import 'pages/users-directory';
@@ -351,23 +349,10 @@ select {
   padding: 1rem 2.6rem 1rem 0.7em;
 }
 
-// .sticky-element {
-//   position: fixed;
-//   z-index:20;
-//   bottom: 0;
-//   width: 48em;
-//   background:white;
-//   padding-left: 32em;
-// }
-
 .overflow-ellipsis {
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
-
-// sam-solo-accordian li {
-//   position: relative;;
-// }
 
 // https://stackoverflow.com/questions/7492062/css-overflow-scroll-always-show-vertical-scroll-bar
 ::-webkit-scrollbar {
@@ -443,24 +428,24 @@ select {
   display: table;
 }
 
-.br-before:before {
-  content:"\a";
-  white-space: pre;
+.br-before {
+  margin-top: 12px;
 }
 
-.br-after:after {
-  content:"\a";
-  white-space: pre;
+.br-after {
+  margin-bottom: 12px;
 }
 
-.br-double-before:before {
-  content:"\a\a";
-  white-space: pre;
+.br-double-before {
+  margin-top: 25px;
 }
 
-.br-double-after:after {
-  content:"\a\a";
-  white-space: pre;
+.br-double-after {
+  margin-bottom: 25px;
+}
+
+.flex-display{
+  display: flex;
 }
 
 .relative-position {
@@ -493,4 +478,8 @@ sam-radio-button, sam-checkbox {
 }
 .opp-review-attachments-edit-disabled {
   color: #aeb0b5;
+}
+
+.page-content-sidebar{
+  height: 99%;
 }

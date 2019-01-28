@@ -5,7 +5,11 @@ $vertical-padding: 3rem;
 $icon-size: 2rem;
 $light-grey: #9c9c9c;
 
-sam-upload-v2 {
+.red{
+  color:#e31c3d;
+}
+
+sam-upload-v2, opp-sam-upload-v2 {
   .icon.close {
     cursor: pointer;
     width: $icon-size;
@@ -20,7 +24,7 @@ sam-upload-v2 {
     cursor: not-allowed;
     opacity: .5;
   }
-  
+
   .empty-space{
     display: inline-block;
     width: 30px
@@ -54,7 +58,7 @@ sam-upload-v2 {
   }
 }
 
-sam-upload-v2 {
+sam-upload-v2, opp-sam-upload-v2 {
   .remove-icon {
     color: $color-secondary;
   }
@@ -75,7 +79,6 @@ sam-upload-v2 {
     width: 100%;
     margin-top: 1rem;
     border: 2px solid $color-gray-lighter;
-    border-bottom: none;
   }
 
   .upload-table-header {
@@ -186,6 +189,7 @@ sam-upload-v2 {
 
   .file-container-no-drag {
     border: 2px solid $color-gray-lighter;
+    margin-top: -2px;
   }
 
   .file-max-error {

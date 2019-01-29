@@ -45,6 +45,7 @@ import { SamActionsListComponentExampleComponent } from './experimental/actions-
 import { SamAlertNextComponentExampleComponent } from './experimental/alert/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { ButtonNextExampleComponent } from './experimental/button-next/component-example';
+import { SamCheckboxListComponentExampleComponent } from './experimental/checkbox-list/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
@@ -141,6 +142,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamAlertNextComponentExampleComponent,
     SamBoxComponentExampleComponent,
     ButtonNextExampleComponent,
+    SamCheckboxListComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
@@ -228,6 +230,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamAlertNextComponentExampleComponent,
     SamBoxComponentExampleComponent,
     ButtonNextExampleComponent,
+    SamCheckboxListComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,

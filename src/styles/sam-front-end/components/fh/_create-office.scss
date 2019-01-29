@@ -1,0 +1,75 @@
+.create-org-office {
+    min-height: 450px;
+    .create-org-border-section {
+        border: 1px solid $color-gray-lighter;
+        padding: 10px;
+        margin-top: 1em;
+        margin-bottom: 2px;
+    }
+    .org-type-block{
+        min-width: 120px;
+        display: inline-block;
+    }
+    .width-110px {
+        min-width: 110px;
+    }
+    .ofc-poc-inline {
+        display: inline-flex;
+        width: 100%;
+        span {
+            line-height: 3;
+        }
+        em {
+            position: absolute;
+            right: 1em;
+        }
+    }
+    .review-dates > .grid {
+        margin-top: .2em;
+    }
+    .review-dates .column {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .wid-title{
+        width: 27.55% !important;
+    }
+    .wid-val{
+        width: 24% !important;
+    }
+    .confirm-description{
+        font-weight: bold;
+        width: 190px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .confirm-value {
+        display: inline-block;
+    }
+    .confirm-item{
+        display: flex;
+    }
+    .ofc-success {
+        margin: 6rem 0;
+        .light-title {
+            text-transform: uppercase;
+            line-height: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #757575;
+        }
+        .ofc-success-hint {
+            margin: 5px 0;
+        }
+        #check-icon {
+            color: green;
+        }
+        h1 {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid lightgray;
+        }
+    }
+}

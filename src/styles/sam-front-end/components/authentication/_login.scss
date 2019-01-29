@@ -1,4 +1,17 @@
 .usa-login {
+
+  .cancel-btn {
+    color: #0071bc !important;
+    background: none !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-weight: 400 !important;
+  }
+  .cancel-btn:hover {
+    text-decoration: underline !important;
+    color: black !important;
+  }
+
   h1 + span {
     display: inline-block;
     width: 90%;

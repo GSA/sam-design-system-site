@@ -55,6 +55,10 @@ select {
   }
 }
 
+html input[disabled] {
+  cursor: not-allowed; //added
+}
+
 .reportingMaxWidth{
   max-width: $input-max-width;
 }
@@ -127,7 +131,7 @@ select {
   background-image: url('#{$image-path}/arrow-down.svg');
   background-position: right 1.3rem center;
   background-repeat: no-repeat;
-  background-size: 1.3rem;
+  background-size: 1.3rem 1.3rem;
 
   &::-ms-expand {
     display: none;
@@ -178,6 +182,11 @@ legend {
   cursor: pointer;
   font-weight: 400;
   margin-bottom: 0.5em;
+}
+
+[type="checkbox"]:disabled + label,
+[type="radio"]:disabled + label {
+  cursor: not-allowed; //added
 }
 
 [type="checkbox"]:not(.align-right) + label::before,

@@ -52,11 +52,33 @@ section.sam-comments {
   }
 
   form {
+    #current-user-comment-icon {
+      display: inline-flex;
+    }
+    #textarea-system-comments {
+      width: 94%;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    figure {
+      display: flex;
+      margin: 0 12px 0 0;
+
+      img, span.fa {
+        height: 32px;
+        width: 32px;
+        border-radius: 49.9%;
+        align-self: center;
+      }
+    }
+
     label, textarea {
       max-width: 100%;
     }
 
     textarea {
+      padding-top: 20px;
       resize: none;
     }
 

@@ -24,8 +24,8 @@
     margin-top: 13px;
 
     display: flex;
-    
-    
+
+
 
     #revise-form-container {
       padding-left: 35px;
@@ -38,12 +38,18 @@
         margin: 0 !important;
         height: 42px;
       }
-      
+
 
 
       .revise-button-container {
         padding-left: 5px;
       }
     }
+  }
+}
+
+.modernized-wage-determination {
+  .sam-ui.divider {
+    border-bottom: 1px solid lightgray;
   }
 }

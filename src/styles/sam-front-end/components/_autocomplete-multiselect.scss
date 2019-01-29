@@ -5,7 +5,7 @@
       }
     }
 
-    clear: both;
+     clear: both;
     position: relative;
 
     .label-wrapper {
@@ -73,13 +73,12 @@
       }
     }
 
-    li.category-item:hover, li.category-item.selected,
-    li.category-name.selectable:hover, li.category-name.selectable.selected {
+    li.category-item.selected,
+    li.category-name.selectable.selected {
      background-color: #0071bc;
      color: white;
      &.marked{
-      background-color: $darkBlue;
-      color: #cccccc;
+      background-color: #f1f1f1;
      }
     }
 

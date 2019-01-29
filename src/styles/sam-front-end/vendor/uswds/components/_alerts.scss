@@ -72,6 +72,12 @@
 
 .usa-alert-plain {
   background-color: #FCFCFC;
+  background-image: url('#{$image-path}/alerts/download.png');
+}
+
+.usa-alert-download {
+  background-color: #FCFCFC;
+  background-image: url('#{$image-path}/alerts/download.png');
 }
 
 .usa-alert-no_icon {

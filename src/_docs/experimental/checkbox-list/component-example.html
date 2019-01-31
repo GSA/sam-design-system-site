@@ -1,4 +1,5 @@
 <sam-checkbox-list 
-[headerText]="testheader" >
-    
+[accordionText]="accordionText" [options]="options" (selectResults)="selectResults$.next($event)">
 </sam-checkbox-list>
+
+{{selectItems |json}}

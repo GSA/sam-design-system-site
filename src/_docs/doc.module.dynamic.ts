@@ -64,6 +64,7 @@ import { ProgressComponentExampleComponent } from './experimental/progress/compo
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
+import { SamSideNavigationToolbarComponentExampleComponent } from './experimental/sideNavigationToolbar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
 import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
@@ -160,6 +161,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamSideNavigationToolbarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,
@@ -247,6 +249,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamSideNavigationToolbarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,
     SamVideoPlayerComponentExampleComponent,

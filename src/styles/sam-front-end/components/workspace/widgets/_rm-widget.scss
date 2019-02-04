@@ -28,13 +28,22 @@
     display: none;
   }
 
-  .filter-align {
-    padding-top: 26px;
-    width: 30%;
+  .search-filter-alignment {
+    display: flex;
   }
-  
-  .search-box-align {
+  #filter-sel {
+    width: 30%;
+    margin: auto 2px;
+    label {
+      display: none;
+    }
+  }
+  #ppl-sel {
     width: 70%;
+    margin:auto 2px;
+    label {
+      display: none;
+    }
   }
 }
 

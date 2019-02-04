@@ -65,6 +65,13 @@
     vertical-align: top;
   }
 
+  .org-type-confirm-description{
+    font-weight: bold;
+    // width: 190px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
   .confirm-value{
     display: inline-block;
   }
@@ -83,5 +90,26 @@
 
   .funding-form {
     padding: 8px
+  }
+
+  .pd-bt{
+    padding-bottom: 0.5em;
+  }
+  .pd-lt-1{
+    padding-left: 1em;
+  }
+  .wid-title{
+    width: 27.55% !important;
+  }
+  .wid-val{
+    width: 24% !important;
+  }
+  .ic-aln{
+    font-size: .8em;
+    vertical-align: 9%;
+    padding-right: 0.3em;
+  }
+  .status-mag{
+    margin-left: -.8em;
   }
 }

@@ -1004,6 +1004,15 @@ $fa_fallback_md: 15px;
         width: 68px;
         height: 68px;
     }
+    .fa-download-o-workspace{
+        &:before{
+            content: none;
+        }
+        background: url('/assets/fonts/font-awesome/fallback/fa-download-dark.png') no-repeat;
+        background-size: 68px 68px;
+        width: 68px;
+        height: 68px;
+    }
     .fa-list-ol{
         &:before{
             content: none;

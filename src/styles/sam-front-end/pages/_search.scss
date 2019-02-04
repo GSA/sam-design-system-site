@@ -97,3 +97,71 @@
     }
   }
 }
+
+
+sam-infographic-container {
+
+  .opp-info {
+    padding-bottom: 8px;
+    position: relative;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    background: rgb(41,91,137);
+    background: linear-gradient(180deg, rgba(41,91,137,1) 0%, rgba(18,46,81,1) 100%);
+  }
+
+  .opp-info p,
+  .opp-info a {
+    color: white;
+  }
+
+  .opp-info-links {
+    li{
+      padding-bottom: 15px;
+    }
+    a{
+      font-weight: 600;
+    }
+    .fa{
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+      padding: 10px 12px;
+      margin-right: 5px;
+      &::before{
+        color: #122E51;
+      }
+    }
+  }
+
+  .opp-info-tips {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background-color: white;
+    margin-bottom: 25px;
+  }
+
+  .opp-info-tips-header {
+    padding-left: 20px;
+    background-color: #F1F1F1;
+  }
+
+  .infographicWrapper {
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .info-graph {
+    height: 400px !important;
+    width: 710px !important;
+  }
+
+  .opp-expand{
+    float: left;
+    overflow: hidden;
+  }
+
+}

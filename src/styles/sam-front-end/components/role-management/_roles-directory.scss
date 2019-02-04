@@ -1,5 +1,17 @@
 .roles-directory {
 
+  #entity-picker {
+    label {
+      display: none;
+    }
+  }
+
+  #org-picker {
+    label {
+      display: none;
+    }
+  }
+
   .org-selected-bkg {
     background: #fdb81e !important;
   }
@@ -168,7 +180,8 @@
   }
 
   .result-actions {
-    display: inline-block;
+    display: flex;
+    float: right;
   }
 
   .user-details {

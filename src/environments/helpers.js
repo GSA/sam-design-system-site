@@ -67,7 +67,8 @@ const doc2Components = [
 	'SamCheckboxListComponentExampleComponent',
 	'SamHierarchicalTreeComponentExampleComponent',
 	'ProgressComponentExampleComponent',
-	'SamHierarchicalComponentExampleComponent'
+	'SamHierarchicalComponentExampleComponent',
+	'SamSideNavigationToolbarComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

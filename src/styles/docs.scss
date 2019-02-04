@@ -20,12 +20,18 @@
 @import "reset/button";
 @import "reset/title";
 
+@import "reset/sam-styles"; // Reset styles for sam-styles 2.0
+
 
 /* SAM Styles
    ========================================================================== */
 
 @import "~@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov";
 
+/* SAM Styles 2.0
+   ========================================================================== */
+
+@import '~@gsa-sam/sam-ui-elements/sam-styles-2/src/stylesheets/theme/styles';
 
 /* SAM Design System
    ========================================================================== */

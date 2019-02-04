@@ -24,7 +24,10 @@
             "styles": [
               "src/styles/docs.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/sam-styles/uswds/js/uswds.min.js",
+              "src/assets/sam-styles/js/accordion.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -1,16 +1,16 @@
 <sam-site-header></sam-site-header>
 
 <div class="usa-grid">
-
+  
   <h1 class="sam heading">Patterns</h1>
-
+  
   <p class="sam lead">
     Page and component patterns to help you quickly get started with
     <strong><em>SAM-UI Elements</em></strong>.
     To understand how the components work together to build pages, read the
     <a [routerLink]="['/docs/patterns/layout']">documentation</a>.
   </p>
-
+  
   <div class="usa-grid-full sam-docs flex">
     <div class="usa-width-one-third sam-docs flex">
       <a [routerLink]="['/patterns/page/a']" class="sam-docs card">
@@ -31,7 +31,7 @@
       </a>
     </div>
   </div>
-
+  
   <div class="usa-grid-full sam-docs flex">
     <div class="usa-width-one-third sam-docs flex">
       <a [routerLink]="['/patterns/page/layout-nosidebar']" class="sam-docs card">
@@ -51,14 +51,23 @@
         <span class="sam small">Workspace Pattern</span>
       </a>
     </div>
+  </div>
+  
+  <div class="usa-grid-full">
     <div class="usa-width-one-third sam-docs flex">
       <a [routerLink]="['/patterns/page/workspace-dashboard']" class="sam-docs card">
         <div class="title">Workspace Dashboard</div>
         <span class="sam small">Workspace Dashboard</span>
       </a>
     </div>
+    <div class="usa-width-one-third sam-docs flex">
+      <a [routerLink]="['/patterns/page/page-wrapper']" class="sam-docs card">
+        <div class="title">Page Wrapper</div>
+        <span class="sam small">Banner, Header, Footer & Toolbar</span>
+      </a>
+    </div>
   </div>
-
+  
 </div>
 
 <sam-site-footer></sam-site-footer>

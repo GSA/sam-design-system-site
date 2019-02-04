@@ -26,7 +26,10 @@ section.home{
   max-width: 800px;
   color: white;
   padding: 40px 15px 30px 15px;
-  .heading, p {
+  .heading{
+    justify-content: center;
+  }
+  p {
     text-align: center;
   }
   a{

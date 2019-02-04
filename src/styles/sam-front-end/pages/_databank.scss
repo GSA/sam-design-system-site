@@ -1,0 +1,76 @@
+.table-align {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 10px !important;
+}
+
+.icon-background {
+    background-color: transparent !important;
+    color: black;
+}
+
+.expansion-background {
+    .mat-expansion-panel-body {
+        background-color: transparent !important;
+        box-shadow: none;
+    }
+}
+
+.criteria-list {
+    border-bottom: 1px solid silver;
+    padding-bottom: 0px !important;
+    margin-bottom: 20px !important;
+}
+
+.static-report-link {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.static-report-button {
+    color: black;
+}
+
+.static-report-grid{
+    .usa-grid {
+        padding-left: 0em;
+    }
+}
+
+.static-report-grouped {
+    width: 7%;
+    height: auto;
+    margin-left: 5px;
+}
+
+.static-report-ungrouped {
+    width: 2%;
+    height: auto;
+    margin-left: 5px;
+}
+
+.side-nav-selection {
+    .usa-sidenav-list a.usa-current {
+        border-left: none;
+    }
+}
+.static-other-domain{
+    div {
+        border:1px solid silver;
+        border-left:10px solid #00BFFF; 
+        background-color: white;
+        padding: 10px;
+    }
+    .fa-info-circle{
+        color: #00BFFF;
+    }
+    i{
+        padding-right: 5px;
+    }
+}
+
+.static-report-new {
+    color: red;
+    font-size: 13px;
+}

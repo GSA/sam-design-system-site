@@ -1,4 +1,9 @@
 .usa-register-main {
+  #otp-options {
+    fieldset>legend {
+      display: none !important;
+    }
+  }
   sam-alert {
     left: 50%;
     transform: translateX(-50%);
@@ -68,6 +73,9 @@
   sam-intl-telephone-group {
     .usa-form-hint {
       margin-bottom: 0em !important;
+    }
+    legend > span {
+      font-size: initial !important;
     }
   }
 

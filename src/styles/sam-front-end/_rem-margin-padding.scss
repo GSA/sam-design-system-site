@@ -47,6 +47,7 @@ $spacing: 1rem;
 // R - right
 
 .m_All-1rem { @extend %margin-1rem; }
+.m_All-2rem { @extend %margin-2rem; }
 .m_All-3rem { @extend %margin-3rem; }
 .m_All-4rem { @extend %margin-4rem; }
 

@@ -6,6 +6,12 @@
     margin-top: 0;
   }
 
+    .severity-select {
+      sam-label-wrapper div {
+          padding-right: 50px;
+      }
+    }
+
   .publish-date label {
     margin-top: 0;
   }

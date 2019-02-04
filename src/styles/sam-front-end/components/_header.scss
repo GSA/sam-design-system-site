@@ -31,6 +31,12 @@ sam-header {
     background-color: #323a45;
   }
 
+  .right.menu li > button{
+    margin: 0;
+    height: 65px;
+    vertical-align: middle;
+  }
+
   .right.menu li > button.item:not(.notification-container) + div{
     position: absolute;
     width: 100%;

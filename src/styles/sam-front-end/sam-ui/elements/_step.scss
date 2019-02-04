@@ -420,6 +420,7 @@ $disabledColor: $disabledTextColor;
 .#{$prefix}.steps a.step:hover {
   background: $hoverBackground;
   color: $hoverColor;
+  text-decoration: none;
 }
 
 /* Link Down */
@@ -491,6 +492,13 @@ $disabledColor: $disabledTextColor;
 .#{$prefix}.steps .step.pending > .icon:before,
 .#{$prefix}.ordered.steps .step.pending:before {
   color: $textColor;
+  font-family: FontAwesome;
+  content: "\f1db";
+}
+/* Pending and Disabled */
+.#{$prefix}.steps .step.pending > .icon:before,
+.#{$prefix}.ordered.steps .step.pending.disabled:before {
+  color: $disabledColor;
   font-family: FontAwesome;
   content: "\f1db";
 }

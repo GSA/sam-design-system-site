@@ -63,6 +63,7 @@ import { SamPageSampleComponentExampleComponent } from './experimental/page/comp
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
+import { SamSideNavigationToolbarComponentExampleComponent } from './experimental/sideNavigationToolbar/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
@@ -159,6 +160,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     ProgressComponentExampleComponent,
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
+    SamSideNavigationToolbarComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,
@@ -246,6 +248,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     ProgressComponentExampleComponent,
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
+    SamSideNavigationToolbarComponentExampleComponent,
     SamSidebarComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,

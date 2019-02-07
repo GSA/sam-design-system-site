@@ -11,8 +11,8 @@ import { Observable, BehaviorSubject } from 'rxjs';
 })
 export class SamListboxComponentExampleComponent {
 
-  public selectItems1: any[] =[];
-  public selectItems2: any[] =[];
+  public selectItems1: any[] = [];
+  public selectItems2: any[] = [];
   public options = [
     { name: 'id1', value: 'test1', label: 'test-id1', required: false, checked: false },
     { name: 'id2', value: 'test2', label: 'test-id2', required: true, checked: true },
@@ -37,20 +37,8 @@ export class SamListboxComponentExampleComponent {
 
 
   public ngOnInit() {
-    this.options.forEach(option => {
-      if(option.checked) {
-      this.selectItems2.push(option); 
-      }
-    });
-    // this.options1.forEach(option => {
-    //   if(option.checked) {
-    //   this.selectItems1.push(option); 
-    //   }
-    // });
-   
+    this.selectItems2 = this.options.filter(item => item.checked);
+    this.selectItems1 = this.options1.filter(item => item.checked);
   }
-
-  
-
 }
 

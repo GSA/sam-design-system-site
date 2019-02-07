@@ -57,8 +57,8 @@ import { SamPageSampleComponentExampleComponent } from './experimental/page/comp
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
-import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamSideNavigationToolbarComponentExampleComponent } from './experimental/sideNavigationToolbar/component-example';
+import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
 import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
@@ -334,13 +334,13 @@ export const ROUTES: Routes = [
     { path: '', component: SamResourcesWrapperComponentExampleComponent }
   ]},
   { path: 'experimental/search', component: SamSearchComponentExampleComponent },
-  { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/sideNavigationToolbar', component: BaseDocPageComponent, data: {
-    path: '_docs\experimental\sideNavigationToolbar\component-example.ts',
+    path: '_docs/experimental/sideNavigationToolbar',
     componentName: 'SamSideNavigationToolbarComponent',
-			sections: ['']}, children: [
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
     { path: '', component: SamSideNavigationToolbarComponentExampleComponent }
   ]},
+  { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/tabs', component: BaseDocPageComponent, data: {
     path: '_docs/experimental/tabs',
     componentName: 'SamTabsNextComponent',

@@ -1,4 +1,4 @@
-<sam-checkbox-list 
+<!-- <sam-checkbox-list 
  [options]="options"
  (selectResults)="selectResults$.next($event)">
 </sam-checkbox-list>
@@ -11,4 +11,11 @@
  (selectResults)="selectResults1$.next($event)">
 </sam-checkbox-list>
 
-{{selectItems1 |json}}
+{{selectItems1 |json}} -->
+
+<sam-checkbox-list 
+ [options]="options"
+ [(ngModel)]="selectItems2">
+</sam-checkbox-list>
+
+{{selectItems2 |json}}

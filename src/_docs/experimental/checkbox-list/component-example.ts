@@ -13,6 +13,7 @@ export class SamCheckboxListComponentExampleComponent {
   accordionText:string ='test';
   public selectItems: any[];
   public selectItems1: any[];
+  public selectItems2: any[] =[];
   public options = [
     { name: 'id1', value: 'test1', label: 'test-id1', required: false, checked: false },
     { name: 'id2', value: 'test2', label: 'test-id2', required: true, checked: true },

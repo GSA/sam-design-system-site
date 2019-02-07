@@ -21,7 +21,7 @@
     "update-build-env": "node src/environments/update-build-env.js",
     "init": "npm run compile-markdown && npm run set-env && npm run docs",
     "bundle-analyzer": "webpack-bundle-analyzer dist/stats.json",
-    "federalist": "npm run init && NODE_OPTIONS=--max-old-space-size=5072 && ng build --prod --base-href=$BASEURL"
+    "federalist": "npm run init && NODE_OPTIONS=--max-old-space-size=5072 && ng build --prod --base-href=$BASEURL --deploy-url=$BASEURL"
   },
   "private": true,
   "dependencies": {

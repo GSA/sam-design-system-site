@@ -13,9 +13,17 @@
 
 {{selectItems1 |json}} -->
 
-<sam-checkbox-list 
+<sam-listbox 
  [options]="options"
  [(ngModel)]="selectItems2">
-</sam-checkbox-list>
+</sam-listbox>
 
 {{selectItems2 |json}}
+
+<sam-listbox 
+isSingleMode="true"
+ [options]="options1"
+ [(ngModel)]="selectItems1">
+</sam-listbox>
+
+{{selectItems1 |json}}

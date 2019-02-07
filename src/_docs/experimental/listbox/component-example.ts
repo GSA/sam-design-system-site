@@ -9,10 +9,9 @@ import { Observable, BehaviorSubject } from 'rxjs';
   selector: 'doc-sam-checkbox-list',
   templateUrl: './component-example.html'
 })
-export class SamCheckboxListComponentExampleComponent {
-  accordionText:string ='test';
-  public selectItems: any[];
-  public selectItems1: any[];
+export class SamListboxComponentExampleComponent {
+
+  public selectItems1: any[] =[];
   public selectItems2: any[] =[];
   public options = [
     { name: 'id1', value: 'test1', label: 'test-id1', required: false, checked: false },
@@ -36,13 +35,22 @@ export class SamCheckboxListComponentExampleComponent {
     { name: 'id8', value: 'test8', label: 'test-id8', required: false, checked: false },
   ];
 
-  public selectResults$ = new BehaviorSubject<any[]>([]);
-  public selectResults1$ = new BehaviorSubject<any[]>([]);
+
   public ngOnInit() {
-    
-    this.selectResults$.subscribe(res => this.selectItems = res);
-    this.selectResults1$.subscribe(res => this.selectItems1 = res);
+    this.options.forEach(option => {
+      if(option.checked) {
+      this.selectItems2.push(option); 
+      }
+    });
+    // this.options1.forEach(option => {
+    //   if(option.checked) {
+    //   this.selectItems1.push(option); 
+    //   }
+    // });
+   
   }
+
+  
 
 }
 

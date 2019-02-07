@@ -38,7 +38,6 @@ import { SamActionsListComponentExampleComponent } from './experimental/actions-
 import { SamAlertNextComponentExampleComponent } from './experimental/alert/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { ButtonNextExampleComponent } from './experimental/button-next/component-example';
-import { SamCheckboxListComponentExampleComponent } from './experimental/checkbox-list/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
@@ -52,6 +51,7 @@ import { SamIconComponentExampleComponent } from './experimental/icon/component-
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
+import { SamListboxComponentExampleComponent } from './experimental/listbox/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
@@ -255,12 +255,6 @@ export const ROUTES: Routes = [
   ]},
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/button-next', component: ButtonNextExampleComponent },
-  { path: 'experimental/checkbox-list', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/checkbox-list',
-    componentName: 'SamCheckboxListComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
-    { path: '', component: SamCheckboxListComponentExampleComponent }
-  ]},
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
   { path: 'experimental/dollar', component: BaseDocPageComponent, data: {
     path: '_docs/experimental/dollar',
@@ -319,6 +313,12 @@ export const ROUTES: Routes = [
   ]},
   { path: 'experimental/label', component: SamLabelNextComponentExampleComponent },
   { path: 'experimental/list', component: SamListComponentExampleComponent },
+  { path: 'experimental/listbox', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/listbox',
+    componentName: 'SamListboxComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamListboxComponentExampleComponent }
+  ]},
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageSampleComponentExampleComponent },
   { path: 'experimental/progress', component: BaseDocPageComponent, data: {

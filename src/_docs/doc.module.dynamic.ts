@@ -45,7 +45,6 @@ import { SamActionsListComponentExampleComponent } from './experimental/actions-
 import { SamAlertNextComponentExampleComponent } from './experimental/alert/component-example';
 import { SamBoxComponentExampleComponent } from './experimental/box/component-example';
 import { ButtonNextExampleComponent } from './experimental/button-next/component-example';
-import { SamCheckboxListComponentExampleComponent } from './experimental/checkbox-list/component-example';
 import { SamContainerComponentExampleComponent } from './experimental/container/component-example';
 import { SamDollarComponentExampleComponent } from './experimental/dollar/component-example';
 import { SamFiltersComponentExampleComponent } from './experimental/filters/component-example';
@@ -59,6 +58,7 @@ import { SamIconComponentExampleComponent } from './experimental/icon/component-
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
+import { SamListboxComponentExampleComponent } from './experimental/listbox/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
@@ -143,7 +143,6 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamAlertNextComponentExampleComponent,
     SamBoxComponentExampleComponent,
     ButtonNextExampleComponent,
-    SamCheckboxListComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
@@ -157,6 +156,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,
     SamListComponentExampleComponent,
+    SamListboxComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageSampleComponentExampleComponent,
     ProgressComponentExampleComponent,
@@ -232,7 +232,6 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamAlertNextComponentExampleComponent,
     SamBoxComponentExampleComponent,
     ButtonNextExampleComponent,
-    SamCheckboxListComponentExampleComponent,
     SamContainerComponentExampleComponent,
     SamDollarComponentExampleComponent,
     SamFiltersComponentExampleComponent,
@@ -246,6 +245,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,
     SamListComponentExampleComponent,
+    SamListboxComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
     SamPageSampleComponentExampleComponent,
     ProgressComponentExampleComponent,

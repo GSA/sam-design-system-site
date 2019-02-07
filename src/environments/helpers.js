@@ -68,6 +68,7 @@ const doc2Components = [
 	'SamHierarchicalTreeComponentExampleComponent',
 	'ProgressComponentExampleComponent',
 	'SamHierarchicalComponentExampleComponent',
+	'SamDateRangeV2ExampleComponent',
 	'SamSideNavigationToolbarComponentExampleComponent'
 ];
 

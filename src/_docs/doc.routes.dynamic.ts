@@ -51,6 +51,7 @@ import { SamIconComponentExampleComponent } from './experimental/icon/component-
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
+import { SamListboxComponentExampleComponent } from './experimental/listbox/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
@@ -312,6 +313,12 @@ export const ROUTES: Routes = [
   ]},
   { path: 'experimental/label', component: SamLabelNextComponentExampleComponent },
   { path: 'experimental/list', component: SamListComponentExampleComponent },
+  { path: 'experimental/listbox', component: BaseDocPageComponent, data: {
+    path: '_docs/experimental/listbox',
+    componentName: 'SamListboxComponent',
+			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+    { path: '', component: SamListboxComponentExampleComponent }
+  ]},
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageSampleComponentExampleComponent },
   { path: 'experimental/progress', component: BaseDocPageComponent, data: {

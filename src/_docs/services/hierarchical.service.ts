@@ -58,8 +58,6 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
     getHiercarchicalById(id: string, searchValue: string, sort: Sort): Observable<object[]> {
         let temp = this.getSortedData(this.loadedData, sort);
         let data = Observable.of(temp);
-        // console.log('SORT STUFF IN SAM DESIGN');
-        // console.log(sort);
         if (searchValue) {
             return data.map(items => items.filter(itm => itm.parentId === id && (itm.name.indexOf(searchValue) !== -1 || itm.subtext.indexOf(searchValue) !== -1)));
         } else {

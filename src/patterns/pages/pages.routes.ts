@@ -10,6 +10,7 @@ import { SamSearchDemoComponent } from './search/search.component';
 import { SamWorkspaceDemoComponent } from './workspace/workspace.component';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
+import { CoreLayoutComponent } from './core-layout/core-layout.component';
 
 
 const PageRoutes: Routes = [
@@ -50,6 +51,10 @@ const PageRoutes: Routes = [
   {
     path: 'page-wrapper',
     component: PageWrapperComponent
+  },
+  {
+    path: 'core-layout',
+    component: CoreLayoutComponent
   }
 ];
 

@@ -13,6 +13,7 @@ import { SearchDemoModule } from './search/search.module';
 import { WorkspaceModule } from './workspace/workspace.module';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
+import { CoreLayoutComponent } from './core-layout/core-layout.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
     PageAComponent,
     PageBComponent,
     SamWorkspaceDashboardComponent,
-    PageWrapperComponent
+    PageWrapperComponent,
+    CoreLayoutComponent
   ]
 })
 export class PagesModule { }

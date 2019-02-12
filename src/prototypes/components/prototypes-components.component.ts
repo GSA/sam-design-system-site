@@ -22,7 +22,7 @@ import {
   </div>
   `
 })
-export class ComponentsComponent implements OnDestroy {
+export class ComponentsComponent {
 
   selectedOption: any;
 
@@ -34,31 +34,31 @@ export class ComponentsComponent implements OnDestroy {
   routerSubscription: any;
 
   constructor(private router: Router) {
-    this.routerSubscription = router.events.subscribe(event => {
-      if (event instanceof NavigationEnd ) {
-        const tree: UrlTree = router.parseUrl(event.url);
-        const group: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
-        const segment: UrlSegment[] = group.segments;
-        this.selectOption(segment[2].path);
-      }
-    });
+    // this.routerSubscription = router.events.subscribe(event => {
+    //   if (event instanceof NavigationEnd ) {
+    //     const tree: UrlTree = router.parseUrl(event.url);
+    //     const group: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+    //     const segment: UrlSegment[] = group.segments;
+    //     this.selectOption(segment[2].path);
+    //   }
+    // });
   }
 
-  selectOption(value) {
-    this.options.forEach(option => {
-      if (option.value === value) {
-        this.selectedOption = option;
-      }
-    });
-  }
+  // selectOption(value) {
+  //   this.options.forEach(option => {
+  //     if (option.value === value) {
+  //       this.selectedOption = option;
+  //     }
+  //   });
+  // }
 
-  navigateTo() {
-    if (this.selectedOption.value) {
-      this.router.navigate([`/prototypes/component/${this.selectedOption.value}`]);
-    }
-  }
+  // navigateTo() {
+  //   if (this.selectedOption.value) {
+  //     this.router.navigate([`/prototypes/component/${this.selectedOption.value}`]);
+  //   }
+  // }
 
-  ngOnDestroy() {
-    this.routerSubscription.unsubscribe();
-  }
+  // ngOnDestroy() {
+  //   this.routerSubscription.unsubscribe();
+  // }
 }

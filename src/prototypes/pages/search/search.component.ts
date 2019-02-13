@@ -223,7 +223,7 @@ export class SearchPageComponent
 
   public ngOnInit () {
 
-    this.http.get(`${environment.DEPLOYURL}assets/helpText.txt`)
+    this.http.get(`${environment.DEPLOYURL}/assets/helpText.txt`)
       .map(
         (response: any) => {
           return response.text();

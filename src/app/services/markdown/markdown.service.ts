@@ -11,7 +11,7 @@ export class MarkdownService {
   constructor(private http: Http) {
     this.processString =
       new MarkdownProcessor(
-        `${environment.DEPLOYURL}assets/markdown/`
+        `${environment.DEPLOYURL}/assets/markdown/`
       )
       .processString;
   }

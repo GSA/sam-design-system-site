@@ -85,7 +85,7 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
     }
 
     public getAssetURI (file: string): string {
-        return `${environment.DEPLOYURL}assets/${this.route.snapshot.data.path}/${file}`;
+        return `${environment.DEPLOYURL}/assets/${this.route.snapshot.data.path}/${file}`;
     }
 
 }

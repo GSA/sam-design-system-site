@@ -20,7 +20,8 @@ const config = {
   STATIC_PATH: STATIC_PATH,
   DOCS_PATH: DOCS_PATH,
   DOCS_MODULE_PATH: DOCS_MODULE_PATH,
-  DOCS_ROUTE_PATH: DOCS_ROUTE_PATH
+  DOCS_ROUTE_PATH: DOCS_ROUTE_PATH,
+  DEPLOYURL: process.env.DEPLOYURL || '/'
 }
 
 run(config)
@@ -62,6 +63,7 @@ export const environment: EnvironmentVariables = {
   STATICPAGES: ${config.STATICPAGES},
   DOCS: ${config.DOCS},
   ENV: '${config.ENV}',
+  DEPLOYURL: '${config.DEPLOYURL}',
   API_UMBRELLA_URL: '$API_UMBRELLA_URL',
   production: ${config.ENV === 'prod' ? true : false}
 }\n`

@@ -3,6 +3,7 @@ import { Response } from '@angular/http';
 import { Observable, ReplaySubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Http } from '@angular/http';
+import { environment } from 'environment';
 
 const regexComponent =
   new RegExp('([^/]*(\.component|\.directive))');
@@ -13,7 +14,7 @@ export class DocumentationService {
   constructor(private _http: Http) { }
 
   public loadData(): Observable<any> {
-    return this._http.get('/assets/docs.json')
+    return this._http.get(`${environment.DEPLOYURL}assets/docs.json`)
       .pipe(
         map((res: Response) => res.json())
       );

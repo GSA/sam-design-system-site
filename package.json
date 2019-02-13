@@ -2,7 +2,9 @@
   "name": "sam-design-system-site",
   "version": "0.0.0",
   "license": "MIT",
-  "engines": { "node" : ">=10.0.0" },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "npm run init && ng serve",
@@ -41,7 +43,7 @@
     "@angular/router": "6.1.10",
     "@fortawesome/fontawesome-svg-core": "1.2.2",
     "@fortawesome/free-solid-svg-icons": "5.2.0",
-    "@gsa-sam/sam-ui-elements": "0.6.5",
+    "@gsa-sam/sam-ui-elements": "0.7.0",
     "@ngx-formly/core": "^2.1.1",
     "accessible-html5-video-player": "^1.0.3",
     "classlist-polyfill": "1.0.3",

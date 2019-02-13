@@ -21,7 +21,7 @@ const config = {
   DOCS_PATH: DOCS_PATH,
   DOCS_MODULE_PATH: DOCS_MODULE_PATH,
   DOCS_ROUTE_PATH: DOCS_ROUTE_PATH,
-  DEPLOYURL: process.env.DEPLOYURL || '/'
+  DEPLOYURL: process.env.BASEURL || '/'
 }
 
 run(config)

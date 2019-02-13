@@ -17,6 +17,7 @@ import { Observable } from 'rxjs/Observable';
 import {
   faSlidersH
 } from '@fortawesome/free-solid-svg-icons';
+import { environment } from 'environment';
 
 const listItems = {
   state: {
@@ -222,7 +223,7 @@ export class SearchPageComponent
 
   public ngOnInit () {
 
-    this.http.get('/assets/helpText.txt')
+    this.http.get(`${environment.DEPLOYURL}/assets/helpText.txt`)
       .map(
         (response: any) => {
           return response.text();

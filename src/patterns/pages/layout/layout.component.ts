@@ -36,6 +36,8 @@ import {
   SampleDatabase,
   SampleDataSource
 } from './database';
+import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
+import { SelectedResultConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
 
 @Component({
   selector: 'sam-layout-demo-component',
@@ -76,6 +78,8 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
 
   public progressLabel: Subject<number> = new Subject();
 
+  public model3 = new HierarchicalTreeSelectedItemModel();
+  public settings3 = new SelectedResultConfiguration();
   @ViewChild(SamSortDirective)
     public _sort: SamSortDirective;
 
@@ -132,14 +136,26 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
         if (!this.cdr['destroyed']) {
           this.cdr.detectChanges();
         }
+          // calls when filters changes
+          this._loadComponents();
         this._connectToPageService();
         if (!this.cdr['destroyed']) {
           this.cdr.detectChanges();
         }
       }, 3000);
     }, 1000);
+
+    this.settings3.primaryKeyField = 'id';
+    this.settings3.primaryTextField = 'name';
+    this.settings3.secondaryTextField = 'subtext';
+    this.model3.treeMode = TreeMode.MULTIPLE;
+    this.addItem();
   }
 
+  addItem() {
+    const exampleItem = { id: 'test', name: 'shilpa' };
+    this.model3.addItem(exampleItem, 'id');
+  }
   ngOnDestroy() {
     this.cdr.detach(); // do this
   }
@@ -242,7 +258,6 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
     } else {
       value = [];
     }
-
     return value;
   }
 
@@ -256,5 +271,22 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
         ];
       }
     }
+  }
+
+  private _loadComponents (): void {
+    this._service.get('filters').valueChanges.subscribe(
+      filters => {
+        const filterFields = this._service.get('filterFields').value;
+        const obj = {};
+        const res = Object.keys(filters).map(
+          itemKey => {
+                   const field = filterFields.filter(
+              item => item.key === itemKey
+            );
+            obj[itemKey] = filters[itemKey];
+          },
+        );
+      }
+    );
   }
 }

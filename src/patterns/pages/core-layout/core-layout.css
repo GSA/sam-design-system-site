@@ -1,12 +1,22 @@
-.grid-container{
+.core-layout{
   display: grid;
+  grid-gap: 10px;
+
+  position: relative;
+  float: right;
+  width: 94%;
 }
-.grid-row1{
-  grid-row: 1/1;
+.core-layout .grid-row>*{
+  background-color: #F1F1F1;
+  border: solid black 1px;
+  text-align: center;
 }
-.grid-row2{
-  grid-row: 1/1;
+.primary-row>*{
+  height: 60px;
 }
-.grid-core{
-  grid-row:1/1;
+.secondary-row>*{
+  height: 60px;
+}
+.core>*{
+  height: 350px;
 }

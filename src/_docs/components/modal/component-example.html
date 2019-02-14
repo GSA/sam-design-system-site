@@ -70,12 +70,12 @@
 
 <hr/>
 
-<sam-text label="Title"
-    [(ngModel)]="modalConfig2.title"
-    name="title"></sam-text>
-<sam-text label="Description"
-    [(ngModel)]="modalConfig2.description"
-    name="description"></sam-text>
+<label for="modal-title">Title</label>
+<input id="modal-title" type="text" [(ngModel)]="modalConfig2.title">
+
+<label for="modal-description">Description</label>
+<input id="modal-description" type="text" [(ngModel)]="modalConfig2.description">
+
 <sam-select label="Type"
     name="type"
     [(ngModel)]="modalConfig2.type"

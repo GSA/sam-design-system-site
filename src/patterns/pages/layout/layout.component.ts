@@ -287,13 +287,15 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
             };
           }
         );
+
         const res = [];
         filterResults.forEach(item => {
           if (item.values) {
             res.push(item);
           }
         });
-        this.model3.updateItems(res, 'values', 'label');
+        console.log(res);
+        this.model3.replaceItems(res, 'values', 'label');
       }
     );
   }

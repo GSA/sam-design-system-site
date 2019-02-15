@@ -290,12 +290,19 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
 
         const res = [];
         filterResults.forEach(item => {
-          if (item.values) {
+          if ((!Array.isArray(item.values)) && item.values) {
             res.push(item);
+          } else if (Array.isArray(item.values)) {
+            item.values.forEach(val => {
+              const obj = {};
+              obj['values'] = val;
+              obj['label'] = `${val}label`;
+              res.push(obj);
+            });
           }
+
         });
-        console.log(res);
-        this.model3.replaceItems(res, 'values', 'label');
+        this.model3.replaceItems(res, 'values');
       }
     );
   }

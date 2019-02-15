@@ -29,7 +29,7 @@
   "dependencies": {
     "@angular-devkit/build-angular": "~0.7.0",
     "@angular/animations": "6.1.10",
-    "@angular/cdk": "^6.0.0",
+    "@angular/cdk": "2.0.0-beta.8",
     "@angular/cli": "^6.2.7",
     "@angular/common": "6.1.10",
     "@angular/compiler": "6.1.10",
@@ -37,8 +37,7 @@
     "@angular/core": "6.1.10",
     "@angular/forms": "6.1.10",
     "@angular/http": "6.1.10",
-    "@angular/language-service": "6.1.10",
-    "@angular/material": "6.0.0",
+    "@angular/material": "2.0.0-beta.8",
     "@angular/platform-browser": "6.1.10",
     "@angular/platform-browser-dynamic": "6.1.10",
     "@angular/router": "6.1.10",
@@ -46,9 +45,6 @@
     "@fortawesome/free-solid-svg-icons": "5.2.0",
     "@gsa-sam/sam-ui-elements": "0.8.0",
     "@ngx-formly/core": "^2.1.1",
-    "@types/jasmine": "2.5.54",
-    "@types/jasminewd2": "~2.0.2",
-    "@types/node": "6.0.38",
     "accessible-html5-video-player": "^1.0.3",
     "classlist-polyfill": "1.0.3",
     "core-js": "^2.4.1",
@@ -64,7 +60,13 @@
     "typedoc": "0.5.10",
     "typescript": "2.9.2",
     "uswds": "1.6.6",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "@angular/language-service": "6.1.10",
+    "ts-node": "~3.2.0",
+    "tslint": "~5.7.0",
+    "@types/jasmine": "2.5.54",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "6.0.38"
   },
   "devDependencies": {
     "codelyzer": "~3.2.0",

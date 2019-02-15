@@ -38,6 +38,7 @@ import {
 } from './database';
 import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
 import { SelectedResultConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
+import { stringify } from '@angular/core/src/render3/util';
 
 @Component({
   selector: 'sam-layout-demo-component',
@@ -286,7 +287,13 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
             };
           }
         );
-        this.model3.updateItems(filterResults, 'values');
+        const res = [];
+        filterResults.forEach(item => {
+          if (item.values) {
+            res.push(item);
+          }
+        });
+        this.model3.updateItems(res, 'values', 'label');
       }
     );
   }

@@ -1,7 +1,13 @@
-<sam-date-range-v2 
+<!-- <sam-date-range-v2 
 [startDateConfig]="startDateConfig" 
 [endDateConfig]= "endDateConfig" 
 (selectedDates)="selectedDates$.next($event)"
+></sam-date-range-v2> -->
+
+<sam-date-range-v2 
+[startDateConfig]="startDateConfig" 
+[endDateConfig]= "endDateConfig" 
+[(ngModel)]="dateConfig" 
 ></sam-date-range-v2>
 
-{{selectDates | json}}
+{{dateConfig | json}}

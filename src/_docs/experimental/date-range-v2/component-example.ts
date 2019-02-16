@@ -10,6 +10,11 @@ import { Observable, BehaviorSubject } from 'rxjs';
   templateUrl: './component-example.html'
 })
 export class SamDateRangeV2ExampleComponent {
+  dateConfig: any ={
+  startDate :'12/21/2001',
+  endDate :'12/21/2021'
+  }
+  
   startDateConfig: any = {
     name: 'Start Date',
     placeholder: 'Start Date',

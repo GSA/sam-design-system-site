@@ -50,8 +50,7 @@ export class SamDateRangeV2ExampleComponent {
     placeholder: 'Start Date',
     label: 'Start Date Picker',
     hint: '',
-    showCalendar : false,
-    disabled: true,
+    showCalendar: true,
     weekStart: 1,
     dateFormat: 'MM-DD-YYYY',
     rangeStart: new Date(2019, 0, 1),
@@ -64,7 +63,7 @@ export class SamDateRangeV2ExampleComponent {
     label: 'End Date Picker',
     hint: '',
     dateFormat: 'MM-DD-YYYY',
-    showCalendar: true
+    disabled: true,
   };
 
 

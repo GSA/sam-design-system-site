@@ -15,7 +15,7 @@ export class SamDateRangeV2ExampleComponent {
 
   dateRangeConfig = {
     label: 'Date Range',
-    hint: 'Date range for ad-hoc report'
+    hint: 'Date range for ad-hoc report with default values'
   };
 
   startDateConfig: any = {
@@ -23,9 +23,8 @@ export class SamDateRangeV2ExampleComponent {
     placeholder: 'Start Date',
     label: 'Start Date Picker',
     hint: '',
-    dateFormat: 'M/DD/YY',
     showCalendar : false,
-    disabled: true
+    disabled: false
   };
 
   endDateConfig: any = {
@@ -34,5 +33,42 @@ export class SamDateRangeV2ExampleComponent {
     label: 'End Date Picker',
     hint: '',
   };
+
+
+  dateModel1: any = {
+    startDate: '02-01-2019',
+    endDate: '01-31-2019'
+  };
+
+  dateRangeConfig1 = {
+    label: 'Date Range with custom options',
+    hint: 'Date range for ad-hoc report'
+  };
+
+  startDateConfig1: any = {
+    name: 'Start Date',
+    placeholder: 'Start Date',
+    label: 'Start Date Picker',
+    hint: '',
+    showCalendar : false,
+    disabled: true,
+    weekStart: 1,
+    dateFormat: 'MM-DD-YYYY',
+    rangeStart: new Date(2019, 0, 1),
+    rangeEnd: new Date(2019, 5, 1)
+  };
+
+  endDateConfig1: any = {
+    name: 'End Date',
+    placeholder: 'End Date',
+    label: 'End Date Picker',
+    hint: '',
+    dateFormat: 'MM-DD-YYYY',
+    showCalendar: true
+  };
+
+
+
+
 }
 

@@ -36,6 +36,13 @@ import {
   SampleDatabase,
   SampleDataSource
 } from './database';
+import {
+  HierarchicalTreeSelectedItemModel,
+   TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
+import {
+   SelectedResultConfiguration
+  } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
+import { stringify } from '@angular/core/src/render3/util';
 
 @Component({
   selector: 'sam-layout-demo-component',
@@ -75,25 +82,27 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public flag2 = false;
 
   public progressLabel: Subject<number> = new Subject();
-
+  public results: (args) => { label: string, values: any[] }[];
+  public model3 = new HierarchicalTreeSelectedItemModel();
+  public settings3 = new SelectedResultConfiguration();
   @ViewChild(SamSortDirective)
-    public _sort: SamSortDirective;
+  public _sort: SamSortDirective;
 
   @ViewChild(SamModalComponent)
-    public fieldsEditor: SamModalComponent;
+  public fieldsEditor: SamModalComponent;
 
-    public test = [];
-    public testOptions = [
-      { key: 'one', value: 'one' },
-      { key: 'two', value: 'two' },
-      { key: 'three', value: 'three' },
-      { key: 'four', value: 'four' },
-      { key: 'five', value: 'five' },
-    ];
+  public test = [];
+  public testOptions = [
+    { key: 'one', value: 'one' },
+    { key: 'two', value: 'two' },
+    { key: 'three', value: 'three' },
+    { key: 'four', value: 'four' },
+    { key: 'five', value: 'five' },
+  ];
 
-    public valueAsText = new Subject<string>();
+  public valueAsText = new Subject<string>();
 
-  constructor (
+  constructor(
     private _fb: FormBuilder,
     private _service: SamPageNextService,
     private cdr: ChangeDetectorRef
@@ -132,19 +141,24 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
         if (!this.cdr['destroyed']) {
           this.cdr.detectChanges();
         }
+        // calls when filters changes
+        this.filtersPills();
         this._connectToPageService();
         if (!this.cdr['destroyed']) {
           this.cdr.detectChanges();
         }
       }, 3000);
     }, 1000);
-  }
 
+    this.settings3.primaryKeyField = 'values';
+    this.settings3.primaryTextField = 'values';
+    this.model3.treeMode = TreeMode.MULTIPLE;
+  }
   ngOnDestroy() {
     this.cdr.detach(); // do this
   }
 
-  public toggleFieldsEditor () {
+  public toggleFieldsEditor() {
     // backup in case of cancel action
     this.optionsBackup = cloneDeep(this.options);
     this.fieldsEditor.openModal();
@@ -195,11 +209,11 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
     );
   }
 
-  public onSortChange (event): void {
+  public onSortChange(event): void {
     this._service.model.properties.sort.setValue(event);
   }
 
-  public removeItem (event): void {
+  public removeItem(event): void {
     const current = this._service.get('filters').value;
     let key = Object.keys(event)[0];
     const fieldsObj = this.fields.find((item) => {
@@ -219,7 +233,7 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
     }
   }
 
-  private _connectToPageService () {
+  private _connectToPageService() {
     this._service.model.properties.data.valueChanges
       .subscribe(
         data => {
@@ -228,7 +242,7 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
       );
   }
 
-  public filtersToPills (filters): any[] {
+  public filtersToPills(filters): any[] {
     const key = Object.keys(filters)[0];
 
     let value;
@@ -242,12 +256,11 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
     } else {
       value = [];
     }
-
     return value;
   }
 
-  private _toggleColumn (field): void {
-    for (const option of field.options){
+  private _toggleColumn(field): void {
+    for (const option of field.options) {
       const value = option.value;
 
       if (field.selected.indexOf(value) === -1) {
@@ -256,5 +269,45 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
         ];
       }
     }
+  }
+
+
+  private filtersPills(): void {
+    this._service.get('filters').valueChanges.subscribe(
+      filters => {
+
+        const filterFields = this._service.get('filterFields').value;
+
+        const filterResults = Object.keys(filters).map(
+          key => {
+            const field = filterFields.filter(
+              item => item.key === key
+            )[0];
+            const obj = {};
+            obj[key] = filters[key];
+            return {
+              label: field.templateOptions.label,
+              values: obj[key]
+            };
+          }
+        );
+
+        const res = [];
+        filterResults.forEach(item => {
+          if ((!Array.isArray(item.values)) && item.values) {
+            res.push(item);
+          } else if (Array.isArray(item.values)) {
+            item.values.forEach(val => {
+              const obj = {};
+              obj['values'] = val;
+              obj['label'] = `${val}label`;
+              res.push(obj);
+            });
+          }
+
+        });
+        this.model3.replaceItems(res, 'values');
+      }
+    );
   }
 }

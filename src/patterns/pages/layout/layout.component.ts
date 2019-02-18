@@ -36,8 +36,12 @@ import {
   SampleDatabase,
   SampleDataSource
 } from './database';
-import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
-import { SelectedResultConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
+import {
+  HierarchicalTreeSelectedItemModel,
+   TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
+import {
+   SelectedResultConfiguration
+  } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
 import { stringify } from '@angular/core/src/render3/util';
 
 @Component({

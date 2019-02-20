@@ -9,7 +9,7 @@ import {
 export class SamDateRangeV2ExampleComponent {
 
   dateModel: any = {
-    startDate: '12/21/01',
+    startDate: '12/21/2001',
     endDate: '12/21/2021'
   };
 
@@ -54,7 +54,7 @@ export class SamDateRangeV2ExampleComponent {
     weekStart: 1,
     dateFormat: 'MM-DD-YYYY',
     rangeStart: new Date(2019, 0, 1),
-    rangeEnd: new Date(2019, 5, 1)
+    rangeEnd: new Date(2019, 4, 1)
   };
 
   endDateConfig1: any = {

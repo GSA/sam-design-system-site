@@ -150,8 +150,9 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
       }, 3000);
     }, 1000);
 
-    this.settings3.primaryKeyField = 'values';
-    this.settings3.primaryTextField = 'values';
+    this.settings3.primaryKeyField = 'label';
+    this.settings3.primaryTextField = 'label';
+    this.settings3.secondaryTextField = 'values';
     this.model3.treeMode = TreeMode.MULTIPLE;
   }
   ngOnDestroy() {
@@ -300,7 +301,7 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
             item.values.forEach(val => {
               const obj = {};
               obj['values'] = val;
-              obj['label'] = `${val}label`;
+              obj['label'] = `${item.label}`;
               res.push(obj);
             });
           }

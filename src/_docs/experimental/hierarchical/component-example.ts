@@ -30,6 +30,9 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
 
   }
 
+  changes(value){
+    console.log(value);
+  }
 
   ngOnInit() {
     this.settings.id = 'autocomplete1'; 
@@ -115,4 +118,7 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
 
 
   }
+
+
+ 
 }

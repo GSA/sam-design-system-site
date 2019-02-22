@@ -6,16 +6,16 @@
 </ng-template>
 
 <h2>Single Item Default Template</h2>
-<sam-hierarchical-autocomplete [service]="service" [model]="model" [configuration]="settings"></sam-hierarchical-autocomplete>
+<sam-hierarchical-autocomplete [service]="service" [(ngModel)]="model" [configuration]="settings"></sam-hierarchical-autocomplete>
 
 
 <h2>Single Item Custom Template</h2>
-<sam-hierarchical-autocomplete [service]="service" [model]="model2" [configuration]="settings2" [itemTemplate]="temp"></sam-hierarchical-autocomplete>
+<sam-hierarchical-autocomplete [service]="service" [(ngModel)]="model2" [configuration]="settings2" [itemTemplate]="temp"></sam-hierarchical-autocomplete>
 
 <h2>Multiple Items Default Template</h2>
 <sam-hierarchical-autocomplete [service]="service" [model]="model3" [configuration]="settings3"></sam-hierarchical-autocomplete>
-<sam-selected-result [model]="model3" [configuration]="resultSettings"></sam-selected-result>
+<sam-selected-result [(ngModel)]="model3" [configuration]="resultSettings"></sam-selected-result>
 
 <h2>Multiple Item Custom Template</h2>
 <sam-hierarchical-autocomplete [service]="service" [model]="model4" [configuration]="settings4" [itemTemplate]="temp"></sam-hierarchical-autocomplete>
-<sam-selected-result [model]="model4" [configuration]="resultSettings" [itemTemplate]="temp"></sam-selected-result>
+<sam-selected-result [(ngModel)]="model4" [configuration]="resultSettings" [itemTemplate]="temp"></sam-selected-result>

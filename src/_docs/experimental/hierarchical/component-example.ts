@@ -23,6 +23,7 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
   public model2 = new HierarchicalTreeSelectedItemModel();
   public model3 = new HierarchicalTreeSelectedItemModel();
   public model4 = new HierarchicalTreeSelectedItemModel();
+  public model5 = new HierarchicalTreeSelectedItemModel();
 
 
 
@@ -30,6 +31,9 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
 
   }
 
+  changes(value){
+    console.log(value);
+  }
 
   ngOnInit() {
     this.settings.id = 'autocomplete1'; 
@@ -110,9 +114,12 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.model2.treeMode = TreeMode.SINGLE;
     this.model3.treeMode = TreeMode.MULTIPLE;
     this.model4.treeMode = TreeMode.MULTIPLE;
-
+    this.model5.treeMode = TreeMode.MULTIPLE;
 
 
 
   }
+
+
+ 
 }

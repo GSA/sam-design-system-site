@@ -38,12 +38,14 @@
   <sam-main>
 
     <!-- filter-drawer -->
-    <sam-filter-drawer
+    <!-- <sam-filter-drawer
       dynamicChips
       [map]="filtersToPills"
       (remove)="removeItem($event)">
-    </sam-filter-drawer>
-    
+    </sam-filter-drawer> -->
+   
+    <sam-selected-result [model]="model3" [configuration]="settings3"></sam-selected-result>
+
     <sam-alert-next
       type="warning">This report doesn't pull real data</sam-alert-next>
 

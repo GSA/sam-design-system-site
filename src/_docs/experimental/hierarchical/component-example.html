@@ -1,15 +1,22 @@
 Single Select without template
-<sam-hierarchical [service]="service" [model]="model" [configuration]="settings"></sam-hierarchical>
+<sam-hierarchical [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model" [configuration]="settings">
+</sam-hierarchical>
 
 Single Select with template
-<sam-hierarchical [service]="service" [model]="model2" [configuration]="settings2" [suggestionTemplate]="temp"></sam-hierarchical>
+<sam-hierarchical [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model2" [configuration]="settings2"
+    [suggestionTemplate]="temp"></sam-hierarchical>
 
 Multi Select without template
-<sam-hierarchical [service]="service" [model]="model3" [configuration]="settings3"></sam-hierarchical>
+<sam-hierarchical [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model3"
+    [configuration]="settings3"></sam-hierarchical>
 
 Multi Select with template
-<sam-hierarchical [service]="service" [model]="model4" [configuration]="settings4" [suggestionTemplate]="temp"
-    [selectedItemTemplate]="temp"></sam-hierarchical>
+<sam-hierarchical [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model4" [configuration]="settings4"
+    [suggestionTemplate]="temp" [selectedItemTemplate]="temp"></sam-hierarchical>
+
+
+Disabled
+<sam-hierarchical [service]="service" [disabled]="true" [(ngModel)]="model5" [configuration]="settings4"></sam-hierarchical>
 
 
 <ng-template #temp let-item>

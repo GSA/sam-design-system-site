@@ -15,7 +15,7 @@
 <button (click)="addItem()">Add Item</button>
 
 <h2>Multiple Items Default Template</h2>
-<sam-selected-result [model]="model3" [configuration]="settings3"></sam-selected-result>
+<sam-selected-result [(ngModel)]="model3" [configuration]="settings3"></sam-selected-result>
 
 <h2>Multiple Item Custom Template</h2>
-<sam-selected-result [model]="model4" [configuration]="settings4" [itemTemplate]="temp"></sam-selected-result>
+<sam-selected-result [(ngModel)]="model4" [configuration]="settings4" [itemTemplate]="temp"></sam-selected-result>

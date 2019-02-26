@@ -58,8 +58,8 @@ import { SamPageSampleComponentExampleComponent } from './experimental/page/comp
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
-import { SamSideNavigationToolbarComponentExampleComponent } from './experimental/sideNavigationToolbar/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
+import { SamSideNavigationToolbarComponentExampleComponent } from './experimental/sideNavigationToolbar/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
 import { SamVideoPlayerComponentExampleComponent } from './experimental/video-player/component-example';
@@ -95,405 +95,405 @@ import { StaticPageComponent } from './static.component';
 export const ROUTES: Routes = [
 
   { path: 'components/accordion', component: BaseDocPageComponent, data: {
-    path: '_docs/components/accordion',
+    path: '_docs\components\accordion\component-example.ts',
     componentName: 'SamAccordionComponent',
-			sections: ['component-example.html','component-example.ts','design.md','documentation.md','guidance.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamAccordionComponentExampleComponent }
   ]},
   { path: 'components/actions/action-button', component: BaseDocPageComponent, data: {
-    path: '_docs/components/actions/action-button',
+    path: '_docs\components\actions\action-button\component-example.ts',
     componentName: 'SamActionButton',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamActionButtonExampleComponent }
   ]},
   { path: 'components/actions/actions-dropdown', component: BaseDocPageComponent, data: {
-    path: '_docs/components/actions/actions-dropdown',
+    path: '_docs\components\actions\actions-dropdown\component-example.ts',
     componentName: 'SamActionsDropdownComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamActionsDropdownComponentExampleComponent }
   ]},
   { path: 'components/alert', component: BaseDocPageComponent, data: {
-    path: '_docs/components/alert',
+    path: '_docs\components\alert\component-example.ts',
     componentName: 'SamAlertComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamAlertComponentExampleComponent }
   ]},
   { path: 'components/alert-footer', component: BaseDocPageComponent, data: {
-    path: '_docs/components/alert-footer',
+    path: '_docs\components\alert-footer\component-example.ts',
     componentName: 'SamAlertFooterComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamAlertFooterComponentExampleComponent }
   ]},
   { path: 'components/badge', component: BaseDocPageComponent, data: {
-    path: '_docs/components/badge',
+    path: '_docs\components\badge\component-example.ts',
     componentName: 'SamBadgeComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamBadgeComponentExampleComponent }
   ]},
   { path: 'components/breadcrumbs', component: BaseDocPageComponent, data: {
-    path: '_docs/components/breadcrumbs',
+    path: '_docs\components\breadcrumbs\component-example.ts',
     componentName: 'SamBreadcrumbsComponent',
-			sections: ['component-example.html','component-example.ts','design.md','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamBreadcrumbsComponentExampleComponent }
   ]},
   { path: 'components/comments', component: BaseDocPageComponent, data: {
-    path: '_docs/components/comments',
+    path: '_docs\components\comments\component-example.ts',
     componentName: 'SamCommentsComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamCommentsComponentExampleComponent }
   ]},
   { path: 'components/data-table', component: BaseDocPageComponent, data: {
-    path: '_docs/components/data-table',
+    path: '_docs\components\data-table\component-example.ts',
     componentName: 'SamDataTableComponent',
-			sections: ['component-example.html','component-example.ts','data-source.ts','data.ts','documentation.md','guidance.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDataTableComponentExampleComponent }
   ]},
   { path: 'components/download', component: DownloadExampleComponent },
   { path: 'components/history', component: BaseDocPageComponent, data: {
-    path: '_docs/components/history',
+    path: '_docs\components\history\component-example.ts',
     componentName: 'SamHistoryComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHistoryComponentExampleComponent }
   ]},
   { path: 'components/image', component: BaseDocPageComponent, data: {
-    path: '_docs/components/image',
+    path: '_docs\components\image\component-example.ts',
     componentName: 'SamImageComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamImageComponentExampleComponent }
   ]},
   { path: 'components/modal', component: BaseDocPageComponent, data: {
-    path: '_docs/components/modal',
+    path: '_docs\components\modal\component-example.ts',
     componentName: 'SamModalComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamModalComponentExampleComponent }
   ]},
   { path: 'components/multiselect-dropdown', component: MultiselectDropdownExampleComponent },
   { path: 'components/page-title', component: SamPageTitleExampleComponent },
   { path: 'components/pagination', component: BaseDocPageComponent, data: {
-    path: '_docs/components/pagination',
+    path: '_docs\components\pagination\component-example.ts',
     componentName: 'SamPaginationComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamPaginationComponentExampleComponent }
   ]},
   { path: 'components/point-of-contact', component: BaseDocPageComponent, data: {
-    path: '_docs/components/point-of-contact',
+    path: '_docs\components\point-of-contact\component-example.ts',
     componentName: 'SamPointOfContactComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamPointOfContactComponentExampleComponent }
   ]},
   { path: 'components/progress-bar', component: BaseDocPageComponent, data: {
-    path: '_docs/components/progress-bar',
+    path: '_docs\components\progress-bar\component-example.ts',
     componentName: 'SamProgress',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamProgressExampleComponent }
   ]},
   { path: 'components/sidenav', component: BaseDocPageComponent, data: {
-    path: '_docs/components/sidenav',
+    path: '_docs\components\sidenav\component-example.ts',
     componentName: 'SamSidenavComponent',
-			sections: ['component-example.html','component-example.ts','design.md','documentation.md','guidance.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamSidenavComponentExampleComponent }
   ]},
   { path: 'components/spinner', component: BaseDocPageComponent, data: {
-    path: '_docs/components/spinner',
+    path: '_docs\components\spinner\component-example.ts',
     componentName: 'SamSpinnerComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamSpinnerComponentExampleComponent }
   ]},
   { path: 'components/tabs', component: BaseDocPageComponent, data: {
-    path: '_docs/components/tabs',
+    path: '_docs\components\tabs\component-example.ts',
     componentName: 'SamTabsComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamTabsComponentExampleComponent }
   ]},
   { path: 'directives/click-outside', component: BaseDocPageComponent, data: {
-    path: '_docs/directives/click-outside',
+    path: '_docs\directives\click-outside\component-example.ts',
     componentName: 'SamClickOutsideDirective',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamClickOutsideDirectiveExampleComponent }
   ]},
   { path: 'directives/drag-drop', component: BaseDocPageComponent, data: {
-    path: '_docs/directives/drag-drop',
+    path: '_docs\directives\drag-drop\component-example.ts',
     componentName: 'SamDragDropDirective',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDragDropDirectiveExampleComponent }
   ]},
   { path: 'directives/external-link', component: BaseDocPageComponent, data: {
-    path: '_docs/directives/external-link',
+    path: '_docs\directives\external-link\component-example.ts',
     componentName: 'SamExternalLinkDirective',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamExternalLinkDirectiveExampleComponent }
   ]},
   { path: 'directives/focus', component: BaseDocPageComponent, data: {
-    path: '_docs/directives/focus',
+    path: '_docs\directives\focus\component-example.ts',
     componentName: 'SamFocusDirective',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamFocusDirectiveExampleComponent }
   ]},
   { path: 'directives/sticky', component: BaseDocPageComponent, data: {
-    path: '_docs/directives/sticky',
+    path: '_docs\directives\sticky\component-example.ts',
     componentName: 'SamStickyComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamStickyComponentExampleComponent }
   ]},
   { path: 'directives/tab-outside', component: BaseDocPageComponent, data: {
-    path: '_docs/directives/tab-outside',
+    path: '_docs\directives\tab-outside\component-example.ts',
     componentName: 'SamTabOutsideDirective',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamTabOutsideDirectiveExampleComponent }
   ]},
   { path: 'elements/button', component: ButtonExampleComponent },
   { path: 'experimental/actions-list', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/actions-list',
+    path: '_docs\experimental\actions-list\component-example.ts',
     componentName: 'SamActionsListComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamActionsListComponentExampleComponent }
   ]},
   { path: 'experimental/alert', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/alert',
+    path: '_docs\experimental\alert\component-example.ts',
     componentName: 'SamAlertNextComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamAlertNextComponentExampleComponent }
   ]},
   { path: 'experimental/box', component: SamBoxComponentExampleComponent },
   { path: 'experimental/button-next', component: ButtonNextExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
   { path: 'experimental/date-range-v2', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/date-range-v2',
+    path: '_docs\experimental\date-range-v2\component-example.ts',
     componentName: 'SamDateRangeV2',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDateRangeV2ExampleComponent }
   ]},
   { path: 'experimental/dollar', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/dollar',
+    path: '_docs\experimental\dollar\component-example.ts',
     componentName: 'SamDollarComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDollarComponentExampleComponent }
   ]},
   { path: 'experimental/filters', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/filters',
+    path: '_docs\experimental\filters\component-example.ts',
     componentName: 'SamFiltersComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamFiltersComponentExampleComponent }
   ]},
   { path: 'experimental/heading', component: SamHeadingComponentExampleComponent },
   { path: 'experimental/hierarchical', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/hierarchical',
+    path: '_docs\experimental\hierarchical\component-example.ts',
     componentName: 'SamHierarchicalComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHierarchicalComponentExampleComponent }
   ]},
   { path: 'experimental/hierarchical-autocomplete', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/hierarchical-autocomplete',
+    path: '_docs\experimental\hierarchical-autocomplete\component-example.ts',
     componentName: 'SamHierarchicalAutocompleteComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHierarchicalAutocompleteComponentExampleComponent }
   ]},
   { path: 'experimental/hierarchical-selected-result', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/hierarchical-selected-result',
+    path: '_docs\experimental\hierarchical-selected-result\component-example.ts',
     componentName: 'SamHierarchicalSelectedResultComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHierarchicalSelectedResultComponentExampleComponent }
   ]},
   { path: 'experimental/hierarchical-tree', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/hierarchical-tree',
+    path: '_docs\experimental\hierarchical-tree\component-example.ts',
     componentName: 'SamHierarchicalTreeComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md','hierarchy-datasource.ts']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHierarchicalTreeComponentExampleComponent }
   ]},
   { path: 'experimental/hierarchical-tree-grid', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/hierarchical-tree-grid',
+    path: '_docs\experimental\hierarchical-tree-grid\component-example.ts',
     componentName: 'SamHierarchicalTreeGridComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamHierarchicalTreeGridComponentExampleComponent }
   ]},
   { path: 'experimental/icon', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/icon',
+    path: '_docs\experimental\icon\component-example.ts',
     componentName: 'SamIconComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamIconComponentExampleComponent }
   ]},
   { path: 'experimental/input-mask', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/input-mask',
+    path: '_docs\experimental\input-mask\component-example.ts',
     componentName: 'SamInputMaskComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamInputMaskComponentExampleComponent }
   ]},
   { path: 'experimental/label', component: SamLabelNextComponentExampleComponent },
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/listbox', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/listbox',
+    path: '_docs\experimental\listbox\component-example.ts',
     componentName: 'SamListboxComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamListboxComponentExampleComponent }
   ]},
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageSampleComponentExampleComponent },
   { path: 'experimental/progress', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/progress',
+    path: '_docs\experimental\progress\component-example.ts',
     componentName: 'ProgressComponent',
-			sections: ['component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: ProgressComponentExampleComponent }
   ]},
   { path: 'experimental/resources-wrapper', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/resources-wrapper',
+    path: '_docs\experimental\resources-wrapper\component-example.ts',
     componentName: 'SamResourcesWrapperComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamResourcesWrapperComponentExampleComponent }
   ]},
   { path: 'experimental/search', component: SamSearchComponentExampleComponent },
+  { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/sideNavigationToolbar', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/sideNavigationToolbar',
+    path: '_docs\experimental\sideNavigationToolbar\component-example.ts',
     componentName: 'SamSideNavigationToolbarComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamSideNavigationToolbarComponentExampleComponent }
   ]},
-  { path: 'experimental/sidebar', component: SamSidebarComponentExampleComponent },
   { path: 'experimental/tabs', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/tabs',
+    path: '_docs\experimental\tabs\component-example.ts',
     componentName: 'SamTabsNextComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamTabsNextComponentExampleComponent }
   ]},
   { path: 'experimental/title', component: SamTitleComponentExampleComponent },
   { path: 'experimental/video-player', component: SamVideoPlayerComponentExampleComponent },
   { path: 'experimental/youtube', component: SamYoutubeComponentExampleComponent },
   { path: 'form-controls/autocomplete', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/autocomplete',
+    path: '_docs\form-controls\autocomplete\component-example.ts',
     componentName: 'SamAutocompleteComponent',
-			sections: ['component-example.html','component-example.ts','design.md','documentation.md','guidance.md','implementation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamAutocompleteComponentExampleComponent }
   ]},
   { path: 'form-controls/autocomplete-multiselect', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/autocomplete-multiselect',
+    path: '_docs\form-controls\autocomplete-multiselect\component-example.ts',
     componentName: 'SamAutocompleteMultiselectComponent',
-			sections: ['component-example.html','component-example.ts','design.md','documentation.md','guidance.md','implementation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamAutocompleteMultiselectComponentExampleComponent }
   ]},
   { path: 'form-controls/checkbox', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/checkbox',
+    path: '_docs\form-controls\checkbox\component-example.ts',
     componentName: 'SamCheckboxComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamCheckboxComponentExampleComponent }
   ]},
   { path: 'form-controls/date', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/date',
+    path: '_docs\form-controls\date\component-example.ts',
     componentName: 'SamDateComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDateComponentExampleComponent }
   ]},
   { path: 'form-controls/date-range', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/date-range',
+    path: '_docs\form-controls\date-range\component-example.ts',
     componentName: 'SamDateRangeComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDateRangeComponentExampleComponent }
   ]},
   { path: 'form-controls/date-time', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/date-time',
+    path: '_docs\form-controls\date-time\component-example.ts',
     componentName: 'SamDateTimeComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDateTimeComponentExampleComponent }
   ]},
   { path: 'form-controls/number', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/number',
+    path: '_docs\form-controls\number\component-example.ts',
     componentName: 'SamNumberComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamNumberComponentExampleComponent }
   ]},
   { path: 'form-controls/radiobutton', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/radiobutton',
+    path: '_docs\form-controls\radiobutton\component-example.ts',
     componentName: 'SamRadioComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamRadioComponentExampleComponent }
   ]},
   { path: 'form-controls/select', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/select',
+    path: '_docs\form-controls\select\component-example.ts',
     componentName: 'SamSelectComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamSelectComponentExampleComponent }
   ]},
   { path: 'form-controls/text', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/text',
+    path: '_docs\form-controls\text\component-example.ts',
     componentName: 'SamTextComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamTextComponentExampleComponent }
   ]},
   { path: 'form-controls/textarea', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/textarea',
+    path: '_docs\form-controls\textarea\component-example.ts',
     componentName: 'SamTextareaComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamTextareaComponentExampleComponent }
   ]},
   { path: 'form-controls/time', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/time',
+    path: '_docs\form-controls\time\component-example.ts',
     componentName: 'SamTimeComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamTimeComponentExampleComponent }
   ]},
   { path: 'form-controls/toggle-switch', component: BaseDocPageComponent, data: {
-    path: '_docs/form-controls/toggle-switch',
+    path: '_docs\form-controls\toggle-switch\component-example.ts',
     componentName: 'SamToggleSwitchComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamToggleSwitchComponentExampleComponent }
   ]},
   { path: 'form-controls/upload', component: SamUploadComponentExampleComponent },
   { path: 'form-templates/international-phone', component: BaseDocPageComponent, data: {
-    path: '_docs/form-templates/international-phone',
+    path: '_docs\form-templates\international-phone\component-example.ts',
     componentName: 'PhoneGroup',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: PhoneGroupExampleComponent }
   ]},
   { path: 'form-templates/name-entry', component: BaseDocPageComponent, data: {
-    path: '_docs/form-templates/name-entry',
+    path: '_docs\form-templates\name-entry\component-example.ts',
     componentName: 'NameEntry',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: NameEntryExampleComponent }
   ]},
   { path: 'form-templates/phone-entry', component: BaseDocPageComponent, data: {
-    path: '_docs/form-templates/phone-entry',
+    path: '_docs\form-templates\phone-entry\component-example.ts',
     componentName: 'PhoneEntry',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: PhoneEntryExampleComponent }
   ]},
   { path: 'layout/filter-drawer', component: BaseDocPageComponent, data: {
-    path: '_docs/layout/filter-drawer',
+    path: '_docs\layout\filter-drawer\component-example.ts',
     componentName: 'SamFilterDrawerComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamFilterDrawerComponentExampleComponent }
   ]},
   { path: 'layout/filters-wrapper', component: BaseDocPageComponent, data: {
-    path: '_docs/layout/filters-wrapper',
+    path: '_docs\layout\filters-wrapper\component-example.ts',
     componentName: 'SamFiltersWrapperComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamFiltersWrapperComponentExampleComponent }
   ]},
   { path: 'layout/page', component: BaseDocPageComponent, data: {
-    path: '_docs/layout/page',
+    path: '_docs\layout\page\component-example.ts',
     componentName: 'SamPageComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamPageComponentExampleComponent }
   ]},
   { path: 'layout/pagination', component: BaseDocPageComponent, data: {
-    path: '_docs/layout/pagination',
+    path: '_docs\layout\pagination\component-example.ts',
     componentName: 'SamPaginationNextComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamPaginationNextComponentExampleComponent }
   ]},
   { path: 'layout/toolbar', component: BaseDocPageComponent, data: {
-    path: '_docs/layout/toolbar',
+    path: '_docs\layout\toolbar\component-example.ts',
     componentName: 'SamToolbarComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamToolbarComponentExampleComponent }
   ]},
   { path: 'wrappers/fieldset-wrapper', component: BaseDocPageComponent, data: {
-    path: '_docs/wrappers/fieldset-wrapper',
+    path: '_docs\wrappers\fieldset-wrapper\component-example.ts',
     componentName: 'FieldsetWrapper',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: FieldsetWrapperExampleComponent }
   ]},
   { path: 'wrappers/label-wrapper', component: BaseDocPageComponent, data: {
-    path: '_docs/wrappers/label-wrapper',
+    path: '_docs\wrappers\label-wrapper\component-example.ts',
     componentName: 'LabelWrapper',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: LabelWrapperExampleComponent }
   ]},
   {

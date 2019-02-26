@@ -44,7 +44,7 @@
       (remove)="removeItem($event)">
     </sam-filter-drawer> -->
    
-    <sam-selected-result [model]="model3" [configuration]="settings3"></sam-selected-result>
+    <sam-selected-result [(ngModel)]="model3" [configuration]="settings3"></sam-selected-result>
 
     <sam-alert-next
       type="warning">This report doesn't pull real data</sam-alert-next>

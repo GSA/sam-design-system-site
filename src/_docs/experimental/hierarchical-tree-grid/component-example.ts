@@ -30,17 +30,17 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   };
 
   public ngOnInit() {
-    this.tableData$ = this.selectedAgency$.pipe(
-      switchMap(agencyId => this.service.getHiercarchicalById(agencyId)),
-    );
-    // this.selectedAgency$.subscribe(
-    //   id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
+    // this.tableData$ = this.selectedAgency$.pipe(
+    //   switchMap(agencyId => this.service.getHiercarchicalById(agencyId)),
     // );
-    this.selectResults$.subscribe(res =>
-      this.selectItems = res
-    );
-    this.filterText$.subscribe(text =>
-      this.filterText = text);
+    // // this.selectedAgency$.subscribe(
+    // //   id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
+    // // );
+    // this.selectResults$.subscribe(res =>
+    //   this.selectItems = res
+    // );
+    // this.filterText$.subscribe(text =>
+    //   this.filterText = text);
   }
   setOptionsData(data: any[]): void {
     this.options = this.getOptionsData(data);

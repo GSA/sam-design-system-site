@@ -43,12 +43,12 @@
       [map]="filtersToPills"
       (remove)="removeItem($event)">
     </sam-filter-drawer> -->
-   
-    <sam-selected-result [model]="model3" [configuration]="settings3"></sam-selected-result>
+    
+    <sam-selected-result [(ngModel)]="model3" [configuration]="settings3"></sam-selected-result>
 
     <sam-alert-next
       type="warning">This report doesn't pull real data</sam-alert-next>
-
+      
     <sam-main-content *ngIf="flag2; else spinner">
 
       <sam-tabs-next dynamicHeight>
@@ -62,7 +62,7 @@
             <!-- Pagination + Columns button -->
             <sam-action-bar *ngIf="flag2">
               <sam-pagination-next id="table-pagination" [totalUnits]="length"></sam-pagination-next>
-              <sam-button-next samPageAction 
+              <sam-button-next samPageAction
                 action="secondary"
                 (click)="toggleFieldsEditor()">
                 Columns
@@ -87,33 +87,33 @@
                   {{ row[col.cellId] }}
                 </td>
               </ng-container>
-              
+
               <tr sam-header-row
                 *cdkHeaderRowDef="displayedColumns"
               ></tr>
               <tr sam-row
                 *cdkRowDef="let row; columns: displayedColumns"
-              ></tr> 
+              ></tr>
             </sam-datatable>
 
           </div>
         </sam-tab-next>
-        
+
         <!-- Award Details Tab -->
         <sam-tab-next>
           <ng-template sam-tab-label>
             <sam-icon [icon]="faTable"></sam-icon> Award Details
           </ng-template>
           <div class="tab-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam felis 
-            dui, lobortis eget odio quis, facilisis consectetur lectus. Donec 
-            sodales tortor sagittis sem efficitur congue. Maecenas sed velit sed 
-            felis vestibulum suscipit. Vivamus pellentesque nisi vitae neque cursus 
-            blandit. Orci varius natoque penatibus et magnis dis parturient montes, 
-            nascetur ridiculus mus. Donec vel efficitur nulla, sit amet luctus justo. 
-            Maecenas et ante vestibulum, feugiat lectus id, sollicitudin neque. 
-            Aenean porttitor metus non nunc malesuada cursus. Ut felis enim, 
-            ultrices congue facilisis venenatis, posuere eu libero. Etiam rhoncus 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam felis
+            dui, lobortis eget odio quis, facilisis consectetur lectus. Donec
+            sodales tortor sagittis sem efficitur congue. Maecenas sed velit sed
+            felis vestibulum suscipit. Vivamus pellentesque nisi vitae neque cursus
+            blandit. Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec vel efficitur nulla, sit amet luctus justo.
+            Maecenas et ante vestibulum, feugiat lectus id, sollicitudin neque.
+            Aenean porttitor metus non nunc malesuada cursus. Ut felis enim,
+            ultrices congue facilisis venenatis, posuere eu libero. Etiam rhoncus
             pellentesque eros, non laoreet nulla ultricies quis.
           </div>
         </sam-tab-next>
@@ -150,27 +150,27 @@
   (close)="cancelModalAction()"
   (submit)="submitModalAction()">
   <div class="sam reset checkboxes labels fieldsets">
-    
+
     <h4 class="sam heading">{{ options.organization.label }} </h4>
     <sam-checkbox
       [(ngModel)]="options.organization.selected"
       [name]="options.organization.label"
       [options]="options.organization.options"
     ></sam-checkbox>
-    
+
     <h4 class="sam heading">{{  options.listing.label }}</h4>
     <sam-checkbox
     [(ngModel)]="options.listing.selected"
     [name]="options.listing.label"
     [options]="options.listing.options"
     ></sam-checkbox>
-    
+
     <h4 class="sam heading">{{ options.status.label }}</h4>
     <sam-checkbox
     [(ngModel)]="options.status.selected"
     [name]="options.status.label"
     [options]="options.status.options"
     ></sam-checkbox>
-    
+
   </div>
 </sam-modal>

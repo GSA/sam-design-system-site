@@ -13,6 +13,8 @@ import { SearchDemoModule } from './search/search.module';
 import { WorkspaceModule } from './workspace/workspace.module';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
+import { PageDataViewComponent } from './page-data/page-data.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 @NgModule({
   imports: [
@@ -29,7 +31,9 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
     PageAComponent,
     PageBComponent,
     SamWorkspaceDashboardComponent,
-    PageWrapperComponent
+    PageWrapperComponent,
+    PageDataViewComponent,
+    SearchResultsComponent
   ]
 })
 export class PagesModule { }

@@ -258,9 +258,9 @@ export const ROUTES: Routes = [
   { path: 'experimental/button-next', component: ButtonNextExampleComponent },
   { path: 'experimental/container', component: SamContainerComponentExampleComponent },
   { path: 'experimental/date-range-v2', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/date-range-v2',
+    path: '_docs\experimental\date-range-v2\component-example.ts',
     componentName: 'SamDateRangeV2',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamDateRangeV2ExampleComponent }
   ]},
   { path: 'experimental/dollar', component: BaseDocPageComponent, data: {
@@ -321,9 +321,9 @@ export const ROUTES: Routes = [
   { path: 'experimental/label', component: SamLabelNextComponentExampleComponent },
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/listbox', component: BaseDocPageComponent, data: {
-    path: '_docs/experimental/listbox',
+    path: '_docs\experimental\listbox\component-example.ts',
     componentName: 'SamListboxComponent',
-			sections: ['component-example.html','component-example.ts','documentation.md']}, children: [
+			sections: ['']}, children: [
     { path: '', component: SamListboxComponentExampleComponent }
   ]},
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },

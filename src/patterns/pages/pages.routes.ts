@@ -10,6 +10,8 @@ import { SamSearchDemoComponent } from './search/search.component';
 import { SamWorkspaceDemoComponent } from './workspace/workspace.component';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
+import { PageDataViewComponent } from './page-data/page-data.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 
 const PageRoutes: Routes = [
@@ -50,6 +52,14 @@ const PageRoutes: Routes = [
   {
     path: 'page-wrapper',
     component: PageWrapperComponent
+  },
+  {
+    path: 'page-data',
+    component: PageDataViewComponent
+  },
+  {
+    path: 'search-results',
+    component: SearchResultsComponent
   }
 ];
 

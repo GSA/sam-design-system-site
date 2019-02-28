@@ -12,6 +12,7 @@ import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 import { PageDataViewComponent } from './page-data/page-data.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { SplashPageComponent } from './splash-page/splash-page.component';
 
 
 const PageRoutes: Routes = [
@@ -60,6 +61,10 @@ const PageRoutes: Routes = [
   {
     path: 'search-results',
     component: SearchResultsComponent
+  },
+  {
+    path: 'splash-page',
+    component: SplashPageComponent
   }
 ];
 

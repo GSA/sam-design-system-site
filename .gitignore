@@ -59,6 +59,9 @@ npm-debug.log
 
 # Doc #
 /doc/
+/_docs/doc.module.dynamic.ts
+/_docs/doc.routes.dynamic.ts
+
 
 # IDE #
 .idea/

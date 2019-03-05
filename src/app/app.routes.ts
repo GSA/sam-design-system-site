@@ -6,7 +6,8 @@ export const ROUTES: Routes = [
     path: '',
     component: HomeComponent
   },
-  { path: 'docs', loadChildren: '../_docs/doc.module.dynamic#DocModule' },
+  // { path: 'docs', loadChildren: '../_docs/doc.module.dynamic#DocModule' },
+  { path: 'docs', loadChildren: '../../src/_docs/doc.module.dynamic#DocModule' },
   {
     path: 'patterns',
     loadChildren: '../patterns/patterns.module#ExamplesModule'

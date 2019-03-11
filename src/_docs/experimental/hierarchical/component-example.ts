@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
+import { SampleHierarchicalData } from '../../services/hierarchical.data';
 /* tslint:disable */
 import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
 import { SamHierarchicalConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalConfiguration';
@@ -13,11 +14,12 @@ import { SamHierarchicalConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-ki
 })
 export class SamHierarchicalComponentExampleComponent implements OnInit {
 
-
+  private data = SampleHierarchicalData;
   public settings = new SamHierarchicalConfiguration();
   public settings2 = new SamHierarchicalConfiguration();
   public settings3 = new SamHierarchicalConfiguration();
   public settings4 = new SamHierarchicalConfiguration();
+  public settings5 = new SamHierarchicalConfiguration();
 
   public model = new HierarchicalTreeSelectedItemModel();
   public model2 = new HierarchicalTreeSelectedItemModel();
@@ -28,32 +30,35 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
 
 
   constructor(public service: HierarchicalDataService) {
-
+    this.setup();
   }
 
-  changes(value){
+  changes(value) {
     console.log(value);
   }
 
   ngOnInit() {
-    this.settings.id = 'autocomplete1'; 
+  }
+
+  setup() {
+    this.settings.id = 'autocomplete1';
     this.settings.primaryKeyField = 'id';
-    this.settings.primaryTextField = 'name'; 
+    this.settings.primaryTextField = 'name';
     this.settings.secondaryTextField = 'subtext';
     this.settings.labelText = 'Autocomplete 1';
 
-    this.settings.autocompletePlaceHolderText = 'Enter text'; 
+    this.settings.autocompletePlaceHolderText = 'Enter text';
     this.settings.modalTitle = 'Advanced Lookup';
-    this.settings.gridColumnsDisplayed = [ 
+    this.settings.gridColumnsDisplayed = [
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
       { headerText: 'Children', fieldName: 'childCount' }
     ];
-    this.settings.childCountField = 'childCount'; 
-    this.settings.filterPlaceholderText = 'Filter Placeholder'; 
-    this.settings.topLevelBreadcrumbText = 'All Departments'; 
-   
+    this.settings.childCountField = 'childCount';
+    this.settings.filterPlaceholderText = 'Filter Placeholder';
+    this.settings.topLevelBreadcrumbText = 'All Departments';
+
 
     this.settings2.primaryKeyField = 'id';
     this.settings2.id = 'autocomplete2';
@@ -109,6 +114,27 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.settings4.childCountField = 'childCount';
     this.settings4.filterPlaceholderText = 'Filter Placeholder';
     this.settings4.topLevelBreadcrumbText = 'All Departments';
+    //this.settings4.minimumCharacterCountSearch = 3;
+
+
+    this.settings5.primaryKeyField = 'id';
+    this.settings5.id = 'autocomplete5 Disabled';
+    this.settings5.labelText = 'Autocomplete 5 Disabled';
+    this.settings5.primaryTextField = 'name';
+    this.settings5.secondaryTextField = 'subtext';
+    this.settings5.autocompletePlaceHolderText = 'Enter text';
+    this.settings5.modalTitle = 'Advanced Lookup';
+
+    this.settings5.gridColumnsDisplayed = [
+      { headerText: 'Id', fieldName: 'id' },
+      { headerText: 'Name', fieldName: 'name' },
+      { headerText: 'Sub Text', fieldName: 'subtext' },
+      { headerText: 'Children', fieldName: 'childCount' }
+    ];
+    this.settings5.childCountField = 'childCount';
+    this.settings5.filterPlaceholderText = 'Filter Placeholder';
+    this.settings5.topLevelBreadcrumbText = 'All Departments';
+ 
 
     this.model.treeMode = TreeMode.SINGLE;
     this.model2.treeMode = TreeMode.SINGLE;
@@ -116,10 +142,12 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     this.model4.treeMode = TreeMode.MULTIPLE;
     this.model5.treeMode = TreeMode.MULTIPLE;
 
+    this.model5.addItem(this.data[0], this.settings5.primaryKeyField);
+    this.model5.addItem(this.data[1], this.settings5.primaryKeyField);
 
 
   }
 
 
- 
+
 }

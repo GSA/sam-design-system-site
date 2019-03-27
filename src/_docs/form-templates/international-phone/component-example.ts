@@ -14,7 +14,8 @@ export class PhoneGroupExampleComponent {
 
   group = new FormGroup({
     prefix: new FormControl('', Validators.required),
-    phone: new FormControl('1234', Validators.required)
+    phone: new FormControl('1234', Validators.required),
+    extension: new FormControl('91234787', Validators.required)
   });
   public form: FormGroup;
   public message;
@@ -37,7 +38,8 @@ export class PhoneGroupExampleComponent {
         phone: new FormGroup(
           {
             prefix: new FormControl(null, Validators.required),
-            phone: new FormControl('1234', Validators.required)
+            phone: new FormControl('1234', Validators.required),
+            extension: new FormControl('91234787', Validators.required)
           }
         )
       }

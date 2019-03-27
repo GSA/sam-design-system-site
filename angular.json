@@ -22,7 +22,8 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles/docs.scss"
+              "src/styles/docs.scss",
+              "node_modules/@gsa-sam/sam-styles/src/stylesheets/sam.scss"
             ],
             "scripts": [
               "src/assets/sam-styles/uswds/js/uswds.min.js",

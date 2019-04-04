@@ -15,7 +15,7 @@ export class HeaderFooterAngualarComponent {
       { text: "Data Services", route: "/" },
       { text: "Help", route: "/" },
       {
-        text: "Link 3", route: "/", children: [
+        text: "Link 3", children: [
           { text: "Link 3 sub 1", route: "/" },
           { text: "Link 3 sub 2", route: "/" },
           { text: "Link 3 sub 3", route: "/" },
@@ -23,7 +23,7 @@ export class HeaderFooterAngualarComponent {
         ]
       },
       {
-        text: "Link 4", route: "/", children: [
+        text: "Link 4", children: [
           { text: "Link 4 sub 1", route: "/" },
           { text: "Link 4 sub 2", route: "/" },
           { text: "Link 4 sub 3", route: "/" },
@@ -39,25 +39,3 @@ export class HeaderFooterAngualarComponent {
     }
   };
 }
-
-
-
-
-// export class HeaderModel {
-//   secondaryLinks: HeaderSecondaryLink[];
-//   navigationLinks: HeaderNavigationLink[];
-// }
-
-
-// export class HeaderNavigationLink {
-//   text: string;
-//   route: string;
-//   children: HeaderNavigationLink[];
-// }
-
-// export class HeaderSecondaryLink {
-//   text: string;
-//   route: string;
-//   imageSourcePath: string;
-//   imageAltText: string;
-// }

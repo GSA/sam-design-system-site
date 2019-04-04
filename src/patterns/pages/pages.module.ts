@@ -16,6 +16,7 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 import { PageDataViewComponent } from './page-data/page-data.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { HeaderFooterComponent } from './header-footer/header-footer.component';
+import { HeaderFooterAngualarComponent } from './header-footer-components/header-footer-components.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { HeaderFooterComponent } from './header-footer/header-footer.component';
     PageWrapperComponent,
     PageDataViewComponent,
     SearchResultsComponent,
-    HeaderFooterComponent
+    HeaderFooterComponent,
+    HeaderFooterAngualarComponent
   ]
 })
 export class PagesModule { }

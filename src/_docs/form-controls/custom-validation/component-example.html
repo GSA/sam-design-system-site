@@ -6,9 +6,4 @@
 [required]="required">
     <input type="text" [formControl]="ipAddress">
     <p style="color:red" *ngIf="ipAddress.invalid">Invalid IP Address</p>
-    <span style=" position: absolute; top: 30rem; right: 50rem;">
-        <span role="button" class="fa fa-close" aria-label="Clear input" aria-hidden="false" (click)="clearInput()"
-          (keyup.enter)="clearInput()">
-        </span>
-      </span>
 </sam-label-wrapper>

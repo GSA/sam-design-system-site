@@ -53,7 +53,7 @@ export const fields: FormlyFieldConfig[] = [
  * corresponds to the key on each FormlyField config.
  */
 export const model = {
-  fhInputText: 'Hello',
+  fhInputText: null,
   dateModel: null,
   checkbox: []
 };

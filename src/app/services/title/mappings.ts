@@ -37,6 +37,7 @@ export const mappings = {
   '/docs/components/point-of-contact': 'Point of Contact',
   '/docs/components/progress-bar': 'Progress Bar',
   '/docs/components/sidenav': 'Sidenav',
+  '/docs/components/sort': 'Sort',
   '/docs/components/spinner': 'Spinner',
   '/docs/components/tabs': 'Tabs',
   '/docs/components/upload': 'Upload',

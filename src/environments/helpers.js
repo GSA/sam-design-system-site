@@ -69,7 +69,8 @@ const doc2Components = [
 	'ProgressComponentExampleComponent',
 	'SamHierarchicalComponentExampleComponent',
 	'SamDateRangeV2ExampleComponent',
-	'SamSideNavigationToolbarComponentExampleComponent'
+	'SamSideNavigationToolbarComponentExampleComponent',
+	'SamSortComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;
@@ -88,7 +89,7 @@ function hasNpmFlag(flag) {
 }
 
 function getUIKitStructure(target){
-	let docFiles = recursiveReadSync(target);	
+	let docFiles = recursiveReadSync(target);
 	// console.log(docFiles);
 	let filteredFiles = docFiles.filter((val) => {
 		let reg = new RegExp(/component-example\.ts$/g);
@@ -199,7 +200,7 @@ function getStaticDirStructure(target){
 	    item: item
 	  };
 	});
-	
+
   return files;
 }
 
@@ -257,7 +258,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
 		SiteComponentsModule,
 		CdkTableModule
   ],
-  exports: [BaseExampleComponent], 
+  exports: [BaseExampleComponent],
   providers: [HierarchicalDataService]
 })
 export class DocModule { }\n`
@@ -324,5 +325,3 @@ ${routes}${staticRoutes}
 export const routing = RouterModule.forChild(ROUTES);
 \n`
 }
-
-

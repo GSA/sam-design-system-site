@@ -32,6 +32,7 @@ import { SamPaginationComponentExampleComponent } from './components/pagination/
 import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
 import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
+import { SamSortComponentExampleComponent } from './components/sort/component-example';
 import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
 import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
 import { SamClickOutsideDirectiveExampleComponent } from './directives/click-outside/component-example';
@@ -132,6 +133,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
     SamSidenavComponentExampleComponent,
+    SamSortComponentExampleComponent,
     SamSpinnerComponentExampleComponent,
     SamTabsComponentExampleComponent,
     SamClickOutsideDirectiveExampleComponent,
@@ -223,6 +225,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamPointOfContactComponentExampleComponent,
     SamProgressExampleComponent,
     SamSidenavComponentExampleComponent,
+    SamSortComponentExampleComponent,
     SamSpinnerComponentExampleComponent,
     SamTabsComponentExampleComponent,
     SamClickOutsideDirectiveExampleComponent,
@@ -305,7 +308,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
 		SiteComponentsModule,
 		CdkTableModule
   ],
-  exports: [BaseExampleComponent], 
+  exports: [BaseExampleComponent],
   providers: [HierarchicalDataService]
 })
 export class DocModule { }

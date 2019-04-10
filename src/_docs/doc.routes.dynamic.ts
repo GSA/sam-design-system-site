@@ -25,6 +25,7 @@ import { SamPaginationComponentExampleComponent } from './components/pagination/
 import { SamPointOfContactComponentExampleComponent } from './components/point-of-contact/component-example';
 import { SamProgressExampleComponent } from './components/progress-bar/component-example';
 import { SamSidenavComponentExampleComponent } from './components/sidenav/component-example';
+import { SamSortComponentExampleComponent } from './components/sort/component-example';
 import { SamSpinnerComponentExampleComponent } from './components/spinner/component-example';
 import { SamTabsComponentExampleComponent } from './components/tabs/component-example';
 import { SamClickOutsideDirectiveExampleComponent } from './directives/click-outside/component-example';
@@ -193,6 +194,12 @@ export const ROUTES: Routes = [
     componentName: 'SamSidenavComponent',
 			sections: ['']}, children: [
     { path: '', component: SamSidenavComponentExampleComponent }
+  ]},
+  { path: 'components/sort', component: BaseDocPageComponent, data: {
+    path: '_docs\components\sort\component-example.ts',
+    componentName: 'SamSortComponent',
+			sections: ['']}, children: [
+    { path: '', component: SamSortComponentExampleComponent }
   ]},
   { path: 'components/spinner', component: BaseDocPageComponent, data: {
     path: '_docs\components\spinner\component-example.ts',

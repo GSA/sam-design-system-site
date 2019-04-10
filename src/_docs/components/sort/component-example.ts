@@ -8,7 +8,6 @@ import {
 })
 export class SamSortComponentExampleComponent {
   sortConfig = {
-    currentPage: 1,
-    totalPages: 4
+
   };
 }

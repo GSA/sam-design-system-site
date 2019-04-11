@@ -59,7 +59,7 @@ import { SamVideoPlayerComponentExampleComponent } from './experimental/video-pl
 import { SamYoutubeComponentExampleComponent } from './experimental/youtube/component-example';
 import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 import { AutocompleteMultiselectExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
-import { SortExampleComponent } from './components/sort/component-example';
+import { SortExampleComponent } from './experimental/sort/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';

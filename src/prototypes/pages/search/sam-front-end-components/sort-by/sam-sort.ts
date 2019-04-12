@@ -8,7 +8,7 @@ import { OptionsType } from '@gsa-sam/sam-ui-elements';
 * SamSortComponent - Lists results message component
 */
 @Component({
-	selector: 'sam-sort',
+	selector: 'sam-sort-v0 ',
   template: `
   <div>
   <sam-select

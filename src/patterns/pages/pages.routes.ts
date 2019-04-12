@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -13,7 +14,7 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 import { PageDataViewComponent } from './page-data/page-data.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { HeaderFooterComponent } from './header-footer/header-footer.component';
-import {HeaderFooterAngualarComponent} from './header-footer-components/header-footer-components.component'
+import { HeaderFooterAngualarComponent } from './header-footer-components/header-footer-components.component'
 
 const PageRoutes: Routes = [
   {
@@ -69,7 +70,7 @@ const PageRoutes: Routes = [
   {
     path: 'angualr-header-footer-component',
     component: HeaderFooterAngualarComponent
-  }
+  },
 ];
 
 @NgModule({
@@ -80,4 +81,4 @@ const PageRoutes: Routes = [
     RouterModule
   ]
 })
-export class PagesRoutingModule {}
+export class PagesRoutingModule { }

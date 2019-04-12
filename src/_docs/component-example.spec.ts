@@ -59,12 +59,13 @@ import { SamVideoPlayerComponentExampleComponent } from './experimental/video-pl
 import { SamYoutubeComponentExampleComponent } from './experimental/youtube/component-example';
 import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 import { AutocompleteMultiselectExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
+import { SortExampleComponent } from './experimental/sort/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 
 
-let components = [ 
+let components = [
     AccordionExampleComponent,
     SamActionButtonExampleComponent,
     SamActionsDropdownComponentExampleComponent,
@@ -110,21 +111,22 @@ let components = [
     SamYoutubeComponentExampleComponent,
     AutocompleteExampleComponent,
     AutocompleteMultiselectExampleComponent,
+    SortExampleComponent,
 ];
 
 for(let i = 0; i < components.length; i++){
     describe(components[i].constructor.name + ` tests`, () => {
-        
+
             let comp;
             let fixture;
 
             beforeEach(() => {
-                
+
                 TestBed.configureTestingModule({
                 imports: [RouterTestingModule, HttpClientModule],
                 declarations: [components[i]],
                 providers: [
-                    { 
+                    {
                     provide: MarkdownService,
                     useValue: {
                         get: function(filename){
@@ -134,14 +136,14 @@ for(let i = 0; i < components.length; i++){
                         }
                     }
                     },
-                    { 
+                    {
                     provide: DocumentationService,
                     useValue: {
                         loadData: function(){
                         return Observable.of({});
                         },
                         getComponentProperties: function(name){
-                        return Observable.of([]); 
+                        return Observable.of([]);
                         }
                     }
                     },
@@ -153,17 +155,17 @@ for(let i = 0; i < components.length; i++){
                 ],
                 schemas: [NO_ERRORS_SCHEMA]
                 });
-                
+
                 fixture = TestBed.createComponent(components[i]);
                 comp    = fixture.componentInstance;
                 fixture.detectChanges(); // trigger initial data binding
-                
+
             });
 
             it(`should be initialized`, () => {
                 expect(fixture).toBeDefined();
                 expect(comp).toBeDefined();
             });
-        
+
     });
 }

@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 
 

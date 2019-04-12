@@ -7,6 +7,7 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 export class HeaderFooterAngualarComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.header.select(this.modelHeader.navigationLinks[0].id);
+    //this.header.select(this.modelHeader.secondaryLinks[0].id);
   }
 
 

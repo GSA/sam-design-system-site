@@ -7,10 +7,10 @@ import {SearchUtil} from '../wage-determination/search.util';
 //Angular 2 only
 @Component({
   selector: 'sort-by',
-  template: `<sam-sort [ngModel]="sortModel"
+  template: `<sam-sort-v0 [ngModel]="sortModel"
                        [options]="sortOptions"
                        (ngModelChange)="sortModelChange($event)">
-             </sam-sort>`
+             </sam-sort-v0 >`
 })
 export class SamSortFilter implements OnInit {
 

@@ -17,8 +17,8 @@ import { PageDataViewComponent } from './page-data/page-data.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { HeaderFooterComponent } from './header-footer/header-footer.component';
 import { HeaderFooterAngualarComponent } from './header-footer-components/header-footer-components.component';
-import { SamFooterModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/layout/footer/footer.module';
-import { SamHeaderModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/layout/header/header.module';
+import { SdsFooterModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/layout/footer/footer.module';
+import { SdsHeaderModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/layout/header/header.module';
 
 @NgModule({
   imports: [
@@ -29,8 +29,8 @@ import { SamHeaderModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/layout/head
     LayoutModule,
     SearchDemoModule,
     WorkspaceModule,
-    SamFooterModule,
-    SamHeaderModule
+    SdsFooterModule,
+    SdsHeaderModule
   ],
   declarations: [
     PagesComponent,

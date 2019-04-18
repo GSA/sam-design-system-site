@@ -70,6 +70,21 @@
     }
 }
 
+.static-warning-domain{
+    div {
+        border:1px solid silver;
+        border-left:10px solid red; 
+        background-color: white;
+        padding: 10px;
+    }
+    .fa-warning{
+        color: red;
+    }
+    i{
+        padding-right: 5px;
+    }
+}
+
 .static-report-new {
     color: red;
     font-size: 13px;

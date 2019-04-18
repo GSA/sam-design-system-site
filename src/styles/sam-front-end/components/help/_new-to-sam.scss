@@ -4,11 +4,12 @@
     }
     .sam-new-img {
       //background: url(../../../assets/img/around-sam.jpg); 
-      background-size: contain; 
+    //   background-size: contain; 
       width: 100%;
       height: 100%; 
-      background-repeat: no-repeat; 
-      background-position: center;  
+      padding: 1rem 3rem;
+    //   background-repeat: no-repeat; 
+    //   background-position: center;  
     }
     .stay-informed-img {
         height: 60px; 

@@ -32,6 +32,13 @@
     margin-bottom: 50px;
     position: relative;
   }
+  .sam.button {
+    padding: 0.9em 1.5em 0.9em;
+    font-size: 1.7rem;
+    margin: 0em 0.25em 0em 0em;
+    border-radius: 0.3rem;
+    font-weight: 600;
+  }
 
   .aac-code-input, .aac-detail-code {
     position: absolute;
@@ -51,8 +58,28 @@
     padding-left: 3.5rem;
   }
 
-  .office-type-edit-section {
-    // margin-top: 18px
+  .usa-alert {
+    margin-top: 24px;
+    margin-bottom: 0px;
+    background-size: 2.2rem;
+    height: 5rem;
+  }
+  .usa-alert-body {
+    padding-left: 2.2rem;
+  }
+  .usa-alert {
+    margin-bottom: 0px;
+    background-size: 3.2rem;
+    background-position: 1rem 45%;
+    height: inherit;
+    padding-left: 2.5rem;
+    ul {
+      padding-inline-start: 20px;
+      margin: 0;
+    }
+    p.usa-alert-text {
+      padding-bottom: 0 !important;
+    }
   }
 
   .profile-edit-btn {

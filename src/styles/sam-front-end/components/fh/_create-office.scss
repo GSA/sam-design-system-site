@@ -24,6 +24,13 @@
             right: 1em;
         }
     }
+    input[type="checkbox"] {
+        width: 0;
+    }
+    button:disabled,
+    button[disabled]{
+        cursor: not-allowed;
+    }
     .review-dates > .grid {
         margin-top: .2em;
     }

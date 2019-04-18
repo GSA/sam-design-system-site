@@ -51,3 +51,14 @@
     }
   }
 }
+
+.opp-result{
+  .solicitation-number{
+    overflow-wrap: break-word;
+  }
+}
+#header-solicitation-number{
+  .description{
+    overflow-wrap: break-word;  
+  }
+}

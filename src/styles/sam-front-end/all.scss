@@ -196,7 +196,6 @@ $large: $current-large;
 @import 'pages/assistance-listing-operations';
 @import 'pages/opportunities-operations';
 @import 'pages/wage-determination-operations';
-@import 'pages/wage-determination-document';
 @import 'pages/help-search';
 @import 'pages/release-notes';
 @import 'pages/home';
@@ -219,6 +218,7 @@ $large: $current-large;
 @import 'components/fh/index';
 @import 'components/upload';
 @import 'components/upload-v2';
+@import 'components/opp-links-table';
 @import 'components/help/sections';
 /*-------------------
      Templates
@@ -267,7 +267,7 @@ $large: $current-large;
 }
 
 .usa-alert{
-  //width: 100%;
+  position: relative;
   margin-top: 0;
   margin-bottom: 1.5em;
 }

@@ -1,218 +1,296 @@
-<!-- ----------------------
-SAM HEADER
--------------------------->
-<section class="usa-banner">
+<!-- SKIP NAV -->
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<!-- BANNER -->
+<div class="usa-banner">
   <div class="usa-accordion">
-    <header class="usa-banner-header">
-      <div class="usa-grid usa-banner-inner">
-        <img src="/assets/sam-styles/uswds/img/us_flag_small.png" alt="U.S. flag">
-        <p> An official website of the United States government</p>
-        <button class="usa-accordion-button usa-banner-button" aria-expanded="false" aria-controls="gov-banner">
-          <span class="usa-banner-button-text">Here's how you know</span>
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img
+            class="usa-banner__header-flag"
+            src="/assets/sam-styles/img/us_flag_small.png"
+            alt="U.S. flag"
+          />
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">
+            An official website of the United States government
+          </p>
+          <p class="usa-banner__header-action" aria-hidden="true">
+            Here’s how you know
+          </p>
+        </div>
+        <button
+          class="usa-accordion__button usa-banner__button"
+          aria-expanded="false"
+          aria-controls="gov-banner"
+        >
+          <span class="usa-banner__button-text">Here’s how you know</span>
         </button>
       </div>
     </header>
-    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner" hidden>
-      <div class="usa-banner-guidance-gov usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="/assets/sam-styles/uswds/img/icon-dot-gov.svg"
-          alt="Dot gov">
-        <div class="usa-media_block-body">
-          <p>
-            <strong>The .gov means it’s official.</strong>
-            <br>
-            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure
-            you’re on a federal government site.
-          </p>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img
+            class="usa-banner__icon usa-media-block__img"
+            src="/assets/sam-styles/img/icon-dot-gov.svg"
+            alt="Dot gov"
+          />
+          <div class="usa-media-block__body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br />
+              Federal government websites often end in .gov or .mil. Before
+              sharing sensitive information, make sure you’re on a federal
+              government site.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="usa-banner-guidance-ssl usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="/assets/sam-styles/uswds/img/icon-https.svg" alt="Https">
-        <div class="usa-media_block-body">
-          <p>
-            <strong>The site is secure.</strong>
-            <br>
-            The <strong>https://</strong> ensures that you are connecting to the official website and that any
-            information you provide is encrypted and transmitted securely.
-          </p>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img
+            class="usa-banner__icon usa-media-block__img"
+            src="/assets/sam-styles/img/icon-https.svg"
+            alt="Https"
+          />
+          <div class="usa-media-block__body">
+            <p>
+              <strong>The site is secure.</strong>
+              <br />
+              The <strong>https://</strong> ensures that you are connecting to
+              the official website and that any information you provide is
+              encrypted and transmitted securely.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-
-
-<div class="sam-header">
-  <header class="usa-header usa-header-extended" role="banner">
-    <div class="usa-navbar">
-      <div class="usa-logo" id="extended-logo">
-        <em class="usa-logo-text">
-          <a href="/" title="Home" aria-label="Home">
-            <img src="\assets\img\sam-r9-logo-color.png" alt="Beta Sam Logo" class="beta-sam-logo">
-          </a>
-        </em>
-      </div>
-      <button class="usa-menu-btn sam-header-menu-btn">
-        <img src="assets/icon/header-footer/Mobile-Menu.png" alt="Menu">
-      </button>
-
-      <div class="usa-nav-secondary" id="sam-header-unstyled-list">
-        <ul class="sam-usa-unstyled-list usa-nav-secondary-links" id="sam-secondary-header-nav">
-          <li>
-            <a href="" class="sam-header-secondary-link"><img src="assets/icon/header-footer/Messages.png"
-                alt="Messages Icon"> Messages</a>
-          </li>
-          <li>
-            <a href="" class="sam-header-secondary-link"><img src="assets/icon/header-footer/Requests.png"
-                alt="Requests Icon"> Requests</a>
-          </li>
-          <li>
-            <a href="" class="sam-header-secondary-link"><img src="assets/icon/header-footer/Workspace.png"
-                alt="Workspace Icon"> Workspace</a>
-          </li>
-          <li>
-            <a href="" class="sam-header-secondary-link"><img src="assets/icon/header-footer/SignOut.png"
-                alt="Sign Out Icon"> Sign Out</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <nav role="navigation" class="usa-nav" id="sam-navbar">
-      <div class="usa-nav-inner" id="sam-usa-navbar">
-        <button class="usa-nav-close">
-          <img src="assets/icon/header-footer/arrow.png" alt="close">
-        </button>
-        <ul class="usa-nav-primary usa-accordion" id="sam-navbar-content">
-          <li class="navbar-btn">
-            <a class="usa-nav-link"
-              href="https://beta.sam.gov/search?keywords=&sort=-modifiedDate&index=&is_active=true&page=1">
-              <span>Search</span>
-            </a>
-          </li>
-          <li class="navbar-btn">
-            <button class="usa-accordion-button usa-nav-link sam-header-btn" aria-expanded="false"
-              aria-controls="extended-nav-section-one">
-              <span>Databank</span>
-            </button>
-            <ul id="extended-nav-section-one" class="sam-header-extended-nav-section usa-nav-submenu" hidden>
-              <li>
-                <a href="#">Contracting Information</a>
-              </li>
-              <li>
-                <a href="#">Assistance Listings</a>
-              </li>
-              <li>
-                <a href="#">Entity Information</a>
-              </li>
-              <li>
-                <a href="#">Federal Hierarchy</a>
-              </li>
-              <li>
-                <a href="#">Wage Determinations</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-btn">
-            <button class=" active usa-accordion-button usa-nav-link sam-header-btn" aria-expanded="false"
-              aria-controls="extended-nav-section-two">
-              <span>Data Services</span>
-            </button>
-            <ul id="extended-nav-section-two" class="sam-header-extended-nav-section usa-nav-submenu" hidden>
-              <li>
-                <a href="#">Page title</a>
-              </li>
-              <li>
-                <a href="#">Page title</a>
-              </li>
-              <li>
-                <a href="#">Page title</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-btn">
-            <a class="usa-nav-link" href="https://beta.sam.gov/help/new-to-sam">
-              <span>Help</span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="usa-nav-secondary">
-          <ul class="sam-mobile-usa-unstyled-list usa-nav-secondary-links" id="sam-secondary-mobile-header-nav">
-            <li class="active">
-              <a href="https://beta.sam.gov/workspace"><img src="assets/icon/header-footer/Messages.png"
-                  alt="Messages Icon">Messages</a>
-            </li>
-            <li>
-              <a href="https://beta.sam.gov/workspace"><img src="assets/icon/header-footer/Requests.png"
-                  alt="Requests Icon">Requests</a>
-            </li>
-            <li>
-              <a href="https://beta.sam.gov/workspace"><img src="assets/icon/header-footer/Workspace.png"
-                  alt="Workspace Icon">Workspace</a>
-            </li>
-            <li class="sam-sign-out">
-              <a href=""><img src="assets/icon/header-footer/SignOut.png" alt="SignOut Icon">Sign Out</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="usa-overlay"></div>
-  <main id="main-content" class="sam-main-content"></main>
 </div>
 
-
-
-
-<!-- ----------------------
-SAM FOOTER
--------------------------->
-<footer class="sam-styles sam-footer">
-  <div class="sam-footer-content">
-    <div class="sam-footer-logo">
-      <img src="assets/icon/header-footer/gsa.png" alt="GSA Logo">
-      <div class="sam-footer-logo-text">General Services Administration</div>
+<!-- HEADER -->
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-logo">
+      <em class="usa-logo__text"
+        ><a href="/" title="Home" aria-label="Home">SAM.gov</a></em
+      >
     </div>
-
-    <ul>
-      <li class="sam-footer-links">
-        <span class="sam-footer-links_section-header">About beta.SAM.gov</span>
-        <ul class="sam-footer-links_container">
-          <li class="sam-footer-section-link"> <a
-              href="https://interact.gsa.gov/group/integrated-award-environment-iae-industry-community">Explore Our
-              Community</a></li>
-          <li class="sam-footer-section-link"> <a href="https://beta.sam.gov/release-notes">Release Notes</a></li>
-        </ul>
-      </li>
-      <li class="sam-footer-links">
-        <span class="sam-footer-links_section-header">Our Partners</span>
-        <ul class="sam-footer-links_container">
-          <li class="sam-footer-section-link"> <a href="https://www.acquisition.gov/">Aquisition.gov</a></li>
-          <li class="sam-footer-section-link"> <a href="https://www.usaspending.gov/#/">USASpending.gov</a></li>
-          <li class="sam-footer-section-link"> <a href="https://www.grants.gov/">Grants.gov</a></li>
-          <li class="sam-footer-section-link"> <a href="https://beta.sam.gov/help/partners">More Partners</a></li>
-        </ul>
-      </li>
-      <li class="sam-footer-links">
-        <span class="sam-footer-links_section-header">Customer Service</span>
-        <ul class="sam-footer-links_container">
-          <li class="sam-footer-section-link"> <a href="https://beta.sam.gov/help/new-to-sam">Learning Center</a></li>
-          <li class="sam-footer-section-link"> <a href="https://fsd.gov/fsd-gov/home.do">Contact Federal Service
-              Desk</a>
-          </li>
-          <li class="sam-footer-section-link"> <a href="https://beta.sam.gov/help/resources">Resources</a></li>
-          <li class="sam-footer-section-link"> <a
-              href="https://www.gsa.gov/reference/freedom-of-information-act-foia">Freedom of Information Act</a></li>
-        </ul>
-      </li>
-    </ul>
+    <button class="usa-menu-btn">
+      <span class="icon-layers icon-fw icon-3x">
+        <i class="fas icon-square"></i>
+        <i class="sam icon-bars" data-fa-transform="shrink-6"></i>
+        <span class="icon-layers-counter"></span>
+      </span>
+    </button>
   </div>
-  <div class="sam-footer-text">
-    This is a U.S. General Services Administration Federal Government computer
-    system that is <b>"FOR OFFICIAL USE ONLY."</b> This system is subject to monitoring.
-    Individuals found performing unauthorized activities are subject to disciplinary
-    action including criminal prosecution.
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close">
+        <span class="icon-layers icon-fw icon-2x">
+          <i class="fas icon-square"></i>
+          <i class="sam icon-arrow-left" data-fa-transform="shrink-6"></i>
+        </span>
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href=""><span>Home</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="extended-nav-section-one"
+          >
+            <span>Contracting</span>
+          </button>
+          <ul id="extended-nav-section-one" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="#">Page title</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="#">Page title</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="#">A very long page title that goes onto two lines</a>
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="extended-nav-section-two"
+          >
+            <span>Federal Assistance</span>
+          </button>
+          <ul id="extended-nav-section-two" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="#">Page title</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="#">Page title</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="#">A very long page title that goes onto two lines</a>
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href=""><span>Search</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href=""><span>Help</span></a>
+        </li>
+      </ul>
+      <div class="usa-nav__secondary">
+        <ul class="usa-nav__secondary-links">
+          <li class="usa-nav__secondary-item">
+            <a href="">
+              <i class="fas icon-edit"></i>
+              Request
+            </a>
+          </li>
+          <li class="usa-nav__secondary-item">
+            <a href="">
+              <span class="icon-layers icon-fw">
+                <i class="fas icon-comment"></i>
+                <span class="icon-layers-counter"></span>
+              </span>
+              Messages
+            </a>
+          </li>
+          <li class="usa-nav__secondary-item">
+            <a href="">
+              <i class="fas icon-th"></i>
+              Workspace
+            </a>
+          </li>
+          <li class="usa-nav__secondary-item">
+            <a href="">
+              <i class="fas icon-sign-out-alt"></i>
+              Sign Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- FOOTER -->
+<footer class="usa-footer usa-footer--big" role="contentinfo">
+  <div class="grid-container usa-footer__return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="usa-footer__primary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="mobile-lg:grid-col-12 tablet:grid-col-4">
+          <div
+            class="usa-footer__logo grid-row mobile-lg:grid-gap-1 margin-top-3"
+          >
+            <div
+              class="mobile-lg:grid-col-3 mobile-lg:grid-offset-3 tablet:grid-offset-none tablet:grid-col-auto"
+            >
+              <img
+                class="usa-footer__logo-img"
+                src="/assets/sam-styles/img/sam/logo-gsa.svg"
+                alt=""
+              />
+            </div>
+            <div class="mobile-lg:grid-col-4 tablet:grid-col-auto">
+              <h3 class="usa-footer__logo-heading">
+                General Services Administration
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-lg:grid-col-12 tablet:grid-col-8">
+          <nav class="usa-footer__nav">
+            <div class="grid-row grid-gap-4">
+              <div class="mobile-lg:grid-col-12 desktop:grid-col-4">
+                <section
+                  class="usa-footer__primary-content usa-footer__primary-content--collapsible"
+                >
+                  <h4 class="usa-footer__primary-link">About beta.SAM.gov</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">Explore Our Community</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">Release Notes</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-12 desktop:grid-col-4">
+                <section
+                  class="usa-footer__primary-content usa-footer__primary-content--collapsible"
+                >
+                  <h4 class="usa-footer__primary-link">Our Partners</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">Aquisition.gov</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">USASpending.gov</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">Grants.gov</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">More Partners</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-12 desktop:grid-col-4">
+                <section
+                  class="usa-footer__primary-content usa-footer__primary-content--collapsible"
+                >
+                  <h4 class="usa-footer__primary-link">Customer Service</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">Learning Center</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);"
+                        >Contact Federal Service Desk</a
+                      >
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);">Resources</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="javascript:void(0);"
+                        >Freedom of Information Act</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row">
+        <div class="grid-col-12">
+          <p class="font-body-2xs line-height-sans-4 margin-top-0">
+            This is a U.S. General Services Administration Federal Government
+            computer system that is
+            <strong>"FOR OFFICIAL USE ONLY."</strong> This system is subject to
+            monitoring. Individuals found performing unauthorized activities are
+            subject to disciplinary action including criminal prosecution.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>

@@ -31,7 +31,11 @@
 /* SAM Styles 2.0
    ========================================================================== */
 
-@import "~@gsa-sam/sam-ui-elements/sam-styles-2/src/stylesheets/theme/styles";
+$theme-image-path:  '../assets/sam-styles/img';
+$theme-font-path:   '../assets/sam-styles/fonts';
+$theme-respect-user-font-size: false;
+
+@import "~@gsa-sam/sam-styles/src/stylesheets/sam";
 
 /* SAM Design System
    ========================================================================== */

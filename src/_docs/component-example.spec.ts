@@ -60,6 +60,7 @@ import { SamYoutubeComponentExampleComponent } from './experimental/youtube/comp
 import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 import { AutocompleteMultiselectExampleComponent } from './form-controls/autocomplete-multiselect/component-example';
 import { SortExampleComponent } from './experimental/sort/component-example';
+import { SdsPaginationComponentExampleComponent } from './experimental/pagination/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
@@ -112,6 +113,7 @@ let components = [
     AutocompleteExampleComponent,
     AutocompleteMultiselectExampleComponent,
     SortExampleComponent,
+    SdsPaginationExampleComponent,
 ];
 
 for(let i = 0; i < components.length; i++){

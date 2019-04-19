@@ -55,6 +55,7 @@ import { SamListComponentExampleComponent } from './experimental/list/component-
 import { SamListboxComponentExampleComponent } from './experimental/listbox/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
 import { SamPageSampleComponentExampleComponent } from './experimental/page/component-example';
+import { SdsPaginationComponentExampleComponent } from './experimental/pagination/component-example';
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
@@ -330,6 +331,12 @@ export const ROUTES: Routes = [
   ]},
   { path: 'experimental/master-page', component: SamMasterPageComponentExampleComponent },
   { path: 'experimental/page', component: SamPageSampleComponentExampleComponent },
+  { path: 'experimental/pagination', component: BaseDocPageComponent, data: {
+    path: '_docs\experimental\pagination\component-example.ts',
+    componentName: 'SdsPaginationComponent',
+			sections: ['']}, children: [
+    { path: '', component: SdsPaginationComponentExampleComponent }
+  ]},
   { path: 'experimental/progress', component: BaseDocPageComponent, data: {
     path: '_docs\experimental\progress\component-example.ts',
     componentName: 'ProgressComponent',

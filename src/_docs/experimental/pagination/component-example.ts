@@ -4,7 +4,7 @@ import {
 
 
 @Component({
-  selector: 'sds-pagination',
+  selector: 'doc-sds-pagination',
   templateUrl: './component-example.html'
 })
 export class SdsPaginationComponentExampleComponent {}

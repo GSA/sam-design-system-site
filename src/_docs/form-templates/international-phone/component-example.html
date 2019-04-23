@@ -23,3 +23,22 @@
         <button class="sam-ui button primary" type="submit">Submit</button>
     </div>
 </form>
+
+
+<h2>Example using Form Service with extension required</h2>
+<form [formGroup]="extensionRequiredForm" (ngSubmit)="onRequireExtensionSubmit()">
+    <sam-intl-telephone-group
+        [useFormService]="true"
+        [label]="'International Phone Number'"
+        [group]="extensionRequiredForm.controls.phone"
+        [phoneName]="'Intl Telephone Extension'"
+        [prefixName]="'Intl Country Extension'"
+        [extensionName]="'Intl Extension'"
+        [isExtensionRequired]="true"
+        [hasExtension]="true"></sam-intl-telephone-group>
+
+    <div>
+        <button class="sam-ui button secondary" type="button" (click)="extensionRequiredReset()">Reset</button>
+        <button class="sam-ui button primary" type="submit">Submit</button>
+    </div>
+</form>

@@ -72,7 +72,8 @@ const doc2Components = [
 	'SamCustomValidationComponentExampleComponent',
 	'SamSideNavigationToolbarComponentExampleComponent',
 	'SamSideNavigationToolbarComponentExampleComponent',
-	'SamSortComponentExampleComponent'
+	'SamSortComponentExampleComponent',
+	'SdsPaginationComponentExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;

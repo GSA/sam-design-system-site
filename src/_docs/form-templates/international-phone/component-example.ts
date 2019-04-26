@@ -17,6 +17,7 @@ export class PhoneGroupExampleComponent {
     phone: new FormControl('1234567890', Validators.required),
     extension: new FormControl('91234787', Validators.required)
   });
+  public isRequired: boolean = true;
   public form: FormGroup;
   public extensionRequiredForm: FormGroup;
   public message;
@@ -62,7 +63,7 @@ export class PhoneGroupExampleComponent {
     );
   }
 
-  public onSubmit () {
+  public onSubmit (ev) {
     this.formService.fireSubmit(this.form);
   }
 
@@ -71,7 +72,7 @@ export class PhoneGroupExampleComponent {
     this.formService.fireReset(this.form);
   }
 
-  public onRequireExtensionSubmit () {
+  public onRequireExtensionSubmit (ev) {
     this.formService.fireSubmit(this.extensionRequiredForm);
   }
 

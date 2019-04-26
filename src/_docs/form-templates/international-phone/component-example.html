@@ -8,7 +8,7 @@
 </sam-intl-telephone-group>
 
 <h2>Example using Form Service</h2>
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)">
     <sam-intl-telephone-group
         [useFormService]="true"
         [label]="'International Phone Number'"
@@ -26,14 +26,15 @@
 
 
 <h2>Example using Form Service with extension required</h2>
-<form [formGroup]="extensionRequiredForm" (ngSubmit)="onRequireExtensionSubmit()">
+<form [formGroup]="extensionRequiredForm" (ngSubmit)="onRequireExtensionSubmit($event)">
     <sam-intl-telephone-group
-        [useFormService]="true"
+        [useFormService]="false"
         [label]="'International Phone Number'"
         [group]="extensionRequiredForm.controls.phone"
         [phoneName]="'Intl Telephone Extension'"
         [prefixName]="'Intl Country Extension'"
         [extensionName]="'Intl Extension'"
+        [required]="true"
         [isExtensionRequired]="true"
         [hasExtension]="true"></sam-intl-telephone-group>
 

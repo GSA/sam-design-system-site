@@ -14,10 +14,12 @@ export class PhoneGroupExampleComponent {
 
   group = new FormGroup({
     prefix: new FormControl('', Validators.required),
-    phone: new FormControl('1234', Validators.required),
+    phone: new FormControl('1234567890', Validators.required),
     extension: new FormControl('91234787', Validators.required)
   });
+  public isRequired: boolean = true;
   public form: FormGroup;
+  public extensionRequiredForm: FormGroup;
   public message;
   public messages = ['Big bad error 1', 'big bad error 2'];
   public submitted = false;
@@ -39,19 +41,43 @@ export class PhoneGroupExampleComponent {
           {
             prefix: new FormControl(null, Validators.required),
             phone: new FormControl('1234', Validators.required),
-            extension: new FormControl('91234787', Validators.required)
+            extension: new FormControl('', Validators.required)
+          }
+        )
+      }
+    );
+
+
+
+    this.extensionRequiredForm = this._fb.group(
+      {
+        name: [null, Validators.required],
+        phone: new FormGroup(
+          {
+            prefix: new FormControl(null, Validators.required),
+            phone: new FormControl('9876091234', Validators.required),
+            extension: new FormControl('1234', Validators.required)
           }
         )
       }
     );
   }
 
-  public onSubmit () {
+  public onSubmit (ev) {
     this.formService.fireSubmit(this.form);
   }
 
   public reset () {
     this.form.reset();
     this.formService.fireReset(this.form);
+  }
+
+  public onRequireExtensionSubmit (ev) {
+    this.formService.fireSubmit(this.extensionRequiredForm);
+  }
+
+  public extensionRequiredReset () {
+    this.extensionRequiredForm.reset();
+    this.formService.fireReset(this.extensionRequiredForm);
   }
 }

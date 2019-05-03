@@ -40,23 +40,8 @@ export class PhoneGroupExampleComponent {
         phone: new FormGroup(
           {
             prefix: new FormControl(null, Validators.required),
-            phone: new FormControl('1234', Validators.required),
-            extension: new FormControl('', Validators.required)
-          }
-        )
-      }
-    );
-
-
-
-    this.extensionRequiredForm = this._fb.group(
-      {
-        name: [null, Validators.required],
-        phone: new FormGroup(
-          {
-            prefix: new FormControl(null, Validators.required),
-            phone: new FormControl('9876091234', Validators.required),
-            extension: new FormControl('1234', Validators.required)
+            phone: new FormControl('1234567890', Validators.required),
+            extension: new FormControl('')
           }
         )
       }
@@ -72,12 +57,4 @@ export class PhoneGroupExampleComponent {
     this.formService.fireReset(this.form);
   }
 
-  public onRequireExtensionSubmit (ev) {
-    this.formService.fireSubmit(this.extensionRequiredForm);
-  }
-
-  public extensionRequiredReset () {
-    this.extensionRequiredForm.reset();
-    this.formService.fireReset(this.extensionRequiredForm);
-  }
 }

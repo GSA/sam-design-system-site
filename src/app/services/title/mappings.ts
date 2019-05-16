@@ -92,14 +92,4 @@ export const mappings = {
   '/patterns/page/layout': 'General Template - Reports',
   '/patterns/page/search': 'General Template - Search',
 
-  // Prototypes
-  '/prototypes': 'Prototypes',
-  '/prototypes/page/home': 'Home Page Prototype',
-  '/prototypes/page/search': 'Search Prototype (Desktop)',
-  '/prototypes/page/search-mobile': 'Search Prototype (Mobile)',
-  '/prototypes/page/report': 'Report Page',
-  '/prototypes/component/picker': 'Picker Component',
-  '/prototypes/component/main-nav': 'Main Nav',
-  '/prototypes/page/table': 'Table',
-  '/prototypes/page/date': 'Date Picker'
 };

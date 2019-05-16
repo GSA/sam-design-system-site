@@ -12,10 +12,6 @@ export const ROUTES: Routes = [
     loadChildren: '../patterns/patterns.module#ExamplesModule'
   },
   {
-    path: 'prototypes',
-    loadChildren: '../prototypes/prototypes.module#PrototypesModule'
-  },
-  {
     path: 'styles',
     loadChildren: '../styles/docs/styles.module#StylesModule'
   }

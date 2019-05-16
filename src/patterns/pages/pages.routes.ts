@@ -3,18 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PagesComponent } from './pages.component';
-import { PageAComponent } from './page-a/page.component';
-import { PageBComponent } from './page-b/page.component';
+
 import { SamLayoutDemoComponent } from './layout';
 import { SamLayoutNoSidebarDemoComponent } from './layout';
-import { SamSearchDemoComponent } from './search/search.component';
 import { SamWorkspaceDemoComponent } from './workspace/workspace.component';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
-import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
-import { PageDataViewComponent } from './page-data/page-data.component';
-import { SearchResultsComponent } from './search-results/search-results.component';
-import { HeaderFooterComponent } from './header-footer/header-footer.component';
-import { HeaderFooterAngualarComponent } from './header-footer-components/header-footer-components.component'
 
 const PageRoutes: Routes = [
   {
@@ -22,24 +15,12 @@ const PageRoutes: Routes = [
     component: PagesComponent,
     children: [
       {
-        path: 'a',
-        component: PageAComponent
-      },
-      {
-        path: 'b',
-        component: PageBComponent
-      },
-      {
         path: 'layout',
         component: SamLayoutDemoComponent
       },
       {
         path: 'layout-nosidebar',
         component: SamLayoutNoSidebarDemoComponent
-      },
-      {
-        path: 'search',
-        component: SamSearchDemoComponent
       },
       {
         path: 'workspace',
@@ -50,27 +31,7 @@ const PageRoutes: Routes = [
         component: SamWorkspaceDashboardComponent
       },
     ],
-  },
-  {
-    path: 'page-wrapper',
-    component: PageWrapperComponent
-  },
-  {
-    path: 'page-data',
-    component: PageDataViewComponent
-  },
-  {
-    path: 'search-results',
-    component: SearchResultsComponent
-  },
-  {
-    path: 'header-footer',
-    component: HeaderFooterComponent
-  },
-  {
-    path: 'angualr-header-footer-component',
-    component: HeaderFooterAngualarComponent
-  },
+  }
 ];
 
 @NgModule({

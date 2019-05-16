@@ -24,9 +24,7 @@
             "styles": [
               "src/styles/docs.scss"
             ],
-            "scripts": [
-              "src/assets/sam-styles/uswds/js/uswds.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

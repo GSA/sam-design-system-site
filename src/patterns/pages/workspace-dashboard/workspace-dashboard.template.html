@@ -1,4 +1,4 @@
-<body class="grid-container maxw-none workspace dash">
+<body class="grid-container grid-gap-lg maxw-none workspace dash">
   <div class="grid-row workspace dash content">
     <!-- **************************  CARDS ****************************-->
     <div class="tablet:grid-col sam workspace cards">
@@ -14,7 +14,7 @@
               </span>
             </a>
           </h4>
-          <button class="sam secondary button">Create Opportunity</button>
+          <sam-button buttonText="Create Opportunity" buttonType="tertiary"></sam-button>
         </ng-container>
 
         <div class="sam statistics visible tablet up">
@@ -48,7 +48,7 @@
               </span>
             </a>
           </h4>
-          <button class="sam secondary button">Create Listing</button>
+          <sam-button buttonText="Create Listing" buttonType="tertiary"></sam-button>
         </ng-container>
 
         <div class="sam statistics visible tablet up">
@@ -69,6 +69,16 @@
             <div class="label">Overdue</div>
           </a>
         </div>
+        <div class="grid-row flex-justify sam visible tablet up">
+          <ul class="grid-col-fill display-inline-flex">
+            <li class="margin-x-4">
+              <a href="">Download Assistance Listing Template</a>
+            </li>
+            <li class="margin-x-4">
+              <a href="">Regional Assistance Locations</a>
+            </li>
+          </ul>
+        </div>
       </sam-card>
       <!--COLLECTIVE BARGAINING -->
       <sam-card raised="true">
@@ -81,7 +91,7 @@
               </span>
             </a>
           </h4>
-          <button class="sam secondary button">Create CBA</button>
+          <sam-button buttonText="Create CBA" buttonType="tertiary"></sam-button>
         </ng-container>
         <div class="sam statistics visible tablet up">
           <ul>
@@ -102,8 +112,8 @@
               </span>
             </a>
           </h4>
-          <button class="sam secondary button">Role Definitions</button>
-          <button class="sam secondary button">Bulk Update</button>
+          <sam-button buttonText="Role Definitions" buttonType="tertiary" class="margin-x-2"></sam-button>
+          <sam-button buttonText="Bulk Update" buttonType="tertiary"></sam-button>
         </ng-container>
 
         <div class="grid-row">
@@ -179,18 +189,22 @@
           </h4>
         </ng-container>
 
-        <div class="grid-row flex-justify sam visible tablet up">
-          <ul>
-            <li class="grid-col flex-1 display-inline">
+        <div class="grid-row sam visible tablet up margin-x-8">
+          <ul class="grid-col-fill display-inline-flex flex-justify usa-list--unstyled">
+            <li>
+              <img src="/assets/img/icons/Book.svg" alt="book icon" class="height-7 display-block margin-y-2">
               <a href="">Glossary</a>
             </li>
-            <li class="grid-col flex-1 display-inline">
+            <li>
+              <img src="/assets/img/icons/FileChartLine.svg" alt="file chart line icon" class="height-7 display-block margin-y-2">
               <a href="">FAQs</a>
             </li>
-            <li class="grid-col flex-1 display-inline">
+            <li>
+              <sam-icon [icon]="faVideo" size="8x"></sam-icon>
               <a href="">Videos</a>
             </li>
-            <li class="grid-col flex-1 display-inline">
+            <li>
+              <img src="/assets/img/icons/PaperPlane.svg" alt="workspace icon" class="height-7 display-block margin-y-2">
               <a href="">Release Notes</a>
             </li>
           </ul>
@@ -207,7 +221,7 @@
               </span>
             </a>
           </h4>
-          <button class="sam secondary button">Create Opportunity</button>
+          <sam-button buttonText="Create Opportunity" buttonType="tertiary"></sam-button>
         </ng-container>
 
         <div class="sam statistics visible tablet up">
@@ -235,8 +249,8 @@
         </ng-container>
 
         <div class="grid-row width-tablet margin-x-auto">
-          <div class="tablet:grid-col-auto">
-            <label class="input label font-body-md" for="input-type-text">
+          <div class="sam statistics visible tablet up tablet:grid-col">
+            <label class="input label" for="input-type-text">
               Which organiztion are you looking for?
             </label>
             <div class="sam search width-mobile-lg">
@@ -256,7 +270,7 @@
             Events in the <b>Last 90 Days</b>
           </div>
         </div>
-        <div class="grid-row width-tablet-lg margin-x-auto">
+        <div class="grid-row width-tablet-lg margin-x-auto margin-bottom-4">
           <div class="tablet:grid-col-auto margin-x-auto">
             <div class="display-inline-block sam kpi">
               <div class="sam kpi-value">
@@ -308,7 +322,7 @@
           </h4>
         </ng-container>
         <div class="sam statistics visible tablet up">
-          <button class="sam primary button">Upload AAC</button>
+          <sam-button buttonText="Upload AAC" buttonType="primary"></sam-button>
         </div>
       </sam-card>
     </div>
@@ -335,6 +349,8 @@
                   <i>Department</i>
                 </div>
               </div>
+              <sam-button buttonText="Downloads" buttonType="tertiary" class="margin-4"></sam-button>
+              <sam-button buttonText="Saved Searches" buttonType="tertiary" class="margin-4"></sam-button>
             </div>
           </div>
         </sam-card>
@@ -486,7 +502,7 @@
                 <form class="checkrole"> <input type="checkbox" name="checkrole" value="verified">
                   <label for="verified"> I verify I have a business need for this role.</label>
                 </form>
-                <button type="button" class="rolerequest">Request Role</button>
+                <sam-button buttonText="Request Role" buttonType="tertiary"></sam-button>
               </div>
             </div>
           </sam-card>
@@ -517,7 +533,7 @@
               <form class="checkrole"> <input type="checkbox" name="checkrole" value="verified">
                 <label for="verified"> I verify I have a business need for this role.</label>
               </form>
-              <button type="button" class="rolerequest">Request Role</button>
+              <sam-button buttonText="Request Role" buttonType="tertiary" class="margin-4"></sam-button>
             </div>
           </div>
         </sam-card>

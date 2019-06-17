@@ -102,7 +102,7 @@
         </div>
       </sam-card>
       <!--USER DIRECTORY-->
-      <sam-card class="grid-container" raised="true">
+      <sam-card raised="true">
         <ng-container class="header grid-row">
           <h4 class="sam heading">
             <a class="sam link arrow">
@@ -117,11 +117,11 @@
         </ng-container>
 
         <div class="grid-row">
-          <div class="sam statistics visible tablet up tablet:grid-col">
+          <div class="sam visible tablet up tablet:grid-col">
             <label class="input label margin-x-8" for="input-type-text">
               Who are you looking for?
             </label>
-            <div class="sam search margin-x-8 width-mobile-lg">
+            <div class="sam search margin-x-8">
               <input class="sam input" id="input-type-text" name="input-type-text" type="text">
               <button class="sam tertiary button">
                 <span class="fa fa-search" aria-hidden="true"></span>
@@ -191,21 +191,29 @@
 
         <div class="grid-row sam visible tablet up margin-x-8">
           <ul class="grid-col-fill display-inline-flex flex-justify usa-list--unstyled">
-            <li>
-              <img src="/assets/img/icons/Book.svg" alt="book icon" class="height-7 display-block margin-y-2">
-              <a href="">Glossary</a>
+            <li class="flex-align-center padding-2">
+              <a href="" class="sam icon-link text-center">
+                <i class="fa fa-book fa-5x display-block" style="color:#0071BC;"></i>
+                <label>Glossary</label>
+              </a>
             </li>
-            <li>
-              <img src="/assets/img/icons/FileChartLine.svg" alt="file chart line icon" class="height-7 display-block margin-y-2">
-              <a href="">FAQs</a>
+            <li class="flex-align-center padding-2">
+              <a href="" class="sam icon-link text-center">
+                <i class="fa fa-question-circle fa-5x display-block" style="color:#0071BC;"></i>
+                <label>FAQs</label>
+              </a>
             </li>
-            <li>
-              <sam-icon [icon]="faVideo" size="8x"></sam-icon>
-              <a href="">Videos</a>
+            <li class="flex-align-center padding-2">
+              <a href="" class="sam icon-link text-center">
+                <i class="fa fa-video-camera fa-5x display-block" style="color:#0071BC;"></i>
+                <label>Videos</label>
+              </a>
             </li>
-            <li>
-              <img src="/assets/img/icons/PaperPlane.svg" alt="workspace icon" class="height-7 display-block margin-y-2">
-              <a href="">Release Notes</a>
+            <li class="flex-align-center padding-2">
+              <a href="" class="sam icon-link text-center">
+                <i class="fa fa-sticky-note fa-5x display-block" style="color:#0071BC;"></i>
+                <label>Release Notes</label>
+              </a>
             </li>
           </ul>
         </div>
@@ -236,7 +244,7 @@
         </div>
       </sam-card>
       <!-- FEDERAL HIERARCHY -->
-      <sam-card class="grid-container" raised="true">
+      <sam-card raised="true">
         <ng-container class="header grid-row">
           <h4 class="sam heading">
             <a class="sam link arrow">
@@ -248,30 +256,25 @@
           </h4>
         </ng-container>
 
-        <div class="grid-row width-tablet margin-x-auto">
-          <div class="sam statistics visible tablet up tablet:grid-col">
+        <div class="grid-row mw-tablet margin-x-auto flex-column">
+          <div class="tablet:grid-col sam statistics visible tablet up">
             <label class="input label" for="input-type-text">
               Which organiztion are you looking for?
             </label>
-            <div class="sam search width-mobile-lg">
-              <input class="sam input" id="input-type-text" name="input-type-text" type="text">
-              <button class="sam tertiary button">
-                <span class="fa fa-search" aria-hidden="true"></span>
-              </button>
-            </div>
+          </div>
+          <div class="tablet:grid-col sam statistics visible tablet up sam search mw-mobile-lg height-5">
+            <input class="sam input" id="input-type-text" name="input-type-text" type="text">
+            <button class="sam tertiary button height-5">
+              <span class="fa fa-search" aria-hidden="true"></span>
+            </button>
           </div>
         </div>
 
-        <div class="grid-row width-tablet-lg margin-x-auto">
-          <div class="tablet:grid-col sam fed-kpi margin-2">
-            Events in the <b>Last 90 Days</b>
-          </div>
-          <div class="tablet:grid-col sam fed-kpi margin-2">
-            Events in the <b>Last 90 Days</b>
-          </div>
-        </div>
-        <div class="grid-row width-tablet-lg margin-x-auto margin-bottom-4">
+        <div class="sam statistics visible tablet up grid-row mw-tablet-lg margin-x-auto margin-bottom-4">
           <div class="tablet:grid-col-auto margin-x-auto">
+            <div class="display-block sam fed-kpi margin-2">
+              Events in the <b>Last 90 Days</b>
+            </div>
             <div class="display-inline-block sam kpi">
               <div class="sam kpi-value">
                 2051
@@ -290,6 +293,9 @@
             </div>
           </div>
           <div class="tablet:grid-col-auto margin-x-auto">
+            <div class="display-block sam fed-kpi margin-2">
+              Events in the <b>Next 90 Days</b>
+            </div>
             <div class="display-inline-block sam kpi">
               <div class="sam kpi-value">
                 30
@@ -328,20 +334,21 @@
     </div>
     <!-- ************************  ASIDE** ****************************-->
     <div class="tablet:grid-col">
-      <aside class="sam workspace aside">
+      <aside class="sam workspace aside height-full bg-white">
         <!-- Profile -->
         <sam-card>
-          <ng-container class="header">
+          <ng-container class="grid-row header">
             <h3 class="sam heading">
               <a class="sam semibold">Profile</a>
             </h3>
           </ng-container>
           <div class="sam feed visible tablet up">
-            <div class="profile content">
-              <div class="profile-icon">
-                <img src="\assets\icon\workspace\profile 1.svg" alt="Profile Icon">
+            <div class="grid-row">
+              <div class="profile-icon display-flex flex-column flex-justify-center padding-2 bg-base-lightest width-15">
+                <img src="\assets\img\icons\User.svg" alt="user" class="margin-x-auto" width="70px">
+                <label class="text-center text-secondary text-semibold">Update</label>
               </div>
-              <div class="profile">
+              <div class="display-inline-block margin-2 font-sans-md line-height-sans-6">
                 Firstname Lastname
                 <br> Firstname.lastname.cfda@hhs.gov
                 <div class="dept-label">
@@ -349,8 +356,10 @@
                   <i>Department</i>
                 </div>
               </div>
-              <sam-button buttonText="Downloads" buttonType="tertiary" class="margin-4"></sam-button>
-              <sam-button buttonText="Saved Searches" buttonType="tertiary" class="margin-4"></sam-button>
+            </div>
+            <div class="grid-row">
+              <sam-button buttonText="Downloads" buttonType="tertiary" class="margin-2"></sam-button>
+              <sam-button buttonText="Saved Searches" buttonType="tertiary" class="margin-2"></sam-button>
             </div>
           </div>
         </sam-card>
@@ -360,7 +369,7 @@
             <h3 class="sam heading">
               <a class="sam semibold">Pending Requests</a>
             </h3>
-            <span class="sam circular red label visible mobile only">
+            <span class="sam circular red label visible mobile only margin-0">
               4
             </span>
           </ng-container>
@@ -464,7 +473,7 @@
               <div class="content">
                 <div class="notif content">
                   <div class="notif icon">
-                    <img src="\assets\icon\workspace\contracting.svg" alt="" width="25">
+                    <img src="\assets\icon\workspace\contracting.svg" alt="contracting" width="25">
                   </div>
                   <div class="sam notif summary">
                     Planned System Downtime Sep 29, 2019 from 2am-3am
@@ -487,59 +496,131 @@
             </ng-container>
             <div class="sam feed visible tablet up">
               <div class="sam role request">
-                <div class="role content">
+                <div class="font-sans-md padding-2">
                   Select one of the options below to request a new role. If you need a role that you do not see below, contact a website administrator from your agency directly.
                 </div>
-                <div class="roledropdown">
-                  <select>
+                <form class="usa-form padding-x-2 maxw-none">
+                  <select class="width-full margin-0 usa-select" name="options" id="options">
                     <option value="contracting specialist">Contracting Specialist</option>
                     <option value="role1">Role 1</option>
                     <option value="role2">Role 2</option>
                     <option value="role3">Role 3</option>
                   </select>
-                  A contracting specialist contributes to contract opportunities.
-                </div>
-                <form class="checkrole"> <input type="checkbox" name="checkrole" value="verified">
-                  <label for="verified"> I verify I have a business need for this role.</label>
+                  <div class="font-sans-md padding-1">
+                    A contracting specialist contributes to contract opportunities.
+                  </div>
                 </form>
-                <sam-button buttonText="Request Role" buttonType="tertiary"></sam-button>
+                <div class="grid-row">
+                  <form class="tablet:grid-col padding-4 line-height-mono-2 text-baseline"> <input type="checkbox" name="checkrole" value="verified">
+                    <label for="verified"> I verify I have a business need for this role.</label>
+                  </form>
+                  <sam-button class="tablet:grid-col-auto padding-2" buttonText="Request Role" buttonType="tertiary"></sam-button>
+                </div>
               </div>
             </div>
           </sam-card>
         </div>
       </aside>
-      <!-- ************************ ROLE CARD*******************************-->
-      <div class="sam workspace role">
-        <sam-card>
-          <ng-container class="header">
-            <h3 class="sam heading">
-              <a class="sam semibold">Add A New Role</a>
-            </h3>
-          </ng-container>
-          <div class="sam feed visible tablet up">
-            <div class="sam role request">
-              <div class="role content">
-                Select one of the options below to request a new role. If you need a role that you do not see below, contact a website administrator from your agency directly.
-              </div>
-              <div class="roledropdown">
-                <select>
-                  <option value="contracting specialist">Contracting Specialist</option>
-                  <option value="role1">Role 1</option>
-                  <option value="role2">Role 2</option>
-                  <option value="role3">Role 3</option>
-                </select>
-                A contracting specialist contributes to contract opportunities.
-              </div>
-              <form class="checkrole"> <input type="checkbox" name="checkrole" value="verified">
-                <label for="verified"> I verify I have a business need for this role.</label>
-              </form>
-              <sam-button buttonText="Request Role" buttonType="tertiary" class="margin-4"></sam-button>
-            </div>
-          </div>
-        </sam-card>
-      </div>
     </div>
   </div>
   <!-- ***********************FOOTER** ****************************-->
-  <footer></footer>
+
+  <footer class="usa-footer usa-footer--big" role="contentinfo">
+    <div class="grid-container usa-footer__return-to-top">
+      <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="mobile-lg:grid-col-12 tablet:grid-col-4">
+            <div class="usa-footer__logo grid-row mobile-lg:grid-gap-1 margin-top-3">
+              <div class="mobile-lg:grid-col-3 mobile-lg:grid-offset-3 tablet:grid-offset-none tablet:grid-col-auto">
+                <a class="usa-footer__logo-text" href="http://gsa.gov">
+                  GSA.gov
+                </a>
+              </div>
+              <div class="mobile-lg:grid-col-4 tablet:grid-col-auto">
+                <h3 class="usa-footer__logo-heading">
+                  General Services Administration
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-lg:grid-col-12 tablet:grid-col-8">
+            <nav class="usa-footer__nav">
+              <div class="grid-row grid-gap-4">
+                <div class="mobile-lg:grid-col-12 desktop:grid-col-4">
+                  <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                    <span class="usa-footer__primary-link">About beta.SAM.gov</span>
+                    <ul class="usa-list usa-list--unstyled">
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Explore Our Community</a>
+                      </li>
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Release Notes</a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="mobile-lg:grid-col-12 desktop:grid-col-4">
+                  <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                    <span class="usa-footer__primary-link">Our Partners</span>
+                    <ul class="usa-list usa-list--unstyled">
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Aquisition.gov</a>
+                      </li>
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">USASpending.gov</a>
+                      </li>
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Grants.gov</a>
+                      </li>
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">More Partners</a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="mobile-lg:grid-col-12 desktop:grid-col-4">
+                  <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                    <span class="usa-footer__primary-link">Customer Service</span>
+                    <ul class="usa-list usa-list--unstyled">
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Learning Center</a>
+                      </li>
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Contact Federal Service Desk</a>
+                      </li>
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Resources</a>
+                      </li>
+                      <li class="usa-footer__secondary-link">
+                        <a href="javascript:void(0);">Freedom of Information Act</a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-col-12">
+            <p class="font-body-2xs line-height-sans-4 margin-top-0">
+              This is a U.S. General Services Administration Federal Government
+              computer system that is
+              <strong>"FOR OFFICIAL USE ONLY."</strong> This system is subject to
+              monitoring. Individuals found performing unauthorized activities are
+              subject to disciplinary action including criminal prosecution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 </body>

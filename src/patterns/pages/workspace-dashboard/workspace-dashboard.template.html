@@ -71,10 +71,10 @@
         </div>
         <div class="grid-row flex-justify sam visible tablet up">
           <ul class="grid-col-fill display-inline-flex">
-            <li class="margin-x-4">
+            <li class="margin-x-2">
               <a href="">Download Assistance Listing Template</a>
             </li>
-            <li class="margin-x-4">
+            <li class="margin-x-2">
               <a href="">Regional Assistance Locations</a>
             </li>
           </ul>
@@ -118,10 +118,10 @@
 
         <div class="grid-row">
           <div class="sam visible tablet up tablet:grid-col">
-            <label class="input label margin-x-8" for="input-type-text">
+            <label class="input label margin-x-4 margin-y-1" for="input-type-text">
               Who are you looking for?
             </label>
-            <div class="sam search margin-x-8">
+            <div class="sam search margin-x-4 width-mobile">
               <input class="sam input" id="input-type-text" name="input-type-text" type="text">
               <button class="sam tertiary button">
                 <span class="fa fa-search" aria-hidden="true"></span>
@@ -262,8 +262,8 @@
               Which organiztion are you looking for?
             </label>
           </div>
-          <div class="tablet:grid-col sam statistics visible tablet up sam search mw-mobile-lg height-5">
-            <input class="sam input" id="input-type-text" name="input-type-text" type="text">
+          <div class="tablet:grid-col sam statistics visible tablet up sam search height-5 flex-no-wrap">
+            <input class="sam input" id="input-type-text" name="input-type-text" type="text" width="80%">
             <button class="sam tertiary button height-5">
               <span class="fa fa-search" aria-hidden="true"></span>
             </button>
@@ -271,11 +271,11 @@
         </div>
 
         <div class="sam statistics visible tablet up grid-row mw-tablet-lg margin-x-auto margin-bottom-4">
-          <div class="tablet:grid-col-auto margin-x-auto">
-            <div class="display-block sam fed-kpi margin-2">
+          <div class="tablet:grid-col-auto sam kpi-container">
+            <div class="display-block sam kpi-content margin-2">
               Events in the <b>Last 90 Days</b>
             </div>
-            <div class="display-inline-block sam kpi">
+            <div class="sam kpi">
               <div class="sam kpi-value">
                 2051
               </div>
@@ -283,7 +283,7 @@
                 Organizations Started
               </label>
             </div>
-            <div class="display-inline-block sam kpi">
+            <div class="sam kpi">
               <div class="sam kpi-value">
                 109
               </div>
@@ -292,25 +292,27 @@
               </label>
             </div>
           </div>
-          <div class="tablet:grid-col-auto margin-x-auto">
-            <div class="display-block sam fed-kpi margin-2">
+          <div class="tablet:grid-col-auto sam kpi-container">
+            <div class="display-block sam kpi-content margin-2">
               Events in the <b>Next 90 Days</b>
             </div>
-            <div class="display-inline-block sam kpi">
-              <div class="sam kpi-value">
-                30
+            <div class="margin-x-auto">
+              <div class="sam kpi">
+                <div class="sam kpi-value">
+                  30
+                </div>
+                <label class="sam kpi-label">
+                  Organizations Started
+                </label>
               </div>
-              <label class="sam kpi-label">
-                Organizations Started
-              </label>
-            </div>
-            <div class="display-inline-block sam kpi">
-              <div class="sam kpi-value">
-                969
+              <div class="sam kpi">
+                <div class="sam kpi-value">
+                  969
+                </div>
+                <label class="sam kpi-label">
+                  Organizations Expired
+                </label>
               </div>
-              <label class="sam kpi-label">
-                Organizations Expired
-              </label>
             </div>
           </div>
         </div>
@@ -344,8 +346,9 @@
           </ng-container>
           <div class="sam feed visible tablet up">
             <div class="grid-row">
-              <div class="profile-icon display-flex flex-column flex-justify-center padding-2 bg-base-lightest width-15">
-                <img src="\assets\img\icons\User.svg" alt="user" class="margin-x-auto" width="70px">
+              <div class="profile-icon display-flex flex-column flex-justify-center bg-gray-5 width-15 height-15">
+                <img src="\assets\img\icons\User.svg" alt="user" class="margin-x-auto" width="70px" color="gray;">
+                <!-- <i class="fa fa-user-circle fa-5x" style="color:#0071BC;"></i> -->
                 <label class="text-center text-secondary text-semibold">Update</label>
               </div>
               <div class="display-inline-block margin-2 font-sans-md line-height-sans-6">
@@ -536,7 +539,7 @@
             <div class="usa-footer__logo grid-row mobile-lg:grid-gap-1 margin-top-3">
               <div class="mobile-lg:grid-col-3 mobile-lg:grid-offset-3 tablet:grid-offset-none tablet:grid-col-auto">
                 <a class="usa-footer__logo-text" href="http://gsa.gov">
-                  GSA.gov
+                  <img src="\assets\icon\workspace\gsa.png" alt="GSA.gov" width="150px">
                 </a>
               </div>
               <div class="mobile-lg:grid-col-4 tablet:grid-col-auto">

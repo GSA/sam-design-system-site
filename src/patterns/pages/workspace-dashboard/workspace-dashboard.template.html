@@ -1,7 +1,7 @@
 <body class="grid-container grid-gap-lg maxw-none workspace dash">
   <div class="grid-row workspace dash content">
     <!-- **************************  CARDS ****************************-->
-    <div class="tablet:grid-col sam workspace cards">
+    <div class="tablet:grid-col sam workspace cards padding-4">
       <h3 class="sam header margin-1">Workspace</h3>
       <!-- CONTRACTING -->
       <sam-card raised="true">
@@ -25,14 +25,6 @@
           <a class="blue statistic">
             <div class="value"><span class="circular">0</span></div>
             <div class="label">Draft</div>
-          </a>
-          <a class="red statistic">
-            <div class="value"><span class="circular">1</span></div>
-            <div class="label">Rejected</div>
-          </a>
-          <a class="orange statistic">
-            <div class="value"><span class="circular">2</span></div>
-            <div class="label">Overdue</div>
           </a>
         </div>
       </sam-card>
@@ -71,15 +63,16 @@
         </div>
         <div class="grid-row flex-justify sam visible tablet up">
           <ul class="grid-col-fill display-inline-flex">
-            <li class="margin-x-2">
+            <li class="margin-x-auto">
               <a href="">Download Assistance Listing Template</a>
             </li>
-            <li class="margin-x-2">
+            <li class="margin-x-auto">
               <a href="">Regional Assistance Locations</a>
             </li>
           </ul>
         </div>
       </sam-card>
+
       <!--COLLECTIVE BARGAINING -->
       <sam-card raised="true">
         <ng-container class="header">
@@ -93,6 +86,7 @@
           </h4>
           <sam-button buttonText="Create CBA" buttonType="tertiary"></sam-button>
         </ng-container>
+
         <div class="sam statistics visible tablet up">
           <ul>
             <li>
@@ -101,6 +95,7 @@
           </ul>
         </div>
       </sam-card>
+
       <!--USER DIRECTORY-->
       <sam-card raised="true">
         <ng-container class="header grid-row">
@@ -112,23 +107,28 @@
               </span>
             </a>
           </h4>
-          <sam-button buttonText="Role Definitions" buttonType="tertiary" class="margin-x-2"></sam-button>
+          <sam-button buttonText="Role Definitions" buttonType="tertiary" class="margin-x-1"></sam-button>
           <sam-button buttonText="Bulk Update" buttonType="tertiary"></sam-button>
         </ng-container>
 
         <div class="grid-row">
-          <div class="sam visible tablet up tablet:grid-col">
+          <div class="sam visible tablet up tablet:grid-col-fill">
             <label class="input label margin-x-4 margin-y-1" for="input-type-text">
               Who are you looking for?
             </label>
-            <div class="sam search margin-x-4 width-mobile">
-              <input class="sam input" id="input-type-text" name="input-type-text" type="text">
-              <button class="sam tertiary button">
+            <div class="grid-row display-inline-flex flex-no-wrap sam search margin-x-4">
+              <select class="tablet:grid-col-auto">
+                <option value="all users">All Users</option>
+                <option value="option 2">Option 2</option>
+                <option value="option 3">Option 3</option>
+              </select>
+              <input class="tablet:grid-col-fill" id="input-type-text" name="input-type-text" type="text">
+              <button class="sam tertiary button tablet:grid-col-auto">
                 <span class="fa fa-search" aria-hidden="true"></span>
               </button>
             </div>
           </div>
-          <div class="sam statistics visible tablet up tablet:grid-col">
+          <div class="sam statistics visible tablet up tablet:grid-col-auto">
             <a class="grey statistic">
               <div class="value"><span class="circular">15</span></div>
               <div class="label">Pending</div>
@@ -136,6 +136,7 @@
           </div>
         </div>
       </sam-card>
+
       <!-- SYSTEM ACCOUNTS -->
       <sam-card raised="true">
         <ng-container class="header">
@@ -176,6 +177,7 @@
           </a>
         </div>
       </sam-card>
+
       <!-- CONTENT MANAGEMENT -->
       <sam-card raised="true">
         <ng-container class="header">
@@ -193,56 +195,32 @@
           <ul class="grid-col-fill display-inline-flex flex-justify usa-list--unstyled">
             <li class="flex-align-center padding-2">
               <a href="" class="sam icon-link text-center">
-                <i class="fa fa-book fa-5x display-block" style="color:#0071BC;"></i>
+                <i class="fa fa-book fa-3x display-block" style="color:#0071BC;"></i>
                 <label>Glossary</label>
               </a>
             </li>
             <li class="flex-align-center padding-2">
               <a href="" class="sam icon-link text-center">
-                <i class="fa fa-question-circle fa-5x display-block" style="color:#0071BC;"></i>
+                <i class="fa fa-question-circle fa-3x display-block" style="color:#0071BC;"></i>
                 <label>FAQs</label>
               </a>
             </li>
             <li class="flex-align-center padding-2">
               <a href="" class="sam icon-link text-center">
-                <i class="fa fa-video-camera fa-5x display-block" style="color:#0071BC;"></i>
+                <i class="fa fa-video-camera fa-3x display-block" style="color:#0071BC;"></i>
                 <label>Videos</label>
               </a>
             </li>
             <li class="flex-align-center padding-2">
               <a href="" class="sam icon-link text-center">
-                <i class="fa fa-sticky-note fa-5x display-block" style="color:#0071BC;"></i>
+                <i class="fa fa-sticky-note fa-3x display-block" style="color:#0071BC;"></i>
                 <label>Release Notes</label>
               </a>
             </li>
           </ul>
         </div>
       </sam-card>
-      <!-- CONTRACTING -->
-      <sam-card raised="true">
-        <ng-container class="header">
-          <h4 class="sam heading">
-            <a class="sam link arrow">
-              Contract Opportunities
-              <span class="sam ink black visible mobile only">
-                (18)
-              </span>
-            </a>
-          </h4>
-          <sam-button buttonText="Create Opportunity" buttonType="tertiary"></sam-button>
-        </ng-container>
 
-        <div class="sam statistics visible tablet up">
-          <a class="green statistic">
-            <div class="value"><span class="circular">15</span></div>
-            <div class="label">Active</div>
-          </a>
-          <a class="blue statistic">
-            <div class="value"><span class="circular">0</span></div>
-            <div class="label">Draft</div>
-          </a>
-        </div>
-      </sam-card>
       <!-- FEDERAL HIERARCHY -->
       <sam-card raised="true">
         <ng-container class="header grid-row">
@@ -256,17 +234,17 @@
           </h4>
         </ng-container>
 
-        <div class="grid-row mw-tablet margin-x-auto flex-column">
-          <div class="tablet:grid-col sam statistics visible tablet up">
-            <label class="input label" for="input-type-text">
-              Which organiztion are you looking for?
+        <div class="grid-row">
+          <div class="sam visible tablet up tablet:grid-col-fill">
+            <label class="input label margin-x-4 margin-y-1" for="input-type-text">
+              Which Organization are you looking for?
             </label>
-          </div>
-          <div class="tablet:grid-col sam statistics visible tablet up sam search height-5 flex-no-wrap">
-            <input class="sam input" id="input-type-text" name="input-type-text" type="text" width="80%">
-            <button class="sam tertiary button height-5">
-              <span class="fa fa-search" aria-hidden="true"></span>
-            </button>
+            <div class="grid-row display-inline-flex flex-no-wrap sam search margin-x-4">
+              <input class="tablet:grid-col-fill" id="input-type-text" name="input-type-text" type="text">
+              <button class="sam tertiary button tablet:grid-col-auto">
+                <span class="fa fa-search" aria-hidden="true"></span>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -317,6 +295,7 @@
           </div>
         </div>
       </sam-card>
+
       <!-- ACTIVITY ADDRESS CODE -->
       <sam-card raised="true">
         <ng-container class="header">
@@ -329,14 +308,16 @@
             </a>
           </h4>
         </ng-container>
+
         <div class="sam statistics visible tablet up">
-          <sam-button buttonText="Upload AAC" buttonType="primary"></sam-button>
+          <sam-button class="margin-y-4" buttonText="Upload AAC" buttonType="primary"></sam-button>
         </div>
       </sam-card>
     </div>
+
     <!-- ************************  ASIDE** ****************************-->
-    <div class="tablet:grid-col">
-      <aside class="sam workspace aside height-full bg-white">
+    <div class="tablet:grid-col bg-white">
+      <aside class="sam workspace aside margin-top-2">
         <!-- Profile -->
         <sam-card>
           <ng-container class="grid-row header">
@@ -344,12 +325,12 @@
               <a class="sam semibold">Profile</a>
             </h3>
           </ng-container>
+
           <div class="sam feed visible tablet up">
             <div class="grid-row">
               <div class="profile-icon display-flex flex-column flex-justify-center bg-gray-5 width-15 height-15">
-                <img src="\assets\img\icons\User.svg" alt="user" class="margin-x-auto" width="70px" color="gray;">
-                <!-- <i class="fa fa-user-circle fa-5x" style="color:#0071BC;"></i> -->
-                <label class="text-center text-secondary text-semibold">Update</label>
+                <i alt="user" class="fa fa-user fa-5x margin-x-auto"></i>
+                <label class="text-center text-semibold">Update</label>
               </div>
               <div class="display-inline-block margin-2 font-sans-md line-height-sans-6">
                 Firstname Lastname
@@ -376,6 +357,7 @@
               4
             </span>
           </ng-container>
+
           <div class="sam feed visible tablet up">
             <div class="event">
               <div class="content">
@@ -434,6 +416,7 @@
             </div>
           </div>
         </sam-card>
+
         <!-- NOTIFICATION -->
         <sam-card>
           <ng-container class="header">
@@ -441,54 +424,46 @@
               <a class="sam semibold">Notifications</a>
             </h3>
           </ng-container>
+
           <div class="sam feed visible tablet up">
-            <div class="event">
-              <div class="content">
-                <div class="notif content">
-                  <div class="notif icon">
-                    <img src="\assets\icon\workspace\contracting.svg" alt="icon" width="25">
-                  </div>
-                  <div class="sam notif summary">
-                    Wage Determinations: <b>CA09832498</b> has been updated.
-                  </div>
-                  <div class="date">
-                    Nov 12
-                  </div>
-                </div>
+            <div class="event grid-row">
+              <div class="tablet:grid-col-auto margin-2">
+                <i class="fa fa-pencil fa-2x" style="color:#0071BC;"></i>
+              </div>
+              <div class="tablet:grid-col margin-left-2 margin-bottom-4">
+                Wage Determinations: <b>CA09832498</b> has been updated.
+              </div>
+              <div class="tablet:grid-col-auto date">
+                Nov 12
               </div>
             </div>
-            <div class="event">
-              <div class="content">
-                <div class="notif content">
-                  <div class="notif icon">
-                    <img src="\assets\icon\workspace\contracting.svg" alt="" width="25">
-                  </div>
-                  <div class="sam notif summary">
-                    Contract Opportunities: <b>Z-Replacement and installation of an irrigation system</b> has been updated.
-                  </div>
-                  <div class="date">
-                    10:04 AM
-                  </div>
-                </div>
+            <div class="event grid-row">
+              <div class="tablet:grid-col-auto margin-2">
+                <i class="fa fa-pencil fa-2x" style="color:#0071BC;"></i>
+              </div>
+              <div class="tablet:grid-col margin-left-2 margin-bottom-4">
+                Contract Opportunities: <b>Z-Replacement and installation of an irrigation system</b> has been updated.
+              </div>
+              <div class="tablet:grid-col-auto date">
+                Nov 12
               </div>
             </div>
-            <div class="event">
-              <div class="content">
-                <div class="notif content">
-                  <div class="notif icon">
-                    <img src="\assets\icon\workspace\contracting.svg" alt="contracting" width="25">
-                  </div>
-                  <div class="sam notif summary">
-                    Planned System Downtime Sep 29, 2019 from 2am-3am
-                  </div>
-                  <div class="date">
-                    Nov 9
-                  </div>
-                </div>
+            <div class="event grid-row">
+              <div class="tablet:grid-col-auto margin-2">
+                <i class="fa fa-exclamation-circle fa-2x text-red"></i>
+              </div>
+              <div class="tablet:grid-col margin-left-2 margin-bottom-4">
+                <b>Planned System Downtime Sep 29, 2018 from 2am-3am</b><br>
+                Sep 24 8:55AM - SAM.gov will be performing routine system maintenance from 2am - 3am on Sat, Sep 29, 2018.
+                The websitee will be unavailable during this window.
+              </div>
+              <div class="tablet:grid-col-auto date">
+                Nov 12
               </div>
             </div>
           </div>
         </sam-card>
+
         <!-- ROLE CARD-->
         <div class="sam workspace role">
           <sam-card>
@@ -497,6 +472,7 @@
                 <a class="sam semibold">Add A New Role</a>
               </h3>
             </ng-container>
+
             <div class="sam feed visible tablet up">
               <div class="sam role request">
                 <div class="font-sans-md padding-2">
@@ -517,7 +493,7 @@
                   <form class="tablet:grid-col padding-4 line-height-mono-2 text-baseline"> <input type="checkbox" name="checkrole" value="verified">
                     <label for="verified"> I verify I have a business need for this role.</label>
                   </form>
-                  <sam-button class="tablet:grid-col-auto padding-2" buttonText="Request Role" buttonType="tertiary"></sam-button>
+                  <sam-button class="tablet:grid-col-auto padding-top-2" buttonText="Request Role" buttonType="tertiary"></sam-button>
                 </div>
               </div>
             </div>

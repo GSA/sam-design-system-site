@@ -1,24 +1,9 @@
 /**********************************************
-Trying Gray Background (Pending Approval)
-***********************************************/
-
-body{
-  background-color: #f9f9f9;
-  .site-header{
-    border-bottom: 2px solid #ececec;
-    background-color: white;
-  }
-  .mat-sidenav-container, .mat-sidenav{
-    background-color: transparent;
-  }
-}
-
-/**********************************************
 HOME PAGE
 ***********************************************/
 
 section.home{
-  padding: 40px 0;
+  padding: 40px 0 80px 0;
 }
 
 .home.intro-text{

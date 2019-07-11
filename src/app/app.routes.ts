@@ -10,9 +10,5 @@ export const ROUTES: Routes = [
   {
     path: 'patterns',
     loadChildren: '../patterns/patterns.module#ExamplesModule'
-  },
-  {
-    path: 'styles',
-    loadChildren: '../styles/docs/styles.module#StylesModule'
   }
 ];

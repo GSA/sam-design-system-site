@@ -30,18 +30,15 @@
 /* SAM Design System
    ========================================================================== */
 
+body{
+    background-color: #f9f9f9;
+}
+
 @import "sam-design-system/card";
-@import "sam-design-system/developer-menu";
 @import "sam-design-system/utilities";
 @import "sam-design-system/home";
 @import "sam-design-system/site-header";
 @import "sam-design-system/site-footer";
-
-/**
- * Patterns
- */
-
- @import "sam-design-system/patterns";
 
 /**
  * Syntax Code Highlight
@@ -67,105 +64,4 @@ pre[class*="language-"] {
     padding: .8em;
     border: 1px solid #dedede;
     border-radius: 2px;
-}
-
-/**
- * Styles doc pages
- */
-
-.doc-examples{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 15px;
-    border: 2px solid #e8e8e8;
-    max-width: 1080px;
-    border-radius: 2px;
-    background-color: white;
-    .usa-width-one-whole{
-        padding-bottom: 30px;
-        border-bottom: 2px solid #e8e8e8;
-    }
-    .usa-width-one-whole:last-child{
-        border-bottom: none;
-    }
-}
-
-.doc-dark-background{
-    background-color: #212121;
-    padding: 10px;
-}
-
-.sam.colors{
-    display: flex;
-}
-
-.sam.color{
-    font-size: 14px;
-    padding: 10px;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    &::before{
-        display: block;
-        line-height: 16px;
-        font-weight: 600;
-    }
-    &.inverted{
-        border: 1px solid map-get($map: $uswds-cool-gray, $key: 200);
-    }
-}
-
-
-.sam.color.text{
-    color: white;
-    background-color: map-get($map: $uswds-cool-gray, $key: 700);
-    &::before{
-        content: 'Text';
-    }
-    &.inverted{
-        color: map-get($map: $uswds-cool-gray, $key: 700);
-        background-color: white;
-    }
-}
-
-.sam.color.headers{
-    color: white;
-    background-color: map-get($map: $uswds-cool-gray, $key: 600);
-    &::before{
-        content: 'Headers';
-    }
-    &.inverted{
-        color: map-get($map: $uswds-cool-gray, $key: 700);
-        background-color: white;
-        border-width: 1px 0px;
-    }
-}
-
-.sam.color.links{
-    color: white;
-    background-color: map-get($map: $uswds-blue, $key: 500);
-    &::before{
-        content: 'Links';
-    }
-    &.inverted{
-        color: map-get($map: $uswds-cool-gray, $key: 700);
-        background-color: white;
-    }
-}
-
-.sam.color.background.default{
-    color: map-get($map: $uswds-cool-gray, $key: 700);
-    background-color: white;
-    border: 1px solid map-get($map: $uswds-cool-gray, $key: 200);
-    &::before{
-        content: 'Default';
-    }
-}
-
-.sam.color.background.primary{
-    color: white;
-    background-color: map-get($map: $uswds-blue, $key: 900);
-    &::before{
-        content: 'Highlight';
-    }
 }

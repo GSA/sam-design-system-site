@@ -1,9 +1,28 @@
 .upload-aac {
+  width: 75%;
   .section-border {
     border: 1.5px solid #F0F0F0;
-    width: 75%;
   }
   .file-container {
     max-width: 70rem;
+  }
+  button:disabled,
+  button[disabled]{
+      cursor: not-allowed;
+  }
+  sam-upload-v2 {
+    table {
+      tbody {
+        td{
+          i {
+            padding: 0 !important;
+          }
+          &.upload-table-props-col {
+            padding: 0;
+            vertical-align: inherit;
+          }
+        }
+      }
+    }
   }
 }

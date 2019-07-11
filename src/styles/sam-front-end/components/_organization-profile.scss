@@ -1,6 +1,20 @@
 .organization-profile{
   margin-left: 8px;
 
+  title-and-section {
+    h1 {
+      overflow-wrap: break-word;
+      -ms-word-break: break-all;
+      word-break: break-all;
+    }
+  }
+
+  .org-info-value {
+    overflow-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+  }
+
   .sam-ui.grid > .column {
     padding-left: 0;
   }

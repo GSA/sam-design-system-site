@@ -19,6 +19,12 @@ sam-upload-v2, opp-sam-upload-v2 {
     line-height: $icon-size;
   }
 
+  #attachment-validation-error-modal .badge {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+
   .disabled {
     pointer-events: none;
     cursor: not-allowed;
@@ -229,6 +235,37 @@ sam-upload-v2, opp-sam-upload-v2 {
     .file-delete {
       min-width: $icon-size;
       text-align: center;
+    }
+  }
+}
+
+opp-sam-upload-v2{
+  .progress-wrapper{
+    position: relative;
+    line-height:57px;
+
+    .progress-filename{
+      position:relative;
+      z-index: 1;
+      margin-left:20px;
+    }
+    .progress-container{
+      position:absolute; width: 100%; height: 100%; top: 0; z-index: 0;
+      .sam.progress{
+        .label{
+          position: absolute;
+          right: 45px;
+          z-index: 1;
+        }
+        .bar div{
+          background-color: none;
+          background-image: linear-gradient(to right, #ffffff , #f1f4d7);
+          position:absolute; width: 100%; height: 100%; top: 0; z-index: 0;
+        }
+      }
+    }
+    .progress-icon{
+      position:absolute; top:0; right:20px;
     }
   }
 }

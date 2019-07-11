@@ -1,364 +1,332 @@
-.usa-workspace-system-new {
-  title-and-section {
-    display: block;
-    margin-top: 1.2em;
-  }
+.system-create {
 
-  sam-alert {
-    .usa-alert {
-      min-height: 74px;
-      margin-top: 0px;
+    title-and-section {
+      display: block;
+      margin-top: 1.2em;
     }
-
-    .usa-alert-text {
-      margin-top: 4px;
+  
+    sam-alert {
+      .usa-alert {
+        min-height: 74px;
+        margin-top: 0px;
+      }
+  
+      .usa-alert-text {
+        margin-top: 4px;
+      }
     }
-  }
-
-  sam-modal {
-    .modal-content {
-      width: 700px;
+  
+    sam-modal {
+      .modal-content {
+        width: 700px;
+      }
     }
-  }
-
-  sam-label-wrapper {
-    > div {
-      margin-bottom: 1em;
-    }
-  }
-
-  sam-fieldset-wrapper {
-    fieldset {
-      margin-bottom: 1em;
-
-      legend + .usa-form-hint {
+  
+    sam-label-wrapper {
+      > div {
         margin-bottom: 1em;
       }
     }
-    .sam-display-inline{
-      display: flex;
-      input {
-        width: 20%;
-      }
-    }
-  }
-
-  sidebar {
-    > .steps {
-      border: 0px none;
-
-      .step {
-        background-color: transparent;
-        color: $linkColor;
-        text-decoration: $linkUnderline;
-
-        &:hover {
-          color: $linkHoverColor;
-          text-decoration: $linkHoverUnderline;
-        }
-      }
-    }
-  }
-
-  sam-tabs {
-    .sam-ui.menu.tabular {
-      button {
-        margin-left: 2px !important;
-      }
-
-      a + button {
-        margin-left: 1em !important;
-      }
-    }
-
-    .menu {
-      margin-top: 2.5rem !important;
-    }
-
-    .last {
-      button {
-        margin-left: 0em !important;
-      }
-    }
-
-    .row {
-      padding-top: 0.5rem !important;
-    }
-
-    .sam-ui.segment {
-      padding-top: 0.5rem;
-    }
-  }
-
-  form {
-    position: relative;
-  }
-
-  .usa-toolbar {
-    position: absolute;
-    top: (51px - 37px) / 2;
-    left: 176px;
-  }
-
-  .sam-actions {
-    position: absolute;
-    top: 0.7em;
-    right: 0px;
-
-    .usa-button {
-      background-color: transparent;
-    }
-
-    &:focus,
-    button:focus {
-      outline: 0px none;
-      box-shadow: none;
-    }
-  }
-
-  sam-checkbox {
-    fieldset {
-      margin-left: 0.2em;
-    }
-  }
-
-  .upload-wrapper {
-    .button-upload,
-    .sam-ui.label {
-      float: left;
-    }
-
-    .button-upload {
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-
-      input[type=file] {
-        position: absolute;
-        margin: 0;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        font-size: 100px;
-      }
-    }
-
-    .sam-ui.label {
-      position: relative;
-      top: -8px;
-      margin-left: 1.4em;
-      padding-right: 25px;
-      line-height: 3.5em;
-
-      .label {
-        color: rgba(0, 0, 0, 0.8);
-        line-height: 1.5em;
-
-        div {
-          font-weight: 400;
-        }
-      }
-
-      .icon {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-      }
-    }
-  }
-
-  sam-agency-picker-v2 {
-    .usa-form-hint + div {
-      margin-top: 0em;
-    }
-
-    input[type="text"] {
-      max-width: none;
-    }
-  }
-
-  .sam-ui.segment {
+  
     sam-fieldset-wrapper {
       fieldset {
-        margin-bottom: 0em;
+        margin-bottom: 1em;
+  
+        legend + .usa-form-hint {
+          margin-bottom: 1em;
+        }
+      }
+      .sam-display-inline{
+        display: flex;
+        input {
+          width: 20%;
+        }
       }
     }
-  }
-
-  legend {
-    font-size: 2rem;
-  }
-
-  sam-checkbox {
-    legend {
-      margin-bottom: 1rem;
-      font-size: 1.7rem;
-    }
-  }
-
-  #password,
-  .api {
-    legend {
-      font-size: 1.7rem;
-    }
-  }
-
-  sam-password {
-    .usa-password {
-      margin-top: 0.6em;
-    }
-
-    label {
-      font-weight: 500;
-    }
-
-    .usa-form-large {
-      max-width: 100%;
-
-      > div {
-        max-width: 50%;
-      }
-
-      .usa-password-progress {
-        left: 50%;
-        margin-left: auto;
-
-        ul {
-          margin-left: 7rem;
-
-          .header {
-            margin-top: 1.3rem;
-            font-size: 1.7rem;
+  
+    sidebar {
+      > .steps {
+        border: 0px none;
+  
+        .step {
+          background-color: transparent;
+          color: $linkColor;
+          text-decoration: $linkUnderline;
+  
+          &:hover {
+            color: $linkHoverColor;
+            text-decoration: $linkHoverUnderline;
           }
         }
       }
     }
-  }
-
-  #password {
-    .text-right {
-      max-width: 50%;
-    }
-  }
-
-  .api {
-    .usa-input-error.usa-input-error-message {
-      margin-top: 1rem;
-      margin-bottom: -0.5rem;
-    }
-
-    .grid-api {
-      margin-top: 1em;
-      margin-bottom: -1em;
-
-      .column {
-        padding-top: 0px;
-        padding-bottom: 0px;
-
-        > span,
-        label {
-          display: inline-block;
-          line-height: 44px;
-        }
-
-        input[type="password"] {
-          margin-top: 0px;
-        }
-
-        > .div {
-          margin-bottom: 0.5em;
-        }
-
+  
+    sam-tabs {
+      .sam-ui.menu.tabular {
         button {
-          margin-top: 1.5rem;
-          margin-right: 0px;
+          margin-left: 2px !important;
         }
-
-        .text-right {
-          button {
-            margin-top: 0.5rem;
+  
+        a + button {
+          margin-left: 1em !important;
+        }
+      }
+  
+      .menu {
+        margin-top: 2.5rem !important;
+      }
+  
+      .last {
+        button {
+          margin-left: 0em !important;
+        }
+      }
+  
+      .row {
+        padding-top: 0.5rem !important;
+      }
+  
+      .sam-ui.segment {
+        padding-top: 0.5rem;
+      }
+    }
+  
+    form {
+      position: relative;
+    }
+  
+    .usa-toolbar {
+      position: absolute;
+      top: (51px - 37px) / 2;
+      left: 176px;
+    }
+  
+    .sam-actions {
+      position: absolute;
+      top: 0.7em;
+      right: 0px;
+  
+      .usa-button {
+        background-color: transparent;
+      }
+  
+      &:focus,
+      button:focus {
+        outline: 0px none;
+        box-shadow: none;
+      }
+    }
+  
+    sam-checkbox {
+      fieldset {
+        margin-left: 0.2em;
+      }
+    }
+  
+    .upload-wrapper {
+      .button-upload,
+      .sam-ui.label {
+        float: left;
+      }
+  
+      .button-upload {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+  
+        input[type=file] {
+          position: absolute;
+          margin: 0;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          font-size: 100px;
+        }
+      }
+  
+      .sam-ui.label {
+        position: relative;
+        top: -8px;
+        margin-left: 1.4em;
+        padding-right: 25px;
+        line-height: 3.5em;
+  
+        .label {
+          color: rgba(0, 0, 0, 0.8);
+          line-height: 1.5em;
+  
+          div {
+            font-weight: 400;
           }
         }
+  
+        .icon {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+        }
       }
     }
-
-    sam-fieldset-wrapper {
-      > div {
-        margin-bottom: 10px;
+  
+    sam-agency-picker-v2 {
+      .usa-form-hint + div {
+        margin-top: 0em;
+      }
+  
+      input[type="text"] {
+        max-width: none;
       }
     }
-  }
-
-  .organization {
-    .usa-alert {
-      margin-bottom: 1.2rem;
-
-      .usa-alert-close {
-        top: 1.5rem;
-        right: 2.5rem;
-      }
-
-      .usa-alert-body {
-        width: 96%;
+  
+    .sam-ui.segment {
+      sam-fieldset-wrapper {
+        fieldset {
+          margin-bottom: 0em;
+        }
       }
     }
-  }
-
-  .review {
+  
     legend {
-      margin-bottom: 0.5em;
-    }
-
-    .fa {
-      margin-top: 0.3em;
-      float: left;
-    }
-
-    .fa + div {
-      margin-left: 1.2em;
-    }
-
-    .edit {
-      margin-top: 4px;
-      font-size: 1.8rem;
-
-      .fa {
-        margin-top: 0.25em;
-        margin-right: 0.3em;
-      }
-    }
-
-    dl {
-      margin-top: 0px;
-
-      dd {
-        margin-left: 0px;
-      }
-    }
-  }
-
-  system-history {
-    > .sam-ui {
-      margin-top: 3em !important;
-    }
-
-    legend {
-      margin-bottom: 2rem;
       font-size: 2rem;
     }
-  }
+  
+    sam-checkbox {
+      legend {
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+      }
+    }
+  
+    #password,
+    .api {
+      legend {
+        font-size: 1.7rem;
+      }
+    }
+  
+    sam-password {
+      .usa-password {
+        margin-top: 0.6em;
+      }
+  
+      label {
+        font-weight: 500;
+      }
+  
+      .usa-form-large {
+        max-width: 100%;
+  
+        > div {
+          max-width: 50%;
+        }
+  
+        .usa-password-progress {
+          left: 50%;
+          margin-left: auto;
+  
+          ul {
+            margin-left: 7rem;
+  
+            .header {
+              margin-top: 1.3rem;
+              font-size: 1.7rem;
+            }
+          }
+        }
+      }
+    }
+  
+    #password {
+      .text-right {
+        max-width: 50%;
+      }
+    }
+  
+    .api {
+      .usa-input-error.usa-input-error-message {
+        margin-top: 1rem;
+        margin-bottom: -0.5rem;
+      }
+  
+      .grid-api {
+        margin-top: 1em;
+        margin-bottom: -1em;
+  
+        .column {
+          padding-top: 0px;
+          padding-bottom: 0px;
+  
+          > span,
+          label {
+            display: inline-block;
+            line-height: 44px;
+          }
+  
+          input[type="password"] {
+            margin-top: 0px;
+          }
+  
+          > .div {
+            margin-bottom: 0.5em;
+          }
+  
+          button {
+            margin-top: 1.5rem;
+            margin-right: 0px;
+          }
+  
+          .text-right {
+            button {
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+  
+      sam-fieldset-wrapper {
+        > div {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  
+    .organization {
+      .usa-alert {
+        margin-bottom: 1.2rem;
+  
+        .usa-alert-close {
+          top: 1.5rem;
+          right: 2.5rem;
+        }
+  
+        .usa-alert-body {
+          width: 96%;
+        }
+      }
+    }
+  
+    system-history {
+      > .sam-ui {
+        margin-top: 3em !important;
+      }
+  
+      legend {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+    }
+  
+    .usa-button-controls {
+      margin-top: 3em;
+      text-align: right;
+    }
 
-  .usa-button-controls {
-    margin-top: 3em;
-    text-align: right;
-  }
-}
-
-.system-create-comments {
-  sam-alert {
-    .usa-alert-close {
-      float: right;
-      position: inherit;
+  .system-create-comments {
+    sam-alert {
+      .usa-alert-close {
+        float: right;
+        position: inherit;
+      }
     }
   }
 }

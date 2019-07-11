@@ -4,4 +4,9 @@
   .events-item {
     border-bottom: 1px solid $color-gray-lighter;
   }
+  .federal-hierarchy-org-item-title{
+    -ms-word-break: break-all;
+    word-break: break-all;
+    display: inline-block;
+  }
 }

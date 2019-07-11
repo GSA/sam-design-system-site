@@ -2,6 +2,14 @@
   .my-dept-div {
     padding-bottom: .5em;
   }
+
+  input.usa-offset-one-whole {
+    padding-right: 3rem;
+  }
+  button:disabled,
+  button[disabled]{
+      cursor: not-allowed;
+  }
   
   .align-center {
     text-align: center;
@@ -17,11 +25,15 @@
   .federal-hierarchy-org-item{
     border-bottom: 1px solid $color-gray-lighter;
     padding: 10px 0 10px 0;
+    word-break: break-all;
+    -ms-word-break: break-all;
   }
 
   .org-description{
     color: $color-black;
     font-weight: 600;
+    word-break: break-all;
+    -ms-word-break: break-all;
   }
 
   .org-type-select{
@@ -71,6 +83,8 @@
 
   .federal-hierarchy-org-item-title{
     text-decoration: underline;
+    -ms-word-break: break-all;
+    word-break: break-all;
   }
 
   .featured-banner{

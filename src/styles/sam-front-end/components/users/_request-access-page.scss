@@ -12,7 +12,6 @@
   textarea {
     width: 100%;
     max-width: 100%;
-    height: 5.2em;
   }
 
   input, select, .sam-autocomplete {
@@ -21,10 +20,105 @@
   }
 
   .form-section {
+    padding: 0px 0px !important;
     border: none !important;
+  }
+
+  .main-card {
+    width: 60%;
+  }
+
+  .usa-agency-tip {
+    font-size: 1.6rem;
+    left: 100%;
+    position: relative;
+    margin-top: -160px;
+    width: 100%;
+
+    ul {
+      display: inline-block;
+      margin: 0rem;
+      margin-left: 2rem * 1.75;
+      padding-left: 0rem;
+
+      li {
+        display: block;
+        position: relative;
+        padding: 0px;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+
+        &:before {
+          line-height: 0px;
+          content: "- ";
+        }
+
+        &:after {
+          margin-bottom: 0px;
+        }
+
+        &.hint,
+        &.header {
+          display: block;
+          margin: 1.5rem 0rem;
+          padding: 0px;
+          background-color: transparent;
+
+          &:before {
+            content: "";
+          }
+        }
+
+        &.header {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .btn-submit {
+    margin: 50px auto;
+    sam-button {
+      margin: 10px 0px !important;
+    }
+  }
+
+  @media only screen and (min-width:1500px) {
+    .registration-role {
+      .main-card {
+        width: 100%;
+      }
+    }
   }
 }
 
-#done-button {
-  margin: 0 0 0 1em;
+.altView {
+  .two {
+    display: none !important;
+  }
+  .eight {
+    margin: auto 50px !important;
+  }
+  .occupy-page {
+    background-color: #ebf3fa !important;
+    padding: 10px 0px;
+  }
+  .container {
+    background-color: white;
+    border-radius: 5px;
+    margin: 30px auto;
+  }
+
+  .row {
+    margin: 30px auto;
+  }
+
+  input, select, textarea {
+    border-color: #9db9da !important;
+  }
+  .sam-autocomplete-multiselect-input {
+    border-color: #9db9da !important;
+  }
 }
+

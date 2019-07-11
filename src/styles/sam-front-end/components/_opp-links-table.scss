@@ -1,7 +1,32 @@
 opp-link-table {
   .disabled {
     pointer-events: none;
-    cursor: not-allowed;
+    cursor: none;
     opacity: .5;
+  }
+
+  .inline-edit-icon {
+    background: $color-gray-lighter;
+    color: $color-gray-dark;
+    padding: 5px;
+    line-height: 15px;
+    margin-top: 3px;
+
+    .fa {
+      padding: 0 4px;
+    }
+  }
+
+  .inline-edit-icon:hover {
+    background: $color-gray-lighter;
+    color: $color-gray-dark;
+  }
+
+  .inline-icon-group {
+    position: absolute;
+    right: 17px;
+    left: 385px;
+    display: inline-block;
+    background-color: white;
   }
 }

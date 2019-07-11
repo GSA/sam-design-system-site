@@ -4,10 +4,6 @@
     margin-top: 20px
   }
 
-  .sam-autocomplete label{
-    visibility: hidden;
-  }
-
   .fa-times-circle {
     display: none
   }
@@ -16,7 +12,7 @@
     @include fsd-searchbar;
 
     .sam-autocomplete {
-      margin-top: 0px;
+      margin-top: 0;
     }
 
     select {

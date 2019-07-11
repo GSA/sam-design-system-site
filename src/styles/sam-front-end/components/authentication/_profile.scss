@@ -6,6 +6,11 @@
 .usa-profile {
   position: relative;
 
+  .usa-alert-plain {
+    margin-bottom: 0;
+    background-image: none;
+  }
+
   h2 {
     margin-top: 2.2em;
   }

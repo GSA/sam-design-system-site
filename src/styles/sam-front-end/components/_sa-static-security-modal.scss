@@ -1,12 +1,14 @@
-sa-static-security-modal{
+sa-static-security-modal {
+    hr {
+      border-top-color: white;
+    }
     .modal-dialog{
         .modal-content{
-            max-width:55%;
+            max-width: 1100px;
             min-width:auto!important;//registration signup modal override
             button{
                 color: white;
-                padding-right: 20px;
-                padding-top: 10px;
+                padding: .5em 1em;
             }
             span.fa-times-circle {
                 font-size: 18px;

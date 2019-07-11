@@ -1,4 +1,9 @@
 .usa-requests-application {
+  .usa-alert-plain {
+    margin-bottom: 0;
+    background-image: none;
+  }
+
   .page-content {
     position: relative;
 
@@ -9,7 +14,7 @@
 
   sam-alert {
     .usa-alert {
-      margin-top: 0rem;
+      margin-top: 0;
       margin-bottom: 1rem;
     }
   }
@@ -46,7 +51,7 @@
   .content {
     > a {
       position: absolute;
-      right: 0px;
+      right: 0;
       top: 2.7em;
 
       .fa {
@@ -64,15 +69,6 @@
       font-size: 2rem;
     }
 
-    .fa {
-      margin-top: 0.3em;
-      float: left;
-    }
-
-    .fa + div {
-      margin-left: 1.2em;
-    }
-
     .edit {
       margin-top: 4px;
       font-size: 1.8rem;
@@ -87,7 +83,7 @@
   .sam-ui.segment {
     sam-fieldset-wrapper {
       fieldset {
-        margin-bottom: 0em;
+        margin-bottom: 0;
       }
     }
   }

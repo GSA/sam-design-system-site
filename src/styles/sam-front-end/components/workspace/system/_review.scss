@@ -1,0 +1,62 @@
+.review {
+    legend {
+      margin-bottom: 0.5em;
+    }
+
+    .fa {
+      margin-top: 0.3em;
+      float: left;
+    }
+
+    .fa + div {
+      margin-left: 1.2em;
+    }
+
+    .edit {
+      margin-top: 4px;
+      font-size: 1.8rem;
+
+      .fa {
+        margin-top: 0.25em;
+        margin-right: 0.3em;
+      }
+    }
+
+    dl {
+      margin-top: 0px;
+
+      dd {
+        margin-left: 0px;
+      }
+    }
+
+    .password-radio-buttons {
+      margin-bottom: 20px !important;
+      sam-radio-button {
+        ul {
+          li {
+            margin-top: 10px !important;
+            display: inline-block !important;
+            width: 15% !important;
+          }
+        }
+      }
+    }
+
+    .otp-fields {
+      sam-text {
+        display: inline-block;
+        input {
+          width: 30%;
+        }
+      }
+      sam-button {
+        margin: 0px 20px;
+      }
+    
+      .otp-resend {
+        margin-top: -15px;
+        font-size: 1.5rem;
+      }
+    }
+}

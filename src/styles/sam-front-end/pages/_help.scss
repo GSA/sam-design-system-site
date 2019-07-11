@@ -2,6 +2,11 @@ $line-height: 4rem;
 $sub-item-color: #f6f6f6;
 
 .learning-center {
+  .official-warning {
+      font-size: 16px;
+      color: #E21C3D;
+      line-height: 25px;
+    }
   .help-sidenav {
     margin-left: 0;
     padding-left: 0;
@@ -21,6 +26,8 @@ $sub-item-color: #f6f6f6;
       margin-left: 0;
       padding-left: 0;
     }
+
+     
 
     li {
       list-style-type: none;
@@ -163,4 +170,67 @@ $sub-item-color: #f6f6f6;
     border-bottom-color: #f3f3f3;
   }
 
+  .main-header-row th {
+    background-color: #919191 !important;
+    font-size: 1.6rem;
+  }
+
+  .general-heading-row {
+    background-color: #e6e6e6;
+    font-size: 1.5rem;
+  }
+
+  .sam-ui.table {
+    border-collapse: collapse;
+    tbody {
+      display: block;
+      overflow-y: auto;
+      height: 950px;
+      width: 100%;
+      position: relative;
+      tr {
+        border-right: 4px solid white;
+      }
+    }
+  }
+
+  .sam-ui.table thead {
+    display: block;
+  }
+
+  .col1 {
+    width: 600px;
+  }
+
+  .col2 {
+    width: 300px;
+  }
+
+  .col3 {
+    width: 300px;
+  }
+
+  .agm-col1 {
+    width: 200px;
+  }
+
+  .agm-col2 {
+    width: 300px;
+  }
+
+  .agm-col3 {
+    width: 800px;
+  }
+
+  .agm-col4 {
+    width: 900px;
+  }
+
+  tr:not(.general-heading-row):not(.main-header-row):nth-child(even){
+    background-color: #f6f6f6;
+  }
+
+  tr:not(.general-heading-row):not(.main-header-row){
+    font-size: 1.4rem;
+  }
 }

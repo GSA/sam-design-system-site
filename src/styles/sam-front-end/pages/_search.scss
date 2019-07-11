@@ -76,7 +76,7 @@
     ul>li>button {
       text-align: inherit;
     }
-    }
+  }
 
   .usa-regional-filter {
 
@@ -95,6 +95,10 @@
       color: #d9d9d9;
       width:10px;
     }
+  }
+
+  label[for="radio-cba"]{
+    margin-left: 30px;
   }
 }
 
@@ -150,7 +154,7 @@ sam-infographic-container {
     position: absolute;
     bottom: -25px;
     left: 50%;
-    z-index: 2;
+    z-index: 1;
     cursor: pointer;
   }
 
@@ -159,9 +163,248 @@ sam-infographic-container {
     width: 710px !important;
   }
 
-  .opp-expand{
-    float: left;
-    overflow: hidden;
+  /******************************************************
+                    WDOL INFOGRAPHIC
+  *******************************************************/
+  $sam-infographic-breakpoint: 800px;
+
+  /******************************************
+   Infographic Circles & Search Containers
+  ******************************************/
+  .sam-infographic__circles-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media all and (min-width: $sam-infographic-breakpoint) {
+      flex-direction: row;
+      margin: 0 5vw -3px 2vw;
+    }
   }
 
+  .sam-infographic__circle-search-container {
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width: $sam-infographic-breakpoint) {
+      flex-direction: row;
+      flex-grow: 1;
+    }
+  }
+
+  /*******************************
+   Infographic Circle Containers
+  *******************************/
+  .sam-infographic__circle-container-a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0px 30px;
+    margin-bottom: 20px;
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 35px;
+      height: 35px;
+      background-image: url("/assets/img/infographic/arrow.svg");
+      background-repeat: no-repeat;
+    }
+    @media all and (min-width: $sam-infographic-breakpoint) {
+      padding: 25px 45px 25px 0px;
+      margin-bottom: 0px;
+      &::after{
+        top: 60px;
+        bottom: initial;
+        right: 5px;
+        left: auto;
+        transform: translateX(0%) rotate(270deg);
+      }
+    }
+  }
+
+  .sam-infographic__circle-container-b{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 40px;
+    background-image: url("/assets/img/infographic/dashed-corner-line.svg");
+    background-position: left center;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    width: 245px;
+    @media all and (min-width: $sam-infographic-breakpoint) {
+      order: -1;
+      justify-content: flex-end;
+      width: auto;
+      background-image: url("/assets/img/infographic/dashed-corner-bottom-left.svg");
+      background-position: bottom center;
+    }
+  }
+
+  /*******************************
+     Infographic Circle
+  *******************************/
+  .sam-infographic__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    line-height: 18px;
+    background-color: #ffbe2e;
+    background-image: radial-gradient(circle at top left, #ffe396, #ffbe2e 50%, #c2850c);
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    padding: 17px;
+  }
+
+  /*******************************
+     Infographic Search
+  *******************************/
+  .sam-infographic__search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @media all and (min-width: $sam-infographic-breakpoint) {
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: -15px;
+      flex-grow: 1;
+      sam-text {
+        width: 100%;
+      }
+    }
+  }
+
+  /*******************************
+     Infographic Box Containers
+  *******************************/
+  .sam-infographic__boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media all and (min-width: $sam-infographic-breakpoint) {
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0 5vw;
+    }
+    .sam-infographic__box-container{
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 350px;
+      width: 245px;
+      @media all and (min-width: $sam-infographic-breakpoint) {
+        flex-basis: 50%;
+        width: auto;
+        background-position: top center;
+      }
+      /*-------------------
+       First Box (DBA)
+      --------------------*/
+      &:first-child{
+        background-image: url("/assets/img/infographic/dashed-line-vertical.svg");
+        @media all and (min-width: $sam-infographic-breakpoint) {
+          background-image: url("/assets/img/infographic/dashed-line.svg"), linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%);
+        }
+      }
+      /*-------------------
+       Second Box (SCA)
+      --------------------*/
+      &:last-child{
+        background-position: 0px -297px;
+        background-image: url("/assets/img/infographic/dashed-line-vertical.svg");
+        @media all and (min-width: $sam-infographic-breakpoint) {
+          background-position: top center;
+          background-image: url("/assets/img/infographic/dashed-line-inverse.svg");
+        }
+      }
+    }
+  }
+
+  /*******************************
+        Infographic Box
+  *******************************/
+  .sam-infographic__box {
+    max-width: 192px;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 35px;
+      left: -25px;
+      width: 35px;
+      height: 35px;
+      transform: rotate(270deg);
+      background-image: url("/assets/img/infographic/arrow.svg");
+      background-repeat: no-repeat;
+    }
+    @media all and (min-width: $sam-infographic-breakpoint) {
+      &::before{
+        width: auto;
+        transform: none;
+        position: static;
+        background-position: bottom center;
+      }
+    }
+    /*-------------------
+       Header
+    --------------------*/
+    &-header{
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #00bde3;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 5px 4px 4px -6px rgba(0, 0, 0, 0.75);
+      transition: box-shadow 0.2s ease;
+      margin: 0 auto;
+      max-width: 170px;
+      &:hover{
+        text-decoration: none;
+        box-shadow: 6px 4px 10px -5px rgba(0, 0, 0, 0.4);
+      }
+      &-icon{
+        color: #212121;
+        padding: 15px 0px;
+      }
+      &-title {
+        background-color: #00bde3;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 4px;
+      }
+    }
+    /*-------------------
+       Description
+    --------------------*/
+    &-description{
+      font-size: 14px;
+      text-align: center;
+      line-height: 19px;
+      color: #212121 !important;
+      margin-top: 5px;
+      strong{
+        font-weight: 600;
+        color: #112e51;
+        margin-bottom: 3px;
+        display: block;
+      }
+    }
+  }
+
+}
+
+.sam-infographic-help-icon{
+  width: 166px;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

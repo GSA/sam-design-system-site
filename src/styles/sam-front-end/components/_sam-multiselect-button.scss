@@ -1,0 +1,20 @@
+sam-multiselect-button {
+  .btn-container {
+    width: max-content;
+    button {
+      position: relative;
+      border-radius: 0px !important;
+      padding: 0.5em 1em;
+      margin: 0 !important;
+      i {
+        line-height: 0.8;
+      }
+    }
+    .options {
+      padding: 0.5em 1em;
+      border: 1px solid #0071bc;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}

@@ -2,6 +2,10 @@
   margin: 1.5rem 0 0 0;
   padding: 0;
 
+  ul {
+    overflow-wrap: break-word;
+  }
+
   li {
     font-weight: 600;
     display: inline;

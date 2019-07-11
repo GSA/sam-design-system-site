@@ -1,0 +1,76 @@
+.registration-role {
+  .main-card {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .main {
+    width: 40%;
+  }
+
+  .usa-agency-tip {
+    font-size: 1.6rem;
+    left: 100%;
+    margin-left: 10rem;
+    position: relative;
+    margin-top: -160px;
+    width: 100%;
+
+    ul {
+      display: inline-block;
+      margin: 0rem;
+      margin-left: 2rem * 1.75;
+      padding-left: 0rem;
+
+      li {
+        display: block;
+        position: relative;
+        padding: 0px;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+
+        &:before {
+          line-height: 0px;
+          content: "- ";
+        }
+
+        &:after {
+          margin-bottom: 0px;
+        }
+
+        &.hint,
+        &.header {
+          display: block;
+          margin: 1.5rem 0rem;
+          padding: 0px;
+          background-color: transparent;
+
+          &:before {
+            content: "";
+          }
+        }
+
+        &.header {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .btn-submit {
+    position: relative;
+    margin-top: 50px;
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+@media only screen and (min-width:1500px) {
+  .registration-role {
+    .main-card {
+      width: 60%;
+    }
+  }
+}

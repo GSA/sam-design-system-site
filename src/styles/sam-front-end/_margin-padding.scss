@@ -65,6 +65,7 @@ $spacing: 5px;
 .m_T-4x { @extend %margin-top-4x; }
 .m_T-5x { @extend %margin-top-5x; }
 .m_T-6x { @extend %margin-top-6x; }
+.m_T-10x { @extend %margin-top-10x; }
 
 .m_B-1x { @extend %margin-bottom-1x; }
 .m_B-2x { @extend %margin-bottom-2x; }
@@ -72,6 +73,7 @@ $spacing: 5px;
 .m_B-4x { @extend %margin-bottom-4x; }
 .m_B-5x { @extend %margin-bottom-5x; }
 .m_B-6x { @extend %margin-bottom-6x; }
+.m_B-10x { @extend %margin-bottom-10x; }
 
 .m_L-1x { @extend %margin-left-1x; }
 .m_L-2x { @extend %margin-left-2x; }

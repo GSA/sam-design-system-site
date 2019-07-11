@@ -15,10 +15,15 @@
  .workspace-heading-font{
   font-size: 2.3rem!important;
   margin-top: -0.05em;
-}
+}	
+
+// .workspace-top-header{
+//   font-size: $medium;
+//   font-weight: 400;
+// }
 
 .workspace-top-header {
-  background: url(../assets/img/help-main-res-medium.jpg);
+  background: url(../assets/img/help-main-res-medium.jpg); 
   background-size: cover;
   .fed-link {
     margin-top: 0.5em !important;

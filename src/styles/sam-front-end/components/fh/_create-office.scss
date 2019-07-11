@@ -6,9 +6,20 @@
         margin-top: 1em;
         margin-bottom: 2px;
     }
+    page {
+      word-break: break-all;
+    }
     .org-type-block{
-        min-width: 120px;
+        min-width: 18%;
         display: inline-block;
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+    .text-wrap {
+        max-width: 80%;
+        overflow-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-all;
     }
     .width-110px {
         min-width: 110px;
@@ -48,12 +59,18 @@
     }
     .confirm-description{
         font-weight: bold;
-        width: 190px;
+        width: 195px;
         display: inline-block;
         vertical-align: top;
     }
+    .ofc-type-label {
+        -ms-word-break: break-all;
+        word-break: break-word;
+    }
     .confirm-value {
         display: inline-block;
+        overflow-wrap: break-word;
+        word-break: break-all;
     }
     .confirm-item{
         display: flex;
@@ -69,6 +86,8 @@
         }
         .ofc-success-hint {
             margin: 5px 0;
+            overflow-wrap: break-word;
+            word-break: break-all;
         }
         #check-icon {
             color: green;

@@ -1,7 +1,9 @@
 .site-header{
   padding-left: 15px;
-  border-bottom: 2px solid rgba(207,215,223,.25);
+  border-bottom: 2px solid #ececec;
+  background-color: white;
 }
+
 .site-header > nav {
   display: flex;
   justify-content: space-between;

@@ -5,38 +5,63 @@
     </h1>
   </div>
   <div class="usa-width-one-third entity-download">
-    Download
+    <a>Download</a>
   </div>
 </div>
 <div class="usa-grid">
+
   <div class="usa-width-one-third entity-accordion">
-    <sam-accordion [expandIndex]="1" [bordered]="true">
-        <sam-accordion-section headerText="Entity Registration"
-            name="aria-friendly-section-name">
-            <a href>A link</a>
-        </sam-accordion-section>
-        <sam-accordion-section headerText="Core Data"
-            name="aria-friendly-section-name-2">
-            <a href>A link</a>
-        </sam-accordion-section>
-        <sam-accordion-section headerText="Assertions"
-            name="aria-friendly-section-name-2">
-            <a href>A link</a>
-        </sam-accordion-section>
-        <sam-accordion-section headerText="Reps and Certs"
-            name="aria-friendly-section-name-2">
-            <a href>A link</a>
-        </sam-accordion-section>
-        <sam-accordion-section headerText="Integrity Information"
-            name="aria-friendly-section-name-2">
-            <a href>A link</a>
-        </sam-accordion-section>
-    </sam-accordion>
+    <div>
+      <nav>
+        <ul class="usa-sidenav-list">
+          <li>
+            <a href="" class="usa-current">Entity Registration</a>
+          </li>
+          <li>
+            <a href="">Core Date</a>
+            <ul class="usa-sidenav-sub_list">
+              <li>
+                <a href="">Business Information</a>
+              </li>
+              <li>
+                <a href="">Taxpayer Information</a>
+              </li>
+              <li>
+                <a href="">Entity Types</a>
+              </li>
+              <li>
+                <a href="">Points of Contact</a>
+              </li>
+              <li>
+                <a href="">Security Information</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Assertions</a>
+            <ul class="usa-sidenav-sub_list">
+            </ul>
+          </li>
+          <li>
+            <a href="">Reps and Certs</a>
+            <ul class="usa-sidenav-sub_list">
+            </ul>
+          </li>
+          <li>
+            <a href="">Integrity Information</a>
+            <ul class="usa-sidenav-sub_list">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="entity-feedback">
-      <div class="feedback-label"><i class="fa fa-comments"></i>  What you think matters!</div>
+      <div class="feedback-label"><i class="fa fa-comments"></i> What you think matters!</div>
       <button type="button" class="feedback-btn">Provide Feedback</button>
     </div>
   </div>
+
   <div class="usa-width-two-thirds">
     <h2 class="entity-title--card">
       Essex National Heritage Commission
@@ -44,12 +69,12 @@
     <div class="usa-grid entity-card">
       <div class="usa-width-one-half">
         <div>
-          <span class="sds-tag--info-purple">DUNS</span>
+          <span class="sam-tag--info-purple">DUNS</span>
           <h3 class="entity-card--label">Unique Entity ID</h3>
           <h4 class="entity-card--data">123456789</h4>
         </div>
         <div>
-          <span class="sds-tag--info-white">SAM</span>
+          <span class="sam-tag--info-white">SAM</span>
           <h3 class="entity-card--label">Unique Entity ID</h3>
           <h4 class="entity-card--data">123456789</h4>
         </div>
@@ -67,13 +92,13 @@
         </div>
       </div>
       <div class="usa-width-one-half">
-        <div class="sds-tag">
-          <h1 class="sds-type--label-title">Expiration Date</h1>
-          <span class="sds-tag sds-tag--alt">Feb 20, 2019</span>
+        <div class="sam-tag">
+          <h1 class="sam-type--label-title">Expiration Date</h1>
+          <span class="sam-tag sam-tag--alt">Feb 20, 2019</span>
         </div>
-        <div class="sds-tag">
-          <h1 class="sds-type--label-title">Status</h1>
-          <span class="sds-tag sds-tag--outline-green">Active</span>
+        <div class="sam-tag">
+          <h1 class="sam-type--label-title">Status</h1>
+          <span class="sam-tag sam-tag--outline-green">Active</span>
         </div>
         <div>
           <h3 class="entity-card--label">Has Exclusions</h3>
@@ -297,11 +322,11 @@
           <h4 class="entity-card--data">
             <ul>
               <li>- Woman Owned Small Business</li>
-                <ul>
-                  <li>
-                    <b>- Economically Disadvantaged Woman Owned Small Business</b>
-                  </li>
-                </ul>
+              <ul>
+                <li>
+                  <b>- Economically Disadvantaged Woman Owned Small Business</b>
+                </li>
+              </ul>
             </ul>
           </h4>
         </div>

@@ -6,7 +6,7 @@ import { PagesComponent } from './pages.component';
 
 import { SamLayoutDemoComponent } from './layout';
 import { SamLayoutNoSidebarDemoComponent } from './layout';
-import { SamEntityResultsComponent } from './entity-results/entity-results.component';
+import { SamEntityDisplayComponent } from './entity-display/entity-display.component';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 
 const PageRoutes: Routes = [
@@ -23,8 +23,8 @@ const PageRoutes: Routes = [
         component: SamLayoutNoSidebarDemoComponent
       },
       {
-        path: 'entity-results',
-        component: SamEntityResultsComponent
+        path: 'entity-display',
+        component: SamEntityDisplayComponent
       },
       {
         path: 'workspace-dashboard',

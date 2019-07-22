@@ -6,11 +6,11 @@ import {
 
 
 @Component({
-  selector: 'sam-entity-results',
-  templateUrl: 'entity-results.template.html'
+  selector: 'sam-entity-display',
+  templateUrl: 'entity-display.template.html'
 })
 
-export class SamEntityResultsComponent { }
+export class SamEntityDisplayComponent { }
 
 export class SamSidenavComponentExampleComponent {
   config = {

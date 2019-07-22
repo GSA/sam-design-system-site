@@ -8,7 +8,7 @@ import { PagesRoutingModule } from './pages.routes';
 import { PagesComponent } from './pages.component';
 import { LayoutModule } from './layout';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
-import { SamEntityResultsComponent } from './entity-results/entity-results.component';
+import { SamEntityDisplayComponent } from './entity-display/entity-display.component';
 
 
 @NgModule({
@@ -22,7 +22,7 @@ import { SamEntityResultsComponent } from './entity-results/entity-results.compo
   declarations: [
     PagesComponent,
     SamWorkspaceDashboardComponent,
-    SamEntityResultsComponent
+    SamEntityDisplayComponent
   ]
 })
 export class PagesModule { }

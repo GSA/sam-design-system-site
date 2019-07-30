@@ -48,7 +48,8 @@ export class SamEntityDisplayComponent {
               {
                 label: 'Points of Contact',
                 route: '/consectetur'
-              },{
+              },
+              {
                 label: 'Security Information',
                 route: '/consectetur'
               }

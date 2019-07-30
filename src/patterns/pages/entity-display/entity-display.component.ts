@@ -1,4 +1,14 @@
-import { Component, OnInit, ViewChild, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  AfterViewInit,
+  ChangeDetectorRef
+} from '@angular/core';
+
+import {
+  faCheck
+} from '@fortawesome/free-solid-svg-icons';
 
 import {
   SidenavService
@@ -7,39 +17,45 @@ import {
 
 @Component({
   selector: 'sam-entity-display',
-  templateUrl: 'entity-display.template.html'
+  templateUrl: 'entity-display.template.html',
+  providers: [ SidenavService ]
 })
 
-export class SamEntityDisplayComponent { }
-
-export class SamSidenavComponentExampleComponent {
+export class SamEntityDisplayComponent {
   config = {
     label: 'stuff',
     children: [
       {
-        label: 'Item 1',
+        label: 'Entity Registration',
         route: '/foo',
         children: [
           {
-            label: 'Child 1',
+            label: 'Core Data',
             route: '/lorem',
             children: [
               {
-                label: 'Grandchild 1',
+                label: 'Business Information',
                 route: '/sit'
               },
               {
-                label: 'Grandchild 2',
+                label: 'Taxpayer Information',
                 route: '/amet'
               },
               {
-                label: 'Grandchild 3',
+                label: 'Entity Types',
+                route: '/consectetur'
+              },
+              {
+                label: 'Points of Contact',
+                route: '/consectetur'
+              },{
+                label: 'Security Information',
                 route: '/consectetur'
               }
             ]
           },
           {
-            label: 'Child 2',
+            label: 'Assertions',
             route: '/ipsum',
             children: [
               {
@@ -49,13 +65,13 @@ export class SamSidenavComponentExampleComponent {
             ]
           },
           {
-            label: 'Child 3',
+            label: 'Reps and Certs',
             route: '/dolor'
           }
         ]
       },
       {
-        label: 'Item 2',
+        label: 'Integrity Information',
         route: '/bar',
         children: [
           {
@@ -71,10 +87,6 @@ export class SamSidenavComponentExampleComponent {
             route: '/dignissimos'
           }
         ]
-      },
-      {
-        label: 'Item 3',
-        route: '/baz'
       }
     ]
   };

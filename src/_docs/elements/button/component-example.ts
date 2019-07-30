@@ -15,6 +15,7 @@ const code_example_4 = `<sam-button buttonText="Delete" buttonType="negative"></
 const code_example_disabled = `
 <sam-button buttonDisabled="true" buttonText="Button" buttonType="primary"></sam-button>
 <sam-button buttonDisabled="true" buttonText="Button" buttonType="secondary"></sam-button>
+<sam-button buttonDisabled="true" buttonText="Button" buttonType="next"></sam-button>
 <sam-button buttonDisabled="true" buttonText="Button" buttonType="tertiary"></sam-button>
 <sam-button buttonDisabled="true" buttonText="Button" buttonType="negative"></sam-button>`;
 

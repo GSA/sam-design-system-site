@@ -58,6 +58,7 @@ import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
+import { SamLabelInfoComponentExampleComponent } from './experimental/label-info/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamListboxComponentExampleComponent } from './experimental/listbox/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
@@ -160,6 +161,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,
+    SamLabelInfoComponentExampleComponent,
     SamListComponentExampleComponent,
     SamListboxComponentExampleComponent,
     SamMasterPageComponentExampleComponent,
@@ -253,6 +255,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamIconComponentExampleComponent,
     SamInputMaskComponentExampleComponent,
     SamLabelNextComponentExampleComponent,
+    SamLabelInfoComponentExampleComponent,
     SamListComponentExampleComponent,
     SamListboxComponentExampleComponent,
     SamMasterPageComponentExampleComponent,

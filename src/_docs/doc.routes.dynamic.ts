@@ -51,6 +51,7 @@ import { SamHierarchicalTreeGridComponentExampleComponent } from './experimental
 import { SamIconComponentExampleComponent } from './experimental/icon/component-example';
 import { SamInputMaskComponentExampleComponent } from './experimental/input-mask/component-example';
 import { SamLabelNextComponentExampleComponent } from './experimental/label/component-example';
+import { SamLabelInfoComponentExampleComponent } from './experimental/label-info/component-example';
 import { SamListComponentExampleComponent } from './experimental/list/component-example';
 import { SamListboxComponentExampleComponent } from './experimental/listbox/component-example';
 import { SamMasterPageComponentExampleComponent } from './experimental/master-page/component-example';
@@ -322,6 +323,7 @@ export const ROUTES: Routes = [
     { path: '', component: SamInputMaskComponentExampleComponent }
   ]},
   { path: 'experimental/label', component: SamLabelNextComponentExampleComponent },
+  { path: 'experimental/label-info', component: SamLabelInfoComponentExampleComponent },
   { path: 'experimental/list', component: SamListComponentExampleComponent },
   { path: 'experimental/listbox', component: BaseDocPageComponent, data: {
     path: '_docs\experimental\listbox\component-example.ts',

@@ -94,7 +94,7 @@ const code_example_disabled = `
   ` + code_example_4 + `
   </sam-code-example>
 
-  <div class="sam-ui section hidden divider"></div>
+  <div class="sam-ui hidden divider"></div>
 
   <h2 class="sam-ui header">States</h2>
 

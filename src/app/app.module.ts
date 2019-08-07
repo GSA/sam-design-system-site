@@ -44,7 +44,7 @@ const APP_PROVIDERS = [
     HttpModule,
     SamUIKitModule,
     SiteComponentsModule,
-    RouterModule.forRoot(ROUTES),
+    RouterModule.forRoot(ROUTES, { useHash: true }),
     FormlyModule,
     FormlySAMUIModule
   ],

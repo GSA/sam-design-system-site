@@ -16,4 +16,8 @@ export class SamDateRangeComponentExampleComponent {
     startDate: '2016-02-03',
     endDate: '2017-04-23'
   };
+  public reportDateRangeModel = {
+    startDate: '',
+    endDate: ''
+  };
 }

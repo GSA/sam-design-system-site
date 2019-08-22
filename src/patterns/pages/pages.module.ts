@@ -9,7 +9,7 @@ import { PagesComponent } from './pages.component';
 import { LayoutModule } from './layout';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { SamEntityDisplayComponent } from './entity-display/entity-display.component';
-
+import { SamPatternBannerComponent } from './banner/banner.component';
 
 @NgModule({
   imports: [
@@ -22,7 +22,8 @@ import { SamEntityDisplayComponent } from './entity-display/entity-display.compo
   declarations: [
     PagesComponent,
     SamWorkspaceDashboardComponent,
-    SamEntityDisplayComponent
+    SamEntityDisplayComponent,
+    SamPatternBannerComponent
   ]
 })
 export class PagesModule { }

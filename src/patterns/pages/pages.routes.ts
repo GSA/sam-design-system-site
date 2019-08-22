@@ -8,6 +8,7 @@ import { SamLayoutDemoComponent } from './layout';
 import { SamLayoutNoSidebarDemoComponent } from './layout';
 import { SamEntityDisplayComponent } from './entity-display/entity-display.component';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
+import { SamPatternBannerComponent } from './banner/banner.component';
 
 const PageRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ const PageRoutes: Routes = [
         component: SamWorkspaceDashboardComponent
       },
     ],
+  },
+  {
+    path: 'banner',
+    component: SamPatternBannerComponent
   }
 ];
 

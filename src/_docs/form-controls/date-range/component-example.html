@@ -12,3 +12,7 @@
   [control]="dateRangeVar2.control"
   stacked="true"
   [(ngModel)]='dateRangeModel2'></sam-date-range>
+
+  <sam-date-range  [(ngModel)]='reportDateRangeModel' #dateRange="ngModel"
+  [control]="dateRange?.control" [required]="true" name='dateRange'>
+</sam-date-range> 

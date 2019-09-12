@@ -10,6 +10,7 @@ import { LayoutModule } from './layout';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { SamEntityDisplayComponent } from './entity-display/entity-display.component';
 import { SamPatternBannerComponent } from './banner/banner.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { SamPatternBannerComponent } from './banner/banner.component';
     FormsModule,
     PagesRoutingModule,
     SamUIKitModule,
-    LayoutModule
+    LayoutModule,
+    FontAwesomeModule
   ],
   declarations: [
     PagesComponent,

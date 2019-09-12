@@ -2,8 +2,43 @@
   description="Authoritative site for Assistance Listings and Wage Determinations only"
 ></sam-banner>
 
-<div
-  style="background-color:#d6d7d9; padding:20px; color:#9a9a9a; font-weight:600;"
->
-  <div style="max-width: 1143px;  margin: 0 auto;">Header Component</div>
-</div>
+<sam-header-next logoPath="./assets/img/logo-sam.svg" [notifications]="true">
+  <!-- Primary Navigation -->
+  <sam-header-nav type="primary">
+    <sam-header-nav-item [route]="['search']" [active]="true">
+      Search
+    </sam-header-nav-item>
+    <sam-header-nav-item [route]="['databank']">
+      Databank
+    </sam-header-nav-item>
+    <sam-header-nav-item [route]="['data-services']">
+      Data Services
+    </sam-header-nav-item>
+    <sam-header-nav-item [route]="['help']">
+      Help
+    </sam-header-nav-item>
+  </sam-header-nav>
+
+  <!-- Secondary Navigation -->
+  <sam-header-nav type="secondary">
+    <sam-header-nav-item [route]="['request']" [active]="true">
+      <fa-layers [fixedWidth]="true">
+        <fa-icon [icon]="sdsRequest"></fa-icon>
+        <fa-layers-counter content=""></fa-layers-counter>
+      </fa-layers>
+      Request
+    </sam-header-nav-item>
+    <sam-header-nav-item [route]="['messages']">
+      <fa-icon [fixedWidth]="true" [icon]="sdsMessages"></fa-icon>
+      Messages
+    </sam-header-nav-item>
+    <sam-header-nav-item [route]="['workspace']">
+      <fa-icon [fixedWidth]="true" [icon]="sdsWorkspace"></fa-icon>
+      Workspace
+    </sam-header-nav-item>
+    <sam-header-nav-item [route]="['sign-out']">
+      <fa-icon [fixedWidth]="true" [icon]="sdsLogOut"></fa-icon>
+      Sign out
+    </sam-header-nav-item>
+  </sam-header-nav>
+</sam-header-next>

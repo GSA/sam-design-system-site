@@ -5,40 +5,48 @@
 <sam-header-next logoPath="./assets/img/logo-sam.svg" [notifications]="true">
   <!-- Primary Navigation -->
   <sam-header-nav type="primary">
-    <sam-header-nav-item [route]="['search']" [active]="true">
-      Search
+    <sam-header-nav-item>
+      <a sam-header-nav-link [active]="true" href="">Search</a>
     </sam-header-nav-item>
-    <sam-header-nav-item [route]="['databank']">
-      Databank
+    <sam-header-nav-item>
+      <a sam-header-nav-link href="">Databank</a>
     </sam-header-nav-item>
-    <sam-header-nav-item [route]="['data-services']">
-      Data Services
+    <sam-header-nav-item>
+      <a sam-header-nav-link href="">Data Services</a>
     </sam-header-nav-item>
-    <sam-header-nav-item [route]="['help']">
-      Help
+    <sam-header-nav-item>
+      <a sam-header-nav-link href="">Help</a>
     </sam-header-nav-item>
   </sam-header-nav>
 
   <!-- Secondary Navigation -->
   <sam-header-nav type="secondary">
-    <sam-header-nav-item [route]="['request']" [active]="true">
-      <fa-layers [fixedWidth]="true">
-        <fa-icon [icon]="sdsRequest"></fa-icon>
-        <fa-layers-counter content=""></fa-layers-counter>
-      </fa-layers>
-      Request
+    <sam-header-nav-item>
+      <a sam-header-nav-link [active]="true" href="">
+        <fa-layers [fixedWidth]="true">
+          <fa-icon [icon]="sdsRequest"></fa-icon>
+          <fa-layers-counter content=""></fa-layers-counter>
+        </fa-layers>
+        Request
+      </a>
     </sam-header-nav-item>
-    <sam-header-nav-item [route]="['messages']">
-      <fa-icon [fixedWidth]="true" [icon]="sdsMessages"></fa-icon>
-      Messages
+    <sam-header-nav-item>
+      <a sam-header-nav-link href="">
+        <fa-icon [fixedWidth]="true" [icon]="sdsMessages"></fa-icon>
+        Messages
+      </a>
     </sam-header-nav-item>
-    <sam-header-nav-item [route]="['workspace']">
-      <fa-icon [fixedWidth]="true" [icon]="sdsWorkspace"></fa-icon>
-      Workspace
+    <sam-header-nav-item>
+      <a sam-header-nav-link href="">
+        <fa-icon [fixedWidth]="true" [icon]="sdsWorkspace"></fa-icon>
+        Workspace
+      </a>
     </sam-header-nav-item>
-    <sam-header-nav-item [route]="['sign-out']">
-      <fa-icon [fixedWidth]="true" [icon]="sdsLogOut"></fa-icon>
-      Sign out
+    <sam-header-nav-item>
+      <a sam-header-nav-link href="">
+        <fa-icon [fixedWidth]="true" [icon]="sdsLogOut"></fa-icon>
+        Sign out
+      </a>
     </sam-header-nav-item>
   </sam-header-nav>
 </sam-header-next>

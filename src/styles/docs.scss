@@ -1,8 +1,7 @@
-
 /* SAM front-end
    ========================================================================== */
 
-@import "sam-front-end/all";
+@import 'sam-front-end/all';
 
 /* Reset
    ========================================================================== */
@@ -11,34 +10,32 @@
  * Removes overwrites that happen in sam-front-end layer
  */
 
-@import "reset/input";
-@import "reset/select";
-@import "reset/radio";
-@import "reset/checkbox";
-@import "reset/fieldset";
-@import "reset/label";
-@import "reset/button";
-@import "reset/title";
-
+@import 'reset/input';
+@import 'reset/select';
+@import 'reset/radio';
+@import 'reset/checkbox';
+@import 'reset/fieldset';
+@import 'reset/label';
+@import 'reset/button';
+@import 'reset/title';
 
 /* SAM Styles
    ========================================================================== */
 
-@import "~@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov";
-
+@import '~@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov';
 
 /* SAM Design System
    ========================================================================== */
 
-body{
-    background-color: #f9f9f9;
+body {
+  background-color: #f9f9f9;
 }
 
-@import "sam-design-system/card";
-@import "sam-design-system/utilities";
-@import "sam-design-system/home";
-@import "sam-design-system/site-header";
-@import "sam-design-system/site-footer";
+@import 'sam-design-system/card';
+@import 'sam-design-system/utilities';
+@import 'sam-design-system/home';
+@import 'sam-design-system/site-header';
+@import 'sam-design-system/site-footer';
 
 /**
  * Syntax Code Highlight
@@ -47,21 +44,21 @@ body{
 @import '~prismjs/themes/prism';
 @import '~prismjs/plugins/previewers/prism-previewers';
 
-code[class*="language"] {
-    font-size: 13px;
+code[class*='language'] {
+  font-size: 13px;
 }
 
 pre::-webkit-scrollbar {
-    height: 6px;
+  height: 6px;
 }
 
-:not(pre) > code[class*="language-"], 
-pre[class*="language-"] {
-    background: #fdfdfd;
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #fdfdfd;
 }
 
-pre[class*="language-"] {
-    padding: .8em;
-    border: 1px solid #dedede;
-    border-radius: 2px;
+pre[class*='language-'] {
+  padding: 0.8em;
+  border: 1px solid #dedede;
+  border-radius: 2px;
 }

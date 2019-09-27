@@ -8,6 +8,7 @@ import {
 })
 export class SamTextareaComponentExampleComponent {
   textareaModel= 'Some Text';
+  textareaModel1= '';
   textareaConfig = {
     label: 'Enter zipcode',
     hint: 'Zipcode can be short or long version',

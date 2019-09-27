@@ -6,3 +6,13 @@
   [disabled]="textareaConfig.disabled">
 </sam-text-area>
 <p>{{textareaModel}}</p>
+
+<sam-text-area
+  [(ngModel)]="textareaModel1"
+  [name]="textareaConfig.name"
+  [label]="textareaConfig.label"
+  [hint]="textareaConfig.hint"
+  [required] ="true"
+  [disabled]="textareaConfig.disabled">
+</sam-text-area>
+<p>{{textareaModel}}</p>

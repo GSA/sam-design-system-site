@@ -6,7 +6,10 @@
   <!-- Primary Navigation -->
   <sam-header-nav type="primary">
     <sam-header-nav-item>
-      <a sam-header-nav-link [active]="true" href="">Search</a>
+      <a sam-header-nav-link [active]="true" href="">Home</a>
+    </sam-header-nav-item>
+    <sam-header-nav-item>
+      <a sam-header-nav-link href="">Search</a>
     </sam-header-nav-item>
     <sam-header-nav-item>
       <a sam-header-nav-link href="">Databank</a>
@@ -27,25 +30,25 @@
           <fa-icon [icon]="sdsRequest"></fa-icon>
           <fa-layers-counter content=""></fa-layers-counter>
         </fa-layers>
-        Request
+        <span class="sds-nav__secondary-item-text">Request</span>
       </a>
     </sam-header-nav-item>
     <sam-header-nav-item>
       <a sam-header-nav-link href="">
         <fa-icon [fixedWidth]="true" [icon]="sdsMessages"></fa-icon>
-        Messages
+        <span class="sds-nav__secondary-item-text">Messages</span>
       </a>
     </sam-header-nav-item>
     <sam-header-nav-item>
       <a sam-header-nav-link href="">
         <fa-icon [fixedWidth]="true" [icon]="sdsWorkspace"></fa-icon>
-        Workspace
+        <span class="sds-nav__secondary-item-text">Workspace</span>
       </a>
     </sam-header-nav-item>
     <sam-header-nav-item>
       <a sam-header-nav-link href="">
         <fa-icon [fixedWidth]="true" [icon]="sdsLogOut"></fa-icon>
-        Sign out
+        <span class="sds-nav__secondary-item-text">Sign out</span>
       </a>
     </sam-header-nav-item>
   </sam-header-nav>

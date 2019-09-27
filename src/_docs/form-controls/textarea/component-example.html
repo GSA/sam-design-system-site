@@ -7,12 +7,9 @@
 </sam-text-area>
 <p>{{textareaModel}}</p>
 
-<sam-text-area
-  [(ngModel)]="textareaModel1"
-  [name]="textareaConfig.name"
-  [label]="textareaConfig.label"
-  [hint]="textareaConfig.hint"
-  [required] ="true"
-  [disabled]="textareaConfig.disabled">
+<form [formGroup]="basicInfoForm">
+<sam-text-area #orgDescription [control]="basicInfoForm.get('orgDescription')" [required]='isDepartment()' formControlName="orgDescription"
+[label]="'Description'" name='description' [placeholder]="'Provide description of the and its function.'"
+[errorMessage]="errors.description">
 </sam-text-area>
-<p>{{textareaModel}}</p>
+</form>

@@ -7,8 +7,8 @@ import { FormGroup, FormControl } from '@angular/forms';
   selector: 'doc-textarea',
   templateUrl: './component-example.html'
 })
-export class SamTextareaComponentExampleComponent implements OnInit{
-  textareaModel= 'Some Text';
+export class SamTextareaComponentExampleComponent implements OnInit {
+  textareaModel = 'Some Text';
   orgType = 'department';
   errors = {
     description: 'required'
@@ -22,7 +22,7 @@ export class SamTextareaComponentExampleComponent implements OnInit{
   basicInfoForm: FormGroup;
   ngOnInit() {
     this.basicInfoForm = new FormGroup({
-       orgDescription: new FormControl('', []),
+      orgDescription: new FormControl('', []),
     });
   }
   isDepartment() {

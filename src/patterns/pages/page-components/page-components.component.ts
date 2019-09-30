@@ -7,9 +7,9 @@ import {
 } from '@gsa-sam/icons';
 
 @Component({
-  templateUrl: 'banner.template.html'
+  templateUrl: 'page-components.template.html'
 })
-export class SamPatternBannerComponent {
+export class SamPatternPageComponentsComponent {
   sdsMessages = sdsMessages;
   sdsRequest = sdsRequest;
   sdsWorkspace = sdsWorkspace;

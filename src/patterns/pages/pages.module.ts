@@ -9,7 +9,7 @@ import { PagesComponent } from './pages.component';
 import { LayoutModule } from './layout';
 import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-dashboard.component';
 import { SamEntityDisplayComponent } from './entity-display/entity-display.component';
-import { SamPatternBannerComponent } from './banner/banner.component';
+import { SamPatternPageComponentsComponent } from './page-components/page-components.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PagesComponent,
     SamWorkspaceDashboardComponent,
     SamEntityDisplayComponent,
-    SamPatternBannerComponent
+    SamPatternPageComponentsComponent
   ]
 })
 export class PagesModule { }

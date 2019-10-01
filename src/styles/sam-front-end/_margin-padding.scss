@@ -73,6 +73,7 @@ $spacing: 5px;
 .m_B-4x { @extend %margin-bottom-4x; }
 .m_B-5x { @extend %margin-bottom-5x; }
 .m_B-6x { @extend %margin-bottom-6x; }
+.m_B-8x { @extend %margin-bottom-8x; }
 .m_B-10x { @extend %margin-bottom-10x; }
 
 .m_L-1x { @extend %margin-left-1x; }
@@ -91,6 +92,7 @@ $spacing: 5px;
 .m_R-4x { @extend %margin-right-4x; }
 .m_R-5x { @extend %margin-right-5x; }
 .m_R-6x { @extend %margin-right-6x; }
+.m_R-10x { @extend %margin-right-10x; }
 
 
 .p_0 { padding: 0 !important; }

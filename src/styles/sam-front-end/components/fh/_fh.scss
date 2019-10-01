@@ -1,4 +1,12 @@
-.federal-hierarchy{
+.federal-hierarchy {
+  .dl-link {
+    color: #0071bc;
+    &:hover {
+      color: lighten(#0071bc, .1);
+      cursor: pointer;
+    }
+  }
+
   .my-dept-div {
     padding-bottom: .5em;
   }

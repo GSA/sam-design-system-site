@@ -9,7 +9,7 @@ $light-grey: #9c9c9c;
   color:#e31c3d;
 }
 
-sam-upload-v2, opp-sam-upload-v2 {
+sam-upload-v2, opp-sam-upload-v2, opp-form-attachments-links{
   .icon.close {
     cursor: pointer;
     width: $icon-size;
@@ -64,7 +64,7 @@ sam-upload-v2, opp-sam-upload-v2 {
   }
 }
 
-sam-upload-v2, opp-sam-upload-v2 {
+sam-upload-v2, opp-sam-upload-v2, opp-form-attachments-links{
   .remove-icon {
     color: $color-secondary;
   }
@@ -81,10 +81,37 @@ sam-upload-v2, opp-sam-upload-v2 {
     color: black;
   }
 
+  @keyframes blueToWhite {
+    from {
+      background-color: #123456;
+      color: white;
+    }
+    to {
+      background-color: white;
+      color: #123456;
+    }
+  }
+
   .upload-table {
     width: 100%;
     margin-top: 1rem;
     border: 2px solid $color-gray-lighter;
+     tr.active td {
+       animation-name: blueToWhite;
+       animation-duration: 2s;
+       animation-fill-mode: forwards;
+    }
+  }
+
+  .link-table{
+    width: 100%;
+    margin-top: 1rem;
+    border: 2px solid $color-gray-lighter;
+    tr.active td {
+      animation-name: blueToWhite;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
   }
 
   .upload-table-header {

@@ -127,4 +127,21 @@
   .input-toggle {
   max-width: 200px;
   }
+
+  sam-agency-picker-v3 {
+    .main-container {
+      width: auto;
+    }
+    input {
+      border: 1px solid #5b616b !important;
+      height: 4.4rem;
+    }
+    #agency-modal-button {
+      border: 1px solid #5b616b !important;
+    }
+    #federalHierarchy-listbox {
+      width: inherit !important;
+      z-index: 99999;
+    }
+  }
 }

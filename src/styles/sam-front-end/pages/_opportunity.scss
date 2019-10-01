@@ -36,6 +36,23 @@
   }
 }
 
+opp-form-header-information{
+  sam-agency-picker-v3{
+    .main-container{
+      max-width:46rem;
+      width:100%!important;
+      sam-sds-search-autocomplete{
+        .sam.input{
+          border-color: #5b616b;
+        }
+      }
+      ul.autocomplete-result{
+        width: 415px !important;
+      }
+    }
+  }
+}
+
 .opportunity-page{
   sam-select{
     sam-label-wrapper{

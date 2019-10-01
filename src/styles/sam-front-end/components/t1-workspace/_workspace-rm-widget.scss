@@ -1,0 +1,63 @@
+.workspace-rm-widget {
+  .search-box {
+    .input-container, select {
+        margin-top: -10px;
+    }
+  }
+
+  .sam-autocomplete .input-container, .sam-autocomplete .sam-autocomplete-results {
+    max-width: none;
+    margin-top: -10px;
+    input {
+      max-width: none;
+    }
+  }
+
+  .search-container {
+    width: 75%;
+  }
+
+  .fa-times-circle {
+    display: none;
+  }
+
+  .usa-form-hint {
+    display: none;
+  }
+
+  .search-filter-alignment {
+    display: flex;
+  }
+
+  .button-group {
+    justify-content: right;
+    display: inline-flex;
+  }
+
+  #filter-sel {
+    width: 30%;
+    label {
+      display: none;
+    }
+  }
+  #ppl-sel {
+    width: 70%;
+    label {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .rm-widget {
+    .filter-align {
+      width: 100%;
+      display: inline-block;
+    }
+
+    .search-box-align {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}

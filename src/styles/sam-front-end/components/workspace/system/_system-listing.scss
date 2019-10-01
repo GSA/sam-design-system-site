@@ -15,9 +15,9 @@
   }
 
   .label {
-    width: 28% !important;
-    left: 3px !important;
+    width: 32% !important;
     font-weight: bold;
+    top: 0 !important;
   }
 
   .sam-ui.bottom.attached.label:first-child ~ :last-child:not(.attached) {

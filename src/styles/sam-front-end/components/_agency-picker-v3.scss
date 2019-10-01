@@ -1,0 +1,111 @@
+/*
+all agency picker v3 styles should go here
+*/
+.agencyModal .modal-content{
+    max-width: 80%;
+}
+.agency-table{
+    height: 400px; 
+    overflow: scroll; 
+    display: block; 
+    position:relative;
+
+    .usa-table-borderless {
+    border: solid 1px #cccccc;
+        .agm-col1 .agm-col2{
+            width: 10%;
+        }
+        .agm-col3{
+            width: 60%;
+        }
+        .agm-col4{
+            width: 20%;
+        }
+
+        th {
+            padding: .5em 1em;
+            background-color: #eeeeee;
+            text-align: left;
+        }
+
+        td {
+            padding: .2em 1em;
+            text-align: left;
+            font-size: .9em;
+            font-weight: 400;
+
+        }
+
+    }
+}
+
+sam-agency-picker-v3{
+    .main-input{
+        sam-sds-search-autocomplete {
+            ul.autocomplete-result{
+                width: 270px!important;
+            }
+        }
+
+        .main-container{
+            width:310px;
+        }
+        .main-help-text{
+            font-size: .9em; padding-bottom: 0;
+        }
+        .main-grid-row{
+            display: flex;flex-wrap: wrap;
+        }
+        .main-grid-col-fill{
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 0px;
+        }
+        .main-grid-col-auto{
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+            button{
+                border-radius: 50%;
+                padding: 1px 7px 2px;
+                background: #FFF;
+                color: #162e51;
+                border: .25px solid #a9a9a9;
+                margin: 7px 2px 8px; height: 40px; width: 40px;
+            }
+        }
+    }
+    
+    sam-modal{
+        ul.autocomplete-result{
+            width: 340px!important;
+        }
+    }
+
+    sam-agency-table{
+        .agency-table-headerarea{
+            display: flex;flex-wrap: wrap;
+            margin-top: .5em; margin-bottom: .5em;
+            .label{
+                font-weight: 600;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 0px;
+            }
+            .button-wrapper{
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: auto;
+            }
+        }
+        .clear-button-wrapper{
+            margin-bottom: 7px;
+        }
+    }
+}
+
+#opp-workspace-t2{
+   .main-container{
+        width:100%;
+    }
+}

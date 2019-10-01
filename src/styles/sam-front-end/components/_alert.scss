@@ -33,11 +33,14 @@
   cursor: pointer;
 }
 
-sam-alert{
+sam-alert {
   .show-hide-toggle{
     text-align:right;
     a:hover {
         cursor: pointer;
     }
   }
+}
+sam-alert:hover {
+  cursor: pointer;
 }

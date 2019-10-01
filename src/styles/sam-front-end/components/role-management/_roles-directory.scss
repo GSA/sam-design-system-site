@@ -7,8 +7,14 @@
   }
 
   #org-picker {
-    label {
-      display: none;
+    .main-input .main-container {
+      width: auto;
+    }
+    input {
+      border: 1px solid #5b616b;
+    }
+    #agency-modal-button {
+      border: 1px solid #5b616b;
     }
   }
 

@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1200px) {
+    .workspace-assistance-listing {
+        .sam.statistics.visible.tablet.up {
+            flex-direction: column !important;
+        }
+    }
+}
+.link-disabled {
+    opacity: .5;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.rejected-link-padding{
+  padding-left: 1px;
+}
+
+.sam.statistics .lightblue.statistic > .value > .circular {
+  background: #E9F0FB;
+  border: 1px solid #2672de;
+}
+
+.sam.statistics .lightblue.statistic:hover > .value > .circular {
+  color: white;
+  background: #2672de;
+}
+
+

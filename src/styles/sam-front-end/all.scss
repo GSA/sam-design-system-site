@@ -175,6 +175,7 @@ $large: $current-large;
 @import 'components/sa-security-modal';
 @import 'components/sa-static-security-modal';
 @import 'components/video-player';
+@import 'components/agency-picker-v3';
 /*-------------------
      Pages
 --------------------*/
@@ -221,6 +222,7 @@ $large: $current-large;
 @import 'components/opp-links-table';
 @import 'components/help/sections';
 @import 'components/login-gov/login-gov';
+@import 'components/t1-workspace/t1-workspace';
 @import 'components/sam-multiselect-button';
 /*-------------------
      Templates
@@ -485,3 +487,8 @@ sam-radio-button, sam-checkbox {
 .page-content-sidebar{
   height: 99%;
 }
+
+
+// .agencyModal .modal-content{
+//   max-width: 80%;
+// }

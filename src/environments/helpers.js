@@ -73,7 +73,8 @@ const doc2Components = [
 	'SamSideNavigationToolbarComponentExampleComponent',
 	'SamSideNavigationToolbarComponentExampleComponent',
 	'SamSortComponentExampleComponent',
-	'SdsPaginationComponentExampleComponent'
+	'SdsPaginationComponentExampleComponent',
+	'SamAutocompleteExampleComponent'
 ];
 
 exports.hasProcessFlag = hasProcessFlag;
@@ -231,7 +232,7 @@ import { CommonModule } from '@angular/common';
 import { BaseExampleComponent } from './baseexample.component';
 import { BaseDocPageComponent } from './base-doc-page.component';
 import { Doc2TemplateComponent } from './doc2.component';
-
+import { SAMSDSAutocompleteModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-controls/sam-sds-autocomplete/autocomplete/autocomplete.module';
 ${imports}
 
 import { DocTemplateComponent } from './doc.template';
@@ -257,6 +258,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
 		SamUIKitModule,
 		SamFilterModule,
 		FormlyModule,
+		SAMSDSAutocompleteModule,
     routing,
 		SiteComponentsModule,
 		CdkTableModule

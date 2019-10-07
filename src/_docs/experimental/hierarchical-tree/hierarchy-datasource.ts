@@ -1,11 +1,13 @@
+
+import {merge as observableMerge,  BehaviorSubject ,  Observable } from 'rxjs';
+
+import {map} from 'rxjs/operators';
 import {
   SamSortDirective,
 } from '@gsa-sam/sam-ui-elements';
 import { DataSource } from '@angular/cdk';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs';
-import 'rxjs/add/observable/merge';
-import 'rxjs/add/operator/map';
+
+
 
 
 
@@ -45,7 +47,7 @@ export class HierarchyDataSource extends DataSource<any> {
       this._sort.samSortChange,
       this._filterChange,
     ];
-    return Observable.merge(...displayDataChanges).map(() => {
+    return observableMerge(...displayDataChanges).pipe(map(() => {
       const filteredData = this.dataChange.value.slice().filter((item: any) => {
         const searchStr = JSON.stringify(item).toLowerCase();
         return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
@@ -55,7 +57,7 @@ export class HierarchyDataSource extends DataSource<any> {
       const sortedData = this.getSortedData(filteredData.slice());
       this.renderedData = sortedData;
       return this.renderedData;
-    });
+    }));
   }
   disconnect() { }
   /** Returns a sorted copy of the database data. */

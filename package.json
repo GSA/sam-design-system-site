@@ -73,6 +73,7 @@
   },
   "devDependencies": {
     "codelyzer": "~3.2.0",
+    "install-peers": "^1.0.3",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "^3.0.0",

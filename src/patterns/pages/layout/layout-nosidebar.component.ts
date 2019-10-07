@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable, of } from 'rxjs';
-import 'rxjs/add/observable/merge';
+
 import { cloneDeep } from 'lodash';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 

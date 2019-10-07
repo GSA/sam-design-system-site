@@ -8,7 +8,7 @@ import {
 
 import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements';
-import { fromEvent } from 'rxjs/observable/fromEvent';
+import { fromEvent } from 'rxjs';
 import { ExampleDataSource, ExampleDatabase } from './data-source';
 
 @Component({

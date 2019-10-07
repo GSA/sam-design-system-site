@@ -1,10 +1,11 @@
+
+import {map} from 'rxjs/operators';
 import { DataSource } from '@angular/cdk';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject ,  Observable } from 'rxjs';
 import { SampleData } from './data';
 
-import 'rxjs/add/observable/merge';
-import 'rxjs/add/operator/map';
+
+
 import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
 
 export interface SampleDataDef {
@@ -58,9 +59,9 @@ export class SampleDataSource extends DataSource<any> {
 
   connect(): Observable<SampleDataDef[]> {
 
-    const sub = this._service.model.valueChanges
-      .map(model => this._getSortedData(model.data))
-      .map(data => this._filtersMap(data));
+    const sub = this._service.model.valueChanges.pipe(
+      map(model => this._getSortedData(model.data)),
+      map(data => this._filtersMap(data)),);
 
     return sub;
   }

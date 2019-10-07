@@ -1,9 +1,10 @@
 
+import {throwError as observableThrowError,  Observable, of } from 'rxjs';
+
 import {
   Component
 } from '@angular/core';
 import { Comment, CommentsService } from '@gsa-sam/sam-ui-elements';
-import { Observable, of } from 'rxjs';
 
 export class CommentsDemoService implements CommentsService {
 
@@ -152,7 +153,7 @@ export class CommentsDemoService implements CommentsService {
   postComment(_: any): Observable<Comment[]> {
     if (_.text === 'asdf') {
       const err = new Error('I errored, bro');
-      return Observable.throw(err);
+      return observableThrowError(err);
     }
     this._comments.push(_);
     return of(this._comments);

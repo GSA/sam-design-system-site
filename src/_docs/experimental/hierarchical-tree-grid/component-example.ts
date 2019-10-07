@@ -3,8 +3,8 @@ import {
   OnInit,
 } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
-import 'rxjs/add/observable/merge';
-import 'rxjs/add/operator/map';
+
+
 import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';

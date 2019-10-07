@@ -85,10 +85,10 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public results: (args) => { label: string, values: any[] }[];
   public model3 = new HierarchicalTreeSelectedItemModel();
   public settings3 = new SelectedResultConfiguration();
-  @ViewChild(SamSortDirective)
+  @ViewChild(SamSortDirective, { static: false })
   public _sort: SamSortDirective;
 
-  @ViewChild(SamModalComponent)
+  @ViewChild(SamModalComponent, { static: true })
   public fieldsEditor: SamModalComponent;
 
   public test = [];

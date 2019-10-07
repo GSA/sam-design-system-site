@@ -42,7 +42,7 @@ import {
 import {
    SelectedResultConfiguration
   } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
-import { stringify } from '@angular/core/src/render3/util';
+// import { stringify } from '@angular/core/src/render3/util';
 
 @Component({
   selector: 'sam-layout-demo-component',
@@ -85,10 +85,10 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public results: (args) => { label: string, values: any[] }[];
   public model3 = new HierarchicalTreeSelectedItemModel();
   public settings3 = new SelectedResultConfiguration();
-  @ViewChild(SamSortDirective, { static: false })
+  @ViewChild(SamSortDirective, {static: false})
   public _sort: SamSortDirective;
 
-  @ViewChild(SamModalComponent, { static: true })
+  @ViewChild(SamModalComponent, {static: false})
   public fieldsEditor: SamModalComponent;
 
   public test = [];

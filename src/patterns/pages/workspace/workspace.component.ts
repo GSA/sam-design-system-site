@@ -45,7 +45,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   ];
   public sortvalue: string;
 
-  @ViewChild(SamPaginationNextComponent, { static: true })
+  @ViewChild(SamPaginationNextComponent, {static: false})
   public pagination: SamPaginationNextComponent;
 
   constructor(private _fb: FormBuilder,

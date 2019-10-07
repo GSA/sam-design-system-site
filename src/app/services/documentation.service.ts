@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Response } from '@angular/http';
+import { HttpResponse } from '@angular/common/http';
 import { Observable, ReplaySubject } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { environment } from 'environment';
 
 const regexComponent =
@@ -11,12 +11,12 @@ const regexComponent =
 @Injectable()
 export class DocumentationService {
 
-  constructor(private _http: Http) { }
+  constructor(private _http: HttpClient) { }
 
   public loadData(): Observable<any> {
     return this._http.get(`${environment.DEPLOYURL}/assets/docs.json`)
       .pipe(
-        map((res: Response) => res.json())
+        map((res: HttpResponse<any>) => res.body.json())
       );
   }
 

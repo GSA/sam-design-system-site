@@ -8,11 +8,11 @@ import {
   templateUrl: './component-example.html'
 })
 export class SamModalComponentExampleComponent {
-  @ViewChild('modal1') vcModal1;
-  @ViewChild('modal2') vcModal2;
-  @ViewChild('modal3') vcModal3;
-  @ViewChild('modal4') vcModal4;
-  @ViewChild('modal5') vcModal5;
+  @ViewChild('modal1', {static: false}) vcModal1;
+  @ViewChild('modal2', {static: false}) vcModal2;
+  @ViewChild('modal3', {static: false}) vcModal3;
+  @ViewChild('modal4', {static: false}) vcModal4;
+  @ViewChild('modal5', {static: false}) vcModal5;
 
   message = '';
   modalAlertTypes = [{

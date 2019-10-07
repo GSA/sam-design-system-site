@@ -45,6 +45,22 @@ export class SamModalComponentExampleComponent {
 
 
 ];
+modalButtonPosition = [{
+  label: 'center',
+  name: 'center',
+  value: 'center'
+}, {
+  label: 'left',
+  name: 'left',
+  value: 'left'
+},
+{
+  label: 'right',
+  name: 'right',
+  value: 'right'
+}
+
+];
   modalConfig = {
     title: 'Test Title',
     description: 'Description Text'
@@ -52,7 +68,8 @@ export class SamModalComponentExampleComponent {
   modalConfig2 = {
     type: 'success',
     title: 'Sample Title',
-    description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+    description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.',
+    position: 'center'
   };
 
   onModalInitClick() {

@@ -5,7 +5,7 @@ import {map} from 'rxjs/operators';
 import {
   SamSortDirective,
 } from '@gsa-sam/sam-ui-elements';
-import { DataSource } from '@angular/cdk';
+import { DataSource } from '@angular/cdk/collections';
 
 
 

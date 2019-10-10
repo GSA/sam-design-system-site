@@ -1,6 +1,6 @@
 
 import {map} from 'rxjs/operators';
-import { DataSource } from '@angular/cdk';
+import { DataSource } from '@angular/cdk/collections';
 import { BehaviorSubject ,  Observable } from 'rxjs';
 import { SampleData } from './data';
 

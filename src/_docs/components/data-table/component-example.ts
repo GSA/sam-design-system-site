@@ -24,9 +24,9 @@ export class SamDataTableComponentExampleComponent implements OnInit {
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
   curPage = 1;
-  @ViewChild(SamPaginationComponent, {static: false}) paginator: SamPaginationComponent;
-  @ViewChild(SamSortDirective, {static: false}) sort: SamSortDirective;
-  @ViewChild('filter', {static: false}) filter: ElementRef;
+  @ViewChild(SamPaginationComponent, {static: true}) paginator: SamPaginationComponent;
+  @ViewChild(SamSortDirective, {static: true}) sort: SamSortDirective;
+  @ViewChild('filter', {static: true}) filter: ElementRef;
 
   ngOnInit() {
     this.dataSource = new ExampleDataSource(

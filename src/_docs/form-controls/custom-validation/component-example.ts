@@ -27,7 +27,7 @@ const IPValidator: ValidatorFn = function (c: AbstractControl): ValidationErrors
   templateUrl: './component-example.html'
 })
 export class SamCustomValidationComponentExampleComponent implements AfterViewInit {
-  @ViewChild(LabelWrapper, {static: false}) labelWrapper: LabelWrapper;
+  @ViewChild(LabelWrapper, {static: true}) labelWrapper: LabelWrapper;
   label = 'Custom Validation for IP addess';
   name = 'custom valition';
   hint = ' Supports ipv4, ipv6, CIDR';

@@ -70,10 +70,10 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
   public faTable = faTable;
   public faChartBar = faChartBar;
 
-  @ViewChild(SamSortDirective, {static: false})
+  @ViewChild(SamSortDirective, {static: true})
     public _sort: SamSortDirective;
 
-  @ViewChild(SamModalComponent, {static: false})
+  @ViewChild(SamModalComponent, {static: true})
     public fieldsEditor: SamModalComponent;
 
     public test = [];

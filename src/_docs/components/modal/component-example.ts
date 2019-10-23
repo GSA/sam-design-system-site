@@ -52,8 +52,25 @@ export class SamModalComponentExampleComponent {
   modalConfig2 = {
     type: 'success',
     title: 'Sample Title',
-    description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+    description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.',
+    position: 'center'
   };
+  modalButtonPosition = [{
+    label: 'center',
+    name: 'center',
+    value: 'center'
+  }, {
+    label: 'left',
+    name: 'left',
+    value: 'left'
+  },
+  {
+    label: 'right',
+    name: 'right',
+    value: 'right'
+  }
+
+  ];
 
   onModalInitClick() {
     this.vcModal1.openModal();

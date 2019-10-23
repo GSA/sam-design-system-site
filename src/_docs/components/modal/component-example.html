@@ -51,6 +51,7 @@
   #modal5
   [title]="modalConfig2.title"
   [type]="modalConfig2.type"
+  [buttonPosition]="modalConfig2.position"
   [description]="modalConfig2.description"
   [submitButtonLabel]="'Yes'"
   [cancelButtonLabel]="'No'"
@@ -81,5 +82,12 @@
     [(ngModel)]="modalConfig2.type"
     [options]="modalAlertTypes">
 </sam-select>
+
+<sam-select label="Button Position"
+    name="buttonPosition"
+    [(ngModel)]="modalConfig2.position"
+    [options]="modalButtonPosition">
+</sam-select>
+
 <sam-button (click)="onModal5InitClick()"
     buttonText="Show Modal"></sam-button>

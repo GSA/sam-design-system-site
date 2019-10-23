@@ -1,7 +1,7 @@
 
-import {map} from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { DataSource } from '@angular/cdk/collections';
-import { BehaviorSubject ,  Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { SampleData } from './data';
 
 
@@ -61,12 +61,12 @@ export class SampleDataSource extends DataSource<any> {
 
     const sub = this._service.model.valueChanges.pipe(
       map(model => this._getSortedData(model.data)),
-      map(data => this._filtersMap(data)),);
+      map(data => this._filtersMap(data)));
 
     return sub;
   }
 
-  disconnect() {}
+  disconnect() { }
 
   private _getSortedData(model): SampleDataDef[] {
     const data = this._sampleDatabase.data.slice();
@@ -77,8 +77,8 @@ export class SampleDataSource extends DataSource<any> {
     }
 
     return data.sort((a, b) => {
-      let propertyA: number|string = '';
-      let propertyB: number|string = '';
+      let propertyA: number | string = '';
+      let propertyB: number | string = '';
 
       switch (state.sort.active) {
         case 'Agency':
@@ -138,7 +138,7 @@ export class SampleDataSource extends DataSource<any> {
     });
   }
 
-  private _filtersMap (data) {
+  private _filtersMap(data) {
     const model = this._service.model.value;
 
     // fh filter

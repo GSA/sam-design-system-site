@@ -1,5 +1,5 @@
 
-import {distinctUntilChanged, debounceTime} from 'rxjs/operators';
+import { distinctUntilChanged, debounceTime } from 'rxjs/operators';
 
 import {
   Component,
@@ -24,23 +24,23 @@ export class SamDataTableComponentExampleComponent implements OnInit {
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
   curPage = 1;
-  @ViewChild(SamPaginationComponent, {static: true}) paginator: SamPaginationComponent;
-  @ViewChild(SamSortDirective, {static: true}) sort: SamSortDirective;
-  @ViewChild('filter', {static: true}) filter: ElementRef;
+  @ViewChild(SamPaginationComponent, { static: true }) paginator: SamPaginationComponent;
+  @ViewChild(SamSortDirective, { static: true }) sort: SamSortDirective;
+  @ViewChild('filter', { static: true }) filter: ElementRef;
 
   ngOnInit() {
     this.dataSource = new ExampleDataSource(
-        this.exampleDatabase,
-        this.paginator,
-        this.sort
+      this.exampleDatabase,
+      this.paginator,
+      this.sort
     );
     fromEvent(this.filter.nativeElement, 'keyup').pipe(
-        debounceTime(150),
-        distinctUntilChanged(),)
-        .subscribe(() => {
-          if (!this.dataSource) { return; }
-          this.dataSource.filter = this.filter.nativeElement.value;
-        });
+      debounceTime(150),
+      distinctUntilChanged())
+      .subscribe(() => {
+        if (!this.dataSource) { return; }
+        this.dataSource.filter = this.filter.nativeElement.value;
+      });
   }
 
   updateFilter(filterText) {

@@ -33,7 +33,7 @@ import {
   providers: [ SidenavService ]
 })
 
-export class SamEntityDisplayComponent implements OnInit{
+export class SamEntityDisplayComponent implements OnInit {
   config = {
     label: 'stuff',
     children: [

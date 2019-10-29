@@ -47,7 +47,7 @@
     "@fortawesome/free-solid-svg-icons": "5.10.2",
     "@gsa-sam/sam-styles": "0.0.34",
     "@gsa-sam/sam-ui-elements": "https://github.com/GSA/sam-ui-elements#IAE-24724-tabs",
-    "@ngx-formly/core": "^2.1.1",
+    "@ngx-formly/core": "5.5.1",
     "@types/jasmine": "2.5.54",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "6.0.38",

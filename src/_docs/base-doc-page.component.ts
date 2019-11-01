@@ -36,44 +36,43 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
 
         // todo: see if we can find out if we should make the call or not
         if (this.route.snapshot.data.sections.indexOf('component-example.html') !== -1) {
-            this._http.get(this.getAssetURI('/component-example.html'))
+            this._http.get(this.getAssetURI('/component-example.html'), { responseType: 'text' as 'json'})
                 .subscribe((res: any) => {
                     // console.log(res.text());
-                    ctx.example = res.text();
+                    ctx.example = res;
                 });
         }
         if (this.route.snapshot.data.sections.indexOf('component-example.ts') !== -1) {
-            this._http.get(this.getAssetURI('component-example.ts')).subscribe((res: any) => {
+            this._http.get(this.getAssetURI('component-example.ts'), { responseType: 'text' as 'json'}).subscribe((res: any) => {
                 // console.log(res.text());
-                ctx.codeExample = res.text();
+                ctx.codeExample = res;
             });
         }
         if (this.route.snapshot.data.sections.indexOf('documentation.md') !== -1) {
-            this._http.get(this.getAssetURI('documentation.md')).subscribe((res: any) => {
+            this._http.get(this.getAssetURI('documentation.md'), { responseType: 'text' as 'json'}).subscribe((res: any) => {
                 // console.log(res.text());
-                ctx.markdown = res.text();
+                ctx.markdown = res;
             });
         }
         if (this.route.snapshot.data.sections.indexOf('design.md') !== -1) {
-            this._http.get(this.getAssetURI('design.md')).subscribe((res: any) => {
+            this._http.get(this.getAssetURI('design.md'), { responseType: 'text' as 'json'}).subscribe((res: any) => {
                 // console.log(res.text());
-                ctx.design = res.text();
+                ctx.design = res;
             });
         }
         if (this.route.snapshot.data.sections.indexOf('guidance.md') !== -1) {
-            this._http.get(this.getAssetURI('guidance.md')).subscribe((res: any) => {
+            this._http.get(this.getAssetURI('guidance.md'), { responseType: 'text' as 'json'}).subscribe((res: any) => {
                 // console.log(res.text());
-                ctx.guidance = res.text();
+                ctx.guidance = res;
             });
         }
         if (this.route.snapshot.data.sections.indexOf('implementation.md') !== -1) {
-            this._http.get(this.getAssetURI('implementation.md')).subscribe((res: any) => {
+            this._http.get(this.getAssetURI('implementation.md'), { responseType: 'text' as 'json'}).subscribe((res: any) => {
                 // console.log(res.text());
-                ctx.implementation = res.text();
+                ctx.implementation = res;
             });
         }
     }
-
 
     constructor(
         public _http: HttpClient,
@@ -85,7 +84,7 @@ export class BaseDocPageComponent extends BaseExampleComponent implements OnInit
     }
 
     public getAssetURI (file: string): string {
-        return `${environment.DEPLOYURL}/assets/${this.route.snapshot.data.path}/${file}`;
+      return `./${this.route.snapshot.data.path}/${file}`;
     }
 
 }

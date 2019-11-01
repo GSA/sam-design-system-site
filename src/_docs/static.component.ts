@@ -43,7 +43,7 @@ export class StaticPageComponent implements OnInit {
                 this.content = this.defaultContent;
                 return of(err);
               }),
-              map((res) => res.text())
+              map((res) => res)
             )
             .subscribe(
               (res) => this.content = res.error.text,

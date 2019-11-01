@@ -14,7 +14,7 @@ export class DocumentationService {
   constructor(private _http: HttpClient) { }
 
   public loadData(): Observable<any> {
-    return this._http.get(`${environment.DEPLOYURL}assets/docs.json`)
+    return this._http.get(`${environment.DEPLOYURL}/assets/docs.json`)
       // .pipe(
       //   map((res: HttpResponse<any>) => res.body.json())
       // );

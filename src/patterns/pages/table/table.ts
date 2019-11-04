@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { DataSource } from '@angular/cdk';
 import { BehaviorSubject, Observable } from 'rxjs';
 
@@ -22,13 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' }
 ];
 
-/**
- * Data source to provide what data should be rendered in the table. Note that the data source
- * can retrieve its data in any way. In this case, the data source is provided a reference
- * to a common data base, ExampleDatabase. It is not the data source's responsibility to manage
- * the underlying data. Instead, it only needs to take the data and send the table exactly what
- * should be rendered.
- */
+
 export class ExampleDataSource extends DataSource<PeriodicElement> {
   /** Stream of data that is provided to the table. */
   data = new BehaviorSubject<PeriodicElement[]>(ELEMENT_DATA);
@@ -44,9 +38,16 @@ export class ExampleDataSource extends DataSource<PeriodicElement> {
 @Component({
   templateUrl: 'table.html'
 })
-export class TableComponent {
+export class TableComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new ExampleDataSource();
+  dataSource: ExampleDataSource | null;
+
+  constructor(private cdr: ChangeDetectorRef) {}
+
+  ngOnInit() {
+    this.dataSource = new ExampleDataSource();
+    this.cdr.detectChanges();
+  }
 
   sortData(event): void {
     console.log('Sorted column');

@@ -1,0 +1,173 @@
+<div style="padding: 20px;">
+  <h3>Datatable component</h3>
+
+  <table
+    sam-datatable
+    class="sam-table sam-table--basic"
+    [dataSource]="dataSource"
+    samSort
+    (samSortChange)="sortData($event)"
+  >
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container cdkColumnDef="position">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>No.</th>
+      <td sam-cell *cdkCellDef="let element">{{ element.position }}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container cdkColumnDef="name">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Name</th>
+      <td sam-cell *cdkCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container cdkColumnDef="weight">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Weight</th>
+      <td sam-cell *cdkCellDef="let element">{{ element.weight }}</td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container cdkColumnDef="symbol">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Symbol</th>
+      <td sam-cell *cdkCellDef="let element">{{ element.symbol }}</td>
+    </ng-container>
+
+    <tr sam-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+    <tr sam-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <h3>Table with custom width</h3>
+  <p>
+    The example bellow sets the table to 100% and the first column to 120px. The
+    minimun column width its 120px.
+  </p>
+
+  <table
+    sam-datatable
+    class="sam-table sam-table--basic"
+    [dataSource]="dataSource"
+    samSort
+    (samSortChange)="sortData($event)"
+    [style.width.%]="100"
+  >
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container cdkColumnDef="position">
+      <th
+        sam-header-cell
+        *cdkHeaderCellDef
+        sam-sort-header
+        [style.width.px]="120"
+      >
+        No.
+      </th>
+      <td sam-cell *cdkCellDef="let element">{{ element.position }}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container cdkColumnDef="name">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Name</th>
+      <td sam-cell *cdkCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container cdkColumnDef="weight">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Weight</th>
+      <td sam-cell *cdkCellDef="let element">{{ element.weight }}</td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container cdkColumnDef="symbol">
+      <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Symbol</th>
+      <td sam-cell *cdkCellDef="let element">{{ element.symbol }}</td>
+    </ng-container>
+
+    <tr sam-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+    <tr sam-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <h3>Overflow container with fixed header</h3>
+  <p>
+    The example bellow sets a height of 300 to the table container
+    (sam-table-container-overflow)
+  </p>
+
+  <div class="sam-table-header" id="table-description">
+    Showing periodic elements for
+    <br />
+    <a>01190198010C0157N0001978C0097</a>
+  </div>
+  <div class="sam-table-container-overflow" [style.height.px]="300">
+    <table
+      sam-datatable
+      class="sam-table sam-table--basic"
+      [dataSource]="dataSource"
+      samSort
+      (samSortChange)="sortData($event)"
+      aria-describedby="table-description"
+    >
+      <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container cdkColumnDef="position">
+        <th sam-header-cell *cdkHeaderCellDef sam-sort-header>No.</th>
+        <td sam-cell *cdkCellDef="let element">{{ element.position }}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container cdkColumnDef="name">
+        <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Name</th>
+        <td sam-cell *cdkCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container cdkColumnDef="weight">
+        <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Weight</th>
+        <td sam-cell *cdkCellDef="let element">{{ element.weight }}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container cdkColumnDef="symbol">
+        <th sam-header-cell *cdkHeaderCellDef sam-sort-header>Symbol</th>
+        <td sam-cell *cdkCellDef="let element">{{ element.symbol }}</td>
+      </ng-container>
+
+      <tr
+        sam-header-row
+        *cdkHeaderRowDef="displayedColumns"
+        class="sam-header-row--fixed"
+      ></tr>
+      <tr sam-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  <h3>Deprecated</h3>
+  <p>
+    <strong>sam-header--basic</strong> and <strong>sam-row--basic</strong> class
+    will be removed, use sam-datatable component
+  </p>
+  <table>
+    <thead class="sam-header--basic">
+      <tr>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="sam-row--basic">
+        <td>lorem ipsutm</td>
+        <td>lorem ipsum dolor sit amet</td>
+      </tr>
+      <tr class="sam-row--basic">
+        <td>lorem ipsutm</td>
+        <td>lorem ipsum dolor sit amet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

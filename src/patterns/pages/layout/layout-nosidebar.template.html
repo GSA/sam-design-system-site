@@ -1,131 +1,125 @@
 <sam-page-next [backButtonText]="'Back to Report'">
+  <!-- page title goes here -->
+  <sam-page-title
+    super="Contract Detail Report"
+    title="Contract Detail based on Account IDs for FY18"
+    inverted="true"
+  >
+  </sam-page-title>
 
-        <!-- page title goes here -->
-        <sam-page-title
-          super="Contract Detail Report"
-          title="Contract Detail based on Account IDs for FY18"
-          inverted="true">
-        </sam-page-title>
-      
-        <sam-toolbar></sam-toolbar>
-      
-        <!-- Main Content -->
-        <sam-main>
-      
-          <sam-alert-next
-            type="warning">This report doesn't pull real data</sam-alert-next>
-      
-          <sam-main-content>
-            <sam-tabs-next samContentOutlet>
-              <sam-tab-next>
-                <ng-template sam-tab-label>
-                  <sam-icon [icon]="faTable"></sam-icon> Summary
-                </ng-template>
-                <!-- pagination + edit fields button -->
-                <sam-action-bar>
-                  <sam-pagination-next
-                    [totalUnits]="length"
-                  ></sam-pagination-next>
-                  <sam-button-next
-                    samPageAction
-                    action="secondary"
-                    (click)="toggleFieldsEditor()"
-                  >
-                  Columns
-                  </sam-button-next>
-                </sam-action-bar>
-              
-                <!-- datatable -->
-                <sam-datatable samSort
-                  [dataSource]="dataSource"
-                  class="sam large table"
-                  (samSortChange)="onSortChange($event)">
-                  <ng-container
-                    *ngFor="let col of columnDefObs | async"
-                    [cdkColumnDef]="col.def">
-                    <sam-header-cell
-                      *cdkHeaderCellDef
-                      sam-sort-header>
-                      {{ col.headerLabel }}
-                    </sam-header-cell>
-        
-                    <sam-cell *cdkCellDef="let row">
-                      {{ row[col.cellId] }}
-                    </sam-cell>
-                  </ng-container>
-                  
-                  <sam-header-row
-                    *cdkHeaderRowDef="displayedColumns"
-                  ></sam-header-row>
-                  <sam-row
-                    *cdkRowDef="let row; columns: displayedColumns"
-                  ></sam-row> 
-                </sam-datatable>
-              </sam-tab-next>
-              <sam-tab-next>
-                <ng-template sam-tab-label>
-                  <sam-icon [icon]="faTable"></sam-icon> Award Details
-                </ng-template>
-                <div class="tab-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam felis 
-                  dui, lobortis eget odio quis, facilisis consectetur lectus. Donec 
-                  sodales tortor sagittis sem efficitur congue. Maecenas sed velit sed 
-                  felis vestibulum suscipit. Vivamus pellentesque nisi vitae neque cursus 
-                  blandit. Orci varius natoque penatibus et magnis dis parturient montes, 
-                  nascetur ridiculus mus. Donec vel efficitur nulla, sit amet luctus justo. 
-                  Maecenas et ante vestibulum, feugiat lectus id, sollicitudin neque. 
-                  Aenean porttitor metus non nunc malesuada cursus. Ut felis enim, 
-                  ultrices congue facilisis venenatis, posuere eu libero. Etiam rhoncus 
-                  pellentesque eros, non laoreet nulla ultricies quis.
-                </div>
-              </sam-tab-next>
-              <sam-tab-next>
-                  <ng-template sam-tab-label>
-                    <sam-icon [icon]="faChartBar"></sam-icon> Chart
-                  </ng-template>
-                  <div class="tab-content">
-                    Add Chart Example
-                  </div>
-              </sam-tab-next>      
-            </sam-tabs-next>
-          </sam-main-content>
-        </sam-main>
-      
-      </sam-page-next>
-      
-      <!-- modals -->
-      <sam-modal
-        [showClose]="true"
-        [title]="'Edit Fields'"
-        [type]="'info'"
-        [description]="'Edit fields for report'"
-        [submitButtonLabel]="'Done'"
-        [cancelButtonLabel]="'Cancel'"
-        (close)="cancelModalAction()"
-        (submit)="submitModalAction()">
-        <div class="sam reset checkboxes labels fieldsets">
-          
-          <h4 class="sam heading">{{ options.organization.label }} </h4>
-          <sam-checkbox
-            [(ngModel)]="options.organization.selected"
-            [name]="options.organization.label"
-            [options]="options.organization.options"
-          ></sam-checkbox>
-          
-          <h4 class="sam heading">{{  options.listing.label }}</h4>
-          <sam-checkbox
-          [(ngModel)]="options.listing.selected"
-          [name]="options.listing.label"
-          [options]="options.listing.options"
-          ></sam-checkbox>
-          
-          <h4 class="sam heading">{{ options.status.label }}</h4>
-          <sam-checkbox
-          [(ngModel)]="options.status.selected"
-          [name]="options.status.label"
-          [options]="options.status.options"
-          ></sam-checkbox>
-          
-        </div>
-      </sam-modal>
-      
+  <sam-toolbar></sam-toolbar>
+
+  <!-- Main Content -->
+  <sam-main>
+    <sam-alert-next type="warning">
+      This report doesn't pull real data
+    </sam-alert-next>
+
+    <sam-main-content>
+      <sam-tabs-next samContentOutlet>
+        <sam-tab-next>
+          <ng-template sam-tab-label>
+            <sam-icon [icon]="faTable"></sam-icon> Summary
+          </ng-template>
+          <!-- pagination + edit fields button -->
+          <sam-action-bar>
+            <sam-pagination-next [totalUnits]="length"></sam-pagination-next>
+            <sam-button-next
+              samPageAction
+              action="secondary"
+              (click)="toggleFieldsEditor()"
+            >
+              Columns
+            </sam-button-next>
+          </sam-action-bar>
+
+          <!-- datatable -->
+          <table
+            sam-datatable
+            samSort
+            [dataSource]="dataSource"
+            class="sam-table"
+            (samSortChange)="onSortChange($event)"
+          >
+            <ng-container
+              *ngFor="let col of columnDefObs | async"
+              [cdkColumnDef]="col.def"
+            >
+              <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
+                {{ col.headerLabel }}
+              </th>
+
+              <td sam-cell *cdkCellDef="let row">
+                {{ row[col.cellId] }}
+              </td>
+            </ng-container>
+
+            <tr sam-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+            <tr sam-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+        </sam-tab-next>
+        <sam-tab-next>
+          <ng-template sam-tab-label>
+            <sam-icon [icon]="faTable"></sam-icon> Award Details
+          </ng-template>
+          <div class="tab-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            felis dui, lobortis eget odio quis, facilisis consectetur lectus.
+            Donec sodales tortor sagittis sem efficitur congue. Maecenas sed
+            velit sed felis vestibulum suscipit. Vivamus pellentesque nisi vitae
+            neque cursus blandit. Orci varius natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Donec vel efficitur
+            nulla, sit amet luctus justo. Maecenas et ante vestibulum, feugiat
+            lectus id, sollicitudin neque. Aenean porttitor metus non nunc
+            malesuada cursus. Ut felis enim, ultrices congue facilisis
+            venenatis, posuere eu libero. Etiam rhoncus pellentesque eros, non
+            laoreet nulla ultricies quis.
+          </div>
+        </sam-tab-next>
+        <sam-tab-next>
+          <ng-template sam-tab-label>
+            <sam-icon [icon]="faChartBar"></sam-icon> Chart
+          </ng-template>
+          <div class="tab-content">
+            Add Chart Example
+          </div>
+        </sam-tab-next>
+      </sam-tabs-next>
+    </sam-main-content>
+  </sam-main>
+</sam-page-next>
+
+<!-- modals -->
+<sam-modal
+  [showClose]="true"
+  [title]="'Edit Fields'"
+  [type]="'info'"
+  [description]="'Edit fields for report'"
+  [submitButtonLabel]="'Done'"
+  [cancelButtonLabel]="'Cancel'"
+  (close)="cancelModalAction()"
+  (submit)="submitModalAction()"
+>
+  <div class="sam reset checkboxes labels fieldsets">
+    <h4 class="sam heading">{{ options.organization.label }}</h4>
+    <sam-checkbox
+      [(ngModel)]="options.organization.selected"
+      [name]="options.organization.label"
+      [options]="options.organization.options"
+    ></sam-checkbox>
+
+    <h4 class="sam heading">{{ options.listing.label }}</h4>
+    <sam-checkbox
+      [(ngModel)]="options.listing.selected"
+      [name]="options.listing.label"
+      [options]="options.listing.options"
+    ></sam-checkbox>
+
+    <h4 class="sam heading">{{ options.status.label }}</h4>
+    <sam-checkbox
+      [(ngModel)]="options.status.selected"
+      [name]="options.status.label"
+      [options]="options.status.options"
+    ></sam-checkbox>
+  </div>
+</sam-modal>

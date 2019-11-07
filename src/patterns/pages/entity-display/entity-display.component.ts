@@ -110,9 +110,9 @@ export class SamEntityDisplayComponent implements OnInit {
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
   curPage = 1;
-  @ViewChild(SamPaginationComponent) paginator: SamPaginationComponent;
-  @ViewChild(SamSortDirective) sort: SamSortDirective;
-  @ViewChild('filter') filter: ElementRef;
+  @ViewChild(SamPaginationComponent, { static: true }) paginator: SamPaginationComponent;
+  @ViewChild(SamSortDirective, { static: true }) sort: SamSortDirective;
+  @ViewChild('filter', { static: true }) filter: ElementRef;
 
   ngOnInit() {
     this.dataSource = new ExampleDataSource(

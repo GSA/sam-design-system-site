@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { Component, OnInit } from '@angular/core';
 import { SAMSDSSelectedItemModel } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-controls/sam-sds-autocomplete/selected-result/models/sds-selectedItem.model';
 import { SelectionMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-controls/sam-sds-autocomplete/selected-result/models/sds-selected-item-model-helper';
@@ -8,7 +9,6 @@ import { AutocompleteSampleDataService } from './service/autocomplete-sample.ser
 @Component({
   selector: 'gsa-sam-sds-autocomplete-sample',
   templateUrl: './component-example.html',
-  //styleUrls: ['./autocomplete-sample.component.scss'],
   providers: [AutocompleteSampleDataService]
 })
 export class SamAutocompleteExampleComponent implements OnInit {
@@ -76,7 +76,7 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.settings4.secondaryTextField = 'subtext';
     this.settings4.autocompletePlaceHolderText = 'Enter text';
     this.settings4.selectionMode = SelectionMode.MULTIPLE;
-    //this.settings4.minimumCharacterCountSearch = 3;
+    // this.settings4.minimumCharacterCountSearch = 3;
 
 
     this.settings5.primaryKeyField = 'id';

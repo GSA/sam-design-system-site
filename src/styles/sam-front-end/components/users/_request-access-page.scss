@@ -24,6 +24,23 @@
     border: none !important;
   }
 
+  #org-picker {
+    .main-input .main-container {
+      width: auto;
+    }
+    input {
+      border: 1px solid #5b616b;
+      height: 4.4rem;
+    }
+    #agency-modal-button {
+      border: 1px solid #5b616b;
+    }
+    #federalHierarchy-listbox {
+      width: inherit !important;
+      z-index: 99999;
+    }
+  }
+
   .main-card {
     width: 60%;
   }

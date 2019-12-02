@@ -28,13 +28,23 @@
 {
 	padding-left:5px;
 }
+.padding-left-10px{
+	padding-left: 10px
+}
 .padding-top-10px
 {
 	padding-top:10px;
 }
+.padding-top-20px
+{
+	padding-top:15px;
+}
 .padding-bottom-10px
 {
 	padding-bottom:10px;
+}
+.padding-bottom-15px{
+	padding-bottom: 15px
 }
 .top-padding
 {
@@ -60,6 +70,128 @@ ul
 {
 	height: 50px;
 }
+
+.summary{
+	border: .5px solid; 
+	padding: 5px 30px 5px 30px; 
+	background-color: whitesmoke;
+}
+.summary-duns{
+	display: inline-block; 
+	background-color: thistle; 
+	border-radius: 2px 2px 2px 2px; 
+	padding: 0px 5px 0px 5px; 
+	border: 1px solid purple;
+	text-align: center;
+}
+.summary-uei{
+	display: inline-block; 
+	background-color: whitesmoke; 
+	border-radius: 2px 2px 2px 2px; 
+	padding: 0px 5px 0px 5px; 
+	border: 1px solid gray; 
+	width: 51px; 
+	text-align: center;
+}
+.summary-exp{
+	font-size: 14px;
+}
+.summary-exp-desc{
+	background-color: white; 
+	border: .5px solid; 
+	width: 130px; 
+	height: 40px; 
+	text-align: center; 
+	padding-top: 8px; 
+	display:inline-block
+}
+.summary-status-desc{
+	background-color: white; 
+	border: .5px solid; 
+	width: 130px; 
+	height: 40px; 
+	text-align: center; 
+	padding-top: 8px; 
+	display: inline-block; 
+	margin-left: 10px
+}
+.summary-status{
+	font-size: 14px; 
+	padding-left: 52px;
+}
+.summary-active{
+	height: 17px; 
+	width: 17px; 
+	background-color: yellowgreen; 
+	border-radius: 50%; 
+	display: inline-block; 
+	border: .5px solid green;
+}
+.summary-expired{
+	height: 17px; 
+	width: 17px; 
+	background-color: red; 
+	border-radius: 50%; 
+	display: inline-block; 
+	border: .5px solid darkred;
+}
+.summary-fouo{
+	background-color: #DEF2F5; 
+	border: 2px solid dodgerblue; 
+	height: 75px; 
+	padding: 25px 0px 0px 35px; 
+	margin-top: 20px; 
+	margin-bottom: 20px;
+}
+
+.entity-section{
+	height: 30px; 
+	width: 30px; 
+	background-color: aquamarine; 
+	border-radius: 50%; 
+	display: inline-block; 
+	margin-top: 20px;
+}
+
+.fa-play{
+	padding: 7px 0px 0px 11px;
+	color: white;
+	display: inline-block;
+}
+
+.padding-bottom-25px{
+	padding-top: 25px;
+}
+
+.entity-answer{
+	color: darkblue
+}
+
+.padding-left-20px{
+	padding-left: 20px;
+} 
+
+.padding-left-40px{
+	padding-left: 40px;
+}
+
+}
+
+.entity-actions{
+	span {
+		color: #112f4e;
+	    font-size: 16px;
+	    font-weight: 600;
+	}
+	.margin-left-900px{
+		margin-left: 900px
+	}
+	.margin-top-16px{
+		margin-top: 14px
+	}
+	.margin-left-75px{
+		margin-left:75px
+	}
 }
 
 

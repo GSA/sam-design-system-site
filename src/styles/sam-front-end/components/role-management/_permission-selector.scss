@@ -30,12 +30,10 @@ $new-width: 3em;
   }
 
   input[type="checkbox"] {
-    width: initial;
-    height: initial;
     opacity: 1;
     margin-left: inherit;
     position: static;
-    display: initial;
+    display: none;
   }
 
   .new-column {

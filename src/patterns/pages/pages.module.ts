@@ -11,6 +11,7 @@ import { SamWorkspaceDashboardComponent } from './workspace-dashboard/workspace-
 import { SamEntityDisplayComponent } from './entity-display/entity-display.component';
 import { SamPatternPageComponentsComponent } from './page-components/page-components.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TableComponent } from './table/table';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PagesComponent,
     SamWorkspaceDashboardComponent,
     SamEntityDisplayComponent,
-    SamPatternPageComponentsComponent
+    SamPatternPageComponentsComponent,
+    TableComponent
   ]
 })
-export class PagesModule { }
+export class PagesModule {}

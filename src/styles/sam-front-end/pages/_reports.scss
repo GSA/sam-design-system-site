@@ -117,6 +117,10 @@
     padding-top:5px
   }
 
+  #sam-autocomplete-results-kv{
+    max-height: 16rem;
+  }
+
   .includesBases label {
     margin-top: 0;
   }
@@ -154,3 +158,18 @@
 //   display:block;
 //   width:460px;
 // }
+
+.agency-picker-text{
+  p{
+      padding-bottom: 10px !important;
+      padding-top: 10px !important;
+  }
+}
+
+.databank-title{
+    min-height: 1rem;
+    font-size: 3.2rem;
+    letter-spacing: -1px;
+    line-height: 1em;
+    margin-bottom: 1.3rem;
+}

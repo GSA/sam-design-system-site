@@ -266,3 +266,11 @@ button.usa-button-link:hover {
 .usa-offset-one-third {
   @include shift(4 of 12);
 }
+
+.text-green {
+  color: #008000;
+}
+
+.text-crimson {
+  color: #DC143C;
+}

@@ -31,6 +31,42 @@ export class ExampleDataSource extends DataSource<PeriodicElement> {
   connect(): Observable<PeriodicElement[]> {
     return this.data;
   }
+  public sortData(evt, data) {
+    let sortedData;
+    if (!evt.active || evt.direction === '') {
+      sortedData = data;
+      return;
+    }
+
+    const isAsc = evt.direction === 'asc';
+    sortedData = data.sort((a, b) => {
+      switch (evt.active) {
+        case 'name': return this.compareString(a.name, b.name, isAsc);
+        case 'symbol': return this.compareString(a.symbol, b.symbol, isAsc);
+        case 'weight': return this.compareNumber(a.weight, b.weight, isAsc);
+        case 'position': return this.compareNumber(a.position, b.position, isAsc);
+        default: return 0;
+      }
+    });
+
+    this.setData(sortedData);
+  }
+  setData(sortedData) {
+    this.data.next(sortedData);
+  }
+  compareNumber(a, b, isAsc) {
+    return (a - b) * (isAsc ? 1 : -1);
+  }
+
+  compareDate(a, b, isAsc) {
+    const c = new Date(a);
+    const d = new Date(b);
+    return (c < d ? -1 : 1) * (isAsc ? 1 : -1);
+  }
+
+  compareString(a, b, isAsc) {
+    return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+  }
 
   disconnect() {}
 }
@@ -51,5 +87,8 @@ export class TableComponent implements OnInit {
 
   sortData(event): void {
     console.log('Sorted column');
+  }
+  onSortChange(evt) {
+    this.dataSource.sortData(evt, ELEMENT_DATA);
   }
 }

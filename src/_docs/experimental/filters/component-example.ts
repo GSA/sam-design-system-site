@@ -13,7 +13,7 @@ export class SamFiltersComponentExampleComponent {
     {
       key: 'fhInputText',
       type: 'text',
-      wrappers: ['filter'],
+      wrappers: ['form-field'],
       templateOptions: {
         label: 'Agency',
         id: 'agency',
@@ -23,7 +23,7 @@ export class SamFiltersComponentExampleComponent {
     {
       key: 'dateModel',
       type: 'date',
-      wrappers: ['filter'],
+      wrappers: ['form-field'],
       templateOptions: {
         name: 'date',
         label: 'Date Modified',
@@ -33,7 +33,7 @@ export class SamFiltersComponentExampleComponent {
     {
       key: 'checkbox',
       type: 'checkbox',
-      wrappers: ['filter'],
+      wrappers: ['form-field'],
       templateOptions: {
         name: 'checkbox',
         label: 'Checkbox Example',
@@ -46,7 +46,53 @@ export class SamFiltersComponentExampleComponent {
           { value: 'five', label: 'five', name: 'five' },
         ]
       }
-    }
+    },
+    {
+      key: 'expirationDateOpen',
+      type: 'datepicker',
+      wrappers: ['form-field'],
+      templateOptions: {
+        label: 'Expiration Date (no validation)',
+      }
+    },
+    {
+      key: 'expirationDateMin',
+      type: 'datepicker',
+      wrappers: ['form-field'],
+      templateOptions: {
+        label: 'Expiration Date (Min only Validation)',
+        minDate: new Date(2019, 9, 5)
+      }
+    },
+    {
+      key: 'expirationDatemax',
+      type: 'datepicker',
+      wrappers: ['form-field'],
+      templateOptions: {
+        label: 'Expiration Date (Max only Validation)',
+        maxDate: new Date(2019, 9, 25)
+      }
+    },
+    {
+      key: 'expirationDateboth',
+      type: 'datepicker',
+      wrappers: ['form-field'],
+      templateOptions: {
+        label: 'Expiration Date (Min and Max Validation)',
+        minDate: new Date(2019, 9, 5),
+        maxDate: new Date(2019, 9, 25)
+      }
+    },
+    {
+      key: 'expirationDateRangeEx',
+      type: 'daterangepicker',
+      wrappers: ['form-field'],
+      templateOptions: {
+        label: 'Expiration Date Range',
+        minDate: new Date(2019, 9, 5),
+        maxDate: new Date(2019, 9, 25)
+      }
+    },
   ];
 
   /**

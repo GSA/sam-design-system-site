@@ -13,7 +13,7 @@ export class SamFiltersComponentExampleComponent {
     {
       key: 'fhInputText',
       type: 'text',
-      wrappers: ['form-field'],
+      wrappers: ['filter'],
       templateOptions: {
         label: 'Agency',
         id: 'agency',
@@ -23,7 +23,7 @@ export class SamFiltersComponentExampleComponent {
     {
       key: 'dateModel',
       type: 'date',
-      wrappers: ['form-field'],
+      wrappers: ['filter'],
       templateOptions: {
         name: 'date',
         label: 'Date Modified',
@@ -33,7 +33,7 @@ export class SamFiltersComponentExampleComponent {
     {
       key: 'checkbox',
       type: 'checkbox',
-      wrappers: ['form-field'],
+      wrappers: ['filter'],
       templateOptions: {
         name: 'checkbox',
         label: 'Checkbox Example',

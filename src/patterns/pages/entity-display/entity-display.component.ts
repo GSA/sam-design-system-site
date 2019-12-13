@@ -25,6 +25,7 @@ import {
   ExampleDataSource,
   ExampleDatabase
 } from './data-source';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
 
 @Component({
@@ -120,9 +121,9 @@ export class SamEntityDisplayComponent implements OnInit {
         this.paginator,
         this.sort
     );
-    fromEvent(this.filter.nativeElement, 'keyup')
-        .debounceTime(150)
-        .distinctUntilChanged()
+    fromEvent(this.filter.nativeElement, 'keyup').pipe(
+        debounceTime(150),
+        distinctUntilChanged())
         .subscribe(() => {
           if (!this.dataSource) { return; }
           this.dataSource.filter = this.filter.nativeElement.value;

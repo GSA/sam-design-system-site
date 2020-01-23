@@ -50,6 +50,10 @@
   color: #0a2c88;
 }
 
+.usa-alert-text > .alert-link {
+  color: #0a2c88;
+}
+
 .usa-alert-success {
   background-color: $color-green-lightest;
   background-image: url('#{$image-path}/alerts/success.png');

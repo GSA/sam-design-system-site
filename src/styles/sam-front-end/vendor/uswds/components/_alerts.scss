@@ -46,12 +46,12 @@
   margin-top: 0;
 }
 
-.usa-alert-text > a {
-  color: #0a2c88;
-}
-
-.usa-alert-text > .alert-link {
-  color: #0a2c88;
+.usa-alert-text {
+  .alert-link,
+  a {
+    color: #0a2c88;
+    font-weight: 700;
+  }
 }
 
 .usa-alert-success {

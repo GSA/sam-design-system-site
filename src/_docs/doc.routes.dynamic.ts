@@ -76,6 +76,7 @@ import { SamDateRangeComponentExampleComponent } from './form-controls/date-rang
 import { SamDateTimeComponentExampleComponent } from './form-controls/date-time/component-example';
 import { SamNumberComponentExampleComponent } from './form-controls/number/component-example';
 import { SamRadioComponentExampleComponent } from './form-controls/radiobutton/component-example';
+import { SamAutocompleteExampleComponent } from './form-controls/sam-autocomplete/component-example';
 import { SamSelectComponentExampleComponent } from './form-controls/select/component-example';
 import { SamTextComponentExampleComponent } from './form-controls/text/component-example';
 import { SamTextareaComponentExampleComponent } from './form-controls/textarea/component-example';
@@ -427,6 +428,12 @@ export const ROUTES: Routes = [
     componentName: 'SamRadioComponent',
 			sections: ['']}, children: [
     { path: '', component: SamRadioComponentExampleComponent }
+  ]},
+  { path: 'form-controls/sam-autocomplete', component: BaseDocPageComponent, data: {
+    path: '_docs\form-controls\sam-autocomplete\component-example.ts',
+    componentName: 'SamAutocomplete',
+			sections: ['']}, children: [
+    { path: '', component: SamAutocompleteExampleComponent }
   ]},
   { path: 'form-controls/select', component: BaseDocPageComponent, data: {
     path: '_docs\form-controls\select\component-example.ts',

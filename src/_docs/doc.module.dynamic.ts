@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 import { BaseExampleComponent } from './baseexample.component';
 import { BaseDocPageComponent } from './base-doc-page.component';
 import { Doc2TemplateComponent } from './doc2.component';
-
+import { SAMSDSAutocompleteModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/form-controls/sam-sds-autocomplete/autocomplete/autocomplete.module';
 import { SamAccordionComponentExampleComponent } from './components/accordion/component-example';
 import { SamActionButtonExampleComponent } from './components/actions/action-button/component-example';
 import { SamActionsDropdownComponentExampleComponent } from './components/actions/actions-dropdown/component-example';
@@ -83,6 +83,7 @@ import { SamDateRangeComponentExampleComponent } from './form-controls/date-rang
 import { SamDateTimeComponentExampleComponent } from './form-controls/date-time/component-example';
 import { SamNumberComponentExampleComponent } from './form-controls/number/component-example';
 import { SamRadioComponentExampleComponent } from './form-controls/radiobutton/component-example';
+import { SamAutocompleteExampleComponent } from './form-controls/sam-autocomplete/component-example';
 import { SamSelectComponentExampleComponent } from './form-controls/select/component-example';
 import { SamTextComponentExampleComponent } from './form-controls/text/component-example';
 import { SamTextareaComponentExampleComponent } from './form-controls/textarea/component-example';
@@ -186,6 +187,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamDateTimeComponentExampleComponent,
     SamNumberComponentExampleComponent,
     SamRadioComponentExampleComponent,
+    SamAutocompleteExampleComponent,
     SamSelectComponentExampleComponent,
     SamTextComponentExampleComponent,
     SamTextareaComponentExampleComponent,
@@ -280,6 +282,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     SamDateTimeComponentExampleComponent,
     SamNumberComponentExampleComponent,
     SamRadioComponentExampleComponent,
+    SamAutocompleteExampleComponent,
     SamSelectComponentExampleComponent,
     SamTextComponentExampleComponent,
     SamTextareaComponentExampleComponent,
@@ -310,6 +313,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
 		SamUIKitModule,
 		SamFilterModule,
 		FormlyModule,
+		SAMSDSAutocompleteModule,
     routing,
 		SiteComponentsModule,
 		CdkTableModule

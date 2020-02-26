@@ -25,6 +25,7 @@ import {
   ExampleDataSource,
   ExampleDatabase
 } from './data-source';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
 
 @Component({
@@ -110,9 +111,9 @@ export class SamEntityDisplayComponent implements OnInit {
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
   curPage = 1;
-  @ViewChild(SamPaginationComponent) paginator: SamPaginationComponent;
-  @ViewChild(SamSortDirective) sort: SamSortDirective;
-  @ViewChild('filter') filter: ElementRef;
+  @ViewChild(SamPaginationComponent, { static: true }) paginator: SamPaginationComponent;
+  @ViewChild(SamSortDirective, { static: true }) sort: SamSortDirective;
+  @ViewChild('filter', { static: true }) filter: ElementRef;
 
   ngOnInit() {
     this.dataSource = new ExampleDataSource(
@@ -120,9 +121,9 @@ export class SamEntityDisplayComponent implements OnInit {
         this.paginator,
         this.sort
     );
-    fromEvent(this.filter.nativeElement, 'keyup')
-        .debounceTime(150)
-        .distinctUntilChanged()
+    fromEvent(this.filter.nativeElement, 'keyup').pipe(
+        debounceTime(150),
+        distinctUntilChanged())
         .subscribe(() => {
           if (!this.dataSource) { return; }
           this.dataSource.filter = this.filter.nativeElement.value;

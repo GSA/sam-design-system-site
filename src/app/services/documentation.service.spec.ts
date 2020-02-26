@@ -1,5 +1,5 @@
 import {
-  Http,
+  HttpClient,
   Response,
   RequestOptionsArgs,
   Headers,
@@ -31,7 +31,7 @@ class MockResponse extends Response {
 
 const test = new MockResponse();
 
-class MockHttp extends Http {
+class MockHttpClient extends HttpClient {
   public get (url: string, options?: RequestOptionsArgs): Observable<MockResponse> {
     return Observable.of(test);
   }
@@ -45,7 +45,7 @@ class MockConnectionBackend {
   }
 }
 
-const mocked = new MockHttp(
+const mocked = new MockHttpClient(
   new MockConnectionBackend(),
   new RequestOptions()
 );

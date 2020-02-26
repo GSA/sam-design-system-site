@@ -6,9 +6,9 @@ export const ROUTES: Routes = [
     path: '',
     component: HomeComponent
   },
-  { path: 'docs', loadChildren: '../_docs/doc.module.dynamic#DocModule' },
+  { path: 'docs', loadChildren: () => import('../_docs/doc.module.dynamic').then(m => m.DocModule) },
   {
     path: 'patterns',
-    loadChildren: '../patterns/patterns.module#ExamplesModule'
+    loadChildren: () => import('../patterns/patterns.module').then(m => m.ExamplesModule)
   }
 ];

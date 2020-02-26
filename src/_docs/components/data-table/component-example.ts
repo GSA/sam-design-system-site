@@ -1,4 +1,6 @@
 
+import { distinctUntilChanged, debounceTime } from 'rxjs/operators';
+
 import {
   Component,
   OnInit,
@@ -8,7 +10,7 @@ import {
 
 import { SamSortDirective } from '@gsa-sam/sam-ui-elements';
 import { SamPaginationComponent } from '@gsa-sam/sam-ui-elements';
-import { fromEvent } from 'rxjs/observable/fromEvent';
+import { fromEvent } from 'rxjs';
 import { ExampleDataSource, ExampleDatabase } from './data-source';
 
 @Component({
@@ -22,23 +24,23 @@ export class SamDataTableComponentExampleComponent implements OnInit {
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
   curPage = 1;
-  @ViewChild(SamPaginationComponent) paginator: SamPaginationComponent;
-  @ViewChild(SamSortDirective) sort: SamSortDirective;
-  @ViewChild('filter') filter: ElementRef;
+  @ViewChild(SamPaginationComponent, { static: true }) paginator: SamPaginationComponent;
+  @ViewChild(SamSortDirective, { static: true }) sort: SamSortDirective;
+  @ViewChild('filter', { static: true }) filter: ElementRef;
 
   ngOnInit() {
     this.dataSource = new ExampleDataSource(
-        this.exampleDatabase,
-        this.paginator,
-        this.sort
+      this.exampleDatabase,
+      this.paginator,
+      this.sort
     );
-    fromEvent(this.filter.nativeElement, 'keyup')
-        .debounceTime(150)
-        .distinctUntilChanged()
-        .subscribe(() => {
-          if (!this.dataSource) { return; }
-          this.dataSource.filter = this.filter.nativeElement.value;
-        });
+    fromEvent(this.filter.nativeElement, 'keyup').pipe(
+      debounceTime(150),
+      distinctUntilChanged())
+      .subscribe(() => {
+        if (!this.dataSource) { return; }
+        this.dataSource.filter = this.filter.nativeElement.value;
+      });
   }
 
   updateFilter(filterText) {

@@ -4,7 +4,7 @@ import {
   SamPaginationComponent
 } from '@gsa-sam/sam-ui-elements';
 import { merge } from 'rxjs/observable/merge';
-import { DataSource } from '@angular/cdk';
+import { DataSource } from '@angular/cdk/collections';
 import { RECORDS } from './data';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 /* tslint:disable */

@@ -1,4 +1,4 @@
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MarkdownProcessor } from './markdown-processor';
 import { environment } from 'environment';
@@ -8,7 +8,7 @@ export class MarkdownService {
 
   private processString;
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.processString =
       new MarkdownProcessor(
         `${environment.DEPLOYURL}/assets/markdown/`

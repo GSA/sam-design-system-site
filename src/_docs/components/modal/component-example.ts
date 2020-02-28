@@ -8,11 +8,11 @@ import {
   templateUrl: './component-example.html'
 })
 export class SamModalComponentExampleComponent {
-  @ViewChild('modal1') vcModal1;
-  @ViewChild('modal2') vcModal2;
-  @ViewChild('modal3') vcModal3;
-  @ViewChild('modal4') vcModal4;
-  @ViewChild('modal5') vcModal5;
+  @ViewChild('modal1', {static: true}) vcModal1;
+  @ViewChild('modal2', {static: true}) vcModal2;
+  @ViewChild('modal3', {static: true}) vcModal3;
+  @ViewChild('modal4', {static: true}) vcModal4;
+  @ViewChild('modal5', {static: true}) vcModal5;
 
   message = '';
   modalAlertTypes = [{
@@ -45,22 +45,6 @@ export class SamModalComponentExampleComponent {
 
 
 ];
-modalButtonPosition = [{
-  label: 'center',
-  name: 'center',
-  value: 'center'
-}, {
-  label: 'left',
-  name: 'left',
-  value: 'left'
-},
-{
-  label: 'right',
-  name: 'right',
-  value: 'right'
-}
-
-];
   modalConfig = {
     title: 'Test Title',
     description: 'Description Text'
@@ -71,6 +55,22 @@ modalButtonPosition = [{
     description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum.',
     position: 'center'
   };
+  modalButtonPosition = [{
+    label: 'center',
+    name: 'center',
+    value: 'center'
+  }, {
+    label: 'left',
+    name: 'left',
+    value: 'left'
+  },
+  {
+    label: 'right',
+    name: 'right',
+    value: 'right'
+  }
+
+  ];
 
   onModalInitClick() {
     this.vcModal1.openModal();

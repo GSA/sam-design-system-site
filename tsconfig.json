@@ -2,16 +2,18 @@
   "compileOnSave": true,
   "compilerOptions": {
     "baseUrl": "./src",
+    "downlevelIteration": true,
+    "importHelpers": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "forceConsistentCasingInFileNames": true,
-    "module": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowUnreachableCode": true,
-    "target": "es5",
+    "target": "es2015",
     "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types"

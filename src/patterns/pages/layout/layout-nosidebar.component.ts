@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable, of } from 'rxjs';
-import 'rxjs/add/observable/merge';
+
 import { cloneDeep } from 'lodash';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 
@@ -70,10 +70,10 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
   public faTable = faTable;
   public faChartBar = faChartBar;
 
-  @ViewChild(SamSortDirective)
+  @ViewChild(SamSortDirective, {static: true})
     public _sort: SamSortDirective;
 
-  @ViewChild(SamModalComponent)
+  @ViewChild(SamModalComponent, {static: true})
     public fieldsEditor: SamModalComponent;
 
     public test = [];

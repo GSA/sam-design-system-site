@@ -2,7 +2,7 @@ import { Component, Input, OnInit} from '@angular/core';
 
 import { BaseExampleComponent } from '../../baseexample.component';
 
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
 
@@ -122,7 +122,7 @@ export class ButtonExampleComponent extends BaseExampleComponent implements OnIn
   public base = '_docs/elements/button/';
 
   constructor(
-    _http: Http,
+    _http: HttpClient,
     public service: DocumentationService,
     public mdService: MarkdownService) {
 

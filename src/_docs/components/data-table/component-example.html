@@ -1,8 +1,8 @@
 <div class="example-container usa-grid">
 
-  <h3>
-    Primary Table
-  </h3>
+    <h3>
+        Primary Table
+    </h3>
 
     <div class="example-header">
         <input #filter placeholder="Filter agency or title">
@@ -53,19 +53,11 @@
         </tr>
     </sam-datatable>
 
-    <div
-        class="example-no-results"
-        [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'"
-        style="padding:10px 0;">
+    <div class="example-no-results" [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'" style="padding:10px 0;">
         No users found matching filter.
     </div>
-    <div
-        [style.display]="dataSource.renderedData.length != 0 ? '' : 'none'"
-        style="text-align:right;">
-        <sam-pagination
-            class="datatable-example"
-            #paginator [currentPage]="curPage"
-            [totalPages]="totalPages"></sam-pagination>
+    <div [style.display]="dataSource.renderedData.length != 0 ? '' : 'none'" style="text-align:right;">
+        <sam-pagination class="datatable-example" #paginator [currentPage]="curPage" [totalPages]="totalPages"></sam-pagination>
     </div>
 </div>
 
@@ -73,7 +65,7 @@
 
 <div class="example-container usa-grid">
     <h3>
-      Secondary Table
+        Secondary Table
     </h3>
 
     <div class="example-header">
@@ -125,27 +117,19 @@
         </tr>
     </sam-datatable>
 
-    <div
-        class="example-no-results"
-        [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'"
-        style="padding:10px 0;">
+    <div class="example-no-results" [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'" style="padding:10px 0;">
         No users found matching filter.
     </div>
-    <div
-        [style.display]="dataSource.renderedData.length != 0 ? '' : 'none'"
-        style="text-align:right;">
-        <sam-pagination
-            class="datatable-example"
-            #paginator [currentPage]="curPage"
-            [totalPages]="totalPages"></sam-pagination>
+    <div [style.display]="dataSource.renderedData.length != 0 ? '' : 'none'" style="text-align:right;">
+        <sam-pagination class="datatable-example" #paginator [currentPage]="curPage" [totalPages]="totalPages"></sam-pagination>
     </div>
 </div>
 
 <div class="example-container usa-grid">
 
-  <h3>
-    Tertiary Table
-  </h3>
+    <h3>
+        Tertiary Table
+    </h3>
 
     <div class="example-header">
     </div>
@@ -195,10 +179,7 @@
         </tr>
     </sam-datatable>
 
-    <div
-        class="example-no-results"
-        [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'"
-        style="padding:10px 0;">
+    <div class="example-no-results" [style.display]="dataSource.renderedData.length == 0 ? '' : 'none'" style="padding:10px 0;">
         No users found matching filter.
     </div>
 </div>

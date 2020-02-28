@@ -1,7 +1,7 @@
 import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild, ViewChild, AfterContentInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-elements';
-import 'rxjs/add/observable/merge';
+
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
 import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -45,7 +45,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   ];
   public sortvalue: string;
 
-  @ViewChild(SamPaginationNextComponent)
+  @ViewChild(SamPaginationNextComponent, {static: true})
   public pagination: SamPaginationNextComponent;
 
   constructor(private _fb: FormBuilder,

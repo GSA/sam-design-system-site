@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable, of, Subject } from 'rxjs';
-import 'rxjs/add/observable/merge';
+
 import { cloneDeep } from 'lodash';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 
@@ -42,7 +42,7 @@ import {
 import {
    SelectedResultConfiguration
   } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
-import { stringify } from '@angular/core/src/render3/util';
+// import { stringify } from '@angular/core/src/render3/util';
 
 @Component({
   selector: 'sam-layout-demo-component',
@@ -85,10 +85,10 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public results: (args) => { label: string, values: any[] }[];
   public model3 = new HierarchicalTreeSelectedItemModel();
   public settings3 = new SelectedResultConfiguration();
-  @ViewChild(SamSortDirective)
+  @ViewChild(SamSortDirective, {static: true})
   public _sort: SamSortDirective;
 
-  @ViewChild(SamModalComponent)
+  @ViewChild(SamModalComponent, {static: true})
   public fieldsEditor: SamModalComponent;
 
   public test = [];

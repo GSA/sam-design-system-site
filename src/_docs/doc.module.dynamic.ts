@@ -108,7 +108,7 @@ import { StaticPageComponent } from './static.component';
 import { SamUIKitModule, SamFilterModule } from '@gsa-sam/sam-ui-elements';
 import { InterfacesComponent } from './data-structures/interfaces/interfaces.component';
 import { SiteComponentsModule } from '../app/site-components/sitecomponents.module';
-import { CdkTableModule } from '@angular/cdk';
+import { CdkTableModule } from '@angular/cdk/table';
 import { FormlyModule } from '@ngx-formly/core';
 import { HierarchicalDataService } from './services/hierarchical.service';
 

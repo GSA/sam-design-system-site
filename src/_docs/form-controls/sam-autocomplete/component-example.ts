@@ -19,14 +19,12 @@ export class SamAutocompleteExampleComponent implements OnInit {
   public settings3 = new SAMSDSAutocompletelConfiguration();
   public settings4 = new SAMSDSAutocompletelConfiguration();
   public settings5 = new SAMSDSAutocompletelConfiguration();
-  public freeTextSettings = new SAMSDSAutocompletelConfiguration();
+
   public model = new SAMSDSSelectedItemModel();
   public model2 = new SAMSDSSelectedItemModel();
   public model3 = new SAMSDSSelectedItemModel();
   public model4 = new SAMSDSSelectedItemModel();
   public model5 = new SAMSDSSelectedItemModel();
-
-  public freeTextModel = new SAMSDSSelectedItemModel();
 
 
   constructor(public service: AutocompleteSampleDataService) {
@@ -89,14 +87,7 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.settings5.selectionMode = SelectionMode.MULTIPLE;
     this.settings5.autocompletePlaceHolderText = 'Enter text';
 
-    this.freeTextSettings.primaryKeyField = 'id';
-    this.freeTextSettings.id = 'autocomplete5';
-    this.freeTextSettings.labelText = 'Autocomplete 5 Disabled';
-    this.freeTextSettings.primaryTextField = 'name';
-    this.freeTextSettings.secondaryTextField = 'subtext';
-    this.freeTextSettings.selectionMode = SelectionMode.MULTIPLE;
-    this.freeTextSettings.autocompletePlaceHolderText = 'Free text';
-    this.freeTextSettings.isFreeTextEnabled = true;
+
 
 
 

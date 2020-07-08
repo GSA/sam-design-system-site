@@ -19,10 +19,10 @@
   $src: ();
 
   $formats-map: (
-   // eot:   "#{$file-path}.eot?#iefix" format("embedded-opentype"),
-   // woff2: "#{$file-path}.woff2" format("woff2"),
-   // woff:  "#{$file-path}.woff" format("woff"),
-    //ttf:   "#{$file-path}.ttf" format("truetype"),
+    eot:   "#{$file-path}.eot?#iefix" format("embedded-opentype"),
+    woff2: "#{$file-path}.woff2" format("woff2"),
+    woff:  "#{$file-path}.woff" format("woff"),
+    ttf:   "#{$file-path}.ttf" format("truetype"),
     svg:   "#{$file-path}.svg##{$font-family}" format("svg")
   );
 

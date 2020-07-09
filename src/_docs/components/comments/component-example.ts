@@ -1,11 +1,10 @@
 
 import {throwError as observableThrowError,  Observable, of } from 'rxjs';
 
-import {
-  Component
-} from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { Comment, CommentsService } from '@gsa-sam/sam-ui-elements';
 
+@Injectable()
 export class CommentsDemoService implements CommentsService {
 
   private offset = 5;

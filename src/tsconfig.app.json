@@ -12,12 +12,17 @@
       "environment": [ "./environments/environment" ]
     }
   },
-  "files": [
-    "main.ts",
-    "polyfills.ts"
-  ],
   "include": [
-    "**/*.d.ts",
+    "**/*.ts",
     "../node_modules/@gsa-sam/sam-ui-elements"
+  ],
+  "exclude": [
+    "./test.ts",
+    "**/*.e2e.ts",
+    "**/*.e2e-spec.ts",
+    "**/*.spec.ts",
+    "../node_modules/@gsa-sam/sam-ui-elements/test-app",
+    "../node_modules/@gsa-sam/sam-ui-elements/**/*.spec.ts",
+    "assets"
   ]
 }

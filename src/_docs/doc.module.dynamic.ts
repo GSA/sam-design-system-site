@@ -1,3 +1,4 @@
+
 /* tslint:disable */
 /******************************************************/
 /* File generated in ../config/helpers.js             */
@@ -66,8 +67,8 @@ import { SdsPaginationComponentExampleComponent } from './experimental/paginatio
 import { ProgressComponentExampleComponent } from './experimental/progress/component-example';
 import { SamResourcesWrapperComponentExampleComponent } from './experimental/resources-wrapper/component-example';
 import { SamSearchComponentExampleComponent } from './experimental/search/component-example';
-import { SamSideNavigationToolbarComponentExampleComponent } from './experimental/sideNavigationToolbar/component-example';
 import { SamSidebarComponentExampleComponent } from './experimental/sidebar/component-example';
+import { SamSideNavigationToolbarComponentExampleComponent } from './experimental/sideNavigationToolbar/component-example';
 import { SamSortComponentExampleComponent } from './experimental/sort/component-example';
 import { SamTabsNextComponentExampleComponent } from './experimental/tabs/component-example';
 import { SamTitleComponentExampleComponent } from './experimental/title/component-example';
@@ -99,6 +100,7 @@ import { SamPaginationNextComponentExampleComponent } from './layout/pagination/
 import { SamToolbarComponentExampleComponent } from './layout/toolbar/component-example';
 import { FieldsetWrapperExampleComponent } from './wrappers/fieldset-wrapper/component-example';
 import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component-example';
+
 
 import { DocTemplateComponent } from './doc.template';
 import { routing } from './doc.routes.dynamic';
@@ -169,8 +171,8 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     ProgressComponentExampleComponent,
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
-    SamSideNavigationToolbarComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamSideNavigationToolbarComponentExampleComponent,
     SamSortComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,
@@ -207,7 +209,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     StaticPageComponent,
     BaseExampleComponent,
     BaseDocPageComponent,
-    Doc2TemplateComponent,
+    Doc2TemplateComponent
   ],
   entryComponents: [
     SamAccordionComponentExampleComponent,
@@ -264,8 +266,8 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     ProgressComponentExampleComponent,
     SamResourcesWrapperComponentExampleComponent,
     SamSearchComponentExampleComponent,
-    SamSideNavigationToolbarComponentExampleComponent,
     SamSidebarComponentExampleComponent,
+    SamSideNavigationToolbarComponentExampleComponent,
     SamSortComponentExampleComponent,
     SamTabsNextComponentExampleComponent,
     SamTitleComponentExampleComponent,
@@ -302,21 +304,21 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     StaticPageComponent,
     BaseExampleComponent,
     BaseDocPageComponent,
-    Doc2TemplateComponent,
+    Doc2TemplateComponent
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    SamUIKitModule,
-    SamFilterModule,
-    FormlyModule,
-    SAMSDSAutocompleteModule,
+		FormsModule,
+		ReactiveFormsModule,
+		SamUIKitModule,
+		SamFilterModule,
+		FormlyModule,
+		SAMSDSAutocompleteModule,
     routing,
-    SiteComponentsModule,
-    CdkTableModule,
+		SiteComponentsModule,
+		CdkTableModule
   ],
   exports: [BaseExampleComponent],
-  providers: [HierarchicalDataService],
+  providers: [HierarchicalDataService]
 })
-export class DocModule {}
+export class DocModule { }

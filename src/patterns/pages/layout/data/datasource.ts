@@ -368,7 +368,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Agriculture/Agricultural Marketing Service',
     'CFDA Number': 10.168,
-    Title: "Farmers' Market Promotion Program",
+    Title: 'Farmers Market Promotion Program',
     'Current Status': 'Published',
     'Last Updated Date': 'Sep 11, 2008',
     'Obligations Updated': 'No',
@@ -1388,7 +1388,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Agriculture/Food And Nutrition Service',
     'CFDA Number': 10.572,
-    Title: "WIC Farmers' Market Nutrition Program (FMNP)",
+    Title: 'WIC Farmers Market Nutrition Program (FMNP)',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 13, 2008',
     'Obligations Updated': 'No',
@@ -2636,7 +2636,7 @@ export let SampleData = [
     Agency:
       'Department Of Commerce/National Oceanic And Atmospheric Administration (noaa)',
     'CFDA Number': 11.408,
-    Title: "Fishermen's Contingency Fund",
+    Title: 'Fishermens Contingency Fund',
     'Current Status': 'Published',
     'Last Updated Date': 'Sep 18, 2008',
     'Obligations Updated': 'No',
@@ -4560,7 +4560,7 @@ export let SampleData = [
       'Department Of Housing And Urban Development/Office Of Community Planning And Development',
     'CFDA Number': 14.228,
     Title:
-      "Community Development Block Grants/State's program and Non-Entitlement Grants in Hawaii",
+      'Community Development Block Grants/States program and Non-Entitlement Grants in Hawaii',
     'Current Status': 'Published',
     'Last Updated Date': 'Jul 23, 2008',
     'Obligations Updated': 'No',
@@ -4755,7 +4755,7 @@ export let SampleData = [
     Agency: 'Department Of Housing And Urban Development',
     'CFDA Number': 14.255,
     Title:
-      "Community Development Block Grants/State's program and Non-Entitlement Grants in Hawaii � (Recovery Act Funded)",
+      'Community Development Block Grants/States program and Non-Entitlement Grants in Hawaii (Recovery Act Funded)',
     'Current Status': 'Published',
     'Last Updated Date': 'Dec 03, 2010',
     'Obligations Updated': 'No',
@@ -6715,7 +6715,7 @@ export let SampleData = [
   {
     Agency: 'Department Of The Interior/Bureau Of Reclamation',
     'CFDA Number': 15.525,
-    Title: "Rocky Boy's/North Central Montana Regional Water System",
+    Title: 'Rocky Boys/North Central Montana Regional Water System',
     'Current Status': 'Published',
     'Last Updated Date': 'May 20, 2008',
     'Obligations Updated': 'No',
@@ -7636,7 +7636,7 @@ export let SampleData = [
   {
     Agency: 'Department Of The Interior/National Park Service',
     'CFDA Number': 15.929,
-    Title: "Save America's Treasures",
+    Title: 'Save Americas Treasures',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 05, 2008',
     'Obligations Updated': 'No',
@@ -8158,7 +8158,7 @@ export let SampleData = [
     Agency:
       'Department Of Justice/Office Of Juvenile Justice And Delinquency Prevention',
     'CFDA Number': 16.543,
-    Title: "Missing Children's Assistance",
+    Title: 'Missing Childrens Assistance',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
@@ -8296,7 +8296,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Justice/Bureau Of Justice Assistance',
     'CFDA Number': 16.571,
-    Title: "Public Safety Officers' Benefits Program",
+    Title: 'Public Safety Officers Benefits Program',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
@@ -8374,7 +8374,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Justice/Office Of Victims Of Crime',
     'CFDA Number': 16.583,
-    Title: "Children's Justice Act Partnerships for Indian Communities",
+    Title: 'Childrens Justice Act Partnerships for Indian Communities',
     'Current Status': 'Published',
     'Last Updated Date': 'Sep 22, 2008',
     'Obligations Updated': 'No',
@@ -8620,7 +8620,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Justice/Bureau Of Justice Assistance',
     'CFDA Number': 16.615,
-    Title: "Public Safety Officers' Educational Assistance",
+    Title: 'Public Safety Officers Educational Assistance',
     'Current Status': 'Published',
     'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
@@ -8679,7 +8679,7 @@ export let SampleData = [
     Agency:
       'Department Of Justice/Office Of Juvenile Justice And Delinquency Prevention',
     'CFDA Number': 16.73,
-    Title: "Reduction and Prevention of Children's Exposure to Violence",
+    Title: 'Reduction and Prevention of Childrens Exposure to Violence',
     'Current Status': 'Published',
     'Last Updated Date': 'Sep 25, 2008',
     'Obligations Updated': 'No',
@@ -8840,7 +8840,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Justice/Office Of Victims Of Crime',
     'CFDA Number': 16.747,
-    Title: "Crime Victims' Rights Act",
+    Title: 'Crime Victims Rights Act',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
@@ -9368,7 +9368,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Labor/Employment Standards Administration',
     'CFDA Number': 17.302,
-    Title: "Longshore and Harbor Workers' Compensation",
+    Title: 'Longshore and Harbor Workers Compensation',
     'Current Status': 'Published',
     'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
@@ -9401,7 +9401,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Labor/Employment Standards Administration',
     'CFDA Number': 17.307,
-    Title: "Coal Mine Workers' Compensation",
+    Title: 'Coal Mine Workers Compensation',
     'Current Status': 'Published',
     'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
@@ -9554,9 +9554,9 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: "Department Of Labor/Office Of The Secretary, Women's Bureau",
+    Agency: 'Department Of Labor/Office Of The Secretary, Womens Bureau',
     'CFDA Number': 17.7,
-    Title: "Women's Bureau",
+    Title: 'Womens Bureau',
     'Current Status': 'Published',
     'Last Updated Date': 'Aug 12, 2008',
     'Obligations Updated': 'No',
@@ -9576,9 +9576,9 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: "Department Of Labor/Veteran's Employment And Training Service",
+    Agency: 'Department Of Labor/Veteran's Employment And Training Service',
     'CFDA Number': 17.801,
-    Title: "Disabled Veterans' Outreach Program (DVOP)",
+    Title: 'Disabled Veterans Outreach Program (DVOP)',
     'Current Status': 'Published',
     'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
@@ -9587,9 +9587,9 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: "Department Of Labor/Veteran's Employment And Training Service",
+    Agency: 'Department Of Labor/Veteran's Employment And Training Service',
     'CFDA Number': 17.802,
-    Title: "Veterans' Employment Program",
+    Title: 'Veterans Employment Program',
     'Current Status': 'Published',
     'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
@@ -9598,7 +9598,7 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: "Department Of Labor/Veteran's Employment And Training Service",
+    Agency: 'Department Of Labor/Veterans Employment And Training Service',
     'CFDA Number': 17.803,
     Title: 'Uniformed Services Employment and Reemployment Rights',
     'Current Status': 'Published',
@@ -9609,9 +9609,9 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: "Department Of Labor/Veteran's Employment And Training Service",
+    Agency: 'Department Of Labor/Veteran's Employment And Training Service',
     'CFDA Number': 17.804,
-    Title: "Local Veterans' Employment Representative Program",
+    Title: 'Local Veterans Employment Representative Program',
     'Current Status': 'Published',
     'Last Updated Date': 'Jul 21, 2008',
     'Obligations Updated': 'No',
@@ -9620,7 +9620,7 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: "Department Of Labor/Veteran's Employment And Training Service",
+    Agency: 'Department Of Labor/Veterans Employment And Training Service',
     'CFDA Number': 17.805,
     Title: 'Homeless Veterans Reintegration Project',
     'Current Status': 'Published',
@@ -9631,9 +9631,9 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: "Department Of Labor/Veteran's Employment And Training Service",
+    Agency: 'Department Of Labor/Veterans Employment And Training Service',
     'CFDA Number': 17.806,
-    Title: "Veteran's Preference in Federal Employment",
+    Title: 'Veterans Preference in Federal Employment',
     'Current Status': 'Published',
     'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
@@ -9656,7 +9656,7 @@ export let SampleData = [
     Agency:
       'Department Of State/Bureau Of Oceans And International Environmental And Scientific Affairs',
     'CFDA Number': 19.204,
-    Title: "Fishermen's Guaranty Fund",
+    Title: 'Fishermens Guaranty Fund',
     'Current Status': 'Published',
     'Last Updated Date': 'Oct 10, 2008',
     'Obligations Updated': 'No',
@@ -12083,7 +12083,7 @@ export let SampleData = [
   {
     Agency: 'SMALL BUSINESS ADMINISTRATION',
     'CFDA Number': 59.043,
-    Title: "Women's Business Ownership Assistance",
+    Title: 'Womens Business Ownership Assistance',
     'Current Status': 'Published',
     'Last Updated Date': 'Jun 17, 2008',
     'Obligations Updated': 'No',
@@ -12536,7 +12536,7 @@ export let SampleData = [
   {
     Agency: 'Department of Veterans Affairs/Veterans Benefits Administration',
     'CFDA Number': 64.12,
-    Title: "Post-Vietnam Era Veterans' Educational Assistance",
+    Title: 'Post-Vietnam Era Veterans Educational Assistance',
     'Current Status': 'Published',
     'Last Updated Date': 'Jun 16, 2008',
     'Obligations Updated': 'No',
@@ -12594,7 +12594,7 @@ export let SampleData = [
     Agency: 'Department of Veterans Affairs/Veterans Benefits Administration',
     'CFDA Number': 64.128,
     Title:
-      "Vocational Training and Rehabilitation for Vietnam Veterans' Children with Spina Bifida or Other Covered Birth Defects",
+      'Vocational Training and Rehabilitation for Vietnam Veterans Children with Spina Bifida or Other Covered Birth Defects',
     'Current Status': 'Published',
     'Last Updated Date': 'Jun 20, 2008',
     'Obligations Updated': 'No',
@@ -13532,7 +13532,7 @@ export let SampleData = [
       'ENVIRONMENTAL PROTECTION AGENCY/Office Of Pollution Prevention And Toxics Substances',
     'CFDA Number': 66.715,
     Title:
-      "Lead Educational Outreach and Baseline Assessment of Tribal Children's Exposure and Risks Associated With Lead",
+      'Lead Educational Outreach and Baseline Assessment of Tribal Childrens Exposure and Risks Associated With Lead',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 07, 2008',
     'Obligations Updated': 'No',
@@ -14665,7 +14665,7 @@ export let SampleData = [
     Agency:
       'Department Of Education/Office Of Elementary And Secondary Education',
     'CFDA Number': 84.083,
-    Title: "Women's Educational Equity Act Program",
+    Title: 'Womens Educational Equity Act Program',
     'Current Status': 'Published',
     'Last Updated Date': 'May 30, 2008',
     'Obligations Updated': 'No',
@@ -16016,9 +16016,9 @@ export let SampleData = [
     Agency: 'Department Of Education/Office Of Postsecondary Education',
     'CFDA Number': 84.381,
     Title:
-      "Baccalaureate Degrees in Science, Technology, Engineering, \
-      Mathematics, and Critical Foreign Languages and Master's Degrees in \
-      Science, Technology, Engineering, Mathematics, and Critical Foreign Languages",
+      'Baccalaureate Degrees in Science, Technology, Engineering, \
+      Mathematics, and Critical Foreign Languages and Masters Degrees in \
+      Science, Technology, Engineering, Mathematics, and Critical Foreign Languages',
     'Current Status': 'Published',
     'Last Updated Date': 'Oct 14, 2008',
     'Obligations Updated': 'No',
@@ -16741,7 +16741,7 @@ export let SampleData = [
     Agency: 'Department Of Health And Human Services/Office Of The Secretary',
     'CFDA Number': 93.017,
     Title:
-      "Strengthening the Management and Services of the Women's and Children's Hospitals in Kabul",
+      'Strengthening the Management and Services of the Womens and Children's Hospitals in Kabul',
     'Current Status': 'Published',
     'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',
@@ -16849,7 +16849,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Health And Human Services/Administration On Aging',
     'CFDA Number': 93.051,
-    Title: "Alzheimer's Disease Demonstration Grants to States",
+    Title: 'Alzheimers Disease Demonstration Grants to States',
     'Current Status': 'Published',
     'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
@@ -18093,7 +18093,7 @@ export let SampleData = [
     Agency:
       'Department Of Health And Human Services/Health Resources And Services Administration',
     'CFDA Number': 93.255,
-    Title: "Children's Hospitals Graduate Medical Education Payment",
+    Title: 'Childrens Hospitals Graduate Medical Education Payment',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 06, 2008',
     'Obligations Updated': 'No',
@@ -18191,9 +18191,9 @@ export let SampleData = [
       'Department Of Health And Human Services/Health Resources And Services Administration',
     'CFDA Number': 93.266,
     Title:
-      "Rapid Expansion of Antiretroviral Therapy Programs for \
+      'Rapid Expansion of Antiretroviral Therapy Programs for \
       HIV-Infected Persons in Selected Countries in Africa and the Caribbean \
-      Under the President's Emergency Plan for AIDS Relief",
+      Under the Presidents Emergency Plan for AIDS Relief',
     'Current Status': 'Published',
     'Last Updated Date': 'Oct 30, 2008',
     'Obligations Updated': 'No',
@@ -18426,9 +18426,9 @@ export let SampleData = [
   },
   {
     Agency:
-      "Department Of Health And Human Services/President's Council On Physical Fitness And Sports",
+      'Department Of Health And Human Services/Presidents Council On Physical Fitness And Sports',
     'CFDA Number': 93.289,
-    Title: "President's Council on Physical Fitness and Sports",
+    Title: 'Presidents Council on Physical Fitness and Sports',
     'Current Status': 'Published',
     'Last Updated Date': 'Nov 19, 2008',
     'Obligations Updated': 'No',
@@ -18439,7 +18439,7 @@ export let SampleData = [
   {
     Agency: 'Department Of Health And Human Services/Office Of The Secretary',
     'CFDA Number': 93.29,
-    Title: "National Community Centers of Excellence in Women's Health",
+    Title: 'National Community Centers of Excellence in Womens Health',
     'Current Status': 'Published',
     'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
@@ -19137,7 +19137,7 @@ export let SampleData = [
       'Department Of Health And Human Services/Administration For Children And Families',
     'CFDA Number': 93.591,
     Title:
-      "Family Violence Prevention and Services/Grants For Battered Women's Shelters_Grants to State Domestic Violence Coalitions",
+      'Family Violence Prevention and Services/Grants For Battered Womens Shelters_Grants to State Domestic Violence Coalitions',
     'Current Status': 'Published',
     'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
@@ -19150,7 +19150,7 @@ export let SampleData = [
       'Department Of Health And Human Services/Administration For Children And Families',
     'CFDA Number': 93.592,
     Title:
-      "Family Violence Prevention and Services/Grants for Battered Women's Shelters_Discretionary Grants",
+      'Family Violence Prevention and Services/Grants for Battered Womens Shelters_Discretionary Grants',
     'Current Status': 'Published',
     'Last Updated Date': 'Oct 29, 2008',
     'Obligations Updated': 'No',
@@ -19332,7 +19332,7 @@ export let SampleData = [
       'Department Of Health And Human Services/Administration For Children And Families',
     'CFDA Number': 93.613,
     Title:
-      "President's Committee for People with Intellectual Disabilities (PCPID)",
+      'Presidents Committee for People with Intellectual Disabilities (PCPID)',
     'Current Status': 'Published',
     'Last Updated Date': 'Sep 29, 2008',
     'Obligations Updated': 'No',
@@ -19430,7 +19430,7 @@ export let SampleData = [
     Agency:
       'Department Of Health And Human Services/Administration For Children And Families',
     'CFDA Number': 93.643,
-    Title: "Children's Justice Grants to States",
+    Title: 'Childrens Justice Grants to States',
     'Current Status': 'Published',
     'Last Updated Date': 'Jun 09, 2008',
     'Obligations Updated': 'No',
@@ -19551,7 +19551,7 @@ export let SampleData = [
       'Department Of Health And Human Services/Administration For Children And Families',
     'CFDA Number': 93.671,
     Title:
-      "Family Violence Prevention and Services/Grants for Battered Women's Shelters_Grants to States and Indian Tribes",
+      'Family Violence Prevention and Services/Grants for Battered Womens Shelters_Grants to States and Indian Tribes',
     'Current Status': 'Published',
     'Last Updated Date': 'Jul 17, 2008',
     'Obligations Updated': 'No',
@@ -19805,7 +19805,7 @@ export let SampleData = [
     Agency:
       'Department Of Health And Human Services/Centers For Medicare And Medicaid Services',
     'CFDA Number': 93.767,
-    Title: "State Children's Insurance Program",
+    Title: 'State Childrens Insurance Program',
     'Current Status': 'Published',
     'Last Updated Date': 'Oct 24, 2008',
     'Obligations Updated': 'No',

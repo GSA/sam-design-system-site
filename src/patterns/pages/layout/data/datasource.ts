@@ -9576,7 +9576,7 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: 'Department Of Labor/Veteran's Employment And Training Service',
+    Agency: 'Department Of Labor/Veterans Employment And Training Service',
     'CFDA Number': 17.801,
     Title: 'Disabled Veterans Outreach Program (DVOP)',
     'Current Status': 'Published',
@@ -9587,7 +9587,7 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: 'Department Of Labor/Veteran's Employment And Training Service',
+    Agency: 'Department Of Labor/Veterans Employment And Training Service',
     'CFDA Number': 17.802,
     Title: 'Veterans Employment Program',
     'Current Status': 'Published',
@@ -9609,7 +9609,7 @@ export let SampleData = [
     'Auto Published': 'No',
   },
   {
-    Agency: 'Department Of Labor/Veteran's Employment And Training Service',
+    Agency: 'Department Of Labor/Veterans Employment And Training Service',
     'CFDA Number': 17.804,
     Title: 'Local Veterans Employment Representative Program',
     'Current Status': 'Published',
@@ -16741,7 +16741,7 @@ export let SampleData = [
     Agency: 'Department Of Health And Human Services/Office Of The Secretary',
     'CFDA Number': 93.017,
     Title:
-      'Strengthening the Management and Services of the Womens and Children's Hospitals in Kabul',
+      'Strengthening the Management and Services of the Womens and Childrens Hospitals in Kabul',
     'Current Status': 'Published',
     'Last Updated Date': 'Apr 07, 2015',
     'Obligations Updated': 'No',

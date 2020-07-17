@@ -3,10 +3,10 @@ import {
   inject,
   async,
   TestBed,
-  ComponentFixture
+  ComponentFixture,
 } from '@angular/core/testing';
-import {RouterTestingModule} from '@angular/router/testing';
-import {MockBackend} from "@angular/http/testing";
+import { RouterTestingModule } from '@angular/router/testing';
+import { MockBackend } from '@angular/http/testing';
 import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { AppComponent } from './app.component';
@@ -21,16 +21,13 @@ describe(`App`, () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule,RouterTestingModule,BrowserAnimationsModule],
-      declarations: [ AppComponent ],
-      providers: [
-        SamTitleService, 
-        DocumentationService,
-      ],
-      schemas: [NO_ERRORS_SCHEMA]
+      imports: [HttpClientModule, RouterTestingModule, BrowserAnimationsModule],
+      declarations: [AppComponent],
+      providers: [SamTitleService, DocumentationService],
+      schemas: [NO_ERRORS_SCHEMA],
     });
     fixture = TestBed.createComponent(AppComponent);
-    comp    = fixture.componentInstance;
+    comp = fixture.componentInstance;
 
     fixture.detectChanges(); // trigger initial data binding
   });
@@ -39,6 +36,4 @@ describe(`App`, () => {
     expect(fixture).toBeDefined();
     expect(comp).toBeDefined();
   });
-
-
 });

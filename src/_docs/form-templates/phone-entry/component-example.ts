@@ -1,10 +1,8 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-phone-entry',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class PhoneEntryExampleComponent {
   phoneModel = '123-456-3366';

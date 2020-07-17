@@ -1,19 +1,18 @@
-
 import { Component, OnInit } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
 import { SampleHierarchicalData } from '../../services/hierarchical.data';
 /* tslint:disable */
-import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
+import {
+  HierarchicalTreeSelectedItemModel,
+  TreeMode,
+} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
 import { SamHierarchicalConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalConfiguration';
-
-
 
 @Component({
   selector: 'doc-sam-hierarchical',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamHierarchicalComponentExampleComponent implements OnInit {
-
   private data = SampleHierarchicalData;
   public settings = new SamHierarchicalConfiguration();
   public settings2 = new SamHierarchicalConfiguration();
@@ -27,8 +26,6 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
   public model4 = new HierarchicalTreeSelectedItemModel();
   public model5 = new HierarchicalTreeSelectedItemModel();
 
-
-
   constructor(public service: HierarchicalDataService) {
     this.setup();
   }
@@ -37,8 +34,7 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
     console.log(value);
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   setup() {
     this.settings.id = 'autocomplete1';
@@ -53,12 +49,11 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
-      { headerText: 'Children', fieldName: 'childCount' }
+      { headerText: 'Children', fieldName: 'childCount' },
     ];
     this.settings.childCountField = 'childCount';
     this.settings.filterPlaceholderText = 'Filter Placeholder';
     this.settings.topLevelBreadcrumbText = 'All Departments';
-
 
     this.settings2.primaryKeyField = 'id';
     this.settings2.id = 'autocomplete2';
@@ -71,12 +66,11 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
-      { headerText: 'Children', fieldName: 'childCount' }
+      { headerText: 'Children', fieldName: 'childCount' },
     ];
     this.settings2.childCountField = 'childCount';
     this.settings2.filterPlaceholderText = 'Filter Placeholder';
     this.settings2.topLevelBreadcrumbText = 'All Departments';
-
 
     this.settings3.primaryKeyField = 'id';
     this.settings3.id = 'autocomplete3';
@@ -90,12 +84,11 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
-      { headerText: 'Children', fieldName: 'childCount' }
+      { headerText: 'Children', fieldName: 'childCount' },
     ];
     this.settings3.childCountField = 'childCount';
     this.settings3.filterPlaceholderText = 'Filter Placeholder';
     this.settings3.topLevelBreadcrumbText = 'All Departments';
-
 
     this.settings4.primaryKeyField = 'id';
     this.settings4.id = 'autocomplete4';
@@ -109,13 +102,12 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
-      { headerText: 'Children', fieldName: 'childCount' }
+      { headerText: 'Children', fieldName: 'childCount' },
     ];
     this.settings4.childCountField = 'childCount';
     this.settings4.filterPlaceholderText = 'Filter Placeholder';
     this.settings4.topLevelBreadcrumbText = 'All Departments';
     //this.settings4.minimumCharacterCountSearch = 3;
-
 
     this.settings5.primaryKeyField = 'id';
     this.settings5.id = 'autocomplete5 Disabled';
@@ -129,12 +121,11 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
-      { headerText: 'Children', fieldName: 'childCount' }
+      { headerText: 'Children', fieldName: 'childCount' },
     ];
     this.settings5.childCountField = 'childCount';
     this.settings5.filterPlaceholderText = 'Filter Placeholder';
     this.settings5.topLevelBreadcrumbText = 'All Departments';
- 
 
     this.model.treeMode = TreeMode.SINGLE;
     this.model2.treeMode = TreeMode.SINGLE;
@@ -144,10 +135,5 @@ export class SamHierarchicalComponentExampleComponent implements OnInit {
 
     this.model5.addItem(this.data[0], this.settings5.primaryKeyField);
     this.model5.addItem(this.data[1], this.settings5.primaryKeyField);
-
-
   }
-
-
-
 }

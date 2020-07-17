@@ -6,15 +6,12 @@ import { PatternsRoutingModule } from './patterns.routes';
 import { PatternsHomeComponent } from './home/patterns-home.component';
 
 @NgModule({
-  declarations: [
-    PatternsHomeComponent
-  ],
+  declarations: [PatternsHomeComponent],
   imports: [
     CommonModule,
     PatternsRoutingModule,
     SamUIKitModule,
-    SiteComponentsModule
-  ]
+    SiteComponentsModule,
+  ],
 })
-export class ExamplesModule { }
-
+export class ExamplesModule {}

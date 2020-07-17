@@ -18,15 +18,9 @@ import { SamProgressModule } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimen
     SamUIKitModule,
     FormlyModule,
     SamFilterModule,
-    SamProgressModule
+    SamProgressModule,
   ],
-  declarations: [
-    SamLayoutDemoComponent,
-    SamLayoutNoSidebarDemoComponent,
-  ],
-  exports: [
-    SamLayoutDemoComponent,
-    SamLayoutNoSidebarDemoComponent,
-  ]
+  declarations: [SamLayoutDemoComponent, SamLayoutNoSidebarDemoComponent],
+  exports: [SamLayoutDemoComponent, SamLayoutNoSidebarDemoComponent],
 })
 export class LayoutModule {}

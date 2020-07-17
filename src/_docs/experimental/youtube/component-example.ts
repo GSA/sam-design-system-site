@@ -6,7 +6,7 @@ import {
   ViewChild,
   ViewRef,
   TemplateRef,
-  ViewContainerRef
+  ViewContainerRef,
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
@@ -20,7 +20,8 @@ const code_example_1 = `
 
 @Component({
   selector: 'doc-sam-youtube',
-  template: `
+  template:
+    `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
      <div class="sam-ui warning message">
@@ -33,12 +34,15 @@ const code_example_1 = `
       </div>
 
       <sam-code-example language="html" [code]="example_1">
-      ` + code_example_1 + `
+      ` +
+    code_example_1 +
+    `
       </sam-code-example>
 
-    </doc-template>`
+    </doc-template>`,
 })
-export class SamYoutubeComponentExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamYoutubeComponentExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamYoutubeComponent';
   typedoc_content = '';
 
@@ -49,8 +53,8 @@ export class SamYoutubeComponentExampleComponent extends BaseExampleComponent im
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));

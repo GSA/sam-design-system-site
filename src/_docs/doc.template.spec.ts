@@ -3,13 +3,12 @@ import {
   inject,
   async,
   TestBed,
-  ComponentFixture
+  ComponentFixture,
 } from '@angular/core/testing';
-import {RouterTestingModule} from '@angular/router/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 // Load the implementations that should be tested
 import { DocTemplateComponent } from './doc.template';
-
 
 describe(`DocTemplateComponent tests`, () => {
   let comp: DocTemplateComponent;
@@ -18,11 +17,11 @@ describe(`DocTemplateComponent tests`, () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [ DocTemplateComponent ],
-      schemas: [NO_ERRORS_SCHEMA]
+      declarations: [DocTemplateComponent],
+      schemas: [NO_ERRORS_SCHEMA],
     });
     fixture = TestBed.createComponent(DocTemplateComponent);
-    comp    = fixture.componentInstance;
+    comp = fixture.componentInstance;
     fixture.detectChanges(); // trigger initial data binding
   });
 
@@ -30,6 +29,4 @@ describe(`DocTemplateComponent tests`, () => {
     expect(fixture).toBeDefined();
     expect(comp).toBeDefined();
   });
-
-
 });

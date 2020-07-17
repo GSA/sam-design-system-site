@@ -1,13 +1,11 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-textarea',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamTextareaComponentExampleComponent {
-  textareaModel= 'Some Text';
+  textareaModel = 'Some Text';
   textareaConfig = {
     label: 'Enter zipcode',
     hint: 'Zipcode can be short or long version',

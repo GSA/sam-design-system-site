@@ -1,9 +1,9 @@
-import { Component, OnInit, Input, OnChanges} from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import Prism from 'prismjs';
 import PrismTS from 'prismjs/components/prism-typescript';
 /* tslint:disable */
-PrismTS;// imports typescript into Prism
+PrismTS; // imports typescript into Prism
 /* tslint:enable */
 import { environment } from 'environment';
 const DOCS = environment.DOCS;
@@ -12,10 +12,9 @@ import * as MarkdownIt from 'markdown-it';
 
 @Component({
   selector: 'doc-template-next',
-  templateUrl: 'doc2.template.html'
+  templateUrl: 'doc2.template.html',
 })
 export class Doc2TemplateComponent implements OnInit, OnChanges {
-
   @Input() markdown;
   @Input() example;
   @Input() codeExample;
@@ -31,8 +30,8 @@ export class Doc2TemplateComponent implements OnInit, OnChanges {
   md;
 
   sidenavConfig = {
-      label: 'Documentation Sidenav',
-      children: [],
+    label: 'Documentation Sidenav',
+    children: [],
   };
 
   constructor(private router: Router) {}
@@ -44,77 +43,75 @@ export class Doc2TemplateComponent implements OnInit, OnChanges {
     }
   }
 
-    ngOnChanges(c) {
-        if (c['example'] && this.example) {
-          this.runPrism('example');
-        }
-        if (c['codeExample'] && this.codeExample) {
-          this.runPrism('codeExample');
-        }
-        if (c['markdown'] && this.markdown) {
-          this.runMarkdown('markdown');
-        }
-        if (c['design'] && this.design) {
-          this.runMarkdown('design');
-        }
-        if (c['guidance'] && this.guidance) {
-          this.runMarkdown('guidance');
-        }
-        if (c['implementation'] && this.implementation) {
-          this.runMarkdown('implementation');
-        }
+  ngOnChanges(c) {
+    if (c['example'] && this.example) {
+      this.runPrism('example');
+    }
+    if (c['codeExample'] && this.codeExample) {
+      this.runPrism('codeExample');
+    }
+    if (c['markdown'] && this.markdown) {
+      this.runMarkdown('markdown');
+    }
+    if (c['design'] && this.design) {
+      this.runMarkdown('design');
+    }
+    if (c['guidance'] && this.guidance) {
+      this.runMarkdown('guidance');
+    }
+    if (c['implementation'] && this.implementation) {
+      this.runMarkdown('implementation');
+    }
+  }
+
+  private highlight(str, lang) {
+    if (str.length < 1) {
+      return '';
+    }
+    if (!lang) {
+      lang = 'html';
     }
 
-    private highlight (str, lang) {
-
-        if (str.length < 1) {
-            return '';
-        }
-        if (!lang) {
-            lang = 'html';
-        }
-
-        if (Prism.languages[lang]) {
-            try {
-
-                return '<pre class="language-'
-                + lang
-                + '"><code class="language-'
-                + lang
-                + '">'
-                + Prism.highlight(str, Prism.languages[lang])
-                + '</code></pre>';
-            } catch (err) {
-
-                return '';
-
-            }
-
-        }
-
+    if (Prism.languages[lang]) {
+      try {
+        return (
+          '<pre class="language-' +
+          lang +
+          '"><code class="language-' +
+          lang +
+          '">' +
+          Prism.highlight(str, Prism.languages[lang]) +
+          '</code></pre>'
+        );
+      } catch (err) {
         return '';
-
+      }
     }
 
-    runMarkdown(type) {
-        if (type && this[type]) {
-            this[type] = this.md.render(this[type]);
-        }
-    }
+    return '';
+  }
 
-    runPrism(type) {
-        if (type === 'example') {
-            this.example = this.example.trim();
-            this.example = Prism.highlight(this.example, Prism.languages.html);
-        }
-        if (type === 'codeExample') {
-            this.codeExample = this.codeExample.trim();
-            this.codeExample = Prism.highlight(this.codeExample, Prism.languages.typescript);
-        }
+  runMarkdown(type) {
+    if (type && this[type]) {
+      this[type] = this.md.render(this[type]);
     }
+  }
+
+  runPrism(type) {
+    if (type === 'example') {
+      this.example = this.example.trim();
+      this.example = Prism.highlight(this.example, Prism.languages.html);
+    }
+    if (type === 'codeExample') {
+      this.codeExample = this.codeExample.trim();
+      this.codeExample = Prism.highlight(
+        this.codeExample,
+        Prism.languages.typescript
+      );
+    }
+  }
 
   public ngOnInit() {
-
     this.md = MarkdownIt({ highlight: this.highlight });
 
     // ==========================================================
@@ -130,32 +127,33 @@ export class Doc2TemplateComponent implements OnInit, OnChanges {
     // Organize by section
     for (const idx in DOCS) {
       if (!uikitList[DOCS[idx]['section']]) {
-        uikitList[DOCS[idx]['section']] = [{
-          label: DOCS[idx]['item'],
-          route: DOCS[idx]['routerlink']
-        }];
+        uikitList[DOCS[idx]['section']] = [
+          {
+            label: DOCS[idx]['item'],
+            route: DOCS[idx]['routerlink'],
+          },
+        ];
       } else {
         uikitList[DOCS[idx]['section']].push({
           label: DOCS[idx]['item'],
-          route: DOCS[idx]['routerlink']
+          route: DOCS[idx]['routerlink'],
         });
       }
     }
 
     // Prepare data so it can be consumed by <sam-sidenav>
     const docsNav = uikitList;
-    const docsNavContent = Object.keys(uikitList).map( section => {
+    const docsNavContent = Object.keys(uikitList).map((section) => {
       const sectionChildren = docsNav[section];
       return {
         label: section,
         route: '/',
-        children: sectionChildren
+        children: sectionChildren,
       };
     });
 
     // Update <sam-sidenav> model
     this.sidenavConfig['children'] = docsNavContent;
-
 
     // ----------------------------------------------------------
     // Static Pages links
@@ -168,47 +166,54 @@ export class Doc2TemplateComponent implements OnInit, OnChanges {
     // Organize by section
     for (const idx in STATICPAGES) {
       if (!staticpagelist[STATICPAGES[idx]['section']]) {
-        staticpagelist[STATICPAGES[idx]['section']] = [{
-          label: STATICPAGES[idx]['item'],
-          route: STATICPAGES[idx]['routerlink']
-        }];
+        staticpagelist[STATICPAGES[idx]['section']] = [
+          {
+            label: STATICPAGES[idx]['item'],
+            route: STATICPAGES[idx]['routerlink'],
+          },
+        ];
       } else {
         staticpagelist[STATICPAGES[idx]['section']].push({
           label: STATICPAGES[idx]['item'],
-          route: STATICPAGES[idx]['routerlink']
+          route: STATICPAGES[idx]['routerlink'],
         });
       }
     }
 
     // Prepare data so it can be consumed by <sam-sidenav>
     const docsNavStaticPages = staticpagelist;
-    const docsNavStaticPagesContent = Object.keys(staticpagelist).map( section => {
-      const list = docsNavStaticPages[section];
-      return {
-        label: section,
-        route: '/',
-        children: list
-      };
-    });
+    const docsNavStaticPagesContent = Object.keys(staticpagelist).map(
+      (section) => {
+        const list = docsNavStaticPages[section];
+        return {
+          label: section,
+          route: '/',
+          children: list,
+        };
+      }
+    );
 
     // Sort by alphabetical order
     // Move Overview to the top of the list
-    docsNavStaticPagesContent.sort(function(a, b) {
+    docsNavStaticPagesContent.sort(function (a, b) {
       if (a.label === 'Overview') {
         return -1;
       } else if (b.label === 'Overview') {
         return 1;
       }
-      if ( a.label.charAt(0).toLowerCase() < b.label.charAt(0).toLowerCase() ) {
+      if (a.label.charAt(0).toLowerCase() < b.label.charAt(0).toLowerCase()) {
         return -1;
-      } else if ( a.label.charAt(0).toLowerCase() > b.label.charAt(0).toLowerCase() ) {
+      } else if (
+        a.label.charAt(0).toLowerCase() > b.label.charAt(0).toLowerCase()
+      ) {
         return 1;
       }
       return 0;
     });
 
     // Update <sam-sidenav> model
-    this.sidenavConfig['children'] = docsNavStaticPagesContent.concat(this.sidenavConfig['children']);
+    this.sidenavConfig['children'] = docsNavStaticPagesContent.concat(
+      this.sidenavConfig['children']
+    );
   }
-
 }

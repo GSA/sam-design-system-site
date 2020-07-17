@@ -19,9 +19,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
   { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' }
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
 ];
-
 
 export class ExampleDataSource extends DataSource<PeriodicElement> {
   /** Stream of data that is provided to the table. */
@@ -41,11 +40,16 @@ export class ExampleDataSource extends DataSource<PeriodicElement> {
     const isAsc = evt.direction === 'asc';
     sortedData = data.sort((a, b) => {
       switch (evt.active) {
-        case 'name': return this.compareString(a.name, b.name, isAsc);
-        case 'symbol': return this.compareString(a.symbol, b.symbol, isAsc);
-        case 'weight': return this.compareNumber(a.weight, b.weight, isAsc);
-        case 'position': return this.compareNumber(a.position, b.position, isAsc);
-        default: return 0;
+        case 'name':
+          return this.compareString(a.name, b.name, isAsc);
+        case 'symbol':
+          return this.compareString(a.symbol, b.symbol, isAsc);
+        case 'weight':
+          return this.compareNumber(a.weight, b.weight, isAsc);
+        case 'position':
+          return this.compareNumber(a.position, b.position, isAsc);
+        default:
+          return 0;
       }
     });
 
@@ -72,7 +76,7 @@ export class ExampleDataSource extends DataSource<PeriodicElement> {
 }
 
 @Component({
-  templateUrl: 'table.html'
+  templateUrl: 'table.html',
 })
 export class TableComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];

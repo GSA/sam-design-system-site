@@ -1,4 +1,3 @@
-
 /* tslint:disable */
 import {
   Component,
@@ -8,7 +7,7 @@ import {
   ViewChild,
   ViewRef,
   TemplateRef,
-  ViewContainerRef
+  ViewContainerRef,
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
@@ -25,9 +24,13 @@ const code_example = `<sam-page-title
 
 @Component({
   selector: 'doc-sam-page-title',
-  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
+  template:
+    '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' +
+    code_example +
+    '</doc-template>',
 })
-export class SamPageTitleExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamPageTitleExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamPageTitle';
   typedoc_content = '';
 
@@ -38,11 +41,10 @@ export class SamPageTitleExampleComponent extends BaseExampleComponent implement
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));
   }
 }
-

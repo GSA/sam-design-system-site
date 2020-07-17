@@ -1,14 +1,10 @@
 export class MarkdownProcessor {
-
   public processString: (a: string) => string;
 
   private _changeFileExt: (a: string[]) => string[];
   private _prependAssetsDir: (a: string[]) => string[];
 
-  constructor(
-    private assetsDir: string,
-    private ext: string = 'txt') {
-
+  constructor(private assetsDir: string, private ext: string = 'txt') {
     this._prependAssetsDir = this._setAssetsDir(assetsDir);
     this._changeFileExt = this._setFileExt(ext);
 
@@ -21,17 +17,15 @@ export class MarkdownProcessor {
     );
   }
 
-  private _stripLeadingSlash (str: string): string {
+  private _stripLeadingSlash(str: string): string {
     if (typeof str !== 'string') {
       throw new TypeError('Must pass string');
     }
 
-    return str[0] === '/'
-      ? str.slice(1)
-      : str;
+    return str[0] === '/' ? str.slice(1) : str;
   }
 
-  private _splitString (str: string): string[] {
+  private _splitString(str: string): string[] {
     if (typeof str !== 'string') {
       throw new TypeError('Must pass string to split');
     }
@@ -39,8 +33,8 @@ export class MarkdownProcessor {
     return str.split('/');
   }
 
-    // String -> [] -> []
-  private _setFileExt (ext: string) {
+  // String -> [] -> []
+  private _setFileExt(ext: string) {
     if (!ext) {
       throw new Error('Must initialize with a file extension');
     }
@@ -63,7 +57,7 @@ export class MarkdownProcessor {
     };
   }
 
-  private _joinString (arr: string[]): string {
+  private _joinString(arr: string[]): string {
     if (!(arr instanceof Array)) {
       throw new TypeError('Must take an array');
     }
@@ -71,24 +65,21 @@ export class MarkdownProcessor {
     return arr.join('');
   }
 
-  private _splitBase (str: string): string[] {
+  private _splitBase(str: string): string[] {
     return str.split('.');
   }
 
-  private _swapFileExt (ext: string) {
+  private _swapFileExt(ext: string) {
     const validate = this._validateFileArray;
 
     return function (arr: string[]): string[] {
       validate(arr);
 
-      return [
-        ...arr.slice(0, arr.length - 1),
-        ext
-      ];
+      return [...arr.slice(0, arr.length - 1), ext];
     };
   }
 
-  private _joinBase (arr: string[]): string {
+  private _joinBase(arr: string[]): string {
     if (!(arr instanceof Array)) {
       throw new TypeError('Must pass array');
     }
@@ -96,8 +87,7 @@ export class MarkdownProcessor {
     return arr.join('.');
   }
 
-  private _validateFileArray (arr: string[]): void {
-
+  private _validateFileArray(arr: string[]): void {
     if (!(arr instanceof Array)) {
       throw new TypeError('Must pass non-empty Array');
     }
@@ -111,17 +101,15 @@ export class MarkdownProcessor {
     }
   }
 
-  private _setAssetsDir (root: string) {
-    return function prependAssetsDir (arr: string[]): string[] {
+  private _setAssetsDir(root: string) {
+    return function prependAssetsDir(arr: string[]): string[] {
       return [root, ...arr];
     };
   }
 
-  private pipe (fn: Function, ...fns: Function[]) {
+  private pipe(fn: Function, ...fns: Function[]) {
     return function (...args) {
-      return fns.reduce(
-        (val, func) => func(val), fn(...args)
-      );
+      return fns.reduce((val, func) => func(val), fn(...args));
     };
   }
 }

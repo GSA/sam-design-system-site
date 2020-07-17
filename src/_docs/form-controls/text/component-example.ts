@@ -1,10 +1,8 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-text',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamTextComponentExampleComponent {
   textModel = 'Some Text';

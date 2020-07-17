@@ -1,18 +1,18 @@
-
 import { Component, OnInit } from '@angular/core';
 
 /* tslint:disable */
-import { HierarchicalTreeSelectedItemModel, TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
+import {
+  HierarchicalTreeSelectedItemModel,
+  TreeMode,
+} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
 import { SelectedResultConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
-
-
 
 @Component({
   selector: 'doc-sam-selected-result-hierarchical',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
-export class SamHierarchicalSelectedResultComponentExampleComponent implements OnInit {
-
+export class SamHierarchicalSelectedResultComponentExampleComponent
+  implements OnInit {
   id: string = '1';
   name: string = 'Item 1';
   subtext: string = 'Sub Item info 1';
@@ -45,6 +45,5 @@ export class SamHierarchicalSelectedResultComponentExampleComponent implements O
 }
 
 class ExampleItem {
-  constructor(public id: string, public name: string, public subtext: string) { }
-
+  constructor(public id: string, public name: string, public subtext: string) {}
 }

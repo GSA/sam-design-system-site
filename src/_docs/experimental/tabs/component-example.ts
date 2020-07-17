@@ -1,7 +1,4 @@
-
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 import {
   faTable,
   faHandsHelping,
@@ -15,7 +12,7 @@ import {
 
 @Component({
   selector: 'doc-sam-tab-next',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamTabsNextComponentExampleComponent {
   faTable = faTable;

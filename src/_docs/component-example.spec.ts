@@ -3,9 +3,9 @@ import {
   inject,
   async,
   TestBed,
-  ComponentFixture
+  ComponentFixture,
 } from '@angular/core/testing';
-import {RouterTestingModule} from '@angular/router/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { BaseExampleComponent } from './baseexample.component';
@@ -66,110 +66,108 @@ import { SdsPaginationExampleComponent } from './experimental/sds-pagination/com
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 // import { AutocompleteExampleComponent } from './form-controls/autocomplete/component-example';
 
-
 let components = [
-    AccordionExampleComponent,
-    SamActionButtonExampleComponent,
-    SamActionsDropdownComponentExampleComponent,
-    AlertExampleComponent,
-    // SamAlertFooterComponentExampleComponent, requires SamAlertFooterService
-    SamBadgeComponentExampleComponent,
-    SamBreadcrumbsComponentExampleComponent,
-    SamCommentsComponentExampleComponent,
-    DownloadExampleComponent,
-    HistoryExampleComponent,
-    SamImageComponentExampleComponent,
-    ModalExampleComponent,
-    MultiselectDropdownExampleComponent,
-    PaginationExampleComponent,
-    POCExampleComponent,
-    SamProgressExampleComponent,
-    SpinnerExampleComponent,
-    TabsExampleComponent,
-    SamUploadComponentExampleComponent,
-    ClickOutsideExampleComponent,
-    SamDragDropDirectiveExampleComponent,
-    //SamExternalLinkDirectiveExampleComponent,
-    SamFocusDirectiveExampleComponent,
-    StickyExampleComponent,
-    TabOutsideExampleComponent,
-    ButtonExampleComponent,
-    SamBoxComponentExampleComponent,
-    SamContainerComponentExampleComponent,
-    SamDollarComponentExampleComponent,
-    SamFilterDrawerComponentExampleComponent,
-    SamHeadingComponentExampleComponent,
-    SamIconComponentExampleComponent,
-    SamInputMaskComponentExampleComponent,
-    SamLabelNextComponentExampleComponent,
-    SamLabelInfoComponentExampleComponent,
-    SamListComponentExampleComponent,
-    SamMasterPageComponentExampleComponent,
-    SamPageSampleComponentExampleComponent,
-    SamPageTitleExampleComponent,
-    SamSearchComponentExampleComponent,
-    SamSidebarComponentExampleComponent,
-    SamTitleComponentExampleComponent,
-    SamVideoPlayerComponentExampleComponent,
-    SamYoutubeComponentExampleComponent,
-    AutocompleteExampleComponent,
-    AutocompleteMultiselectExampleComponent,
-    SortExampleComponent,
-    SdsPaginationComponentExampleComponent,
+  AccordionExampleComponent,
+  SamActionButtonExampleComponent,
+  SamActionsDropdownComponentExampleComponent,
+  AlertExampleComponent,
+  // SamAlertFooterComponentExampleComponent, requires SamAlertFooterService
+  SamBadgeComponentExampleComponent,
+  SamBreadcrumbsComponentExampleComponent,
+  SamCommentsComponentExampleComponent,
+  DownloadExampleComponent,
+  HistoryExampleComponent,
+  SamImageComponentExampleComponent,
+  ModalExampleComponent,
+  MultiselectDropdownExampleComponent,
+  PaginationExampleComponent,
+  POCExampleComponent,
+  SamProgressExampleComponent,
+  SpinnerExampleComponent,
+  TabsExampleComponent,
+  SamUploadComponentExampleComponent,
+  ClickOutsideExampleComponent,
+  SamDragDropDirectiveExampleComponent,
+  //SamExternalLinkDirectiveExampleComponent,
+  SamFocusDirectiveExampleComponent,
+  StickyExampleComponent,
+  TabOutsideExampleComponent,
+  ButtonExampleComponent,
+  SamBoxComponentExampleComponent,
+  SamContainerComponentExampleComponent,
+  SamDollarComponentExampleComponent,
+  SamFilterDrawerComponentExampleComponent,
+  SamHeadingComponentExampleComponent,
+  SamIconComponentExampleComponent,
+  SamInputMaskComponentExampleComponent,
+  SamLabelNextComponentExampleComponent,
+  SamLabelInfoComponentExampleComponent,
+  SamListComponentExampleComponent,
+  SamMasterPageComponentExampleComponent,
+  SamPageSampleComponentExampleComponent,
+  SamPageTitleExampleComponent,
+  SamSearchComponentExampleComponent,
+  SamSidebarComponentExampleComponent,
+  SamTitleComponentExampleComponent,
+  SamVideoPlayerComponentExampleComponent,
+  SamYoutubeComponentExampleComponent,
+  AutocompleteExampleComponent,
+  AutocompleteMultiselectExampleComponent,
+  SortExampleComponent,
+  SdsPaginationComponentExampleComponent,
 ];
 
-for(let i = 0; i < components.length; i++){
-    describe(components[i].constructor.name + ` tests`, () => {
+for (let i = 0; i < components.length; i++) {
+  describe(components[i].constructor.name + ` tests`, () => {
+    let comp;
+    let fixture;
 
-            let comp;
-            let fixture;
-
-            beforeEach(() => {
-
-                TestBed.configureTestingModule({
-                imports: [RouterTestingModule, HttpClientModule],
-                declarations: [components[i]],
-                providers: [
-                    {
-                    provide: MarkdownService,
-                    useValue: {
-                        get: function(filename){
-                        return Observable.of({text:function(){
-                            return "hello";
-                        }});
-                        }
-                    }
-                    },
-                    {
-                    provide: DocumentationService,
-                    useValue: {
-                        loadData: function(){
-                        return Observable.of({});
-                        },
-                        getComponentProperties: function(name){
-                        return Observable.of([]);
-                        }
-                    }
-                    },
-                    {
-                        provide: ActivatedRoute, useValue: {
-                        data: Observable.create({ markdownfile: 'test' })
-                        }
-                    }
-                ],
-                schemas: [NO_ERRORS_SCHEMA]
+    beforeEach(() => {
+      TestBed.configureTestingModule({
+        imports: [RouterTestingModule, HttpClientModule],
+        declarations: [components[i]],
+        providers: [
+          {
+            provide: MarkdownService,
+            useValue: {
+              get: function (filename) {
+                return Observable.of({
+                  text: function () {
+                    return 'hello';
+                  },
                 });
+              },
+            },
+          },
+          {
+            provide: DocumentationService,
+            useValue: {
+              loadData: function () {
+                return Observable.of({});
+              },
+              getComponentProperties: function (name) {
+                return Observable.of([]);
+              },
+            },
+          },
+          {
+            provide: ActivatedRoute,
+            useValue: {
+              data: Observable.create({ markdownfile: 'test' }),
+            },
+          },
+        ],
+        schemas: [NO_ERRORS_SCHEMA],
+      });
 
-                fixture = TestBed.createComponent(components[i]);
-                comp    = fixture.componentInstance;
-                fixture.detectChanges(); // trigger initial data binding
-
-            });
-
-            it(`should be initialized`, () => {
-                expect(fixture).toBeDefined();
-                expect(comp).toBeDefined();
-            });
-
+      fixture = TestBed.createComponent(components[i]);
+      comp = fixture.componentInstance;
+      fixture.detectChanges(); // trigger initial data binding
     });
+
+    it(`should be initialized`, () => {
+      expect(fixture).toBeDefined();
+      expect(comp).toBeDefined();
+    });
+  });
 }

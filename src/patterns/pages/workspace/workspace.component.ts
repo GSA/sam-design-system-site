@@ -1,27 +1,31 @@
-import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild, ViewChild, AfterContentInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  forwardRef,
+  ChangeDetectorRef,
+  ContentChild,
+  ViewChild,
+  AfterContentInit,
+} from '@angular/core';
 import { Observable } from 'rxjs';
-import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-elements';
+import {
+  SamSortDirective,
+  SamPaginationNextComponent,
+} from '@gsa-sam/sam-ui-elements';
 
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
 import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { WorkspaceService, filter } from './data/workspace.service';
 import { FormlyFieldConfig } from '@ngx-formly/core';
-import { fields, model, } from './data/formly';
+import { fields, model } from './data/formly';
 
-
-import {
-  faTable,
-  faChartBar
-} from '@fortawesome/free-solid-svg-icons';
+import { faTable, faChartBar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'sam-workspace-demo-component',
   templateUrl: './workspace.template.html',
-  providers: [
-    WorkspaceService,
-    forwardRef(() => SamPageNextService)
-  ]
+  providers: [WorkspaceService, forwardRef(() => SamPageNextService)],
 })
 export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   public form: FormGroup;
@@ -45,47 +49,42 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   ];
   public sortvalue: string;
 
-  @ViewChild(SamPaginationNextComponent, {static: true})
+  @ViewChild(SamPaginationNextComponent, { static: true })
   public pagination: SamPaginationNextComponent;
 
-  constructor(private _fb: FormBuilder,
+  constructor(
+    private _fb: FormBuilder,
     private wsService: WorkspaceService,
     private cdr: ChangeDetectorRef,
-    private _service: SamPageNextService) {
-    this.form = this._fb.group({
-    });
+    private _service: SamPageNextService
+  ) {
+    this.form = this._fb.group({});
   }
 
   public ngAfterContentInit() {
-    this.pagination.pageChange.subscribe(
-      evt => this._onPageChange(evt)
-    );
-
-
+    this.pagination.pageChange.subscribe((evt) => this._onPageChange(evt));
   }
 
-
   private _onPageChange(event) {
-
     const pg = {
       pageSize: this.pagination.pageSize,
       currentPage: this.pagination.currentPage,
       totalPages: this.pagination.totalPages,
-      totalUnits: this.pagination.totalUnits
+      totalUnits: this.pagination.totalUnits,
     };
 
     this.filter.page = pg.currentPage - 1;
     this.getData(this.filter);
-
   }
 
   public ngOnInit() {
     this.getData(this.filter);
 
-    this.filters = this._service.get('filters').valueChanges
-      .map(res => this._filtersToPills(res));
+    this.filters = this._service
+      .get('filters')
+      .valueChanges.map((res) => this._filtersToPills(res));
 
-    this.filters.subscribe(data => {
+    this.filters.subscribe((data) => {
       this.curPage = 1;
       if (data.length !== 0) {
         this._service.get('data').setValue(this.dataSource.slice(0, 1));
@@ -94,19 +93,16 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
       }
     });
 
-    this._service.get('pagination').valueChanges.subscribe(result => {
+    this._service.get('pagination').valueChanges.subscribe((result) => {
       this.curPage = result.currentPage;
       this._service.get('data').setValue(this.dataSource);
     });
     this.cdr.detectChanges();
 
-    this.form.valueChanges.subscribe(
-      res => {
-        this._service.get('filters').patchValue(res);
-        this.getData(res);
-      }
-    );
-
+    this.form.valueChanges.subscribe((res) => {
+      this._service.get('filters').patchValue(res);
+      this.getData(res);
+    });
   }
 
   onSortChange(sortvalue: string) {
@@ -118,39 +114,38 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
     this.wsService.getData(item).subscribe(
       (data) => {
         this.length = data.totalItems;
-        data.result.subscribe(
-          (data2) => {
-
-            this.dataSource = data2;
-          }
-        );
+        data.result.subscribe((data2) => {
+          this.dataSource = data2;
+        });
       },
       (error) => {
         this.error = error;
-      });
+      }
+    );
   }
 
   private _filtersToPills(filters): any[] {
     const keys = Object.keys(filters);
 
-    return keys.map(key => {
-      let value;
+    return keys
+      .map((key) => {
+        let value;
 
-      if (filters[key]) {
-        if (filters[key].constructor === Array) {
-          value = filters[key];
+        if (filters[key]) {
+          if (filters[key].constructor === Array) {
+            value = filters[key];
+          } else {
+            value = [filters[key]];
+          }
         } else {
-          value = [filters[key]];
+          value = [];
         }
-      } else {
-        value = [];
-      }
 
-      return {
-        label: key,
-        value: value
-      };
-    })
-      .filter(res => res.value.length > 0);
+        return {
+          label: key,
+          value: value,
+        };
+      })
+      .filter((res) => res.value.length > 0);
   }
 }

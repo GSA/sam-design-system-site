@@ -91,5 +91,4 @@ export const mappings = {
   '/patterns/page/b': 'Award Domains Pattern',
   '/patterns/page/layout': 'General Template - Reports',
   '/patterns/page/search': 'General Template - Search',
-
 };

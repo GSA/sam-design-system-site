@@ -4,10 +4,10 @@ const organization = {
     {
       label: 'Dept or Ind. Agency',
       name: 'Dept or Ind. Agency',
-      value: 'Agency'
-    }
+      value: 'Agency',
+    },
   ],
-  selected: [ 'Agency' ]
+  selected: ['Agency'],
 };
 
 const listing = {
@@ -16,15 +16,15 @@ const listing = {
     {
       label: 'CFDA Number',
       name: 'CFDA Number',
-      value: 'CFDANumber'
+      value: 'CFDANumber',
     },
     {
       label: 'Title',
       name: 'Title',
-      value: 'Title'
-    }
+      value: 'Title',
+    },
   ],
-  selected: [ 'CFDANumber', 'Title' ]
+  selected: ['CFDANumber', 'Title'],
 };
 
 const status = {
@@ -33,33 +33,33 @@ const status = {
     {
       label: 'Current Status',
       name: 'Current Status',
-      value: 'CurrentStatus'
+      value: 'CurrentStatus',
     },
     {
       label: 'Last Updated Date',
       name: 'Last Updated Date',
-      value: 'LastUpdatedDate'
+      value: 'LastUpdatedDate',
     },
     {
       label: 'Obligations Updated',
       name: 'Obligations Updated',
-      value: 'ObligationsUpdated'
+      value: 'ObligationsUpdated',
     },
     {
       label: 'OMB Review Date',
       name: 'OMB Review Date',
-      value: 'OMBReviewDate'
+      value: 'OMBReviewDate',
     },
     {
       label: 'Last Published Date',
       name: 'Last Published Date',
-      value: 'LastPublishedDate'
+      value: 'LastPublishedDate',
     },
     {
       label: 'Auto Published',
       name: 'Auto Published',
-      value: 'AutoPublished'
-    }
+      value: 'AutoPublished',
+    },
   ],
   selected: [
     'CurrentStatus',
@@ -67,12 +67,12 @@ const status = {
     'ObligationsUpdated',
     'OMBReviewDate',
     'LastPublishedDate',
-    'AutoPublished'
-  ]
+    'AutoPublished',
+  ],
 };
 
 export const checkboxes = {
   organization,
   listing,
-  status
+  status,
 };

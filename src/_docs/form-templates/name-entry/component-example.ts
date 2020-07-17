@@ -1,10 +1,8 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-name-entry',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class NameEntryExampleComponent {
   nameModel = {
@@ -12,6 +10,6 @@ export class NameEntryExampleComponent {
     firstName: 'John',
     middleName: '',
     lastName: 'Doe',
-    suffix: 'Sr.'
+    suffix: 'Sr.',
   };
 }

@@ -16,8 +16,8 @@ export const fields: FormlyFieldConfig[] = [
     templateOptions: {
       label: 'Agency',
       id: 'agency',
-      name: 'agency'
-    }
+      name: 'agency',
+    },
   },
   {
     key: 'dateModel',
@@ -26,8 +26,8 @@ export const fields: FormlyFieldConfig[] = [
     templateOptions: {
       name: 'date',
       label: 'Date Modified',
-      id: 'date-modified'
-    }
+      id: 'date-modified',
+    },
   },
   {
     key: 'checkbox',
@@ -43,9 +43,9 @@ export const fields: FormlyFieldConfig[] = [
         { value: 'three', label: 'three', name: 'three' },
         { value: 'four', label: 'four', name: 'four' },
         { value: 'five', label: 'five', name: 'five' },
-      ]
-    }
-  }
+      ],
+    },
+  },
 ];
 
 /**
@@ -55,5 +55,5 @@ export const fields: FormlyFieldConfig[] = [
 export const model = {
   fhInputText: null,
   dateModel: null,
-  checkbox: []
+  checkbox: [],
 };

@@ -1,11 +1,8 @@
-
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-sam-input-mask',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamInputMaskComponentExampleComponent {
   disabled = false;
@@ -13,4 +10,3 @@ export class SamInputMaskComponentExampleComponent {
   placeholder = 'mm/dd/yyyy';
   inputValue = '';
 }
-

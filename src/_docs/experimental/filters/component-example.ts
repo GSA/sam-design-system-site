@@ -1,12 +1,10 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'doc-sam-filters',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamFiltersComponentExampleComponent {
   public fields: FormlyFieldConfig[] = [
@@ -17,8 +15,8 @@ export class SamFiltersComponentExampleComponent {
       templateOptions: {
         label: 'Agency',
         id: 'agency',
-        name: 'agency'
-      }
+        name: 'agency',
+      },
     },
     {
       key: 'dateModel',
@@ -27,8 +25,8 @@ export class SamFiltersComponentExampleComponent {
       templateOptions: {
         name: 'date',
         label: 'Date Modified',
-        id: 'date-modified'
-      }
+        id: 'date-modified',
+      },
     },
     {
       key: 'checkbox',
@@ -44,9 +42,9 @@ export class SamFiltersComponentExampleComponent {
           { value: 'three', label: 'three', name: 'three' },
           { value: 'four', label: 'four', name: 'four' },
           { value: 'five', label: 'five', name: 'five' },
-        ]
-      }
-    }
+        ],
+      },
+    },
   ];
 
   /**
@@ -56,7 +54,7 @@ export class SamFiltersComponentExampleComponent {
   public model: any = {
     fhInputText: null,
     dateModel: null,
-    checkbox: []
+    checkbox: [],
   };
 
   public form = new FormGroup({});

@@ -20,14 +20,14 @@ import { TableComponent } from './table/table';
     PagesRoutingModule,
     SamUIKitModule,
     LayoutModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   declarations: [
     PagesComponent,
     SamWorkspaceDashboardComponent,
     SamEntityDisplayComponent,
     SamPatternPageComponentsComponent,
-    TableComponent
-  ]
+    TableComponent,
+  ],
 })
 export class PagesModule {}

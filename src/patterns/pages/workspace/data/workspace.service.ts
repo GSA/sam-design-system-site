@@ -4,12 +4,9 @@ import { SampleOppData } from './datasource';
 import { Observable } from 'rxjs';
 import 'rxjs/add/observable/of';
 
-
-
 @Injectable()
 export class WorkspaceService {
-
-  constructor() { }
+  constructor() {}
 
   //Will pass in
   getData(filter: filter): Observable<results> {
@@ -20,18 +17,16 @@ export class WorkspaceService {
     if (filter) {
       ob = this.filter(ob, filter);
       ob = this.sort(ob, filter);
-     
 
       if (filter.page) {
         page = filter.page;
       }
     } else {
       pageSize = 10;
-
     }
     let totalItems = data.length;
     let start = page * pageSize;
-    let end = (page * pageSize) + pageSize;
+    let end = page * pageSize + pageSize;
     if (start >= totalItems) {
       start = totalItems - 1;
     }
@@ -39,35 +34,57 @@ export class WorkspaceService {
     if (end >= totalItems) {
       end = totalItems - 1;
     }
-       ob = ob.map(items => items.slice(start, end));
+    ob = ob.map((items) => items.slice(start, end));
 
-    return Observable.of({ "result": ob, "totalItems": totalItems });
+    return Observable.of({ result: ob, totalItems: totalItems });
   }
 
-
   private filter(data: Observable<Opportunity[]>, filter: filter) {
-
     if (filter.type) {
-      data = data.map(projects => projects.filter(proj => proj.data.type === filter.type));
+      data = data.map((projects) =>
+        projects.filter((proj) => proj.data.type === filter.type)
+      );
     }
 
     if (filter.status && filter.status.length > 0) {
-      data = data.map(projects => projects.filter(proj => filter.status.indexOf(proj.status.code) !== -1));
+      data = data.map((projects) =>
+        projects.filter(
+          (proj) => filter.status.indexOf(proj.status.code) !== -1
+        )
+      );
     }
 
     if (filter.title) {
-      data = data.map(projects => projects.filter(proj => proj.data.title.toLowerCase().indexOf(filter.title.toLowerCase()) !== -1));
+      data = data.map((projects) =>
+        projects.filter(
+          (proj) =>
+            proj.data.title
+              .toLowerCase()
+              .indexOf(filter.title.toLowerCase()) !== -1
+        )
+      );
     }
 
     if (filter.dateModel) {
       let filterDate = new Date(filter.dateModel);
       if (!isNaN(filterDate.getTime())) {
-        data = data.map(projects => projects.filter(proj => {
-          let tDate = new Date(proj.createdDate);
-          return tDate.getFullYear() + '' + tDate.getMonth() + '' + tDate.getDate() ===
-            filterDate.getFullYear() + '' + filterDate.getMonth() + '' + (filterDate.getDate() + 1)
-            ;
-        }))
+        data = data.map((projects) =>
+          projects.filter((proj) => {
+            let tDate = new Date(proj.createdDate);
+            return (
+              tDate.getFullYear() +
+                '' +
+                tDate.getMonth() +
+                '' +
+                tDate.getDate() ===
+              filterDate.getFullYear() +
+                '' +
+                filterDate.getMonth() +
+                '' +
+                (filterDate.getDate() + 1)
+            );
+          })
+        );
       }
     }
 
@@ -76,25 +93,22 @@ export class WorkspaceService {
 
   private sort(data: Observable<Opportunity[]>, filter: filter) {
     if (filter.sortField) {
-      data = data.map(items => items.sort(function (a, b) {
-        if (a[filter.sortField] < b[filter.sortField])
-          return -1;
-        if (a[filter.sortField] > b[filter.sortField])
-          return 1;
-        return 0;
-      }))
+      data = data.map((items) =>
+        items.sort(function (a, b) {
+          if (a[filter.sortField] < b[filter.sortField]) return -1;
+          if (a[filter.sortField] > b[filter.sortField]) return 1;
+          return 0;
+        })
+      );
     }
     return data;
   }
-
 }
-
 
 export class results {
   result: Observable<Opportunity[]>;
   totalItems: number;
 }
-
 
 export class filter {
   //zero based

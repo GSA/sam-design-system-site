@@ -4,7 +4,7 @@ import {
   RequestOptionsArgs,
   Headers,
   Connection,
-  RequestOptions
+  RequestOptions,
 } from '@angular/http';
 import { DocumentationService } from './documentation.service';
 import { Observable } from 'rxjs';
@@ -19,12 +19,11 @@ const mockResponse = {
 };
 
 class MockResponse extends Response {
-
-  constructor () {
+  constructor() {
     super(mockResponse);
   }
 
-  public json () {
+  public json() {
     return docs;
   }
 }
@@ -32,7 +31,10 @@ class MockResponse extends Response {
 const test = new MockResponse();
 
 class MockHttpClient extends HttpClient {
-  public get (url: string, options?: RequestOptionsArgs): Observable<MockResponse> {
+  public get(
+    url: string,
+    options?: RequestOptionsArgs
+  ): Observable<MockResponse> {
     return Observable.of(test);
   }
 }
@@ -51,7 +53,6 @@ const mocked = new MockHttpClient(
 );
 
 describe('The Design System Documentation Service', () => {
-
   let service: DocumentationService;
 
   beforeEach(() => {
@@ -59,26 +60,21 @@ describe('The Design System Documentation Service', () => {
   });
 
   it('should work', (done) => {
-
     testing();
 
-    function testing () {
-      service.loadData().subscribe(
-        data => {
-          expect(data).toEqual(docs);
-          done();
-        }
-      );
+    function testing() {
+      service.loadData().subscribe((data) => {
+        expect(data).toEqual(docs);
+        done();
+      });
     }
   });
 
   it('should test getComponents', (done) => {
-    service.getComponents().subscribe(
-      data => {
-        expect(data).toEqual(data);
-        done();
-      }
-    );
+    service.getComponents().subscribe((data) => {
+      expect(data).toEqual(data);
+      done();
+    });
   });
 
   it('should test generateJSONReport', () => {
@@ -86,61 +82,44 @@ describe('The Design System Documentation Service', () => {
   });
 
   it('should test getComponentById', () => {
-    service.getComponentById(1).subscribe(
-      data => {
-        expect(data).toEqual(data);
-      }
-    );
+    service.getComponentById(1).subscribe((data) => {
+      expect(data).toEqual(data);
+    });
   });
 
   it('should test getComponentByName', () => {
-    service.getComponentByName('haha').subscribe(
-      data => {
-        expect(data).toEqual(data);
-      }
-    );
+    service.getComponentByName('haha').subscribe((data) => {
+      expect(data).toEqual(data);
+    });
   });
 
   it('should test getComponentProperties', () => {
-    service.getComponentProperties('haha').subscribe(
-      data => {
-        expect(data).toEqual(data);
-      }
-    );
+    service.getComponentProperties('haha').subscribe((data) => {
+      expect(data).toEqual(data);
+    });
   });
 
   it('should test getComponentPropertiesById', () => {
-    service.getComponentPropertiesById('haha', 1)
-      .subscribe(
-        data => {
-          expect(data).toEqual(data);
-        }
-      );
+    service.getComponentPropertiesById('haha', 1).subscribe((data) => {
+      expect(data).toEqual(data);
+    });
   });
 
   it('should test getComponentPropertiesByName', () => {
-    service.getComponentPropertiesByName('haha', 'haha')
-      .subscribe(
-        data => {
-          expect(data).toEqual(data);
-        }
-      );
+    service.getComponentPropertiesByName('haha', 'haha').subscribe((data) => {
+      expect(data).toEqual(data);
+    });
   });
 
   it('should test getInterfaces', () => {
-    service.getInterfaces().subscribe(
-      data => {
-        expect(data).toEqual(data);
-      }
-    );
+    service.getInterfaces().subscribe((data) => {
+      expect(data).toEqual(data);
+    });
   });
 
   it('should test getTypes', () => {
-    service.getTypes().subscribe(
-      data => {
-        expect(data).toEqual(data);
-      }
-    );
+    service.getTypes().subscribe((data) => {
+      expect(data).toEqual(data);
+    });
   });
-
 });

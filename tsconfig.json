@@ -15,18 +15,13 @@
     "allowUnreachableCode": true,
     "target": "es2015",
     "skipLibCheck": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "paths": {
-      "api-kit/*": [ "api-kit/*"],
-      "app-components/*": [ "app/app-components/*"],
-      "environment": [ "./environments/environment.ts" ]
+      "api-kit/*": ["api-kit/*"],
+      "app-components/*": ["app/app-components/*"],
+      "environment": ["./environments/environment.ts"]
     },
-    "lib": [
-      "es2017",
-      "dom"
-    ]
+    "lib": ["es2017", "dom"]
   },
   "exclude": [
     "**/node_modules/**/*",

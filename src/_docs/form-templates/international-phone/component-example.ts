@@ -1,12 +1,15 @@
+import { Component } from '@angular/core';
 import {
-  Component
-} from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+  FormGroup,
+  FormControl,
+  Validators,
+  FormBuilder,
+} from '@angular/forms';
 import { SamFormService } from '@gsa-sam/sam-ui-elements';
 
 @Component({
   selector: 'doc-phone-group',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class PhoneGroupExampleComponent {
   phoneModel = '123-456-3366';
@@ -15,7 +18,7 @@ export class PhoneGroupExampleComponent {
   group = new FormGroup({
     prefix: new FormControl('', Validators.required),
     phone: new FormControl('1234567890', Validators.required),
-    extension: new FormControl('91234787', Validators.required)
+    extension: new FormControl('91234787', Validators.required),
   });
   public isRequired: boolean = true;
   public form: FormGroup;
@@ -27,34 +30,26 @@ export class PhoneGroupExampleComponent {
   public textConfig = {
     name: 'test',
     label: 'Name',
-    hint: ''
+    hint: '',
   };
 
-  constructor(
-    public formService: SamFormService,
-    private _fb: FormBuilder) {
-
-    this.form = this._fb.group(
-      {
-        name: [null, Validators.required],
-        phone: new FormGroup(
-          {
-            prefix: new FormControl(null, Validators.required),
-            phone: new FormControl('1234567890', Validators.required),
-            extension: new FormControl('')
-          }
-        )
-      }
-    );
+  constructor(public formService: SamFormService, private _fb: FormBuilder) {
+    this.form = this._fb.group({
+      name: [null, Validators.required],
+      phone: new FormGroup({
+        prefix: new FormControl(null, Validators.required),
+        phone: new FormControl('1234567890', Validators.required),
+        extension: new FormControl(''),
+      }),
+    });
   }
 
-  public onSubmit (ev) {
+  public onSubmit(ev) {
     this.formService.fireSubmit(this.form);
   }
 
-  public reset () {
+  public reset() {
     this.form.reset();
     this.formService.fireReset(this.form);
   }
-
 }

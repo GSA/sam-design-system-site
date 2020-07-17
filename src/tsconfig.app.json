@@ -7,15 +7,12 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "paths": {
-      "api-kit/*": [ "api-kit/*"],
-      "app-components/*": [ "app/app-components/*"],
-      "environment": [ "./environments/environment" ]
+      "api-kit/*": ["api-kit/*"],
+      "app-components/*": ["app/app-components/*"],
+      "environment": ["./environments/environment"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "../node_modules/@gsa-sam/sam-ui-elements"
-  ],
+  "include": ["**/*.ts", "../node_modules/@gsa-sam/sam-ui-elements"],
   "exclude": [
     "./test.ts",
     "**/*.e2e.ts",

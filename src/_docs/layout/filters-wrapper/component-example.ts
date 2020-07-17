@@ -1,14 +1,9 @@
-
-import {
-  Component, OnInit, forwardRef
-} from '@angular/core';
-import {
-  FormBuilder
-} from '@angular/forms';
+import { Component, OnInit, forwardRef } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import {
   SamPageNextService,
   DataStore,
-  layoutStore
+  layoutStore,
 } from '@gsa-sam/sam-ui-elements';
 
 @Component({
@@ -17,10 +12,10 @@ import {
   providers: [
     {
       provide: DataStore,
-      useValue: layoutStore
+      useValue: layoutStore,
     },
-    forwardRef(() => SamPageNextService)
-  ]
+    forwardRef(() => SamPageNextService),
+  ],
 })
 export class SamFiltersWrapperComponentExampleComponent implements OnInit {
   formGroup;
@@ -31,10 +26,10 @@ export class SamFiltersWrapperComponentExampleComponent implements OnInit {
 
   ngOnInit() {
     this.formGroup = this.fb.group({
-      testFilter: ''
+      testFilter: '',
     });
 
-    this.service.model.properties.filters.valueChanges.subscribe(data => {
+    this.service.model.properties.filters.valueChanges.subscribe((data) => {
       if (data && data.testFilter) {
         this.message = 'form submitted';
         this.submitted = true;

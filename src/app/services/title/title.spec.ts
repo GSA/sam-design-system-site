@@ -4,15 +4,15 @@ import { mappings } from './mappings';
 
 class Mock extends Title {
   private _currentTitle = 'mock';
-  constructor () {
+  constructor() {
     super('test');
   }
 
-  public getTitle (): string {
+  public getTitle(): string {
     return this._currentTitle;
   }
 
-  public setTitle (title: string): void {
+  public setTitle(title: string): void {
     this._currentTitle = title;
   }
 }
@@ -52,4 +52,3 @@ describe('The Sam Title Service', () => {
     const expected = `${service._titleTemplate} | hello`;
   });
 });
-

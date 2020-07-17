@@ -1,10 +1,8 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-sam-drag-drop',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamDragDropDirectiveExampleComponent {
   detectionText = '';

@@ -3,11 +3,11 @@ import {
   sdsRequest,
   sdsMessages,
   sdsWorkspace,
-  sdsLogOut
+  sdsLogOut,
 } from '@gsa-sam/icons';
 
 @Component({
-  templateUrl: 'page-components.template.html'
+  templateUrl: 'page-components.template.html',
 })
 export class SamPatternPageComponentsComponent {
   sdsMessages = sdsMessages;

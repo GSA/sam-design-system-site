@@ -7,20 +7,17 @@ import { SiteFooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-      ExampleComponent,
-      CodeExampleComponent,
-      SiteHeaderComponent,
-      SiteFooterComponent
+    ExampleComponent,
+    CodeExampleComponent,
+    SiteHeaderComponent,
+    SiteFooterComponent,
   ],
-  imports: [
-    RouterModule
-  ],
+  imports: [RouterModule],
   exports: [
     ExampleComponent,
     CodeExampleComponent,
     SiteHeaderComponent,
-    SiteFooterComponent
+    SiteFooterComponent,
   ],
 })
-export class SiteComponentsModule { }
-
+export class SiteComponentsModule {}

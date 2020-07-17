@@ -1,7 +1,4 @@
-
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 import {
   faHome,
   faUser,
@@ -10,12 +7,12 @@ import {
   faVideo,
   faComment,
   faNewspaper,
-  faBook
+  faBook,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'doc-sam-icon',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamIconComponentExampleComponent {
   faHome = faHome;

@@ -3,7 +3,7 @@ import {
   inject,
   async,
   TestBed,
-  ComponentFixture
+  ComponentFixture,
 } from '@angular/core/testing';
 
 // Load the implementations that should be tested
@@ -15,11 +15,11 @@ describe(`ExampleComponent tests`, () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExampleComponent ],
-      schemas: [NO_ERRORS_SCHEMA]
+      declarations: [ExampleComponent],
+      schemas: [NO_ERRORS_SCHEMA],
     });
     fixture = TestBed.createComponent(ExampleComponent);
-    comp    = fixture.componentInstance;
+    comp = fixture.componentInstance;
     fixture.detectChanges(); // trigger initial data binding
   });
 
@@ -27,6 +27,4 @@ describe(`ExampleComponent tests`, () => {
     expect(fixture).toBeDefined();
     expect(comp).toBeDefined();
   });
-
-
 });

@@ -1,4 +1,3 @@
-
 /* tslint:disable */
 /******************************************************/
 /* File generated in ../config/helpers.js             */
@@ -100,7 +99,6 @@ import { SamPaginationNextComponentExampleComponent } from './layout/pagination/
 import { SamToolbarComponentExampleComponent } from './layout/toolbar/component-example';
 import { FieldsetWrapperExampleComponent } from './wrappers/fieldset-wrapper/component-example';
 import { LabelWrapperExampleComponent } from './wrappers/label-wrapper/component-example';
-
 
 import { DocTemplateComponent } from './doc.template';
 import { routing } from './doc.routes.dynamic';
@@ -209,7 +207,7 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     StaticPageComponent,
     BaseExampleComponent,
     BaseDocPageComponent,
-    Doc2TemplateComponent
+    Doc2TemplateComponent,
   ],
   entryComponents: [
     SamAccordionComponentExampleComponent,
@@ -304,21 +302,21 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     StaticPageComponent,
     BaseExampleComponent,
     BaseDocPageComponent,
-    Doc2TemplateComponent
+    Doc2TemplateComponent,
   ],
   imports: [
     CommonModule,
-		FormsModule,
-		ReactiveFormsModule,
-		SamUIKitModule,
-		SamFilterModule,
-		FormlyModule,
-		SAMSDSAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SamUIKitModule,
+    SamFilterModule,
+    FormlyModule,
+    SAMSDSAutocompleteModule,
     routing,
-		SiteComponentsModule,
-		CdkTableModule
+    SiteComponentsModule,
+    CdkTableModule,
   ],
   exports: [BaseExampleComponent],
-  providers: [HierarchicalDataService]
+  providers: [HierarchicalDataService],
 })
-export class DocModule { }
+export class DocModule {}

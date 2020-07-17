@@ -3,9 +3,9 @@ import {
   inject,
   async,
   TestBed,
-  ComponentFixture
+  ComponentFixture,
 } from '@angular/core/testing';
-import {RouterTestingModule} from '@angular/router/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { BaseExampleComponent } from './baseexample.component';
@@ -21,37 +21,38 @@ describe(`BaseExampleComponent tests`, () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, HttpClientModule],
-      declarations: [ BaseExampleComponent ],
+      declarations: [BaseExampleComponent],
       providers: [
-        { 
+        {
           provide: MarkdownService,
           useValue: {
-            get: function(filename){
-              return Observable.of({});
-            }
-          }
-        },
-        { 
-          provide: DocumentationService,
-          useValue: {
-            loadData: function(){
+            get: function (filename) {
               return Observable.of({});
             },
-            getComponentProperties: function(name){
-              return Observable.of([]); 
-            }
-          }
+          },
         },
         {
-            provide: ActivatedRoute, useValue: {
-            data: Observable.create({ markdownfile: 'test' })
-            }
-        }
+          provide: DocumentationService,
+          useValue: {
+            loadData: function () {
+              return Observable.of({});
+            },
+            getComponentProperties: function (name) {
+              return Observable.of([]);
+            },
+          },
+        },
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            data: Observable.create({ markdownfile: 'test' }),
+          },
+        },
       ],
-      schemas: [NO_ERRORS_SCHEMA]
+      schemas: [NO_ERRORS_SCHEMA],
     });
     fixture = TestBed.createComponent(BaseExampleComponent);
-    comp    = fixture.componentInstance;
+    comp = fixture.componentInstance;
     fixture.detectChanges(); // trigger initial data binding
   });
 
@@ -59,6 +60,4 @@ describe(`BaseExampleComponent tests`, () => {
     expect(fixture).toBeDefined();
     expect(comp).toBeDefined();
   });
-
-
 });

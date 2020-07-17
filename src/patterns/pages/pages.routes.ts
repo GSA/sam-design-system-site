@@ -18,38 +18,34 @@ const PageRoutes: Routes = [
     children: [
       {
         path: 'layout',
-        component: SamLayoutDemoComponent
+        component: SamLayoutDemoComponent,
       },
       {
         path: 'layout-nosidebar',
-        component: SamLayoutNoSidebarDemoComponent
+        component: SamLayoutNoSidebarDemoComponent,
       },
       {
         path: 'entity-display',
-        component: SamEntityDisplayComponent
+        component: SamEntityDisplayComponent,
       },
       {
         path: 'workspace-dashboard',
-        component: SamWorkspaceDashboardComponent
+        component: SamWorkspaceDashboardComponent,
       },
     ],
   },
   {
     path: 'page-components',
-    component: SamPatternPageComponentsComponent
+    component: SamPatternPageComponentsComponent,
   },
   {
     path: 'table',
-    component: TableComponent
-  }
+    component: TableComponent,
+  },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forChild(PageRoutes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forChild(PageRoutes)],
+  exports: [RouterModule],
 })
-export class PagesRoutingModule { }
+export class PagesRoutingModule {}

@@ -1,78 +1,74 @@
-
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-sam-box',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamActionsListComponentExampleComponent {
-
   example1_model = [
     {
       label: 'Share',
-      icon: 'fa-share-alt'
+      icon: 'fa-share-alt',
     },
     {
       label: 'Download',
-      icon: 'fa-download'
+      icon: 'fa-download',
     },
     {
       label: 'Save',
-      icon: 'fa-cloud'
+      icon: 'fa-cloud',
     },
     {
       label: 'Toggle',
-      icon: 'fa-bars'
-    }
+      icon: 'fa-bars',
+    },
   ];
 
   example2_model = [
     {
       label: 'Share',
       icon: 'fa-share-alt',
-      disabled: true
+      disabled: true,
     },
     {
       label: 'Download',
       icon: 'fa-download',
-      disabled: true
+      disabled: true,
     },
     {
       label: 'Save',
       icon: 'fa-cloud',
-      disabled: true
+      disabled: true,
     },
     {
       label: 'Toggle',
       icon: 'fa-bars',
-      disabled: true
-    }
+      disabled: true,
+    },
   ];
 
   example3_model = [
     {
       label: 'Share',
       icon: 'fa-share-alt',
-      showMore: true
+      showMore: true,
     },
     {
       label: 'Download',
-      icon: 'fa-download'
+      icon: 'fa-download',
     },
     {
       label: 'Save',
-      icon: 'fa-cloud'
+      icon: 'fa-cloud',
     },
     {
       label: 'Toggle',
       icon: 'fa-bars',
-      showMore: true
-    }
+      showMore: true,
+    },
   ];
 
-  public actionHandler (action) {
+  public actionHandler(action) {
     window.alert(JSON.stringify(action));
   }
 }

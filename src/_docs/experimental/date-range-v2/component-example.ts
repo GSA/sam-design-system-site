@@ -1,21 +1,18 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-sam-checkbox-list',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamDateRangeV2ExampleComponent {
-
   dateModel: any = {
     startDate: '12/21/2001',
-    endDate: '12/21/2021'
+    endDate: '12/21/2021',
   };
 
   dateRangeConfig = {
     label: 'Date Range',
-    hint: 'Date range for ad-hoc report with default values'
+    hint: 'Date range for ad-hoc report with default values',
   };
 
   startDateConfig: any = {
@@ -23,8 +20,8 @@ export class SamDateRangeV2ExampleComponent {
     placeholder: 'Start Date',
     label: 'Start Date Picker',
     hint: '',
-    showCalendar : false,
-    disabled: false
+    showCalendar: false,
+    disabled: false,
   };
 
   endDateConfig: any = {
@@ -34,15 +31,14 @@ export class SamDateRangeV2ExampleComponent {
     hint: '',
   };
 
-
   dateModel1: any = {
     startDate: '02-01-2019',
-    endDate: '01-31-2019'
+    endDate: '01-31-2019',
   };
 
   dateRangeConfig1 = {
     label: 'Date Range with custom options',
-    hint: 'Date range for ad-hoc report'
+    hint: 'Date range for ad-hoc report',
   };
 
   startDateConfig1: any = {
@@ -54,7 +50,7 @@ export class SamDateRangeV2ExampleComponent {
     weekStart: 1,
     dateFormat: 'MM-DD-YYYY',
     rangeStart: new Date(2019, 0, 1),
-    rangeEnd: new Date(2019, 4, 1)
+    rangeEnd: new Date(2019, 4, 1),
   };
 
   endDateConfig1: any = {
@@ -65,9 +61,4 @@ export class SamDateRangeV2ExampleComponent {
     dateFormat: 'MM-DD-YYYY',
     disabled: true,
   };
-
-
-
-
 }
-

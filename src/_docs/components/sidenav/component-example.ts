@@ -1,14 +1,10 @@
-import {
-  Component
-} from '@angular/core';
-import {
-  SidenavService
-} from '@gsa-sam/sam-ui-elements';
+import { Component } from '@angular/core';
+import { SidenavService } from '@gsa-sam/sam-ui-elements';
 
 @Component({
   selector: 'doc-sidenav',
   templateUrl: './component-example.html',
-  providers: [ SidenavService ]
+  providers: [SidenavService],
 })
 export class SamSidenavComponentExampleComponent {
   config = {
@@ -24,17 +20,17 @@ export class SamSidenavComponentExampleComponent {
             children: [
               {
                 label: 'Grandchild 1',
-                route: '/sit'
+                route: '/sit',
               },
               {
                 label: 'Grandchild 2',
-                route: '/amet'
+                route: '/amet',
               },
               {
                 label: 'Grandchild 3',
-                route: '/consectetur'
-              }
-            ]
+                route: '/consectetur',
+              },
+            ],
           },
           {
             label: 'Child 2',
@@ -42,15 +38,15 @@ export class SamSidenavComponentExampleComponent {
             children: [
               {
                 label: 'Grandchild 1',
-                route: '/adipisicings'
-              }
-            ]
+                route: '/adipisicings',
+              },
+            ],
           },
           {
             label: 'Child 3',
-            route: '/dolor'
-          }
-        ]
+            route: '/dolor',
+          },
+        ],
       },
       {
         label: 'Item 2',
@@ -58,22 +54,22 @@ export class SamSidenavComponentExampleComponent {
         children: [
           {
             label: 'Child 1',
-            route: '/elit'
+            route: '/elit',
           },
           {
             label: 'Child 2',
-            route: '/cumque'
+            route: '/cumque',
           },
           {
             label: 'Child 3',
-            route: '/dignissimos'
-          }
-        ]
+            route: '/dignissimos',
+          },
+        ],
       },
       {
         label: 'Item 3',
-        route: '/baz'
-      }
-    ]
+        route: '/baz',
+      },
+    ],
   };
 }

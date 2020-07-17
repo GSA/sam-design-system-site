@@ -6,21 +6,17 @@ import { PatternsHomeComponent } from './home/patterns-home.component';
 const patternsRoutes: Routes = [
   {
     path: 'home',
-    component: PatternsHomeComponent
+    component: PatternsHomeComponent,
   },
   {
     path: 'page',
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
-  }
+    loadChildren: () =>
+      import('./pages/pages.module').then((m) => m.PagesModule),
+  },
 ];
 
-
 @NgModule({
-  imports: [
-    RouterModule.forChild(patternsRoutes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forChild(patternsRoutes)],
+  exports: [RouterModule],
 })
 export class PatternsRoutingModule {}

@@ -5,5 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'example.template.html',
 })
 export class ExampleComponent implements OnInit {
-  ngOnInit() { }
+  ngOnInit() {}
 }

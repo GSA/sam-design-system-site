@@ -21,23 +21,19 @@ import { SiteComponentsModule } from './site-components/sitecomponents.module';
 import { MarkdownService } from './services/markdown/markdown.service';
 import { SamTitleService } from './services/title/title.service';
 import { FormlyModule } from '@ngx-formly/core';
-import {FormlySAMUIModule} from '@gsa-sam/sam-ui-elements/src/formly';
+import { FormlySAMUIModule } from '@gsa-sam/sam-ui-elements/src/formly';
 
 // Application wide providers
-const APP_PROVIDERS = [
-];
-
+const APP_PROVIDERS = [];
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [ AppComponent ],
-  declarations: [
-    AppComponent,
-    HomeComponent
-  ],
-  imports: [ // import Angular's modules
+  bootstrap: [AppComponent],
+  declarations: [AppComponent, HomeComponent],
+  imports: [
+    // import Angular's modules
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -46,21 +42,20 @@ const APP_PROVIDERS = [
     SiteComponentsModule,
     RouterModule.forRoot(ROUTES),
     FormlyModule,
-    FormlySAMUIModule
+    FormlySAMUIModule,
   ],
-  providers: [ // expose our Services and Providers into Angular's dependency injection
+  providers: [
+    // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
     APP_PROVIDERS,
     SamAlertFooterService,
     MarkdownService,
-    SamTitleService
-  ]
+    SamTitleService,
+  ],
 })
 export class AppModule {
-
   constructor(
     public appRef: ApplicationRef,
     public samAlertFooterService: SamAlertFooterService
   ) {}
-
 }

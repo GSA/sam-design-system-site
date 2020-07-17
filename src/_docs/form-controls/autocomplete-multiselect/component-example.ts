@@ -1,29 +1,25 @@
-import {
-  Component
-} from '@angular/core';
-import {
-  AutocompleteService
-} from '@gsa-sam/sam-ui-elements';
+import { Component } from '@angular/core';
+import { AutocompleteService } from '@gsa-sam/sam-ui-elements';
 import { Observable, of } from 'rxjs';
 
 export class ACTestService implements AutocompleteService {
   private values: any = [
-    { key: 'Random', value: 'Random'},
-    { key: 'Just some data', value: 'Just some data'},
-    { key: 'This has no category', value: 'This has no category'},
-    { key: 'I have no parent', value: 'I have no parent'},
-    { key: 'Christy', value: 'Christy'},
-    { key: 'Carlos', value: 'Carlos'},
-    { key: 'Colin', value: 'Colin'},
-    { key: 'Diego', value: 'Diego'},
-    { key: 'Delaware', value: 'Delaware'},
-    { key: 'Maryland', value: 'Maryland'},
-    { key: 'Virginia', value: 'Virginia'},
-    { key: 'Washington, DC', value: 'Washington, DC'},
-    { key: 'Onitama', value: 'Onitama'},
+    { key: 'Random', value: 'Random' },
+    { key: 'Just some data', value: 'Just some data' },
+    { key: 'This has no category', value: 'This has no category' },
+    { key: 'I have no parent', value: 'I have no parent' },
+    { key: 'Christy', value: 'Christy' },
+    { key: 'Carlos', value: 'Carlos' },
+    { key: 'Colin', value: 'Colin' },
+    { key: 'Diego', value: 'Diego' },
+    { key: 'Delaware', value: 'Delaware' },
+    { key: 'Maryland', value: 'Maryland' },
+    { key: 'Virginia', value: 'Virginia' },
+    { key: 'Washington, DC', value: 'Washington, DC' },
+    { key: 'Onitama', value: 'Onitama' },
     { key: 'Power Grid', value: 'Power Grid' },
-    { key: 'Splendor', value: 'Splendor'},
-    { key: 'Ticket To Ride', value: 'Ticket to Ride'}
+    { key: 'Splendor', value: 'Splendor' },
+    { key: 'Ticket To Ride', value: 'Ticket to Ride' },
   ];
 
   private offset: number = 1;
@@ -58,25 +54,25 @@ export class ACTestService implements AutocompleteService {
     return of(this.filter(val).slice(this.start, this.end));
   }
 
-  private filter (val) {
-    return this.values.filter(
-      (value) => {
-        if (value.key.toLowerCase().includes(val.toLowerCase())
-          || value.value.toLowerCase().includes(val.toLowerCase())) {
-          return value;
-        }
+  private filter(val) {
+    return this.values.filter((value) => {
+      if (
+        value.key.toLowerCase().includes(val.toLowerCase()) ||
+        value.value.toLowerCase().includes(val.toLowerCase())
+      ) {
+        return value;
       }
-    );
+    });
   }
 }
 
 @Component({
   selector: 'doc-autocomplete-multiselect',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamAutocompleteMultiselectComponentExampleComponent {
   value = 'apple';
-  value2 = { 'code': 'code05', 'value': 'pineapple' };
+  value2 = { code: 'code05', value: 'pineapple' };
   multiselectOptions = [
     { key: 'Apple', value: 'Apple' },
     { key: 'Grape', value: 'Grape' },
@@ -86,6 +82,6 @@ export class SamAutocompleteMultiselectComponentExampleComponent {
   ];
   multiselectConfig = {
     keyProperty: 'key',
-    valueProperty: 'value'
+    valueProperty: 'value',
   };
 }

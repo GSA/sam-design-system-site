@@ -1,10 +1,8 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-poc',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamPointOfContactComponentExampleComponent {
   pointOfContact = {
@@ -15,6 +13,6 @@ export class SamPointOfContactComponentExampleComponent {
     zip: '12345',
     email: 'jdoe@test.gov',
     phone: '222-222-2222',
-    website: 'www.testsite.gov'
+    website: 'www.testsite.gov',
   };
 }

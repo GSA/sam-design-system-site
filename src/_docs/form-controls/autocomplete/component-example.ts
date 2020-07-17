@@ -1,10 +1,8 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-autocomplete',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamAutocompleteComponentExampleComponent {
   public expl;
@@ -15,25 +13,31 @@ export class SamAutocompleteComponentExampleComponent {
   public kv_config = {
     keyValueConfig: {
       keyProperty: 'code',
-      valueProperty: 'value'
-    }
+      valueProperty: 'value',
+    },
   };
-  public kv_options = [{
-    code: 'code01',
-    value: 'apple'
-  }, {
-    code: 'code02',
-    value: 'orange'
-  }, {
-    code: 'code03',
-    value: 'grape'
-  }, {
-    code: 'code04',
-    value: 'banana'
-  }, {
-    code: 'code05',
-    value: 'pineapple'
-  }];
+  public kv_options = [
+    {
+      code: 'code01',
+      value: 'apple',
+    },
+    {
+      code: 'code02',
+      value: 'orange',
+    },
+    {
+      code: 'code03',
+      value: 'grape',
+    },
+    {
+      code: 'code04',
+      value: 'banana',
+    },
+    {
+      code: 'code05',
+      value: 'pineapple',
+    },
+  ];
   public stateValue = '';
   public countryValue = '';
 }

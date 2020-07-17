@@ -1,17 +1,16 @@
-
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-sam-action-button',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamActionButtonExampleComponent {
   action = {
     name: 'edit',
     label: 'Edit',
     icon: 'fa fa-pencil',
-    callback: () => { console.log('click'); }
+    callback: () => {
+      console.log('click');
+    },
   };
 }

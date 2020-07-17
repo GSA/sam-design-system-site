@@ -1,4 +1,3 @@
-
 import {
   Component,
   OnInit,
@@ -7,7 +6,7 @@ import {
   ViewChild,
   ViewRef,
   TemplateRef,
-  ViewContainerRef
+  ViewContainerRef,
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
@@ -23,7 +22,8 @@ const code_example_3 = ``;
 
 @Component({
   selector: 'doc-sam-list',
-  template: `
+  template:
+    `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
      <div class="sam-ui warning message">
@@ -38,72 +38,78 @@ const code_example_3 = ``;
       <h3 class="sam-ui dividing header">Text</h3>
 
       <sam-code-example language="html" [code]="example_1">
-      ` + code_example_1 + `
+      ` +
+    code_example_1 +
+    `
       </sam-code-example>
 
       <h3 class="sam-ui dividing header">Link</h3>
 
       <sam-code-example language="html" [code]="example_2">
-      ` + code_example_2 + `
+      ` +
+    code_example_2 +
+    `
       </sam-code-example>
 
       <h3 class="sam-ui dividing header">Icon</h3>
 
       <sam-code-example language="html" [code]="example_3">
-      ` + code_example_3 + `
+      ` +
+    code_example_3 +
+    `
       </sam-code-example>
 
-    </doc-template>`
+    </doc-template>`,
 })
-export class SamListComponentExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamListComponentExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamListComponent';
   typedoc_content = '';
 
   listData = [
     {
-      'text': 'Orci varius natoque'
+      text: 'Orci varius natoque',
     },
     {
-      'text': 'Vivamus ac est eget ipsum'
-    }
+      text: 'Vivamus ac est eget ipsum',
+    },
   ];
 
   listLinkData = [
     {
-      'link': '#',
-      'text': 'Orci varius natoque'
+      link: '#',
+      text: 'Orci varius natoque',
     },
     {
-      'link': '#',
-      'text': 'Vivamus ac est eget ipsum'
-    }
+      link: '#',
+      text: 'Vivamus ac est eget ipsum',
+    },
   ];
 
   listIconData = [
     {
-      'icon': 'user',
-      'link': '#',
-      'text': 'Orci varius natoque'
+      icon: 'user',
+      link: '#',
+      text: 'Orci varius natoque',
     },
     {
-      'icon': 'book',
-      'link': '#',
-      'text': 'Vivamus ac est eget ipsum'
-    }
+      icon: 'book',
+      link: '#',
+      text: 'Vivamus ac est eget ipsum',
+    },
   ];
 
   example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();
 
-
   public base = '_docs/experimental/list/';
 
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));

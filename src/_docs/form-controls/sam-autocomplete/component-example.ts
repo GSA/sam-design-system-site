@@ -9,10 +9,9 @@ import { AutocompleteSampleDataService } from './service/autocomplete-sample.ser
 @Component({
   selector: 'gsa-sam-sds-autocomplete-sample',
   templateUrl: './component-example.html',
-  providers: [AutocompleteSampleDataService]
+  providers: [AutocompleteSampleDataService],
 })
 export class SamAutocompleteExampleComponent implements OnInit {
-
   private data = SampleAutocompleteData;
   public settings = new SAMSDSAutocompletelConfiguration();
   public settings2 = new SAMSDSAutocompletelConfiguration();
@@ -28,7 +27,6 @@ export class SamAutocompleteExampleComponent implements OnInit {
 
   public freeTextModel = new SAMSDSSelectedItemModel();
 
-
   constructor(public service: AutocompleteSampleDataService) {
     this.setup();
   }
@@ -37,8 +35,7 @@ export class SamAutocompleteExampleComponent implements OnInit {
     console.log(value);
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   setup() {
     this.settings.id = 'autocomplete1';
@@ -49,8 +46,6 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.settings.selectionMode = SelectionMode.SINGLE;
     this.settings.autocompletePlaceHolderText = 'Enter text';
 
-
-
     this.settings2.primaryKeyField = 'id';
     this.settings2.id = 'autocomplete2';
     this.settings2.labelText = 'Autocomplete 2';
@@ -58,8 +53,6 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.settings2.secondaryTextField = 'subtext';
     this.settings2.selectionMode = SelectionMode.SINGLE;
     this.settings2.autocompletePlaceHolderText = 'Enter text';
-
-
 
     this.settings3.primaryKeyField = 'id';
     this.settings3.id = 'autocomplete3';
@@ -69,8 +62,6 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.settings3.selectionMode = SelectionMode.MULTIPLE;
     this.settings3.autocompletePlaceHolderText = 'Enter text';
 
-
-
     this.settings4.primaryKeyField = 'id';
     this.settings4.id = 'autocomplete4';
     this.settings4.labelText = 'Autocomplete 4';
@@ -79,7 +70,6 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.settings4.autocompletePlaceHolderText = 'Enter text';
     this.settings4.selectionMode = SelectionMode.MULTIPLE;
     // this.settings4.minimumCharacterCountSearch = 3;
-
 
     this.settings5.primaryKeyField = 'id';
     this.settings5.id = 'autocomplete5';
@@ -98,15 +88,8 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.freeTextSettings.autocompletePlaceHolderText = 'Free text';
     this.freeTextSettings.isFreeTextEnabled = true;
 
-
-
     this.model5.items.push(this.data[0]);
     this.model5.items.push(this.data[1]);
     this.model3.items.push(this.data[0]);
-
   }
-
-
-
-
 }

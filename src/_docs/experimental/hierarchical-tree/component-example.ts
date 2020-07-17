@@ -1,22 +1,15 @@
-import {
-  Component,
-  OnInit,
-  ChangeDetectorRef
-} from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
-
 
 import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
-
 @Component({
   selector: 'doc-sam-tree-grid',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
-
   // public tableData$: Observable<any>;
   // public selectedAgency$ = new BehaviorSubject<any>(null);
   public selectResults$ = new BehaviorSubject<any[]>([]);
@@ -27,11 +20,13 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
       { headerText: 'Id', fieldName: 'id' },
       { headerText: 'Name', fieldName: 'name' },
       { headerText: 'Sub Text', fieldName: 'subtext' },
-      { headerText: 'Children', fieldName: 'childCount' }
-
-    ]
+      { headerText: 'Children', fieldName: 'childCount' },
+    ],
   };
-  constructor(public service: HierarchicalDataService, private cdr: ChangeDetectorRef) { }
+  constructor(
+    public service: HierarchicalDataService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   public ngOnInit() {
     //   this.tableData$ = this.selectedAgency$.pipe(
@@ -40,7 +35,7 @@ export class SamHierarchicalTreeComponentExampleComponent implements OnInit {
     //   this.selectedAgency$.subscribe(
     //     id => this.setOptionsData(this.service.getBreadcrumbOptions(id))
     //   );
-    this.selectResults$.subscribe(res => this.selectItems = res);
+    this.selectResults$.subscribe((res) => (this.selectItems = res));
 
     // }
     // setOptionsData(data: any[]): void {

@@ -1,10 +1,8 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-history',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
 export class SamHistoryComponentExampleComponent {
   history = [
@@ -27,6 +25,6 @@ export class SamHistoryComponentExampleComponent {
       isTagged: false,
       title: 'Award Notice',
       url: 'opportunities/1a610c814d73fc23a6b71decc9b4c548',
-    }
+    },
   ];
 }

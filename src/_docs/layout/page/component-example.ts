@@ -1,15 +1,6 @@
-
-import {
-  Component, OnInit, forwardRef
-} from '@angular/core';
-import {
-  FormBuilder
-} from '@angular/forms';
-import {
-
-  DataStore,
-  layoutStore
-} from '@gsa-sam/sam-ui-elements';
+import { Component, OnInit, forwardRef } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { DataStore, layoutStore } from '@gsa-sam/sam-ui-elements';
 
 @Component({
   selector: 'doc-sam-page',
@@ -17,19 +8,15 @@ import {
   providers: [
     {
       provide: DataStore,
-      useValue: layoutStore
-    }
-  ]
+      useValue: layoutStore,
+    },
+  ],
 })
 export class SamPageComponentExampleComponent implements OnInit {
-
-
-  constructor(public fb: FormBuilder) { }
+  constructor(public fb: FormBuilder) {}
 
   public intro: string = 'intro test';
 
   public title: string = 'title test';
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 }

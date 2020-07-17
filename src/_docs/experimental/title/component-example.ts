@@ -1,4 +1,3 @@
-
 import {
   Component,
   OnInit,
@@ -7,7 +6,7 @@ import {
   ViewChild,
   ViewRef,
   TemplateRef,
-  ViewContainerRef
+  ViewContainerRef,
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
@@ -20,9 +19,13 @@ const code_example = `TODO`;
 
 @Component({
   selector: 'doc-sam-title',
-  template: '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' + code_example + '</doc-template>'
+  template:
+    '<doc-template [markdown]="markdown" [example]="example" [typedoc]="typedoc_content">' +
+    code_example +
+    '</doc-template>',
 })
-export class SamTitleComponentExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamTitleComponentExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamTitleComponent';
   typedoc_content = '';
 
@@ -33,11 +36,10 @@ export class SamTitleComponentExampleComponent extends BaseExampleComponent impl
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));
   }
 }
-

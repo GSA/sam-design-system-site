@@ -1,7 +1,4 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
@@ -13,7 +10,7 @@ import { MarkdownService } from '../app/services/markdown/markdown.service';
   selector: 'doc-placeholder-example',
   template: `
     <doc-template [markdown]="content" [typedoc]="'static-page'"></doc-template>
-  `
+  `,
 })
 export class StaticPageComponent implements OnInit {
   public content;
@@ -23,33 +20,28 @@ export class StaticPageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    public mdService: MarkdownService) {
-
-  }
+    public mdService: MarkdownService
+  ) {}
   public ngOnInit() {
-    this.route
-      .data
-      .subscribe(
-        (v: any) => {
+    this.route.data.subscribe((v: any) => {
+      const fileName = v.markdownfile
+        .split('/')
+        .filter((section: string) => section !== 'src')
+        .join('/');
 
-          const fileName = v.markdownfile
-            .split('/')
-            .filter((section: string) => section !== 'src')
-            .join('/');
-
-          this.mdService.get(fileName)
-            .pipe(
-              catchError((err) => {
-                this.content = this.defaultContent;
-                return of(err);
-              }),
-              map((res) => res)
-            )
-            .subscribe(
-              (res) => this.content = res.error.text,
-              (err) => this.content = this.defaultContent
-            );
-        }
-      );
+      this.mdService
+        .get(fileName)
+        .pipe(
+          catchError((err) => {
+            this.content = this.defaultContent;
+            return of(err);
+          }),
+          map((res) => res)
+        )
+        .subscribe(
+          (res) => (this.content = res.error.text),
+          (err) => (this.content = this.defaultContent)
+        );
+    });
   }
 }

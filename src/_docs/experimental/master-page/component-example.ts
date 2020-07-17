@@ -1,4 +1,3 @@
-
 import {
   Component,
   OnInit,
@@ -7,7 +6,7 @@ import {
   ViewChild,
   ViewRef,
   TemplateRef,
-  ViewContainerRef
+  ViewContainerRef,
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
@@ -20,26 +19,29 @@ const code_example = `TODO`;
 
 @Component({
   selector: 'doc-sam-master-page',
-  template: `
-    <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
-
-     <div class="sam-ui warning message">
-        <div class="header">
-          Warning
-        </div>
-        <p>
-          This component is under development.
-        </p>
+  template: ` <doc-template
+    [markdown]="markdown"
+    [example]=""
+    [typedoc]="typedoc_content"
+  >
+    <div class="sam-ui warning message">
+      <div class="header">
+        Warning
       </div>
-
       <p>
-        Component that serves as a container for the page component(<em>sam-page</em>).
-        It is responsable for main site navigation and global UI services.
+        This component is under development.
       </p>
+    </div>
 
-    </doc-template>`
+    <p>
+      Component that serves as a container for the page
+      component(<em>sam-page</em>). It is responsable for main site navigation
+      and global UI services.
+    </p>
+  </doc-template>`,
 })
-export class SamMasterPageComponentExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamMasterPageComponentExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamMasterPageComponent';
   typedoc_content = ' ';
 
@@ -50,8 +52,8 @@ export class SamMasterPageComponentExampleComponent extends BaseExampleComponent
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));

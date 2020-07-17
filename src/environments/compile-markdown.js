@@ -1,160 +1,115 @@
-const fs = require('fs-extra')
-const path = require('path')
+const fs = require('fs-extra');
+const path = require('path');
 const Prism = require('prismjs');
 require('prismjs/components/prism-bash');
 require('prismjs/components/prism-typescript');
-const ROOT = path.join(__dirname, '../assets/markdown/')
-const EXT = '.txt'
+const ROOT = path.join(__dirname, '../assets/markdown/');
+const EXT = '.txt';
 
-const MarkdownIt = require('markdown-it')
-const STATIC_DIR = path.join(__dirname, '../_static')
-const DOCS_DIR = path.join(__dirname, '../_docs')
-const rimraf = require('rimraf')
+const MarkdownIt = require('markdown-it');
+const STATIC_DIR = path.join(__dirname, '../_static');
+const DOCS_DIR = path.join(__dirname, '../_docs');
+const rimraf = require('rimraf');
 
-rimraf(path.join(ROOT, '../_docs'),{}, function(){
+rimraf(path.join(ROOT, '../_docs'), {}, function () {
   console.log('clearing DOCS in assets folder');
-  fs.copy(DOCS_DIR,  path.join(ROOT, '../_docs'), function(err){
+  fs.copy(DOCS_DIR, path.join(ROOT, '../_docs'), function (err) {
     if (err) return console.error(err);
-   
-    console.log("DOCS dir copy success!")
+
+    console.log('DOCS dir copy success!');
   }); //copies file
-})
+});
 
+setup(ROOT)(STATIC_DIR, DOCS_DIR);
 
-setup(ROOT)(STATIC_DIR, DOCS_DIR)
+function setup(root) {
+  removeExistingDocs(root);
 
-function setup (root) {
-
-  removeExistingDocs(root)
-
-  return function compile (...dirs) {
-
+  return function compile(...dirs) {
     return compileDirectories(...dirs);
-    
-  }
-
+  };
 }
 
-function compileDirectories (...dirs) {
-
-  dirs.forEach(
-    dir => pf(dir)
-  )
-
+function compileDirectories(...dirs) {
+  dirs.forEach((dir) => pf(dir));
 }
 
-function removeExistingDocs (root) {
-
+function removeExistingDocs(root) {
   fs.stat(root, (err, stats) => {
-
     if (err) {
+      createRoot(root);
 
-      createRoot(root)
-
-      handleError(err)
-
+      handleError(err);
     }
 
     if (stats) {
-
-      let isDir = stats.isDirectory()
+      let isDir = stats.isDirectory();
 
       if (isDir) {
-
         fs.readdir(root, (err, files) => {
-
           if (err) {
-
-            handleError(err)
-
+            handleError(err);
           }
 
           if (files) {
-
-            removeFiles(files, root)
-
+            removeFiles(files, root);
           }
-
-        })
-
+        });
       }
-
     }
-
-  })
-
+  });
 }
 
-function removeFiles (files, root) {
+function removeFiles(files, root) {
+  files.forEach((file) => {
+    const fileName = path.join(root, file);
 
-  files.forEach(
-    file => {
-
-      const fileName = path.join(root, file)
-
-      fs.unlink(fileName, (err) => {
-
-        if (err) {
-
-          handleError(err)
-
-        }
-
-      })
-
-  })
-
+    fs.unlink(fileName, (err) => {
+      if (err) {
+        handleError(err);
+      }
+    });
+  });
 }
 
-function createRoot (root) {
-
+function createRoot(root) {
   fs.mkdir(root, (err) => {
-
     if (err) {
-
-      handleError(err)
-
+      handleError(err);
     }
-
-  })
-
+  });
 }
 
 /**
  * Initialize MarkdownIt with the highlight function
  */
-const md = MarkdownIt({ highlight: highlight })
+const md = MarkdownIt({ highlight: highlight });
 
-function highlight (str, lang) {
-
+function highlight(str, lang) {
   if (str.length < 1) {
-
-    return ''
-
+    return '';
   }
-  if(!lang){
+  if (!lang) {
     lang = 'html';
   }
 
   if (Prism.languages[lang]) {
     try {
-
-      return '<pre class="language-'
-        + lang
-        + '"><code class="language-'
-        + lang
-        + '">'
-        + Prism.highlight(str, Prism.languages[lang])
-        + '</code></pre>';
+      return (
+        '<pre class="language-' +
+        lang +
+        '"><code class="language-' +
+        lang +
+        '">' +
+        Prism.highlight(str, Prism.languages[lang]) +
+        '</code></pre>'
+      );
     } catch (err) {
-
-      return ''
-
+      return '';
     }
-
   }
 
-  return ''
+  return '';
 
   /**
    * Required test cases:
@@ -164,65 +119,41 @@ function highlight (str, lang) {
    * - ( str.length > 1
    *     && (lang && Prism.languages[lang]) === false )
    */
-
 }
 
-function pf (filePath) {
-
+function pf(filePath) {
   if (typeof filePath === 'string') {
-
     fs.stat(filePath, (err, stats) => {
-
       if (err) {
-
-        handleError(err)
-
+        handleError(err);
       }
 
       if (stats) {
-
-        const isFile = stats.isFile()
-        const isDirectory = stats.isDirectory()
+        const isFile = stats.isFile();
+        const isDirectory = stats.isDirectory();
 
         if (isFile) {
-
-          processFile(filePath)
-
+          processFile(filePath);
         } else if (isDirectory) {
-
-          readDirectory(filePath)
-          
+          readDirectory(filePath);
         }
-
       }
-
-    })
-
+    });
   } else if (filePath instanceof Array) {
-
-    filePath.forEach(
-      file => pf(file)
-    )
-
+    filePath.forEach((file) => pf(file));
   }
-
 }
 
-function readDirectory (filePath) {
-
+function readDirectory(filePath) {
   fs.readdir(filePath, (err, files) => {
-
     if (err) {
-
-      handleError(err)
-
+      handleError(err);
     }
 
     if (files) {
-
-      return pf(files.map( file => path.join(filePath, file)))
+      return pf(files.map((file) => path.join(filePath, file)));
     }
-  
+
     /**
      * Required test cases
      * - ( err, _ )
@@ -230,65 +161,44 @@ function readDirectory (filePath) {
      * - ( _, files.length = 1 )
      * - ( _, files.length = 2+ )
      */
-    
   });
-
 }
 
-function checkFileStat (file) {
-
+function checkFileStat(file) {
   return fs.stat(file, (err, stat) => {
-
     if (err) {
-
-      return handleError(err)
-
+      return handleError(err);
     }
-    
+
     if (stat.isFile()) {
-
-      return processFile(file)
-
+      return processFile(file);
     } else if (stat.isDirectory()) {
-
-      return pf(file)
-
+      return pf(file);
     } else {
-
-      return
-
+      return;
     }
-
-  })
-
+  });
 }
 
-function processFile (file) {
+function processFile(file) {
+  const ext = path.extname(file);
 
-  const ext = path.extname(file)
-  
   if (ext === '.md') {
-    
-    const name = createFileName(file, ROOT)
+    const name = createFileName(file, ROOT);
 
     fs.readFile(file, (err, data) => {
-      
       if (err) {
-        handleError(err)
+        handleError(err);
       }
 
       if (data) {
+        const contents = md.render(data.toString());
 
-        const contents = md.render(data.toString())
-
-        fs.writeFile(name, contents, handleError)
+        fs.writeFile(name, contents, handleError);
       }
-    })
-
+    });
   } else {
-    
-    return
-    
+    return;
   }
 
   /**
@@ -296,20 +206,18 @@ function processFile (file) {
    * - File with .md ext
    * - File without .md ext
    */
-
 }
 
-function createFileName (file, root) {
-
-  const parsed = path.parse(file)
+function createFileName(file, root) {
+  const parsed = path.parse(file);
 
   let rel = path.relative(root, parsed.dir);
 
-  let spl = rel.split(path.sep).filter(str => str !== '..')
-  let newFileName = parsed.name + EXT
-  let newBaseName = spl.join('-') + '-' + newFileName
+  let spl = rel.split(path.sep).filter((str) => str !== '..');
+  let newFileName = parsed.name + EXT;
+  let newBaseName = spl.join('-') + '-' + newFileName;
 
-  return path.join(root, newBaseName)
+  return path.join(root, newBaseName);
 
   /**
    * Required test cases:
@@ -317,20 +225,15 @@ function createFileName (file, root) {
    * - !file && root
    * - file && !root
    */
-
 }
 
-function handleError (error) {
-
+function handleError(error) {
   if (error) {
-    console.log(error)
+    console.log(error);
   }
-
 }
-
 
 function copyFile(src, dest) {
-
   let readStream = fs.createReadStream(src);
 
   readStream.once('error', (err) => {

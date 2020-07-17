@@ -1,18 +1,15 @@
-import {
-  Component,
-  OnInit,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HierarchicalDataService } from '../../services/hierarchical.service';
-
 
 import { OptionsType } from '@gsa-sam/sam-ui-elements/src/ui-kit/types';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 @Component({
   selector: 'doc-sam-tree-grid',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
-export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit {
+export class SamHierarchicalTreeGridComponentExampleComponent
+  implements OnInit {
   public options = [];
   public filterText: string = '';
   public tableData$: Observable<any>;
@@ -22,11 +19,11 @@ export class SamHierarchicalTreeGridComponentExampleComponent implements OnInit 
   public filterText$ = new BehaviorSubject<any>('');
   public selectResults$ = new BehaviorSubject<any[]>([]);
   public selectItems: any[];
-  constructor(public service: HierarchicalDataService) { }
+  constructor(public service: HierarchicalDataService) {}
 
   configurations: any = {
     gridColumnsDisplayed: ['id', 'name', 'subtext'],
-    primaryKey : 'id'
+    primaryKey: 'id',
   };
 
   public ngOnInit() {

@@ -5,19 +5,17 @@ import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'environment';
 
-const regexComponent =
-  new RegExp('([^/]*(\.component|\.directive))');
+const regexComponent = new RegExp('([^/]*(.component|.directive))');
 
 @Injectable()
 export class DocumentationService {
-
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient) {}
 
   public loadData(): Observable<any> {
     return this._http.get(`${environment.DEPLOYURL}/assets/docs.json`);
-      // .pipe(
-      //   map((res: HttpResponse<any>) => res.body.json())
-      // );
+    // .pipe(
+    //   map((res: HttpResponse<any>) => res.body.json())
+    // );
   }
 
   /**
@@ -25,56 +23,64 @@ export class DocumentationService {
    */
   public getComponents(): ReplaySubject<any> {
     const components: ReplaySubject<any> = new ReplaySubject();
-    this.loadData()
-    .subscribe(
+    this.loadData().subscribe(
       (data) => {
-        components.next(data.children.reduce((accum, child) => {
-          if (child.name.match(regexComponent) && child.children) {
-            for (const grandchild of child.children) {
-              if (!!grandchild.decorators &&
+        components.next(
+          data.children.reduce((accum, child) => {
+            if (child.name.match(regexComponent) && child.children) {
+              for (const grandchild of child.children) {
+                if (
+                  !!grandchild.decorators &&
                   (grandchild.decorators[0].name === 'Component' ||
-                  grandchild.decorators[0].name === 'Directive')) {
-                    accum.push(grandchild);
+                    grandchild.decorators[0].name === 'Directive')
+                ) {
+                  accum.push(grandchild);
+                }
               }
             }
-          }
-          return accum;
-        }, []));
+            return accum;
+          }, [])
+        );
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
     return components;
   }
 
   public generateJSONReport() {
-    return this.loadData()
-    .subscribe(
+    return this.loadData().subscribe(
       (data) => {
         const output = data.children.reduce((accum, child) => {
           if (child.name.match(regexComponent)) {
             for (const grandchild of child.children) {
-              if (!!grandchild.decorators &&
-                  (grandchild.decorators[0].name === 'Component' ||
-                  grandchild.decorators[0].name === 'Directive')) {
-                    accum.push(grandchild);
+              if (
+                !!grandchild.decorators &&
+                (grandchild.decorators[0].name === 'Component' ||
+                  grandchild.decorators[0].name === 'Directive')
+              ) {
+                accum.push(grandchild);
               }
             }
           }
           let arr = accum.slice(0);
           let finalArr = [];
 
-          arr = arr.map(item => {
+          arr = arr.map((item) => {
             const row = {};
             row['component'] = item['name'];
             this._deleteProps(item);
             if (item['children']) {
-              item['children'] = item['children'].filter(subitem => {
-                if (subitem['kindString'] === 'Property' && subitem['decorators']) {
+              item['children'] = item['children'].filter((subitem) => {
+                if (
+                  subitem['kindString'] === 'Property' &&
+                  subitem['decorators']
+                ) {
                   return true;
                 }
               });
               for (let i = 0; i < item['children'].length; i++) {
-
                 const subItem = item['children'][i];
                 delete subItem['id'];
                 delete subItem['kind'];
@@ -85,7 +91,11 @@ export class DocumentationService {
 
                 if (subItem['type'] && subItem['type']['name']) {
                   subrow['datatype'] = subItem['type']['name'];
-                } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'union') {
+                } else if (
+                  subItem['type'] &&
+                  subItem['type']['type'] &&
+                  subItem['type']['type'] === 'union'
+                ) {
                   const typearr = [];
                   for (let j = 0; j < subItem['type']['types'].length; j++) {
                     if (subItem['type']['types'][j]['value']) {
@@ -95,17 +105,22 @@ export class DocumentationService {
                     }
                   }
                   subrow['datatype'] = typearr.join('|');
-
-                } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'reflection')) {
+                } else if (
+                  subItem['type'] &&
+                  subItem['type']['type'] &&
+                  subItem['type']['type'] === 'reflection'
+                ) {
                   subrow['datatype'] = 'reflection';
-                }else {
+                } else {
                   subrow['datatype'] = '';
                 }
                 subrow['type'] = subItem['decorators'][0]['name'];
 
                 subrow['comment'] = '';
                 if (subItem['comment'] && subItem['comment']['shortText']) {
-                  subrow['comment'] = ('' + subItem['comment']['shortText']).replace(/\"/g, '""');
+                  subrow['comment'] = (
+                    '' + subItem['comment']['shortText']
+                  ).replace(/\"/g, '""');
                 }
                 finalArr.push(subrow);
               }
@@ -115,7 +130,7 @@ export class DocumentationService {
 
             return item;
           });
-          finalArr = finalArr.filter(row => {
+          finalArr = finalArr.filter((row) => {
             if (row['type'] === 'Input' || row['type'] === 'Output') {
               return true;
             }
@@ -123,7 +138,9 @@ export class DocumentationService {
           return accum;
         }, []);
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
   }
 
@@ -133,8 +150,7 @@ export class DocumentationService {
    */
   public getComponentById(id: number): ReplaySubject<any> {
     const component: ReplaySubject<any> = new ReplaySubject();
-    this.getComponents()
-    .subscribe(
+    this.getComponents().subscribe(
       (data) => {
         for (const item of data) {
           if (item.id === id) {
@@ -142,7 +158,9 @@ export class DocumentationService {
           }
         }
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
     return component;
   }
@@ -153,8 +171,7 @@ export class DocumentationService {
    */
   public getComponentByName(name: string): ReplaySubject<any> {
     const component: ReplaySubject<any> = new ReplaySubject();
-    this.getComponents()
-    .subscribe(
+    this.getComponents().subscribe(
       (data) => {
         for (const item of data) {
           if (item.name === name) {
@@ -162,7 +179,9 @@ export class DocumentationService {
           }
         }
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
     return component;
   }
@@ -177,32 +196,39 @@ export class DocumentationService {
 
     const properties: ReplaySubject<any[]> = new ReplaySubject();
 
-    this.getComponentByName(name)
-    .subscribe(
+    this.getComponentByName(name).subscribe(
       (data) => {
         if (data.children) {
           data.children = data.children.filter((child) => {
-            if (!!child.decorators &&
-                (child.decorators[0].name === 'Input' ||
-                 child.decorators[0].name === 'Output')) {
-                   return child;
-                 }
-          });
-          data.children = data.children.sort((prev, next) => {
-            if (prev.decorators[0].name === 'Input' && next.decorators[0].name === 'Output') {
-              return -1;
-            } else if (prev.decorators[0].name === 'Output' && next.decorators[0].name === 'Input') {
-              return 1;
-            } else {
-              return (prev.name).localeCompare(next.name);
+            if (
+              !!child.decorators &&
+              (child.decorators[0].name === 'Input' ||
+                child.decorators[0].name === 'Output')
+            ) {
+              return child;
             }
           });
-          properties.next(
-            data.children
-          );
+          data.children = data.children.sort((prev, next) => {
+            if (
+              prev.decorators[0].name === 'Input' &&
+              next.decorators[0].name === 'Output'
+            ) {
+              return -1;
+            } else if (
+              prev.decorators[0].name === 'Output' &&
+              next.decorators[0].name === 'Input'
+            ) {
+              return 1;
+            } else {
+              return prev.name.localeCompare(next.name);
+            }
+          });
+          properties.next(data.children);
         }
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
 
     return properties;
@@ -211,10 +237,12 @@ export class DocumentationService {
   /**
    * Gets a property of a component by its id.
    */
-  public getComponentPropertiesById(componentName: string, propertyId: number): ReplaySubject<any> {
+  public getComponentPropertiesById(
+    componentName: string,
+    propertyId: number
+  ): ReplaySubject<any> {
     const property: ReplaySubject<any> = new ReplaySubject();
-    this.getComponentProperties(componentName)
-    .subscribe(
+    this.getComponentProperties(componentName).subscribe(
       (data) => {
         property.next(
           data.filter((item) => {
@@ -224,7 +252,9 @@ export class DocumentationService {
           })
         );
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
     return property;
   }
@@ -232,10 +262,12 @@ export class DocumentationService {
   /**
    * Gets a property of a component by its name.
    */
-  public getComponentPropertiesByName(componentName: string, name: string): ReplaySubject<any[]> {
+  public getComponentPropertiesByName(
+    componentName: string,
+    name: string
+  ): ReplaySubject<any[]> {
     const properties: ReplaySubject<any[]> = new ReplaySubject();
-    this.getComponentProperties(componentName)
-    .subscribe(
+    this.getComponentProperties(componentName).subscribe(
       (data) => {
         properties.next(
           data.filter((item) => {
@@ -245,7 +277,9 @@ export class DocumentationService {
           })
         );
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
     return properties;
   }
@@ -255,8 +289,7 @@ export class DocumentationService {
    */
   public getInterfaces(): ReplaySubject<any[]> {
     const interfaces: ReplaySubject<any[]> = new ReplaySubject();
-    this.loadData()
-    .subscribe(
+    this.loadData().subscribe(
       (data) => {
         interfaces.next(
           data.children.reduce((accum, child) => {
@@ -271,7 +304,9 @@ export class DocumentationService {
           }, [])
         );
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
     return interfaces;
   }
@@ -281,8 +316,7 @@ export class DocumentationService {
    */
   public getTypes(): ReplaySubject<any[]> {
     const types: ReplaySubject<any[]> = new ReplaySubject();
-    this.loadData()
-    .subscribe(
+    this.loadData().subscribe(
       (data) => {
         types.next(
           data.children.reduce((accum, child) => {
@@ -297,18 +331,25 @@ export class DocumentationService {
           }, [])
         );
       },
-      (error) => { throw new Error(error); }
+      (error) => {
+        throw new Error(error);
+      }
     );
     return types;
   }
 
-  private _deleteProps (item) {
-    const unneeded = ['id', 'kind', 'kindString',
-    'flags', 'groups', 'implementedTypes', 'sources',
-    'decorators'];
+  private _deleteProps(item) {
+    const unneeded = [
+      'id',
+      'kind',
+      'kindString',
+      'flags',
+      'groups',
+      'implementedTypes',
+      'sources',
+      'decorators',
+    ];
 
-    unneeded.forEach(
-      property => delete item[property]
-    );
+    unneeded.forEach((property) => delete item[property]);
   }
 }

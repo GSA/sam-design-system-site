@@ -3,9 +3,9 @@ import {
   inject,
   async,
   TestBed,
-  ComponentFixture
+  ComponentFixture,
 } from '@angular/core/testing';
-import {RouterTestingModule} from '@angular/router/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
 // Load the implementations that should be tested
 import { StaticPageComponent } from './static.component';
@@ -20,27 +20,27 @@ describe(`StaticPageComponent tests`, () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, HttpClientModule],
-      declarations: [ StaticPageComponent ],
+      declarations: [StaticPageComponent],
       providers: [
-        { 
-            provide: MarkdownService,
-            useValue: {
-                get: function(filename){
-                    return Observable.of({});
-                }
-            }
+        {
+          provide: MarkdownService,
+          useValue: {
+            get: function (filename) {
+              return Observable.of({});
+            },
+          },
         },
         {
-            provide: ActivatedRoute,
-            useValue: {
-                data: Observable.of({markdownfile: 'test'})
-            }
-        }
+          provide: ActivatedRoute,
+          useValue: {
+            data: Observable.of({ markdownfile: 'test' }),
+          },
+        },
       ],
-      schemas: [NO_ERRORS_SCHEMA]
+      schemas: [NO_ERRORS_SCHEMA],
     });
     fixture = TestBed.createComponent(StaticPageComponent);
-    comp    = fixture.componentInstance;
+    comp = fixture.componentInstance;
     fixture.detectChanges(); // trigger initial data binding
   });
 
@@ -48,6 +48,4 @@ describe(`StaticPageComponent tests`, () => {
     expect(fixture).toBeDefined();
     expect(comp).toBeDefined();
   });
-
-
 });

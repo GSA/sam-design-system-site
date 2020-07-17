@@ -7,8 +7,8 @@ export const fields: FormlyFieldConfig[] = [
     templateOptions: {
       name: 'typeofassistance',
       label: 'Opportunity Title',
-      id: 'type-of-assistance'
-    }
+      id: 'type-of-assistance',
+    },
   },
   {
     key: 'status',
@@ -21,11 +21,15 @@ export const fields: FormlyFieldConfig[] = [
       options: [
         { value: 'published', label: 'Published', name: 'published' },
         { value: 'draft', label: 'Draft', name: 'draft' },
-        { value: 'readyForReview', label: 'Ready For Review', name: 'readyForReview' },
+        {
+          value: 'readyForReview',
+          label: 'Ready For Review',
+          name: 'readyForReview',
+        },
         { value: 'cancelled', label: 'Cancelled', name: 'cancelled' },
         { value: 'inactive', label: 'Inactive', name: 'inactive' },
-      ]
-    }
+      ],
+    },
   },
   {
     key: 'dateModel',
@@ -34,15 +38,14 @@ export const fields: FormlyFieldConfig[] = [
     templateOptions: {
       name: 'date',
       label: 'Created Date',
-      id: 'date-modified'
-    }
+      id: 'date-modified',
+    },
   },
-
 ];
 
 export const model = {
   type: null,
   dateModel: null,
   status: [],
-  title: null
+  title: null,
 };

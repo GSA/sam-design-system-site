@@ -1,4 +1,4 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { BaseExampleComponent } from '../../baseexample.component';
 
@@ -20,7 +20,8 @@ const code_example_disabled = `
 
 @Component({
   selector: 'doc-button',
-  template: `
+  template:
+    `
 
   <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -39,7 +40,9 @@ const code_example_disabled = `
   such as when the action is to submit that form.
   </p>
   <sam-code-example language="html" [code]="example_1">
-  ` + code_example_1 + `
+  ` +
+    code_example_1 +
+    `
   </sam-code-example>
 
   <div class="sam-ui info message">
@@ -51,7 +54,9 @@ const code_example_disabled = `
   </p>
   </div>
   <sam-code-example language="html" [code]="example_1_2">
-  ` + code_example_1_2 + `
+  ` +
+    code_example_1_2 +
+    `
   </sam-code-example>
 
   <strong>Will generate the code below</strong>
@@ -67,7 +72,9 @@ const code_example_disabled = `
   a table or adding terms in the Advanced section of the Agency Picker.
   </p>
   <sam-code-example language="html" [code]="example_2">
-  ` + code_example_2 + `
+  ` +
+    code_example_2 +
+    `
   </sam-code-example>
 
   <div class="sam-ui hidden divider"></div>
@@ -80,7 +87,9 @@ const code_example_disabled = `
   '<em>Favorite</em>', or '<em>Share</em>'.
   </p>
   <sam-code-example language="html" [code]="example_3">
-  ` + code_example_3 + `
+  ` +
+    code_example_3 +
+    `
   </sam-code-example>
 
   <div class="sam-ui hidden divider"></div>
@@ -91,7 +100,9 @@ const code_example_disabled = `
   action.
   </p>
   <sam-code-example language="html" [code]="example_4">
-  ` + code_example_4 + `
+  ` +
+    code_example_4 +
+    `
   </sam-code-example>
 
   <div class="sam-ui hidden divider"></div>
@@ -100,13 +111,16 @@ const code_example_disabled = `
 
   <h3 class="sam-ui dividing header">Disabled</h3>
   <sam-code-example language="html" [code]="example">
-  ` + code_example_disabled + `
+  ` +
+    code_example_disabled +
+    `
   </sam-code-example>
 
   </doc-template>
-  `
+  `,
 })
-export class ButtonExampleComponent extends BaseExampleComponent implements OnInit {
+export class ButtonExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamButtonComponent';
   typedoc_content = '';
 
@@ -124,8 +138,8 @@ export class ButtonExampleComponent extends BaseExampleComponent implements OnIn
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));
@@ -134,5 +148,4 @@ export class ButtonExampleComponent extends BaseExampleComponent implements OnIn
   ngOnInit() {
     super.ngOnInit();
   }
-
 }

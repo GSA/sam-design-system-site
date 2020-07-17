@@ -1,11 +1,7 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-sam-label--info',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
-export class SamLabelInfoComponentExampleComponent {
-
-}
+export class SamLabelInfoComponentExampleComponent {}

@@ -1,4 +1,3 @@
-
 import {
   Component,
   OnInit,
@@ -7,7 +6,7 @@ import {
   ViewChild,
   ViewRef,
   TemplateRef,
-  ViewContainerRef
+  ViewContainerRef,
 } from '@angular/core';
 import { BaseExampleComponent } from '../../baseexample.component';
 
@@ -81,10 +80,10 @@ const code_example_5 = `
 </sam-container>
 `;
 
-
 @Component({
   selector: 'doc-sam-container',
-  template: `
+  template:
+    `
     <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
      <div class="sam-ui warning message">
@@ -102,7 +101,9 @@ const code_example_5 = `
       </p>
 
       <sam-code-example language="html" [code]="example_1">
-      ` + code_example_1 + `
+      ` +
+    code_example_1 +
+    `
       </sam-code-example>
 
       <h2 class="sam-ui header">Emphasis</h2>
@@ -114,28 +115,37 @@ const code_example_5 = `
 
       <h3 class="sam-ui dividing header">Lowest</h3>
       <sam-code-example language="html" [code]="example_4">
-      ` + code_example_4 + `
+      ` +
+    code_example_4 +
+    `
       </sam-code-example>
 
       <h3 class="sam-ui dividing header">Low</h3>
       <sam-code-example language="html" [code]="example_5">
-      ` + code_example_5 + `
+      ` +
+    code_example_5 +
+    `
       </sam-code-example>
 
       <h3 class="sam-ui dividing header">Divided</h3>
       <sam-code-example language="html" [code]="example_2">
-      ` + code_example_2 + `
+      ` +
+    code_example_2 +
+    `
       </sam-code-example>
 
       <h3 class="sam-ui dividing header">High</h3>
       <sam-code-example language="html" [code]="example_3">
-      ` + code_example_3 + `
+      ` +
+    code_example_3 +
+    `
       </sam-code-example>
 
 
-    </doc-template>`
+    </doc-template>`,
 })
-export class SamContainerComponentExampleComponent extends BaseExampleComponent implements OnInit {
+export class SamContainerComponentExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamContainerComponent';
   typedoc_content = ' ';
 
@@ -145,15 +155,13 @@ export class SamContainerComponentExampleComponent extends BaseExampleComponent 
   example_4 = code_example_4;
   example_5 = code_example_5;
 
-
-
   public base = '_docs/experimental/container/';
 
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));

@@ -1,14 +1,8 @@
-
 /* tslint:disable */
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-sam-alert-next',
-  templateUrl: './component-example.html'
+  templateUrl: './component-example.html',
 })
-export class SamAlertNextComponentExampleComponent {
-  
-}
-
+export class SamAlertNextComponentExampleComponent {}

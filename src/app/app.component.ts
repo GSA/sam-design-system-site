@@ -1,11 +1,7 @@
 /*
  * Angular 2 decorators and services
  */
-import {
-  Component,
-  OnInit,
-  ViewEncapsulation
-} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { Router, NavigationEnd } from '@angular/router';
 import { DocumentationService } from './services/documentation.service';
@@ -23,7 +19,7 @@ const STATICPAGES = environment.STATICPAGES;
 
 @Component({
   selector: 'sam-app',
-  animations: [ routerTransition ],
+  animations: [routerTransition],
   encapsulation: ViewEncapsulation.None,
   template: `
     <main [@routerTransition]="getState(o)">
@@ -31,13 +27,12 @@ const STATICPAGES = environment.STATICPAGES;
     </main>
     <sam-alert-footer></sam-alert-footer>
   `,
-  providers: [DocumentationService]
+  providers: [DocumentationService],
 })
 export class AppComponent implements OnInit {
-
   public sidenavConfig = {
-      label: 'test',
-      children: [],
+    label: 'test',
+    children: [],
   };
 
   public uikitList = {};
@@ -51,7 +46,8 @@ export class AppComponent implements OnInit {
   constructor(
     private router: Router,
     private service: DocumentationService,
-    private title: SamTitleService) {}
+    private title: SamTitleService
+  ) {}
 
   public getState(outlet) {
     return outlet.activatedRouteData.state;
@@ -63,77 +59,81 @@ export class AppComponent implements OnInit {
     }
   }
   public ngOnInit() {
-
     // sidenav config setup
 
     for (const idx in DOCS) {
       if (!this.uikitList[DOCS[idx]['section']]) {
-        this.uikitList[DOCS[idx]['section']] = [{
-          label: DOCS[idx]['item'],
-          route: DOCS[idx]['link']
-        }];
+        this.uikitList[DOCS[idx]['section']] = [
+          {
+            label: DOCS[idx]['item'],
+            route: DOCS[idx]['link'],
+          },
+        ];
       } else {
         this.uikitList[DOCS[idx]['section']].push({
           label: DOCS[idx]['item'],
-          route: DOCS[idx]['link']
+          route: DOCS[idx]['link'],
         });
       }
-
     }
     const obj = this.uikitList;
-    const test = Object.keys(this.uikitList)
-      .map(function(key) {
+    const test = Object.keys(this.uikitList).map(function (key) {
       const list = obj[key];
       return {
         label: key,
         route: '/',
-        children: list
+        children: list,
       };
     });
     this.sidenavConfig['children'] = test;
     // STATICPAGES is a global defined in webpack
     for (const idx in STATICPAGES) {
       if (!this.staticpagelist[STATICPAGES[idx]['section']]) {
-        this.staticpagelist[STATICPAGES[idx]['section']] = [{
-          label: STATICPAGES[idx]['item'],
-          route: STATICPAGES[idx]['link']
-        }];
+        this.staticpagelist[STATICPAGES[idx]['section']] = [
+          {
+            label: STATICPAGES[idx]['item'],
+            route: STATICPAGES[idx]['link'],
+          },
+        ];
       } else {
         this.staticpagelist[STATICPAGES[idx]['section']].push({
           label: STATICPAGES[idx]['item'],
-          route: STATICPAGES[idx]['link']
+          route: STATICPAGES[idx]['link'],
         });
       }
     }
     const x = this.staticpagelist;
     const test2 = Object.keys(this.staticpagelist)
-      .map(function(key) {
-      const list = x[key];
-      return {
-        label: key,
-        route: '/',
-        children: list
-      };
-    }).sort(function(a, b) {
-      if (a.label === 'Overview') {
-        return -1;
-      } else if (b.label === 'Overview') {
-        return 1;
-      }
-      if (a.label.charAt(0).toLowerCase()
-        < b.label.charAt(0).toLowerCase()) {
-        return -1;
-      } else if (a.label.charAt(0).toLowerCase()
-        > b.label.charAt(0).toLowerCase()) {
-        return 1;
-      }
-      return 0;
-    });
+      .map(function (key) {
+        const list = x[key];
+        return {
+          label: key,
+          route: '/',
+          children: list,
+        };
+      })
+      .sort(function (a, b) {
+        if (a.label === 'Overview') {
+          return -1;
+        } else if (b.label === 'Overview') {
+          return 1;
+        }
+        if (a.label.charAt(0).toLowerCase() < b.label.charAt(0).toLowerCase()) {
+          return -1;
+        } else if (
+          a.label.charAt(0).toLowerCase() > b.label.charAt(0).toLowerCase()
+        ) {
+          return 1;
+        }
+        return 0;
+      });
 
-    this.sidenavConfig['children'] =  test2.concat(this.sidenavConfig['children']);
+    this.sidenavConfig['children'] = test2.concat(
+      this.sidenavConfig['children']
+    );
 
     // handlers for specific routes
-    this.router.events.subscribe( (event) => {
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Set Page Title
         this.title.setTitle(this.router.url);
@@ -143,13 +143,14 @@ export class AppComponent implements OnInit {
         } else {
           this.showBanner = false;
         }
-        if (event.url.match(/^\/components\/header/)
-          || event.url.match(/^\/components\/search-header/)) {
+        if (
+          event.url.match(/^\/components\/header/) ||
+          event.url.match(/^\/components\/search-header/)
+        ) {
           this.showHeader = false;
           if (event.url.match(/^\/components\/header/)) {
             this.showUIKitHeader = true;
-          } else if (event.url
-            .match(/^\/components\/search-header/)) {
+          } else if (event.url.match(/^\/components\/search-header/)) {
             this.showUIKitSearchHeader = true;
           }
         } else {

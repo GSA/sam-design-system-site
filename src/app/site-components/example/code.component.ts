@@ -1,4 +1,10 @@
-import { Component, AfterViewInit, Input, Renderer2, ElementRef } from '@angular/core';
+import {
+  Component,
+  AfterViewInit,
+  Input,
+  Renderer2,
+  ElementRef,
+} from '@angular/core';
 import * as Prism from 'prismjs';
 import 'prismjs/components/prism-scss';
 import 'prismjs/plugins/previewers/prism-previewers';
@@ -15,13 +21,11 @@ export class CodeExampleComponent implements AfterViewInit {
   private codeNode: Node;
   private nativeElement: Node;
 
-  constructor(
-    private _renderer: Renderer2,
-    private _el: ElementRef) {
+  constructor(private _renderer: Renderer2, private _el: ElementRef) {
     this.nativeElement = _el.nativeElement;
   }
 
-  public ngAfterViewInit () {
+  public ngAfterViewInit() {
     this.preNode = this._renderer.createElement('pre');
     this.codeNode = this._renderer.createElement('code');
     this._renderer.addClass(this.codeNode, 'language-' + this.language);

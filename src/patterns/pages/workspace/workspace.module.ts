@@ -11,14 +11,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     SamUIKitModule,
-    SamFilterModule
+    SamFilterModule,
   ],
-  declarations: [
-    SamWorkspaceDemoComponent
-  ],
+  declarations: [SamWorkspaceDemoComponent],
   providers: [WorkspaceService],
-  exports: [
-    SamWorkspaceDemoComponent
-  ]
+  exports: [SamWorkspaceDemoComponent],
 })
-export class WorkspaceModule { }
+export class WorkspaceModule {}

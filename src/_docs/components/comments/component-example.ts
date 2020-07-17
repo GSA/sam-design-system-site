@@ -1,12 +1,10 @@
-
-import {throwError as observableThrowError,  Observable, of } from 'rxjs';
+import { throwError as observableThrowError, Observable, of } from 'rxjs';
 
 import { Component, Injectable } from '@angular/core';
 import { Comment, CommentsService } from '@gsa-sam/sam-ui-elements';
 
 @Injectable()
 export class CommentsDemoService implements CommentsService {
-
   private offset = 5;
 
   public _username: string = 'anon-user@common-components.team';
@@ -16,119 +14,144 @@ export class CommentsDemoService implements CommentsService {
     {
       username: 'diego-dev@commoncomponents.team',
       datetime: new Date('6/1/2017'),
-      text: `Lorem ipsum dolor sit amet, consectetuer adiing elit. ` +
-      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
-      `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
-      `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, consectetuer adiing elit. ` +
+        `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+        `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
+        `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date('02/14/2017'),
-      text: `Lorem ipsum doit amet, consectetuer adipiscing elit. ` +
-      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
-      `penatibus et magnis dis parturient motur ridiculus mus. ` +
-      `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum doit amet, consectetuer adipiscing elit. ` +
+        `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+        `penatibus et magnis dis parturient motur ridiculus mus. ` +
+        `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lorem ipsum dolor sit amet, conctetuer adipiscing elit. ` +
-      `Aenean commodo ligula eget dolor. Aenean `,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, conctetuer adipiscing elit. ` +
+        `Aenean commodo ligula eget dolor. Aenean `,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
-      `Aenean modo ligula eget do\n massa. Cum sociis natoque penatibus et ` +
-      `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
-      `ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+        `Aenean modo ligula eget do\n massa. Cum sociis natoque penatibus et ` +
+        `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+        `ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lo ipsum dolor sit amet, consectetuer adipiscing elit. ` +
-      `Aenean commodo ligula eget do Cum sociis natoque penatibus et magnis ` +
-      `dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
-      `ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lo ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+        `Aenean commodo ligula eget do Cum sociis natoque penatibus et magnis ` +
+        `dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+        `ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lorem ipsum dolor sit amet, consectetuer adcing elit. ` +
-      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis ` +
-      `natoque penatibus et magnis dis parturient montes, nascetur us mus. ` +
-      `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, consectetuer adcing elit. ` +
+        `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis ` +
+        `natoque penatibus et magnis dis parturient montes, nascetur us mus. ` +
+        `Donec quam felis, ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'carlos-dev@commoncomponents.team',
       datetime: new Date('7/16/2017'),
-      text: `Lorem ipsum dolor sit amet, consectetuer adipido ` +
-      `ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ` +
-      `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
-      `ultricies nec, pellentesque eu, pretium.`
+      text:
+        `Lorem ipsum dolor sit amet, consectetuer adipido ` +
+        `ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ` +
+        `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+        `ultricies nec, pellentesque eu, pretium.`,
     },
     {
       username: 'diego-dev@commoncomponents.team',
       datetime: new Date('6/1/2017'),
-      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ` +
-      `commodo ligula eget dolor. Aenean masa. Cum sociis natoque penatibus et ` +
-      `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
-      `ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ` +
+        `commodo ligula eget dolor. Aenean masa. Cum sociis natoque penatibus et ` +
+        `magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ` +
+        `ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lorem ipsum doit amet, consectetuer adipiscing elit. ` +
-      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
-      `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
-      `Donec quam felis, ultricies nectesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum doit amet, consectetuer adipiscing elit. ` +
+        `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+        `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
+        `Donec quam felis, ultricies nectesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lorem ipsum dolor sit amet, conctetuer adipiscing elit. ` +
-      `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
-      `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
-      `Donec quamies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, conctetuer adipiscing elit. ` +
+        `Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+        `penatibus et magnis dis parturient montes, nascetur ridiculus mus. ` +
+        `Donec quamies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
-      `Aenean modo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
-      `penatibus et magnis dis parturient montes, nascetur ridiculus musquam ` +
-      `felis, ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+        `Aenean modo ligula eget dolor. Aenean massa. Cum sociis natoque ` +
+        `penatibus et magnis dis parturient montes, nascetur ridiculus musquam ` +
+        `felis, ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lo ipsum dolor sit amet, consectetuer adipiscing elit. ` +
-      `Aenean commodo ligula egets, nascetur ridiculus mus. Donec quam felis, ` +
-      `ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lo ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+        `Aenean commodo ligula egets, nascetur ridiculus mus. Donec quam felis, ` +
+        `ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
     {
       username: 'colin-dev@commoncomponents.team',
       datetime: new Date(),
-      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
-      `Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus ` +
-      `et magnis dis parturient montes, nascetur us mus. Donec quam felis, ` +
-      `ultricies nec, pellentesque eu, pretium.`,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg'
+      text:
+        `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ` +
+        `Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus ` +
+        `et magnis dis parturient montes, nascetur us mus. Donec quam felis, ` +
+        `ultricies nec, pellentesque eu, pretium.`,
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c6/Georgewashington.jpg',
     },
   ];
 
-    private lastIndex = (this._comments.length - 1) - this.offset;
+  private lastIndex = this._comments.length - 1 - this.offset;
 
   isCommentingDisabled(): boolean {
     return this._disabled;
@@ -143,7 +166,7 @@ export class CommentsDemoService implements CommentsService {
   }
 
   getComments(): Observable<Comment[]> {
-    const endPoint = (this._comments.length - 1) - this.offset;
+    const endPoint = this._comments.length - 1 - this.offset;
     this.lastIndex = endPoint;
 
     return of(this._comments.slice(endPoint, this._comments.length - 1));
@@ -176,10 +199,6 @@ export class CommentsDemoService implements CommentsService {
 @Component({
   selector: 'doc-sam-comments',
   templateUrl: './component-example.html',
-  providers: [
-    { provide: CommentsService, useClass: CommentsDemoService }
-  ]
+  providers: [{ provide: CommentsService, useClass: CommentsDemoService }],
 })
-export class SamCommentsComponentExampleComponent {
-
-}
+export class SamCommentsComponentExampleComponent {}

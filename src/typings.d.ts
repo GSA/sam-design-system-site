@@ -4,6 +4,6 @@ interface NodeModule {
   id: string;
 }
 
-declare module "*.json" {
+declare module '*.json' {
   export const value;
 }

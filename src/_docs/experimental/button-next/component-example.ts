@@ -1,14 +1,11 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { BaseExampleComponent } from '../../baseexample.component';
 
 import { HttpClient } from '@angular/common/http';
 import { MarkdownService } from '../../../app/services/markdown/markdown.service';
 import { DocumentationService } from '../../../app/services/documentation.service';
-import {
-  faHome,
-  faUser,
-} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const code_example_1 = `<sam-button-next action="primary">Create</sam-button-next>`;
 const code_example_1_2 = `<sam-button-next action="submit">Submit</sam-button-next>`;
@@ -51,7 +48,8 @@ const code_example_disabled = `
 
 @Component({
   selector: 'doc-button-next',
-  template: `
+  template:
+    `
 
   <doc-template [markdown]="markdown" [example]="" [typedoc]="typedoc_content">
 
@@ -62,7 +60,9 @@ const code_example_disabled = `
 
       <h3 class="sam heading">Primary</h3>
       <sam-code-example language="html" [code]="example_1">
-      ` + code_example_1 + `
+      ` +
+    code_example_1 +
+    `
       </sam-code-example>
 
       <div class="sam-ui info message">
@@ -74,7 +74,9 @@ const code_example_disabled = `
         </p>
       </div>
       <sam-code-example language="html" [code]="example_1_2">
-      ` + code_example_1_2 + `
+      ` +
+    code_example_1_2 +
+    `
       </sam-code-example>
 
     </div>
@@ -84,7 +86,9 @@ const code_example_disabled = `
   <div class="usa-grid doc-examples">
     <div class="usa-width-one-whole">
       <sam-code-example language="html" [code]="example_2">
-      ` + code_example_2 + `
+      ` +
+    code_example_2 +
+    `
       </sam-code-example>
     </div>
   </div>
@@ -93,7 +97,9 @@ const code_example_disabled = `
   <div class="usa-grid doc-examples">
     <div class="usa-width-one-whole">
       <sam-code-example language="html" [code]="example_3">
-      ` + code_example_3 + `
+      ` +
+    code_example_3 +
+    `
       </sam-code-example>
     </div>
   </div>
@@ -102,7 +108,9 @@ const code_example_disabled = `
   <div class="usa-grid doc-examples">
     <div class="usa-width-one-whole">
       <sam-code-example language="html" [code]="example_4">
-      ` + code_example_4 + `
+      ` +
+    code_example_4 +
+    `
       </sam-code-example>
     </div>
   </div>
@@ -111,7 +119,9 @@ const code_example_disabled = `
   <div class="usa-grid doc-examples">
     <div class="usa-width-one-whole">
       <sam-code-example language="html" [code]="example_5">
-      ` + code_example_5 + `
+      ` +
+    code_example_5 +
+    `
       </sam-code-example>
     </div>
   </div>
@@ -121,14 +131,17 @@ const code_example_disabled = `
     <div class="usa-width-one-whole">
       <h3 class="sam heading">Disabled</h3>
       <sam-code-example language="html" [code]="example">
-      ` + code_example_disabled + `
+      ` +
+    code_example_disabled +
+    `
       </sam-code-example>
     </div>
   </div>
   </doc-template>
-  `
+  `,
 })
-export class ButtonNextExampleComponent extends BaseExampleComponent implements OnInit {
+export class ButtonNextExampleComponent extends BaseExampleComponent
+  implements OnInit {
   typedoc_target = 'SamButtonNextComponent';
   typedoc_content = '';
 
@@ -148,8 +161,8 @@ export class ButtonNextExampleComponent extends BaseExampleComponent implements 
   constructor(
     _http: HttpClient,
     public service: DocumentationService,
-    public mdService: MarkdownService) {
-
+    public mdService: MarkdownService
+  ) {
     super(_http, service, mdService);
 
     this.sections.forEach(this.fetchSection.bind(this));
@@ -158,5 +171,4 @@ export class ButtonNextExampleComponent extends BaseExampleComponent implements 
   ngOnInit() {
     super.ngOnInit();
   }
-
 }

@@ -23,6 +23,7 @@
     "update-build-env": "node src/environments/update-build-env.js",
     "init": "npm run compile-markdown && npm run set-env && npm run docs",
     "bundle-analyzer": "webpack-bundle-analyzer dist/stats.json",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,json}\"",
     "federalist": "npm run init && NODE_OPTIONS=--max-old-space-size=5072 && ng build --prod --base-href=$BASEURL/ --deploy-url=$BASEURL/"
   },
   "private": true,
@@ -57,6 +58,7 @@
     "fs-extra": "9.0.1",
     "markdown-it": "11.0.0",
     "moment": "2.27.0",
+    "prettier": "^2.0.5",
     "prismjs": "1.20.0",
     "punycode": "^2.1.1",
     "recursive-readdir-sync": "1.0.6",

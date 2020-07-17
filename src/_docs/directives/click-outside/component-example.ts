@@ -8,10 +8,10 @@ export class SamClickOutsideDirectiveExampleComponent {
   clickedValue = 'None';
 
   public clickOutsideHandler() {
-    this.clickedValue = "Clicked outside 'Sample Target'";
+    this.clickedValue = 'Clicked outside Sample Target';
   }
 
   public clickInsideHandler() {
-    this.clickedValue = "Clicked inside 'Sample Target'";
+    this.clickedValue = 'Clicked inside Sample Target';
   }
 }

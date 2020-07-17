@@ -81,5 +81,5 @@ export class HierarchyDataSource extends DataSource<any> {
   ): string | number => {
     const value = (data as { [key: string]: any })[sortHeaderId];
     return value;
-  };
+  }
 }

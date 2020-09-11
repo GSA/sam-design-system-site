@@ -46,6 +46,9 @@ export class SamAutocompleteExampleComponent implements OnInit {
   public delimeterSettings = new SAMSDSAutocompletelConfiguration();
   public delimeterModel = new SAMSDSSelectedItemModel();
 
+  public singledelimeterSettings = new SAMSDSAutocompletelConfiguration();
+  public singledelimeterModel = new SAMSDSSelectedItemModel();
+
   constructor(
     public service: AutocompleteSampleDataService,
     public groupService: AutocompleteGroupDataService
@@ -148,6 +151,15 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.delimeterSettings.isTagModeEnabled = true;
     this.delimeterSettings.isDelimiterEnabled = true;
     this.delimeterSettings.delimiters = [",", ";", ":"];
+
+    this.singledelimeterSettings.primaryKeyField = "id";
+    this.singledelimeterSettings.id = "autocomplete10";
+    this.singledelimeterSettings.labelText = "Autocomplete 10";
+    this.singledelimeterSettings.primaryTextField = "name";
+    this.singledelimeterSettings.secondaryTextField = "subtext";
+    this.singledelimeterSettings.selectionMode = SelectionMode.SINGLE;
+    this.singledelimeterSettings.autocompletePlaceHolderText = "Free text";
+    this.singledelimeterSettings.isTagModeEnabled = true;
 
     this.model5.items.push(this.data[0]);
     this.model5.items.push(this.data[1]);

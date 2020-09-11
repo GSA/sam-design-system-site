@@ -130,3 +130,16 @@
 
   {{delimeterModel |json}}
 </div>
+
+<div class="margin-top-4">
+  <label id="auto5Label">Autocomplete with Single focus out mode enable</label>
+
+  <sam-sds-autocomplete
+    [service]="service"
+    (ngModelChange)="changes($event)"
+    [(ngModel)]="singledelimeterModel"
+    [configuration]="singledelimeterSettings"
+  ></sam-sds-autocomplete>
+
+  {{singledelimeterModel |json}}
+</div>

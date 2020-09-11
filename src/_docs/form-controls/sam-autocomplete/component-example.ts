@@ -43,6 +43,9 @@ export class SamAutocompleteExampleComponent implements OnInit {
   public tagSettings = new SAMSDSAutocompletelConfiguration();
   public tagModel = new SAMSDSSelectedItemModel();
 
+  public delimeterSettings = new SAMSDSAutocompletelConfiguration();
+  public delimeterModel = new SAMSDSSelectedItemModel();
+
   constructor(
     public service: AutocompleteSampleDataService,
     public groupService: AutocompleteGroupDataService
@@ -107,19 +110,19 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.freeTextSettings.autocompletePlaceHolderText = "Free text";
     this.freeTextSettings.isFreeTextEnabled = true;
 
-    this.groupSettings.id = "autocomplete1";
+    this.groupSettings.id = "autocomplete6";
     this.groupSettings.primaryKeyField = "element_id";
     this.groupSettings.primaryTextField = "value";
-    this.groupSettings.labelText = "Autocomplete 1";
+    this.groupSettings.labelText = "Autocomplete 6";
     this.groupSettings.selectionMode = SelectionMode.MULTIPLE;
     this.groupSettings.autocompletePlaceHolderText = "Enter text";
     this.groupSettings.isGroupingEnabled = true;
     this.groupSettings.groupByChild = "elements";
 
-    this.selectGroupSettings.id = "autocomplete1";
+    this.selectGroupSettings.id = "autocomplete7";
     this.selectGroupSettings.primaryKeyField = "element_id";
     this.selectGroupSettings.primaryTextField = "value";
-    this.selectGroupSettings.labelText = "Autocomplete 1";
+    this.selectGroupSettings.labelText = "Autocomplete 7";
     this.selectGroupSettings.selectionMode = SelectionMode.MULTIPLE;
     this.selectGroupSettings.autocompletePlaceHolderText = "Enter text";
     this.selectGroupSettings.isGroupingEnabled = true;
@@ -127,13 +130,24 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.selectGroupSettings.isSelectableGroup = false;
 
     this.tagSettings.primaryKeyField = "id";
-    this.tagSettings.id = "autocomplete3";
-    this.tagSettings.labelText = "Autocomplete 3";
+    this.tagSettings.id = "autocomplete8";
+    this.tagSettings.labelText = "Autocomplete 8";
     this.tagSettings.primaryTextField = "name";
     this.tagSettings.secondaryTextField = "subtext";
     this.tagSettings.selectionMode = SelectionMode.MULTIPLE;
     this.tagSettings.autocompletePlaceHolderText = "Enter text";
     this.tagSettings.isTagModeEnabled = true;
+
+    this.delimeterSettings.primaryKeyField = "id";
+    this.delimeterSettings.id = "autocomplete9";
+    this.delimeterSettings.labelText = "Autocomplete 9";
+    this.delimeterSettings.primaryTextField = "name";
+    this.delimeterSettings.secondaryTextField = "subtext";
+    this.delimeterSettings.selectionMode = SelectionMode.MULTIPLE;
+    this.delimeterSettings.autocompletePlaceHolderText = "Free text";
+    this.delimeterSettings.isTagModeEnabled = true;
+    this.delimeterSettings.isDelimiterEnabled = true;
+    this.delimeterSettings.delimiters = [",", ";", ":"];
 
     this.model5.items.push(this.data[0]);
     this.model5.items.push(this.data[1]);

@@ -432,7 +432,7 @@ export const ROUTES: Routes = [
   { path: 'form-controls/sam-autocomplete', component: BaseDocPageComponent, data: {
     path: '_docs/form-controls/sam-autocomplete',
     componentName: 'SamAutocomplete',
-			sections: ['component.scss','component-example.html','component-example.ts','documentation.md','data.ts','service.ts']}, children: [
+			sections: ['component.scss','component-example.html','component-example.ts','documentation.md','service.ts','data.ts','service.ts','datachildgroup.ts']}, children: [
     { path: '', component: SamAutocompleteExampleComponent }
   ]},
   { path: 'form-controls/select', component: BaseDocPageComponent, data: {

@@ -43,7 +43,7 @@
 >
 </sam-sds-autocomplete>
 
-<label for="autocomplete5">FreeText Enable</label>
+<label for="autocomplete6">FreeText Enable</label>
 <sam-sds-autocomplete
   [service]="service"
   [(ngModel)]="freeTextModel"
@@ -51,7 +51,7 @@
 >
 </sam-sds-autocomplete>
 <div class="margin-top-4">
-  <label id="auto1Label" for="autocompletegrp">Autocomplete with Group</label>
+  <label id="auto1Label" for="autocomplete7">Autocomplete with Group</label>
   <p>
     <code>this.groupSettings.isGroupingEnabled = true</code> is used to set the
     enable the grouping.
@@ -68,7 +68,7 @@
   </sam-sds-autocomplete>
 </div>
 <div class="margin-top-4">
-  <label id="auto1Label" for="autocomplete1"
+  <label id="auto1Label" for="autocomplete8"
     >Autocomplete with Group as label</label
   >
   <p>
@@ -100,7 +100,7 @@
 </ng-template>
 
 <div class="margin-top-4">
-  <label id="auto3Label">Autocomplete with tag mode enable</label>
+  <label id="auto5Label">Autocomplete with tag mode enable</label>
   <p>
     <code> this.tagSettings.isTagModeEnabled = true</code> is used to enable the
     tag mode.
@@ -113,4 +113,20 @@
   ></sam-sds-autocomplete>
 
   {{tagModel |json}}
+</div>
+
+<div class="margin-top-4">
+  <label id="auto4Label">Autocomplete with delimeter mode enable</label>
+  <p>
+    <code> this.delimeterSettings.isTagModeEnabled = true</code> is used to
+    enable the tag mode.
+  </p>
+  <sam-sds-autocomplete
+    [service]="service"
+    (ngModelChange)="changes($event)"
+    [(ngModel)]="delimeterModel"
+    [configuration]="delimeterSettings"
+  ></sam-sds-autocomplete>
+
+  {{delimeterModel |json}}
 </div>

@@ -45,7 +45,7 @@
     "@fortawesome/fontawesome-svg-core": "1.2.22",
     "@fortawesome/free-regular-svg-icons": "5.10.2",
     "@fortawesome/free-solid-svg-icons": "5.10.2",
-    "@gsa-sam/sam-styles": "0.0.34",
+    "@gsa-sam/sam-styles": "0.0.36",
     "@gsa-sam/sam-ui-elements": "1.0.2",
     "@ngx-formly/core": "5.5.1",
     "@types/jasmine": "2.5.54",

@@ -49,6 +49,10 @@ export class SamAutocompleteExampleComponent implements OnInit {
   public singledelimeterSettings = new SAMSDSAutocompletelConfiguration();
   public singledelimeterModel = new SAMSDSSelectedItemModel();
 
+  public tagSingleSettings = new SAMSDSAutocompletelConfiguration();
+  public tagSingleModel = new SAMSDSSelectedItemModel();
+
+
   constructor(
     public service: AutocompleteSampleDataService,
     public groupService: AutocompleteGroupDataService
@@ -60,7 +64,7 @@ export class SamAutocompleteExampleComponent implements OnInit {
     console.log(value);
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   setup() {
     this.settings.id = "autocomplete1";
@@ -161,6 +165,15 @@ export class SamAutocompleteExampleComponent implements OnInit {
     this.singledelimeterSettings.selectionMode = SelectionMode.SINGLE;
     this.singledelimeterSettings.autocompletePlaceHolderText = "Free text";
     this.singledelimeterSettings.isTagModeEnabled = true;
+
+    this.tagSingleSettings.primaryKeyField = "id";
+    this.tagSingleSettings.id = "autocomplete8";
+    this.tagSingleSettings.labelText = "Autocomplete 8";
+    this.tagSingleSettings.primaryTextField = "name";
+    this.tagSingleSettings.secondaryTextField = "subtext";
+    this.tagSingleSettings.selectionMode = SelectionMode.SINGLE;
+    this.tagSingleSettings.autocompletePlaceHolderText = "Enter text";
+    this.tagSingleSettings.isTagModeEnabled = true;
 
     this.model5.items.push(this.data[0]);
     this.model5.items.push(this.data[1]);

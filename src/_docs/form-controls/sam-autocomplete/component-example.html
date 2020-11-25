@@ -1,28 +1,60 @@
 <label for="autocomplete1">Single Select without template</label>
-<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model" [configuration]="settings">
+<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model"
+    [configuration]="settings">
 </sam-sds-autocomplete>
 
+{{model | json}}
+
 <label for="autocomplete2">Single Select with template</label>
-<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model2" [configuration]="settings2"
-    [suggestionTemplate]="temp"></sam-sds-autocomplete>
+<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model2"
+    [configuration]="settings2" [suggestionTemplate]="temp"></sam-sds-autocomplete>
 
 <label for="autocomplete3">Multi Select without template</label>
 <sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model3"
     [configuration]="settings3"></sam-sds-autocomplete>
 
 <label for="autocomplete4">Multi Select with template</label>
-<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model4" [configuration]="settings4"
-    [suggestionTemplate]="temp" [selectedItemTemplate]="temp"></sam-sds-autocomplete>
-
+<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model4"
+    [configuration]="settings4" [suggestionTemplate]="temp" [selectedItemTemplate]="temp"></sam-sds-autocomplete>
 
 <label for="autocomplete5">Disabled</label>
 <sam-sds-autocomplete [service]="service" [disabled]="true" [(ngModel)]="model5" [configuration]="settings5">
 </sam-sds-autocomplete>
 
-<label for="autocomplete5">FreeText Enable</label>
+<label for="autocomplete6">FreeText Enable</label>
 <sam-sds-autocomplete [service]="service" [(ngModel)]="freeTextModel" [configuration]="freeTextSettings">
 </sam-sds-autocomplete>
+<div class="margin-top-4">
+    <label id="auto1Label" for="autocomplete7">Autocomplete with Group</label>
+    <p>
+        <code>this.groupSettings.isGroupingEnabled = true</code> is used to set the
+        enable the grouping.
+    </p>
+    <p>
+        <code>this.groupSettings.groupByChild = 'elements';</code> child property
+        name for grouping.
+    </p>
+    <sam-sds-autocomplete [service]="groupService" [(ngModel)]="groupModel" [configuration]="groupSettings">
+    </sam-sds-autocomplete>
+</div>
+<div class="margin-top-4">
+    <label id="auto1Label" for="autocomplete8">Autocomplete with Group as label</label>
+    <p>
+        <code>this.selectGroupSettings.isGroupingEnabled = true</code> is used to
+        set the enable the grouping.
+    </p>
+    <p>
+        <code>this.selectGroupSettings.groupByChild = 'elements';</code> child
+        property name for grouping.
+    </p>
 
+    <p>
+        <code>this.selectGroupSettings.isSelectableGroup = false;</code> to disable
+        selecting group element
+    </p>
+    <sam-sds-autocomplete [service]="groupService" [(ngModel)]="selectGroupModel" [configuration]="selectGroupSettings">
+    </sam-sds-autocomplete>
+</div>
 
 <ng-template #temp let-item>
     <span>
@@ -30,3 +62,49 @@
         {{item['name'] +': '+ item['subtext'] }}
     </span>
 </ng-template>
+
+<div class="margin-top-4">
+    <label id="auto5Label">Autocomplete with tag mode enable</label>
+    <p>
+        <code> this.tagSettings.isTagModeEnabled = true</code> is used to enable the
+        tag mode.
+    </p>
+    <sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="tagModel"
+        [configuration]="tagSettings"></sam-sds-autocomplete>
+
+    {{tagModel |json}}
+</div>
+
+<div class="margin-top-4">
+    <label id="auto4Label">Autocomplete with delimeter mode enable</label>
+    <p>
+        <code> this.delimeterSettings.isTagModeEnabled = true</code> is used to
+        enable the tag mode.
+    </p>
+    <sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="delimeterModel"
+        [configuration]="delimeterSettings"></sam-sds-autocomplete>
+
+    {{delimeterModel |json}}
+</div>
+
+<div class="margin-top-4">
+    <label id="auto5Label">Autocomplete with Single focus out mode enable</label>
+
+    <sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="singledelimeterModel"
+        [configuration]="singledelimeterSettings"></sam-sds-autocomplete>
+
+    {{singledelimeterModel |json}}
+</div>
+
+
+<div class="margin-top-4">
+    <label id="auto8Label">Autocomplete with tag mode enable with single select</label>
+    <p>
+        <code> this.tagSettings.isTagModeEnabled = true</code> is used to enable the
+        tag mode.
+    </p>
+    <sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="tagSingleModel"
+        [configuration]="tagSingleSettings"></sam-sds-autocomplete>
+
+    {{tagSingleModel |json}}
+</div>

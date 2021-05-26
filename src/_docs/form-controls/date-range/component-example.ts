@@ -6,15 +6,15 @@ import { Component } from "@angular/core";
 })
 export class SamDateRangeComponentExampleComponent {
   public dateRangeModel = {
-    startDate: "2016-02-03",
-    endDate: "2017-04-23",
+    startDate: '2016-02-03',
+    endDate: '2017-04-23',
   };
   public dateRangeModel2 = {
-    startDate: "2016-02-03",
-    endDate: "2017-04-23",
+    startDate: '2016-02-03',
+    endDate: '2017-04-23',
   };
   public reportDateRangeModel = {
-    startDate: "",
-    endDate: "",
+    startDate: '',
+    endDate: ''
   };
 }

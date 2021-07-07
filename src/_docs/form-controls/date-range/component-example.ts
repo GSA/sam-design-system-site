@@ -1,8 +1,8 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "doc-sam-date-range",
-  templateUrl: "./component-example.html",
+  selector: 'doc-sam-date-range',
+  templateUrl: './component-example.html',
 })
 export class SamDateRangeComponentExampleComponent {
   public dateRangeModel = {

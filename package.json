@@ -44,6 +44,7 @@
     "@fortawesome/fontawesome-svg-core": "1.2.29",
     "@fortawesome/free-regular-svg-icons": "5.13.1",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@gsa-sam/sam-styles": "0.0.74",
     "@gsa-sam/sam-ui-elements": "2.0.3",
     "@ngx-formly/core": "5.8.0",
@@ -72,7 +73,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.13",
-    "@fortawesome/fontawesome-free": "^5.15.3",
     "codelyzer": "^6.0.0",
     "install-peers": "^1.0.3",
     "jasmine-core": "~3.6.0",

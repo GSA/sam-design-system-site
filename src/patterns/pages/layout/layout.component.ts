@@ -38,10 +38,11 @@ import {
 } from './database';
 import {
   HierarchicalTreeSelectedItemModel,
-   TreeMode } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
+  TreeMode
+} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
 import {
-   SelectedResultConfiguration
-  } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
+  SelectedResultConfiguration
+} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
 // import { stringify } from '@angular/core/src/render3/util';
 
 @Component({
@@ -85,10 +86,10 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   public results: (args) => { label: string, values: any[] }[];
   public model3 = new HierarchicalTreeSelectedItemModel();
   public settings3 = new SelectedResultConfiguration();
-  @ViewChild(SamSortDirective, {static: true})
+  @ViewChild(SamSortDirective, { static: true })
   public _sort: SamSortDirective;
 
-  @ViewChild(SamModalComponent, {static: true})
+  @ViewChild(SamModalComponent, { static: true })
   public fieldsEditor: SamModalComponent;
 
   public test = [];
@@ -215,6 +216,7 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   }
 
   public removeItem(event): void {
+    console.log(event)
     const current = this._service.get('filters').value;
     let key = Object.keys(event)[0];
     const fieldsObj = this.fields.find((item) => {

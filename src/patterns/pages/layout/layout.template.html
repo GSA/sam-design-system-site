@@ -1,10 +1,7 @@
 <sam-page-next [startSidebarClosed]="true" [backButtonText]="'Back to Report'">
 
   <!-- page title goes here -->
-  <sam-page-title
-    super="Contract Detail Report"
-    title="Contract Detail based on Account IDs for FY18"
-    inverted="true">
+  <sam-page-title super="Contract Detail Report" title="Contract Detail based on Account IDs for FY18" inverted="true">
   </sam-page-title>
 
   <sam-toolbar [showToggle]="false"></sam-toolbar>
@@ -13,10 +10,7 @@
 
     <sam-filters-wrapper *ngIf="metadataLoaded" [group]="form">
       <h4 class="sam heading">Filter By</h4>
-      <sam-filters
-        [form]="form"
-        [fields]="fields"
-        [model]="model"></sam-filters>
+      <sam-filters [form]="form" [fields]="fields" [model]="model"></sam-filters>
     </sam-filters-wrapper>
 
     <!-- finalize this implementation -->
@@ -24,8 +18,7 @@
       <h4 class="sam heading">Resources</h4>
       <ul class="sam list">
         <li>
-          <a href="https://beta.sam.gov/help/assistance-listing"
-            target="_blank" rel="noopener noreferrer">
+          <a href="https://beta.sam.gov/help/assistance-listing" target="_blank" rel="noopener noreferrer">
             About Federal Assistance
           </a>
         </li>
@@ -38,17 +31,11 @@
   <sam-main>
 
     <!-- filter-drawer -->
-    <!-- <sam-filter-drawer
-      dynamicChips
-      [map]="filtersToPills"
-      (remove)="removeItem($event)">
-    </sam-filter-drawer> -->
-    
-    <sam-selected-result [(ngModel)]="model3" [configuration]="settings3"></sam-selected-result>
+    <sam-filter-drawer dynamicChips [map]="filtersToPills" (remove)="removeItem($event)">
+    </sam-filter-drawer>
 
-    <sam-alert-next
-      type="warning">This report doesn't pull real data</sam-alert-next>
-      
+    <!-- <sam-alert-next type="warning">This report doesn't pull real data</sam-alert-next> -->
+
     <sam-main-content *ngIf="flag2; else spinner">
 
       <sam-tabs-next dynamicHeight>
@@ -62,24 +49,16 @@
             <!-- Pagination + Columns button -->
             <sam-action-bar *ngIf="flag2">
               <sam-pagination-next id="table-pagination" [totalUnits]="length"></sam-pagination-next>
-              <sam-button-next samPageAction
-                action="secondary"
-                (click)="toggleFieldsEditor()">
+              <sam-button-next samPageAction action="secondary" (click)="toggleFieldsEditor()">
                 Columns
               </sam-button-next>
             </sam-action-bar>
 
             <!-- Datatable -->
-            <sam-datatable samSort
-              [allowHorizontalScroll]="true"
-              [dataSource]="dataSource"
+            <sam-datatable samSort [allowHorizontalScroll]="true" [dataSource]="dataSource"
               (samSortChange)="onSortChange($event)">
-              <ng-container
-                *ngFor="let col of columnDefObs | async"
-                [cdkColumnDef]="col.def">
-                <th sam-header-cell
-                  *cdkHeaderCellDef
-                  sam-sort-header>
+              <ng-container *ngFor="let col of columnDefObs | async" [cdkColumnDef]="col.def">
+                <th sam-header-cell *cdkHeaderCellDef sam-sort-header>
                   {{ col.headerLabel }}
                 </th>
 
@@ -88,12 +67,8 @@
                 </td>
               </ng-container>
 
-              <tr sam-header-row
-                *cdkHeaderRowDef="displayedColumns"
-              ></tr>
-              <tr sam-row
-                *cdkRowDef="let row; columns: displayedColumns"
-              ></tr>
+              <tr sam-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+              <tr sam-row *cdkRowDef="let row; columns: displayedColumns"></tr>
             </sam-datatable>
 
           </div>
@@ -136,41 +111,26 @@
 </sam-page-next>
 
 <ng-template #spinner>
-    <sam-progress label="Loading..." [valueAsText]="valueAsText | async" [value]="progressLabel | async"></sam-progress>
+  <sam-progress label="Loading..." [valueAsText]="valueAsText | async" [value]="progressLabel | async"></sam-progress>
 </ng-template>
 
 <!-- modals -->
-<sam-modal
-  [showClose]="true"
-  [title]="'Edit Fields'"
-  [type]="'info'"
-  [description]="'Edit fields for report'"
-  [submitButtonLabel]="'Done'"
-  [cancelButtonLabel]="'Cancel'"
-  (close)="cancelModalAction()"
+<sam-modal [showClose]="true" [title]="'Edit Fields'" [type]="'info'" [description]="'Edit fields for report'"
+  [submitButtonLabel]="'Done'" [cancelButtonLabel]="'Cancel'" (close)="cancelModalAction()"
   (submit)="submitModalAction()">
   <div class="sam reset checkboxes labels fieldsets">
 
     <h4 class="sam heading">{{ options.organization.label }} </h4>
-    <sam-checkbox
-      [(ngModel)]="options.organization.selected"
-      [name]="options.organization.label"
-      [options]="options.organization.options"
-    ></sam-checkbox>
+    <sam-checkbox [(ngModel)]="options.organization.selected" [name]="options.organization.label"
+      [options]="options.organization.options"></sam-checkbox>
 
     <h4 class="sam heading">{{  options.listing.label }}</h4>
-    <sam-checkbox
-    [(ngModel)]="options.listing.selected"
-    [name]="options.listing.label"
-    [options]="options.listing.options"
-    ></sam-checkbox>
+    <sam-checkbox [(ngModel)]="options.listing.selected" [name]="options.listing.label"
+      [options]="options.listing.options"></sam-checkbox>
 
     <h4 class="sam heading">{{ options.status.label }}</h4>
-    <sam-checkbox
-    [(ngModel)]="options.status.selected"
-    [name]="options.status.label"
-    [options]="options.status.options"
-    ></sam-checkbox>
+    <sam-checkbox [(ngModel)]="options.status.selected" [name]="options.status.label"
+      [options]="options.status.options"></sam-checkbox>
 
   </div>
 </sam-modal>

@@ -70,22 +70,22 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
   public faTable = faTable;
   public faChartBar = faChartBar;
 
-  @ViewChild(SamSortDirective, {static: true})
-    public _sort: SamSortDirective;
+  @ViewChild(SamSortDirective, { static: true })
+  public _sort: SamSortDirective;
 
-  @ViewChild(SamModalComponent, {static: true})
-    public fieldsEditor: SamModalComponent;
+  @ViewChild(SamModalComponent, { static: true })
+  public fieldsEditor: SamModalComponent;
 
-    public test = [];
-    public testOptions = [
-      { key: 'one', value: 'one' },
-      { key: 'two', value: 'two' },
-      { key: 'three', value: 'three' },
-      { key: 'four', value: 'four' },
-      { key: 'five', value: 'five' },
-    ];
+  public test = [];
+  public testOptions = [
+    { key: 'one', value: 'one' },
+    { key: 'two', value: 'two' },
+    { key: 'three', value: 'three' },
+    { key: 'four', value: 'four' },
+    { key: 'five', value: 'five' },
+  ];
 
-  constructor (
+  constructor(
     private _fb: FormBuilder,
     private _service: SamPageNextService,
     private cdr: ChangeDetectorRef
@@ -102,7 +102,7 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
     this.cdr.detectChanges();
   }
 
-  public toggleFieldsEditor () {
+  public toggleFieldsEditor() {
     // backup in case of cancel action
     this.optionsBackup = cloneDeep(this.options);
     this.fieldsEditor.openModal();
@@ -153,11 +153,11 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
     );
   }
 
-  public onSortChange (event): void {
+  public onSortChange(event): void {
     this._service.model.properties.sort.setValue(event);
   }
 
-  private _connectToPageService () {
+  private _connectToPageService() {
     this._service.model.properties.data.valueChanges
       .subscribe(
         data => {
@@ -166,8 +166,8 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
       );
   }
 
-  private _toggleColumn (field): void {
-    for (const option of field.options){
+  private _toggleColumn(field): void {
+    for (const option of field.options) {
       const value = option.value;
 
       if (field.selected.indexOf(value) === -1) {

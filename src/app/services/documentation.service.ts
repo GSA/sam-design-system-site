@@ -15,9 +15,9 @@ export class DocumentationService {
 
   public loadData(): Observable<any> {
     return this._http.get(`${environment.DEPLOYURL}/assets/docs.json`);
-      // .pipe(
-      //   map((res: HttpResponse<any>) => res.body.json())
-      // );
+    // .pipe(
+    //   map((res: HttpResponse<any>) => res.body.json())
+    // );
   }
 
   /**
@@ -26,105 +26,105 @@ export class DocumentationService {
   public getComponents(): ReplaySubject<any> {
     const components: ReplaySubject<any> = new ReplaySubject();
     this.loadData()
-    .subscribe(
-      (data) => {
-        components.next(data.children.reduce((accum, child) => {
-          if (child.name.match(regexComponent) && child.children) {
-            for (const grandchild of child.children) {
-              if (!!grandchild.decorators &&
+      .subscribe(
+        (data) => {
+          components.next(data.children.reduce((accum, child) => {
+            if (child.name.match(regexComponent) && child.children) {
+              for (const grandchild of child.children) {
+                if (!!grandchild.decorators &&
                   (grandchild.decorators[0].name === 'Component' ||
-                  grandchild.decorators[0].name === 'Directive')) {
-                    accum.push(grandchild);
+                    grandchild.decorators[0].name === 'Directive')) {
+                  accum.push(grandchild);
+                }
               }
             }
-          }
-          return accum;
-        }, []));
-      },
-      (error) => { throw new Error(error); }
-    );
+            return accum;
+          }, []));
+        },
+        (error) => { throw new Error(error); }
+      );
     return components;
   }
 
   public generateJSONReport() {
     return this.loadData()
-    .subscribe(
-      (data) => {
-        const output = data.children.reduce((accum, child) => {
-          if (child.name.match(regexComponent)) {
-            for (const grandchild of child.children) {
-              if (!!grandchild.decorators &&
+      .subscribe(
+        (data) => {
+          const output = data.children.reduce((accum, child) => {
+            if (child.name.match(regexComponent)) {
+              for (const grandchild of child.children) {
+                if (!!grandchild.decorators &&
                   (grandchild.decorators[0].name === 'Component' ||
-                  grandchild.decorators[0].name === 'Directive')) {
-                    accum.push(grandchild);
+                    grandchild.decorators[0].name === 'Directive')) {
+                  accum.push(grandchild);
+                }
               }
             }
-          }
-          let arr = accum.slice(0);
-          let finalArr = [];
+            let arr = accum.slice(0);
+            let finalArr = [];
 
-          arr = arr.map(item => {
-            const row = {};
-            row['component'] = item['name'];
-            this._deleteProps(item);
-            if (item['children']) {
-              item['children'] = item['children'].filter(subitem => {
-                if (subitem['kindString'] === 'Property' && subitem['decorators']) {
-                  return true;
-                }
-              });
-              for (let i = 0; i < item['children'].length; i++) {
-
-                const subItem = item['children'][i];
-                delete subItem['id'];
-                delete subItem['kind'];
-                const subrow = {};
-
-                subrow['component'] = row['component'];
-                subrow['apiName'] = subItem['name'];
-
-                if (subItem['type'] && subItem['type']['name']) {
-                  subrow['datatype'] = subItem['type']['name'];
-                } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'union') {
-                  const typearr = [];
-                  for (let j = 0; j < subItem['type']['types'].length; j++) {
-                    if (subItem['type']['types'][j]['value']) {
-                      typearr.push(subItem['type']['types'][j]['value']);
-                    } else if (subItem['type']['types'][j]['name']) {
-                      typearr.push(subItem['type']['types'][j]['name']);
-                    }
+            arr = arr.map(item => {
+              const row = {};
+              row['component'] = item['name'];
+              this._deleteProps(item);
+              if (item['children']) {
+                item['children'] = item['children'].filter(subitem => {
+                  if (subitem['kindString'] === 'Property' && subitem['decorators']) {
+                    return true;
                   }
-                  subrow['datatype'] = typearr.join('|');
+                });
+                for (let i = 0; i < item['children'].length; i++) {
 
-                } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'reflection')) {
-                  subrow['datatype'] = 'reflection';
-                }else {
-                  subrow['datatype'] = '';
-                }
-                subrow['type'] = subItem['decorators'][0]['name'];
+                  const subItem = item['children'][i];
+                  delete subItem['id'];
+                  delete subItem['kind'];
+                  const subrow = {};
 
-                subrow['comment'] = '';
-                if (subItem['comment'] && subItem['comment']['shortText']) {
-                  subrow['comment'] = ('' + subItem['comment']['shortText']).replace(/\"/g, '""');
+                  subrow['component'] = row['component'];
+                  subrow['apiName'] = subItem['name'];
+
+                  if (subItem['type'] && subItem['type']['name']) {
+                    subrow['datatype'] = subItem['type']['name'];
+                  } else if (subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'union') {
+                    const typearr = [];
+                    for (let j = 0; j < subItem['type']['types'].length; j++) {
+                      if (subItem['type']['types'][j]['value']) {
+                        typearr.push(subItem['type']['types'][j]['value']);
+                      } else if (subItem['type']['types'][j]['name']) {
+                        typearr.push(subItem['type']['types'][j]['name']);
+                      }
+                    }
+                    subrow['datatype'] = typearr.join('|');
+
+                  } else if ((subItem['type'] && subItem['type']['type'] && subItem['type']['type'] === 'reflection')) {
+                    subrow['datatype'] = 'reflection';
+                  } else {
+                    subrow['datatype'] = '';
+                  }
+                  subrow['type'] = subItem['decorators'][0]['name'];
+
+                  subrow['comment'] = '';
+                  if (subItem['comment'] && subItem['comment']['shortText']) {
+                    subrow['comment'] = ('' + subItem['comment']['shortText']).replace(/\"/g, '""');
+                  }
+                  finalArr.push(subrow);
                 }
-                finalArr.push(subrow);
+              } else {
+                finalArr.push(row);
               }
-            } else {
-              finalArr.push(row);
-            }
 
-            return item;
-          });
-          finalArr = finalArr.filter(row => {
-            if (row['type'] === 'Input' || row['type'] === 'Output') {
-              return true;
-            }
-          });
-          return accum;
-        }, []);
-      },
-      (error) => { throw new Error(error); }
-    );
+              return item;
+            });
+            finalArr = finalArr.filter(row => {
+              if (row['type'] === 'Input' || row['type'] === 'Output') {
+                return true;
+              }
+            });
+            return accum;
+          }, []);
+        },
+        (error) => { throw new Error(error); }
+      );
   }
 
   /**
@@ -134,16 +134,16 @@ export class DocumentationService {
   public getComponentById(id: number): ReplaySubject<any> {
     const component: ReplaySubject<any> = new ReplaySubject();
     this.getComponents()
-    .subscribe(
-      (data) => {
-        for (const item of data) {
-          if (item.id === id) {
-            component.next(item);
+      .subscribe(
+        (data) => {
+          for (const item of data) {
+            if (item.id === id) {
+              component.next(item);
+            }
           }
-        }
-      },
-      (error) => { throw new Error(error); }
-    );
+        },
+        (error) => { throw new Error(error); }
+      );
     return component;
   }
 
@@ -154,16 +154,16 @@ export class DocumentationService {
   public getComponentByName(name: string): ReplaySubject<any> {
     const component: ReplaySubject<any> = new ReplaySubject();
     this.getComponents()
-    .subscribe(
-      (data) => {
-        for (const item of data) {
-          if (item.name === name) {
-            component.next(item);
+      .subscribe(
+        (data) => {
+          for (const item of data) {
+            if (item.name === name) {
+              component.next(item);
+            }
           }
-        }
-      },
-      (error) => { throw new Error(error); }
-    );
+        },
+        (error) => { throw new Error(error); }
+      );
     return component;
   }
 
@@ -178,32 +178,32 @@ export class DocumentationService {
     const properties: ReplaySubject<any[]> = new ReplaySubject();
 
     this.getComponentByName(name)
-    .subscribe(
-      (data) => {
-        if (data.children) {
-          data.children = data.children.filter((child) => {
-            if (!!child.decorators &&
+      .subscribe(
+        (data) => {
+          if (data.children) {
+            data.children = data.children.filter((child) => {
+              if (!!child.decorators &&
                 (child.decorators[0].name === 'Input' ||
-                 child.decorators[0].name === 'Output')) {
-                   return child;
-                 }
-          });
-          data.children = data.children.sort((prev, next) => {
-            if (prev.decorators[0].name === 'Input' && next.decorators[0].name === 'Output') {
-              return -1;
-            } else if (prev.decorators[0].name === 'Output' && next.decorators[0].name === 'Input') {
-              return 1;
-            } else {
-              return (prev.name).localeCompare(next.name);
-            }
-          });
-          properties.next(
-            data.children
-          );
-        }
-      },
-      (error) => { throw new Error(error); }
-    );
+                  child.decorators[0].name === 'Output')) {
+                return child;
+              }
+            });
+            data.children = data.children.sort((prev, next) => {
+              if (prev.decorators[0].name === 'Input' && next.decorators[0].name === 'Output') {
+                return -1;
+              } else if (prev.decorators[0].name === 'Output' && next.decorators[0].name === 'Input') {
+                return 1;
+              } else {
+                return (prev.name).localeCompare(next.name);
+              }
+            });
+            properties.next(
+              data.children
+            );
+          }
+        },
+        (error) => { throw new Error(error); }
+      );
 
     return properties;
   }
@@ -214,18 +214,18 @@ export class DocumentationService {
   public getComponentPropertiesById(componentName: string, propertyId: number): ReplaySubject<any> {
     const property: ReplaySubject<any> = new ReplaySubject();
     this.getComponentProperties(componentName)
-    .subscribe(
-      (data) => {
-        property.next(
-          data.filter((item) => {
-            if (item.id === propertyId) {
-              return item;
-            }
-          })
-        );
-      },
-      (error) => { throw new Error(error); }
-    );
+      .subscribe(
+        (data) => {
+          property.next(
+            data.filter((item) => {
+              if (item.id === propertyId) {
+                return item;
+              }
+            })
+          );
+        },
+        (error) => { throw new Error(error); }
+      );
     return property;
   }
 
@@ -235,18 +235,18 @@ export class DocumentationService {
   public getComponentPropertiesByName(componentName: string, name: string): ReplaySubject<any[]> {
     const properties: ReplaySubject<any[]> = new ReplaySubject();
     this.getComponentProperties(componentName)
-    .subscribe(
-      (data) => {
-        properties.next(
-          data.filter((item) => {
-            if (item.name === name) {
-              return item;
-            }
-          })
-        );
-      },
-      (error) => { throw new Error(error); }
-    );
+      .subscribe(
+        (data) => {
+          properties.next(
+            data.filter((item) => {
+              if (item.name === name) {
+                return item;
+              }
+            })
+          );
+        },
+        (error) => { throw new Error(error); }
+      );
     return properties;
   }
 
@@ -256,23 +256,23 @@ export class DocumentationService {
   public getInterfaces(): ReplaySubject<any[]> {
     const interfaces: ReplaySubject<any[]> = new ReplaySubject();
     this.loadData()
-    .subscribe(
-      (data) => {
-        interfaces.next(
-          data.children.reduce((accum, child) => {
-            if (child.children) {
-              child.children.forEach((kid) => {
-                if (kid.kindString === 'Interface') {
-                  accum.push(kid);
-                }
-              });
-            }
-            return accum;
-          }, [])
-        );
-      },
-      (error) => { throw new Error(error); }
-    );
+      .subscribe(
+        (data) => {
+          interfaces.next(
+            data.children.reduce((accum, child) => {
+              if (child.children) {
+                child.children.forEach((kid) => {
+                  if (kid.kindString === 'Interface') {
+                    accum.push(kid);
+                  }
+                });
+              }
+              return accum;
+            }, [])
+          );
+        },
+        (error) => { throw new Error(error); }
+      );
     return interfaces;
   }
 
@@ -282,30 +282,30 @@ export class DocumentationService {
   public getTypes(): ReplaySubject<any[]> {
     const types: ReplaySubject<any[]> = new ReplaySubject();
     this.loadData()
-    .subscribe(
-      (data) => {
-        types.next(
-          data.children.reduce((accum, child) => {
-            if (child.children) {
-              child.children.forEach((kid) => {
-                if (kid.kindString === 'Type alias') {
-                  accum.push(kid);
-                }
-              });
-            }
-            return accum;
-          }, [])
-        );
-      },
-      (error) => { throw new Error(error); }
-    );
+      .subscribe(
+        (data) => {
+          types.next(
+            data.children.reduce((accum, child) => {
+              if (child.children) {
+                child.children.forEach((kid) => {
+                  if (kid.kindString === 'Type alias') {
+                    accum.push(kid);
+                  }
+                });
+              }
+              return accum;
+            }, [])
+          );
+        },
+        (error) => { throw new Error(error); }
+      );
     return types;
   }
 
-  private _deleteProps (item) {
+  private _deleteProps(item) {
     const unneeded = ['id', 'kind', 'kindString',
-    'flags', 'groups', 'implementedTypes', 'sources',
-    'decorators'];
+      'flags', 'groups', 'implementedTypes', 'sources',
+      'decorators'];
 
     unneeded.forEach(
       property => delete item[property]

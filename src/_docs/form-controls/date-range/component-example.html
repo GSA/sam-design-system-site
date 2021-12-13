@@ -1,18 +1,11 @@
-<sam-date-range
-  label="Default"
-  name="example-date"
-  #dateRangeVar="ngModel"
-  [control]="dateRangeVar.control"
-  [(ngModel)]='dateRangeModel'></sam-date-range>
-<hr />
-<sam-date-range
-  label="Stacked"
-  name="example-date"
-  #dateRangeVar2="ngModel"
-  [control]="dateRangeVar2.control"
-  stacked="true"
-  [(ngModel)]='dateRangeModel2'></sam-date-range>
+<sam-date-range label="Default" [(ngModel)]='dateRangeModel' #dateRangeDefault="ngModel"
+  [control]="dateRangeDefault.control" [required]="true" name='dateRangeDefault'>
+</sam-date-range>
 
-  <sam-date-range  [(ngModel)]='reportDateRangeModel' #dateRange="ngModel"
-  [control]="dateRange?.control" [required]="true" name='dateRange'>
-</sam-date-range> 
+<sam-date-range label="Stacked" [(ngModel)]='dateRangeModel2' #dateRange2="ngModel" [control]="dateRange2?.control"
+  [required]="true" name='dateRange2'>
+</sam-date-range>
+
+<sam-date-range label="Required" [(ngModel)]='reportDateRangeModel' #dateRange="ngModel" [control]="dateRange?.control"
+  [required]="true" name='dateRange'>
+</sam-date-range>

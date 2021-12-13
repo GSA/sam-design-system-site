@@ -68,8 +68,7 @@ npm-debug.log
 *.swp
 .vscode/
 
-# NPM #
-package-lock.json
+
 
 
 # Angular #

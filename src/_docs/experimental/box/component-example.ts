@@ -68,7 +68,7 @@ export class SamBoxComponentExampleComponent extends BaseExampleComponent implem
 
   typedoc_target = 'SamBoxComponent';
   typedoc_content = '';
-  markdown= '';
+  markdown = '';
   example_1 = code_example_1.trim();
   example_2 = code_example_2.trim();
   example_3 = code_example_3.trim();

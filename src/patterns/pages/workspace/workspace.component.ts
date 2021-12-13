@@ -45,7 +45,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   ];
   public sortvalue: string;
 
-  @ViewChild(SamPaginationNextComponent, {static: true})
+  @ViewChild(SamPaginationNextComponent, { static: true })
   public pagination: SamPaginationNextComponent;
 
   constructor(private _fb: FormBuilder,
@@ -70,7 +70,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
     const pg = {
       pageSize: this.pagination.pageSize,
       currentPage: this.pagination.currentPage,
-      totalPages: this.pagination.totalPages,
+      // totalPages1: this.pagination.totalPages,
       totalUnits: this.pagination.totalUnits
     };
 

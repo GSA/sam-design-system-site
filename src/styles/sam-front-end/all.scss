@@ -27,7 +27,7 @@
 /*-------------------
        Icons
 --------------------*/
-@import '~font-awesome/scss/font-awesome';
+// @import '~font-awesome/scss/font-awesome';
 
 
 /*******************************
@@ -104,7 +104,7 @@ $large: $current-large;
 @import 'sam-ui/views/feed';
 
 /* Vendor Extentions */
-@import 'sam-ui/vendor/font-awesome';
+// @import 'sam-ui/vendor/font-awesome';
 
 /* Font Awesome Fallback when fonts are blocked */
 @import 'font-awesome-fallback';
@@ -174,7 +174,7 @@ $large: $current-large;
 @import 'components/us-security-modal';
 @import 'components/sa-security-modal';
 @import 'components/sa-static-security-modal';
-@import 'components/video-player';
+//@import 'components/video-player';
 @import 'components/agency-picker-v3';
 /*-------------------
      Pages
@@ -199,7 +199,7 @@ $large: $current-large;
 @import 'pages/wage-determination-operations';
 @import 'pages/help-search';
 @import 'pages/release-notes';
-@import 'pages/home';
+//@import 'pages/home';
 @import 'pages/_custom-page-inline-styles.scss';
 @import 'components/aac-confirm';
 @import 'components/aac-request';
@@ -211,7 +211,7 @@ $large: $current-large;
 @import 'components/organization-move';
 @import 'components/organization-profile';
 @import 'components/user-directory';
-@import 'components/workspace';
+//@import 'components/workspace';
 @import 'components/users/index';
 @import 'components/password/password';
 @import 'components/role-management/role-managment';
@@ -227,7 +227,7 @@ $large: $current-large;
 /*-------------------
      Templates
 --------------------*/
-@import 'templates/workspace';
+//@import 'templates/workspace';
 
 
 /*******************************

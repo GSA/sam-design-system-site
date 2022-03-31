@@ -29,7 +29,7 @@
   "dependencies": {
     "@angular-devkit/build-angular": "~12.2.14",
     "@angular/animations": "12.2.14",
-    "@angular/cdk": "^10.2.7",
+    "@angular/cdk": "12.2.13",
     "@angular/cli": "^12.2.14",
     "@angular/common": "12.2.14",
     "@angular/compiler": "12.2.14",
@@ -46,7 +46,7 @@
     "@fortawesome/free-regular-svg-icons": "5.13.1",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
     "@gsa-sam/sam-styles": "0.0.74",
-    "@gsa-sam/sam-ui-elements": "4.0.2",
+    "@gsa-sam/sam-ui-elements": "4.0.3",
     "@ngx-formly/core": "5.8.0",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.8",

@@ -86,3 +86,4 @@ npm-debug.log
 # Sonarqube
 .scannerwork/
 .sonar-project.properties
+.angular/cache

@@ -5,12 +5,12 @@ import {
   OnDestroy,
   ChangeDetectorRef,
   forwardRef,
-} from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { Observable, of, Subject } from 'rxjs';
+} from "@angular/core";
+import { FormBuilder, FormGroup } from "@angular/forms";
+import { Observable, of, Subject } from "rxjs";
 
-import { cloneDeep } from 'lodash';
-import { FormlyFieldConfig } from '@ngx-formly/core';
+import { cloneDeep } from "lodash";
+import { FormlyFieldConfig } from "@ngx-formly/core";
 
 import {
   SamSortDirective,
@@ -19,8 +19,8 @@ import {
   DataStore,
   layoutStore,
   SamPageNextComponent,
-} from '@gsa-sam/sam-ui-elements';
-import { faTable, faChartBar } from '@fortawesome/free-solid-svg-icons';
+} from "@gsa-sam/sam-ui-elements";
+import { faTable, faChartBar } from "@fortawesome/free-solid-svg-icons";
 
 import {
   fields,
@@ -28,18 +28,18 @@ import {
   columnDefinitions,
   checkboxes,
   SampleData,
-} from './data';
-import { SampleDatabase, SampleDataSource } from './database';
+} from "./data";
+import { SampleDatabase, SampleDataSource } from "./database";
 import {
   HierarchicalTreeSelectedItemModel,
   TreeMode,
-} from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model';
-import { SelectedResultConfiguration } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration';
+} from "@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-tree-selectedItem.model";
+import { SelectedResultConfiguration } from "@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/models/SamHierarchicalSelectedResultConfiguration";
 // import { stringify } from '@angular/core/src/render3/util';
 
 @Component({
-  selector: 'sam-layout-demo-component',
-  templateUrl: './layout.template.html',
+  selector: "sam-layout-demo-component",
+  templateUrl: "./layout.template.html",
   providers: [
     {
       provide: DataStore,
@@ -86,11 +86,11 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
 
   public test = [];
   public testOptions = [
-    { key: 'one', value: 'one' },
-    { key: 'two', value: 'two' },
-    { key: 'three', value: 'three' },
-    { key: 'four', value: 'four' },
-    { key: 'five', value: 'five' },
+    { key: "one", value: "one" },
+    { key: "two", value: "two" },
+    { key: "three", value: "three" },
+    { key: "four", value: "four" },
+    { key: "five", value: "five" },
   ];
 
   public valueAsText = new Subject<string>();
@@ -117,7 +117,7 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
     setInterval(
       (subject: Subject<string>) => {
         if (remaining > 0) {
-          const str = remaining-- + ' minutes remaining';
+          const str = remaining-- + " minutes remaining";
           subject.next(str);
         } else {
           this.flag2 = true;
@@ -132,28 +132,28 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
 
     // simulate metadata api call
     setTimeout(() => {
-      this._service.sendPageMessage('open sidebar');
+      this._service.sendPageMessage("open sidebar");
       this.metadataLoaded = true;
-      if (!this.cdr['destroyed']) {
+      if (!this.cdr["destroyed"]) {
         this.cdr.detectChanges();
       }
       // simulate data api call
       setTimeout(() => {
-        if (!this.cdr['destroyed']) {
+        if (!this.cdr["destroyed"]) {
           this.cdr.detectChanges();
         }
         // calls when filters changes
         this.filtersPills();
         this._connectToPageService();
-        if (!this.cdr['destroyed']) {
+        if (!this.cdr["destroyed"]) {
           this.cdr.detectChanges();
         }
       }, 3000);
     }, 1000);
 
-    this.settings3.primaryKeyField = 'label';
-    this.settings3.primaryTextField = 'label';
-    this.settings3.secondaryTextField = 'values';
+    this.settings3.primaryKeyField = "label";
+    this.settings3.primaryTextField = "label";
+    this.settings3.secondaryTextField = "values";
     this.model3.treeMode = TreeMode.MULTIPLE;
   }
   ngOnDestroy() {
@@ -169,15 +169,15 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   // setup datasource
   public connect() {
     this.referenceColumns = [
-      'Agency',
-      'CFDANumber',
-      'Title',
-      'CurrentStatus',
-      'LastUpdatedDate',
-      'ObligationsUpdated',
-      'OMBReviewDate',
-      'LastPublishedDate',
-      'AutoPublished',
+      "Agency",
+      "CFDANumber",
+      "Title",
+      "CurrentStatus",
+      "LastUpdatedDate",
+      "ObligationsUpdated",
+      "OMBReviewDate",
+      "LastPublishedDate",
+      "AutoPublished",
     ];
     this.displayedColumns = this.referenceColumns.slice(0);
     // data table
@@ -211,14 +211,14 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   }
 
   public removeItem(event): void {
-    const current = this._service.get('filters').value;
+    const current = this._service.get("filters").value;
     let key = Object.keys(event)[0];
     const fieldsObj = this.fields.find((item) => {
       if (item.templateOptions && item.templateOptions.label === key) {
         return true;
       }
     });
-    key = fieldsObj.key;
+    key = fieldsObj.key.toString();
     if (current[key]) {
       if (current[key].constructor === Array) {
         const index = current[key].indexOf(event[key]);
@@ -226,7 +226,7 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
       } else {
         current[key] = null;
       }
-      this._service.get('filters').patchValue(current);
+      this._service.get("filters").patchValue(current);
     }
   }
 
@@ -264,8 +264,8 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
   }
 
   private filtersPills(): void {
-    this._service.get('filters').valueChanges.subscribe((filters) => {
-      const filterFields = this._service.get('filterFields').value;
+    this._service.get("filters").valueChanges.subscribe((filters) => {
+      const filterFields = this._service.get("filterFields").value;
 
       const filterResults = Object.keys(filters).map((key) => {
         const field = filterFields.filter((item) => item.key === key)[0];
@@ -284,13 +284,13 @@ export class SamLayoutDemoComponent implements OnInit, OnDestroy {
         } else if (Array.isArray(item.values)) {
           item.values.forEach((val) => {
             const obj = {};
-            obj['values'] = val;
-            obj['label'] = `${item.label}`;
+            obj["values"] = val;
+            obj["label"] = `${item.label}`;
             res.push(obj);
           });
         }
       });
-      this.model3.replaceItems(res, 'values');
+      this.model3.replaceItems(res, "values");
     });
   }
 }

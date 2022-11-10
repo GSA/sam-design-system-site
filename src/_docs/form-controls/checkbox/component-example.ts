@@ -1,36 +1,40 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'doc-checkbox',
-  templateUrl: './component-example.html'
+  selector: "doc-checkbox",
+  templateUrl: "./component-example.html",
 })
 export class SamCheckboxComponentExampleComponent {
-  checkboxModel: any = ['ma'];
-  checkboxModel2: any = ['ma'];
+  checkboxModel: any = [];
+  checkboxModel2: any = ["ma"];
   checkboxConfig = {
     options: [
-      {value: 'dc', label: 'DC', name: 'checkbox-dc'},
-      {value: 'ma', label: 'Maryland', name: 'checkbox-maryland'},
-      {value: 'va', label: 'Virginia', name: 'checkbox-virginia'},
+      { value: "dc", label: "DC", name: "checkbox-dc" },
+      { value: "ma", label: "Maryland", name: "checkbox-maryland" },
+      { value: "va", label: "Virginia", name: "checkbox-virginia" },
     ],
-    name: 'my-sr-name',
-    label: 'Select a region (normal)',
+    name: "my-sr-name",
+    label: "Select a region (normal)",
     hasSelectAll: false,
     errorMessage: null,
-    hint: ''
+    hint: "",
   };
   disabledCheckboxConfig = {
     options: [
-      {value: 'dc', label: 'DC', name: 'checkbox-dc'},
-      {value: 'ma', label: 'Maryland', name: 'checkbox-maryland'},
-      {value: 'va', label: 'Virginia', name: 'checkbox-virginia'},
+      { value: "dc", label: "DC", name: "checkbox-dc" },
+      { value: "ma", label: "Maryland", name: "checkbox-maryland" },
+      { value: "va", label: "Virginia", name: "checkbox-virginia" },
     ],
-    name: 'my-sr-name',
-    label: 'Select a region (disabled)',
+    name: "my-sr-name",
+    label: "Select a region (disabled)",
     hasSelectAll: false,
     errorMessage: null,
-    hint: ''
+    hint: "",
   };
+  onChange() {
+    console.log(this.checkboxModel);
+    if (this.checkboxModel.length === 0) {
+      this.checkboxConfig.errorMessage = "Please select atleast one region";
+    }
+  }
 }

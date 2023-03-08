@@ -83,7 +83,6 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
-    "puppeteer": "5.1.0",
     "webpack-bundle-analyzer": "^3.8.0"
   }
 }

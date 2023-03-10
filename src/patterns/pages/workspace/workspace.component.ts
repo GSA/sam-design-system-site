@@ -4,7 +4,7 @@ import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-el
 
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
 import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { WorkspaceService, filter } from './data/workspace.service';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { fields, model, } from './data/formly';
@@ -24,7 +24,7 @@ import {
   ]
 })
 export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
-  public form: FormGroup;
+  public form: UntypedFormGroup;
   public model = model;
   public filters: Observable<any>;
   public fields: FormlyFieldConfig[] = fields;
@@ -48,7 +48,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   @ViewChild(SamPaginationNextComponent, { static: true })
   public pagination: SamPaginationNextComponent;
 
-  constructor(private _fb: FormBuilder,
+  constructor(private _fb: UntypedFormBuilder,
     private wsService: WorkspaceService,
     private cdr: ChangeDetectorRef,
     private _service: SamPageNextService) {

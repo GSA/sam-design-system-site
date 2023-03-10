@@ -3,7 +3,7 @@ import {
   Component, OnInit, forwardRef
 } from '@angular/core';
 import {
-  FormBuilder
+  UntypedFormBuilder
 } from '@angular/forms';
 import {
 
@@ -24,7 +24,7 @@ import {
 export class SamPageComponentExampleComponent implements OnInit {
 
 
-  constructor(public fb: FormBuilder) { }
+  constructor(public fb: UntypedFormBuilder) { }
 
   public intro: string = 'intro test';
 

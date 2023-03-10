@@ -2,7 +2,7 @@ import {
   Component, ViewChild, AfterViewInit
 } from '@angular/core';
 import {
-  FormControl,
+  UntypedFormControl,
   Validators,
   ValidatorFn,
   AbstractControl,
@@ -34,7 +34,7 @@ export class SamCustomValidationComponentExampleComponent implements AfterViewIn
   required = false;
 
   // tslint:disable-next-line:max-line-length
-  ipAddress = new FormControl('', [IPValidator]);
+  ipAddress = new UntypedFormControl('', [IPValidator]);
 
   ngAfterViewInit (): void {
     this.ipAddress.valueChanges.subscribe(() => {

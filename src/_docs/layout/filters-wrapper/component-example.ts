@@ -3,7 +3,7 @@ import {
   Component, OnInit, forwardRef
 } from '@angular/core';
 import {
-  FormBuilder
+  UntypedFormBuilder
 } from '@angular/forms';
 import {
   SamPageNextService,
@@ -27,7 +27,7 @@ export class SamFiltersWrapperComponentExampleComponent implements OnInit {
   message = '';
   submitted = false;
 
-  constructor(public fb: FormBuilder, public service: SamPageNextService) {}
+  constructor(public fb: UntypedFormBuilder, public service: SamPageNextService) {}
 
   ngOnInit() {
     this.formGroup = this.fb.group({

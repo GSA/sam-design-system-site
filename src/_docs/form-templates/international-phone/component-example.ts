@@ -1,7 +1,7 @@
 import {
   Component
 } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators, UntypedFormBuilder } from '@angular/forms';
 import { SamFormService } from '@gsa-sam/sam-ui-elements';
 
 @Component({
@@ -12,14 +12,14 @@ export class PhoneGroupExampleComponent {
   phoneModel = '123-456-3366';
   phoneModel2 = '1+(123)456-3366';
 
-  group = new FormGroup({
-    prefix: new FormControl('', Validators.required),
-    phone: new FormControl('1234567890', Validators.required),
-    extension: new FormControl('91234787', Validators.required)
+  group = new UntypedFormGroup({
+    prefix: new UntypedFormControl('', Validators.required),
+    phone: new UntypedFormControl('1234567890', Validators.required),
+    extension: new UntypedFormControl('91234787', Validators.required)
   });
   public isRequired: boolean = true;
-  public form: FormGroup;
-  public extensionRequiredForm: FormGroup;
+  public form: UntypedFormGroup;
+  public extensionRequiredForm: UntypedFormGroup;
   public message;
   public messages = ['Big bad error 1', 'big bad error 2'];
   public submitted = false;
@@ -32,16 +32,16 @@ export class PhoneGroupExampleComponent {
 
   constructor(
     public formService: SamFormService,
-    private _fb: FormBuilder) {
+    private _fb: UntypedFormBuilder) {
 
     this.form = this._fb.group(
       {
         name: [null, Validators.required],
-        phone: new FormGroup(
+        phone: new UntypedFormGroup(
           {
-            prefix: new FormControl(null, Validators.required),
-            phone: new FormControl('1234567890', Validators.required),
-            extension: new FormControl('')
+            prefix: new UntypedFormControl(null, Validators.required),
+            phone: new UntypedFormControl('1234567890', Validators.required),
+            extension: new UntypedFormControl('')
           }
         )
       }

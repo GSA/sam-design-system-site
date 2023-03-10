@@ -3,7 +3,7 @@ import {
   Component, OnInit, forwardRef
 } from '@angular/core';
 import {
-  FormBuilder
+  UntypedFormBuilder
 } from '@angular/forms';
 import {
 
@@ -25,7 +25,7 @@ export class SamPaginationNextComponentExampleComponent implements OnInit {
 
   public unit = 'Unit';
   public totalUnits = 100;
-  constructor(public fb: FormBuilder) { }
+  constructor(public fb: UntypedFormBuilder) { }
 
   ngOnInit() {
 

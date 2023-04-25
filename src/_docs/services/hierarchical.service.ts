@@ -1,12 +1,12 @@
 /* tslint:disable */
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import 'rxjs/add/operator/map'
+import { map, Observable, of } from 'rxjs';
+
 import { SamHiercarchicalServiceInterface,SamHiercarchicalServiceSearchItem, SamHiercarchicalServiceResult } from '@gsa-sam/sam-ui-elements/src/ui-kit/experimental/hierarchical/hierarchical-interface';
 import { Sort } from '@gsa-sam/sam-ui-elements/src/ui-kit/components/data-table/sort.directive'
 
 import { SampleHierarchicalData } from './hierarchical.data';
-import 'rxjs/add/observable/of';
+
 
 @Injectable()
 export class HierarchicalDataService implements SamHiercarchicalServiceInterface {
@@ -25,13 +25,13 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
 
     getDataByText(currentItems: number, searchValue?: string): Observable<SamHiercarchicalServiceResult> {
         let itemIncrease = 25;
-        let data = Observable.of(this.loadedData);
+        let data = of(this.loadedData);
         let itemsOb: Observable<Object[]>;
         if (searchValue) {
-            itemsOb = data.map(items => items.filter(itm =>
+            itemsOb = data.pipe(map(items => items.filter(itm =>
                 (itm.name.indexOf(searchValue) !== -1 ||
                     itm.subtext.indexOf(searchValue) !== -1
-                )));
+                ))));
         } else {
             itemsOb = data;
         }
@@ -53,22 +53,22 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
             items: subItemsitems,
             totalItems: totalItemCount
         };
-        return Observable.of(returnItem);
+        return of(returnItem);
     }
 
     getHiercarchicalById(item:SamHiercarchicalServiceSearchItem): Observable<SamHiercarchicalServiceResult> {
         let itemIncrease = 15;
         let temp = this.getSortedData(this.loadedData,item. sort);
-        let data = Observable.of(temp);
+        let data = of(temp);
         let itemsOb: Observable<Object[]>;
         if (item.searchValue) {
-            itemsOb = data.map(items => items.filter(itm =>
+            itemsOb = data.pipe(map(items => items.filter(itm =>
                 itm.parentId ===item. id &&
                 (itm.name.indexOf(item.searchValue) !== -1 ||
                     itm.subtext.indexOf(item.searchValue) !== -1
-                )));
+                ))));
         } else {
-            itemsOb = data.map(items => items.filter(itm => itm.parentId === item.id));
+            itemsOb = data.pipe(map(items => items.filter(itm => itm.parentId === item.id)));
         }
         let items: object[];
         itemsOb.subscribe(
@@ -88,7 +88,7 @@ export class HierarchicalDataService implements SamHiercarchicalServiceInterface
             items: subItemsitems,
             totalItems: totalItemCount
         };      
-        return Observable.of(returnItem);
+        return of(returnItem);
     }
 
 

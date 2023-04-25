@@ -1,5 +1,5 @@
 import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild, ViewChild, AfterContentInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-elements';
 
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
@@ -83,7 +83,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
     this.getData(this.filter);
 
     this.filters = this._service.get('filters').valueChanges
-      .map(res => this._filtersToPills(res));
+      .pipe(map(res => this._filtersToPills(res)));
 
     this.filters.subscribe(data => {
       this.curPage = 1;

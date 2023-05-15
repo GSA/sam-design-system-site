@@ -1,0 +1,3 @@
+<h1>SamPageTitle (RC)</h1>
+<p>*This component is currently in a release candidate (RC) phase and may change in the future.</p>
+<p>Creates an <code>&lt;h1&gt;</code> based heading title for the page. Contains additional configurations for setting the tabindex and id attributes for accessibility.</p>

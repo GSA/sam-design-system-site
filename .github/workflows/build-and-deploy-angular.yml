@@ -15,7 +15,7 @@ jobs:
           node-version: '14.x'
       - name: Install Node Packages
         run: npm i
-      - name: Build Stackblitz HTMLs
+      - name: Build Angular HTMLs
         run: npm run build
       # - name: Build Storybook Assets
       #   env:

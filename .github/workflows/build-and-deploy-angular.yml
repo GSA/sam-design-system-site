@@ -17,14 +17,14 @@ jobs:
         run: npm i
       - name: Build Angular HTMLs
         run: npm run build
-      - name: List build dir contents
-        run: ls _site
       # - name: Build Storybook Assets
       #   env:
       #     NODE_OPTIONS: "--max_old_space_size=4096"
         # run: npm run build-storybook-ng
       - name: Add .nojekyll file to allow for node_modules to be included in bundle
         run: touch .nojekyll
+      - name: List build dir contents
+        run: ls _site
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:

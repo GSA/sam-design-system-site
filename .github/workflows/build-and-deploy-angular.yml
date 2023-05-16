@@ -16,17 +16,17 @@ jobs:
       - name: Install Node Packages
         run: npm i
       - name: Build Angular HTMLs
-        run: npm run build --output-path docs
+        run: ng build --output-path docs --base-href /sam-design-system-site/
       # - name: Build Storybook Assets
       #   env:
       #     NODE_OPTIONS: "--max_old_space_size=4096"
         # run: npm run build-storybook-ng
       - name: Add .nojekyll file to allow for node_modules to be included in bundle
-        run: touch _site/_docs/.nojekyll
+        run: touch docs/.nojekyll
       - name: List build dir contents
-        run: ls -a _site
+        run: ls -a docs
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
           branch: gh-pages
-          folder: _site
+          folder: docs

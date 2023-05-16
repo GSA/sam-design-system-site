@@ -16,7 +16,7 @@ jobs:
       - name: Install Node Packages
         run: npm i
       - name: Build Angular HTMLs
-        run: ng build --output-path docs --base-href /sam-design-system-site/
+        run: npm run build-pages
       # - name: Build Storybook Assets
       #   env:
       #     NODE_OPTIONS: "--max_old_space_size=4096"

@@ -17,6 +17,8 @@ jobs:
         run: npm i
       - name: Build Angular HTMLs
         run: npm run build
+      - name: List build dir contents
+        run: ls _site
       # - name: Build Storybook Assets
       #   env:
       #     NODE_OPTIONS: "--max_old_space_size=4096"

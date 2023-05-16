@@ -24,7 +24,7 @@ jobs:
       - name: Add .nojekyll file to allow for node_modules to be included in bundle
         run: touch .nojekyll
       - name: List build dir contents
-        run: ls _site
+        run: ls -a _site
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:

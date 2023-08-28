@@ -2,7 +2,7 @@ import {
   Component
 } from '@angular/core';
 import { SamFormService, SamDateComponent } from '@gsa-sam/sam-ui-elements';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'doc-date',
@@ -10,7 +10,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class SamDateComponentExampleComponent {
   public dateModel: string = '2016-02-03';
-  basicInfoForm: FormGroup;
+  basicInfoForm: UntypedFormGroup;
   errors = {
     startDate: '',
     endDate: '',
@@ -22,9 +22,9 @@ export class SamDateComponentExampleComponent {
   };
 
    constructor(public formService: SamFormService) {
-    this.basicInfoForm = new FormGroup({
-      ofcStartDate: new FormControl('2016-02-03', Validators.required),
-      ofcEndDate: new FormControl('', Validators.required),
+    this.basicInfoForm = new UntypedFormGroup({
+      ofcStartDate: new UntypedFormControl('2016-02-03', Validators.required),
+      ofcEndDate: new UntypedFormControl('', Validators.required),
 
      });
   }

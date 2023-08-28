@@ -3,11 +3,12 @@ import {
   SamSortDirective,
   SamPaginationComponent
 } from '@gsa-sam/sam-ui-elements';
+import { merge } from 'rxjs/observable/merge';
 import { DataSource } from '@angular/cdk/collections';
 import { RECORDS } from './data';
-
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 /* tslint:disable */
-import { BehaviorSubject, map, merge, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 /* tslint:enable */
 
 export interface CFDAData {
@@ -87,7 +88,7 @@ export class ExampleDataSource extends DataSource<any> {
       this._paginator.pageChange,
     ];
 
-    return merge(...displayDataChanges).pipe(map(() => {
+    return merge(...displayDataChanges).map(() => {
       // Filter data
       this.filteredData = this._exampleDatabase.data.slice().filter((item: CFDAData) => {
         const searchStr = (item.agency + item.title).toLowerCase();
@@ -108,7 +109,7 @@ export class ExampleDataSource extends DataSource<any> {
       this._paginator.totalPages = Math.ceil(this.filteredData.length / 10);
       this.renderedData = sortedData.splice(startIndex, 10);
       return this.renderedData;
-    }));
+    });
   }
 
   disconnect() {}

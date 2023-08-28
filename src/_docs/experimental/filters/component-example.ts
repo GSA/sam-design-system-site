@@ -2,7 +2,7 @@ import {
   Component
 } from '@angular/core';
 import { FormlyFieldConfig } from '@ngx-formly/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'doc-sam-filters',
@@ -59,5 +59,5 @@ export class SamFiltersComponentExampleComponent {
     checkbox: []
   };
 
-  public form = new FormGroup({});
+  public form = new UntypedFormGroup({});
 }

@@ -114,7 +114,6 @@
       }
     }
   },
-  "defaultProject": "sam-cli",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "sam",

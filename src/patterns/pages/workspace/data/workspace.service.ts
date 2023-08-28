@@ -1,7 +1,7 @@
 /* tslint:disable */
 import { Injectable } from '@angular/core';
 import { SampleOppData } from './datasource';
-import { map, Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import 'rxjs/add/observable/of';
 
 
@@ -14,7 +14,7 @@ export class WorkspaceService {
   //Will pass in
   getData(filter: filter): Observable<results> {
     const data = <Opportunity[]>SampleOppData;
-    let ob = of(data);
+    let ob = Observable.of(data);
     let pageSize = 10;
     let page = 0;
     if (filter) {
@@ -39,35 +39,35 @@ export class WorkspaceService {
     if (end >= totalItems) {
       end = totalItems - 1;
     }
-       ob = ob.pipe(map(items => items.slice(start, end)));
+       ob = ob.map(items => items.slice(start, end));
 
-    return of({ "result": ob, "totalItems": totalItems });
+    return Observable.of({ "result": ob, "totalItems": totalItems });
   }
 
 
   private filter(data: Observable<Opportunity[]>, filter: filter) {
 
     if (filter.type) {
-      data = data.pipe(map(projects => projects.filter(proj => proj.data.type === filter.type)));
+      data = data.map(projects => projects.filter(proj => proj.data.type === filter.type));
     }
 
     if (filter.status && filter.status.length > 0) {
-      data = data.pipe(map(projects => projects.filter(proj => filter.status.indexOf(proj.status.code) !== -1)));
+      data = data.map(projects => projects.filter(proj => filter.status.indexOf(proj.status.code) !== -1));
     }
 
     if (filter.title) {
-      data = data.pipe(map(projects => projects.filter(proj => proj.data.title.toLowerCase().indexOf(filter.title.toLowerCase()) !== -1)));
+      data = data.map(projects => projects.filter(proj => proj.data.title.toLowerCase().indexOf(filter.title.toLowerCase()) !== -1));
     }
 
     if (filter.dateModel) {
       let filterDate = new Date(filter.dateModel);
       if (!isNaN(filterDate.getTime())) {
-        data = data.pipe(map(projects => projects.filter(proj => {
+        data = data.map(projects => projects.filter(proj => {
           let tDate = new Date(proj.createdDate);
           return tDate.getFullYear() + '' + tDate.getMonth() + '' + tDate.getDate() ===
             filterDate.getFullYear() + '' + filterDate.getMonth() + '' + (filterDate.getDate() + 1)
             ;
-        })))
+        }))
       }
     }
 
@@ -76,13 +76,13 @@ export class WorkspaceService {
 
   private sort(data: Observable<Opportunity[]>, filter: filter) {
     if (filter.sortField) {
-      data = data.pipe(map(items => items.sort(function (a, b) {
+      data = data.map(items => items.sort(function (a, b) {
         if (a[filter.sortField] < b[filter.sortField])
           return -1;
         if (a[filter.sortField] > b[filter.sortField])
           return 1;
         return 0;
-      })))
+      }))
     }
     return data;
   }

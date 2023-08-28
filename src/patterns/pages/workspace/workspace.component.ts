@@ -1,10 +1,10 @@
 import { Component, OnInit, forwardRef, ChangeDetectorRef, ContentChild, ViewChild, AfterContentInit } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { SamSortDirective, SamPaginationNextComponent } from '@gsa-sam/sam-ui-elements';
 
 import { SamModalComponent } from '@gsa-sam/sam-ui-elements';
 import { SamPageNextService } from '@gsa-sam/sam-ui-elements';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { WorkspaceService, filter } from './data/workspace.service';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { fields, model, } from './data/formly';
@@ -24,7 +24,7 @@ import {
   ]
 })
 export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
-  public form: FormGroup;
+  public form: UntypedFormGroup;
   public model = model;
   public filters: Observable<any>;
   public fields: FormlyFieldConfig[] = fields;
@@ -48,7 +48,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
   @ViewChild(SamPaginationNextComponent, { static: true })
   public pagination: SamPaginationNextComponent;
 
-  constructor(private _fb: FormBuilder,
+  constructor(private _fb: UntypedFormBuilder,
     private wsService: WorkspaceService,
     private cdr: ChangeDetectorRef,
     private _service: SamPageNextService) {
@@ -83,7 +83,7 @@ export class SamWorkspaceDemoComponent implements OnInit, AfterContentInit {
     this.getData(this.filter);
 
     this.filters = this._service.get('filters').valueChanges
-      .pipe(map(res => this._filtersToPills(res)));
+      .map(res => this._filtersToPills(res));
 
     this.filters.subscribe(data => {
       this.curPage = 1;

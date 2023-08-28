@@ -5,7 +5,7 @@ import {
   ChangeDetectorRef,
   forwardRef
 } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable, of } from 'rxjs';
 
 import { cloneDeep } from 'lodash';
@@ -61,7 +61,7 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
   public curPage = 1;
   public totalPages;
 
-  public form: FormGroup;
+  public form: UntypedFormGroup;
   public filters: Observable<any>;
   public data: Observable<any>;
   public length: number;
@@ -86,7 +86,7 @@ export class SamLayoutNoSidebarDemoComponent implements OnInit {
   ];
 
   constructor(
-    private _fb: FormBuilder,
+    private _fb: UntypedFormBuilder,
     private _service: SamPageNextService,
     private cdr: ChangeDetectorRef
   ) {

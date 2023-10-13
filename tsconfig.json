@@ -13,20 +13,27 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowUnreachableCode": true,
-    "target": "es2020",
+    "target": "ES2022",
     "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types"
     ],
     "paths": {
-      "api-kit/*": [ "api-kit/*"],
-      "app-components/*": [ "app/app-components/*"],
-      "environment": [ "./environments/environment.ts" ]
+      "api-kit/*": [
+        "api-kit/*"
+      ],
+      "app-components/*": [
+        "app/app-components/*"
+      ],
+      "environment": [
+        "./environments/environment.ts"
+      ]
     },
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "useDefineForClassFields": false
   },
   "exclude": [
     "**/node_modules/**/*",

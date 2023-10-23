@@ -17,15 +17,16 @@ import {
   SamSortDirective
 } from '@gsa-sam/sam-ui-elements';
 
-import {
-  fromEvent
-} from 'rxjs/observable/fromEvent';
+// import {
+//   fromEvent
+// } from 'rxjs/observable/fromEvent';
 
 import {
   ExampleDataSource,
   ExampleDatabase
 } from './data-source';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { fromEvent } from 'rxjs';
 
 
 @Component({

@@ -1,19 +1,23 @@
-name: Deploy to Github Pages
+name: Deploy PRs
 on:
-  push:
-    branches:
-      - angular-14
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
 jobs:
   Build-HTML:
     if: github.event.action != 'closed'
     uses: ./.github/workflows/build.yml
-  Build-And-Deploy:
+  Deploy-HTML:
     runs-on: ubuntu-latest
     if: ${{ !failure() }}
     needs: Build-HTML
     steps:
+        # Only needed because rossjrw/pr-preview-action needs to run in a git repo
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download HTML Assets
         # If closing PR, build will not occur so nothing to download
         if: github.event.action != 'closed'
@@ -21,10 +25,7 @@ jobs:
         with:
           name: html-assets
           path: ./docs
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
         with:
-          branch: gh-pages
-          folder: docs
-          clean-exclude: pr-preview/
-          force: false
+          source-dir: ./docs/

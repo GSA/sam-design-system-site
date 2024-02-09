@@ -1,0 +1,39 @@
+<label for="autocomplete1">Single Select without template</label>
+<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model"
+  [configuration]="settings">
+</sam-sds-autocomplete>
+
+<label for="autocomplete2">Single Select with template</label>
+<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model2"
+  [configuration]="settings2" [suggestionTemplate]="temp"></sam-sds-autocomplete>
+
+<label for="autocomplete3">Multi Select without template</label>
+<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model3"
+  [configuration]="settings3"></sam-sds-autocomplete>
+<pre>{{model3 |json}}</pre>
+<label for="autocomplete4">Multi Select with template</label>
+<sam-sds-autocomplete [service]="service" (ngModelChange)="changes($event)" [(ngModel)]="model4"
+  [configuration]="settings4" [suggestionTemplate]="temp" [selectedItemTemplate]="temp"></sam-sds-autocomplete>
+
+
+<label for="autocomplete5">Disabled</label>
+<sam-sds-autocomplete [service]="service" [disabled]="true" [(ngModel)]="model5" [configuration]="settings5">
+</sam-sds-autocomplete>
+
+<label for="autocomplete5">FreeText Enable</label>
+<sam-sds-autocomplete [service]="service" [(ngModel)]="freeTextModel" [configuration]="freeTextSettings">
+</sam-sds-autocomplete>
+
+
+<label for="autocomplete6">Essential Model Fields</label>
+<sam-sds-autocomplete [service]="service" [essentialModelFields]="true" (ngModelChange)="changes($event)"
+  [(ngModel)]="essentialModel" [configuration]="settings3"></sam-sds-autocomplete>
+
+<pre>{{essentialModel |json}}</pre>
+
+<ng-template #temp let-item>
+  <span>
+    <span>Template</span>
+    {{item['name'] +': '+ item['subtext'] }}
+  </span>
+</ng-template>

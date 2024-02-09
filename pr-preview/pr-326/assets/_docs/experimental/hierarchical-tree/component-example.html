@@ -1,0 +1,12 @@
+<div>
+  {{selectItems | json}}
+</div>
+
+<sam-hierarchical-tree [configuration]="hierarchyConfiguration"
+(selectResults)="selectResults$.next($event)"
+ [service]="service"></sam-hierarchical-tree>
+
+<!-- 
+[gridData]="tableData$ | async"
+(selectedAgency)="selectedAgency$.next($event)" 
+(selectResults)="selectResults$.next($event)"> -->

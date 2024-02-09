@@ -1,0 +1,2 @@
+<h1>SamFilterDrawerComponent</h1>
+<p>Displays a list of active filters. There are additional configurations to set the interaction behaviors on this component.</p>

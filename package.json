@@ -10,7 +10,7 @@
     "start": "npm run init && ng serve",
     "start:aot": "npm run init && ng serve --aot",
     "build": "npm run init && NODE_OPTIONS=--max-old-space-size=3072 ng build --configuration production --stats-json",
-    "build-pages": "npm run init && NODE_OPTIONS=--max-old-space-size=3072 ng build --configuration production --output-path docs --base-href /sam-design-system-site/pr-preview/pr-326",
+    "build-pages": "npm run init && NODE_OPTIONS=--max-old-space-size=3072 ng build --configuration production --output-path docs --base-href /sam-design-system-site/pr-preview/pr-326/",
     "test": "npm run init && ng test --single-run --code-coverage",
     "test:watch": "npm run init && ng test --code-coverage",
     "lint": "ng lint",

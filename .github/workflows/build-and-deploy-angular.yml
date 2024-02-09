@@ -13,7 +13,7 @@ jobs:
     needs: Build-HTML
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download HTML Assets
         # If closing PR, build will not occur so nothing to download
         if: github.event.action != 'closed'

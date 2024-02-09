@@ -1,2 +1,0 @@
-<h1>Accordion</h1>
-<p>Accordions are a list of headers that can be clicked to hide or reveal additional content.</p>

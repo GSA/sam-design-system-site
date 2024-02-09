@@ -1,2 +1,0 @@
-<h1>Autocomplete Multi-Select</h1>
-<p>Allows a user to make multiple selections from an autocomplete input</p>

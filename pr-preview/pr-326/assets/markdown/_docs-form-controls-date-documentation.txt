@@ -1,2 +1,0 @@
-<h1>Date</h1>
-<p>Three text fields are the easiest way for users to enter most dates.</p>

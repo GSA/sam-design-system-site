@@ -1,2 +1,0 @@
-<h1>Spinner</h1>
-<p>Informs user that requested content is not yet loaded.</p>

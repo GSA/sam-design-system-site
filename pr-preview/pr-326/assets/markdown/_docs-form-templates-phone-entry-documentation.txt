@@ -1,2 +1,0 @@
-<h1>Phone Entry</h1>
-<p>Provides a text input specific for phone entry</p>

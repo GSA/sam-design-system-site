@@ -1,5 +1,0 @@
-<h1>SAM Filters</h1>
-<p>The SAM filters component is a wrapper component used to rapidly develop forms based on JSON objects rather than writing templates.</p>
-<p>SAM Filters utilizes (ngx-formly)[https://github.com/formly-js/ngx-formly] along with Angular's reactive forms module to dynamically render filters according to a configurable model.</p>
-<p>The <code>SamFormlyModule</code> creates wrappers that map template types to the SamUIKit form controls.</p>
-<p>You may configure any form control by passing any valid input to the <code>templateOptions</code> on the <code>FormlyFieldConfig</code> object. Please view the documentation for <code>ngx-formly</code> and the individual form controls for more information.</p>

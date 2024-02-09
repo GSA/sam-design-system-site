@@ -1,2 +1,0 @@
-<h1>Name Entry</h1>
-<p>Provides a template for name entry</p>

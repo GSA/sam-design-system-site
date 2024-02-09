@@ -1,2 +1,0 @@
-<h1>ClickOutside</h1>
-<p>Provides a directive to detect when a user clicks outside of a target element.</p>

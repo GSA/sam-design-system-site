@@ -1,2 +1,0 @@
-<h1>Alert</h1>
-<p>Alerts keep users informed of important and sometimes time-sensitive changes.</p>

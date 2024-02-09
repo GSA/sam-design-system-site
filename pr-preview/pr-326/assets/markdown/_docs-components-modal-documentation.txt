@@ -1,2 +1,0 @@
-<h1>Modal</h1>
-<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality.</p>

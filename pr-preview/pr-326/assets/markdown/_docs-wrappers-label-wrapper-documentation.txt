@@ -1,0 +1,2 @@
+<h1>LabelWrapper</h1>
+<p>Provides a label for a form control.</p>

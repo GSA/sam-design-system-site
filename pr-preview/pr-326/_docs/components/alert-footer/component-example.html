@@ -1,0 +1,32 @@
+<sam-text
+  label="Title"
+  name="title"
+  [(ngModel)]="footerAlertModel.title"
+  type="text">
+</sam-text>
+<sam-text
+  label="Description"
+  name="Description"
+  [(ngModel)]="footerAlertModel.description"
+  type="text">
+</sam-text>
+<sam-select
+  label="Type"
+  name="Type"
+  [options]="footerAlertTypes"
+  [(ngModel)]="footerAlertModel.type">
+</sam-select>
+<sam-number
+  label="Dismiss Timer"
+  hint="in milliseconds, 0 is infinite" name="Dismiss Timer"
+  [(ngModel)]="footerAlertModel.timer">
+</sam-number>
+<sam-checkbox
+  name="require-dismiss"
+  [options]="checkboxOptions"
+  label="Require user dismissal"
+  hint="Overrides dismiss timer, require user to dismiss the alert"
+  [ngModel]="checkboxVal"
+  (ngModelChange)="mustDimissHandler($event)">
+</sam-checkbox>
+<sam-button (click)="onFooterAlertBtnClick()" buttonText="Add Footer alert"></sam-button>

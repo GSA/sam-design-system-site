@@ -1,0 +1,16 @@
+<sam-date name="example-date" [(ngModel)]='dateModel' #dateRange="ngModel"  [control]="dateRange?.control" [required]="true"></sam-date>
+{{dateModel}}
+<form [formGroup]="basicInfoForm" (ngSubmit)="onSubmit($event)">
+  <div class="create-org-border-section">
+    <sam-date formControlName="ofcStartDate" [useFormService]="true" [required]="true" 
+    [label]="'Start Date'" [hint]="formHints.startDate"
+      [errorMessage]="dateErrorSamDate('ofcStartDate',ofcStart)" #ofcStart (valueChange)="resetError('startDate')"
+      [name]="'ofc-start-date'"></sam-date>
+  </div>
+
+   <div class="create-org-border-section">
+    <sam-date formControlName="ofcEndDate" [label]="'End Date'" [hint]="formHints.endDate" [errorMessage]="dateErrorSamDate('ofcEndDate',ofcEnd)"
+      #ofcEnd (valueChange)="resetError('endDate')" [name]="'ofc-end-date'"></sam-date>
+  </div>
+  <button type="submit">Submit</button>
+</form> 

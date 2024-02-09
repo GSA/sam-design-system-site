@@ -1,0 +1,2 @@
+<h1>SamDollarComponent</h1>
+<p>Provides a control to input US dollar currency values.</p>

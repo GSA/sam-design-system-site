@@ -11,7 +11,7 @@ jobs:
     if: github.event.action != 'closed'
     uses: ./.github/workflows/build.yml
     with:
-        ng-base-href: ${{ format('{0}{1}{2}', '/sam-design-system-site/', inputs.pr-number, '//' }}
+        ng-base-href: ${{ format('{0}{1}{2}', '/sam-design-system-site/', inputs.pr-number, '\/' }}
   Deploy-HTML:
     runs-on: ubuntu-latest
     if: ${{ !failure() }}

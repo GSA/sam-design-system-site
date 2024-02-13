@@ -8,6 +8,7 @@ on:
       - closed
 jobs:
   Get-Base-Href:
+    runs-on: linux
     steps:
       - run: echo "ng-base-href=$(/sam-design-system-site/pr-preview/pr-${{github.event.number}}/)"
   Build-HTML:

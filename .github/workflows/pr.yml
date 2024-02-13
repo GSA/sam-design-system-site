@@ -7,11 +7,14 @@ on:
       - synchronize
       - closed
 jobs:
+  Get-Base-Href:
+    steps:
+      - run: echo "ng-base-href=$(/sam-design-system-site/pr-preview/pr-${{github.event.number}}/)"
   Build-HTML:
     if: github.event.action != 'closed'
     uses: ./.github/workflows/build.yml
-    with:
-        ng-base-href: ${{ format('{0}{1}', '/sam-design-system-site/', github.event.number }}
+    # with:
+        # ng-base-href: ${{ format('{0}{1}', '/sam-design-system-site/', github.event.number }}
   Deploy-HTML:
     runs-on: ubuntu-latest
     if: ${{ !failure() }}

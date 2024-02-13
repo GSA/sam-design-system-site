@@ -16,7 +16,7 @@ jobs:
     if: github.event.action != 'closed'
     uses: ./.github/workflows/build.yml
     with:
-        base: ${{env.base}}
+        base: ${{ env.base }}
   Deploy-HTML:
     runs-on: ubuntu-latest
     if: ${{ !failure() }}

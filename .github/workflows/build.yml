@@ -5,6 +5,9 @@ on:
       ng-base-href:
         required: false
         type: string
+      base:
+        required: false
+        type: string
 jobs:
   Build-HTML-Assets:
     runs-on: ubuntu-latest

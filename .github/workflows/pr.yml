@@ -10,7 +10,7 @@ jobs:
   Get-Base-Href:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "ng-base-href=$(/sam-design-system-site/pr-preview/pr-${{github.event.number}}/)"
+      - run: echo "ng-base-href=/sam-design-system-site/pr-preview/pr-${{github.event.number}}/"
   Build-HTML:
     needs: Get-Base-Href
     if: github.event.action != 'closed'

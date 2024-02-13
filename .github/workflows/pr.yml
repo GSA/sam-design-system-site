@@ -31,4 +31,3 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./docs/
-'/sam-design-system-site/pr-preview/pr-' + inputs.pr-number + '/'

@@ -21,9 +21,9 @@ jobs:
         run: npm i
         # 326/
       - name: Build Angular HTMLs
-        env:
-          ng-base-href: ${{ inputs.ng-base-href }}
-        run: npm run build-pages
+        # env:
+        #   ng-base-href: ${{ inputs.ng-base-href }}
+        run: npm run build-pages --ng-base-href=$ng-base-href
       - name: Add .nojekyll file to allow for node_modules to be included in bundle
         run: touch docs/.nojekyll
       - name: Archive HTML Assets

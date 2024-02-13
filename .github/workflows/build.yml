@@ -1,6 +1,10 @@
 name: Build HTML
 on:
   workflow_call:
+    inputs:
+      ng-base-href:
+        required: true
+        type: string
 jobs:
   Build-HTML-Assets:
     runs-on: ubuntu-latest
@@ -13,7 +17,12 @@ jobs:
           node-version: '18.x'
       - name: Install Node Packages
         run: npm i
+      - name: Install Node Packages
+        run: npm i
+        # 326/
       - name: Build Angular HTMLs
+        env:
+          ng-base-href: ${{ inputs.ng-base-href }}
         run: npm run build-pages
       - name: Add .nojekyll file to allow for node_modules to be included in bundle
         run: touch docs/.nojekyll

@@ -10,6 +10,8 @@ jobs:
   Build-HTML:
     if: github.event.action != 'closed'
     uses: ./.github/workflows/build.yml
+    with:
+        ng-base-href: ${{ '/sam-design-system-site/'+ inputs.pr-number + '/' }}
   Deploy-HTML:
     runs-on: ubuntu-latest
     if: ${{ !failure() }}
@@ -29,3 +31,4 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./docs/
+'/sam-design-system-site/pr-preview/pr-' + inputs.pr-number + '/'

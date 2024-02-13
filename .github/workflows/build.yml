@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print base href
-        run: echo "ng-base-href= $ng-base-href"
+        run: echo "base= $base"
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Setup Node

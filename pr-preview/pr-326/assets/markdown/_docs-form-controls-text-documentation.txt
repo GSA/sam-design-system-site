@@ -1,0 +1,2 @@
+<h1>Text</h1>
+<p>Provides a simple text entry form control</p>

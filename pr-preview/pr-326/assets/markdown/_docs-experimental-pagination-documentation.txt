@@ -1,0 +1,1 @@
+<h1>Sam Design Site Pagination Component</h1>

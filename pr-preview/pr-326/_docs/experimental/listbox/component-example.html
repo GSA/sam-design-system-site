@@ -1,0 +1,29 @@
+<!-- <sam-checkbox-list 
+ [options]="options"
+ (selectResults)="selectResults$.next($event)">
+</sam-checkbox-list>
+
+{{selectItems |json}}
+
+<sam-checkbox-list 
+ [options]="options1"
+ isSingleMode="true"
+ (selectResults)="selectResults1$.next($event)">
+</sam-checkbox-list>
+
+{{selectItems1 |json}} -->
+
+<sam-listbox 
+ [options]="options"
+ [(ngModel)]="selectItems2">
+</sam-listbox>
+
+{{selectItems2 |json}}
+
+<sam-listbox 
+isSingleMode="true"
+ [options]="options1"
+ [(ngModel)]="selectItems1">
+</sam-listbox>
+
+{{selectItems1 |json}}

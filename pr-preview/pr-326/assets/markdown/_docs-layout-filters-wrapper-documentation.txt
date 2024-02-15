@@ -1,0 +1,2 @@
+<h1>SamFiltersWrapperComponent</h1>
+<p>Ties with the page service to provide a filter wrapper.</p>

@@ -1,0 +1,93 @@
+<sam-modal
+  [showClose]="true"
+  #modal1
+  [title]="modalConfig.title"
+  [type]="'success'"
+  [description]="modalConfig.description"
+  [submitButtonLabel]="'Ok'"
+  (onClose)="message='Success modal closed'"
+  (onSubmit)="onModalClose()">
+</sam-modal>
+
+<sam-modal
+  [showClose]="true"
+  #modal2
+  [title]="modalConfig.title"
+  [type]="'error'"
+  [description]="modalConfig.description"
+  [submitButtonLabel]="'Ok'"
+  (onClose)="message='Error modal closed'"
+  (onSubmit)="onModal2Close()">
+</sam-modal>
+
+<sam-modal
+  [showClose]="true"
+  #modal3
+  [title]="modalConfig.title"
+  [type]="'warning'"
+  [description]="modalConfig.description"
+  [submitButtonLabel]="'Yes'"
+  [cancelButtonLabel]="'No'"
+  (onClose)="message='Warning modal closed'"
+  (onSubmit)="onModal3Close()">
+</sam-modal>
+
+<sam-modal
+  [showClose]="true"
+  #modal4
+  [title]="modalConfig.title"
+  [type]="'info'"
+  [submitButtonLabel]="'Yes'"
+  [cancelButtonLabel]="'No'"
+  (onClose)="message='Info modal closed'"
+  (onSubmit)="onModal4Close()">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.Voluptate vero,
+  esse ratione quis quasi commodi distinctio sit aut eum facilis minima hic 
+  saepe ut ex, aliquid minus non maxime quod!
+</sam-modal>
+
+<sam-modal
+  [showClose]="true"
+  #modal5
+  [title]="modalConfig2.title"
+  [type]="modalConfig2.type"
+  [buttonPosition]="modalConfig2.position"
+  [description]="modalConfig2.description"
+  [submitButtonLabel]="'Yes'"
+  [cancelButtonLabel]="'No'"
+  (onSubmit)="onModal5Close()">
+</sam-modal>
+
+<p>{{message}}</p>
+
+<sam-button buttonText="Show Success Modal"
+    (click)="onModalInitClick()"></sam-button><br/>
+<sam-button buttonText="Show Error Modal"
+    (click)="onModalInit2Click()"></sam-button><br/>
+<sam-button buttonText="Show Warning Modal"
+    (click)="onModalInit3Click()">Show Warning Modal</sam-button><br/>
+<sam-button buttonText="Show Info Modal"
+    (click)="onModalInit4Click()"></sam-button>
+
+<hr/>
+
+<label for="modal-title">Title</label>
+<input id="modal-title" type="text" [(ngModel)]="modalConfig2.title">
+
+<label for="modal-description">Description</label>
+<input id="modal-description" type="text" [(ngModel)]="modalConfig2.description">
+
+<sam-select label="Type"
+    name="type"
+    [(ngModel)]="modalConfig2.type"
+    [options]="modalAlertTypes">
+</sam-select>
+
+<sam-select label="Button Position"
+    name="buttonPosition"
+    [(ngModel)]="modalConfig2.position"
+    [options]="modalButtonPosition">
+</sam-select>
+
+<sam-button (click)="onModal5InitClick()"
+    buttonText="Show Modal"></sam-button>

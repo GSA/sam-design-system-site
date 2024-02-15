@@ -1,24 +1,19 @@
-name: Deploy to Github Pages
+name: Build and Deploy Prototype
 on:
   push:
     branches:
-      - angular-14
+      - master
 jobs:
   Build-HTML:
-    if: github.event.action != 'closed'
     uses: ./.github/workflows/build.yml
-    with:
-        ng-base-href: '/sam-design-system-site/'
   Deploy-HTML:
     runs-on: ubuntu-latest
-    if: ${{ !failure() }}
+    if: ${{ success() }}
     needs: Build-HTML
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Download HTML Assets
-        # If closing PR, build will not occur so nothing to download
-        if: github.event.action != 'closed'
         uses: actions/download-artifact@v4
         with:
           name: html-assets

@@ -1,13 +1,6 @@
 name: Build HTML
 on:
   workflow_call:
-    inputs:
-      ng-base-href:
-        required: false
-        type: string
-      base:
-        required: false
-        type: string
 jobs:
   Build-HTML-Assets:
     runs-on: ubuntu-latest
@@ -25,12 +18,10 @@ jobs:
         if: ${{github.event_name == 'pull_request'}}
         run: echo "base_href=$base_url/$pr_preview_path/pr-$pr/" >> $GITHUB_ENV
         shell: bash
-      - name: Generate PR base href
+      - name: Generate master base href
         if: ${{github.event_name != 'pull_request'}}
         run: echo "base_href=$base_url/" >> $GITHUB_ENV
         shell: bash
-      - name: Print base_href href
-        run: echo "base_href= $base_href"
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Setup Node
@@ -40,8 +31,6 @@ jobs:
       - name: Install Node Packages
         run: npm i
       - name: Build Angular HTMLs
-        # env:
-        #   ng-base-href: ${{ inputs.ng-base-href }}
         run: npm run build-pages --base_href=$base_href
       - name: Add .nojekyll file to allow for node_modules to be included in bundle
         run: touch docs/.nojekyll

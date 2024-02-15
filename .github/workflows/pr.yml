@@ -7,17 +7,9 @@ on:
       - synchronize
       - closed
 jobs:
-  Get-Base-Href:
-    runs-on: ubuntu-latest
-    steps:
-    # /sam-design-system-site/pr-preview/pr-${{github.event.number}}/
-      - run: echo "base=test" >> $GITHUB_ENV
   Build-HTML:
-    needs: Get-Base-Href
     if: github.event.action != 'closed'
     uses: ./.github/workflows/build.yml
-    with:
-        base: $base
   Deploy-HTML:
     runs-on: ubuntu-latest
     if: ${{ !failure() }}

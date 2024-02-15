@@ -250,7 +250,6 @@ import { HierarchicalDataService } from './services/hierarchical.service';
  */
 @NgModule({
   declarations: [${declarations}\n  ],
-  entryComponents: [${declarations}\n  ],
   imports: [
     CommonModule,
 		FormsModule,

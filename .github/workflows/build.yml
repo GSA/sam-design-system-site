@@ -39,13 +39,10 @@ jobs:
           node-version: '18.x'
       - name: Install Node Packages
         run: npm i
-      - name: Install Node Packages
-        run: npm i
-        # 326/
       - name: Build Angular HTMLs
         # env:
         #   ng-base-href: ${{ inputs.ng-base-href }}
-        run: npm run build-pages --ng-base-href=$base_href
+        run: npm run build-pages --base_href=$base_href
       - name: Add .nojekyll file to allow for node_modules to be included in bundle
         run: touch docs/.nojekyll
       - name: Archive HTML Assets

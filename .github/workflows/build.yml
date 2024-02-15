@@ -16,7 +16,7 @@ jobs:
       - name: Print base href
         run: echo "base= $base"
       - name: Print base123 href
-        run: echo "base123= $base123"
+        run: echo "base_123= $base_123"
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Setup Node

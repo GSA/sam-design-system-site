@@ -1,2 +1,0 @@
-<h1>SamExternalLinkDirective</h1>
-<p>Sets an icon that indicates that a link leads to an external page from the website.</p>

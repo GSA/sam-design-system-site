@@ -1,2 +1,0 @@
-<h1>Pagination</h1>
-<p>Allows users to navigate through subsets of a larger list.</p>

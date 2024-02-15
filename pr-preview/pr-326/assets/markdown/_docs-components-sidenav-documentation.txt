@@ -1,2 +1,0 @@
-<h1>Sidenav</h1>
-<p>Creates a side navigation component based on the US Web Design Standards.</p>

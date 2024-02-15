@@ -1,2 +1,0 @@
-<h1>Number</h1>
-<p>Provides an input of type number</p>

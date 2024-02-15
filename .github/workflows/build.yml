@@ -11,12 +11,22 @@ on:
 jobs:
   Build-HTML-Assets:
     runs-on: ubuntu-latest
+    env:
+      base_url: /sam-design-system-site
+      pr_preview_path: pr-preview
     steps:
-      - run: echo "base_123=test" >> $GITHUB_ENV
-      - name: Print base href
-        run: echo "base= $base"
-      - name: Print base123 href
-        run: echo "base_123= $base_123"
+      - name: Store environment variables
+        env:
+          pr: ${{ github.event.number }}
+        run: |
+          echo "pr=$pr" >> $GITHUB_ENV
+        shell: bash
+      - name: Generate PR base href
+        if: ${{github.event_name == 'pull_request'}}
+        run: echo "targetdir=$base_url/$pr_preview_path/pr-$pr/" >> $GITHUB_ENV
+        shell: bash
+      - name: Print targetdir href
+        run: echo "targetdir= $targetdir"
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Setup Node

@@ -22,7 +22,8 @@
 /* SAM Styles
    ========================================================================== */
 
- @import 'node_modules/@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov';
+ @import '../../node_modules/@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov.scss';
+//'..node_modules/@gsa-sam/sam-ui-elements/sam-styles/themes/sam-gov';
 
 /* SAM Design System
    ========================================================================== */
@@ -41,8 +42,8 @@ body {
  * Syntax Code Highlight
  */
 
-@import 'node_modules/prismjs/themes/prism';
-@import 'node_modules/prismjs/plugins/previewers/prism-previewers';
+@import '../../node_modules/prismjs/themes/prism';
+@import '../../node_modules/prismjs/plugins/previewers/prism-previewers';
 
 code[class*='language'] {
   font-size: 13px;

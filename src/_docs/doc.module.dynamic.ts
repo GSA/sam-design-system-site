@@ -211,7 +211,6 @@ import { HierarchicalDataService } from './services/hierarchical.service';
     BaseDocPageComponent,
     Doc2TemplateComponent
   ],
-
   imports: [
     CommonModule,
 		FormsModule,

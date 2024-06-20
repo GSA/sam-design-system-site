@@ -1,0 +1,42 @@
+name: Build HTML
+on:
+  workflow_call:
+jobs:
+  Build-HTML-Assets:
+    runs-on: ubuntu-latest
+    env:
+      base_url: /sam-design-system-site
+      pr_preview_path: pr-preview
+    steps:
+      - name: Store environment variables
+        env:
+          pr: ${{ github.event.number }}
+        run: |
+          echo "pr=$pr" >> $GITHUB_ENV
+        shell: bash
+      - name: Generate PR base href
+        if: ${{github.event_name == 'pull_request'}}
+        run: echo "base_href=$base_url/$pr_preview_path/pr-$pr/" >> $GITHUB_ENV
+        shell: bash
+      - name: Generate master base href
+        if: ${{github.event_name != 'pull_request'}}
+        run: echo "base_href=$base_url/" >> $GITHUB_ENV
+        shell: bash
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+      - name: Install Node Packages
+        run: npm i
+      - name: Build Angular HTMLs
+        run: npm run build-pages --base_href=$base_href
+      - name: Add .nojekyll file to allow for node_modules to be included in bundle
+        run: touch docs/.nojekyll
+      - name: Archive HTML Assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-assets
+          path: docs
+          retention-days: 1

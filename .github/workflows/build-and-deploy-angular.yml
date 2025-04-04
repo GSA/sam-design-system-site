@@ -1,28 +1,27 @@
-name: Deploy to Github Pages
+name: Build and Deploy Prototype
 on:
   push:
     branches:
-      - angular-14
+      - master
 jobs:
-  Build-And-Deploy:
+  Build-HTML:
+    uses: ./.github/workflows/build.yml
+  Deploy-HTML:
     runs-on: ubuntu-latest
+    if: ${{ success() }}
+    needs: Build-HTML
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v2
-      - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/checkout@v4
+      - name: Download HTML Assets
+        uses: actions/download-artifact@v4
         with:
-          node-version: '14.x'
-      - name: Install Node Packages
-        run: npm i
-      - name: Build Angular HTMLs
-        run: npm run build-pages
-      - name: Add .nojekyll file to allow for node_modules to be included in bundle
-        run: touch docs/.nojekyll
-      - name: List build dir contents
-        run: ls -a docs
+          name: html-assets
+          path: ./docs
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
           branch: gh-pages
           folder: docs
+          clean-exclude: pr-preview/
+          force: false
